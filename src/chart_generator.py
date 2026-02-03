@@ -403,8 +403,8 @@ class ChartGenerator:
         filename = self._get_filename_base(start_date, end_date) + '.html'
         filepath = os.path.join(REPORTS_DIR, filename)
 
-        # Generate drill-down table as a separate figure
-        table_fig = self._create_drill_down_table(all_data)
+        # Generate drill-down table HTML
+        table_html = self._create_drill_down_table(all_data)
 
         # Combine both figures into a single HTML file
         with open(filepath, 'w') as f:
@@ -424,108 +424,362 @@ class ChartGenerator:
                 '<div style="margin: 20px; padding: 20px; background-color: #f5f5f5; border-radius: 8px;">')
             f.write(
                 '<h2 style="margin-top: 0; color: #333;">Detailed Breakdown by Repository and Branch</h2>')
-            f.write('<p style="color: #666; margin-bottom: 20px;">Click column headers to sort. Use your browser\'s search (Ctrl+F / Cmd+F) to filter rows.</p>')
-            f.write(table_fig.to_html(include_plotlyjs=False,
-                    full_html=False, div_id='drill-down-table'))
+            f.write('<p style="color: #666; margin-bottom: 20px;">Click on contributors to expand and see their repositories. Click on repositories to see branches. Click column headers to sort.</p>')
+            f.write(table_html)
             f.write('</div>')
 
             f.write('</body></html>')
 
         return filepath
 
-    def _create_drill_down_table(self, all_data: Dict[str, Dict[str, Dict]]) -> go.Figure:
-        """Create interactive drill-down table showing repository and branch details
+    def _create_drill_down_table(self, all_data: Dict[str, Dict[str, Dict]]) -> str:
+        """Create interactive drill-down table HTML showing repository and branch details
 
         Args:
             all_data: Dictionary mapping usernames to date-indexed metrics
 
         Returns:
-            Plotly Figure containing the table
+            HTML string containing the interactive drill-down table
         """
-        # Prepare drill-down data
-        rows = self._prepare_drill_down_data(all_data)
+        # Aggregate data hierarchically: user -> repo -> branch
+        hierarchy = {}
 
-        if not rows:
-            # Return empty table if no data
-            return go.Figure(data=[go.Table(
-                header=dict(values=['No Data Available']),
-                cells=dict(values=[[]])
-            )])
+        for username, date_data in all_data.items():
+            if username not in hierarchy:
+                hierarchy[username] = {
+                    'repos': {},
+                    'total_commits': 0,
+                    'total_additions': 0,
+                    'total_deletions': 0,
+                    'total_loc': 0
+                }
 
-        # Check if we need to aggregate (>1000 rows)
-        if len(rows) > 1000:
-            logger.info(
-                f"Drill-down table has {len(rows)} rows, using weekly aggregation")
-            # For now, just take first 1000 rows and show a message
-            rows = rows[:1000]
-            aggregation_note = " (showing first 1000 rows)"
-        else:
-            aggregation_note = ""
+            for date, metrics in date_data.items():
+                branch_breakdown = metrics.get('branch_breakdown', {})
 
-        # Prepare table data
-        users = [row['user'] for row in rows]
-        dates = [row['date'] for row in rows]
-        repos = [row['repository'] for row in rows]
-        branches = [row['branch'] for row in rows]
-        commits = [row['commits'] for row in rows]
-        additions = [row['additions'] for row in rows]
-        deletions = [row['deletions'] for row in rows]
-        total_locs = [row['total_loc'] for row in rows]
+                for repo, repo_branches in branch_breakdown.items():
+                    if repo not in hierarchy[username]['repos']:
+                        hierarchy[username]['repos'][repo] = {
+                            'branches': {},
+                            'total_commits': 0,
+                            'total_additions': 0,
+                            'total_deletions': 0,
+                            'total_loc': 0
+                        }
 
-        # Create color coding for branches
-        branch_colors = []
-        for branch in branches:
-            if branch in ['main', 'master']:
-                branch_colors.append('#d4edda')  # Light green
-            elif branch in ['develop', 'development']:
-                branch_colors.append('#d1ecf1')  # Light blue
-            elif branch == 'unknown':
-                branch_colors.append('#f8d7da')  # Light red
-            else:
-                branch_colors.append('#ffffff')  # White
+                    for branch, branch_metrics in repo_branches.items():
+                        if branch not in hierarchy[username]['repos'][repo]['branches']:
+                            hierarchy[username]['repos'][repo]['branches'][branch] = {
+                                'commits': 0,
+                                'additions': 0,
+                                'deletions': 0,
+                                'total_loc': 0
+                            }
 
-        # Create the table
-        fig = go.Figure(data=[go.Table(
-            columnwidth=[120, 90, 250, 120, 80, 90, 90, 90],
-            header=dict(
-                values=[
-                    '<b>User</b>',
-                    '<b>Date</b>',
-                    '<b>Repository</b>',
-                    '<b>Branch</b>',
-                    '<b>Commits</b>',
-                    '<b>+Lines</b>',
-                    '<b>-Lines</b>',
-                    '<b>Total LOC</b>'
-                ],
-                fill_color='#4a90e2',
-                font=dict(color='white', size=13),
-                align='left',
-                height=35
-            ),
-            cells=dict(
-                values=[users, dates, repos, branches,
-                        commits, additions, deletions, total_locs],
-                fill_color=[['white'] * len(rows), ['white'] * len(rows), ['white'] * len(rows),
-                            branch_colors, ['white'] *
-                            len(rows), ['white'] * len(rows),
-                            ['white'] * len(rows), ['white'] * len(rows)],
-                font=dict(size=12),
-                align=['left', 'left', 'left', 'left',
-                       'right', 'right', 'right', 'right'],
-                height=28
-            )
-        )])
+                        # Aggregate metrics
+                        commits = branch_metrics.get('commit_count', 0)
+                        additions = branch_metrics.get('additions', 0)
+                        deletions = branch_metrics.get('deletions', 0)
+                        total_loc = branch_metrics.get('total_loc', 0)
 
-        fig.update_layout(
-            title=f"Commit Details by Repository and Branch{aggregation_note}",
-            title_font_size=16,
-            # Dynamic height based on rows
-            height=min(600, 100 + len(rows) * 28),
-            margin=dict(l=10, r=10, t=40, b=10)
-        )
+                        hierarchy[username]['repos'][repo]['branches'][branch]['commits'] += commits
+                        hierarchy[username]['repos'][repo]['branches'][branch]['additions'] += additions
+                        hierarchy[username]['repos'][repo]['branches'][branch]['deletions'] += deletions
+                        hierarchy[username]['repos'][repo]['branches'][branch]['total_loc'] += total_loc
 
-        return fig
+                        hierarchy[username]['repos'][repo]['total_commits'] += commits
+                        hierarchy[username]['repos'][repo]['total_additions'] += additions
+                        hierarchy[username]['repos'][repo]['total_deletions'] += deletions
+                        hierarchy[username]['repos'][repo]['total_loc'] += total_loc
+
+                        hierarchy[username]['total_commits'] += commits
+                        hierarchy[username]['total_additions'] += additions
+                        hierarchy[username]['total_deletions'] += deletions
+                        hierarchy[username]['total_loc'] += total_loc
+
+        # Generate HTML with JavaScript for interactivity
+        html = """
+        <style>
+            .drill-down-table {
+                width: 100%;
+                border-collapse: collapse;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 14px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            }
+            .drill-down-table th {
+                background-color: #4a90e2;
+                color: white;
+                padding: 12px;
+                text-align: left;
+                font-weight: 600;
+                position: sticky;
+                top: 0;
+                z-index: 10;
+            }
+            .drill-down-table td {
+                padding: 10px 12px;
+                border-bottom: 1px solid #e0e0e0;
+            }
+            .drill-down-table .numeric {
+                text-align: right;
+                font-family: 'Courier New', monospace;
+            }
+            .user-row {
+                background-color: #f8f9fa;
+                font-weight: 600;
+                cursor: pointer;
+                transition: background-color 0.2s;
+            }
+            .user-row:hover {
+                background-color: #e9ecef;
+            }
+            .repo-row {
+                background-color: #ffffff;
+                cursor: pointer;
+                transition: background-color 0.2s;
+                padding-left: 30px !important;
+            }
+            .repo-row:hover {
+                background-color: #f1f3f5;
+            }
+            .branch-row {
+                background-color: #fafbfc;
+                padding-left: 60px !important;
+            }
+            .branch-row.main-branch {
+                background-color: #d4edda;
+            }
+            .branch-row.unknown-branch {
+                background-color: #f8d7da;
+            }
+            .expandable::before {
+                content: '▶';
+                display: inline-block;
+                margin-right: 8px;
+                transition: transform 0.2s;
+                font-size: 12px;
+            }
+            .expanded::before {
+                transform: rotate(90deg);
+            }
+            .hidden {
+                display: none;
+            }
+            .positive {
+                color: #28a745;
+            }
+            .negative {
+                color: #dc3545;
+            }
+            .sort-icon {
+                cursor: pointer;
+                user-select: none;
+                margin-left: 5px;
+                opacity: 0.5;
+            }
+            .sort-icon:hover {
+                opacity: 1;
+            }
+            .sort-icon.active {
+                opacity: 1;
+                font-weight: bold;
+            }
+        </style>
+        
+        <table class="drill-down-table" id="drillDownTable">
+            <thead>
+                <tr>
+                    <th style="width: 30%;">
+                        Contributor / Repository / Branch 
+                        <span class="sort-icon" onclick="sortTable(0)">↕</span>
+                    </th>
+                    <th style="width: 12%;" class="numeric">
+                        Commits
+                        <span class="sort-icon" onclick="sortTable(1)">↕</span>
+                    </th>
+                    <th style="width: 16%;" class="numeric">
+                        Lines Added
+                        <span class="sort-icon" onclick="sortTable(2)">↕</span>
+                    </th>
+                    <th style="width: 16%;" class="numeric">
+                        Lines Removed
+                        <span class="sort-icon" onclick="sortTable(3)">↕</span>
+                    </th>
+                    <th style="width: 16%;" class="numeric">
+                        Total LOC
+                        <span class="sort-icon" onclick="sortTable(4)">↕</span>
+                    </th>
+                    <th style="width: 10%;" class="numeric">
+                        Repos/Branches
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+        """
+
+        # Sort users by total commits (descending)
+        sorted_users = sorted(
+            hierarchy.items(), key=lambda x: x[1]['total_commits'], reverse=True)
+
+        for username, user_data in sorted_users:
+            repo_count = len(user_data['repos'])
+            total_branches = sum(len(r['branches'])
+                                 for r in user_data['repos'].values())
+
+            html += f"""
+                <tr class="user-row" onclick="toggleUser('{username}')" data-level="user" data-id="{username}">
+                    <td class="expandable">{username}</td>
+                    <td class="numeric">{user_data['total_commits']:,}</td>
+                    <td class="numeric positive">+{user_data['total_additions']:,}</td>
+                    <td class="numeric negative">-{user_data['total_deletions']:,}</td>
+                    <td class="numeric">{user_data['total_loc']:,}</td>
+                    <td class="numeric">{repo_count} / {total_branches}</td>
+                </tr>
+            """
+
+            # Sort repos by commits
+            sorted_repos = sorted(user_data['repos'].items(
+            ), key=lambda x: x[1]['total_commits'], reverse=True)
+
+            for repo, repo_data in sorted_repos:
+                branch_count = len(repo_data['branches'])
+                repo_id = f"{username}_{repo}".replace(
+                    '/', '_').replace('.', '_')
+
+                html += f"""
+                    <tr class="repo-row hidden" data-parent="{username}" data-level="repo" data-id="{repo_id}" onclick="toggleRepo('{repo_id}', event)">
+                        <td class="expandable" style="padding-left: 30px;">{repo}</td>
+                        <td class="numeric">{repo_data['total_commits']:,}</td>
+                        <td class="numeric positive">+{repo_data['total_additions']:,}</td>
+                        <td class="numeric negative">-{repo_data['total_deletions']:,}</td>
+                        <td class="numeric">{repo_data['total_loc']:,}</td>
+                        <td class="numeric">{branch_count}</td>
+                    </tr>
+                """
+
+                # Sort branches by commits
+                sorted_branches = sorted(repo_data['branches'].items(
+                ), key=lambda x: x[1]['commits'], reverse=True)
+
+                for branch, branch_data in sorted_branches:
+                    branch_class = ""
+                    if branch in ['main', 'master']:
+                        branch_class = "main-branch"
+                    elif branch == 'unknown':
+                        branch_class = "unknown-branch"
+
+                    html += f"""
+                        <tr class="branch-row {branch_class} hidden" data-parent="{repo_id}" data-level="branch">
+                            <td style="padding-left: 60px;">{branch}</td>
+                            <td class="numeric">{branch_data['commits']:,}</td>
+                            <td class="numeric positive">+{branch_data['additions']:,}</td>
+                            <td class="numeric negative">-{branch_data['deletions']:,}</td>
+                            <td class="numeric">{branch_data['total_loc']:,}</td>
+                            <td class="numeric">-</td>
+                        </tr>
+                    """
+
+        html += """
+            </tbody>
+        </table>
+        
+        <script>
+            function toggleUser(username) {
+                const userRow = document.querySelector(`[data-id="${username}"]`);
+                const repoRows = document.querySelectorAll(`[data-parent="${username}"]`);
+                const isExpanded = userRow.classList.contains('expanded');
+                
+                if (isExpanded) {
+                    userRow.classList.remove('expanded');
+                    repoRows.forEach(row => {
+                        row.classList.add('hidden');
+                        row.classList.remove('expanded');
+                        // Also hide all branch rows under this user
+                        const repoId = row.getAttribute('data-id');
+                        if (repoId) {
+                            document.querySelectorAll(`[data-parent="${repoId}"]`).forEach(br => {
+                                br.classList.add('hidden');
+                            });
+                        }
+                    });
+                } else {
+                    userRow.classList.add('expanded');
+                    repoRows.forEach(row => row.classList.remove('hidden'));
+                }
+            }
+            
+            function toggleRepo(repoId, event) {
+                event.stopPropagation();
+                const repoRow = document.querySelector(`[data-id="${repoId}"]`);
+                const branchRows = document.querySelectorAll(`[data-parent="${repoId}"]`);
+                const isExpanded = repoRow.classList.contains('expanded');
+                
+                if (isExpanded) {
+                    repoRow.classList.remove('expanded');
+                    branchRows.forEach(row => row.classList.add('hidden'));
+                } else {
+                    repoRow.classList.add('expanded');
+                    branchRows.forEach(row => row.classList.remove('hidden'));
+                }
+            }
+            
+            let sortColumn = -1;
+            let sortAscending = true;
+            
+            function sortTable(columnIndex) {
+                const table = document.getElementById('drillDownTable');
+                const tbody = table.querySelector('tbody');
+                const rows = Array.from(tbody.querySelectorAll('tr[data-level="user"]'));
+                
+                // Toggle sort direction if same column
+                if (sortColumn === columnIndex) {
+                    sortAscending = !sortAscending;
+                } else {
+                    sortColumn = columnIndex;
+                    sortAscending = false; // Default to descending for numbers
+                }
+                
+                // Update sort icons
+                document.querySelectorAll('.sort-icon').forEach(icon => icon.classList.remove('active'));
+                document.querySelectorAll('.sort-icon')[columnIndex].classList.add('active');
+                
+                rows.sort((a, b) => {
+                    let aVal, bVal;
+                    
+                    if (columnIndex === 0) {
+                        aVal = a.cells[columnIndex].textContent.trim();
+                        bVal = b.cells[columnIndex].textContent.trim();
+                        return sortAscending ? aVal.localeCompare(bVal) : bVal.localeCompare(aVal);
+                    } else {
+                        aVal = parseInt(a.cells[columnIndex].textContent.replace(/[^0-9]/g, ''));
+                        bVal = parseInt(b.cells[columnIndex].textContent.replace(/[^0-9]/g, ''));
+                        return sortAscending ? aVal - bVal : bVal - aVal;
+                    }
+                });
+                
+                // Clear and re-append in sorted order
+                tbody.innerHTML = '';
+                rows.forEach(userRow => {
+                    tbody.appendChild(userRow);
+                    const username = userRow.getAttribute('data-id');
+                    // Append repo rows for this user
+                    const repoRows = Array.from(table.querySelectorAll(`[data-parent="${username}"]`));
+                    repoRows.forEach(repoRow => {
+                        tbody.appendChild(repoRow);
+                        const repoId = repoRow.getAttribute('data-id');
+                        if (repoId) {
+                            // Append branch rows for this repo
+                            const branchRows = Array.from(table.querySelectorAll(`[data-parent="${repoId}"]`));
+                            branchRows.forEach(branchRow => tbody.appendChild(branchRow));
+                        }
+                    });
+                });
+            }
+        </script>
+        """
+
+        return html
 
     def generate_matplotlib_charts(self, all_data: Dict[str, Dict[str, Dict]],
                                    start_date: str, end_date: str) -> Dict[str, str]:
