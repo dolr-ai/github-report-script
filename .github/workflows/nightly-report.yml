@@ -25,7 +25,6 @@ jobs:
             
             # Run the report generation
             python src/main.py
-          
           env:
             ANSIBLE_VAULT_PASSWORD: ${{ secrets.ANSIBLE_VAULT_PASSWORD }}
             EXECUTION_MODE: "fetch_and_chart"
