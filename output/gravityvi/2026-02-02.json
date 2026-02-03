@@ -13,16 +13,10 @@
   "branch_breakdown": {
     "dolr-ai/yral-auth-v2": {
       "feat/deploy-to-dolr-ai": {
-        "additions": 202,
+        "additions": 240,
         "deletions": 3,
-        "total_loc": 205,
-        "commit_count": 1
-      },
-      "unknown": {
-        "additions": 38,
-        "deletions": 0,
-        "total_loc": 38,
-        "commit_count": 1
+        "total_loc": 243,
+        "commit_count": 2
       }
     },
     "dolr-ai/yral-billing": {
@@ -40,5 +34,5 @@
       }
     }
   },
-  "processed_at": "2026-02-03T19:21:01.125160Z"
+  "processed_at": "2026-02-03T20:11:44.041277Z"
 }

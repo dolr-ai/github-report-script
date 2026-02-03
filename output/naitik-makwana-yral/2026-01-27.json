@@ -13,7 +13,7 @@
   "repo_count": 3,
   "branch_breakdown": {
     "dolr-ai/yral-metadata": {
-      "unknown": {
+      "copilot/fix-username-release-on-delete": {
         "additions": 235,
         "deletions": 698,
         "total_loc": 933,
@@ -21,7 +21,7 @@
       }
     },
     "dolr-ai/yral-auth-v2": {
-      "unknown": {
+      "feat/deploy-to-dolr-ai": {
         "additions": 729,
         "deletions": 19,
         "total_loc": 748,
@@ -37,5 +37,5 @@
       }
     }
   },
-  "processed_at": "2026-02-03T19:21:01.113585Z"
+  "processed_at": "2026-02-03T20:11:44.030015Z"
 }

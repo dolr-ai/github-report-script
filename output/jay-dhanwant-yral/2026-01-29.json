@@ -12,18 +12,12 @@
   "branch_breakdown": {
     "dolr-ai/ai-feed-recommendation-system": {
       "main": {
-        "additions": 29,
-        "deletions": 10,
-        "total_loc": 39,
-        "commit_count": 1
-      },
-      "unknown": {
-        "additions": 727,
-        "deletions": 140,
-        "total_loc": 867,
-        "commit_count": 1
+        "additions": 756,
+        "deletions": 150,
+        "total_loc": 906,
+        "commit_count": 2
       }
     }
   },
-  "processed_at": "2026-02-03T19:21:01.116860Z"
+  "processed_at": "2026-02-03T20:11:44.033982Z"
 }

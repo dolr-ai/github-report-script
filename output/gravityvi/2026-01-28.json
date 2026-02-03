@@ -11,11 +11,11 @@
   "repo_count": 1,
   "branch_breakdown": {
     "dolr-ai/yral-billing": {
-      "unknown": {
-        "additions": 31,
+      "feat/add-sentry-setup": {
+        "additions": 32,
         "deletions": 64,
-        "total_loc": 95,
-        "commit_count": 2
+        "total_loc": 96,
+        "commit_count": 3
       },
       "feat/add-total-credits-alloted": {
         "additions": 1,
@@ -25,5 +25,5 @@
       }
     }
   },
-  "processed_at": "2026-02-03T19:21:01.114956Z"
+  "processed_at": "2026-02-03T20:11:44.031427Z"
 }

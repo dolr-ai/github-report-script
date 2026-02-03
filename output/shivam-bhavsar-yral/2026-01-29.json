@@ -11,13 +11,19 @@
   "repo_count": 1,
   "branch_breakdown": {
     "dolr-ai/yral-mobile": {
-      "unknown": {
-        "additions": 700,
-        "deletions": 154,
-        "total_loc": 854,
-        "commit_count": 4
+      "create-pull-request/update-did-files-v3.5.9": {
+        "additions": 698,
+        "deletions": 152,
+        "total_loc": 850,
+        "commit_count": 3
+      },
+      "develop": {
+        "additions": 2,
+        "deletions": 2,
+        "total_loc": 4,
+        "commit_count": 1
       }
     }
   },
-  "processed_at": "2026-02-03T19:21:01.118497Z"
+  "processed_at": "2026-02-03T20:11:44.035373Z"
 }
