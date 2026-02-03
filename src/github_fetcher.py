@@ -12,8 +12,8 @@ from collections import defaultdict
 from github import Github, GithubException, RateLimitExceededException
 from tqdm import tqdm
 
-from src.config import GITHUB_TOKEN, GITHUB_ORG, KNOWN_BOTS
-from src.cache_manager import CacheManager
+from config import GITHUB_TOKEN, GITHUB_ORG, KNOWN_BOTS
+from cache_manager import CacheManager
 
 
 class GitHubFetcher:
@@ -28,18 +28,28 @@ class GitHubFetcher:
     def _check_rate_limit(self):
         """Check GitHub API rate limit and wait if necessary"""
         with self.rate_limit_lock:
-            rate_limit = self.github_client.get_rate_limit()
-            remaining = rate_limit.core.remaining
+            try:
+                rate_limit = self.github_client.get_rate_limit()
+                # Access rate_limit as dictionary or object
+                if hasattr(rate_limit, 'core'):
+                    remaining = rate_limit.core.remaining
+                    reset_time = rate_limit.core.reset
+                else:
+                    # Fallback for newer PyGithub versions
+                    remaining = rate_limit.rate.remaining
+                    reset_time = rate_limit.rate.reset
 
-            if remaining < 100:
-                reset_time = rate_limit.core.reset
-                wait_seconds = (reset_time - datetime.utcnow()
-                                ).total_seconds() + 10
+                if remaining < 100:
+                    wait_seconds = (
+                        reset_time - datetime.utcnow()).total_seconds() + 10
 
-                if wait_seconds > 0:
-                    print(
-                        f"\nRate limit low ({remaining} remaining). Waiting {wait_seconds:.0f} seconds...")
-                    time.sleep(wait_seconds)
+                    if wait_seconds > 0:
+                        print(
+                            f"\nRate limit low ({remaining} remaining). Waiting {wait_seconds:.0f} seconds...")
+                        time.sleep(wait_seconds)
+            except Exception as e:
+                # If rate limit check fails, log but continue
+                print(f"Warning: Could not check rate limit: {e}")
 
     def _is_bot_commit(self, commit) -> bool:
         """Check if a commit is from a bot using API type check
@@ -259,10 +269,28 @@ class GitHubFetcher:
         Returns:
             Dictionary with rate limit info
         """
-        rate_limit = self.github_client.get_rate_limit()
+        try:
+            rate_limit = self.github_client.get_rate_limit()
 
-        return {
-            'remaining': rate_limit.core.remaining,
-            'limit': rate_limit.core.limit,
-            'reset': rate_limit.core.reset.isoformat()
-        }
+            # Access rate_limit as dictionary or object
+            if hasattr(rate_limit, 'core'):
+                remaining = rate_limit.core.remaining
+                limit = rate_limit.core.limit
+                reset = rate_limit.core.reset.isoformat()
+            else:
+                # Fallback for newer PyGithub versions
+                remaining = rate_limit.rate.remaining
+                limit = rate_limit.rate.limit
+                reset = rate_limit.rate.reset.isoformat()
+
+            return {
+                'remaining': remaining,
+                'limit': limit,
+                'reset': reset
+            }
+        except Exception as e:
+            return {
+                'remaining': 'unknown',
+                'limit': 'unknown',
+                'reset': f'Error: {e}'
+            }

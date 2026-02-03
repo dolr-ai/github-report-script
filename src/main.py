@@ -8,14 +8,14 @@ Simply run: python src/main.py
 import sys
 from datetime import datetime
 
-from src.config import (
+from config import (
     MODE, ExecutionMode, DATE_RANGE_MODE, DateRangeMode,
     USER_IDS, THREAD_COUNT, GITHUB_ORG,
     validate_config, display_config, get_date_range
 )
-from src.github_fetcher import GitHubFetcher
-from src.data_processor import DataProcessor
-from src.chart_generator import ChartGenerator
+from github_fetcher import GitHubFetcher
+from data_processor import DataProcessor
+from chart_generator import ChartGenerator
 
 
 def cmd_fetch():
@@ -85,7 +85,7 @@ def cmd_chart():
     # Get date range
     if DATE_RANGE_MODE == DateRangeMode.ALL_CACHED:
         # Use all available cached data
-        from src.cache_manager import CacheManager
+        from cache_manager import CacheManager
         cache_manager = CacheManager()
         cached_dates = cache_manager.get_cached_dates()
 
@@ -142,7 +142,7 @@ def cmd_status():
     print()
 
     # Check cache status
-    from src.cache_manager import CacheManager
+    from cache_manager import CacheManager
     cache_manager = CacheManager()
     cached_dates = cache_manager.get_cached_dates()
 
@@ -155,7 +155,7 @@ def cmd_status():
 
     # Check output status
     import os
-    from src.config import OUTPUT_DIR
+    from config import OUTPUT_DIR
 
     if os.path.exists(OUTPUT_DIR):
         user_dirs = [d for d in os.listdir(OUTPUT_DIR)

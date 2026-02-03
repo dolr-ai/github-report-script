@@ -8,8 +8,8 @@ from datetime import datetime, timedelta
 from typing import Dict, List
 from collections import defaultdict
 
-from src.config import OUTPUT_DIR, USER_IDS
-from src.cache_manager import CacheManager
+from config import OUTPUT_DIR, USER_IDS
+from cache_manager import CacheManager
 
 
 class DataProcessor:

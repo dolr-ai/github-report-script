@@ -12,7 +12,7 @@ import matplotlib.dates as mdates
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
-from src.config import REPORTS_DIR
+from config import REPORTS_DIR
 
 
 class ChartGenerator:

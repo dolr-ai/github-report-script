@@ -8,7 +8,7 @@ import threading
 from datetime import datetime
 from typing import Dict, List, Optional
 
-from src.config import CACHE_COMMITS_DIR, CACHE_METADATA_FILE
+from config import CACHE_COMMITS_DIR, CACHE_METADATA_FILE
 
 
 class CacheManager:

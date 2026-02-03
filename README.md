@@ -47,8 +47,7 @@ cd ../src
 #   DAYS_BACK = 7
 
 # 4. Run the script
-cd ..
-python src/main.py
+python main.py
 ```
 
 ## Configuration
@@ -111,13 +110,14 @@ See `src/config.py` for complete configuration options with examples.
 
 ## Usage
 
-### Run the Script
+**Important:** The script must be run from the `src/` directory.
 
 ```bash
-python src/main.py
+cd src
+python main.py
 ```
 
-The script reads configuration from `src/config.py` and executes the configured mode.
+All configuration is read from `src/config.py` - no command-line arguments needed.
 
 ### Common Workflows
 
@@ -128,7 +128,7 @@ The script reads configuration from `src/config.py` and executes the configured 
    DATE_RANGE_MODE = DateRangeMode.LAST_N_DAYS
    DAYS_BACK = 1  # Yesterday only
    ```
-2. Run: `python src/main.py`
+2. Run: `cd src && python main.py`
 
 #### Generate Weekly Report
 1. Edit `src/config.py`:
@@ -137,12 +137,12 @@ The script reads configuration from `src/config.py` and executes the configured 
    DATE_RANGE_MODE = DateRangeMode.LAST_N_DAYS
    DAYS_BACK = 7
    ```
-2. Run: `python src/main.py`
-3. Edit `src/config.py`:
+3. Run: `python main.py` (from `src/` directory)
+4. Edit `src/config.py`:
    ```python
    MODE = ExecutionMode.CHART
    ```
-4. Run: `python src/main.py`
+5. Run: `python main.py` (from `src/` directory)
 
 #### Refresh Specific Dates
 1. Edit `src/config.py`:
@@ -152,14 +152,14 @@ The script reads configuration from `src/config.py` and executes the configured 
    START_DATE = '2026-01-27'
    END_DATE = '2026-01-28'
    ```
-2. Run: `python src/main.py`
+2. Run: `cd src && python main.py`
 
 #### Check Status
 1. Edit `src/config.py`:
    ```python
    MODE = ExecutionMode.STATUS
    ```
-2. Run: `python src/main.py`
+2. Run: `cd src && python main.py`
 
 ## Ansible Vault - Secret Management
 
@@ -414,7 +414,9 @@ jobs:
           ansible-playbook setup_env.yml
       
       - name: Run report
-        run: python src/main.py
+        run: |
+          cd src
+          python main.py
       
       - name: Commit results
         run: |
@@ -507,9 +509,9 @@ MIT License - See LICENSE file for details.
 | Task | Configuration | Command |
 |------|---------------|---------|
 | Setup vault | N/A | `cd ansible && ./init_vault.sh` |
-| Fetch last 7 days | `MODE = FETCH`, `DAYS_BACK = 7` | `python src/main.py` |
-| Refresh specific dates | `MODE = REFRESH`, set START/END_DATE | `python src/main.py` |
-| Generate charts | `MODE = CHART` | `python src/main.py` |
-| Check status | `MODE = STATUS` | `python src/main.py` |
+| Fetch last 7 days | `MODE = FETCH`, `DAYS_BACK = 7` | `cd src && python main.py` |
+| Refresh specific dates | `MODE = REFRESH`, set START/END_DATE | `cd src && python main.py` |
+| Generate charts | `MODE = CHART` | `cd src && python main.py` |
+| Check status | `MODE = STATUS` | `cd src && python main.py` |
 | Edit secrets | N/A | `ansible-vault edit ansible/vars/vault.yml` |
 | View secrets | N/A | `ansible-vault view ansible/vars/vault.yml` |
