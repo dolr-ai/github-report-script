@@ -9,21 +9,23 @@ if [ -z "$ANSIBLE_VAULT_PASSWORD" ]; then
     exit 1
 fi
 
-# Decrypt the GitHub token from vault
+# Decrypt the GitHub token from vault and generate .env file
 echo "Decrypting GitHub token..."
-if [ -f "secrets.yml.vault" ]; then
+if [ -f "ansible/vars/vault.yml" ]; then
     # Create temporary password file
     echo "$ANSIBLE_VAULT_PASSWORD" > /tmp/vault_pass.txt
     
-    # Decrypt the vault file
-    ansible-vault decrypt secrets.yml.vault --vault-password-file=/tmp/vault_pass.txt --output=secrets.yml
+    # Run the Ansible playbook to generate .env file
+    cd ansible
+    ansible-playbook setup_env.yml --vault-password-file=/tmp/vault_pass.txt
+    cd ..
     
     # Clean up password file
     rm -f /tmp/vault_pass.txt
     
-    echo "GitHub token decrypted successfully"
+    echo "GitHub token decrypted and .env file generated successfully"
 else
-    echo "Warning: secrets.yml.vault not found, skipping decryption"
+    echo "Warning: ansible/vars/vault.yml not found, skipping decryption"
 fi
 
 # Configure git for the CI environment
