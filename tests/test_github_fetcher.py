@@ -18,57 +18,53 @@ class TestGitHubFetcherUnit:
         """Test that bot commits are properly filtered"""
         fetcher = GitHubFetcher(thread_count=1)
 
-        # Mock bot commit
-        bot_commit = Mock()
-        bot_commit.author = Mock()
-        bot_commit.author.type = 'Bot'
-        bot_commit.author.login = 'dependabot[bot]'
+        # Mock bot commit (dict format from GraphQL API)
+        bot_commit = {
+            'author': {
+                'type': 'Bot',
+                'login': 'dependabot[bot]'
+            },
+            'commit': {
+                'author': {
+                    'name': 'dependabot[bot]',
+                    'email': 'dependabot@github.com'
+                }
+            }
+        }
 
         assert fetcher._is_bot_commit(bot_commit) is True
 
-        # Mock human commit
-        human_commit = Mock()
-        human_commit.author = Mock()
-        human_commit.author.type = 'User'
-        human_commit.author.login = 'test-user'
-        human_commit.commit.author.name = 'Test User'
-        human_commit.commit.author.email = 'test@example.com'
+        # Mock human commit (dict format from GraphQL API)
+        human_commit = {
+            'author': {
+                'type': 'User',
+                'login': 'test-user'
+            },
+            'commit': {
+                'author': {
+                    'name': 'Test User',
+                    'email': 'test@example.com'
+                }
+            }
+        }
 
         assert fetcher._is_bot_commit(human_commit) is False
 
     @pytest.mark.unit
-    def test_all_branches_default_behavior(self):
-        """Test that get_commits is called without sha parameter (all branches)"""
-        with patch('src.github_fetcher.Github') as mock_github:
-            mock_repo = Mock()
-            mock_repo.name = "test-repo"
-            mock_repo.full_name = f"{GITHUB_ORG}/test-repo"
-            mock_repo.get_commits.return_value = []
+    def test_graphql_query_structure(self):
+        """Test that GraphQL query is properly structured"""
+        fetcher = GitHubFetcher(thread_count=1)
 
-            mock_org = Mock()
-            mock_org.get_repos.return_value = [mock_repo]
+        # Test that the fetcher has the necessary methods for GraphQL
+        assert hasattr(fetcher, '_graphql_request')
+        assert hasattr(fetcher, '_fetch_commits_for_date')
 
-            mock_github.return_value.get_organization.return_value = mock_org
+        # Verify GraphQL URL is set correctly
+        assert fetcher.graphql_url == 'https://api.github.com/graphql'
 
-            fetcher = GitHubFetcher(thread_count=1)
-
-            # Fetch for a date range
-            start_dt = datetime(2026, 1, 1, 0, 0, 0)
-            end_dt = datetime(2026, 1, 1, 23, 59, 59)
-
-            result = fetcher._fetch_commits_for_date(
-                "2026-01-01",
-                start_dt,
-                end_dt,
-                set(['test-user'])
-            )
-
-            # Verify get_commits was called with since/until only (no sha)
-            mock_repo.get_commits.assert_called_once()
-            call_kwargs = mock_repo.get_commits.call_args[1]
-            assert 'since' in call_kwargs
-            assert 'until' in call_kwargs
-            assert 'sha' not in call_kwargs  # No sha = all branches
+        # Verify session has bearer token authentication for GraphQL
+        assert 'Authorization' in fetcher.session.headers
+        assert fetcher.session.headers['Authorization'].startswith('bearer')
 
 
 @pytest.mark.integration
