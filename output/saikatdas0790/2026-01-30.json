@@ -10,5 +10,23 @@
     "dolr-ai/yral-bare-metal-kubernetes-cluster"
   ],
   "repo_count": 2,
-  "processed_at": "2026-02-03T18:37:16.202332Z"
+  "branch_breakdown": {
+    "dolr-ai/hetzner-bare-metal-fleet": {
+      "unknown": {
+        "additions": 66,
+        "deletions": 63,
+        "total_loc": 129,
+        "commit_count": 3
+      }
+    },
+    "dolr-ai/yral-bare-metal-kubernetes-cluster": {
+      "main": {
+        "additions": 18,
+        "deletions": 0,
+        "total_loc": 18,
+        "commit_count": 1
+      }
+    }
+  },
+  "processed_at": "2026-02-03T18:49:13.209909Z"
 }

@@ -9,5 +9,15 @@
     "dolr-ai/yral-mobile"
   ],
   "repo_count": 1,
-  "processed_at": "2026-02-03T18:37:16.202060Z"
+  "branch_breakdown": {
+    "dolr-ai/yral-mobile": {
+      "unknown": {
+        "additions": 700,
+        "deletions": 154,
+        "total_loc": 854,
+        "commit_count": 4
+      }
+    }
+  },
+  "processed_at": "2026-02-03T18:49:13.209508Z"
 }

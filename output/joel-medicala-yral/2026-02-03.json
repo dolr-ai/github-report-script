@@ -9,5 +9,15 @@
     "dolr-ai/self-hosted-video-models"
   ],
   "repo_count": 1,
-  "processed_at": "2026-02-03T18:37:16.209581Z"
+  "branch_breakdown": {
+    "dolr-ai/self-hosted-video-models": {
+      "main": {
+        "additions": 12750,
+        "deletions": 58,
+        "total_loc": 12808,
+        "commit_count": 1
+      }
+    }
+  },
+  "processed_at": "2026-02-03T18:49:13.219335Z"
 }

@@ -82,19 +82,42 @@ class DataProcessor:
             'deletions': 0,
             'total_loc': 0,
             'commit_count': 0,
-            'repositories': set()
+            'repositories': set(),
+            'branch_breakdown': defaultdict(lambda: defaultdict(lambda: {
+                'additions': 0,
+                'deletions': 0,
+                'total_loc': 0,
+                'commit_count': 0
+            }))
         })
 
         for commit in commits:
             author = commit.get('author')
             if author and author in user_ids:
                 stats = commit.get('stats', {})
+                repository = commit.get('repository', '')
+                branches = commit.get('branches', [])
+                
+                # Aggregate overall metrics
                 user_metrics[author]['additions'] += stats.get('additions', 0)
                 user_metrics[author]['deletions'] += stats.get('deletions', 0)
                 user_metrics[author]['total_loc'] += stats.get('total', 0)
                 user_metrics[author]['commit_count'] += 1
-                user_metrics[author]['repositories'].add(
-                    commit.get('repository', ''))
+                user_metrics[author]['repositories'].add(repository)
+                
+                # Handle commits that appear on multiple branches
+                if branches:
+                    for branch in branches:
+                        user_metrics[author]['branch_breakdown'][repository][branch]['additions'] += stats.get('additions', 0)
+                        user_metrics[author]['branch_breakdown'][repository][branch]['deletions'] += stats.get('deletions', 0)
+                        user_metrics[author]['branch_breakdown'][repository][branch]['total_loc'] += stats.get('total', 0)
+                        user_metrics[author]['branch_breakdown'][repository][branch]['commit_count'] += 1
+                else:
+                    # Commits with no branch info go to 'unknown'
+                    user_metrics[author]['branch_breakdown'][repository]['unknown']['additions'] += stats.get('additions', 0)
+                    user_metrics[author]['branch_breakdown'][repository]['unknown']['deletions'] += stats.get('deletions', 0)
+                    user_metrics[author]['branch_breakdown'][repository]['unknown']['total_loc'] += stats.get('total', 0)
+                    user_metrics[author]['branch_breakdown'][repository]['unknown']['commit_count'] += 1
 
         # Write output for each user
         for username in user_ids:
@@ -107,6 +130,12 @@ class DataProcessor:
             # Convert set to list for JSON serialization
             repos_list = sorted(
                 list(metrics['repositories'])) if metrics['repositories'] else []
+            
+            # Convert branch_breakdown nested defaultdicts to regular dicts for JSON
+            branch_breakdown = {}
+            if 'branch_breakdown' in metrics:
+                for repo, branches in metrics['branch_breakdown'].items():
+                    branch_breakdown[repo] = dict(branches)
 
             output_data = {
                 'date': date_str,
@@ -117,6 +146,7 @@ class DataProcessor:
                 'commit_count': metrics['commit_count'],
                 'repositories': repos_list,
                 'repo_count': len(repos_list),
+                'branch_breakdown': branch_breakdown,
                 'processed_at': datetime.utcnow().isoformat() + 'Z'
             }
 
@@ -212,7 +242,8 @@ class DataProcessor:
                     'total_loc': 0,
                     'commit_count': 0,
                     'repositories': [],
-                    'repo_count': 0
+                    'repo_count': 0,
+                    'branch_breakdown': {}
                 }
 
             current_date += timedelta(days=1)

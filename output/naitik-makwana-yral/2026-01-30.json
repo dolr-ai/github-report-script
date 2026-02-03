@@ -9,5 +9,21 @@
     "dolr-ai/hashicorp-vault-service"
   ],
   "repo_count": 1,
-  "processed_at": "2026-02-03T18:37:16.203182Z"
+  "branch_breakdown": {
+    "dolr-ai/hashicorp-vault-service": {
+      "naitik/initial_setup": {
+        "additions": 2,
+        "deletions": 0,
+        "total_loc": 2,
+        "commit_count": 1
+      },
+      "unknown": {
+        "additions": 233,
+        "deletions": 106,
+        "total_loc": 339,
+        "commit_count": 11
+      }
+    }
+  },
+  "processed_at": "2026-02-03T18:49:13.211591Z"
 }

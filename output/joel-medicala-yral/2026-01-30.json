@@ -11,5 +11,31 @@
     "dolr-ai/yral-metadata"
   ],
   "repo_count": 3,
-  "processed_at": "2026-02-03T18:37:16.202829Z"
+  "branch_breakdown": {
+    "dolr-ai/yral-metadata": {
+      "master": {
+        "additions": 345,
+        "deletions": 340,
+        "total_loc": 685,
+        "commit_count": 1
+      }
+    },
+    "dolr-ai/yral-auth-v2": {
+      "unknown": {
+        "additions": 206,
+        "deletions": 7,
+        "total_loc": 213,
+        "commit_count": 2
+      }
+    },
+    "dolr-ai/self-hosted-video-models": {
+      "unknown": {
+        "additions": 164,
+        "deletions": 2,
+        "total_loc": 166,
+        "commit_count": 5
+      }
+    }
+  },
+  "processed_at": "2026-02-03T18:49:13.210458Z"
 }
