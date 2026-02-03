@@ -18,6 +18,9 @@ jobs:
 
       - name: Run in Dev Container
         uses: devcontainers/ci@v0.3
+        env:
+          ANSIBLE_VAULT_PASSWORD: ${{ secrets.ANSIBLE_VAULT_PASSWORD }}
+          EXECUTION_MODE: "fetch_and_chart"
         with:
           runCmd: |
             # Set up CI environment
@@ -25,9 +28,6 @@ jobs:
             
             # Run the report generation
             python src/main.py
-          env:
-            ANSIBLE_VAULT_PASSWORD: ${{ secrets.ANSIBLE_VAULT_PASSWORD }}
-            EXECUTION_MODE: "fetch_and_chart"
 
       - name: Upload report artifacts
         uses: actions/upload-artifact@v4
