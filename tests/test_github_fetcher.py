@@ -176,3 +176,70 @@ class TestGitHubFetcherIntegration:
             author = commit['author']
             assert '[bot]' not in author.lower(), \
                 f"Bot commit not filtered: {author}"
+
+    def test_non_default_branches_included(self, github_client, dolr_ai_org, temp_cache_dir):
+        """Test that commits include branch information and have non-default branches"""
+        from src.config import USER_IDS
+
+        fetcher = GitHubFetcher(thread_count=8)
+
+        # Fetch commits from recent date range to get enough data
+        end_date = datetime.now() - timedelta(days=1)
+        start_date = end_date - timedelta(days=7)  # Last 7 days
+
+        results = fetcher.fetch_commits(
+            start_date,
+            end_date,
+            USER_IDS,
+            force_refresh=True
+        )
+
+        # Collect all commits from all dates
+        all_commits = []
+        for date_str, date_data in results.items():
+            all_commits.extend(date_data.get('commits', []))
+
+        print(f"\n\nTotal commits fetched: {len(all_commits)}")
+
+        # Verify all commits are from dolr-ai organization
+        for commit in all_commits:
+            assert commit['repository'].startswith(f"{GITHUB_ORG}/"), \
+                f"Commit from wrong org: {commit['repository']}"
+
+        print(f"✓ All commits are from {GITHUB_ORG} organization")
+
+        # Verify commits have branches field
+        for commit in all_commits:
+            assert 'branches' in commit, \
+                f"Commit {commit['sha'][:7]} missing 'branches' field"
+
+        print("✓ All commits have 'branches' field")
+
+        # Collect all unique non-default branches
+        default_branches = {'main', 'master', 'develop'}
+        all_non_default_branches = set()
+
+        for commit in all_commits:
+            branches = commit.get('branches', [])
+            non_default = [b for b in branches if b not in default_branches]
+            all_non_default_branches.update(non_default)
+
+        print(
+            f"\nUnique non-default branch names found: {len(all_non_default_branches)}")
+        print("\nNon-default branch names:")
+        for branch in sorted(all_non_default_branches):
+            print(f"  - {branch}")
+
+        # Warn if fewer than 5 unique non-default branches found
+        if len(all_non_default_branches) < 5:
+            import warnings
+            warnings.warn(
+                f"Expected at least 5 unique non-default branches, found {len(all_non_default_branches)}. "
+                f"This may indicate that non-default branch commits are not being captured properly.",
+                UserWarning
+            )
+            print(
+                f"\n⚠ Warning: Only found {len(all_non_default_branches)} unique non-default branches (expected at least 5)")
+        else:
+            print(
+                f"\n✓ Test passed: Found {len(all_non_default_branches)} unique non-default branches")

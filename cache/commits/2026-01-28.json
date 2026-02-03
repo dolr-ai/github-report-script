@@ -1,6 +1,6 @@
 {
   "date": "2026-01-28",
-  "cached_at": "2026-02-03T13:23:32.207922Z",
+  "cached_at": "2026-02-03T17:40:15.492380Z",
   "commits": [
     {
       "sha": "67719d810d76fa0fc428dab9cad7bb86ebce784a",
@@ -12,7 +12,8 @@
         "additions": 1,
         "deletions": 1,
         "total": 2
-      }
+      },
+      "branches": []
     },
     {
       "sha": "3f8001a1e9b975f48df4390a7555cbccb8ee2f7a",
@@ -24,7 +25,8 @@
         "additions": 147,
         "deletions": 11,
         "total": 158
-      }
+      },
+      "branches": []
     },
     {
       "sha": "e30cb1e373eb62f06462e8b959a7375d12118f55",
@@ -36,7 +38,8 @@
         "additions": 39,
         "deletions": 240,
         "total": 279
-      }
+      },
+      "branches": []
     },
     {
       "sha": "f6a2bc2f5747a341c82ea4cd8af82693d630e04e",
@@ -48,7 +51,8 @@
         "additions": 1357,
         "deletions": 1846,
         "total": 3203
-      }
+      },
+      "branches": []
     },
     {
       "sha": "fa896e2fb0cd02c446be725f8f116e89c36cd6c3",
@@ -60,7 +64,8 @@
         "additions": 3,
         "deletions": 74,
         "total": 77
-      }
+      },
+      "branches": []
     },
     {
       "sha": "dbfbaadaf74ef5324883d26871aad5ef80089d86",
@@ -72,7 +77,8 @@
         "additions": 355,
         "deletions": 221,
         "total": 576
-      }
+      },
+      "branches": []
     },
     {
       "sha": "877602108a9571acf64e3283727f29892c124940",
@@ -84,7 +90,8 @@
         "additions": 3,
         "deletions": 3,
         "total": 6
-      }
+      },
+      "branches": []
     },
     {
       "sha": "f810f89ccabf47f6971dc62830c69a03718b0729",
@@ -96,7 +103,8 @@
         "additions": 1,
         "deletions": 1,
         "total": 2
-      }
+      },
+      "branches": []
     },
     {
       "sha": "27ace0f1add07570212ad9c2b4b2726d05eca2a3",
@@ -108,7 +116,8 @@
         "additions": 0,
         "deletions": 0,
         "total": 0
-      }
+      },
+      "branches": []
     },
     {
       "sha": "894ca0e715e3b8983e613472ee9d8de32a4ae553",
@@ -120,7 +129,8 @@
         "additions": 115,
         "deletions": 1,
         "total": 116
-      }
+      },
+      "branches": []
     },
     {
       "sha": "8231d2e5205ccac86c17419c25480606dccafc29",
@@ -132,7 +142,8 @@
         "additions": 2829,
         "deletions": 110,
         "total": 2939
-      }
+      },
+      "branches": []
     },
     {
       "sha": "73f4eb768b487f255aa697274d3ad5c12e91f603",
@@ -144,7 +155,8 @@
         "additions": 1,
         "deletions": 4,
         "total": 5
-      }
+      },
+      "branches": []
     },
     {
       "sha": "d150e3938184f257d98f6cb769053f8f969d3147",
@@ -156,7 +168,8 @@
         "additions": 28,
         "deletions": 3,
         "total": 31
-      }
+      },
+      "branches": []
     },
     {
       "sha": "5fece9c31cc858a0ffafd2f905e1dcadfa13b6de",
@@ -168,7 +181,10 @@
         "additions": 1384,
         "deletions": 1059,
         "total": 2443
-      }
+      },
+      "branches": [
+        "main"
+      ]
     },
     {
       "sha": "dde6414267ce88be61635b2625368dc024049202",
@@ -180,7 +196,8 @@
         "additions": 3,
         "deletions": 5,
         "total": 8
-      }
+      },
+      "branches": []
     },
     {
       "sha": "c443daf7a4b88035fd5c3a45ae5a5b95da45e293",
@@ -192,7 +209,8 @@
         "additions": 12,
         "deletions": 235,
         "total": 247
-      }
+      },
+      "branches": []
     },
     {
       "sha": "f750942d383513090851b60b7718851fecf0d182",
@@ -204,7 +222,8 @@
         "additions": 4,
         "deletions": 0,
         "total": 4
-      }
+      },
+      "branches": []
     },
     {
       "sha": "e46b3d33a317cf791bbeb8807a0a3536b56698af",
@@ -216,7 +235,8 @@
         "additions": 88,
         "deletions": 52,
         "total": 140
-      }
+      },
+      "branches": []
     },
     {
       "sha": "3d93ffd72919813d6e79faf91f87ee87eae9e39c",
@@ -228,7 +248,8 @@
         "additions": 0,
         "deletions": 183,
         "total": 183
-      }
+      },
+      "branches": []
     },
     {
       "sha": "a6360c107a7a8742ccbe51528d40aaa9b996f5b2",
@@ -240,7 +261,8 @@
         "additions": 376,
         "deletions": 264,
         "total": 640
-      }
+      },
+      "branches": []
     },
     {
       "sha": "49bfb2bf88169498a9ab3d8caa309798232b690f",
@@ -252,7 +274,8 @@
         "additions": 61,
         "deletions": 130,
         "total": 191
-      }
+      },
+      "branches": []
     },
     {
       "sha": "321e9d237538624678296624ebd39f29bdaeb64c",
@@ -264,7 +287,8 @@
         "additions": 52,
         "deletions": 16,
         "total": 68
-      }
+      },
+      "branches": []
     },
     {
       "sha": "ab660952e930c027190ee3e91dba202ae8315fd5",
@@ -276,7 +300,8 @@
         "additions": 6,
         "deletions": 6,
         "total": 12
-      }
+      },
+      "branches": []
     },
     {
       "sha": "3c8d432587b5fc637f672f0ad302d640540bce29",
@@ -288,7 +313,8 @@
         "additions": 3,
         "deletions": 3,
         "total": 6
-      }
+      },
+      "branches": []
     },
     {
       "sha": "43b3ea1b490b90d87a1c0f58dbef127b57bc1259",
@@ -300,7 +326,8 @@
         "additions": 325,
         "deletions": 141,
         "total": 466
-      }
+      },
+      "branches": []
     },
     {
       "sha": "5e0d8c0db8fe1336d23d2afef27f4d92d31617c2",
@@ -312,7 +339,8 @@
         "additions": 16,
         "deletions": 32,
         "total": 48
-      }
+      },
+      "branches": []
     },
     {
       "sha": "92a2a1ddffbe7dbcd31eb506b4eefae551b60450",
@@ -324,7 +352,10 @@
         "additions": 1,
         "deletions": 0,
         "total": 1
-      }
+      },
+      "branches": [
+        "feat/add-total-credits-alloted"
+      ]
     },
     {
       "sha": "7a842738b72b94d057bda74b2f31004a151fee47",
@@ -336,7 +367,8 @@
         "additions": 15,
         "deletions": 32,
         "total": 47
-      }
+      },
+      "branches": []
     }
   ],
   "commit_count": 28

@@ -1,6 +1,6 @@
 {
   "date": "2026-02-03",
-  "cached_at": "2026-02-03T13:43:47.328520Z",
+  "cached_at": "2026-02-03T17:46:00.826992Z",
   "commits": [
     {
       "sha": "77e0188467e138a963a3fc8fc8e55d225fcdf9ea",
@@ -12,7 +12,10 @@
         "additions": 969,
         "deletions": 48,
         "total": 1017
-      }
+      },
+      "branches": [
+        "develop"
+      ]
     },
     {
       "sha": "ea9db55c4566fb9ade91d49c3f3e437d7761d089",
@@ -24,7 +27,49 @@
         "additions": 2,
         "deletions": 2,
         "total": 4
-      }
+      },
+      "branches": []
+    },
+    {
+      "sha": "d01fa8e77d731173575432d0da0da9d96c591a04",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-02-03T17:37:54+00:00",
+      "message": "fix: redirect uri for multiple deployments (#43)",
+      "stats": {
+        "additions": 117,
+        "deletions": 46,
+        "total": 163
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "fb4a31c1a605c4504fc9f459f9f318387bd00b09",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-02-03T17:08:30+00:00",
+      "message": "Revert \"fix: redirect uri for multiple deployments (#41)\" (#42)",
+      "stats": {
+        "additions": 46,
+        "deletions": 133,
+        "total": 179
+      },
+      "branches": []
+    },
+    {
+      "sha": "412d4d42a9510e7a8046326756934eaac860c89e",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-02-03T16:18:19+00:00",
+      "message": "fix: redirect uri for multiple deployments (#41)",
+      "stats": {
+        "additions": 133,
+        "deletions": 46,
+        "total": 179
+      },
+      "branches": []
     },
     {
       "sha": "08b23fdfe327d6920f80e2b360fc5b4251c0e15c",
@@ -36,7 +81,23 @@
         "additions": 38,
         "deletions": 0,
         "total": 38
-      }
+      },
+      "branches": []
+    },
+    {
+      "sha": "d5e1ff69b805b8d61ea186d77053e105a016504f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-02-03T14:20:18+00:00",
+      "message": "Update vault file paths in workflows to use inventory directory for SSH key extraction",
+      "stats": {
+        "additions": 6,
+        "deletions": 6,
+        "total": 12
+      },
+      "branches": [
+        "main"
+      ]
     },
     {
       "sha": "c68dcfc2a92ec2e08767a9aad547e00ac8ebd871",
@@ -48,7 +109,8 @@
         "additions": 27,
         "deletions": 11,
         "total": 38
-      }
+      },
+      "branches": []
     },
     {
       "sha": "5e5610b43112e138d850e36128324f915b9e9cda",
@@ -60,7 +122,8 @@
         "additions": 14,
         "deletions": 39,
         "total": 53
-      }
+      },
+      "branches": []
     },
     {
       "sha": "00de92a15b54ffe49aca0a35e56d58f590ea7504",
@@ -72,7 +135,8 @@
         "additions": 17,
         "deletions": 0,
         "total": 17
-      }
+      },
+      "branches": []
     },
     {
       "sha": "299c2bf906f1f171c8922e544bf28980473c7021",
@@ -84,7 +148,8 @@
         "additions": 0,
         "deletions": 1,
         "total": 1
-      }
+      },
+      "branches": []
     },
     {
       "sha": "3b009223a65e09421004fc1ee2893bd804ed6695",
@@ -96,7 +161,168 @@
         "additions": 1,
         "deletions": 0,
         "total": 1
-      }
+      },
+      "branches": []
+    },
+    {
+      "sha": "c382b74edbc9a5f303e601130043b992de489642",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/self-hosted-video-models",
+      "timestamp": "2026-02-03T16:36:09+00:00",
+      "message": "feat: add testing workflows for comfy ui",
+      "stats": {
+        "additions": 12750,
+        "deletions": 58,
+        "total": 12808
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "feefc4c8745580414f048d395bc0fe4fa9b96737",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-03T16:30:38+00:00",
+      "message": "fix: Pass environment variables correctly to devcontainer",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "09d2242b3c04be6ac859413a2237491abb9be3b8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-03T16:11:43+00:00",
+      "message": "fix: Move env block to correct level in workflow file",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": []
+    },
+    {
+      "sha": "c5f0b1c121f546d8de313c473663b90af89fc07c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-03T16:08:10+00:00",
+      "message": "chore: Update devcontainer features and remove unnecessary line from nightly report workflow",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": []
+    },
+    {
+      "sha": "d3ca4b1c7f14f4fa949e3c71866f5cdcd388bd9c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-03T16:01:36+00:00",
+      "message": "chore: Update nightly report workflow to trigger on push to main branch",
+      "stats": {
+        "additions": 3,
+        "deletions": 0,
+        "total": 3
+      },
+      "branches": []
+    },
+    {
+      "sha": "4361bda45a67ad1717fb2e2870f64542689a94f7",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-03T16:00:40+00:00",
+      "message": "chore: Remove outdated cached commit data and metadata for dates from January 28 to February 3, 2026",
+      "stats": {
+        "additions": 0,
+        "deletions": 58,
+        "total": 58
+      },
+      "branches": []
+    },
+    {
+      "sha": "3b5cee0c0b0bb0d96da2eb78d894ea1795dea8af",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-03T15:55:35+00:00",
+      "message": "docs: Update README and pytest.ini for test configuration clarity; refactor test imports and add uni",
+      "stats": {
+        "additions": 42,
+        "deletions": 43,
+        "total": 85
+      },
+      "branches": []
+    },
+    {
+      "sha": "1f09793d06647c1f12d66eb6ff659dac60a073c9",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-03T15:25:29+00:00",
+      "message": "Enhance CI/CD setup and testing framework",
+      "stats": {
+        "additions": 1029,
+        "deletions": 17,
+        "total": 1046
+      },
+      "branches": []
+    },
+    {
+      "sha": "0a7ddd9b901de80edb9d14acf333e5a1e69c0399",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-03T14:49:51+00:00",
+      "message": "feat: Enhance report generation by creating dated folders and updating chart plotting to use lines a",
+      "stats": {
+        "additions": 43,
+        "deletions": 29,
+        "total": 72
+      },
+      "branches": []
+    },
+    {
+      "sha": "46ed75b1df4e68abfb89cd4dcc29297a5bd0a0da",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-03T14:30:27+00:00",
+      "message": "Refactor main.py: Reorder imports for clarity, add logging, and update .gitignore to include backup ",
+      "stats": {
+        "additions": 21,
+        "deletions": 13,
+        "total": 34
+      },
+      "branches": []
+    },
+    {
+      "sha": "e8a8f9b596d8e63a6e30f9e25f181a1741a6ca0e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-03T14:22:41+00:00",
+      "message": "Add daily contribution records for Sarvesh Sharma and Shivam Bhavsar from January 5 to January 27, 2",
+      "stats": {
+        "additions": 7078,
+        "deletions": 4,
+        "total": 7082
+      },
+      "branches": []
+    },
+    {
+      "sha": "0a4c903192d38710e81995730a76d04481d63dce",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-03T13:47:50+00:00",
+      "message": "Add daily contribution reports for multiple users from January 28 to February 3, 2026",
+      "stats": {
+        "additions": 2754,
+        "deletions": 76,
+        "total": 2830
+      },
+      "branches": []
     },
     {
       "sha": "bdb8f1f95dbd1c5de4fe62432732a561f1aa641f",
@@ -108,7 +334,8 @@
         "additions": 982,
         "deletions": 47,
         "total": 1029
-      }
+      },
+      "branches": []
     },
     {
       "sha": "48099e3c236616f5d06eab2b21500988271109a4",
@@ -120,7 +347,8 @@
         "additions": 13,
         "deletions": 0,
         "total": 13
-      }
+      },
+      "branches": []
     },
     {
       "sha": "64010d24727b971df46edefa5caeeae1db0eefdd",
@@ -132,7 +360,8 @@
         "additions": 1203,
         "deletions": 535,
         "total": 1738
-      }
+      },
+      "branches": []
     },
     {
       "sha": "ba6391c7a8afe94b8a54ebb9f4beae14501a2fa1",
@@ -144,7 +373,8 @@
         "additions": 1901,
         "deletions": 2,
         "total": 1903
-      }
+      },
+      "branches": []
     },
     {
       "sha": "4cdc66935d1cbcf7e902082df36401c87acfcb86",
@@ -156,8 +386,9 @@
         "additions": 22,
         "deletions": 0,
         "total": 22
-      }
+      },
+      "branches": []
     }
   ],
-  "commit_count": 13
+  "commit_count": 29
 }

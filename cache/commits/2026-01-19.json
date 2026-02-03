@@ -1,6 +1,6 @@
 {
   "date": "2026-01-19",
-  "cached_at": "2026-02-03T14:14:01.745666Z",
+  "cached_at": "2026-02-03T17:31:24.717585Z",
   "commits": [
     {
       "sha": "f68efb897407efe52c84ecd1d7efd56d3fe71192",
@@ -12,7 +12,10 @@
         "additions": 1,
         "deletions": 1,
         "total": 2
-      }
+      },
+      "branches": [
+        "naitik/update-metadata-link"
+      ]
     },
     {
       "sha": "1f7375313fc4a968bf78f42c26398b2c38a55d9d",
@@ -24,7 +27,10 @@
         "additions": 2,
         "deletions": 2,
         "total": 4
-      }
+      },
+      "branches": [
+        "naitik/update_metadata_url"
+      ]
     },
     {
       "sha": "4534b71fbd789dfb7e3c6abbca14a02a36eb37c1",
@@ -36,7 +42,8 @@
         "additions": 15,
         "deletions": 10,
         "total": 25
-      }
+      },
+      "branches": []
     },
     {
       "sha": "8ce1acbbb0fd752579b653d1944edf43a39ea8b2",
@@ -48,7 +55,8 @@
         "additions": 2328,
         "deletions": 501,
         "total": 2829
-      }
+      },
+      "branches": []
     },
     {
       "sha": "4d74bd25d7b7bacb1fa99dc7b5b05d1f21e6e4d0",
@@ -60,7 +68,10 @@
         "additions": 1,
         "deletions": 1,
         "total": 2
-      }
+      },
+      "branches": [
+        "naitik/update_metadata_url"
+      ]
     },
     {
       "sha": "c22416470ca958ed771378497c4b726b09ef958a",
@@ -72,7 +83,10 @@
         "additions": 1,
         "deletions": 1,
         "total": 2
-      }
+      },
+      "branches": [
+        "naitik/updata_metadata_url"
+      ]
     },
     {
       "sha": "d8b1bd673924c42f1e87b43d530c26f6a2531ccc",
@@ -84,7 +98,8 @@
         "additions": 572,
         "deletions": 29,
         "total": 601
-      }
+      },
+      "branches": []
     }
   ],
   "commit_count": 7

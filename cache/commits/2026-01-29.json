@@ -1,6 +1,6 @@
 {
   "date": "2026-01-29",
-  "cached_at": "2026-02-03T13:23:28.500723Z",
+  "cached_at": "2026-02-03T17:45:23.152421Z",
   "commits": [
     {
       "sha": "c458eea4d3f8c53d3c59520bc9b04080b778325d",
@@ -12,7 +12,8 @@
         "additions": 238,
         "deletions": 75,
         "total": 313
-      }
+      },
+      "branches": []
     },
     {
       "sha": "272c5de88b5f5e013f37877b555d91d7f3df8cf7",
@@ -24,7 +25,8 @@
         "additions": 22,
         "deletions": 3,
         "total": 25
-      }
+      },
+      "branches": []
     },
     {
       "sha": "15f719c4c1a905dbd11f8d574faccd1e19a4d612",
@@ -36,7 +38,8 @@
         "additions": 36,
         "deletions": 47,
         "total": 83
-      }
+      },
+      "branches": []
     },
     {
       "sha": "4d1238a4c58122bfed8a2a12ded5b61d63f635e1",
@@ -48,7 +51,8 @@
         "additions": 477,
         "deletions": 257,
         "total": 734
-      }
+      },
+      "branches": []
     },
     {
       "sha": "027b950fe1b1e9f462aae2f8013583bc93f7b86a",
@@ -60,7 +64,8 @@
         "additions": 2,
         "deletions": 2,
         "total": 4
-      }
+      },
+      "branches": []
     },
     {
       "sha": "e9d80b8e20f6ef57a7258e339da42c014b14b041",
@@ -72,7 +77,8 @@
         "additions": 657,
         "deletions": 274,
         "total": 931
-      }
+      },
+      "branches": []
     },
     {
       "sha": "761cf06d631ac84fabb610732b43940341162565",
@@ -84,7 +90,8 @@
         "additions": 205068,
         "deletions": 272,
         "total": 205340
-      }
+      },
+      "branches": []
     },
     {
       "sha": "b827fe0d6df638e410901c676f528d7c3d63a4a8",
@@ -96,7 +103,8 @@
         "additions": 388,
         "deletions": 86,
         "total": 474
-      }
+      },
+      "branches": []
     },
     {
       "sha": "90991b966bbda5f112a3537bd56a87381abda57b",
@@ -108,7 +116,8 @@
         "additions": 59,
         "deletions": 5,
         "total": 64
-      }
+      },
+      "branches": []
     },
     {
       "sha": "717e46fd47b2bb881718dcae18d4edaa0c1788fd",
@@ -120,7 +129,8 @@
         "additions": 14,
         "deletions": 3,
         "total": 17
-      }
+      },
+      "branches": []
     },
     {
       "sha": "11a6914b74ffe57746a23d806e670b9a201a5ebc",
@@ -132,7 +142,8 @@
         "additions": 4,
         "deletions": 0,
         "total": 4
-      }
+      },
+      "branches": []
     },
     {
       "sha": "9d2889911af6bb56d0fd7cb41413737323921fe3",
@@ -144,7 +155,8 @@
         "additions": 2,
         "deletions": 4,
         "total": 6
-      }
+      },
+      "branches": []
     },
     {
       "sha": "3afb05fc72d55bf88d02f28bb7bc65faf03a49d6",
@@ -156,7 +168,8 @@
         "additions": 308,
         "deletions": 62,
         "total": 370
-      }
+      },
+      "branches": []
     },
     {
       "sha": "b97a3719001e0497961bfc013bf9dfdc1b990e46",
@@ -168,7 +181,8 @@
         "additions": 45,
         "deletions": 2,
         "total": 47
-      }
+      },
+      "branches": []
     },
     {
       "sha": "6ddbe320cb5688b2e12f8158929261ed9464eb97",
@@ -180,7 +194,8 @@
         "additions": 4,
         "deletions": 2,
         "total": 6
-      }
+      },
+      "branches": []
     },
     {
       "sha": "2f7e33f9db25c2e18f2d5d81147a8493c0fa8843",
@@ -192,7 +207,8 @@
         "additions": 4,
         "deletions": 1,
         "total": 5
-      }
+      },
+      "branches": []
     },
     {
       "sha": "eb0f6603684498760d10f863b7fbec54677b1201",
@@ -204,7 +220,8 @@
         "additions": 50,
         "deletions": 7,
         "total": 57
-      }
+      },
+      "branches": []
     },
     {
       "sha": "aefd1734b9d90e8130e1bc7ac2fee185b2fb1d2c",
@@ -216,7 +233,10 @@
         "additions": 7,
         "deletions": 4,
         "total": 11
-      }
+      },
+      "branches": [
+        "main"
+      ]
     },
     {
       "sha": "214ba99ccb7379869fbd9395d65eaf13e0b0d17a",
@@ -228,7 +248,10 @@
         "additions": 219,
         "deletions": 12,
         "total": 231
-      }
+      },
+      "branches": [
+        "feat/add-routes-to-update-user-credits"
+      ]
     },
     {
       "sha": "dce720716c9322fa877d85074b4206608d5f19f7",
@@ -240,7 +263,10 @@
         "additions": 29,
         "deletions": 10,
         "total": 39
-      }
+      },
+      "branches": [
+        "main"
+      ]
     },
     {
       "sha": "9dc74cc4a6eeeafea93b23f1cef55cd053a3b823",
@@ -252,7 +278,8 @@
         "additions": 727,
         "deletions": 140,
         "total": 867
-      }
+      },
+      "branches": []
     }
   ],
   "commit_count": 21

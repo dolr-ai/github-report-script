@@ -151,15 +151,19 @@ Add or remove usernames as needed.
 """
 
 # --- Performance Configuration ---
-THREAD_COUNT = 4
+THREAD_COUNT = 8
 """
 Number of concurrent threads for API requests.
 Higher values = faster but may hit rate limits.
 
 Recommended:
-    - 2-4 threads: Conservative (default)
-    - 8-16 threads: Aggressive (if you have high rate limits)
+    - 2-4 threads: Conservative
+    - 8 threads: Optimal (current - matches connection pool size with exponential backoff protection)
+    - 16+ threads: May exceed connection pool capacity (requires pool_size adjustment)
     - 1 thread: Debugging or rate limit issues
+
+Note: PyGithub uses urllib3 connection pooling (default pool_size=10).
+THREAD_COUNT should be <= pool_size to avoid connection pool warnings.
 """
 
 # --- Bot Filtering Configuration ---

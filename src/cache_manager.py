@@ -158,3 +158,66 @@ class CacheManager:
                 cache_file = self.get_cache_file_path(date)
                 os.remove(cache_file)
             print("Cleared all cache files")
+
+    def validate_cache_structure(self) -> bool:
+        """Validate that cached commits have the expected structure with branches field
+
+        Returns:
+            True if cache structure is valid, False if outdated
+        """
+        cached_dates = self.get_cached_dates()
+        if not cached_dates:
+            return True  # No cache to validate
+
+        # Check first cached file for structure
+        first_date = cached_dates[0]
+        cached_data = self.read_cache(first_date)
+
+        if not cached_data:
+            return True  # Empty cache is fine
+
+        commits = cached_data.get('commits', [])
+        if not commits:
+            return True  # No commits to validate
+
+        # Check if first commit has 'branches' field
+        first_commit = commits[0]
+        has_branches = 'branches' in first_commit
+
+        if not has_branches:
+            logger.warning(
+                f"Cache structure is outdated (missing 'branches' field). "
+                f"Cache will be cleared and re-fetched."
+            )
+
+        return has_branches
+
+    def clear_all_cache(self):
+        """Clear all cache files, metadata, and output directories"""
+        import shutil
+        from src.config import OUTPUT_DIR
+
+        logger.info("Clearing all cache and output data...")
+
+        # Clear cache commits
+        if os.path.exists(CACHE_COMMITS_DIR):
+            for date in self.get_cached_dates():
+                cache_file = self.get_cache_file_path(date)
+                if os.path.exists(cache_file):
+                    os.remove(cache_file)
+            logger.info(f"Cleared {len(self.get_cached_dates())} cache files")
+
+        # Clear metadata
+        if os.path.exists(CACHE_METADATA_FILE):
+            os.remove(CACHE_METADATA_FILE)
+            logger.info("Cleared cache metadata")
+
+        # Clear output directories
+        if os.path.exists(OUTPUT_DIR):
+            for user_dir in os.listdir(OUTPUT_DIR):
+                user_path = os.path.join(OUTPUT_DIR, user_dir)
+                if os.path.isdir(user_path):
+                    shutil.rmtree(user_path)
+            logger.info("Cleared all user output directories")
+
+        logger.info("Cache clearing complete")

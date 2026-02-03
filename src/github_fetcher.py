@@ -7,8 +7,9 @@ import threading
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta
-from typing import Dict, List, Set
+from typing import Dict, List, Set, Callable, Any
 from collections import defaultdict
+from functools import wraps
 
 from github import Github, GithubException, RateLimitExceededException
 from tqdm import tqdm
@@ -19,6 +20,47 @@ from src.cache_manager import CacheManager
 logger = logging.getLogger(__name__)
 
 
+def retry_with_exponential_backoff(max_retries: int = 5, base_delay: int = 60):
+    """Decorator that retries a function with exponential backoff on rate limit errors
+
+    Args:
+        max_retries: Maximum number of retry attempts
+        base_delay: Base delay in seconds (will be doubled each retry)
+    """
+    def decorator(func: Callable) -> Callable:
+        @wraps(func)
+        def wrapper(*args, **kwargs) -> Any:
+            retries = 0
+            delay = base_delay
+            max_delay = 300  # Cap at 5 minutes
+
+            while retries <= max_retries:
+                try:
+                    return func(*args, **kwargs)
+                except GithubException as e:
+                    if e.status in [403, 429]:  # Rate limit errors
+                        if retries >= max_retries:
+                            logger.error(
+                                f"Max retries ({max_retries}) reached for {func.__name__}. Giving up."
+                            )
+                            raise
+
+                        current_delay = min(delay, max_delay)
+                        logger.warning(
+                            f"Rate limit hit in {func.__name__}. "
+                            f"Retry {retries + 1}/{max_retries} after {current_delay}s"
+                        )
+                        time.sleep(current_delay)
+                        delay *= 2  # Exponential backoff
+                        retries += 1
+                    else:
+                        raise  # Re-raise non-rate-limit errors
+
+            return func(*args, **kwargs)
+        return wrapper
+    return decorator
+
+
 class GitHubFetcher:
     """Fetches commit data from GitHub with concurrent threading"""
 
@@ -26,7 +68,10 @@ class GitHubFetcher:
         self.thread_count = thread_count
         self.rate_limit_lock = threading.Lock()
         self.cache_manager = CacheManager()
-        self.github_client = Github(GITHUB_TOKEN, per_page=100)
+        # Configure connection pool size to match thread count + buffer
+        pool_size = max(thread_count + 2, 10)
+        self.github_client = Github(
+            GITHUB_TOKEN, per_page=100, pool_size=pool_size)
 
     def _check_rate_limit(self):
         """Check GitHub API rate limit and wait if necessary"""
@@ -55,6 +100,45 @@ class GitHubFetcher:
             except Exception as e:
                 # If rate limit check fails, log but continue
                 logger.warning(f"Could not check rate limit: {e}")
+
+    @retry_with_exponential_backoff(max_retries=5, base_delay=60)
+    def _fetch_commit_branches(self, repo, commit_sha: str) -> List[str]:
+        """Fetch list of branch names containing the given commit
+
+        Uses GitHub REST API endpoint: /repos/{owner}/{repo}/commits/{sha}/branches-where-head
+        Caches branch list per repository to minimize API calls.
+
+        Args:
+            repo: Repository object
+            commit_sha: Commit SHA to look up
+
+        Returns:
+            List of branch names containing this commit
+        """
+        try:
+            # Use REST API to get branches where commit is head
+            # PyGithub doesn't have direct method, so use _requester
+            url = f"/repos/{repo.full_name}/commits/{commit_sha}/branches-where-head"
+            headers, data = repo._requester.requestJsonAndCheck(
+                "GET",
+                url
+            )
+
+            # Extract branch names from response
+            branch_names = [branch['name'] for branch in data]
+            return branch_names
+
+        except GithubException as e:
+            if e.status == 404:
+                # Commit not found or no branches
+                logger.debug(f"No branches found for commit {commit_sha[:7]}")
+                return []
+            else:
+                # Let retry decorator handle rate limits
+                raise
+        except Exception as e:
+            logger.debug(f"Error fetching branches for {commit_sha[:7]}: {e}")
+            return []
 
     def _is_bot_commit(self, commit) -> bool:
         """Check if a commit is from a bot using API type check
@@ -156,8 +240,20 @@ class GitHubFetcher:
                                     'additions': commit.stats.additions if commit.stats else 0,
                                     'deletions': commit.stats.deletions if commit.stats else 0,
                                     'total': commit.stats.total if commit.stats else 0
-                                }
+                                },
+                                'branches': []  # Will be populated below
                             }
+
+                            # Fetch branches containing this commit
+                            try:
+                                commit_data['branches'] = self._fetch_commit_branches(
+                                    repo, commit.sha
+                                )
+                            except Exception as e:
+                                logger.debug(
+                                    f"Could not fetch branches for commit {commit.sha[:7]}: {e}"
+                                )
+                                commit_data['branches'] = []
 
                             commits_data.append(commit_data)
                             repo_commit_count += 1
@@ -211,6 +307,14 @@ class GitHubFetcher:
         Returns:
             Dictionary mapping date strings to commit data
         """
+        # Validate cache structure and clear if outdated
+        if not force_refresh and not self.cache_manager.validate_cache_structure():
+            logger.warning(
+                "Cache structure is outdated. Clearing cache and forcing refresh..."
+            )
+            self.cache_manager.clear_all_cache()
+            force_refresh = True
+
         user_ids_set = set(user_ids)
         results = {}
 

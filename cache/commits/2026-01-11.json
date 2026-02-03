@@ -1,6 +1,6 @@
 {
   "date": "2026-01-11",
-  "cached_at": "2026-02-03T14:05:33.136087Z",
+  "cached_at": "2026-02-03T17:23:21.862269Z",
   "commits": [
     {
       "sha": "695f1bce7862c70a94ec54e4d68e7ef05d05b8fd",
@@ -12,7 +12,8 @@
         "additions": 1,
         "deletions": 1,
         "total": 2
-      }
+      },
+      "branches": []
     },
     {
       "sha": "4fe97ddd6d2e90c7f31ff34bdd28c002c9bf5870",
@@ -24,7 +25,10 @@
         "additions": 0,
         "deletions": 0,
         "total": 0
-      }
+      },
+      "branches": [
+        "litestream_sync_interval"
+      ]
     },
     {
       "sha": "7cd7729f39d03caae947736b46c35e83ef5da073",
@@ -36,7 +40,8 @@
         "additions": 2,
         "deletions": 2,
         "total": 4
-      }
+      },
+      "branches": []
     },
     {
       "sha": "bc61e41336b30777e27abe42c858bf6ff29e4131",
@@ -48,7 +53,8 @@
         "additions": 1,
         "deletions": 1,
         "total": 2
-      }
+      },
+      "branches": []
     }
   ],
   "commit_count": 4

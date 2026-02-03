@@ -1,6 +1,6 @@
 {
   "date": "2026-01-13",
-  "cached_at": "2026-02-03T14:09:16.411806Z",
+  "cached_at": "2026-02-03T17:31:09.252400Z",
   "commits": [
     {
       "sha": "d3e31540f3dbd4baeafce83d3ecb1977c516076d",
@@ -12,7 +12,8 @@
         "additions": 67,
         "deletions": 310,
         "total": 377
-      }
+      },
+      "branches": []
     },
     {
       "sha": "92c67a2a9315732c7e3dab9b9004fa17f19274aa",
@@ -24,7 +25,10 @@
         "additions": 2,
         "deletions": 2,
         "total": 4
-      }
+      },
+      "branches": [
+        "feature/subscription-ui"
+      ]
     },
     {
       "sha": "a16bc47078826324beb049ba7b68691dd3462f3a",
@@ -36,7 +40,8 @@
         "additions": 2,
         "deletions": 0,
         "total": 2
-      }
+      },
+      "branches": []
     },
     {
       "sha": "83dc1bfc57762f588f98cf8bbd9c6afc689d0074",
@@ -48,7 +53,8 @@
         "additions": 968,
         "deletions": 0,
         "total": 968
-      }
+      },
+      "branches": []
     },
     {
       "sha": "c5ed43868407182cc60618dca2fea48bd8cc4f15",
@@ -60,7 +66,8 @@
         "additions": 1242,
         "deletions": 35,
         "total": 1277
-      }
+      },
+      "branches": []
     },
     {
       "sha": "c2f53a0525c67f9a8a576cae566f2d134058091b",
@@ -72,7 +79,8 @@
         "additions": 104,
         "deletions": 2,
         "total": 106
-      }
+      },
+      "branches": []
     },
     {
       "sha": "bcc0676892d7069cf4ef048681f5ec83ccc67a3d",
@@ -84,7 +92,10 @@
         "additions": 104,
         "deletions": 2,
         "total": 106
-      }
+      },
+      "branches": [
+        "feat/fix-error-type-for-api"
+      ]
     },
     {
       "sha": "7aa17f41df587222716fd73d59883b251d3e3c74",
@@ -96,7 +107,8 @@
         "additions": 180,
         "deletions": 46,
         "total": 226
-      }
+      },
+      "branches": []
     },
     {
       "sha": "1f941f6b957160287b1df7aa2acb6af8997ba701",
@@ -108,7 +120,8 @@
         "additions": 1,
         "deletions": 1,
         "total": 2
-      }
+      },
+      "branches": []
     },
     {
       "sha": "96b6126005747d09af2b7999a207542e20222ac1",
@@ -120,7 +133,8 @@
         "additions": 84,
         "deletions": 68,
         "total": 152
-      }
+      },
+      "branches": []
     },
     {
       "sha": "acd6642eee691b72e0d052051b8d5f00e068ab85",
@@ -132,7 +146,8 @@
         "additions": 0,
         "deletions": 1,
         "total": 1
-      }
+      },
+      "branches": []
     },
     {
       "sha": "3c512e110344915e02cfdb0498ec7f42c253f871",
@@ -144,7 +159,8 @@
         "additions": 3,
         "deletions": 0,
         "total": 3
-      }
+      },
+      "branches": []
     },
     {
       "sha": "889f6fa3394f0220df89d887c996f3450d2e3d83",
@@ -156,7 +172,8 @@
         "additions": 32,
         "deletions": 4,
         "total": 36
-      }
+      },
+      "branches": []
     },
     {
       "sha": "adfcea4c8b236a0e77cbd758f8c54a261cb1a8df",
@@ -168,7 +185,8 @@
         "additions": 2117,
         "deletions": 769,
         "total": 2886
-      }
+      },
+      "branches": []
     }
   ],
   "commit_count": 14
