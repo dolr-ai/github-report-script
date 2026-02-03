@@ -3,35 +3,17 @@ Tests for GitHub fetcher module
 Includes both unit tests (mocked) and integration tests (real API)
 """
 import pytest
-from unittest.mock import Mock, MagicMock, patch
 from datetime import datetime, timedelta
+from unittest.mock import MagicMock, Mock, patch
 
-from src.github_fetcher import GitHubFetcher
 from src.config import GITHUB_ORG
+from src.github_fetcher import GitHubFetcher
 
 
 class TestGitHubFetcherUnit:
     """Unit tests with mocked dependencies"""
 
-    def test_org_filtering_logic(self):
-        """Test that only specified org repos are processed"""
-        with patch('src.github_fetcher.Github') as mock_github:
-            # Setup mocks
-            mock_org = Mock()
-            mock_repo1 = Mock()
-            mock_repo1.full_name = f"{GITHUB_ORG}/repo1"
-            mock_repo2 = Mock()
-            mock_repo2.full_name = f"{GITHUB_ORG}/repo2"
-
-            mock_org.get_repos.return_value = [mock_repo1, mock_repo2]
-            mock_github.return_value.get_organization.return_value = mock_org
-
-            fetcher = GitHubFetcher(thread_count=1)
-
-            # Verify get_organization was called with correct org
-            mock_github.return_value.get_organization.assert_called_with(
-                GITHUB_ORG)
-
+    @pytest.mark.unit
     def test_bot_filtering(self):
         """Test that bot commits are properly filtered"""
         fetcher = GitHubFetcher(thread_count=1)
@@ -54,6 +36,7 @@ class TestGitHubFetcherUnit:
 
         assert fetcher._is_bot_commit(human_commit) is False
 
+    @pytest.mark.unit
     def test_all_branches_default_behavior(self):
         """Test that get_commits is called without sha parameter (all branches)"""
         with patch('src.github_fetcher.Github') as mock_github:

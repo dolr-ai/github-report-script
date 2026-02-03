@@ -1,10 +1,10 @@
 """
 Test configuration and fixtures for pytest
 """
-import pytest
 import os
-import tempfile
+import pytest
 import shutil
+import tempfile
 from datetime import datetime, timedelta
 from github import Github
 

@@ -5,12 +5,13 @@ import pytest
 from datetime import datetime, timedelta
 from unittest.mock import patch
 
-from src.config import get_date_range, validate_config, DateRangeMode, ExecutionMode
+from src.config import DateRangeMode, ExecutionMode, get_date_range, validate_config
 
 
 class TestDateRangeCalculation:
     """Test date range calculation logic"""
 
+    @pytest.mark.unit
     def test_last_n_days_excludes_today(self):
         """Test that LAST_N_DAYS mode excludes today's data"""
         with patch('src.config.DATE_RANGE_MODE', DateRangeMode.LAST_N_DAYS):
@@ -27,6 +28,7 @@ class TestDateRangeCalculation:
                 assert end_date.minute == 59
                 assert end_date.second == 59
 
+    @pytest.mark.unit
     def test_last_n_days_correct_span(self):
         """Test that LAST_N_DAYS calculates correct date span"""
         with patch('src.config.DATE_RANGE_MODE', DateRangeMode.LAST_N_DAYS):
@@ -37,6 +39,7 @@ class TestDateRangeCalculation:
                 days_diff = (end_date.date() - start_date.date()).days
                 assert days_diff == 6, f"Expected 6 days difference, got {days_diff}"
 
+    @pytest.mark.unit
     def test_custom_range_validation(self):
         """Test that CUSTOM_RANGE validates start < end"""
         with patch('src.config.DATE_RANGE_MODE', DateRangeMode.CUSTOM_RANGE):
@@ -45,6 +48,7 @@ class TestDateRangeCalculation:
                     with pytest.raises(ValueError, match="START_DATE.*must be before.*END_DATE"):
                         get_date_range()
 
+    @pytest.mark.unit
     def test_specific_date_mode(self):
         """Test that SPECIFIC_DATE returns same start and end"""
         with patch('src.config.DATE_RANGE_MODE', DateRangeMode.SPECIFIC_DATE):
@@ -57,12 +61,14 @@ class TestDateRangeCalculation:
 class TestConfigValidation:
     """Test configuration validation"""
 
+    @pytest.mark.unit
     def test_missing_github_token_raises_error(self):
         """Test that missing GITHUB_TOKEN raises ValueError"""
         with patch('src.config.GITHUB_TOKEN', None):
             with pytest.raises(ValueError, match="GITHUB_TOKEN"):
                 validate_config()
 
+    @pytest.mark.unit
     def test_empty_user_ids_raises_error(self):
         """Test that empty USER_IDS raises ValueError"""
         with patch('src.config.GITHUB_TOKEN', 'fake-token'):
@@ -70,6 +76,7 @@ class TestConfigValidation:
                 with pytest.raises(ValueError, match="USER_IDS"):
                     validate_config()
 
+    @pytest.mark.unit
     def test_valid_config_passes(self):
         """Test that valid configuration passes validation"""
         with patch('src.config.GITHUB_TOKEN', 'fake-token'):

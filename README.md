@@ -586,6 +586,10 @@ pytest --cov=src --cov-report=html
 pytest -v
 ```
 
+### Configuration
+
+Tests are configured via [pytest.ini](pytest.ini) which automatically adds the workspace root to Python path. This means test imports work correctly regardless of how your code formatter reorganizes them.
+
 ### Test Structure
 
 - **tests/conftest.py**: Shared fixtures and test configuration
