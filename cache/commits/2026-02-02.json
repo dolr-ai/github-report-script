@@ -1,0 +1,487 @@
+{
+  "date": "2026-02-02",
+  "cached_at": "2026-02-03T13:44:07.478706Z",
+  "commits": [
+    {
+      "sha": "38f33493fd99dc20f68f7112e92c558523f62934",
+      "author": "gravityvi",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2026-02-02T12:42:53+00:00",
+      "message": "feat: add query method to fetch bulk user principals (#641)",
+      "stats": {
+        "additions": 410,
+        "deletions": 20,
+        "total": 430
+      }
+    },
+    {
+      "sha": "a1569e47c699a795c1133d73d79d31a2fb9eb2dd",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-02T17:47:55+00:00",
+      "message": "fix: function prone to broken pipe error (#394)",
+      "stats": {
+        "additions": 9,
+        "deletions": 5,
+        "total": 14
+      }
+    },
+    {
+      "sha": "13835c30a402a79e979a9985136abc56571d7531",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-02T09:10:04+00:00",
+      "message": "Joel/apps script reports api (#393)",
+      "stats": {
+        "additions": 24,
+        "deletions": 9,
+        "total": 33
+      }
+    },
+    {
+      "sha": "931c5f78b55d2879439b6174d0d2f99fd043193d",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-02T08:23:13+00:00",
+      "message": "feat: added apps script proxy (#392)",
+      "stats": {
+        "additions": 76,
+        "deletions": 61,
+        "total": 137
+      }
+    },
+    {
+      "sha": "1685916793674378e6b9ef455f40587da2347069",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-02T06:55:54+00:00",
+      "message": "added report button loggin (#391)",
+      "stats": {
+        "additions": 28,
+        "deletions": 13,
+        "total": 41
+      }
+    },
+    {
+      "sha": "250a9067631f8d2d7f6d2ba45c1e344ad059bbae",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-02T06:02:50+00:00",
+      "message": "feat: added retres (#390)",
+      "stats": {
+        "additions": 439,
+        "deletions": 206,
+        "total": 645
+      }
+    },
+    {
+      "sha": "c9f435edc39fd8990007b25c8cf2e1d1ec046081",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-02T18:50:07+00:00",
+      "message": "Update Sentry DSN for iOS and Android (#833)",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      }
+    },
+    {
+      "sha": "f6f1ff506c12e0478edc522c63edeff2f68c1aaa",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-02T11:53:30+00:00",
+      "message": "Merge pull request #829 from dolr-ai/release/2.6.4",
+      "stats": {
+        "additions": 34,
+        "deletions": 89,
+        "total": 123
+      }
+    },
+    {
+      "sha": "bc7e58c5578e6ca17ca898d39380711ed1d114b4",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-02T11:20:05+00:00",
+      "message": "chore: Increases timeout for dynamic smiley tournament",
+      "stats": {
+        "additions": 32,
+        "deletions": 87,
+        "total": 119
+      }
+    },
+    {
+      "sha": "59901058658cc025905671ee66747a7b2bdccbf4",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-02T06:52:52+00:00",
+      "message": "chore: Increments android app version",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      }
+    },
+    {
+      "sha": "fe5e9348bff23f3c6c6770537bb9ab62d40d25e4",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-02T07:35:09+00:00",
+      "message": "Merge pull request #831 from dolr-ai/fix/draft-yml-prod",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      }
+    },
+    {
+      "sha": "a6a0c7f3da8417532273a51ee6eb876ab6d9e705",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-02T07:34:07+00:00",
+      "message": "fix: Uses draft status for prod app playstore publishing",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      }
+    },
+    {
+      "sha": "cb15682b7ff0f957150f471a80e48c1db9ed796f",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-02T06:46:13+00:00",
+      "message": "Merge pull request #827 from dolr-ai/enhancement/prod-yml-update",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      }
+    },
+    {
+      "sha": "89a21531fda03c3757907a5e88933bc732e288fb",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-02T06:42:41+00:00",
+      "message": "chore: Updates android prod yml to push to prod",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      }
+    },
+    {
+      "sha": "1b7748e33667176a4a3cd2d911ca56ccbba42db4",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-02T06:23:51+00:00",
+      "message": "build: Adds events for dynamic smiley game (#826)",
+      "stats": {
+        "additions": 38,
+        "deletions": 1,
+        "total": 39
+      }
+    },
+    {
+      "sha": "663f50ac46805b2ac5406c905acf15214bfb6ebc",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-02-02T12:49:27+00:00",
+      "message": "feat: update user_info_service candid (#156)",
+      "stats": {
+        "additions": 5,
+        "deletions": 0,
+        "total": 5
+      }
+    },
+    {
+      "sha": "cc80a44925d6dc1cf343feb5b9caabe9bae1b717",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-02-02T13:01:05+00:00",
+      "message": "Fix retry logic: disable automatic fact gathering for CI playbooks",
+      "stats": {
+        "additions": 8,
+        "deletions": 24,
+        "total": 32
+      }
+    },
+    {
+      "sha": "c882cefa1a837c6a1341a0a903ccc140c48395e5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-02-02T12:48:01+00:00",
+      "message": "Add automatic retry logic and comprehensive retry mechanisms for failed hosts",
+      "stats": {
+        "additions": 470,
+        "deletions": 1,
+        "total": 471
+      }
+    },
+    {
+      "sha": "c5d9232fafb6def1b5e797f70d56661b33c11b28",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-02-02T12:28:32+00:00",
+      "message": "Enhance system update playbook to check and display reboot requirement status; update reboot message",
+      "stats": {
+        "additions": 13,
+        "deletions": 2,
+        "total": 15
+      }
+    },
+    {
+      "sha": "a8c2c9821d2ae09a8ef8582c01f8000f6c29f294",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-02-02T11:52:59+00:00",
+      "message": "Enable colored output for Ansible in workflow scripts",
+      "stats": {
+        "additions": 9,
+        "deletions": 0,
+        "total": 9
+      }
+    },
+    {
+      "sha": "219819b04381fadfdec7fc441ee5b0692d01815d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-02-02T11:47:49+00:00",
+      "message": "Refactor workflows to validate Ansible vault password and streamline SSH key extraction process",
+      "stats": {
+        "additions": 24,
+        "deletions": 15,
+        "total": 39
+      }
+    },
+    {
+      "sha": "502fa90eb5019b284d38309cab1c091935146a49",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-02-02T11:30:28+00:00",
+      "message": "Update permissions for DevContainer build job to ensure proper access to contents and packages",
+      "stats": {
+        "additions": 3,
+        "deletions": 0,
+        "total": 3
+      }
+    },
+    {
+      "sha": "2e0c2c14e2844ad027b3cea28d053524ef9b412f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-02-02T08:36:02+00:00",
+      "message": "Refactor SSH key extraction to use a consistent filename across workflows; add cleanup function for ",
+      "stats": {
+        "additions": 35,
+        "deletions": 14,
+        "total": 49
+      }
+    },
+    {
+      "sha": "f7cd054c491b40ae7203a62111d36cf2fb588e81",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-02-02T08:20:55+00:00",
+      "message": "Refactor workflows to extract SSH key from Ansible vault and update playbook paths; remove obsolete ",
+      "stats": {
+        "additions": 56,
+        "deletions": 48,
+        "total": 104
+      }
+    },
+    {
+      "sha": "9898afec15715fb649b78427ec329b612ab7a5fa",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-02-02T07:50:07+00:00",
+      "message": "Refactor workflows to extract SSH key from Ansible vault instead of using GitHub Actions secrets",
+      "stats": {
+        "additions": 20,
+        "deletions": 22,
+        "total": 42
+      }
+    },
+    {
+      "sha": "b88cce7a14fd748faafa1c816dc8f79be78417c5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-02-02T07:46:23+00:00",
+      "message": "Refactor GitHub workflows to use GitHub Container Registry for actions and streamline maintenance ta",
+      "stats": {
+        "additions": 170,
+        "deletions": 102,
+        "total": 272
+      }
+    },
+    {
+      "sha": "b37fd1f50984811289c79b87b2a3acb813ab0900",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-02-02T07:02:04+00:00",
+      "message": "Add host variable and vault files for new servers; implement Hetzner rescue mode playbooks",
+      "stats": {
+        "additions": 1661,
+        "deletions": 1591,
+        "total": 3252
+      }
+    },
+    {
+      "sha": "208957563eb66f86ebca32cf2639eb0a2ba7bebc",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-02-02T07:42:56+00:00",
+      "message": "feat: add sentry setup",
+      "stats": {
+        "additions": 483,
+        "deletions": 4,
+        "total": 487
+      }
+    },
+    {
+      "sha": "71c0a0f8e981104d8d3b8eef7dffe0721a011f2c",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/self-hosted-video-models",
+      "timestamp": "2026-02-02T20:30:31+00:00",
+      "message": "Revert to lightweight image with runtime model download",
+      "stats": {
+        "additions": 20,
+        "deletions": 18,
+        "total": 38
+      }
+    },
+    {
+      "sha": "d828270e919b43047a5b8d23de08cc4181937f61",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/self-hosted-video-models",
+      "timestamp": "2026-02-02T17:40:51+00:00",
+      "message": "Free up disk space on CI runner for large image build",
+      "stats": {
+        "additions": 9,
+        "deletions": 1,
+        "total": 10
+      }
+    },
+    {
+      "sha": "59a6c9506ec3c425c515ccee4a640d258a0f045d",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/self-hosted-video-models",
+      "timestamp": "2026-02-02T17:28:51+00:00",
+      "message": "Optimize Docker build with compression settings",
+      "stats": {
+        "additions": 5,
+        "deletions": 1,
+        "total": 6
+      }
+    },
+    {
+      "sha": "f91c93e3c2c00c84ab47691ad86bcc9af53f40c7",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/self-hosted-video-models",
+      "timestamp": "2026-02-02T14:05:01+00:00",
+      "message": "Pre-download 40GB LTX-2 model in Docker image for instant worker startup",
+      "stats": {
+        "additions": 19,
+        "deletions": 21,
+        "total": 40
+      }
+    },
+    {
+      "sha": "a3bf9d75eb8481c45581ccd4794e0d56e42b7459",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/self-hosted-video-models",
+      "timestamp": "2026-02-02T12:38:58+00:00",
+      "message": "Fix: Remove /.provisioning before starting pyworker (which blocks)",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      }
+    },
+    {
+      "sha": "e0bf41f782b34808405b1f22b3c892c70272223f",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/self-hosted-video-models",
+      "timestamp": "2026-02-02T12:17:45+00:00",
+      "message": "add provision override",
+      "stats": {
+        "additions": 3,
+        "deletions": 0,
+        "total": 3
+      }
+    },
+    {
+      "sha": "3972c0decc0997bebad47eac1f88e7002f5e3831",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/self-hosted-video-models",
+      "timestamp": "2026-02-02T12:08:31+00:00",
+      "message": "Revert /.provisioning removal - pyworker uses log patterns not marker files",
+      "stats": {
+        "additions": 0,
+        "deletions": 3,
+        "total": 3
+      }
+    },
+    {
+      "sha": "c566631fdf3f50fb12f53c528192c11b07c9a2ea",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/self-hosted-video-models",
+      "timestamp": "2026-02-02T12:01:58+00:00",
+      "message": "Add /.provisioning removal to signal worker ready",
+      "stats": {
+        "additions": 4,
+        "deletions": 8,
+        "total": 12
+      }
+    },
+    {
+      "sha": "6b784cd07c4d572a8a38bc2b9d5d4ac66e82f83a",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/self-hosted-video-models",
+      "timestamp": "2026-02-02T11:19:27+00:00",
+      "message": "Fix: Store custom nodes in /opt and copy to /workspace at runtime",
+      "stats": {
+        "additions": 14,
+        "deletions": 3,
+        "total": 17
+      }
+    },
+    {
+      "sha": "fb30e7859c8df87b14f25fdc1c6fcfc12af3e91b",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/self-hosted-video-models",
+      "timestamp": "2026-02-02T10:35:03+00:00",
+      "message": "Create custom_nodes directory before cloning LTX-2",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      }
+    },
+    {
+      "sha": "af894a4e817f90678ca984e698fddc356174d593",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/self-hosted-video-models",
+      "timestamp": "2026-02-02T09:58:32+00:00",
+      "message": "Fix: Remove WORKDIR changes to preserve base image paths",
+      "stats": {
+        "additions": 2,
+        "deletions": 8,
+        "total": 10
+      }
+    },
+    {
+      "sha": "c67d08dd78ce21104b8668a46c6b3b382295a024",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-02T14:28:43+00:00",
+      "message": "Initial commit",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      }
+    }
+  ],
+  "commit_count": 40
+}

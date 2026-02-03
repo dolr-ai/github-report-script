@@ -2,6 +2,7 @@
 GitHub Fetcher Module
 Fetches commit data from GitHub with concurrent threading and bot filtering
 """
+import logging
 import threading
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -12,8 +13,10 @@ from collections import defaultdict
 from github import Github, GithubException, RateLimitExceededException
 from tqdm import tqdm
 
-from config import GITHUB_TOKEN, GITHUB_ORG, KNOWN_BOTS
-from cache_manager import CacheManager
+from src.config import GITHUB_TOKEN, GITHUB_ORG, KNOWN_BOTS
+from src.cache_manager import CacheManager
+
+logger = logging.getLogger(__name__)
 
 
 class GitHubFetcher:
@@ -44,12 +47,14 @@ class GitHubFetcher:
                         reset_time - datetime.utcnow()).total_seconds() + 10
 
                     if wait_seconds > 0:
-                        print(
-                            f"\nRate limit low ({remaining} remaining). Waiting {wait_seconds:.0f} seconds...")
+                        logger.warning(
+                            f"Rate limit low ({remaining} remaining). Waiting {wait_seconds:.0f} seconds...")
                         time.sleep(wait_seconds)
+                else:
+                    logger.debug(f"Rate limit: {remaining} requests remaining")
             except Exception as e:
                 # If rate limit check fails, log but continue
-                print(f"Warning: Could not check rate limit: {e}")
+                logger.warning(f"Could not check rate limit: {e}")
 
     def _is_bot_commit(self, commit) -> bool:
         """Check if a commit is from a bot using API type check
@@ -66,6 +71,7 @@ class GitHubFetcher:
             if author:
                 # Check user type via API
                 if hasattr(author, 'type') and author.type == 'Bot':
+                    logger.debug(f"Identified bot commit from {author.login}")
                     return True
 
             # Fallback: Check commit author login against known bots
@@ -151,17 +157,21 @@ class GitHubFetcher:
 
                         except Exception as e:
                             # Skip problematic individual commits
+                            logger.debug(
+                                f"Skipped commit in {repo.full_name}: {e}")
                             continue
 
                 except GithubException as e:
                     if e.status == 409:  # Empty repository
+                        logger.debug(
+                            f"Skipping empty repository: {repo.full_name}")
                         continue
-                    print(
-                        f"Warning: Error fetching commits from {repo.full_name}: {e}")
+                    logger.warning(
+                        f"Error fetching commits from {repo.full_name}: {e}")
                     continue
 
         except Exception as e:
-            print(f"Error fetching commits for {date_str}: {e}")
+            logger.error(f"Error fetching commits for {date_str}: {e}")
 
         return {
             'date': date_str,
@@ -184,6 +194,12 @@ class GitHubFetcher:
         user_ids_set = set(user_ids)
         results = {}
 
+        logger.info(
+            f"Fetching commits from {start_date.date()} to {end_date.date()}")
+        logger.info(
+            f"Tracking {len(user_ids)} users: {', '.join(user_ids[:3])}{'...' if len(user_ids) > 3 else ''}")
+        logger.info(f"Using {self.thread_count} concurrent threads")
+
         # Generate list of dates to fetch
         current_date = start_date.date()
         end_date_only = end_date.date()
@@ -197,6 +213,7 @@ class GitHubFetcher:
                 cached_data = self.cache_manager.read_cache(date_str)
                 if cached_data:
                     results[date_str] = cached_data
+                    logger.debug(f"Using cached data for {date_str}")
                     current_date += timedelta(days=1)
                     continue
 
@@ -204,13 +221,11 @@ class GitHubFetcher:
             current_date += timedelta(days=1)
 
         if not dates_to_fetch:
-            print("All dates found in cache. Use --refresh to force re-fetch.")
+            logger.info(
+                "All dates found in cache. Use REFRESH mode to force re-fetch.")
             return results
 
-        print(
-            f"\nFetching commits for {len(dates_to_fetch)} date(s) from {GITHUB_ORG}...")
-        print(f"Tracking users: {', '.join(user_ids)}")
-        print(f"Using {self.thread_count} concurrent threads\n")
+        logger.info(f"Need to fetch {len(dates_to_fetch)} date(s)")
 
         # Fetch commits concurrently
         with ThreadPoolExecutor(max_workers=self.thread_count) as executor:

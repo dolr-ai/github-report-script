@@ -3,30 +3,41 @@
 GitHub Report Script - Main Entry Point
 
 No command-line arguments needed. All configuration is in src/config.py
-Simply run: python src/main.py
+Run from project root: python src/main.py
 """
-import sys
-from datetime import datetime
-
-from config import (
+from src.chart_generator import ChartGenerator
+from src.data_processor import DataProcessor
+from src.github_fetcher import GitHubFetcher
+from src.config import (
     MODE, ExecutionMode, DATE_RANGE_MODE, DateRangeMode,
     USER_IDS, THREAD_COUNT, GITHUB_ORG,
     validate_config, display_config, get_date_range
 )
-from github_fetcher import GitHubFetcher
-from data_processor import DataProcessor
-from chart_generator import ChartGenerator
+import sys
+import os
+import logging
+from datetime import datetime
+
+# Add project root to Python path to allow src. imports
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
+
+
+logger = logging.getLogger(__name__)
 
 
 def cmd_fetch():
     """Fetch commits, cache, and process to output directory"""
     print(display_config())
+    logger.info("Starting FETCH mode")
 
     # Get date range
     start_date, end_date = get_date_range()
+    logger.info(f"Date range: {start_date.date()} to {end_date.date()}")
 
     # Fetch commits
-    print("Starting data fetch...")
+    logger.info("Initializing GitHub fetcher")
     fetcher = GitHubFetcher(thread_count=THREAD_COUNT)
     fetcher.fetch_commits(start_date, end_date, USER_IDS, force_refresh=False)
 
@@ -58,9 +69,12 @@ def cmd_fetch():
 def cmd_refresh():
     """Refresh cache for specific date range"""
     print(display_config())
+    logger.info("Starting REFRESH mode")
 
     # Get date range
     start_date, end_date = get_date_range()
+    logger.info(
+        f"Refresh date range: {start_date.date()} to {end_date.date()}")
     print(
         f"Refreshing cache and output for: {start_date.date()} to {end_date.date()}\n")
 
@@ -81,11 +95,12 @@ def cmd_refresh():
 def cmd_chart():
     """Generate charts from processed data"""
     print(display_config())
+    logger.info("Starting CHART mode")
 
     # Get date range
     if DATE_RANGE_MODE == DateRangeMode.ALL_CACHED:
         # Use all available cached data
-        from cache_manager import CacheManager
+        from src.cache_manager import CacheManager
         cache_manager = CacheManager()
         cached_dates = cache_manager.get_cached_dates()
 
@@ -132,8 +147,10 @@ def cmd_chart():
 def cmd_status():
     """Show current status and rate limit"""
     print(display_config())
+    logger.info("Starting STATUS mode")
 
     # Get rate limit
+    logger.debug("Fetching rate limit information")
     fetcher = GitHubFetcher()
     rate_limit = fetcher.get_rate_limit_status()
     print("GitHub API Rate Limit:")
@@ -142,7 +159,7 @@ def cmd_status():
     print()
 
     # Check cache status
-    from cache_manager import CacheManager
+    from src.cache_manager import CacheManager
     cache_manager = CacheManager()
     cached_dates = cache_manager.get_cached_dates()
 
@@ -155,7 +172,7 @@ def cmd_status():
 
     # Check output status
     import os
-    from config import OUTPUT_DIR
+    from src.config import OUTPUT_DIR
 
     if os.path.exists(OUTPUT_DIR):
         user_dirs = [d for d in os.listdir(OUTPUT_DIR)

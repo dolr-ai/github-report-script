@@ -4,12 +4,15 @@ Processes cached commits and generates pre-aggregated daily metrics per user
 """
 import os
 import json
+import logging
 from datetime import datetime, timedelta
 from typing import Dict, List
 from collections import defaultdict
 
-from config import OUTPUT_DIR, USER_IDS
-from cache_manager import CacheManager
+from src.config import OUTPUT_DIR, USER_IDS
+from src.cache_manager import CacheManager
+
+logger = logging.getLogger(__name__)
 
 
 class DataProcessor:
@@ -122,6 +125,10 @@ class DataProcessor:
             try:
                 with open(output_file, 'w') as f:
                     json.dump(output_data, f, indent=2)
+
+                if metrics['commit_count'] > 0:
+                    logger.debug(
+                        f"{username}: {metrics['commit_count']} commits, {metrics['total_loc']} LOC on {date_str}")
             except IOError as e:
                 print(
                     f"Error writing output for {username} on {date_str}: {e}")
@@ -141,7 +148,7 @@ class DataProcessor:
         dates_processed = 0
         dates_skipped = 0
 
-        print(f"\nProcessing data for {len(user_ids)} user(s)...")
+        logger.info(f"Processing data for {len(user_ids)} user(s)...")
 
         while current_date <= end_date_only:
             date_str = current_date.isoformat()
@@ -158,9 +165,10 @@ class DataProcessor:
             current_date += timedelta(days=1)
 
         if dates_skipped > 0:
-            print(f"Skipped {dates_skipped} date(s) (already processed)")
+            logger.info(f"Skipped {dates_skipped} date(s) (already processed)")
 
-        print(f"Processed {dates_processed} date(s)")
+        logger.info(f"Processed {dates_processed} date(s)") if dates_processed > 0 else logger.info(
+            "No new dates to process")
 
     def read_user_data(self, username: str, start_date: datetime, end_date: datetime) -> Dict[str, Dict]:
         """Read processed data for a user across date range
@@ -176,6 +184,12 @@ class DataProcessor:
         data = {}
         current_date = start_date.date()
         end_date_only = end_date.date()
+
+        logger.debug(
+            f"Reading data for {username} from {start_date.date()} to {end_date.date()}")
+
+        logger.debug(
+            f"Reading data for {username} from {start_date.date()} to {end_date.date()}")
 
         while current_date <= end_date_only:
             date_str = current_date.isoformat()

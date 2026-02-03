@@ -1,0 +1,16 @@
+{
+  "date": "2026-01-28",
+  "username": "gravityvi",
+  "additions": 1565,
+  "deletions": 1925,
+  "total_loc": 3490,
+  "commit_count": 7,
+  "repositories": [
+    "dolr-ai/hot-or-not-backend-canister",
+    "dolr-ai/off-chain-agent",
+    "dolr-ai/yral-billing",
+    "dolr-ai/yral-common"
+  ],
+  "repo_count": 4,
+  "processed_at": "2026-02-03T13:44:07.502456Z"
+}

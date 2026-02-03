@@ -4,11 +4,14 @@ Handles day-wise JSON caching of commit data with thread-safe operations
 """
 import os
 import json
+import logging
 import threading
 from datetime import datetime
 from typing import Dict, List, Optional
 
-from config import CACHE_COMMITS_DIR, CACHE_METADATA_FILE
+from src.config import CACHE_COMMITS_DIR, CACHE_METADATA_FILE
+
+logger = logging.getLogger(__name__)
 
 
 class CacheManager:
@@ -42,7 +45,10 @@ class CacheManager:
         Returns:
             True if cache file exists
         """
-        return os.path.exists(self.get_cache_file_path(date_str))
+        exists = os.path.exists(self.get_cache_file_path(date_str))
+        if exists:
+            logger.debug(f"Cache exists for {date_str}")
+        return exists
 
     def read_cache(self, date_str: str) -> Optional[Dict]:
         """Read cached data for a specific date
@@ -60,9 +66,12 @@ class CacheManager:
 
         try:
             with open(cache_file, 'r') as f:
-                return json.load(f)
+                data = json.load(f)
+                logger.debug(
+                    f"Read cache for {date_str}: {len(data.get('commits', []))} commits")
+                return data
         except (json.JSONDecodeError, IOError) as e:
-            print(f"Warning: Failed to read cache for {date_str}: {e}")
+            logger.warning(f"Failed to read cache for {date_str}: {e}")
             return None
 
     def write_cache(self, date_str: str, data: Dict):
@@ -86,8 +95,10 @@ class CacheManager:
             try:
                 with open(cache_file, 'w') as f:
                     json.dump(cache_data, f, indent=2)
+                logger.debug(
+                    f"Wrote cache for {date_str}: {cache_data['commit_count']} commits")
             except IOError as e:
-                print(f"Error: Failed to write cache for {date_str}: {e}")
+                logger.error(f"Failed to write cache for {date_str}: {e}")
 
     def get_cached_dates(self) -> List[str]:
         """Get list of all cached dates

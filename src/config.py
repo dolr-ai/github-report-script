@@ -5,6 +5,7 @@ This file contains all configuration for the script. No command-line arguments n
 Simply edit the settings below and run: python src/main.py
 """
 import os
+import logging
 from enum import Enum
 from datetime import datetime, timedelta
 from typing import Optional, List
@@ -12,6 +13,29 @@ from dotenv import load_dotenv
 
 # Load environment variables from .env file
 load_dotenv()
+
+# ============================================================================
+# LOGGING CONFIGURATION
+# ============================================================================
+
+
+class LogLevel(Enum):
+    """Logging levels"""
+    DEBUG = "DEBUG"
+    INFO = "INFO"
+    WARNING = "WARNING"
+    ERROR = "ERROR"
+
+
+# Set logging level (DEBUG shows all details, INFO shows progress, WARNING/ERROR minimal)
+LOG_LEVEL = LogLevel.INFO
+
+# Configure logging format
+logging.basicConfig(
+    level=getattr(logging, LOG_LEVEL.value),
+    format='%(asctime)s | %(levelname)-8s | %(name)s | %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S'
+)
 
 
 # ============================================================================

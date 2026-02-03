@@ -4,21 +4,22 @@ This directory contains Ansible configuration for securely managing secrets usin
 
 ## Quick Start
 
+All commands can be run from the project root directory.
+
 1. **Initialize vault** (first time setup):
    ```bash
    cd ansible
    ./init_vault.sh
+   cd ..
    ```
 
-2. **Generate .env file**:
+2. **Generate .env file** (if needed):
    ```bash
-   cd ansible
-   ansible-playbook setup_env.yml
+   ansible-playbook ansible/setup_env.yml
    ```
 
 3. **Run the script**:
    ```bash
-   cd ..
    python src/main.py
    ```
 
@@ -55,46 +56,48 @@ ansible/
 
 ## Common Commands
 
+**Note:** Run these from the project root, or `cd ansible` first.
+
 ### Viewing Vault Content
 ```bash
 # View encrypted vault file
-ansible-vault view vars/vault.yml
+ansible-vault view ansible/vars/vault.yml
 
 # Decrypt to stdout
-ansible-vault decrypt vars/vault.yml --output=-
+ansible-vault decrypt ansible/vars/vault.yml --output=-
 ```
 
 ### Editing Vault
 ```bash
 # Edit encrypted file (decrypts, opens editor, re-encrypts)
-ansible-vault edit vars/vault.yml
+ansible-vault edit ansible/vars/vault.yml
 ```
 
 ### Creating New Vault
 ```bash
 # Create new encrypted file
-ansible-vault create vars/vault.yml
+ansible-vault create ansible/vars/vault.yml
 
 # Or encrypt existing file
-ansible-vault encrypt vars/vault.yml
+ansible-vault encrypt ansible/vars/vault.yml
 ```
 
 ### Changing Vault Password
 ```bash
 # Rekey vault with new password
-ansible-vault rekey vars/vault.yml
+ansible-vault rekey ansible/vars/vault.yml
 ```
 
 ### Running Playbook
 ```bash
 # With password file (configured in ansible.cfg)
-ansible-playbook setup_env.yml
+ansible-playbook ansible/setup_env.yml
 
 # With explicit password file
-ansible-playbook setup_env.yml --vault-password-file=.vault_pass
+ansible-playbook ansible/setup_env.yml --vault-password-file=ansible/.vault_pass
 
 # With interactive password prompt
-ansible-playbook setup_env.yml --ask-vault-pass
+ansible-playbook ansible/setup_env.yml --ask-vault-pass
 ```
 
 ## Security Best Practices

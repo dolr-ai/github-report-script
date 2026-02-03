@@ -3,6 +3,7 @@ Chart Generator Module
 Generates dual output (Plotly HTML + Matplotlib PNG/PDF) for commit metrics
 """
 import os
+import logging
 from datetime import datetime
 from typing import Dict, List
 
@@ -12,7 +13,9 @@ import matplotlib.dates as mdates
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
-from config import REPORTS_DIR
+from src.config import REPORTS_DIR
+
+logger = logging.getLogger(__name__)
 
 
 class ChartGenerator:
@@ -86,6 +89,9 @@ class ChartGenerator:
         """
         dates, usernames, additions_data, deletions_data, total_loc_data, commits_data = \
             self._prepare_data(all_data)
+
+        logger.info(
+            f"Generating Plotly chart for {len(usernames)} users, {len(dates)} dates")
 
         # Create 2x2 subplot layout
         fig = make_subplots(
@@ -271,14 +277,14 @@ class ChartGenerator:
         Returns:
             Dictionary with paths to all generated files
         """
-        print("\nGenerating charts...")
+        logger.info("Starting chart generation")
 
         # Generate Plotly HTML
-        print("Creating interactive HTML chart...")
+        logger.info("Creating interactive HTML chart...")
         html_path = self.generate_plotly_chart(all_data, start_date, end_date)
 
         # Generate Matplotlib PNG and PDF
-        print("Creating static PNG and PDF charts...")
+        logger.info("Creating static PNG and PDF charts...")
         static_paths = self.generate_matplotlib_charts(
             all_data, start_date, end_date)
 
@@ -288,9 +294,9 @@ class ChartGenerator:
             'pdf': static_paths['pdf']
         }
 
-        print("\nCharts generated successfully:")
-        print(f"  Interactive HTML: {html_path}")
-        print(f"  Static PNG:       {static_paths['png']}")
-        print(f"  Static PDF:       {static_paths['pdf']}")
+        logger.info("Charts generated successfully:")
+        logger.info(f"  Interactive HTML: {html_path}")
+        logger.info(f"  Static PNG:       {static_paths['png']}")
+        logger.info(f"  Static PDF:       {static_paths['pdf']}")
 
         return results

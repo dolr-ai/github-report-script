@@ -38,16 +38,16 @@ pip install -r requirements.txt
 cd ansible
 ./init_vault.sh
 # Follow the prompts to set vault password and GitHub token
+cd ..
 
 # 3. Configure execution
-cd ../src
-# Edit config.py and set:
+# Edit src/config.py and set:
 #   MODE = ExecutionMode.FETCH
 #   DATE_RANGE_MODE = DateRangeMode.LAST_N_DAYS
 #   DAYS_BACK = 7
 
 # 4. Run the script
-python main.py
+python src/main.py
 ```
 
 ## Configuration
@@ -106,15 +106,36 @@ THREAD_COUNT = 4  # Conservative (default)
 # THREAD_COUNT = 1  # Debugging
 ```
 
+### Logging Configuration
+
+```python
+# Set logging verbosity
+LOG_LEVEL = LogLevel.INFO     # Show progress and important messages (default)
+# LOG_LEVEL = LogLevel.DEBUG  # Show detailed debug information
+# LOG_LEVEL = LogLevel.WARNING # Show only warnings and errors
+# LOG_LEVEL = LogLevel.ERROR  # Show only errors
+```
+
+**Log Output Format:**
+```
+2026-02-03 13:41:16 | INFO     | src.github_fetcher | Fetching commits from 2026-01-28 to 2026-02-03
+2026-02-03 13:41:16 | INFO     | src.github_fetcher | Tracking 11 users: saikatdas0790, gravityvi, jay-dhanwant-yral...
+2026-02-03 13:41:16 | INFO     | src.github_fetcher | Using 4 concurrent threads
+```
+
+- **INFO**: Progress updates and key milestones
+- **DEBUG**: Detailed operations (cache reads, individual commits, etc.)
+- **WARNING**: Issues that don't stop execution (rate limits, missing cache)
+- **ERROR**: Critical failures
+
 See `src/config.py` for complete configuration options with examples.
 
 ## Usage
 
-**Important:** The script must be run from the `src/` directory.
+**Important:** Run all commands from the project root directory.
 
 ```bash
-cd src
-python main.py
+python src/main.py
 ```
 
 All configuration is read from `src/config.py` - no command-line arguments needed.
@@ -128,7 +149,7 @@ All configuration is read from `src/config.py` - no command-line arguments neede
    DATE_RANGE_MODE = DateRangeMode.LAST_N_DAYS
    DAYS_BACK = 1  # Yesterday only
    ```
-2. Run: `cd src && python main.py`
+2. Run: `python src/main.py`
 
 #### Generate Weekly Report
 1. Edit `src/config.py`:
@@ -137,12 +158,12 @@ All configuration is read from `src/config.py` - no command-line arguments neede
    DATE_RANGE_MODE = DateRangeMode.LAST_N_DAYS
    DAYS_BACK = 7
    ```
-3. Run: `python main.py` (from `src/` directory)
-4. Edit `src/config.py`:
+2. Run: `python src/main.py`
+3. Edit `src/config.py`:
    ```python
    MODE = ExecutionMode.CHART
    ```
-5. Run: `python main.py` (from `src/` directory)
+4. Run: `python src/main.py`
 
 #### Refresh Specific Dates
 1. Edit `src/config.py`:
@@ -152,14 +173,14 @@ All configuration is read from `src/config.py` - no command-line arguments neede
    START_DATE = '2026-01-27'
    END_DATE = '2026-01-28'
    ```
-2. Run: `cd src && python main.py`
+2. Run: `python src/main.py`
 
 #### Check Status
 1. Edit `src/config.py`:
    ```python
    MODE = ExecutionMode.STATUS
    ```
-2. Run: `cd src && python main.py`
+2. Run: `python src/main.py`
 
 ## Ansible Vault - Secret Management
 
@@ -379,6 +400,25 @@ MODE = ExecutionMode.FETCH
 pip install -r requirements.txt
 ```
 
+### Enable Debug Logging
+
+**Solution**: For detailed troubleshooting, enable DEBUG logging in `src/config.py`:
+```python
+LOG_LEVEL = LogLevel.DEBUG
+```
+
+This shows:
+- Individual cache reads/writes
+- Each commit being processed
+- API rate limit checks
+- Repository-level operations
+- Detailed error traces
+
+Run with debug output redirected to file:
+```bash
+python src/main.py 2>&1 | tee debug.log
+```
+
 ## CI/CD Integration
 
 ### GitHub Actions Example
@@ -414,9 +454,7 @@ jobs:
           ansible-playbook setup_env.yml
       
       - name: Run report
-        run: |
-          cd src
-          python main.py
+        run: python src/main.py
       
       - name: Commit results
         run: |
@@ -508,10 +546,10 @@ MIT License - See LICENSE file for details.
 
 | Task | Configuration | Command |
 |------|---------------|---------|
-| Setup vault | N/A | `cd ansible && ./init_vault.sh` |
-| Fetch last 7 days | `MODE = FETCH`, `DAYS_BACK = 7` | `cd src && python main.py` |
-| Refresh specific dates | `MODE = REFRESH`, set START/END_DATE | `cd src && python main.py` |
-| Generate charts | `MODE = CHART` | `cd src && python main.py` |
-| Check status | `MODE = STATUS` | `cd src && python main.py` |
+| Setup vault | N/A | `cd ansible && ./init_vault.sh && cd ..` |
+| Fetch last 7 days | `MODE = FETCH`, `DAYS_BACK = 7` | `python src/main.py` |
+| Refresh specific dates | `MODE = REFRESH`, set START/END_DATE | `python src/main.py` |
+| Generate charts | `MODE = CHART` | `python src/main.py` |
+| Check status | `MODE = STATUS` | `python src/main.py` |
 | Edit secrets | N/A | `ansible-vault edit ansible/vars/vault.yml` |
 | View secrets | N/A | `ansible-vault view ansible/vars/vault.yml` |
