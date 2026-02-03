@@ -1,7 +1,37 @@
 {
   "date": "2026-01-05",
-  "cached_at": "2026-02-03T18:36:13.328917Z",
+  "cached_at": "2026-02-03T20:41:44.397769Z",
   "commits": [
+    {
+      "sha": "f93629980e5739b8ecdbda7e46b2b9e48edd0c95",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-05T07:11:47Z",
+      "message": "fix format",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "feat/use-yral-auth-phone-auth-preview-link"
+      ]
+    },
+    {
+      "sha": "06cbe1bd9aeb0629a14af42f0ce17f7526129942",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-05T06:21:44Z",
+      "message": "use yral auth preview url",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "feat/use-yral-auth-phone-auth-preview-link"
+      ]
+    },
     {
       "sha": "801cca4940c9e0eb1f7076962edab2910b44835b",
       "author": "sarvesh-sharma-yral",
@@ -13,7 +43,26 @@
         "deletions": 1,
         "total": 82
       },
-      "branches": []
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
+      ]
     },
     {
       "sha": "5d1348a5e7a116ef890b8bb862af3dad1260bd23",
@@ -26,7 +75,26 @@
         "deletions": 2,
         "total": 4
       },
-      "branches": []
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
+      ]
     },
     {
       "sha": "80f8cc57e99ed7999931dbeb4399b95b548bce31",
@@ -39,7 +107,42 @@
         "deletions": 3,
         "total": 26
       },
-      "branches": []
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.1.0",
+        "release/3.2.0"
+      ]
+    },
+    {
+      "sha": "ed901aec6b35fd0d76861a6dbafc4121aa87fbb9",
+      "author": "samarth-paboowal-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-05T11:25:51Z",
+      "message": "chore: bumps version to 3.1.0",
+      "stats": {
+        "additions": 29,
+        "deletions": 7,
+        "total": 36
+      },
+      "branches": [
+        "release/3.1.0"
+      ]
     },
     {
       "sha": "dff6fa67d25c3b8fa1d3e25701e1d52cdb27172d",
@@ -53,7 +156,21 @@
         "total": 43
       },
       "branches": [
-        "feat/implement-phone-auth"
+        "feat/deploy-to-dolr-ai",
+        "feat/fix-error-type-for-api",
+        "feat/implement-phone-auth",
+        "fix/redirect-uri-for-multiple-deployments",
+        "fix/remove-cookies-in-verify-endpoint",
+        "joel/ai-accounts-integration",
+        "joel/json-ser-ai-endpoint",
+        "joel/json-ser-fix",
+        "main",
+        "naitik/bare-metal-script-fix",
+        "naitik/fix_bare_metal_deployment",
+        "naitik/fix_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration-to-dragonfly-redis",
+        "revert-41-fix/redirect-uri-for-multiple-deployments"
       ]
     },
     {
@@ -67,7 +184,23 @@
         "deletions": 6,
         "total": 12
       },
-      "branches": []
+      "branches": [
+        "feat/deploy-to-dolr-ai",
+        "feat/fix-error-type-for-api",
+        "feat/implement-phone-auth",
+        "fix/redirect-uri-for-multiple-deployments",
+        "fix/remove-cookies-in-verify-endpoint",
+        "joel/ai-accounts-integration",
+        "joel/json-ser-ai-endpoint",
+        "joel/json-ser-fix",
+        "main",
+        "naitik/bare-metal-script-fix",
+        "naitik/fix_bare_metal_deployment",
+        "naitik/fix_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration-to-dragonfly-redis",
+        "revert-41-fix/redirect-uri-for-multiple-deployments"
+      ]
     },
     {
       "sha": "5561be92f7b78947d195756550dbe9b82715b5b8",
@@ -80,7 +213,23 @@
         "deletions": 1,
         "total": 2
       },
-      "branches": []
+      "branches": [
+        "feat/deploy-to-dolr-ai",
+        "feat/fix-error-type-for-api",
+        "feat/implement-phone-auth",
+        "fix/redirect-uri-for-multiple-deployments",
+        "fix/remove-cookies-in-verify-endpoint",
+        "joel/ai-accounts-integration",
+        "joel/json-ser-ai-endpoint",
+        "joel/json-ser-fix",
+        "main",
+        "naitik/bare-metal-script-fix",
+        "naitik/fix_bare_metal_deployment",
+        "naitik/fix_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration-to-dragonfly-redis",
+        "revert-41-fix/redirect-uri-for-multiple-deployments"
+      ]
     },
     {
       "sha": "5458f8cadbca29a9a29509ef213dfd231541f08b",
@@ -93,7 +242,23 @@
         "deletions": 5,
         "total": 10
       },
-      "branches": []
+      "branches": [
+        "feat/deploy-to-dolr-ai",
+        "feat/fix-error-type-for-api",
+        "feat/implement-phone-auth",
+        "fix/redirect-uri-for-multiple-deployments",
+        "fix/remove-cookies-in-verify-endpoint",
+        "joel/ai-accounts-integration",
+        "joel/json-ser-ai-endpoint",
+        "joel/json-ser-fix",
+        "main",
+        "naitik/bare-metal-script-fix",
+        "naitik/fix_bare_metal_deployment",
+        "naitik/fix_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration-to-dragonfly-redis",
+        "revert-41-fix/redirect-uri-for-multiple-deployments"
+      ]
     },
     {
       "sha": "fb3821d895fff15b0d952036659f595ee237150e",
@@ -106,7 +271,23 @@
         "deletions": 15,
         "total": 73
       },
-      "branches": []
+      "branches": [
+        "feat/deploy-to-dolr-ai",
+        "feat/fix-error-type-for-api",
+        "feat/implement-phone-auth",
+        "fix/redirect-uri-for-multiple-deployments",
+        "fix/remove-cookies-in-verify-endpoint",
+        "joel/ai-accounts-integration",
+        "joel/json-ser-ai-endpoint",
+        "joel/json-ser-fix",
+        "main",
+        "naitik/bare-metal-script-fix",
+        "naitik/fix_bare_metal_deployment",
+        "naitik/fix_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration-to-dragonfly-redis",
+        "revert-41-fix/redirect-uri-for-multiple-deployments"
+      ]
     },
     {
       "sha": "179f3a4a6fc7ebb0fee1237c212290e3f88eb23a",
@@ -119,7 +300,23 @@
         "deletions": 0,
         "total": 2
       },
-      "branches": []
+      "branches": [
+        "feat/deploy-to-dolr-ai",
+        "feat/fix-error-type-for-api",
+        "feat/implement-phone-auth",
+        "fix/redirect-uri-for-multiple-deployments",
+        "fix/remove-cookies-in-verify-endpoint",
+        "joel/ai-accounts-integration",
+        "joel/json-ser-ai-endpoint",
+        "joel/json-ser-fix",
+        "main",
+        "naitik/bare-metal-script-fix",
+        "naitik/fix_bare_metal_deployment",
+        "naitik/fix_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration-to-dragonfly-redis",
+        "revert-41-fix/redirect-uri-for-multiple-deployments"
+      ]
     },
     {
       "sha": "739ce15943e0b23f6d6ad8bb876f768cdc98edc5",
@@ -132,7 +329,23 @@
         "deletions": 3,
         "total": 57
       },
-      "branches": []
+      "branches": [
+        "feat/deploy-to-dolr-ai",
+        "feat/fix-error-type-for-api",
+        "feat/implement-phone-auth",
+        "fix/redirect-uri-for-multiple-deployments",
+        "fix/remove-cookies-in-verify-endpoint",
+        "joel/ai-accounts-integration",
+        "joel/json-ser-ai-endpoint",
+        "joel/json-ser-fix",
+        "main",
+        "naitik/bare-metal-script-fix",
+        "naitik/fix_bare_metal_deployment",
+        "naitik/fix_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration-to-dragonfly-redis",
+        "revert-41-fix/redirect-uri-for-multiple-deployments"
+      ]
     },
     {
       "sha": "4efda19351d01857d4ee7b9687d318cd6b237b9d",
@@ -145,7 +358,23 @@
         "deletions": 1,
         "total": 3
       },
-      "branches": []
+      "branches": [
+        "feat/deploy-to-dolr-ai",
+        "feat/fix-error-type-for-api",
+        "feat/implement-phone-auth",
+        "fix/redirect-uri-for-multiple-deployments",
+        "fix/remove-cookies-in-verify-endpoint",
+        "joel/ai-accounts-integration",
+        "joel/json-ser-ai-endpoint",
+        "joel/json-ser-fix",
+        "main",
+        "naitik/bare-metal-script-fix",
+        "naitik/fix_bare_metal_deployment",
+        "naitik/fix_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration-to-dragonfly-redis",
+        "revert-41-fix/redirect-uri-for-multiple-deployments"
+      ]
     },
     {
       "sha": "820a43cd06273f34904e8a295fa01619b5da38d5",
@@ -158,7 +387,77 @@
         "deletions": 189,
         "total": 339
       },
-      "branches": []
+      "branches": [
+        "aioboto_implementation",
+        "backward_chat_api",
+        "beszel_ai_chat",
+        "beszel_to_main",
+        "bf_msg_sys",
+        "bf_14jan",
+        "bugfix_database_lock",
+        "c_inf_2",
+        "create_influencers",
+        "debug_or_fmissue",
+        "debugging_env_check",
+        "delete_bug",
+        "docker_staging_to_main",
+        "docker_staging",
+        "fix/envsubst-config-substitution",
+        "fix/envsubst-litestream-config",
+        "fix_pragma_optimize",
+        "fk_exeption_handle",
+        "further_joel_sugg",
+        "i_e_error",
+        "img_in_chat",
+        "inbox_apis",
+        "indempotency_msg_fix",
+        "jatin_og_prompt",
+        "joel/optim-suggestions",
+        "lat_op_stage",
+        "lat_op",
+        "latencytrack_optimization",
+        "litestream_integrety",
+        "litestream_sync_interval",
+        "ls_1s",
+        "m_replica_14jan",
+        "main_deployment_fixes",
+        "main_replica_14jan",
+        "main_replica__16jan",
+        "main",
+        "mb_resource_alloc",
+        "metabase_bf2",
+        "metabase_hosting",
+        "metabase_prod",
+        "metabase_staging_rw",
+        "metabase",
+        "migrations_clear",
+        "more_op_latency",
+        "msg_type_normalization",
+        "new_deployment",
+        "nsfw_openrouter",
+        "nsfw_pre_push",
+        "pn_inbox",
+        "postgre_db",
+        "prod_err",
+        "prompt_changes_astro_dating_sexed",
+        "rm_adhoc",
+        "safety_check",
+        "send_msg_rogue",
+        "sentry_bf",
+        "sentry_everywhere",
+        "sentry_fix_stageing",
+        "sentry_fix",
+        "sentry_webhook",
+        "slow_msg",
+        "sqlite_optimisations",
+        "staging",
+        "sys_prompt_prod",
+        "temp_fix_db_lock",
+        "test_fix_url_n_storj_k",
+        "test_robust_gc",
+        "uptime_kuma",
+        "wal_ckpt_bug_fix"
+      ]
     },
     {
       "sha": "d856fbae2c0f09069eaa67fd4a9b800358749f37",
@@ -171,7 +470,78 @@
         "deletions": 414,
         "total": 1064
       },
-      "branches": []
+      "branches": [
+        "aioboto_implementation",
+        "backward_chat_api",
+        "beszel_ai_chat",
+        "beszel_to_main",
+        "bf_msg_sys",
+        "bf_14jan",
+        "bugfix_database_lock",
+        "c_inf_2",
+        "create_influencers",
+        "debug_or_fmissue",
+        "debugging_env_check",
+        "delete_bug",
+        "docker_staging_to_main",
+        "docker_staging",
+        "fix/envsubst-config-substitution",
+        "fix/envsubst-litestream-config",
+        "fix_pragma_optimize",
+        "fk_exeption_handle",
+        "further_joel_sugg",
+        "i_e_error",
+        "img_in_chat",
+        "inbox_apis",
+        "indempotency_msg_fix",
+        "jatin_og_prompt",
+        "joel/optim-suggestions",
+        "lat_op_stage",
+        "lat_op",
+        "latencytrack_optimization",
+        "litestream_integrety",
+        "litestream_sync_interval",
+        "ls_1s",
+        "m_replica_14jan",
+        "main_deployment_fixes",
+        "main_replica_14jan",
+        "main_replica__16jan",
+        "main",
+        "mb_resource_alloc",
+        "metabase_bf2",
+        "metabase_hosting",
+        "metabase_prod",
+        "metabase_staging_rw",
+        "metabase",
+        "migrations_clear",
+        "more_op_latency",
+        "msg_type_normalization",
+        "new_deployment",
+        "nsfw_openrouter",
+        "nsfw_pre_push",
+        "pn_inbox",
+        "postgre_db",
+        "prod_err",
+        "prompt_changes_astro_dating_sexed",
+        "rm_adhoc",
+        "safety_check",
+        "send_msg_rogue",
+        "sentry_bf",
+        "sentry_everywhere",
+        "sentry_fix_stageing",
+        "sentry_fix",
+        "sentry_webhook",
+        "slow_msg",
+        "sqlite_optimisations",
+        "staging",
+        "storj_integration",
+        "sys_prompt_prod",
+        "temp_fix_db_lock",
+        "test_fix_url_n_storj_k",
+        "test_robust_gc",
+        "uptime_kuma",
+        "wal_ckpt_bug_fix"
+      ]
     },
     {
       "sha": "20a92b65b80ffd9469526fdf5a2ea23d7774c9db",
@@ -184,7 +554,79 @@
         "deletions": 5,
         "total": 90
       },
-      "branches": []
+      "branches": [
+        "aioboto_implementation",
+        "backward_chat_api",
+        "beszel_ai_chat",
+        "beszel_to_main",
+        "bf_msg_sys",
+        "bf_14jan",
+        "bugfix_database_lock",
+        "c_inf_2",
+        "create_influencers",
+        "debug_or_fmissue",
+        "debugging_env_check",
+        "delete_bug",
+        "docker_staging_to_main",
+        "docker_staging",
+        "fix/envsubst-config-substitution",
+        "fix/envsubst-litestream-config",
+        "fix_pragma_optimize",
+        "fk_exeption_handle",
+        "further_joel_sugg",
+        "i_e_error",
+        "img_in_chat",
+        "inbox_apis",
+        "indempotency_msg_fix",
+        "jatin_og_prompt",
+        "jay_review",
+        "joel/optim-suggestions",
+        "lat_op_stage",
+        "lat_op",
+        "latencytrack_optimization",
+        "litestream_integrety",
+        "litestream_sync_interval",
+        "ls_1s",
+        "m_replica_14jan",
+        "main_deployment_fixes",
+        "main_replica_14jan",
+        "main_replica__16jan",
+        "main",
+        "mb_resource_alloc",
+        "metabase_bf2",
+        "metabase_hosting",
+        "metabase_prod",
+        "metabase_staging_rw",
+        "metabase",
+        "migrations_clear",
+        "more_op_latency",
+        "msg_type_normalization",
+        "new_deployment",
+        "nsfw_openrouter",
+        "nsfw_pre_push",
+        "pn_inbox",
+        "postgre_db",
+        "prod_err",
+        "prompt_changes_astro_dating_sexed",
+        "rm_adhoc",
+        "safety_check",
+        "send_msg_rogue",
+        "sentry_bf",
+        "sentry_everywhere",
+        "sentry_fix_stageing",
+        "sentry_fix",
+        "sentry_webhook",
+        "slow_msg",
+        "sqlite_optimisations",
+        "staging",
+        "storj_integration",
+        "sys_prompt_prod",
+        "temp_fix_db_lock",
+        "test_fix_url_n_storj_k",
+        "test_robust_gc",
+        "uptime_kuma",
+        "wal_ckpt_bug_fix"
+      ]
     },
     {
       "sha": "41b31650f659bbe052f3e2c146cca038b9c3e0c6",
@@ -197,7 +639,79 @@
         "deletions": 2,
         "total": 34
       },
-      "branches": []
+      "branches": [
+        "aioboto_implementation",
+        "backward_chat_api",
+        "beszel_ai_chat",
+        "beszel_to_main",
+        "bf_msg_sys",
+        "bf_14jan",
+        "bugfix_database_lock",
+        "c_inf_2",
+        "create_influencers",
+        "debug_or_fmissue",
+        "debugging_env_check",
+        "delete_bug",
+        "docker_staging_to_main",
+        "docker_staging",
+        "fix/envsubst-config-substitution",
+        "fix/envsubst-litestream-config",
+        "fix_pragma_optimize",
+        "fk_exeption_handle",
+        "further_joel_sugg",
+        "i_e_error",
+        "img_in_chat",
+        "inbox_apis",
+        "indempotency_msg_fix",
+        "jatin_og_prompt",
+        "jay_review",
+        "joel/optim-suggestions",
+        "lat_op_stage",
+        "lat_op",
+        "latencytrack_optimization",
+        "litestream_integrety",
+        "litestream_sync_interval",
+        "ls_1s",
+        "m_replica_14jan",
+        "main_deployment_fixes",
+        "main_replica_14jan",
+        "main_replica__16jan",
+        "main",
+        "mb_resource_alloc",
+        "metabase_bf2",
+        "metabase_hosting",
+        "metabase_prod",
+        "metabase_staging_rw",
+        "metabase",
+        "migrations_clear",
+        "more_op_latency",
+        "msg_type_normalization",
+        "new_deployment",
+        "nsfw_openrouter",
+        "nsfw_pre_push",
+        "pn_inbox",
+        "postgre_db",
+        "prod_err",
+        "prompt_changes_astro_dating_sexed",
+        "rm_adhoc",
+        "safety_check",
+        "send_msg_rogue",
+        "sentry_bf",
+        "sentry_everywhere",
+        "sentry_fix_stageing",
+        "sentry_fix",
+        "sentry_webhook",
+        "slow_msg",
+        "sqlite_optimisations",
+        "staging",
+        "storj_integration",
+        "sys_prompt_prod",
+        "temp_fix_db_lock",
+        "test_fix_url_n_storj_k",
+        "test_robust_gc",
+        "uptime_kuma",
+        "wal_ckpt_bug_fix"
+      ]
     },
     {
       "sha": "e4a54f1872ff9e249b9fbf6bec9136c5b4fe79f4",
@@ -210,7 +724,80 @@
         "deletions": 1091,
         "total": 2460
       },
-      "branches": []
+      "branches": [
+        "aioboto_implementation",
+        "backward_chat_api",
+        "beszel_ai_chat",
+        "beszel_to_main",
+        "bf_msg_sys",
+        "bf_14jan",
+        "bugfix_database_lock",
+        "c_inf_2",
+        "create_influencers",
+        "debug_or_fmissue",
+        "debugging_env_check",
+        "delete_bug",
+        "docker_staging_to_main",
+        "docker_staging",
+        "fix/envsubst-config-substitution",
+        "fix/envsubst-litestream-config",
+        "fix_pragma_optimize",
+        "fk_exeption_handle",
+        "further_joel_sugg",
+        "i_e_error",
+        "img_in_chat",
+        "inbox_apis",
+        "indempotency_msg_fix",
+        "jatin_og_prompt",
+        "jay_review",
+        "joel/optim-suggestions",
+        "lat_op_stage",
+        "lat_op",
+        "latencytrack_optimization",
+        "litestream_integrety",
+        "litestream_sync_interval",
+        "ls_1s",
+        "m_replica_14jan",
+        "main_deployment_fixes",
+        "main_replica_14jan",
+        "main_replica__16jan",
+        "main",
+        "mb_resource_alloc",
+        "metabase_bf2",
+        "metabase_hosting",
+        "metabase_prod",
+        "metabase_staging_rw",
+        "metabase",
+        "migrations_clear",
+        "more_op_latency",
+        "msg_type_normalization",
+        "new_deployment",
+        "nsfw_openrouter",
+        "nsfw_pre_push",
+        "pn_inbox",
+        "postgre_db",
+        "prod_err",
+        "prompt_changes_astro_dating_sexed",
+        "revert-36-revert-34-infra_rl",
+        "rm_adhoc",
+        "safety_check",
+        "send_msg_rogue",
+        "sentry_bf",
+        "sentry_everywhere",
+        "sentry_fix_stageing",
+        "sentry_fix",
+        "sentry_webhook",
+        "slow_msg",
+        "sqlite_optimisations",
+        "staging",
+        "storj_integration",
+        "sys_prompt_prod",
+        "temp_fix_db_lock",
+        "test_fix_url_n_storj_k",
+        "test_robust_gc",
+        "uptime_kuma",
+        "wal_ckpt_bug_fix"
+      ]
     },
     {
       "sha": "e4f0c3a381dfa5a257dec8029b1c195cc05ad55a",
@@ -223,7 +810,80 @@
         "deletions": 3,
         "total": 33
       },
-      "branches": []
+      "branches": [
+        "aioboto_implementation",
+        "backward_chat_api",
+        "beszel_ai_chat",
+        "beszel_to_main",
+        "bf_msg_sys",
+        "bf_14jan",
+        "bugfix_database_lock",
+        "c_inf_2",
+        "create_influencers",
+        "debug_or_fmissue",
+        "debugging_env_check",
+        "delete_bug",
+        "docker_staging_to_main",
+        "docker_staging",
+        "fix/envsubst-config-substitution",
+        "fix/envsubst-litestream-config",
+        "fix_pragma_optimize",
+        "fk_exeption_handle",
+        "further_joel_sugg",
+        "i_e_error",
+        "img_in_chat",
+        "inbox_apis",
+        "indempotency_msg_fix",
+        "jatin_og_prompt",
+        "jay_review",
+        "joel/optim-suggestions",
+        "lat_op_stage",
+        "lat_op",
+        "latencytrack_optimization",
+        "litestream_integrety",
+        "litestream_sync_interval",
+        "ls_1s",
+        "m_replica_14jan",
+        "main_deployment_fixes",
+        "main_replica_14jan",
+        "main_replica__16jan",
+        "main",
+        "mb_resource_alloc",
+        "metabase_bf2",
+        "metabase_hosting",
+        "metabase_prod",
+        "metabase_staging_rw",
+        "metabase",
+        "migrations_clear",
+        "more_op_latency",
+        "msg_type_normalization",
+        "new_deployment",
+        "nsfw_openrouter",
+        "nsfw_pre_push",
+        "pn_inbox",
+        "postgre_db",
+        "prod_err",
+        "prompt_changes_astro_dating_sexed",
+        "revert-36-revert-34-infra_rl",
+        "rm_adhoc",
+        "safety_check",
+        "send_msg_rogue",
+        "sentry_bf",
+        "sentry_everywhere",
+        "sentry_fix_stageing",
+        "sentry_fix",
+        "sentry_webhook",
+        "slow_msg",
+        "sqlite_optimisations",
+        "staging",
+        "storj_integration",
+        "sys_prompt_prod",
+        "temp_fix_db_lock",
+        "test_fix_url_n_storj_k",
+        "test_robust_gc",
+        "uptime_kuma",
+        "wal_ckpt_bug_fix"
+      ]
     },
     {
       "sha": "af3177ee3451bb7c5ed3534493679a289de55bd2",
@@ -236,7 +896,80 @@
         "deletions": 30,
         "total": 33
       },
-      "branches": []
+      "branches": [
+        "aioboto_implementation",
+        "backward_chat_api",
+        "beszel_ai_chat",
+        "beszel_to_main",
+        "bf_msg_sys",
+        "bf_14jan",
+        "bugfix_database_lock",
+        "c_inf_2",
+        "create_influencers",
+        "debug_or_fmissue",
+        "debugging_env_check",
+        "delete_bug",
+        "docker_staging_to_main",
+        "docker_staging",
+        "fix/envsubst-config-substitution",
+        "fix/envsubst-litestream-config",
+        "fix_pragma_optimize",
+        "fk_exeption_handle",
+        "further_joel_sugg",
+        "i_e_error",
+        "img_in_chat",
+        "inbox_apis",
+        "indempotency_msg_fix",
+        "jatin_og_prompt",
+        "jay_review",
+        "joel/optim-suggestions",
+        "lat_op_stage",
+        "lat_op",
+        "latencytrack_optimization",
+        "litestream_integrety",
+        "litestream_sync_interval",
+        "ls_1s",
+        "m_replica_14jan",
+        "main_deployment_fixes",
+        "main_replica_14jan",
+        "main_replica__16jan",
+        "main",
+        "mb_resource_alloc",
+        "metabase_bf2",
+        "metabase_hosting",
+        "metabase_prod",
+        "metabase_staging_rw",
+        "metabase",
+        "migrations_clear",
+        "more_op_latency",
+        "msg_type_normalization",
+        "new_deployment",
+        "nsfw_openrouter",
+        "nsfw_pre_push",
+        "pn_inbox",
+        "postgre_db",
+        "prod_err",
+        "prompt_changes_astro_dating_sexed",
+        "revert-36-revert-34-infra_rl",
+        "rm_adhoc",
+        "safety_check",
+        "send_msg_rogue",
+        "sentry_bf",
+        "sentry_everywhere",
+        "sentry_fix_stageing",
+        "sentry_fix",
+        "sentry_webhook",
+        "slow_msg",
+        "sqlite_optimisations",
+        "staging",
+        "storj_integration",
+        "sys_prompt_prod",
+        "temp_fix_db_lock",
+        "test_fix_url_n_storj_k",
+        "test_robust_gc",
+        "uptime_kuma",
+        "wal_ckpt_bug_fix"
+      ]
     },
     {
       "sha": "a78950ba9915fd2b9022eec538dfb0753d6c2cac",
@@ -250,7 +983,79 @@
         "total": 33
       },
       "branches": [
-        "revert-34-infra_rl"
+        "aioboto_implementation",
+        "backward_chat_api",
+        "beszel_ai_chat",
+        "beszel_to_main",
+        "bf_msg_sys",
+        "bf_14jan",
+        "bugfix_database_lock",
+        "c_inf_2",
+        "create_influencers",
+        "debug_or_fmissue",
+        "debugging_env_check",
+        "delete_bug",
+        "docker_staging_to_main",
+        "docker_staging",
+        "fix/envsubst-config-substitution",
+        "fix/envsubst-litestream-config",
+        "fix_pragma_optimize",
+        "fk_exeption_handle",
+        "further_joel_sugg",
+        "i_e_error",
+        "img_in_chat",
+        "inbox_apis",
+        "indempotency_msg_fix",
+        "jatin_og_prompt",
+        "jay_review",
+        "joel/optim-suggestions",
+        "lat_op_stage",
+        "lat_op",
+        "latencytrack_optimization",
+        "litestream_integrety",
+        "litestream_sync_interval",
+        "ls_1s",
+        "m_replica_14jan",
+        "main_deployment_fixes",
+        "main_replica_14jan",
+        "main_replica__16jan",
+        "main",
+        "mb_resource_alloc",
+        "metabase_bf2",
+        "metabase_hosting",
+        "metabase_prod",
+        "metabase_staging_rw",
+        "metabase",
+        "migrations_clear",
+        "more_op_latency",
+        "msg_type_normalization",
+        "new_deployment",
+        "nsfw_openrouter",
+        "nsfw_pre_push",
+        "pn_inbox",
+        "postgre_db",
+        "prod_err",
+        "prompt_changes_astro_dating_sexed",
+        "revert-34-infra_rl",
+        "revert-36-revert-34-infra_rl",
+        "rm_adhoc",
+        "safety_check",
+        "send_msg_rogue",
+        "sentry_bf",
+        "sentry_everywhere",
+        "sentry_fix_stageing",
+        "sentry_fix",
+        "sentry_webhook",
+        "slow_msg",
+        "sqlite_optimisations",
+        "staging",
+        "storj_integration",
+        "sys_prompt_prod",
+        "temp_fix_db_lock",
+        "test_fix_url_n_storj_k",
+        "test_robust_gc",
+        "uptime_kuma",
+        "wal_ckpt_bug_fix"
       ]
     },
     {
@@ -264,7 +1069,80 @@
         "deletions": 13,
         "total": 35
       },
-      "branches": []
+      "branches": [
+        "aioboto_implementation",
+        "backward_chat_api",
+        "beszel_ai_chat",
+        "beszel_to_main",
+        "bf_msg_sys",
+        "bf_14jan",
+        "bugfix_database_lock",
+        "c_inf_2",
+        "create_influencers",
+        "debug_or_fmissue",
+        "debugging_env_check",
+        "delete_bug",
+        "docker_staging_to_main",
+        "docker_staging",
+        "fix/envsubst-config-substitution",
+        "fix/envsubst-litestream-config",
+        "fix_pragma_optimize",
+        "fk_exeption_handle",
+        "further_joel_sugg",
+        "i_e_error",
+        "img_in_chat",
+        "inbox_apis",
+        "indempotency_msg_fix",
+        "jatin_og_prompt",
+        "jay_review",
+        "joel/optim-suggestions",
+        "lat_op_stage",
+        "lat_op",
+        "latencytrack_optimization",
+        "litestream_integrety",
+        "litestream_sync_interval",
+        "ls_1s",
+        "m_replica_14jan",
+        "main_deployment_fixes",
+        "main_replica_14jan",
+        "main_replica__16jan",
+        "main",
+        "mb_resource_alloc",
+        "metabase_bf2",
+        "metabase_hosting",
+        "metabase_prod",
+        "metabase_staging_rw",
+        "metabase",
+        "migrations_clear",
+        "more_op_latency",
+        "msg_type_normalization",
+        "new_deployment",
+        "nsfw_openrouter",
+        "nsfw_pre_push",
+        "pn_inbox",
+        "postgre_db",
+        "prod_err",
+        "prompt_changes_astro_dating_sexed",
+        "revert-36-revert-34-infra_rl",
+        "rm_adhoc",
+        "safety_check",
+        "send_msg_rogue",
+        "sentry_bf",
+        "sentry_everywhere",
+        "sentry_fix_stageing",
+        "sentry_fix",
+        "sentry_webhook",
+        "slow_msg",
+        "sqlite_optimisations",
+        "staging",
+        "storj_integration",
+        "sys_prompt_prod",
+        "temp_fix_db_lock",
+        "test_fix_url_n_storj_k",
+        "test_robust_gc",
+        "uptime_kuma",
+        "wal_ckpt_bug_fix"
+      ]
     },
     {
       "sha": "a9deee93a5ee4831eb2b09a3975039708c440c0a",
@@ -277,7 +1155,81 @@
         "deletions": 3,
         "total": 33
       },
-      "branches": []
+      "branches": [
+        "aioboto_implementation",
+        "backward_chat_api",
+        "beszel_ai_chat",
+        "beszel_to_main",
+        "bf_msg_sys",
+        "bf_14jan",
+        "bugfix_database_lock",
+        "c_inf_2",
+        "create_influencers",
+        "debug_or_fmissue",
+        "debugging_env_check",
+        "delete_bug",
+        "docker_staging_to_main",
+        "docker_staging",
+        "fix/envsubst-config-substitution",
+        "fix/envsubst-litestream-config",
+        "fix_pragma_optimize",
+        "fk_exeption_handle",
+        "further_joel_sugg",
+        "i_e_error",
+        "img_in_chat",
+        "inbox_apis",
+        "indempotency_msg_fix",
+        "jatin_og_prompt",
+        "jay_review",
+        "joel/optim-suggestions",
+        "lat_op_stage",
+        "lat_op",
+        "latencytrack_optimization",
+        "litestream_integrety",
+        "litestream_sync_interval",
+        "ls_1s",
+        "m_replica_14jan",
+        "main_deployment_fixes",
+        "main_replica_14jan",
+        "main_replica__16jan",
+        "main",
+        "mb_resource_alloc",
+        "metabase_bf2",
+        "metabase_hosting",
+        "metabase_prod",
+        "metabase_staging_rw",
+        "metabase",
+        "migrations_clear",
+        "more_op_latency",
+        "msg_type_normalization",
+        "new_deployment",
+        "nsfw_openrouter",
+        "nsfw_pre_push",
+        "pn_inbox",
+        "postgre_db",
+        "prod_err",
+        "prompt_changes_astro_dating_sexed",
+        "revert-34-infra_rl",
+        "revert-36-revert-34-infra_rl",
+        "rm_adhoc",
+        "safety_check",
+        "send_msg_rogue",
+        "sentry_bf",
+        "sentry_everywhere",
+        "sentry_fix_stageing",
+        "sentry_fix",
+        "sentry_webhook",
+        "slow_msg",
+        "sqlite_optimisations",
+        "staging",
+        "storj_integration",
+        "sys_prompt_prod",
+        "temp_fix_db_lock",
+        "test_fix_url_n_storj_k",
+        "test_robust_gc",
+        "uptime_kuma",
+        "wal_ckpt_bug_fix"
+      ]
     },
     {
       "sha": "7132021dac65c3d059756a0ac6b71906f5a4805e",
@@ -290,7 +1242,112 @@
         "deletions": 1081,
         "total": 2427
       },
-      "branches": []
+      "branches": [
+        "aioboto_implementation",
+        "backward_chat_api",
+        "beszel_ai_chat",
+        "beszel_to_main",
+        "bf_msg_sys",
+        "bf_14jan",
+        "bugfix_database_lock",
+        "c_inf_2",
+        "create_influencers",
+        "debug_or_fmissue",
+        "debugging_env_check",
+        "delete_bug",
+        "docker_staging_to_main",
+        "docker_staging",
+        "fix/envsubst-config-substitution",
+        "fix/envsubst-litestream-config",
+        "fix_pragma_optimize",
+        "fk_exeption_handle",
+        "further_joel_sugg",
+        "gemini_aync",
+        "i_e_error",
+        "img_in_chat",
+        "inbox_apis",
+        "indempotency_msg_fix",
+        "jatin_og_prompt",
+        "jay_review",
+        "joel/optim-suggestions",
+        "lat_op_stage",
+        "lat_op",
+        "latencytrack_optimization",
+        "litestream_integrety",
+        "litestream_sync_interval",
+        "ls_1s",
+        "m_replica_14jan",
+        "main_deployment_fixes",
+        "main_replica_14jan",
+        "main_replica__16jan",
+        "main",
+        "mb_resource_alloc",
+        "metabase_bf2",
+        "metabase_hosting",
+        "metabase_prod",
+        "metabase_staging_rw",
+        "metabase",
+        "migrations_clear",
+        "more_op_latency",
+        "msg_type_normalization",
+        "new_deployment",
+        "nsfw_openrouter",
+        "nsfw_pre_push",
+        "pn_inbox",
+        "postgre_db",
+        "prod_err",
+        "prompt_changes_astro_dating_sexed",
+        "revert-17-revert-15-thread_to_async",
+        "revert-36-revert-34-infra_rl",
+        "rm_adhoc",
+        "safety_check",
+        "send_msg_rogue",
+        "sentry_bf",
+        "sentry_everywhere",
+        "sentry_fix_stageing",
+        "sentry_fix",
+        "sentry_webhook",
+        "slow_msg",
+        "sqlite_optimisations",
+        "staging",
+        "storj_integration",
+        "sys_prompt_prod",
+        "temp_fix_db_lock",
+        "test_fix_url_n_storj_k",
+        "test_robust_gc",
+        "uptime_kuma",
+        "wal_ckpt_bug_fix"
+      ]
+    },
+    {
+      "sha": "457d4afcc9e372581a9df555f93b0b866477fa3f",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-05T09:01:39Z",
+      "message": "Merge branch 'staging' into revert-17-revert-15-thread_to_async",
+      "stats": {
+        "additions": 1663,
+        "deletions": 1199,
+        "total": 2862
+      },
+      "branches": [
+        "revert-17-revert-15-thread_to_async"
+      ]
+    },
+    {
+      "sha": "cd10ab4e5ae582d3327e3ac5320425f11f1ef089",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-05T03:52:52Z",
+      "message": "Update 003_updates.sql",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "revert-17-revert-15-thread_to_async"
+      ]
     },
     {
       "sha": "325e5cfdf6040fc31cf996e8409455a4ffd84f63",
@@ -303,7 +1360,9 @@
         "deletions": 1806,
         "total": 4472
       },
-      "branches": []
+      "branches": [
+        "main"
+      ]
     },
     {
       "sha": "6c1cecf6e786f8819707593ec620554680522cfa",
@@ -316,7 +1375,9 @@
         "deletions": 0,
         "total": 355
       },
-      "branches": []
+      "branches": [
+        "naitik/impl-redis-store-cluster"
+      ]
     },
     {
       "sha": "56a2444372196fd6f5af50b222be7d811309f463",
@@ -329,7 +1390,9 @@
         "deletions": 12,
         "total": 320
       },
-      "branches": []
+      "branches": [
+        "naitik/impl-redis-store-cluster"
+      ]
     },
     {
       "sha": "cee57ab5811d78f87d16e169ff657be1e944d45f",
@@ -342,7 +1405,9 @@
         "deletions": 10,
         "total": 20
       },
-      "branches": []
+      "branches": [
+        "naitik/impl-redis-store-cluster"
+      ]
     },
     {
       "sha": "afa9812c65556d1352809864c273fd22c5382c1a",
@@ -355,7 +1420,9 @@
         "deletions": 8,
         "total": 20
       },
-      "branches": []
+      "branches": [
+        "naitik/impl-redis-store-cluster"
+      ]
     },
     {
       "sha": "9f3d72aa301b3f9716c1fdaf3dcb2a80e77ecce3",
@@ -368,7 +1435,9 @@
         "deletions": 1,
         "total": 2
       },
-      "branches": []
+      "branches": [
+        "naitik/impl-redis-store-cluster"
+      ]
     },
     {
       "sha": "9359c40ae4cd187ee36a93ef406abae0f9ceeabe",
@@ -381,7 +1450,9 @@
         "deletions": 6,
         "total": 8
       },
-      "branches": []
+      "branches": [
+        "naitik/impl-redis-store-cluster"
+      ]
     },
     {
       "sha": "f7abb428bbf668ed3c908f86c0a13f2799837fb7",
@@ -394,7 +1465,9 @@
         "deletions": 8,
         "total": 16
       },
-      "branches": []
+      "branches": [
+        "naitik/impl-redis-store-cluster"
+      ]
     },
     {
       "sha": "da34d2afde7448c875e3e7a7afb225fd2feb6069",
@@ -407,7 +1480,9 @@
         "deletions": 16,
         "total": 27
       },
-      "branches": []
+      "branches": [
+        "naitik/impl-redis-store-cluster"
+      ]
     },
     {
       "sha": "b8d9f6e35709e3904ad3e161958a6dc1465fc50d",
@@ -420,7 +1495,9 @@
         "deletions": 0,
         "total": 2
       },
-      "branches": []
+      "branches": [
+        "naitik/impl-redis-store-cluster"
+      ]
     },
     {
       "sha": "8e81f91c740915c7debbd4b83f080b3223eab294",
@@ -433,7 +1510,9 @@
         "deletions": 7,
         "total": 14
       },
-      "branches": []
+      "branches": [
+        "naitik/impl-redis-store-cluster"
+      ]
     },
     {
       "sha": "d0af1adedea523a1d482c8e6f9c71533f9aaca4b",
@@ -446,7 +1525,9 @@
         "deletions": 3,
         "total": 14
       },
-      "branches": []
+      "branches": [
+        "naitik/impl-redis-store-cluster"
+      ]
     },
     {
       "sha": "f52e5c50a369ad6c31aeda60ca49b2fd4ba7e97c",
@@ -459,7 +1540,9 @@
         "deletions": 13,
         "total": 20
       },
-      "branches": []
+      "branches": [
+        "naitik/impl-redis-store-cluster"
+      ]
     },
     {
       "sha": "fad91999a2cec2c1acea455d216c2cd69201d131",
@@ -472,7 +1555,9 @@
         "deletions": 1,
         "total": 2
       },
-      "branches": []
+      "branches": [
+        "naitik/impl-redis-store-cluster"
+      ]
     },
     {
       "sha": "d7efeabba5d03e82caca3f766e81787fed462291",
@@ -485,8 +1570,10 @@
         "deletions": 34,
         "total": 187
       },
-      "branches": []
+      "branches": [
+        "naitik/impl-redis-store-cluster"
+      ]
     }
   ],
-  "commit_count": 37
+  "commit_count": 42
 }

@@ -11,13 +11,19 @@
   "repo_count": 1,
   "branch_breakdown": {
     "dolr-ai/yral-ai-chat": {
-      "unknown": {
-        "additions": 1849,
-        "deletions": 884,
-        "total_loc": 2733,
-        "commit_count": 11
+      "main": {
+        "additions": 980,
+        "deletions": 418,
+        "total_loc": 1398,
+        "commit_count": 4
+      },
+      "beszel_ai_chat": {
+        "additions": 869,
+        "deletions": 466,
+        "total_loc": 1335,
+        "commit_count": 7
       }
     }
   },
-  "processed_at": "2026-02-03T20:11:43.994978Z"
+  "processed_at": "2026-02-03T20:53:58.982693Z"
 }

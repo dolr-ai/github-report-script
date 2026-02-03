@@ -1,23 +1,12 @@
 {
   "date": "2026-01-21",
   "username": "ravi-sawlani-yral",
-  "additions": 17,
-  "deletions": 13,
-  "total_loc": 30,
-  "commit_count": 1,
-  "repositories": [
-    "dolr-ai/yral-billing"
-  ],
-  "repo_count": 1,
-  "branch_breakdown": {
-    "dolr-ai/yral-billing": {
-      "unknown": {
-        "additions": 17,
-        "deletions": 13,
-        "total_loc": 30,
-        "commit_count": 1
-      }
-    }
-  },
-  "processed_at": "2026-02-03T20:11:44.018899Z"
+  "additions": 0,
+  "deletions": 0,
+  "total_loc": 0,
+  "commit_count": 0,
+  "repositories": [],
+  "repo_count": 0,
+  "branch_breakdown": {},
+  "processed_at": "2026-02-03T20:53:59.015767Z"
 }

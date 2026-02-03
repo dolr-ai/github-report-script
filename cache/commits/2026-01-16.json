@@ -1,7 +1,37 @@
 {
   "date": "2026-01-16",
-  "cached_at": "2026-02-03T19:24:18.969613Z",
+  "cached_at": "2026-02-03T20:53:56.414041Z",
   "commits": [
+    {
+      "sha": "0a75cc06b99553477992a12643186846b50833c6",
+      "author": "gravityvi",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2026-01-16T12:14:38Z",
+      "message": "Merge branch 'main' into feat/add-yral-pro-subcription-token-type-in-rate-limits",
+      "stats": {
+        "additions": 797,
+        "deletions": 72,
+        "total": 869
+      },
+      "branches": [
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits"
+      ]
+    },
+    {
+      "sha": "2145ca0b5c00a92738c7b396e982a9cc8a388436",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-01-16T06:53:17Z",
+      "message": "uncommented concurrent test",
+      "stats": {
+        "additions": 51,
+        "deletions": 51,
+        "total": 102
+      },
+      "branches": [
+        "naitik/1403_migration_to_bare_metal"
+      ]
+    },
     {
       "sha": "54f3e360ef197e1e05950d77868a3017ce1c5ec1",
       "author": "saikatdas0790",
@@ -269,7 +299,19 @@
         "total": 4
       },
       "branches": [
-        "create-pull-request/update-did-files-v3.5.9"
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
       ]
     },
     {
@@ -284,7 +326,16 @@
         "total": 2960
       },
       "branches": [
-        "create-pull-request/update-did-files-v3.5.9"
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "main"
       ]
     },
     {
@@ -299,7 +350,19 @@
         "total": 4
       },
       "branches": [
-        "create-pull-request/update-did-files-v3.5.9"
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
       ]
     },
     {
@@ -314,7 +377,19 @@
         "total": 54
       },
       "branches": [
-        "create-pull-request/update-did-files-v3.5.9"
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
       ]
     },
     {
@@ -329,7 +404,19 @@
         "total": 1759
       },
       "branches": [
-        "create-pull-request/update-did-files-v3.5.9"
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
       ]
     },
     {
@@ -344,7 +431,19 @@
         "total": 37
       },
       "branches": [
-        "create-pull-request/update-did-files-v3.5.9"
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
       ]
     },
     {
@@ -359,850 +458,21 @@
         "total": 273
       },
       "branches": [
-        "create-pull-request/update-did-files-v3.5.9"
-      ]
-    },
-    {
-      "sha": "5042496bea33a5a7abc8aabd5b30ff968dda6fcd",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-16T11:24:11Z",
-      "message": "Remove debug tasks after successful deployment",
-      "stats": {
-        "additions": 0,
-        "deletions": 18,
-        "total": 18
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "50d2a971ea49fa858f8d7eaae26c364d7932bc86",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-16T11:19:07Z",
-      "message": "Fix cleanup script to detect orphaned properties without relying on END marker",
-      "stats": {
-        "additions": 28,
-        "deletions": 26,
-        "total": 54
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "e2995e3623f8a7e9886896c71992220d1f04b1b7",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-16T11:11:17Z",
-      "message": "Add debug output to trace file state after cleanup and insert",
-      "stats": {
-        "additions": 18,
-        "deletions": 0,
-        "total": 18
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "ad111a3fcae9a6c02e6b0850e147a392b271565e",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-16T11:00:36Z",
-      "message": "Fix indent calculation in orphaned property detection",
-      "stats": {
-        "additions": 4,
-        "deletions": 2,
-        "total": 6
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "f1d8200af6c79f426bc879e6d1c1a8b10e61bbbb",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-16T10:56:09Z",
-      "message": "Fix cleanup script to handle orphaned beszel-agent properties",
-      "stats": {
-        "additions": 22,
-        "deletions": 0,
-        "total": 22
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "44028c9874b8d65839d1be2b7db122bf923963fc",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-16T10:49:25Z",
-      "message": "Refactor Python cleanup script with simpler state machine logic",
-      "stats": {
-        "additions": 21,
-        "deletions": 21,
-        "total": 42
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "739bfea25f822cddaee6ee69ac51c948b0ad09bd",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-16T09:58:41Z",
-      "message": "Remove default value for target host in grant SSH access workflow",
-      "stats": {
-        "additions": 0,
-        "deletions": 1,
-        "total": 1
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "c7dd656b206924b9bfbfa742a17fe176e2d873f7",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-16T09:57:35Z",
-      "message": "Add steps to test Ansible connectivity and deploy SSH keys in grant access workflow",
-      "stats": {
-        "additions": 43,
-        "deletions": 0,
-        "total": 43
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "a16fb3e2436a3cabf3b4c0a55fe8808d3178979b",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-16T09:50:39Z",
-      "message": "Add SSH agent configuration before uploading logs",
-      "stats": {
-        "additions": 2,
-        "deletions": 0,
-        "total": 2
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "b5a0d275023ad813edf03e88e6b97aac4fdf50fd",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-16T09:48:53Z",
-      "message": "Add Ansible vault password setup to grant SSH access workflow",
-      "stats": {
-        "additions": 15,
-        "deletions": 53,
-        "total": 68
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "757f2179c2bf35c3a36deb58025bf3788819f0df",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-16T09:36:30Z",
-      "message": "Add workflow for granting temporary SSH access with user selection",
-      "stats": {
-        "additions": 195,
-        "deletions": 0,
-        "total": 195
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "2895f26bbf63a0305be12af2b5ecc9a654524afb",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-16T08:31:19Z",
-      "message": "Enhance Python cleanup script to handle multiple beszel-agent service blocks",
-      "stats": {
-        "additions": 7,
-        "deletions": 1,
-        "total": 8
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "ec345731e0104466a983c13d4db298b65392962a",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-16T08:24:55Z",
-      "message": "Fix Python cleanup script logic for proper block detection",
-      "stats": {
-        "additions": 24,
-        "deletions": 16,
-        "total": 40
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "fd72cbf58f3164e10dfc0481a567f13614c0e372",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-16T08:20:24Z",
-      "message": "Use temporary file approach for Python cleanup script",
-      "stats": {
-        "additions": 15,
-        "deletions": 6,
-        "total": 21
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "65703d7e75a94527d0e15d89a6db6db2797cca65",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-16T08:13:38Z",
-      "message": "Fix Python script execution using script module instead of heredoc",
-      "stats": {
-        "additions": 39,
-        "deletions": 37,
-        "total": 76
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "84f7d8628840ab03d42d74e853f36fc24b1f8d50",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-16T08:10:48Z",
-      "message": "Remove dry run functionality from workflow",
-      "stats": {
-        "additions": 4,
-        "deletions": 60,
-        "total": 64
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "345338effed8e731ba6ab6507f2697d7c1271a85",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-16T08:09:45Z",
-      "message": "Fix workflow conditions to properly respect unchecked boxes",
-      "stats": {
-        "additions": 8,
-        "deletions": 8,
-        "total": 16
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "3f281b0c66c85ebd51ee15df3c27ffd330c11f47",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-16T08:06:21Z",
-      "message": "Replace awk with Python for more reliable beszel-agent removal",
-      "stats": {
-        "additions": 36,
-        "deletions": 12,
-        "total": 48
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "fc5d9f4aa88de3ec5663f1fd707862bcb838f21c",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-16T07:59:08Z",
-      "message": "Fix duplicate beszel-agent entries by always cleaning before adding",
-      "stats": {
-        "additions": 28,
-        "deletions": 30,
-        "total": 58
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "a17196975b057a3bc713d0ddf2c2d49a5607e8f3",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-16T07:46:12Z",
-      "message": "Enhance beszel-agent setup: add backup and cleanup for unmanaged services in docker-compose.yml",
-      "stats": {
-        "additions": 33,
-        "deletions": 0,
-        "total": 33
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "ca537e83d357ef293b3d8cbb5e3c8f07abdcbac8",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-16T07:28:03Z",
-      "message": "Fix command syntax for Docker inspect and ps in Beszel agent setup",
-      "stats": {
-        "additions": 2,
-        "deletions": 2,
-        "total": 4
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "0ec63c2887a54995a4ed62a79e1dd402b3139b1f",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-16T07:23:52Z",
-      "message": "Add Ansible vault password setup and error handling in workflows",
-      "stats": {
-        "additions": 20,
-        "deletions": 0,
-        "total": 20
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "fa870d48d1374e6148f7da96c4d558e79ed10ff8",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-16T07:18:12Z",
-      "message": "Add Beszel agent setup and encryption support for host tokens",
-      "stats": {
-        "additions": 863,
-        "deletions": 5,
-        "total": 868
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "093e599211229407b99f2c84c3ed0b349ece7a15",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-16T20:09:46Z",
-      "message": "Merge branch 'main' into staging",
-      "stats": {
-        "additions": 0,
-        "deletions": 0,
-        "total": 0
-      },
-      "branches": [
-        "aioboto_implementation"
-      ]
-    },
-    {
-      "sha": "66e9dd0b841ac64ba8ae6aeaae263a863b4d0c79",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-16T20:01:54Z",
-      "message": "Syncing Main with Staging (#128)",
-      "stats": {
-        "additions": 151,
-        "deletions": 145,
-        "total": 296
-      },
-      "branches": [
-        "aioboto_implementation"
-      ]
-    },
-    {
-      "sha": "4b78cc77d5fe278ce024d72182d2b72612b8671e",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-16T18:42:08Z",
-      "message": "Tests fixed for Taking in URL and Storj Storage Key (#129)",
-      "stats": {
-        "additions": 65,
-        "deletions": 31,
-        "total": 96
-      },
-      "branches": [
-        "aioboto_implementation"
-      ]
-    },
-    {
-      "sha": "22eb596603e78469f3ce92858f048d329c4f2842",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-16T17:45:59Z",
-      "message": "SLOW_MSG QUICKFIX (#126)",
-      "stats": {
-        "additions": 56,
-        "deletions": 87,
-        "total": 143
-      },
-      "branches": [
-        "aioboto_implementation"
-      ]
-    },
-    {
-      "sha": "986a067abab332c23f5e066fd9d7502df6f1e371",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-16T16:20:35Z",
-      "message": "Integrety Error Handled (#127)",
-      "stats": {
-        "additions": 33,
-        "deletions": 31,
-        "total": 64
-      },
-      "branches": [
-        "aioboto_implementation"
-      ]
-    },
-    {
-      "sha": "e8cddc28f0289858039f03330b98f8792b02bc3c",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-16T15:00:30Z",
-      "message": "Syncing Staging to Main || feat: Optimize Performance, Fix Latency, and Enhance Logging (#123)",
-      "stats": {
-        "additions": 472,
-        "deletions": 102,
-        "total": 574
-      },
-      "branches": [
-        "aioboto_implementation"
-      ]
-    },
-    {
-      "sha": "ba14effcc78115858e158d08dad65a4319122923",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-16T13:16:04Z",
-      "message": "Test made robust GOOGLE_CHAT Key added and docker given dedicated min memory (#125)",
-      "stats": {
-        "additions": 59,
-        "deletions": 31,
-        "total": 90
-      },
-      "branches": [
-        "aioboto_implementation"
-      ]
-    },
-    {
-      "sha": "6ac3bf61daa02ffee555490ab7759c0c286e8329",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-16T12:48:14Z",
-      "message": "Enhanced Logging for tracking latency and app made faster via. batching s3 syncing jobs (#124)",
-      "stats": {
-        "additions": 124,
-        "deletions": 24,
-        "total": 148
-      },
-      "branches": [
-        "aioboto_implementation"
-      ]
-    },
-    {
-      "sha": "54beebea7e0bdbfde47a6f435c7401c69595480d",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-16T11:21:48Z",
-      "message": "Merge branch 'main' into staging",
-      "stats": {
-        "additions": 0,
-        "deletions": 0,
-        "total": 0
-      },
-      "branches": [
-        "aioboto_implementation"
-      ]
-    },
-    {
-      "sha": "e46d53b499eb4a3926593d8c9fdbbf026eb7d0ea",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-16T11:03:29Z",
-      "message": "Bugfix+ optimisations (#122)",
-      "stats": {
-        "additions": 43,
-        "deletions": 2,
-        "total": 45
-      },
-      "branches": [
-        "aioboto_implementation"
-      ]
-    },
-    {
-      "sha": "424a9edb887d84f8c11bae58a705c958aa07085c",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-16T10:08:01Z",
-      "message": "Optimizations on API and DB and Logging minor fixes (#120)",
-      "stats": {
-        "additions": 0,
-        "deletions": 0,
-        "total": 0
-      },
-      "branches": [
-        "aioboto_implementation"
-      ]
-    },
-    {
-      "sha": "293bd41cc545f26cc5037b5379bbd0838db19a4c",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-16T10:06:27Z",
-      "message": "Syncing Main to Staging (#119) (#121)",
-      "stats": {
-        "additions": 0,
-        "deletions": 0,
-        "total": 0
-      },
-      "branches": [
-        "aioboto_implementation"
-      ]
-    },
-    {
-      "sha": "dde1c3e33269b30a6e2b96b914212fc56a69c9e6",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-16T10:03:58Z",
-      "message": "fix: optimize api and database performance and resolve Gemini client log abnormalities (#109)",
-      "stats": {
-        "additions": 195,
-        "deletions": 36,
-        "total": 231
-      },
-      "branches": [
-        "aioboto_implementation"
-      ]
-    },
-    {
-      "sha": "5c4717866ec66a2e5bd38b9b256983d9d8d01621",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-16T09:31:55Z",
-      "message": "Syncing Main to Staging (#119)",
-      "stats": {
-        "additions": 2,
-        "deletions": 0,
-        "total": 2
-      },
-      "branches": [
-        "aioboto_implementation",
-        "main_replica__16jan"
-      ]
-    },
-    {
-      "sha": "243e287c01622461be55af334adab188c023770f",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-16T09:30:28Z",
-      "message": "Merge branch 'main' into staging",
-      "stats": {
-        "additions": 0,
-        "deletions": 0,
-        "total": 0
-      },
-      "branches": [
-        "aioboto_implementation"
-      ]
-    },
-    {
-      "sha": "d8f93b366d332776f7a43f77393934a0b071997b",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-16T09:17:45Z",
-      "message": "Syncing Main with Staging: SENTRY KEY add (#118)",
-      "stats": {
-        "additions": 2,
-        "deletions": 0,
-        "total": 2
-      },
-      "branches": [
-        "aioboto_implementation"
-      ]
-    },
-    {
-      "sha": "ba0061d60a3b7ca2369c648a6428ddf781cbc131",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-16T09:17:33Z",
-      "message": "Merge branch 'main' into staging",
-      "stats": {
-        "additions": 0,
-        "deletions": 0,
-        "total": 0
-      },
-      "branches": [
-        "aioboto_implementation"
-      ]
-    },
-    {
-      "sha": "c73dcda6a0bae5e17c27bb65a46ad1e34823f43a",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-16T09:11:39Z",
-      "message": "Sentry Bug fix (#117)",
-      "stats": {
-        "additions": 2,
-        "deletions": 0,
-        "total": 2
-      },
-      "branches": [
-        "aioboto_implementation"
-      ]
-    },
-    {
-      "sha": "639dfd17997747bb399067e509b3d7eb1223eaeb",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-16T08:28:05Z",
-      "message": "Sycning main with staging (#116)",
-      "stats": {
-        "additions": 14,
-        "deletions": 9,
-        "total": 23
-      },
-      "branches": [
-        "aioboto_implementation"
-      ]
-    },
-    {
-      "sha": "701b346b60d68879792e1e243f32ca6e63083424",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-16T08:25:56Z",
-      "message": "Merge branch 'main' into staging",
-      "stats": {
-        "additions": 0,
-        "deletions": 0,
-        "total": 0
-      },
-      "branches": [
-        "aioboto_implementation"
-      ]
-    },
-    {
-      "sha": "7dde9c724532ed741597dd7404c848d53954b31b",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-16T08:18:54Z",
-      "message": "Syncing Main with Staging (#115)",
-      "stats": {
-        "additions": 261,
-        "deletions": 41,
-        "total": 302
-      },
-      "branches": [
-        "aioboto_implementation"
-      ]
-    },
-    {
-      "sha": "7cd5c3d316dece30486265ac2f7a95d57afa5a73",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-16T08:05:52Z",
-      "message": "Update run_migrations.py",
-      "stats": {
-        "additions": 0,
-        "deletions": 0,
-        "total": 0
-      },
-      "branches": [
-        "aioboto_implementation"
-      ]
-    },
-    {
-      "sha": "82b8fdc220842fc467e123769e2a2a7b68b0ad38",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-16T07:51:38Z",
-      "message": "Sentry Webhook to Staging (#111)",
-      "stats": {
-        "additions": 178,
-        "deletions": 1,
-        "total": 179
-      },
-      "branches": [
-        "aioboto_implementation"
-      ]
-    },
-    {
-      "sha": "a8d3e6de4c7611ab852b7ac8b9df1ad9117ed247",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-16T20:10:00Z",
-      "message": "Syncing Staging with Main (Ruff checked) (#130)",
-      "stats": {
-        "additions": 0,
-        "deletions": 1,
-        "total": 1
-      },
-      "branches": [
-        "backward_chat_api"
-      ]
-    },
-    {
-      "sha": "39b8038d96d43c5f798c0e7f1d1b0e6e50b324fc",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-16T10:58:28Z",
-      "message": "Optimizations on API and DB and Logging minor fixes (#120)",
-      "stats": {
-        "additions": 0,
-        "deletions": 0,
-        "total": 0
-      },
-      "branches": [
-        "bf_14jan"
-      ]
-    },
-    {
-      "sha": "a8fe05612cb4c4368eb2a1c5843680034b8295bc",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-16T10:58:28Z",
-      "message": "Syncing Main to Staging (#119) (#121)",
-      "stats": {
-        "additions": 0,
-        "deletions": 0,
-        "total": 0
-      },
-      "branches": [
-        "bf_14jan"
-      ]
-    },
-    {
-      "sha": "2c1befeb44158c6b24eaddd594fda1b23830202e",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-16T10:58:28Z",
-      "message": "fix: optimize api and database performance and resolve Gemini client log abnormalities (#109)",
-      "stats": {
-        "additions": 1,
-        "deletions": 0,
-        "total": 1
-      },
-      "branches": [
-        "bf_14jan"
-      ]
-    },
-    {
-      "sha": "90ef0660078c8d8c9a61f447e433621ef8493782",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-16T10:58:28Z",
-      "message": "Update run_migrations.py",
-      "stats": {
-        "additions": 0,
-        "deletions": 0,
-        "total": 0
-      },
-      "branches": [
-        "bf_14jan"
-      ]
-    },
-    {
-      "sha": "c95da6f281c05e6500de4795a2eeee7d4b48db10",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-video-upload-service",
-      "timestamp": "2026-01-16T06:02:31Z",
-      "message": "added endpoints for upload url and update metadata",
-      "stats": {
-        "additions": 4031,
-        "deletions": 261,
-        "total": 4292
-      },
-      "branches": [
-        "feat/add-endpoints-for-upload-video-and-update-metadata"
-      ]
-    },
-    {
-      "sha": "6c7b14b7097edc002e7d462a46976c9e3e71d216",
-      "author": "ravi-sawlani-yral",
-      "repository": "dolr-ai/yral-video-upload-service",
-      "timestamp": "2026-01-16T06:06:07Z",
-      "message": "feat: add upload endpoints",
-      "stats": {
-        "additions": 4057,
-        "deletions": 241,
-        "total": 4298
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "d6935d33e4c472b47ae122d4ef6893157452b22c",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/redis-store-cluster",
-      "timestamp": "2026-01-16T05:09:09Z",
-      "message": "trigger CI",
-      "stats": {
-        "additions": 1,
-        "deletions": 0,
-        "total": 1
-      },
-      "branches": [
-        "naitik/impl-redis-store-cluster"
-      ]
-    },
-    {
-      "sha": "4284ae764044d7012b4b0f76a7cdbf9560426fbd",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/redis-store-cluster",
-      "timestamp": "2026-01-16T04:52:52Z",
-      "message": "fix: enable tls replication",
-      "stats": {
-        "additions": 1,
-        "deletions": 0,
-        "total": 1
-      },
-      "branches": [
-        "naitik/impl-redis-store-cluster"
-      ]
-    },
-    {
-      "sha": "e18ff2984fba4cf641078ca4ecea7352c561717e",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/redis-store-cluster",
-      "timestamp": "2026-01-16T04:29:12Z",
-      "message": "fix: rewrite sentinel config on cluster restart",
-      "stats": {
-        "additions": 32,
-        "deletions": 38,
-        "total": 70
-      },
-      "branches": [
-        "naitik/impl-redis-store-cluster"
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
       ]
     }
   ],
-  "commit_count": 80
+  "commit_count": 26
 }

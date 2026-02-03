@@ -1,7 +1,499 @@
 {
   "date": "2026-01-20",
-  "cached_at": "2026-02-03T18:36:29.408518Z",
+  "cached_at": "2026-02-03T20:53:58.533022Z",
   "commits": [
+    {
+      "sha": "0d605bbdabef576c4b7577568ed525e66f9c1baa",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2026-01-20T09:34:57Z",
+      "message": "feat: add YralPro subscription as token type for video creation (#632)",
+      "stats": {
+        "additions": 11,
+        "deletions": 14,
+        "total": 25
+      },
+      "branches": [
+        "copilot/add-total-credits-user-profile",
+        "feat/add-bulk-methods-for-profile-details",
+        "feat/include-total-number-of-free-credits-alloted-in-subscription",
+        "fix/candid-generation-script",
+        "joel/fix-accept-new-registration-guard",
+        "main"
+      ]
+    },
+    {
+      "sha": "d8247deaefc68b067add3e7ecab48f6d20ffbb46",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-20T06:09:54Z",
+      "message": "Merge pull request #1149 from dolr-ai/naitik/update-metadata-link",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "dependabot/cargo/bytes-1.11.1",
+        "dependabot/cargo/hon-worker-common-2a723cd",
+        "dependabot/cargo/openidconnect-4.0.1",
+        "dependabot/cargo/opentelemetry_sdk-0.31.0",
+        "dependabot/cargo/rsa-0.9.10",
+        "dependabot/cargo/videogen-common-2a723cd",
+        "dependabot/npm_and_yarn/tests/e2e/lodash-4.17.23",
+        "dependabot/npm_and_yarn/tests/e2e/multi-549b90733e",
+        "dependabot/npm_and_yarn/tests/e2e/multi-ac680358f5",
+        "fix/remove-post-status-filtering",
+        "joel/approval-flow",
+        "joel/offchain-urls",
+        "main",
+        "naitik/fix_dragonfly_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration_to_dragonfly_redis",
+        "revert-1150-naitik/migration_to_dragonfly_redis",
+        "revert-1153-naitik/migration_to_dragonfly_redis",
+        "revert-dual-write"
+      ]
+    },
+    {
+      "sha": "dfc11260c70075d439ea86329be06e59f9c0a823",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-20T21:57:50Z",
+      "message": "[skip ci] fix: small fixes in compose file and workflow file",
+      "stats": {
+        "additions": 10,
+        "deletions": 10,
+        "total": 20
+      },
+      "branches": [
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration_to_dragonfly_redis"
+      ]
+    },
+    {
+      "sha": "5c6b5cbb71e625206d498efb4e89fa451601089f",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-20T18:01:31Z",
+      "message": "fix: removed unused  immport",
+      "stats": {
+        "additions": 0,
+        "deletions": 1,
+        "total": 1
+      },
+      "branches": [
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration_to_dragonfly_redis"
+      ]
+    },
+    {
+      "sha": "0100ec38139e2c0c7ef235f4e18e6a59675ac602",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-20T17:55:42Z",
+      "message": "fix: specifiying type for dragonfly kv since redis and dragonfly being used together which cause err",
+      "stats": {
+        "additions": 15,
+        "deletions": 16,
+        "total": 31
+      },
+      "branches": [
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration_to_dragonfly_redis"
+      ]
+    },
+    {
+      "sha": "c3f0f1865dcba3d104ef750d78d90fd802e6ae86",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-20T17:17:14Z",
+      "message": "fix : fixed cargo lint check error",
+      "stats": {
+        "additions": 12,
+        "deletions": 12,
+        "total": 24
+      },
+      "branches": [
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration_to_dragonfly_redis"
+      ]
+    },
+    {
+      "sha": "e1f50858d0f3f66af6c1139e2eba76a7c164cba3",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-20T17:01:53Z",
+      "message": "fix: make rustls optional  to just use in ssr",
+      "stats": {
+        "additions": 4,
+        "deletions": 2,
+        "total": 6
+      },
+      "branches": [
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration_to_dragonfly_redis"
+      ]
+    },
+    {
+      "sha": "ff6ac8b10057c020dc92437c9d903c0bba9682b1",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-20T12:33:07Z",
+      "message": "inital commit for migration to dragonfly",
+      "stats": {
+        "additions": 792,
+        "deletions": 43,
+        "total": 835
+      },
+      "branches": [
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration_to_dragonfly_redis"
+      ]
+    },
+    {
+      "sha": "cf8871bc6c842579372717026cc60436c117abcf",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-20T19:33:49Z",
+      "message": "feat: add Sentry webhook handler to forward alerts to Google Chat (#356)",
+      "stats": {
+        "additions": 432,
+        "deletions": 96,
+        "total": 528
+      },
+      "branches": [
+        "copilot/sub-pr-378",
+        "feat/add-support-for-yral-subscription",
+        "feat/report-app-migration",
+        "fix/gchat-oauth-for-report-buttons",
+        "fix/user-agent-issue-with-pro-subscription",
+        "fix/yral-pro-subscription-token-operation",
+        "joel/apps-script-reports-api",
+        "joel/btc-rewards-builder-err",
+        "joel/dolr-rewards",
+        "joel/fix-btc-dolr-notif",
+        "joel/fix-event-name",
+        "joel/fix-event-ser",
+        "joel/fix-gchat-report-buttons",
+        "joel/fix-logging",
+        "joel/fix-report-env",
+        "joel/fix-reports",
+        "joel/icp-swap-dolr-price-fetch",
+        "joel/leaderboard-redis-migration",
+        "joel/metric-server-cleanup",
+        "joel/offchain-broken-pipe-fix",
+        "joel/phash-fix",
+        "joel/phash-redis-migration",
+        "joel/profile-views-check",
+        "joel/rewards-mode",
+        "joel/rm-panic",
+        "joel/sentry-channel-routing",
+        "joel/sentry-issues-fix",
+        "joel/sentry-spam-fix",
+        "joel/upload-flow-content",
+        "joel/views-fix",
+        "joel/webhook-fix",
+        "main",
+        "naitik/broken_pipe_issue_fix",
+        "naitik/migrate_fly_redis_to_dragonfly",
+        "naitik/migrate_reads_to_dragonfly",
+        "revert-358-naitik/migrate_fly_redis_to_dragonfly",
+        "revert-359-revert-358-naitik/migrate_fly_redis_to_dragonfly"
+      ]
+    },
+    {
+      "sha": "7a1bada798853bc455b6eeb81f3c4aac5b85eb90",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-20T17:48:11Z",
+      "message": "feat: add video report banned event and notification handling (#357)",
+      "stats": {
+        "additions": 35,
+        "deletions": 3,
+        "total": 38
+      },
+      "branches": [
+        "copilot/sub-pr-378",
+        "feat/add-support-for-yral-subscription",
+        "feat/report-app-migration",
+        "fix/gchat-oauth-for-report-buttons",
+        "fix/user-agent-issue-with-pro-subscription",
+        "fix/yral-pro-subscription-token-operation",
+        "joel/apps-script-reports-api",
+        "joel/btc-rewards-builder-err",
+        "joel/dolr-rewards",
+        "joel/fix-btc-dolr-notif",
+        "joel/fix-event-name",
+        "joel/fix-event-ser",
+        "joel/fix-gchat-report-buttons",
+        "joel/fix-logging",
+        "joel/fix-report-env",
+        "joel/fix-reports",
+        "joel/icp-swap-dolr-price-fetch",
+        "joel/leaderboard-redis-migration",
+        "joel/metric-server-cleanup",
+        "joel/offchain-broken-pipe-fix",
+        "joel/phash-fix",
+        "joel/phash-redis-migration",
+        "joel/profile-views-check",
+        "joel/rewards-mode",
+        "joel/rm-panic",
+        "joel/sentry-channel-routing",
+        "joel/sentry-issues-fix",
+        "joel/sentry-spam-fix",
+        "joel/upload-flow-content",
+        "joel/views-fix",
+        "joel/webhook-fix",
+        "main",
+        "naitik/broken_pipe_issue_fix",
+        "naitik/migrate_fly_redis_to_dragonfly",
+        "naitik/migrate_reads_to_dragonfly",
+        "revert-358-naitik/migrate_fly_redis_to_dragonfly",
+        "revert-359-revert-358-naitik/migrate_fly_redis_to_dragonfly"
+      ]
+    },
+    {
+      "sha": "c1a57dfeedc1365eaa09690474264999f00b4948",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-20T08:09:13Z",
+      "message": "Merge pull request #354 from dolr-ai/naitik/update_metadata_url",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "copilot/sub-pr-378",
+        "feat/add-support-for-yral-subscription",
+        "feat/report-app-migration",
+        "fix/gchat-oauth-for-report-buttons",
+        "fix/user-agent-issue-with-pro-subscription",
+        "fix/yral-pro-subscription-token-operation",
+        "joel/apps-script-reports-api",
+        "joel/ban-event",
+        "joel/btc-rewards-builder-err",
+        "joel/dolr-rewards",
+        "joel/fix-btc-dolr-notif",
+        "joel/fix-event-name",
+        "joel/fix-event-ser",
+        "joel/fix-gchat-report-buttons",
+        "joel/fix-logging",
+        "joel/fix-report-env",
+        "joel/fix-reports",
+        "joel/icp-swap-dolr-price-fetch",
+        "joel/leaderboard-redis-migration",
+        "joel/metric-server-cleanup",
+        "joel/offchain-broken-pipe-fix",
+        "joel/phash-fix",
+        "joel/phash-redis-migration",
+        "joel/profile-views-check",
+        "joel/rewards-mode",
+        "joel/rm-panic",
+        "joel/sentry_webhooks",
+        "joel/sentry-channel-routing",
+        "joel/sentry-issues-fix",
+        "joel/sentry-spam-fix",
+        "joel/upload-flow-content",
+        "joel/views-fix",
+        "joel/webhook-fix",
+        "main",
+        "naitik/broken_pipe_issue_fix",
+        "naitik/migrate_fly_redis_to_dragonfly",
+        "naitik/migrate_reads_to_dragonfly",
+        "revert-358-naitik/migrate_fly_redis_to_dragonfly",
+        "revert-359-revert-358-naitik/migrate_fly_redis_to_dragonfly"
+      ]
+    },
+    {
+      "sha": "bfddbab25ea6661df03b4c88cbdade83950d049d",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-20T07:46:41Z",
+      "message": "feat: add canister health check endpoint and related functionality (#355)",
+      "stats": {
+        "additions": 156,
+        "deletions": 2,
+        "total": 158
+      },
+      "branches": [
+        "copilot/sub-pr-378",
+        "feat/add-support-for-yral-subscription",
+        "feat/report-app-migration",
+        "fix/gchat-oauth-for-report-buttons",
+        "fix/user-agent-issue-with-pro-subscription",
+        "fix/yral-pro-subscription-token-operation",
+        "joel/apps-script-reports-api",
+        "joel/ban-event",
+        "joel/btc-rewards-builder-err",
+        "joel/dolr-rewards",
+        "joel/fix-btc-dolr-notif",
+        "joel/fix-event-name",
+        "joel/fix-event-ser",
+        "joel/fix-gchat-report-buttons",
+        "joel/fix-logging",
+        "joel/fix-report-env",
+        "joel/fix-reports",
+        "joel/icp-swap-dolr-price-fetch",
+        "joel/leaderboard-redis-migration",
+        "joel/metric-server-cleanup",
+        "joel/offchain-broken-pipe-fix",
+        "joel/phash-fix",
+        "joel/phash-redis-migration",
+        "joel/profile-views-check",
+        "joel/rewards-mode",
+        "joel/rm-panic",
+        "joel/sentry_webhooks",
+        "joel/sentry-channel-routing",
+        "joel/sentry-issues-fix",
+        "joel/sentry-spam-fix",
+        "joel/upload-flow-content",
+        "joel/views-fix",
+        "joel/webhook-fix",
+        "main",
+        "naitik/broken_pipe_issue_fix",
+        "naitik/migrate_fly_redis_to_dragonfly",
+        "naitik/migrate_reads_to_dragonfly",
+        "revert-358-naitik/migrate_fly_redis_to_dragonfly",
+        "revert-359-revert-358-naitik/migrate_fly_redis_to_dragonfly"
+      ]
+    },
+    {
+      "sha": "dd87a51d289375b01de8f3638c35ca522666517e",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-20T23:38:33Z",
+      "message": "fix: version chage in toml",
+      "stats": {
+        "additions": 5,
+        "deletions": 12,
+        "total": 17
+      },
+      "branches": [
+        "naitik/migrate_fly_redis_to_dragonfly"
+      ]
+    },
+    {
+      "sha": "213a0e3e892b25ca378ac71b0e206f5f3aef545b",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-20T23:07:30Z",
+      "message": "fix: error fix in dragonfly mod and added feature in redis crate",
+      "stats": {
+        "additions": 3,
+        "deletions": 2,
+        "total": 5
+      },
+      "branches": [
+        "naitik/migrate_fly_redis_to_dragonfly"
+      ]
+    },
+    {
+      "sha": "63655353092a9d5295fcfc1e1a20d53a777e36d2",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-20T22:56:54Z",
+      "message": "fix: using lil older version of redis",
+      "stats": {
+        "additions": 13,
+        "deletions": 13,
+        "total": 26
+      },
+      "branches": [
+        "naitik/migrate_fly_redis_to_dragonfly"
+      ]
+    },
+    {
+      "sha": "b63268834744c7ab24ef801d41ef2115dfd3b150",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-20T21:43:41Z",
+      "message": "fix: adjusting bb8 version as per redis version",
+      "stats": {
+        "additions": 23,
+        "deletions": 36,
+        "total": 59
+      },
+      "branches": [
+        "naitik/migrate_fly_redis_to_dragonfly"
+      ]
+    },
+    {
+      "sha": "2f33596962ba476dbd2b6b17f685aae5dc2efb93",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-20T21:34:19Z",
+      "message": "fix: tweaking redis version to fix serde error",
+      "stats": {
+        "additions": 37,
+        "deletions": 33,
+        "total": 70
+      },
+      "branches": [
+        "naitik/migrate_fly_redis_to_dragonfly"
+      ]
+    },
+    {
+      "sha": "ae89a7983cb29b542d13236bd6a1ec035111e4d3",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-20T21:17:14Z",
+      "message": "fix: serde error for version mismatch",
+      "stats": {
+        "additions": 3,
+        "deletions": 1,
+        "total": 4
+      },
+      "branches": [
+        "naitik/migrate_fly_redis_to_dragonfly"
+      ]
+    },
+    {
+      "sha": "8bb3d4851390f45f93a90875c0de9e69cc24e72f",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-20T21:01:19Z",
+      "message": "fix : added dragonfly env vars in compose file and small fixes",
+      "stats": {
+        "additions": 31,
+        "deletions": 6,
+        "total": 37
+      },
+      "branches": [
+        "naitik/migrate_fly_redis_to_dragonfly"
+      ]
+    },
+    {
+      "sha": "4291ff7f5e91a96237db84b0233a8d8ef6abd19f",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-20T20:48:11Z",
+      "message": "Merge remote-tracking branch 'origin/main' into naitik/migrate_fly_redis_to_dragonfly",
+      "stats": {
+        "additions": 467,
+        "deletions": 99,
+        "total": 566
+      },
+      "branches": [
+        "naitik/migrate_fly_redis_to_dragonfly"
+      ]
+    },
+    {
+      "sha": "a3f53ac88a011019d4f50579f66ff13109d52b83",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-20T20:40:09Z",
+      "message": "init commit for migration of fly redis to dragonfly",
+      "stats": {
+        "additions": 676,
+        "deletions": 28,
+        "total": 704
+      },
+      "branches": [
+        "naitik/migrate_fly_redis_to_dragonfly"
+      ]
+    },
     {
       "sha": "c9f677d48ca23604947e163db9dd29c24523545f",
       "author": "naitik-makwana-yral",
@@ -28,7 +520,20 @@
         "deletions": 473,
         "total": 1007
       },
-      "branches": []
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main"
+      ]
     },
     {
       "sha": "35171ba8c3e2ceb1b57228e500440fbfead39cb0",
@@ -41,7 +546,20 @@
         "deletions": 256,
         "total": 438
       },
-      "branches": []
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main"
+      ]
     },
     {
       "sha": "4066c5d48c98314d700844ee8b526afafe06b9c8",
@@ -54,7 +572,20 @@
         "deletions": 4,
         "total": 29
       },
-      "branches": []
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main"
+      ]
     },
     {
       "sha": "11799fd026fa60eec00ebf7a9625e924dac425e7",
@@ -67,7 +598,18 @@
         "deletions": 2,
         "total": 4
       },
-      "branches": []
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "main"
+      ]
     },
     {
       "sha": "a581d4ff314065dd9944b965b37468346dac5851",
@@ -80,7 +622,18 @@
         "deletions": 11,
         "total": 39
       },
-      "branches": []
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "main"
+      ]
     },
     {
       "sha": "93285d3f2b83d3d6d707a61fbc7517f14de3f356",
@@ -93,62 +646,94 @@
         "deletions": 11,
         "total": 39
       },
-      "branches": []
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
+      ]
     },
     {
-      "sha": "b25a37da4ba3b92d70968d3fadda374937ad3c92",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-20T13:41:00Z",
-      "message": "Refactor system update playbook to remove reboot checks and streamline upgrade process",
+      "sha": "245d2c43c1a0317180aa2ace2080bbc663b654ac",
+      "author": "samarth-paboowal-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-20T09:18:04Z",
+      "message": "chore: bumps ios version to 3.2.0",
       "stats": {
-        "additions": 2,
-        "deletions": 38,
-        "total": 40
-      },
-      "branches": []
-    },
-    {
-      "sha": "dcb5841d54cb8d620706c4518267426e262008f8",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-20T13:29:23Z",
-      "message": "Remove obsolete host variable file for example host",
-      "stats": {
-        "additions": 0,
-        "deletions": 6,
-        "total": 6
-      },
-      "branches": []
-    },
-    {
-      "sha": "e1a6d3dbcacc48527a3da7ca237404baece06b27",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-20T13:26:03Z",
-      "message": "test commit",
-      "stats": {
-        "additions": 45,
-        "deletions": 24,
-        "total": 69
-      },
-      "branches": []
-    },
-    {
-      "sha": "3abb0f1438dd4ef21e814d581ab993809f3a4dc1",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/redis-store-cluster",
-      "timestamp": "2026-01-20T09:18:50Z",
-      "message": "fix: removed on push run from cluster2, added small fix for masterauth in compose and fix in migrati",
-      "stats": {
-        "additions": 543,
-        "deletions": 35,
-        "total": 578
+        "additions": 7,
+        "deletions": 7,
+        "total": 14
       },
       "branches": [
-        "naitik/impl-redis-store-cluster"
+        "release/3.2.0"
+      ]
+    },
+    {
+      "sha": "551c593df03d851e31fb723f13f118ecedeeb833",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-01-20T09:52:10Z",
+      "message": "feat: update rate limit canister did file (#150)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "feat/update-candid-for-user-info-service",
+        "feat/update-user-info-deps",
+        "fix/update-user-info-service-candid",
+        "fix/yral-pro-subscription-token-transaction-implmentation",
+        "master",
+        "revert-153-fix/update-user-info-service-candid",
+        "revert-banned-posts-filter"
+      ]
+    },
+    {
+      "sha": "4e63ff917a02c0da1564b385d0193e9fe56f9b22",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-01-20T08:08:36Z",
+      "message": "Merge pull request #149 from dolr-ai/naitik/updata_metadata_url",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "feat/update-candid-for-user-info-service",
+        "feat/update-user-info-deps",
+        "fix/update-user-info-service-candid",
+        "fix/yral-pro-subscription-token-transaction-implmentation",
+        "master",
+        "revert-153-fix/update-user-info-service-candid",
+        "revert-banned-posts-filter"
+      ]
+    },
+    {
+      "sha": "a08910d9ba793e7e7c7bc0c852ea5dc92f45feeb",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-01-20T09:47:55Z",
+      "message": "update rate limit canister did file",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "feat/update-rate-limit-canister-did-file"
       ]
     }
   ],
-  "commit_count": 11
+  "commit_count": 32
 }

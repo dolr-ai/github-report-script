@@ -239,39 +239,35 @@ class GitHubFetcher:
         seen_commits = set()
 
         try:
-            # GraphQL query to fetch repos with their branches and commits
-            # Reduced limits to avoid MAX_NODE_LIMIT_EXCEEDED error
-            query = """
-            query($org: String!, $since: GitTimestamp!, $until: GitTimestamp!, $cursor: String) {
-              organization(login: $org) {
-                repositories(first: 20, after: $cursor) {
+            # GraphQL query for fetching branches with pagination for a single repo
+            # Using 50 branches per page for good balance between API calls and node limits
+            branches_query = """
+            query($owner: String!, $repo: String!, $since: GitTimestamp!, $until: GitTimestamp!, $cursor: String) {
+              repository(owner: $owner, name: $repo) {
+                refs(refPrefix: "refs/heads/", first: 50, after: $cursor) {
+                  totalCount
                   pageInfo {
                     hasNextPage
                     endCursor
                   }
                   nodes {
-                    nameWithOwner
-                    refs(refPrefix: "refs/heads/", first: 10) {
-                      nodes {
-                        name
-                        target {
-                          ... on Commit {
-                            history(first: 50, since: $since, until: $until) {
-                              nodes {
-                                oid
-                                author {
-                                  user {
-                                    login
-                                  }
-                                  name
-                                  email
-                                }
-                                committedDate
-                                message
-                                additions
-                                deletions
+                    name
+                    target {
+                      ... on Commit {
+                        history(first: 50, since: $since, until: $until) {
+                          nodes {
+                            oid
+                            author {
+                              user {
+                                login
                               }
+                              name
+                              email
                             }
+                            committedDate
+                            message
+                            additions
+                            deletions
                           }
                         }
                       }
@@ -282,132 +278,183 @@ class GitHubFetcher:
             }
             """
 
-            variables = {
+            # GraphQL query to fetch repository list
+            repos_query = """
+            query($org: String!, $cursor: String) {
+              organization(login: $org) {
+                repositories(first: 50, after: $cursor) {
+                  pageInfo {
+                    hasNextPage
+                    endCursor
+                  }
+                  nodes {
+                    nameWithOwner
+                  }
+                }
+              }
+            }
+            """
+
+            repo_variables = {
                 'org': GITHUB_ORG,
-                'since': start_datetime.isoformat() + 'Z',
-                'until': end_datetime.isoformat() + 'Z',
                 'cursor': None
             }
 
-            has_next_page = True
+            has_next_repo_page = True
             repo_count = 0
 
-            while has_next_page:
+            # Track commits by SHA to append branches from multiple branch queries
+            commits_by_sha = {}
+
+            # Paginate through repositories
+            while has_next_repo_page:
                 logger.debug(
-                    f"Fetching repositories page (cursor: {variables.get('cursor', 'first')})")
+                    f"Fetching repositories page (cursor: {repo_variables.get('cursor', 'first')})")
 
-                data = self._graphql_request(query, variables)
+                repo_data = self._graphql_request(repos_query, repo_variables)
 
-                if not data or 'organization' not in data:
-                    logger.error(f"Failed to fetch data from GraphQL API")
+                if not repo_data or 'organization' not in repo_data:
+                    logger.error(
+                        f"Failed to fetch repository list from GraphQL API")
                     break
 
-                repos = data['organization']['repositories']
-                page_info = repos['pageInfo']
-                has_next_page = page_info['hasNextPage']
-                variables['cursor'] = page_info['endCursor']
+                repos = repo_data['organization']['repositories']
+                repo_page_info = repos['pageInfo']
+                has_next_repo_page = repo_page_info['hasNextPage']
+                repo_variables['cursor'] = repo_page_info['endCursor']
 
+                # Process each repository
                 for repo in repos['nodes']:
                     repo_full_name = repo['nameWithOwner']
                     repo_name = repo_full_name.split('/')[-1]
+                    owner, repo_short = repo_full_name.split('/')
                     repo_commit_count = 0
+                    total_branches_processed = 0
 
-                    # Process each branch
-                    branches = repo.get('refs', {}).get('nodes', [])
+                    # Paginate through branches for this repository
+                    branch_variables = {
+                        'owner': owner,
+                        'repo': repo_short,
+                        'since': start_datetime.isoformat() + 'Z',
+                        'until': end_datetime.isoformat() + 'Z',
+                        'cursor': None
+                    }
 
-                    for branch in branches:
-                        branch_name = branch['name']
+                    has_next_branch_page = True
+                    first_branch_page = True
 
-                        # Get commit history for this branch
-                        target = branch.get('target')
-                        if not target:
-                            continue
+                    while has_next_branch_page:
+                        branch_data = self._graphql_request(
+                            branches_query, branch_variables)
 
-                        history = target.get('history', {}).get('nodes', [])
+                        if not branch_data or 'repository' not in branch_data:
+                            logger.debug(
+                                f"Could not fetch branches for {repo_full_name}")
+                            break
 
-                        for commit in history:
-                            try:
-                                commit_sha = commit['oid']
+                        refs = branch_data['repository']['refs']
+                        branch_page_info = refs['pageInfo']
+                        has_next_branch_page = branch_page_info['hasNextPage']
+                        branch_variables['cursor'] = branch_page_info['endCursor']
 
-                                # Skip if we've already processed this commit
-                                if commit_sha in seen_commits:
-                                    continue
+                        branches = refs.get('nodes', [])
+                        total_branches_processed += len(branches)
 
-                                seen_commits.add(commit_sha)
-
-                                # Get author info
-                                author_data = commit.get('author', {})
-                                author_user = author_data.get('user')
-
-                                # Skip if no author user
-                                if not author_user:
-                                    continue
-
-                                author_login = author_user.get('login')
-
-                                # Skip if author not in tracking list
-                                if author_login not in user_ids:
-                                    continue
-
-                                # Check for bot commits using author name/email
-                                author_name = author_data.get('name', '')
-                                author_email = author_data.get('email', '')
-                                is_bot = False
-                                for bot in KNOWN_BOTS:
-                                    if bot.lower() in author_name.lower() or bot.lower() in author_email.lower():
-                                        is_bot = True
-                                        break
-
-                                if is_bot:
-                                    continue
-
-                                # Extract commit data from GraphQL response
-                                commit_data = {
-                                    'sha': commit_sha,
-                                    'author': author_login,
-                                    'repository': repo_full_name,
-                                    'timestamp': commit.get('committedDate', ''),
-                                    'message': commit.get('message', '').split('\n')[0][:100],
-                                    'stats': {
-                                        'additions': commit.get('additions', 0),
-                                        'deletions': commit.get('deletions', 0),
-                                        'total': commit.get('additions', 0) + commit.get('deletions', 0)
-                                    },
-                                    # Tag with the branch we fetched it from
-                                    'branches': [branch_name]
-                                }
-
-                                # Optionally fetch other branches containing this commit as HEAD
-                                # (This will find if the commit is also the HEAD of other branches)
-                                try:
-                                    additional_branches = self._fetch_commit_branches(
-                                        repo_full_name, commit_sha
-                                    )
-                                    # Add any branches not already in the list
-                                    for branch in additional_branches:
-                                        if branch not in commit_data['branches']:
-                                            commit_data['branches'].append(
-                                                branch)
-                                except Exception as e:
-                                    logger.debug(
-                                        f"Could not fetch additional branches for commit {commit_sha[:7]}: {e}"
-                                    )
-
-                                commits_data.append(commit_data)
-                                repo_commit_count += 1
-
+                        # Log total branch count on first page
+                        if first_branch_page:
+                            total_branch_count = refs.get('totalCount', 0)
+                            if total_branch_count > 50:
                                 logger.debug(
-                                    f"Processed commit {commit_sha[:7]} by {author_login} in {repo_name}")
+                                    f"{repo_full_name} has {total_branch_count} branches, paginating..."
+                                )
+                            first_branch_page = False
 
-                            except Exception as e:
-                                # Skip problematic individual commits
-                                logger.debug(
-                                    f"Skipped commit in {repo_full_name}: {e}")
+                        # Process each branch
+                        for branch in branches:
+                            branch_name = branch['name']
+
+                            # Get commit history for this branch
+                            target = branch.get('target')
+                            if not target:
                                 continue
+
+                            history = target.get(
+                                'history', {}).get('nodes', [])
+
+                            for commit in history:
+                                try:
+                                    commit_sha = commit['oid']
+
+                                    # Check if we've already seen this commit
+                                    if commit_sha in commits_by_sha:
+                                        # Add this branch if not already listed
+                                        existing_commit = commits_by_sha[commit_sha]
+                                        if branch_name not in existing_commit['branches']:
+                                            existing_commit['branches'].append(
+                                                branch_name)
+                                            logger.debug(
+                                                f"Added branch '{branch_name}' to commit {commit_sha[:7]} (now has {len(existing_commit['branches'])} branches)")
+                                        continue
+
+                                    # Get author info
+                                    author_data = commit.get('author', {})
+                                    author_user = author_data.get('user')
+
+                                    # Skip if no author user
+                                    if not author_user:
+                                        continue
+
+                                    author_login = author_user.get('login')
+
+                                    # Skip if author not in tracking list
+                                    if author_login not in user_ids:
+                                        continue
+
+                                    # Check for bot commits using author name/email
+                                    author_name = author_data.get('name', '')
+                                    author_email = author_data.get('email', '')
+                                    is_bot = False
+                                    for bot in KNOWN_BOTS:
+                                        if bot.lower() in author_name.lower() or bot.lower() in author_email.lower():
+                                            is_bot = True
+                                            break
+
+                                    if is_bot:
+                                        continue
+
+                                    # Extract commit data from GraphQL response
+                                    commit_data = {
+                                        'sha': commit_sha,
+                                        'author': author_login,
+                                        'repository': repo_full_name,
+                                        'timestamp': commit.get('committedDate', ''),
+                                        'message': commit.get('message', '').split('\n')[0][:100],
+                                        'stats': {
+                                            'additions': commit.get('additions', 0),
+                                            'deletions': commit.get('deletions', 0),
+                                            'total': commit.get('additions', 0) + commit.get('deletions', 0)
+                                        },
+                                        # Tag with the branch we fetched it from
+                                        'branches': [branch_name]
+                                    }
+
+                                    # Track this commit by SHA
+                                    commits_by_sha[commit_sha] = commit_data
+                                    commits_data.append(commit_data)
+                                    repo_commit_count += 1
+
+                                    logger.debug(
+                                        f"Processed commit {commit_sha[:7]} by {author_login} in {repo_name}")
+
+                                except Exception as e:
+                                    # Skip problematic individual commits
+                                    logger.debug(
+                                        f"Skipped commit in {repo_full_name}: {e}")
+                                    continue
 
                     if repo_commit_count > 0:
                         logger.debug(
-                            f"Fetched {repo_commit_count} commits from {repo_full_name}")
+                            f"Fetched {repo_commit_count} commits from {repo_full_name} ({total_branches_processed} branches)")
                         repo_count += 1
 
         except Exception as e:

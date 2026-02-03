@@ -13,12 +13,6 @@
   "repo_count": 3,
   "branch_breakdown": {
     "dolr-ai/yral-metadata": {
-      "copilot/fix-username-release-on-delete": {
-        "additions": 345,
-        "deletions": 340,
-        "total_loc": 685,
-        "commit_count": 1
-      },
       "master": {
         "additions": 345,
         "deletions": 340,
@@ -43,5 +37,5 @@
       }
     }
   },
-  "processed_at": "2026-02-03T20:11:44.036228Z"
+  "processed_at": "2026-02-03T20:45:37.511648Z"
 }

@@ -11,19 +11,13 @@
   "repo_count": 1,
   "branch_breakdown": {
     "dolr-ai/yral-mobile": {
-      "chore/events-to-offchain-api": {
-        "additions": 87,
-        "deletions": 7,
-        "total_loc": 94,
-        "commit_count": 1
-      },
-      "unknown": {
-        "additions": 16658,
-        "deletions": 874,
-        "total_loc": 17532,
-        "commit_count": 1
+      "main": {
+        "additions": 16745,
+        "deletions": 881,
+        "total_loc": 17626,
+        "commit_count": 2
       }
     }
   },
-  "processed_at": "2026-02-03T20:11:43.992615Z"
+  "processed_at": "2026-02-03T20:53:58.979016Z"
 }

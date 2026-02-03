@@ -11,19 +11,13 @@
   "repo_count": 1,
   "branch_breakdown": {
     "dolr-ai/yral-ai-chat": {
-      "unknown": {
+      "main": {
         "additions": 4,
         "deletions": 4,
         "total_loc": 8,
-        "commit_count": 3
-      },
-      "litestream_sync_interval": {
-        "additions": 0,
-        "deletions": 0,
-        "total_loc": 0,
-        "commit_count": 1
+        "commit_count": 4
       }
     }
   },
-  "processed_at": "2026-02-03T20:11:44.000128Z"
+  "processed_at": "2026-02-03T20:53:58.990600Z"
 }

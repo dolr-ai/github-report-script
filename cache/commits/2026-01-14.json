@@ -1,7 +1,425 @@
 {
   "date": "2026-01-14",
-  "cached_at": "2026-02-03T18:36:33.663056Z",
+  "cached_at": "2026-02-03T20:53:56.912538Z",
   "commits": [
+    {
+      "sha": "fb711e676d3848977ca1e84e8fe0416b14a14aab",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-14T09:43:51Z",
+      "message": "Merge branch 'main' into joel/approval-flow",
+      "stats": {
+        "additions": 782,
+        "deletions": 469,
+        "total": 1251
+      },
+      "branches": [
+        "joel/approval-flow"
+      ]
+    },
+    {
+      "sha": "6f9ff3ec1dd887b1e95cbf0eb20194a6c07712c3",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-14T09:43:41Z",
+      "message": "Update consts.rs (#353)",
+      "stats": {
+        "additions": 6,
+        "deletions": 0,
+        "total": 6
+      },
+      "branches": [
+        "copilot/sub-pr-378",
+        "feat/add-support-for-yral-subscription",
+        "feat/report-app-migration",
+        "fix/gchat-oauth-for-report-buttons",
+        "fix/user-agent-issue-with-pro-subscription",
+        "fix/yral-pro-subscription-token-operation",
+        "joel/apps-script-reports-api",
+        "joel/ban-event",
+        "joel/btc-rewards-builder-err",
+        "joel/canister-health-endpoint",
+        "joel/dolr-rewards",
+        "joel/fix-btc-dolr-notif",
+        "joel/fix-event-name",
+        "joel/fix-event-ser",
+        "joel/fix-gchat-report-buttons",
+        "joel/fix-logging",
+        "joel/fix-report-env",
+        "joel/fix-reports",
+        "joel/icp-swap-dolr-price-fetch",
+        "joel/leaderboard-redis-migration",
+        "joel/metric-server-cleanup",
+        "joel/offchain-broken-pipe-fix",
+        "joel/phash-fix",
+        "joel/phash-redis-migration",
+        "joel/profile-views-check",
+        "joel/rewards-mode",
+        "joel/rm-panic",
+        "joel/sentry_webhooks",
+        "joel/sentry-channel-routing",
+        "joel/sentry-issues-fix",
+        "joel/sentry-spam-fix",
+        "joel/upload-flow-content",
+        "joel/views-fix",
+        "joel/webhook-fix",
+        "main",
+        "naitik/broken_pipe_issue_fix",
+        "naitik/migrate_fly_redis_to_dragonfly",
+        "naitik/migrate_reads_to_dragonfly",
+        "revert-358-naitik/migrate_fly_redis_to_dragonfly",
+        "revert-359-revert-358-naitik/migrate_fly_redis_to_dragonfly"
+      ]
+    },
+    {
+      "sha": "8bb9c02073e4cd9eab85f7f0f9be5a343cf48756",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-14T08:42:15Z",
+      "message": "fix: ignore self views (#352)",
+      "stats": {
+        "additions": 13,
+        "deletions": 2,
+        "total": 15
+      },
+      "branches": [
+        "copilot/sub-pr-378",
+        "feat/add-support-for-yral-subscription",
+        "feat/report-app-migration",
+        "fix/gchat-oauth-for-report-buttons",
+        "fix/user-agent-issue-with-pro-subscription",
+        "fix/yral-pro-subscription-token-operation",
+        "joel/apps-script-reports-api",
+        "joel/ban-event",
+        "joel/btc-rewards-builder-err",
+        "joel/canister-health-endpoint",
+        "joel/dolr-rewards",
+        "joel/fix-btc-dolr-notif",
+        "joel/fix-event-name",
+        "joel/fix-event-ser",
+        "joel/fix-gchat-report-buttons",
+        "joel/fix-logging",
+        "joel/fix-report-env",
+        "joel/fix-reports",
+        "joel/icp-swap-dolr-price-fetch",
+        "joel/leaderboard-redis-migration",
+        "joel/metric-server-cleanup",
+        "joel/offchain-broken-pipe-fix",
+        "joel/phash-fix",
+        "joel/phash-redis-migration",
+        "joel/profile-views-check",
+        "joel/rewards-mode",
+        "joel/rm-panic",
+        "joel/sentry_webhooks",
+        "joel/sentry-channel-routing",
+        "joel/sentry-issues-fix",
+        "joel/sentry-spam-fix",
+        "joel/upload-flow-content",
+        "joel/views-fix",
+        "joel/webhook-fix",
+        "joel-medicala-yral-patch-2",
+        "main",
+        "naitik/broken_pipe_issue_fix",
+        "naitik/migrate_fly_redis_to_dragonfly",
+        "naitik/migrate_reads_to_dragonfly",
+        "revert-358-naitik/migrate_fly_redis_to_dragonfly",
+        "revert-359-revert-358-naitik/migrate_fly_redis_to_dragonfly"
+      ]
+    },
+    {
+      "sha": "4e413b462b7286d3396abdf42dcb72cb3158f2b5",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-14T09:42:05Z",
+      "message": "Update consts.rs",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "joel-medicala-yral-patch-2"
+      ]
+    },
+    {
+      "sha": "4eaeba8adcd6f206a3526f56df25d5ecd4b51cff",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-14T09:33:59Z",
+      "message": "Update consts.rs",
+      "stats": {
+        "additions": 6,
+        "deletions": 0,
+        "total": 6
+      },
+      "branches": [
+        "joel-medicala-yral-patch-2"
+      ]
+    },
+    {
+      "sha": "fc69b769811698c04d1415f391396fb8a1817c82",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-01-14T12:30:13Z",
+      "message": "fix: increasing connection retry",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "naitik/add_writes_to_dragonfly",
+        "naitik/1403_migration_to_bare_metal"
+      ]
+    },
+    {
+      "sha": "5b5e7502a959dc6db4ca62eb1b71c30ec01a619d",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-01-14T11:46:25Z",
+      "message": "fix: temp fix for test (test_get_user_metadata_bulk_concurrent_processing)",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "naitik/add_writes_to_dragonfly",
+        "naitik/1403_migration_to_bare_metal"
+      ]
+    },
+    {
+      "sha": "86699b2d6c2600f47a8e9c6c6eab8e1d08b88b5f",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-01-14T11:40:43Z",
+      "message": "fix: changes for test (test_get_user_metadata_bulk_concurrent_processing)",
+      "stats": {
+        "additions": 5,
+        "deletions": 2,
+        "total": 7
+      },
+      "branches": [
+        "naitik/add_writes_to_dragonfly",
+        "naitik/1403_migration_to_bare_metal"
+      ]
+    },
+    {
+      "sha": "6b7ebd40ec9e657b0eccfdc4e4fc03d58ceb1169",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-01-14T11:26:30Z",
+      "message": "fix: double delete counter issue fix",
+      "stats": {
+        "additions": 0,
+        "deletions": 1,
+        "total": 1
+      },
+      "branches": [
+        "naitik/add_writes_to_dragonfly",
+        "naitik/1403_migration_to_bare_metal"
+      ]
+    },
+    {
+      "sha": "76e798afe35dcd3b9f2f560e38e2f3534f26d4f2",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-01-14T10:56:34Z",
+      "message": "fix: set rustls default ring provider",
+      "stats": {
+        "additions": 28,
+        "deletions": 0,
+        "total": 28
+      },
+      "branches": [
+        "naitik/add_writes_to_dragonfly",
+        "naitik/1403_migration_to_bare_metal"
+      ]
+    },
+    {
+      "sha": "a0abaf11ebccf56e2f207be42ff37bcf8e9f2c90",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-01-14T10:05:20Z",
+      "message": "Merge branch 'master' into naitik/add_writes_to_dragonfly",
+      "stats": {
+        "additions": 13,
+        "deletions": 2,
+        "total": 15
+      },
+      "branches": [
+        "naitik/add_writes_to_dragonfly",
+        "naitik/1403_migration_to_bare_metal"
+      ]
+    },
+    {
+      "sha": "ec152f4007c6415a0c5fc850dc94a471beb1eadd",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-01-14T10:01:14Z",
+      "message": "added smoke test for client init and cert reads during server init for early error",
+      "stats": {
+        "additions": 59,
+        "deletions": 14,
+        "total": 73
+      },
+      "branches": [
+        "naitik/add_writes_to_dragonfly",
+        "naitik/1403_migration_to_bare_metal"
+      ]
+    },
+    {
+      "sha": "d0d43e5539673ebba6447fc81ccfa1033562c311",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-01-14T06:04:17Z",
+      "message": "added env vars for  dragonfly",
+      "stats": {
+        "additions": 31,
+        "deletions": 4,
+        "total": 35
+      },
+      "branches": [
+        "naitik/add_writes_to_dragonfly",
+        "naitik/1403_migration_to_bare_metal"
+      ]
+    },
+    {
+      "sha": "16f2a003267126bfb1ddbf2ad46e4e46fcb0becf",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-01-14T05:32:51Z",
+      "message": "fix: read certs and hosts from env through github secrets and vars",
+      "stats": {
+        "additions": 238,
+        "deletions": 200,
+        "total": 438
+      },
+      "branches": [
+        "naitik/add_writes_to_dragonfly",
+        "naitik/1403_migration_to_bare_metal"
+      ]
+    },
+    {
+      "sha": "a2025d7e8387268ed412a626cdce13823e1b5961",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-01-14T20:50:52Z",
+      "message": "fix: reduced dedicated conns",
+      "stats": {
+        "additions": 4,
+        "deletions": 4,
+        "total": 8
+      },
+      "branches": [
+        "naitik/1403_migration_to_bare_metal"
+      ]
+    },
+    {
+      "sha": "058762d4f5b22e0ec19810a8e9c8592c39c4da1e",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-01-14T20:16:38Z",
+      "message": "temp: cleaning before writing",
+      "stats": {
+        "additions": 7,
+        "deletions": 5,
+        "total": 12
+      },
+      "branches": [
+        "naitik/1403_migration_to_bare_metal"
+      ]
+    },
+    {
+      "sha": "97f9079e88a430ce2192085510ff865d627fd896",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-01-14T19:44:46Z",
+      "message": "fix : cleaning with dedicated conn and a small check fix",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "naitik/1403_migration_to_bare_metal"
+      ]
+    },
+    {
+      "sha": "308bbd98f2e55b8bbddbec43c5aae4b280cb3284",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-01-14T19:01:13Z",
+      "message": "fix: dedicated connection for heavy task",
+      "stats": {
+        "additions": 2,
+        "deletions": 4,
+        "total": 6
+      },
+      "branches": [
+        "naitik/1403_migration_to_bare_metal"
+      ]
+    },
+    {
+      "sha": "a19c031182f4e369394a8da5d0c6b68694994cc8",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-01-14T18:49:43Z",
+      "message": "fix: dedicated multiplexed connection to heavy tasks.",
+      "stats": {
+        "additions": 14,
+        "deletions": 6,
+        "total": 20
+      },
+      "branches": [
+        "naitik/1403_migration_to_bare_metal"
+      ]
+    },
+    {
+      "sha": "7974a58fc9630af6b086840f5d1e7e899dcf5f0c",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-01-14T18:00:12Z",
+      "message": "fix: small fixes in testcase",
+      "stats": {
+        "additions": 6,
+        "deletions": 2,
+        "total": 8
+      },
+      "branches": [
+        "naitik/1403_migration_to_bare_metal"
+      ]
+    },
+    {
+      "sha": "3e8d8a193676d42f67e137fe37fb309837b7ecba",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-01-14T17:41:55Z",
+      "message": "fix: testcase fix , small fix in write data to dragonfly and secret passing in baremetal deployment ",
+      "stats": {
+        "additions": 110,
+        "deletions": 10,
+        "total": 120
+      },
+      "branches": [
+        "naitik/1403_migration_to_bare_metal"
+      ]
+    },
+    {
+      "sha": "39f2c52e0d87ee398f395f31bd29bbba90d793a7",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-01-14T16:38:56Z",
+      "message": "[skip ci] Merge branch 'naitik/add_writes_to_dragonfly' into naitik/1403_migration_to_bare_metal",
+      "stats": {
+        "additions": 1125,
+        "deletions": 269,
+        "total": 1394
+      },
+      "branches": [
+        "naitik/1403_migration_to_bare_metal"
+      ]
+    },
     {
       "sha": "37478c6f62b35d5aaad7405745d90174325c128d",
       "author": "sarvesh-sharma-yral",
@@ -13,7 +431,21 @@
         "deletions": 1,
         "total": 2
       },
-      "branches": []
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
+      ]
     },
     {
       "sha": "4c068dc19de3642489b6fd28cdc616b6fcf36bb3",
@@ -26,7 +458,21 @@
         "deletions": 2,
         "total": 4
       },
-      "branches": []
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
+      ]
     },
     {
       "sha": "c608df0ad37f67b508b6591882818236901a35d2",
@@ -39,7 +485,21 @@
         "deletions": 433,
         "total": 1688
       },
-      "branches": []
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
+      ]
     },
     {
       "sha": "be74f83b0d27addd7fe62502a55a01d57056772b",
@@ -52,7 +512,21 @@
         "deletions": 3,
         "total": 8
       },
-      "branches": []
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
+      ]
     },
     {
       "sha": "f67ae2586d7f6885683b4fec4db9c5aba2d7e101",
@@ -65,7 +539,21 @@
         "deletions": 1078,
         "total": 5230
       },
-      "branches": []
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
+      ]
     },
     {
       "sha": "e66f6d353e5a38276e6b1060fae552bd95532ff0",
@@ -78,7 +566,21 @@
         "deletions": 3,
         "total": 25
       },
-      "branches": []
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
+      ]
     },
     {
       "sha": "9f6e955d3f893636fe334983d2bd113d21bd1541",
@@ -91,7 +593,21 @@
         "deletions": 2,
         "total": 4
       },
-      "branches": []
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
+      ]
     },
     {
       "sha": "c131563d703e0cfada61fdfbd54fe0b521846b63",
@@ -104,7 +620,21 @@
         "deletions": 35,
         "total": 116
       },
-      "branches": []
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
+      ]
     },
     {
       "sha": "7f06b81e78b41d7903ff942e065db1ff03af9f14",
@@ -117,7 +647,21 @@
         "deletions": 1,
         "total": 11
       },
-      "branches": []
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
+      ]
     },
     {
       "sha": "75d6f80a771770dd1ff3eb282b396c41d87aaef5",
@@ -130,7 +674,21 @@
         "deletions": 29,
         "total": 198
       },
-      "branches": []
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
+      ]
     },
     {
       "sha": "db34c7bf5d76e217963185c9f28189df4925b5d2",
@@ -143,7 +701,21 @@
         "deletions": 60,
         "total": 148
       },
-      "branches": []
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
+      ]
     },
     {
       "sha": "12a70c32d16ec2fbac7994008e88128c27d679a2",
@@ -156,7 +728,21 @@
         "deletions": 26,
         "total": 74
       },
-      "branches": []
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
+      ]
     },
     {
       "sha": "0995f399cd85c798da3ef8ac2a8e6e6d637e397c",
@@ -169,7 +755,21 @@
         "deletions": 18,
         "total": 36
       },
-      "branches": []
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
+      ]
     },
     {
       "sha": "2992e63acf590f3862f11853af16f628c23bcf2e",
@@ -182,7 +782,21 @@
         "deletions": 171,
         "total": 383
       },
-      "branches": []
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
+      ]
     },
     {
       "sha": "9bd57479606a2956c5f6515f65ecc47321ed552f",
@@ -195,7 +809,21 @@
         "deletions": 84,
         "total": 108
       },
-      "branches": []
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
+      ]
     },
     {
       "sha": "68a18f4bb44371915ac69f20bda8b909145009b5",
@@ -208,7 +836,21 @@
         "deletions": 598,
         "total": 1576
       },
-      "branches": []
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
+      ]
     },
     {
       "sha": "13820fd60f53b06afb91e029bfcab96d4868f306",
@@ -221,7 +863,21 @@
         "deletions": 0,
         "total": 380
       },
-      "branches": []
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
+      ]
     },
     {
       "sha": "744cec75fa9cd7f5ea158c915da8bc9cd6516efb",
@@ -234,7 +890,21 @@
         "deletions": 404,
         "total": 1422
       },
-      "branches": []
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
+      ]
     },
     {
       "sha": "0e28bdbcf62f91cbbfc8b9a6718091e9be2b027d",
@@ -247,7 +917,21 @@
         "deletions": 0,
         "total": 340
       },
-      "branches": []
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
+      ]
     },
     {
       "sha": "f626813fe19e745174706d0d67f28103ce0f5c53",
@@ -260,7 +944,21 @@
         "deletions": 0,
         "total": 8
       },
-      "branches": []
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
+      ]
     },
     {
       "sha": "c688e6b66a9f990deab7ca737c89fe0ce8592b64",
@@ -273,7 +971,21 @@
         "deletions": 34,
         "total": 115
       },
-      "branches": []
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
+      ]
     },
     {
       "sha": "f60be0cbadd804a45bd3e0f2f512e2bfba49e1a0",
@@ -286,7 +998,21 @@
         "deletions": 0,
         "total": 725
       },
-      "branches": []
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
+      ]
     },
     {
       "sha": "7805bc8abaa7cdd68b047d876b02cb54e53d49da",
@@ -299,335 +1025,531 @@
         "deletions": 0,
         "total": 335
       },
-      "branches": []
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
+      ]
     },
     {
-      "sha": "84bba8df006ec8803063249085384d7dc7b7c134",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T19:58:52Z",
-      "message": "Refactor drive detection logic to improve second drive determination and display available drives",
+      "sha": "269f086060fe42671b734405c13ed852f4baba0c",
+      "author": "samarth-paboowal-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-14T08:45:26Z",
+      "message": "WIP",
       "stats": {
-        "additions": 9,
-        "deletions": 9,
-        "total": 18
-      },
-      "branches": []
-    },
-    {
-      "sha": "11cc6326a5ceb09b94db6c93cdad6a895ab6a780",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T19:43:26Z",
-      "message": "Enhance provisioning script execution and add installation success check [skip ci]",
-      "stats": {
-        "additions": 13,
-        "deletions": 2,
-        "total": 15
-      },
-      "branches": []
-    },
-    {
-      "sha": "18237475d1f8a2c2fde35f22784c15df7a35bfe2",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T19:34:47Z",
-      "message": "[skip ci] Fix quote escaping issues in provisioning scripts",
-      "stats": {
-        "additions": 0,
-        "deletions": 9,
-        "total": 9
-      },
-      "branches": []
-    },
-    {
-      "sha": "eee7b337025c54fb72ea2de6842a2166482b9a4d",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T19:27:42Z",
-      "message": "Refactor provisioning script command to streamline environment variable usage [skip ci]",
-      "stats": {
-        "additions": 3,
-        "deletions": 6,
-        "total": 9
-      },
-      "branches": []
-    },
-    {
-      "sha": "fbe4ee0dc62e13fdcca079babd260bce08058f37",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T19:15:51Z",
-      "message": "[skip ci] Fix shell quoting issue in provisioning script",
-      "stats": {
-        "additions": 3,
-        "deletions": 3,
-        "total": 6
-      },
-      "branches": []
-    },
-    {
-      "sha": "753e9d7f3c511e6e534c494974f64681e3dc4b71",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T19:03:47Z",
-      "message": "[skip ci] Move reboot handling to Ansible playbook with verification",
-      "stats": {
-        "additions": 42,
-        "deletions": 5,
-        "total": 47
-      },
-      "branches": []
-    },
-    {
-      "sha": "abc03b1c7c1276c5d865f063e34a373edbbf43b1",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T18:54:33Z",
-      "message": "Fix btrfs device detection and Docker Ubuntu codename detection",
-      "stats": {
-        "additions": 3,
-        "deletions": 3,
-        "total": 6
-      },
-      "branches": []
-    },
-    {
-      "sha": "d3cf7a0968b6ebf70a0ebf03b5f5b7fe8ed7a27a",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T18:42:02Z",
-      "message": "[skip ci] Refactor btrfs device detection and handling in bare metal provisioning playbook",
-      "stats": {
-        "additions": 18,
-        "deletions": 8,
-        "total": 26
-      },
-      "branches": []
-    },
-    {
-      "sha": "79d440d90176b2c3296c0dd3b5f514b8c0fe274e",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T18:31:35Z",
-      "message": "Fix condition to skip already provisioned hosts in bare metal provisioning playbook",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": []
-    },
-    {
-      "sha": "00188bdb0ef9744916986d5bd55ff03bc8f15359",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T16:38:29Z",
-      "message": "Add support for dynamic Ubuntu codename detection in Docker setup playbook",
-      "stats": {
-        "additions": 18,
-        "deletions": 1,
-        "total": 19
-      },
-      "branches": []
-    },
-    {
-      "sha": "4c12495b061249b9ea41f249fbfc60560e9f6201",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T16:35:32Z",
-      "message": "Auto-detect drive for provisioning and update display message",
-      "stats": {
-        "additions": 10,
-        "deletions": 2,
-        "total": 12
-      },
-      "branches": []
-    },
-    {
-      "sha": "e2746797350fdf072dad4c9df39df4ea761dda56",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T16:24:43Z",
-      "message": "Refactor hosts.yml to consolidate airflow-1 configuration; remove duplicate entries. Remove installa",
-      "stats": {
-        "additions": 4,
-        "deletions": 16,
-        "total": 20
-      },
-      "branches": []
-    },
-    {
-      "sha": "5c98ed69a8c5e739872381419ab215bd43b2ae1e",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T16:18:40Z",
-      "message": "Enhance bare metal provisioning to support btrfs RAID 0 setup; add drive checks and display detailed",
-      "stats": {
-        "additions": 64,
-        "deletions": 20,
-        "total": 84
-      },
-      "branches": []
-    },
-    {
-      "sha": "b054d0e530ac432895813cef468c65a4ef92e256",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T15:37:15Z",
-      "message": "Add provisioning workflow and playbook for new bare metal servers; update inventory with new host",
-      "stats": {
-        "additions": 386,
+        "additions": 1391,
         "deletions": 0,
-        "total": 386
-      },
-      "branches": []
-    },
-    {
-      "sha": "7a9cbc5f2fc28c8a8a6ed050a9a1fc1993a94866",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T15:09:46Z",
-      "message": "Remove post-installation reboot and drive configuration instructions from init script; update README",
-      "stats": {
-        "additions": 1,
-        "deletions": 22,
-        "total": 23
-      },
-      "branches": []
-    },
-    {
-      "sha": "cdf62297d8835f42b6fc1800aaa3499c98be198e",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T14:58:40Z",
-      "message": "Update README to clarify installation script parameters and remove post-installation drive configura",
-      "stats": {
-        "additions": 13,
-        "deletions": 30,
-        "total": 43
-      },
-      "branches": []
-    },
-    {
-      "sha": "d9dde6eae939fce5a348e14a1a3fd1554d998abc",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T14:56:05Z",
-      "message": "Refactor installation script to simplify drive handling and update README for one-liner install",
-      "stats": {
-        "additions": 11,
-        "deletions": 27,
-        "total": 38
-      },
-      "branches": []
-    },
-    {
-      "sha": "d2d71f1ff40da740283ef22005b0b4a441e1fedc",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T14:31:11Z",
-      "message": "Update installation script and README for post-installation drive configuration",
-      "stats": {
-        "additions": 46,
-        "deletions": 37,
-        "total": 83
-      },
-      "branches": []
-    },
-    {
-      "sha": "cb90e9655d18c61107c1745603cee29aef8a79cc",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T14:19:43Z",
-      "message": "Comment out reboot command in installation script",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": []
-    },
-    {
-      "sha": "b694ec72956ce575e373142ef155f78253dfad14",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T14:13:16Z",
-      "message": "Enhance drive handling in installation script to support multiple drive types and improve error mess",
-      "stats": {
-        "additions": 56,
-        "deletions": 5,
-        "total": 61
-      },
-      "branches": []
-    },
-    {
-      "sha": "3cf982cbb5bddb14b115bc4f4419f20b29a2e4b1",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T14:02:44Z",
-      "message": "Update installimage command parameters for partitioning scheme",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": []
-    },
-    {
-      "sha": "0139a7a43ddf8c8880d4cd756c6b2772e16068b2",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T13:52:46Z",
-      "message": "Update installimage command parameters for filesystem configuration",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": []
-    },
-    {
-      "sha": "7ba5e4fcbeff3ec5bf0f8a3a8d91a79f348b0ed1",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T13:31:26Z",
-      "message": "Fix installimage command path and update README example hostname",
-      "stats": {
-        "additions": 7,
-        "deletions": 5,
-        "total": 12
-      },
-      "branches": []
-    },
-    {
-      "sha": "d586b700c9b32ea13984d9d2ab34b91fa0901873",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T12:21:45Z",
-      "message": "Fix syntax in one-liner install commands in README",
-      "stats": {
-        "additions": 2,
-        "deletions": 3,
-        "total": 5
-      },
-      "branches": []
-    },
-    {
-      "sha": "f3bf6cb27a6c6cecd471807736d93385051209bc",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-14T00:39:20Z",
-      "message": "ForeignKey Exception handle: Messages Sent to Deleted Conversation ID After Recreate (#107)",
-      "stats": {
-        "additions": 69,
-        "deletions": 8,
-        "total": 77
+        "total": 1391
       },
       "branches": [
-        "main_replica_14jan"
+        "feature/create-ai-chat-bot"
+      ]
+    },
+    {
+      "sha": "8e438da4dd136b92497ce0e26c139df258cfe05b",
+      "author": "samarth-paboowal-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-14T10:27:43Z",
+      "message": "chore: fixes import error",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "feature/iap-ui",
+        "feature/subcription-video-gen"
+      ]
+    },
+    {
+      "sha": "a216e6eb95c0d9b8ac7a52ba3ac4064494e42670",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-14T09:14:30Z",
+      "message": "code review: Updates usage instruction for compose helpers",
+      "stats": {
+        "additions": 9,
+        "deletions": 2,
+        "total": 11
+      },
+      "branches": [
+        "feature/iap-ui",
+        "feature/subcription-video-gen"
+      ]
+    },
+    {
+      "sha": "1b8e70b513762e27724ac2d726ca90645c81a5ff",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-14T09:14:30Z",
+      "message": "code review: Improves IAPComposeHelpers",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "feature/iap-ui",
+        "feature/subcription-video-gen"
+      ]
+    },
+    {
+      "sha": "8c8d7c9400a6c2ecad9285ee0ff28df3703093b0",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-14T09:14:30Z",
+      "message": "code review: Handles Race condition: Concurrent purchases of the same product can orphan the first c",
+      "stats": {
+        "additions": 5,
+        "deletions": 0,
+        "total": 5
+      },
+      "branches": [
+        "feature/iap-ui",
+        "feature/subcription-video-gen"
+      ]
+    },
+    {
+      "sha": "90daf7f453f47f0f1ddbbe58e112d832c398f02f",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-14T09:14:30Z",
+      "message": "code review: Removes dead code",
+      "stats": {
+        "additions": 0,
+        "deletions": 4,
+        "total": 4
+      },
+      "branches": [
+        "feature/iap-ui",
+        "feature/subcription-video-gen"
+      ]
+    },
+    {
+      "sha": "6a93645ece542512e3599ebcfb37308cd2e9d71a",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-14T09:14:30Z",
+      "message": "code review: Adds serialName to ProductId enum",
+      "stats": {
+        "additions": 6,
+        "deletions": 0,
+        "total": 6
+      },
+      "branches": [
+        "feature/iap-ui",
+        "feature/subcription-video-gen"
+      ]
+    },
+    {
+      "sha": "d44112139488a28fda60522ee3657ee385ed8a81",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-14T09:14:30Z",
+      "message": "code review: Improves fetchProducts notifyListeners",
+      "stats": {
+        "additions": 18,
+        "deletions": 12,
+        "total": 30
+      },
+      "branches": [
+        "feature/iap-ui",
+        "feature/subcription-video-gen"
+      ]
+    },
+    {
+      "sha": "04a53663a5eb88cac50b469ea6585a5e5e896ded",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-14T09:14:30Z",
+      "message": "code review: Handles rounding off  long",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "feature/iap-ui",
+        "feature/subcription-video-gen"
+      ]
+    },
+    {
+      "sha": "0aa48246a0953d360930a53c8da320b4911ec7db",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-14T09:14:30Z",
+      "message": "code review: Consistent warningNotifier invocations",
+      "stats": {
+        "additions": 15,
+        "deletions": 23,
+        "total": 38
+      },
+      "branches": [
+        "feature/iap-ui",
+        "feature/subcription-video-gen"
+      ]
+    },
+    {
+      "sha": "8ae470e2f2894c3ce5928bb950a1b3408018e38f",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-14T09:14:30Z",
+      "message": "code review: Improves error logging while fetching products",
+      "stats": {
+        "additions": 13,
+        "deletions": 6,
+        "total": 19
+      },
+      "branches": [
+        "feature/iap-ui",
+        "feature/subcription-video-gen"
+      ]
+    },
+    {
+      "sha": "1b61df1bcbfadf270677f75aab379b481a5438ca",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-14T09:14:30Z",
+      "message": "code review: Improves handling of BillingClientConnectionManager readyness with timeout",
+      "stats": {
+        "additions": 49,
+        "deletions": 39,
+        "total": 88
+      },
+      "branches": [
+        "feature/iap-ui",
+        "feature/subcription-video-gen"
+      ]
+    },
+    {
+      "sha": "3edd088ed29755f86e9c1305590c584fcbcf44b7",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-14T09:14:30Z",
+      "message": "code review: Consistent error handling",
+      "stats": {
+        "additions": 5,
+        "deletions": 4,
+        "total": 9
+      },
+      "branches": [
+        "feature/iap-ui",
+        "feature/subcription-video-gen"
+      ]
+    },
+    {
+      "sha": "097677bd1d37c1ed1d55443efa4910b1a8f124d0",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-14T09:14:30Z",
+      "message": "code review: Uses actual transaction date for iOS IAP",
+      "stats": {
+        "additions": 7,
+        "deletions": 1,
+        "total": 8
+      },
+      "branches": [
+        "feature/iap-ui",
+        "feature/subcription-video-gen"
+      ]
+    },
+    {
+      "sha": "0b511a3811244dd185facca85a3e53dc35c80a73",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-14T09:14:30Z",
+      "message": "code review: Makes storing accountIdentifier after purchase synchronous",
+      "stats": {
+        "additions": 14,
+        "deletions": 17,
+        "total": 31
+      },
+      "branches": [
+        "feature/iap-ui",
+        "feature/subcription-video-gen"
+      ]
+    },
+    {
+      "sha": "c1bcfd1855d3a58771767708cf4e8d68a0803f0e",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-14T09:14:30Z",
+      "message": "code review: Improves listeners invocation",
+      "stats": {
+        "additions": 13,
+        "deletions": 15,
+        "total": 28
+      },
+      "branches": [
+        "feature/iap-ui",
+        "feature/subcription-video-gen"
+      ]
+    },
+    {
+      "sha": "373c46ac728a9be605b766fa45fcb63de1b15311",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-14T09:14:30Z",
+      "message": "code review: Adds logger dependency",
+      "stats": {
+        "additions": 7,
+        "deletions": 3,
+        "total": 10
+      },
+      "branches": [
+        "feature/iap-ui",
+        "feature/subcription-video-gen"
+      ]
+    },
+    {
+      "sha": "7cf81c7b34d5107c53826c8d8b4737fa43864e17",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-14T09:14:29Z",
+      "message": "code review: Handles CancellationException",
+      "stats": {
+        "additions": 8,
+        "deletions": 2,
+        "total": 10
+      },
+      "branches": [
+        "feature/iap-ui",
+        "feature/subcription-video-gen"
+      ]
+    },
+    {
+      "sha": "af57d1a8d82a878aed2b66fdd1729aa00aba05b0",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-14T09:14:29Z",
+      "message": "code review: Enhances isProductPurchased method",
+      "stats": {
+        "additions": 107,
+        "deletions": 62,
+        "total": 169
+      },
+      "branches": [
+        "feature/iap-ui",
+        "feature/subcription-video-gen"
+      ]
+    },
+    {
+      "sha": "0ca30c3b7d708a4dc362bb16b7343182840672ba",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-14T09:14:29Z",
+      "message": "code review: Corrects life-cycle management for adding/removing purchase listeners",
+      "stats": {
+        "additions": 7,
+        "deletions": 9,
+        "total": 16
+      },
+      "branches": [
+        "feature/iap-ui",
+        "feature/subcription-video-gen"
+      ]
+    },
+    {
+      "sha": "c24f3b89f05b4408a22fb9181f89a39a0e6e228e",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-14T09:14:29Z",
+      "message": "code review: Corrects activity context provider",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "feature/iap-ui",
+        "feature/subcription-video-gen"
+      ]
+    },
+    {
+      "sha": "03a01f135aade7df0f7869c5f190595085eba922",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-14T09:14:29Z",
+      "message": "code review: Handles async purchase acknowledgement",
+      "stats": {
+        "additions": 38,
+        "deletions": 3,
+        "total": 41
+      },
+      "branches": [
+        "feature/iap-ui",
+        "feature/subcription-video-gen"
+      ]
+    },
+    {
+      "sha": "e2cfe10b86e39df40acdbd617461d0098ec6078a",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-14T09:14:29Z",
+      "message": "build: Adds gradle compilation warning for enforcing iap main module usage only",
+      "stats": {
+        "additions": 46,
+        "deletions": 0,
+        "total": 46
+      },
+      "branches": [
+        "feature/iap-ui",
+        "feature/subcription-video-gen"
+      ]
+    },
+    {
+      "sha": "294d7d81d845d6071af4a1521f536264a5785b70",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-14T09:14:27Z",
+      "message": "build: Refactors iap module in core vanila module and main module with business logic",
+      "stats": {
+        "additions": 864,
+        "deletions": 715,
+        "total": 1579
+      },
+      "branches": [
+        "feature/iap-ui",
+        "feature/subcription-video-gen"
+      ]
+    },
+    {
+      "sha": "f6a4a185c4ce940d3af6011982df89739a7b8ea3",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-14T09:14:15Z",
+      "message": "build: Adds edge cases handling and warningNotifier to send critical messages to IAPListeners",
+      "stats": {
+        "additions": 422,
+        "deletions": 14,
+        "total": 436
+      },
+      "branches": [
+        "feature/iap-ui",
+        "feature/subcription-video-gen"
+      ]
+    },
+    {
+      "sha": "8c5e18b0fa7c358efb0a988a88c3a6acc938ca4e",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-14T09:14:15Z",
+      "message": "build: Adds secure mapping with one to one accountIdentifier from purchases to app user principal",
+      "stats": {
+        "additions": 218,
+        "deletions": 20,
+        "total": 238
+      },
+      "branches": [
+        "feature/iap-ui",
+        "feature/subcription-video-gen"
+      ]
+    },
+    {
+      "sha": "27cde2a282c926f27c170340f3fac8d9cb4542da",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-14T09:14:15Z",
+      "message": "build: Adds SubscriptionStatus and updates documentation",
+      "stats": {
+        "additions": 274,
+        "deletions": 475,
+        "total": 749
+      },
+      "branches": [
+        "feature/iap-ui",
+        "feature/subcription-video-gen"
+      ]
+    },
+    {
+      "sha": "b755a309e7a7cccff003b6045165c3723e1d6656",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-14T09:14:15Z",
+      "message": "build: Adds documentation",
+      "stats": {
+        "additions": 456,
+        "deletions": 0,
+        "total": 456
+      },
+      "branches": [
+        "feature/iap-ui",
+        "feature/subcription-video-gen"
+      ]
+    },
+    {
+      "sha": "8a381054ad550c6f14306dcf9ddb1ec861301232",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-14T09:14:15Z",
+      "message": "build: Implements timeout while IAP handling",
+      "stats": {
+        "additions": 281,
+        "deletions": 48,
+        "total": 329
+      },
+      "branches": [
+        "feature/iap-ui",
+        "feature/subcription-video-gen"
+      ]
+    },
+    {
+      "sha": "d9e321feffccf4280e7df616fa53f019898d3f20",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-14T09:14:11Z",
+      "message": "build: Implements iap module",
+      "stats": {
+        "additions": 1901,
+        "deletions": 0,
+        "total": 1901
+      },
+      "branches": [
+        "feature/iap-ui",
+        "feature/subcription-video-gen"
+      ]
+    },
+    {
+      "sha": "0c455d3212ee63e96cfe583caceafd718222fcd7",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-14T10:28:04Z",
+      "message": "build: Adds gate check based on feature flag to show subscription bottom sheet",
+      "stats": {
+        "additions": 8,
+        "deletions": 0,
+        "total": 8
+      },
+      "branches": [
+        "feature/subcription-video-gen"
+      ]
+    },
+    {
+      "sha": "7cb1ff9cf743d07e65c0a38e0962c8edc7f74d2e",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-14T10:28:04Z",
+      "message": "build: Implements subscribe now sheets in ai video gen screen",
+      "stats": {
+        "additions": 138,
+        "deletions": 14,
+        "total": 152
+      },
+      "branches": [
+        "feature/subcription-video-gen"
       ]
     }
   ],
-  "commit_count": 48
+  "commit_count": 77
 }

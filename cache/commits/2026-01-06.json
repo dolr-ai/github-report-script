@@ -1,7 +1,65 @@
 {
   "date": "2026-01-06",
-  "cached_at": "2026-02-03T18:35:59.426795Z",
+  "cached_at": "2026-02-03T20:52:45.139936Z",
   "commits": [
+    {
+      "sha": "5f05e73b9b7f933c005db96302f92994b1a215fa",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-06T13:29:13Z",
+      "message": "feat: added event streaming to mixpanel for unification (#348)",
+      "stats": {
+        "additions": 183,
+        "deletions": 148,
+        "total": 331
+      },
+      "branches": [
+        "copilot/sub-pr-378",
+        "feat/add-support-for-yral-subscription",
+        "feat/report-app-migration",
+        "fix/gchat-oauth-for-report-buttons",
+        "fix/user-agent-issue-with-pro-subscription",
+        "fix/yral-pro-subscription-token-operation",
+        "joel/apps-script-reports-api",
+        "joel/ban-event",
+        "joel/btc-rewards-builder-err",
+        "joel/canister-health-endpoint",
+        "joel/canister-snapshots",
+        "joel/dolr-rewards",
+        "joel/fix-btc-dolr-notif",
+        "joel/fix-event-name",
+        "joel/fix-event-ser",
+        "joel/fix-gchat-report-buttons",
+        "joel/fix-logging",
+        "joel/fix-report-env",
+        "joel/fix-reports",
+        "joel/icp-swap-dolr-price-fetch",
+        "joel/leaderboard-redis-migration",
+        "joel/metric-server-cleanup",
+        "joel/offchain-broken-pipe-fix",
+        "joel/phash-fix",
+        "joel/phash-redis-migration",
+        "joel/profile-views-check",
+        "joel/rewards-mode",
+        "joel/rm-panic",
+        "joel/sentry_webhooks",
+        "joel/sentry-channel-routing",
+        "joel/sentry-issues-fix",
+        "joel/sentry-spam-fix",
+        "joel/skip-self-views",
+        "joel/snake-case-event-norm",
+        "joel/upload-flow-content",
+        "joel/views-fix",
+        "joel/webhook-fix",
+        "joel-medicala-yral-patch-2",
+        "main",
+        "naitik/broken_pipe_issue_fix",
+        "naitik/migrate_fly_redis_to_dragonfly",
+        "naitik/migrate_reads_to_dragonfly",
+        "revert-358-naitik/migrate_fly_redis_to_dragonfly",
+        "revert-359-revert-358-naitik/migrate_fly_redis_to_dragonfly"
+      ]
+    },
     {
       "sha": "bff5300b37315f68696d09a0d045b52aef5538d6",
       "author": "shivam-bhavsar-yral",
@@ -14,7 +72,24 @@
         "total": 94
       },
       "branches": [
-        "chore/events-to-offchain-api"
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
       ]
     },
     {
@@ -28,7 +103,26 @@
         "deletions": 4,
         "total": 8
       },
-      "branches": []
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
+      ]
     },
     {
       "sha": "64d16ae3d8387abd7e1e99b7e3db9c031c5126ac",
@@ -41,7 +135,18 @@
         "deletions": 874,
         "total": 17532
       },
-      "branches": []
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "main"
+      ]
     },
     {
       "sha": "0970c431366ddd99546d23daece2ffe3abe4fe21",
@@ -54,7 +159,22 @@
         "deletions": 178,
         "total": 1878
       },
-      "branches": []
+      "branches": [
+        "feat/deploy-to-dolr-ai",
+        "feat/fix-error-type-for-api",
+        "fix/redirect-uri-for-multiple-deployments",
+        "fix/remove-cookies-in-verify-endpoint",
+        "joel/ai-accounts-integration",
+        "joel/json-ser-ai-endpoint",
+        "joel/json-ser-fix",
+        "main",
+        "naitik/bare-metal-script-fix",
+        "naitik/fix_bare_metal_deployment",
+        "naitik/fix_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration-to-dragonfly-redis",
+        "revert-41-fix/redirect-uri-for-multiple-deployments"
+      ]
     },
     {
       "sha": "f1eeacb5d8cb7a4dc42e9d0413a9acf411c8f20a",
@@ -67,7 +187,106 @@
         "deletions": 1564,
         "total": 3935
       },
-      "branches": []
+      "branches": [
+        "aioboto_implementation",
+        "backward_chat_api",
+        "beszel_ai_chat",
+        "beszel_to_main",
+        "bf_msg_sys",
+        "bf_14jan",
+        "bugfix_database_lock",
+        "c_inf_2",
+        "create_influencers",
+        "debug_or_fmissue",
+        "debugging_env_check",
+        "delete_bug",
+        "docker_staging_to_main",
+        "docker_staging",
+        "fix/envsubst-config-substitution",
+        "fix/envsubst-litestream-config",
+        "fix_pragma_optimize",
+        "fk_exeption_handle",
+        "further_joel_sugg",
+        "i_e_error",
+        "img_in_chat",
+        "inbox_apis",
+        "indempotency_msg_fix",
+        "jatin_og_prompt",
+        "joel/optim-suggestions",
+        "lat_op_stage",
+        "lat_op",
+        "latencytrack_optimization",
+        "litestream_sync_interval",
+        "ls_1s",
+        "m_replica_14jan",
+        "main_deployment_fixes",
+        "main_replica_14jan",
+        "main_replica__16jan",
+        "main",
+        "mb_resource_alloc",
+        "metabase_bf2",
+        "metabase_hosting",
+        "metabase_prod",
+        "metabase_staging_rw",
+        "metabase",
+        "migrations_clear",
+        "more_op_latency",
+        "msg_type_normalization",
+        "new_deployment",
+        "nsfw_openrouter",
+        "nsfw_pre_push",
+        "pn_inbox",
+        "postgre_db",
+        "prod_err",
+        "prompt_changes_astro_dating_sexed",
+        "rm_adhoc",
+        "safety_check",
+        "send_msg_rogue",
+        "sentry_bf",
+        "sentry_everywhere",
+        "sentry_fix_stageing",
+        "sentry_fix",
+        "sentry_webhook",
+        "slow_msg",
+        "sqlite_optimisations",
+        "staging",
+        "sys_prompt_prod",
+        "temp_fix_db_lock",
+        "test_fix_url_n_storj_k",
+        "test_robust_gc",
+        "uptime_kuma",
+        "wal_ckpt_bug_fix"
+      ]
+    },
+    {
+      "sha": "1c768283b5d848e63771401815c8ec5ca60e11a7",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-06T11:18:14Z",
+      "message": "Merge pull request #43 from dolr-ai/staging",
+      "stats": {
+        "additions": 165,
+        "deletions": 15,
+        "total": 180
+      },
+      "branches": [
+        "metabase"
+      ]
+    },
+    {
+      "sha": "ea5fe86c021e107db19345b10148852d737c4449",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-06T09:37:57Z",
+      "message": "Merge pull request #42 from dolr-ai/metabase",
+      "stats": {
+        "additions": 516,
+        "deletions": 3,
+        "total": 519
+      },
+      "branches": [
+        "metabase"
+      ]
     },
     {
       "sha": "c9e0e3ba3b36a444ba16fd5609b676478de27808",
@@ -80,7 +299,9 @@
         "deletions": 3,
         "total": 6
       },
-      "branches": []
+      "branches": [
+        "naitik/impl-redis-store-cluster"
+      ]
     },
     {
       "sha": "511266507449b42b0e7f6944349b707555ae3b97",
@@ -93,7 +314,9 @@
         "deletions": 155,
         "total": 173
       },
-      "branches": []
+      "branches": [
+        "naitik/impl-redis-store-cluster"
+      ]
     },
     {
       "sha": "0e1841b237166e23f9af0d1610bf828d282ceb6d",
@@ -106,7 +329,9 @@
         "deletions": 1,
         "total": 2
       },
-      "branches": []
+      "branches": [
+        "naitik/impl-redis-store-cluster"
+      ]
     },
     {
       "sha": "2098257ad158ab49a8fc5aea64f0f9d35a3e335c",
@@ -119,7 +344,9 @@
         "deletions": 31,
         "total": 50
       },
-      "branches": []
+      "branches": [
+        "naitik/impl-redis-store-cluster"
+      ]
     },
     {
       "sha": "a8fe8e80cac8d9d611fff69dd13f153a62d3d604",
@@ -132,7 +359,9 @@
         "deletions": 102,
         "total": 235
       },
-      "branches": []
+      "branches": [
+        "naitik/impl-redis-store-cluster"
+      ]
     },
     {
       "sha": "2d86faedceb8d15ca569d3c4056ef5586853565d",
@@ -145,7 +374,9 @@
         "deletions": 8,
         "total": 34
       },
-      "branches": []
+      "branches": [
+        "naitik/impl-redis-store-cluster"
+      ]
     },
     {
       "sha": "2a8750742547b2b5f5b8ad14ec4d9e1c7e808375",
@@ -158,7 +389,9 @@
         "deletions": 2,
         "total": 2
       },
-      "branches": []
+      "branches": [
+        "naitik/impl-redis-store-cluster"
+      ]
     },
     {
       "sha": "085019e3ec172d8d3a6fb2da8dc97308ae611a47",
@@ -171,8 +404,10 @@
         "deletions": 167,
         "total": 378
       },
-      "branches": []
+      "branches": [
+        "naitik/impl-redis-store-cluster"
+      ]
     }
   ],
-  "commit_count": 13
+  "commit_count": 16
 }

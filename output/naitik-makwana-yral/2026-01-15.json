@@ -1,12 +1,23 @@
 {
   "date": "2026-01-15",
   "username": "naitik-makwana-yral",
-  "additions": 0,
-  "deletions": 0,
-  "total_loc": 0,
-  "commit_count": 0,
-  "repositories": [],
-  "repo_count": 0,
-  "branch_breakdown": {},
-  "processed_at": "2026-02-03T20:11:44.007688Z"
+  "additions": 361,
+  "deletions": 368,
+  "total_loc": 729,
+  "commit_count": 22,
+  "repositories": [
+    "dolr-ai/yral-metadata"
+  ],
+  "repo_count": 1,
+  "branch_breakdown": {
+    "dolr-ai/yral-metadata": {
+      "naitik/1403_migration_to_bare_metal": {
+        "additions": 361,
+        "deletions": 368,
+        "total_loc": 729,
+        "commit_count": 22
+      }
+    }
+  },
+  "processed_at": "2026-02-03T20:53:59.001485Z"
 }

@@ -18,8 +18,34 @@ logger = logging.getLogger(__name__)
 class DataProcessor:
     """Processes commit data and generates aggregated metrics"""
 
+    # Priority branches (checked in order)
+    PRIORITY_BRANCHES = ['main', 'master', 'develop',
+                         'development', 'staging', 'production']
+
     def __init__(self):
         self.cache_manager = CacheManager()
+
+    def _get_primary_branch(self, branches: List[str]) -> str:
+        """Select the most relevant branch from a list
+
+        Prioritizes main/master/develop branches over feature branches.
+
+        Args:
+            branches: List of branch names
+
+        Returns:
+            Primary branch name (or 'unknown' if empty list)
+        """
+        if not branches:
+            return 'unknown'
+
+        # Check for priority branches in order
+        for priority_branch in self.PRIORITY_BRANCHES:
+            if priority_branch in branches:
+                return priority_branch
+
+        # Return first branch if no priority branch found
+        return branches[0]
 
     def _ensure_user_directory(self, username: str) -> str:
         """Ensure output directory exists for user
@@ -105,25 +131,17 @@ class DataProcessor:
                 user_metrics[author]['commit_count'] += 1
                 user_metrics[author]['repositories'].add(repository)
 
-                # Handle commits that appear on multiple branches
-                if branches:
-                    for branch in branches:
-                        user_metrics[author]['branch_breakdown'][repository][branch]['additions'] += stats.get(
-                            'additions', 0)
-                        user_metrics[author]['branch_breakdown'][repository][branch]['deletions'] += stats.get(
-                            'deletions', 0)
-                        user_metrics[author]['branch_breakdown'][repository][branch]['total_loc'] += stats.get(
-                            'total', 0)
-                        user_metrics[author]['branch_breakdown'][repository][branch]['commit_count'] += 1
-                else:
-                    # Commits with no branch info go to 'unknown'
-                    user_metrics[author]['branch_breakdown'][repository]['unknown']['additions'] += stats.get(
-                        'additions', 0)
-                    user_metrics[author]['branch_breakdown'][repository]['unknown']['deletions'] += stats.get(
-                        'deletions', 0)
-                    user_metrics[author]['branch_breakdown'][repository]['unknown']['total_loc'] += stats.get(
-                        'total', 0)
-                    user_metrics[author]['branch_breakdown'][repository]['unknown']['commit_count'] += 1
+                # Select primary branch (prioritizes main/master/develop over feature branches)
+                # This prevents counting the same commit multiple times across branches
+                primary_branch = self._get_primary_branch(branches)
+
+                user_metrics[author]['branch_breakdown'][repository][primary_branch]['additions'] += stats.get(
+                    'additions', 0)
+                user_metrics[author]['branch_breakdown'][repository][primary_branch]['deletions'] += stats.get(
+                    'deletions', 0)
+                user_metrics[author]['branch_breakdown'][repository][primary_branch]['total_loc'] += stats.get(
+                    'total', 0)
+                user_metrics[author]['branch_breakdown'][repository][primary_branch]['commit_count'] += 1
 
         # Write output for each user
         for username in user_ids:
@@ -174,31 +192,46 @@ class DataProcessor:
         """Process commits for a date range
 
         Args:
-            start_date: Start date
-            end_date: End date
+            start_date: Start date (None for all cached dates)
+            end_date: End date (None for all cached dates)
             user_ids: List of user IDs to process
             force_refresh: If True, overwrite existing output files
         """
-        current_date = start_date.date()
-        end_date_only = end_date.date()
         dates_processed = 0
         dates_skipped = 0
 
         logger.info(f"Processing data for {len(user_ids)} user(s)...")
 
-        while current_date <= end_date_only:
-            date_str = current_date.isoformat()
+        # Handle ALL_CACHED mode
+        if start_date is None and end_date is None:
+            # Get all cached dates
+            cached_dates = self.cache_manager.get_cached_dates()
+            for date_str in cached_dates:
+                # Check if all users already have output for this date
+                if not force_refresh and all(self.output_exists(user, date_str) for user in user_ids):
+                    dates_skipped += 1
+                    continue
 
-            # Check if all users already have output for this date
-            if not force_refresh and all(self.output_exists(user, date_str) for user in user_ids):
-                dates_skipped += 1
+                self.process_date(date_str, user_ids, force_refresh)
+                dates_processed += 1
+        else:
+            # Normal date range iteration
+            current_date = start_date.date()
+            end_date_only = end_date.date()
+
+            while current_date <= end_date_only:
+                date_str = current_date.isoformat()
+
+                # Check if all users already have output for this date
+                if not force_refresh and all(self.output_exists(user, date_str) for user in user_ids):
+                    dates_skipped += 1
+                    current_date += timedelta(days=1)
+                    continue
+
+                self.process_date(date_str, user_ids, force_refresh)
+                dates_processed += 1
+
                 current_date += timedelta(days=1)
-                continue
-
-            self.process_date(date_str, user_ids, force_refresh)
-            dates_processed += 1
-
-            current_date += timedelta(days=1)
 
         if dates_skipped > 0:
             logger.info(f"Skipped {dates_skipped} date(s) (already processed)")

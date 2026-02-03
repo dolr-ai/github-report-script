@@ -1,6 +1,6 @@
 {
   "date": "2026-01-12",
-  "cached_at": "2026-02-03T18:35:59.705918Z",
+  "cached_at": "2026-02-03T20:52:45.135672Z",
   "commits": [
     {
       "sha": "087622ace283f6a0394593de666bbb5e0056fc06",
@@ -13,7 +13,25 @@
         "deletions": 3,
         "total": 7
       },
-      "branches": []
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
+      ]
     },
     {
       "sha": "40ae0dc47f20b13c4f4795aa91cb6c7f69b3d994",
@@ -26,7 +44,24 @@
         "deletions": 2,
         "total": 4
       },
-      "branches": []
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
+      ]
     },
     {
       "sha": "f1a61eff4630556c753afce60859fbcf4a451a87",
@@ -39,7 +74,25 @@
         "deletions": 271,
         "total": 295
       },
-      "branches": []
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
+      ]
     },
     {
       "sha": "19b3993f51a2d5b67f804ffb94099de39159c07c",
@@ -52,7 +105,21 @@
         "deletions": 0,
         "total": 2
       },
-      "branches": []
+      "branches": [
+        "feat/deploy-to-dolr-ai",
+        "feat/fix-error-type-for-api",
+        "fix/redirect-uri-for-multiple-deployments",
+        "joel/ai-accounts-integration",
+        "joel/json-ser-ai-endpoint",
+        "joel/json-ser-fix",
+        "main",
+        "naitik/bare-metal-script-fix",
+        "naitik/fix_bare_metal_deployment",
+        "naitik/fix_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration-to-dragonfly-redis",
+        "revert-41-fix/redirect-uri-for-multiple-deployments"
+      ]
     },
     {
       "sha": "f512e5d3c2438f15a70232de198eb4a2e319b88b",
@@ -65,7 +132,49 @@
         "deletions": 3,
         "total": 6
       },
-      "branches": []
+      "branches": [
+        "aioboto_implementation",
+        "backward_chat_api",
+        "bf_msg_sys",
+        "bf_14jan",
+        "c_inf_2",
+        "create_influencers",
+        "fix/envsubst-config-substitution",
+        "fix/envsubst-litestream-config",
+        "fix_pragma_optimize",
+        "fk_exeption_handle",
+        "further_joel_sugg",
+        "i_e_error",
+        "img_in_chat",
+        "inbox_apis",
+        "indempotency_msg_fix",
+        "joel/optim-suggestions",
+        "lat_op_stage",
+        "lat_op",
+        "latencytrack_optimization",
+        "ls_1s",
+        "m_replica_14jan",
+        "main_deployment_fixes",
+        "main_replica_14jan",
+        "main_replica__16jan",
+        "main",
+        "more_op_latency",
+        "new_deployment",
+        "nsfw_pre_push",
+        "pn_inbox",
+        "safety_check",
+        "send_msg_rogue",
+        "sentry_bf",
+        "sentry_everywhere",
+        "sentry_webhook",
+        "slow_msg",
+        "sqlite_optimisations",
+        "staging",
+        "sys_prompt_prod",
+        "test_fix_url_n_storj_k",
+        "test_robust_gc",
+        "wal_ckpt_bug_fix"
+      ]
     },
     {
       "sha": "9d478209346825d212bebac6927b6cae70917586",
@@ -78,7 +187,50 @@
         "deletions": 6,
         "total": 33
       },
-      "branches": []
+      "branches": [
+        "aioboto_implementation",
+        "backward_chat_api",
+        "bf_msg_sys",
+        "bf_14jan",
+        "c_inf_2",
+        "create_influencers",
+        "fix/envsubst-config-substitution",
+        "fix/envsubst-litestream-config",
+        "fix_pragma_optimize",
+        "fk_exeption_handle",
+        "further_joel_sugg",
+        "i_e_error",
+        "img_in_chat",
+        "inbox_apis",
+        "indempotency_msg_fix",
+        "joel/optim-suggestions",
+        "lat_op_stage",
+        "lat_op",
+        "latencytrack_optimization",
+        "ls_1s",
+        "m_replica_14jan",
+        "main_deployment_fixes",
+        "main_replica_14jan",
+        "main_replica__16jan",
+        "main",
+        "more_op_latency",
+        "new_deployment",
+        "nsfw_pre_push",
+        "pn_inbox",
+        "prompt_changes_astro_dating_sexed",
+        "safety_check",
+        "send_msg_rogue",
+        "sentry_bf",
+        "sentry_everywhere",
+        "sentry_webhook",
+        "slow_msg",
+        "sqlite_optimisations",
+        "staging",
+        "sys_prompt_prod",
+        "test_fix_url_n_storj_k",
+        "test_robust_gc",
+        "wal_ckpt_bug_fix"
+      ]
     },
     {
       "sha": "dc5207f2b2e787bf82c4a4700e847807e05273d3",
@@ -92,7 +244,49 @@
         "total": 0
       },
       "branches": [
-        "prod_err"
+        "aioboto_implementation",
+        "backward_chat_api",
+        "bf_msg_sys",
+        "bf_14jan",
+        "c_inf_2",
+        "create_influencers",
+        "fix/envsubst-config-substitution",
+        "fix/envsubst-litestream-config",
+        "fix_pragma_optimize",
+        "fk_exeption_handle",
+        "further_joel_sugg",
+        "i_e_error",
+        "img_in_chat",
+        "inbox_apis",
+        "indempotency_msg_fix",
+        "joel/optim-suggestions",
+        "lat_op_stage",
+        "lat_op",
+        "latencytrack_optimization",
+        "ls_1s",
+        "m_replica_14jan",
+        "main_deployment_fixes",
+        "main_replica_14jan",
+        "main_replica__16jan",
+        "main",
+        "more_op_latency",
+        "new_deployment",
+        "nsfw_pre_push",
+        "pn_inbox",
+        "prod_err",
+        "prompt_changes_astro_dating_sexed",
+        "safety_check",
+        "send_msg_rogue",
+        "sentry_bf",
+        "sentry_everywhere",
+        "sentry_webhook",
+        "slow_msg",
+        "sqlite_optimisations",
+        "staging",
+        "sys_prompt_prod",
+        "test_fix_url_n_storj_k",
+        "test_robust_gc",
+        "wal_ckpt_bug_fix"
       ]
     },
     {
@@ -106,7 +300,55 @@
         "deletions": 2,
         "total": 19
       },
-      "branches": []
+      "branches": [
+        "aioboto_implementation",
+        "backward_chat_api",
+        "bf_msg_sys",
+        "bf_14jan",
+        "c_inf_2",
+        "create_influencers",
+        "debug_or_fmissue",
+        "fix/envsubst-config-substitution",
+        "fix/envsubst-litestream-config",
+        "fix_pragma_optimize",
+        "fk_exeption_handle",
+        "further_joel_sugg",
+        "i_e_error",
+        "img_in_chat",
+        "inbox_apis",
+        "indempotency_msg_fix",
+        "jatin_og_prompt",
+        "joel/optim-suggestions",
+        "lat_op_stage",
+        "lat_op",
+        "latencytrack_optimization",
+        "ls_1s",
+        "m_replica_14jan",
+        "main_deployment_fixes",
+        "main_replica_14jan",
+        "main_replica__16jan",
+        "main",
+        "mb_resource_alloc",
+        "migrations_clear",
+        "more_op_latency",
+        "new_deployment",
+        "nsfw_pre_push",
+        "pn_inbox",
+        "prod_err",
+        "prompt_changes_astro_dating_sexed",
+        "safety_check",
+        "send_msg_rogue",
+        "sentry_bf",
+        "sentry_everywhere",
+        "sentry_webhook",
+        "slow_msg",
+        "sqlite_optimisations",
+        "staging",
+        "sys_prompt_prod",
+        "test_fix_url_n_storj_k",
+        "test_robust_gc",
+        "wal_ckpt_bug_fix"
+      ]
     },
     {
       "sha": "ba06f405d3d45721d35d238cb5eae994194bb685",
@@ -119,7 +361,56 @@
         "deletions": 48,
         "total": 103
       },
-      "branches": []
+      "branches": [
+        "aioboto_implementation",
+        "backward_chat_api",
+        "bf_msg_sys",
+        "bf_14jan",
+        "c_inf_2",
+        "create_influencers",
+        "debug_or_fmissue",
+        "fix/envsubst-config-substitution",
+        "fix/envsubst-litestream-config",
+        "fix_pragma_optimize",
+        "fk_exeption_handle",
+        "further_joel_sugg",
+        "i_e_error",
+        "img_in_chat",
+        "inbox_apis",
+        "indempotency_msg_fix",
+        "jatin_og_prompt",
+        "joel/optim-suggestions",
+        "lat_op_stage",
+        "lat_op",
+        "latencytrack_optimization",
+        "ls_1s",
+        "m_replica_14jan",
+        "main_deployment_fixes",
+        "main_replica_14jan",
+        "main_replica__16jan",
+        "main",
+        "mb_resource_alloc",
+        "migrations_clear",
+        "more_op_latency",
+        "new_deployment",
+        "nsfw_pre_push",
+        "pn_inbox",
+        "postgre_db",
+        "prod_err",
+        "prompt_changes_astro_dating_sexed",
+        "safety_check",
+        "send_msg_rogue",
+        "sentry_bf",
+        "sentry_everywhere",
+        "sentry_webhook",
+        "slow_msg",
+        "sqlite_optimisations",
+        "staging",
+        "sys_prompt_prod",
+        "test_fix_url_n_storj_k",
+        "test_robust_gc",
+        "wal_ckpt_bug_fix"
+      ]
     },
     {
       "sha": "e8ad413febc09913288788d2f440ba4198e5ec63",
@@ -132,7 +423,235 @@
         "deletions": 892,
         "total": 892
       },
-      "branches": []
+      "branches": [
+        "aioboto_implementation",
+        "backward_chat_api",
+        "bf_msg_sys",
+        "bf_14jan",
+        "c_inf_2",
+        "create_influencers",
+        "debug_or_fmissue",
+        "fix/envsubst-config-substitution",
+        "fix/envsubst-litestream-config",
+        "fix_pragma_optimize",
+        "fk_exeption_handle",
+        "further_joel_sugg",
+        "i_e_error",
+        "img_in_chat",
+        "inbox_apis",
+        "indempotency_msg_fix",
+        "jatin_og_prompt",
+        "joel/optim-suggestions",
+        "lat_op_stage",
+        "lat_op",
+        "latencytrack_optimization",
+        "ls_1s",
+        "m_replica_14jan",
+        "main_deployment_fixes",
+        "main_replica_14jan",
+        "main_replica__16jan",
+        "main",
+        "mb_resource_alloc",
+        "migrations_clear",
+        "more_op_latency",
+        "new_deployment",
+        "nsfw_pre_push",
+        "pn_inbox",
+        "postgre_db",
+        "prod_err",
+        "prompt_changes_astro_dating_sexed",
+        "safety_check",
+        "send_msg_rogue",
+        "sentry_bf",
+        "sentry_everywhere",
+        "sentry_fix_stageing",
+        "sentry_fix",
+        "sentry_webhook",
+        "slow_msg",
+        "sqlite_optimisations",
+        "staging",
+        "sys_prompt_prod",
+        "test_fix_url_n_storj_k",
+        "test_robust_gc",
+        "wal_ckpt_bug_fix"
+      ]
+    },
+    {
+      "sha": "33ecd83b5732251c9e2ce7b1095ae01b7909ddf2",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-12T16:17:51Z",
+      "message": "Merge pull request #97 from dolr-ai/mb_resource_alloc",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "debug_or_fmissue",
+        "jatin_og_prompt",
+        "m_replica_14jan",
+        "nsfw_pre_push"
+      ]
+    },
+    {
+      "sha": "dc377eb3488039185b3fa71fa0fb9fe6585521a4",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-12T16:17:17Z",
+      "message": "Merge pull request #96 from dolr-ai/migrations_clear",
+      "stats": {
+        "additions": 262,
+        "deletions": 1213,
+        "total": 1475
+      },
+      "branches": [
+        "debug_or_fmissue",
+        "jatin_og_prompt",
+        "m_replica_14jan",
+        "nsfw_pre_push"
+      ]
+    },
+    {
+      "sha": "5e2d47a783dffb282374f04ada17d852caa522f8",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-12T15:59:53Z",
+      "message": "Merge pull request #95 from dolr-ai/mb_resource_alloc",
+      "stats": {
+        "additions": 5,
+        "deletions": 3,
+        "total": 8
+      },
+      "branches": [
+        "debug_or_fmissue",
+        "jatin_og_prompt",
+        "m_replica_14jan",
+        "migrations_clear",
+        "nsfw_pre_push"
+      ]
+    },
+    {
+      "sha": "17534fc8a8156a7a3ab3ed6f55c57209fac54db0",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-12T15:10:46Z",
+      "message": "Merge pull request #93 from dolr-ai/main",
+      "stats": {
+        "additions": 17,
+        "deletions": 2,
+        "total": 19
+      },
+      "branches": [
+        "debug_or_fmissue",
+        "jatin_og_prompt",
+        "m_replica_14jan",
+        "mb_resource_alloc",
+        "migrations_clear",
+        "nsfw_pre_push"
+      ]
+    },
+    {
+      "sha": "83be3b1710adb85b8d424ccb237e1634c8c658e8",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-12T15:06:26Z",
+      "message": "Merge pull request #92 from jatin-agarwal-yral/patch-2",
+      "stats": {
+        "additions": 17,
+        "deletions": 19,
+        "total": 36
+      },
+      "branches": [
+        "debug_or_fmissue",
+        "jatin_og_prompt",
+        "m_replica_14jan",
+        "mb_resource_alloc",
+        "migrations_clear",
+        "nsfw_pre_push"
+      ]
+    },
+    {
+      "sha": "50f9464db3f7d3462b6ab93f2d9d85ff17b122e3",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-12T07:52:39Z",
+      "message": "Merge pull request #79 from dolr-ai/metabase_staging_rw",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "debug_or_fmissue",
+        "jatin_og_prompt",
+        "m_replica_14jan",
+        "mb_resource_alloc",
+        "migrations_clear",
+        "nsfw_pre_push"
+      ]
+    },
+    {
+      "sha": "bbb8a8cdfa767d4800319acafce7f045cc81cc89",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-12T07:15:50Z",
+      "message": "Merge pull request #88 from dolr-ai/sentry_fix_stageing",
+      "stats": {
+        "additions": 72,
+        "deletions": 74,
+        "total": 146
+      },
+      "branches": [
+        "debug_or_fmissue",
+        "jatin_og_prompt",
+        "m_replica_14jan",
+        "mb_resource_alloc",
+        "migrations_clear",
+        "nsfw_pre_push"
+      ]
+    },
+    {
+      "sha": "407a02412e7b4e6339cba52bfc8aa8126f442710",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-12T04:29:17Z",
+      "message": "Delete .cursor/environment.json",
+      "stats": {
+        "additions": 0,
+        "deletions": 3,
+        "total": 3
+      },
+      "branches": [
+        "debug_or_fmissue",
+        "jatin_og_prompt",
+        "m_replica_14jan",
+        "mb_resource_alloc",
+        "migrations_clear",
+        "nsfw_pre_push",
+        "sentry_fix_stageing"
+      ]
+    },
+    {
+      "sha": "76a4f77e25da58d9305c3c7e26b96aaa22e192e3",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-12T01:53:30Z",
+      "message": "Merge pull request #84 from dolr-ai/main",
+      "stats": {
+        "additions": 4,
+        "deletions": 896,
+        "total": 900
+      },
+      "branches": [
+        "debug_or_fmissue",
+        "jatin_og_prompt",
+        "m_replica_14jan",
+        "mb_resource_alloc",
+        "migrations_clear",
+        "nsfw_pre_push",
+        "sentry_fix_stageing"
+      ]
     },
     {
       "sha": "50274fd4457d333ccab2214983c185e0632acd40",
@@ -145,7 +664,9 @@
         "deletions": 8,
         "total": 10
       },
-      "branches": []
+      "branches": [
+        "naitik/impl-redis-store-cluster"
+      ]
     },
     {
       "sha": "103e0e9ffe3ee862b2a2714e8a2c951b6033f13d",
@@ -158,7 +679,9 @@
         "deletions": 2,
         "total": 4
       },
-      "branches": []
+      "branches": [
+        "naitik/impl-redis-store-cluster"
+      ]
     },
     {
       "sha": "962b5f6d22803fa2b425325b85630b1266fd11b8",
@@ -171,7 +694,9 @@
         "deletions": 4,
         "total": 9
       },
-      "branches": []
+      "branches": [
+        "naitik/impl-redis-store-cluster"
+      ]
     },
     {
       "sha": "89eccb1a0c0a68ab36baec2e5d43686cc8612626",
@@ -184,8 +709,10 @@
         "deletions": 13,
         "total": 103
       },
-      "branches": []
+      "branches": [
+        "naitik/impl-redis-store-cluster"
+      ]
     }
   ],
-  "commit_count": 14
+  "commit_count": 23
 }

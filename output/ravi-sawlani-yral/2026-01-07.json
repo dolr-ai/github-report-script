@@ -11,19 +11,13 @@
   "repo_count": 1,
   "branch_breakdown": {
     "dolr-ai/yral-auth-v2": {
-      "unknown": {
-        "additions": 98,
-        "deletions": 60,
-        "total_loc": 158,
-        "commit_count": 3
-      },
-      "fix/remove-cookies-in-verify-endpoint": {
-        "additions": 26,
-        "deletions": 2,
-        "total_loc": 28,
-        "commit_count": 1
+      "main": {
+        "additions": 124,
+        "deletions": 62,
+        "total_loc": 186,
+        "commit_count": 4
       }
     }
   },
-  "processed_at": "2026-02-03T20:11:43.993814Z"
+  "processed_at": "2026-02-03T20:53:58.980645Z"
 }

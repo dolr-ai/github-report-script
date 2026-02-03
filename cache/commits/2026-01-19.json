@@ -1,7 +1,95 @@
 {
   "date": "2026-01-19",
-  "cached_at": "2026-02-03T18:36:16.881289Z",
+  "cached_at": "2026-02-03T20:53:57.943289Z",
   "commits": [
+    {
+      "sha": "f68efb897407efe52c84ecd1d7efd56d3fe71192",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-19T10:25:27Z",
+      "message": "fix: new metadata url",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "dependabot/cargo/bytes-1.11.1",
+        "dependabot/cargo/hon-worker-common-2a723cd",
+        "dependabot/cargo/openidconnect-4.0.1",
+        "dependabot/cargo/opentelemetry_sdk-0.31.0",
+        "dependabot/cargo/rsa-0.9.10",
+        "dependabot/cargo/videogen-common-2a723cd",
+        "dependabot/npm_and_yarn/tests/e2e/lodash-4.17.23",
+        "dependabot/npm_and_yarn/tests/e2e/multi-549b90733e",
+        "dependabot/npm_and_yarn/tests/e2e/multi-ac680358f5",
+        "fix/remove-post-status-filtering",
+        "joel/approval-flow",
+        "joel/offchain-urls",
+        "main",
+        "naitik/fix_dragonfly_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration_to_dragonfly_redis",
+        "naitik/update-metadata-link",
+        "revert-1150-naitik/migration_to_dragonfly_redis",
+        "revert-1153-naitik/migration_to_dragonfly_redis",
+        "revert-dual-write"
+      ]
+    },
+    {
+      "sha": "1f7375313fc4a968bf78f42c26398b2c38a55d9d",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-19T10:39:40Z",
+      "message": "fix: updated metadata url",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "copilot/sub-pr-378",
+        "feat/add-support-for-yral-subscription",
+        "feat/report-app-migration",
+        "fix/gchat-oauth-for-report-buttons",
+        "fix/user-agent-issue-with-pro-subscription",
+        "fix/yral-pro-subscription-token-operation",
+        "joel/apps-script-reports-api",
+        "joel/ban-event",
+        "joel/btc-rewards-builder-err",
+        "joel/dolr-rewards",
+        "joel/fix-btc-dolr-notif",
+        "joel/fix-event-name",
+        "joel/fix-event-ser",
+        "joel/fix-gchat-report-buttons",
+        "joel/fix-logging",
+        "joel/fix-report-env",
+        "joel/fix-reports",
+        "joel/icp-swap-dolr-price-fetch",
+        "joel/leaderboard-redis-migration",
+        "joel/metric-server-cleanup",
+        "joel/offchain-broken-pipe-fix",
+        "joel/phash-fix",
+        "joel/phash-redis-migration",
+        "joel/profile-views-check",
+        "joel/rewards-mode",
+        "joel/rm-panic",
+        "joel/sentry_webhooks",
+        "joel/sentry-channel-routing",
+        "joel/sentry-issues-fix",
+        "joel/sentry-spam-fix",
+        "joel/upload-flow-content",
+        "joel/views-fix",
+        "joel/webhook-fix",
+        "main",
+        "naitik/broken_pipe_issue_fix",
+        "naitik/migrate_fly_redis_to_dragonfly",
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/update_metadata_url",
+        "revert-358-naitik/migrate_fly_redis_to_dragonfly",
+        "revert-359-revert-358-naitik/migrate_fly_redis_to_dragonfly"
+      ]
+    },
     {
       "sha": "4534b71fbd789dfb7e3c6abbca14a02a36eb37c1",
       "author": "naitik-makwana-yral",
@@ -13,7 +101,13 @@
         "deletions": 10,
         "total": 25
       },
-      "branches": []
+      "branches": [
+        "copilot/fix-username-release-on-delete",
+        "joel/broken_pipe_retries",
+        "joel/fcm-notification-migration",
+        "master",
+        "naitik/migrate-reads-to-dragonfly"
+      ]
     },
     {
       "sha": "8ce1acbbb0fd752579b653d1944edf43a39ea8b2",
@@ -26,7 +120,104 @@
         "deletions": 501,
         "total": 2829
       },
-      "branches": []
+      "branches": [
+        "copilot/fix-username-release-on-delete",
+        "joel/broken_pipe_retries",
+        "joel/fcm-notification-migration",
+        "master",
+        "naitik/comment_out_test_from_prod_ci",
+        "naitik/migrate-reads-to-dragonfly"
+      ]
+    },
+    {
+      "sha": "f33cded6eb5503ae09d3c4c9d11e593106838e4d",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-01-19T12:30:07Z",
+      "message": "fix: added ENV variables to docker.",
+      "stats": {
+        "additions": 5,
+        "deletions": 0,
+        "total": 5
+      },
+      "branches": [
+        "naitik/comment_out_test_from_prod_ci"
+      ]
+    },
+    {
+      "sha": "45dd2fc5355a960b564d227499264a43c34391eb",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-01-19T12:20:10Z",
+      "message": "no need to run test for deployment",
+      "stats": {
+        "additions": 10,
+        "deletions": 10,
+        "total": 20
+      },
+      "branches": [
+        "naitik/comment_out_test_from_prod_ci"
+      ]
+    },
+    {
+      "sha": "99a3ea8a2e072c6586040c3d421158f72bd8aeb5",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-01-19T10:16:41Z",
+      "message": "fix : updated api url in client",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/1403_migration_to_bare_metal"
+      ]
+    },
+    {
+      "sha": "f4b773951e087d6ad9f6f037da02d42051e3cd5d",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-01-19T08:51:59Z",
+      "message": "fix: feature gated api testcases",
+      "stats": {
+        "additions": 936,
+        "deletions": 931,
+        "total": 1867
+      },
+      "branches": [
+        "naitik/1403_migration_to_bare_metal"
+      ]
+    },
+    {
+      "sha": "f291646d5abcbaa7063210fda5e2f034c695342d",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-01-19T08:29:43Z",
+      "message": "[skip ci] fix: formatting",
+      "stats": {
+        "additions": 8,
+        "deletions": 8,
+        "total": 16
+      },
+      "branches": [
+        "naitik/1403_migration_to_bare_metal"
+      ]
+    },
+    {
+      "sha": "53580682f78dd8a2be6eb81597927f3344c792e5",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-01-19T08:10:08Z",
+      "message": "fix: comment out api tests for production.",
+      "stats": {
+        "additions": 931,
+        "deletions": 931,
+        "total": 1862
+      },
+      "branches": [
+        "naitik/1403_migration_to_bare_metal"
+      ]
     },
     {
       "sha": "4d74bd25d7b7bacb1fa99dc7b5b05d1f21e6e4d0",
@@ -40,22 +231,32 @@
         "total": 2
       },
       "branches": [
+        "main",
         "naitik/update_metadata_url"
       ]
     },
     {
-      "sha": "d8b1bd673924c42f1e87b43d530c26f6a2531ccc",
-      "author": "jay-dhanwant-yral",
-      "repository": "dolr-ai/ai-feed-recommendation-system",
-      "timestamp": "2026-01-19T04:49:45Z",
-      "message": "Merge pull request #5 from dolr-ai/stage",
+      "sha": "c22416470ca958ed771378497c4b726b09ef958a",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-01-19T10:48:45Z",
+      "message": "fix: updated metadata-url",
       "stats": {
-        "additions": 572,
-        "deletions": 29,
-        "total": 601
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
       },
-      "branches": []
+      "branches": [
+        "feat/update-candid-for-user-info-service",
+        "feat/update-user-info-deps",
+        "fix/update-user-info-service-candid",
+        "fix/yral-pro-subscription-token-transaction-implmentation",
+        "master",
+        "naitik/updata_metadata_url",
+        "revert-153-fix/update-user-info-service-candid",
+        "revert-banned-posts-filter"
+      ]
     }
   ],
-  "commit_count": 4
+  "commit_count": 12
 }

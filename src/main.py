@@ -72,19 +72,31 @@ def cmd_refresh():
 
     # Get date range
     start_date, end_date = get_date_range()
-    logger.info(
-        f"Refresh date range: {start_date.date()} to {end_date.date()}")
-    print(
-        f"Refreshing cache and output for: {start_date.date()} to {end_date.date()}\n")
 
-    # Fetch commits with force refresh
-    fetcher = GitHubFetcher(thread_count=THREAD_COUNT)
-    fetcher.fetch_commits(start_date, end_date, USER_IDS, force_refresh=True)
+    # Handle ALL_CACHED mode (just reprocess existing cache)
+    if start_date is None and end_date is None:
+        logger.info("Reprocessing all cached dates")
+        print("Reprocessing all cached dates\n")
 
-    # Process data with force refresh
-    processor = DataProcessor()
-    processor.process_date_range(
-        start_date, end_date, USER_IDS, force_refresh=True)
+        # Just process data (don't fetch)
+        processor = DataProcessor()
+        processor.process_date_range(
+            start_date, end_date, USER_IDS, force_refresh=True)
+    else:
+        logger.info(
+            f"Refresh date range: {start_date.date()} to {end_date.date()}")
+        print(
+            f"Refreshing cache and output for: {start_date.date()} to {end_date.date()}\n")
+
+        # Fetch commits with force refresh
+        fetcher = GitHubFetcher(thread_count=THREAD_COUNT)
+        fetcher.fetch_commits(start_date, end_date,
+                              USER_IDS, force_refresh=True)
+
+        # Process data with force refresh
+        processor = DataProcessor()
+        processor.process_date_range(
+            start_date, end_date, USER_IDS, force_refresh=True)
 
     print("\n" + "=" * 70)
     print("✓ Refresh complete! Cache and output updated")

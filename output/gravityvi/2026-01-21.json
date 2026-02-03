@@ -1,29 +1,12 @@
 {
   "date": "2026-01-21",
   "username": "gravityvi",
-  "additions": 21,
-  "deletions": 13,
-  "total_loc": 34,
-  "commit_count": 3,
-  "repositories": [
-    "dolr-ai/yral-billing"
-  ],
-  "repo_count": 1,
-  "branch_breakdown": {
-    "dolr-ai/yral-billing": {
-      "unknown": {
-        "additions": 19,
-        "deletions": 13,
-        "total_loc": 32,
-        "commit_count": 2
-      },
-      "fix/type-for-google-play-subscription-response": {
-        "additions": 2,
-        "deletions": 0,
-        "total_loc": 2,
-        "commit_count": 1
-      }
-    }
-  },
-  "processed_at": "2026-02-03T20:11:44.018065Z"
+  "additions": 0,
+  "deletions": 0,
+  "total_loc": 0,
+  "commit_count": 0,
+  "repositories": [],
+  "repo_count": 0,
+  "branch_breakdown": {},
+  "processed_at": "2026-02-03T20:53:59.014804Z"
 }

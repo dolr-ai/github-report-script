@@ -11,7 +11,7 @@
   "repo_count": 1,
   "branch_breakdown": {
     "dolr-ai/yral-ai-chat": {
-      "unknown": {
+      "main": {
         "additions": 3261,
         "deletions": 987,
         "total_loc": 4248,
@@ -19,5 +19,5 @@
       }
     }
   },
-  "processed_at": "2026-02-03T20:11:43.993472Z"
+  "processed_at": "2026-02-03T20:53:58.980112Z"
 }

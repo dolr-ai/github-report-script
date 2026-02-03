@@ -1,7 +1,38 @@
 {
   "date": "2026-01-13",
-  "cached_at": "2026-02-03T18:36:12.090588Z",
+  "cached_at": "2026-02-03T20:53:56.018082Z",
   "commits": [
+    {
+      "sha": "5c540f6b31e8837d1c0f7cbd21c3c3967d554215",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2026-01-13T08:56:15Z",
+      "message": "Update set_ai_influencers.yml",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "set-ai-influencers"
+      ]
+    },
+    {
+      "sha": "36bb4efb1c1b3c1cb276ac03b6c7aa7110a9f6de",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-01-13T10:44:54Z",
+      "message": "add dual write to bare metal redis and sentinel connection for the same",
+      "stats": {
+        "additions": 919,
+        "deletions": 269,
+        "total": 1188
+      },
+      "branches": [
+        "naitik/add_writes_to_dragonfly",
+        "naitik/1403_migration_to_bare_metal"
+      ]
+    },
     {
       "sha": "d3e31540f3dbd4baeafce83d3ecb1977c516076d",
       "author": "samarth-paboowal-yral",
@@ -13,7 +44,18 @@
         "deletions": 310,
         "total": 377
       },
-      "branches": []
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "main"
+      ]
     },
     {
       "sha": "92c67a2a9315732c7e3dab9b9004fa17f19274aa",
@@ -27,7 +69,22 @@
         "total": 4
       },
       "branches": [
-        "feature/subscription-ui"
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
       ]
     },
     {
@@ -41,7 +98,24 @@
         "deletions": 0,
         "total": 2
       },
-      "branches": []
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
+      ]
     },
     {
       "sha": "83dc1bfc57762f588f98cf8bbd9c6afc689d0074",
@@ -54,7 +128,24 @@
         "deletions": 0,
         "total": 968
       },
-      "branches": []
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
+      ]
     },
     {
       "sha": "c5ed43868407182cc60618dca2fea48bd8cc4f15",
@@ -67,127 +158,40 @@
         "deletions": 35,
         "total": 1277
       },
-      "branches": []
-    },
-    {
-      "sha": "c2f53a0525c67f9a8a576cae566f2d134058091b",
-      "author": "ravi-sawlani-yral",
-      "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-01-13T07:49:16Z",
-      "message": "fix: auth error kind serialisation",
-      "stats": {
-        "additions": 104,
-        "deletions": 2,
-        "total": 106
-      },
-      "branches": []
-    },
-    {
-      "sha": "bcc0676892d7069cf4ef048681f5ec83ccc67a3d",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-01-13T06:48:34Z",
-      "message": "implement custom serialize and deserialize for error types",
-      "stats": {
-        "additions": 104,
-        "deletions": 2,
-        "total": 106
-      },
       "branches": [
-        "feat/fix-error-type-for-api"
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "fix/hot-or-not-load-time",
+        "fix/state-button",
+        "main",
+        "release/3.2.0"
       ]
     },
     {
-      "sha": "7aa17f41df587222716fd73d59883b251d3e3c74",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-13T15:18:43Z",
-      "message": "refactor",
+      "sha": "41ae906d682f16fd2713fc086710ba8b9b66498c",
+      "author": "samarth-paboowal-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-13T07:37:52Z",
+      "message": "build: adds AIBot module in features",
       "stats": {
-        "additions": 180,
-        "deletions": 46,
-        "total": 226
-      },
-      "branches": []
-    },
-    {
-      "sha": "1f941f6b957160287b1df7aa2acb6af8997ba701",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-13T10:18:33Z",
-      "message": "Add Ubuntu 24.04 image path to installimage command",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": []
-    },
-    {
-      "sha": "96b6126005747d09af2b7999a207542e20222ac1",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-13T23:38:58Z",
-      "message": "Bugfix Message System Prompt (#106)",
-      "stats": {
-        "additions": 84,
-        "deletions": 68,
-        "total": 152
-      },
-      "branches": []
-    },
-    {
-      "sha": "acd6642eee691b72e0d052051b8d5f00e068ab85",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-13T22:29:55Z",
-      "message": "Nsfw pre push with syntax issue fixed on deploy file (#105)",
-      "stats": {
-        "additions": 0,
-        "deletions": 1,
-        "total": 1
-      },
-      "branches": []
-    },
-    {
-      "sha": "3c512e110344915e02cfdb0498ec7f42c253f871",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-13T22:22:56Z",
-      "message": "Nsfw pre push with starlette sec scan ex (#104)",
-      "stats": {
-        "additions": 3,
+        "additions": 77,
         "deletions": 0,
-        "total": 3
+        "total": 77
       },
-      "branches": []
-    },
-    {
-      "sha": "889f6fa3394f0220df89d887c996f3450d2e3d83",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-13T22:18:48Z",
-      "message": "Nsfw pre push w Sec scan fixes and code linting fix (#103)",
-      "stats": {
-        "additions": 32,
-        "deletions": 4,
-        "total": 36
-      },
-      "branches": []
-    },
-    {
-      "sha": "adfcea4c8b236a0e77cbd758f8c54a261cb1a8df",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-13T22:10:21Z",
-      "message": "Nsfw pre push (#102)",
-      "stats": {
-        "additions": 2117,
-        "deletions": 769,
-        "total": 2886
-      },
-      "branches": []
+      "branches": [
+        "feature/create-ai-chat-bot"
+      ]
     }
   ],
-  "commit_count": 14
+  "commit_count": 8
 }

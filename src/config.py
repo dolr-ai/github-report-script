@@ -79,7 +79,7 @@ class DateRangeMode(Enum):
 # ============================================================================
 
 # --- Execution Configuration ---
-MODE = ExecutionMode.FETCH_AND_CHART
+MODE = ExecutionMode.REFRESH
 """
 What should the script do when run?
 
@@ -91,7 +91,7 @@ Examples:
 """
 
 # --- Date Range Configuration ---
-DATE_RANGE_MODE = DateRangeMode.LAST_N_DAYS
+DATE_RANGE_MODE = DateRangeMode.CUSTOM_RANGE
 """
 How to determine the date range.
 
@@ -105,7 +105,7 @@ Examples:
 DAYS_BACK = 30
 """Number of days to go back when DATE_RANGE_MODE = LAST_N_DAYS"""
 
-START_DATE: Optional[str] = None
+START_DATE: Optional[str] = '2026-01-05'
 """
 Start date for CUSTOM_RANGE or SPECIFIC_DATE modes.
 Format: 'YYYY-MM-DD'
@@ -115,7 +115,7 @@ Examples:
     START_DATE = '2026-01-27'
 """
 
-END_DATE: Optional[str] = None
+END_DATE: Optional[str] = '2026-01-21'
 """
 End date for CUSTOM_RANGE mode.
 Format: 'YYYY-MM-DD'
