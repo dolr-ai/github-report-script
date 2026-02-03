@@ -1,0 +1,79 @@
+{
+  "date": "2026-01-06",
+  "cached_at": "2026-02-03T14:01:21.317147Z",
+  "commits": [
+    {
+      "sha": "5f05e73b9b7f933c005db96302f92994b1a215fa",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-06T13:29:13+00:00",
+      "message": "feat: added event streaming to mixpanel for unification (#348)",
+      "stats": {
+        "additions": 183,
+        "deletions": 148,
+        "total": 331
+      }
+    },
+    {
+      "sha": "64d16ae3d8387abd7e1e99b7e3db9c031c5126ac",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-06T09:03:19+00:00",
+      "message": "Merge pull request #758 from dolr-ai/release/2.5.0",
+      "stats": {
+        "additions": 16658,
+        "deletions": 874,
+        "total": 17532
+      }
+    },
+    {
+      "sha": "bff5300b37315f68696d09a0d045b52aef5538d6",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-06T09:01:45+00:00",
+      "message": "Merge pull request #757 from dolr-ai/release/2.5.0",
+      "stats": {
+        "additions": 87,
+        "deletions": 7,
+        "total": 94
+      }
+    },
+    {
+      "sha": "7cf45a199a9b2a6935ba8266c04f28b1a3d2b635",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-06T05:20:53+00:00",
+      "message": "fix: Fixes tournament not creating",
+      "stats": {
+        "additions": 4,
+        "deletions": 4,
+        "total": 8
+      }
+    },
+    {
+      "sha": "0970c431366ddd99546d23daece2ffe3abe4fe21",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-01-06T05:19:20+00:00",
+      "message": "feat: Implement phone authentication",
+      "stats": {
+        "additions": 1700,
+        "deletions": 178,
+        "total": 1878
+      }
+    },
+    {
+      "sha": "f1eeacb5d8cb7a4dc42e9d0413a9acf411c8f20a",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-06T17:21:55+00:00",
+      "message": "Merge pull request #39 from dolr-ai/staging",
+      "stats": {
+        "additions": 2371,
+        "deletions": 1564,
+        "total": 3935
+      }
+    }
+  ],
+  "commit_count": 6
+}

@@ -1,0 +1,223 @@
+{
+  "date": "2026-01-20",
+  "cached_at": "2026-02-03T14:14:11.713648Z",
+  "commits": [
+    {
+      "sha": "0d605bbdabef576c4b7577568ed525e66f9c1baa",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2026-01-20T09:34:57+00:00",
+      "message": "feat: add YralPro subscription as token type for video creation (#632)",
+      "stats": {
+        "additions": 11,
+        "deletions": 14,
+        "total": 25
+      }
+    },
+    {
+      "sha": "d8247deaefc68b067add3e7ecab48f6d20ffbb46",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-20T06:09:54+00:00",
+      "message": "Merge pull request #1149 from dolr-ai/naitik/update-metadata-link",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      }
+    },
+    {
+      "sha": "cf8871bc6c842579372717026cc60436c117abcf",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-20T19:33:49+00:00",
+      "message": "feat: add Sentry webhook handler to forward alerts to Google Chat (#356)",
+      "stats": {
+        "additions": 432,
+        "deletions": 96,
+        "total": 528
+      }
+    },
+    {
+      "sha": "7a1bada798853bc455b6eeb81f3c4aac5b85eb90",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-20T17:48:11+00:00",
+      "message": "feat: add video report banned event and notification handling (#357)",
+      "stats": {
+        "additions": 35,
+        "deletions": 3,
+        "total": 38
+      }
+    },
+    {
+      "sha": "c1a57dfeedc1365eaa09690474264999f00b4948",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-20T08:09:13+00:00",
+      "message": "Merge pull request #354 from dolr-ai/naitik/update_metadata_url",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      }
+    },
+    {
+      "sha": "bfddbab25ea6661df03b4c88cbdade83950d049d",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-20T07:46:41+00:00",
+      "message": "feat: add canister health check endpoint and related functionality (#355)",
+      "stats": {
+        "additions": 156,
+        "deletions": 2,
+        "total": 158
+      }
+    },
+    {
+      "sha": "c9f677d48ca23604947e163db9dd29c24523545f",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/download-upload-service",
+      "timestamp": "2026-01-20T06:11:14+00:00",
+      "message": "Merge pull request #17 from dolr-ai/naitik/update_metadata_url",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      }
+    },
+    {
+      "sha": "b959fb47f3325634f75a9d522bac62cb1f053524",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-20T21:45:29+00:00",
+      "message": "Refactors the video player's card stack architecture to decouple generic swipe logic from reel-speci",
+      "stats": {
+        "additions": 534,
+        "deletions": 473,
+        "total": 1007
+      }
+    },
+    {
+      "sha": "35171ba8c3e2ceb1b57228e500440fbfead39cb0",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-20T21:20:18+00:00",
+      "message": "Refactors video playback architecture in `YRALReelPlayerCardStack` to use a centralized playback coo",
+      "stats": {
+        "additions": 182,
+        "deletions": 256,
+        "total": 438
+      }
+    },
+    {
+      "sha": "4066c5d48c98314d700844ee8b526afafe06b9c8",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-20T21:07:05+00:00",
+      "message": "Merge pull request #799 from dolr-ai/content-scale",
+      "stats": {
+        "additions": 25,
+        "deletions": 4,
+        "total": 29
+      }
+    },
+    {
+      "sha": "11799fd026fa60eec00ebf7a9625e924dac425e7",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-20T09:22:50+00:00",
+      "message": "chore: Increments android app version",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      }
+    },
+    {
+      "sha": "a581d4ff314065dd9944b965b37468346dac5851",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-20T09:16:12+00:00",
+      "message": "Fixes fatal crash when login info is restored in process death scenario (#796)",
+      "stats": {
+        "additions": 28,
+        "deletions": 11,
+        "total": 39
+      }
+    },
+    {
+      "sha": "93285d3f2b83d3d6d707a61fbc7517f14de3f356",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-20T09:16:12+00:00",
+      "message": "Fixes fatal crash when login info is restored in process death scenario (#796)",
+      "stats": {
+        "additions": 28,
+        "deletions": 11,
+        "total": 39
+      }
+    },
+    {
+      "sha": "551c593df03d851e31fb723f13f118ecedeeb833",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-01-20T09:52:10+00:00",
+      "message": "feat: update rate limit canister did file (#150)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      }
+    },
+    {
+      "sha": "4e63ff917a02c0da1564b385d0193e9fe56f9b22",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-01-20T08:08:36+00:00",
+      "message": "Merge pull request #149 from dolr-ai/naitik/updata_metadata_url",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      }
+    },
+    {
+      "sha": "b25a37da4ba3b92d70968d3fadda374937ad3c92",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-20T13:41:00+00:00",
+      "message": "Refactor system update playbook to remove reboot checks and streamline upgrade process",
+      "stats": {
+        "additions": 2,
+        "deletions": 38,
+        "total": 40
+      }
+    },
+    {
+      "sha": "dcb5841d54cb8d620706c4518267426e262008f8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-20T13:29:23+00:00",
+      "message": "Remove obsolete host variable file for example host",
+      "stats": {
+        "additions": 0,
+        "deletions": 6,
+        "total": 6
+      }
+    },
+    {
+      "sha": "e1a6d3dbcacc48527a3da7ca237404baece06b27",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-20T13:26:03+00:00",
+      "message": "test commit",
+      "stats": {
+        "additions": 45,
+        "deletions": 24,
+        "total": 69
+      }
+    }
+  ],
+  "commit_count": 18
+}

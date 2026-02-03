@@ -1,0 +1,55 @@
+{
+  "date": "2026-01-09",
+  "cached_at": "2026-02-03T14:05:22.301949Z",
+  "commits": [
+    {
+      "sha": "e5801b2657f63f93bdcb2309a84438c22bd048fc",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-09T07:30:12+00:00",
+      "message": "Merge pull request #766 from dolr-ai/release/2.5.1",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      }
+    },
+    {
+      "sha": "5be43584c04eb2501ed73e3be3a934e604252560",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-09T07:29:57+00:00",
+      "message": "Merge pull request #767 from dolr-ai/release/2.5.1",
+      "stats": {
+        "additions": 1519,
+        "deletions": 264,
+        "total": 1783
+      }
+    },
+    {
+      "sha": "9516acd997cfa1639a5125edcfa162804cdef792",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-09T05:36:49+00:00",
+      "message": "Migrates to Media3 Compose UI and implements Feed screen wake lock (#769)",
+      "stats": {
+        "additions": 41,
+        "deletions": 37,
+        "total": 78
+      }
+    },
+    {
+      "sha": "599b56c5cb34ec2aaad96783f09895c4204afbc4",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-09T06:01:01+00:00",
+      "message": "Syncing Staging with Prod to fix date in Arun Pandit (#61)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      }
+    }
+  ],
+  "commit_count": 4
+}

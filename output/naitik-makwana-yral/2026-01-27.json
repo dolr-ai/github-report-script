@@ -1,0 +1,16 @@
+{
+  "date": "2026-01-27",
+  "username": "naitik-makwana-yral",
+  "additions": 1758,
+  "deletions": 762,
+  "total_loc": 2520,
+  "commit_count": 5,
+  "repositories": [
+    "dolr-ai/hashicorp-vault-service",
+    "dolr-ai/hot-or-not-web-leptos-ssr",
+    "dolr-ai/yral-auth-v2",
+    "dolr-ai/yral-metadata"
+  ],
+  "repo_count": 4,
+  "processed_at": "2026-02-03T14:21:09.595699Z"
+}

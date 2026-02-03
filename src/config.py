@@ -77,7 +77,7 @@ class DateRangeMode(Enum):
 # ============================================================================
 
 # --- Execution Configuration ---
-MODE = ExecutionMode.FETCH
+MODE = ExecutionMode.CHART
 """
 What should the script do when run?
 
@@ -100,7 +100,7 @@ Examples:
     DATE_RANGE_MODE = DateRangeMode.ALL_CACHED      # All cached dates
 """
 
-DAYS_BACK = 7
+DAYS_BACK = 30
 """Number of days to go back when DATE_RANGE_MODE = LAST_N_DAYS"""
 
 START_DATE: Optional[str] = None

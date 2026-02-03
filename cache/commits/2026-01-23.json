@@ -1,0 +1,355 @@
+{
+  "date": "2026-01-23",
+  "cached_at": "2026-02-03T14:18:17.675675Z",
+  "commits": [
+    {
+      "sha": "6b4dc318563855500b9aff967a10c234c89087c8",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-23T14:48:32+00:00",
+      "message": "Revert \"dual write to dragonfly redis (#1156)\" (#1157)",
+      "stats": {
+        "additions": 45,
+        "deletions": 794,
+        "total": 839
+      }
+    },
+    {
+      "sha": "c58b5951003507186391d65efb6cf259e9ecd6f2",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-23T13:50:59+00:00",
+      "message": "dual write to dragonfly redis (#1156)",
+      "stats": {
+        "additions": 794,
+        "deletions": 45,
+        "total": 839
+      }
+    },
+    {
+      "sha": "38e84dd8aa8609331a8e0461208c91317221ceb9",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-23T09:40:52+00:00",
+      "message": "[skip ci] Revert \"Naitik/migration to dragonfly redis\" (#1155)",
+      "stats": {
+        "additions": 44,
+        "deletions": 793,
+        "total": 837
+      }
+    },
+    {
+      "sha": "31e1fe83259e8506703db371fea825b6b1f7db75",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-23T08:55:56+00:00",
+      "message": "dual write to dragonfly redis (#1153)",
+      "stats": {
+        "additions": 793,
+        "deletions": 44,
+        "total": 837
+      }
+    },
+    {
+      "sha": "5ea506129ce65deb6e620ccb442af361ef033615",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-23T10:24:20+00:00",
+      "message": "fix: handle fallback for updating user post view details on error (#372)",
+      "stats": {
+        "additions": 20,
+        "deletions": 2,
+        "total": 22
+      }
+    },
+    {
+      "sha": "483b7fb5e7cece1607de2e3e00d31293ebb91e97",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-23T10:09:18+00:00",
+      "message": "Fix/gchat oauth for report buttons (#371)",
+      "stats": {
+        "additions": 3,
+        "deletions": 1,
+        "total": 4
+      }
+    },
+    {
+      "sha": "79efb02900224ded1aae6d8fd9abf758ad671014",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-23T09:37:04+00:00",
+      "message": "fix: use OAuth for Google Chat report messages (interactive buttons) (#370)",
+      "stats": {
+        "additions": 93,
+        "deletions": 8,
+        "total": 101
+      }
+    },
+    {
+      "sha": "dc33a5d3d5c2852d1ad5992981a51ecdaa446f3e",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-23T08:30:42+00:00",
+      "message": "feat: add GOOGLE_CHAT_REPORT_SPACE_URL as a dynamic environment variable (#369)",
+      "stats": {
+        "additions": 7,
+        "deletions": 4,
+        "total": 11
+      }
+    },
+    {
+      "sha": "100d76a9241f792c8c49408d2b0a719c78c7b60f",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-01-23T11:12:40+00:00",
+      "message": "feat: added litestream backup",
+      "stats": {
+        "additions": 48,
+        "deletions": 3,
+        "total": 51
+      }
+    },
+    {
+      "sha": "904abeea12fba1d9bb5c62a154308a44c532f1a4",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-01-23T14:08:47+00:00",
+      "message": "Add containerd and kubeadm installation playbooks to provisioning workflow",
+      "stats": {
+        "additions": 32,
+        "deletions": 1,
+        "total": 33
+      }
+    },
+    {
+      "sha": "7a2e4a6a0d1034023510dc86d73a8847375f92ae",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-01-23T14:00:13+00:00",
+      "message": "Update README and add playbooks for Kubernetes setup and containerd installation",
+      "stats": {
+        "additions": 473,
+        "deletions": 4,
+        "total": 477
+      }
+    },
+    {
+      "sha": "e807ed62eed9872cc349e70a0012912d16718fb6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-01-23T12:56:56+00:00",
+      "message": "Remove ping playbook for testing connectivity to Kubernetes cluster nodes",
+      "stats": {
+        "additions": 0,
+        "deletions": 12,
+        "total": 12
+      }
+    },
+    {
+      "sha": "498de15b54452fb206245123f79476e97ffa4e99",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-01-23T10:26:22+00:00",
+      "message": "Restore missing register and set_fact for second_drive variable",
+      "stats": {
+        "additions": 18,
+        "deletions": 0,
+        "total": 18
+      }
+    },
+    {
+      "sha": "8d1301f0a129c07a055af5ed3bd64c54217da344",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-01-23T10:24:46+00:00",
+      "message": "Fix btrfs-expand playbook: explicitly use bash for shell tasks",
+      "stats": {
+        "additions": 4,
+        "deletions": 18,
+        "total": 22
+      }
+    },
+    {
+      "sha": "7de2524d4c4db144cfc1a14f7b717c1239b552e0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-01-23T10:13:48+00:00",
+      "message": "Fix btrfs-expand script to remove unnecessary blank line for improved readability",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      }
+    },
+    {
+      "sha": "aef4ee56e2b4b3c9cb064ac0500e0a1e5e76e757",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-01-23T10:08:43+00:00",
+      "message": "Improve btrfs-expand to dynamically detect which disk is in use and which is available",
+      "stats": {
+        "additions": 82,
+        "deletions": 37,
+        "total": 119
+      }
+    },
+    {
+      "sha": "3ed4dbae19ccf8d7fec26e96a5094ebafe12722b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-01-23T10:04:50+00:00",
+      "message": "Fix btrfs-expand to skip if drive is already part of filesystem; Add reboot after system-setup",
+      "stats": {
+        "additions": 25,
+        "deletions": 13,
+        "total": 38
+      }
+    },
+    {
+      "sha": "0dc479ac0cb024eec106439ef8db604b916a6b97",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-01-23T10:01:21+00:00",
+      "message": "Add reboot and wait logic after system setup in provisioning workflow",
+      "stats": {
+        "additions": 32,
+        "deletions": 0,
+        "total": 32
+      }
+    },
+    {
+      "sha": "b3351601629e5cca9c069b20380d188d0d91e297",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-01-23T09:39:06+00:00",
+      "message": "Fix installation script execution to ignore exit code and ensure proper reboot",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      }
+    },
+    {
+      "sha": "76cc5c03e4894e343592b298d22e08744fb11933",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-01-23T09:38:33+00:00",
+      "message": "Ignore exit code from installation script and proceed to reboot",
+      "stats": {
+        "additions": 6,
+        "deletions": 11,
+        "total": 17
+      }
+    },
+    {
+      "sha": "4c4416999e025a97155f56ce3a1d8a0f6b651b1c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-01-23T09:35:04+00:00",
+      "message": "Remove quotes around environment variables in SSH command",
+      "stats": {
+        "additions": 1,
+        "deletions": 2,
+        "total": 3
+      }
+    },
+    {
+      "sha": "ca2b2c066cd2ddf54fb183b82c32de4bf03f23ed",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-01-23T09:29:23+00:00",
+      "message": "Fix quote escaping in installation command",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      }
+    },
+    {
+      "sha": "7cf66b0ff379eb51191272c48e6c3e92ab4fca80",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-01-23T09:22:18+00:00",
+      "message": "Fix installation script execution to properly reboot server",
+      "stats": {
+        "additions": 10,
+        "deletions": 2,
+        "total": 12
+      }
+    },
+    {
+      "sha": "604beaf6656b705eeb8fbe8ad11f3d9b8ff79aaf",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-01-23T09:20:03+00:00",
+      "message": "Fix btrfs-expand playbook to check filesystem type before expansion",
+      "stats": {
+        "additions": 33,
+        "deletions": 16,
+        "total": 49
+      }
+    },
+    {
+      "sha": "5ac16286dea8e7d3b679efe476cfd827b96f03b2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-01-23T09:11:45+00:00",
+      "message": "Add provisioning workflow and related playbooks for server setup and btrfs expansion",
+      "stats": {
+        "additions": 713,
+        "deletions": 50,
+        "total": 763
+      }
+    },
+    {
+      "sha": "bda8c81495b483fe73380d515d5fbe2b69a2f64d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-01-23T08:52:37+00:00",
+      "message": "Remove Kubernetes version and container runtime variables from inventory hosts configuration",
+      "stats": {
+        "additions": 0,
+        "deletions": 4,
+        "total": 4
+      }
+    },
+    {
+      "sha": "6ff06a7fdcfb7478eaf010b5b37bbf7359a186ab",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-01-23T08:19:23+00:00",
+      "message": "Update inventory hosts configuration for control plane and worker nodes",
+      "stats": {
+        "additions": 27,
+        "deletions": 5,
+        "total": 32
+      }
+    },
+    {
+      "sha": "167d0e94de6f2973bcd4813ea8d5bcc3384c75bf",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-01-23T08:06:13+00:00",
+      "message": "Add Ansible connectivity test workflow and related configurations",
+      "stats": {
+        "additions": 310,
+        "deletions": 0,
+        "total": 310
+      }
+    },
+    {
+      "sha": "9fc75eb193f2e5f6e7a423973d5c2e01cb87a681",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-01-23T07:45:06+00:00",
+      "message": "Remove deprecated configuration files and update cluster management setup",
+      "stats": {
+        "additions": 0,
+        "deletions": 2566,
+        "total": 2566
+      }
+    }
+  ],
+  "commit_count": 29
+}

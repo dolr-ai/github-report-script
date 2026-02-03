@@ -1,0 +1,199 @@
+{
+  "date": "2026-01-07",
+  "cached_at": "2026-02-03T14:01:28.532189Z",
+  "commits": [
+    {
+      "sha": "8c38680260e1baf65007810a33dacabe12d85e85",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2026-01-07T11:06:26+00:00",
+      "message": "feat: added nsfw info persistance for pfps + feat: added is_ai_influencer tagging (#633)",
+      "stats": {
+        "additions": 693,
+        "deletions": 82,
+        "total": 775
+      }
+    },
+    {
+      "sha": "5209fa715ebd2f62dbb9b86c76d6d1ff4e5f65b1",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-07T15:53:23+00:00",
+      "message": "Fixes url for chat image uploads (#764)",
+      "stats": {
+        "additions": 11,
+        "deletions": 1,
+        "total": 12
+      }
+    },
+    {
+      "sha": "322e2cb74b46e11d395e7ab16c388139a20a8ee0",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-07T12:51:01+00:00",
+      "message": "Updates prize pool display in Prize Breakdown Bottom Sheet (#762)",
+      "stats": {
+        "additions": 18,
+        "deletions": 15,
+        "total": 33
+      }
+    },
+    {
+      "sha": "0738c8f8ac135eed7c06086c769862e3dfe9abca",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-07T12:04:06+00:00",
+      "message": "Adds GAID to MixPanel properties for android (#761)",
+      "stats": {
+        "additions": 202,
+        "deletions": 22,
+        "total": 224
+      }
+    },
+    {
+      "sha": "6cf7b0fe5e7023251453b69cbf0e6c24dd21b026",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-01-07T13:39:01+00:00",
+      "message": "chore: update user info service canister did file (#148)",
+      "stats": {
+        "additions": 31,
+        "deletions": 2,
+        "total": 33
+      }
+    },
+    {
+      "sha": "25a760fcf081082c6b7da86ae4079481221caecd",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-01-07T14:34:26+00:00",
+      "message": "fix: remove-cookie-and-capture-errors",
+      "stats": {
+        "additions": 59,
+        "deletions": 28,
+        "total": 87
+      }
+    },
+    {
+      "sha": "61b2e571f83ec5aa2a6471b58014fb1a88261714",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-01-07T14:02:44+00:00",
+      "message": "capture failure at callbacks",
+      "stats": {
+        "additions": 26,
+        "deletions": 2,
+        "total": 28
+      }
+    },
+    {
+      "sha": "595adbbad66b43df4c9f680626d9aa33c001ebb3",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-01-07T10:30:30+00:00",
+      "message": "fix lint",
+      "stats": {
+        "additions": 14,
+        "deletions": 11,
+        "total": 25
+      }
+    },
+    {
+      "sha": "eedb881de1cf4dc34a086d8647a48661c8276cb0",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-01-07T08:46:55+00:00",
+      "message": "remove cookies once used and refactor code",
+      "stats": {
+        "additions": 25,
+        "deletions": 21,
+        "total": 46
+      }
+    },
+    {
+      "sha": "88409b746473e3337c8005db650395108f4faec1",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-07T15:18:04+00:00",
+      "message": "Merge pull request #51 from dolr-ai/staging",
+      "stats": {
+        "additions": 75,
+        "deletions": 0,
+        "total": 75
+      }
+    },
+    {
+      "sha": "77713e2c8f2944641687fb9897e092fc9d2586c3",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-07T15:11:33+00:00",
+      "message": "Merge pull request #50 from dolr-ai/msg_type_normalization",
+      "stats": {
+        "additions": 75,
+        "deletions": 0,
+        "total": 75
+      }
+    },
+    {
+      "sha": "d765b3ce7064a6941cdd56c4e643fa30a9636500",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-07T12:42:44+00:00",
+      "message": "Merge pull request #49 from dolr-ai/staging",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      }
+    },
+    {
+      "sha": "dfa31d88ea182873c3b05e1886026d52608cd643",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-07T12:21:31+00:00",
+      "message": "Merge pull request #48 from dolr-ai/main",
+      "stats": {
+        "additions": 4,
+        "deletions": 7,
+        "total": 11
+      }
+    },
+    {
+      "sha": "b2af33a54f9275b9caf1855c074eb1915d9e325c",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-07T12:20:39+00:00",
+      "message": "Merge pull request #47 from dolr-ai/staging",
+      "stats": {
+        "additions": 1147,
+        "deletions": 84,
+        "total": 1231
+      }
+    },
+    {
+      "sha": "ffdfc2071fe1acd0705b924e729bc0ae896027f0",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-07T12:06:31+00:00",
+      "message": "Merge pull request #46 from dolr-ai/litestream_integrety",
+      "stats": {
+        "additions": 171,
+        "deletions": 813,
+        "total": 984
+      }
+    },
+    {
+      "sha": "15a43ec927204be10e35a3dad93bd94d40aa31b0",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-07T11:58:12+00:00",
+      "message": "Merge pull request #45 from dolr-ai/litestream_integrety",
+      "stats": {
+        "additions": 1788,
+        "deletions": 83,
+        "total": 1871
+      }
+    }
+  ],
+  "commit_count": 16
+}

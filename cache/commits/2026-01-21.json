@@ -1,0 +1,187 @@
+{
+  "date": "2026-01-21",
+  "cached_at": "2026-02-03T14:17:18.061494Z",
+  "commits": [
+    {
+      "sha": "b2f970c4a5ce3e02db2d853dce96769eb4b15997",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-21T15:26:28+00:00",
+      "message": "url changes (#1152)",
+      "stats": {
+        "additions": 4,
+        "deletions": 4,
+        "total": 8
+      }
+    },
+    {
+      "sha": "03ae232304739337e484b7a9e0dbac10975c21e5",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-21T12:56:50+00:00",
+      "message": "Revert \"migration of fly to dragonfly redis\" (#1151)",
+      "stats": {
+        "additions": 44,
+        "deletions": 793,
+        "total": 837
+      }
+    },
+    {
+      "sha": "7dfd8508b9c7df7f7aa2b05105a7785b74d63e3d",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-21T11:46:51+00:00",
+      "message": "integration of dragonfly redis (#1150)",
+      "stats": {
+        "additions": 793,
+        "deletions": 44,
+        "total": 837
+      }
+    },
+    {
+      "sha": "a913e208d71721930dbf848aea06bc9592a24af2",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-21T17:02:37+00:00",
+      "message": "refactor: migrate rewards module to use Dragonfly for caching and dat\u2026 (#362)",
+      "stats": {
+        "additions": 337,
+        "deletions": 147,
+        "total": 484
+      }
+    },
+    {
+      "sha": "16d3f1fb38b59bbfdd2dd09df6ce6f4283f399f4",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-21T13:29:57+00:00",
+      "message": "fix: update GRPC_AUTH_TOKEN handling and enhance .gitignore entries (#361)",
+      "stats": {
+        "additions": 7,
+        "deletions": 3,
+        "total": 10
+      }
+    },
+    {
+      "sha": "83e8a81430b8d4061ee8c429d341a0c615f865c1",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-21T12:42:17+00:00",
+      "message": "Revert \"Revert \"integration of dragonfly redis (#358)\" (#359)\" (#360)",
+      "stats": {
+        "additions": 665,
+        "deletions": 19,
+        "total": 684
+      }
+    },
+    {
+      "sha": "52a206ffc2223f209d4ce7691bb38eda5282d85f",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-21T12:36:24+00:00",
+      "message": "Revert \"integration of dragonfly redis (#358)\" (#359)",
+      "stats": {
+        "additions": 19,
+        "deletions": 665,
+        "total": 684
+      }
+    },
+    {
+      "sha": "22818febd3e9277de1d16b58f15aa9bf92a32418",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-21T12:13:15+00:00",
+      "message": "integration of dragonfly redis (#358)",
+      "stats": {
+        "additions": 665,
+        "deletions": 19,
+        "total": 684
+      }
+    },
+    {
+      "sha": "fcbf48da77476e07e15f4e23529a6f1690029792",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-21T21:23:49+00:00",
+      "message": "Adds configurable surface types to VideoSurface and VideoFeed (#804)",
+      "stats": {
+        "additions": 19,
+        "deletions": 0,
+        "total": 19
+      }
+    },
+    {
+      "sha": "43a5a117d6394622704ed96b07fe55ac0c7d4711",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-21T07:02:15+00:00",
+      "message": "Merge pull request #798 from dolr-ai/release/android-2.6.2",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      }
+    },
+    {
+      "sha": "b7c86af8e4ad6bcbd2f894e5eb6bf73c34203a34",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-21T06:22:19+00:00",
+      "message": "Fix/hot or not load time (#802)",
+      "stats": {
+        "additions": 97,
+        "deletions": 17,
+        "total": 114
+      }
+    },
+    {
+      "sha": "74c386795b6ba0987ae637b838408110ac9713bd",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-21T07:05:35+00:00",
+      "message": "Update SSH key for Joel in grant-ssh-access workflow",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      }
+    },
+    {
+      "sha": "ac980da0e4bd82a87a9b1c3e0d67c508d44b2af4",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-01-21T13:58:41+00:00",
+      "message": "fix acknowledgement request",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      }
+    },
+    {
+      "sha": "c882886632a99d7bf6c56a7299d5bbdc458893e1",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-01-21T13:15:07+00:00",
+      "message": "fix: type for google play subscription response",
+      "stats": {
+        "additions": 17,
+        "deletions": 13,
+        "total": 30
+      }
+    },
+    {
+      "sha": "91a91e39c128f5a16e4fcec0240114256e8ec3bc",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-01-21T13:01:20+00:00",
+      "message": "fix type for google play subscription response",
+      "stats": {
+        "additions": 17,
+        "deletions": 13,
+        "total": 30
+      }
+    }
+  ],
+  "commit_count": 15
+}

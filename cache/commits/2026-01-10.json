@@ -1,0 +1,91 @@
+{
+  "date": "2026-01-10",
+  "cached_at": "2026-02-03T14:05:31.325577Z",
+  "commits": [
+    {
+      "sha": "0bf7b4ce5b9d884c836e7e02ab23bf9b6b55a094",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-10T17:06:23+00:00",
+      "message": ".gitignore updates",
+      "stats": {
+        "additions": 4,
+        "deletions": 1,
+        "total": 5
+      }
+    },
+    {
+      "sha": "c0e55475e206784c0559303c12d00f3f27496786",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-10T16:57:39+00:00",
+      "message": "fix(litestream): align replica path and endpoint for Hatzer S3",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      }
+    },
+    {
+      "sha": "759fd05130c67fca154633a6bf9827440be685a5",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-10T15:45:32+00:00",
+      "message": "Merge pull request #77 from dolr-ai/beszel_to_main",
+      "stats": {
+        "additions": 59,
+        "deletions": 49,
+        "total": 108
+      }
+    },
+    {
+      "sha": "3c332ecb52f5f91150234d3a791e4ed8b3a202a6",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-10T10:25:23+00:00",
+      "message": "default flag (#75)",
+      "stats": {
+        "additions": 14,
+        "deletions": 32,
+        "total": 46
+      }
+    },
+    {
+      "sha": "4cb2c7b27697c23e406f59571716d765a554c9d5",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-10T10:20:50+00:00",
+      "message": "default flag",
+      "stats": {
+        "additions": 14,
+        "deletions": 32,
+        "total": 46
+      }
+    },
+    {
+      "sha": "a9186db234ff7665297470b3152c1317eb392976",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-10T09:43:44+00:00",
+      "message": "Merge pull request #70 from dolr-ai/bugfix_database_lock",
+      "stats": {
+        "additions": 47,
+        "deletions": 38,
+        "total": 85
+      }
+    },
+    {
+      "sha": "9f02b9e111717787f811b8dc71e99056cb54aad2",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-10T09:42:42+00:00",
+      "message": "bugfix: database gets locked",
+      "stats": {
+        "additions": 47,
+        "deletions": 38,
+        "total": 85
+      }
+    }
+  ],
+  "commit_count": 7
+}

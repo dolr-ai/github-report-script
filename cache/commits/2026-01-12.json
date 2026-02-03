@@ -1,0 +1,127 @@
+{
+  "date": "2026-01-12",
+  "cached_at": "2026-02-03T14:05:42.253755Z",
+  "commits": [
+    {
+      "sha": "087622ace283f6a0394593de666bbb5e0056fc06",
+      "author": "samarth-paboowal-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-12T14:09:53+00:00",
+      "message": "build: fixes tap to recharge api (#773)",
+      "stats": {
+        "additions": 4,
+        "deletions": 3,
+        "total": 7
+      }
+    },
+    {
+      "sha": "40ae0dc47f20b13c4f4795aa91cb6c7f69b3d994",
+      "author": "samarth-paboowal-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-12T11:40:17+00:00",
+      "message": "chore: increments android version",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      }
+    },
+    {
+      "sha": "f1a61eff4630556c753afce60859fbcf4a451a87",
+      "author": "samarth-paboowal-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-12T08:16:37+00:00",
+      "message": "Migrates FE to new domains & migration of events to bulk endpoint (#755)",
+      "stats": {
+        "additions": 24,
+        "deletions": 271,
+        "total": 295
+      }
+    },
+    {
+      "sha": "19b3993f51a2d5b67f804ffb94099de39159c07c",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-01-12T08:16:56+00:00",
+      "message": "use secure csrf and pcke cookies",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      }
+    },
+    {
+      "sha": "f512e5d3c2438f15a70232de198eb4a2e319b88b",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-12T18:16:42+00:00",
+      "message": "Merge pull request #98 from dolr-ai/prompt_changes_astro_dating_sexed",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      }
+    },
+    {
+      "sha": "9d478209346825d212bebac6927b6cae70917586",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-12T15:26:16+00:00",
+      "message": "fix: race condition in conversation creation, move debug scripts to adhoc (#91)",
+      "stats": {
+        "additions": 27,
+        "deletions": 6,
+        "total": 33
+      }
+    },
+    {
+      "sha": "dc5207f2b2e787bf82c4a4700e847807e05273d3",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-12T13:06:28+00:00",
+      "message": "Merge branch 'main' into prod_err",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      }
+    },
+    {
+      "sha": "3191134f2f41368d167e384898a52563f2958c55",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-12T11:29:58+00:00",
+      "message": "Merge pull request #90 from dolr-ai/prod_err",
+      "stats": {
+        "additions": 17,
+        "deletions": 2,
+        "total": 19
+      }
+    },
+    {
+      "sha": "ba06f405d3d45721d35d238cb5eae994194bb685",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-12T04:09:45+00:00",
+      "message": "Merge pull request #86 from dolr-ai/sentry_fix",
+      "stats": {
+        "additions": 55,
+        "deletions": 48,
+        "total": 103
+      }
+    },
+    {
+      "sha": "e8ad413febc09913288788d2f440ba4198e5ec63",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-12T01:52:23+00:00",
+      "message": "Merge pull request #83 from dolr-ai/rm_adhoc",
+      "stats": {
+        "additions": 0,
+        "deletions": 892,
+        "total": 892
+      }
+    }
+  ],
+  "commit_count": 10
+}
