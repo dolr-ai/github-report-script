@@ -76,27 +76,50 @@ class CacheManager:
 
     def write_cache(self, date_str: str, data: Dict):
         """Write data to cache for a specific date (thread-safe)
+        Only updates cached_at timestamp if content actually changes.
 
         Args:
             date_str: Date in YYYY-MM-DD format
             data: Data dictionary to cache
         """
         cache_file = self.get_cache_file_path(date_str)
+        new_commits = data.get('commits', [])
+
+        # Check if existing cache has the same content
+        existing_cached_at = None
+        if os.path.exists(cache_file):
+            try:
+                with open(cache_file, 'r') as f:
+                    existing_data = json.load(f)
+                    existing_commits = existing_data.get('commits', [])
+
+                    # Compare commits (excluding cached_at field)
+                    if existing_commits == new_commits:
+                        # Content hasn't changed, preserve cached_at
+                        existing_cached_at = existing_data.get('cached_at')
+                        logger.debug(
+                            f"Cache content unchanged for {date_str}, preserving timestamp")
+            except (json.JSONDecodeError, IOError):
+                pass  # If we can't read, treat as new cache
 
         # Add metadata
         cache_data = {
             'date': date_str,
-            'cached_at': datetime.utcnow().isoformat() + 'Z',
-            'commits': data.get('commits', []),
-            'commit_count': len(data.get('commits', []))
+            'cached_at': existing_cached_at if existing_cached_at else datetime.utcnow().isoformat() + 'Z',
+            'commits': new_commits,
+            'commit_count': len(new_commits)
         }
 
         with self.cache_lock:
             try:
                 with open(cache_file, 'w') as f:
                     json.dump(cache_data, f, indent=2)
-                logger.debug(
-                    f"Wrote cache for {date_str}: {cache_data['commit_count']} commits")
+                if existing_cached_at:
+                    logger.debug(
+                        f"Cache unchanged for {date_str}: {cache_data['commit_count']} commits")
+                else:
+                    logger.debug(
+                        f"Wrote cache for {date_str}: {cache_data['commit_count']} commits")
             except IOError as e:
                 logger.error(f"Failed to write cache for {date_str}: {e}")
 
