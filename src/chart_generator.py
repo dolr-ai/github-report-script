@@ -63,17 +63,23 @@ class ChartGenerator:
         return dates, usernames, additions_data, deletions_data, total_loc_data, commits_data
 
     def _get_filename_base(self, start_date: str, end_date: str) -> str:
-        """Generate base filename for reports
+        """Generate base filename for reports and create dated folder
 
         Args:
             start_date: Start date string
             end_date: End date string
 
         Returns:
-            Base filename with timestamp
+            Base filename without timestamp (date only)
         """
-        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-        return f"report_{start_date}_to_{end_date}_{timestamp}"
+        # Create folder with generation date
+        generation_date = datetime.now().strftime('%Y%m%d')
+        dated_folder = os.path.join(REPORTS_DIR, generation_date)
+        os.makedirs(dated_folder, exist_ok=True)
+
+        # Return path with folder
+        base_name = f"report_{start_date}_to_{end_date}"
+        return os.path.join(generation_date, base_name)
 
     def generate_plotly_chart(self, all_data: Dict[str, Dict[str, Dict]],
                               start_date: str, end_date: str) -> str:
@@ -112,11 +118,13 @@ class ChartGenerator:
 
             # Additions
             fig.add_trace(
-                go.Bar(
+                go.Scatter(
                     name=username,
                     x=dates,
                     y=additions_data[username],
-                    marker_color=color,
+                    mode='lines+markers',
+                    line=dict(color=color, width=2),
+                    marker=dict(size=6),
                     legendgroup=username,
                     showlegend=True,
                     hovertemplate='%{x}<br>Additions: %{y}<extra></extra>'
@@ -126,11 +134,13 @@ class ChartGenerator:
 
             # Deletions
             fig.add_trace(
-                go.Bar(
+                go.Scatter(
                     name=username,
                     x=dates,
                     y=deletions_data[username],
-                    marker_color=color,
+                    mode='lines+markers',
+                    line=dict(color=color, width=2),
+                    marker=dict(size=6),
                     legendgroup=username,
                     showlegend=False,
                     hovertemplate='%{x}<br>Deletions: %{y}<extra></extra>'
@@ -140,11 +150,13 @@ class ChartGenerator:
 
             # Total LOC
             fig.add_trace(
-                go.Bar(
+                go.Scatter(
                     name=username,
                     x=dates,
                     y=total_loc_data[username],
-                    marker_color=color,
+                    mode='lines+markers',
+                    line=dict(color=color, width=2),
+                    marker=dict(size=6),
                     legendgroup=username,
                     showlegend=False,
                     hovertemplate='%{x}<br>Total LOC: %{y}<extra></extra>'
@@ -154,11 +166,13 @@ class ChartGenerator:
 
             # Commits
             fig.add_trace(
-                go.Bar(
+                go.Scatter(
                     name=username,
                     x=dates,
                     y=commits_data[username],
-                    marker_color=color,
+                    mode='lines+markers',
+                    line=dict(color=color, width=2),
+                    marker=dict(size=6),
                     legendgroup=username,
                     showlegend=False,
                     hovertemplate='%{x}<br>Commits: %{y}<extra></extra>'
@@ -172,7 +186,6 @@ class ChartGenerator:
             title_font_size=20,
             showlegend=True,
             height=900,
-            barmode='group',
             legend=dict(
                 orientation="h",
                 yanchor="bottom",
@@ -223,31 +236,30 @@ class ChartGenerator:
         width = 0.8 / len(usernames) if len(usernames) > 0 else 0.8
 
         # Plot each metric
-        def plot_grouped_bars(ax, data_dict, title, ylabel):
+        def plot_lines(ax, data_dict, title, ylabel):
             for idx, username in enumerate(usernames):
-                offset = width * (idx - len(usernames) / 2 + 0.5)
                 color = self.colors[idx % len(self.colors)]
-                ax.bar(x + offset, data_dict[username], width,
-                       label=username, color=color, alpha=0.8)
+                ax.plot(dates, data_dict[username],
+                        marker='o', linewidth=2, markersize=6,
+                        label=username, color=color, alpha=0.8)
 
             ax.set_xlabel('Date', fontsize=11)
             ax.set_ylabel(ylabel, fontsize=11)
             ax.set_title(title, fontsize=13, fontweight='bold')
-            ax.set_xticks(x)
-            ax.set_xticklabels(dates, rotation=45, ha='right')
+            ax.tick_params(axis='x', rotation=45)
             ax.legend(loc='upper left', framealpha=0.9)
-            ax.grid(axis='y', alpha=0.3, linestyle='--')
+            ax.grid(True, alpha=0.3, linestyle='--')
             ax.set_axisbelow(True)
 
         # Plot all four metrics
-        plot_grouped_bars(axes[0, 0], additions_data,
-                          'Daily Additions (Lines Added)', 'Lines')
-        plot_grouped_bars(axes[0, 1], deletions_data,
-                          'Daily Deletions (Lines Removed)', 'Lines')
-        plot_grouped_bars(axes[1, 0], total_loc_data,
-                          'Daily Total LOC Changed', 'Lines')
-        plot_grouped_bars(axes[1, 1], commits_data,
-                          'Daily Commit Count', 'Commits')
+        plot_lines(axes[0, 0], additions_data,
+                   'Daily Additions (Lines Added)', 'Lines')
+        plot_lines(axes[0, 1], deletions_data,
+                   'Daily Deletions (Lines Removed)', 'Lines')
+        plot_lines(axes[1, 0], total_loc_data,
+                   'Daily Total LOC Changed', 'Lines')
+        plot_lines(axes[1, 1], commits_data,
+                   'Daily Commit Count', 'Commits')
 
         plt.tight_layout()
 
