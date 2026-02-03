@@ -5,24 +5,23 @@ GitHub Report Script - Main Entry Point
 No command-line arguments needed. All configuration is in src/config.py
 Run from project root: python src/main.py
 """
-from src.chart_generator import ChartGenerator
-from src.data_processor import DataProcessor
-from src.github_fetcher import GitHubFetcher
-from src.config import (
-    MODE, ExecutionMode, DATE_RANGE_MODE, DateRangeMode,
-    USER_IDS, THREAD_COUNT, GITHUB_ORG,
-    validate_config, display_config, get_date_range
-)
 import sys
 import os
-import logging
 from datetime import datetime
+import logging
 
-# Add project root to Python path to allow src. imports
+# Setup Python path BEFORE any src imports
+# This MUST be first or imports will fail
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
+# fmt: off - DO NOT REORDER THESE IMPORTS
+from src.config import MODE, ExecutionMode, DATE_RANGE_MODE, DateRangeMode, USER_IDS, THREAD_COUNT, GITHUB_ORG, validate_config, display_config, get_date_range
+from src.github_fetcher import GitHubFetcher
+from src.data_processor import DataProcessor
+from src.chart_generator import ChartGenerator
+# fmt: on
 
 logger = logging.getLogger(__name__)
 

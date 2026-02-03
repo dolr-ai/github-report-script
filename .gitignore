@@ -33,7 +33,6 @@ env/
 ENV/
 
 # IDE
-.vscode/
 .idea/
 *.swp
 *.swo
@@ -50,4 +49,3 @@ htmlcov/
 
 # Backup files
 *.backup
-
