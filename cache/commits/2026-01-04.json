@@ -1,0 +1,150 @@
+{
+  "date": "2026-01-04",
+  "cached_at": "2026-02-03T18:39:37.917416Z",
+  "commits": [
+    {
+      "sha": "a17bb28114306dc055c83fe5465462a8b13d4c9a",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-01-04T13:45:05Z",
+      "message": "fix reqwest",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": []
+    },
+    {
+      "sha": "cf61bcc55c1560d39d7cc03da88c48d02b27e985",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-01-04T13:29:46Z",
+      "message": "refactor error and use rustls in reqwest",
+      "stats": {
+        "additions": 5,
+        "deletions": 5,
+        "total": 10
+      },
+      "branches": []
+    },
+    {
+      "sha": "7edb536f91efac0d9c5572c1ec0be500e1f6b9aa",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-04T22:44:36Z",
+      "message": "[skip ci] added test script",
+      "stats": {
+        "additions": 88,
+        "deletions": 0,
+        "total": 88
+      },
+      "branches": []
+    },
+    {
+      "sha": "efd57fb2aed8b5acd899da0d5dfcf1627d200bc3",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-04T22:22:11Z",
+      "message": "fix: env var name",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": []
+    },
+    {
+      "sha": "41229d908b2667ded6ff49ba1e24884648fc1108",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-04T22:18:59Z",
+      "message": "fix : volume in replica compose file and renaming master to primary",
+      "stats": {
+        "additions": 45,
+        "deletions": 45,
+        "total": 90
+      },
+      "branches": []
+    },
+    {
+      "sha": "02310a0be7779583d17273cdbfc20f001ac04498",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-04T21:59:35Z",
+      "message": "fix: added env files and container name",
+      "stats": {
+        "additions": 15,
+        "deletions": 3,
+        "total": 18
+      },
+      "branches": []
+    },
+    {
+      "sha": "ab9d97bc728d59917548e1c3577ac75de621115b",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-04T21:45:50Z",
+      "message": "specifying compose file path",
+      "stats": {
+        "additions": 12,
+        "deletions": 12,
+        "total": 24
+      },
+      "branches": []
+    },
+    {
+      "sha": "d3ac1175f7cb69639be75a72a5ffd4eea8924806",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-04T21:27:37Z",
+      "message": "temp fix for CI check",
+      "stats": {
+        "additions": 10,
+        "deletions": 39,
+        "total": 49
+      },
+      "branches": []
+    },
+    {
+      "sha": "36666e0de7dabe392c317f7e8d70c01a36db7878",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-04T21:18:56Z",
+      "message": "added default input for cluster",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": []
+    },
+    {
+      "sha": "3bb2a767c7a33036dc871916df476229807b25b3",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-04T21:15:16Z",
+      "message": "trigger CI",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": []
+    },
+    {
+      "sha": "f0c95e452a6c307daef5b2d0fa45321393744ec7",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-04T20:58:54Z",
+      "message": "fixed variables, temporary commented  nginx for testing",
+      "stats": {
+        "additions": 139,
+        "deletions": 92,
+        "total": 231
+      },
+      "branches": []
+    }
+  ],
+  "commit_count": 11
+}
