@@ -9,5 +9,15 @@
     "dolr-ai/redis-store-cluster"
   ],
   "repo_count": 1,
-  "processed_at": "2026-02-03T18:37:16.174085Z"
+  "branch_breakdown": {
+    "dolr-ai/redis-store-cluster": {
+      "naitik/impl-redis-store-cluster": {
+        "additions": 34,
+        "deletions": 38,
+        "total_loc": 72,
+        "commit_count": 3
+      }
+    }
+  },
+  "processed_at": "2026-02-03T19:24:36.850218Z"
 }

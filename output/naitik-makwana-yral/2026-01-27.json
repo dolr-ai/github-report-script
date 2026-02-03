@@ -11,5 +11,31 @@
     "dolr-ai/yral-metadata"
   ],
   "repo_count": 3,
-  "processed_at": "2026-02-03T18:37:16.198109Z"
+  "branch_breakdown": {
+    "dolr-ai/yral-metadata": {
+      "unknown": {
+        "additions": 235,
+        "deletions": 698,
+        "total_loc": 933,
+        "commit_count": 1
+      }
+    },
+    "dolr-ai/yral-auth-v2": {
+      "unknown": {
+        "additions": 729,
+        "deletions": 19,
+        "total_loc": 748,
+        "commit_count": 2
+      }
+    },
+    "dolr-ai/hashicorp-vault-service": {
+      "main": {
+        "additions": 1,
+        "deletions": 0,
+        "total_loc": 1,
+        "commit_count": 1
+      }
+    }
+  },
+  "processed_at": "2026-02-03T19:21:01.113585Z"
 }

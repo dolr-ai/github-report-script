@@ -9,5 +9,15 @@
     "dolr-ai/redis-store-cluster"
   ],
   "repo_count": 1,
-  "processed_at": "2026-02-03T18:37:16.160559Z"
+  "branch_breakdown": {
+    "dolr-ai/redis-store-cluster": {
+      "unknown": {
+        "additions": 250,
+        "deletions": 88,
+        "total_loc": 338,
+        "commit_count": 4
+      }
+    }
+  },
+  "processed_at": "2026-02-03T19:21:01.078284Z"
 }

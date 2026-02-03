@@ -9,5 +9,15 @@
     "dolr-ai/yral-mobile"
   ],
   "repo_count": 1,
-  "processed_at": "2026-02-03T18:37:16.174373Z"
+  "branch_breakdown": {
+    "dolr-ai/yral-mobile": {
+      "create-pull-request/update-did-files-v3.5.9": {
+        "additions": 1178,
+        "deletions": 581,
+        "total_loc": 1759,
+        "commit_count": 1
+      }
+    }
+  },
+  "processed_at": "2026-02-03T19:24:36.850599Z"
 }

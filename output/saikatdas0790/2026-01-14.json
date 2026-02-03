@@ -9,5 +9,15 @@
     "dolr-ai/hetzner-bare-metal-fleet"
   ],
   "repo_count": 1,
-  "processed_at": "2026-02-03T18:37:16.169006Z"
+  "branch_breakdown": {
+    "dolr-ai/hetzner-bare-metal-fleet": {
+      "unknown": {
+        "additions": 713,
+        "deletions": 217,
+        "total_loc": 930,
+        "commit_count": 24
+      }
+    }
+  },
+  "processed_at": "2026-02-03T19:21:01.086379Z"
 }

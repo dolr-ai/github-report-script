@@ -796,8 +796,8 @@ class ChartGenerator:
         dates, usernames, additions_data, deletions_data, total_loc_data, commits_data = \
             self._prepare_data(all_data)
 
-        # Create figure with 2x3 subplots (expanded from 2x2)
-        fig, axes = plt.subplots(2, 3, figsize=(20, 14))
+        # Create figure with 2x2 subplots
+        fig, axes = plt.subplots(2, 2, figsize=(16, 12))
         fig.suptitle(f'GitHub Activity Report ({start_date} to {end_date})',
                      fontsize=18, fontweight='bold')
 
@@ -817,7 +817,7 @@ class ChartGenerator:
             ax.grid(True, alpha=0.3, linestyle='--')
             ax.set_axisbelow(True)
 
-        # Plot all four metrics (2x2 grid on left)
+        # Plot all four metrics (2x2 grid)
         plot_lines(axes[0, 0], additions_data,
                    'Daily Additions (Lines Added)', 'Lines')
         plot_lines(axes[0, 1], deletions_data,
@@ -826,12 +826,6 @@ class ChartGenerator:
                    'Daily Total LOC Changed', 'Lines')
         plot_lines(axes[1, 1], commits_data,
                    'Daily Commit Count', 'Commits')
-
-        # Add branch distribution pie chart (top right)
-        self._add_branch_distribution_chart(axes[0, 2], all_data)
-
-        # Add branch summary table (bottom right)
-        self._add_branch_summary_table(axes[1, 2], all_data)
 
         plt.tight_layout()
 

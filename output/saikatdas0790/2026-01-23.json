@@ -9,5 +9,15 @@
     "dolr-ai/yral-bare-metal-kubernetes-cluster"
   ],
   "repo_count": 1,
-  "processed_at": "2026-02-03T18:37:16.187305Z"
+  "branch_breakdown": {
+    "dolr-ai/yral-bare-metal-kubernetes-cluster": {
+      "unknown": {
+        "additions": 1769,
+        "deletions": 2744,
+        "total_loc": 4513,
+        "commit_count": 20
+      }
+    }
+  },
+  "processed_at": "2026-02-03T19:21:01.105517Z"
 }

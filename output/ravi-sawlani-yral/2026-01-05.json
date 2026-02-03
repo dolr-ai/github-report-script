@@ -9,5 +9,21 @@
     "dolr-ai/yral-auth-v2"
   ],
   "repo_count": 1,
-  "processed_at": "2026-02-03T18:37:16.154685Z"
+  "branch_breakdown": {
+    "dolr-ai/yral-auth-v2": {
+      "feat/implement-phone-auth": {
+        "additions": 20,
+        "deletions": 23,
+        "total_loc": 43,
+        "commit_count": 1
+      },
+      "unknown": {
+        "additions": 128,
+        "deletions": 31,
+        "total_loc": 159,
+        "commit_count": 7
+      }
+    }
+  },
+  "processed_at": "2026-02-03T19:21:01.070529Z"
 }

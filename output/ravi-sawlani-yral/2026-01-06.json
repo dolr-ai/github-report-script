@@ -9,5 +9,15 @@
     "dolr-ai/yral-auth-v2"
   ],
   "repo_count": 1,
-  "processed_at": "2026-02-03T18:37:16.156094Z"
+  "branch_breakdown": {
+    "dolr-ai/yral-auth-v2": {
+      "unknown": {
+        "additions": 1700,
+        "deletions": 178,
+        "total_loc": 1878,
+        "commit_count": 1
+      }
+    }
+  },
+  "processed_at": "2026-02-03T19:21:01.072837Z"
 }

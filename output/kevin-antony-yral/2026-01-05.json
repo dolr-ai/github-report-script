@@ -9,5 +9,21 @@
     "dolr-ai/yral-ai-chat"
   ],
   "repo_count": 1,
-  "processed_at": "2026-02-03T18:37:16.154334Z"
+  "branch_breakdown": {
+    "dolr-ai/yral-ai-chat": {
+      "unknown": {
+        "additions": 3717,
+        "deletions": 2831,
+        "total_loc": 6548,
+        "commit_count": 10
+      },
+      "revert-34-infra_rl": {
+        "additions": 3,
+        "deletions": 30,
+        "total_loc": 33,
+        "commit_count": 1
+      }
+    }
+  },
+  "processed_at": "2026-02-03T19:21:01.070087Z"
 }

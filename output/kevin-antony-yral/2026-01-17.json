@@ -9,5 +9,21 @@
     "dolr-ai/yral-ai-chat"
   ],
   "repo_count": 1,
-  "processed_at": "2026-02-03T18:37:16.175327Z"
+  "branch_breakdown": {
+    "dolr-ai/yral-ai-chat": {
+      "unknown": {
+        "additions": 477,
+        "deletions": 528,
+        "total_loc": 1005,
+        "commit_count": 9
+      },
+      "fix/envsubst-config-substitution": {
+        "additions": 2,
+        "deletions": 1,
+        "total_loc": 3,
+        "commit_count": 1
+      }
+    }
+  },
+  "processed_at": "2026-02-03T19:21:01.094319Z"
 }

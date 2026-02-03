@@ -10,5 +10,23 @@
     "dolr-ai/yral-metadata"
   ],
   "repo_count": 2,
-  "processed_at": "2026-02-03T18:37:16.178969Z"
+  "branch_breakdown": {
+    "dolr-ai/yral-metadata": {
+      "unknown": {
+        "additions": 2343,
+        "deletions": 511,
+        "total_loc": 2854,
+        "commit_count": 2
+      }
+    },
+    "dolr-ai/download-upload-service": {
+      "naitik/update_metadata_url": {
+        "additions": 1,
+        "deletions": 1,
+        "total_loc": 2,
+        "commit_count": 1
+      }
+    }
+  },
+  "processed_at": "2026-02-03T19:21:01.098193Z"
 }

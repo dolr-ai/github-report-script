@@ -9,5 +9,15 @@
     "dolr-ai/yral-video-upload-service"
   ],
   "repo_count": 1,
-  "processed_at": "2026-02-03T18:37:16.173109Z"
+  "branch_breakdown": {
+    "dolr-ai/yral-video-upload-service": {
+      "feat/add-endpoints-for-upload-video-and-update-metadata": {
+        "additions": 4031,
+        "deletions": 261,
+        "total_loc": 4292,
+        "commit_count": 1
+      }
+    }
+  },
+  "processed_at": "2026-02-03T19:24:36.849238Z"
 }

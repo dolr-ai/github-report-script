@@ -373,19 +373,25 @@ class GitHubFetcher:
                                         'deletions': commit.get('deletions', 0),
                                         'total': commit.get('additions', 0) + commit.get('deletions', 0)
                                     },
-                                    'branches': []  # Will be populated below
+                                    # Tag with the branch we fetched it from
+                                    'branches': [branch_name]
                                 }
 
-                                # Fetch branches containing this commit (still need REST API for this)
+                                # Optionally fetch other branches containing this commit as HEAD
+                                # (This will find if the commit is also the HEAD of other branches)
                                 try:
-                                    commit_data['branches'] = self._fetch_commit_branches(
+                                    additional_branches = self._fetch_commit_branches(
                                         repo_full_name, commit_sha
                                     )
+                                    # Add any branches not already in the list
+                                    for branch in additional_branches:
+                                        if branch not in commit_data['branches']:
+                                            commit_data['branches'].append(
+                                                branch)
                                 except Exception as e:
                                     logger.debug(
-                                        f"Could not fetch branches for commit {commit_sha[:7]}: {e}"
+                                        f"Could not fetch additional branches for commit {commit_sha[:7]}: {e}"
                                     )
-                                    commit_data['branches'] = []
 
                                 commits_data.append(commit_data)
                                 repo_commit_count += 1

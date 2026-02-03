@@ -9,5 +9,15 @@
     "dolr-ai/ai-feed-recommendation-system"
   ],
   "repo_count": 1,
-  "processed_at": "2026-02-03T18:37:16.154004Z"
+  "branch_breakdown": {
+    "dolr-ai/ai-feed-recommendation-system": {
+      "unknown": {
+        "additions": 2666,
+        "deletions": 1806,
+        "total_loc": 4472,
+        "commit_count": 1
+      }
+    }
+  },
+  "processed_at": "2026-02-03T19:21:01.069816Z"
 }

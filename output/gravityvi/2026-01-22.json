@@ -9,5 +9,15 @@
     "dolr-ai/yral-billing"
   ],
   "repo_count": 1,
-  "processed_at": "2026-02-03T18:37:16.185055Z"
+  "branch_breakdown": {
+    "dolr-ai/yral-billing": {
+      "unknown": {
+        "additions": 5,
+        "deletions": 5,
+        "total_loc": 10,
+        "commit_count": 5
+      }
+    }
+  },
+  "processed_at": "2026-02-03T19:21:01.103855Z"
 }

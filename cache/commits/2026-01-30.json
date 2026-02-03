@@ -1,6 +1,6 @@
 {
   "date": "2026-01-30",
-  "cached_at": "2026-02-03T18:48:44.383862Z",
+  "cached_at": "2026-02-03T19:28:24.814686Z",
   "commits": [
     {
       "sha": "edace7be8393519625ccd05fbb4a644002753f44",
@@ -14,6 +14,7 @@
         "total": 685
       },
       "branches": [
+        "copilot/fix-username-release-on-delete",
         "master"
       ]
     },
@@ -43,7 +44,9 @@
         "deletions": 62,
         "total": 492
       },
-      "branches": []
+      "branches": [
+        "develop"
+      ]
     },
     {
       "sha": "7fd2572175fde47aa301cecaf9f5edefff0977c8",
@@ -56,7 +59,9 @@
         "deletions": 2,
         "total": 4
       },
-      "branches": []
+      "branches": [
+        "develop"
+      ]
     },
     {
       "sha": "6bf8a4a6ac443589332dba50a2bb19c777cedaeb",
@@ -69,7 +74,9 @@
         "deletions": 12,
         "total": 229
       },
-      "branches": []
+      "branches": [
+        "develop"
+      ]
     },
     {
       "sha": "56248d7ea62ae950b5f29913d0cdfb22d72ef541",
@@ -97,7 +104,9 @@
         "deletions": 4,
         "total": 8
       },
-      "branches": []
+      "branches": [
+        "feat/deploy-to-dolr-ai"
+      ]
     },
     {
       "sha": "d1648112548446877a3099d97659471605e02b29",
@@ -110,7 +119,9 @@
         "deletions": 3,
         "total": 205
       },
-      "branches": []
+      "branches": [
+        "feat/deploy-to-dolr-ai"
+      ]
     },
     {
       "sha": "5043a539ac70cb856171e570e6b5f547e8bc1bb3",
@@ -123,7 +134,9 @@
         "deletions": 45,
         "total": 51
       },
-      "branches": []
+      "branches": [
+        "main"
+      ]
     },
     {
       "sha": "c7fe7b7cebb93f451cebc51b89bc1cd673c0e41b",
@@ -136,7 +149,9 @@
         "deletions": 18,
         "total": 58
       },
-      "branches": []
+      "branches": [
+        "main"
+      ]
     },
     {
       "sha": "bef3b6d19f7f9c656da99feb9b4865bc09e69bc5",
@@ -149,7 +164,9 @@
         "deletions": 0,
         "total": 20
       },
-      "branches": []
+      "branches": [
+        "main"
+      ]
     },
     {
       "sha": "c3565e3e048af9e434bac38c013415742d1bbf66",
@@ -162,7 +179,9 @@
         "deletions": 4,
         "total": 488
       },
-      "branches": []
+      "branches": [
+        "feat/add-sentry-setup"
+      ]
     },
     {
       "sha": "5d691025b67f831249e7c89c497ff203c201ee5c",
@@ -175,7 +194,9 @@
         "deletions": 12,
         "total": 231
       },
-      "branches": []
+      "branches": [
+        "feat/add-sentry-setup"
+      ]
     },
     {
       "sha": "3dda1bccb00deedc17f3fbcf5f48cd46fbd52b12",
@@ -218,7 +239,9 @@
         "deletions": 2,
         "total": 3
       },
-      "branches": []
+      "branches": [
+        "naitik/initial_setup"
+      ]
     },
     {
       "sha": "90a921811b87d8212898ef870635dd26a5185fa2",
@@ -231,7 +254,9 @@
         "deletions": 10,
         "total": 21
       },
-      "branches": []
+      "branches": [
+        "naitik/initial_setup"
+      ]
     },
     {
       "sha": "2e5b90b7684b998fa62cc054dfce09ebe2247ea8",
@@ -244,7 +269,9 @@
         "deletions": 1,
         "total": 2
       },
-      "branches": []
+      "branches": [
+        "naitik/initial_setup"
+      ]
     },
     {
       "sha": "cf60a84d71c4b0a2fb3f2dfe2fd4386930380260",
@@ -257,7 +284,9 @@
         "deletions": 4,
         "total": 4
       },
-      "branches": []
+      "branches": [
+        "naitik/initial_setup"
+      ]
     },
     {
       "sha": "28f6eb263052cc1fc0332b4063993e844ab05243",
@@ -270,7 +299,9 @@
         "deletions": 14,
         "total": 22
       },
-      "branches": []
+      "branches": [
+        "naitik/initial_setup"
+      ]
     },
     {
       "sha": "4cb03d4ca7ebfbcaad808f175111f08db445de6a",
@@ -283,7 +314,9 @@
         "deletions": 5,
         "total": 10
       },
-      "branches": []
+      "branches": [
+        "naitik/initial_setup"
+      ]
     },
     {
       "sha": "9c4b60eebf12c239dd63ee16965edbd1b1808737",
@@ -296,7 +329,9 @@
         "deletions": 9,
         "total": 22
       },
-      "branches": []
+      "branches": [
+        "naitik/initial_setup"
+      ]
     },
     {
       "sha": "98d20968e5f1460234f05cb9a27074370e894146",
@@ -309,7 +344,9 @@
         "deletions": 33,
         "total": 76
       },
-      "branches": []
+      "branches": [
+        "naitik/initial_setup"
+      ]
     },
     {
       "sha": "530ebc0de6dc50bed6452ac965efacf4cb48773d",
@@ -322,7 +359,9 @@
         "deletions": 26,
         "total": 57
       },
-      "branches": []
+      "branches": [
+        "naitik/initial_setup"
+      ]
     },
     {
       "sha": "07a12329b356b482e962f3436edc9342f2f96bc4",
@@ -335,7 +374,9 @@
         "deletions": 2,
         "total": 3
       },
-      "branches": []
+      "branches": [
+        "naitik/initial_setup"
+      ]
     },
     {
       "sha": "c65cfddcc33326634a51192707c766e8cfdf8781",
@@ -348,7 +389,9 @@
         "deletions": 0,
         "total": 119
       },
-      "branches": []
+      "branches": [
+        "naitik/initial_setup"
+      ]
     },
     {
       "sha": "a8a842dc2d7cd4f8ee46983d29acf2113c2bb94c",
@@ -361,7 +404,9 @@
         "deletions": 0,
         "total": 3
       },
-      "branches": []
+      "branches": [
+        "main"
+      ]
     },
     {
       "sha": "187a5a80084ed13a2544158d5ae81dd868892e4d",
@@ -374,7 +419,9 @@
         "deletions": 1,
         "total": 3
       },
-      "branches": []
+      "branches": [
+        "main"
+      ]
     },
     {
       "sha": "043d734e0f2f381b4828a76b5ad6971e3dd9d9f0",
@@ -387,7 +434,9 @@
         "deletions": 1,
         "total": 2
       },
-      "branches": []
+      "branches": [
+        "main"
+      ]
     },
     {
       "sha": "dcf123ddd16c4c7cf71bffc5dae314adeca419d3",
@@ -400,7 +449,9 @@
         "deletions": 0,
         "total": 157
       },
-      "branches": []
+      "branches": [
+        "main"
+      ]
     },
     {
       "sha": "f276399f4065651b489404e8acb8f473ccf9a303",
@@ -413,7 +464,9 @@
         "deletions": 0,
         "total": 1
       },
-      "branches": []
+      "branches": [
+        "main"
+      ]
     }
   ],
   "commit_count": 31
