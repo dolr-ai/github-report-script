@@ -78,62 +78,122 @@ class GitHubFetcher:
         self.base_url = 'https://api.github.com'
         self.graphql_url = 'https://api.github.com/graphql'
 
-    def _graphql_request(self, query: str, variables: Optional[Dict] = None) -> Optional[Dict]:
-        """Make a GraphQL API request to GitHub
+    def _graphql_request(self, query: str, variables: Optional[Dict] = None, 
+                        max_retries: int = 5, base_delay: int = 1) -> Optional[Dict]:
+        """Make a GraphQL API request to GitHub with exponential backoff on rate limits
 
         Args:
             query: GraphQL query string
             variables: Query variables
+            max_retries: Maximum number of retry attempts for rate limits
+            base_delay: Base delay in seconds (will be doubled each retry)
 
         Returns:
             JSON response or None on error
         """
-        try:
-            payload = {'query': query}
-            if variables:
-                payload['variables'] = variables
+        retries = 0
+        delay = base_delay
+        
+        while retries <= max_retries:
+            try:
+                payload = {'query': query}
+                if variables:
+                    payload['variables'] = variables
 
-            response = self.session.post(
-                self.graphql_url, json=payload, timeout=60)
-            response.raise_for_status()
-            result = response.json()
+                response = self.session.post(
+                    self.graphql_url, json=payload, timeout=60)
+                response.raise_for_status()
+                result = response.json()
 
-            if 'errors' in result:
-                logger.warning(f"GraphQL errors: {result['errors']}")
+                if 'errors' in result:
+                    # Check if it's a rate limit error
+                    errors = result['errors']
+                    is_rate_limit = any(
+                        err.get('type') == 'RATE_LIMIT' or 
+                        err.get('code') == 'graphql_rate_limit' 
+                        for err in errors
+                    )
+                    
+                    if is_rate_limit and retries < max_retries:
+                        retries += 1
+                        current_delay = delay
+                        logger.warning(
+                            f"GraphQL rate limit hit. Retry {retries}/{max_retries} "
+                            f"after {current_delay}s (errors: {len(errors)})"
+                        )
+                        time.sleep(current_delay)
+                        delay *= 2  # Exponential backoff: double the delay
+                        continue
+                    else:
+                        logger.warning(f"GraphQL errors: {result['errors']}")
+                        return None
+
+                return result.get('data')
+                
+            except requests.exceptions.RequestException as e:
+                logger.warning(f"GraphQL request failed: {e}")
                 return None
+        
+        logger.error(f"GraphQL request failed after {max_retries} retries due to rate limiting")
+        return None
 
-            return result.get('data')
-        except requests.exceptions.RequestException as e:
-            logger.warning(f"GraphQL request failed: {e}")
-            return None
-
-    def _api_request(self, endpoint: str, params: Optional[Dict] = None) -> Optional[List]:
-        """Make a direct REST API request to GitHub (fallback for specific endpoints)
+    def _api_request(self, endpoint: str, params: Optional[Dict] = None,
+                     max_retries: int = 5, base_delay: int = 1) -> Optional[List]:
+        """Make a direct REST API request to GitHub with exponential backoff on rate limits
 
         Args:
             endpoint: API endpoint (e.g., '/repos/owner/repo/commits')
             params: Query parameters
+            max_retries: Maximum number of retry attempts for rate limits
+            base_delay: Base delay in seconds (will be doubled each retry)
 
         Returns:
             JSON response (list or dict) or None on error
         """
         url = f"{self.base_url}{endpoint}"
-        try:
-            # Update headers for REST API
-            headers = self.session.headers.copy()
-            headers['Authorization'] = f'token {GITHUB_TOKEN}'
-            headers['Accept'] = 'application/vnd.github.v3+json'
+        retries = 0
+        delay = base_delay
+        
+        while retries <= max_retries:
+            try:
+                # Update headers for REST API
+                headers = self.session.headers.copy()
+                headers['Authorization'] = f'token {GITHUB_TOKEN}'
+                headers['Accept'] = 'application/vnd.github.v3+json'
 
-            response = requests.get(
-                url, params=params, headers=headers, timeout=30)
-            response.raise_for_status()
-            result = response.json()
-            logger.debug(
-                f"API request to {endpoint}: {len(result) if isinstance(result, list) else 'dict'} items")
-            return result
-        except requests.exceptions.RequestException as e:
-            logger.warning(f"API request failed for {endpoint}: {e}")
-            return None
+                response = requests.get(
+                    url, params=params, headers=headers, timeout=30)
+                response.raise_for_status()
+                result = response.json()
+                logger.debug(
+                    f"API request to {endpoint}: {len(result) if isinstance(result, list) else 'dict'} items")
+                return result
+                
+            except requests.exceptions.HTTPError as e:
+                # Check for rate limit errors (403 or 429 status codes)
+                if e.response and e.response.status_code in [403, 429]:
+                    if retries < max_retries:
+                        retries += 1
+                        current_delay = delay
+                        logger.warning(
+                            f"REST API rate limit hit for {endpoint}. "
+                            f"Retry {retries}/{max_retries} after {current_delay}s"
+                        )
+                        time.sleep(current_delay)
+                        delay *= 2  # Exponential backoff: double the delay
+                        continue
+                    else:
+                        logger.error(f"REST API request failed after {max_retries} retries due to rate limiting: {endpoint}")
+                        return None
+                else:
+                    logger.warning(f"API request failed for {endpoint}: {e}")
+                    return None
+                    
+            except requests.exceptions.RequestException as e:
+                logger.warning(f"API request failed for {endpoint}: {e}")
+                return None
+        
+        return None
 
     def _check_rate_limit(self):
         """Check GitHub API rate limit and wait if necessary"""
