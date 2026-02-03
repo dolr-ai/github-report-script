@@ -12,13 +12,25 @@ on:
 jobs:
   generate-report:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Run in Dev Container
         uses: devcontainers/ci@v0.3
         with:
+          imageName: ghcr.io/dolr-ai/github-report-script
+          push: always
           runCmd: |
             # Set up CI environment
             bash .github/scripts/setup-ci.sh
