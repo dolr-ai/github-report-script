@@ -1,38 +1,12 @@
 {
   "date": "2026-01-06",
-  "cached_at": "2026-02-03T17:23:31.247993Z",
+  "cached_at": "2026-02-03T18:35:59.426795Z",
   "commits": [
-    {
-      "sha": "5f05e73b9b7f933c005db96302f92994b1a215fa",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-06T13:29:13+00:00",
-      "message": "feat: added event streaming to mixpanel for unification (#348)",
-      "stats": {
-        "additions": 183,
-        "deletions": 148,
-        "total": 331
-      },
-      "branches": []
-    },
-    {
-      "sha": "64d16ae3d8387abd7e1e99b7e3db9c031c5126ac",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-06T09:03:19+00:00",
-      "message": "Merge pull request #758 from dolr-ai/release/2.5.0",
-      "stats": {
-        "additions": 16658,
-        "deletions": 874,
-        "total": 17532
-      },
-      "branches": []
-    },
     {
       "sha": "bff5300b37315f68696d09a0d045b52aef5538d6",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-06T09:01:45+00:00",
+      "timestamp": "2026-01-06T09:01:45Z",
       "message": "Merge pull request #757 from dolr-ai/release/2.5.0",
       "stats": {
         "additions": 87,
@@ -47,7 +21,7 @@
       "sha": "7cf45a199a9b2a6935ba8266c04f28b1a3d2b635",
       "author": "sarvesh-sharma-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-06T05:20:53+00:00",
+      "timestamp": "2026-01-06T05:20:53Z",
       "message": "fix: Fixes tournament not creating",
       "stats": {
         "additions": 4,
@@ -57,10 +31,23 @@
       "branches": []
     },
     {
+      "sha": "64d16ae3d8387abd7e1e99b7e3db9c031c5126ac",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-06T09:03:19Z",
+      "message": "Merge pull request #758 from dolr-ai/release/2.5.0",
+      "stats": {
+        "additions": 16658,
+        "deletions": 874,
+        "total": 17532
+      },
+      "branches": []
+    },
+    {
       "sha": "0970c431366ddd99546d23daece2ffe3abe4fe21",
       "author": "ravi-sawlani-yral",
       "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-01-06T05:19:20+00:00",
+      "timestamp": "2026-01-06T05:19:20Z",
       "message": "feat: Implement phone authentication",
       "stats": {
         "additions": 1700,
@@ -73,7 +60,7 @@
       "sha": "f1eeacb5d8cb7a4dc42e9d0413a9acf411c8f20a",
       "author": "kevin-antony-yral",
       "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-06T17:21:55+00:00",
+      "timestamp": "2026-01-06T17:21:55Z",
       "message": "Merge pull request #39 from dolr-ai/staging",
       "stats": {
         "additions": 2371,
@@ -81,7 +68,111 @@
         "total": 3935
       },
       "branches": []
+    },
+    {
+      "sha": "c9e0e3ba3b36a444ba16fd5609b676478de27808",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-06T09:32:40Z",
+      "message": "fix: typo in variable",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": []
+    },
+    {
+      "sha": "511266507449b42b0e7f6944349b707555ae3b97",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-06T09:28:05Z",
+      "message": "fix: removed cert generation from CI, since it will change everytime",
+      "stats": {
+        "additions": 18,
+        "deletions": 155,
+        "total": 173
+      },
+      "branches": []
+    },
+    {
+      "sha": "0e1841b237166e23f9af0d1610bf828d282ceb6d",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-06T08:42:27Z",
+      "message": "fix: additional command to server generation",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": []
+    },
+    {
+      "sha": "2098257ad158ab49a8fc5aea64f0f9d35a3e335c",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-06T08:29:42Z",
+      "message": "fix : key generation as per dragonfly doc",
+      "stats": {
+        "additions": 19,
+        "deletions": 31,
+        "total": 50
+      },
+      "branches": []
+    },
+    {
+      "sha": "a8fe8e80cac8d9d611fff69dd13f153a62d3d604",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-06T08:09:56Z",
+      "message": "fix: dragonfly only supports .pem files for credentials",
+      "stats": {
+        "additions": 133,
+        "deletions": 102,
+        "total": 235
+      },
+      "branches": []
+    },
+    {
+      "sha": "2d86faedceb8d15ca569d3c4056ef5586853565d",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-06T07:35:27Z",
+      "message": "fix: file permission to access crt and key files",
+      "stats": {
+        "additions": 26,
+        "deletions": 8,
+        "total": 34
+      },
+      "branches": []
+    },
+    {
+      "sha": "2a8750742547b2b5f5b8ad14ec4d9e1c7e808375",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-06T07:15:25Z",
+      "message": "fix: removed  undefined command",
+      "stats": {
+        "additions": 0,
+        "deletions": 2,
+        "total": 2
+      },
+      "branches": []
+    },
+    {
+      "sha": "085019e3ec172d8d3a6fb2da8dc97308ae611a47",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-06T07:02:25Z",
+      "message": "fix: usage of native tls",
+      "stats": {
+        "additions": 211,
+        "deletions": 167,
+        "total": 378
+      },
+      "branches": []
     }
   ],
-  "commit_count": 6
+  "commit_count": 13
 }

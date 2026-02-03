@@ -1,51 +1,12 @@
 {
   "date": "2026-01-29",
-  "cached_at": "2026-02-03T17:45:23.152421Z",
+  "cached_at": "2026-02-03T18:36:47.179194Z",
   "commits": [
-    {
-      "sha": "c458eea4d3f8c53d3c59520bc9b04080b778325d",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-29T14:37:48+00:00",
-      "message": "feat: add support for DOLR rewards alongside BTC in reward system (#376)",
-      "stats": {
-        "additions": 238,
-        "deletions": 75,
-        "total": 313
-      },
-      "branches": []
-    },
-    {
-      "sha": "272c5de88b5f5e013f37877b555d91d7f3df8cf7",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-29T11:37:40+00:00",
-      "message": "feat: added video ugc skipping for ugc content (#382)",
-      "stats": {
-        "additions": 22,
-        "deletions": 3,
-        "total": 25
-      },
-      "branches": []
-    },
-    {
-      "sha": "15f719c4c1a905dbd11f8d574faccd1e19a4d612",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-29T05:34:12+00:00",
-      "message": "refactor: migrate Redis connections to Dragonfly for improved perform\u2026 (#380)",
-      "stats": {
-        "additions": 36,
-        "deletions": 47,
-        "total": 83
-      },
-      "branches": []
-    },
     {
       "sha": "4d1238a4c58122bfed8a2a12ded5b61d63f635e1",
       "author": "joel-medicala-yral",
       "repository": "dolr-ai/yral-metadata",
-      "timestamp": "2026-01-29T04:47:47+00:00",
+      "timestamp": "2026-01-29T04:47:47Z",
       "message": "feat: add transport timeouts and retry mechanism for Dragonfly operat\u2026 (#71)",
       "stats": {
         "additions": 477,
@@ -55,23 +16,10 @@
       "branches": []
     },
     {
-      "sha": "027b950fe1b1e9f462aae2f8013583bc93f7b86a",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-29T17:58:42+00:00",
-      "message": "chore: Increments android app version",
-      "stats": {
-        "additions": 2,
-        "deletions": 2,
-        "total": 4
-      },
-      "branches": []
-    },
-    {
       "sha": "e9d80b8e20f6ef57a7258e339da42c014b14b041",
       "author": "sarvesh-sharma-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-29T17:27:21+00:00",
+      "timestamp": "2026-01-29T17:27:21Z",
       "message": "Feature/dolr wallet UI (#819)",
       "stats": {
         "additions": 657,
@@ -84,7 +32,7 @@
       "sha": "761cf06d631ac84fabb610732b43940341162565",
       "author": "sarvesh-sharma-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-29T13:41:48+00:00",
+      "timestamp": "2026-01-29T13:41:48Z",
       "message": "Feature/smiley dynamic game (#806)",
       "stats": {
         "additions": 205068,
@@ -97,7 +45,7 @@
       "sha": "b827fe0d6df638e410901c676f528d7c3d63a4a8",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-29T13:04:18+00:00",
+      "timestamp": "2026-01-29T13:04:18Z",
       "message": "Implements subscription gate for chatting more than x messages to an influencer (#818)",
       "stats": {
         "additions": 388,
@@ -110,7 +58,7 @@
       "sha": "90991b966bbda5f112a3537bd56a87381abda57b",
       "author": "mayank-k-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-29T10:17:57+00:00",
+      "timestamp": "2026-01-29T10:17:57Z",
       "message": "Merge pull request #817 from dolr-ai/profile-video-event",
       "stats": {
         "additions": 59,
@@ -123,7 +71,7 @@
       "sha": "717e46fd47b2bb881718dcae18d4edaa0c1788fd",
       "author": "mayank-k-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-29T10:15:35+00:00",
+      "timestamp": "2026-01-29T10:15:35Z",
       "message": "Add featureName to profile analytics events",
       "stats": {
         "additions": 14,
@@ -136,7 +84,7 @@
       "sha": "11a6914b74ffe57746a23d806e670b9a201a5ebc",
       "author": "samarth-paboowal-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-29T10:12:11+00:00",
+      "timestamp": "2026-01-29T10:12:11Z",
       "message": "chore: adds deeplink for chat tab (#815)",
       "stats": {
         "additions": 4,
@@ -149,7 +97,7 @@
       "sha": "9d2889911af6bb56d0fd7cb41413737323921fe3",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-29T10:11:23+00:00",
+      "timestamp": "2026-01-29T10:11:23Z",
       "message": "Swaps tournament and chat in bottom nav (#816)",
       "stats": {
         "additions": 2,
@@ -162,7 +110,7 @@
       "sha": "3afb05fc72d55bf88d02f28bb7bc65faf03a49d6",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-29T10:05:34+00:00",
+      "timestamp": "2026-01-29T10:05:34Z",
       "message": "Implements pro branding in profile screen (#814)",
       "stats": {
         "additions": 308,
@@ -175,7 +123,7 @@
       "sha": "b97a3719001e0497961bfc013bf9dfdc1b990e46",
       "author": "mayank-k-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-29T08:10:12+00:00",
+      "timestamp": "2026-01-29T08:10:12Z",
       "message": "Tracks video started event in profile reels",
       "stats": {
         "additions": 45,
@@ -188,7 +136,7 @@
       "sha": "6ddbe320cb5688b2e12f8158929261ed9464eb97",
       "author": "mayank-k-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-29T07:05:41+00:00",
+      "timestamp": "2026-01-29T07:05:41Z",
       "message": "Prevent surface swapping during active swipe gestures (#812)",
       "stats": {
         "additions": 4,
@@ -198,15 +146,15 @@
       "branches": []
     },
     {
-      "sha": "2f7e33f9db25c2e18f2d5d81147a8493c0fa8843",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-common",
-      "timestamp": "2026-01-29T08:03:47+00:00",
-      "message": "Revert \"fix: sync user_info_service candid with deployed canister (#153)\" (#154)",
+      "sha": "027b950fe1b1e9f462aae2f8013583bc93f7b86a",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-29T17:58:42Z",
+      "message": "chore: Increments android app version",
       "stats": {
-        "additions": 4,
-        "deletions": 1,
-        "total": 5
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
       },
       "branches": []
     },
@@ -214,7 +162,7 @@
       "sha": "eb0f6603684498760d10f863b7fbec54677b1201",
       "author": "naitik-makwana-yral",
       "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-01-29T07:44:50+00:00",
+      "timestamp": "2026-01-29T07:44:50Z",
       "message": "fix: broken pipe issue (#38)",
       "stats": {
         "additions": 50,
@@ -224,25 +172,36 @@
       "branches": []
     },
     {
-      "sha": "aefd1734b9d90e8130e1bc7ac2fee185b2fb1d2c",
+      "sha": "5425a3ca67788ec620f56bedf6719936e9e9144f",
       "author": "kevin-antony-yral",
       "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-29T05:14:56+00:00",
-      "message": "Lock fixes n optimizations (#149)",
+      "timestamp": "2026-01-29T18:10:42Z",
+      "message": "Sys prompt: Staging tests fix (#151)",
       "stats": {
-        "additions": 7,
-        "deletions": 4,
-        "total": 11
+        "additions": 124,
+        "deletions": 7,
+        "total": 131
       },
-      "branches": [
-        "main"
-      ]
+      "branches": []
+    },
+    {
+      "sha": "6cb03a3f6de630124a2aff403381f470ea94b6b7",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-29T09:56:23Z",
+      "message": "Changes to system prompt (#150)",
+      "stats": {
+        "additions": 9,
+        "deletions": 10,
+        "total": 19
+      },
+      "branches": []
     },
     {
       "sha": "214ba99ccb7379869fbd9395d65eaf13e0b0d17a",
       "author": "gravityvi",
       "repository": "dolr-ai/yral-billing",
-      "timestamp": "2026-01-29T13:13:57+00:00",
+      "timestamp": "2026-01-29T13:13:57Z",
       "message": "add routes for user credits",
       "stats": {
         "additions": 219,
@@ -257,7 +216,7 @@
       "sha": "dce720716c9322fa877d85074b4206608d5f19f7",
       "author": "jay-dhanwant-yral",
       "repository": "dolr-ai/ai-feed-recommendation-system",
-      "timestamp": "2026-01-29T08:10:46+00:00",
+      "timestamp": "2026-01-29T08:10:46Z",
       "message": "feat: Implement UGC Discovery Pool to surface new, low-impression videos and have a priority queue b",
       "stats": {
         "additions": 29,
@@ -272,7 +231,7 @@
       "sha": "9dc74cc4a6eeeafea93b23f1cef55cd053a3b823",
       "author": "jay-dhanwant-yral",
       "repository": "dolr-ai/ai-feed-recommendation-system",
-      "timestamp": "2026-01-29T07:52:08+00:00",
+      "timestamp": "2026-01-29T07:52:08Z",
       "message": "Merge pull request #7 from dolr-ai/stage",
       "stats": {
         "additions": 727,
@@ -282,5 +241,5 @@
       "branches": []
     }
   ],
-  "commit_count": 21
+  "commit_count": 18
 }

@@ -1,12 +1,12 @@
 {
   "date": "2026-01-09",
-  "cached_at": "2026-02-03T17:23:29.572512Z",
+  "cached_at": "2026-02-03T18:36:04.032693Z",
   "commits": [
     {
       "sha": "e5801b2657f63f93bdcb2309a84438c22bd048fc",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-09T07:30:12+00:00",
+      "timestamp": "2026-01-09T07:30:12Z",
       "message": "Merge pull request #766 from dolr-ai/release/2.5.1",
       "stats": {
         "additions": 2,
@@ -19,7 +19,7 @@
       "sha": "5be43584c04eb2501ed73e3be3a934e604252560",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-09T07:29:57+00:00",
+      "timestamp": "2026-01-09T07:29:57Z",
       "message": "Merge pull request #767 from dolr-ai/release/2.5.1",
       "stats": {
         "additions": 1519,
@@ -32,7 +32,7 @@
       "sha": "9516acd997cfa1639a5125edcfa162804cdef792",
       "author": "mayank-k-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-09T05:36:49+00:00",
+      "timestamp": "2026-01-09T05:36:49Z",
       "message": "Migrates to Media3 Compose UI and implements Feed screen wake lock (#769)",
       "stats": {
         "additions": 41,
@@ -45,7 +45,7 @@
       "sha": "599b56c5cb34ec2aaad96783f09895c4204afbc4",
       "author": "kevin-antony-yral",
       "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-09T06:01:01+00:00",
+      "timestamp": "2026-01-09T06:01:01Z",
       "message": "Syncing Staging with Prod to fix date in Arun Pandit (#61)",
       "stats": {
         "additions": 1,
@@ -53,7 +53,202 @@
         "total": 2
       },
       "branches": []
+    },
+    {
+      "sha": "47b8ae2c607d6ed00f0ab08a347a5a9586594ada",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-09T21:29:11Z",
+      "message": "Merge pull request #69 from dolr-ai/nsfw_openrouter",
+      "stats": {
+        "additions": 6,
+        "deletions": 3,
+        "total": 9
+      },
+      "branches": []
+    },
+    {
+      "sha": "73d84e624972788443a79434a8cfdc05036ad424",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-09T21:21:19Z",
+      "message": "Merge pull request #68 from dolr-ai/nsfw_openrouter",
+      "stats": {
+        "additions": 50,
+        "deletions": 5,
+        "total": 55
+      },
+      "branches": []
+    },
+    {
+      "sha": "d7b1a9fa0f06f59dfcc5b70a31b1d5a4ede55eea",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-09T21:09:45Z",
+      "message": "Merge pull request #67 from dolr-ai/nsfw_openrouter",
+      "stats": {
+        "additions": 4,
+        "deletions": 1,
+        "total": 5
+      },
+      "branches": []
+    },
+    {
+      "sha": "0c1f4ea92b574863cdb054127fcf0e17f9327af1",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-09T20:51:00Z",
+      "message": "Merge pull request #66 from dolr-ai/nsfw_openrouter",
+      "stats": {
+        "additions": 7,
+        "deletions": 1,
+        "total": 8
+      },
+      "branches": []
+    },
+    {
+      "sha": "8e8a50cfde937af82090e46ff49ab5bf86e0a155",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-09T20:36:13Z",
+      "message": "Merge pull request #65 from dolr-ai/nsfw_openrouter",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": []
+    },
+    {
+      "sha": "26155dd089d295fd3ab04040a290834486549dc8",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-09T20:32:34Z",
+      "message": "Merge pull request #64 from dolr-ai/nsfw_openrouter",
+      "stats": {
+        "additions": 53,
+        "deletions": 3,
+        "total": 56
+      },
+      "branches": []
+    },
+    {
+      "sha": "0788051cef5646aeff3d7a137343489681b77458",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-09T20:32:12Z",
+      "message": "Merge branch 'staging' into nsfw_openrouter",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": []
+    },
+    {
+      "sha": "7a1bdf7abb0dcc47fc4966fb84cc01534afdf7b6",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-09T20:10:17Z",
+      "message": "Introducing NSFW mode (#62)",
+      "stats": {
+        "additions": 1550,
+        "deletions": 31,
+        "total": 1581
+      },
+      "branches": []
+    },
+    {
+      "sha": "088adbf1c5e05b69ceae7f12cdc369f615f0f087",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-09T20:09:36Z",
+      "message": "Update run_migrations.py",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": []
+    },
+    {
+      "sha": "54f67029021561000f340d1c84e9c8a3f6f10960",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-09T19:23:49Z",
+      "message": "Merge branch 'main' into staging",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": []
+    },
+    {
+      "sha": "7115e5fd719f63ca71b92e6db7ad04c5674cafc2",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-09T06:00:36Z",
+      "message": "Merge branch 'main' into staging",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": []
+    },
+    {
+      "sha": "2837d7359a5188f9c3133914deabb30ce32c9ce6",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-09T13:23:47Z",
+      "message": "fix: syntax or sentinel script",
+      "stats": {
+        "additions": 48,
+        "deletions": 45,
+        "total": 93
+      },
+      "branches": []
+    },
+    {
+      "sha": "7024c0c037d45eac3d929dca854f818324810cbc",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-09T12:57:49Z",
+      "message": "fix: sentinel config file",
+      "stats": {
+        "additions": 10,
+        "deletions": 4,
+        "total": 14
+      },
+      "branches": []
+    },
+    {
+      "sha": "90f991fb7a221b5ffa5a0860e7f8caa1c1022684",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-09T12:12:06Z",
+      "message": "fix: script fix for sentinel setup",
+      "stats": {
+        "additions": 24,
+        "deletions": 24,
+        "total": 48
+      },
+      "branches": []
+    },
+    {
+      "sha": "1466b1ec617e3e91802568e57a76c9f9c3a43ec4",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-09T11:38:16Z",
+      "message": "added sentinel support",
+      "stats": {
+        "additions": 168,
+        "deletions": 15,
+        "total": 183
+      },
+      "branches": []
     }
   ],
-  "commit_count": 4
+  "commit_count": 19
 }

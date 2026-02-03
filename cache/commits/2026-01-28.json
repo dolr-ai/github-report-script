@@ -1,77 +1,12 @@
 {
   "date": "2026-01-28",
-  "cached_at": "2026-02-03T17:40:15.492380Z",
+  "cached_at": "2026-02-03T18:36:47.263406Z",
   "commits": [
-    {
-      "sha": "67719d810d76fa0fc428dab9cad7bb86ebce784a",
-      "author": "gravityvi",
-      "repository": "dolr-ai/hot-or-not-backend-canister",
-      "timestamp": "2026-01-28T14:51:19+00:00",
-      "message": "fix: candid generation script (#638)",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": []
-    },
-    {
-      "sha": "3f8001a1e9b975f48df4390a7555cbccb8ee2f7a",
-      "author": "gravityvi",
-      "repository": "dolr-ai/hot-or-not-backend-canister",
-      "timestamp": "2026-01-28T14:28:44+00:00",
-      "message": "feat: add total video credits allotted to YralProSubscription (#637)",
-      "stats": {
-        "additions": 147,
-        "deletions": 11,
-        "total": 158
-      },
-      "branches": []
-    },
-    {
-      "sha": "e30cb1e373eb62f06462e8b959a7375d12118f55",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
-      "timestamp": "2026-01-28T03:01:50+00:00",
-      "message": "migrate reads to dragonfly (#1154)",
-      "stats": {
-        "additions": 39,
-        "deletions": 240,
-        "total": 279
-      },
-      "branches": []
-    },
-    {
-      "sha": "f6a2bc2f5747a341c82ea4cd8af82693d630e04e",
-      "author": "gravityvi",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-28T11:51:58+00:00",
-      "message": "feat: refactored code and added yral pro subscription as a way to pay for ai videogen (#378)",
-      "stats": {
-        "additions": 1357,
-        "deletions": 1846,
-        "total": 3203
-      },
-      "branches": []
-    },
-    {
-      "sha": "fa896e2fb0cd02c446be725f8f116e89c36cd6c3",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-28T03:53:05+00:00",
-      "message": "migrate reads to dragonfly (#368)",
-      "stats": {
-        "additions": 3,
-        "deletions": 74,
-        "total": 77
-      },
-      "branches": []
-    },
     {
       "sha": "dbfbaadaf74ef5324883d26871aad5ef80089d86",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-28T18:00:53+00:00",
+      "timestamp": "2026-01-28T18:00:53Z",
       "message": "Update profileDetailsV6 to profileDetailsV7 (#813)",
       "stats": {
         "additions": 355,
@@ -84,7 +19,7 @@
       "sha": "877602108a9571acf64e3283727f29892c124940",
       "author": "mayank-k-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-28T15:16:17+00:00",
+      "timestamp": "2026-01-28T15:16:17Z",
       "message": "Merge pull request #810 from dolr-ai/increase-feed-batch-size",
       "stats": {
         "additions": 3,
@@ -97,7 +32,7 @@
       "sha": "f810f89ccabf47f6971dc62830c69a03718b0729",
       "author": "sarvesh-sharma-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-28T14:14:23+00:00",
+      "timestamp": "2026-01-28T14:14:23Z",
       "message": "fix: Increase hot or not tournament creation timeout to 1 hour (#811)",
       "stats": {
         "additions": 1,
@@ -110,7 +45,7 @@
       "sha": "27ace0f1add07570212ad9c2b4b2726d05eca2a3",
       "author": "sarvesh-sharma-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-28T13:53:12+00:00",
+      "timestamp": "2026-01-28T13:53:12Z",
       "message": "Fix tournament settlement idempotency to prevent double payments (#809)",
       "stats": {
         "additions": 0,
@@ -123,7 +58,7 @@
       "sha": "894ca0e715e3b8983e613472ee9d8de32a4ae553",
       "author": "sarvesh-sharma-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-27T06:10:24+00:00",
+      "timestamp": "2026-01-28T13:52:29Z",
       "message": "Fix tournament settlement idempotency to prevent double payments",
       "stats": {
         "additions": 115,
@@ -136,7 +71,7 @@
       "sha": "8231d2e5205ccac86c17419c25480606dccafc29",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-28T12:54:43+00:00",
+      "timestamp": "2026-01-28T12:54:43Z",
       "message": "Implements subscription screens and touch point in account screen (#808)",
       "stats": {
         "additions": 2829,
@@ -146,51 +81,10 @@
       "branches": []
     },
     {
-      "sha": "73f4eb768b487f255aa697274d3ad5c12e91f603",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-common",
-      "timestamp": "2026-01-28T16:15:02+00:00",
-      "message": "fix: sync user_info_service candid with deployed canister (#153)",
-      "stats": {
-        "additions": 1,
-        "deletions": 4,
-        "total": 5
-      },
-      "branches": []
-    },
-    {
-      "sha": "d150e3938184f257d98f6cb769053f8f969d3147",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-common",
-      "timestamp": "2026-01-28T14:58:30+00:00",
-      "message": "feat: update candid for user_info_service (#152)",
-      "stats": {
-        "additions": 28,
-        "deletions": 3,
-        "total": 31
-      },
-      "branches": []
-    },
-    {
-      "sha": "5fece9c31cc858a0ffafd2f905e1dcadfa13b6de",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-backend-cloudflare-workers",
-      "timestamp": "2026-01-28T18:47:46+00:00",
-      "message": "Fix/update yral canisters client candid (#106)",
-      "stats": {
-        "additions": 1384,
-        "deletions": 1059,
-        "total": 2443
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
       "sha": "dde6414267ce88be61635b2625368dc024049202",
       "author": "naitik-makwana-yral",
       "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-01-28T05:01:32+00:00",
+      "timestamp": "2026-01-28T05:01:32Z",
       "message": "fix: removed dependency on fly redis proxy (#37)",
       "stats": {
         "additions": 3,
@@ -203,7 +97,7 @@
       "sha": "c443daf7a4b88035fd5c3a45ae5a5b95da45e293",
       "author": "naitik-makwana-yral",
       "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-01-28T04:45:01+00:00",
+      "timestamp": "2026-01-28T04:45:01Z",
       "message": "migrate reads to dragonfly (#35)",
       "stats": {
         "additions": 12,
@@ -216,7 +110,7 @@
       "sha": "f750942d383513090851b60b7718851fecf0d182",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-28T15:51:45+00:00",
+      "timestamp": "2026-01-28T15:51:45Z",
       "message": "Add Ansible log summary to provisioning workflow summary",
       "stats": {
         "additions": 4,
@@ -229,7 +123,7 @@
       "sha": "e46b3d33a317cf791bbeb8807a0a3536b56698af",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-28T15:37:40+00:00",
+      "timestamp": "2026-01-28T15:37:40Z",
       "message": "Add force provisioning option to workflows and update documentation",
       "stats": {
         "additions": 88,
@@ -242,7 +136,7 @@
       "sha": "3d93ffd72919813d6e79faf91f87ee87eae9e39c",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-28T15:11:12+00:00",
+      "timestamp": "2026-01-28T15:11:12Z",
       "message": "Remove obsolete Ansible playbook workflow for fleet maintenance",
       "stats": {
         "additions": 0,
@@ -255,7 +149,7 @@
       "sha": "a6360c107a7a8742ccbe51528d40aaa9b996f5b2",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-28T15:08:08+00:00",
+      "timestamp": "2026-01-28T15:08:08Z",
       "message": "Refactor GitHub Actions workflows for server provisioning and maintenance",
       "stats": {
         "additions": 376,
@@ -268,7 +162,7 @@
       "sha": "49bfb2bf88169498a9ab3d8caa309798232b690f",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-28T14:19:03+00:00",
+      "timestamp": "2026-01-28T14:19:03Z",
       "message": "Refactor provisioning workflow: remove obsolete host detection and update README with manual provisi",
       "stats": {
         "additions": 61,
@@ -281,7 +175,7 @@
       "sha": "321e9d237538624678296624ebd39f29bdaeb64c",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-28T14:04:52+00:00",
+      "timestamp": "2026-01-28T14:04:52Z",
       "message": "Add vault hosts and corresponding variables for secure access",
       "stats": {
         "additions": 52,
@@ -291,41 +185,15 @@
       "branches": []
     },
     {
-      "sha": "ab660952e930c027190ee3e91dba202ae8315fd5",
+      "sha": "5575f7b81392785b92290093e1005e084190fac8",
       "author": "kevin-antony-yral",
       "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-28T09:57:30+00:00",
-      "message": "The issue was PRAGMA optimize running thousands of times per minute instead of once on shutdown (#14",
+      "timestamp": "2026-01-28T04:58:28Z",
+      "message": "Latency optimization on stage (#145)",
       "stats": {
-        "additions": 6,
-        "deletions": 6,
-        "total": 12
-      },
-      "branches": []
-    },
-    {
-      "sha": "3c8d432587b5fc637f672f0ad302d640540bce29",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-28T09:17:47+00:00",
-      "message": "Fixing CI/CD Vulnerabilitiesfound by actions workflow  on Main (#147)",
-      "stats": {
-        "additions": 3,
-        "deletions": 3,
-        "total": 6
-      },
-      "branches": []
-    },
-    {
-      "sha": "43b3ea1b490b90d87a1c0f58dbef127b57bc1259",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-28T08:30:14+00:00",
-      "message": "Latency Optimizations (#142)",
-      "stats": {
-        "additions": 325,
-        "deletions": 141,
-        "total": 466
+        "additions": 475,
+        "deletions": 150,
+        "total": 625
       },
       "branches": []
     },
@@ -333,7 +201,7 @@
       "sha": "5e0d8c0db8fe1336d23d2afef27f4d92d31617c2",
       "author": "gravityvi",
       "repository": "dolr-ai/yral-billing",
-      "timestamp": "2026-01-28T15:16:07+00:00",
+      "timestamp": "2026-01-28T15:16:07Z",
       "message": "feat: add total credits allotted",
       "stats": {
         "additions": 16,
@@ -346,7 +214,7 @@
       "sha": "92a2a1ddffbe7dbcd31eb506b4eefae551b60450",
       "author": "gravityvi",
       "repository": "dolr-ai/yral-billing",
-      "timestamp": "2026-01-28T15:10:29+00:00",
+      "timestamp": "2026-01-28T15:10:29Z",
       "message": "fix consts file",
       "stats": {
         "additions": 1,
@@ -361,7 +229,7 @@
       "sha": "7a842738b72b94d057bda74b2f31004a151fee47",
       "author": "gravityvi",
       "repository": "dolr-ai/yral-billing",
-      "timestamp": "2026-01-28T15:04:53+00:00",
+      "timestamp": "2026-01-28T15:04:53Z",
       "message": "add total credits alloted",
       "stats": {
         "additions": 15,
@@ -371,5 +239,5 @@
       "branches": []
     }
   ],
-  "commit_count": 28
+  "commit_count": 18
 }

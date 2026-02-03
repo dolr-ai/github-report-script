@@ -1,42 +1,12 @@
 {
   "date": "2026-01-19",
-  "cached_at": "2026-02-03T17:31:24.717585Z",
+  "cached_at": "2026-02-03T18:36:16.881289Z",
   "commits": [
-    {
-      "sha": "f68efb897407efe52c84ecd1d7efd56d3fe71192",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
-      "timestamp": "2026-01-19T10:25:27+00:00",
-      "message": "fix: new metadata url",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "naitik/update-metadata-link"
-      ]
-    },
-    {
-      "sha": "1f7375313fc4a968bf78f42c26398b2c38a55d9d",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-19T10:39:40+00:00",
-      "message": "fix: updated metadata url",
-      "stats": {
-        "additions": 2,
-        "deletions": 2,
-        "total": 4
-      },
-      "branches": [
-        "naitik/update_metadata_url"
-      ]
-    },
     {
       "sha": "4534b71fbd789dfb7e3c6abbca14a02a36eb37c1",
       "author": "naitik-makwana-yral",
       "repository": "dolr-ai/yral-metadata",
-      "timestamp": "2026-01-19T12:56:27+00:00",
+      "timestamp": "2026-01-19T12:56:27Z",
       "message": "removed test from prod ci and compose file fix (#69)",
       "stats": {
         "additions": 15,
@@ -49,7 +19,7 @@
       "sha": "8ce1acbbb0fd752579b653d1944edf43a39ea8b2",
       "author": "naitik-makwana-yral",
       "repository": "dolr-ai/yral-metadata",
-      "timestamp": "2026-01-19T11:55:12+00:00",
+      "timestamp": "2026-01-19T11:55:12Z",
       "message": "updated deployment script for hetzner and added sentinel + dragonfly support  (#63)",
       "stats": {
         "additions": 2328,
@@ -62,7 +32,7 @@
       "sha": "4d74bd25d7b7bacb1fa99dc7b5b05d1f21e6e4d0",
       "author": "naitik-makwana-yral",
       "repository": "dolr-ai/download-upload-service",
-      "timestamp": "2026-01-19T10:30:48+00:00",
+      "timestamp": "2026-01-19T10:30:48Z",
       "message": "fix: upadated yral-metadata url",
       "stats": {
         "additions": 1,
@@ -74,25 +44,10 @@
       ]
     },
     {
-      "sha": "c22416470ca958ed771378497c4b726b09ef958a",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/yral-common",
-      "timestamp": "2026-01-19T10:48:45+00:00",
-      "message": "fix: updated metadata-url",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "naitik/updata_metadata_url"
-      ]
-    },
-    {
       "sha": "d8b1bd673924c42f1e87b43d530c26f6a2531ccc",
       "author": "jay-dhanwant-yral",
       "repository": "dolr-ai/ai-feed-recommendation-system",
-      "timestamp": "2026-01-19T04:49:45+00:00",
+      "timestamp": "2026-01-19T04:49:45Z",
       "message": "Merge pull request #5 from dolr-ai/stage",
       "stats": {
         "additions": 572,
@@ -102,5 +57,5 @@
       "branches": []
     }
   ],
-  "commit_count": 7
+  "commit_count": 4
 }

@@ -1,15 +1,14 @@
 {
   "date": "2026-02-02",
   "username": "gravityvi",
-  "additions": 898,
-  "deletions": 24,
-  "total_loc": 922,
-  "commit_count": 3,
+  "additions": 723,
+  "deletions": 8,
+  "total_loc": 731,
+  "commit_count": 4,
   "repositories": [
-    "dolr-ai/hot-or-not-backend-canister",
-    "dolr-ai/yral-billing",
-    "dolr-ai/yral-common"
+    "dolr-ai/yral-auth-v2",
+    "dolr-ai/yral-billing"
   ],
-  "repo_count": 3,
-  "processed_at": "2026-02-03T17:46:05.627595Z"
+  "repo_count": 2,
+  "processed_at": "2026-02-03T18:37:16.207624Z"
 }

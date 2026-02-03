@@ -1,20 +1,6 @@
 {
   "date": "2026-01-25",
-  "cached_at": "2026-02-03T17:38:46.508517Z",
-  "commits": [
-    {
-      "sha": "49905afab503d98db15d450b8b988ecfca0f763a",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-25T07:16:37+00:00",
-      "message": "chore: cleanup lone unwraps (#373)",
-      "stats": {
-        "additions": 2,
-        "deletions": 4,
-        "total": 6
-      },
-      "branches": []
-    }
-  ],
-  "commit_count": 1
+  "cached_at": "2026-02-03T18:36:26.663739Z",
+  "commits": [],
+  "commit_count": 0
 }

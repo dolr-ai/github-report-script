@@ -1,12 +1,12 @@
 {
   "date": "2026-01-05",
-  "cached_at": "2026-02-03T17:24:06.084508Z",
+  "cached_at": "2026-02-03T18:36:13.328917Z",
   "commits": [
     {
       "sha": "801cca4940c9e0eb1f7076962edab2910b44835b",
       "author": "sarvesh-sharma-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-05T10:27:57+00:00",
+      "timestamp": "2026-01-05T10:27:57Z",
       "message": "chore: Adds reward distribution event",
       "stats": {
         "additions": 81,
@@ -19,7 +19,7 @@
       "sha": "5d1348a5e7a116ef890b8bb862af3dad1260bd23",
       "author": "sarvesh-sharma-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-05T10:03:06+00:00",
+      "timestamp": "2026-01-05T10:03:06Z",
       "message": "chore: Bumps android app version",
       "stats": {
         "additions": 2,
@@ -32,7 +32,7 @@
       "sha": "80f8cc57e99ed7999931dbeb4399b95b548bce31",
       "author": "sarvesh-sharma-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-05T10:01:33+00:00",
+      "timestamp": "2026-01-05T10:01:33Z",
       "message": "Fix/tournament feed (#756)",
       "stats": {
         "additions": 23,
@@ -45,7 +45,7 @@
       "sha": "dff6fa67d25c3b8fa1d3e25701e1d52cdb27172d",
       "author": "ravi-sawlani-yral",
       "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-01-05T13:53:47+00:00",
+      "timestamp": "2026-01-05T13:53:47Z",
       "message": "set env as local in case of default",
       "stats": {
         "additions": 20,
@@ -60,7 +60,7 @@
       "sha": "7bc8cbf2be2a9efab077b57e2f71849abeaaa184",
       "author": "ravi-sawlani-yral",
       "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-01-05T13:43:00+00:00",
+      "timestamp": "2026-01-05T13:43:00Z",
       "message": "fix fly setup for preview and prod",
       "stats": {
         "additions": 6,
@@ -73,7 +73,7 @@
       "sha": "5561be92f7b78947d195756550dbe9b82715b5b8",
       "author": "ravi-sawlani-yral",
       "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-01-05T13:04:11+00:00",
+      "timestamp": "2026-01-05T13:04:11Z",
       "message": "fix sentry config",
       "stats": {
         "additions": 1,
@@ -86,7 +86,7 @@
       "sha": "5458f8cadbca29a9a29509ef213dfd231541f08b",
       "author": "ravi-sawlani-yral",
       "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-01-05T12:48:28+00:00",
+      "timestamp": "2026-01-05T12:48:28Z",
       "message": "fix format",
       "stats": {
         "additions": 5,
@@ -99,7 +99,7 @@
       "sha": "fb3821d895fff15b0d952036659f595ee237150e",
       "author": "ravi-sawlani-yral",
       "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-01-05T12:44:40+00:00",
+      "timestamp": "2026-01-05T12:44:40Z",
       "message": "feat: set different env for yral auth",
       "stats": {
         "additions": 58,
@@ -112,7 +112,7 @@
       "sha": "179f3a4a6fc7ebb0fee1237c212290e3f88eb23a",
       "author": "ravi-sawlani-yral",
       "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-01-05T12:21:25+00:00",
+      "timestamp": "2026-01-05T12:21:25Z",
       "message": "add env secrets for main branch deployment",
       "stats": {
         "additions": 2,
@@ -125,7 +125,7 @@
       "sha": "739ce15943e0b23f6d6ad8bb876f768cdc98edc5",
       "author": "ravi-sawlani-yral",
       "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-01-05T12:19:49+00:00",
+      "timestamp": "2026-01-05T12:19:49Z",
       "message": "Merge remote-tracking branch 'dolr-ai/main' into feat/implement-phone-auth",
       "stats": {
         "additions": 54,
@@ -138,7 +138,7 @@
       "sha": "4efda19351d01857d4ee7b9687d318cd6b237b9d",
       "author": "ravi-sawlani-yral",
       "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-01-05T08:02:48+00:00",
+      "timestamp": "2026-01-05T08:02:48Z",
       "message": "expose verify phone endpoint",
       "stats": {
         "additions": 2,
@@ -151,7 +151,7 @@
       "sha": "820a43cd06273f34904e8a295fa01619b5da38d5",
       "author": "kevin-antony-yral",
       "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-05T18:00:46+00:00",
+      "timestamp": "2026-01-05T18:00:46Z",
       "message": "Merge pull request #41 from dolr-ai/storj_integration",
       "stats": {
         "additions": 150,
@@ -164,7 +164,7 @@
       "sha": "d856fbae2c0f09069eaa67fd4a9b800358749f37",
       "author": "kevin-antony-yral",
       "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-05T12:13:14+00:00",
+      "timestamp": "2026-01-05T12:13:14Z",
       "message": "Merge pull request #40 from dolr-ai/jay_review",
       "stats": {
         "additions": 650,
@@ -177,7 +177,7 @@
       "sha": "20a92b65b80ffd9469526fdf5a2ea23d7774c9db",
       "author": "kevin-antony-yral",
       "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-05T11:00:55+00:00",
+      "timestamp": "2026-01-05T11:00:55Z",
       "message": "Merge pull request #38 from dolr-ai/revert-36-revert-34-infra_rl",
       "stats": {
         "additions": 85,
@@ -190,7 +190,7 @@
       "sha": "41b31650f659bbe052f3e2c146cca038b9c3e0c6",
       "author": "kevin-antony-yral",
       "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-05T10:42:08+00:00",
+      "timestamp": "2026-01-05T10:42:08Z",
       "message": "Merge pull request #37 from dolr-ai/revert-36-revert-34-infra_rl",
       "stats": {
         "additions": 32,
@@ -203,7 +203,7 @@
       "sha": "e4a54f1872ff9e249b9fbf6bec9136c5b4fe79f4",
       "author": "kevin-antony-yral",
       "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-05T10:42:02+00:00",
+      "timestamp": "2026-01-05T10:42:02Z",
       "message": "Merge branch 'staging' into revert-36-revert-34-infra_rl",
       "stats": {
         "additions": 1369,
@@ -216,7 +216,7 @@
       "sha": "e4f0c3a381dfa5a257dec8029b1c195cc05ad55a",
       "author": "kevin-antony-yral",
       "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-05T10:40:16+00:00",
+      "timestamp": "2026-01-05T10:40:16Z",
       "message": "Revert \"Revert \"Infra Level Rate Limiting\"\"",
       "stats": {
         "additions": 30,
@@ -229,7 +229,7 @@
       "sha": "af3177ee3451bb7c5ed3534493679a289de55bd2",
       "author": "kevin-antony-yral",
       "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-05T10:40:13+00:00",
+      "timestamp": "2026-01-05T10:40:13Z",
       "message": "Merge pull request #36 from dolr-ai/revert-34-infra_rl",
       "stats": {
         "additions": 3,
@@ -242,7 +242,7 @@
       "sha": "a78950ba9915fd2b9022eec538dfb0753d6c2cac",
       "author": "kevin-antony-yral",
       "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-05T10:39:55+00:00",
+      "timestamp": "2026-01-05T10:39:55Z",
       "message": "Revert \"Infra Level Rate Limiting\"",
       "stats": {
         "additions": 3,
@@ -257,7 +257,7 @@
       "sha": "b793aff1291ba0e666ce5a85ad03754b78bda6af",
       "author": "kevin-antony-yral",
       "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-05T10:39:08+00:00",
+      "timestamp": "2026-01-05T10:39:08Z",
       "message": "Merge pull request #35 from dolr-ai/gemini_aync",
       "stats": {
         "additions": 22,
@@ -270,7 +270,7 @@
       "sha": "a9deee93a5ee4831eb2b09a3975039708c440c0a",
       "author": "kevin-antony-yral",
       "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-05T10:38:42+00:00",
+      "timestamp": "2026-01-05T10:38:42Z",
       "message": "Merge pull request #34 from dolr-ai/infra_rl",
       "stats": {
         "additions": 30,
@@ -283,7 +283,7 @@
       "sha": "7132021dac65c3d059756a0ac6b71906f5a4805e",
       "author": "kevin-antony-yral",
       "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-05T09:00:35+00:00",
+      "timestamp": "2026-01-05T09:00:35Z",
       "message": "Merge pull request #33 from dolr-ai/sentry",
       "stats": {
         "additions": 1346,
@@ -296,7 +296,7 @@
       "sha": "325e5cfdf6040fc31cf996e8409455a4ffd84f63",
       "author": "jay-dhanwant-yral",
       "repository": "dolr-ai/ai-feed-recommendation-system",
-      "timestamp": "2026-01-05T01:42:32+00:00",
+      "timestamp": "2026-01-05T01:42:32Z",
       "message": "Merge pull request #4 from dolr-ai/stage",
       "stats": {
         "additions": 2666,
@@ -304,7 +304,189 @@
         "total": 4472
       },
       "branches": []
+    },
+    {
+      "sha": "6c1cecf6e786f8819707593ec620554680522cfa",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-05T20:43:38Z",
+      "message": "[skip ci] migration script",
+      "stats": {
+        "additions": 355,
+        "deletions": 0,
+        "total": 355
+      },
+      "branches": []
+    },
+    {
+      "sha": "56a2444372196fd6f5af50b222be7d811309f463",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-05T19:23:49Z",
+      "message": "added script for cluster - 2",
+      "stats": {
+        "additions": 308,
+        "deletions": 12,
+        "total": 320
+      },
+      "branches": []
+    },
+    {
+      "sha": "cee57ab5811d78f87d16e169ff657be1e944d45f",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-05T13:57:44Z",
+      "message": "exp: test with network_mode : host",
+      "stats": {
+        "additions": 10,
+        "deletions": 10,
+        "total": 20
+      },
+      "branches": []
+    },
+    {
+      "sha": "afa9812c65556d1352809864c273fd22c5382c1a",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-05T13:50:58Z",
+      "message": "fix: use host network mode for dragonfly and haproxy services",
+      "stats": {
+        "additions": 12,
+        "deletions": 8,
+        "total": 20
+      },
+      "branches": []
+    },
+    {
+      "sha": "9f3d72aa301b3f9716c1fdaf3dcb2a80e77ecce3",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-05T13:33:22Z",
+      "message": "fix: added check for addr initialization",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": []
+    },
+    {
+      "sha": "9359c40ae4cd187ee36a93ef406abae0f9ceeabe",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-05T13:23:19Z",
+      "message": "fix: wait for dragon fly to initiated before ha proxy",
+      "stats": {
+        "additions": 2,
+        "deletions": 6,
+        "total": 8
+      },
+      "branches": []
+    },
+    {
+      "sha": "f7abb428bbf668ed3c908f86c0a13f2799837fb7",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-05T13:14:54Z",
+      "message": "fix: name of docker service",
+      "stats": {
+        "additions": 8,
+        "deletions": 8,
+        "total": 16
+      },
+      "branches": []
+    },
+    {
+      "sha": "da34d2afde7448c875e3e7a7afb225fd2feb6069",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-05T13:11:02Z",
+      "message": "fix: issue in connetion to dragonfly",
+      "stats": {
+        "additions": 11,
+        "deletions": 16,
+        "total": 27
+      },
+      "branches": []
+    },
+    {
+      "sha": "b8d9f6e35709e3904ad3e161958a6dc1465fc50d",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-05T12:54:51Z",
+      "message": "fix : port connectio issue",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": []
+    },
+    {
+      "sha": "8e81f91c740915c7debbd4b83f080b3223eab294",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-05T12:40:23Z",
+      "message": "fix: port update for tls and replication link",
+      "stats": {
+        "additions": 7,
+        "deletions": 7,
+        "total": 14
+      },
+      "branches": []
+    },
+    {
+      "sha": "d0af1adedea523a1d482c8e6f9c71533f9aaca4b",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-05T12:25:01Z",
+      "message": "fix: added non tls port for replication",
+      "stats": {
+        "additions": 11,
+        "deletions": 3,
+        "total": 14
+      },
+      "branches": []
+    },
+    {
+      "sha": "f52e5c50a369ad6c31aeda60ca49b2fd4ba7e97c",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-05T11:57:54Z",
+      "message": "fix: HAproxy setup",
+      "stats": {
+        "additions": 7,
+        "deletions": 13,
+        "total": 20
+      },
+      "branches": []
+    },
+    {
+      "sha": "fad91999a2cec2c1acea455d216c2cd69201d131",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-05T10:52:25Z",
+      "message": "fix: service name",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": []
+    },
+    {
+      "sha": "d7efeabba5d03e82caca3f766e81787fed462291",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-05T10:48:39Z",
+      "message": "enable tls with HAproxy",
+      "stats": {
+        "additions": 153,
+        "deletions": 34,
+        "total": 187
+      },
+      "branches": []
     }
   ],
-  "commit_count": 23
+  "commit_count": 37
 }

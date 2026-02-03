@@ -1,105 +1,12 @@
 {
   "date": "2026-01-30",
-  "cached_at": "2026-02-03T17:45:27.961224Z",
+  "cached_at": "2026-02-03T18:36:56.414635Z",
   "commits": [
-    {
-      "sha": "58b3882b9104261f55cff09632f0ccebca449216",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/hot-or-not-backend-canister",
-      "timestamp": "2026-01-30T11:36:29+00:00",
-      "message": "fix: accept new registration guard (#640)",
-      "stats": {
-        "additions": 2,
-        "deletions": 2,
-        "total": 4
-      },
-      "branches": []
-    },
-    {
-      "sha": "627440dd40872b9db69a8d72b443764f129c4a19",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
-      "timestamp": "2026-01-30T11:15:35+00:00",
-      "message": "fix: updated dragonfly connection code which was prone to broken pipe (#1164)",
-      "stats": {
-        "additions": 43,
-        "deletions": 5,
-        "total": 48
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "ab31102ebffb202f6219ba19a01efc69fb7d58f9",
-      "author": "gravityvi",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-30T15:37:12+00:00",
-      "message": "fix yral pro subscription token operation (#386)",
-      "stats": {
-        "additions": 31,
-        "deletions": 61,
-        "total": 92
-      },
-      "branches": []
-    },
-    {
-      "sha": "857c53e53ef3fd4ed3943089673356ee5e4b0a54",
-      "author": "gravityvi",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-30T09:50:46+00:00",
-      "message": "fix: add user agent in case of yral pro subscription (#385)",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": []
-    },
-    {
-      "sha": "ab31cd3bb89257ff2eab18405c8d82684e9110c0",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-30T07:54:33+00:00",
-      "message": "fix: video started event user id injection (#384)",
-      "stats": {
-        "additions": 39,
-        "deletions": 20,
-        "total": 59
-      },
-      "branches": []
-    },
-    {
-      "sha": "b330a97454a4b9d6683757108dc08f00718dc7b2",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-30T07:14:13+00:00",
-      "message": "fix: dolr price fetch (#383)",
-      "stats": {
-        "additions": 456,
-        "deletions": 100,
-        "total": 556
-      },
-      "branches": []
-    },
-    {
-      "sha": "6c0758c63bd352203914f2d7f2ea28e6932fbf15",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-30T06:32:59+00:00",
-      "message": "feat: added normal views on profile page tracking (#381)",
-      "stats": {
-        "additions": 109,
-        "deletions": 2,
-        "total": 111
-      },
-      "branches": []
-    },
     {
       "sha": "edace7be8393519625ccd05fbb4a644002753f44",
       "author": "joel-medicala-yral",
       "repository": "dolr-ai/yral-metadata",
-      "timestamp": "2026-01-30T07:15:40+00:00",
+      "timestamp": "2026-01-30T07:15:40Z",
       "message": "chore: migrate fcm api + cleanup: codebase (#72)",
       "stats": {
         "additions": 345,
@@ -111,10 +18,25 @@
       ]
     },
     {
+      "sha": "c856b788a2538ba177b3c52f5a4e9e1a19d29d82",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-30T06:49:19Z",
+      "message": "Update .did files from release v3.5.9",
+      "stats": {
+        "additions": 844,
+        "deletions": 0,
+        "total": 844
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9"
+      ]
+    },
+    {
       "sha": "58c247015e8f51ee03bdcf12f66626031a1345bd",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-30T18:46:01+00:00",
+      "timestamp": "2026-01-30T18:46:01Z",
       "message": "Implements yral pro tagging on feed (#824)",
       "stats": {
         "additions": 430,
@@ -127,7 +49,7 @@
       "sha": "7fd2572175fde47aa301cecaf9f5edefff0977c8",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-30T16:53:56+00:00",
+      "timestamp": "2026-01-30T16:53:56Z",
       "message": "Merge pull request #821 from dolr-ai/release/android-2.6.3",
       "stats": {
         "additions": 2,
@@ -140,7 +62,7 @@
       "sha": "6bf8a4a6ac443589332dba50a2bb19c777cedaeb",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-30T13:01:11+00:00",
+      "timestamp": "2026-01-30T13:01:11Z",
       "message": "Implements pro user credit utilisation for ai video gen (#823)",
       "stats": {
         "additions": 217,
@@ -150,23 +72,25 @@
       "branches": []
     },
     {
-      "sha": "2a723cde83d834e7dc2fdbdb469621367b626937",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-common",
-      "timestamp": "2026-01-30T11:52:44+00:00",
-      "message": "fix: yral pro subscription token type (#155)",
+      "sha": "56248d7ea62ae950b5f29913d0cdfb22d72ef541",
+      "author": "samarth-paboowal-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-30T08:50:27Z",
+      "message": "build: adds AI influencer module to features",
       "stats": {
-        "additions": 6,
-        "deletions": 7,
-        "total": 13
+        "additions": 62,
+        "deletions": 0,
+        "total": 62
       },
-      "branches": []
+      "branches": [
+        "feature/ai-influencer"
+      ]
     },
     {
       "sha": "fd1ab8e29654514ae3f8c65f8b48f976935723de",
       "author": "joel-medicala-yral",
       "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-01-30T12:55:50+00:00",
+      "timestamp": "2026-01-30T12:55:50Z",
       "message": "fix: fixed json ser for ai account creation flow sf (#39)",
       "stats": {
         "additions": 4,
@@ -179,7 +103,7 @@
       "sha": "d1648112548446877a3099d97659471605e02b29",
       "author": "joel-medicala-yral",
       "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-01-30T07:12:55+00:00",
+      "timestamp": "2026-01-30T07:12:55Z",
       "message": "feat: added ai accounts (#33)",
       "stats": {
         "additions": 202,
@@ -192,7 +116,7 @@
       "sha": "5043a539ac70cb856171e570e6b5f547e8bc1bb3",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-30T15:25:21+00:00",
+      "timestamp": "2026-01-30T15:25:21Z",
       "message": "Refactor Ansible inventory: centralize connection settings for bare metal hosts",
       "stats": {
         "additions": 6,
@@ -205,7 +129,7 @@
       "sha": "c7fe7b7cebb93f451cebc51b89bc1cd673c0e41b",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-30T14:58:08+00:00",
+      "timestamp": "2026-01-30T14:58:08Z",
       "message": "Add offchain agents to inventory and host vars",
       "stats": {
         "additions": 40,
@@ -218,7 +142,7 @@
       "sha": "bef3b6d19f7f9c656da99feb9b4865bc09e69bc5",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-30T11:10:04+00:00",
+      "timestamp": "2026-01-30T11:10:04Z",
       "message": "Add initial devcontainer configuration for Ubuntu with Ansible support",
       "stats": {
         "additions": 20,
@@ -228,10 +152,23 @@
       "branches": []
     },
     {
+      "sha": "c3565e3e048af9e434bac38c013415742d1bbf66",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-01-30T04:32:14Z",
+      "message": "add sentry",
+      "stats": {
+        "additions": 484,
+        "deletions": 4,
+        "total": 488
+      },
+      "branches": []
+    },
+    {
       "sha": "5d691025b67f831249e7c89c497ff203c201ee5c",
       "author": "ravi-sawlani-yral",
       "repository": "dolr-ai/yral-billing",
-      "timestamp": "2026-01-30T04:23:31+00:00",
+      "timestamp": "2026-01-30T04:23:31Z",
       "message": "feat: add routes to update user credits",
       "stats": {
         "additions": 219,
@@ -244,7 +181,7 @@
       "sha": "3dda1bccb00deedc17f3fbcf5f48cd46fbd52b12",
       "author": "saikatdas0790",
       "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
-      "timestamp": "2026-01-30T09:40:52+00:00",
+      "timestamp": "2026-01-30T09:40:52Z",
       "message": "Add initial devcontainer configuration for Ubuntu with Ansible support",
       "stats": {
         "additions": 18,
@@ -256,10 +193,168 @@
       ]
     },
     {
+      "sha": "2f4363f36a4a6e0f9bff85a416e3b7fceeff6b62",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-01-30T13:43:13Z",
+      "message": "fix: permission to directory",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "naitik/initial_setup"
+      ]
+    },
+    {
+      "sha": "34b0dee0c6716f42ee18abbb91fcc2290665440f",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-01-30T13:27:19Z",
+      "message": "fix: delimeter",
+      "stats": {
+        "additions": 1,
+        "deletions": 2,
+        "total": 3
+      },
+      "branches": []
+    },
+    {
+      "sha": "90a921811b87d8212898ef870635dd26a5185fa2",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-01-30T13:25:03Z",
+      "message": "fix: hcl file",
+      "stats": {
+        "additions": 11,
+        "deletions": 10,
+        "total": 21
+      },
+      "branches": []
+    },
+    {
+      "sha": "2e5b90b7684b998fa62cc054dfce09ebe2247ea8",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-01-30T13:17:04Z",
+      "message": "fix: typo",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": []
+    },
+    {
+      "sha": "cf60a84d71c4b0a2fb3f2dfe2fd4386930380260",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-01-30T13:15:48Z",
+      "message": "fix: deployment verification",
+      "stats": {
+        "additions": 0,
+        "deletions": 4,
+        "total": 4
+      },
+      "branches": []
+    },
+    {
+      "sha": "28f6eb263052cc1fc0332b4063993e844ab05243",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-01-30T13:12:44Z",
+      "message": "fix: directly passing from matrics",
+      "stats": {
+        "additions": 8,
+        "deletions": 14,
+        "total": 22
+      },
+      "branches": []
+    },
+    {
+      "sha": "4cb03d4ca7ebfbcaad808f175111f08db445de6a",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-01-30T13:03:32Z",
+      "message": "fix: variable name",
+      "stats": {
+        "additions": 5,
+        "deletions": 5,
+        "total": 10
+      },
+      "branches": []
+    },
+    {
+      "sha": "9c4b60eebf12c239dd63ee16965edbd1b1808737",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-01-30T12:59:21Z",
+      "message": "fix: env pass to CI",
+      "stats": {
+        "additions": 13,
+        "deletions": 9,
+        "total": 22
+      },
+      "branches": []
+    },
+    {
+      "sha": "98d20968e5f1460234f05cb9a27074370e894146",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-01-30T12:55:07Z",
+      "message": "fix: env var passing",
+      "stats": {
+        "additions": 43,
+        "deletions": 33,
+        "total": 76
+      },
+      "branches": []
+    },
+    {
+      "sha": "530ebc0de6dc50bed6452ac965efacf4cb48773d",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-01-30T12:23:32Z",
+      "message": "fix: yml flow fix and small changes",
+      "stats": {
+        "additions": 31,
+        "deletions": 26,
+        "total": 57
+      },
+      "branches": []
+    },
+    {
+      "sha": "07a12329b356b482e962f3436edc9342f2f96bc4",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-01-30T11:23:50Z",
+      "message": "fix: ssh username",
+      "stats": {
+        "additions": 1,
+        "deletions": 2,
+        "total": 3
+      },
+      "branches": []
+    },
+    {
+      "sha": "c65cfddcc33326634a51192707c766e8cfdf8781",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-01-30T10:28:42Z",
+      "message": "exp: initital setup to launch vault through CI",
+      "stats": {
+        "additions": 119,
+        "deletions": 0,
+        "total": 119
+      },
+      "branches": []
+    },
+    {
       "sha": "a8a842dc2d7cd4f8ee46983d29acf2113c2bb94c",
       "author": "joel-medicala-yral",
       "repository": "dolr-ai/self-hosted-video-models",
-      "timestamp": "2026-01-30T20:09:17+00:00",
+      "timestamp": "2026-01-30T20:09:17Z",
       "message": "Add packages:write permission for GHCR push",
       "stats": {
         "additions": 3,
@@ -272,7 +367,7 @@
       "sha": "187a5a80084ed13a2544158d5ae81dd868892e4d",
       "author": "joel-medicala-yral",
       "repository": "dolr-ai/self-hosted-video-models",
-      "timestamp": "2026-01-30T19:59:57+00:00",
+      "timestamp": "2026-01-30T19:59:57Z",
       "message": "Use CUDA 12.9 base image to match PyTorch dependencies",
       "stats": {
         "additions": 2,
@@ -285,7 +380,7 @@
       "sha": "043d734e0f2f381b4828a76b5ad6971e3dd9d9f0",
       "author": "joel-medicala-yral",
       "repository": "dolr-ai/self-hosted-video-models",
-      "timestamp": "2026-01-30T19:55:59+00:00",
+      "timestamp": "2026-01-30T19:55:59Z",
       "message": "Fix: Use specific vastai/comfy version tag",
       "stats": {
         "additions": 1,
@@ -298,7 +393,7 @@
       "sha": "dcf123ddd16c4c7cf71bffc5dae314adeca419d3",
       "author": "joel-medicala-yral",
       "repository": "dolr-ai/self-hosted-video-models",
-      "timestamp": "2026-01-30T19:54:47+00:00",
+      "timestamp": "2026-01-30T19:54:47Z",
       "message": "Add custom Docker image and GHCR workflow for LTX-2",
       "stats": {
         "additions": 157,
@@ -311,7 +406,7 @@
       "sha": "f276399f4065651b489404e8acb8f473ccf9a303",
       "author": "joel-medicala-yral",
       "repository": "dolr-ai/self-hosted-video-models",
-      "timestamp": "2026-01-30T19:44:27+00:00",
+      "timestamp": "2026-01-30T19:44:27Z",
       "message": "first commit",
       "stats": {
         "additions": 1,
@@ -321,5 +416,5 @@
       "branches": []
     }
   ],
-  "commit_count": 24
+  "commit_count": 31
 }

@@ -1,12 +1,12 @@
 {
   "date": "2026-01-18",
-  "cached_at": "2026-02-03T17:31:18.068714Z",
+  "cached_at": "2026-02-03T18:36:12.519236Z",
   "commits": [
     {
       "sha": "1aa3b61d03330131408452a18470358516ff5489",
       "author": "mayank-k-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-18T21:34:32+00:00",
+      "timestamp": "2026-01-18T21:34:32Z",
       "message": "Merge pull request #795 from dolr-ai/feed-optimisations",
       "stats": {
         "additions": 83,
@@ -19,7 +19,7 @@
       "sha": "ce4b3f52b106bc35cdd08d707c0dba2903dab210",
       "author": "mayank-k-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-18T20:07:27+00:00",
+      "timestamp": "2026-01-18T20:14:48Z",
       "message": "Refactors video playback tracking and event logging logic",
       "stats": {
         "additions": 66,
@@ -32,7 +32,7 @@
       "sha": "5bd8ebc0680f085ab772eeef8966ac5278d13be0",
       "author": "mayank-k-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-18T19:18:50+00:00",
+      "timestamp": "2026-01-18T19:18:50Z",
       "message": "Refactors FeedScreen state management and improves reel mapping performance",
       "stats": {
         "additions": 17,
@@ -45,7 +45,7 @@
       "sha": "7c64a6d850bd89d1d8483ec2cd4055fc1ef81de0",
       "author": "mayank-k-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-18T19:06:35+00:00",
+      "timestamp": "2026-01-18T19:06:35Z",
       "message": "Revamp feed video playback (#794)",
       "stats": {
         "additions": 3067,
@@ -55,15 +55,15 @@
       "branches": []
     },
     {
-      "sha": "c2442cb14b6a9148e0be270a00a3eea9381a2815",
+      "sha": "06dea31e1a068c2dbcf3402d2da9ff814f98bff5",
       "author": "kevin-antony-yral",
       "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-18T07:57:40+00:00",
-      "message": "Syncing Main with Staging (#136)",
+      "timestamp": "2026-01-18T07:43:23Z",
+      "message": "New deployment script- Minor fixes (#138)",
       "stats": {
-        "additions": 219,
-        "deletions": 364,
-        "total": 583
+        "additions": 3,
+        "deletions": 5,
+        "total": 8
       },
       "branches": []
     }

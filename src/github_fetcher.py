@@ -5,13 +5,13 @@ Fetches commit data from GitHub with concurrent threading and bot filtering
 import logging
 import threading
 import time
+import requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta
-from typing import Dict, List, Set, Callable, Any
+from typing import Dict, List, Set, Callable, Any, Optional
 from collections import defaultdict
 from functools import wraps
 
-from github import Github, GithubException, RateLimitExceededException
 from tqdm import tqdm
 
 from src.config import GITHUB_TOKEN, GITHUB_ORG, KNOWN_BOTS
@@ -37,8 +37,9 @@ def retry_with_exponential_backoff(max_retries: int = 5, base_delay: int = 60):
             while retries <= max_retries:
                 try:
                     return func(*args, **kwargs)
-                except GithubException as e:
-                    if e.status in [403, 429]:  # Rate limit errors
+                except requests.exceptions.HTTPError as e:
+                    # Rate limit errors
+                    if e.response and e.response.status_code in [403, 429]:
                         if retries >= max_retries:
                             logger.error(
                                 f"Max retries ({max_retries}) reached for {func.__name__}. Giving up."
@@ -62,30 +63,91 @@ def retry_with_exponential_backoff(max_retries: int = 5, base_delay: int = 60):
 
 
 class GitHubFetcher:
-    """Fetches commit data from GitHub with concurrent threading"""
+    """Fetches commit data from GitHub with concurrent threading using GraphQL API"""
 
     def __init__(self, thread_count: int = 4):
         self.thread_count = thread_count
         self.rate_limit_lock = threading.Lock()
         self.cache_manager = CacheManager()
-        # Configure connection pool size to match thread count + buffer
-        pool_size = max(thread_count + 2, 10)
-        self.github_client = Github(
-            GITHUB_TOKEN, per_page=100, pool_size=pool_size)
+        self.session = requests.Session()
+        self.session.headers.update({
+            'Authorization': f'bearer {GITHUB_TOKEN}',
+            'Content-Type': 'application/json',
+            'User-Agent': 'github-report-script'
+        })
+        self.base_url = 'https://api.github.com'
+        self.graphql_url = 'https://api.github.com/graphql'
+
+    def _graphql_request(self, query: str, variables: Optional[Dict] = None) -> Optional[Dict]:
+        """Make a GraphQL API request to GitHub
+
+        Args:
+            query: GraphQL query string
+            variables: Query variables
+
+        Returns:
+            JSON response or None on error
+        """
+        try:
+            payload = {'query': query}
+            if variables:
+                payload['variables'] = variables
+
+            response = self.session.post(
+                self.graphql_url, json=payload, timeout=60)
+            response.raise_for_status()
+            result = response.json()
+
+            if 'errors' in result:
+                logger.warning(f"GraphQL errors: {result['errors']}")
+                return None
+
+            return result.get('data')
+        except requests.exceptions.RequestException as e:
+            logger.warning(f"GraphQL request failed: {e}")
+            return None
+
+    def _api_request(self, endpoint: str, params: Optional[Dict] = None) -> Optional[List]:
+        """Make a direct REST API request to GitHub (fallback for specific endpoints)
+
+        Args:
+            endpoint: API endpoint (e.g., '/repos/owner/repo/commits')
+            params: Query parameters
+
+        Returns:
+            JSON response (list or dict) or None on error
+        """
+        url = f"{self.base_url}{endpoint}"
+        try:
+            # Update headers for REST API
+            headers = self.session.headers.copy()
+            headers['Authorization'] = f'token {GITHUB_TOKEN}'
+            headers['Accept'] = 'application/vnd.github.v3+json'
+
+            response = requests.get(
+                url, params=params, headers=headers, timeout=30)
+            response.raise_for_status()
+            result = response.json()
+            logger.debug(
+                f"API request to {endpoint}: {len(result) if isinstance(result, list) else 'dict'} items")
+            return result
+        except requests.exceptions.RequestException as e:
+            logger.warning(f"API request failed for {endpoint}: {e}")
+            return None
 
     def _check_rate_limit(self):
         """Check GitHub API rate limit and wait if necessary"""
         with self.rate_limit_lock:
             try:
-                rate_limit = self.github_client.get_rate_limit()
-                # Access rate_limit as dictionary or object
-                if hasattr(rate_limit, 'core'):
-                    remaining = rate_limit.core.remaining
-                    reset_time = rate_limit.core.reset
-                else:
-                    # Fallback for newer PyGithub versions
-                    remaining = rate_limit.rate.remaining
-                    reset_time = rate_limit.rate.reset
+                response = self.session.get(
+                    f"{self.base_url}/rate_limit", timeout=10)
+                if response.status_code != 200:
+                    return
+
+                rate_data = response.json()
+                remaining = rate_data['resources']['core']['remaining']
+                reset_time = datetime.fromtimestamp(
+                    rate_data['resources']['core']['reset'])
 
                 if remaining < 100:
                     wait_seconds = (
@@ -102,71 +164,58 @@ class GitHubFetcher:
                 logger.warning(f"Could not check rate limit: {e}")
 
     @retry_with_exponential_backoff(max_retries=5, base_delay=60)
-    def _fetch_commit_branches(self, repo, commit_sha: str) -> List[str]:
+    def _fetch_commit_branches(self, repo_full_name: str, commit_sha: str) -> List[str]:
         """Fetch list of branch names containing the given commit
 
         Uses GitHub REST API endpoint: /repos/{owner}/{repo}/commits/{sha}/branches-where-head
-        Caches branch list per repository to minimize API calls.
 
         Args:
-            repo: Repository object
+            repo_full_name: Full repository name (e.g., 'dolr-ai/repo-name')
             commit_sha: Commit SHA to look up
 
         Returns:
             List of branch names containing this commit
         """
         try:
-            # Use REST API to get branches where commit is head
-            # PyGithub doesn't have direct method, so use _requester
-            url = f"/repos/{repo.full_name}/commits/{commit_sha}/branches-where-head"
-            headers, data = repo._requester.requestJsonAndCheck(
-                "GET",
-                url
-            )
+            endpoint = f"/repos/{repo_full_name}/commits/{commit_sha}/branches-where-head"
+            data = self._api_request(endpoint)
+
+            if data is None:
+                return []
 
             # Extract branch names from response
             branch_names = [branch['name'] for branch in data]
             return branch_names
 
-        except GithubException as e:
-            if e.status == 404:
-                # Commit not found or no branches
-                logger.debug(f"No branches found for commit {commit_sha[:7]}")
-                return []
-            else:
-                # Let retry decorator handle rate limits
-                raise
         except Exception as e:
             logger.debug(f"Error fetching branches for {commit_sha[:7]}: {e}")
             return []
 
-    def _is_bot_commit(self, commit) -> bool:
-        """Check if a commit is from a bot using API type check
+    def _is_bot_commit(self, commit_data: Dict) -> bool:
+        """Check if a commit is from a bot
 
         Args:
-            commit: PyGithub commit object
+            commit_data: Commit data from GitHub API
 
         Returns:
             True if commit is from a bot
         """
         try:
-            # Try to get author user object
-            author = commit.author
-            if author:
-                # Check user type via API
-                if hasattr(author, 'type') and author.type == 'Bot':
-                    logger.debug(f"Identified bot commit from {author.login}")
+            # Check author type
+            author = commit_data.get('author')
+            if author and author.get('type') == 'Bot':
+                return True
+
+            # Fallback: Check commit author name/email against known bots
+            commit_info = commit_data.get('commit', {})
+            author_info = commit_info.get('author', {})
+            author_name = author_info.get('name', '')
+            author_email = author_info.get('email', '')
+
+            # Check if name or email contains bot indicators
+            for bot in KNOWN_BOTS:
+                if bot.lower() in author_name.lower() or bot.lower() in author_email.lower():
                     return True
-
-            # Fallback: Check commit author login against known bots
-            if commit.commit.author:
-                author_name = commit.commit.author.name or ''
-                author_email = commit.commit.author.email or ''
-
-                # Check if name or email contains bot indicators
-                for bot in KNOWN_BOTS:
-                    if bot.lower() in author_name.lower() or bot.lower() in author_email.lower():
-                        return True
 
             return False
         except Exception:
@@ -175,7 +224,7 @@ class GitHubFetcher:
 
     def _fetch_commits_for_date(self, date_str: str, start_datetime: datetime,
                                 end_datetime: datetime, user_ids: Set[str]) -> Dict:
-        """Fetch commits for a specific date from all org repos
+        """Fetch commits for a specific date from all org repos using GraphQL API
 
         Args:
             date_str: Date in YYYY-MM-DD format
@@ -187,98 +236,173 @@ class GitHubFetcher:
             Dictionary with commits data
         """
         commits_data = []
+        seen_commits = set()
 
         try:
-            # Get organization
-            org = self.github_client.get_organization(GITHUB_ORG)
+            # GraphQL query to fetch repos with their branches and commits
+            # Reduced limits to avoid MAX_NODE_LIMIT_EXCEEDED error
+            query = """
+            query($org: String!, $since: GitTimestamp!, $until: GitTimestamp!, $cursor: String) {
+              organization(login: $org) {
+                repositories(first: 20, after: $cursor) {
+                  pageInfo {
+                    hasNextPage
+                    endCursor
+                  }
+                  nodes {
+                    nameWithOwner
+                    refs(refPrefix: "refs/heads/", first: 10) {
+                      nodes {
+                        name
+                        target {
+                          ... on Commit {
+                            history(first: 50, since: $since, until: $until) {
+                              nodes {
+                                oid
+                                author {
+                                  user {
+                                    login
+                                  }
+                                  name
+                                  email
+                                }
+                                committedDate
+                                message
+                                additions
+                                deletions
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            """
 
-            # Get all repositories
-            repos = list(org.get_repos())
+            variables = {
+                'org': GITHUB_ORG,
+                'since': start_datetime.isoformat() + 'Z',
+                'until': end_datetime.isoformat() + 'Z',
+                'cursor': None
+            }
 
-            logger.debug(
-                f"Fetching from {len(repos)} repositories in {GITHUB_ORG} org")
+            has_next_page = True
+            repo_count = 0
 
-            for repo in repos:
-                try:
-                    # Check rate limit before each repo
-                    self._check_rate_limit()
+            while has_next_page:
+                logger.debug(
+                    f"Fetching repositories page (cursor: {variables.get('cursor', 'first')})")
 
-                    # Get commits for date range
-                    # Note: get_commits() without sha parameter fetches from ALL branches
-                    commits = repo.get_commits(
-                        since=start_datetime,
-                        until=end_datetime
-                    )
+                data = self._graphql_request(query, variables)
 
+                if not data or 'organization' not in data:
+                    logger.error(f"Failed to fetch data from GraphQL API")
+                    break
+
+                repos = data['organization']['repositories']
+                page_info = repos['pageInfo']
+                has_next_page = page_info['hasNextPage']
+                variables['cursor'] = page_info['endCursor']
+
+                for repo in repos['nodes']:
+                    repo_full_name = repo['nameWithOwner']
+                    repo_name = repo_full_name.split('/')[-1]
                     repo_commit_count = 0
 
-                    for commit in commits:
-                        try:
-                            # Skip if no author
-                            if not commit.author:
-                                continue
+                    # Process each branch
+                    branches = repo.get('refs', {}).get('nodes', [])
 
-                            author_login = commit.author.login if commit.author else None
+                    for branch in branches:
+                        branch_name = branch['name']
 
-                            # Skip if author not in tracking list
-                            if author_login not in user_ids:
-                                continue
-
-                            # Skip bot commits
-                            if self._is_bot_commit(commit):
-                                continue
-
-                            # Extract commit data
-                            commit_data = {
-                                'sha': commit.sha,
-                                'author': author_login,
-                                'repository': repo.full_name,
-                                'timestamp': commit.commit.author.date.isoformat(),
-                                # First line, truncated
-                                'message': commit.commit.message.split('\n')[0][:100],
-                                'stats': {
-                                    'additions': commit.stats.additions if commit.stats else 0,
-                                    'deletions': commit.stats.deletions if commit.stats else 0,
-                                    'total': commit.stats.total if commit.stats else 0
-                                },
-                                'branches': []  # Will be populated below
-                            }
-
-                            # Fetch branches containing this commit
-                            try:
-                                commit_data['branches'] = self._fetch_commit_branches(
-                                    repo, commit.sha
-                                )
-                            except Exception as e:
-                                logger.debug(
-                                    f"Could not fetch branches for commit {commit.sha[:7]}: {e}"
-                                )
-                                commit_data['branches'] = []
-
-                            commits_data.append(commit_data)
-                            repo_commit_count += 1
-
-                            logger.debug(
-                                f"Processed commit {commit.sha[:7]} by {author_login} in {repo.name}")
-
-                        except Exception as e:
-                            # Skip problematic individual commits
-                            logger.debug(
-                                f"Skipped commit in {repo.full_name}: {e}")
+                        # Get commit history for this branch
+                        target = branch.get('target')
+                        if not target:
                             continue
+
+                        history = target.get('history', {}).get('nodes', [])
+
+                        for commit in history:
+                            try:
+                                commit_sha = commit['oid']
+
+                                # Skip if we've already processed this commit
+                                if commit_sha in seen_commits:
+                                    continue
+
+                                seen_commits.add(commit_sha)
+
+                                # Get author info
+                                author_data = commit.get('author', {})
+                                author_user = author_data.get('user')
+
+                                # Skip if no author user
+                                if not author_user:
+                                    continue
+
+                                author_login = author_user.get('login')
+
+                                # Skip if author not in tracking list
+                                if author_login not in user_ids:
+                                    continue
+
+                                # Check for bot commits using author name/email
+                                author_name = author_data.get('name', '')
+                                author_email = author_data.get('email', '')
+                                is_bot = False
+                                for bot in KNOWN_BOTS:
+                                    if bot.lower() in author_name.lower() or bot.lower() in author_email.lower():
+                                        is_bot = True
+                                        break
+
+                                if is_bot:
+                                    continue
+
+                                # Extract commit data from GraphQL response
+                                commit_data = {
+                                    'sha': commit_sha,
+                                    'author': author_login,
+                                    'repository': repo_full_name,
+                                    'timestamp': commit.get('committedDate', ''),
+                                    'message': commit.get('message', '').split('\n')[0][:100],
+                                    'stats': {
+                                        'additions': commit.get('additions', 0),
+                                        'deletions': commit.get('deletions', 0),
+                                        'total': commit.get('additions', 0) + commit.get('deletions', 0)
+                                    },
+                                    'branches': []  # Will be populated below
+                                }
+
+                                # Fetch branches containing this commit (still need REST API for this)
+                                try:
+                                    commit_data['branches'] = self._fetch_commit_branches(
+                                        repo_full_name, commit_sha
+                                    )
+                                except Exception as e:
+                                    logger.debug(
+                                        f"Could not fetch branches for commit {commit_sha[:7]}: {e}"
+                                    )
+                                    commit_data['branches'] = []
+
+                                commits_data.append(commit_data)
+                                repo_commit_count += 1
+
+                                logger.debug(
+                                    f"Processed commit {commit_sha[:7]} by {author_login} in {repo_name}")
+
+                            except Exception as e:
+                                # Skip problematic individual commits
+                                logger.debug(
+                                    f"Skipped commit in {repo_full_name}: {e}")
+                                continue
 
                     if repo_commit_count > 0:
                         logger.debug(
-                            f"Fetched {repo_commit_count} commits from {repo.full_name}")
-
-                except GithubException as e:
-                    if e.status == 409:  # Empty repository
-                        logger.debug(
-                            f"Skipping empty repository: {repo.full_name}")
-                        continue
-                    logger.warning(
-                        f"Error fetching commits from {repo.full_name}: {e}")
-                    continue
+                            f"Fetched {repo_commit_count} commits from {repo_full_name}")
+                        repo_count += 1
 
         except Exception as e:
             logger.error(f"Error fetching commits for {date_str}: {e}")
@@ -409,18 +533,18 @@ class GitHubFetcher:
             Dictionary with rate limit info
         """
         try:
-            rate_limit = self.github_client.get_rate_limit()
+            response = self.session.get(
+                f"{self.base_url}/rate_limit", timeout=10)
+            if response.status_code != 200:
+                return {'error': 'Could not fetch rate limit'}
 
-            # Access rate_limit as dictionary or object
-            if hasattr(rate_limit, 'core'):
-                remaining = rate_limit.rate.remaining
-                limit = rate_limit.rate.limit
-                reset = rate_limit.rate.reset.isoformat()
-            else:
-                # Fallback for newer PyGithub versions
-                remaining = rate_limit.rate.remaining
-                limit = rate_limit.rate.limit
-                reset = rate_limit.rate.reset.isoformat()
+            rate_data = response.json()
+            rate_limit = rate_data['resources']['core']
+
+            remaining = rate_limit['remaining']
+            limit = rate_limit['limit']
+            reset_timestamp = rate_limit['reset']
+            reset = datetime.fromtimestamp(reset_timestamp).isoformat()
 
             return {
                 'remaining': remaining,

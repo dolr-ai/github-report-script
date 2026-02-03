@@ -1,38 +1,12 @@
 {
   "date": "2026-01-14",
-  "cached_at": "2026-02-03T17:32:18.373696Z",
+  "cached_at": "2026-02-03T18:36:33.663056Z",
   "commits": [
-    {
-      "sha": "6f9ff3ec1dd887b1e95cbf0eb20194a6c07712c3",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-14T09:43:41+00:00",
-      "message": "Update consts.rs (#353)",
-      "stats": {
-        "additions": 6,
-        "deletions": 0,
-        "total": 6
-      },
-      "branches": []
-    },
-    {
-      "sha": "8bb9c02073e4cd9eab85f7f0f9be5a343cf48756",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-14T08:42:15+00:00",
-      "message": "fix: ignore self views (#352)",
-      "stats": {
-        "additions": 13,
-        "deletions": 2,
-        "total": 15
-      },
-      "branches": []
-    },
     {
       "sha": "37478c6f62b35d5aaad7405745d90174325c128d",
       "author": "sarvesh-sharma-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-14T18:21:53+00:00",
+      "timestamp": "2026-01-14T18:21:53Z",
       "message": "chore: Increments android app version",
       "stats": {
         "additions": 1,
@@ -45,7 +19,7 @@
       "sha": "4c068dc19de3642489b6fd28cdc616b6fcf36bb3",
       "author": "sarvesh-sharma-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-14T16:45:43+00:00",
+      "timestamp": "2026-01-14T16:45:43Z",
       "message": "chore: Increments android app version",
       "stats": {
         "additions": 2,
@@ -58,7 +32,7 @@
       "sha": "c608df0ad37f67b508b6591882818236901a35d2",
       "author": "sarvesh-sharma-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-14T16:43:07+00:00",
+      "timestamp": "2026-01-14T16:43:07Z",
       "message": "Feature/hot or not game (#777)",
       "stats": {
         "additions": 1255,
@@ -71,7 +45,7 @@
       "sha": "be74f83b0d27addd7fe62502a55a01d57056772b",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-14T14:49:19+00:00",
+      "timestamp": "2026-01-14T14:49:19Z",
       "message": "Fixes phone number login for iOS (#779)",
       "stats": {
         "additions": 5,
@@ -84,7 +58,7 @@
       "sha": "f67ae2586d7f6885683b4fec4db9c5aba2d7e101",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-14T14:16:48+00:00",
+      "timestamp": "2026-01-14T14:16:48Z",
       "message": "Merge pull request #778 from dolr-ai/feature/phone-number-login",
       "stats": {
         "additions": 4152,
@@ -97,7 +71,7 @@
       "sha": "e66f6d353e5a38276e6b1060fae552bd95532ff0",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-14T14:08:27+00:00",
+      "timestamp": "2026-01-14T14:08:27Z",
       "message": "build: Handles instance of LoginState for configuration changes",
       "stats": {
         "additions": 22,
@@ -110,7 +84,7 @@
       "sha": "9f6e955d3f893636fe334983d2bd113d21bd1541",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-14T13:52:09+00:00",
+      "timestamp": "2026-01-14T13:52:09Z",
       "message": "build: Handles keyboard on MandatoryLoginScreen.kt",
       "stats": {
         "additions": 2,
@@ -123,7 +97,7 @@
       "sha": "c131563d703e0cfada61fdfbd54fe0b521846b63",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-14T13:42:32+00:00",
+      "timestamp": "2026-01-14T13:42:32Z",
       "message": "code rabbit: Improves code with suggested improvements",
       "stats": {
         "additions": 81,
@@ -136,7 +110,7 @@
       "sha": "7f06b81e78b41d7903ff942e065db1ff03af9f14",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-14T13:16:11+00:00",
+      "timestamp": "2026-01-14T13:16:11Z",
       "message": "build: Improves auto verify otp",
       "stats": {
         "additions": 10,
@@ -149,7 +123,7 @@
       "sha": "75d6f80a771770dd1ff3eb282b396c41d87aaef5",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-14T13:09:54+00:00",
+      "timestamp": "2026-01-14T13:09:54Z",
       "message": "build: Improves messaging on otp verification screen",
       "stats": {
         "additions": 169,
@@ -162,7 +136,7 @@
       "sha": "db34c7bf5d76e217963185c9f28189df4925b5d2",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-14T12:38:40+00:00",
+      "timestamp": "2026-01-14T12:38:40Z",
       "message": "build: Moves validation error messages to compose resources",
       "stats": {
         "additions": 88,
@@ -175,7 +149,7 @@
       "sha": "12a70c32d16ec2fbac7994008e88128c27d679a2",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-14T12:36:58+00:00",
+      "timestamp": "2026-01-14T12:36:58Z",
       "message": "build: Adds phone number length validation",
       "stats": {
         "additions": 48,
@@ -188,7 +162,7 @@
       "sha": "0995f399cd85c798da3ef8ac2a8e6e6d637e397c",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-14T12:14:57+00:00",
+      "timestamp": "2026-01-14T12:14:57Z",
       "message": "build: Improves OTP screen header",
       "stats": {
         "additions": 18,
@@ -201,7 +175,7 @@
       "sha": "2992e63acf590f3862f11853af16f628c23bcf2e",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-14T12:08:05+00:00",
+      "timestamp": "2026-01-14T12:08:05Z",
       "message": "build: Improves OTP input field",
       "stats": {
         "additions": 212,
@@ -214,7 +188,7 @@
       "sha": "9bd57479606a2956c5f6515f65ecc47321ed552f",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-14T08:46:59+00:00",
+      "timestamp": "2026-01-14T09:30:03Z",
       "message": "build: Fixes bottom padding keyboard aware padding",
       "stats": {
         "additions": 24,
@@ -227,7 +201,7 @@
       "sha": "68a18f4bb44371915ac69f20bda8b909145009b5",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-14T08:06:44+00:00",
+      "timestamp": "2026-01-14T09:30:03Z",
       "message": "build: Implements common request login functionality",
       "stats": {
         "additions": 978,
@@ -240,7 +214,7 @@
       "sha": "13820fd60f53b06afb91e029bfcab96d4868f306",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-13T14:52:34+00:00",
+      "timestamp": "2026-01-14T08:47:58Z",
       "message": "build: Implements temporary otp screen",
       "stats": {
         "additions": 380,
@@ -253,7 +227,7 @@
       "sha": "744cec75fa9cd7f5ea158c915da8bc9cd6516efb",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-13T14:08:38+00:00",
+      "timestamp": "2026-01-14T08:47:58Z",
       "message": "build: Updates SignupView and its users",
       "stats": {
         "additions": 1018,
@@ -266,7 +240,7 @@
       "sha": "0e28bdbcf62f91cbbfc8b9a6718091e9be2b027d",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-13T13:50:54+00:00",
+      "timestamp": "2026-01-14T08:47:58Z",
       "message": "build: Adds country selection screen",
       "stats": {
         "additions": 340,
@@ -279,7 +253,7 @@
       "sha": "f626813fe19e745174706d0d67f28103ce0f5c53",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-13T14:09:38+00:00",
+      "timestamp": "2026-01-14T08:47:58Z",
       "message": "build: Adds string resources",
       "stats": {
         "additions": 8,
@@ -292,7 +266,7 @@
       "sha": "c688e6b66a9f990deab7ca737c89fe0ce8592b64",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-13T13:46:00+00:00",
+      "timestamp": "2026-01-14T08:47:58Z",
       "message": "build: Updates phone login apis",
       "stats": {
         "additions": 81,
@@ -305,7 +279,7 @@
       "sha": "f60be0cbadd804a45bd3e0f2f512e2bfba49e1a0",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-08T10:29:15+00:00",
+      "timestamp": "2026-01-14T08:47:58Z",
       "message": "build: Implements basic phone number validation library",
       "stats": {
         "additions": 725,
@@ -318,7 +292,7 @@
       "sha": "7805bc8abaa7cdd68b047d876b02cb54e53d49da",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-05T12:10:55+00:00",
+      "timestamp": "2026-01-14T08:47:58Z",
       "message": "build: Implements phone num logi apis",
       "stats": {
         "additions": 335,
@@ -331,7 +305,7 @@
       "sha": "84bba8df006ec8803063249085384d7dc7b7c134",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T19:58:52+00:00",
+      "timestamp": "2026-01-14T19:58:52Z",
       "message": "Refactor drive detection logic to improve second drive determination and display available drives",
       "stats": {
         "additions": 9,
@@ -344,7 +318,7 @@
       "sha": "11cc6326a5ceb09b94db6c93cdad6a895ab6a780",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T19:43:26+00:00",
+      "timestamp": "2026-01-14T19:43:26Z",
       "message": "Enhance provisioning script execution and add installation success check [skip ci]",
       "stats": {
         "additions": 13,
@@ -357,7 +331,7 @@
       "sha": "18237475d1f8a2c2fde35f22784c15df7a35bfe2",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T19:34:47+00:00",
+      "timestamp": "2026-01-14T19:34:47Z",
       "message": "[skip ci] Fix quote escaping issues in provisioning scripts",
       "stats": {
         "additions": 0,
@@ -370,7 +344,7 @@
       "sha": "eee7b337025c54fb72ea2de6842a2166482b9a4d",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T19:27:42+00:00",
+      "timestamp": "2026-01-14T19:27:42Z",
       "message": "Refactor provisioning script command to streamline environment variable usage [skip ci]",
       "stats": {
         "additions": 3,
@@ -383,7 +357,7 @@
       "sha": "fbe4ee0dc62e13fdcca079babd260bce08058f37",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T19:15:51+00:00",
+      "timestamp": "2026-01-14T19:15:51Z",
       "message": "[skip ci] Fix shell quoting issue in provisioning script",
       "stats": {
         "additions": 3,
@@ -396,7 +370,7 @@
       "sha": "753e9d7f3c511e6e534c494974f64681e3dc4b71",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T19:03:47+00:00",
+      "timestamp": "2026-01-14T19:03:47Z",
       "message": "[skip ci] Move reboot handling to Ansible playbook with verification",
       "stats": {
         "additions": 42,
@@ -409,7 +383,7 @@
       "sha": "abc03b1c7c1276c5d865f063e34a373edbbf43b1",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T18:54:33+00:00",
+      "timestamp": "2026-01-14T18:54:33Z",
       "message": "Fix btrfs device detection and Docker Ubuntu codename detection",
       "stats": {
         "additions": 3,
@@ -422,7 +396,7 @@
       "sha": "d3cf7a0968b6ebf70a0ebf03b5f5b7fe8ed7a27a",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T18:42:02+00:00",
+      "timestamp": "2026-01-14T18:42:02Z",
       "message": "[skip ci] Refactor btrfs device detection and handling in bare metal provisioning playbook",
       "stats": {
         "additions": 18,
@@ -435,7 +409,7 @@
       "sha": "79d440d90176b2c3296c0dd3b5f514b8c0fe274e",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T18:31:35+00:00",
+      "timestamp": "2026-01-14T18:31:35Z",
       "message": "Fix condition to skip already provisioned hosts in bare metal provisioning playbook",
       "stats": {
         "additions": 1,
@@ -448,7 +422,7 @@
       "sha": "00188bdb0ef9744916986d5bd55ff03bc8f15359",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T16:38:29+00:00",
+      "timestamp": "2026-01-14T16:38:29Z",
       "message": "Add support for dynamic Ubuntu codename detection in Docker setup playbook",
       "stats": {
         "additions": 18,
@@ -461,7 +435,7 @@
       "sha": "4c12495b061249b9ea41f249fbfc60560e9f6201",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T16:35:32+00:00",
+      "timestamp": "2026-01-14T16:35:32Z",
       "message": "Auto-detect drive for provisioning and update display message",
       "stats": {
         "additions": 10,
@@ -474,7 +448,7 @@
       "sha": "e2746797350fdf072dad4c9df39df4ea761dda56",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T16:24:43+00:00",
+      "timestamp": "2026-01-14T16:24:43Z",
       "message": "Refactor hosts.yml to consolidate airflow-1 configuration; remove duplicate entries. Remove installa",
       "stats": {
         "additions": 4,
@@ -487,7 +461,7 @@
       "sha": "5c98ed69a8c5e739872381419ab215bd43b2ae1e",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T16:18:40+00:00",
+      "timestamp": "2026-01-14T16:18:40Z",
       "message": "Enhance bare metal provisioning to support btrfs RAID 0 setup; add drive checks and display detailed",
       "stats": {
         "additions": 64,
@@ -500,7 +474,7 @@
       "sha": "b054d0e530ac432895813cef468c65a4ef92e256",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T15:37:15+00:00",
+      "timestamp": "2026-01-14T15:37:15Z",
       "message": "Add provisioning workflow and playbook for new bare metal servers; update inventory with new host",
       "stats": {
         "additions": 386,
@@ -513,7 +487,7 @@
       "sha": "7a9cbc5f2fc28c8a8a6ed050a9a1fc1993a94866",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T15:09:46+00:00",
+      "timestamp": "2026-01-14T15:09:46Z",
       "message": "Remove post-installation reboot and drive configuration instructions from init script; update README",
       "stats": {
         "additions": 1,
@@ -526,7 +500,7 @@
       "sha": "cdf62297d8835f42b6fc1800aaa3499c98be198e",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T14:58:40+00:00",
+      "timestamp": "2026-01-14T14:58:40Z",
       "message": "Update README to clarify installation script parameters and remove post-installation drive configura",
       "stats": {
         "additions": 13,
@@ -539,7 +513,7 @@
       "sha": "d9dde6eae939fce5a348e14a1a3fd1554d998abc",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T14:56:05+00:00",
+      "timestamp": "2026-01-14T14:56:05Z",
       "message": "Refactor installation script to simplify drive handling and update README for one-liner install",
       "stats": {
         "additions": 11,
@@ -552,7 +526,7 @@
       "sha": "d2d71f1ff40da740283ef22005b0b4a441e1fedc",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T14:31:11+00:00",
+      "timestamp": "2026-01-14T14:31:11Z",
       "message": "Update installation script and README for post-installation drive configuration",
       "stats": {
         "additions": 46,
@@ -565,7 +539,7 @@
       "sha": "cb90e9655d18c61107c1745603cee29aef8a79cc",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T14:19:43+00:00",
+      "timestamp": "2026-01-14T14:19:43Z",
       "message": "Comment out reboot command in installation script",
       "stats": {
         "additions": 1,
@@ -578,7 +552,7 @@
       "sha": "b694ec72956ce575e373142ef155f78253dfad14",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T14:13:16+00:00",
+      "timestamp": "2026-01-14T14:13:16Z",
       "message": "Enhance drive handling in installation script to support multiple drive types and improve error mess",
       "stats": {
         "additions": 56,
@@ -591,7 +565,7 @@
       "sha": "3cf982cbb5bddb14b115bc4f4419f20b29a2e4b1",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T14:02:44+00:00",
+      "timestamp": "2026-01-14T14:02:44Z",
       "message": "Update installimage command parameters for partitioning scheme",
       "stats": {
         "additions": 1,
@@ -604,7 +578,7 @@
       "sha": "0139a7a43ddf8c8880d4cd756c6b2772e16068b2",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T13:52:46+00:00",
+      "timestamp": "2026-01-14T13:52:46Z",
       "message": "Update installimage command parameters for filesystem configuration",
       "stats": {
         "additions": 1,
@@ -617,7 +591,7 @@
       "sha": "7ba5e4fcbeff3ec5bf0f8a3a8d91a79f348b0ed1",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T13:31:26+00:00",
+      "timestamp": "2026-01-14T13:31:26Z",
       "message": "Fix installimage command path and update README example hostname",
       "stats": {
         "additions": 7,
@@ -630,7 +604,7 @@
       "sha": "d586b700c9b32ea13984d9d2ab34b91fa0901873",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T12:21:45+00:00",
+      "timestamp": "2026-01-14T12:21:45Z",
       "message": "Fix syntax in one-liner install commands in README",
       "stats": {
         "additions": 2,
@@ -643,7 +617,7 @@
       "sha": "f3bf6cb27a6c6cecd471807736d93385051209bc",
       "author": "kevin-antony-yral",
       "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-14T00:39:20+00:00",
+      "timestamp": "2026-01-14T00:39:20Z",
       "message": "ForeignKey Exception handle: Messages Sent to Deleted Conversation ID After Recreate (#107)",
       "stats": {
         "additions": 69,
@@ -655,5 +629,5 @@
       ]
     }
   ],
-  "commit_count": 50
+  "commit_count": 48
 }

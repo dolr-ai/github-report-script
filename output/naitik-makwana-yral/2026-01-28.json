@@ -1,15 +1,13 @@
 {
   "date": "2026-01-28",
   "username": "naitik-makwana-yral",
-  "additions": 57,
-  "deletions": 554,
-  "total_loc": 611,
-  "commit_count": 4,
+  "additions": 15,
+  "deletions": 240,
+  "total_loc": 255,
+  "commit_count": 2,
   "repositories": [
-    "dolr-ai/hot-or-not-web-leptos-ssr",
-    "dolr-ai/off-chain-agent",
     "dolr-ai/yral-auth-v2"
   ],
-  "repo_count": 3,
-  "processed_at": "2026-02-03T17:46:05.615721Z"
+  "repo_count": 1,
+  "processed_at": "2026-02-03T18:37:16.199634Z"
 }

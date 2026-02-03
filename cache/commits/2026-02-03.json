@@ -1,12 +1,12 @@
 {
   "date": "2026-02-03",
-  "cached_at": "2026-02-03T17:46:00.826992Z",
+  "cached_at": "2026-02-03T18:37:15.661233Z",
   "commits": [
     {
       "sha": "77e0188467e138a963a3fc8fc8e55d225fcdf9ea",
       "author": "sarvesh-sharma-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-03T13:34:35+00:00",
+      "timestamp": "2026-02-03T13:34:35Z",
       "message": "Merge pull request #825 from dolr-ai/feature/hot-or-not-be-logic",
       "stats": {
         "additions": 969,
@@ -21,7 +21,7 @@
       "sha": "ea9db55c4566fb9ade91d49c3f3e437d7761d089",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-03T05:56:44+00:00",
+      "timestamp": "2026-02-03T05:56:44Z",
       "message": "Changes allowed file types to jpg and png in chat conversations (#834)",
       "stats": {
         "additions": 2,
@@ -31,43 +31,82 @@
       "branches": []
     },
     {
-      "sha": "d01fa8e77d731173575432d0da0da9d96c591a04",
-      "author": "ravi-sawlani-yral",
+      "sha": "3292721576ef12917e5c658c175ce0caf54495ea",
+      "author": "gravityvi",
       "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-02-03T17:37:54+00:00",
-      "message": "fix: redirect uri for multiple deployments (#43)",
+      "timestamp": "2026-02-03T17:25:26Z",
+      "message": "fix base axum routes to extract server url",
       "stats": {
-        "additions": 117,
-        "deletions": 46,
-        "total": 163
+        "additions": 16,
+        "deletions": 32,
+        "total": 48
       },
       "branches": [
-        "main"
+        "fix/redirect-uri-for-multiple-deployments"
       ]
     },
     {
-      "sha": "fb4a31c1a605c4504fc9f459f9f318387bd00b09",
-      "author": "ravi-sawlani-yral",
+      "sha": "6ec58bb3d9e7cc01af106e72088abbe7db5363d1",
+      "author": "gravityvi",
       "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-02-03T17:08:30+00:00",
-      "message": "Revert \"fix: redirect uri for multiple deployments (#41)\" (#42)",
+      "timestamp": "2026-02-03T14:32:47Z",
+      "message": "fix lint",
       "stats": {
-        "additions": 46,
-        "deletions": 133,
-        "total": 179
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
       },
       "branches": []
     },
     {
-      "sha": "412d4d42a9510e7a8046326756934eaac860c89e",
+      "sha": "b48087322135906fe5154673b96dcb209530bfe8",
       "author": "gravityvi",
       "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-02-03T16:18:19+00:00",
-      "message": "fix: redirect uri for multiple deployments (#41)",
+      "timestamp": "2026-02-03T13:42:16Z",
+      "message": "fix redirect uri in exhchange code",
       "stats": {
-        "additions": 133,
-        "deletions": 46,
-        "total": 179
+        "additions": 9,
+        "deletions": 2,
+        "total": 11
+      },
+      "branches": []
+    },
+    {
+      "sha": "e0f9db2fa8f25721f5aa6dfc9a0e97576e8c9a10",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-02-03T10:46:36Z",
+      "message": "fix lint",
+      "stats": {
+        "additions": 96,
+        "deletions": 35,
+        "total": 131
+      },
+      "branches": []
+    },
+    {
+      "sha": "4cc184ebff189634c746267ef99bd575b1f29ef6",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-02-03T09:55:14Z",
+      "message": "remove requirement of SERVER_URL from environment",
+      "stats": {
+        "additions": 0,
+        "deletions": 4,
+        "total": 4
+      },
+      "branches": []
+    },
+    {
+      "sha": "01418b9b429db7b2994532a3a56d390a305de76d",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-02-03T09:54:33Z",
+      "message": "set oauth providers redirect uri using host headers",
+      "stats": {
+        "additions": 46,
+        "deletions": 23,
+        "total": 69
       },
       "branches": []
     },
@@ -75,7 +114,7 @@
       "sha": "08b23fdfe327d6920f80e2b360fc5b4251c0e15c",
       "author": "gravityvi",
       "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-02-03T05:33:30+00:00",
+      "timestamp": "2026-02-03T05:33:30Z",
       "message": "feat: deploy to dolr ai (#40)",
       "stats": {
         "additions": 38,
@@ -88,7 +127,7 @@
       "sha": "d5e1ff69b805b8d61ea186d77053e105a016504f",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-02-03T14:20:18+00:00",
+      "timestamp": "2026-02-03T14:20:18Z",
       "message": "Update vault file paths in workflows to use inventory directory for SSH key extraction",
       "stats": {
         "additions": 6,
@@ -103,7 +142,7 @@
       "sha": "c68dcfc2a92ec2e08767a9aad547e00ac8ebd871",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-02-03T07:26:55+00:00",
+      "timestamp": "2026-02-03T07:26:55Z",
       "message": "Refactor SSH key handling in rescue mode: update authorized keys and improve fingerprint extraction ",
       "stats": {
         "additions": 27,
@@ -116,7 +155,7 @@
       "sha": "5e5610b43112e138d850e36128324f915b9e9cda",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-02-03T06:43:06+00:00",
+      "timestamp": "2026-02-03T06:43:06Z",
       "message": "Refactor rescue mode activation: streamline SSH key fingerprint extraction and improve debug output",
       "stats": {
         "additions": 14,
@@ -129,7 +168,7 @@
       "sha": "00de92a15b54ffe49aca0a35e56d58f590ea7504",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-02-03T06:14:01+00:00",
+      "timestamp": "2026-02-03T06:14:01Z",
       "message": "Add supabase-staging-1 host configuration and associated variables",
       "stats": {
         "additions": 17,
@@ -142,7 +181,7 @@
       "sha": "299c2bf906f1f171c8922e544bf28980473c7021",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-02-03T05:00:00+00:00",
+      "timestamp": "2026-02-03T05:00:00Z",
       "message": "Refactor SSH access playbook: remove vault password file option and reorganize variable files",
       "stats": {
         "additions": 0,
@@ -155,7 +194,7 @@
       "sha": "3b009223a65e09421004fc1ee2893bd804ed6695",
       "author": "saikatdas0790",
       "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-02-03T04:48:21+00:00",
+      "timestamp": "2026-02-03T04:48:21Z",
       "message": "Add vault password file option to SSH access playbook command",
       "stats": {
         "additions": 1,
@@ -168,7 +207,7 @@
       "sha": "c382b74edbc9a5f303e601130043b992de489642",
       "author": "joel-medicala-yral",
       "repository": "dolr-ai/self-hosted-video-models",
-      "timestamp": "2026-02-03T16:36:09+00:00",
+      "timestamp": "2026-02-03T16:36:09Z",
       "message": "feat: add testing workflows for comfy ui",
       "stats": {
         "additions": 12750,
@@ -180,25 +219,38 @@
       ]
     },
     {
-      "sha": "feefc4c8745580414f048d395bc0fe4fa9b96737",
+      "sha": "7a6decdb254bc344f74263108739c34078f39ef3",
       "author": "saikatdas0790",
       "repository": "dolr-ai/github-report-script",
-      "timestamp": "2026-02-03T16:30:38+00:00",
-      "message": "fix: Pass environment variables correctly to devcontainer",
+      "timestamp": "2026-02-03T17:48:51Z",
+      "message": "Enhance cache management and GitHub fetching functionality",
       "stats": {
-        "additions": 3,
-        "deletions": 3,
-        "total": 6
+        "additions": 1824,
+        "deletions": 844,
+        "total": 2668
       },
       "branches": [
         "main"
       ]
     },
     {
+      "sha": "feefc4c8745580414f048d395bc0fe4fa9b96737",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-03T16:30:38Z",
+      "message": "fix: Pass environment variables correctly to devcontainer",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": []
+    },
+    {
       "sha": "09d2242b3c04be6ac859413a2237491abb9be3b8",
       "author": "saikatdas0790",
       "repository": "dolr-ai/github-report-script",
-      "timestamp": "2026-02-03T16:11:43+00:00",
+      "timestamp": "2026-02-03T16:11:43Z",
       "message": "fix: Move env block to correct level in workflow file",
       "stats": {
         "additions": 3,
@@ -211,7 +263,7 @@
       "sha": "c5f0b1c121f546d8de313c473663b90af89fc07c",
       "author": "saikatdas0790",
       "repository": "dolr-ai/github-report-script",
-      "timestamp": "2026-02-03T16:08:10+00:00",
+      "timestamp": "2026-02-03T16:08:10Z",
       "message": "chore: Update devcontainer features and remove unnecessary line from nightly report workflow",
       "stats": {
         "additions": 2,
@@ -224,7 +276,7 @@
       "sha": "d3ca4b1c7f14f4fa949e3c71866f5cdcd388bd9c",
       "author": "saikatdas0790",
       "repository": "dolr-ai/github-report-script",
-      "timestamp": "2026-02-03T16:01:36+00:00",
+      "timestamp": "2026-02-03T16:01:36Z",
       "message": "chore: Update nightly report workflow to trigger on push to main branch",
       "stats": {
         "additions": 3,
@@ -237,7 +289,7 @@
       "sha": "4361bda45a67ad1717fb2e2870f64542689a94f7",
       "author": "saikatdas0790",
       "repository": "dolr-ai/github-report-script",
-      "timestamp": "2026-02-03T16:00:40+00:00",
+      "timestamp": "2026-02-03T16:00:40Z",
       "message": "chore: Remove outdated cached commit data and metadata for dates from January 28 to February 3, 2026",
       "stats": {
         "additions": 0,
@@ -250,7 +302,7 @@
       "sha": "3b5cee0c0b0bb0d96da2eb78d894ea1795dea8af",
       "author": "saikatdas0790",
       "repository": "dolr-ai/github-report-script",
-      "timestamp": "2026-02-03T15:55:35+00:00",
+      "timestamp": "2026-02-03T15:55:35Z",
       "message": "docs: Update README and pytest.ini for test configuration clarity; refactor test imports and add uni",
       "stats": {
         "additions": 42,
@@ -263,7 +315,7 @@
       "sha": "1f09793d06647c1f12d66eb6ff659dac60a073c9",
       "author": "saikatdas0790",
       "repository": "dolr-ai/github-report-script",
-      "timestamp": "2026-02-03T15:25:29+00:00",
+      "timestamp": "2026-02-03T15:25:29Z",
       "message": "Enhance CI/CD setup and testing framework",
       "stats": {
         "additions": 1029,
@@ -276,7 +328,7 @@
       "sha": "0a7ddd9b901de80edb9d14acf333e5a1e69c0399",
       "author": "saikatdas0790",
       "repository": "dolr-ai/github-report-script",
-      "timestamp": "2026-02-03T14:49:51+00:00",
+      "timestamp": "2026-02-03T14:49:51Z",
       "message": "feat: Enhance report generation by creating dated folders and updating chart plotting to use lines a",
       "stats": {
         "additions": 43,
@@ -289,7 +341,7 @@
       "sha": "46ed75b1df4e68abfb89cd4dcc29297a5bd0a0da",
       "author": "saikatdas0790",
       "repository": "dolr-ai/github-report-script",
-      "timestamp": "2026-02-03T14:30:27+00:00",
+      "timestamp": "2026-02-03T14:30:27Z",
       "message": "Refactor main.py: Reorder imports for clarity, add logging, and update .gitignore to include backup ",
       "stats": {
         "additions": 21,
@@ -302,7 +354,7 @@
       "sha": "e8a8f9b596d8e63a6e30f9e25f181a1741a6ca0e",
       "author": "saikatdas0790",
       "repository": "dolr-ai/github-report-script",
-      "timestamp": "2026-02-03T14:22:41+00:00",
+      "timestamp": "2026-02-03T14:22:41Z",
       "message": "Add daily contribution records for Sarvesh Sharma and Shivam Bhavsar from January 5 to January 27, 2",
       "stats": {
         "additions": 7078,
@@ -315,7 +367,7 @@
       "sha": "0a4c903192d38710e81995730a76d04481d63dce",
       "author": "saikatdas0790",
       "repository": "dolr-ai/github-report-script",
-      "timestamp": "2026-02-03T13:47:50+00:00",
+      "timestamp": "2026-02-03T13:47:50Z",
       "message": "Add daily contribution reports for multiple users from January 28 to February 3, 2026",
       "stats": {
         "additions": 2754,
@@ -328,7 +380,7 @@
       "sha": "bdb8f1f95dbd1c5de4fe62432732a561f1aa641f",
       "author": "saikatdas0790",
       "repository": "dolr-ai/github-report-script",
-      "timestamp": "2026-02-03T13:16:24+00:00",
+      "timestamp": "2026-02-03T13:16:24Z",
       "message": "Add daily activity JSON files for multiple users from January 28 to February 3, 2026",
       "stats": {
         "additions": 982,
@@ -341,7 +393,7 @@
       "sha": "48099e3c236616f5d06eab2b21500988271109a4",
       "author": "saikatdas0790",
       "repository": "dolr-ai/github-report-script",
-      "timestamp": "2026-02-03T13:02:05+00:00",
+      "timestamp": "2026-02-03T13:02:05Z",
       "message": "feat: Add Ansible vault configuration for secure variable management",
       "stats": {
         "additions": 13,
@@ -354,7 +406,7 @@
       "sha": "64010d24727b971df46edefa5caeeae1db0eefdd",
       "author": "saikatdas0790",
       "repository": "dolr-ai/github-report-script",
-      "timestamp": "2026-02-03T12:50:18+00:00",
+      "timestamp": "2026-02-03T12:50:18Z",
       "message": "Refactor GitHub Report Script: Remove quickstart.sh and report.py, enhance config.py with enums and ",
       "stats": {
         "additions": 1203,
@@ -367,7 +419,7 @@
       "sha": "ba6391c7a8afe94b8a54ebb9f4beae14501a2fa1",
       "author": "saikatdas0790",
       "repository": "dolr-ai/github-report-script",
-      "timestamp": "2026-02-03T12:08:10+00:00",
+      "timestamp": "2026-02-03T12:08:10Z",
       "message": "feat: Add GitHub Report Script with caching, data processing, and visualization",
       "stats": {
         "additions": 1901,
@@ -380,7 +432,7 @@
       "sha": "4cdc66935d1cbcf7e902082df36401c87acfcb86",
       "author": "saikatdas0790",
       "repository": "dolr-ai/github-report-script",
-      "timestamp": "2026-02-03T07:42:59+00:00",
+      "timestamp": "2026-02-03T07:42:59Z",
       "message": "Add initial devcontainer configuration for Python 3",
       "stats": {
         "additions": 22,
@@ -390,5 +442,5 @@
       "branches": []
     }
   ],
-  "commit_count": 29
+  "commit_count": 33
 }

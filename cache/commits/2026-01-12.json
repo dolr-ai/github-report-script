@@ -1,12 +1,12 @@
 {
   "date": "2026-01-12",
-  "cached_at": "2026-02-03T17:23:45.017425Z",
+  "cached_at": "2026-02-03T18:35:59.705918Z",
   "commits": [
     {
       "sha": "087622ace283f6a0394593de666bbb5e0056fc06",
       "author": "samarth-paboowal-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-12T14:09:53+00:00",
+      "timestamp": "2026-01-12T14:09:53Z",
       "message": "build: fixes tap to recharge api (#773)",
       "stats": {
         "additions": 4,
@@ -19,7 +19,7 @@
       "sha": "40ae0dc47f20b13c4f4795aa91cb6c7f69b3d994",
       "author": "samarth-paboowal-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-12T11:40:17+00:00",
+      "timestamp": "2026-01-12T11:40:17Z",
       "message": "chore: increments android version",
       "stats": {
         "additions": 2,
@@ -32,7 +32,7 @@
       "sha": "f1a61eff4630556c753afce60859fbcf4a451a87",
       "author": "samarth-paboowal-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-12T08:16:37+00:00",
+      "timestamp": "2026-01-12T08:16:37Z",
       "message": "Migrates FE to new domains & migration of events to bulk endpoint (#755)",
       "stats": {
         "additions": 24,
@@ -45,7 +45,7 @@
       "sha": "19b3993f51a2d5b67f804ffb94099de39159c07c",
       "author": "ravi-sawlani-yral",
       "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-01-12T08:16:56+00:00",
+      "timestamp": "2026-01-12T08:17:02Z",
       "message": "use secure csrf and pcke cookies",
       "stats": {
         "additions": 2,
@@ -58,7 +58,7 @@
       "sha": "f512e5d3c2438f15a70232de198eb4a2e319b88b",
       "author": "kevin-antony-yral",
       "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-12T18:16:42+00:00",
+      "timestamp": "2026-01-12T18:16:42Z",
       "message": "Merge pull request #98 from dolr-ai/prompt_changes_astro_dating_sexed",
       "stats": {
         "additions": 3,
@@ -71,7 +71,7 @@
       "sha": "9d478209346825d212bebac6927b6cae70917586",
       "author": "kevin-antony-yral",
       "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-12T15:26:16+00:00",
+      "timestamp": "2026-01-12T15:26:16Z",
       "message": "fix: race condition in conversation creation, move debug scripts to adhoc (#91)",
       "stats": {
         "additions": 27,
@@ -84,7 +84,7 @@
       "sha": "dc5207f2b2e787bf82c4a4700e847807e05273d3",
       "author": "kevin-antony-yral",
       "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-12T13:06:28+00:00",
+      "timestamp": "2026-01-12T13:06:28Z",
       "message": "Merge branch 'main' into prod_err",
       "stats": {
         "additions": 0,
@@ -99,7 +99,7 @@
       "sha": "3191134f2f41368d167e384898a52563f2958c55",
       "author": "kevin-antony-yral",
       "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-12T11:29:58+00:00",
+      "timestamp": "2026-01-12T11:29:58Z",
       "message": "Merge pull request #90 from dolr-ai/prod_err",
       "stats": {
         "additions": 17,
@@ -112,7 +112,7 @@
       "sha": "ba06f405d3d45721d35d238cb5eae994194bb685",
       "author": "kevin-antony-yral",
       "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-12T04:09:45+00:00",
+      "timestamp": "2026-01-12T04:09:45Z",
       "message": "Merge pull request #86 from dolr-ai/sentry_fix",
       "stats": {
         "additions": 55,
@@ -125,7 +125,7 @@
       "sha": "e8ad413febc09913288788d2f440ba4198e5ec63",
       "author": "kevin-antony-yral",
       "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-12T01:52:23+00:00",
+      "timestamp": "2026-01-12T01:52:23Z",
       "message": "Merge pull request #83 from dolr-ai/rm_adhoc",
       "stats": {
         "additions": 0,
@@ -133,7 +133,59 @@
         "total": 892
       },
       "branches": []
+    },
+    {
+      "sha": "50274fd4457d333ccab2214983c185e0632acd40",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-12T15:35:02Z",
+      "message": "fix: remove auth for sentinel since it is already tls secured",
+      "stats": {
+        "additions": 2,
+        "deletions": 8,
+        "total": 10
+      },
+      "branches": []
+    },
+    {
+      "sha": "103e0e9ffe3ee862b2a2714e8a2c951b6033f13d",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-12T14:05:22Z",
+      "message": "fix : mount new updated certificates (temp fix)",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": []
+    },
+    {
+      "sha": "962b5f6d22803fa2b425325b85630b1266fd11b8",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-12T13:43:51Z",
+      "message": "fix: generate certificate scripts for 3 nodes",
+      "stats": {
+        "additions": 5,
+        "deletions": 4,
+        "total": 9
+      },
+      "branches": []
+    },
+    {
+      "sha": "89eccb1a0c0a68ab36baec2e5d43686cc8612626",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-12T06:33:09Z",
+      "message": "added auth for sentinel and sentinel fix for cluster-1",
+      "stats": {
+        "additions": 90,
+        "deletions": 13,
+        "total": 103
+      },
+      "branches": []
     }
   ],
-  "commit_count": 10
+  "commit_count": 14
 }

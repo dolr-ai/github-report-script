@@ -1,64 +1,12 @@
 {
   "date": "2026-01-27",
-  "cached_at": "2026-02-03T17:39:54.889219Z",
+  "cached_at": "2026-02-03T18:36:45.739445Z",
   "commits": [
-    {
-      "sha": "8b4964962ad2bc35434f64c7b935b0a192664b65",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
-      "timestamp": "2026-01-27T12:50:09+00:00",
-      "message": "fix: remove post status filtering from profiles (#1163)",
-      "stats": {
-        "additions": 24,
-        "deletions": 42,
-        "total": 66
-      },
-      "branches": []
-    },
-    {
-      "sha": "70ae1fbf06391953c71763c82cf24bc8863e4725",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
-      "timestamp": "2026-01-27T03:43:52+00:00",
-      "message": "dual writes to dragonfly redis (#1158)",
-      "stats": {
-        "additions": 793,
-        "deletions": 45,
-        "total": 838
-      },
-      "branches": []
-    },
-    {
-      "sha": "9bb719187be36f0763221a1809904ccc04b64f94",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-27T07:25:42+00:00",
-      "message": "fix: standardize field names and improve serialization for video payloads (#375)",
-      "stats": {
-        "additions": 21,
-        "deletions": 42,
-        "total": 63
-      },
-      "branches": []
-    },
-    {
-      "sha": "316ce436f82c0d312758913305e9b3350a433fe3",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-27T03:18:05+00:00",
-      "message": "refactor: remove metrics integration and related code (#374)",
-      "stats": {
-        "additions": 0,
-        "deletions": 28,
-        "total": 28
-      },
-      "branches": []
-    },
     {
       "sha": "f954e3d254f262ad7f4882eb6d14831c43fb4fc6",
       "author": "naitik-makwana-yral",
       "repository": "dolr-ai/yral-metadata",
-      "timestamp": "2026-01-27T22:26:46+00:00",
+      "timestamp": "2026-01-27T22:26:46Z",
       "message": "reads from dragonfly too, removed fly redis usage (#70)",
       "stats": {
         "additions": 235,
@@ -71,7 +19,7 @@
       "sha": "ecf2aa5888a16e98cce02ce78ae306dae0119821",
       "author": "mayank-k-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-27T17:27:58+00:00",
+      "timestamp": "2026-01-27T17:27:58Z",
       "message": "Merge pull request #805 from dolr-ai/optim",
       "stats": {
         "additions": 242,
@@ -84,7 +32,7 @@
       "sha": "ede67bf7be8a40047c846b2e6165ad70362d5303",
       "author": "mayank-k-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-27T17:17:22+00:00",
+      "timestamp": "2026-01-27T17:19:02Z",
       "message": "comment out ShortformCacheProvider release in AndroidPlaybackCoordinator",
       "stats": {
         "additions": 1,
@@ -97,7 +45,7 @@
       "sha": "96559a30ed30b39cdb45246471395d01c6e7856a",
       "author": "mayank-k-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-27T17:06:23+00:00",
+      "timestamp": "2026-01-27T17:19:02Z",
       "message": "Passes surfaceType to VideoFeed and disables offscreen compositing strategy in SwipeableCardStackIte",
       "stats": {
         "additions": 3,
@@ -110,7 +58,7 @@
       "sha": "32326aaacc2eef52104e385853377f030762bdea",
       "author": "mayank-k-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-27T16:25:10+00:00",
+      "timestamp": "2026-01-27T16:25:10Z",
       "message": "update IosVideoSurface to use transparent backgrounds and clip to bounds",
       "stats": {
         "additions": 7,
@@ -123,7 +71,7 @@
       "sha": "1f77104143afbe39f0b8fa1e0b762c0ed14ac898",
       "author": "mayank-k-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-27T16:23:07+00:00",
+      "timestamp": "2026-01-27T16:23:36Z",
       "message": "update suppressShutter logic in ReelSwipeableCardStack",
       "stats": {
         "additions": 2,
@@ -136,7 +84,7 @@
       "sha": "635c5b943be0de06f010d12de0edde777f490055",
       "author": "mayank-k-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-21T21:14:01+00:00",
+      "timestamp": "2026-01-27T15:42:22Z",
       "message": "linting",
       "stats": {
         "additions": 4,
@@ -149,7 +97,7 @@
       "sha": "9d9dd09b1a5a327905ccd5a41770e2ace4c8d576",
       "author": "mayank-k-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-21T01:03:51+00:00",
+      "timestamp": "2026-01-27T15:42:22Z",
       "message": "button click dismiss card animation",
       "stats": {
         "additions": 67,
@@ -162,7 +110,7 @@
       "sha": "43d2d5bed9b1d290474590d2e77371fea16548e5",
       "author": "mayank-k-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-21T00:50:31+00:00",
+      "timestamp": "2026-01-27T15:42:22Z",
       "message": "fix flicker",
       "stats": {
         "additions": 85,
@@ -175,7 +123,7 @@
       "sha": "e9aeaefbed7b52521a124ad29e1f7a4f2c4cf9d5",
       "author": "mayank-k-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-21T00:03:43+00:00",
+      "timestamp": "2026-01-27T15:42:22Z",
       "message": "optimise video playback in hot or not game",
       "stats": {
         "additions": 80,
@@ -188,7 +136,7 @@
       "sha": "0e5573302637540f6e2c161bbddd2f62be21a4fc",
       "author": "mayank-k-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-27T15:41:28+00:00",
+      "timestamp": "2026-01-27T15:41:28Z",
       "message": "optimize video player performance and compositing for iOS (#807)",
       "stats": {
         "additions": 13,
@@ -198,23 +146,10 @@
       "branches": []
     },
     {
-      "sha": "85c41adbbb818a669fb63a0afb1ce2a2422c116d",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-common",
-      "timestamp": "2026-01-27T12:39:35+00:00",
-      "message": "Revert \"chore: filter out banned posts\" (#151)",
-      "stats": {
-        "additions": 3,
-        "deletions": 31,
-        "total": 34
-      },
-      "branches": []
-    },
-    {
       "sha": "12fd90090f069d11bab498f0a1a9788cbd4e64a9",
       "author": "naitik-makwana-yral",
       "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-01-27T09:42:43+00:00",
+      "timestamp": "2026-01-27T09:42:43Z",
       "message": "fix: added whatsapp api key to baremetal deployment (#36)",
       "stats": {
         "additions": 2,
@@ -227,7 +162,7 @@
       "sha": "12a54538597a24b6093cc22ecd726a9c7c308d3b",
       "author": "naitik-makwana-yral",
       "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-01-27T08:42:11+00:00",
+      "timestamp": "2026-01-27T08:42:11Z",
       "message": "dual write to dragonfly redis (#34)",
       "stats": {
         "additions": 727,
@@ -240,7 +175,7 @@
       "sha": "70f8dab0d4dbed53103d8a1f4b36b52f42f7a4ab",
       "author": "saikatdas0790",
       "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
-      "timestamp": "2026-01-27T05:14:07+00:00",
+      "timestamp": "2026-01-27T05:14:07Z",
       "message": "Update Ansible configurations and playbooks for improved structure and linting",
       "stats": {
         "additions": 64,
@@ -253,7 +188,7 @@
       "sha": "d569d727ed5ed6559bc7c13a8df9e12e293d186f",
       "author": "naitik-makwana-yral",
       "repository": "dolr-ai/hashicorp-vault-service",
-      "timestamp": "2026-01-27T12:04:13+00:00",
+      "timestamp": "2026-01-27T12:04:13Z",
       "message": "Initial commit",
       "stats": {
         "additions": 1,
@@ -265,5 +200,5 @@
       ]
     }
   ],
-  "commit_count": 20
+  "commit_count": 15
 }

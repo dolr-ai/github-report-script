@@ -1,12 +1,12 @@
 {
   "date": "2026-01-08",
-  "cached_at": "2026-02-03T17:23:42.477107Z",
+  "cached_at": "2026-02-03T18:35:59.919800Z",
   "commits": [
     {
       "sha": "a9006f32b4d5340bdcffda2cd89b619b86c2271c",
       "author": "sarvesh-sharma-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-08T08:10:01+00:00",
+      "timestamp": "2026-01-08T08:10:01Z",
       "message": "chore: Increments android app version",
       "stats": {
         "additions": 2,
@@ -19,7 +19,7 @@
       "sha": "cefdc7482d36c743f706544692d343b7b3f6fefc",
       "author": "sarvesh-sharma-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-08T08:09:02+00:00",
+      "timestamp": "2026-01-08T08:09:02Z",
       "message": "Feature/tournaments bottom sheet (#765)",
       "stats": {
         "additions": 527,
@@ -32,7 +32,7 @@
       "sha": "71d89a3160041cc1fcf13d6d66985b10f1c4f92c",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-08T05:45:05+00:00",
+      "timestamp": "2026-01-08T05:45:05Z",
       "message": "Adds custom events in branch (#763)",
       "stats": {
         "additions": 268,
@@ -45,7 +45,7 @@
       "sha": "700530efca31de75f9725054dbe0d09fc8d9c292",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-08T05:25:23+00:00",
+      "timestamp": "2026-01-08T05:25:23Z",
       "message": "Implements mandatory login screen (#753)",
       "stats": {
         "additions": 492,
@@ -58,7 +58,7 @@
       "sha": "fc83b49eb72a647446d266c9fa95c64c0f504fe1",
       "author": "kevin-antony-yral",
       "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-08T21:15:33+00:00",
+      "timestamp": "2026-01-08T21:15:33Z",
       "message": "Syncing Staging with  main: Metabase to Prod (#60)",
       "stats": {
         "additions": 775,
@@ -71,7 +71,7 @@
       "sha": "0c50b00a38f4c8dd9a276fc2dd610a2c6a4c0398",
       "author": "kevin-antony-yral",
       "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-08T11:24:04+00:00",
+      "timestamp": "2026-01-08T11:24:04Z",
       "message": "Syncing Staging with Prod to Publish Dating and SedEd Coach (#55)",
       "stats": {
         "additions": 47,
@@ -84,7 +84,7 @@
       "sha": "48ed4b08aaf07d69d1ff34089a33fb0a2ca88022",
       "author": "kevin-antony-yral",
       "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-08T04:39:09+00:00",
+      "timestamp": "2026-01-08T04:39:09Z",
       "message": "Merge pull request #53 from dolr-ai/staging",
       "stats": {
         "additions": 79,
@@ -97,7 +97,7 @@
       "sha": "5660ca8d5a480f7f3afeaf7247c5a029278a5bb1",
       "author": "kevin-antony-yral",
       "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-08T04:31:11+00:00",
+      "timestamp": "2026-01-08T04:31:11Z",
       "message": "Merge pull request #52 from dolr-ai/delete_bug",
       "stats": {
         "additions": 79,
@@ -105,7 +105,111 @@
         "total": 88
       },
       "branches": []
+    },
+    {
+      "sha": "aafe6b6ae6a0895b4307cf0afaf9450156beef82",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-08T20:45:43Z",
+      "message": "Merge branch 'main' into staging",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": []
+    },
+    {
+      "sha": "7a25fdcc38cd1cfe042d30386cf1a29e18873981",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-08T20:37:34Z",
+      "message": "Merge pull request #59 from dolr-ai/metabase_prod",
+      "stats": {
+        "additions": 93,
+        "deletions": 18,
+        "total": 111
+      },
+      "branches": []
+    },
+    {
+      "sha": "6087352246e101d656306dd0e37d288e409b0c59",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-08T19:56:51Z",
+      "message": "Merge pull request #58 from dolr-ai/metabase_bf2",
+      "stats": {
+        "additions": 10,
+        "deletions": 91,
+        "total": 101
+      },
+      "branches": []
+    },
+    {
+      "sha": "603bf5a5fd4da47a9421b47dd03e2b438cf8a452",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-08T19:39:03Z",
+      "message": "Merge pull request #57 from dolr-ai/metabase_bf2",
+      "stats": {
+        "additions": 4,
+        "deletions": 32,
+        "total": 36
+      },
+      "branches": []
+    },
+    {
+      "sha": "f9e184fad807543cfbfa3bd6c4c6f5bc4232aa11",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-08T18:27:44Z",
+      "message": "Merge pull request #56 from dolr-ai/metabase_hosting",
+      "stats": {
+        "additions": 29,
+        "deletions": 0,
+        "total": 29
+      },
+      "branches": []
+    },
+    {
+      "sha": "5febcc5dd65051b6fe5426c6db1bf034381aa2f7",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-08T17:53:16Z",
+      "message": "Metabase (#44)",
+      "stats": {
+        "additions": 732,
+        "deletions": 325,
+        "total": 1057
+      },
+      "branches": []
+    },
+    {
+      "sha": "3a7284211ef480ea711f35a7eaabc1886195f8a7",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-08T05:03:50Z",
+      "message": "Merge pull request #54 from dolr-ai/main",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": []
+    },
+    {
+      "sha": "1845c746c631b0a2bf1bc2f8471903de8699e3de",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-08T07:02:39Z",
+      "message": "[skip ci] change in migration script and test script",
+      "stats": {
+        "additions": 353,
+        "deletions": 357,
+        "total": 710
+      },
+      "branches": []
     }
   ],
-  "commit_count": 8
+  "commit_count": 16
 }
