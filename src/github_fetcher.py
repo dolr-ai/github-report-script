@@ -110,14 +110,14 @@ class GitHubFetcher:
             logger.warning(f"Could not check rate limit: {e}. Proceeding...")
 
     def _graphql_request(self, query: str, variables: Optional[Dict] = None,
-                         max_retries: int = 5, base_delay: int = 1) -> Optional[Dict]:
+                         max_retries: int = 10, base_delay: int = 5) -> Optional[Dict]:
         """Make a GraphQL API request to GitHub with exponential backoff on rate limits
 
         Args:
             query: GraphQL query string
             variables: Query variables
-            max_retries: Maximum number of retry attempts for rate limits
-            base_delay: Base delay in seconds (will be doubled each retry)
+            max_retries: Maximum number of retry attempts for rate limits (default: 10)
+            base_delay: Base delay in seconds (will be doubled each retry, default: 5s)
 
         Returns:
             JSON response or None on error
@@ -170,14 +170,14 @@ class GitHubFetcher:
         return None
 
     def _api_request(self, endpoint: str, params: Optional[Dict] = None,
-                     max_retries: int = 5, base_delay: int = 1) -> Optional[List]:
+                     max_retries: int = 10, base_delay: int = 5) -> Optional[List]:
         """Make a direct REST API request to GitHub with exponential backoff on rate limits
 
         Args:
             endpoint: API endpoint (e.g., '/repos/owner/repo/commits')
             params: Query parameters
-            max_retries: Maximum number of retry attempts for rate limits
-            base_delay: Base delay in seconds (will be doubled each retry)
+            max_retries: Maximum number of retry attempts for rate limits (default: 10)
+            base_delay: Base delay in seconds (will be doubled each retry, default: 5s)
 
         Returns:
             JSON response (list or dict) or None on error
@@ -409,7 +409,8 @@ class GitHubFetcher:
                 if not repo_data or 'organization' not in repo_data:
                     logger.error(
                         f"Failed to fetch repository list from GraphQL API")
-                    break
+                    # Return None to indicate failure - don't overwrite cache with empty data
+                    return None
 
                 repos = repo_data['organization']['repositories']
                 repo_page_info = repos['pageInfo']
@@ -653,16 +654,22 @@ class GitHubFetcher:
                     try:
                         data = future.result()
 
-                        # Cache the data
-                        self.cache_manager.write_cache(date_str, data)
-                        results[date_str] = data
-
-                        commit_count = len(data.get('commits', []))
-                        pbar.set_postfix_str(
-                            f"{date_str}: {commit_count} commits")
+                        # Only cache and store valid data (None indicates rate limit failure)
+                        if data is not None:
+                            self.cache_manager.write_cache(date_str, data)
+                            results[date_str] = data
+                            commit_count = len(data.get('commits', []))
+                            pbar.set_postfix_str(
+                                f"{date_str}: {commit_count} commits")
+                        else:
+                            logger.warning(
+                                f"Skipping cache update for {date_str} - no valid data returned (likely rate limited)")
+                            pbar.set_postfix_str(
+                                f"{date_str}: FAILED")
 
                     except Exception as e:
-                        print(f"\nError processing {date_str}: {e}")
+                        logger.error(f"Error processing {date_str}: {e}")
+                        pbar.set_postfix_str(f"{date_str}: ERROR")
 
                     pbar.update(1)
 
