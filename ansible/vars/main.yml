@@ -1,0 +1,7 @@
+---
+# Visible variable names that reference vault secrets
+# This file is committed to version control
+
+# GitHub Configuration
+github_token: "{{ vault_github_token }}"
+github_org: "dolr-ai"

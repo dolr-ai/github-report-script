@@ -1,0 +1,12 @@
+---
+# Visible variable names that reference vault secrets
+# This file is committed to version control
+# Use as a template for creating actual vars/main.yml
+
+# GitHub Configuration
+github_token: "{{ vault_github_token }}"
+github_org: "dolr-ai"
+
+# Add more variables as needed:
+# api_key: "{{ vault_api_key }}"
+# database_password: "{{ vault_database_password }}"

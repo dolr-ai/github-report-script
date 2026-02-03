@@ -1,370 +1,486 @@
 # GitHub Report Script
 
-A Python script that fetches GitHub commits and lines of code metrics for specified users within an organization, and generates comparative visualizations showing daily activity.
+A configuration-driven Python script that fetches GitHub commits and lines of code metrics for specified users within an organization, and generates comparative visualizations showing daily activity.
+
+**No command-line arguments needed** - all configuration is managed through `src/config.py` and secrets through Ansible Vault.
 
 ## Features
 
-- **Concurrent API Fetching**: Uses configurable thread pool (default 4 threads) for efficient data collection
-- **Smart Caching**: Day-wise JSON caching with selective refresh to minimize API calls
-- **Bot Filtering**: Automatically excludes bot commits (Dependabot, GitHub Actions, etc.) via API type checking
+- **Configuration-Driven**: All settings in `src/config.py` - just edit and run
+- **Secure Secret Management**: Ansible Vault for encrypted credential storage
+- **Concurrent API Fetching**: Configurable thread pool (default 4 threads)
+- **Smart Caching**: Day-wise JSON caching with selective refresh
+- **Bot Filtering**: Automatically excludes bot commits via API type checking
 - **Incremental Processing**: Skips already-processed dates unless explicitly refreshed
-- **Dual Chart Output**: Generates both interactive HTML (Plotly) and static PNG/PDF (Matplotlib) charts
-- **Comprehensive Metrics**: Tracks additions, deletions, total LOC, and commit counts separately and combined
-- **User Comparison**: Side-by-side visualization of multiple users on the same charts
+- **Dual Chart Output**: Interactive HTML (Plotly) + Static PNG/PDF (Matplotlib)
+- **Comprehensive Metrics**: Tracks additions, deletions, total LOC, and commits separately
+- **User Comparison**: Side-by-side visualization of multiple users
+- **Data Persistence**: Cache, output, and reports committed to repository for tracking
 
 ## Installation
 
 ### Prerequisites
 
 - Python 3.7 or higher
+- Ansible (for secret management): `pip install ansible`
 - GitHub Personal Access Token with `repo` and `read:org` scopes
-- Access to the target GitHub organization
+- Access to the target GitHub organization (dolr-ai)
 
-### Setup
-
-#### Quick Start (Recommended)
+### Quick Start
 
 ```bash
+# 1. Clone and install
 git clone https://github.com/dolr-ai/github-report-script.git
 cd github-report-script
 pip install -r requirements.txt
-./quickstart.sh
+
+# 2. Setup Ansible Vault (one-time setup)
+cd ansible
+./init_vault.sh
+# Follow the prompts to set vault password and GitHub token
+
+# 3. Configure execution
+cd ../src
+# Edit config.py and set:
+#   MODE = ExecutionMode.FETCH
+#   DATE_RANGE_MODE = DateRangeMode.LAST_N_DAYS
+#   DAYS_BACK = 7
+
+# 4. Run the script
+cd ..
+python src/main.py
 ```
-
-The quickstart script will guide you through configuration.
-
-#### Manual Setup
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/dolr-ai/github-report-script.git
-   cd github-report-script
-   ```
-
-2. **Install dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Configure environment variables**:
-   ```bash
-   cp .env.example .env
-   # Edit .env and add your GitHub token
-   ```
-
-4. **Configure users to track**:
-   Edit `src/config.py` and add GitHub usernames to the `USER_IDS` list:
-   ```python
-   USER_IDS = [
-       'octocat',
-       'torvalds',
-       'your-username',
-   ]
-   ```
-
-## Usage
-
-### Basic Commands
-
-#### Fetch Data (Last 7 Days)
-```bash
-python report.py fetch
-# or: python -m src.main fetch
-```
-
-Fetches commits from the dolr-ai organization for the last 7 days, caches raw data, and processes metrics per user.
-
-#### Fetch Specific Date Range
-```bash
-python report.py fetch --start-date 2026-01-01 --end-date 2026-01-31
-```
-
-#### Refresh Cache
-```bash
-python report.py refresh --start-date 2026-01-27 --end-date 2026-01-28
-```
-
-Forces re-fetch and overwrites existing cache for the specified date range.
-
-#### Generate Charts
-```bash
-python report.py chart
-```
-
-Generates interactive HTML and static PNG/PDF charts from processed data for the last 7 days.
-
-#### Generate Charts for Specific Range
-```bash
-python report.py chart --start-date 2026-01-01 --end-date 2026-01-31
-```
-
-#### Check Status
-```bash
-python report.py status
-```
-
-Shows GitHub API rate limit, cached dates, and processed data summary.
-
-### Advanced Options
-
-#### Custom Thread Count
-```bash
-python report.py fetch --threads 8
-```
-
-Adjusts concurrent thread count (useful if rate limits are hit or faster fetching is needed).
 
 ## Configuration
 
-### GitHub Token
+### Execution Modes
 
-Create a Personal Access Token at: https://github.com/settings/tokens
+Edit `src/config.py` to set the execution mode:
 
-Required scopes:
-- `repo` (for private repositories) or `public_repo` (for public only)
-- `read:org` (to list organization repositories)
+```python
+from src.config import ExecutionMode, DateRangeMode
 
-Add to `.env` file:
-```env
-GITHUB_TOKEN=your_token_here
-GITHUB_ORG=dolr-ai
+# What should the script do?
+MODE = ExecutionMode.FETCH      # Fetch and process new data
+# MODE = ExecutionMode.REFRESH  # Re-fetch specific dates (overwrites cache)
+# MODE = ExecutionMode.CHART    # Generate visualizations
+# MODE = ExecutionMode.STATUS   # Show status and rate limits
+```
+
+### Date Range Configuration
+
+```python
+# How to determine date range?
+DATE_RANGE_MODE = DateRangeMode.LAST_N_DAYS
+DAYS_BACK = 7
+
+# For custom ranges:
+# DATE_RANGE_MODE = DateRangeMode.CUSTOM_RANGE
+# START_DATE = '2026-01-01'
+# END_DATE = '2026-01-31'
+
+# For single date:
+# DATE_RANGE_MODE = DateRangeMode.SPECIFIC_DATE
+# START_DATE = '2026-02-01'
+
+# For charting all cached data:
+# DATE_RANGE_MODE = DateRangeMode.ALL_CACHED
 ```
 
 ### User Configuration
 
-Edit `src/config.py`:
+```python
+# GitHub usernames to track
+USER_IDS = [
+    'saikatdas0790',
+    'gravityvi',
+    # Add more usernames here
+]
+```
+
+### Performance Settings
 
 ```python
-# Users to track
+# Number of concurrent threads
+THREAD_COUNT = 4  # Conservative (default)
+# THREAD_COUNT = 8  # Aggressive (faster, may hit rate limits)
+# THREAD_COUNT = 1  # Debugging
+```
+
+See `src/config.py` for complete configuration options with examples.
+
+## Usage
+
+### Run the Script
+
+```bash
+python src/main.py
+```
+
+The script reads configuration from `src/config.py` and executes the configured mode.
+
+### Common Workflows
+
+#### Daily Data Collection
+1. Edit `src/config.py`:
+   ```python
+   MODE = ExecutionMode.FETCH
+   DATE_RANGE_MODE = DateRangeMode.LAST_N_DAYS
+   DAYS_BACK = 1  # Yesterday only
+   ```
+2. Run: `python src/main.py`
+
+#### Generate Weekly Report
+1. Edit `src/config.py`:
+   ```python
+   MODE = ExecutionMode.FETCH
+   DATE_RANGE_MODE = DateRangeMode.LAST_N_DAYS
+   DAYS_BACK = 7
+   ```
+2. Run: `python src/main.py`
+3. Edit `src/config.py`:
+   ```python
+   MODE = ExecutionMode.CHART
+   ```
+4. Run: `python src/main.py`
+
+#### Refresh Specific Dates
+1. Edit `src/config.py`:
+   ```python
+   MODE = ExecutionMode.REFRESH
+   DATE_RANGE_MODE = DateRangeMode.CUSTOM_RANGE
+   START_DATE = '2026-01-27'
+   END_DATE = '2026-01-28'
+   ```
+2. Run: `python src/main.py`
+
+#### Check Status
+1. Edit `src/config.py`:
+   ```python
+   MODE = ExecutionMode.STATUS
+   ```
+2. Run: `python src/main.py`
+
+## Ansible Vault - Secret Management
+
+### Initial Setup
+
+```bash
+cd ansible
+./init_vault.sh
+```
+
+This will:
+1. Create vault password file (`.vault_pass`)
+2. Prompt for GitHub Personal Access Token
+3. Create and encrypt secrets (`vars/vault.yml`)
+4. Generate `.env` file
+
+### Managing Secrets
+
+```bash
+# View encrypted secrets
+ansible-vault view vars/vault.yml
+
+# Edit secrets
+ansible-vault edit vars/vault.yml
+
+# Regenerate .env file
+ansible-playbook setup_env.yml
+
+# Change vault password
+ansible-vault rekey vars/vault.yml
+```
+
+See [ansible/README.md](ansible/README.md) for detailed vault management guide.
+
+### Variable Structure
+
+**vars/main.yml** (visible, committed):
+```yaml
+github_token: "{{ vault_github_token }}"
+github_org: "dolr-ai"
+```
+
+**vars/vault.yml** (encrypted, committed):
+```yaml
+vault_github_token: "ghp_1234567890abcdef..."
+```
+
+## Project Structure
+
+```
+github-report-script/
+├── src/
+│   ├── config.py              # ⚙️  All configuration settings (edit this!)
+│   ├── main.py                # Entry point (no args needed)
+│   ├── cache_manager.py       # Caching logic
+│   ├── github_fetcher.py      # GitHub API interaction
+│   ├── data_processor.py      # Data aggregation
+│   └── chart_generator.py     # Visualization
+├── ansible/
+│   ├── init_vault.sh          # 🔐 Vault setup script
+│   ├── setup_env.yml          # Playbook to generate .env
+│   ├── vars/
+│   │   ├── main.yml           # Visible variable names
+│   │   └── vault.yml          # Encrypted secrets
+│   └── README.md              # Vault management guide
+├── cache/                     # 📦 Raw commit data (committed)
+│   └── commits/
+│       └── YYYY-MM-DD.json
+├── output/                    # 📊 Processed metrics (committed)
+│   └── {username}/
+│       └── YYYY-MM-DD.json
+├── reports/                   # 📈 Generated charts (committed)
+│   ├── report_*.html
+│   ├── report_*.png
+│   └── report_*.pdf
+├── requirements.txt
+└── README.md
+```
+
+## Data Flow
+
+1. **Configuration** → `src/config.py` sets MODE and date range
+2. **Secrets** → Ansible Vault decrypts to `.env`
+3. **Fetch** → GitHub API → `cache/commits/{date}.json`
+4. **Process** → Aggregate → `output/{user}/{date}.json`
+5. **Chart** → Visualize → `reports/report_*.{html,png,pdf}`
+
+## Chart Output
+
+Each report contains a 2×2 grid:
+
+| **Daily Additions** (lines added) | **Daily Deletions** (lines removed) |
+|-----------------------------------|-------------------------------------|
+| **Daily Total LOC** (added + deleted) | **Daily Commit Count** |
+
+All users displayed side-by-side with grouped bars for easy comparison.
+
+### Output Formats
+
+- **HTML** (Plotly): Interactive with hover tooltips, zoom, pan
+- **PNG**: High-resolution (300 DPI) static image
+- **PDF**: Print-ready document format
+
+## Configuration Examples
+
+### Example 1: Weekly Report for All Users
+
+```python
+# src/config.py
+MODE = ExecutionMode.FETCH
+DATE_RANGE_MODE = DateRangeMode.LAST_N_DAYS
+DAYS_BACK = 7
+THREAD_COUNT = 4
+
 USER_IDS = [
-    'user1',
-    'user2',
-    'user3',
+    'saikatdas0790',
+    'gravityvi',
+    'jay-dhanwant-yral',
+    # ... all users
 ]
-
-# Default settings
-DEFAULT_THREAD_COUNT = 4
-DEFAULT_DAYS_BACK = 7
 ```
 
-### Bot Filtering
+### Example 2: Monthly Report
 
-Bot commits are automatically filtered using GitHub API's user type check. Known bots are also filtered by name pattern:
-- dependabot[bot]
-- github-actions[bot]
-- renovate[bot]
-- And others (see `src/config.py`)
-
-## Data Structure
-
-### Cache Structure
-```
-cache/
-├── commits/
-│   ├── 2026-01-27.json
-│   ├── 2026-01-28.json
-│   └── 2026-01-29.json
-└── metadata.json
+```python
+MODE = ExecutionMode.FETCH
+DATE_RANGE_MODE = DateRangeMode.CUSTOM_RANGE
+START_DATE = '2026-01-01'
+END_DATE = '2026-01-31'
+THREAD_COUNT = 8  # Faster for large date ranges
 ```
 
-Each daily cache file contains:
-```json
-{
-  "date": "2026-01-27",
-  "cached_at": "2026-02-03T10:30:00Z",
-  "commits": [
-    {
-      "sha": "abc123...",
-      "author": "username",
-      "repository": "dolr-ai/repo-name",
-      "timestamp": "2026-01-27T14:23:00Z",
-      "message": "commit message",
-      "stats": {
-        "additions": 45,
-        "deletions": 12,
-        "total": 57
-      }
-    }
-  ],
-  "commit_count": 1
-}
+### Example 3: Single User, Specific Date
+
+```python
+MODE = ExecutionMode.FETCH
+DATE_RANGE_MODE = DateRangeMode.SPECIFIC_DATE
+START_DATE = '2026-02-01'
+
+USER_IDS = ['saikatdas0790']  # Single user only
 ```
 
-### Output Structure
+### Example 4: Chart All Cached Data
+
+```python
+MODE = ExecutionMode.CHART
+DATE_RANGE_MODE = DateRangeMode.ALL_CACHED
+# Uses all dates found in cache/
 ```
-output/
-├── user1/
-│   ├── 2026-01-27.json
-│   ├── 2026-01-28.json
-│   └── 2026-01-29.json
-└── user2/
-    ├── 2026-01-27.json
-    └── 2026-01-29.json
-```
-
-Each user/date file contains pre-aggregated metrics:
-```json
-{
-  "date": "2026-01-27",
-  "username": "user1",
-  "additions": 150,
-  "deletions": 30,
-  "total_loc": 180,
-  "commit_count": 5,
-  "repositories": ["dolr-ai/repo1", "dolr-ai/repo2"],
-  "repo_count": 2,
-  "processed_at": "2026-02-03T10:35:00Z"
-}
-```
-
-### Reports Structure
-```
-reports/
-├── report_2026-01-27_to_2026-02-03_20260203_103545.html
-├── report_2026-01-27_to_2026-02-03_20260203_103545.png
-└── report_2026-01-27_to_2026-02-03_20260203_103545.pdf
-```
-
-Reports are timestamped to prevent overwrites.
-
-## Workflow
-
-### Typical Usage Pattern
-
-1. **Initial fetch**:
-   ```bash
-   python report.py fetch
-   ```
-   Fetches last 7 days, caches raw data, processes metrics.
-
-2. **Generate visualizations**:
-   ```bash
-   python report.py chart
-   ```
-   Creates interactive HTML and static PNG/PDF charts.
-
-3. **Daily updates** (run next day):
-   ```bash
-   python report.py fetch
-   ```
-   Only fetches new date (today), skips cached dates.
-
-4. **Periodic refresh** (if data needs updating):
-   ```bash
-   python report.py refresh --start-date 2026-01-27
-   ```
-   Re-fetches specific dates, overwrites cache and output.
-
-### Cache Behavior
-
-- **Incremental fetching**: `fetch` command skips dates already in cache
-- **Force refresh**: `refresh` command overwrites existing cache for specified dates
-- **Incremental processing**: Output files are skipped unless refresh is used
-- **Zero-commit handling**: Users with no commits on a date show 0 for all metrics
-
-## Chart Features
-
-### Interactive HTML (Plotly)
-- Hover tooltips showing exact values
-- Zoom and pan capabilities
-- Legend toggling to focus on specific users
-- Responsive design
-- Single-file output (no external dependencies)
-
-### Static PNG/PDF (Matplotlib)
-- High resolution (300 DPI for PNG)
-- Publication-quality output
-- Suitable for reports and documentation
-- Multiple formats for flexibility
-
-### Chart Layout
-Each report contains a 2x2 grid showing:
-1. **Daily Additions**: Lines of code added per day
-2. **Daily Deletions**: Lines of code removed per day
-3. **Daily Total LOC**: Total lines changed (additions + deletions)
-4. **Daily Commit Count**: Number of commits per day
-
-All charts show users side-by-side with grouped bars for easy comparison.
 
 ## Rate Limiting
 
 GitHub API limits:
-- **Authenticated**: 5,000 requests per hour
-- **Unauthenticated**: 60 requests per hour (not supported)
+- **Authenticated**: 5,000 requests/hour
+- **Per repository**: ~1-5 requests
+- **Concurrent threads**: Default 4 (adjustable)
 
-The script:
-- Monitors rate limits automatically
-- Waits when limit is low (<100 remaining)
-- Uses concurrent threads efficiently
-- Caches aggressively to minimize API calls
+The script automatically:
+- ✓ Monitors rate limits
+- ✓ Waits when limit is low (<100 remaining)
+- ✓ Uses caching to minimize requests
+- ✓ Skips already-processed dates
+
+Check current status:
+```python
+# src/config.py
+MODE = ExecutionMode.STATUS
+```
+
+Then run: `python src/main.py`
 
 ## Troubleshooting
 
-### "GITHUB_TOKEN environment variable is not set"
-Create a `.env` file based on `.env.example` and add your token.
+### "GITHUB_TOKEN is not set"
+
+**Solution**: Run Ansible playbook to generate `.env`:
+```bash
+cd ansible
+ansible-playbook setup_env.yml
+```
 
 ### "USER_IDS list is empty"
-Edit `src/config.py` and add GitHub usernames to track.
+
+**Solution**: Edit `src/config.py` and add usernames:
+```python
+USER_IDS = ['username1', 'username2']
+```
+
+### "Vault password file not found"
+
+**Solution**: Initialize vault:
+```bash
+cd ansible
+./init_vault.sh
+```
+
+### "No cached data found"
+
+**Solution**: Run fetch mode first:
+```python
+# src/config.py
+MODE = ExecutionMode.FETCH
+```
 
 ### Rate limit exceeded
-- Reduce thread count: `--threads 2`
-- Wait for rate limit reset (check with `python report.py status`)
-- Use cached data: avoid `refresh` command
 
-### No data found for user
-- Verify username spelling in `src/config.py`
-- Check if user has commits in dolr-ai organization
-- Ensure date range includes their commit activity
+**Solution**:
+- Check status: `MODE = ExecutionMode.STATUS`
+- Reduce threads: `THREAD_COUNT = 2`
+- Wait for reset (shown in status output)
+- Use cached data (avoid REFRESH mode)
 
-### Charts show all zeros
-- Run `fetch` command first to collect data
-- Verify date range matches available data
-- Check if users have commits in the specified period
+### "Import ModuleNotFoundError"
 
-## Examples
-
-### Monthly Report
+**Solution**: Install dependencies:
 ```bash
-# Fetch entire month
-python report.py fetch --start-date 2026-01-01 --end-date 2026-01-31
-
-# Generate charts
-python report.py chart --start-date 2026-01-01 --end-date 2026-01-31
+pip install -r requirements.txt
 ```
 
-### Update Yesterday's Data
-```bash
-python report.py refresh --start-date 2026-02-02 --end-date 2026-02-02
-python report.py chart --start-date 2026-01-27 --end-date 2026-02-03
-```
+## CI/CD Integration
 
-### Fast Fetching with More Threads
-```bash
-python report.py fetch --threads 8 --start-date 2026-01-01 --end-date 2026-01-31
+### GitHub Actions Example
+
+```yaml
+name: Daily Report
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Daily at midnight
+
+jobs:
+  generate-report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install ansible
+      
+      - name: Setup secrets
+        env:
+          VAULT_PASSWORD: ${{ secrets.ANSIBLE_VAULT_PASSWORD }}
+        run: |
+          cd ansible
+          echo "$VAULT_PASSWORD" > .vault_pass
+          ansible-playbook setup_env.yml
+      
+      - name: Run report
+        run: python src/main.py
+      
+      - name: Commit results
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add cache/ output/ reports/
+          git commit -m "Daily report $(date +%Y-%m-%d)" || true
+          git push
 ```
 
 ## Development
 
-### Project Structure
-```
-github-report-script/
-├── src/
-│   ├── __init__.py
-│   ├── main.py              # CLI entry point
-│   ├── config.py            # Configuration
-│   ├── cache_manager.py     # Caching logic
-│   ├── github_fetcher.py    # GitHub API interaction
-│   ├── data_processor.py    # Data aggregation
-│   └── chart_generator.py   # Visualization
-├── cache/                   # Cached raw data (gitignored)
-├── output/                  # Processed metrics (gitignored)
-├── reports/                 # Generated charts (gitignored)
-├── examples/                # Sample outputs (committed)
-├── requirements.txt
-├── .env.example
-├── .gitignore
-└── README.md
-```
+### Adding New Configuration Options
+
+1. **Add enum** (if applicable) in `src/config.py`:
+   ```python
+   class NewFeature(Enum):
+       OPTION_A = "option_a"
+       OPTION_B = "option_b"
+   ```
+
+2. **Add configuration variable**:
+   ```python
+   NEW_SETTING = NewFeature.OPTION_A
+   """Documentation for NEW_SETTING"""
+   ```
+
+3. **Add validation** in `validate_config()`:
+   ```python
+   if not isinstance(NEW_SETTING, NewFeature):
+       errors.append("NEW_SETTING must be a NewFeature enum")
+   ```
+
+4. **Use in code**:
+   ```python
+   from src.config import NEW_SETTING, NewFeature
+   
+   if NEW_SETTING == NewFeature.OPTION_A:
+       # Do something
+   ```
+
+### Adding New Secrets
+
+1. **Edit** `ansible/vars/main.yml`:
+   ```yaml
+   new_api_key: "{{ vault_new_api_key }}"
+   ```
+
+2. **Edit vault**:
+   ```bash
+   ansible-vault edit ansible/vars/vault.yml
+   ```
+   Add:
+   ```yaml
+   vault_new_api_key: "your_secret"
+   ```
+
+3. **Update template** `ansible/templates/env.j2`:
+   ```
+   NEW_API_KEY={{ new_api_key }}
+   ```
+
+4. **Regenerate .env**:
+   ```bash
+   cd ansible && ansible-playbook setup_env.yml
+   ```
 
 ## License
 
@@ -372,4 +488,28 @@ MIT License - See LICENSE file for details.
 
 ## Contributing
 
-Contributions welcome! Please open an issue or pull request.
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test with different configurations
+5. Submit a pull request
+
+## Support
+
+- **Issues**: https://github.com/dolr-ai/github-report-script/issues
+- **Vault Guide**: [ansible/README.md](ansible/README.md)
+- **Config Reference**: See comments in `src/config.py`
+
+---
+
+**Quick Reference:**
+
+| Task | Configuration | Command |
+|------|---------------|---------|
+| Setup vault | N/A | `cd ansible && ./init_vault.sh` |
+| Fetch last 7 days | `MODE = FETCH`, `DAYS_BACK = 7` | `python src/main.py` |
+| Refresh specific dates | `MODE = REFRESH`, set START/END_DATE | `python src/main.py` |
+| Generate charts | `MODE = CHART` | `python src/main.py` |
+| Check status | `MODE = STATUS` | `python src/main.py` |
+| Edit secrets | N/A | `ansible-vault edit ansible/vars/vault.yml` |
+| View secrets | N/A | `ansible-vault view ansible/vars/vault.yml` |

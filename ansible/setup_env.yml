@@ -1,0 +1,41 @@
+---
+- name: Generate .env file from vault secrets
+  hosts: local
+  connection: local
+  gather_facts: true
+  
+  vars_files:
+    - vars/main.yml
+    - vars/vault.yml
+  
+  tasks:
+    - name: Display setup information
+      debug:
+        msg: "Generating .env file for {{ github_org }} organization"
+    
+    - name: Generate .env file from template
+      template:
+        src: templates/env.j2
+        dest: "{{ playbook_dir }}/../.env"
+        mode: '0600'
+      no_log: true
+    
+    - name: Verify .env file was created
+      stat:
+        path: "{{ playbook_dir }}/../.env"
+      register: env_file
+    
+    - name: Display success message
+      debug:
+        msg: 
+          - "✓ .env file generated successfully!"
+          - "  Location: {{ playbook_dir }}/../.env"
+          - "  Permissions: 0600 (read/write for owner only)"
+          - ""
+          - "You can now run: python src/main.py"
+      when: env_file.stat.exists
+    
+    - name: Display error if file not created
+      fail:
+        msg: "Failed to create .env file"
+      when: not env_file.stat.exists

@@ -1,83 +1,33 @@
 #!/usr/bin/env python3
 """
-GitHub Report Script - Main CLI
-Fetch GitHub commits and lines of code, generate comparative visualizations
+GitHub Report Script - Main Entry Point
+
+No command-line arguments needed. All configuration is in src/config.py
+Simply run: python src/main.py
 """
 import sys
-import argparse
-from datetime import datetime, timedelta
+from datetime import datetime
 
 from src.config import (
-    USER_IDS, DEFAULT_THREAD_COUNT, DEFAULT_DAYS_BACK,
-    GITHUB_ORG, validate_config
+    MODE, ExecutionMode, DATE_RANGE_MODE, DateRangeMode,
+    USER_IDS, THREAD_COUNT, GITHUB_ORG,
+    validate_config, display_config, get_date_range
 )
 from src.github_fetcher import GitHubFetcher
 from src.data_processor import DataProcessor
 from src.chart_generator import ChartGenerator
 
 
-def parse_date(date_str: str) -> datetime:
-    """Parse date string in YYYY-MM-DD format
-
-    Args:
-        date_str: Date string
-
-    Returns:
-        datetime object
-    """
-    try:
-        return datetime.strptime(date_str, '%Y-%m-%d')
-    except ValueError:
-        raise ValueError(
-            f"Invalid date format: {date_str}. Use YYYY-MM-DD format.")
-
-
-def get_date_range(args) -> tuple:
-    """Get start and end dates from arguments
-
-    Args:
-        args: Parsed command line arguments
-
-    Returns:
-        Tuple of (start_date, end_date) datetime objects
-    """
-    if args.start_date and args.end_date:
-        start_date = parse_date(args.start_date)
-        end_date = parse_date(args.end_date)
-    elif args.start_date:
-        start_date = parse_date(args.start_date)
-        end_date = datetime.now()
-    elif args.end_date:
-        end_date = parse_date(args.end_date)
-        start_date = end_date - timedelta(days=DEFAULT_DAYS_BACK - 1)
-    else:
-        # Default: last N days
-        end_date = datetime.now()
-        start_date = end_date - timedelta(days=DEFAULT_DAYS_BACK - 1)
-
-    # Ensure start is before end
-    if start_date > end_date:
-        raise ValueError("Start date must be before end date")
-
-    return start_date, end_date
-
-
-def cmd_fetch(args):
+def cmd_fetch():
     """Fetch commits, cache, and process to output directory"""
-    print("=" * 70)
-    print("GitHub Report Script - Fetch Mode")
-    print("=" * 70)
-    print(f"Organization: {GITHUB_ORG}")
-    print(f"Users: {', '.join(USER_IDS)}")
-    print(f"Threads: {args.threads}")
+    print(display_config())
 
     # Get date range
-    start_date, end_date = get_date_range(args)
-    print(f"Date range: {start_date.date()} to {end_date.date()}")
-    print()
+    start_date, end_date = get_date_range()
 
     # Fetch commits
-    fetcher = GitHubFetcher(thread_count=args.threads)
+    print("Starting data fetch...")
+    fetcher = GitHubFetcher(thread_count=THREAD_COUNT)
     fetcher.fetch_commits(start_date, end_date, USER_IDS, force_refresh=False)
 
     # Process data
@@ -100,26 +50,22 @@ def cmd_fetch(args):
         print(f"  Repositories:      {stats['unique_repositories']}")
 
     print("\n" + "=" * 70)
-    print("Fetch complete! Use 'chart' command to generate visualizations.")
+    print("✓ Fetch complete! Data saved to cache/ and output/")
+    print("  Run with MODE = ExecutionMode.CHART to generate visualizations")
     print("=" * 70)
 
 
-def cmd_refresh(args):
+def cmd_refresh():
     """Refresh cache for specific date range"""
-    print("=" * 70)
-    print("GitHub Report Script - Refresh Mode")
-    print("=" * 70)
-    print(f"Organization: {GITHUB_ORG}")
-    print(f"Users: {', '.join(USER_IDS)}")
-    print(f"Threads: {args.threads}")
+    print(display_config())
 
     # Get date range
-    start_date, end_date = get_date_range(args)
-    print(f"Refreshing date range: {start_date.date()} to {end_date.date()}")
-    print()
+    start_date, end_date = get_date_range()
+    print(
+        f"Refreshing cache and output for: {start_date.date()} to {end_date.date()}\n")
 
     # Fetch commits with force refresh
-    fetcher = GitHubFetcher(thread_count=args.threads)
+    fetcher = GitHubFetcher(thread_count=THREAD_COUNT)
     fetcher.fetch_commits(start_date, end_date, USER_IDS, force_refresh=True)
 
     # Process data with force refresh
@@ -128,20 +74,31 @@ def cmd_refresh(args):
         start_date, end_date, USER_IDS, force_refresh=True)
 
     print("\n" + "=" * 70)
-    print("Refresh complete!")
+    print("✓ Refresh complete! Cache and output updated")
     print("=" * 70)
 
 
-def cmd_chart(args):
+def cmd_chart():
     """Generate charts from processed data"""
-    print("=" * 70)
-    print("GitHub Report Script - Chart Mode")
-    print("=" * 70)
-    print(f"Users: {', '.join(USER_IDS)}")
+    print(display_config())
 
     # Get date range
-    start_date, end_date = get_date_range(args)
-    print(f"Date range: {start_date.date()} to {end_date.date()}")
+    if DATE_RANGE_MODE == DateRangeMode.ALL_CACHED:
+        # Use all available cached data
+        from src.cache_manager import CacheManager
+        cache_manager = CacheManager()
+        cached_dates = cache_manager.get_cached_dates()
+
+        if not cached_dates:
+            print("\n❌ No cached data found. Run with MODE = ExecutionMode.FETCH first.")
+            sys.exit(1)
+
+        start_date = datetime.strptime(cached_dates[0], '%Y-%m-%d')
+        end_date = datetime.strptime(cached_dates[-1], '%Y-%m-%d')
+        print(
+            f"\nUsing all cached dates: {start_date.date()} to {end_date.date()}\n")
+    else:
+        start_date, end_date = get_date_range()
 
     # Read processed data
     processor = DataProcessor()
@@ -155,9 +112,9 @@ def cmd_chart(args):
     )
 
     if not has_data:
-        print("\nWarning: No commit data found for the specified date range.")
-        print("Run 'fetch' command first to collect data.")
-        return
+        print("\n❌ No commit data found for the specified date range.")
+        print("   Run with MODE = ExecutionMode.FETCH first to collect data.")
+        sys.exit(1)
 
     # Generate charts
     generator = ChartGenerator()
@@ -168,18 +125,13 @@ def cmd_chart(args):
     )
 
     print("\n" + "=" * 70)
-    print("Chart generation complete!")
+    print("✓ Charts generated successfully!")
     print("=" * 70)
 
 
-def cmd_status(args):
+def cmd_status():
     """Show current status and rate limit"""
-    print("=" * 70)
-    print("GitHub Report Script - Status")
-    print("=" * 70)
-    print(f"Organization: {GITHUB_ORG}")
-    print(f"Tracked users: {', '.join(USER_IDS)}")
-    print()
+    print(display_config())
 
     # Get rate limit
     fetcher = GitHubFetcher()
@@ -208,12 +160,15 @@ def cmd_status(args):
     if os.path.exists(OUTPUT_DIR):
         user_dirs = [d for d in os.listdir(OUTPUT_DIR)
                      if os.path.isdir(os.path.join(OUTPUT_DIR, d))]
-        print(f"Processed users: {len(user_dirs)}")
-        for user_dir in sorted(user_dirs):
-            user_path = os.path.join(OUTPUT_DIR, user_dir)
-            file_count = len([f for f in os.listdir(
-                user_path) if f.endswith('.json')])
-            print(f"  {user_dir}: {file_count} date(s)")
+        if user_dirs:
+            print(f"Processed users: {len(user_dirs)}")
+            for user_dir in sorted(user_dirs):
+                user_path = os.path.join(OUTPUT_DIR, user_dir)
+                file_count = len([f for f in os.listdir(
+                    user_path) if f.endswith('.json')])
+                print(f"  {user_dir}: {file_count} date(s)")
+        else:
+            print("No processed data found.")
     else:
         print("No processed data found.")
 
@@ -221,91 +176,32 @@ def cmd_status(args):
 
 
 def main():
-    """Main entry point"""
-    parser = argparse.ArgumentParser(
-        description='GitHub Report Script - Fetch and visualize commit metrics',
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog="""
-Examples:
-  # Fetch last 7 days for configured users
-  python src/main.py fetch
-  
-  # Fetch specific date range
-  python src/main.py fetch --start-date 2026-01-01 --end-date 2026-01-31
-  
-  # Refresh cache for last 7 days
-  python src/main.py refresh
-  
-  # Refresh specific date range
-  python src/main.py refresh --start-date 2026-01-27 --end-date 2026-01-28
-  
-  # Generate charts from existing data
-  python src/main.py chart
-  
-  # Generate charts for specific date range
-  python src/main.py chart --start-date 2026-01-01 --end-date 2026-01-31
-  
-  # Check status
-  python src/main.py status
-        """
-    )
-
-    subparsers = parser.add_subparsers(
-        dest='command', help='Command to execute')
-
-    # Fetch command
-    fetch_parser = subparsers.add_parser(
-        'fetch', help='Fetch commits and process data')
-    fetch_parser.add_argument('--start-date', help='Start date (YYYY-MM-DD)')
-    fetch_parser.add_argument('--end-date', help='End date (YYYY-MM-DD)')
-    fetch_parser.add_argument('--threads', type=int, default=DEFAULT_THREAD_COUNT,
-                              help=f'Number of concurrent threads (default: {DEFAULT_THREAD_COUNT})')
-
-    # Refresh command
-    refresh_parser = subparsers.add_parser(
-        'refresh', help='Refresh cache for date range')
-    refresh_parser.add_argument('--start-date', help='Start date (YYYY-MM-DD)')
-    refresh_parser.add_argument('--end-date', help='End date (YYYY-MM-DD)')
-    refresh_parser.add_argument('--threads', type=int, default=DEFAULT_THREAD_COUNT,
-                                help=f'Number of concurrent threads (default: {DEFAULT_THREAD_COUNT})')
-
-    # Chart command
-    chart_parser = subparsers.add_parser(
-        'chart', help='Generate charts from processed data')
-    chart_parser.add_argument('--start-date', help='Start date (YYYY-MM-DD)')
-    chart_parser.add_argument('--end-date', help='End date (YYYY-MM-DD)')
-
-    # Status command
-    status_parser = subparsers.add_parser('status', help='Show current status')
-
-    args = parser.parse_args()
-
-    if not args.command:
-        parser.print_help()
-        sys.exit(1)
-
+    """Main entry point - runs the configured mode"""
     try:
         # Validate configuration
         validate_config()
 
-        # Execute command
-        if args.command == 'fetch':
-            cmd_fetch(args)
-        elif args.command == 'refresh':
-            cmd_refresh(args)
-        elif args.command == 'chart':
-            cmd_chart(args)
-        elif args.command == 'status':
-            cmd_status(args)
+        # Execute based on configured mode
+        if MODE == ExecutionMode.FETCH:
+            cmd_fetch()
+        elif MODE == ExecutionMode.REFRESH:
+            cmd_refresh()
+        elif MODE == ExecutionMode.CHART:
+            cmd_chart()
+        elif MODE == ExecutionMode.STATUS:
+            cmd_status()
+        else:
+            print(f"❌ Unknown execution mode: {MODE}")
+            sys.exit(1)
 
     except ValueError as e:
-        print(f"\nError: {e}", file=sys.stderr)
+        print(str(e), file=sys.stderr)
         sys.exit(1)
     except KeyboardInterrupt:
-        print("\n\nInterrupted by user.")
+        print("\n\n⚠️  Interrupted by user.")
         sys.exit(130)
     except Exception as e:
-        print(f"\nUnexpected error: {e}", file=sys.stderr)
+        print(f"\n❌ Unexpected error: {e}", file=sys.stderr)
         import traceback
         traceback.print_exc()
         sys.exit(1)
