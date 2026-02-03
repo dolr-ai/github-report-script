@@ -11,10 +11,17 @@ A configuration-driven Python script that fetches GitHub commits and lines of co
 - **Concurrent API Fetching**: Configurable thread pool (default 4 threads)
 - **Smart Caching**: Day-wise JSON caching with selective refresh
 - **Bot Filtering**: Automatically excludes bot commits via API type checking
+- **All Branches Included**: Fetches commits from all branches, not just default branch
 - **Incremental Processing**: Skips already-processed dates unless explicitly refreshed
 - **Dual Chart Output**: Interactive HTML (Plotly) + Static PNG/PDF (Matplotlib)
+- **Line Charts**: Visualization with line charts for better trend analysis
+- **Dated Reports**: Reports organized in dated folders (YYYYMMDD format)
 - **Comprehensive Metrics**: Tracks additions, deletions, total LOC, and commits separately
 - **User Comparison**: Side-by-side visualization of multiple users
+- **Combined Mode**: FETCH_AND_CHART mode for automated pipelines
+- **Comprehensive Testing**: Unit and integration tests with pytest
+- **Automated CI/CD**: Nightly reports at 12 AM IST via GitHub Actions
+- **Weekly Releases**: Automated weekly summary releases
 - **Data Persistence**: Cache, output, and reports committed to repository for tracking
 
 ## Installation
@@ -64,7 +71,16 @@ MODE = ExecutionMode.FETCH      # Fetch and process new data
 # MODE = ExecutionMode.REFRESH  # Re-fetch specific dates (overwrites cache)
 # MODE = ExecutionMode.CHART    # Generate visualizations
 # MODE = ExecutionMode.STATUS   # Show status and rate limits
+# MODE = ExecutionMode.FETCH_AND_CHART  # Fetch + process + generate charts (CI mode)
 ```
+
+**Mode Descriptions:**
+
+- **FETCH**: Fetch commits from GitHub API and process them into metrics
+- **REFRESH**: Re-fetch and overwrite existing cached data for specific dates
+- **CHART**: Generate visualization charts from existing processed data
+- **STATUS**: Display GitHub API rate limit status and cache statistics
+- **FETCH_AND_CHART**: Combined mode that fetches, processes, and generates charts (ideal for automation/CI)
 
 ### Date Range Configuration
 
@@ -182,6 +198,17 @@ All configuration is read from `src/config.py` - no command-line arguments neede
    ```
 2. Run: `python src/main.py`
 
+#### Automated Pipeline (CI/CD)
+1. Edit `src/config.py`:
+   ```python
+   MODE = ExecutionMode.FETCH_AND_CHART
+   DATE_RANGE_MODE = DateRangeMode.LAST_N_DAYS
+   DAYS_BACK = 7
+   ```
+2. Run: `python src/main.py`
+
+This mode combines fetching, processing, and charting in a single run - ideal for automated workflows.
+
 ## Ansible Vault - Secret Management
 
 ### Initial Setup
@@ -239,6 +266,18 @@ github-report-script/
 │   ├── github_fetcher.py      # GitHub API interaction
 │   ├── data_processor.py      # Data aggregation
 │   └── chart_generator.py     # Visualization
+├── tests/                     # 🧪 Test suite
+│   ├── conftest.py            # Pytest fixtures
+│   ├── test_github_fetcher.py # GitHub fetching tests
+│   ├── test_config.py         # Configuration tests
+│   └── test_data_processor.py # Data processing tests
+├── .github/
+│   ├── workflows/
+│   │   └── nightly-report.yml # 🤖 CI/CD workflow
+│   └── scripts/
+│       └── setup-ci.sh        # CI setup script
+├── docs/
+│   └── CI_SETUP.md            # 📖 CI/CD documentation
 ├── ansible/
 │   ├── init_vault.sh          # 🔐 Vault setup script
 │   ├── setup_env.yml          # Playbook to generate .env
@@ -253,10 +292,12 @@ github-report-script/
 │   └── {username}/
 │       └── YYYY-MM-DD.json
 ├── reports/                   # 📈 Generated charts (committed)
-│   ├── report_*.html
-│   ├── report_*.png
-│   └── report_*.pdf
+│   └── YYYYMMDD/              # Dated folders
+│       ├── report.html
+│       ├── report.png
+│       └── report.pdf
 ├── requirements.txt
+├── pytest.ini
 └── README.md
 ```
 
@@ -522,6 +563,115 @@ jobs:
    cd ansible && ansible-playbook setup_env.yml
    ```
 
+## Testing
+
+The project includes a comprehensive test suite with both unit tests (fast, mocked) and integration tests (real GitHub API).
+
+### Running Tests
+
+```bash
+# Run all tests
+pytest
+
+# Run only unit tests (fast, no API calls)
+pytest -m unit
+
+# Run only integration tests (requires GITHUB_TOKEN)
+pytest -m integration
+
+# Run with coverage report
+pytest --cov=src --cov-report=html
+
+# Run verbose with detailed output
+pytest -v
+```
+
+### Test Structure
+
+- **tests/conftest.py**: Shared fixtures and test configuration
+- **tests/test_github_fetcher.py**: Tests for GitHub API interaction
+  - Unit tests: Mocked API calls, verify bot filtering and org filtering
+  - Integration tests: Real API calls to dolr-ai org, verify all branches included
+- **tests/test_config.py**: Tests for configuration and date range logic
+  - Validates that LAST_N_DAYS properly excludes today
+  - Ensures date ranges are correctly calculated
+- **tests/test_data_processor.py**: Tests for data aggregation and metrics
+
+### Test Markers
+
+Tests are marked with pytest markers for selective execution:
+
+- `@pytest.mark.unit` - Fast unit tests with mocked dependencies
+- `@pytest.mark.integration` - Integration tests requiring GitHub API access
+- `@pytest.mark.slow` - Tests that take significant time
+
+### Integration Test Requirements
+
+Integration tests require:
+1. GitHub Personal Access Token set in `.env` file
+2. Access to the dolr-ai organization
+3. Internet connectivity
+
+If GITHUB_TOKEN is not available, integration tests are automatically skipped.
+
+## CI/CD - Automated Nightly Reports
+
+The repository includes GitHub Actions workflows that automatically generate reports every night at **12:00 AM IST (6:30 PM UTC)**.
+
+### Workflow Overview
+
+**Nightly Schedule:**
+- Runs automatically: Every day at 12:00 AM IST
+- Execution mode: `FETCH_AND_CHART` (fetch + process + generate charts)
+- Uses dev container: Same environment as local development
+- Uploads artifacts: Reports retained for 90 days
+
+**Weekly Releases:**
+- Runs automatically: Every Sunday at 12:00 AM IST
+- Creates GitHub release with weekly aggregated reports
+- Tag format: `weekly-{run_number}`
+
+### Quick Setup
+
+1. **Add Required Secret:**
+   - Go to repository Settings → Secrets and variables → Actions
+   - Add secret: `ANSIBLE_VAULT_PASSWORD` (your vault password)
+
+2. **Verify Workflow:**
+   - Go to Actions tab
+   - Check "Nightly GitHub Activity Report" workflow
+   - Reports will be generated automatically
+
+3. **Manual Trigger:**
+   - Actions → Nightly GitHub Activity Report → Run workflow
+   - Select branch and click "Run workflow"
+
+### Accessing Reports
+
+**Daily Artifacts:**
+1. Go to Actions → Select a workflow run
+2. Scroll to "Artifacts" section
+3. Download `github-activity-report-{run_number}.zip`
+
+**Weekly Releases:**
+1. Go to Releases section
+2. Find `weekly-{run_number}` release
+3. Download attached report files
+
+### Key Features
+
+- ✅ **Consistent Environment**: Uses devcontainers/ci for reproducibility
+- ✅ **Secure Secrets**: Ansible Vault with encrypted credentials
+- ✅ **Automatic Uploads**: Reports uploaded as artifacts (90-day retention)
+- ✅ **Weekly Summaries**: Aggregated releases every Sunday
+- ✅ **Manual Triggers**: Run on-demand via workflow_dispatch
+- ✅ **Branch Logging**: Explicitly logs that all branches are fetched
+
+### Documentation
+
+For detailed CI/CD setup, troubleshooting, and configuration:
+- See [docs/CI_SETUP.md](docs/CI_SETUP.md)
+
 ## License
 
 MIT License - See LICENSE file for details.
@@ -551,5 +701,9 @@ MIT License - See LICENSE file for details.
 | Refresh specific dates | `MODE = REFRESH`, set START/END_DATE | `python src/main.py` |
 | Generate charts | `MODE = CHART` | `python src/main.py` |
 | Check status | `MODE = STATUS` | `python src/main.py` |
+| Automated pipeline | `MODE = FETCH_AND_CHART` | `python src/main.py` |
+| Run tests | N/A | `pytest` |
+| Run unit tests only | N/A | `pytest -m unit` |
+| Run integration tests | N/A | `pytest -m integration` |
 | Edit secrets | N/A | `ansible-vault edit ansible/vars/vault.yml` |
 | View secrets | N/A | `ansible-vault view ansible/vars/vault.yml` |

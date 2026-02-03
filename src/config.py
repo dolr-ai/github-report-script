@@ -50,18 +50,20 @@ class ExecutionMode(Enum):
     REFRESH: Force re-fetch for specified date range (overwrites cache)
     CHART: Generate visualizations from existing processed data
     STATUS: Display current status (rate limits, cached data, etc.)
+    FETCH_AND_CHART: Fetch data and immediately generate charts (combined mode)
     """
     FETCH = "fetch"
     REFRESH = "refresh"
     CHART = "chart"
     STATUS = "status"
+    FETCH_AND_CHART = "fetch_and_chart"
 
 
 class DateRangeMode(Enum):
     """
     How to determine the date range for operations.
 
-    LAST_N_DAYS: Use the last N days (configured via DAYS_BACK)
+    LAST_N_DAYS: Last N complete days (excludes today's incomplete data)
     CUSTOM_RANGE: Use specific START_DATE and END_DATE
     SPECIFIC_DATE: Single date (use START_DATE only)
     ALL_CACHED: Use all dates that exist in cache (for CHART mode)
@@ -77,7 +79,7 @@ class DateRangeMode(Enum):
 # ============================================================================
 
 # --- Execution Configuration ---
-MODE = ExecutionMode.CHART
+MODE = ExecutionMode.FETCH_AND_CHART
 """
 What should the script do when run?
 
@@ -202,8 +204,15 @@ def get_date_range() -> tuple:
         ValueError: If configuration is invalid
     """
     if DATE_RANGE_MODE == DateRangeMode.LAST_N_DAYS:
-        end_date = datetime.now()
+        # End date is yesterday (exclude today's incomplete data)
+        end_date = datetime.now() - timedelta(days=1)
+        # Set to end of day
+        end_date = end_date.replace(
+            hour=23, minute=59, second=59, microsecond=999999)
+        # Calculate start date
         start_date = end_date - timedelta(days=DAYS_BACK - 1)
+        start_date = start_date.replace(
+            hour=0, minute=0, second=0, microsecond=0)
         return start_date, end_date
 
     elif DATE_RANGE_MODE == DateRangeMode.CUSTOM_RANGE:

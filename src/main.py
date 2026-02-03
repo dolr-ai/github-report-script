@@ -191,6 +191,48 @@ def cmd_status():
     print("\n" + "=" * 70)
 
 
+def cmd_fetch_and_chart():
+    """Combined mode: Fetch data and immediately generate charts"""
+    print(display_config())
+    logger.info("Starting FETCH_AND_CHART mode (combined operation)")
+
+    # Get date range
+    start_date, end_date = get_date_range()
+    logger.info(f"Date range: {start_date.date()} to {end_date.date()}")
+
+    # Step 1: Fetch commits
+    logger.info("Step 1/3: Fetching commits from GitHub")
+    fetcher = GitHubFetcher(thread_count=THREAD_COUNT)
+    fetcher.fetch_commits(start_date, end_date, USER_IDS, force_refresh=False)
+
+    # Step 2: Process data
+    logger.info("Step 2/3: Processing and aggregating data")
+    processor = DataProcessor()
+    processor.process_date_range(
+        start_date, end_date, USER_IDS, force_refresh=False)
+
+    # Step 3: Generate charts
+    logger.info("Step 3/3: Generating charts")
+    all_data = processor.read_all_users_data(USER_IDS, start_date, end_date)
+
+    if not all_data or all(not data for data in all_data.values()):
+        print("\n❌ No data available to generate charts.")
+        print("   Run with MODE = ExecutionMode.FETCH first.")
+        sys.exit(1)
+
+    generator = ChartGenerator()
+    results = generator.generate_all_charts(
+        all_data,
+        start_date.date().isoformat(),
+        end_date.date().isoformat()
+    )
+
+    print("\n" + "=" * 70)
+    print("✓ FETCH_AND_CHART complete!")
+    print("  Data fetched, processed, and charts generated")
+    print("=" * 70)
+
+
 def main():
     """Main entry point - runs the configured mode"""
     try:
@@ -206,6 +248,8 @@ def main():
             cmd_chart()
         elif MODE == ExecutionMode.STATUS:
             cmd_status()
+        elif MODE == ExecutionMode.FETCH_AND_CHART:
+            cmd_fetch_and_chart()
         else:
             print(f"❌ Unknown execution mode: {MODE}")
             sys.exit(1)

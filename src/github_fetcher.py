@@ -111,16 +111,22 @@ class GitHubFetcher:
             # Get all repositories
             repos = list(org.get_repos())
 
+            logger.debug(
+                f"Fetching from {len(repos)} repositories in {GITHUB_ORG} org")
+
             for repo in repos:
                 try:
                     # Check rate limit before each repo
                     self._check_rate_limit()
 
                     # Get commits for date range
+                    # Note: get_commits() without sha parameter fetches from ALL branches
                     commits = repo.get_commits(
                         since=start_datetime,
                         until=end_datetime
                     )
+
+                    repo_commit_count = 0
 
                     for commit in commits:
                         try:
@@ -154,12 +160,20 @@ class GitHubFetcher:
                             }
 
                             commits_data.append(commit_data)
+                            repo_commit_count += 1
+
+                            logger.debug(
+                                f"Processed commit {commit.sha[:7]} by {author_login} in {repo.name}")
 
                         except Exception as e:
                             # Skip problematic individual commits
                             logger.debug(
                                 f"Skipped commit in {repo.full_name}: {e}")
                             continue
+
+                    if repo_commit_count > 0:
+                        logger.debug(
+                            f"Fetched {repo_commit_count} commits from {repo.full_name}")
 
                 except GithubException as e:
                     if e.status == 409:  # Empty repository
@@ -172,6 +186,12 @@ class GitHubFetcher:
 
         except Exception as e:
             logger.error(f"Error fetching commits for {date_str}: {e}")
+
+        # Log summary
+        unique_repos = len(set(c['repository'] for c in commits_data))
+        unique_authors = len(set(c['author'] for c in commits_data))
+        logger.info(
+            f"Date {date_str}: {len(commits_data)} commits from {unique_repos} repos, {unique_authors} authors")
 
         return {
             'date': date_str,
@@ -289,9 +309,9 @@ class GitHubFetcher:
 
             # Access rate_limit as dictionary or object
             if hasattr(rate_limit, 'core'):
-                remaining = rate_limit.core.remaining
-                limit = rate_limit.core.limit
-                reset = rate_limit.core.reset.isoformat()
+                remaining = rate_limit.rate.remaining
+                limit = rate_limit.rate.limit
+                reset = rate_limit.rate.reset.isoformat()
             else:
                 # Fallback for newer PyGithub versions
                 remaining = rate_limit.rate.remaining
