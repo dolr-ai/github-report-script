@@ -91,7 +91,7 @@ Examples:
 """
 
 # --- Date Range Configuration ---
-DATE_RANGE_MODE = DateRangeMode.CUSTOM_RANGE
+DATE_RANGE_MODE = DateRangeMode.LAST_N_DAYS
 """
 How to determine the date range.
 
@@ -151,14 +151,14 @@ Add or remove usernames as needed.
 """
 
 # --- Performance Configuration ---
-THREAD_COUNT = 8
+THREAD_COUNT = 4
 """
 Number of concurrent threads for API requests.
 Higher values = faster but may hit rate limits.
 
 Recommended:
-    - 2-4 threads: Conservative
-    - 8 threads: Optimal (current - matches connection pool size with exponential backoff protection)
+    - 2-4 threads: Conservative (current - good for pagination which makes many API calls)
+    - 8 threads: Aggressive (faster but may hit rate limits with branch pagination)
     - 16+ threads: May exceed connection pool capacity (requires pool_size adjustment)
     - 1 thread: Debugging or rate limit issues
 

@@ -78,8 +78,39 @@ class GitHubFetcher:
         self.base_url = 'https://api.github.com'
         self.graphql_url = 'https://api.github.com/graphql'
 
-    def _graphql_request(self, query: str, variables: Optional[Dict] = None, 
-                        max_retries: int = 5, base_delay: int = 1) -> Optional[Dict]:
+    def _check_rate_limit_and_wait(self, min_remaining: int = 500) -> None:
+        """Check GraphQL rate limit and wait if needed
+
+        Args:
+            min_remaining: Minimum remaining calls required to proceed
+        """
+        try:
+            response = self.session.get(
+                f'{self.base_url}/rate_limit', timeout=10)
+            response.raise_for_status()
+            rate_data = response.json()
+
+            graphql_limit = rate_data.get('resources', {}).get('graphql', {})
+            remaining = graphql_limit.get('remaining', 0)
+            reset_timestamp = graphql_limit.get('reset', 0)
+
+            if remaining < min_remaining:
+                # Calculate wait time
+                reset_time = datetime.fromtimestamp(reset_timestamp)
+                wait_seconds = (reset_time - datetime.now()).total_seconds()
+
+                if wait_seconds > 0:
+                    logger.warning(
+                        f"GraphQL rate limit low ({remaining} remaining). "
+                        f"Waiting {int(wait_seconds)}s until {reset_time.strftime('%H:%M:%S')}"
+                    )
+                    time.sleep(wait_seconds + 5)  # Add 5s buffer
+                    logger.info("Rate limit reset complete. Resuming...")
+        except Exception as e:
+            logger.warning(f"Could not check rate limit: {e}. Proceeding...")
+
+    def _graphql_request(self, query: str, variables: Optional[Dict] = None,
+                         max_retries: int = 5, base_delay: int = 1) -> Optional[Dict]:
         """Make a GraphQL API request to GitHub with exponential backoff on rate limits
 
         Args:
@@ -93,7 +124,7 @@ class GitHubFetcher:
         """
         retries = 0
         delay = base_delay
-        
+
         while retries <= max_retries:
             try:
                 payload = {'query': query}
@@ -109,11 +140,11 @@ class GitHubFetcher:
                     # Check if it's a rate limit error
                     errors = result['errors']
                     is_rate_limit = any(
-                        err.get('type') == 'RATE_LIMIT' or 
-                        err.get('code') == 'graphql_rate_limit' 
+                        err.get('type') == 'RATE_LIMIT' or
+                        err.get('code') == 'graphql_rate_limit'
                         for err in errors
                     )
-                    
+
                     if is_rate_limit and retries < max_retries:
                         retries += 1
                         current_delay = delay
@@ -129,12 +160,13 @@ class GitHubFetcher:
                         return None
 
                 return result.get('data')
-                
+
             except requests.exceptions.RequestException as e:
                 logger.warning(f"GraphQL request failed: {e}")
                 return None
-        
-        logger.error(f"GraphQL request failed after {max_retries} retries due to rate limiting")
+
+        logger.error(
+            f"GraphQL request failed after {max_retries} retries due to rate limiting")
         return None
 
     def _api_request(self, endpoint: str, params: Optional[Dict] = None,
@@ -153,7 +185,7 @@ class GitHubFetcher:
         url = f"{self.base_url}{endpoint}"
         retries = 0
         delay = base_delay
-        
+
         while retries <= max_retries:
             try:
                 # Update headers for REST API
@@ -168,7 +200,7 @@ class GitHubFetcher:
                 logger.debug(
                     f"API request to {endpoint}: {len(result) if isinstance(result, list) else 'dict'} items")
                 return result
-                
+
             except requests.exceptions.HTTPError as e:
                 # Check for rate limit errors (403 or 429 status codes)
                 if e.response and e.response.status_code in [403, 429]:
@@ -183,16 +215,17 @@ class GitHubFetcher:
                         delay *= 2  # Exponential backoff: double the delay
                         continue
                     else:
-                        logger.error(f"REST API request failed after {max_retries} retries due to rate limiting: {endpoint}")
+                        logger.error(
+                            f"REST API request failed after {max_retries} retries due to rate limiting: {endpoint}")
                         return None
                 else:
                     logger.warning(f"API request failed for {endpoint}: {e}")
                     return None
-                    
+
             except requests.exceptions.RequestException as e:
                 logger.warning(f"API request failed for {endpoint}: {e}")
                 return None
-        
+
         return None
 
     def _check_rate_limit(self):
@@ -587,6 +620,9 @@ class GitHubFetcher:
             return results
 
         logger.info(f"Need to fetch {len(dates_to_fetch)} date(s)")
+
+        # Check rate limit before starting work
+        self._check_rate_limit_and_wait(min_remaining=500)
 
         # Fetch commits concurrently
         with ThreadPoolExecutor(max_workers=self.thread_count) as executor:
