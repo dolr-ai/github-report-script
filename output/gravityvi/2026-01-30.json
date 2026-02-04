@@ -1,12 +1,59 @@
 {
   "date": "2026-01-30",
   "username": "gravityvi",
-  "additions": 0,
-  "deletions": 0,
-  "total_loc": 0,
-  "commit_count": 0,
-  "repositories": [],
-  "repo_count": 0,
-  "branch_breakdown": {},
-  "processed_at": "2026-02-03T21:03:25.487773Z"
+  "additions": 560,
+  "deletions": 142,
+  "total_loc": 702,
+  "commit_count": 8,
+  "repositories": [
+    "dolr-ai/off-chain-agent",
+    "dolr-ai/yral-billing",
+    "dolr-ai/yral-common"
+  ],
+  "repo_count": 3,
+  "branch_breakdown": {
+    "dolr-ai/off-chain-agent": {
+      "fix/user-agent-issue-with-pro-subscription": {
+        "additions": 1,
+        "deletions": 1,
+        "total_loc": 2,
+        "commit_count": 1
+      },
+      "fix/yral-pro-subscription-token-operation": {
+        "additions": 31,
+        "deletions": 61,
+        "total_loc": 92,
+        "commit_count": 2
+      },
+      "main": {
+        "additions": 32,
+        "deletions": 62,
+        "total_loc": 94,
+        "commit_count": 2
+      }
+    },
+    "dolr-ai/yral-common": {
+      "master": {
+        "additions": 6,
+        "deletions": 7,
+        "total_loc": 13,
+        "commit_count": 1
+      },
+      "fix/yral-pro-subscription-token-transaction-implmentation": {
+        "additions": 6,
+        "deletions": 7,
+        "total_loc": 13,
+        "commit_count": 1
+      }
+    },
+    "dolr-ai/yral-billing": {
+      "feat/add-sentry-setup": {
+        "additions": 484,
+        "deletions": 4,
+        "total_loc": 488,
+        "commit_count": 1
+      }
+    }
+  },
+  "processed_at": "2026-02-03T22:51:38.162553Z"
 }

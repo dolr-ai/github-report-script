@@ -1,7 +1,204 @@
 {
   "date": "2026-01-27",
-  "cached_at": "2026-02-03T19:28:14.897002Z",
+  "cached_at": "2026-02-03T21:23:48.831402Z",
   "commits": [
+    {
+      "sha": "8b4964962ad2bc35434f64c7b935b0a192664b65",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-27T12:50:09Z",
+      "message": "fix: remove post status filtering from profiles (#1163)",
+      "stats": {
+        "additions": 24,
+        "deletions": 42,
+        "total": 66
+      },
+      "branches": [
+        "dependabot/cargo/bytes-1.11.1",
+        "dependabot/cargo/hon-worker-common-2a723cd",
+        "dependabot/cargo/openidconnect-4.0.1",
+        "dependabot/cargo/opentelemetry_sdk-0.31.0",
+        "dependabot/cargo/videogen-common-2a723cd",
+        "main",
+        "naitik/fix_dragonfly_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly"
+      ]
+    },
+    {
+      "sha": "70ae1fbf06391953c71763c82cf24bc8863e4725",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-27T03:43:52Z",
+      "message": "dual writes to dragonfly redis (#1158)",
+      "stats": {
+        "additions": 793,
+        "deletions": 45,
+        "total": 838
+      },
+      "branches": [
+        "dependabot/cargo/bytes-1.11.1",
+        "dependabot/cargo/hon-worker-common-2a723cd",
+        "dependabot/cargo/openidconnect-4.0.1",
+        "dependabot/cargo/opentelemetry_sdk-0.31.0",
+        "dependabot/cargo/rsa-0.9.10",
+        "dependabot/cargo/videogen-common-2a723cd",
+        "dependabot/npm_and_yarn/tests/e2e/lodash-4.17.23",
+        "dependabot/npm_and_yarn/tests/e2e/multi-549b90733e",
+        "dependabot/npm_and_yarn/tests/e2e/multi-ac680358f5",
+        "fix/remove-post-status-filtering",
+        "main",
+        "naitik/fix_dragonfly_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly"
+      ]
+    },
+    {
+      "sha": "25d52d63335cf8cabc55bcae47c3ade720cc56b6",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-27T11:37:51Z",
+      "message": "Merge remote-tracking branch 'origin/main' into naitik/migrate_reads_to_dragonfly",
+      "stats": {
+        "additions": 1,
+        "deletions": 3,
+        "total": 4
+      },
+      "branches": [
+        "naitik/migrate_reads_to_dragonfly"
+      ]
+    },
+    {
+      "sha": "51c48e32490b6a8fb48950c18c885b78c43c81fe",
+      "author": "gravityvi",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-27T14:11:44Z",
+      "message": "Merge remote-tracking branch 'origin/main' into feat/add-support-for-yral-subscription",
+      "stats": {
+        "additions": 1935,
+        "deletions": 420,
+        "total": 2355
+      },
+      "branches": [
+        "copilot/sub-pr-378",
+        "feat/add-support-for-yral-subscription"
+      ]
+    },
+    {
+      "sha": "b2ad22dcd82ecbd7521d7cd0027e997fa25c8b16",
+      "author": "gravityvi",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-27T14:00:25Z",
+      "message": "refactored code and added yral pro subscription as a way to pay for ai videogen",
+      "stats": {
+        "additions": 1368,
+        "deletions": 1850,
+        "total": 3218
+      },
+      "branches": [
+        "copilot/sub-pr-378",
+        "feat/add-support-for-yral-subscription"
+      ]
+    },
+    {
+      "sha": "9bb719187be36f0763221a1809904ccc04b64f94",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-27T07:25:42Z",
+      "message": "fix: standardize field names and improve serialization for video payloads (#375)",
+      "stats": {
+        "additions": 21,
+        "deletions": 42,
+        "total": 63
+      },
+      "branches": [
+        "copilot/sub-pr-378",
+        "feat/add-support-for-yral-subscription",
+        "fix/user-agent-issue-with-pro-subscription",
+        "fix/yral-pro-subscription-token-operation",
+        "joel/apps-script-reports-api",
+        "joel/dolr-rewards",
+        "joel/fix-btc-dolr-notif",
+        "joel/fix-event-ser",
+        "joel/fix-gchat-report-buttons",
+        "joel/fix-logging",
+        "joel/fix-report-env",
+        "joel/fix-reports",
+        "joel/icp-swap-dolr-price-fetch",
+        "joel/offchain-broken-pipe-fix",
+        "joel/phash-redis-migration",
+        "joel/profile-views-check",
+        "joel/rewards-mode",
+        "joel/upload-flow-content",
+        "main",
+        "naitik/broken_pipe_issue_fix",
+        "naitik/migrate_reads_to_dragonfly"
+      ]
+    },
+    {
+      "sha": "316ce436f82c0d312758913305e9b3350a433fe3",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-27T03:18:05Z",
+      "message": "refactor: remove metrics integration and related code (#374)",
+      "stats": {
+        "additions": 0,
+        "deletions": 28,
+        "total": 28
+      },
+      "branches": [
+        "copilot/sub-pr-378",
+        "feat/add-support-for-yral-subscription",
+        "fix/user-agent-issue-with-pro-subscription",
+        "fix/yral-pro-subscription-token-operation",
+        "joel/apps-script-reports-api",
+        "joel/dolr-rewards",
+        "joel/fix-btc-dolr-notif",
+        "joel/fix-event-name",
+        "joel/fix-event-ser",
+        "joel/fix-gchat-report-buttons",
+        "joel/fix-logging",
+        "joel/fix-report-env",
+        "joel/fix-reports",
+        "joel/icp-swap-dolr-price-fetch",
+        "joel/offchain-broken-pipe-fix",
+        "joel/phash-redis-migration",
+        "joel/profile-views-check",
+        "joel/rewards-mode",
+        "joel/upload-flow-content",
+        "main",
+        "naitik/broken_pipe_issue_fix",
+        "naitik/migrate_reads_to_dragonfly"
+      ]
+    },
+    {
+      "sha": "49be9533ecf466f0b3ba0d11151761db8a0767fc",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-27T13:22:39Z",
+      "message": "fix: passing of YRAL_MOBILE_SERVICE_ACCOUNT_KEY in preview deployment files",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "naitik/migrate_reads_to_dragonfly"
+      ]
+    },
+    {
+      "sha": "6c4c473c39ddef9310c04dfb887b9841dcb39e6f",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-27T12:34:04Z",
+      "message": "Merge remote-tracking branch 'origin/main' into naitik/migrate_reads_to_dragonfly",
+      "stats": {
+        "additions": 307,
+        "deletions": 275,
+        "total": 582
+      },
+      "branches": [
+        "naitik/migrate_reads_to_dragonfly"
+      ]
+    },
     {
       "sha": "f954e3d254f262ad7f4882eb6d14831c43fb4fc6",
       "author": "naitik-makwana-yral",
@@ -14,7 +211,10 @@
         "total": 933
       },
       "branches": [
-        "copilot/fix-username-release-on-delete"
+        "copilot/fix-username-release-on-delete",
+        "joel/broken_pipe_retries",
+        "joel/fcm-notification-migration",
+        "master"
       ]
     },
     {
@@ -29,7 +229,15 @@
         "total": 295
       },
       "branches": [
-        "create-pull-request/update-did-files-v3.5.9"
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "main"
       ]
     },
     {
@@ -44,7 +252,15 @@
         "total": 2
       },
       "branches": [
-        "create-pull-request/update-did-files-v3.5.9"
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "main"
       ]
     },
     {
@@ -59,7 +275,15 @@
         "total": 8
       },
       "branches": [
-        "create-pull-request/update-did-files-v3.5.9"
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "main"
       ]
     },
     {
@@ -74,7 +298,15 @@
         "total": 9
       },
       "branches": [
-        "create-pull-request/update-did-files-v3.5.9"
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "main"
       ]
     },
     {
@@ -89,7 +321,15 @@
         "total": 4
       },
       "branches": [
-        "create-pull-request/update-did-files-v3.5.9"
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "main"
       ]
     },
     {
@@ -104,7 +344,15 @@
         "total": 8
       },
       "branches": [
-        "create-pull-request/update-did-files-v3.5.9"
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "main"
       ]
     },
     {
@@ -119,7 +367,15 @@
         "total": 72
       },
       "branches": [
-        "create-pull-request/update-did-files-v3.5.9"
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "main"
       ]
     },
     {
@@ -134,7 +390,15 @@
         "total": 103
       },
       "branches": [
-        "create-pull-request/update-did-files-v3.5.9"
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "main"
       ]
     },
     {
@@ -149,7 +413,15 @@
         "total": 103
       },
       "branches": [
-        "create-pull-request/update-did-files-v3.5.9"
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "main"
       ]
     },
     {
@@ -164,7 +436,35 @@
         "total": 15
       },
       "branches": [
-        "create-pull-request/update-did-files-v3.5.9"
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/create-ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/hot-or-not-onboarding",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "main"
+      ]
+    },
+    {
+      "sha": "85c41adbbb818a669fb63a0afb1ce2a2422c116d",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-01-27T12:39:35Z",
+      "message": "Revert \"chore: filter out banned posts\" (#151)",
+      "stats": {
+        "additions": 3,
+        "deletions": 31,
+        "total": 34
+      },
+      "branches": [
+        "feat/update-candid-for-user-info-service",
+        "feat/update-user-info-deps",
+        "fix/update-user-info-service-candid",
+        "fix/yral-pro-subscription-token-transaction-implmentation",
+        "master",
+        "revert-153-fix/update-user-info-service-candid"
       ]
     },
     {
@@ -179,7 +479,16 @@
         "total": 2
       },
       "branches": [
-        "feat/deploy-to-dolr-ai"
+        "feat/deploy-to-dolr-ai",
+        "fix/redirect-uri-for-multiple-deployments",
+        "joel/ai-accounts-integration",
+        "joel/json-ser-ai-endpoint",
+        "joel/json-ser-fix",
+        "main",
+        "naitik/fix_bare_metal_deployment",
+        "naitik/fix_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly",
+        "revert-41-fix/redirect-uri-for-multiple-deployments"
       ]
     },
     {
@@ -194,7 +503,78 @@
         "total": 746
       },
       "branches": [
-        "feat/deploy-to-dolr-ai"
+        "feat/deploy-to-dolr-ai",
+        "fix/redirect-uri-for-multiple-deployments",
+        "joel/ai-accounts-integration",
+        "joel/json-ser-ai-endpoint",
+        "joel/json-ser-fix",
+        "main",
+        "naitik/bare-metal-script-fix",
+        "naitik/fix_bare_metal_deployment",
+        "naitik/fix_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly",
+        "revert-41-fix/redirect-uri-for-multiple-deployments"
+      ]
+    },
+    {
+      "sha": "6354b36a37a36d0aec4df7bc53a3d1e14a91fa6b",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-01-27T17:56:39Z",
+      "message": "Merge branch 'main' into joel/ai-accounts-integration",
+      "stats": {
+        "additions": 729,
+        "deletions": 19,
+        "total": 748
+      },
+      "branches": [
+        "joel/ai-accounts-integration",
+        "joel/json-ser-ai-endpoint"
+      ]
+    },
+    {
+      "sha": "fc419e4863347c9ece30832318c709905e416f8a",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-01-27T09:10:52Z",
+      "message": "fix: added whatsapp api key to baremetal deployment",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "naitik/bare-metal-script-fix"
+      ]
+    },
+    {
+      "sha": "fa3b48676726be5ef21fa284d1de7df08ba24552",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-01-27T10:44:19Z",
+      "message": "Merge remote-tracking branch 'origin/main' into naitik/migrate_reads_to_dragonfly",
+      "stats": {
+        "additions": 9,
+        "deletions": 8,
+        "total": 17
+      },
+      "branches": [
+        "naitik/migrate_reads_to_dragonfly"
+      ]
+    },
+    {
+      "sha": "b95ccd4bc8757e194b848828223001b5e7cc4246",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-01-27T05:14:54Z",
+      "message": "[skip ci] fix: deploy to baremetal on merge to main",
+      "stats": {
+        "additions": 3,
+        "deletions": 4,
+        "total": 7
+      },
+      "branches": [
+        "naitik/migration-to-dragonfly-redis"
       ]
     },
     {
@@ -224,9 +604,10 @@
         "total": 1
       },
       "branches": [
-        "main"
+        "main",
+        "naitik/initial_setup"
       ]
     }
   ],
-  "commit_count": 15
+  "commit_count": 29
 }

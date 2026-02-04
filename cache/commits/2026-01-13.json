@@ -1,6 +1,6 @@
 {
   "date": "2026-01-13",
-  "cached_at": "2026-02-03T20:53:56.018082Z",
+  "cached_at": "2026-02-03T21:19:31.303408Z",
   "commits": [
     {
       "sha": "5c540f6b31e8837d1c0f7cbd21c3c3967d554215",
@@ -191,7 +191,449 @@
       "branches": [
         "feature/create-ai-chat-bot"
       ]
+    },
+    {
+      "sha": "c2f53a0525c67f9a8a576cae566f2d134058091b",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-01-13T07:49:16Z",
+      "message": "fix: auth error kind serialisation",
+      "stats": {
+        "additions": 104,
+        "deletions": 2,
+        "total": 106
+      },
+      "branches": [
+        "feat/deploy-to-dolr-ai",
+        "fix/redirect-uri-for-multiple-deployments",
+        "joel/ai-accounts-integration",
+        "joel/json-ser-ai-endpoint",
+        "joel/json-ser-fix",
+        "main",
+        "naitik/bare-metal-script-fix",
+        "naitik/fix_bare_metal_deployment",
+        "naitik/fix_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration-to-dragonfly-redis",
+        "revert-41-fix/redirect-uri-for-multiple-deployments"
+      ]
+    },
+    {
+      "sha": "bcc0676892d7069cf4ef048681f5ec83ccc67a3d",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-01-13T06:48:34Z",
+      "message": "implement custom serialize and deserialize for error types",
+      "stats": {
+        "additions": 104,
+        "deletions": 2,
+        "total": 106
+      },
+      "branches": [
+        "feat/deploy-to-dolr-ai",
+        "feat/fix-error-type-for-api",
+        "fix/redirect-uri-for-multiple-deployments",
+        "joel/ai-accounts-integration",
+        "joel/json-ser-ai-endpoint",
+        "joel/json-ser-fix",
+        "main",
+        "naitik/bare-metal-script-fix",
+        "naitik/fix_bare_metal_deployment",
+        "naitik/fix_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration-to-dragonfly-redis",
+        "revert-41-fix/redirect-uri-for-multiple-deployments"
+      ]
+    },
+    {
+      "sha": "7aa17f41df587222716fd73d59883b251d3e3c74",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-13T15:18:43Z",
+      "message": "refactor",
+      "stats": {
+        "additions": 180,
+        "deletions": 46,
+        "total": 226
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "1f941f6b957160287b1df7aa2acb6af8997ba701",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-13T10:18:33Z",
+      "message": "Add Ubuntu 24.04 image path to installimage command",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "96b6126005747d09af2b7999a207542e20222ac1",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-13T23:38:58Z",
+      "message": "Bugfix Message System Prompt (#106)",
+      "stats": {
+        "additions": 84,
+        "deletions": 68,
+        "total": 152
+      },
+      "branches": [
+        "aioboto_implementation",
+        "backward_chat_api",
+        "bf_14jan",
+        "c_inf_2",
+        "create_influencers",
+        "fix/envsubst-config-substitution",
+        "fix/envsubst-litestream-config",
+        "fix_pragma_optimize",
+        "fk_exeption_handle",
+        "further_joel_sugg",
+        "i_e_error",
+        "img_in_chat",
+        "inbox_apis",
+        "indempotency_msg_fix",
+        "joel/optim-suggestions",
+        "lat_op_stage",
+        "lat_op",
+        "latencytrack_optimization",
+        "ls_1s",
+        "main_deployment_fixes",
+        "main_replica_14jan",
+        "main_replica__16jan",
+        "main",
+        "more_op_latency",
+        "new_deployment",
+        "pn_inbox",
+        "safety_check",
+        "send_msg_rogue",
+        "sentry_bf",
+        "sentry_everywhere",
+        "sentry_webhook",
+        "slow_msg",
+        "sqlite_optimisations",
+        "staging",
+        "sys_prompt_prod",
+        "test_fix_url_n_storj_k",
+        "test_robust_gc",
+        "wal_ckpt_bug_fix"
+      ]
+    },
+    {
+      "sha": "acd6642eee691b72e0d052051b8d5f00e068ab85",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-13T22:29:55Z",
+      "message": "Nsfw pre push with syntax issue fixed on deploy file (#105)",
+      "stats": {
+        "additions": 0,
+        "deletions": 1,
+        "total": 1
+      },
+      "branches": [
+        "aioboto_implementation",
+        "backward_chat_api",
+        "bf_msg_sys",
+        "bf_14jan",
+        "c_inf_2",
+        "create_influencers",
+        "fix/envsubst-config-substitution",
+        "fix/envsubst-litestream-config",
+        "fix_pragma_optimize",
+        "fk_exeption_handle",
+        "further_joel_sugg",
+        "i_e_error",
+        "img_in_chat",
+        "inbox_apis",
+        "indempotency_msg_fix",
+        "joel/optim-suggestions",
+        "lat_op_stage",
+        "lat_op",
+        "latencytrack_optimization",
+        "ls_1s",
+        "main_deployment_fixes",
+        "main_replica_14jan",
+        "main_replica__16jan",
+        "main",
+        "more_op_latency",
+        "new_deployment",
+        "pn_inbox",
+        "safety_check",
+        "send_msg_rogue",
+        "sentry_bf",
+        "sentry_everywhere",
+        "sentry_webhook",
+        "slow_msg",
+        "sqlite_optimisations",
+        "staging",
+        "sys_prompt_prod",
+        "test_fix_url_n_storj_k",
+        "test_robust_gc",
+        "wal_ckpt_bug_fix"
+      ]
+    },
+    {
+      "sha": "3c512e110344915e02cfdb0498ec7f42c253f871",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-13T22:22:56Z",
+      "message": "Nsfw pre push with starlette sec scan ex (#104)",
+      "stats": {
+        "additions": 3,
+        "deletions": 0,
+        "total": 3
+      },
+      "branches": [
+        "aioboto_implementation",
+        "backward_chat_api",
+        "bf_msg_sys",
+        "bf_14jan",
+        "c_inf_2",
+        "create_influencers",
+        "fix/envsubst-config-substitution",
+        "fix/envsubst-litestream-config",
+        "fix_pragma_optimize",
+        "fk_exeption_handle",
+        "further_joel_sugg",
+        "i_e_error",
+        "img_in_chat",
+        "inbox_apis",
+        "indempotency_msg_fix",
+        "joel/optim-suggestions",
+        "lat_op_stage",
+        "lat_op",
+        "latencytrack_optimization",
+        "ls_1s",
+        "main_deployment_fixes",
+        "main_replica_14jan",
+        "main_replica__16jan",
+        "main",
+        "more_op_latency",
+        "new_deployment",
+        "nsfw_pre_push",
+        "pn_inbox",
+        "safety_check",
+        "send_msg_rogue",
+        "sentry_bf",
+        "sentry_everywhere",
+        "sentry_webhook",
+        "slow_msg",
+        "sqlite_optimisations",
+        "staging",
+        "sys_prompt_prod",
+        "test_fix_url_n_storj_k",
+        "test_robust_gc",
+        "wal_ckpt_bug_fix"
+      ]
+    },
+    {
+      "sha": "889f6fa3394f0220df89d887c996f3450d2e3d83",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-13T22:18:48Z",
+      "message": "Nsfw pre push w Sec scan fixes and code linting fix (#103)",
+      "stats": {
+        "additions": 32,
+        "deletions": 4,
+        "total": 36
+      },
+      "branches": [
+        "aioboto_implementation",
+        "backward_chat_api",
+        "bf_msg_sys",
+        "bf_14jan",
+        "c_inf_2",
+        "create_influencers",
+        "fix/envsubst-config-substitution",
+        "fix/envsubst-litestream-config",
+        "fix_pragma_optimize",
+        "fk_exeption_handle",
+        "further_joel_sugg",
+        "i_e_error",
+        "img_in_chat",
+        "inbox_apis",
+        "indempotency_msg_fix",
+        "joel/optim-suggestions",
+        "lat_op_stage",
+        "lat_op",
+        "latencytrack_optimization",
+        "ls_1s",
+        "main_deployment_fixes",
+        "main_replica_14jan",
+        "main_replica__16jan",
+        "main",
+        "more_op_latency",
+        "new_deployment",
+        "nsfw_pre_push",
+        "pn_inbox",
+        "safety_check",
+        "send_msg_rogue",
+        "sentry_bf",
+        "sentry_everywhere",
+        "sentry_webhook",
+        "slow_msg",
+        "sqlite_optimisations",
+        "staging",
+        "sys_prompt_prod",
+        "test_fix_url_n_storj_k",
+        "test_robust_gc",
+        "wal_ckpt_bug_fix"
+      ]
+    },
+    {
+      "sha": "adfcea4c8b236a0e77cbd758f8c54a261cb1a8df",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-13T22:10:21Z",
+      "message": "Nsfw pre push (#102)",
+      "stats": {
+        "additions": 2117,
+        "deletions": 769,
+        "total": 2886
+      },
+      "branches": [
+        "aioboto_implementation",
+        "backward_chat_api",
+        "bf_msg_sys",
+        "bf_14jan",
+        "c_inf_2",
+        "create_influencers",
+        "fix/envsubst-config-substitution",
+        "fix/envsubst-litestream-config",
+        "fix_pragma_optimize",
+        "fk_exeption_handle",
+        "further_joel_sugg",
+        "i_e_error",
+        "img_in_chat",
+        "inbox_apis",
+        "indempotency_msg_fix",
+        "joel/optim-suggestions",
+        "lat_op_stage",
+        "lat_op",
+        "latencytrack_optimization",
+        "ls_1s",
+        "main_deployment_fixes",
+        "main_replica_14jan",
+        "main_replica__16jan",
+        "main",
+        "more_op_latency",
+        "new_deployment",
+        "nsfw_pre_push",
+        "pn_inbox",
+        "safety_check",
+        "send_msg_rogue",
+        "sentry_bf",
+        "sentry_everywhere",
+        "sentry_webhook",
+        "slow_msg",
+        "sqlite_optimisations",
+        "staging",
+        "sys_prompt_prod",
+        "test_fix_url_n_storj_k",
+        "test_robust_gc",
+        "wal_ckpt_bug_fix"
+      ]
+    },
+    {
+      "sha": "1001d32a5a92fb61e49e9c535c0302b4f46f5da7",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-13T07:34:31Z",
+      "message": "Merge pull request #99 from dolr-ai/jatin_og_prompt",
+      "stats": {
+        "additions": 43,
+        "deletions": 45,
+        "total": 88
+      },
+      "branches": [
+        "debug_or_fmissue",
+        "m_replica_14jan",
+        "nsfw_pre_push"
+      ]
+    },
+    {
+      "sha": "79dfe1cb930188baf7641b25d2d32ffb94e53452",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-13T23:43:37Z",
+      "message": "Merge branch 'main' into fk_exeption_handle",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "fk_exeption_handle"
+      ]
+    },
+    {
+      "sha": "c8d9207ae959da2ff7f2dc6b44764a99009cb49d",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-13T22:29:44Z",
+      "message": "Merge branch 'main' into nsfw_pre_push",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "nsfw_pre_push"
+      ]
+    },
+    {
+      "sha": "9ab402190db6016d48716d2ed3920a36ca2da118",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-13T22:22:48Z",
+      "message": "Merge branch 'main' into nsfw_pre_push",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "nsfw_pre_push"
+      ]
+    },
+    {
+      "sha": "d96aaa3727d845186dff2d4f2e2eb14b83924a31",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-13T22:18:12Z",
+      "message": "Merge branch 'main' into nsfw_pre_push",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "nsfw_pre_push"
+      ]
+    },
+    {
+      "sha": "86588e9b8f7f63af349e2b6fc480fc4100bd9c70",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-13T19:21:05Z",
+      "message": "Merge pull request #101 from dolr-ai/m_replica_14jan",
+      "stats": {
+        "additions": 286,
+        "deletions": 5,
+        "total": 291
+      },
+      "branches": [
+        "nsfw_pre_push"
+      ]
     }
   ],
-  "commit_count": 8
+  "commit_count": 23
 }

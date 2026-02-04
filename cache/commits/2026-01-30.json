@@ -1,7 +1,362 @@
 {
   "date": "2026-01-30",
-  "cached_at": "2026-02-03T19:28:24.814686Z",
+  "cached_at": "2026-02-03T22:50:24.076916Z",
   "commits": [
+    {
+      "sha": "58b3882b9104261f55cff09632f0ccebca449216",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2026-01-30T11:36:29Z",
+      "message": "fix: accept new registration guard (#640)",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "feat/add-bulk-methods-for-profile-details",
+        "main"
+      ]
+    },
+    {
+      "sha": "1496255e533143c7d03110cebbd71b96994e8503",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2026-01-30T10:14:40Z",
+      "message": "rmeove caller check",
+      "stats": {
+        "additions": 0,
+        "deletions": 6,
+        "total": 6
+      },
+      "branches": [
+        "joel/fix-accept-new-registration-guard"
+      ]
+    },
+    {
+      "sha": "ddb53d7f14f6dcc2c8d43fe4becc3a37fa4cec01",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2026-01-30T10:09:06Z",
+      "message": "Revert \"fix register_new_user_v2\"",
+      "stats": {
+        "additions": 5,
+        "deletions": 47,
+        "total": 52
+      },
+      "branches": [
+        "joel/fix-accept-new-registration-guard"
+      ]
+    },
+    {
+      "sha": "74913b1c3e977212fbd499719301baa60bfab061",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2026-01-30T09:53:52Z",
+      "message": "fix register_new_user_v2",
+      "stats": {
+        "additions": 47,
+        "deletions": 5,
+        "total": 52
+      },
+      "branches": [
+        "joel/fix-accept-new-registration-guard"
+      ]
+    },
+    {
+      "sha": "eac7abb10a26b06d69f8e8602d7ab66c473cc459",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2026-01-30T09:33:07Z",
+      "message": "fix: accept new registration guard",
+      "stats": {
+        "additions": 8,
+        "deletions": 2,
+        "total": 10
+      },
+      "branches": [
+        "joel/fix-accept-new-registration-guard"
+      ]
+    },
+    {
+      "sha": "627440dd40872b9db69a8d72b443764f129c4a19",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-30T11:15:35Z",
+      "message": "fix: updated dragonfly connection code which was prone to broken pipe (#1164)",
+      "stats": {
+        "additions": 43,
+        "deletions": 5,
+        "total": 48
+      },
+      "branches": [
+        "dependabot/cargo/bytes-1.11.1",
+        "dependabot/cargo/hon-worker-common-2a723cd",
+        "dependabot/cargo/openidconnect-4.0.1",
+        "dependabot/cargo/opentelemetry_sdk-0.31.0",
+        "dependabot/cargo/videogen-common-2a723cd",
+        "main"
+      ]
+    },
+    {
+      "sha": "902a2060156c7aa801bf98648f2875640cbdb51b",
+      "author": "gravityvi",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-30T09:49:15Z",
+      "message": "add user agent in case of yral pro subscription",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "fix/user-agent-issue-with-pro-subscription"
+      ]
+    },
+    {
+      "sha": "ab31cd3bb89257ff2eab18405c8d82684e9110c0",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-30T07:54:33Z",
+      "message": "fix: video started event user id injection (#384)",
+      "stats": {
+        "additions": 39,
+        "deletions": 20,
+        "total": 59
+      },
+      "branches": [
+        "fix/user-agent-issue-with-pro-subscription",
+        "fix/yral-pro-subscription-token-operation",
+        "joel/apps-script-reports-api",
+        "joel/fix-btc-dolr-notif",
+        "joel/fix-gchat-report-buttons",
+        "joel/fix-logging",
+        "joel/fix-report-env",
+        "joel/offchain-broken-pipe-fix",
+        "joel/rewards-mode",
+        "main",
+        "naitik/broken_pipe_issue_fix"
+      ]
+    },
+    {
+      "sha": "b330a97454a4b9d6683757108dc08f00718dc7b2",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-30T07:14:13Z",
+      "message": "fix: dolr price fetch (#383)",
+      "stats": {
+        "additions": 456,
+        "deletions": 100,
+        "total": 556
+      },
+      "branches": [
+        "fix/user-agent-issue-with-pro-subscription",
+        "fix/yral-pro-subscription-token-operation",
+        "joel/apps-script-reports-api",
+        "joel/fix-btc-dolr-notif",
+        "joel/fix-event-ser",
+        "joel/fix-gchat-report-buttons",
+        "joel/fix-logging",
+        "joel/fix-report-env",
+        "joel/offchain-broken-pipe-fix",
+        "joel/rewards-mode",
+        "main",
+        "naitik/broken_pipe_issue_fix"
+      ]
+    },
+    {
+      "sha": "6c0758c63bd352203914f2d7f2ea28e6932fbf15",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-30T06:32:59Z",
+      "message": "feat: added normal views on profile page tracking (#381)",
+      "stats": {
+        "additions": 109,
+        "deletions": 2,
+        "total": 111
+      },
+      "branches": [
+        "fix/user-agent-issue-with-pro-subscription",
+        "fix/yral-pro-subscription-token-operation",
+        "joel/apps-script-reports-api",
+        "joel/fix-btc-dolr-notif",
+        "joel/fix-event-ser",
+        "joel/fix-gchat-report-buttons",
+        "joel/fix-logging",
+        "joel/fix-report-env",
+        "joel/offchain-broken-pipe-fix",
+        "joel/rewards-mode",
+        "main",
+        "naitik/broken_pipe_issue_fix"
+      ]
+    },
+    {
+      "sha": "a9ef4379063cd0027dcd0bb682088581e8a0f149",
+      "author": "gravityvi",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-30T15:18:42Z",
+      "message": "fix lint",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "fix/yral-pro-subscription-token-operation"
+      ]
+    },
+    {
+      "sha": "08c87c66cac14a3b9647e69df216cf58b0df84fa",
+      "author": "gravityvi",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-30T12:02:59Z",
+      "message": "fix yral pro subscription token operation",
+      "stats": {
+        "additions": 29,
+        "deletions": 59,
+        "total": 88
+      },
+      "branches": [
+        "fix/yral-pro-subscription-token-operation"
+      ]
+    },
+    {
+      "sha": "857c53e53ef3fd4ed3943089673356ee5e4b0a54",
+      "author": "gravityvi",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-30T09:50:46Z",
+      "message": "fix: add user agent in case of yral pro subscription (#385)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "fix/yral-pro-subscription-token-operation",
+        "joel/apps-script-reports-api",
+        "joel/fix-btc-dolr-notif",
+        "joel/fix-gchat-report-buttons",
+        "joel/fix-logging",
+        "joel/fix-report-env",
+        "joel/offchain-broken-pipe-fix",
+        "joel/rewards-mode",
+        "main",
+        "naitik/broken_pipe_issue_fix"
+      ]
+    },
+    {
+      "sha": "ab31102ebffb202f6219ba19a01efc69fb7d58f9",
+      "author": "gravityvi",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-30T15:37:12Z",
+      "message": "fix yral pro subscription token operation (#386)",
+      "stats": {
+        "additions": 31,
+        "deletions": 61,
+        "total": 92
+      },
+      "branches": [
+        "joel/apps-script-reports-api",
+        "joel/fix-btc-dolr-notif",
+        "joel/fix-gchat-report-buttons",
+        "joel/fix-logging",
+        "joel/fix-report-env",
+        "joel/offchain-broken-pipe-fix",
+        "joel/rewards-mode",
+        "main",
+        "naitik/broken_pipe_issue_fix"
+      ]
+    },
+    {
+      "sha": "655bf72178a0aedfa7cc9e7d2287a762636a0a78",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-30T07:31:46Z",
+      "message": "fmt",
+      "stats": {
+        "additions": 5,
+        "deletions": 3,
+        "total": 8
+      },
+      "branches": [
+        "joel/fix-event-ser"
+      ]
+    },
+    {
+      "sha": "c1ce6a2041c175e322f8a8ce33b99a1c32d731ca",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-30T07:31:21Z",
+      "message": "fix: video started event user id injection",
+      "stats": {
+        "additions": 37,
+        "deletions": 20,
+        "total": 57
+      },
+      "branches": [
+        "joel/fix-event-ser"
+      ]
+    },
+    {
+      "sha": "a58f046815fc2457051e10317d6693e1b0b7a011",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-30T05:43:17Z",
+      "message": "lint",
+      "stats": {
+        "additions": 0,
+        "deletions": 5,
+        "total": 5
+      },
+      "branches": [
+        "joel/icp-swap-dolr-price-fetch"
+      ]
+    },
+    {
+      "sha": "60b1126b1ef89f6318222aa82c56b43bac559669",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-30T05:25:38Z",
+      "message": "fix decimals",
+      "stats": {
+        "additions": 79,
+        "deletions": 8,
+        "total": 87
+      },
+      "branches": [
+        "joel/icp-swap-dolr-price-fetch"
+      ]
+    },
+    {
+      "sha": "5a179b262b9ad4d69cd6bd3739b7f56fa0317fcc",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-30T04:58:29Z",
+      "message": "lint",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "joel/icp-swap-dolr-price-fetch"
+      ]
+    },
+    {
+      "sha": "c900a0044a1ee21950c67c9b0c28c3becc7c3008",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-30T04:55:57Z",
+      "message": "fix tests",
+      "stats": {
+        "additions": 5,
+        "deletions": 168,
+        "total": 173
+      },
+      "branches": [
+        "joel/icp-swap-dolr-price-fetch"
+      ]
+    },
     {
       "sha": "edace7be8393519625ccd05fbb4a644002753f44",
       "author": "joel-medicala-yral",
@@ -16,6 +371,21 @@
       "branches": [
         "copilot/fix-username-release-on-delete",
         "master"
+      ]
+    },
+    {
+      "sha": "39fb5c42b535ccf2e1dbb1f9fdff847ae420d367",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-01-30T06:50:03Z",
+      "message": "fix connection",
+      "stats": {
+        "additions": 56,
+        "deletions": 48,
+        "total": 104
+      },
+      "branches": [
+        "joel/fcm-notification-migration"
       ]
     },
     {
@@ -45,7 +415,11 @@
         "total": 492
       },
       "branches": [
-        "develop"
+        "develop",
+        "feature/hot-or-not-onboarding",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "main"
       ]
     },
     {
@@ -60,7 +434,11 @@
         "total": 4
       },
       "branches": [
-        "develop"
+        "develop",
+        "feature/hot-or-not-onboarding",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "main"
       ]
     },
     {
@@ -75,7 +453,11 @@
         "total": 229
       },
       "branches": [
-        "develop"
+        "develop",
+        "feature/hot-or-not-onboarding",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "main"
       ]
     },
     {
@@ -90,7 +472,69 @@
         "total": 62
       },
       "branches": [
-        "feature/ai-influencer"
+        "feature/ai-influencer",
+        "feature/create-ai-influencer"
+      ]
+    },
+    {
+      "sha": "cbb49ea184ffe89dc0088c0872c5b89fe80eb0cf",
+      "author": "samarth-paboowal-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-30T09:28:04Z",
+      "message": "build: adds initial flow for bot creation",
+      "stats": {
+        "additions": 1320,
+        "deletions": 6,
+        "total": 1326
+      },
+      "branches": [
+        "feature/create-ai-influencer"
+      ]
+    },
+    {
+      "sha": "f092686b1f70cc0f70ea2c54f9b36fb04ad19dc6",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-30T16:53:42Z",
+      "message": "Merge pull request #820 from dolr-ai/release/android-2.6.3",
+      "stats": {
+        "additions": 218131,
+        "deletions": 1722,
+        "total": 219853
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "2a723cde83d834e7dc2fdbdb469621367b626937",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-01-30T11:52:44Z",
+      "message": "fix: yral pro subscription token type (#155)",
+      "stats": {
+        "additions": 6,
+        "deletions": 7,
+        "total": 13
+      },
+      "branches": [
+        "feat/update-user-info-deps",
+        "master"
+      ]
+    },
+    {
+      "sha": "20fcfa6d0f4b6f57770032c952a99363985ee02a",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-01-30T11:48:20Z",
+      "message": "fix yral pro subscription token type",
+      "stats": {
+        "additions": 6,
+        "deletions": 7,
+        "total": 13
+      },
+      "branches": [
+        "fix/yral-pro-subscription-token-transaction-implmentation"
       ]
     },
     {
@@ -105,7 +549,10 @@
         "total": 8
       },
       "branches": [
-        "feat/deploy-to-dolr-ai"
+        "feat/deploy-to-dolr-ai",
+        "fix/redirect-uri-for-multiple-deployments",
+        "main",
+        "revert-41-fix/redirect-uri-for-multiple-deployments"
       ]
     },
     {
@@ -120,7 +567,88 @@
         "total": 205
       },
       "branches": [
-        "feat/deploy-to-dolr-ai"
+        "feat/deploy-to-dolr-ai",
+        "fix/redirect-uri-for-multiple-deployments",
+        "joel/json-ser-fix",
+        "main",
+        "revert-41-fix/redirect-uri-for-multiple-deployments"
+      ]
+    },
+    {
+      "sha": "2f410c57fbabad8f2ad9bba32496bc2d4b5ccb67",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-01-30T05:54:31Z",
+      "message": "fix field name",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "joel/ai-accounts-integration",
+        "joel/json-ser-ai-endpoint"
+      ]
+    },
+    {
+      "sha": "fdd55b8c56473561895038a5b1d540f4dd5d5da5",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-01-30T05:36:50Z",
+      "message": "Merge branch 'main' into joel/ai-accounts-integration",
+      "stats": {
+        "additions": 65,
+        "deletions": 247,
+        "total": 312
+      },
+      "branches": [
+        "joel/ai-accounts-integration",
+        "joel/json-ser-ai-endpoint"
+      ]
+    },
+    {
+      "sha": "08ca483a18a2f649ecd7a86853588a8e3a6a5b85",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-01-30T12:51:51Z",
+      "message": "fix json ser for ai account creation endpoint",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "joel/json-ser-ai-endpoint"
+      ]
+    },
+    {
+      "sha": "b300911205061ab2a8bfa08b731fc1be8356d2ba",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-01-30T12:54:23Z",
+      "message": "fmt",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "joel/json-ser-fix"
+      ]
+    },
+    {
+      "sha": "a832bbb7edf4497ca323d00811bcbdd9a49e0be4",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-01-30T12:53:49Z",
+      "message": "fix: fixed json ser for ai account creation flow sf",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "joel/json-ser-fix"
       ]
     },
     {
@@ -195,7 +723,8 @@
         "total": 231
       },
       "branches": [
-        "feat/add-sentry-setup"
+        "feat/add-sentry-setup",
+        "main"
       ]
     },
     {
@@ -469,5 +998,5 @@
       ]
     }
   ],
-  "commit_count": 31
+  "commit_count": 61
 }

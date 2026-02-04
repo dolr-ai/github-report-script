@@ -1,12 +1,71 @@
 {
   "date": "2026-01-19",
   "username": "naitik-makwana-yral",
-  "additions": 0,
-  "deletions": 0,
-  "total_loc": 0,
-  "commit_count": 0,
-  "repositories": [],
-  "repo_count": 0,
-  "branch_breakdown": {},
-  "processed_at": "2026-02-03T21:03:25.464038Z"
+  "additions": 4239,
+  "deletions": 2397,
+  "total_loc": 6636,
+  "commit_count": 12,
+  "repositories": [
+    "dolr-ai/download-upload-service",
+    "dolr-ai/hot-or-not-web-leptos-ssr",
+    "dolr-ai/off-chain-agent",
+    "dolr-ai/yral-common",
+    "dolr-ai/yral-metadata"
+  ],
+  "repo_count": 5,
+  "branch_breakdown": {
+    "dolr-ai/hot-or-not-web-leptos-ssr": {
+      "main": {
+        "additions": 1,
+        "deletions": 1,
+        "total_loc": 2,
+        "commit_count": 1
+      }
+    },
+    "dolr-ai/off-chain-agent": {
+      "main": {
+        "additions": 2,
+        "deletions": 2,
+        "total_loc": 4,
+        "commit_count": 1
+      }
+    },
+    "dolr-ai/yral-metadata": {
+      "master": {
+        "additions": 2343,
+        "deletions": 511,
+        "total_loc": 2854,
+        "commit_count": 2
+      },
+      "naitik/comment_out_test_from_prod_ci": {
+        "additions": 15,
+        "deletions": 10,
+        "total_loc": 25,
+        "commit_count": 2
+      },
+      "naitik/1403_migration_to_bare_metal": {
+        "additions": 1876,
+        "deletions": 1871,
+        "total_loc": 3747,
+        "commit_count": 4
+      }
+    },
+    "dolr-ai/download-upload-service": {
+      "main": {
+        "additions": 1,
+        "deletions": 1,
+        "total_loc": 2,
+        "commit_count": 1
+      }
+    },
+    "dolr-ai/yral-common": {
+      "master": {
+        "additions": 1,
+        "deletions": 1,
+        "total_loc": 2,
+        "commit_count": 1
+      }
+    }
+  },
+  "processed_at": "2026-02-03T22:51:38.127494Z"
 }

@@ -5,9 +5,6 @@ on:
     # Runs at 12:00 AM IST (6:30 PM UTC)
     - cron: '30 18 * * *'
   workflow_dispatch: # Allow manual triggering
-  push:
-    branches:
-      - main
 
 jobs:
   generate-report:

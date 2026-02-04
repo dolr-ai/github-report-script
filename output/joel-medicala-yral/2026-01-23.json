@@ -1,12 +1,53 @@
 {
   "date": "2026-01-23",
   "username": "joel-medicala-yral",
-  "additions": 0,
-  "deletions": 0,
-  "total_loc": 0,
-  "commit_count": 0,
-  "repositories": [],
-  "repo_count": 0,
-  "branch_breakdown": {},
-  "processed_at": "2026-02-03T21:03:25.474772Z"
+  "additions": 412,
+  "deletions": 1764,
+  "total_loc": 2176,
+  "commit_count": 9,
+  "repositories": [
+    "dolr-ai/hot-or-not-web-leptos-ssr",
+    "dolr-ai/off-chain-agent",
+    "dolr-ai/yral-ai-chat"
+  ],
+  "repo_count": 3,
+  "branch_breakdown": {
+    "dolr-ai/hot-or-not-web-leptos-ssr": {
+      "main": {
+        "additions": 44,
+        "deletions": 793,
+        "total_loc": 837,
+        "commit_count": 1
+      },
+      "revert-1153-naitik/migration_to_dragonfly_redis": {
+        "additions": 44,
+        "deletions": 793,
+        "total_loc": 837,
+        "commit_count": 1
+      }
+    },
+    "dolr-ai/off-chain-agent": {
+      "main": {
+        "additions": 123,
+        "deletions": 15,
+        "total_loc": 138,
+        "commit_count": 4
+      },
+      "fix/gchat-oauth-for-report-buttons": {
+        "additions": 6,
+        "deletions": 2,
+        "total_loc": 8,
+        "commit_count": 2
+      }
+    },
+    "dolr-ai/yral-ai-chat": {
+      "lat_op_stage": {
+        "additions": 195,
+        "deletions": 161,
+        "total_loc": 356,
+        "commit_count": 1
+      }
+    }
+  },
+  "processed_at": "2026-02-03T22:51:38.141387Z"
 }

@@ -1,6 +1,6 @@
 {
   "date": "2026-01-20",
-  "cached_at": "2026-02-03T20:53:58.533022Z",
+  "cached_at": "2026-02-03T21:22:14.680145Z",
   "commits": [
     {
       "sha": "0d605bbdabef576c4b7577568ed525e66f9c1baa",
@@ -733,7 +733,195 @@
       "branches": [
         "feat/update-rate-limit-canister-did-file"
       ]
+    },
+    {
+      "sha": "074250324a5c3d9e99cdc301f26fb238ef0a3a1a",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-01-20T22:02:11Z",
+      "message": "[skip ci] fix:  small fix in compose file",
+      "stats": {
+        "additions": 5,
+        "deletions": 5,
+        "total": 10
+      },
+      "branches": [
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration-to-dragonfly-redis"
+      ]
+    },
+    {
+      "sha": "49e15d678b0f43ef4ba6c90f8f03c437ee0cf50d",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-01-20T16:19:21Z",
+      "message": "fix: typo in ENV var name",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration-to-dragonfly-redis"
+      ]
+    },
+    {
+      "sha": "9d3c7c55c57f88d666b4bd5fe54a0769a4084ae8",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-01-20T16:01:49Z",
+      "message": "fix: pin pointing wasm bindgen version as per yml",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration-to-dragonfly-redis"
+      ]
+    },
+    {
+      "sha": "4dda8a98125aff1963d0225cb70ccd5846da464c",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-01-20T15:33:58Z",
+      "message": "fix: make rustls optional to use only for ssr build",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration-to-dragonfly-redis"
+      ]
+    },
+    {
+      "sha": "9e0bc64916c32b1d192bbd8838cba2ea891c367b",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-01-20T14:52:26Z",
+      "message": "fix: cargo clippy error fix",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration-to-dragonfly-redis"
+      ]
+    },
+    {
+      "sha": "71f1e30c09e9c181c72b07db44c1e448d28ffc2b",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-01-20T14:45:17Z",
+      "message": "fix: cargo fmt lint check",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration-to-dragonfly-redis"
+      ]
+    },
+    {
+      "sha": "ad595a7abccd0d5ee617f90b98f0dc084857489f",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-01-20T14:39:58Z",
+      "message": "formatting",
+      "stats": {
+        "additions": 37,
+        "deletions": 29,
+        "total": 66
+      },
+      "branches": [
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration-to-dragonfly-redis"
+      ]
+    },
+    {
+      "sha": "490cfa89eb4920c6b066833286fceecb820a292d",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-01-20T14:36:05Z",
+      "message": "initial changes for migration to dragonfly redis",
+      "stats": {
+        "additions": 744,
+        "deletions": 10,
+        "total": 754
+      },
+      "branches": [
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration-to-dragonfly-redis"
+      ]
+    },
+    {
+      "sha": "b25a37da4ba3b92d70968d3fadda374937ad3c92",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-20T13:41:00Z",
+      "message": "Refactor system update playbook to remove reboot checks and streamline upgrade process",
+      "stats": {
+        "additions": 2,
+        "deletions": 38,
+        "total": 40
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "dcb5841d54cb8d620706c4518267426e262008f8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-20T13:29:23Z",
+      "message": "Remove obsolete host variable file for example host",
+      "stats": {
+        "additions": 0,
+        "deletions": 6,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e1a6d3dbcacc48527a3da7ca237404baece06b27",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-20T13:26:03Z",
+      "message": "test commit",
+      "stats": {
+        "additions": 45,
+        "deletions": 24,
+        "total": 69
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3abb0f1438dd4ef21e814d581ab993809f3a4dc1",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/redis-store-cluster",
+      "timestamp": "2026-01-20T09:18:50Z",
+      "message": "fix: removed on push run from cluster2, added small fix for masterauth in compose and fix in migrati",
+      "stats": {
+        "additions": 543,
+        "deletions": 35,
+        "total": 578
+      },
+      "branches": [
+        "naitik/impl-redis-store-cluster"
+      ]
     }
   ],
-  "commit_count": 32
+  "commit_count": 44
 }

@@ -1,6 +1,6 @@
 {
   "date": "2026-01-18",
-  "cached_at": "2026-02-03T20:53:57.669656Z",
+  "cached_at": "2026-02-03T21:20:55.483479Z",
   "commits": [
     {
       "sha": "1aa3b61d03330131408452a18470358516ff5489",
@@ -109,7 +109,56 @@
         "main",
         "release/3.2.0"
       ]
+    },
+    {
+      "sha": "06dea31e1a068c2dbcf3402d2da9ff814f98bff5",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-18T07:43:23Z",
+      "message": "New deployment script- Minor fixes (#138)",
+      "stats": {
+        "additions": 3,
+        "deletions": 5,
+        "total": 8
+      },
+      "branches": [
+        "backward_chat_api",
+        "c_inf_2",
+        "create_influencers",
+        "img_in_chat",
+        "inbox_apis",
+        "lat_op_stage",
+        "pn_inbox",
+        "staging",
+        "sys_prompt_prod"
+      ]
+    },
+    {
+      "sha": "c2442cb14b6a9148e0be270a00a3eea9381a2815",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-18T07:57:40Z",
+      "message": "Syncing Main with Staging (#136)",
+      "stats": {
+        "additions": 219,
+        "deletions": 364,
+        "total": 583
+      },
+      "branches": [
+        "fix_pragma_optimize",
+        "further_joel_sugg",
+        "indempotency_msg_fix",
+        "joel/optim-suggestions",
+        "lat_op_stage",
+        "lat_op",
+        "main_deployment_fixes",
+        "main",
+        "more_op_latency",
+        "send_msg_rogue",
+        "sentry_everywhere",
+        "wal_ckpt_bug_fix"
+      ]
     }
   ],
-  "commit_count": 4
+  "commit_count": 6
 }

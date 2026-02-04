@@ -1,6 +1,6 @@
 {
   "date": "2026-01-17",
-  "cached_at": "2026-02-03T20:53:58.967786Z",
+  "cached_at": "2026-02-03T21:20:52.763990Z",
   "commits": [
     {
       "sha": "d7f3b5b10676e01b9b045f1027065826c453bc3a",
@@ -35,7 +35,293 @@
         "revert-1153-naitik/migration_to_dragonfly_redis",
         "revert-dual-write"
       ]
+    },
+    {
+      "sha": "d9914f7c76b5768b5ede242ae34fd4950db39b48",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-17T21:50:14Z",
+      "message": "docker-entrypoint made more secure (#137)",
+      "stats": {
+        "additions": 143,
+        "deletions": 258,
+        "total": 401
+      },
+      "branches": [
+        "backward_chat_api",
+        "c_inf_2",
+        "create_influencers",
+        "fix/envsubst-litestream-config",
+        "img_in_chat",
+        "inbox_apis",
+        "lat_op_stage",
+        "new_deployment",
+        "pn_inbox",
+        "staging",
+        "sys_prompt_prod"
+      ]
+    },
+    {
+      "sha": "8696e4031b48c6d94aa8e96134a8743c6ee43e3e",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-17T21:16:46Z",
+      "message": "Merge branch 'main' into staging",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "backward_chat_api",
+        "c_inf_2",
+        "create_influencers",
+        "fix/envsubst-litestream-config",
+        "img_in_chat",
+        "inbox_apis",
+        "lat_op_stage",
+        "new_deployment",
+        "pn_inbox",
+        "staging",
+        "sys_prompt_prod"
+      ]
+    },
+    {
+      "sha": "8f248e6762f683f9836559dc07e98941a562c66f",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-17T20:53:36Z",
+      "message": "Syncing Main with Staging (#135)",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "backward_chat_api",
+        "c_inf_2",
+        "create_influencers",
+        "fix/envsubst-config-substitution",
+        "fix/envsubst-litestream-config",
+        "fix_pragma_optimize",
+        "further_joel_sugg",
+        "img_in_chat",
+        "inbox_apis",
+        "indempotency_msg_fix",
+        "joel/optim-suggestions",
+        "lat_op_stage",
+        "lat_op",
+        "main_deployment_fixes",
+        "main",
+        "more_op_latency",
+        "new_deployment",
+        "pn_inbox",
+        "send_msg_rogue",
+        "sentry_everywhere",
+        "staging",
+        "sys_prompt_prod",
+        "wal_ckpt_bug_fix"
+      ]
+    },
+    {
+      "sha": "ccc4383e96681c1465da51fb8ab36de8697a7ad2",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-17T20:49:10Z",
+      "message": "Merge branch 'main' into staging",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "backward_chat_api",
+        "c_inf_2",
+        "create_influencers",
+        "fix/envsubst-litestream-config",
+        "img_in_chat",
+        "inbox_apis",
+        "lat_op_stage",
+        "new_deployment",
+        "pn_inbox",
+        "staging",
+        "sys_prompt_prod"
+      ]
+    },
+    {
+      "sha": "cf2da48af2ff82016acf14337b087954167268f8",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-17T20:17:46Z",
+      "message": "Syncing Main with Staging (Litestream 1s) (#134)",
+      "stats": {
+        "additions": 5,
+        "deletions": 3,
+        "total": 8
+      },
+      "branches": [
+        "backward_chat_api",
+        "c_inf_2",
+        "create_influencers",
+        "fix/envsubst-config-substitution",
+        "fix/envsubst-litestream-config",
+        "fix_pragma_optimize",
+        "further_joel_sugg",
+        "img_in_chat",
+        "inbox_apis",
+        "indempotency_msg_fix",
+        "joel/optim-suggestions",
+        "lat_op_stage",
+        "lat_op",
+        "main_deployment_fixes",
+        "main",
+        "more_op_latency",
+        "new_deployment",
+        "pn_inbox",
+        "send_msg_rogue",
+        "sentry_everywhere",
+        "staging",
+        "sys_prompt_prod",
+        "wal_ckpt_bug_fix"
+      ]
+    },
+    {
+      "sha": "18fef9ffd25a44359a46fca6bf0886dea7ab76b7",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-17T20:05:15Z",
+      "message": "Merge branch 'main' into staging",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "backward_chat_api",
+        "c_inf_2",
+        "create_influencers",
+        "fix/envsubst-litestream-config",
+        "img_in_chat",
+        "inbox_apis",
+        "lat_op_stage",
+        "new_deployment",
+        "pn_inbox",
+        "staging",
+        "sys_prompt_prod"
+      ]
+    },
+    {
+      "sha": "4c771c8a9348eb9771eb2f0ca66849a937b06822",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-17T20:04:30Z",
+      "message": "sync interval to 1 s (#133)",
+      "stats": {
+        "additions": 5,
+        "deletions": 3,
+        "total": 8
+      },
+      "branches": [
+        "backward_chat_api",
+        "c_inf_2",
+        "create_influencers",
+        "fix/envsubst-litestream-config",
+        "img_in_chat",
+        "inbox_apis",
+        "lat_op_stage",
+        "new_deployment",
+        "pn_inbox",
+        "staging",
+        "sys_prompt_prod"
+      ]
+    },
+    {
+      "sha": "2da43a7ebb83b6901474091893a189392ca2588a",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-17T19:37:00Z",
+      "message": "Syncing Main with Staging (#132)",
+      "stats": {
+        "additions": 162,
+        "deletions": 132,
+        "total": 294
+      },
+      "branches": [
+        "backward_chat_api",
+        "c_inf_2",
+        "create_influencers",
+        "fix/envsubst-config-substitution",
+        "fix/envsubst-litestream-config",
+        "fix_pragma_optimize",
+        "further_joel_sugg",
+        "img_in_chat",
+        "inbox_apis",
+        "indempotency_msg_fix",
+        "joel/optim-suggestions",
+        "lat_op_stage",
+        "lat_op",
+        "main_deployment_fixes",
+        "main",
+        "more_op_latency",
+        "new_deployment",
+        "pn_inbox",
+        "send_msg_rogue",
+        "sentry_everywhere",
+        "staging",
+        "sys_prompt_prod",
+        "wal_ckpt_bug_fix"
+      ]
+    },
+    {
+      "sha": "6cdde6f1e58c0bb5766143b8ef89fb938b107eff",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-17T19:29:35Z",
+      "message": "Merge branch 'main' into staging",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "backward_chat_api",
+        "c_inf_2",
+        "create_influencers",
+        "fix/envsubst-litestream-config",
+        "img_in_chat",
+        "inbox_apis",
+        "lat_op_stage",
+        "new_deployment",
+        "pn_inbox",
+        "staging",
+        "sys_prompt_prod"
+      ]
+    },
+    {
+      "sha": "d62ea0f21bd3233488d9374735c760188e09fb95",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-17T19:07:42Z",
+      "message": "Implemented aiobot for truly aync s3 storage sync (#131)",
+      "stats": {
+        "additions": 162,
+        "deletions": 132,
+        "total": 294
+      },
+      "branches": [
+        "backward_chat_api",
+        "c_inf_2",
+        "create_influencers",
+        "fix/envsubst-litestream-config",
+        "img_in_chat",
+        "inbox_apis",
+        "lat_op_stage",
+        "new_deployment",
+        "pn_inbox",
+        "staging",
+        "sys_prompt_prod"
+      ]
     }
   ],
-  "commit_count": 1
+  "commit_count": 11
 }

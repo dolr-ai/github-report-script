@@ -1,12 +1,89 @@
 {
   "date": "2026-01-29",
   "username": "joel-medicala-yral",
-  "additions": 0,
-  "deletions": 0,
-  "total_loc": 0,
-  "commit_count": 0,
-  "repositories": [],
-  "repo_count": 0,
-  "branch_breakdown": {},
-  "processed_at": "2026-02-03T21:03:25.486615Z"
+  "additions": 2365,
+  "deletions": 1195,
+  "total_loc": 3560,
+  "commit_count": 17,
+  "repositories": [
+    "dolr-ai/off-chain-agent",
+    "dolr-ai/yral-common",
+    "dolr-ai/yral-metadata"
+  ],
+  "repo_count": 3,
+  "branch_breakdown": {
+    "dolr-ai/off-chain-agent": {
+      "main": {
+        "additions": 296,
+        "deletions": 125,
+        "total_loc": 421,
+        "commit_count": 3
+      },
+      "joel/dolr-rewards": {
+        "additions": 50,
+        "deletions": 62,
+        "total_loc": 112,
+        "commit_count": 2
+      },
+      "joel/icp-swap-dolr-price-fetch": {
+        "additions": 553,
+        "deletions": 100,
+        "total_loc": 653,
+        "commit_count": 1
+      },
+      "joel/phash-redis-migration": {
+        "additions": 37,
+        "deletions": 48,
+        "total_loc": 85,
+        "commit_count": 2
+      },
+      "joel/profile-views-check": {
+        "additions": 109,
+        "deletions": 2,
+        "total_loc": 111,
+        "commit_count": 1
+      },
+      "joel/upload-flow-content": {
+        "additions": 22,
+        "deletions": 3,
+        "total_loc": 25,
+        "commit_count": 1
+      }
+    },
+    "dolr-ai/yral-metadata": {
+      "master": {
+        "additions": 477,
+        "deletions": 257,
+        "total_loc": 734,
+        "commit_count": 1
+      },
+      "joel/broken_pipe_retries": {
+        "additions": 502,
+        "deletions": 282,
+        "total_loc": 784,
+        "commit_count": 3
+      },
+      "joel/fcm-notification-migration": {
+        "additions": 311,
+        "deletions": 314,
+        "total_loc": 625,
+        "commit_count": 1
+      }
+    },
+    "dolr-ai/yral-common": {
+      "master": {
+        "additions": 4,
+        "deletions": 1,
+        "total_loc": 5,
+        "commit_count": 1
+      },
+      "revert-153-fix/update-user-info-service-candid": {
+        "additions": 4,
+        "deletions": 1,
+        "total_loc": 5,
+        "commit_count": 1
+      }
+    }
+  },
+  "processed_at": "2026-02-03T22:51:38.159817Z"
 }

@@ -1,12 +1,53 @@
 {
   "date": "2026-01-28",
   "username": "joel-medicala-yral",
-  "additions": 0,
-  "deletions": 0,
-  "total_loc": 0,
-  "commit_count": 0,
-  "repositories": [],
-  "repo_count": 0,
-  "branch_breakdown": {},
-  "processed_at": "2026-02-03T21:03:25.484729Z"
+  "additions": 4277,
+  "deletions": 4155,
+  "total_loc": 8432,
+  "commit_count": 22,
+  "repositories": [
+    "dolr-ai/off-chain-agent",
+    "dolr-ai/yral-backend-cloudflare-workers",
+    "dolr-ai/yral-common"
+  ],
+  "repo_count": 3,
+  "branch_breakdown": {
+    "dolr-ai/off-chain-agent": {
+      "joel/dolr-rewards": {
+        "additions": 1434,
+        "deletions": 1956,
+        "total_loc": 3390,
+        "commit_count": 3
+      }
+    },
+    "dolr-ai/yral-common": {
+      "master": {
+        "additions": 1,
+        "deletions": 4,
+        "total_loc": 5,
+        "commit_count": 1
+      },
+      "fix/update-user-info-service-candid": {
+        "additions": 1,
+        "deletions": 4,
+        "total_loc": 5,
+        "commit_count": 1
+      }
+    },
+    "dolr-ai/yral-backend-cloudflare-workers": {
+      "fix/update-yral-canisters-client-candid": {
+        "additions": 1457,
+        "deletions": 1132,
+        "total_loc": 2589,
+        "commit_count": 16
+      },
+      "main": {
+        "additions": 1384,
+        "deletions": 1059,
+        "total_loc": 2443,
+        "commit_count": 1
+      }
+    }
+  },
+  "processed_at": "2026-02-03T22:51:38.156612Z"
 }

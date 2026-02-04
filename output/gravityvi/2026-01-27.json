@@ -1,12 +1,23 @@
 {
   "date": "2026-01-27",
   "username": "gravityvi",
-  "additions": 0,
-  "deletions": 0,
-  "total_loc": 0,
-  "commit_count": 0,
-  "repositories": [],
-  "repo_count": 0,
-  "branch_breakdown": {},
-  "processed_at": "2026-02-03T21:03:25.482692Z"
+  "additions": 3303,
+  "deletions": 2270,
+  "total_loc": 5573,
+  "commit_count": 2,
+  "repositories": [
+    "dolr-ai/off-chain-agent"
+  ],
+  "repo_count": 1,
+  "branch_breakdown": {
+    "dolr-ai/off-chain-agent": {
+      "copilot/sub-pr-378": {
+        "additions": 3303,
+        "deletions": 2270,
+        "total_loc": 5573,
+        "commit_count": 2
+      }
+    }
+  },
+  "processed_at": "2026-02-03T22:51:38.152149Z"
 }

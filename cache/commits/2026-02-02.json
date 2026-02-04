@@ -1,7 +1,261 @@
 {
   "date": "2026-02-02",
-  "cached_at": "2026-02-03T19:28:31.153988Z",
+  "cached_at": "2026-02-03T22:51:37.934706Z",
   "commits": [
+    {
+      "sha": "c3e6a47d4eaf4485047b710fb7e1948c31f53608",
+      "author": "gravityvi",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2026-02-02T12:10:37Z",
+      "message": "add query method to fetch bulk user principals",
+      "stats": {
+        "additions": 410,
+        "deletions": 20,
+        "total": 430
+      },
+      "branches": [
+        "feat/add-bulk-methods-for-profile-details"
+      ]
+    },
+    {
+      "sha": "38f33493fd99dc20f68f7112e92c558523f62934",
+      "author": "gravityvi",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2026-02-02T12:42:53Z",
+      "message": "feat: add query method to fetch bulk user principals (#641)",
+      "stats": {
+        "additions": 410,
+        "deletions": 20,
+        "total": 430
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "511413a8aeb06cecf96554075d5089a5d6150a34",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-02T09:05:31Z",
+      "message": "fix apps scritp",
+      "stats": {
+        "additions": 24,
+        "deletions": 9,
+        "total": 33
+      },
+      "branches": [
+        "joel/apps-script-reports-api"
+      ]
+    },
+    {
+      "sha": "5d3977b0a46a784e022412f33a60f936cfd845f7",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-02T08:21:19Z",
+      "message": "lint",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "joel/apps-script-reports-api"
+      ]
+    },
+    {
+      "sha": "0b26f39e5191351e06af88337c396b96e1fd2428",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-02T08:09:49Z",
+      "message": "feat: added apps script proxy",
+      "stats": {
+        "additions": 75,
+        "deletions": 61,
+        "total": 136
+      },
+      "branches": [
+        "joel/apps-script-reports-api"
+      ]
+    },
+    {
+      "sha": "1685916793674378e6b9ef455f40587da2347069",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-02T06:55:54Z",
+      "message": "added report button loggin (#391)",
+      "stats": {
+        "additions": 28,
+        "deletions": 13,
+        "total": 41
+      },
+      "branches": [
+        "joel/apps-script-reports-api",
+        "joel/fix-btc-dolr-notif",
+        "main",
+        "naitik/broken_pipe_issue_fix"
+      ]
+    },
+    {
+      "sha": "250a9067631f8d2d7f6d2ba45c1e344ad059bbae",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-02T06:02:50Z",
+      "message": "feat: added retres (#390)",
+      "stats": {
+        "additions": 439,
+        "deletions": 206,
+        "total": 645
+      },
+      "branches": [
+        "joel/apps-script-reports-api",
+        "joel/fix-btc-dolr-notif",
+        "joel/fix-gchat-report-buttons",
+        "main",
+        "naitik/broken_pipe_issue_fix"
+      ]
+    },
+    {
+      "sha": "a1569e47c699a795c1133d73d79d31a2fb9eb2dd",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-02T17:47:55Z",
+      "message": "fix: function prone to broken pipe error (#394)",
+      "stats": {
+        "additions": 9,
+        "deletions": 5,
+        "total": 14
+      },
+      "branches": [
+        "joel/fix-btc-dolr-notif",
+        "main"
+      ]
+    },
+    {
+      "sha": "13835c30a402a79e979a9985136abc56571d7531",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-02T09:10:04Z",
+      "message": "Joel/apps script reports api (#393)",
+      "stats": {
+        "additions": 24,
+        "deletions": 9,
+        "total": 33
+      },
+      "branches": [
+        "joel/fix-btc-dolr-notif",
+        "main",
+        "naitik/broken_pipe_issue_fix"
+      ]
+    },
+    {
+      "sha": "931c5f78b55d2879439b6174d0d2f99fd043193d",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-02T08:23:13Z",
+      "message": "feat: added apps script proxy (#392)",
+      "stats": {
+        "additions": 76,
+        "deletions": 61,
+        "total": 137
+      },
+      "branches": [
+        "joel/fix-btc-dolr-notif",
+        "main",
+        "naitik/broken_pipe_issue_fix"
+      ]
+    },
+    {
+      "sha": "f82a97e5f283874c011ab89b986ce8709ecc393c",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-02T06:48:29Z",
+      "message": "lint",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "joel/fix-gchat-report-buttons"
+      ]
+    },
+    {
+      "sha": "8920ce0d827d1874f5627af8c73b6aebf66de61e",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-02T06:45:11Z",
+      "message": "fix buttons",
+      "stats": {
+        "additions": 28,
+        "deletions": 13,
+        "total": 41
+      },
+      "branches": [
+        "joel/fix-gchat-report-buttons"
+      ]
+    },
+    {
+      "sha": "f51be7609b53e219e7beca29a0011f9c9de14426",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-02T06:43:52Z",
+      "message": "fix buttons",
+      "stats": {
+        "additions": 28,
+        "deletions": 13,
+        "total": 41
+      },
+      "branches": [
+        "joel/fix-logging"
+      ]
+    },
+    {
+      "sha": "6861b9bd4ce08241940dae9af5168c7cfa69294e",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-02T05:58:22Z",
+      "message": "fmt",
+      "stats": {
+        "additions": 46,
+        "deletions": 19,
+        "total": 65
+      },
+      "branches": [
+        "joel/fix-logging",
+        "joel/offchain-broken-pipe-fix"
+      ]
+    },
+    {
+      "sha": "f7df3f7fbfd428b3e455ec2704dd5b77b3f4e910",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-02T05:44:34Z",
+      "message": "fix: fixed broken pipe err",
+      "stats": {
+        "additions": 408,
+        "deletions": 202,
+        "total": 610
+      },
+      "branches": [
+        "joel/fix-logging",
+        "joel/offchain-broken-pipe-fix"
+      ]
+    },
+    {
+      "sha": "92538fb57b3d6c2237fce62e479d1d53963aa329",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-02T17:18:45Z",
+      "message": "fix: function prone to broken pipe error",
+      "stats": {
+        "additions": 9,
+        "deletions": 5,
+        "total": 14
+      },
+      "branches": [
+        "naitik/broken_pipe_issue_fix"
+      ]
+    },
     {
       "sha": "c9f435edc39fd8990007b25c8cf2e1d1ec046081",
       "author": "mayank-k-yral",
@@ -14,7 +268,10 @@
         "total": 6
       },
       "branches": [
-        "develop"
+        "develop",
+        "feature/hot-or-not-onboarding",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh"
       ]
     },
     {
@@ -29,7 +286,10 @@
         "total": 123
       },
       "branches": [
-        "develop"
+        "develop",
+        "feature/hot-or-not-onboarding",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh"
       ]
     },
     {
@@ -44,7 +304,11 @@
         "total": 119
       },
       "branches": [
-        "develop"
+        "develop",
+        "feature/hot-or-not-onboarding",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "main"
       ]
     },
     {
@@ -59,7 +323,11 @@
         "total": 4
       },
       "branches": [
-        "develop"
+        "develop",
+        "feature/hot-or-not-onboarding",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "main"
       ]
     },
     {
@@ -74,7 +342,11 @@
         "total": 2
       },
       "branches": [
-        "develop"
+        "develop",
+        "feature/hot-or-not-onboarding",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "main"
       ]
     },
     {
@@ -89,7 +361,11 @@
         "total": 2
       },
       "branches": [
-        "develop"
+        "develop",
+        "feature/hot-or-not-onboarding",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "main"
       ]
     },
     {
@@ -104,7 +380,11 @@
         "total": 4
       },
       "branches": [
-        "develop"
+        "develop",
+        "feature/hot-or-not-onboarding",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "main"
       ]
     },
     {
@@ -119,7 +399,11 @@
         "total": 4
       },
       "branches": [
-        "develop"
+        "develop",
+        "feature/hot-or-not-onboarding",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "main"
       ]
     },
     {
@@ -134,7 +418,176 @@
         "total": 39
       },
       "branches": [
-        "develop"
+        "develop",
+        "feature/hot-or-not-onboarding",
+        "feature/yral-pro-for-tournaments",
+        "feature/yral-pro-for-tournaments-sarvesh",
+        "main"
+      ]
+    },
+    {
+      "sha": "b10a3a505686f9cf2c0a126aedebf6e53d0e189f",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-02T22:12:47Z",
+      "message": "build: Integrates bulk profile details for tournament leaderboard",
+      "stats": {
+        "additions": 137,
+        "deletions": 49,
+        "total": 186
+      },
+      "branches": [
+        "feature/yral-pro-for-tournaments"
+      ]
+    },
+    {
+      "sha": "6ddfc24ebf13a70999261de3c4a319f65d8e4406",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-02T21:50:21Z",
+      "message": "build: Use published rust for GetUsersProfileDetails for bulk profil details call",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "feature/yral-pro-for-tournaments"
+      ]
+    },
+    {
+      "sha": "2a78882664951a04d63b9d87826d379c07b1622e",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-02T21:49:23Z",
+      "message": "build: Implements GetUsersProfileDetails for bulk profil details call",
+      "stats": {
+        "additions": 120,
+        "deletions": 19,
+        "total": 139
+      },
+      "branches": [
+        "feature/yral-pro-for-tournaments"
+      ]
+    },
+    {
+      "sha": "010783ae39579d3cf4d641dd2ad2e2082147e254",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-02T21:49:23Z",
+      "message": "build: Enhances triggering subscriptionNudge",
+      "stats": {
+        "additions": 44,
+        "deletions": 24,
+        "total": 68
+      },
+      "branches": [
+        "feature/yral-pro-for-tournaments"
+      ]
+    },
+    {
+      "sha": "bfde47becc61215a1e3f016098e305f99617d5ab",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-02T21:49:23Z",
+      "message": "build: Adds yral pro handling in tournament registration and leaderboard",
+      "stats": {
+        "additions": 320,
+        "deletions": 99,
+        "total": 419
+      },
+      "branches": [
+        "feature/yral-pro-for-tournaments"
+      ]
+    },
+    {
+      "sha": "d9e7abeab4a579878da03b85e6846cdbe0fa9654",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-02T21:49:23Z",
+      "message": "build: Adds support for icon in YralGradientButton.kt",
+      "stats": {
+        "additions": 37,
+        "deletions": 14,
+        "total": 51
+      },
+      "branches": [
+        "feature/yral-pro-for-tournaments"
+      ]
+    },
+    {
+      "sha": "14748994a7b4de7b6ebb63e5f7c8c481da27cb4c",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-02T11:53:14Z",
+      "message": "Merge pull request #830 from dolr-ai/release/2.6.4",
+      "stats": {
+        "additions": 34,
+        "deletions": 89,
+        "total": 123
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9e0f65b3b228f72b9912103f00fef14f80fb55e9",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-02T07:35:01Z",
+      "message": "Merge pull request #832 from dolr-ai/fix/draft-yml-prod",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b2a5bcbacbc837041c62702336496d92340063da",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-02T06:46:02Z",
+      "message": "Merge pull request #828 from dolr-ai/enhancement/prod-yml-update",
+      "stats": {
+        "additions": 687,
+        "deletions": 77,
+        "total": 764
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "bef935a3d23505efca266daeea55afccae264a13",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-02-02T12:46:41Z",
+      "message": "update user_info_service candid",
+      "stats": {
+        "additions": 5,
+        "deletions": 0,
+        "total": 5
+      },
+      "branches": [
+        "feat/update-user-info-deps"
+      ]
+    },
+    {
+      "sha": "663f50ac46805b2ac5406c905acf15214bfb6ebc",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-02-02T12:49:27Z",
+      "message": "feat: update user_info_service candid (#156)",
+      "stats": {
+        "additions": 5,
+        "deletions": 0,
+        "total": 5
+      },
+      "branches": [
+        "master"
       ]
     },
     {
@@ -344,7 +797,24 @@
         "total": 876
       },
       "branches": [
-        "backward_chat_api"
+        "backward_chat_api",
+        "pn_inbox",
+        "staging"
+      ]
+    },
+    {
+      "sha": "e0fec62de23ce8efc60cbc99e858d5c5fa8bb7c3",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-02T03:16:25Z",
+      "message": "Merge branch 'staging' into inbox_apis",
+      "stats": {
+        "additions": 554,
+        "deletions": 156,
+        "total": 710
+      },
+      "branches": [
+        "inbox_apis"
       ]
     },
     {
@@ -558,5 +1028,5 @@
       ]
     }
   ],
-  "commit_count": 37
+  "commit_count": 65
 }

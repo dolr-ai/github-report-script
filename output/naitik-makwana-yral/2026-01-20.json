@@ -1,12 +1,80 @@
 {
   "date": "2026-01-20",
   "username": "naitik-makwana-yral",
-  "additions": 0,
-  "deletions": 0,
-  "total_loc": 0,
-  "commit_count": 0,
-  "repositories": [],
-  "repo_count": 0,
-  "branch_breakdown": {},
-  "processed_at": "2026-02-03T21:03:25.466833Z"
+  "additions": 3432,
+  "deletions": 404,
+  "total_loc": 3836,
+  "commit_count": 28,
+  "repositories": [
+    "dolr-ai/download-upload-service",
+    "dolr-ai/hot-or-not-web-leptos-ssr",
+    "dolr-ai/off-chain-agent",
+    "dolr-ai/redis-store-cluster",
+    "dolr-ai/yral-auth-v2",
+    "dolr-ai/yral-common"
+  ],
+  "repo_count": 6,
+  "branch_breakdown": {
+    "dolr-ai/hot-or-not-web-leptos-ssr": {
+      "main": {
+        "additions": 1,
+        "deletions": 1,
+        "total_loc": 2,
+        "commit_count": 1
+      },
+      "naitik/migrate_reads_to_dragonfly": {
+        "additions": 833,
+        "deletions": 84,
+        "total_loc": 917,
+        "commit_count": 6
+      }
+    },
+    "dolr-ai/off-chain-agent": {
+      "main": {
+        "additions": 2,
+        "deletions": 2,
+        "total_loc": 4,
+        "commit_count": 1
+      },
+      "naitik/migrate_fly_redis_to_dragonfly": {
+        "additions": 1258,
+        "deletions": 230,
+        "total_loc": 1488,
+        "commit_count": 9
+      }
+    },
+    "dolr-ai/download-upload-service": {
+      "main": {
+        "additions": 1,
+        "deletions": 1,
+        "total_loc": 2,
+        "commit_count": 1
+      }
+    },
+    "dolr-ai/yral-common": {
+      "master": {
+        "additions": 1,
+        "deletions": 1,
+        "total_loc": 2,
+        "commit_count": 1
+      }
+    },
+    "dolr-ai/yral-auth-v2": {
+      "naitik/migrate_reads_to_dragonfly": {
+        "additions": 793,
+        "deletions": 50,
+        "total_loc": 843,
+        "commit_count": 8
+      }
+    },
+    "dolr-ai/redis-store-cluster": {
+      "naitik/impl-redis-store-cluster": {
+        "additions": 543,
+        "deletions": 35,
+        "total_loc": 578,
+        "commit_count": 1
+      }
+    }
+  },
+  "processed_at": "2026-02-03T22:51:38.131886Z"
 }

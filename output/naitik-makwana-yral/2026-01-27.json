@@ -1,12 +1,83 @@
 {
   "date": "2026-01-27",
   "username": "naitik-makwana-yral",
-  "additions": 0,
-  "deletions": 0,
-  "total_loc": 0,
-  "commit_count": 0,
-  "repositories": [],
-  "repo_count": 0,
-  "branch_breakdown": {},
-  "processed_at": "2026-02-03T21:03:25.483554Z"
+  "additions": 2082,
+  "deletions": 1054,
+  "total_loc": 3136,
+  "commit_count": 11,
+  "repositories": [
+    "dolr-ai/hashicorp-vault-service",
+    "dolr-ai/hot-or-not-web-leptos-ssr",
+    "dolr-ai/off-chain-agent",
+    "dolr-ai/yral-auth-v2",
+    "dolr-ai/yral-metadata"
+  ],
+  "repo_count": 5,
+  "branch_breakdown": {
+    "dolr-ai/hot-or-not-web-leptos-ssr": {
+      "main": {
+        "additions": 793,
+        "deletions": 45,
+        "total_loc": 838,
+        "commit_count": 1
+      },
+      "naitik/migrate_reads_to_dragonfly": {
+        "additions": 1,
+        "deletions": 3,
+        "total_loc": 4,
+        "commit_count": 1
+      }
+    },
+    "dolr-ai/off-chain-agent": {
+      "naitik/migrate_reads_to_dragonfly": {
+        "additions": 309,
+        "deletions": 277,
+        "total_loc": 586,
+        "commit_count": 2
+      }
+    },
+    "dolr-ai/yral-metadata": {
+      "master": {
+        "additions": 235,
+        "deletions": 698,
+        "total_loc": 933,
+        "commit_count": 1
+      }
+    },
+    "dolr-ai/yral-auth-v2": {
+      "main": {
+        "additions": 729,
+        "deletions": 19,
+        "total_loc": 748,
+        "commit_count": 2
+      },
+      "naitik/bare-metal-script-fix": {
+        "additions": 2,
+        "deletions": 0,
+        "total_loc": 2,
+        "commit_count": 1
+      },
+      "naitik/migrate_reads_to_dragonfly": {
+        "additions": 9,
+        "deletions": 8,
+        "total_loc": 17,
+        "commit_count": 1
+      },
+      "naitik/migration-to-dragonfly-redis": {
+        "additions": 3,
+        "deletions": 4,
+        "total_loc": 7,
+        "commit_count": 1
+      }
+    },
+    "dolr-ai/hashicorp-vault-service": {
+      "main": {
+        "additions": 1,
+        "deletions": 0,
+        "total_loc": 1,
+        "commit_count": 1
+      }
+    }
+  },
+  "processed_at": "2026-02-03T22:51:38.153751Z"
 }

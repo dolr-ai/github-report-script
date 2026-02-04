@@ -1,12 +1,29 @@
 {
   "date": "2026-01-14",
   "username": "naitik-makwana-yral",
-  "additions": 0,
-  "deletions": 0,
-  "total_loc": 0,
-  "commit_count": 0,
-  "repositories": [],
-  "repo_count": 0,
-  "branch_breakdown": {},
-  "processed_at": "2026-02-03T21:03:25.452062Z"
+  "additions": 1650,
+  "deletions": 531,
+  "total_loc": 2181,
+  "commit_count": 17,
+  "repositories": [
+    "dolr-ai/yral-metadata"
+  ],
+  "repo_count": 1,
+  "branch_breakdown": {
+    "dolr-ai/yral-metadata": {
+      "naitik/add_writes_to_dragonfly": {
+        "additions": 379,
+        "deletions": 228,
+        "total_loc": 607,
+        "commit_count": 9
+      },
+      "naitik/1403_migration_to_bare_metal": {
+        "additions": 1271,
+        "deletions": 303,
+        "total_loc": 1574,
+        "commit_count": 8
+      }
+    }
+  },
+  "processed_at": "2026-02-03T22:51:38.111182Z"
 }
