@@ -1,10 +1,10 @@
 {
   "date": "2026-01-07",
   "username": "joel-medicala-yral",
-  "additions": 755,
-  "deletions": 86,
-  "total_loc": 841,
-  "commit_count": 3,
+  "additions": 724,
+  "deletions": 84,
+  "total_loc": 808,
+  "commit_count": 2,
   "repositories": [
     "dolr-ai/hot-or-not-backend-canister",
     "dolr-ai/yral-common"
@@ -20,12 +20,6 @@
       }
     },
     "dolr-ai/yral-common": {
-      "chore-update-user-info-service-canister-did": {
-        "additions": 31,
-        "deletions": 2,
-        "total_loc": 33,
-        "commit_count": 1
-      },
       "master": {
         "additions": 31,
         "deletions": 2,
@@ -34,5 +28,5 @@
       }
     }
   },
-  "processed_at": "2026-02-03T22:51:38.076092Z"
+  "processed_at": "2026-02-05T08:45:13.548939Z"
 }

@@ -1,32 +1,23 @@
 {
   "date": "2026-01-30",
   "username": "saikatdas0790",
-  "additions": 84,
-  "deletions": 63,
-  "total_loc": 147,
-  "commit_count": 4,
+  "additions": 6,
+  "deletions": 45,
+  "total_loc": 51,
+  "commit_count": 1,
   "repositories": [
-    "dolr-ai/hetzner-bare-metal-fleet",
-    "dolr-ai/yral-bare-metal-kubernetes-cluster"
+    "dolr-ai/hetzner-bare-metal-fleet"
   ],
-  "repo_count": 2,
+  "repo_count": 1,
   "branch_breakdown": {
     "dolr-ai/hetzner-bare-metal-fleet": {
       "main": {
-        "additions": 66,
-        "deletions": 63,
-        "total_loc": 129,
-        "commit_count": 3
-      }
-    },
-    "dolr-ai/yral-bare-metal-kubernetes-cluster": {
-      "main": {
-        "additions": 18,
-        "deletions": 0,
-        "total_loc": 18,
+        "additions": 6,
+        "deletions": 45,
+        "total_loc": 51,
         "commit_count": 1
       }
     }
   },
-  "processed_at": "2026-02-03T22:51:38.162351Z"
+  "processed_at": "2026-02-05T08:45:13.640991Z"
 }

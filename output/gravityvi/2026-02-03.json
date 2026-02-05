@@ -1,10 +1,10 @@
 {
   "date": "2026-02-03",
   "username": "gravityvi",
-  "additions": 208,
-  "deletions": 99,
-  "total_loc": 307,
-  "commit_count": 7,
+  "additions": 16,
+  "deletions": 32,
+  "total_loc": 48,
+  "commit_count": 1,
   "repositories": [
     "dolr-ai/yral-auth-v2"
   ],
@@ -16,14 +16,8 @@
         "deletions": 32,
         "total_loc": 48,
         "commit_count": 1
-      },
-      "unknown": {
-        "additions": 192,
-        "deletions": 67,
-        "total_loc": 259,
-        "commit_count": 6
       }
     }
   },
-  "processed_at": "2026-02-03T20:45:37.523036Z"
+  "processed_at": "2026-02-05T08:45:13.657572Z"
 }

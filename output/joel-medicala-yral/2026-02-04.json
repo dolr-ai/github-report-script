@@ -1,71 +1,44 @@
 {
   "date": "2026-02-04",
   "username": "joel-medicala-yral",
-  "additions": 3648,
-  "deletions": 12833,
-  "total_loc": 16481,
-  "commit_count": 43,
+  "additions": 2004,
+  "deletions": 12210,
+  "total_loc": 14214,
+  "commit_count": 8,
   "repositories": [
-    "dolr-ai/hot-or-not-web-leptos-ssr",
     "dolr-ai/off-chain-agent",
-    "dolr-ai/self-hosted-video-models",
-    "dolr-ai/yral-auth-v2",
-    "dolr-ai/yral-common"
+    "dolr-ai/self-hosted-video-models"
   ],
-  "repo_count": 5,
+  "repo_count": 2,
   "branch_breakdown": {
-    "dolr-ai/hot-or-not-web-leptos-ssr": {
-      "feat/ltx2-model": {
-        "additions": 75,
-        "deletions": 63,
-        "total_loc": 138,
-        "commit_count": 3
-      }
-    },
     "dolr-ai/off-chain-agent": {
-      "joel/ai-video-detector": {
-        "additions": 1566,
-        "deletions": 743,
-        "total_loc": 2309,
-        "commit_count": 20
-      },
       "main": {
-        "additions": 380,
-        "deletions": 53,
-        "total_loc": 433,
-        "commit_count": 3
+        "additions": 347,
+        "deletions": 48,
+        "total_loc": 395,
+        "commit_count": 2
+      },
+      "joel/ai-video-detector": {
+        "additions": 409,
+        "deletions": 323,
+        "total_loc": 732,
+        "commit_count": 2
       },
       "joel/ltx-intergration": {
-        "additions": 985,
-        "deletions": 132,
-        "total_loc": 1117,
-        "commit_count": 10
-      }
-    },
-    "dolr-ai/yral-common": {
-      "feat/ltx2-model": {
-        "additions": 163,
-        "deletions": 3,
-        "total_loc": 166,
-        "commit_count": 2
-      }
-    },
-    "dolr-ai/yral-auth-v2": {
-      "joel/dnm-remove-bot-limit": {
-        "additions": 28,
-        "deletions": 28,
-        "total_loc": 56,
+        "additions": 821,
+        "deletions": 33,
+        "total_loc": 854,
         "commit_count": 1
       }
     },
     "dolr-ai/self-hosted-video-models": {
       "main": {
-        "additions": 451,
-        "deletions": 11811,
-        "total_loc": 12262,
-        "commit_count": 4
+        "additions": 427,
+        "deletions": 11806,
+        "total_loc": 12233,
+        "commit_count": 3
       }
     }
   },
-  "processed_at": "2026-02-05T08:30:06.291129Z"
+  "processed_at": "2026-02-05T08:45:13.664035Z"
 }

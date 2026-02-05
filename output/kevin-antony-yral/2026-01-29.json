@@ -1,10 +1,10 @@
 {
   "date": "2026-01-29",
   "username": "kevin-antony-yral",
-  "additions": 144,
-  "deletions": 24,
-  "total_loc": 168,
-  "commit_count": 4,
+  "additions": 131,
+  "deletions": 11,
+  "total_loc": 142,
+  "commit_count": 2,
   "repositories": [
     "dolr-ai/yral-ai-chat"
   ],
@@ -12,24 +12,18 @@
   "branch_breakdown": {
     "dolr-ai/yral-ai-chat": {
       "staging": {
-        "additions": 133,
-        "deletions": 17,
-        "total_loc": 150,
-        "commit_count": 2
+        "additions": 124,
+        "deletions": 7,
+        "total_loc": 131,
+        "commit_count": 1
       },
       "main": {
         "additions": 7,
         "deletions": 4,
         "total_loc": 11,
         "commit_count": 1
-      },
-      "sys_prompt_prod": {
-        "additions": 4,
-        "deletions": 3,
-        "total_loc": 7,
-        "commit_count": 1
       }
     }
   },
-  "processed_at": "2026-02-03T22:51:38.160097Z"
+  "processed_at": "2026-02-05T08:45:13.637383Z"
 }

@@ -1,10 +1,10 @@
 {
   "date": "2026-01-07",
   "username": "ravi-sawlani-yral",
-  "additions": 124,
-  "deletions": 62,
-  "total_loc": 186,
-  "commit_count": 4,
+  "additions": 59,
+  "deletions": 28,
+  "total_loc": 87,
+  "commit_count": 1,
   "repositories": [
     "dolr-ai/yral-auth-v2"
   ],
@@ -12,12 +12,12 @@
   "branch_breakdown": {
     "dolr-ai/yral-auth-v2": {
       "main": {
-        "additions": 124,
-        "deletions": 62,
-        "total_loc": 186,
-        "commit_count": 4
+        "additions": 59,
+        "deletions": 28,
+        "total_loc": 87,
+        "commit_count": 1
       }
     }
   },
-  "processed_at": "2026-02-03T22:51:38.077763Z"
+  "processed_at": "2026-02-05T08:45:13.550513Z"
 }

@@ -1,18 +1,17 @@
 {
   "date": "2026-01-30",
   "username": "joel-medicala-yral",
-  "additions": 1637,
-  "deletions": 1041,
-  "total_loc": 2678,
-  "commit_count": 28,
+  "additions": 977,
+  "deletions": 691,
+  "total_loc": 1668,
+  "commit_count": 5,
   "repositories": [
     "dolr-ai/hot-or-not-backend-canister",
     "dolr-ai/off-chain-agent",
-    "dolr-ai/self-hosted-video-models",
     "dolr-ai/yral-auth-v2",
     "dolr-ai/yral-metadata"
   ],
-  "repo_count": 5,
+  "repo_count": 4,
   "branch_breakdown": {
     "dolr-ai/hot-or-not-backend-canister": {
       "main": {
@@ -20,32 +19,14 @@
         "deletions": 2,
         "total_loc": 4,
         "commit_count": 1
-      },
-      "joel/fix-accept-new-registration-guard": {
-        "additions": 60,
-        "deletions": 60,
-        "total_loc": 120,
-        "commit_count": 4
       }
     },
     "dolr-ai/off-chain-agent": {
       "main": {
-        "additions": 604,
-        "deletions": 122,
-        "total_loc": 726,
-        "commit_count": 3
-      },
-      "joel/fix-event-ser": {
-        "additions": 42,
-        "deletions": 23,
-        "total_loc": 65,
+        "additions": 565,
+        "deletions": 102,
+        "total_loc": 667,
         "commit_count": 2
-      },
-      "joel/icp-swap-dolr-price-fetch": {
-        "additions": 85,
-        "deletions": 182,
-        "total_loc": 267,
-        "commit_count": 4
       }
     },
     "dolr-ai/yral-metadata": {
@@ -54,48 +35,16 @@
         "deletions": 340,
         "total_loc": 685,
         "commit_count": 1
-      },
-      "joel/fcm-notification-migration": {
-        "additions": 56,
-        "deletions": 48,
-        "total_loc": 104,
-        "commit_count": 1
       }
     },
     "dolr-ai/yral-auth-v2": {
-      "main": {
-        "additions": 206,
-        "deletions": 7,
-        "total_loc": 213,
-        "commit_count": 2
-      },
       "joel/ai-accounts-integration": {
-        "additions": 66,
-        "deletions": 248,
-        "total_loc": 314,
-        "commit_count": 2
-      },
-      "joel/json-ser-ai-endpoint": {
-        "additions": 2,
-        "deletions": 2,
-        "total_loc": 4,
+        "additions": 65,
+        "deletions": 247,
+        "total_loc": 312,
         "commit_count": 1
-      },
-      "joel/json-ser-fix": {
-        "additions": 5,
-        "deletions": 5,
-        "total_loc": 10,
-        "commit_count": 2
-      }
-    },
-    "dolr-ai/self-hosted-video-models": {
-      "main": {
-        "additions": 164,
-        "deletions": 2,
-        "total_loc": 166,
-        "commit_count": 5
       }
     }
   },
-  "processed_at": "2026-02-03T22:51:38.162962Z"
+  "processed_at": "2026-02-05T08:45:13.641580Z"
 }

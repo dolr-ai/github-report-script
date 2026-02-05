@@ -1,10 +1,10 @@
 {
   "date": "2026-02-01",
   "username": "joel-medicala-yral",
-  "additions": 922,
-  "deletions": 104,
-  "total_loc": 1026,
-  "commit_count": 9,
+  "additions": 455,
+  "deletions": 49,
+  "total_loc": 504,
+  "commit_count": 3,
   "repositories": [
     "dolr-ai/off-chain-agent"
   ],
@@ -12,30 +12,18 @@
   "branch_breakdown": {
     "dolr-ai/off-chain-agent": {
       "main": {
-        "additions": 458,
-        "deletions": 50,
-        "total_loc": 508,
-        "commit_count": 3
+        "additions": 455,
+        "deletions": 49,
+        "total_loc": 504,
+        "commit_count": 2
       },
       "joel/fix-report-env": {
-        "additions": 9,
-        "deletions": 6,
-        "total_loc": 15,
-        "commit_count": 4
-      },
-      "joel/fix-reports": {
-        "additions": 3,
-        "deletions": 1,
-        "total_loc": 4,
-        "commit_count": 1
-      },
-      "joel/rewards-mode": {
-        "additions": 452,
-        "deletions": 47,
-        "total_loc": 499,
+        "additions": 0,
+        "deletions": 0,
+        "total_loc": 0,
         "commit_count": 1
       }
     }
   },
-  "processed_at": "2026-02-03T22:51:38.168339Z"
+  "processed_at": "2026-02-05T08:45:13.646390Z"
 }

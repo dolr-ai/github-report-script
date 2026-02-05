@@ -1,17 +1,15 @@
 {
   "date": "2026-01-21",
   "username": "naitik-makwana-yral",
-  "additions": 1743,
-  "deletions": 848,
-  "total_loc": 2591,
-  "commit_count": 14,
+  "additions": 1463,
+  "deletions": 68,
+  "total_loc": 1531,
+  "commit_count": 4,
   "repositories": [
     "dolr-ai/hot-or-not-web-leptos-ssr",
-    "dolr-ai/off-chain-agent",
-    "dolr-ai/yral-auth-v2",
-    "dolr-ai/yral-metadata"
+    "dolr-ai/off-chain-agent"
   ],
-  "repo_count": 4,
+  "repo_count": 2,
   "branch_breakdown": {
     "dolr-ai/hot-or-not-web-leptos-ssr": {
       "main": {
@@ -35,34 +33,12 @@
         "commit_count": 1
       },
       "naitik/migrate_fly_redis_to_dragonfly": {
-        "additions": 34,
-        "deletions": 48,
-        "total_loc": 82,
-        "commit_count": 5
-      },
-      "naitik/migrate_reads_to_dragonfly": {
-        "additions": 1,
-        "deletions": 19,
-        "total_loc": 20,
+        "additions": 5,
+        "deletions": 5,
+        "total_loc": 10,
         "commit_count": 1
-      }
-    },
-    "dolr-ai/yral-metadata": {
-      "naitik/migrate-reads-to-dragonfly": {
-        "additions": 232,
-        "deletions": 666,
-        "total_loc": 898,
-        "commit_count": 2
-      }
-    },
-    "dolr-ai/yral-auth-v2": {
-      "naitik/migrate_reads_to_dragonfly": {
-        "additions": 18,
-        "deletions": 52,
-        "total_loc": 70,
-        "commit_count": 3
       }
     }
   },
-  "processed_at": "2026-02-03T22:51:38.135681Z"
+  "processed_at": "2026-02-05T08:45:13.608421Z"
 }

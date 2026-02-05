@@ -1,10 +1,10 @@
 {
   "date": "2026-01-23",
   "username": "naitik-makwana-yral",
-  "additions": 1679,
-  "deletions": 1679,
-  "total_loc": 3358,
-  "commit_count": 6,
+  "additions": 47,
+  "deletions": 796,
+  "total_loc": 843,
+  "commit_count": 3,
   "repositories": [
     "dolr-ai/hot-or-not-web-leptos-ssr"
   ],
@@ -12,24 +12,18 @@
   "branch_breakdown": {
     "dolr-ai/hot-or-not-web-leptos-ssr": {
       "main": {
-        "additions": 1632,
-        "deletions": 883,
-        "total_loc": 2515,
-        "commit_count": 3
+        "additions": 45,
+        "deletions": 794,
+        "total_loc": 839,
+        "commit_count": 1
       },
       "naitik/migration_to_dragonfly_redis": {
         "additions": 2,
         "deletions": 2,
         "total_loc": 4,
         "commit_count": 2
-      },
-      "revert-dual-write": {
-        "additions": 45,
-        "deletions": 794,
-        "total_loc": 839,
-        "commit_count": 1
       }
     }
   },
-  "processed_at": "2026-02-03T22:51:38.142328Z"
+  "processed_at": "2026-02-05T08:45:13.616850Z"
 }

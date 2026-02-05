@@ -1,50 +1,23 @@
 {
   "date": "2026-02-02",
   "username": "joel-medicala-yral",
-  "additions": 1259,
-  "deletions": 674,
-  "total_loc": 1933,
-  "commit_count": 23,
+  "additions": 543,
+  "deletions": 280,
+  "total_loc": 823,
+  "commit_count": 3,
   "repositories": [
-    "dolr-ai/off-chain-agent",
-    "dolr-ai/self-hosted-video-models"
+    "dolr-ai/off-chain-agent"
   ],
-  "repo_count": 2,
+  "repo_count": 1,
   "branch_breakdown": {
     "dolr-ai/off-chain-agent": {
-      "joel/apps-script-reports-api": {
-        "additions": 100,
-        "deletions": 70,
-        "total_loc": 170,
-        "commit_count": 3
-      },
       "main": {
-        "additions": 567,
-        "deletions": 289,
-        "total_loc": 856,
-        "commit_count": 4
-      },
-      "joel/fix-gchat-report-buttons": {
-        "additions": 29,
-        "deletions": 14,
-        "total_loc": 43,
-        "commit_count": 2
-      },
-      "joel/fix-logging": {
-        "additions": 482,
-        "deletions": 234,
-        "total_loc": 716,
+        "additions": 543,
+        "deletions": 280,
+        "total_loc": 823,
         "commit_count": 3
-      }
-    },
-    "dolr-ai/self-hosted-video-models": {
-      "main": {
-        "additions": 81,
-        "deletions": 67,
-        "total_loc": 148,
-        "commit_count": 11
       }
     }
   },
-  "processed_at": "2026-02-03T22:51:38.170843Z"
+  "processed_at": "2026-02-05T08:45:13.652041Z"
 }

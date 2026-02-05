@@ -1,10 +1,10 @@
 {
   "date": "2026-01-21",
   "username": "samarth-paboowal-yral",
-  "additions": 1898,
-  "deletions": 127,
-  "total_loc": 2025,
-  "commit_count": 9,
+  "additions": 398,
+  "deletions": 97,
+  "total_loc": 495,
+  "commit_count": 3,
   "repositories": [
     "dolr-ai/yral-mobile"
   ],
@@ -12,10 +12,10 @@
   "branch_breakdown": {
     "dolr-ai/yral-mobile": {
       "feature/subscriptions-ui": {
-        "additions": 1897,
-        "deletions": 113,
-        "total_loc": 2010,
-        "commit_count": 8
+        "additions": 397,
+        "deletions": 83,
+        "total_loc": 480,
+        "commit_count": 2
       },
       "release/3.2.0": {
         "additions": 1,
@@ -25,5 +25,5 @@
       }
     }
   },
-  "processed_at": "2026-02-03T22:51:38.136440Z"
+  "processed_at": "2026-02-05T08:45:13.609063Z"
 }

@@ -1,10 +1,10 @@
 {
   "date": "2026-01-14",
   "username": "shivam-bhavsar-yral",
-  "additions": 13629,
-  "deletions": 4037,
-  "total_loc": 17666,
-  "commit_count": 50,
+  "additions": 9290,
+  "deletions": 2309,
+  "total_loc": 11599,
+  "commit_count": 9,
   "repositories": [
     "dolr-ai/yral-mobile"
   ],
@@ -12,24 +12,18 @@
   "branch_breakdown": {
     "dolr-ai/yral-mobile": {
       "main": {
-        "additions": 8696,
-        "deletions": 2546,
-        "total_loc": 11242,
-        "commit_count": 20
+        "additions": 7171,
+        "deletions": 2289,
+        "total_loc": 9460,
+        "commit_count": 7
       },
       "feature/iap-ui": {
-        "additions": 4787,
-        "deletions": 1477,
-        "total_loc": 6264,
-        "commit_count": 28
-      },
-      "feature/subcription-video-gen": {
-        "additions": 146,
-        "deletions": 14,
-        "total_loc": 160,
+        "additions": 2119,
+        "deletions": 20,
+        "total_loc": 2139,
         "commit_count": 2
       }
     }
   },
-  "processed_at": "2026-02-03T22:51:38.111923Z"
+  "processed_at": "2026-02-05T08:45:13.581001Z"
 }

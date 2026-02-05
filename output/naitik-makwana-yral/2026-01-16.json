@@ -1,10 +1,10 @@
 {
   "date": "2026-01-16",
   "username": "naitik-makwana-yral",
-  "additions": 85,
-  "deletions": 89,
-  "total_loc": 174,
-  "commit_count": 4,
+  "additions": 52,
+  "deletions": 51,
+  "total_loc": 103,
+  "commit_count": 2,
   "repositories": [
     "dolr-ai/redis-store-cluster",
     "dolr-ai/yral-metadata"
@@ -21,12 +21,12 @@
     },
     "dolr-ai/redis-store-cluster": {
       "naitik/impl-redis-store-cluster": {
-        "additions": 34,
-        "deletions": 38,
-        "total_loc": 72,
-        "commit_count": 3
+        "additions": 1,
+        "deletions": 0,
+        "total_loc": 1,
+        "commit_count": 1
       }
     }
   },
-  "processed_at": "2026-02-03T22:51:38.118617Z"
+  "processed_at": "2026-02-05T08:45:13.591898Z"
 }

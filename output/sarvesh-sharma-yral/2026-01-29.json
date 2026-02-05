@@ -1,10 +1,10 @@
 {
   "date": "2026-01-29",
   "username": "sarvesh-sharma-yral",
-  "additions": 410926,
-  "deletions": 954,
-  "total_loc": 411880,
-  "commit_count": 9,
+  "additions": 206485,
+  "deletions": 864,
+  "total_loc": 207349,
+  "commit_count": 5,
   "repositories": [
     "dolr-ai/yral-mobile"
   ],
@@ -18,12 +18,12 @@
         "commit_count": 2
       },
       "feature/dolr-wallet-ui-bk": {
-        "additions": 205201,
-        "deletions": 408,
-        "total_loc": 205609,
-        "commit_count": 7
+        "additions": 760,
+        "deletions": 318,
+        "total_loc": 1078,
+        "commit_count": 3
       }
     }
   },
-  "processed_at": "2026-02-03T22:51:38.161310Z"
+  "processed_at": "2026-02-05T08:45:13.638059Z"
 }

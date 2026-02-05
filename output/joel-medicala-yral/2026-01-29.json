@@ -1,53 +1,22 @@
 {
   "date": "2026-01-29",
   "username": "joel-medicala-yral",
-  "additions": 2365,
-  "deletions": 1195,
-  "total_loc": 3560,
-  "commit_count": 17,
+  "additions": 1057,
+  "deletions": 517,
+  "total_loc": 1574,
+  "commit_count": 4,
   "repositories": [
     "dolr-ai/off-chain-agent",
-    "dolr-ai/yral-common",
     "dolr-ai/yral-metadata"
   ],
-  "repo_count": 3,
+  "repo_count": 2,
   "branch_breakdown": {
     "dolr-ai/off-chain-agent": {
       "main": {
-        "additions": 296,
-        "deletions": 125,
-        "total_loc": 421,
-        "commit_count": 3
-      },
-      "joel/dolr-rewards": {
-        "additions": 50,
-        "deletions": 62,
-        "total_loc": 112,
+        "additions": 260,
+        "deletions": 78,
+        "total_loc": 338,
         "commit_count": 2
-      },
-      "joel/icp-swap-dolr-price-fetch": {
-        "additions": 553,
-        "deletions": 100,
-        "total_loc": 653,
-        "commit_count": 1
-      },
-      "joel/phash-redis-migration": {
-        "additions": 37,
-        "deletions": 48,
-        "total_loc": 85,
-        "commit_count": 2
-      },
-      "joel/profile-views-check": {
-        "additions": 109,
-        "deletions": 2,
-        "total_loc": 111,
-        "commit_count": 1
-      },
-      "joel/upload-flow-content": {
-        "additions": 22,
-        "deletions": 3,
-        "total_loc": 25,
-        "commit_count": 1
       }
     },
     "dolr-ai/yral-metadata": {
@@ -58,32 +27,12 @@
         "commit_count": 1
       },
       "joel/broken_pipe_retries": {
-        "additions": 502,
-        "deletions": 282,
-        "total_loc": 784,
-        "commit_count": 3
-      },
-      "joel/fcm-notification-migration": {
-        "additions": 311,
-        "deletions": 314,
-        "total_loc": 625,
-        "commit_count": 1
-      }
-    },
-    "dolr-ai/yral-common": {
-      "master": {
-        "additions": 4,
-        "deletions": 1,
-        "total_loc": 5,
-        "commit_count": 1
-      },
-      "revert-153-fix/update-user-info-service-candid": {
-        "additions": 4,
-        "deletions": 1,
-        "total_loc": 5,
+        "additions": 320,
+        "deletions": 182,
+        "total_loc": 502,
         "commit_count": 1
       }
     }
   },
-  "processed_at": "2026-02-03T22:51:38.159817Z"
+  "processed_at": "2026-02-05T08:45:13.637176Z"
 }

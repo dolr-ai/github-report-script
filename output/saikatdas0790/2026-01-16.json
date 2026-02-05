@@ -1,32 +1,23 @@
 {
   "date": "2026-01-16",
   "username": "saikatdas0790",
-  "additions": 1629,
-  "deletions": 429,
-  "total_loc": 2058,
-  "commit_count": 40,
+  "additions": 1058,
+  "deletions": 23,
+  "total_loc": 1081,
+  "commit_count": 3,
   "repositories": [
-    "dolr-ai/data-science-directed-acyclic-graphs",
     "dolr-ai/hetzner-bare-metal-fleet"
   ],
-  "repo_count": 2,
+  "repo_count": 1,
   "branch_breakdown": {
-    "dolr-ai/data-science-directed-acyclic-graphs": {
-      "self-hosted-airflow": {
-        "additions": 202,
-        "deletions": 131,
-        "total_loc": 333,
-        "commit_count": 17
-      }
-    },
     "dolr-ai/hetzner-bare-metal-fleet": {
       "main": {
-        "additions": 1427,
-        "deletions": 298,
-        "total_loc": 1725,
-        "commit_count": 23
+        "additions": 1058,
+        "deletions": 23,
+        "total_loc": 1081,
+        "commit_count": 3
       }
     }
   },
-  "processed_at": "2026-02-03T22:51:38.117489Z"
+  "processed_at": "2026-02-05T08:45:13.590605Z"
 }
