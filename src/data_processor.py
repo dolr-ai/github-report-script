@@ -102,6 +102,90 @@ class DataProcessor:
 
         commits = cached_data.get('commits', [])
 
+        # Deduplicate commits by SHA to avoid counting merge commits and their constituent commits
+        seen_shas = set()
+        unique_commits = []
+        
+        # First pass: deduplicate by exact SHA match
+        for commit in commits:
+            sha = commit.get('sha')
+            if sha and sha not in seen_shas:
+                seen_shas.add(sha)
+                unique_commits.append(commit)
+            else:
+                logger.debug(f"Skipping duplicate commit {sha[:7]} on {date_str}")
+
+        # Second pass: detect and remove squash-merge duplicates
+        # (same author, same date, very similar stats, different SHAs)
+        author_commits = defaultdict(list)
+        for commit in unique_commits:
+            author = commit.get('author')
+            if author:
+                author_commits[author].append(commit)
+        
+        deduped_commits = []
+        for author, author_commit_list in author_commits.items():
+            # Group commits by similar stats (within 1% difference)
+            processed_indices = set()
+            
+            for i, commit in enumerate(author_commit_list):
+                if i in processed_indices:
+                    continue
+                    
+                stats = commit.get('stats', {})
+                additions = stats.get('additions', 0)
+                deletions = stats.get('deletions', 0)
+                total = stats.get('total', 0)
+                branches = commit.get('branches', [])
+                primary_branch = self._get_primary_branch(branches)
+                
+                # Find similar commits (likely squash-merge duplicates)
+                similar_commits = [commit]
+                for j, other_commit in enumerate(author_commit_list):
+                    if j <= i or j in processed_indices:
+                        continue
+                    
+                    other_stats = other_commit.get('stats', {})
+                    other_additions = other_stats.get('additions', 0)
+                    other_deletions = other_stats.get('deletions', 0)
+                    other_total = other_stats.get('total', 0)
+                    
+                    # Check if stats are very similar (within 1% or absolute difference < 100)
+                    if total > 0 and other_total > 0:
+                        diff_ratio = abs(total - other_total) / max(total, other_total)
+                        if diff_ratio < 0.01 or abs(total - other_total) < 100:
+                            similar_commits.append(other_commit)
+                            processed_indices.add(j)
+                
+                # If we found similar commits, keep only the one on the highest priority branch
+                if len(similar_commits) > 1:
+                    logger.info(
+                        f"Found {len(similar_commits)} similar commits by {author} "
+                        f"with ~{total} LOC changes on {date_str}. Keeping only the one on highest priority branch."
+                    )
+                    # Sort by branch priority (main/master/develop first)
+                    similar_commits.sort(key=lambda c: (
+                        self.PRIORITY_BRANCHES.index(self._get_primary_branch(c.get('branches', []))) 
+                        if self._get_primary_branch(c.get('branches', [])) in self.PRIORITY_BRANCHES 
+                        else 999
+                    ))
+                    deduped_commits.append(similar_commits[0])
+                    for skipped in similar_commits[1:]:
+                        logger.info(
+                            f"  Skipping {skipped.get('sha', '')[:7]} on branch "
+                            f"{self._get_primary_branch(skipped.get('branches', []))}"
+                        )
+                else:
+                    deduped_commits.append(commit)
+                    
+                processed_indices.add(i)
+
+        logger.info(
+            f"Date {date_str}: {len(commits)} total commits, "
+            f"{len(unique_commits)} unique by SHA, "
+            f"{len(deduped_commits)} after squash-merge deduplication"
+        )
+
         # Aggregate by user
         user_metrics = defaultdict(lambda: {
             'additions': 0,
@@ -117,7 +201,7 @@ class DataProcessor:
             }))
         })
 
-        for commit in commits:
+        for commit in deduped_commits:
             author = commit.get('author')
             if author and author in user_ids:
                 stats = commit.get('stats', {})
