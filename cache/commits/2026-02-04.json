@@ -1,0 +1,1239 @@
+{
+  "date": "2026-02-04",
+  "cached_at": "2026-02-05T08:30:06.279488Z",
+  "commits": [
+    {
+      "sha": "44b75ef68eab4e6aae243a81ab12660a45b2bf9f",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-02-04T16:00:53Z",
+      "message": "chore: update Cargo.lock",
+      "stats": {
+        "additions": 18,
+        "deletions": 18,
+        "total": 36
+      },
+      "branches": [
+        "feat/ltx2-model"
+      ]
+    },
+    {
+      "sha": "4fc9a39adf8164aaf94f8d436eb5be7ac66b7e3f",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-02-04T15:58:11Z",
+      "message": "chore: update offchain URL to PR preview for testing",
+      "stats": {
+        "additions": 12,
+        "deletions": 12,
+        "total": 24
+      },
+      "branches": [
+        "feat/ltx2-model"
+      ]
+    },
+    {
+      "sha": "0f5260ebcf346c45b29d34d667d78ff4f7592d0b",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-02-04T15:44:57Z",
+      "message": "feat: add LTX2 model support",
+      "stats": {
+        "additions": 45,
+        "deletions": 33,
+        "total": 78
+      },
+      "branches": [
+        "feat/ltx2-model"
+      ]
+    },
+    {
+      "sha": "6dada499021e3cdad461abb85f6c64104fee6a7f",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-04T20:05:08Z",
+      "message": "make review NULL",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "joel/ai-video-detector"
+      ]
+    },
+    {
+      "sha": "00fea038f24af9f837151e80491abe1ec2772a1b",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-04T20:02:21Z",
+      "message": "filter out old videos",
+      "stats": {
+        "additions": 3,
+        "deletions": 1,
+        "total": 4
+      },
+      "branches": [
+        "joel/ai-video-detector"
+      ]
+    },
+    {
+      "sha": "71a96cb3099b68f16d1f95b3ecf3d3b1e0c327ba",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-04T19:37:03Z",
+      "message": "fix: check for Some() not just Ok() in kvrocks duplicate check",
+      "stats": {
+        "additions": 1,
+        "deletions": 2,
+        "total": 3
+      },
+      "branches": [
+        "joel/ai-video-detector"
+      ]
+    },
+    {
+      "sha": "b177513f649b841d984dd177b01a5fdbad973f0a",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-04T19:22:29Z",
+      "message": "fix: check kvrocks before processing to skip duplicates",
+      "stats": {
+        "additions": 14,
+        "deletions": 0,
+        "total": 14
+      },
+      "branches": [
+        "joel/ai-video-detector"
+      ]
+    },
+    {
+      "sha": "f0bd26e394ae72922a6e7aa76ed74d5ef3343b38",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-04T19:17:50Z",
+      "message": "fix: use INSERT for all backfill cases, handle 404 as review",
+      "stats": {
+        "additions": 55,
+        "deletions": 21,
+        "total": 76
+      },
+      "branches": [
+        "joel/ai-video-detector"
+      ]
+    },
+    {
+      "sha": "53ff5d31378ecad074f628e91facd2ff2e638703",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-04T19:13:07Z",
+      "message": "Revert \"fix: record all processed videos in ai_ugc to prevent re-processing\"",
+      "stats": {
+        "additions": 10,
+        "deletions": 65,
+        "total": 75
+      },
+      "branches": [
+        "joel/ai-video-detector"
+      ]
+    },
+    {
+      "sha": "f8e667b14630b2377902730c3cf1b0367c98713b",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-04T19:12:26Z",
+      "message": "fix: record all processed videos in ai_ugc to prevent re-processing",
+      "stats": {
+        "additions": 65,
+        "deletions": 10,
+        "total": 75
+      },
+      "branches": [
+        "joel/ai-video-detector"
+      ]
+    },
+    {
+      "sha": "5f0c3f405713d2b8ebf37fbde5d5dfe0c091061a",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-04T10:40:10Z",
+      "message": "FIX",
+      "stats": {
+        "additions": 33,
+        "deletions": 71,
+        "total": 104
+      },
+      "branches": [
+        "joel/ai-video-detector"
+      ]
+    },
+    {
+      "sha": "f25d0da050a5a52265f4e88de91028d5da58eb48",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-04T10:34:51Z",
+      "message": "spawn background task for qstash enqueueing to avoid timeout",
+      "stats": {
+        "additions": 55,
+        "deletions": 49,
+        "total": 104
+      },
+      "branches": [
+        "joel/ai-video-detector"
+      ]
+    },
+    {
+      "sha": "f523496e18e8c780898f12170e387635d7d78c0c",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-04T10:22:41Z",
+      "message": "fix: construct QStash enqueue URL manually to avoid join issues",
+      "stats": {
+        "additions": 8,
+        "deletions": 6,
+        "total": 14
+      },
+      "branches": [
+        "joel/ai-video-detector"
+      ]
+    },
+    {
+      "sha": "e14bca3027363d8a17a2bb7ec4d75c42d0b8cae3",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-04T10:21:06Z",
+      "message": "lint",
+      "stats": {
+        "additions": 3,
+        "deletions": 5,
+        "total": 8
+      },
+      "branches": [
+        "joel/ai-video-detector"
+      ]
+    },
+    {
+      "sha": "a96985c3cf500748775de2716a2f00f4ce2a645a",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-04T10:20:50Z",
+      "message": "fix: remove URL encoding for QStash queue destination",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "joel/ai-video-detector"
+      ]
+    },
+    {
+      "sha": "a410f44913a0ce4c24a1812ebea092c792942d84",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-04T10:11:11Z",
+      "message": "fix: fetch ALL unprocessed videos in backfill endpoint",
+      "stats": {
+        "additions": 115,
+        "deletions": 122,
+        "total": 237
+      },
+      "branches": [
+        "joel/ai-video-detector"
+      ]
+    },
+    {
+      "sha": "16c16f2c8bd795b18ea14cee58aa41644debfb9a",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-04T10:11:11Z",
+      "message": "feat: use QStash queue for AI video backfill",
+      "stats": {
+        "additions": 409,
+        "deletions": 323,
+        "total": 732
+      },
+      "branches": [
+        "joel/ai-video-detector"
+      ]
+    },
+    {
+      "sha": "491ac06d9aa09b0abe7777c55eacffc613a50c14",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-04T10:11:11Z",
+      "message": "feat: add Storj-first-then-Cloudflare fallback for AI video backfill",
+      "stats": {
+        "additions": 35,
+        "deletions": 14,
+        "total": 49
+      },
+      "branches": [
+        "joel/ai-video-detector"
+      ]
+    },
+    {
+      "sha": "a1cd828b100ec917b57e58d3a239efb5e81de60e",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-04T08:56:01Z",
+      "message": "fix env",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "joel/ai-video-detector"
+      ]
+    },
+    {
+      "sha": "7ada7a0243517d4e175d4f5dd67f9bfc84d92267",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-04T08:15:17Z",
+      "message": "tmp backfill script",
+      "stats": {
+        "additions": 397,
+        "deletions": 0,
+        "total": 397
+      },
+      "branches": [
+        "joel/ai-video-detector"
+      ]
+    },
+    {
+      "sha": "27b1b406d6c02581b316decbf2ae923911c49f59",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-04T07:22:17Z",
+      "message": "Merge branch 'main' into joel/ai-video-detector",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "joel/ai-video-detector"
+      ]
+    },
+    {
+      "sha": "d1b06622381cce576893c79fde2e412b46f84b13",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-04T07:21:23Z",
+      "message": "add fallback logic",
+      "stats": {
+        "additions": 33,
+        "deletions": 5,
+        "total": 38
+      },
+      "branches": [
+        "joel/ai-video-detector"
+      ]
+    },
+    {
+      "sha": "01b3fdab904ccd0f9586ad7f67b75488f8c3d83f",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-04T07:10:22Z",
+      "message": "feat: added ai video detector (#396)",
+      "stats": {
+        "additions": 324,
+        "deletions": 45,
+        "total": 369
+      },
+      "branches": [
+        "joel/ai-video-detector",
+        "joel/ltx-intergration",
+        "main"
+      ]
+    },
+    {
+      "sha": "5c055b968e6e4c27b161705d255ff633824dba16",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-04T07:02:19Z",
+      "message": "feat: added ai video detector",
+      "stats": {
+        "additions": 324,
+        "deletions": 45,
+        "total": 369
+      },
+      "branches": [
+        "joel/ai-video-detector"
+      ]
+    },
+    {
+      "sha": "dac2609076bd12964ab3553007daf8ab59dd0175",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-04T05:09:02Z",
+      "message": "feat: added coin based notification (#395)",
+      "stats": {
+        "additions": 23,
+        "deletions": 3,
+        "total": 26
+      },
+      "branches": [
+        "joel/ai-video-detector",
+        "joel/ltx-intergration",
+        "main"
+      ]
+    },
+    {
+      "sha": "523c65a2e8e520d40c3f7a2863e1b4b7d5c37131",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-04T18:15:11Z",
+      "message": "fix: correct webhook callback flow and video URL construction",
+      "stats": {
+        "additions": 24,
+        "deletions": 3,
+        "total": 27
+      },
+      "branches": [
+        "joel/ltx-intergration"
+      ]
+    },
+    {
+      "sha": "135f27d61ce47522d5aac005e88b80d89acee9fe",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-04T17:33:22Z",
+      "message": "feat: add COMFYUI_VIEW_URL for raw ComfyUI /view endpoint",
+      "stats": {
+        "additions": 23,
+        "deletions": 7,
+        "total": 30
+      },
+      "branches": [
+        "joel/ltx-intergration"
+      ]
+    },
+    {
+      "sha": "3af451200c38eae230717380eae7677c33ead7bb",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-04T17:14:53Z",
+      "message": "fix: remove clone on Copy type",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "joel/ltx-intergration"
+      ]
+    },
+    {
+      "sha": "23aaad23d13dad7ef0048fbb7829ae304a4590d4",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-04T17:12:24Z",
+      "message": "fix: correct T2V workflow + inttest routes to LTX2",
+      "stats": {
+        "additions": 29,
+        "deletions": 22,
+        "total": 51
+      },
+      "branches": [
+        "joel/ltx-intergration"
+      ]
+    },
+    {
+      "sha": "ed2818ca31e8ea984cd73d10b9ffde35056e4ccf",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-04T17:00:54Z",
+      "message": "fix: use correct ComfyUI API wrapper URL (port 8288)",
+      "stats": {
+        "additions": 4,
+        "deletions": 4,
+        "total": 8
+      },
+      "branches": [
+        "joel/ltx-intergration"
+      ]
+    },
+    {
+      "sha": "483d9f6c82e7f5ef59483196887b732fa06fae19",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-04T16:45:38Z",
+      "message": "fix: add missing slash in ComfyUI URL paths",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "joel/ltx-intergration"
+      ]
+    },
+    {
+      "sha": "becc2a84692177ad8226d15d7da9affce20b40c2",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-04T16:00:49Z",
+      "message": "chore: update Cargo.lock",
+      "stats": {
+        "additions": 20,
+        "deletions": 20,
+        "total": 40
+      },
+      "branches": [
+        "joel/ltx-intergration"
+      ]
+    },
+    {
+      "sha": "55e6a705d75cbad6d78cc40467e86f6c21bbb506",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-04T15:58:07Z",
+      "message": "chore: update yral-common rev",
+      "stats": {
+        "additions": 8,
+        "deletions": 8,
+        "total": 16
+      },
+      "branches": [
+        "joel/ltx-intergration"
+      ]
+    },
+    {
+      "sha": "195c2b336a9197afb7e714244e6a86beb0e61d46",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-04T15:44:45Z",
+      "message": "feat: update yral-common rev and add ComfyUI deployment configs",
+      "stats": {
+        "additions": 53,
+        "deletions": 32,
+        "total": 85
+      },
+      "branches": [
+        "joel/ltx-intergration"
+      ]
+    },
+    {
+      "sha": "9a7f56fb4220878cc72ad9dedff13a290e3f0fe8",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-04T15:35:10Z",
+      "message": "feat: added ltx integration",
+      "stats": {
+        "additions": 821,
+        "deletions": 33,
+        "total": 854
+      },
+      "branches": [
+        "joel/ltx-intergration"
+      ]
+    },
+    {
+      "sha": "05f330ec2a721e6f35f9c91e68e9232ef533f0b5",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-04T07:26:11Z",
+      "message": "feat: add fallback logic from storj to cf (#397)",
+      "stats": {
+        "additions": 33,
+        "deletions": 5,
+        "total": 38
+      },
+      "branches": [
+        "joel/ltx-intergration",
+        "main"
+      ]
+    },
+    {
+      "sha": "31aa084893c7d77b7942aaed005ca2d3500bf834",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-04T15:05:16Z",
+      "message": "Implements subscription testing feedbacks (#841)",
+      "stats": {
+        "additions": 165,
+        "deletions": 15,
+        "total": 180
+      },
+      "branches": [
+        "develop",
+        "enhancement/chat-error-ui",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "a41541935309103e09751fe9d992f87d224f58e8",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-04T14:42:00Z",
+      "message": "Implements force update with FirebaseRemoteConfig for android (#840)",
+      "stats": {
+        "additions": 417,
+        "deletions": 7,
+        "total": 424
+      },
+      "branches": [
+        "develop",
+        "enhancement/chat-error-ui",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "a2d9c7318ca349da928960dca4e5273d7c461937",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-04T13:00:11Z",
+      "message": "fix: Uses correct api response for pro users (#839)",
+      "stats": {
+        "additions": 4,
+        "deletions": 2,
+        "total": 6
+      },
+      "branches": [
+        "develop",
+        "enhancement/chat-error-ui",
+        "fix/ios-load-time",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "c7effcb1e470b50654ea50cfb967800a58cfd471",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-04T10:43:18Z",
+      "message": "Credit consumption in tournaments + subscription instrumentation (#838)",
+      "stats": {
+        "additions": 506,
+        "deletions": 63,
+        "total": 569
+      },
+      "branches": [
+        "develop",
+        "enhancement/chat-error-ui",
+        "fix/ios-load-time",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "d57cc5f82da5a99a4fdd6fb47a3fd280255fbb39",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-04T10:10:53Z",
+      "message": "temp fix: Selects india as default country when language is english (#837)",
+      "stats": {
+        "additions": 9,
+        "deletions": 2,
+        "total": 11
+      },
+      "branches": [
+        "develop",
+        "enhancement/chat-error-ui",
+        "fix/ios-load-time",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "e18dce379f4513586e494c4c34d1c50586b1e125",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-04T09:19:41Z",
+      "message": "build: Adds hot or not onboarding (#835)",
+      "stats": {
+        "additions": 259,
+        "deletions": 3,
+        "total": 262
+      },
+      "branches": [
+        "develop",
+        "enhancement/chat-error-ui",
+        "fix/ios-load-time",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "e4238b429a5ba95d284279ed098df3e9332c67d9",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-04T05:49:53Z",
+      "message": "Implements yral pro for tournaments (#836)",
+      "stats": {
+        "additions": 632,
+        "deletions": 179,
+        "total": 811
+      },
+      "branches": [
+        "develop",
+        "enhancement/chat-error-ui",
+        "fix/ios-load-time",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "23bf29e6cbe2478a9a00fcaf116b5b2c1d29690a",
+      "author": "samarth-paboowal-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-04T16:48:10Z",
+      "message": "chore: adds temp base url for ai account creation",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "feature/create-ai-influencer"
+      ]
+    },
+    {
+      "sha": "368e063a7b62b70b014c9da6aa872fbcc4ce9071",
+      "author": "samarth-paboowal-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-04T16:14:10Z",
+      "message": "build: adds support for custom image while bot creation",
+      "stats": {
+        "additions": 414,
+        "deletions": 15,
+        "total": 429
+      },
+      "branches": [
+        "feature/create-ai-influencer"
+      ]
+    },
+    {
+      "sha": "16fb4f171daac95e5e6eb3900969d500c5bd5e17",
+      "author": "samarth-paboowal-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-04T14:44:36Z",
+      "message": "build: adds login sheet in create bot flow",
+      "stats": {
+        "additions": 106,
+        "deletions": 22,
+        "total": 128
+      },
+      "branches": [
+        "feature/create-ai-influencer"
+      ]
+    },
+    {
+      "sha": "c49a4eaaa7c42ad3e1923dcf6b37ab387640b147",
+      "author": "samarth-paboowal-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-04T13:39:37Z",
+      "message": "chore: fixes compilation error",
+      "stats": {
+        "additions": 15,
+        "deletions": 10,
+        "total": 25
+      },
+      "branches": [
+        "feature/create-ai-influencer"
+      ]
+    },
+    {
+      "sha": "d845123fc7357ac0036473e4c5d7e0fc1f19151e",
+      "author": "samarth-paboowal-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-04T13:26:20Z",
+      "message": "build: adds api for bot creation & account switchiing",
+      "stats": {
+        "additions": 3204,
+        "deletions": 66,
+        "total": 3270
+      },
+      "branches": [
+        "feature/create-ai-influencer"
+      ]
+    },
+    {
+      "sha": "5a0a9017cbc494f7929c44440f5d6477cfce1147",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-04T14:35:46Z",
+      "message": "wip: Uses seeking instead of recreation of player item",
+      "stats": {
+        "additions": 5,
+        "deletions": 5,
+        "total": 10
+      },
+      "branches": [
+        "fix/ios-load-time"
+      ]
+    },
+    {
+      "sha": "0c2625bfe1904ad4776dd62ab62542f02b3b5010",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-04T14:26:28Z",
+      "message": "fix: Fixes stalling on videos on iOS",
+      "stats": {
+        "additions": 108,
+        "deletions": 31,
+        "total": 139
+      },
+      "branches": [
+        "fix/ios-load-time"
+      ]
+    },
+    {
+      "sha": "5da050e58ae6469591a4035375bbcab5984c15cd",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-04T15:24:37Z",
+      "message": "Increments build version name for testing",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "2a53bcb7ea5504243975e03843807c9b873d2d30",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-02-04T15:57:43Z",
+      "message": "chore: update offchain URL to PR preview for testing",
+      "stats": {
+        "additions": 3,
+        "deletions": 1,
+        "total": 4
+      },
+      "branches": [
+        "feat/ltx2-model"
+      ]
+    },
+    {
+      "sha": "76008cfe7705f535f52624b5789155d86cbd1964",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-02-04T15:42:51Z",
+      "message": "feat: add LTX-2 video generation model",
+      "stats": {
+        "additions": 160,
+        "deletions": 2,
+        "total": 162
+      },
+      "branches": [
+        "feat/ltx2-model"
+      ]
+    },
+    {
+      "sha": "40e695df0f64680c2de9ca6089ed6e0a7ba51724",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-02-04T16:20:22Z",
+      "message": "dnm: removed bot account limits",
+      "stats": {
+        "additions": 28,
+        "deletions": 28,
+        "total": 56
+      },
+      "branches": [
+        "joel/dnm-remove-bot-limit"
+      ]
+    },
+    {
+      "sha": "2a53311063a2c721bd133e38e4ade2b0ba31032a",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-04T11:47:55Z",
+      "message": "PNS- Push Notification System (#155)",
+      "stats": {
+        "additions": 238,
+        "deletions": 65,
+        "total": 303
+      },
+      "branches": [
+        "staging"
+      ]
+    },
+    {
+      "sha": "724ec794a687d007fbec9b1417c1a3e8f0e36893",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-02-04T06:39:31Z",
+      "message": "remove aud check",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "fix/remove-aud-check-from-jwt-validation",
+        "main"
+      ]
+    },
+    {
+      "sha": "f441264c49e27e2d023473002c4796c3d2e0ec46",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-02-04T06:55:38Z",
+      "message": "Merge pull request #7 from dolr-ai/fix/remove-aud-check-from-jwt-validation",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "24738d9b665af8bcd519311a2c121bee4bc21792",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-04T12:59:17Z",
+      "message": "chore: added readme",
+      "stats": {
+        "additions": 143,
+        "deletions": 2,
+        "total": 145
+      },
+      "branches": [
+        "naitik/initial_setup"
+      ]
+    },
+    {
+      "sha": "fe76aba1084ff86b5379221deff2f52a54672dfc",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-04T11:15:51Z",
+      "message": "fix: typo",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/initial_setup"
+      ]
+    },
+    {
+      "sha": "1a24ac4d29a9f16f30323a6b68af8a1f40235f86",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-04T11:14:51Z",
+      "message": "test: verify secrets",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "naitik/initial_setup"
+      ]
+    },
+    {
+      "sha": "7d06be1908353592ec90e412a762c6265d7f9b18",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-04T11:11:43Z",
+      "message": "test: verify fetch",
+      "stats": {
+        "additions": 3,
+        "deletions": 2,
+        "total": 5
+      },
+      "branches": [
+        "naitik/initial_setup"
+      ]
+    },
+    {
+      "sha": "9b23dd3d3da0712a8f2797fcf09404064b6d22fe",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-04T11:03:22Z",
+      "message": "test: try to stringify cert",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/initial_setup"
+      ]
+    },
+    {
+      "sha": "4b79fc4c6c10c663066f3ca5cb8bedd38a003046",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-04T10:55:51Z",
+      "message": "fix: not skip cert verification",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/initial_setup"
+      ]
+    },
+    {
+      "sha": "6f7a38b54508422d9afe0d00fe184aaea2164309",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-04T10:42:32Z",
+      "message": "test: without cert",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/initial_setup"
+      ]
+    },
+    {
+      "sha": "18734018834452d531048e267ac44ec6de0bf8f2",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-04T10:39:10Z",
+      "message": "fix: typo fix",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/initial_setup"
+      ]
+    },
+    {
+      "sha": "332ca2e21ea4f108fa7dcb1fb18532200e9fc04b",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-04T10:38:41Z",
+      "message": "fix: branch name typo fix in test yml",
+      "stats": {
+        "additions": 3,
+        "deletions": 2,
+        "total": 5
+      },
+      "branches": [
+        "naitik/initial_setup"
+      ]
+    },
+    {
+      "sha": "defee0086f39a24f66fe820c09cf68d15e63c089",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-04T10:37:17Z",
+      "message": "fix: removed trigger of setup, added test deployment file",
+      "stats": {
+        "additions": 39,
+        "deletions": 3,
+        "total": 42
+      },
+      "branches": [
+        "naitik/initial_setup"
+      ]
+    },
+    {
+      "sha": "14dc1c4f970cc355c1f11a912c40b84b3103d81a",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-04T09:20:40Z",
+      "message": "fix: Ip address passing",
+      "stats": {
+        "additions": 1,
+        "deletions": 2,
+        "total": 3
+      },
+      "branches": [
+        "naitik/initial_setup"
+      ]
+    },
+    {
+      "sha": "cb3d79cbb67446309e042f0f507cf75aa88b3b3e",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-04T09:14:59Z",
+      "message": "fix: fetch server IP",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "naitik/initial_setup"
+      ]
+    },
+    {
+      "sha": "6202489c23edccc90c35a763c00163361a25be39",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-04T09:09:17Z",
+      "message": "fix: file not found issue",
+      "stats": {
+        "additions": 6,
+        "deletions": 3,
+        "total": 9
+      },
+      "branches": [
+        "naitik/initial_setup"
+      ]
+    },
+    {
+      "sha": "24856b65c02fb969ca655c1b7e4c0104d1514bd9",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-04T09:02:28Z",
+      "message": "fix: path fix in volume",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "naitik/initial_setup"
+      ]
+    },
+    {
+      "sha": "96df58e76a1b4da870a84f66dc2b94ed6e4224f7",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-04T08:58:07Z",
+      "message": "fix: preserve data on redeployment",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "naitik/initial_setup"
+      ]
+    },
+    {
+      "sha": "4c977143092b2545108569f9ac64e20cb15a2d40",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-04T08:45:21Z",
+      "message": "fix: passing server_ip as per certs",
+      "stats": {
+        "additions": 3,
+        "deletions": 1,
+        "total": 4
+      },
+      "branches": [
+        "naitik/initial_setup"
+      ]
+    },
+    {
+      "sha": "100edc71a59b29188d861983d0804392559e796a",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-04T08:21:58Z",
+      "message": "fix: tls cert folder mount",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/initial_setup"
+      ]
+    },
+    {
+      "sha": "4f70e2716ddfdb4d495da39de3c1511b038ab0b7",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-04T08:15:58Z",
+      "message": "feat: enabling tls",
+      "stats": {
+        "additions": 16,
+        "deletions": 6,
+        "total": 22
+      },
+      "branches": [
+        "naitik/initial_setup"
+      ]
+    },
+    {
+      "sha": "1d77e65ffd61196856d2bb562abf43e216404e55",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/self-hosted-video-models",
+      "timestamp": "2026-02-04T14:53:25Z",
+      "message": "update setup scripts",
+      "stats": {
+        "additions": 24,
+        "deletions": 5,
+        "total": 29
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e5d53fe507b9ae1c58cd28cf537f136e25461692",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/self-hosted-video-models",
+      "timestamp": "2026-02-04T14:41:00Z",
+      "message": "cleanup + improved workflows",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "426aaa45a9205dd55805fa9faf7641f9f959e016",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/self-hosted-video-models",
+      "timestamp": "2026-02-04T14:30:18Z",
+      "message": "feat: optimized workflows < 7s + added torch.compile support",
+      "stats": {
+        "additions": 52,
+        "deletions": 184,
+        "total": 236
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "bd504835379515fe2cb157a24afa9b69742c432a",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/self-hosted-video-models",
+      "timestamp": "2026-02-04T13:48:35Z",
+      "message": "feat: added optimized workflows < 30s video generation speed",
+      "stats": {
+        "additions": 375,
+        "deletions": 11622,
+        "total": 11997
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ba172fd4cf27a3b89ae7f31e810c4b1ddcfb80c6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-04T04:38:24Z",
+      "message": "Set regular mode to FETCH_AND_CHART",
+      "stats": {
+        "additions": 11511,
+        "deletions": 1428,
+        "total": 12939
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 80
+}
