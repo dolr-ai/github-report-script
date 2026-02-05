@@ -102,12 +102,28 @@ class DataProcessor:
 
         commits = cached_data.get('commits', [])
 
+        # Filter out merge commits (they represent integration of existing work)
+        non_merge_commits = []
+        for commit in commits:
+            message = commit.get('message', '')
+            # Detect merge commits by message pattern
+            if message.startswith('Merge pull request') or message.startswith('Merge branch'):
+                logger.debug(
+                    f"Skipping merge commit {commit.get('sha', '')[:7]} by {commit.get('author')}: {message.split(chr(10))[0][:60]}"
+                )
+                continue
+            non_merge_commits.append(commit)
+
+        logger.info(
+            f"Date {date_str}: Filtered out {len(commits) - len(non_merge_commits)} merge commits"
+        )
+
         # Deduplicate commits by SHA to avoid counting merge commits and their constituent commits
         seen_shas = set()
         unique_commits = []
 
         # First pass: deduplicate by exact SHA match
-        for commit in commits:
+        for commit in non_merge_commits:
             sha = commit.get('sha')
             if sha and sha not in seen_shas:
                 seen_shas.add(sha)
