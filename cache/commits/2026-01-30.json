@@ -1,192 +1,25 @@
 {
   "date": "2026-01-30",
-  "cached_at": "2026-02-06T07:20:28.222961Z",
+  "cached_at": "2026-02-06T08:14:59.849064Z",
   "commits": [
     {
-      "sha": "902a2060156c7aa801bf98648f2875640cbdb51b",
-      "author": "gravityvi",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-30T09:49:15Z",
-      "message": "add user agent in case of yral pro subscription",
+      "sha": "627440dd40872b9db69a8d72b443764f129c4a19",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-30T11:15:35Z",
+      "message": "fix: updated dragonfly connection code which was prone to broken pipe (#1164)",
       "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
+        "additions": 43,
+        "deletions": 5,
+        "total": 48
       },
       "branches": [
-        "fix/user-agent-issue-with-pro-subscription"
-      ]
-    },
-    {
-      "sha": "a9ef4379063cd0027dcd0bb682088581e8a0f149",
-      "author": "gravityvi",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-30T15:18:42Z",
-      "message": "fix lint",
-      "stats": {
-        "additions": 2,
-        "deletions": 2,
-        "total": 4
-      },
-      "branches": [
-        "fix/yral-pro-subscription-token-operation"
-      ]
-    },
-    {
-      "sha": "08c87c66cac14a3b9647e69df216cf58b0df84fa",
-      "author": "gravityvi",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-30T12:02:59Z",
-      "message": "fix yral pro subscription token operation",
-      "stats": {
-        "additions": 29,
-        "deletions": 59,
-        "total": 88
-      },
-      "branches": [
-        "fix/yral-pro-subscription-token-operation"
-      ]
-    },
-    {
-      "sha": "857c53e53ef3fd4ed3943089673356ee5e4b0a54",
-      "author": "gravityvi",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-30T09:50:46Z",
-      "message": "fix: add user agent in case of yral pro subscription (#385)",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "fix/yral-pro-subscription-token-operation",
-        "joel/ai-video-detector",
-        "joel/apps-script-reports-api",
-        "joel/fix-btc-dolr-notif",
-        "joel/fix-gchat-report-buttons",
-        "joel/fix-logging",
-        "joel/fix-report-env",
-        "joel/ltx-intergration",
-        "joel/offchain-broken-pipe-fix",
-        "joel/rewards-mode",
-        "main",
-        "naitik/broken_pipe_issue_fix"
-      ]
-    },
-    {
-      "sha": "ab31102ebffb202f6219ba19a01efc69fb7d58f9",
-      "author": "gravityvi",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-30T15:37:12Z",
-      "message": "fix yral pro subscription token operation (#386)",
-      "stats": {
-        "additions": 31,
-        "deletions": 61,
-        "total": 92
-      },
-      "branches": [
-        "joel/ai-video-detector",
-        "joel/apps-script-reports-api",
-        "joel/fix-btc-dolr-notif",
-        "joel/fix-gchat-report-buttons",
-        "joel/fix-logging",
-        "joel/fix-report-env",
-        "joel/ltx-intergration",
-        "joel/offchain-broken-pipe-fix",
-        "joel/rewards-mode",
-        "main",
-        "naitik/broken_pipe_issue_fix"
-      ]
-    },
-    {
-      "sha": "2a723cde83d834e7dc2fdbdb469621367b626937",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-common",
-      "timestamp": "2026-01-30T11:52:44Z",
-      "message": "fix: yral pro subscription token type (#155)",
-      "stats": {
-        "additions": 6,
-        "deletions": 7,
-        "total": 13
-      },
-      "branches": [
+        "dependabot/cargo/bytes-1.11.1",
+        "dependabot/cargo/hon-worker-common-2a723cd",
+        "dependabot/cargo/openidconnect-4.0.1",
+        "dependabot/cargo/opentelemetry_sdk-0.31.0",
+        "dependabot/cargo/videogen-common-2a723cd",
         "feat/ltx2-model",
-        "feat/update-user-info-deps",
-        "master"
-      ]
-    },
-    {
-      "sha": "20fcfa6d0f4b6f57770032c952a99363985ee02a",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-common",
-      "timestamp": "2026-01-30T11:48:20Z",
-      "message": "fix yral pro subscription token type",
-      "stats": {
-        "additions": 6,
-        "deletions": 7,
-        "total": 13
-      },
-      "branches": [
-        "fix/yral-pro-subscription-token-transaction-implmentation"
-      ]
-    },
-    {
-      "sha": "5043a539ac70cb856171e570e6b5f547e8bc1bb3",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-30T15:25:21Z",
-      "message": "Refactor Ansible inventory: centralize connection settings for bare metal hosts",
-      "stats": {
-        "additions": 6,
-        "deletions": 45,
-        "total": 51
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "c7fe7b7cebb93f451cebc51b89bc1cd673c0e41b",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-30T14:58:08Z",
-      "message": "Add offchain agents to inventory and host vars",
-      "stats": {
-        "additions": 40,
-        "deletions": 18,
-        "total": 58
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "bef3b6d19f7f9c656da99feb9b4865bc09e69bc5",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-30T11:10:04Z",
-      "message": "Add initial devcontainer configuration for Ubuntu with Ansible support",
-      "stats": {
-        "additions": 20,
-        "deletions": 0,
-        "total": 20
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "3dda1bccb00deedc17f3fbcf5f48cd46fbd52b12",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
-      "timestamp": "2026-01-30T09:40:52Z",
-      "message": "Add initial devcontainer configuration for Ubuntu with Ansible support",
-      "stats": {
-        "additions": 18,
-        "deletions": 0,
-        "total": 18
-      },
-      "branches": [
         "main"
       ]
     },
@@ -587,44 +420,6 @@
       ]
     },
     {
-      "sha": "627440dd40872b9db69a8d72b443764f129c4a19",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
-      "timestamp": "2026-01-30T11:15:35Z",
-      "message": "fix: updated dragonfly connection code which was prone to broken pipe (#1164)",
-      "stats": {
-        "additions": 43,
-        "deletions": 5,
-        "total": 48
-      },
-      "branches": [
-        "dependabot/cargo/bytes-1.11.1",
-        "dependabot/cargo/hon-worker-common-2a723cd",
-        "dependabot/cargo/openidconnect-4.0.1",
-        "dependabot/cargo/opentelemetry_sdk-0.31.0",
-        "dependabot/cargo/videogen-common-2a723cd",
-        "feat/ltx2-model",
-        "main"
-      ]
-    },
-    {
-      "sha": "5d691025b67f831249e7c89c497ff203c201ee5c",
-      "author": "ravi-sawlani-yral",
-      "repository": "dolr-ai/yral-billing",
-      "timestamp": "2026-01-30T04:23:31Z",
-      "message": "feat: add routes to update user credits",
-      "stats": {
-        "additions": 219,
-        "deletions": 12,
-        "total": 231
-      },
-      "branches": [
-        "feat/add-sentry-setup",
-        "fix/remove-aud-check-from-jwt-validation",
-        "main"
-      ]
-    },
-    {
       "sha": "58c247015e8f51ee03bdcf12f66626031a1345bd",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
@@ -709,6 +504,211 @@
       },
       "branches": [
         "main"
+      ]
+    },
+    {
+      "sha": "5d691025b67f831249e7c89c497ff203c201ee5c",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-01-30T04:23:31Z",
+      "message": "feat: add routes to update user credits",
+      "stats": {
+        "additions": 219,
+        "deletions": 12,
+        "total": 231
+      },
+      "branches": [
+        "feat/add-sentry-setup",
+        "fix/remove-aud-check-from-jwt-validation",
+        "main"
+      ]
+    },
+    {
+      "sha": "5043a539ac70cb856171e570e6b5f547e8bc1bb3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-30T15:25:21Z",
+      "message": "Refactor Ansible inventory: centralize connection settings for bare metal hosts",
+      "stats": {
+        "additions": 6,
+        "deletions": 45,
+        "total": 51
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c7fe7b7cebb93f451cebc51b89bc1cd673c0e41b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-30T14:58:08Z",
+      "message": "Add offchain agents to inventory and host vars",
+      "stats": {
+        "additions": 40,
+        "deletions": 18,
+        "total": 58
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "bef3b6d19f7f9c656da99feb9b4865bc09e69bc5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-30T11:10:04Z",
+      "message": "Add initial devcontainer configuration for Ubuntu with Ansible support",
+      "stats": {
+        "additions": 20,
+        "deletions": 0,
+        "total": 20
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3dda1bccb00deedc17f3fbcf5f48cd46fbd52b12",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-01-30T09:40:52Z",
+      "message": "Add initial devcontainer configuration for Ubuntu with Ansible support",
+      "stats": {
+        "additions": 18,
+        "deletions": 0,
+        "total": 18
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "902a2060156c7aa801bf98648f2875640cbdb51b",
+      "author": "gravityvi",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-30T09:49:15Z",
+      "message": "add user agent in case of yral pro subscription",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "fix/user-agent-issue-with-pro-subscription"
+      ]
+    },
+    {
+      "sha": "a9ef4379063cd0027dcd0bb682088581e8a0f149",
+      "author": "gravityvi",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-30T15:18:42Z",
+      "message": "fix lint",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "fix/yral-pro-subscription-token-operation"
+      ]
+    },
+    {
+      "sha": "08c87c66cac14a3b9647e69df216cf58b0df84fa",
+      "author": "gravityvi",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-30T12:02:59Z",
+      "message": "fix yral pro subscription token operation",
+      "stats": {
+        "additions": 29,
+        "deletions": 59,
+        "total": 88
+      },
+      "branches": [
+        "fix/yral-pro-subscription-token-operation"
+      ]
+    },
+    {
+      "sha": "857c53e53ef3fd4ed3943089673356ee5e4b0a54",
+      "author": "gravityvi",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-30T09:50:46Z",
+      "message": "fix: add user agent in case of yral pro subscription (#385)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "fix/yral-pro-subscription-token-operation",
+        "joel/ai-video-detector",
+        "joel/apps-script-reports-api",
+        "joel/fix-btc-dolr-notif",
+        "joel/fix-gchat-report-buttons",
+        "joel/fix-logging",
+        "joel/fix-report-env",
+        "joel/ltx-intergration",
+        "joel/offchain-broken-pipe-fix",
+        "joel/rewards-mode",
+        "main",
+        "naitik/broken_pipe_issue_fix"
+      ]
+    },
+    {
+      "sha": "ab31102ebffb202f6219ba19a01efc69fb7d58f9",
+      "author": "gravityvi",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-30T15:37:12Z",
+      "message": "fix yral pro subscription token operation (#386)",
+      "stats": {
+        "additions": 31,
+        "deletions": 61,
+        "total": 92
+      },
+      "branches": [
+        "joel/ai-video-detector",
+        "joel/apps-script-reports-api",
+        "joel/fix-btc-dolr-notif",
+        "joel/fix-gchat-report-buttons",
+        "joel/fix-logging",
+        "joel/fix-report-env",
+        "joel/ltx-intergration",
+        "joel/offchain-broken-pipe-fix",
+        "joel/rewards-mode",
+        "main",
+        "naitik/broken_pipe_issue_fix"
+      ]
+    },
+    {
+      "sha": "2a723cde83d834e7dc2fdbdb469621367b626937",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-01-30T11:52:44Z",
+      "message": "fix: yral pro subscription token type (#155)",
+      "stats": {
+        "additions": 6,
+        "deletions": 7,
+        "total": 13
+      },
+      "branches": [
+        "feat/ltx2-model",
+        "feat/update-user-info-deps",
+        "master"
+      ]
+    },
+    {
+      "sha": "20fcfa6d0f4b6f57770032c952a99363985ee02a",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-01-30T11:48:20Z",
+      "message": "fix yral pro subscription token type",
+      "stats": {
+        "additions": 6,
+        "deletions": 7,
+        "total": 13
+      },
+      "branches": [
+        "fix/yral-pro-subscription-token-transaction-implmentation"
       ]
     }
   ],

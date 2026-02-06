@@ -1,54 +1,7 @@
 {
   "date": "2026-02-04",
-  "cached_at": "2026-02-06T07:20:08.106224Z",
+  "cached_at": "2026-02-06T08:14:39.777712Z",
   "commits": [
-    {
-      "sha": "724ec794a687d007fbec9b1417c1a3e8f0e36893",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-billing",
-      "timestamp": "2026-02-04T06:39:31Z",
-      "message": "remove aud check",
-      "stats": {
-        "additions": 1,
-        "deletions": 0,
-        "total": 1
-      },
-      "branches": [
-        "fix/remove-aud-check-from-jwt-validation",
-        "main"
-      ]
-    },
-    {
-      "sha": "f441264c49e27e2d023473002c4796c3d2e0ec46",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-billing",
-      "timestamp": "2026-02-04T06:55:38Z",
-      "message": "Merge pull request #7 from dolr-ai/fix/remove-aud-check-from-jwt-validation",
-      "stats": {
-        "additions": 1,
-        "deletions": 0,
-        "total": 1
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "ba172fd4cf27a3b89ae7f31e810c4b1ddcfb80c6",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/github-report-script",
-      "timestamp": "2026-02-04T04:38:24Z",
-      "message": "Set regular mode to FETCH_AND_CHART",
-      "stats": {
-        "additions": 11511,
-        "deletions": 1428,
-        "total": 12939
-      },
-      "branches": [
-        "main",
-        "push-event-based"
-      ]
-    },
     {
       "sha": "1d77e65ffd61196856d2bb562abf43e216404e55",
       "author": "joel-medicala-yral",
@@ -610,82 +563,6 @@
       ]
     },
     {
-      "sha": "a2d9c7318ca349da928960dca4e5273d7c461937",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-04T13:00:11Z",
-      "message": "fix: Uses correct api response for pro users (#839)",
-      "stats": {
-        "additions": 4,
-        "deletions": 2,
-        "total": 6
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "fix/ios-load-time",
-        "fix-video-reporting",
-        "release/android-2.6.5",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
-    },
-    {
-      "sha": "e18dce379f4513586e494c4c34d1c50586b1e125",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-04T09:19:41Z",
-      "message": "build: Adds hot or not onboarding (#835)",
-      "stats": {
-        "additions": 259,
-        "deletions": 3,
-        "total": 262
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "fix/ios-load-time",
-        "fix-video-reporting",
-        "release/android-2.6.5",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
-    },
-    {
-      "sha": "5a0a9017cbc494f7929c44440f5d6477cfce1147",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-04T14:35:46Z",
-      "message": "wip: Uses seeking instead of recreation of player item",
-      "stats": {
-        "additions": 5,
-        "deletions": 5,
-        "total": 10
-      },
-      "branches": [
-        "fix/ios-load-time"
-      ]
-    },
-    {
-      "sha": "0c2625bfe1904ad4776dd62ab62542f02b3b5010",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-04T14:26:28Z",
-      "message": "fix: Fixes stalling on videos on iOS",
-      "stats": {
-        "additions": 108,
-        "deletions": 31,
-        "total": 139
-      },
-      "branches": [
-        "fix/ios-load-time"
-      ]
-    },
-    {
       "sha": "31aa084893c7d77b7942aaed005ca2d3500bf834",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
@@ -811,6 +688,128 @@
       },
       "branches": [
         "test/force-update"
+      ]
+    },
+    {
+      "sha": "a2d9c7318ca349da928960dca4e5273d7c461937",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-04T13:00:11Z",
+      "message": "fix: Uses correct api response for pro users (#839)",
+      "stats": {
+        "additions": 4,
+        "deletions": 2,
+        "total": 6
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "fix/ios-load-time",
+        "fix-video-reporting",
+        "release/android-2.6.5",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "e18dce379f4513586e494c4c34d1c50586b1e125",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-04T09:19:41Z",
+      "message": "build: Adds hot or not onboarding (#835)",
+      "stats": {
+        "additions": 259,
+        "deletions": 3,
+        "total": 262
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "fix/ios-load-time",
+        "fix-video-reporting",
+        "release/android-2.6.5",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "5a0a9017cbc494f7929c44440f5d6477cfce1147",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-04T14:35:46Z",
+      "message": "wip: Uses seeking instead of recreation of player item",
+      "stats": {
+        "additions": 5,
+        "deletions": 5,
+        "total": 10
+      },
+      "branches": [
+        "fix/ios-load-time"
+      ]
+    },
+    {
+      "sha": "0c2625bfe1904ad4776dd62ab62542f02b3b5010",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-04T14:26:28Z",
+      "message": "fix: Fixes stalling on videos on iOS",
+      "stats": {
+        "additions": 108,
+        "deletions": 31,
+        "total": 139
+      },
+      "branches": [
+        "fix/ios-load-time"
+      ]
+    },
+    {
+      "sha": "ba172fd4cf27a3b89ae7f31e810c4b1ddcfb80c6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-04T04:38:24Z",
+      "message": "Set regular mode to FETCH_AND_CHART",
+      "stats": {
+        "additions": 11511,
+        "deletions": 1428,
+        "total": 12939
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "724ec794a687d007fbec9b1417c1a3e8f0e36893",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-02-04T06:39:31Z",
+      "message": "remove aud check",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "fix/remove-aud-check-from-jwt-validation",
+        "main"
+      ]
+    },
+    {
+      "sha": "f441264c49e27e2d023473002c4796c3d2e0ec46",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-02-04T06:55:38Z",
+      "message": "Merge pull request #7 from dolr-ai/fix/remove-aud-check-from-jwt-validation",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "main"
       ]
     }
   ],

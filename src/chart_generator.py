@@ -4,12 +4,11 @@ Generates dual output (Plotly HTML + Matplotlib PNG/PDF) for commit metrics
 """
 import os
 import logging
-from datetime import datetime
+import shutil
+from datetime import datetime, timedelta
 from typing import Dict, List
+from pathlib import Path
 
-import numpy as np
-import matplotlib.pyplot as plt
-import matplotlib.dates as mdates
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
@@ -781,239 +780,148 @@ class ChartGenerator:
 
         return html
 
-    def generate_matplotlib_charts(self, all_data: Dict[str, Dict[str, Dict]],
-                                   start_date: str, end_date: str) -> Dict[str, str]:
-        """Generate static Matplotlib PNG and PDF charts
+    def cleanup_old_reports(self, days_to_keep: int = 90):
+        """Remove report folders older than specified days
 
         Args:
-            all_data: Dictionary mapping usernames to date-indexed metrics
-            start_date: Start date string
-            end_date: End date string
-
-        Returns:
-            Dictionary with paths to generated PNG and PDF files
+            days_to_keep: Number of days to retain reports (default: 90)
         """
-        dates, usernames, additions_data, deletions_data, total_loc_data, commits_data = \
-            self._prepare_data(all_data)
+        logger.info(f"Cleaning up reports older than {days_to_keep} days...")
 
-        # Create figure with 2x2 subplots
-        fig, axes = plt.subplots(2, 2, figsize=(16, 12))
-        fig.suptitle(f'GitHub Activity Report ({start_date} to {end_date})',
-                     fontsize=18, fontweight='bold')
-
-        # Plot each metric
-        def plot_lines(ax, data_dict, title, ylabel):
-            for idx, username in enumerate(usernames):
-                color = self.colors[idx % len(self.colors)]
-                ax.plot(dates, data_dict[username],
-                        marker='o', linewidth=2, markersize=6,
-                        label=username, color=color, alpha=0.8)
-
-            ax.set_xlabel('Date', fontsize=11)
-            ax.set_ylabel(ylabel, fontsize=11)
-            ax.set_title(title, fontsize=13, fontweight='bold')
-            ax.tick_params(axis='x', rotation=45)
-            ax.legend(loc='upper left', framealpha=0.9, fontsize=9)
-            ax.grid(True, alpha=0.3, linestyle='--')
-            ax.set_axisbelow(True)
-
-        # Plot all four metrics (2x2 grid)
-        plot_lines(axes[0, 0], additions_data,
-                   'Daily Additions (Lines Added)', 'Lines')
-        plot_lines(axes[0, 1], deletions_data,
-                   'Daily Deletions (Lines Removed)', 'Lines')
-        plot_lines(axes[1, 0], total_loc_data,
-                   'Daily Total LOC Changed', 'Lines')
-        plot_lines(axes[1, 1], commits_data,
-                   'Daily Commit Count', 'Commits')
-
-        plt.tight_layout()
-
-        # Save as PNG and PDF
-        base_filename = self._get_filename_base(start_date, end_date)
-        png_path = os.path.join(REPORTS_DIR, base_filename + '.png')
-        pdf_path = os.path.join(REPORTS_DIR, base_filename + '.pdf')
-
-        plt.savefig(png_path, dpi=300, bbox_inches='tight')
-        plt.savefig(pdf_path, bbox_inches='tight')
-        plt.close()
-
-        return {
-            'png': png_path,
-            'pdf': pdf_path
-        }
-
-    def _add_branch_distribution_chart(self, ax, all_data: Dict[str, Dict[str, Dict]]):
-        """Add branch distribution donut chart to matplotlib axis
-
-        Args:
-            ax: Matplotlib axis
-            all_data: Dictionary mapping usernames to date-indexed metrics
-        """
-        # Aggregate commits by branch across all users and dates
-        branch_commits = {}
-
-        for username, date_data in all_data.items():
-            for date, metrics in date_data.items():
-                branch_breakdown = metrics.get('branch_breakdown', {})
-                for repo, repo_branches in branch_breakdown.items():
-                    for branch, branch_metrics in repo_branches.items():
-                        if branch not in branch_commits:
-                            branch_commits[branch] = 0
-                        branch_commits[branch] += branch_metrics.get(
-                            'commit_count', 0)
-
-        if not branch_commits:
-            ax.text(0.5, 0.5, 'No branch data available',
-                    ha='center', va='center', fontsize=12, color='gray')
-            ax.set_title('Branch Distribution', fontsize=13, fontweight='bold')
-            ax.axis('off')
+        reports_path = Path(REPORTS_DIR)
+        if not reports_path.exists():
             return
 
-        # Sort branches by commit count
-        sorted_branches = sorted(
-            branch_commits.items(), key=lambda x: x[1], reverse=True)
+        cutoff_date = datetime.now() - timedelta(days=days_to_keep)
+        removed_count = 0
 
-        # Take top 8 branches, group rest as "Other"
-        if len(sorted_branches) > 8:
-            top_branches = sorted_branches[:8]
-            other_count = sum(count for _, count in sorted_branches[8:])
-            top_branches.append(('Other', other_count))
+        # Iterate through all directories in reports/
+        for item in reports_path.iterdir():
+            if item.is_dir() and item.name.isdigit() and len(item.name) == 8:
+                # Parse folder name as YYYYMMDD
+                try:
+                    folder_date = datetime.strptime(item.name, '%Y%m%d')
+                    if folder_date < cutoff_date:
+                        logger.info(f"Removing old report folder: {item.name}")
+                        shutil.rmtree(item)
+                        removed_count += 1
+                except ValueError:
+                    # Skip folders that don't match date format
+                    continue
+
+        if removed_count > 0:
+            logger.info(f"Removed {removed_count} old report folder(s)")
         else:
-            top_branches = sorted_branches
+            logger.info("No old reports to clean up")
 
-        labels = [branch for branch, _ in top_branches]
-        sizes = [count for _, count in top_branches]
+    def generate_index_page(self):
+        """Generate index.html page listing all available reports"""
+        logger.info("Generating index page...")
 
-        # Create color mapping for branches
-        branch_colors_map = {
-            'main': '#2ecc71',
-            'master': '#27ae60',
-            'develop': '#3498db',
-            'development': '#2980b9',
-            'staging': '#f39c12',
-            'production': '#e74c3c',
-            'unknown': '#95a5a6'
+        reports_path = Path(REPORTS_DIR)
+        if not reports_path.exists():
+            reports_path.mkdir(parents=True, exist_ok=True)
+
+        # Find all report HTML files
+        report_files = []
+        for item in reports_path.iterdir():
+            if item.is_dir() and item.name.isdigit() and len(item.name) == 8:
+                # Look for HTML files in this folder
+                for html_file in item.glob('*.html'):
+                    try:
+                        folder_date = datetime.strptime(item.name, '%Y%m%d')
+                        report_files.append({
+                            'date': folder_date,
+                            'folder': item.name,
+                            'filename': html_file.name,
+                            'path': f"{item.name}/{html_file.name}"
+                        })
+                    except ValueError:
+                        continue
+
+        # Sort by date (most recent first)
+        report_files.sort(key=lambda x: x['date'], reverse=True)
+
+        # Generate simple HTML index
+        html = '''<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Activity Reports</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            line-height: 1.6;
         }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #0366d6;
+            padding-bottom: 10px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+            padding: 10px;
+            background: #f6f8fa;
+            border-radius: 6px;
+        }
+        a {
+            color: #0366d6;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .date {
+            color: #586069;
+            font-size: 0.9em;
+        }
+        .empty {
+            color: #586069;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>GitHub Activity Reports</h1>
+'''
 
-        colors = [branch_colors_map.get(label, self.colors[i % len(
-            self.colors)]) for i, label in enumerate(labels)]
+        if report_files:
+            html += '    <ul>\n'
+            for report in report_files:
+                date_str = report['date'].strftime('%B %d, %Y')
+                html += f'        <li><a href="{report["path"]}">{report["filename"]}</a> <span class="date">({date_str})</span></li>\n'
+            html += '    </ul>\n'
+        else:
+            html += '    <p class="empty">No reports available yet.</p>\n'
 
-        # Create donut chart
-        wedges, texts, autotexts = ax.pie(
-            sizes,
-            labels=labels,
-            colors=colors,
-            autopct='%1.1f%%',
-            startangle=90,
-            pctdistance=0.85,
-            wedgeprops=dict(width=0.5, edgecolor='white', linewidth=2)
-        )
+        html += '''</body>
+</html>
+'''
 
-        # Enhance text
-        for text in texts:
-            text.set_fontsize(10)
-        for autotext in autotexts:
-            autotext.set_color('white')
-            autotext.set_fontsize(9)
-            autotext.set_fontweight('bold')
+        # Write index.html
+        index_path = reports_path / 'index.html'
+        with open(index_path, 'w', encoding='utf-8') as f:
+            f.write(html)
 
-        ax.set_title('Commit Distribution by Branch',
-                     fontsize=13, fontweight='bold', pad=20)
+        # Create .nojekyll file to prevent Jekyll processing
+        nojekyll_path = reports_path / '.nojekyll'
+        nojekyll_path.touch()
 
-    def _add_branch_summary_table(self, ax, all_data: Dict[str, Dict[str, Dict]]):
-        """Add branch summary table to matplotlib axis
-
-        Args:
-            ax: Matplotlib axis
-            all_data: Dictionary mapping usernames to date-indexed metrics
-        """
-        # Aggregate statistics by branch
-        branch_stats = {}
-
-        for username, date_data in all_data.items():
-            for date, metrics in date_data.items():
-                branch_breakdown = metrics.get('branch_breakdown', {})
-                for repo, repo_branches in branch_breakdown.items():
-                    for branch, branch_metrics in repo_branches.items():
-                        if branch not in branch_stats:
-                            branch_stats[branch] = {
-                                'commits': 0,
-                                'additions': 0,
-                                'deletions': 0,
-                                'contributors': set()
-                            }
-                        branch_stats[branch]['commits'] += branch_metrics.get(
-                            'commit_count', 0)
-                        branch_stats[branch]['additions'] += branch_metrics.get(
-                            'additions', 0)
-                        branch_stats[branch]['deletions'] += branch_metrics.get(
-                            'deletions', 0)
-                        branch_stats[branch]['contributors'].add(username)
-
-        if not branch_stats:
-            ax.text(0.5, 0.5, 'No branch data available',
-                    ha='center', va='center', fontsize=12, color='gray')
-            ax.set_title('Top Branches Summary',
-                         fontsize=13, fontweight='bold')
-            ax.axis('off')
-            return
-
-        # Sort by commit count and take top 10
-        sorted_branches = sorted(
-            branch_stats.items(),
-            key=lambda x: x[1]['commits'],
-            reverse=True
-        )[:10]
-
-        # Prepare table data
-        table_data = []
-        for branch, stats in sorted_branches:
-            table_data.append([
-                branch[:20],  # Truncate long branch names
-                str(stats['commits']),
-                str(len(stats['contributors'])),
-                f"+{stats['additions']}",
-                f"-{stats['deletions']}"
-            ])
-
-        # Create table
-        ax.axis('off')
-        table = ax.table(
-            cellText=table_data,
-            colLabels=['Branch', 'Commits', 'Users', 'Additions', 'Deletions'],
-            cellLoc='left',
-            colLoc='left',
-            loc='center',
-            colWidths=[0.25, 0.15, 0.15, 0.20, 0.20]
-        )
-
-        # Style table
-        table.auto_set_font_size(False)
-        table.set_fontsize(9)
-        table.scale(1, 2)
-
-        # Header styling
-        for i in range(5):
-            cell = table[(0, i)]
-            cell.set_facecolor('#4a90e2')
-            cell.set_text_props(weight='bold', color='white')
-
-        # Alternate row colors
-        for i in range(1, len(table_data) + 1):
-            for j in range(5):
-                cell = table[(i, j)]
-                if i % 2 == 0:
-                    cell.set_facecolor('#f0f0f0')
-                else:
-                    cell.set_facecolor('white')
-
-        ax.set_title('Top Branches Summary', fontsize=13,
-                     fontweight='bold', pad=10)
+        logger.info(f"Index page generated: {index_path}")
+        logger.info(f"Created .nojekyll file: {nojekyll_path}")
 
     def generate_all_charts(self, all_data: Dict[str, Dict[str, Dict]],
                             start_date: str, end_date: str) -> Dict[str, str]:
-        """Generate both Plotly and Matplotlib charts
+        """Generate HTML chart report
 
         Args:
             all_data: Dictionary mapping usernames to date-indexed metrics
@@ -1021,7 +929,7 @@ class ChartGenerator:
             end_date: End date string
 
         Returns:
-            Dictionary with paths to all generated files
+            Dictionary with path to generated HTML file
         """
         logger.info("Starting chart generation")
 
@@ -1029,20 +937,17 @@ class ChartGenerator:
         logger.info("Creating interactive HTML chart...")
         html_path = self.generate_plotly_chart(all_data, start_date, end_date)
 
-        # Generate Matplotlib PNG and PDF
-        logger.info("Creating static PNG and PDF charts...")
-        static_paths = self.generate_matplotlib_charts(
-            all_data, start_date, end_date)
+        # Cleanup old reports (keep last 90 days)
+        self.cleanup_old_reports(days_to_keep=90)
+
+        # Generate index page
+        self.generate_index_page()
 
         results = {
-            'html': html_path,
-            'png': static_paths['png'],
-            'pdf': static_paths['pdf']
+            'html': html_path
         }
 
-        logger.info("Charts generated successfully:")
+        logger.info("Chart generated successfully:")
         logger.info(f"  Interactive HTML: {html_path}")
-        logger.info(f"  Static PNG:       {static_paths['png']}")
-        logger.info(f"  Static PDF:       {static_paths['pdf']}")
 
         return results

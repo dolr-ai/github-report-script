@@ -12,6 +12,8 @@ jobs:
     permissions:
       contents: write
       packages: write
+      pages: write
+      id-token: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -42,8 +44,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add cache/ output/
-          git diff --staged --quiet || git commit -m "chore: Update activity data [skip ci]"
+          git add cache/ output/ reports/
+          git diff --staged --quiet || git commit -m "chore: Update activity data and reports [skip ci]"
           git push
 
       - name: Upload report artifacts

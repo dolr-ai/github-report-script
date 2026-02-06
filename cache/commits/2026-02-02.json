@@ -1,278 +1,38 @@
 {
   "date": "2026-02-02",
-  "cached_at": "2026-02-06T07:20:19.316341Z",
+  "cached_at": "2026-02-06T08:14:51.492603Z",
   "commits": [
     {
-      "sha": "9db93432d48994f5a432a6a586cfe9bb3a9e608f",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-billing",
-      "timestamp": "2026-02-02T07:40:11Z",
-      "message": "remove sentry dsn as env variable",
-      "stats": {
-        "additions": 0,
-        "deletions": 1,
-        "total": 1
-      },
-      "branches": [
-        "feat/add-sentry-setup"
-      ]
-    },
-    {
-      "sha": "208957563eb66f86ebca32cf2639eb0a2ba7bebc",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-billing",
-      "timestamp": "2026-02-02T07:42:56Z",
-      "message": "feat: add sentry setup",
-      "stats": {
-        "additions": 483,
-        "deletions": 4,
-        "total": 487
-      },
-      "branches": [
-        "fix/remove-aud-check-from-jwt-validation",
-        "main"
-      ]
-    },
-    {
-      "sha": "663f50ac46805b2ac5406c905acf15214bfb6ebc",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-common",
-      "timestamp": "2026-02-02T12:49:27Z",
-      "message": "feat: update user_info_service candid (#156)",
-      "stats": {
-        "additions": 5,
-        "deletions": 0,
-        "total": 5
-      },
-      "branches": [
-        "feat/ltx2-model",
-        "master"
-      ]
-    },
-    {
-      "sha": "bef935a3d23505efca266daeea55afccae264a13",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-common",
-      "timestamp": "2026-02-02T12:46:41Z",
-      "message": "update user_info_service candid",
-      "stats": {
-        "additions": 5,
-        "deletions": 0,
-        "total": 5
-      },
-      "branches": [
-        "feat/update-user-info-deps"
-      ]
-    },
-    {
-      "sha": "c3e6a47d4eaf4485047b710fb7e1948c31f53608",
-      "author": "gravityvi",
-      "repository": "dolr-ai/hot-or-not-backend-canister",
-      "timestamp": "2026-02-02T12:10:37Z",
-      "message": "add query method to fetch bulk user principals",
-      "stats": {
-        "additions": 410,
-        "deletions": 20,
-        "total": 430
-      },
-      "branches": [
-        "feat/add-bulk-methods-for-profile-details"
-      ]
-    },
-    {
-      "sha": "38f33493fd99dc20f68f7112e92c558523f62934",
-      "author": "gravityvi",
-      "repository": "dolr-ai/hot-or-not-backend-canister",
-      "timestamp": "2026-02-02T12:42:53Z",
-      "message": "feat: add query method to fetch bulk user principals (#641)",
-      "stats": {
-        "additions": 410,
-        "deletions": 20,
-        "total": 430
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "cc80a44925d6dc1cf343feb5b9caabe9bae1b717",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-02-02T13:01:05Z",
-      "message": "Fix retry logic: disable automatic fact gathering for CI playbooks",
-      "stats": {
-        "additions": 8,
-        "deletions": 24,
-        "total": 32
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "c882cefa1a837c6a1341a0a903ccc140c48395e5",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-02-02T12:48:01Z",
-      "message": "Add automatic retry logic and comprehensive retry mechanisms for failed hosts",
-      "stats": {
-        "additions": 470,
-        "deletions": 1,
-        "total": 471
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "c5d9232fafb6def1b5e797f70d56661b33c11b28",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-02-02T12:28:32Z",
-      "message": "Enhance system update playbook to check and display reboot requirement status; update reboot message",
-      "stats": {
-        "additions": 13,
-        "deletions": 2,
-        "total": 15
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "a8c2c9821d2ae09a8ef8582c01f8000f6c29f294",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-02-02T11:52:59Z",
-      "message": "Enable colored output for Ansible in workflow scripts",
+      "sha": "a1569e47c699a795c1133d73d79d31a2fb9eb2dd",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-02T17:47:55Z",
+      "message": "fix: function prone to broken pipe error (#394)",
       "stats": {
         "additions": 9,
-        "deletions": 0,
-        "total": 9
+        "deletions": 5,
+        "total": 14
       },
       "branches": [
+        "joel/ai-video-detector",
+        "joel/fix-btc-dolr-notif",
+        "joel/ltx-intergration",
         "main"
       ]
     },
     {
-      "sha": "219819b04381fadfdec7fc441ee5b0692d01815d",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-02-02T11:47:49Z",
-      "message": "Refactor workflows to validate Ansible vault password and streamline SSH key extraction process",
+      "sha": "92538fb57b3d6c2237fce62e479d1d53963aa329",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-02T17:18:45Z",
+      "message": "fix: function prone to broken pipe error",
       "stats": {
-        "additions": 24,
-        "deletions": 15,
-        "total": 39
+        "additions": 9,
+        "deletions": 5,
+        "total": 14
       },
       "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "502fa90eb5019b284d38309cab1c091935146a49",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-02-02T11:30:28Z",
-      "message": "Update permissions for DevContainer build job to ensure proper access to contents and packages",
-      "stats": {
-        "additions": 3,
-        "deletions": 0,
-        "total": 3
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "2e0c2c14e2844ad027b3cea28d053524ef9b412f",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-02-02T08:36:02Z",
-      "message": "Refactor SSH key extraction to use a consistent filename across workflows; add cleanup function for ",
-      "stats": {
-        "additions": 35,
-        "deletions": 14,
-        "total": 49
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "f7cd054c491b40ae7203a62111d36cf2fb588e81",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-02-02T08:20:55Z",
-      "message": "Refactor workflows to extract SSH key from Ansible vault and update playbook paths; remove obsolete ",
-      "stats": {
-        "additions": 56,
-        "deletions": 48,
-        "total": 104
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "9898afec15715fb649b78427ec329b612ab7a5fa",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-02-02T07:50:07Z",
-      "message": "Refactor workflows to extract SSH key from Ansible vault instead of using GitHub Actions secrets",
-      "stats": {
-        "additions": 20,
-        "deletions": 22,
-        "total": 42
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "b88cce7a14fd748faafa1c816dc8f79be78417c5",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-02-02T07:46:23Z",
-      "message": "Refactor GitHub workflows to use GitHub Container Registry for actions and streamline maintenance ta",
-      "stats": {
-        "additions": 170,
-        "deletions": 102,
-        "total": 272
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "b37fd1f50984811289c79b87b2a3acb813ab0900",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-02-02T07:02:04Z",
-      "message": "Add host variable and vault files for new servers; implement Hetzner rescue mode playbooks",
-      "stats": {
-        "additions": 1661,
-        "deletions": 1591,
-        "total": 3252
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "c67d08dd78ce21104b8668a46c6b3b382295a024",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/github-report-script",
-      "timestamp": "2026-02-02T14:28:43Z",
-      "message": "Initial commit",
-      "stats": {
-        "additions": 1,
-        "deletions": 0,
-        "total": 1
-      },
-      "branches": [
-        "main",
-        "push-event-based"
+        "naitik/broken_pipe_issue_fix"
       ]
     },
     {
@@ -878,36 +638,275 @@
       ]
     },
     {
-      "sha": "a1569e47c699a795c1133d73d79d31a2fb9eb2dd",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-02-02T17:47:55Z",
-      "message": "fix: function prone to broken pipe error (#394)",
+      "sha": "cc80a44925d6dc1cf343feb5b9caabe9bae1b717",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-02-02T13:01:05Z",
+      "message": "Fix retry logic: disable automatic fact gathering for CI playbooks",
       "stats": {
-        "additions": 9,
-        "deletions": 5,
-        "total": 14
+        "additions": 8,
+        "deletions": 24,
+        "total": 32
       },
       "branches": [
-        "joel/ai-video-detector",
-        "joel/fix-btc-dolr-notif",
-        "joel/ltx-intergration",
         "main"
       ]
     },
     {
-      "sha": "92538fb57b3d6c2237fce62e479d1d53963aa329",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-02-02T17:18:45Z",
-      "message": "fix: function prone to broken pipe error",
+      "sha": "c882cefa1a837c6a1341a0a903ccc140c48395e5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-02-02T12:48:01Z",
+      "message": "Add automatic retry logic and comprehensive retry mechanisms for failed hosts",
       "stats": {
-        "additions": 9,
-        "deletions": 5,
-        "total": 14
+        "additions": 470,
+        "deletions": 1,
+        "total": 471
       },
       "branches": [
-        "naitik/broken_pipe_issue_fix"
+        "main"
+      ]
+    },
+    {
+      "sha": "c5d9232fafb6def1b5e797f70d56661b33c11b28",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-02-02T12:28:32Z",
+      "message": "Enhance system update playbook to check and display reboot requirement status; update reboot message",
+      "stats": {
+        "additions": 13,
+        "deletions": 2,
+        "total": 15
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a8c2c9821d2ae09a8ef8582c01f8000f6c29f294",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-02-02T11:52:59Z",
+      "message": "Enable colored output for Ansible in workflow scripts",
+      "stats": {
+        "additions": 9,
+        "deletions": 0,
+        "total": 9
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "219819b04381fadfdec7fc441ee5b0692d01815d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-02-02T11:47:49Z",
+      "message": "Refactor workflows to validate Ansible vault password and streamline SSH key extraction process",
+      "stats": {
+        "additions": 24,
+        "deletions": 15,
+        "total": 39
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "502fa90eb5019b284d38309cab1c091935146a49",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-02-02T11:30:28Z",
+      "message": "Update permissions for DevContainer build job to ensure proper access to contents and packages",
+      "stats": {
+        "additions": 3,
+        "deletions": 0,
+        "total": 3
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "2e0c2c14e2844ad027b3cea28d053524ef9b412f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-02-02T08:36:02Z",
+      "message": "Refactor SSH key extraction to use a consistent filename across workflows; add cleanup function for ",
+      "stats": {
+        "additions": 35,
+        "deletions": 14,
+        "total": 49
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f7cd054c491b40ae7203a62111d36cf2fb588e81",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-02-02T08:20:55Z",
+      "message": "Refactor workflows to extract SSH key from Ansible vault and update playbook paths; remove obsolete ",
+      "stats": {
+        "additions": 56,
+        "deletions": 48,
+        "total": 104
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9898afec15715fb649b78427ec329b612ab7a5fa",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-02-02T07:50:07Z",
+      "message": "Refactor workflows to extract SSH key from Ansible vault instead of using GitHub Actions secrets",
+      "stats": {
+        "additions": 20,
+        "deletions": 22,
+        "total": 42
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b88cce7a14fd748faafa1c816dc8f79be78417c5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-02-02T07:46:23Z",
+      "message": "Refactor GitHub workflows to use GitHub Container Registry for actions and streamline maintenance ta",
+      "stats": {
+        "additions": 170,
+        "deletions": 102,
+        "total": 272
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b37fd1f50984811289c79b87b2a3acb813ab0900",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-02-02T07:02:04Z",
+      "message": "Add host variable and vault files for new servers; implement Hetzner rescue mode playbooks",
+      "stats": {
+        "additions": 1661,
+        "deletions": 1591,
+        "total": 3252
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c67d08dd78ce21104b8668a46c6b3b382295a024",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-02T14:28:43Z",
+      "message": "Initial commit",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9db93432d48994f5a432a6a586cfe9bb3a9e608f",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-02-02T07:40:11Z",
+      "message": "remove sentry dsn as env variable",
+      "stats": {
+        "additions": 0,
+        "deletions": 1,
+        "total": 1
+      },
+      "branches": [
+        "feat/add-sentry-setup"
+      ]
+    },
+    {
+      "sha": "208957563eb66f86ebca32cf2639eb0a2ba7bebc",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-02-02T07:42:56Z",
+      "message": "feat: add sentry setup",
+      "stats": {
+        "additions": 483,
+        "deletions": 4,
+        "total": 487
+      },
+      "branches": [
+        "fix/remove-aud-check-from-jwt-validation",
+        "main"
+      ]
+    },
+    {
+      "sha": "663f50ac46805b2ac5406c905acf15214bfb6ebc",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-02-02T12:49:27Z",
+      "message": "feat: update user_info_service candid (#156)",
+      "stats": {
+        "additions": 5,
+        "deletions": 0,
+        "total": 5
+      },
+      "branches": [
+        "feat/ltx2-model",
+        "master"
+      ]
+    },
+    {
+      "sha": "bef935a3d23505efca266daeea55afccae264a13",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-02-02T12:46:41Z",
+      "message": "update user_info_service candid",
+      "stats": {
+        "additions": 5,
+        "deletions": 0,
+        "total": 5
+      },
+      "branches": [
+        "feat/update-user-info-deps"
+      ]
+    },
+    {
+      "sha": "c3e6a47d4eaf4485047b710fb7e1948c31f53608",
+      "author": "gravityvi",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2026-02-02T12:10:37Z",
+      "message": "add query method to fetch bulk user principals",
+      "stats": {
+        "additions": 410,
+        "deletions": 20,
+        "total": 430
+      },
+      "branches": [
+        "feat/add-bulk-methods-for-profile-details"
+      ]
+    },
+    {
+      "sha": "38f33493fd99dc20f68f7112e92c558523f62934",
+      "author": "gravityvi",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2026-02-02T12:42:53Z",
+      "message": "feat: add query method to fetch bulk user principals (#641)",
+      "stats": {
+        "additions": 410,
+        "deletions": 20,
+        "total": 430
+      },
+      "branches": [
+        "main"
       ]
     }
   ],
