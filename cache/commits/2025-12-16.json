@@ -1,0 +1,852 @@
+{
+  "date": "2025-12-16",
+  "cached_at": "2026-02-06T07:03:23.883925Z",
+  "commits": [
+    {
+      "sha": "d07f62c7dcf2db8c3c20fa2b17fba6970f3973f6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-16T22:06:46Z",
+      "message": "Add management cluster manifests and CI workflow",
+      "stats": {
+        "additions": 838,
+        "deletions": 0,
+        "total": 838
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "499f0b1f3e3ca041cfb0ebc842e255c3f1ec93a2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-16T19:58:03Z",
+      "message": "Move Cilium and Hetzner CP templates to backup",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e071f47e5bb40a3ddb75e4e70f71f2dbe426b0f7",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-16T19:32:53Z",
+      "message": "``` Switch to Cluster API Provider Hetzner (CAPH)",
+      "stats": {
+        "additions": 359,
+        "deletions": 430,
+        "total": 789
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6ceb72582112cf178c8125dc1ecf5988f56ef4ee",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-16T16:35:49Z",
+      "message": "Add initial Cluster API manifests for my-cluster",
+      "stats": {
+        "additions": 566,
+        "deletions": 11,
+        "total": 577
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "290a89db9a9db63736c64de476e66c3cb18b74e1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-16T15:28:41Z",
+      "message": "Use podman to run butane instead of downloading binary",
+      "stats": {
+        "additions": 2,
+        "deletions": 9,
+        "total": 11
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "0cdf36833e2e8f13b15f71a21200fa1ad5d28b75",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-16T13:46:53Z",
+      "message": "Remove rpm-ostree package install tasks as packages will be pre-installed via Ignition",
+      "stats": {
+        "additions": 0,
+        "deletions": 13,
+        "total": 13
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "2f5f0f69ea46ba443591fe2cf017b0ac40bd4d26",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-16T13:45:39Z",
+      "message": "Remove worker.ign from release files as it's not generated",
+      "stats": {
+        "additions": 0,
+        "deletions": 1,
+        "total": 1
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "0f63d0606c504783e49f19714dfd49e8f3adf1ad",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-16T13:41:41Z",
+      "message": "Add Kubernetes and containerd packages to Butane for new node provisions",
+      "stats": {
+        "additions": 5,
+        "deletions": 0,
+        "total": 5
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "afdd3f2cd46f7eb0068b29e9bf3bf7f6a701e9f3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-16T13:29:17Z",
+      "message": "Use rpm-ostree for package installs and add second reboot for layering",
+      "stats": {
+        "additions": 12,
+        "deletions": 15,
+        "total": 27
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "26b7d1900ef5a084036c1cc38e3a0f177e9ac09f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-16T13:26:27Z",
+      "message": "Specify use_backend: dnf5 for dnf tasks on Fedora CoreOS",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9ecf0eeed4a3a5cd3bf17725b2b0235e25f8294c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-16T13:23:23Z",
+      "message": "Add ignore_errors to python3 install since it may already be requested",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a7d8e496d39f972461f9906810a4dbe6531c3d25",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-16T13:19:58Z",
+      "message": "Use raw shutdown for reboot and add wait_for_connection to handle post-reboot reconnection",
+      "stats": {
+        "additions": 7,
+        "deletions": 3,
+        "total": 10
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "dc6fb678327dbe266b3ed9125c79df9aadeb28c7",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-16T13:17:08Z",
+      "message": "Add SSH keepalive args to Ansible inventory",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6abd25a01ce4ade3d07ee3d9e9282d8583eab7be",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-16T13:10:51Z",
+      "message": "Install python3 via rpm-ostree and reboot to layer it for Ansible compatibility",
+      "stats": {
+        "additions": 10,
+        "deletions": 1,
+        "total": 11
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "fc3df1b467442c9a21a18f2c01bc01af0ce21b83",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-16T13:04:11Z",
+      "message": "Re-enable gather_facts now that python3 is in Fedora CoreOS",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4d4a673f45450a848bb53211a441e5b9693f90c4",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-16T13:04:02Z",
+      "message": "Remove install Python3 task as it's now in Fedora CoreOS ignition",
+      "stats": {
+        "additions": 0,
+        "deletions": 4,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f8fdf64348a030589909d99491798580052e3f2f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-16T13:03:50Z",
+      "message": "Add python3 package to Butane config for Fedora CoreOS ignition",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a2cc89f62b8fd1ea5f86ad7651120e93d773a9f5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-16T13:00:42Z",
+      "message": "Update kubernetes-worker-3 IP in inventory",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b2a896e40fe04c8657eec50d9ec7699fedd19c68",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-16T12:58:03Z",
+      "message": "Fix Ansible playbook for Fedora CoreOS: disable facts, install Python3, correct kubeconfig copy, and",
+      "stats": {
+        "additions": 22,
+        "deletions": 13,
+        "total": 35
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "32141a0f8553163327adb5ddd3300d18c1a8629e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-16T12:54:47Z",
+      "message": "Update Ansible playbook to bootstrap Kubernetes cluster with kubeadm, Cilium CNI, and Longhorn CSI",
+      "stats": {
+        "additions": 140,
+        "deletions": 18,
+        "total": 158
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b9149d07480e708af9696d20cde22778dde84410",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-16T12:43:04Z",
+      "message": "Add directory structure for Flux GitOps",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a1bd5af37cefaba1f06b23d89208906ca8c65452",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-16T12:40:54Z",
+      "message": "Enhance readme.md with overview and structure",
+      "stats": {
+        "additions": 17,
+        "deletions": 0,
+        "total": 17
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b47c6489166257b82ad381abb7aecec1478e98c5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-16T11:14:15Z",
+      "message": "Modernize Ansible deploy and docs",
+      "stats": {
+        "additions": 20,
+        "deletions": 5,
+        "total": 25
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "0ce2562c6bd6edda3868058d58cf14c724a71eef",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-16T10:57:47Z",
+      "message": "Set up Ansible deploy workflow and k8s inventory",
+      "stats": {
+        "additions": 65,
+        "deletions": 0,
+        "total": 65
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b6c5af9371af7c941037bec8cfc7ced622d019ed",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-16T10:01:12Z",
+      "message": "Add initial run instructions to README.md",
+      "stats": {
+        "additions": 5,
+        "deletions": 0,
+        "total": 5
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ecf63ce7808fe09932370c89266e24ba50fbe533",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-16T09:57:22Z",
+      "message": "Trigger release-ignition on workflow changes",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "1c94d77eeae601a8514408f091aea88862f500fc",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-16T09:37:08Z",
+      "message": "Remove worker butane/worker.bu and worker.ign generation from CI",
+      "stats": {
+        "additions": 14,
+        "deletions": 39,
+        "total": 53
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "514dff34ab85f6a631758e26bb3f65d5d6c56bfb",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-16T07:43:59Z",
+      "message": "Rename control-plane.bu to node.bu and update workflow",
+      "stats": {
+        "additions": 39,
+        "deletions": 261,
+        "total": 300
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4a8826aca844f9089604bf476d40f123d8244d49",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-12-16T20:31:59Z",
+      "message": "Feature/tournaments sarvesh (#721)",
+      "stats": {
+        "additions": 1845,
+        "deletions": 1,
+        "total": 1846
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "20809bc0696994f107c6bcda97401ab147fc7179",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2025-12-16T08:24:34Z",
+      "message": "fix report handler (#344)",
+      "stats": {
+        "additions": 7,
+        "deletions": 5,
+        "total": 12
+      },
+      "branches": [
+        "copilot/sub-pr-378",
+        "feat/add-support-for-yral-subscription",
+        "feat/fix-leaderboard-redis-url-connection",
+        "feat/report-app-migration",
+        "fix/gchat-oauth-for-report-buttons",
+        "fix/user-agent-issue-with-pro-subscription",
+        "fix/yral-pro-subscription-token-operation",
+        "joel/ai-video-detector",
+        "joel/apps-script-reports-api",
+        "joel/ban-event",
+        "joel/btc-rewards-builder-err",
+        "joel/canister-health-endpoint",
+        "joel/canister-snapshots",
+        "joel/dolr-rewards",
+        "joel/fix-btc-dolr-notif",
+        "joel/fix-event-name",
+        "joel/fix-event-ser",
+        "joel/fix-gchat-report-buttons",
+        "joel/fix-logging",
+        "joel/fix-report-env",
+        "joel/fix-reports",
+        "joel/icp-swap-dolr-price-fetch",
+        "joel/kvrocks-push",
+        "joel/leaderboard-redis-migration",
+        "joel/ltx-intergration",
+        "joel/metric-server-cleanup",
+        "joel/mixpanel-events-push",
+        "joel/ml-feed-refactor",
+        "joel/offchain-broken-pipe-fix",
+        "joel/phash-fix",
+        "joel/phash-redis-migration",
+        "joel/profile-views-check",
+        "joel/rewards-mode",
+        "joel/rm-panic",
+        "joel/sentry_webhooks",
+        "joel/sentry-channel-routing",
+        "joel/sentry-issues-fix",
+        "joel/sentry-spam-fix",
+        "joel/skip-self-views",
+        "joel/snake-case-event-norm",
+        "joel/upload-flow-content",
+        "joel/views-fix",
+        "joel/webhook-fix",
+        "joel-medicala-yral-patch-2",
+        "main",
+        "naitik/broken_pipe_issue_fix",
+        "naitik/migrate_fly_redis_to_dragonfly",
+        "naitik/migrate_reads_to_dragonfly",
+        "revert-358-naitik/migrate_fly_redis_to_dragonfly",
+        "revert-359-revert-358-naitik/migrate_fly_redis_to_dragonfly"
+      ]
+    },
+    {
+      "sha": "cb74693a6104d2e898959d92f490fe286a54fbbb",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2025-12-16T08:10:49Z",
+      "message": "fix build",
+      "stats": {
+        "additions": 5,
+        "deletions": 3,
+        "total": 8
+      },
+      "branches": [
+        "fix/report-ban-aprroved-handler"
+      ]
+    },
+    {
+      "sha": "e1deec965c551d1c793673c90ef823e31d0d2025",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2025-12-16T08:09:45Z",
+      "message": "fix build",
+      "stats": {
+        "additions": 59,
+        "deletions": 35,
+        "total": 94
+      },
+      "branches": [
+        "fix/report-ban-aprroved-handler"
+      ]
+    },
+    {
+      "sha": "2d2d77e1e0e890317d8d5dff170fbc65483cc686",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2025-12-16T07:55:14Z",
+      "message": "fix report ban approved handler",
+      "stats": {
+        "additions": 8,
+        "deletions": 4,
+        "total": 12
+      },
+      "branches": [
+        "fix/report-ban-aprroved-handler"
+      ]
+    },
+    {
+      "sha": "d6b7b717eff48c4d64b99b26e6697c652fd37470",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2025-12-16T08:15:13Z",
+      "message": "fix report handler",
+      "stats": {
+        "additions": 7,
+        "deletions": 5,
+        "total": 12
+      },
+      "branches": [
+        "fix/report-handler"
+      ]
+    },
+    {
+      "sha": "df768a09dcbe7885cb3331f79fb04529efa2e379",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2025-12-16T10:03:24Z",
+      "message": "Merge pull request #6 from dolr-ai/blocking-changes-fe",
+      "stats": {
+        "additions": 507,
+        "deletions": 42,
+        "total": 549
+      },
+      "branches": [
+        "aioboto_implementation",
+        "backward_chat_api",
+        "beszel_ai_chat",
+        "beszel_to_main",
+        "bf_msg_sys",
+        "bf_small_num",
+        "bf_14jan",
+        "bugfix_database_lock",
+        "c_inf_2",
+        "chat/wip",
+        "create_influencers",
+        "debug_or_fmissue",
+        "debugging_env_check",
+        "delete_bug",
+        "docker_staging_to_main",
+        "docker_staging",
+        "enum_is_active",
+        "fix/envsubst-config-substitution",
+        "fix/envsubst-litestream-config",
+        "fix_pragma_optimize",
+        "fk_exeption_handle",
+        "further_joel_sugg",
+        "gemini_aync",
+        "gemini-nsfw-fy",
+        "i_e_error",
+        "id_staging",
+        "img_in_chat",
+        "inbox_apis",
+        "indempotency_msg_fix",
+        "infra_rl",
+        "jatin_og_prompt",
+        "jay_review",
+        "joel/optim-suggestions",
+        "jwt_in",
+        "lat_op_stage",
+        "lat_op",
+        "latencytrack_optimization",
+        "linitng",
+        "litestream_integrety",
+        "litestream_sync_interval",
+        "logs_sm_num",
+        "ls_1s",
+        "m_replica_14jan",
+        "main_deployment_fixes",
+        "main_replica_14jan",
+        "main_replica__16jan",
+        "main",
+        "mb_resource_alloc",
+        "metabase_bf2",
+        "metabase_hosting",
+        "metabase_prod",
+        "metabase_staging_rw",
+        "metabase",
+        "migrations_clear",
+        "more_op_latency",
+        "msg_type_normalization",
+        "new_deployment",
+        "nsfw_detection",
+        "nsfw_openrouter",
+        "nsfw_pre_push",
+        "pn_inbox",
+        "post-conv-10-last",
+        "postgre_db",
+        "prod_err",
+        "prompt_changes_astro_dating_sexed",
+        "prompt_changes_new_29_dec",
+        "revert-15-thread_to_async",
+        "revert-17-revert-15-thread_to_async",
+        "revert-27-nsfw_detection",
+        "revert-29-revert-27-nsfw_detection",
+        "revert-34-infra_rl",
+        "revert-36-revert-34-infra_rl",
+        "rm_adhoc",
+        "rm_dupli_from_context",
+        "rm_greeting_messages",
+        "s3-pvt",
+        "safety_check",
+        "schema-changes",
+        "sec-auth",
+        "send_msg_rogue",
+        "sentry_bf",
+        "sentry_everywhere",
+        "sentry_fix_stageing",
+        "sentry_fix",
+        "sentry_webhook",
+        "sentry",
+        "slow_msg",
+        "small_num_bug",
+        "sqlite_optimisations",
+        "staging",
+        "storj_integration",
+        "sys_prompt_prod",
+        "temp_fix_db_lock",
+        "test_fix_url_n_storj_k",
+        "test_robust_gc",
+        "thread_to_async",
+        "truncated_response",
+        "uptime_kuma",
+        "v2-auth",
+        "wal_ckpt_bug_fix"
+      ]
+    },
+    {
+      "sha": "cca4fc6bd8a67dcbac06786c3f8b12418aa3fb91",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2025-12-16T07:42:38Z",
+      "message": "Update README.md",
+      "stats": {
+        "additions": 3,
+        "deletions": 2,
+        "total": 5
+      },
+      "branches": [
+        "aioboto_implementation",
+        "backward_chat_api",
+        "beszel_ai_chat",
+        "beszel_to_main",
+        "bf_msg_sys",
+        "bf_small_num",
+        "bf_14jan",
+        "blocking-changes-fe",
+        "bugfix_database_lock",
+        "c_inf_2",
+        "chat/wip",
+        "create_influencers",
+        "debug_or_fmissue",
+        "debugging_env_check",
+        "delete_bug",
+        "docker_staging_to_main",
+        "docker_staging",
+        "enum_is_active",
+        "fix/envsubst-config-substitution",
+        "fix/envsubst-litestream-config",
+        "fix_pragma_optimize",
+        "fk_exeption_handle",
+        "further_joel_sugg",
+        "gemini_aync",
+        "gemini-nsfw-fy",
+        "i_e_error",
+        "id_staging",
+        "img_in_chat",
+        "inbox_apis",
+        "indempotency_msg_fix",
+        "infra_rl",
+        "jatin_og_prompt",
+        "jay_review",
+        "joel/optim-suggestions",
+        "jwt_in",
+        "lat_op_stage",
+        "lat_op",
+        "latencytrack_optimization",
+        "linitng",
+        "litestream_integrety",
+        "litestream_sync_interval",
+        "logs_sm_num",
+        "ls_1s",
+        "m_replica_14jan",
+        "main_deployment_fixes",
+        "main_replica_14jan",
+        "main_replica__16jan",
+        "main",
+        "mb_resource_alloc",
+        "metabase_bf2",
+        "metabase_hosting",
+        "metabase_prod",
+        "metabase_staging_rw",
+        "metabase",
+        "migrations_clear",
+        "more_op_latency",
+        "msg_type_normalization",
+        "new_deployment",
+        "nsfw_detection",
+        "nsfw_openrouter",
+        "nsfw_pre_push",
+        "pn_inbox",
+        "post-conv-10-last",
+        "postgre_db",
+        "prod_err",
+        "prompt_changes_astro_dating_sexed",
+        "prompt_changes_new_29_dec",
+        "revert-15-thread_to_async",
+        "revert-17-revert-15-thread_to_async",
+        "revert-27-nsfw_detection",
+        "revert-29-revert-27-nsfw_detection",
+        "revert-34-infra_rl",
+        "revert-36-revert-34-infra_rl",
+        "rm_adhoc",
+        "rm_dupli_from_context",
+        "rm_greeting_messages",
+        "s3-pvt",
+        "safety_check",
+        "schema-changes",
+        "sec-auth",
+        "send_msg_rogue",
+        "sentry_bf",
+        "sentry_everywhere",
+        "sentry_fix_stageing",
+        "sentry_fix",
+        "sentry_webhook",
+        "sentry",
+        "slow_msg",
+        "small_num_bug",
+        "sqlite_optimisations",
+        "staging",
+        "storj_integration",
+        "sys_prompt_prod",
+        "temp_fix_db_lock",
+        "test_fix_url_n_storj_k",
+        "test_robust_gc",
+        "thread_to_async",
+        "truncated_response",
+        "uptime_kuma",
+        "v2-auth",
+        "wal_ckpt_bug_fix"
+      ]
+    },
+    {
+      "sha": "a42461320dbcd23e14bd2994bf70b49d5d003615",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-12-16T12:54:19Z",
+      "message": "Adds referrer attribution failed event (#722)",
+      "stats": {
+        "additions": 81,
+        "deletions": 32,
+        "total": 113
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    }
+  ],
+  "commit_count": 37
+}

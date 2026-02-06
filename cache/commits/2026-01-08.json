@@ -1,6 +1,6 @@
 {
   "date": "2026-01-08",
-  "cached_at": "2026-02-03T20:52:47.977682Z",
+  "cached_at": "2026-02-06T07:04:32.576192Z",
   "commits": [
     {
       "sha": "a9006f32b4d5340bdcffda2cd89b619b86c2271c",
@@ -16,21 +16,23 @@
       "branches": [
         "create-pull-request/update-did-files-v3.5.9",
         "develop",
+        "enhancement/chat-error-ui",
         "feature/ai-influencer",
         "feature/create-ai-chat-bot",
-        "feature/create-ai-influencer",
         "feature/dolr-wallet-ui-bk",
-        "feature/hot-or-not-onboarding",
         "feature/iap-ui",
         "feature/subcription-video-gen",
         "feature/subscription-ui",
         "feature/subscriptions-ui",
-        "feature/yral-pro-for-tournaments",
-        "feature/yral-pro-for-tournaments-sarvesh",
         "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
         "fix/state-button",
+        "fix-video-reporting",
         "main",
-        "release/3.2.0"
+        "release/android-2.6.5",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
       ]
     },
     {
@@ -47,83 +49,23 @@
       "branches": [
         "create-pull-request/update-did-files-v3.5.9",
         "develop",
+        "enhancement/chat-error-ui",
         "feature/ai-influencer",
         "feature/create-ai-chat-bot",
-        "feature/create-ai-influencer",
         "feature/dolr-wallet-ui-bk",
-        "feature/hot-or-not-onboarding",
         "feature/iap-ui",
         "feature/subcription-video-gen",
         "feature/subscription-ui",
         "feature/subscriptions-ui",
-        "feature/yral-pro-for-tournaments",
-        "feature/yral-pro-for-tournaments-sarvesh",
         "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
         "fix/state-button",
+        "fix-video-reporting",
         "main",
-        "release/3.2.0"
-      ]
-    },
-    {
-      "sha": "71d89a3160041cc1fcf13d6d66985b10f1c4f92c",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-08T05:45:05Z",
-      "message": "Adds custom events in branch (#763)",
-      "stats": {
-        "additions": 268,
-        "deletions": 19,
-        "total": 287
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/create-ai-chat-bot",
-        "feature/create-ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/hot-or-not-onboarding",
-        "feature/iap-ui",
-        "feature/subcription-video-gen",
-        "feature/subscription-ui",
-        "feature/subscriptions-ui",
-        "feature/yral-pro-for-tournaments",
-        "feature/yral-pro-for-tournaments-sarvesh",
-        "fix/hot-or-not-load-time",
-        "fix/state-button",
-        "main",
-        "release/3.2.0"
-      ]
-    },
-    {
-      "sha": "700530efca31de75f9725054dbe0d09fc8d9c292",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-08T05:25:23Z",
-      "message": "Implements mandatory login screen (#753)",
-      "stats": {
-        "additions": 492,
-        "deletions": 135,
-        "total": 627
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/create-ai-chat-bot",
-        "feature/create-ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/hot-or-not-onboarding",
-        "feature/iap-ui",
-        "feature/subcription-video-gen",
-        "feature/subscription-ui",
-        "feature/subscriptions-ui",
-        "feature/yral-pro-for-tournaments",
-        "feature/yral-pro-for-tournaments-sarvesh",
-        "fix/hot-or-not-load-time",
-        "fix/state-button",
-        "main",
-        "release/3.2.0"
+        "release/android-2.6.5",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
       ]
     },
     {
@@ -157,6 +99,7 @@
         "fk_exeption_handle",
         "further_joel_sugg",
         "i_e_error",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
@@ -233,6 +176,7 @@
         "fk_exeption_handle",
         "further_joel_sugg",
         "i_e_error",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
@@ -309,6 +253,7 @@
         "fk_exeption_handle",
         "further_joel_sugg",
         "i_e_error",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
@@ -388,6 +333,7 @@
         "fk_exeption_handle",
         "further_joel_sugg",
         "i_e_error",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
@@ -636,20 +582,71 @@
       ]
     },
     {
-      "sha": "1845c746c631b0a2bf1bc2f8471903de8699e3de",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/redis-store-cluster",
-      "timestamp": "2026-01-08T07:02:39Z",
-      "message": "[skip ci] change in migration script and test script",
+      "sha": "71d89a3160041cc1fcf13d6d66985b10f1c4f92c",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-08T05:45:05Z",
+      "message": "Adds custom events in branch (#763)",
       "stats": {
-        "additions": 353,
-        "deletions": 357,
-        "total": 710
+        "additions": 268,
+        "deletions": 19,
+        "total": 287
       },
       "branches": [
-        "naitik/impl-redis-store-cluster"
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "700530efca31de75f9725054dbe0d09fc8d9c292",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-08T05:25:23Z",
+      "message": "Implements mandatory login screen (#753)",
+      "stats": {
+        "additions": 492,
+        "deletions": 135,
+        "total": 627
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
       ]
     }
   ],
-  "commit_count": 16
+  "commit_count": 15
 }

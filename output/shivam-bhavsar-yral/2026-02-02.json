@@ -1,23 +1,12 @@
 {
   "date": "2026-02-02",
   "username": "shivam-bhavsar-yral",
-  "additions": 459,
-  "deletions": 150,
-  "total_loc": 609,
-  "commit_count": 3,
-  "repositories": [
-    "dolr-ai/yral-mobile"
-  ],
-  "repo_count": 1,
-  "branch_breakdown": {
-    "dolr-ai/yral-mobile": {
-      "feature/yral-pro-for-tournaments": {
-        "additions": 459,
-        "deletions": 150,
-        "total_loc": 609,
-        "commit_count": 3
-      }
-    }
-  },
-  "processed_at": "2026-02-05T09:19:15.775002Z"
+  "additions": 0,
+  "deletions": 0,
+  "total_loc": 0,
+  "commit_count": 0,
+  "repositories": [],
+  "repo_count": 0,
+  "branch_breakdown": {},
+  "processed_at": "2026-02-06T07:06:59.291188Z"
 }

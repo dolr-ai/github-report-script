@@ -1,160 +1,7 @@
 {
   "date": "2026-01-07",
-  "cached_at": "2026-02-03T20:52:47.346776Z",
+  "cached_at": "2026-02-06T07:04:37.666995Z",
   "commits": [
-    {
-      "sha": "8c38680260e1baf65007810a33dacabe12d85e85",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/hot-or-not-backend-canister",
-      "timestamp": "2026-01-07T11:06:26Z",
-      "message": "feat: added nsfw info persistance for pfps + feat: added is_ai_influencer tagging (#633)",
-      "stats": {
-        "additions": 693,
-        "deletions": 82,
-        "total": 775
-      },
-      "branches": [
-        "copilot/add-total-credits-user-profile",
-        "feat/add-bulk-methods-for-profile-details",
-        "feat/add-yral-pro-subcription-token-type-in-rate-limits",
-        "feat/include-total-number-of-free-credits-alloted-in-subscription",
-        "fix/candid-generation-script",
-        "joel/add_bot_account_addition",
-        "joel/fix-accept-new-registration-guard",
-        "main",
-        "set-ai-influencers"
-      ]
-    },
-    {
-      "sha": "5209fa715ebd2f62dbb9b86c76d6d1ff4e5f65b1",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-07T15:53:23Z",
-      "message": "Fixes url for chat image uploads (#764)",
-      "stats": {
-        "additions": 11,
-        "deletions": 1,
-        "total": 12
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/create-ai-chat-bot",
-        "feature/create-ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/hot-or-not-onboarding",
-        "feature/iap-ui",
-        "feature/subcription-video-gen",
-        "feature/subscription-ui",
-        "feature/subscriptions-ui",
-        "feature/yral-pro-for-tournaments",
-        "feature/yral-pro-for-tournaments-sarvesh",
-        "fix/hot-or-not-load-time",
-        "fix/state-button",
-        "main",
-        "release/3.2.0"
-      ]
-    },
-    {
-      "sha": "322e2cb74b46e11d395e7ab16c388139a20a8ee0",
-      "author": "mayank-k-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-07T12:51:01Z",
-      "message": "Updates prize pool display in Prize Breakdown Bottom Sheet (#762)",
-      "stats": {
-        "additions": 18,
-        "deletions": 15,
-        "total": 33
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/create-ai-chat-bot",
-        "feature/create-ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/hot-or-not-onboarding",
-        "feature/iap-ui",
-        "feature/subcription-video-gen",
-        "feature/subscription-ui",
-        "feature/subscriptions-ui",
-        "feature/yral-pro-for-tournaments",
-        "feature/yral-pro-for-tournaments-sarvesh",
-        "fix/hot-or-not-load-time",
-        "fix/state-button",
-        "main",
-        "release/3.2.0"
-      ]
-    },
-    {
-      "sha": "0738c8f8ac135eed7c06086c769862e3dfe9abca",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-07T12:04:06Z",
-      "message": "Adds GAID to MixPanel properties for android (#761)",
-      "stats": {
-        "additions": 202,
-        "deletions": 22,
-        "total": 224
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/create-ai-chat-bot",
-        "feature/create-ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/hot-or-not-onboarding",
-        "feature/iap-ui",
-        "feature/subcription-video-gen",
-        "feature/subscription-ui",
-        "feature/subscriptions-ui",
-        "feature/yral-pro-for-tournaments",
-        "feature/yral-pro-for-tournaments-sarvesh",
-        "fix/hot-or-not-load-time",
-        "fix/state-button",
-        "main",
-        "release/3.2.0"
-      ]
-    },
-    {
-      "sha": "c2a415a413d5cca173c9e2502960be0f6a701071",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-common",
-      "timestamp": "2026-01-07T13:35:17Z",
-      "message": "Add NSFWInfo and update user profile details types",
-      "stats": {
-        "additions": 31,
-        "deletions": 2,
-        "total": 33
-      },
-      "branches": [
-        "chore-update-user-info-service-canister-did"
-      ]
-    },
-    {
-      "sha": "6cf7b0fe5e7023251453b69cbf0e6c24dd21b026",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-common",
-      "timestamp": "2026-01-07T13:39:01Z",
-      "message": "chore: update user info service canister did file (#148)",
-      "stats": {
-        "additions": 31,
-        "deletions": 2,
-        "total": 33
-      },
-      "branches": [
-        "feat/update-candid-for-user-info-service",
-        "feat/update-rate-limit-canister-did-file",
-        "feat/update-user-info-deps",
-        "fix/update-user-info-service-candid",
-        "fix/yral-pro-subscription-token-transaction-implmentation",
-        "master",
-        "revert-153-fix/update-user-info-service-candid",
-        "revert-banned-posts-filter"
-      ]
-    },
     {
       "sha": "25a760fcf081082c6b7da86ae4079481221caecd",
       "author": "ravi-sawlani-yral",
@@ -171,6 +18,7 @@
         "feat/fix-error-type-for-api",
         "fix/redirect-uri-for-multiple-deployments",
         "joel/ai-accounts-integration",
+        "joel/dnm-remove-bot-limit",
         "joel/json-ser-ai-endpoint",
         "joel/json-ser-fix",
         "main",
@@ -199,6 +47,7 @@
         "fix/redirect-uri-for-multiple-deployments",
         "fix/remove-cookies-in-verify-endpoint",
         "joel/ai-accounts-integration",
+        "joel/dnm-remove-bot-limit",
         "joel/json-ser-ai-endpoint",
         "joel/json-ser-fix",
         "main",
@@ -227,6 +76,7 @@
         "fix/redirect-uri-for-multiple-deployments",
         "fix/remove-cookies-in-verify-endpoint",
         "joel/ai-accounts-integration",
+        "joel/dnm-remove-bot-limit",
         "joel/json-ser-ai-endpoint",
         "joel/json-ser-fix",
         "main",
@@ -255,6 +105,7 @@
         "fix/redirect-uri-for-multiple-deployments",
         "fix/remove-cookies-in-verify-endpoint",
         "joel/ai-accounts-integration",
+        "joel/dnm-remove-bot-limit",
         "joel/json-ser-ai-endpoint",
         "joel/json-ser-fix",
         "main",
@@ -297,6 +148,7 @@
         "fk_exeption_handle",
         "further_joel_sugg",
         "i_e_error",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
@@ -377,6 +229,7 @@
         "fk_exeption_handle",
         "further_joel_sugg",
         "i_e_error",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
@@ -458,6 +311,7 @@
         "fk_exeption_handle",
         "further_joel_sugg",
         "i_e_error",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
@@ -540,6 +394,7 @@
         "fk_exeption_handle",
         "further_joel_sugg",
         "i_e_error",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
@@ -622,6 +477,7 @@
         "fk_exeption_handle",
         "further_joel_sugg",
         "i_e_error",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
@@ -704,6 +560,7 @@
         "fk_exeption_handle",
         "further_joel_sugg",
         "i_e_error",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
@@ -786,6 +643,7 @@
         "fk_exeption_handle",
         "further_joel_sugg",
         "i_e_error",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
@@ -834,6 +692,166 @@
         "test_robust_gc",
         "uptime_kuma",
         "wal_ckpt_bug_fix"
+      ]
+    },
+    {
+      "sha": "5209fa715ebd2f62dbb9b86c76d6d1ff4e5f65b1",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-07T15:53:23Z",
+      "message": "Fixes url for chat image uploads (#764)",
+      "stats": {
+        "additions": 11,
+        "deletions": 1,
+        "total": 12
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "0738c8f8ac135eed7c06086c769862e3dfe9abca",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-07T12:04:06Z",
+      "message": "Adds GAID to MixPanel properties for android (#761)",
+      "stats": {
+        "additions": 202,
+        "deletions": 22,
+        "total": 224
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "c2a415a413d5cca173c9e2502960be0f6a701071",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-01-07T13:35:17Z",
+      "message": "Add NSFWInfo and update user profile details types",
+      "stats": {
+        "additions": 31,
+        "deletions": 2,
+        "total": 33
+      },
+      "branches": [
+        "chore-update-user-info-service-canister-did"
+      ]
+    },
+    {
+      "sha": "6cf7b0fe5e7023251453b69cbf0e6c24dd21b026",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-01-07T13:39:01Z",
+      "message": "chore: update user info service canister did file (#148)",
+      "stats": {
+        "additions": 31,
+        "deletions": 2,
+        "total": 33
+      },
+      "branches": [
+        "feat/ltx2-model",
+        "feat/update-candid-for-user-info-service",
+        "feat/update-rate-limit-canister-did-file",
+        "feat/update-user-info-deps",
+        "fix/update-user-info-service-candid",
+        "fix/yral-pro-subscription-token-transaction-implmentation",
+        "master",
+        "revert-153-fix/update-user-info-service-candid",
+        "revert-banned-posts-filter"
+      ]
+    },
+    {
+      "sha": "8c38680260e1baf65007810a33dacabe12d85e85",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2026-01-07T11:06:26Z",
+      "message": "feat: added nsfw info persistance for pfps + feat: added is_ai_influencer tagging (#633)",
+      "stats": {
+        "additions": 693,
+        "deletions": 82,
+        "total": 775
+      },
+      "branches": [
+        "copilot/add-total-credits-user-profile",
+        "feat/add-bulk-methods-for-profile-details",
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits",
+        "feat/include-total-number-of-free-credits-alloted-in-subscription",
+        "fix/candid-generation-script",
+        "joel/add_bot_account_addition",
+        "joel/fix-accept-new-registration-guard",
+        "main",
+        "set-ai-influencers"
+      ]
+    },
+    {
+      "sha": "322e2cb74b46e11d395e7ab16c388139a20a8ee0",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-07T12:51:01Z",
+      "message": "Updates prize pool display in Prize Breakdown Bottom Sheet (#762)",
+      "stats": {
+        "additions": 18,
+        "deletions": 15,
+        "total": 33
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
       ]
     }
   ],

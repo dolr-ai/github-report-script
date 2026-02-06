@@ -1,0 +1,202 @@
+{
+  "date": "2025-12-14",
+  "cached_at": "2026-02-06T07:03:00.960422Z",
+  "commits": [
+    {
+      "sha": "2c64f9aaaa6bf59dd95bbbaf9065063c6b633f54",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-14T16:17:43Z",
+      "message": "Load overlay and br_netfilter for Kubernetes",
+      "stats": {
+        "additions": 10,
+        "deletions": 0,
+        "total": 10
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9cbf68f5e37ce5ef370a563373a5dc2a29071cd9",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-14T15:09:38Z",
+      "message": "Update Butane to 1.6.0 and remove stray path line",
+      "stats": {
+        "additions": 1,
+        "deletions": 2,
+        "total": 3
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "63811aaf5848da347dcd96d979b374fa490bf5e0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-14T15:07:49Z",
+      "message": "Simplify control-plane Butane config to minimal variant",
+      "stats": {
+        "additions": 1,
+        "deletions": 218,
+        "total": 219
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "02d18cb2c614ccea688c7b065d7962cde717b809",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-14T15:00:13Z",
+      "message": "Move DHCP network config to /etc/systemd/network",
+      "stats": {
+        "additions": 10,
+        "deletions": 7,
+        "total": 17
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e3984d8f101b4a4725bd925013c2991346b08971",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-14T14:58:03Z",
+      "message": "Configure DHCP on en* via systemd-networkd",
+      "stats": {
+        "additions": 7,
+        "deletions": 0,
+        "total": 7
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "fe0fc93e8647a6d6d5ed505e7326314871fc56c5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-14T14:15:14Z",
+      "message": "Disable full upgrade; apt update before podman",
+      "stats": {
+        "additions": 11,
+        "deletions": 6,
+        "total": 17
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "5f08ba54a84be8dc1310fc6823410b4041633ac2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-14T14:07:59Z",
+      "message": "docs: fix Hetzner control-plane.sh URL in README",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "95aff9cb7d769f63c7b1b648989a6dd3e59799f8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-14T14:05:31Z",
+      "message": "Comment out destructive wipefs and sleep calls",
+      "stats": {
+        "additions": 5,
+        "deletions": 5,
+        "total": 10
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "5ada9704648b4053699e75f16ae24819b5eb51bd",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-14T14:02:46Z",
+      "message": "Disable mdadm zeroing and add 5s delay",
+      "stats": {
+        "additions": 10,
+        "deletions": 8,
+        "total": 18
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8dc848e0a5fb1b98b781efa6952d86f3f699c132",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-14T13:58:22Z",
+      "message": "Use wipefs -a to remove all RAID signatures",
+      "stats": {
+        "additions": 4,
+        "deletions": 4,
+        "total": 8
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b03eb4c9ff14362c875043c46cd026066926508a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-14T13:50:27Z",
+      "message": "Rename hetzner-rescue.sh to control-plane.sh Rename hetzner-rescue.sh to",
+      "stats": {
+        "additions": 5,
+        "deletions": 0,
+        "total": 5
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "48d5c776dd60df134153c9f8fd3e242f77d439a4",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-14T13:43:51Z",
+      "message": "Use single disk nvme0n1 instead of md RAID",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c0bac51699aeff45e90769ff1a49e183cafb7637",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-14T13:37:56Z",
+      "message": "Add Longhorn disk configs, create Longhorn dirs/files, update install",
+      "stats": {
+        "additions": 71,
+        "deletions": 150,
+        "total": 221
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 13
+}

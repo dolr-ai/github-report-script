@@ -1,752 +1,7 @@
 {
   "date": "2026-01-28",
-  "cached_at": "2026-02-03T21:24:54.927384Z",
+  "cached_at": "2026-02-06T07:06:43.211782Z",
   "commits": [
-    {
-      "sha": "5aa33baf8af0651f8afdc9b1ac42a72d3c72d1a0",
-      "author": "gravityvi",
-      "repository": "dolr-ai/hot-or-not-backend-canister",
-      "timestamp": "2026-01-28T13:42:15Z",
-      "message": "added tests and update candid",
-      "stats": {
-        "additions": 140,
-        "deletions": 11,
-        "total": 151
-      },
-      "branches": [
-        "copilot/add-total-credits-user-profile",
-        "feat/include-total-number-of-free-credits-alloted-in-subscription"
-      ]
-    },
-    {
-      "sha": "647d19fafd2f90c88fccc4b58d055de7dc789134",
-      "author": "gravityvi",
-      "repository": "dolr-ai/hot-or-not-backend-canister",
-      "timestamp": "2026-01-28T12:37:16Z",
-      "message": "include total number of credits alloted in yral plan",
-      "stats": {
-        "additions": 7,
-        "deletions": 0,
-        "total": 7
-      },
-      "branches": [
-        "copilot/add-total-credits-user-profile",
-        "feat/include-total-number-of-free-credits-alloted-in-subscription"
-      ]
-    },
-    {
-      "sha": "67719d810d76fa0fc428dab9cad7bb86ebce784a",
-      "author": "gravityvi",
-      "repository": "dolr-ai/hot-or-not-backend-canister",
-      "timestamp": "2026-01-28T14:51:19Z",
-      "message": "fix: candid generation script (#638)",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "feat/add-bulk-methods-for-profile-details",
-        "joel/fix-accept-new-registration-guard",
-        "main"
-      ]
-    },
-    {
-      "sha": "3f8001a1e9b975f48df4390a7555cbccb8ee2f7a",
-      "author": "gravityvi",
-      "repository": "dolr-ai/hot-or-not-backend-canister",
-      "timestamp": "2026-01-28T14:28:44Z",
-      "message": "feat: add total video credits allotted to YralProSubscription (#637)",
-      "stats": {
-        "additions": 147,
-        "deletions": 11,
-        "total": 158
-      },
-      "branches": [
-        "feat/add-bulk-methods-for-profile-details",
-        "fix/candid-generation-script",
-        "joel/fix-accept-new-registration-guard",
-        "main"
-      ]
-    },
-    {
-      "sha": "d2bf90524f565f19e63d36fe039d485c2bffbed0",
-      "author": "gravityvi",
-      "repository": "dolr-ai/hot-or-not-backend-canister",
-      "timestamp": "2026-01-28T14:49:33Z",
-      "message": "fix candid generation script",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "fix/candid-generation-script"
-      ]
-    },
-    {
-      "sha": "e30cb1e373eb62f06462e8b959a7375d12118f55",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
-      "timestamp": "2026-01-28T03:01:50Z",
-      "message": "migrate reads to dragonfly (#1154)",
-      "stats": {
-        "additions": 39,
-        "deletions": 240,
-        "total": 279
-      },
-      "branches": [
-        "dependabot/cargo/bytes-1.11.1",
-        "dependabot/cargo/hon-worker-common-2a723cd",
-        "dependabot/cargo/openidconnect-4.0.1",
-        "dependabot/cargo/opentelemetry_sdk-0.31.0",
-        "dependabot/cargo/videogen-common-2a723cd",
-        "main",
-        "naitik/fix_dragonfly_broken_pipe_issue"
-      ]
-    },
-    {
-      "sha": "02a14ff52c914b2eac37f97d0e07d703e5c9497b",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
-      "timestamp": "2026-01-28T01:39:20Z",
-      "message": "Merge branch 'main' into naitik/migrate_reads_to_dragonfly",
-      "stats": {
-        "additions": 24,
-        "deletions": 42,
-        "total": 66
-      },
-      "branches": [
-        "naitik/migrate_reads_to_dragonfly"
-      ]
-    },
-    {
-      "sha": "f6a2bc2f5747a341c82ea4cd8af82693d630e04e",
-      "author": "gravityvi",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-28T11:51:58Z",
-      "message": "feat: refactored code and added yral pro subscription as a way to pay for ai videogen (#378)",
-      "stats": {
-        "additions": 1357,
-        "deletions": 1846,
-        "total": 3203
-      },
-      "branches": [
-        "fix/user-agent-issue-with-pro-subscription",
-        "fix/yral-pro-subscription-token-operation",
-        "joel/apps-script-reports-api",
-        "joel/dolr-rewards",
-        "joel/fix-btc-dolr-notif",
-        "joel/fix-event-ser",
-        "joel/fix-gchat-report-buttons",
-        "joel/fix-logging",
-        "joel/fix-report-env",
-        "joel/icp-swap-dolr-price-fetch",
-        "joel/offchain-broken-pipe-fix",
-        "joel/phash-redis-migration",
-        "joel/profile-views-check",
-        "joel/rewards-mode",
-        "joel/upload-flow-content",
-        "main",
-        "naitik/broken_pipe_issue_fix"
-      ]
-    },
-    {
-      "sha": "fa896e2fb0cd02c446be725f8f116e89c36cd6c3",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-28T03:53:05Z",
-      "message": "migrate reads to dragonfly (#368)",
-      "stats": {
-        "additions": 3,
-        "deletions": 74,
-        "total": 77
-      },
-      "branches": [
-        "fix/user-agent-issue-with-pro-subscription",
-        "fix/yral-pro-subscription-token-operation",
-        "joel/apps-script-reports-api",
-        "joel/dolr-rewards",
-        "joel/fix-btc-dolr-notif",
-        "joel/fix-event-ser",
-        "joel/fix-gchat-report-buttons",
-        "joel/fix-logging",
-        "joel/fix-report-env",
-        "joel/icp-swap-dolr-price-fetch",
-        "joel/offchain-broken-pipe-fix",
-        "joel/phash-redis-migration",
-        "joel/profile-views-check",
-        "joel/rewards-mode",
-        "joel/upload-flow-content",
-        "main",
-        "naitik/broken_pipe_issue_fix"
-      ]
-    },
-    {
-      "sha": "66395c56f7b5922bd911f6028dc252cab20282a6",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-28T15:04:23Z",
-      "message": "lint",
-      "stats": {
-        "additions": 19,
-        "deletions": 7,
-        "total": 26
-      },
-      "branches": [
-        "joel/dolr-rewards"
-      ]
-    },
-    {
-      "sha": "5589d855c6f6826fcd548f80a18fc2f309ff704f",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-28T14:59:01Z",
-      "message": "Merge branch 'main' into joel/dolr-rewards",
-      "stats": {
-        "additions": 1371,
-        "deletions": 1905,
-        "total": 3276
-      },
-      "branches": [
-        "joel/dolr-rewards"
-      ]
-    },
-    {
-      "sha": "c5d3d63b7222089556332783756d5d0a8f75b162",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-28T14:56:48Z",
-      "message": "refactor: update Redis key prefixes to use 'impressions:test' for reward-related data",
-      "stats": {
-        "additions": 44,
-        "deletions": 44,
-        "total": 88
-      },
-      "branches": [
-        "joel/dolr-rewards"
-      ]
-    },
-    {
-      "sha": "dbfbaadaf74ef5324883d26871aad5ef80089d86",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-28T18:00:53Z",
-      "message": "Update profileDetailsV6 to profileDetailsV7 (#813)",
-      "stats": {
-        "additions": 355,
-        "deletions": 221,
-        "total": 576
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/create-ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/hot-or-not-onboarding",
-        "feature/yral-pro-for-tournaments",
-        "feature/yral-pro-for-tournaments-sarvesh",
-        "main"
-      ]
-    },
-    {
-      "sha": "877602108a9571acf64e3283727f29892c124940",
-      "author": "mayank-k-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-28T15:16:17Z",
-      "message": "Merge pull request #810 from dolr-ai/increase-feed-batch-size",
-      "stats": {
-        "additions": 3,
-        "deletions": 3,
-        "total": 6
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/create-ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/hot-or-not-onboarding",
-        "feature/yral-pro-for-tournaments",
-        "feature/yral-pro-for-tournaments-sarvesh",
-        "main"
-      ]
-    },
-    {
-      "sha": "f810f89ccabf47f6971dc62830c69a03718b0729",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-28T14:14:23Z",
-      "message": "fix: Increase hot or not tournament creation timeout to 1 hour (#811)",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/create-ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/hot-or-not-onboarding",
-        "feature/yral-pro-for-tournaments",
-        "feature/yral-pro-for-tournaments-sarvesh",
-        "main"
-      ]
-    },
-    {
-      "sha": "27ace0f1add07570212ad9c2b4b2726d05eca2a3",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-28T13:53:12Z",
-      "message": "Fix tournament settlement idempotency to prevent double payments (#809)",
-      "stats": {
-        "additions": 0,
-        "deletions": 0,
-        "total": 0
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/create-ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/hot-or-not-onboarding",
-        "feature/yral-pro-for-tournaments",
-        "feature/yral-pro-for-tournaments-sarvesh",
-        "main"
-      ]
-    },
-    {
-      "sha": "894ca0e715e3b8983e613472ee9d8de32a4ae553",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-28T13:52:29Z",
-      "message": "Fix tournament settlement idempotency to prevent double payments",
-      "stats": {
-        "additions": 115,
-        "deletions": 1,
-        "total": 116
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/create-ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/hot-or-not-onboarding",
-        "feature/yral-pro-for-tournaments",
-        "feature/yral-pro-for-tournaments-sarvesh",
-        "main"
-      ]
-    },
-    {
-      "sha": "8231d2e5205ccac86c17419c25480606dccafc29",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-28T12:54:43Z",
-      "message": "Implements subscription screens and touch point in account screen (#808)",
-      "stats": {
-        "additions": 2829,
-        "deletions": 110,
-        "total": 2939
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/create-ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/hot-or-not-onboarding",
-        "feature/yral-pro-for-tournaments",
-        "feature/yral-pro-for-tournaments-sarvesh",
-        "main"
-      ]
-    },
-    {
-      "sha": "b778820d1a0a8adcf6bdf29b2467602cb592c8eb",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-common",
-      "timestamp": "2026-01-28T14:52:30Z",
-      "message": "update candid for user_info_service",
-      "stats": {
-        "additions": 28,
-        "deletions": 3,
-        "total": 31
-      },
-      "branches": [
-        "feat/update-candid-for-user-info-service"
-      ]
-    },
-    {
-      "sha": "73f4eb768b487f255aa697274d3ad5c12e91f603",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-common",
-      "timestamp": "2026-01-28T16:15:02Z",
-      "message": "fix: sync user_info_service candid with deployed canister (#153)",
-      "stats": {
-        "additions": 1,
-        "deletions": 4,
-        "total": 5
-      },
-      "branches": [
-        "feat/update-user-info-deps",
-        "fix/yral-pro-subscription-token-transaction-implmentation",
-        "master",
-        "revert-153-fix/update-user-info-service-candid"
-      ]
-    },
-    {
-      "sha": "d150e3938184f257d98f6cb769053f8f969d3147",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-common",
-      "timestamp": "2026-01-28T14:58:30Z",
-      "message": "feat: update candid for user_info_service (#152)",
-      "stats": {
-        "additions": 28,
-        "deletions": 3,
-        "total": 31
-      },
-      "branches": [
-        "feat/update-user-info-deps",
-        "fix/update-user-info-service-candid",
-        "fix/yral-pro-subscription-token-transaction-implmentation",
-        "master",
-        "revert-153-fix/update-user-info-service-candid"
-      ]
-    },
-    {
-      "sha": "3818cfc171e0904089de377c2caa81d374680eeb",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-common",
-      "timestamp": "2026-01-28T16:12:46Z",
-      "message": "fix: sync user_info_service candid with deployed canister",
-      "stats": {
-        "additions": 1,
-        "deletions": 4,
-        "total": 5
-      },
-      "branches": [
-        "fix/update-user-info-service-candid"
-      ]
-    },
-    {
-      "sha": "c65f497e5279f45da930dc8a06a4260abbd718f6",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-backend-cloudflare-workers",
-      "timestamp": "2026-01-28T18:42:57Z",
-      "message": "fix: suppress clippy await_holding_refcell_ref warnings with safety comments",
-      "stats": {
-        "additions": 66,
-        "deletions": 30,
-        "total": 96
-      },
-      "branches": [
-        "fix/update-yral-canisters-client-candid"
-      ]
-    },
-    {
-      "sha": "514ecdabfa326f4b3e3b4e82636a676a58129627",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-backend-cloudflare-workers",
-      "timestamp": "2026-01-28T18:21:39Z",
-      "message": "style: apply cargo fmt to yral-coin",
-      "stats": {
-        "additions": 2,
-        "deletions": 6,
-        "total": 8
-      },
-      "branches": [
-        "fix/update-yral-canisters-client-candid"
-      ]
-    },
-    {
-      "sha": "4cbc5fe873945202b2e5a10002bed395be6449b7",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-backend-cloudflare-workers",
-      "timestamp": "2026-01-28T18:20:03Z",
-      "message": "fix: correct event field names and resolve clippy warnings",
-      "stats": {
-        "additions": 65,
-        "deletions": 52,
-        "total": 117
-      },
-      "branches": [
-        "fix/update-yral-canisters-client-candid"
-      ]
-    },
-    {
-      "sha": "259e193c1ea7132738039d7db08da926ae8373a7",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-backend-cloudflare-workers",
-      "timestamp": "2026-01-28T18:20:03Z",
-      "message": "fix: complete yral-pump-n-dump worker 0.7.4 migration",
-      "stats": {
-        "additions": 62,
-        "deletions": 28,
-        "total": 90
-      },
-      "branches": [
-        "fix/update-yral-canisters-client-candid"
-      ]
-    },
-    {
-      "sha": "bd5a3e6db1df3ce985da39d1d1b5cbefa5a44897",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-backend-cloudflare-workers",
-      "timestamp": "2026-01-28T17:54:24Z",
-      "message": "fix: significant progress on yral-pump-n-dump worker 0.7.4 migration",
-      "stats": {
-        "additions": 86,
-        "deletions": 61,
-        "total": 147
-      },
-      "branches": [
-        "fix/update-yral-canisters-client-candid"
-      ]
-    },
-    {
-      "sha": "3e9d2da930a9f87fdad34cbdc19802ea83a76e65",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-backend-cloudflare-workers",
-      "timestamp": "2026-01-28T17:34:50Z",
-      "message": "fix: complete worker 0.7.4 migration for yral-coin, yral-hot-or-not, yral-onchain-backend",
-      "stats": {
-        "additions": 72,
-        "deletions": 57,
-        "total": 129
-      },
-      "branches": [
-        "fix/update-yral-canisters-client-candid"
-      ]
-    },
-    {
-      "sha": "6d61b97275490a7a374d97cb5c66333fe980dd53",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-backend-cloudflare-workers",
-      "timestamp": "2026-01-28T17:19:42Z",
-      "message": "fix: migrate yral-coin, yral-hot-or-not, and yral-onchain-backend to worker 0.7.4 API",
-      "stats": {
-        "additions": 53,
-        "deletions": 49,
-        "total": 102
-      },
-      "branches": [
-        "fix/update-yral-canisters-client-candid"
-      ]
-    },
-    {
-      "sha": "393002d5e0ae96cdcae5cb5a3ca47ff075b87251",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-backend-cloudflare-workers",
-      "timestamp": "2026-01-28T17:00:04Z",
-      "message": "fix: complete RefCell borrow/borrow_mut fixes in yral-hot-or-not (almost done)",
-      "stats": {
-        "additions": 103,
-        "deletions": 38,
-        "total": 141
-      },
-      "branches": [
-        "fix/update-yral-canisters-client-candid"
-      ]
-    },
-    {
-      "sha": "8cf60906de8aea8c069557b005242327da4e0c39",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-backend-cloudflare-workers",
-      "timestamp": "2026-01-28T16:56:45Z",
-      "message": "fix: add borrow/borrow_mut calls to yral-hot-or-not RefCell fields (WIP)",
-      "stats": {
-        "additions": 34,
-        "deletions": 30,
-        "total": 64
-      },
-      "branches": [
-        "fix/update-yral-canisters-client-candid"
-      ]
-    },
-    {
-      "sha": "d6561553029214cb15c4a2646854401e552581fb",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-backend-cloudflare-workers",
-      "timestamp": "2026-01-28T16:51:10Z",
-      "message": "fix: add RefCell to yral-hot-or-not mutable fields (WIP)",
-      "stats": {
-        "additions": 26,
-        "deletions": 22,
-        "total": 48
-      },
-      "branches": [
-        "fix/update-yral-canisters-client-candid"
-      ]
-    },
-    {
-      "sha": "7081b4bf4404118691b841cfa15433ebb97eec3e",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-backend-cloudflare-workers",
-      "timestamp": "2026-01-28T16:50:18Z",
-      "message": "fix: partially update yral-hot-or-not for worker 0.7.4 API",
-      "stats": {
-        "additions": 4,
-        "deletions": 5,
-        "total": 9
-      },
-      "branches": [
-        "fix/update-yral-canisters-client-candid"
-      ]
-    },
-    {
-      "sha": "79a7fcd2134aecdad021e23cb24d0f9fb3cda5fe",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-backend-cloudflare-workers",
-      "timestamp": "2026-01-28T16:48:40Z",
-      "message": "fix: update yral-coin for worker 0.7.4 API changes",
-      "stats": {
-        "additions": 24,
-        "deletions": 20,
-        "total": 44
-      },
-      "branches": [
-        "fix/update-yral-canisters-client-candid"
-      ]
-    },
-    {
-      "sha": "4aff76dde014b736fbe22a2223a64103b5ae85a1",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-backend-cloudflare-workers",
-      "timestamp": "2026-01-28T16:37:46Z",
-      "message": "chore: run cargo fmt",
-      "stats": {
-        "additions": 8,
-        "deletions": 2,
-        "total": 10
-      },
-      "branches": [
-        "fix/update-yral-canisters-client-candid"
-      ]
-    },
-    {
-      "sha": "e18debba11440b460534ebbc9f58433d7e07c73b",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-backend-cloudflare-workers",
-      "timestamp": "2026-01-28T16:34:27Z",
-      "message": "fix: update yral-onchain-backend for worker 0.7.4 API changes",
-      "stats": {
-        "additions": 8,
-        "deletions": 8,
-        "total": 16
-      },
-      "branches": [
-        "fix/update-yral-canisters-client-candid"
-      ]
-    },
-    {
-      "sha": "952685851dcf5c920cbd0e63af4cec9308737d8b",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-backend-cloudflare-workers",
-      "timestamp": "2026-01-28T16:24:56Z",
-      "message": "fix: handle Option<ByteBuf> return type from KV storage get",
-      "stats": {
-        "additions": 2,
-        "deletions": 1,
-        "total": 3
-      },
-      "branches": [
-        "fix/update-yral-canisters-client-candid"
-      ]
-    },
-    {
-      "sha": "9f03a2eee5dfa37445ae54311573563a8920eb72",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-backend-cloudflare-workers",
-      "timestamp": "2026-01-28T16:18:58Z",
-      "message": "fix: update yral-canisters-client to fix candid deserialization panic",
-      "stats": {
-        "additions": 842,
-        "deletions": 723,
-        "total": 1565
-      },
-      "branches": [
-        "fix/update-yral-canisters-client-candid"
-      ]
-    },
-    {
-      "sha": "5fece9c31cc858a0ffafd2f905e1dcadfa13b6de",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-backend-cloudflare-workers",
-      "timestamp": "2026-01-28T18:47:46Z",
-      "message": "Fix/update yral canisters client candid (#106)",
-      "stats": {
-        "additions": 1384,
-        "deletions": 1059,
-        "total": 2443
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "dde6414267ce88be61635b2625368dc024049202",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-01-28T05:01:32Z",
-      "message": "fix: removed dependency on fly redis proxy (#37)",
-      "stats": {
-        "additions": 3,
-        "deletions": 5,
-        "total": 8
-      },
-      "branches": [
-        "feat/deploy-to-dolr-ai",
-        "fix/redirect-uri-for-multiple-deployments",
-        "joel/ai-accounts-integration",
-        "joel/json-ser-ai-endpoint",
-        "joel/json-ser-fix",
-        "main",
-        "naitik/fix_broken_pipe_issue",
-        "revert-41-fix/redirect-uri-for-multiple-deployments"
-      ]
-    },
-    {
-      "sha": "c443daf7a4b88035fd5c3a45ae5a5b95da45e293",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-01-28T04:45:01Z",
-      "message": "migrate reads to dragonfly (#35)",
-      "stats": {
-        "additions": 12,
-        "deletions": 235,
-        "total": 247
-      },
-      "branches": [
-        "feat/deploy-to-dolr-ai",
-        "fix/redirect-uri-for-multiple-deployments",
-        "joel/ai-accounts-integration",
-        "joel/json-ser-ai-endpoint",
-        "joel/json-ser-fix",
-        "main",
-        "naitik/fix_bare_metal_deployment",
-        "naitik/fix_broken_pipe_issue",
-        "revert-41-fix/redirect-uri-for-multiple-deployments"
-      ]
-    },
-    {
-      "sha": "64adad6d789341063bafdfc21ef447eda85c4a0e",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-01-28T04:59:35Z",
-      "message": "fix: removed dependency on fly redis proxy",
-      "stats": {
-        "additions": 3,
-        "deletions": 5,
-        "total": 8
-      },
-      "branches": [
-        "naitik/fix_bare_metal_deployment"
-      ]
-    },
     {
       "sha": "f750942d383513090851b60b7718851fecf0d182",
       "author": "saikatdas0790",
@@ -838,6 +93,416 @@
       ]
     },
     {
+      "sha": "dde6414267ce88be61635b2625368dc024049202",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-01-28T05:01:32Z",
+      "message": "fix: removed dependency on fly redis proxy (#37)",
+      "stats": {
+        "additions": 3,
+        "deletions": 5,
+        "total": 8
+      },
+      "branches": [
+        "feat/deploy-to-dolr-ai",
+        "fix/redirect-uri-for-multiple-deployments",
+        "joel/ai-accounts-integration",
+        "joel/dnm-remove-bot-limit",
+        "joel/json-ser-ai-endpoint",
+        "joel/json-ser-fix",
+        "main",
+        "naitik/fix_broken_pipe_issue",
+        "revert-41-fix/redirect-uri-for-multiple-deployments"
+      ]
+    },
+    {
+      "sha": "c443daf7a4b88035fd5c3a45ae5a5b95da45e293",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-01-28T04:45:01Z",
+      "message": "migrate reads to dragonfly (#35)",
+      "stats": {
+        "additions": 12,
+        "deletions": 235,
+        "total": 247
+      },
+      "branches": [
+        "feat/deploy-to-dolr-ai",
+        "fix/redirect-uri-for-multiple-deployments",
+        "joel/ai-accounts-integration",
+        "joel/dnm-remove-bot-limit",
+        "joel/json-ser-ai-endpoint",
+        "joel/json-ser-fix",
+        "main",
+        "naitik/fix_bare_metal_deployment",
+        "naitik/fix_broken_pipe_issue",
+        "revert-41-fix/redirect-uri-for-multiple-deployments"
+      ]
+    },
+    {
+      "sha": "64adad6d789341063bafdfc21ef447eda85c4a0e",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-01-28T04:59:35Z",
+      "message": "fix: removed dependency on fly redis proxy",
+      "stats": {
+        "additions": 3,
+        "deletions": 5,
+        "total": 8
+      },
+      "branches": [
+        "naitik/fix_bare_metal_deployment"
+      ]
+    },
+    {
+      "sha": "fa896e2fb0cd02c446be725f8f116e89c36cd6c3",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-28T03:53:05Z",
+      "message": "migrate reads to dragonfly (#368)",
+      "stats": {
+        "additions": 3,
+        "deletions": 74,
+        "total": 77
+      },
+      "branches": [
+        "fix/user-agent-issue-with-pro-subscription",
+        "fix/yral-pro-subscription-token-operation",
+        "joel/ai-video-detector",
+        "joel/apps-script-reports-api",
+        "joel/dolr-rewards",
+        "joel/fix-btc-dolr-notif",
+        "joel/fix-event-ser",
+        "joel/fix-gchat-report-buttons",
+        "joel/fix-logging",
+        "joel/fix-report-env",
+        "joel/icp-swap-dolr-price-fetch",
+        "joel/ltx-intergration",
+        "joel/offchain-broken-pipe-fix",
+        "joel/phash-redis-migration",
+        "joel/profile-views-check",
+        "joel/rewards-mode",
+        "joel/upload-flow-content",
+        "main",
+        "naitik/broken_pipe_issue_fix"
+      ]
+    },
+    {
+      "sha": "e30cb1e373eb62f06462e8b959a7375d12118f55",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-28T03:01:50Z",
+      "message": "migrate reads to dragonfly (#1154)",
+      "stats": {
+        "additions": 39,
+        "deletions": 240,
+        "total": 279
+      },
+      "branches": [
+        "dependabot/cargo/bytes-1.11.1",
+        "dependabot/cargo/hon-worker-common-2a723cd",
+        "dependabot/cargo/openidconnect-4.0.1",
+        "dependabot/cargo/opentelemetry_sdk-0.31.0",
+        "dependabot/cargo/videogen-common-2a723cd",
+        "feat/ltx2-model",
+        "main",
+        "naitik/fix_dragonfly_broken_pipe_issue"
+      ]
+    },
+    {
+      "sha": "02a14ff52c914b2eac37f97d0e07d703e5c9497b",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-28T01:39:20Z",
+      "message": "Merge branch 'main' into naitik/migrate_reads_to_dragonfly",
+      "stats": {
+        "additions": 24,
+        "deletions": 42,
+        "total": 66
+      },
+      "branches": [
+        "naitik/migrate_reads_to_dragonfly"
+      ]
+    },
+    {
+      "sha": "f810f89ccabf47f6971dc62830c69a03718b0729",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-28T14:14:23Z",
+      "message": "fix: Increase hot or not tournament creation timeout to 1 hour (#811)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "fix/ios-load-time",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "27ace0f1add07570212ad9c2b4b2726d05eca2a3",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-28T13:53:12Z",
+      "message": "Fix tournament settlement idempotency to prevent double payments (#809)",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "fix/ios-load-time",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "894ca0e715e3b8983e613472ee9d8de32a4ae553",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-28T13:52:29Z",
+      "message": "Fix tournament settlement idempotency to prevent double payments",
+      "stats": {
+        "additions": 115,
+        "deletions": 1,
+        "total": 116
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "fix/ios-load-time",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "5e0d8c0db8fe1336d23d2afef27f4d92d31617c2",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-01-28T15:16:07Z",
+      "message": "feat: add total credits allotted",
+      "stats": {
+        "additions": 16,
+        "deletions": 32,
+        "total": 48
+      },
+      "branches": [
+        "feat/add-sentry-setup",
+        "fix/remove-aud-check-from-jwt-validation",
+        "main"
+      ]
+    },
+    {
+      "sha": "92a2a1ddffbe7dbcd31eb506b4eefae551b60450",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-01-28T15:10:29Z",
+      "message": "fix consts file",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "feat/add-sentry-setup",
+        "feat/add-total-credits-alloted",
+        "fix/remove-aud-check-from-jwt-validation",
+        "main"
+      ]
+    },
+    {
+      "sha": "7a842738b72b94d057bda74b2f31004a151fee47",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-01-28T15:04:53Z",
+      "message": "add total credits alloted",
+      "stats": {
+        "additions": 15,
+        "deletions": 32,
+        "total": 47
+      },
+      "branches": [
+        "feat/add-sentry-setup",
+        "feat/add-total-credits-alloted",
+        "fix/remove-aud-check-from-jwt-validation",
+        "main"
+      ]
+    },
+    {
+      "sha": "5aa33baf8af0651f8afdc9b1ac42a72d3c72d1a0",
+      "author": "gravityvi",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2026-01-28T13:42:15Z",
+      "message": "added tests and update candid",
+      "stats": {
+        "additions": 140,
+        "deletions": 11,
+        "total": 151
+      },
+      "branches": [
+        "copilot/add-total-credits-user-profile",
+        "feat/include-total-number-of-free-credits-alloted-in-subscription"
+      ]
+    },
+    {
+      "sha": "647d19fafd2f90c88fccc4b58d055de7dc789134",
+      "author": "gravityvi",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2026-01-28T12:37:16Z",
+      "message": "include total number of credits alloted in yral plan",
+      "stats": {
+        "additions": 7,
+        "deletions": 0,
+        "total": 7
+      },
+      "branches": [
+        "copilot/add-total-credits-user-profile",
+        "feat/include-total-number-of-free-credits-alloted-in-subscription"
+      ]
+    },
+    {
+      "sha": "67719d810d76fa0fc428dab9cad7bb86ebce784a",
+      "author": "gravityvi",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2026-01-28T14:51:19Z",
+      "message": "fix: candid generation script (#638)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "feat/add-bulk-methods-for-profile-details",
+        "joel/fix-accept-new-registration-guard",
+        "main"
+      ]
+    },
+    {
+      "sha": "3f8001a1e9b975f48df4390a7555cbccb8ee2f7a",
+      "author": "gravityvi",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2026-01-28T14:28:44Z",
+      "message": "feat: add total video credits allotted to YralProSubscription (#637)",
+      "stats": {
+        "additions": 147,
+        "deletions": 11,
+        "total": 158
+      },
+      "branches": [
+        "feat/add-bulk-methods-for-profile-details",
+        "fix/candid-generation-script",
+        "joel/fix-accept-new-registration-guard",
+        "main"
+      ]
+    },
+    {
+      "sha": "d2bf90524f565f19e63d36fe039d485c2bffbed0",
+      "author": "gravityvi",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2026-01-28T14:49:33Z",
+      "message": "fix candid generation script",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "fix/candid-generation-script"
+      ]
+    },
+    {
+      "sha": "f6a2bc2f5747a341c82ea4cd8af82693d630e04e",
+      "author": "gravityvi",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-28T11:51:58Z",
+      "message": "feat: refactored code and added yral pro subscription as a way to pay for ai videogen (#378)",
+      "stats": {
+        "additions": 1357,
+        "deletions": 1846,
+        "total": 3203
+      },
+      "branches": [
+        "fix/user-agent-issue-with-pro-subscription",
+        "fix/yral-pro-subscription-token-operation",
+        "joel/ai-video-detector",
+        "joel/apps-script-reports-api",
+        "joel/dolr-rewards",
+        "joel/fix-btc-dolr-notif",
+        "joel/fix-event-ser",
+        "joel/fix-gchat-report-buttons",
+        "joel/fix-logging",
+        "joel/fix-report-env",
+        "joel/icp-swap-dolr-price-fetch",
+        "joel/ltx-intergration",
+        "joel/offchain-broken-pipe-fix",
+        "joel/phash-redis-migration",
+        "joel/profile-views-check",
+        "joel/rewards-mode",
+        "joel/upload-flow-content",
+        "main",
+        "naitik/broken_pipe_issue_fix"
+      ]
+    },
+    {
+      "sha": "d150e3938184f257d98f6cb769053f8f969d3147",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-01-28T14:58:30Z",
+      "message": "feat: update candid for user_info_service (#152)",
+      "stats": {
+        "additions": 28,
+        "deletions": 3,
+        "total": 31
+      },
+      "branches": [
+        "feat/ltx2-model",
+        "feat/update-user-info-deps",
+        "fix/update-user-info-service-candid",
+        "fix/yral-pro-subscription-token-transaction-implmentation",
+        "master",
+        "revert-153-fix/update-user-info-service-candid"
+      ]
+    },
+    {
+      "sha": "b778820d1a0a8adcf6bdf29b2467602cb592c8eb",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-01-28T14:52:30Z",
+      "message": "update candid for user_info_service",
+      "stats": {
+        "additions": 28,
+        "deletions": 3,
+        "total": 31
+      },
+      "branches": [
+        "feat/update-candid-for-user-info-service"
+      ]
+    },
+    {
       "sha": "5575f7b81392785b92290093e1005e084190fac8",
       "author": "kevin-antony-yral",
       "repository": "dolr-ai/yral-ai-chat",
@@ -850,6 +515,7 @@
       },
       "branches": [
         "backward_chat_api",
+        "id_staging",
         "inbox_apis",
         "pn_inbox",
         "staging",
@@ -869,6 +535,7 @@
       },
       "branches": [
         "fix_pragma_optimize",
+        "id_staging",
         "indempotency_msg_fix",
         "main",
         "send_msg_rogue",
@@ -889,6 +556,7 @@
       },
       "branches": [
         "fix_pragma_optimize",
+        "id_staging",
         "indempotency_msg_fix",
         "main_deployment_fixes",
         "main",
@@ -909,6 +577,7 @@
         "total": 12
       },
       "branches": [
+        "id_staging",
         "indempotency_msg_fix",
         "main",
         "send_msg_rogue",
@@ -917,55 +586,114 @@
       ]
     },
     {
-      "sha": "5e0d8c0db8fe1336d23d2afef27f4d92d31617c2",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-billing",
-      "timestamp": "2026-01-28T15:16:07Z",
-      "message": "feat: add total credits allotted",
+      "sha": "dbfbaadaf74ef5324883d26871aad5ef80089d86",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-28T18:00:53Z",
+      "message": "Update profileDetailsV6 to profileDetailsV7 (#813)",
       "stats": {
-        "additions": 16,
-        "deletions": 32,
-        "total": 48
+        "additions": 355,
+        "deletions": 221,
+        "total": 576
       },
       "branches": [
-        "feat/add-sentry-setup",
-        "main"
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "fix/ios-load-time",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "saikatdas0790-patch-1",
+        "test/force-update"
       ]
     },
     {
-      "sha": "92a2a1ddffbe7dbcd31eb506b4eefae551b60450",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-billing",
-      "timestamp": "2026-01-28T15:10:29Z",
-      "message": "fix consts file",
+      "sha": "8231d2e5205ccac86c17419c25480606dccafc29",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-28T12:54:43Z",
+      "message": "Implements subscription screens and touch point in account screen (#808)",
+      "stats": {
+        "additions": 2829,
+        "deletions": 110,
+        "total": 2939
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "fix/ios-load-time",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "73f4eb768b487f255aa697274d3ad5c12e91f603",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-01-28T16:15:02Z",
+      "message": "fix: sync user_info_service candid with deployed canister (#153)",
       "stats": {
         "additions": 1,
-        "deletions": 0,
-        "total": 1
+        "deletions": 4,
+        "total": 5
       },
       "branches": [
-        "feat/add-sentry-setup",
-        "feat/add-total-credits-alloted",
-        "main"
+        "feat/ltx2-model",
+        "feat/update-user-info-deps",
+        "fix/yral-pro-subscription-token-transaction-implmentation",
+        "master",
+        "revert-153-fix/update-user-info-service-candid"
       ]
     },
     {
-      "sha": "7a842738b72b94d057bda74b2f31004a151fee47",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-billing",
-      "timestamp": "2026-01-28T15:04:53Z",
-      "message": "add total credits alloted",
+      "sha": "3818cfc171e0904089de377c2caa81d374680eeb",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-01-28T16:12:46Z",
+      "message": "fix: sync user_info_service candid with deployed canister",
       "stats": {
-        "additions": 15,
-        "deletions": 32,
-        "total": 47
+        "additions": 1,
+        "deletions": 4,
+        "total": 5
       },
       "branches": [
-        "feat/add-sentry-setup",
-        "feat/add-total-credits-alloted",
-        "main"
+        "fix/update-user-info-service-candid"
+      ]
+    },
+    {
+      "sha": "877602108a9571acf64e3283727f29892c124940",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-28T15:16:17Z",
+      "message": "Merge pull request #810 from dolr-ai/increase-feed-batch-size",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "fix/ios-load-time",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "saikatdas0790-patch-1",
+        "test/force-update"
       ]
     }
   ],
-  "commit_count": 55
+  "commit_count": 35
 }

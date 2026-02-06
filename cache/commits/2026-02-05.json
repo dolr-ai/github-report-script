@@ -1,6 +1,6 @@
 {
   "date": "2026-02-05",
-  "cached_at": "2026-02-06T06:48:34.927697Z",
+  "cached_at": "2026-02-06T07:20:00.985089Z",
   "commits": [
     {
       "sha": "7b847b2d88a18eb15db1c2a5dcf52a654965d8e6",
@@ -44,7 +44,8 @@
         "total": 18
       },
       "branches": [
-        "main"
+        "main",
+        "push-event-based"
       ]
     },
     {
@@ -59,7 +60,8 @@
         "total": 2673
       },
       "branches": [
-        "main"
+        "main",
+        "push-event-based"
       ]
     },
     {
@@ -74,7 +76,8 @@
         "total": 86
       },
       "branches": [
-        "main"
+        "main",
+        "push-event-based"
       ]
     },
     {
@@ -89,9 +92,127 @@
         "total": 1528
       },
       "branches": [
-        "main"
+        "main",
+        "push-event-based"
+      ]
+    },
+    {
+      "sha": "418b7deea1c6b73c85ad958b32f5c55389b081f9",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-05T15:24:54Z",
+      "message": "fix: Fixes develop build (#850)",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "fix-video-reporting",
+        "release/android-2.6.5"
+      ]
+    },
+    {
+      "sha": "7b4a9fa641e67c2ee0768375a8f6fd6f3c865aec",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-05T15:09:52Z",
+      "message": "Feature/torunament improvements (#849)",
+      "stats": {
+        "additions": 1123,
+        "deletions": 102,
+        "total": 1225
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "fix-video-reporting",
+        "release/android-2.6.5"
+      ]
+    },
+    {
+      "sha": "745a4c134d990882f9830383922ed8349703de0b",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-05T15:56:23Z",
+      "message": "fix: Sends correct event type for how to play event",
+      "stats": {
+        "additions": 16,
+        "deletions": 0,
+        "total": 16
+      },
+      "branches": [
+        "release/android-2.6.5"
+      ]
+    },
+    {
+      "sha": "95a21bd2c3002adf0a6c5e83297e2f5cc67ea78e",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-05T09:07:19Z",
+      "message": "add logging capabilities to PlaybackEventReporter (#844)",
+      "stats": {
+        "additions": 177,
+        "deletions": 1,
+        "total": 178
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "fix-video-reporting",
+        "release/android-2.6.5"
+      ]
+    },
+    {
+      "sha": "bb791ebf9f03a95ff6d72f9d39aec4854d7042dd",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-05T21:29:31Z",
+      "message": "add surfaceId validation to unbindSurface in PlaybackCoordinator",
+      "stats": {
+        "additions": 19,
+        "deletions": 6,
+        "total": 25
+      },
+      "branches": [
+        "fix-video-reporting"
+      ]
+    },
+    {
+      "sha": "e129b34bba57e078edb48fc4259e0227a6d3ee29",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-05T20:57:07Z",
+      "message": "extracts video feed alignment logic into a common `FeedAlignmentPlan` helper to unify state manageme",
+      "stats": {
+        "additions": 151,
+        "deletions": 50,
+        "total": 201
+      },
+      "branches": [
+        "fix-video-reporting"
+      ]
+    },
+    {
+      "sha": "08f27f4802a0924dc06c5b9b6d6a7918ab3a9b23",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-05T20:43:06Z",
+      "message": "improve playback state synchronization when updating video feed indices and IDs",
+      "stats": {
+        "additions": 67,
+        "deletions": 0,
+        "total": 67
+      },
+      "branches": [
+        "fix-video-reporting"
       ]
     }
   ],
-  "commit_count": 6
+  "commit_count": 13
 }

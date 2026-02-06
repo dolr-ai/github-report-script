@@ -25,18 +25,24 @@ class TestDataProcessor:
             'date': '2026-01-01',
             'commits': [
                 {
+                    'sha': 'abc123',
                     'author': 'user1',
                     'repository': 'dolr-ai/repo1',
+                    'branches': ['main'],
                     'stats': {'additions': 100, 'deletions': 50, 'total': 150}
                 },
                 {
+                    'sha': 'def456',
                     'author': 'user1',
                     'repository': 'dolr-ai/repo2',
+                    'branches': ['main'],
                     'stats': {'additions': 200, 'deletions': 75, 'total': 275}
                 },
                 {
+                    'sha': 'ghi789',
                     'author': 'user2',
                     'repository': 'dolr-ai/repo1',
+                    'branches': ['main'],
                     'stats': {'additions': 50, 'deletions': 25, 'total': 75}
                 }
             ]

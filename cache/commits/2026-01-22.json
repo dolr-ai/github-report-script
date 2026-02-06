@@ -1,101 +1,115 @@
 {
   "date": "2026-01-22",
-  "cached_at": "2026-02-03T21:22:19.981108Z",
+  "cached_at": "2026-02-06T07:05:28.889213Z",
   "commits": [
     {
-      "sha": "3b80ec860a6a3a2a5bfd91845fbfd3c5117c471a",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/hot-or-not-backend-canister",
-      "timestamp": "2026-01-22T05:13:52Z",
-      "message": "feat: add v2 registration method with optional owner parameter for bo\u2026 (#636)",
+      "sha": "5e4334282f7f88a224c85ba18271ee5058862347",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-01-22T12:16:39Z",
+      "message": "fix: external account id in webhook",
       "stats": {
-        "additions": 237,
-        "deletions": 14,
-        "total": 251
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
       },
       "branches": [
-        "copilot/add-total-credits-user-profile",
-        "feat/add-bulk-methods-for-profile-details",
-        "feat/include-total-number-of-free-credits-alloted-in-subscription",
-        "fix/candid-generation-script",
-        "joel/fix-accept-new-registration-guard",
+        "feat/add-routes-to-update-user-credits",
+        "feat/add-sentry-setup",
+        "feat/add-total-credits-alloted",
+        "fix/remove-aud-check-from-jwt-validation",
         "main"
       ]
     },
     {
-      "sha": "fa466ff1580625cb3c59e925af69fd71d2d317d4",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
-      "timestamp": "2026-01-22T16:39:12Z",
-      "message": "fix: certificate upload on fly",
+      "sha": "913971599ac573f11df9f3e733245321d4c3051d",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-01-22T11:32:31Z",
+      "message": "fix: diesel insert query",
       "stats": {
-        "additions": 7,
-        "deletions": 7,
-        "total": 14
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
       },
       "branches": [
-        "naitik/migrate_reads_to_dragonfly"
+        "feat/add-routes-to-update-user-credits",
+        "feat/add-sentry-setup",
+        "feat/add-total-credits-alloted",
+        "fix/remove-aud-check-from-jwt-validation",
+        "main"
       ]
     },
     {
-      "sha": "bee1e3f7fabd6e28247380d786abf05c337fa510",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
-      "timestamp": "2026-01-22T14:58:57Z",
-      "message": "fix: db init feature",
+      "sha": "536c19b5ce46cc9e901ecf0e53c5f1f1121db025",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-01-22T11:01:37Z",
+      "message": "fix: key for changing subscription status in user info canister",
       "stats": {
-        "additions": 26,
-        "deletions": 20,
-        "total": 46
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
       },
       "branches": [
-        "naitik/migrate_reads_to_dragonfly"
+        "feat/add-routes-to-update-user-credits",
+        "feat/add-sentry-setup",
+        "feat/add-total-credits-alloted",
+        "fix/remove-aud-check-from-jwt-validation",
+        "main"
       ]
     },
     {
-      "sha": "a271d3aee226afa2ab1673b2f0b34e9ab2d2f14e",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
-      "timestamp": "2026-01-22T14:20:48Z",
-      "message": "added read through dragonfly and removed fly proxy setup",
+      "sha": "ceeeaa87f95ec029789fc4d274852993eabcaacd",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-01-22T08:58:42Z",
+      "message": "use external obfuscated external account id",
       "stats": {
-        "additions": 37,
-        "deletions": 243,
-        "total": 280
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
       },
       "branches": [
-        "naitik/migrate_reads_to_dragonfly"
+        "feat/add-routes-to-update-user-credits",
+        "feat/add-sentry-setup",
+        "feat/add-total-credits-alloted",
+        "fix/remove-aud-check-from-jwt-validation",
+        "main"
       ]
     },
     {
-      "sha": "dd9bf52d14370ee64752457153fcbac9833b9af9",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
-      "timestamp": "2026-01-22T11:17:19Z",
-      "message": "Merge branch 'main' into naitik/migration_to_dragonfly_redis",
+      "sha": "e118b09fcae88503cd0576dd20d737c322d3b4fd",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-01-22T07:34:49Z",
+      "message": "fix: google play acknowledgement endpoint",
       "stats": {
-        "additions": 4,
-        "deletions": 4,
-        "total": 8
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
       },
       "branches": [
-        "naitik/migrate_reads_to_dragonfly",
-        "naitik/migration_to_dragonfly_redis"
+        "feat/add-routes-to-update-user-credits",
+        "feat/add-sentry-setup",
+        "feat/add-total-credits-alloted",
+        "fix/remove-aud-check-from-jwt-validation",
+        "main"
       ]
     },
     {
-      "sha": "45f323504998900446452b21a96b7ebfb5f37875",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
-      "timestamp": "2026-01-22T16:43:46Z",
-      "message": "fix: cert upload on fly",
+      "sha": "7fdd8e51f82b5d9e2469b9d3c7f8a8b8a5c57c80",
+      "author": "jay-dhanwant-yral",
+      "repository": "dolr-ai/ai-feed-recommendation-system",
+      "timestamp": "2026-01-22T06:33:45Z",
+      "message": "Merge pull request #6 from dolr-ai/stage",
       "stats": {
-        "additions": 6,
-        "deletions": 6,
-        "total": 12
+        "additions": 363,
+        "deletions": 27,
+        "total": 390
       },
       "branches": [
-        "naitik/migration_to_dragonfly_redis"
+        "main"
       ]
     },
     {
@@ -115,6 +129,7 @@
         "fix/gchat-oauth-for-report-buttons",
         "fix/user-agent-issue-with-pro-subscription",
         "fix/yral-pro-subscription-token-operation",
+        "joel/ai-video-detector",
         "joel/apps-script-reports-api",
         "joel/dolr-rewards",
         "joel/fix-btc-dolr-notif",
@@ -125,6 +140,7 @@
         "joel/fix-report-env",
         "joel/fix-reports",
         "joel/icp-swap-dolr-price-fetch",
+        "joel/ltx-intergration",
         "joel/metric-server-cleanup",
         "joel/offchain-broken-pipe-fix",
         "joel/phash-redis-migration",
@@ -156,6 +172,7 @@
         "fix/gchat-oauth-for-report-buttons",
         "fix/user-agent-issue-with-pro-subscription",
         "fix/yral-pro-subscription-token-operation",
+        "joel/ai-video-detector",
         "joel/apps-script-reports-api",
         "joel/dolr-rewards",
         "joel/fix-btc-dolr-notif",
@@ -166,6 +183,7 @@
         "joel/fix-report-env",
         "joel/fix-reports",
         "joel/icp-swap-dolr-price-fetch",
+        "joel/ltx-intergration",
         "joel/metric-server-cleanup",
         "joel/offchain-broken-pipe-fix",
         "joel/phash-redis-migration",
@@ -197,6 +215,7 @@
         "fix/gchat-oauth-for-report-buttons",
         "fix/user-agent-issue-with-pro-subscription",
         "fix/yral-pro-subscription-token-operation",
+        "joel/ai-video-detector",
         "joel/apps-script-reports-api",
         "joel/dolr-rewards",
         "joel/fix-btc-dolr-notif",
@@ -207,6 +226,7 @@
         "joel/fix-report-env",
         "joel/fix-reports",
         "joel/icp-swap-dolr-price-fetch",
+        "joel/ltx-intergration",
         "joel/metric-server-cleanup",
         "joel/offchain-broken-pipe-fix",
         "joel/phash-redis-migration",
@@ -239,6 +259,7 @@
         "fix/gchat-oauth-for-report-buttons",
         "fix/user-agent-issue-with-pro-subscription",
         "fix/yral-pro-subscription-token-operation",
+        "joel/ai-video-detector",
         "joel/apps-script-reports-api",
         "joel/dolr-rewards",
         "joel/fix-btc-dolr-notif",
@@ -249,6 +270,7 @@
         "joel/fix-report-env",
         "joel/fix-reports",
         "joel/icp-swap-dolr-price-fetch",
+        "joel/ltx-intergration",
         "joel/metric-server-cleanup",
         "joel/offchain-broken-pipe-fix",
         "joel/phash-fix",
@@ -283,6 +305,7 @@
         "fix/gchat-oauth-for-report-buttons",
         "fix/user-agent-issue-with-pro-subscription",
         "fix/yral-pro-subscription-token-operation",
+        "joel/ai-video-detector",
         "joel/apps-script-reports-api",
         "joel/dolr-rewards",
         "joel/fix-btc-dolr-notif",
@@ -293,6 +316,7 @@
         "joel/fix-report-env",
         "joel/fix-reports",
         "joel/icp-swap-dolr-price-fetch",
+        "joel/ltx-intergration",
         "joel/metric-server-cleanup",
         "joel/offchain-broken-pipe-fix",
         "joel/phash-fix",
@@ -311,200 +335,25 @@
       ]
     },
     {
-      "sha": "8314a86aca0d2cb52f398215b5028495e73058fd",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-22T12:12:37Z",
-      "message": "Merge remote-tracking branch 'origin/main' into naitik/migrate_reads_to_dragonfly",
+      "sha": "3b80ec860a6a3a2a5bfd91845fbfd3c5117c471a",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2026-01-22T05:13:52Z",
+      "message": "feat: add v2 registration method with optional owner parameter for bo\u2026 (#636)",
       "stats": {
-        "additions": 188,
-        "deletions": 101,
-        "total": 289
-      },
-      "branches": [
-        "naitik/migrate_reads_to_dragonfly"
-      ]
-    },
-    {
-      "sha": "0d3ebedfe9e279de0f28a29da6afb97dc29f04bd",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-22T12:09:23Z",
-      "message": "fix: removed code for fly yral-auth redis and  fixes in compose file",
-      "stats": {
-        "additions": 0,
-        "deletions": 49,
-        "total": 49
-      },
-      "branches": [
-        "naitik/migrate_reads_to_dragonfly"
-      ]
-    },
-    {
-      "sha": "b7131933f699bfbea8ebf804eaa502245a6a0abc",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/yral-metadata",
-      "timestamp": "2026-01-22T08:46:06Z",
-      "message": "fix: renaming for clearity",
-      "stats": {
-        "additions": 4,
-        "deletions": 4,
-        "total": 8
-      },
-      "branches": [
-        "naitik/migrate-reads-to-dragonfly"
-      ]
-    },
-    {
-      "sha": "562d93a6b69066305d861524aa482d53712ba394",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/yral-metadata",
-      "timestamp": "2026-01-22T08:03:26Z",
-      "message": "fix: removed fly proxy setup",
-      "stats": {
-        "additions": 1,
-        "deletions": 30,
-        "total": 31
-      },
-      "branches": [
-        "naitik/migrate-reads-to-dragonfly"
-      ]
-    },
-    {
-      "sha": "910afbebccea776a83dbf7e8143b4eb21999e862",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-22T16:51:33Z",
-      "message": "fix: Fixes state change issue",
-      "stats": {
-        "additions": 74,
-        "deletions": 13,
-        "total": 87
-      },
-      "branches": [
-        "fix/state-button"
-      ]
-    },
-    {
-      "sha": "f3c64e3c7808db12e6d6ba48844c5d46a71ab187",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-01-22T19:10:33Z",
-      "message": "migrated reads to dragonfly",
-      "stats": {
-        "additions": 14,
-        "deletions": 237,
+        "additions": 237,
+        "deletions": 14,
         "total": 251
       },
       "branches": [
-        "naitik/migrate_reads_to_dragonfly"
-      ]
-    },
-    {
-      "sha": "5e4334282f7f88a224c85ba18271ee5058862347",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-billing",
-      "timestamp": "2026-01-22T12:16:39Z",
-      "message": "fix: external account id in webhook",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "feat/add-routes-to-update-user-credits",
-        "feat/add-sentry-setup",
-        "feat/add-total-credits-alloted",
-        "main"
-      ]
-    },
-    {
-      "sha": "913971599ac573f11df9f3e733245321d4c3051d",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-billing",
-      "timestamp": "2026-01-22T11:32:31Z",
-      "message": "fix: diesel insert query",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "feat/add-routes-to-update-user-credits",
-        "feat/add-sentry-setup",
-        "feat/add-total-credits-alloted",
-        "main"
-      ]
-    },
-    {
-      "sha": "536c19b5ce46cc9e901ecf0e53c5f1f1121db025",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-billing",
-      "timestamp": "2026-01-22T11:01:37Z",
-      "message": "fix: key for changing subscription status in user info canister",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "feat/add-routes-to-update-user-credits",
-        "feat/add-sentry-setup",
-        "feat/add-total-credits-alloted",
-        "main"
-      ]
-    },
-    {
-      "sha": "ceeeaa87f95ec029789fc4d274852993eabcaacd",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-billing",
-      "timestamp": "2026-01-22T08:58:42Z",
-      "message": "use external obfuscated external account id",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "feat/add-routes-to-update-user-credits",
-        "feat/add-sentry-setup",
-        "feat/add-total-credits-alloted",
-        "main"
-      ]
-    },
-    {
-      "sha": "e118b09fcae88503cd0576dd20d737c322d3b4fd",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-billing",
-      "timestamp": "2026-01-22T07:34:49Z",
-      "message": "fix: google play acknowledgement endpoint",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "feat/add-routes-to-update-user-credits",
-        "feat/add-sentry-setup",
-        "feat/add-total-credits-alloted",
-        "main"
-      ]
-    },
-    {
-      "sha": "7fdd8e51f82b5d9e2469b9d3c7f8a8b8a5c57c80",
-      "author": "jay-dhanwant-yral",
-      "repository": "dolr-ai/ai-feed-recommendation-system",
-      "timestamp": "2026-01-22T06:33:45Z",
-      "message": "Merge pull request #6 from dolr-ai/stage",
-      "stats": {
-        "additions": 363,
-        "deletions": 27,
-        "total": 390
-      },
-      "branches": [
+        "copilot/add-total-credits-user-profile",
+        "feat/add-bulk-methods-for-profile-details",
+        "feat/include-total-number-of-free-credits-alloted-in-subscription",
+        "fix/candid-generation-script",
+        "joel/fix-accept-new-registration-guard",
         "main"
       ]
     }
   ],
-  "commit_count": 23
+  "commit_count": 12
 }

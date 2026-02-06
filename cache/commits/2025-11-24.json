@@ -1,0 +1,694 @@
+{
+  "date": "2025-11-24",
+  "cached_at": "2026-02-06T07:02:07.440877Z",
+  "commits": [
+    {
+      "sha": "14e3eae71c6d46e689a694dfd9519bce9f3d477a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-24T18:32:18Z",
+      "message": "Update workflow logic for null inputs and clarify dry_run",
+      "stats": {
+        "additions": 8,
+        "deletions": 8,
+        "total": 16
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e31535ba5bef601c72991f723ac4f1d6fa93f976",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-24T18:29:31Z",
+      "message": "Refactor workflow for fleet management and add playbook options",
+      "stats": {
+        "additions": 66,
+        "deletions": 8,
+        "total": 74
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "dad57a233f8f509a18481208fd5d77e4f5a3af04",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-24T18:24:28Z",
+      "message": "Add SSH security audit playbook and update docs and scripts",
+      "stats": {
+        "additions": 132,
+        "deletions": 81,
+        "total": 213
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b581512f909f3e8d3a863acf0d2b3fa3bc713ba0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-24T18:05:54Z",
+      "message": "Add Docker setup playbook and update docs and scripts",
+      "stats": {
+        "additions": 176,
+        "deletions": 79,
+        "total": 255
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3d2f942f1dc24a67962039fcf11bc607bdfc6031",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-24T18:00:35Z",
+      "message": "Display root user's authorized SSH keys in debug output",
+      "stats": {
+        "additions": 26,
+        "deletions": 0,
+        "total": 26
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "5c5a250b6ee0b5d506fb21690c16af5d608b2c03",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-24T17:55:46Z",
+      "message": "Harden SSH by disabling password auth and enforcing pubkey auth",
+      "stats": {
+        "additions": 38,
+        "deletions": 0,
+        "total": 38
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "958e8350140b71b998888d1ef6519aaaa6ddf45b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-24T17:50:34Z",
+      "message": "Trigger system update workflow on push to main",
+      "stats": {
+        "additions": 5,
+        "deletions": 1,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b0bdbb4aad2a837502e5435cadc1d6fca6db7d53",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-24T17:48:03Z",
+      "message": "Add Docker installation steps to system update playbook",
+      "stats": {
+        "additions": 63,
+        "deletions": 0,
+        "total": 63
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "bd3ebd35c27d3d6b99e5e5333a25202657ea7da4",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-24T17:43:42Z",
+      "message": "Remove Netdata uninstallation tasks from system update playbook",
+      "stats": {
+        "additions": 0,
+        "deletions": 78,
+        "total": 78
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9eeb4f6c055b54f3de14738565882474176baff6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-24T17:35:28Z",
+      "message": "Remove Netdata and clean up related files and users",
+      "stats": {
+        "additions": 78,
+        "deletions": 0,
+        "total": 78
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "64b921676c00ed5974b2a3857842e443e24b9d75",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-24T17:25:42Z",
+      "message": "Switch to enable_reboot input and logic in system update workflow",
+      "stats": {
+        "additions": 18,
+        "deletions": 6,
+        "total": 24
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "04ad18620cd46a45fd2c133abce298876a7d8ebb",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-24T17:14:53Z",
+      "message": "Disable privilege escalation and update host timeout settings",
+      "stats": {
+        "additions": 2,
+        "deletions": 5,
+        "total": 7
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c85f8b2040309a6cc8d01200533ac0d54b27719f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-24T16:59:26Z",
+      "message": "Update Ansible config and system update playbook",
+      "stats": {
+        "additions": 9,
+        "deletions": 4,
+        "total": 13
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "af931393cefc4f709b0902dc57fe59b7b22cd85d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-24T16:54:47Z",
+      "message": "Update SSH key secret name in workflow and README",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4fbefdac416ec82015a7024d56309c21f9d42ce3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-24T16:49:23Z",
+      "message": "Use double quotes for all YAML strings in workflow",
+      "stats": {
+        "additions": 10,
+        "deletions": 11,
+        "total": 21
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "aff77d4a3489f0af51ada1943007d727114c8024",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-24T16:46:55Z",
+      "message": "Add Ansible automation for Hetzner bare metal fleet",
+      "stats": {
+        "additions": 776,
+        "deletions": 0,
+        "total": 776
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "af7c8e80ae2de86ad98c0314d1da692eb1383875",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-24T11:05:00Z",
+      "message": "chore: Increments ios app version (#665)",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/download-video",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/test-install-referrers",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "ad3ef68de8ea12f509bc86efb67fe2ccb50c260f",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-24T11:05:15Z",
+      "message": "Merge pull request #666 from dolr-ai/release/3.0.0",
+      "stats": {
+        "additions": 265,
+        "deletions": 728,
+        "total": 993
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/subscriptions-ui",
+        "fix/ios-load-time",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "f55868becdfb6b74d3bb9cfbff5790fbd4b16516",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/dragonfly-bare-metal",
+      "timestamp": "2025-11-24T22:31:18Z",
+      "message": "Update docker-compose.yml",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "feature/kevin/scratchpad_tools",
+        "main",
+        "newconfig",
+        "ssd-tier"
+      ]
+    },
+    {
+      "sha": "cd05c4c16aed71dd90557199d742004f49a8518f",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/dragonfly-bare-metal",
+      "timestamp": "2025-11-24T22:30:53Z",
+      "message": "Update docker-compose.yml",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "feature/kevin/scratchpad_tools",
+        "main",
+        "newconfig",
+        "ssd-tier"
+      ]
+    },
+    {
+      "sha": "b3eb71eaab6434c0d09d8da1460c66f6e49a78d4",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/dragonfly-bare-metal",
+      "timestamp": "2025-11-24T22:30:27Z",
+      "message": "Update docker-compose.yml",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "feature/kevin/scratchpad_tools",
+        "main",
+        "newconfig",
+        "ssd-tier"
+      ]
+    },
+    {
+      "sha": "380c787f907084f7ded9c5814a33cfec9b3c345a",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/dragonfly-bare-metal",
+      "timestamp": "2025-11-24T22:29:59Z",
+      "message": "Update docker-compose.yml",
+      "stats": {
+        "additions": 15,
+        "deletions": 15,
+        "total": 30
+      },
+      "branches": [
+        "feature/kevin/scratchpad_tools",
+        "main",
+        "newconfig",
+        "ssd-tier"
+      ]
+    },
+    {
+      "sha": "feb2e49ce1557572c0634adccba38adb498a29db",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/dragonfly-bare-metal",
+      "timestamp": "2025-11-24T22:29:25Z",
+      "message": "Unhelpful comments rm",
+      "stats": {
+        "additions": 26,
+        "deletions": 38,
+        "total": 64
+      },
+      "branches": [
+        "feature/kevin/scratchpad_tools",
+        "main",
+        "newconfig",
+        "ssd-tier"
+      ]
+    },
+    {
+      "sha": "4557b487fc04e8b0b2277a4fd7b033fc8693bdf5",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-24T12:45:06Z",
+      "message": "Implements login as common component of root to be used by all screen (#660)",
+      "stats": {
+        "additions": 434,
+        "deletions": 618,
+        "total": 1052
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/download-video",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/test-install-referrers",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "65756279a6e2cc1fe51198754fa5b073f280d640",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-24T18:35:06Z",
+      "message": "build: Increments build number for uploading app for test release",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "release/test-install-referrers"
+      ]
+    },
+    {
+      "sha": "40183a23ab0fd03be3e4068a868649d40518d41a",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-24T18:34:26Z",
+      "message": "build: Enhances code to track referral event correctly",
+      "stats": {
+        "additions": 28,
+        "deletions": 23,
+        "total": 51
+      },
+      "branches": [
+        "release/test-install-referrers"
+      ]
+    },
+    {
+      "sha": "3ff2830afa446ea9dba146a26f4be5015e6c7af8",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-24T17:55:42Z",
+      "message": "fix: Handles utmContent as jsonObject instead of jsonPrimitive in case of meta referrer",
+      "stats": {
+        "additions": 256,
+        "deletions": 8,
+        "total": 264
+      },
+      "branches": [
+        "release/test-install-referrers"
+      ]
+    },
+    {
+      "sha": "51da583fc0ec923653f1bb7dbb399d8406d0b912",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-24T16:22:25Z",
+      "message": "code review: Enhances code",
+      "stats": {
+        "additions": 23,
+        "deletions": 20,
+        "total": 43
+      },
+      "branches": [
+        "release/test-install-referrers"
+      ]
+    },
+    {
+      "sha": "f43fa429d48c3d2a227c347f87b02b621090610f",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-24T15:54:06Z",
+      "message": "build: Updates referral received event to be tracked only once per install",
+      "stats": {
+        "additions": 11,
+        "deletions": 1,
+        "total": 12
+      },
+      "branches": [
+        "release/test-install-referrers"
+      ]
+    },
+    {
+      "sha": "4cdfdfaefd1012f7d95fe5cac604dc304ed203f2",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-24T15:54:06Z",
+      "message": "build: Adds event for referral received",
+      "stats": {
+        "additions": 43,
+        "deletions": 1,
+        "total": 44
+      },
+      "branches": [
+        "release/test-install-referrers"
+      ]
+    },
+    {
+      "sha": "c99821981f9e731a7ee46e7f9847506f218dcbad",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-24T15:54:06Z",
+      "message": "build: Handle meta referrer info as query parameters",
+      "stats": {
+        "additions": 161,
+        "deletions": 83,
+        "total": 244
+      },
+      "branches": [
+        "release/test-install-referrers"
+      ]
+    },
+    {
+      "sha": "518d22c9c91ec1b46cf95fed41b13b996acb665e",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-24T15:54:06Z",
+      "message": "build: Updates MetaInstallReferrerAttribution to parse data from root level",
+      "stats": {
+        "additions": 332,
+        "deletions": 42,
+        "total": 374
+      },
+      "branches": [
+        "release/test-install-referrers"
+      ]
+    },
+    {
+      "sha": "7caaa332982d24a813fed099a22f0e765b721b00",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-24T15:54:06Z",
+      "message": "build: Adds install referrer fetcher from meta apps directly before install referrer api",
+      "stats": {
+        "additions": 177,
+        "deletions": 32,
+        "total": 209
+      },
+      "branches": [
+        "release/test-install-referrers"
+      ]
+    },
+    {
+      "sha": "b977947e626e05cad82733835db39fdd5e0672f1",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-24T15:54:06Z",
+      "message": "build: Updates log statement",
+      "stats": {
+        "additions": 1,
+        "deletions": 3,
+        "total": 4
+      },
+      "branches": [
+        "release/test-install-referrers"
+      ]
+    },
+    {
+      "sha": "96312e088321d137d27b947b3f79620ab7f9ae03",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-24T15:54:06Z",
+      "message": "build: Updates injecting meta install referrer decryption key to build config from sys env",
+      "stats": {
+        "additions": 11,
+        "deletions": 9,
+        "total": 20
+      },
+      "branches": [
+        "release/test-install-referrers"
+      ]
+    },
+    {
+      "sha": "914476d20fccd18e1cfd8a9f383e16347fb3f267",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-24T15:54:06Z",
+      "message": "build: Updates logger in InstallReferrerAttribution to push logs to sentry for debugging",
+      "stats": {
+        "additions": 55,
+        "deletions": 25,
+        "total": 80
+      },
+      "branches": [
+        "release/test-install-referrers"
+      ]
+    },
+    {
+      "sha": "162d9ad11ac53e8a49e47527103a66487d180508",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-24T15:54:05Z",
+      "message": "build: Adds meta install referrer attribution handling",
+      "stats": {
+        "additions": 375,
+        "deletions": 22,
+        "total": 397
+      },
+      "branches": [
+        "release/test-install-referrers"
+      ]
+    },
+    {
+      "sha": "c55ec598946a943ad440acae24ac7993560f483c",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-24T15:54:05Z",
+      "message": "build: Updates code to set utm params as user properties",
+      "stats": {
+        "additions": 34,
+        "deletions": 35,
+        "total": 69
+      },
+      "branches": [
+        "release/test-install-referrers"
+      ]
+    },
+    {
+      "sha": "2acd19b23c6543464c002d3e6d15e9215dde4ef5",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-24T15:54:05Z",
+      "message": "build: Implements InstallReferrerAttribution using com.android.installreferrer",
+      "stats": {
+        "additions": 188,
+        "deletions": 0,
+        "total": 188
+      },
+      "branches": [
+        "release/test-install-referrers"
+      ]
+    },
+    {
+      "sha": "72ae05b9ef4c73c230c49452e3ecaeb7120c7a8e",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-24T15:54:05Z",
+      "message": "build: Implements UtmAttribution in branch links",
+      "stats": {
+        "additions": 203,
+        "deletions": 3,
+        "total": 206
+      },
+      "branches": [
+        "release/test-install-referrers"
+      ]
+    },
+    {
+      "sha": "173b83b151b4e36a86d1888ef477faec050089b6",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-24T15:54:05Z",
+      "message": "build: Improves channel detection",
+      "stats": {
+        "additions": 8,
+        "deletions": 1,
+        "total": 9
+      },
+      "branches": [
+        "release/test-install-referrers"
+      ]
+    }
+  ],
+  "commit_count": 41
+}

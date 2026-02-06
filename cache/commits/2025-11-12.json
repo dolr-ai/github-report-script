@@ -1,0 +1,33 @@
+{
+  "date": "2025-11-12",
+  "cached_at": "2026-02-06T07:00:34.369472Z",
+  "commits": [
+    {
+      "sha": "bdb35d4f4e0ce99fceeb5fb8e9cd290575c7a23e",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-11-12T05:18:01Z",
+      "message": "fix: avoid throwing errors on already registered session (#629)",
+      "stats": {
+        "additions": 6,
+        "deletions": 6,
+        "total": 12
+      },
+      "branches": [
+        "copilot/add-total-credits-user-profile",
+        "feat/add-bulk-methods-for-profile-details",
+        "feat/add-subscription-plan-support",
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits",
+        "feat/include-total-number-of-free-credits-alloted-in-subscription",
+        "fix/candid-generation-script",
+        "joel/add_bot_account_addition",
+        "joel/fix-accept-new-registration-guard",
+        "joel/notif-store-approve-variant",
+        "joel/nsfw-info-for-pfp",
+        "main",
+        "set-ai-influencers"
+      ]
+    }
+  ],
+  "commit_count": 1
+}

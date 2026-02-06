@@ -11,14 +11,6 @@
   ],
   "repo_count": 2,
   "branch_breakdown": {
-    "dolr-ai/hot-or-not-backend-canister": {
-      "main": {
-        "additions": 693,
-        "deletions": 82,
-        "total_loc": 775,
-        "commit_count": 1
-      }
-    },
     "dolr-ai/yral-common": {
       "master": {
         "additions": 31,
@@ -26,7 +18,15 @@
         "total_loc": 33,
         "commit_count": 1
       }
+    },
+    "dolr-ai/hot-or-not-backend-canister": {
+      "main": {
+        "additions": 693,
+        "deletions": 82,
+        "total_loc": 775,
+        "commit_count": 1
+      }
     }
   },
-  "processed_at": "2026-02-05T09:19:15.663977Z"
+  "processed_at": "2026-02-06T07:06:58.620618Z"
 }

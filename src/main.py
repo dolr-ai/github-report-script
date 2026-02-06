@@ -2,11 +2,18 @@
 """
 GitHub Report Script - Main Entry Point
 
-No command-line arguments needed. All configuration is in src/config.py
-Run from project root: python src/main.py
+Configuration can be set in src/config.py or overridden via command-line arguments.
+
+Examples:
+    python src/main.py                          # Use config.py settings (default: fetch and chart)
+    python src/main.py --mode fetch             # Fetch only
+    python src/main.py --mode refresh --days 90 # Refresh last 90 days
+    python src/main.py --mode chart             # Generate charts only
+    python src/main.py --mode status            # Show status
 """
 import sys
 import os
+import argparse
 from datetime import datetime
 import logging
 
@@ -245,8 +252,64 @@ def cmd_fetch_and_chart():
     print("=" * 70)
 
 
+def parse_args():
+    """Parse command-line arguments"""
+    parser = argparse.ArgumentParser(
+        description='GitHub Report Script - Fetch commits and generate productivity reports',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  python src/main.py                          # Default: fetch and chart last 30 days
+  python src/main.py --mode fetch             # Fetch only
+  python src/main.py --mode refresh --days 90 # Force refresh last 90 days
+  python src/main.py --mode chart             # Generate charts from existing data
+  python src/main.py --mode status            # Check cache status
+
+Note: Arguments override settings in src/config.py
+        """
+    )
+
+    parser.add_argument(
+        '--mode',
+        type=str,
+        choices=['fetch', 'refresh', 'chart', 'status', 'fetch_and_chart'],
+        help='Execution mode (default: from config.py, typically fetch_and_chart)'
+    )
+
+    parser.add_argument(
+        '--days',
+        type=int,
+        help='Number of days back to process (default: from config.py, typically 30)'
+    )
+
+    return parser.parse_args()
+
+
 def main():
     """Main entry point - runs the configured mode"""
+    # Parse command-line arguments
+    args = parse_args()
+
+    # Override config with command-line arguments
+    global MODE, DAYS_BACK
+
+    if args.mode:
+        mode_map = {
+            'fetch': ExecutionMode.FETCH,
+            'refresh': ExecutionMode.REFRESH,
+            'chart': ExecutionMode.CHART,
+            'status': ExecutionMode.STATUS,
+            'fetch_and_chart': ExecutionMode.FETCH_AND_CHART
+        }
+        MODE = mode_map[args.mode]
+        logger.info(f"Mode overridden via CLI: {MODE.value}")
+
+    if args.days:
+        import src.config as config
+        config.DAYS_BACK = args.days
+        DAYS_BACK = args.days
+        logger.info(f"DAYS_BACK overridden via CLI: {args.days}")
+
     try:
         # Validate configuration
         validate_config()

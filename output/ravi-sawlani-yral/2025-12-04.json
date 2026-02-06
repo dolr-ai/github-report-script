@@ -1,0 +1,23 @@
+{
+  "date": "2025-12-04",
+  "username": "ravi-sawlani-yral",
+  "additions": 3215,
+  "deletions": 374,
+  "total_loc": 3589,
+  "commit_count": 2,
+  "repositories": [
+    "dolr-ai/yral-billing"
+  ],
+  "repo_count": 1,
+  "branch_breakdown": {
+    "dolr-ai/yral-billing": {
+      "main": {
+        "additions": 3215,
+        "deletions": 374,
+        "total_loc": 3589,
+        "commit_count": 2
+      }
+    }
+  },
+  "processed_at": "2026-02-06T07:06:58.531071Z"
+}

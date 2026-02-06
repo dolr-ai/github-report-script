@@ -1,0 +1,661 @@
+{
+  "date": "2025-12-03",
+  "cached_at": "2026-02-06T07:02:32.673105Z",
+  "commits": [
+    {
+      "sha": "35d2947f763a1a66307803929653f1074d8a1551",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-12-03T18:27:21Z",
+      "message": "Expand workflow_dispatch options for Ansible [skip ci]",
+      "stats": {
+        "additions": 6,
+        "deletions": 0,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "26f917e77a1fd6ba567e3551a00ef40fa9f8e7cc",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-12-03T18:25:35Z",
+      "message": "Add ClickHouse keeper and shard replica hosts [skip ci]",
+      "stats": {
+        "additions": 24,
+        "deletions": 0,
+        "total": 24
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f4e5fb81fe54c35229eee8837ef9d8a4885793a0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-12-03T15:57:53Z",
+      "message": "Display raw authorized_keys lines in debug [skip ci]",
+      "stats": {
+        "additions": 2,
+        "deletions": 12,
+        "total": 14
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "95901f0021e0cff99d39a92b62086c2f6e376f01",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-12-03T15:50:23Z",
+      "message": "Improve display of existing SSH authorized_keys [skip ci]",
+      "stats": {
+        "additions": 3,
+        "deletions": 5,
+        "total": 8
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "135c7bea6f269d383da6ec741c24a51128832c8a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-12-03T15:37:58Z",
+      "message": "[skip ci] Format debug display of authorized_keys",
+      "stats": {
+        "additions": 15,
+        "deletions": 1,
+        "total": 16
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b085eea25822f9e7baf6560dcf6c3f417f5e8409",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-12-03T15:18:53Z",
+      "message": "[skip ci] Use file source for root authorized_keys",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e8b5c2a5449412f9fb0b8a13a59f0f50293c47e9",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-12-03T15:15:04Z",
+      "message": "[skip ci] Simplify authorized_keys debug output",
+      "stats": {
+        "additions": 2,
+        "deletions": 10,
+        "total": 12
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "5add84c5005f4e30fabd7f9a2d1db2bdbbf548ab",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-12-03T14:51:46Z",
+      "message": "[skip ci] Decode authorized_keys and fix comparison",
+      "stats": {
+        "additions": 5,
+        "deletions": 2,
+        "total": 7
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6a2e280249a6ea86d832b853662e59d553d0f2f4",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-12-03T14:40:32Z",
+      "message": "[skip ci] Safely replace root authorized_keys when needed",
+      "stats": {
+        "additions": 36,
+        "deletions": 11,
+        "total": 47
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f02100321df14c2df3d9f784a6666090a9d52de8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-12-03T14:07:41Z",
+      "message": "[skip ci] Harden SSH and canonicalize root keys",
+      "stats": {
+        "additions": 50,
+        "deletions": 65,
+        "total": 115
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "49c92b63b4f2b2adb1985af940a7e9825b949911",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-12-03T13:25:35Z",
+      "message": "Split root authorized_keys read into two tasks",
+      "stats": {
+        "additions": 8,
+        "deletions": 2,
+        "total": 10
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a2406be20c9bb28cbde888c33e3c510fbf557859",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-12-03T13:16:45Z",
+      "message": "Update workflow, inventory, and SSH key output",
+      "stats": {
+        "additions": 15,
+        "deletions": 5,
+        "total": 20
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4272d30b85616e3652e446ed5617d7a4c8b65564",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-12-03T12:49:51Z",
+      "message": "[skip ci] Update Ansible workflow environment options",
+      "stats": {
+        "additions": 3,
+        "deletions": 2,
+        "total": 5
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a7001327f0a4e79ea7646cec8333730eff21ad19",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-12-03T12:43:01Z",
+      "message": "[skip ci] Update inventory and Docker install docs",
+      "stats": {
+        "additions": 3,
+        "deletions": 10,
+        "total": 13
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "59eda2d23e98a8f21513e5d1c83e27c2878f7c20",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-12-03T12:11:37Z",
+      "message": "[skip ci] Add SATA and NVMe btrfs setup instructions",
+      "stats": {
+        "additions": 14,
+        "deletions": 4,
+        "total": 18
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "643055915db1f67f9e756bc5373083009b83163a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-12-03T10:14:23Z",
+      "message": "Fix formatting in readme.md for btrfs section [skip ci]",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "5bd57dda19782c7371bed67f719833b5f0f3292c",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2025-12-03T05:10:05Z",
+      "message": "feat: add SQLite migration schema files",
+      "stats": {
+        "additions": 209,
+        "deletions": 0,
+        "total": 209
+      },
+      "branches": [
+        "aioboto_implementation",
+        "backward_chat_api",
+        "beszel_ai_chat",
+        "beszel_to_main",
+        "bf_msg_sys",
+        "bf_small_num",
+        "bf_14jan",
+        "blocking-changes-fe",
+        "bugfix_database_lock",
+        "c_inf_2",
+        "chat/wip",
+        "create_influencers",
+        "debug_or_fmissue",
+        "debugging_env_check",
+        "delete_bug",
+        "docker_staging_to_main",
+        "docker_staging",
+        "enum_is_active",
+        "fix/envsubst-config-substitution",
+        "fix/envsubst-litestream-config",
+        "fix_pragma_optimize",
+        "fk_exeption_handle",
+        "further_joel_sugg",
+        "gemini_aync",
+        "gemini-nsfw-fy",
+        "i_e_error",
+        "id_staging",
+        "img_in_chat",
+        "inbox_apis",
+        "indempotency_msg_fix",
+        "infra_rl",
+        "jatin_og_prompt",
+        "jay_review",
+        "joel/optim-suggestions",
+        "jwt_in",
+        "lat_op_stage",
+        "lat_op",
+        "latencytrack_optimization",
+        "linitng",
+        "litestream_integrety",
+        "litestream_sync_interval",
+        "logs_sm_num",
+        "ls_1s",
+        "m_replica_14jan",
+        "main_deployment_fixes",
+        "main_replica_14jan",
+        "main_replica__16jan",
+        "main",
+        "mb_resource_alloc",
+        "metabase_bf2",
+        "metabase_hosting",
+        "metabase_prod",
+        "metabase_staging_rw",
+        "metabase",
+        "migrations_clear",
+        "more_op_latency",
+        "msg_type_normalization",
+        "new_deployment",
+        "nsfw_detection",
+        "nsfw_openrouter",
+        "nsfw_pre_push",
+        "pn_inbox",
+        "post-conv-10-last",
+        "postgre_db",
+        "prod_err",
+        "prod-stable",
+        "prompt_changes_astro_dating_sexed",
+        "prompt_changes_new_29_dec",
+        "revert-15-thread_to_async",
+        "revert-17-revert-15-thread_to_async",
+        "revert-27-nsfw_detection",
+        "revert-29-revert-27-nsfw_detection",
+        "revert-34-infra_rl",
+        "revert-36-revert-34-infra_rl",
+        "rm_adhoc",
+        "rm_dupli_from_context",
+        "rm_greeting_messages",
+        "s3-pvt",
+        "safety_check",
+        "schema-changes",
+        "sec-auth",
+        "send_msg_rogue",
+        "sentry_bf",
+        "sentry_everywhere",
+        "sentry_fix_stageing",
+        "sentry_fix",
+        "sentry_webhook",
+        "sentry",
+        "slow_msg",
+        "small_num_bug",
+        "sqlite_optimisations",
+        "staging",
+        "storj_integration",
+        "sys_prompt_prod",
+        "temp_fix_db_lock",
+        "test_fix_url_n_storj_k",
+        "test_robust_gc",
+        "tests-and-more",
+        "thread_to_async",
+        "truncated_response",
+        "uptime_kuma",
+        "v2-auth",
+        "wal_ckpt_bug_fix"
+      ]
+    },
+    {
+      "sha": "4edd0692ade3c283cef8a1242657cbdbef446d55",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2025-12-03T05:01:09Z",
+      "message": "litestream update",
+      "stats": {
+        "additions": 739,
+        "deletions": 66,
+        "total": 805
+      },
+      "branches": [
+        "aioboto_implementation",
+        "backward_chat_api",
+        "beszel_ai_chat",
+        "beszel_to_main",
+        "bf_msg_sys",
+        "bf_small_num",
+        "bf_14jan",
+        "blocking-changes-fe",
+        "bugfix_database_lock",
+        "c_inf_2",
+        "chat/wip",
+        "create_influencers",
+        "debug_or_fmissue",
+        "debugging_env_check",
+        "delete_bug",
+        "docker_staging_to_main",
+        "docker_staging",
+        "enum_is_active",
+        "fix/envsubst-config-substitution",
+        "fix/envsubst-litestream-config",
+        "fix_pragma_optimize",
+        "fk_exeption_handle",
+        "further_joel_sugg",
+        "gemini_aync",
+        "gemini-nsfw-fy",
+        "i_e_error",
+        "id_staging",
+        "img_in_chat",
+        "inbox_apis",
+        "indempotency_msg_fix",
+        "infra_rl",
+        "jatin_og_prompt",
+        "jay_review",
+        "joel/optim-suggestions",
+        "jwt_in",
+        "lat_op_stage",
+        "lat_op",
+        "latencytrack_optimization",
+        "linitng",
+        "litestream_integrety",
+        "litestream_sync_interval",
+        "logs_sm_num",
+        "ls_1s",
+        "m_replica_14jan",
+        "main_deployment_fixes",
+        "main_replica_14jan",
+        "main_replica__16jan",
+        "main",
+        "mb_resource_alloc",
+        "metabase_bf2",
+        "metabase_hosting",
+        "metabase_prod",
+        "metabase_staging_rw",
+        "metabase",
+        "migrations_clear",
+        "more_op_latency",
+        "msg_type_normalization",
+        "new_deployment",
+        "nsfw_detection",
+        "nsfw_openrouter",
+        "nsfw_pre_push",
+        "pn_inbox",
+        "post-conv-10-last",
+        "postgre_db",
+        "prod_err",
+        "prod-stable",
+        "prompt_changes_astro_dating_sexed",
+        "prompt_changes_new_29_dec",
+        "revert-15-thread_to_async",
+        "revert-17-revert-15-thread_to_async",
+        "revert-27-nsfw_detection",
+        "revert-29-revert-27-nsfw_detection",
+        "revert-34-infra_rl",
+        "revert-36-revert-34-infra_rl",
+        "rm_adhoc",
+        "rm_dupli_from_context",
+        "rm_greeting_messages",
+        "s3-pvt",
+        "safety_check",
+        "schema-changes",
+        "sec-auth",
+        "send_msg_rogue",
+        "sentry_bf",
+        "sentry_everywhere",
+        "sentry_fix_stageing",
+        "sentry_fix",
+        "sentry_webhook",
+        "sentry",
+        "slow_msg",
+        "small_num_bug",
+        "sqlite_optimisations",
+        "staging",
+        "storj_integration",
+        "sys_prompt_prod",
+        "temp_fix_db_lock",
+        "test_fix_url_n_storj_k",
+        "test_robust_gc",
+        "tests-and-more",
+        "thread_to_async",
+        "truncated_response",
+        "uptime_kuma",
+        "v2-auth",
+        "wal_ckpt_bug_fix"
+      ]
+    },
+    {
+      "sha": "e4c6f5fd6926268539fe399025a5a58f60f1af9f",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-12-03T15:52:41Z",
+      "message": "Autoscroll support after game play (#695)",
+      "stats": {
+        "additions": 69,
+        "deletions": 13,
+        "total": 82
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "6315ce469c1ede76a7b6c84f2bff5ed8a2d2c1f1",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-12-03T15:49:40Z",
+      "message": "Shows mandatory nudge by default for first video (#694)",
+      "stats": {
+        "additions": 16,
+        "deletions": 2,
+        "total": 18
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "74a5acfb28d0ec3b2abbb8e78f0cd3302140ef61",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-12-03T15:46:28Z",
+      "message": "Enhances LoginBottomSheet to be contextual (#691)",
+      "stats": {
+        "additions": 192,
+        "deletions": 38,
+        "total": 230
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "2e729fb7eb1b58dd6d8a476fa6b62b3dd5317bd4",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-12-03T07:29:53Z",
+      "message": "Adds billing-client dependency for BE api development (#693)",
+      "stats": {
+        "additions": 6,
+        "deletions": 0,
+        "total": 6
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "84fb5e28ab0120cc5a02f77a9e21a9b4956a14f2",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-12-03T07:29:25Z",
+      "message": "Merge pull request #692 from dolr-ai/fix/feed-bottom-overlay-crash",
+      "stats": {
+        "additions": 7,
+        "deletions": 5,
+        "total": 12
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    }
+  ],
+  "commit_count": 23
+}

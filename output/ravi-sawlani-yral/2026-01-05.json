@@ -1,32 +1,23 @@
 {
   "date": "2026-01-05",
   "username": "ravi-sawlani-yral",
-  "additions": 153,
-  "deletions": 58,
-  "total_loc": 211,
-  "commit_count": 10,
+  "additions": 20,
+  "deletions": 23,
+  "total_loc": 43,
+  "commit_count": 1,
   "repositories": [
-    "dolr-ai/hot-or-not-web-leptos-ssr",
     "dolr-ai/yral-auth-v2"
   ],
-  "repo_count": 2,
+  "repo_count": 1,
   "branch_breakdown": {
-    "dolr-ai/hot-or-not-web-leptos-ssr": {
-      "feat/use-yral-auth-phone-auth-preview-link": {
-        "additions": 5,
-        "deletions": 4,
-        "total_loc": 9,
-        "commit_count": 2
-      }
-    },
     "dolr-ai/yral-auth-v2": {
       "main": {
-        "additions": 148,
-        "deletions": 54,
-        "total_loc": 202,
-        "commit_count": 8
+        "additions": 20,
+        "deletions": 23,
+        "total_loc": 43,
+        "commit_count": 1
       }
     }
   },
-  "processed_at": "2026-02-03T22:51:38.066437Z"
+  "processed_at": "2026-02-06T07:06:58.615763Z"
 }

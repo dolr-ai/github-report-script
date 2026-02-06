@@ -11,7 +11,7 @@
   "repo_count": 1,
   "branch_breakdown": {
     "dolr-ai/yral-mobile": {
-      "unknown": {
+      "develop": {
         "additions": 2,
         "deletions": 2,
         "total_loc": 4,
@@ -19,5 +19,5 @@
       }
     }
   },
-  "processed_at": "2026-02-05T09:19:15.779879Z"
+  "processed_at": "2026-02-06T07:06:59.295405Z"
 }

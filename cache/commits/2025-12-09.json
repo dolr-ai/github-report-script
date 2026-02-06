@@ -1,0 +1,414 @@
+{
+  "date": "2025-12-09",
+  "cached_at": "2026-02-06T07:03:04.742999Z",
+  "commits": [
+    {
+      "sha": "1ad98b557f6f7e4d118dc89072acdeafa43a40f0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/clickhouse-cluster-configuration",
+      "timestamp": "2025-12-09T11:06:24Z",
+      "message": "Enable password removal and SSH keys in users.xml",
+      "stats": {
+        "additions": 6,
+        "deletions": 6,
+        "total": 12
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "fe36beaff3d4a7c10bf13aec908c86d6fd02e763",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/clickhouse-cluster-configuration",
+      "timestamp": "2025-12-09T10:01:31Z",
+      "message": "Comment out password removal and ssh_keys",
+      "stats": {
+        "additions": 6,
+        "deletions": 6,
+        "total": 12
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "05817d79aea9e5f09b3a7811a38a99c3800dde61",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/clickhouse-cluster-configuration",
+      "timestamp": "2025-12-09T08:11:53Z",
+      "message": "Remove default password from ClickHouse users",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "beda73fdd9fac46065c0122af2a8d430a5c67b5b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/clickhouse-cluster-configuration",
+      "timestamp": "2025-12-09T07:19:33Z",
+      "message": "Add SSH key to ClickHouse users.xml",
+      "stats": {
+        "additions": 16,
+        "deletions": 0,
+        "total": 16
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "74547cd4fa40b19911e638d9c6828ef0c0a73a8c",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2025-12-09T06:58:12Z",
+      "message": "fix YralProSubscription token operation type",
+      "stats": {
+        "additions": 6,
+        "deletions": 4,
+        "total": 10
+      },
+      "branches": [
+        "chore-update-user-info-service-canister-did",
+        "feat/ltx2-model",
+        "feat/update-candid-for-user-info-service",
+        "feat/update-rate-limit-canister-did-file",
+        "feat/update-user-info-deps",
+        "fix/update-user-info-service-candid",
+        "fix/yral-pro-subscription-token-transaction-implmentation",
+        "master",
+        "naitik/updata_metadata_url",
+        "revert-153-fix/update-user-info-service-candid",
+        "revert-banned-posts-filter"
+      ]
+    },
+    {
+      "sha": "8789d793e484c3e23e4ae04f2df41ac28e487bb1",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2025-12-09T06:48:15Z",
+      "message": "add yral pro subscription as token type",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "chore-update-user-info-service-canister-did",
+        "feat/ltx2-model",
+        "feat/update-candid-for-user-info-service",
+        "feat/update-rate-limit-canister-did-file",
+        "feat/update-user-info-deps",
+        "fix/update-user-info-service-candid",
+        "fix/yral-pro-subscription-token-transaction-implmentation",
+        "master",
+        "naitik/updata_metadata_url",
+        "revert-153-fix/update-user-info-service-candid",
+        "revert-banned-posts-filter"
+      ]
+    },
+    {
+      "sha": "741fe8f23be1ee6e619867ffaa9a935d39e90f3a",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2025-12-09T05:02:56Z",
+      "message": "redirect root to explore",
+      "stats": {
+        "additions": 6,
+        "deletions": 1,
+        "total": 7
+      },
+      "branches": [
+        "feat/add-routes-to-update-user-credits",
+        "feat/add-sentry-setup",
+        "feat/add-total-credits-alloted",
+        "fix/remove-aud-check-from-jwt-validation",
+        "fix/type-for-google-play-subscription-response",
+        "main"
+      ]
+    },
+    {
+      "sha": "e3716df4a545d15282317e12fa6f9b78badb6f61",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2025-12-09T05:15:00Z",
+      "message": "[skip ci] fix: update nix devcontainer config",
+      "stats": {
+        "additions": 10,
+        "deletions": 8,
+        "total": 18
+      },
+      "branches": [
+        "copilot/fix-username-release-on-delete",
+        "joel/broken_pipe_retries",
+        "joel/fcm-notification-migration",
+        "master",
+        "naitik/add_writes_to_dragonfly",
+        "naitik/comment_out_test_from_prod_ci",
+        "naitik/exp-remove-sentry-layer",
+        "naitik/fix_high_memory_utilization",
+        "naitik/fix_sentry_config_and_memory_leak",
+        "naitik/migrate-reads-to-dragonfly",
+        "naitik/open_api_endpoint_fix",
+        "naitik/1403_migration_to_bare_metal"
+      ]
+    },
+    {
+      "sha": "25c928c15076b0ffd498b4b8c8ba773b37366fce",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-12-09T14:43:48Z",
+      "message": "Implements rust api tracing (#705)",
+      "stats": {
+        "additions": 217,
+        "deletions": 114,
+        "total": 331
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "8496ffb35a191113afdfc79694cf88a2762f17b5",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-12-09T08:12:39Z",
+      "message": "Add AnonymousAuthFailedEvent with reason which will fire irrespective (#704)",
+      "stats": {
+        "additions": 39,
+        "deletions": 1,
+        "total": 40
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "2931f56f775700d77ca75f02c356b9bc2f5283ce",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-12-09T05:41:23Z",
+      "message": "Bump android version to 2.2.0(46) (#703)",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "c35f6208423e6513d806a076f3251fb8e6ecf6b9",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-12-09T05:40:49Z",
+      "message": "Merge pull request #702 from dolr-ai/release/android-2.2.0",
+      "stats": {
+        "additions": 1655,
+        "deletions": 210,
+        "total": 1865
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/subscriptions-ui",
+        "fix/ios-load-time",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "cb230bf559c826b84868662af39b75d819ed958c",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2025-12-09T04:53:16Z",
+      "message": "feat: added video approve disapprove tys (#146)",
+      "stats": {
+        "additions": 4,
+        "deletions": 3,
+        "total": 7
+      },
+      "branches": [
+        "chore-update-user-info-service-canister-did",
+        "feat/ltx2-model",
+        "feat/update-candid-for-user-info-service",
+        "feat/update-rate-limit-canister-did-file",
+        "feat/update-user-info-deps",
+        "fix/update-user-info-service-candid",
+        "fix/yral-pro-subscription-token-transaction-implmentation",
+        "master",
+        "naitik/updata_metadata_url",
+        "revert-153-fix/update-user-info-service-candid",
+        "revert-banned-posts-filter"
+      ]
+    },
+    {
+      "sha": "d4e19f9fba78cf177d4e350feee8ab7e61e37d07",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2025-12-09T05:37:54Z",
+      "message": "feat: added approval notification (#342)",
+      "stats": {
+        "additions": 337,
+        "deletions": 29,
+        "total": 366
+      },
+      "branches": [
+        "copilot/sub-pr-378",
+        "feat/add-support-for-yral-subscription",
+        "feat/fix-leaderboard-redis-url-connection",
+        "feat/report-app-migration",
+        "fix/gchat-oauth-for-report-buttons",
+        "fix/report-ban-aprroved-handler",
+        "fix/report-handler",
+        "fix/user-agent-issue-with-pro-subscription",
+        "fix/yral-pro-subscription-token-operation",
+        "joel/ai-video-detector",
+        "joel/apps-script-reports-api",
+        "joel/ban-event",
+        "joel/bare-metal-migration",
+        "joel/btc-rewards-builder-err",
+        "joel/canister-health-endpoint",
+        "joel/canister-snapshots",
+        "joel/dolr-rewards",
+        "joel/fix-btc-dolr-notif",
+        "joel/fix-event-name",
+        "joel/fix-event-ser",
+        "joel/fix-gchat-report-buttons",
+        "joel/fix-logging",
+        "joel/fix-report-env",
+        "joel/fix-reports",
+        "joel/icp-swap-dolr-price-fetch",
+        "joel/kvrocks-push",
+        "joel/leaderboard-redis-migration",
+        "joel/ltx-intergration",
+        "joel/metric-server-cleanup",
+        "joel/mixpanel-events-push",
+        "joel/ml-feed-refactor",
+        "joel/offchain-broken-pipe-fix",
+        "joel/phash-fix",
+        "joel/phash-redis-migration",
+        "joel/profile-views-check",
+        "joel/rewards-mode",
+        "joel/rm-panic",
+        "joel/sentry_webhooks",
+        "joel/sentry-channel-routing",
+        "joel/sentry-issues-fix",
+        "joel/sentry-spam-fix",
+        "joel/skip-self-views",
+        "joel/snake-case-event-norm",
+        "joel/upload-flow-content",
+        "joel/views-fix",
+        "joel/webhook-fix",
+        "joel-medicala-yral-patch-2",
+        "main",
+        "naitik/broken_pipe_issue_fix",
+        "naitik/migrate_fly_redis_to_dragonfly",
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/update_metadata_url",
+        "revert-358-naitik/migrate_fly_redis_to_dragonfly",
+        "revert-359-revert-358-naitik/migrate_fly_redis_to_dragonfly"
+      ]
+    },
+    {
+      "sha": "67675574aee79bfdba492e39f4e0ab5b09aefe0e",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-12-09T04:33:53Z",
+      "message": "feat: added notification approved event in the notification store (#631)",
+      "stats": {
+        "additions": 13,
+        "deletions": 0,
+        "total": 13
+      },
+      "branches": [
+        "copilot/add-total-credits-user-profile",
+        "feat/add-bulk-methods-for-profile-details",
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits",
+        "feat/include-total-number-of-free-credits-alloted-in-subscription",
+        "fix/candid-generation-script",
+        "joel/add_bot_account_addition",
+        "joel/fix-accept-new-registration-guard",
+        "joel/nsfw-info-for-pfp",
+        "main",
+        "set-ai-influencers"
+      ]
+    }
+  ],
+  "commit_count": 15
+}

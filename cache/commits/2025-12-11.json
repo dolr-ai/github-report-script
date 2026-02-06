@@ -1,0 +1,1117 @@
+{
+  "date": "2025-12-11",
+  "cached_at": "2026-02-06T07:03:12.790241Z",
+  "commits": [
+    {
+      "sha": "21204b39a24bc6ee8a0973cc96e43c80e4bd5698",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/kvrocks-cluster",
+      "timestamp": "2025-12-11T14:07:48Z",
+      "message": "Create README.md",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "adding_mtls",
+        "initial_deploy_script",
+        "main"
+      ]
+    },
+    {
+      "sha": "c27ff4805a02432c2a32421bc0cc335bfa047f63",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-12-11T15:10:15Z",
+      "message": "fix devcotnainer image",
+      "stats": {
+        "additions": 15,
+        "deletions": 7,
+        "total": 22
+      },
+      "branches": [
+        "copilot/add-total-credits-user-profile",
+        "feat/add-bulk-methods-for-profile-details",
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits",
+        "feat/include-total-number-of-free-credits-alloted-in-subscription",
+        "fix/candid-generation-script",
+        "joel/add_bot_account_addition",
+        "joel/fix-accept-new-registration-guard",
+        "joel/nsfw-info-for-pfp",
+        "main",
+        "set-ai-influencers"
+      ]
+    },
+    {
+      "sha": "063c55d3056abb34d219ccb2f166904205185ffe",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-12-11T15:04:50Z",
+      "message": "fix the dev container image",
+      "stats": {
+        "additions": 10,
+        "deletions": 3,
+        "total": 13
+      },
+      "branches": [
+        "copilot/add-total-credits-user-profile",
+        "feat/add-bulk-methods-for-profile-details",
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits",
+        "feat/include-total-number-of-free-credits-alloted-in-subscription",
+        "fix/candid-generation-script",
+        "joel/add_bot_account_addition",
+        "joel/fix-accept-new-registration-guard",
+        "joel/nsfw-info-for-pfp",
+        "main",
+        "set-ai-influencers"
+      ]
+    },
+    {
+      "sha": "02c170b86299d908003103bec08b94247e3fee44",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-12-11T14:56:26Z",
+      "message": "Revert \"add dfx env in path\"",
+      "stats": {
+        "additions": 0,
+        "deletions": 4,
+        "total": 4
+      },
+      "branches": [
+        "copilot/add-total-credits-user-profile",
+        "feat/add-bulk-methods-for-profile-details",
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits",
+        "feat/include-total-number-of-free-credits-alloted-in-subscription",
+        "fix/candid-generation-script",
+        "joel/add_bot_account_addition",
+        "joel/fix-accept-new-registration-guard",
+        "joel/nsfw-info-for-pfp",
+        "main",
+        "set-ai-influencers"
+      ]
+    },
+    {
+      "sha": "21e2cc61c685ad06c6951bbb05cfc60fb987df03",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-12-11T14:48:15Z",
+      "message": "add dfx env in path",
+      "stats": {
+        "additions": 4,
+        "deletions": 0,
+        "total": 4
+      },
+      "branches": [
+        "copilot/add-total-credits-user-profile",
+        "feat/add-bulk-methods-for-profile-details",
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits",
+        "feat/include-total-number-of-free-credits-alloted-in-subscription",
+        "fix/candid-generation-script",
+        "joel/add_bot_account_addition",
+        "joel/fix-accept-new-registration-guard",
+        "joel/nsfw-info-for-pfp",
+        "main",
+        "set-ai-influencers"
+      ]
+    },
+    {
+      "sha": "665e1629f04e742e6c2067b41907fea83c70f2a6",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-12-11T14:41:07Z",
+      "message": "[skip ci] revert changes for devcontainer test",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "copilot/add-total-credits-user-profile",
+        "feat/add-bulk-methods-for-profile-details",
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits",
+        "feat/include-total-number-of-free-credits-alloted-in-subscription",
+        "fix/candid-generation-script",
+        "joel/add_bot_account_addition",
+        "joel/fix-accept-new-registration-guard",
+        "joel/nsfw-info-for-pfp",
+        "main",
+        "set-ai-influencers"
+      ]
+    },
+    {
+      "sha": "8276de91a0d57090ee23197715ff789c61ed4ace",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-12-11T07:01:59Z",
+      "message": "chore: testing devcontainer image",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "copilot/add-total-credits-user-profile",
+        "feat/add-bulk-methods-for-profile-details",
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits",
+        "feat/include-total-number-of-free-credits-alloted-in-subscription",
+        "fix/candid-generation-script",
+        "joel/add_bot_account_addition",
+        "joel/fix-accept-new-registration-guard",
+        "joel/nsfw-info-for-pfp",
+        "main",
+        "set-ai-influencers"
+      ]
+    },
+    {
+      "sha": "a7b5edb62e89a2026b4950bc43c5a23620a3b9af",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-12-11T17:35:43Z",
+      "message": "fix devcontainer config",
+      "stats": {
+        "additions": 2,
+        "deletions": 5,
+        "total": 7
+      },
+      "branches": [
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits"
+      ]
+    },
+    {
+      "sha": "4594df993bbcfdb11350c47eac534d5115cb45af",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-12-11T17:29:21Z",
+      "message": "fix rustup command",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits"
+      ]
+    },
+    {
+      "sha": "55116ee82b72870104cf8c2af719a4382301333d",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-12-11T17:25:25Z",
+      "message": "fix toolchain in devcontainer",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits"
+      ]
+    },
+    {
+      "sha": "40625851cdad9f655af4daf8afa1f798da294666",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-12-11T17:14:10Z",
+      "message": "fix rust version",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits"
+      ]
+    },
+    {
+      "sha": "66ef61b0bd18a54a3996c4ca460d63509ae8d55a",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-12-11T17:09:50Z",
+      "message": "add actual test",
+      "stats": {
+        "additions": 27,
+        "deletions": 0,
+        "total": 27
+      },
+      "branches": [
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits"
+      ]
+    },
+    {
+      "sha": "dd12977f74acb66303d07bbed9759f9b520296be",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-12-11T17:09:10Z",
+      "message": "revert the rustup debug files",
+      "stats": {
+        "additions": 1,
+        "deletions": 17,
+        "total": 18
+      },
+      "branches": [
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits"
+      ]
+    },
+    {
+      "sha": "79ec1e7f6e1e58c1f2dbf460041c377f70c7708e",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-12-11T17:06:10Z",
+      "message": "debug rustup files",
+      "stats": {
+        "additions": 17,
+        "deletions": 11,
+        "total": 28
+      },
+      "branches": [
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits"
+      ]
+    },
+    {
+      "sha": "30c92d59335c3db6cb449246c0ba629d863b0a95",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-12-11T17:01:48Z",
+      "message": "fix rust tmp build",
+      "stats": {
+        "additions": 3,
+        "deletions": 0,
+        "total": 3
+      },
+      "branches": [
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits"
+      ]
+    },
+    {
+      "sha": "a5b9ab657b88a4c9bf6d5cf684fb2016a4b2764a",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-12-11T16:56:30Z",
+      "message": "fix rust cross link devcontainer issue",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits"
+      ]
+    },
+    {
+      "sha": "ff3a6a829a9406b4494d9a576527c6fe19591f4b",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-12-11T16:46:09Z",
+      "message": "use no cache",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits"
+      ]
+    },
+    {
+      "sha": "dbed4dfadc0f3215c3a92ef3529909e771d5ef8a",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-12-11T16:41:55Z",
+      "message": "do not use cache",
+      "stats": {
+        "additions": 8,
+        "deletions": 0,
+        "total": 8
+      },
+      "branches": [
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits"
+      ]
+    },
+    {
+      "sha": "43342043d252fcd81a248130bc23075484427889",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-12-11T16:26:21Z",
+      "message": "use self hosted runner",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits"
+      ]
+    },
+    {
+      "sha": "d4ab46fc1f77ab212bcabfa6945c64b2aadccfe5",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-12-11T16:17:11Z",
+      "message": "use self hosted runner",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits"
+      ]
+    },
+    {
+      "sha": "5068dee3518eed0166ddd642b83108ce39b50b65",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-12-11T16:04:27Z",
+      "message": "fix devcontainer.json",
+      "stats": {
+        "additions": 4,
+        "deletions": 3,
+        "total": 7
+      },
+      "branches": [
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits"
+      ]
+    },
+    {
+      "sha": "2c8e93bc5224f96e5d21fe20811d2fa30715e6c7",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-12-11T15:52:45Z",
+      "message": "text devcontainer image",
+      "stats": {
+        "additions": 2,
+        "deletions": 34,
+        "total": 36
+      },
+      "branches": [
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits"
+      ]
+    },
+    {
+      "sha": "b869c21cd7dd5b9468626fe15edf52ec37ef8d32",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-12-11T15:23:27Z",
+      "message": "add dfx in rumCmd",
+      "stats": {
+        "additions": 7,
+        "deletions": 2,
+        "total": 9
+      },
+      "branches": [
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits"
+      ]
+    },
+    {
+      "sha": "9b13d8e800c4f14f4f6bd96a8c6f50265178196a",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-12-11T15:20:56Z",
+      "message": "fix image for devcontainer",
+      "stats": {
+        "additions": 8,
+        "deletions": 13,
+        "total": 21
+      },
+      "branches": [
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits"
+      ]
+    },
+    {
+      "sha": "5f4f77391e5de1dbbc5ea157913567be90825e59",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-12-11T15:10:32Z",
+      "message": "Merge branch 'main' into feat/add-yral-pro-subcription-token-type-in-rate-limits",
+      "stats": {
+        "additions": 15,
+        "deletions": 7,
+        "total": 22
+      },
+      "branches": [
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits"
+      ]
+    },
+    {
+      "sha": "a8b6ddb6774dd397045999b9542812b4dcaf889e",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-12-11T15:05:02Z",
+      "message": "Merge branch 'main' into feat/add-yral-pro-subcription-token-type-in-rate-limits",
+      "stats": {
+        "additions": 10,
+        "deletions": 3,
+        "total": 13
+      },
+      "branches": [
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits"
+      ]
+    },
+    {
+      "sha": "735ca9aaaa430cca38cd72155ef56ab0a7ec1f12",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-12-11T14:56:46Z",
+      "message": "Merge branch 'main' into feat/add-yral-pro-subcription-token-type-in-rate-limits",
+      "stats": {
+        "additions": 0,
+        "deletions": 4,
+        "total": 4
+      },
+      "branches": [
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits"
+      ]
+    },
+    {
+      "sha": "c8b5ac95706fb6ae6a748af19b8587f383d8a4f3",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-12-11T14:48:51Z",
+      "message": "Merge branch 'main' into feat/add-yral-pro-subcription-token-type-in-rate-limits",
+      "stats": {
+        "additions": 4,
+        "deletions": 0,
+        "total": 4
+      },
+      "branches": [
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits"
+      ]
+    },
+    {
+      "sha": "f3eeb81d20ecaec4ed925c1712776ab3790fb0c5",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-12-11T14:41:23Z",
+      "message": "Merge branch 'main' into feat/add-yral-pro-subcription-token-type-in-rate-limits",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits"
+      ]
+    },
+    {
+      "sha": "44ce356dca0259c1dd2c3d739d0e5d8ab651a766",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-12-11T14:36:04Z",
+      "message": "fix: spell error",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits"
+      ]
+    },
+    {
+      "sha": "5a71d2e3d4630c762ea66cf12e166cf50597c50b",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-12-11T14:30:34Z",
+      "message": "revert changes for test suite github workflow",
+      "stats": {
+        "additions": 27,
+        "deletions": 29,
+        "total": 56
+      },
+      "branches": [
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits"
+      ]
+    },
+    {
+      "sha": "ee9e9469ceabcbcb8d5bc499feb336b2343a11b1",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-12-11T07:14:58Z",
+      "message": "test devcontainer",
+      "stats": {
+        "additions": 36,
+        "deletions": 39,
+        "total": 75
+      },
+      "branches": [
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits"
+      ]
+    },
+    {
+      "sha": "3548cfdb7116ab6cfe2d8f96dcfbcf31faf08089",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-12-11T07:10:30Z",
+      "message": "chore: test docker hello world on ci",
+      "stats": {
+        "additions": 39,
+        "deletions": 39,
+        "total": 78
+      },
+      "branches": [
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits"
+      ]
+    },
+    {
+      "sha": "6828ccc93ae9b21c7ab0b82ceecff2ac0003e8d0",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-12-11T07:03:00Z",
+      "message": "Merge branch 'main' into feat/add-yral-pro-subcription-token-type-in-rate-limits",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits"
+      ]
+    },
+    {
+      "sha": "ad2bb00a87a222fd9ff2e8706db5c633e4a1387c",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-12-11T06:56:33Z",
+      "message": "revert back to use self-hosted github runner",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits"
+      ]
+    },
+    {
+      "sha": "3a771c25a09abaf8f06e47032546988960dba6d7",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2025-12-11T14:28:58Z",
+      "message": "[skip ci] fix: use ubuntu runner with swap for build check",
+      "stats": {
+        "additions": 14,
+        "deletions": 7,
+        "total": 21
+      },
+      "branches": [
+        "dependabot/cargo/bytes-1.11.1",
+        "dependabot/cargo/hon-worker-common-2a723cd",
+        "dependabot/cargo/openidconnect-4.0.1",
+        "dependabot/cargo/opentelemetry_sdk-0.31.0",
+        "dependabot/cargo/rsa-0.9.10",
+        "dependabot/cargo/videogen-common-2a723cd",
+        "dependabot/npm_and_yarn/tests/e2e/lodash-4.17.23",
+        "dependabot/npm_and_yarn/tests/e2e/multi-549b90733e",
+        "dependabot/npm_and_yarn/tests/e2e/multi-ac680358f5",
+        "feat/bump-revs-banned-filter",
+        "feat/ltx2-model",
+        "feat/use-yral-auth-phone-auth-preview-link",
+        "fix/remove-post-status-filtering",
+        "joel/approval-flow",
+        "joel/bare-metal-migr",
+        "joel/offchain-urls",
+        "joel/sentry_cleanup",
+        "joel-medicala-yral-patch-2",
+        "main",
+        "ml-feed-migration",
+        "naitik/fix_dragonfly_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration_to_dragonfly_redis",
+        "naitik/update-metadata-link",
+        "revert-1150-naitik/migration_to_dragonfly_redis",
+        "revert-1153-naitik/migration_to_dragonfly_redis",
+        "revert-dual-write"
+      ]
+    },
+    {
+      "sha": "b7bc0e4597bfde84efe86019a9e7a736b261dd8a",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2025-12-11T14:26:20Z",
+      "message": "[skip ci] use default runner for build check",
+      "stats": {
+        "additions": 8,
+        "deletions": 1,
+        "total": 9
+      },
+      "branches": [
+        "dependabot/cargo/bytes-1.11.1",
+        "dependabot/cargo/hon-worker-common-2a723cd",
+        "dependabot/cargo/openidconnect-4.0.1",
+        "dependabot/cargo/opentelemetry_sdk-0.31.0",
+        "dependabot/cargo/rsa-0.9.10",
+        "dependabot/cargo/videogen-common-2a723cd",
+        "dependabot/npm_and_yarn/tests/e2e/lodash-4.17.23",
+        "dependabot/npm_and_yarn/tests/e2e/multi-549b90733e",
+        "dependabot/npm_and_yarn/tests/e2e/multi-ac680358f5",
+        "feat/bump-revs-banned-filter",
+        "feat/ltx2-model",
+        "feat/use-yral-auth-phone-auth-preview-link",
+        "fix/remove-post-status-filtering",
+        "joel/approval-flow",
+        "joel/bare-metal-migr",
+        "joel/offchain-urls",
+        "joel/sentry_cleanup",
+        "joel-medicala-yral-patch-2",
+        "main",
+        "ml-feed-migration",
+        "naitik/fix_dragonfly_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration_to_dragonfly_redis",
+        "naitik/update-metadata-link",
+        "revert-1150-naitik/migration_to_dragonfly_redis",
+        "revert-1153-naitik/migration_to_dragonfly_redis",
+        "revert-dual-write"
+      ]
+    },
+    {
+      "sha": "5723238119561a7f9f99e378f70dc86687e00147",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2025-12-11T13:31:17Z",
+      "message": "[skip ci] fix nix devcontainer config",
+      "stats": {
+        "additions": 9,
+        "deletions": 7,
+        "total": 16
+      },
+      "branches": [
+        "dependabot/cargo/bytes-1.11.1",
+        "dependabot/cargo/hon-worker-common-2a723cd",
+        "dependabot/cargo/openidconnect-4.0.1",
+        "dependabot/cargo/opentelemetry_sdk-0.31.0",
+        "dependabot/cargo/rsa-0.9.10",
+        "dependabot/cargo/videogen-common-2a723cd",
+        "dependabot/npm_and_yarn/tests/e2e/lodash-4.17.23",
+        "dependabot/npm_and_yarn/tests/e2e/multi-549b90733e",
+        "dependabot/npm_and_yarn/tests/e2e/multi-ac680358f5",
+        "feat/bump-revs-banned-filter",
+        "feat/ltx2-model",
+        "feat/use-yral-auth-phone-auth-preview-link",
+        "fix/remove-post-status-filtering",
+        "joel/approval-flow",
+        "joel/bare-metal-migr",
+        "joel/offchain-urls",
+        "joel/sentry_cleanup",
+        "joel-medicala-yral-patch-2",
+        "main",
+        "ml-feed-migration",
+        "naitik/fix_dragonfly_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration_to_dragonfly_redis",
+        "naitik/update-metadata-link",
+        "revert-1150-naitik/migration_to_dragonfly_redis",
+        "revert-1153-naitik/migration_to_dragonfly_redis",
+        "revert-dual-write"
+      ]
+    },
+    {
+      "sha": "ac659abdcb44a562ba7f08eab7e63c20b62ffd5c",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2025-12-11T13:25:04Z",
+      "message": "[skip ci] fix: remove project workflow",
+      "stats": {
+        "additions": 0,
+        "deletions": 115,
+        "total": 115
+      },
+      "branches": [
+        "copilot/fix-username-release-on-delete",
+        "joel/broken_pipe_retries",
+        "joel/fcm-notification-migration",
+        "master",
+        "naitik/add_writes_to_dragonfly",
+        "naitik/comment_out_test_from_prod_ci",
+        "naitik/exp-remove-sentry-layer",
+        "naitik/fix_high_memory_utilization",
+        "naitik/fix_sentry_config_and_memory_leak",
+        "naitik/migrate-reads-to-dragonfly",
+        "naitik/open_api_endpoint_fix",
+        "naitik/1403_migration_to_bare_metal"
+      ]
+    },
+    {
+      "sha": "0c1daeb15723af0d302b6e16a37b93da7a27884f",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2025-12-11T13:46:31Z",
+      "message": "[skip ci] fix: remove project workflow",
+      "stats": {
+        "additions": 0,
+        "deletions": 115,
+        "total": 115
+      },
+      "branches": [
+        "naitik/1399_migrate_ntex_to_axum"
+      ]
+    },
+    {
+      "sha": "f0f54d13bc1f05fc10553c0d29d050e814a962e2",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2025-12-11T13:46:31Z",
+      "message": "[skip ci] fix: update nix devcontainer config",
+      "stats": {
+        "additions": 10,
+        "deletions": 8,
+        "total": 18
+      },
+      "branches": [
+        "naitik/1399_migrate_ntex_to_axum"
+      ]
+    },
+    {
+      "sha": "0179e528c5d1bf25bea8920562cbe34c9415e8d0",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-12-11T11:16:01Z",
+      "message": "Fix/utm source fixes (#715)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "b5a2305648f327ba8b96728803e23f42c2a0de9d",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-12-11T11:11:26Z",
+      "message": "fix: Includes utm_source parsing when it is not set (#714)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "14555ef4e07efee9e6f397441d8a2bdc1822b824",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-12-11T09:58:09Z",
+      "message": "Merge pull request #711 from dolr-ai/release/android-2.3.0",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "3112d2b34abf517b2e0995a35b019af0a43358d7",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-12-11T07:11:43Z",
+      "message": "Bump android version to 2.3.1(48)",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "99e9603a70c2672c726ba5d9bd90a6cbdb00fa64",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-12-11T05:51:16Z",
+      "message": "Fixes analytics user missing property in IOS (#709)",
+      "stats": {
+        "additions": 56,
+        "deletions": 18,
+        "total": 74
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "175b8843a2c05787d1bef1a7626f99cc8a89584c",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-12-11T09:30:34Z",
+      "message": "Merge pull request #710 from dolr-ai/release/android-2.3.0",
+      "stats": {
+        "additions": 548,
+        "deletions": 369,
+        "total": 917
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/subscriptions-ui",
+        "fix/ios-load-time",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "bcd25c63fd38ff6f3f58f95fd89eea78e7fd215f",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-12-11T06:36:33Z",
+      "message": "chore: Flush analytics after auth failure events (#713)",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "4075464ad984fd37b5605db2518156ad68b4a4c3",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-12-11T06:01:08Z",
+      "message": "Merge pull request #712 from dolr-ai/flush-events",
+      "stats": {
+        "additions": 20,
+        "deletions": 1,
+        "total": 21
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "a9506cb051431425511c11297bdd2f31374e874e",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-12-11T05:55:02Z",
+      "message": "feat: Flush analytics after first app launch event",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "6b4f8ce53ff1532694f6ed0ad879bb793aef9657",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-12-11T05:54:23Z",
+      "message": "feat: Implements flush for analytics providers",
+      "stats": {
+        "additions": 19,
+        "deletions": 1,
+        "total": 20
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    }
+  ],
+  "commit_count": 51
+}

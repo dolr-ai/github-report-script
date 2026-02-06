@@ -1,0 +1,112 @@
+{
+  "date": "2025-12-24",
+  "cached_at": "2026-02-06T07:03:48.458859Z",
+  "commits": [
+    {
+      "sha": "9ddab0e0d2dcd81629c34d56baa5664d6cedbe58",
+      "author": "samarth-paboowal-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-12-24T10:10:17Z",
+      "message": "Adds chat wall UI and bottom bar changes (#738)",
+      "stats": {
+        "additions": 710,
+        "deletions": 35,
+        "total": 745
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "4857a1670b41c3dcedc44b901eb551028cf68743",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2025-12-24T05:54:33Z",
+      "message": "Add SERVER_URL to fly.toml configuration",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "feat/deploy-to-dolr-ai",
+        "feat/fix-error-type-for-api",
+        "feat/implement-phone-auth",
+        "fix/redirect-uri-for-multiple-deployments",
+        "fix/remove-cookies-in-verify-endpoint",
+        "joel/ai-accounts-integration",
+        "joel/dnm-remove-bot-limit",
+        "joel/json-ser-ai-endpoint",
+        "joel/json-ser-fix",
+        "main",
+        "naitik/bare-metal-script-fix",
+        "naitik/fix_bare_metal_deployment",
+        "naitik/fix_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration-to-dragonfly-redis",
+        "revert-41-fix/redirect-uri-for-multiple-deployments"
+      ]
+    },
+    {
+      "sha": "bca4e3da05a7aee8293c2ece89c4e6b4244e5db6",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2025-12-24T12:39:29Z",
+      "message": "Joel/bare metal migr (#1143)",
+      "stats": {
+        "additions": 628,
+        "deletions": 167,
+        "total": 795
+      },
+      "branches": [
+        "dependabot/cargo/bytes-1.11.1",
+        "dependabot/cargo/hon-worker-common-2a723cd",
+        "dependabot/cargo/openidconnect-4.0.1",
+        "dependabot/cargo/opentelemetry_sdk-0.31.0",
+        "dependabot/cargo/rsa-0.9.10",
+        "dependabot/cargo/videogen-common-2a723cd",
+        "dependabot/npm_and_yarn/tests/e2e/lodash-4.17.23",
+        "dependabot/npm_and_yarn/tests/e2e/multi-549b90733e",
+        "dependabot/npm_and_yarn/tests/e2e/multi-ac680358f5",
+        "feat/bump-revs-banned-filter",
+        "feat/ltx2-model",
+        "feat/use-yral-auth-phone-auth-preview-link",
+        "fix/remove-post-status-filtering",
+        "joel/approval-flow",
+        "joel/offchain-urls",
+        "joel/sentry_cleanup",
+        "joel-medicala-yral-patch-2",
+        "main",
+        "ml-feed-migration",
+        "naitik/fix_dragonfly_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration_to_dragonfly_redis",
+        "naitik/update-metadata-link",
+        "revert-1150-naitik/migration_to_dragonfly_redis",
+        "revert-1153-naitik/migration_to_dragonfly_redis",
+        "revert-dual-write"
+      ]
+    }
+  ],
+  "commit_count": 3
+}
