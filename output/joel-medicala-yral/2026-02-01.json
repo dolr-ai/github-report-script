@@ -4,7 +4,7 @@
   "additions": 455,
   "deletions": 49,
   "total_loc": 504,
-  "commit_count": 3,
+  "commit_count": 2,
   "repositories": [
     "dolr-ai/off-chain-agent"
   ],
@@ -16,14 +16,8 @@
         "deletions": 49,
         "total_loc": 504,
         "commit_count": 2
-      },
-      "joel/fix-report-env": {
-        "additions": 0,
-        "deletions": 0,
-        "total_loc": 0,
-        "commit_count": 1
       }
     }
   },
-  "processed_at": "2026-02-05T08:45:13.646390Z"
+  "processed_at": "2026-02-05T09:19:15.767395Z"
 }

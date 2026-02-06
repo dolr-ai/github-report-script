@@ -1,15 +1,14 @@
 {
   "date": "2026-01-27",
   "username": "joel-medicala-yral",
-  "additions": 753,
-  "deletions": 61,
-  "total_loc": 814,
-  "commit_count": 2,
+  "additions": 24,
+  "deletions": 42,
+  "total_loc": 66,
+  "commit_count": 1,
   "repositories": [
-    "dolr-ai/hot-or-not-web-leptos-ssr",
-    "dolr-ai/yral-auth-v2"
+    "dolr-ai/hot-or-not-web-leptos-ssr"
   ],
-  "repo_count": 2,
+  "repo_count": 1,
   "branch_breakdown": {
     "dolr-ai/hot-or-not-web-leptos-ssr": {
       "main": {
@@ -18,15 +17,7 @@
         "total_loc": 66,
         "commit_count": 1
       }
-    },
-    "dolr-ai/yral-auth-v2": {
-      "joel/ai-accounts-integration": {
-        "additions": 729,
-        "deletions": 19,
-        "total_loc": 748,
-        "commit_count": 1
-      }
     }
   },
-  "processed_at": "2026-02-05T08:45:13.628444Z"
+  "processed_at": "2026-02-05T09:19:15.746754Z"
 }

@@ -1,23 +1,12 @@
 {
   "date": "2026-01-15",
   "username": "sarvesh-sharma-yral",
-  "additions": 7375,
-  "deletions": 1299,
-  "total_loc": 8674,
-  "commit_count": 2,
-  "repositories": [
-    "dolr-ai/yral-mobile"
-  ],
-  "repo_count": 1,
-  "branch_breakdown": {
-    "dolr-ai/yral-mobile": {
-      "main": {
-        "additions": 7375,
-        "deletions": 1299,
-        "total_loc": 8674,
-        "commit_count": 2
-      }
-    }
-  },
-  "processed_at": "2026-02-05T08:45:13.585449Z"
+  "additions": 0,
+  "deletions": 0,
+  "total_loc": 0,
+  "commit_count": 0,
+  "repositories": [],
+  "repo_count": 0,
+  "branch_breakdown": {},
+  "processed_at": "2026-02-05T09:19:15.698621Z"
 }

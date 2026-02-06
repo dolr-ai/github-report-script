@@ -4,7 +4,7 @@
   "additions": 1551,
   "deletions": 32,
   "total_loc": 1583,
-  "commit_count": 5,
+  "commit_count": 2,
   "repositories": [
     "dolr-ai/yral-ai-chat"
   ],
@@ -21,9 +21,9 @@
         "additions": 1550,
         "deletions": 31,
         "total_loc": 1581,
-        "commit_count": 4
+        "commit_count": 1
       }
     }
   },
-  "processed_at": "2026-02-05T08:45:13.556555Z"
+  "processed_at": "2026-02-05T09:19:15.669676Z"
 }

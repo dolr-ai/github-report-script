@@ -1,24 +1,15 @@
 {
   "date": "2026-01-14",
   "username": "joel-medicala-yral",
-  "additions": 788,
-  "deletions": 469,
-  "total_loc": 1257,
-  "commit_count": 2,
+  "additions": 6,
+  "deletions": 0,
+  "total_loc": 6,
+  "commit_count": 1,
   "repositories": [
-    "dolr-ai/hot-or-not-web-leptos-ssr",
     "dolr-ai/off-chain-agent"
   ],
-  "repo_count": 2,
+  "repo_count": 1,
   "branch_breakdown": {
-    "dolr-ai/hot-or-not-web-leptos-ssr": {
-      "joel/approval-flow": {
-        "additions": 782,
-        "deletions": 469,
-        "total_loc": 1251,
-        "commit_count": 1
-      }
-    },
     "dolr-ai/off-chain-agent": {
       "main": {
         "additions": 6,
@@ -28,5 +19,5 @@
       }
     }
   },
-  "processed_at": "2026-02-05T08:45:13.579369Z"
+  "processed_at": "2026-02-05T09:19:15.692782Z"
 }

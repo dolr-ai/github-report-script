@@ -4,23 +4,23 @@
   "additions": 625,
   "deletions": 247,
   "total_loc": 872,
-  "commit_count": 14,
+  "commit_count": 9,
   "repositories": [
     "dolr-ai/yral-ai-chat"
   ],
   "repo_count": 1,
   "branch_breakdown": {
     "dolr-ai/yral-ai-chat": {
-      "staging": {
-        "additions": 0,
-        "deletions": 0,
-        "total_loc": 0,
-        "commit_count": 8
-      },
       "main": {
         "additions": 625,
         "deletions": 247,
         "total_loc": 872,
+        "commit_count": 3
+      },
+      "staging": {
+        "additions": 0,
+        "deletions": 0,
+        "total_loc": 0,
         "commit_count": 3
       },
       "bf_14jan": {
@@ -31,5 +31,5 @@
       }
     }
   },
-  "processed_at": "2026-02-05T08:45:13.591460Z"
+  "processed_at": "2026-02-05T09:19:15.705557Z"
 }

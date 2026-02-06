@@ -1,24 +1,15 @@
 {
   "date": "2026-01-16",
   "username": "gravityvi",
-  "additions": 4828,
-  "deletions": 333,
-  "total_loc": 5161,
-  "commit_count": 2,
+  "additions": 4031,
+  "deletions": 261,
+  "total_loc": 4292,
+  "commit_count": 1,
   "repositories": [
-    "dolr-ai/hot-or-not-backend-canister",
     "dolr-ai/yral-video-upload-service"
   ],
-  "repo_count": 2,
+  "repo_count": 1,
   "branch_breakdown": {
-    "dolr-ai/hot-or-not-backend-canister": {
-      "feat/add-yral-pro-subcription-token-type-in-rate-limits": {
-        "additions": 797,
-        "deletions": 72,
-        "total_loc": 869,
-        "commit_count": 1
-      }
-    },
     "dolr-ai/yral-video-upload-service": {
       "main": {
         "additions": 4031,
@@ -28,5 +19,5 @@
       }
     }
   },
-  "processed_at": "2026-02-05T08:45:13.590890Z"
+  "processed_at": "2026-02-05T09:19:15.705003Z"
 }
