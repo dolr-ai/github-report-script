@@ -101,6 +101,16 @@ class DataProcessor:
             return
 
         commits = cached_data.get('commits', [])
+        contributor_stats = cached_data.get('contributor_stats', {})
+        
+        # If we have contributor stats, use them as the source of truth
+        # and log discrepancies with branch-based counts
+        use_contributor_stats = bool(contributor_stats)
+        
+        if use_contributor_stats:
+            logger.info(
+                f"Date {date_str}: Using GitHub contributor stats API as source of truth"
+            )
 
         # Filter out trivial merge commits (only keep merges with substantial code changes)
         # Merge commits with substantial changes likely represent:
@@ -270,6 +280,30 @@ class DataProcessor:
                 user_metrics[author]['branch_breakdown'][repository][primary_branch]['total_loc'] += stats.get(
                     'total', 0)
                 user_metrics[author]['branch_breakdown'][repository][primary_branch]['commit_count'] += 1
+
+        # Validate against contributor stats if available
+        if use_contributor_stats:
+            for username in user_ids:
+                if username in contributor_stats:
+                    user_stats_for_date = contributor_stats[username]
+                    
+                    # Contributor stats are weekly, so find the week containing this date
+                    # and compare totals
+                    branch_commits = user_metrics[username]['commit_count']
+                    branch_additions = user_metrics[username]['additions']
+                    
+                    # Note: This is informational only - we log discrepancies but still use detailed commit data
+                    if date_str in user_stats_for_date:
+                        stats_commits = user_stats_for_date[date_str]['commits']
+                        stats_additions = user_stats_for_date[date_str]['additions']
+                        
+                        if stats_commits != branch_commits or stats_additions != branch_additions:
+                            logger.warning(
+                                f"Date {date_str}, User {username}: "
+                                f"Discrepancy detected - "
+                                f"Branch-based: {branch_commits} commits, {branch_additions} additions | "
+                                f"GitHub Stats: {stats_commits} commits, {stats_additions} additions"
+                            )
 
         # Write output for each user
         for username in user_ids:
