@@ -1,0 +1,29 @@
+{
+  "date": "2025-11-25",
+  "username": "shivam-bhavsar-yral",
+  "additions": 995,
+  "deletions": 25,
+  "total_loc": 1020,
+  "commit_count": 3,
+  "repositories": [
+    "dolr-ai/yral-mobile"
+  ],
+  "repo_count": 1,
+  "branch_breakdown": {
+    "dolr-ai/yral-mobile": {
+      "main": {
+        "additions": 54,
+        "deletions": 4,
+        "total_loc": 58,
+        "commit_count": 1
+      },
+      "feature/download-video": {
+        "additions": 941,
+        "deletions": 21,
+        "total_loc": 962,
+        "commit_count": 2
+      }
+    }
+  },
+  "processed_at": "2026-02-06T07:06:58.503006Z"
+}

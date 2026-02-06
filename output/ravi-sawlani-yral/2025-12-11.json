@@ -1,0 +1,23 @@
+{
+  "date": "2025-12-11",
+  "username": "ravi-sawlani-yral",
+  "additions": 15,
+  "deletions": 7,
+  "total_loc": 22,
+  "commit_count": 1,
+  "repositories": [
+    "dolr-ai/hot-or-not-backend-canister"
+  ],
+  "repo_count": 1,
+  "branch_breakdown": {
+    "dolr-ai/hot-or-not-backend-canister": {
+      "main": {
+        "additions": 15,
+        "deletions": 7,
+        "total_loc": 22,
+        "commit_count": 1
+      }
+    }
+  },
+  "processed_at": "2026-02-06T07:06:58.549235Z"
+}

@@ -11,20 +11,6 @@
   ],
   "repo_count": 2,
   "branch_breakdown": {
-    "dolr-ai/hot-or-not-web-leptos-ssr": {
-      "main": {
-        "additions": 793,
-        "deletions": 44,
-        "total_loc": 837,
-        "commit_count": 1
-      },
-      "naitik/migrate_reads_to_dragonfly": {
-        "additions": 0,
-        "deletions": 0,
-        "total_loc": 0,
-        "commit_count": 1
-      }
-    },
     "dolr-ai/off-chain-agent": {
       "main": {
         "additions": 665,
@@ -38,7 +24,21 @@
         "total_loc": 10,
         "commit_count": 1
       }
+    },
+    "dolr-ai/hot-or-not-web-leptos-ssr": {
+      "main": {
+        "additions": 793,
+        "deletions": 44,
+        "total_loc": 837,
+        "commit_count": 1
+      },
+      "naitik/migrate_reads_to_dragonfly": {
+        "additions": 0,
+        "deletions": 0,
+        "total_loc": 0,
+        "commit_count": 1
+      }
     }
   },
-  "processed_at": "2026-02-05T09:19:15.725208Z"
+  "processed_at": "2026-02-06T07:06:58.955470Z"
 }

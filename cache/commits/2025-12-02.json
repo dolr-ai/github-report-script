@@ -1,0 +1,103 @@
+{
+  "date": "2025-12-02",
+  "cached_at": "2026-02-06T07:02:27.565721Z",
+  "commits": [
+    {
+      "sha": "461840e4711f03457666d17c9cad230648d796c2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-12-02T08:09:42Z",
+      "message": "[skip ci] Add hosts to inventory and remove fail2ban",
+      "stats": {
+        "additions": 12,
+        "deletions": 10,
+        "total": 22
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d362ed7baed7e14009f830b2e07aa1ef1ad32f26",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-12-02T07:52:42Z",
+      "message": "[skip ci] Add dev/staging hosts and skip SSH key checks",
+      "stats": {
+        "additions": 11,
+        "deletions": 2,
+        "total": 13
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "76b22a32b5ac5b6b3a376a93b1065f7144cbf52b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-12-02T07:40:04Z",
+      "message": "[skip ci] Remove ansible README and update workflow inputs",
+      "stats": {
+        "additions": 1,
+        "deletions": 341,
+        "total": 342
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9072dd938163ee65069a8998a3f2929dd9de4639",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-12-02T07:25:38Z",
+      "message": "[skip ci] Filter root authorized_keys to allowed entries",
+      "stats": {
+        "additions": 33,
+        "deletions": 2,
+        "total": 35
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "da6cb44b8394db29d9505f66eb8c48bd16106c30",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-12-02T06:11:02Z",
+      "message": "chore: Improves share profile function call (#690)",
+      "stats": {
+        "additions": 4,
+        "deletions": 15,
+        "total": 19
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    }
+  ],
+  "commit_count": 5
+}

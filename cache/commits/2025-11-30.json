@@ -1,0 +1,96 @@
+{
+  "date": "2025-11-30",
+  "cached_at": "2026-02-06T07:02:22.280565Z",
+  "commits": [
+    {
+      "sha": "0d1fdac7409ca9fe8d3189d28aa32958c2fa6ab1",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-30T13:50:05Z",
+      "message": "chore: Increments android app version",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "29ddd27e83add338ab56d232c23e49b73a598949",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-30T13:47:20Z",
+      "message": "build: Adds profile share (#687)",
+      "stats": {
+        "additions": 228,
+        "deletions": 44,
+        "total": 272
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "5e29d443255fcc6353c4272c75d4e938e2080008",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/ai-influencers-content",
+      "timestamp": "2025-11-30T06:41:05Z",
+      "message": "Gradio v3",
+      "stats": {
+        "additions": 619,
+        "deletions": 76,
+        "total": 695
+      },
+      "branches": [
+        "changes-td",
+        "grad-v2",
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 3
+}

@@ -1,0 +1,32 @@
+{
+  "date": "2025-12-01",
+  "username": "joel-medicala-yral",
+  "additions": 509,
+  "deletions": 54,
+  "total_loc": 563,
+  "commit_count": 2,
+  "repositories": [
+    "dolr-ai/off-chain-agent",
+    "dolr-ai/yral-video-storage-service"
+  ],
+  "repo_count": 2,
+  "branch_breakdown": {
+    "dolr-ai/yral-video-storage-service": {
+      "main": {
+        "additions": 506,
+        "deletions": 54,
+        "total_loc": 560,
+        "commit_count": 1
+      }
+    },
+    "dolr-ai/off-chain-agent": {
+      "main": {
+        "additions": 3,
+        "deletions": 0,
+        "total_loc": 3,
+        "commit_count": 1
+      }
+    }
+  },
+  "processed_at": "2026-02-06T07:06:58.522827Z"
+}

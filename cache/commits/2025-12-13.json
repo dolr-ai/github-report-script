@@ -1,0 +1,22 @@
+{
+  "date": "2025-12-13",
+  "cached_at": "2026-02-06T07:02:55.547867Z",
+  "commits": [
+    {
+      "sha": "4bf1f7de9931dfa68cf970a0237330ecf894dde1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-13T10:49:19Z",
+      "message": "Add Hetzner rescue script for FCOS install",
+      "stats": {
+        "additions": 50,
+        "deletions": 0,
+        "total": 50
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 1
+}

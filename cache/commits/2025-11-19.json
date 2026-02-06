@@ -1,0 +1,85 @@
+{
+  "date": "2025-11-19",
+  "cached_at": "2026-02-06T07:01:53.540701Z",
+  "commits": [
+    {
+      "sha": "cc2e3124f72119672186ac0929cb48a28c54440a",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-19T06:05:32Z",
+      "message": "fix typo in block confirm button text (#661)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "chore/new-upload-video-endpoint",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/download-video",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/test-install-referrers",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "d11bc8ef82a208926bc099b877efefb64c5c37be",
+      "author": "samarth-paboowal-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-19T07:10:48Z",
+      "message": "Fixes sentry build issue (#658)",
+      "stats": {
+        "additions": 16,
+        "deletions": 9,
+        "total": 25
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "chore/new-upload-video-endpoint",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/download-video",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/test-install-referrers",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    }
+  ],
+  "commit_count": 2
+}

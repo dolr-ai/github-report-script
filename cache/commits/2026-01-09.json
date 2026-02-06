@@ -1,93 +1,7 @@
 {
   "date": "2026-01-09",
-  "cached_at": "2026-02-03T20:52:45.142127Z",
+  "cached_at": "2026-02-06T07:04:41.544643Z",
   "commits": [
-    {
-      "sha": "e5801b2657f63f93bdcb2309a84438c22bd048fc",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-09T07:30:12Z",
-      "message": "Merge pull request #766 from dolr-ai/release/2.5.1",
-      "stats": {
-        "additions": 2,
-        "deletions": 2,
-        "total": 4
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/create-ai-chat-bot",
-        "feature/create-ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/hot-or-not-onboarding",
-        "feature/iap-ui",
-        "feature/subcription-video-gen",
-        "feature/subscription-ui",
-        "feature/subscriptions-ui",
-        "feature/yral-pro-for-tournaments",
-        "feature/yral-pro-for-tournaments-sarvesh",
-        "fix/hot-or-not-load-time",
-        "fix/state-button",
-        "main",
-        "release/3.2.0"
-      ]
-    },
-    {
-      "sha": "5be43584c04eb2501ed73e3be3a934e604252560",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-09T07:29:57Z",
-      "message": "Merge pull request #767 from dolr-ai/release/2.5.1",
-      "stats": {
-        "additions": 1519,
-        "deletions": 264,
-        "total": 1783
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/create-ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/hot-or-not-onboarding",
-        "feature/subscriptions-ui",
-        "feature/yral-pro-for-tournaments",
-        "feature/yral-pro-for-tournaments-sarvesh",
-        "main"
-      ]
-    },
-    {
-      "sha": "9516acd997cfa1639a5125edcfa162804cdef792",
-      "author": "mayank-k-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-09T05:36:49Z",
-      "message": "Migrates to Media3 Compose UI and implements Feed screen wake lock (#769)",
-      "stats": {
-        "additions": 41,
-        "deletions": 37,
-        "total": 78
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/create-ai-chat-bot",
-        "feature/create-ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/hot-or-not-onboarding",
-        "feature/iap-ui",
-        "feature/subcription-video-gen",
-        "feature/subscription-ui",
-        "feature/subscriptions-ui",
-        "feature/yral-pro-for-tournaments",
-        "feature/yral-pro-for-tournaments-sarvesh",
-        "fix/hot-or-not-load-time",
-        "fix/state-button",
-        "main",
-        "release/3.2.0"
-      ]
-    },
     {
       "sha": "599b56c5cb34ec2aaad96783f09895c4204afbc4",
       "author": "kevin-antony-yral",
@@ -119,6 +33,7 @@
         "fk_exeption_handle",
         "further_joel_sugg",
         "i_e_error",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
@@ -456,65 +371,97 @@
       ]
     },
     {
-      "sha": "2837d7359a5188f9c3133914deabb30ce32c9ce6",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/redis-store-cluster",
-      "timestamp": "2026-01-09T13:23:47Z",
-      "message": "fix: syntax or sentinel script",
+      "sha": "e5801b2657f63f93bdcb2309a84438c22bd048fc",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-09T07:30:12Z",
+      "message": "Merge pull request #766 from dolr-ai/release/2.5.1",
       "stats": {
-        "additions": 48,
-        "deletions": 45,
-        "total": 93
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
       },
       "branches": [
-        "naitik/impl-redis-store-cluster"
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
       ]
     },
     {
-      "sha": "7024c0c037d45eac3d929dca854f818324810cbc",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/redis-store-cluster",
-      "timestamp": "2026-01-09T12:57:49Z",
-      "message": "fix: sentinel config file",
+      "sha": "5be43584c04eb2501ed73e3be3a934e604252560",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-09T07:29:57Z",
+      "message": "Merge pull request #767 from dolr-ai/release/2.5.1",
       "stats": {
-        "additions": 10,
-        "deletions": 4,
-        "total": 14
+        "additions": 1519,
+        "deletions": 264,
+        "total": 1783
       },
       "branches": [
-        "naitik/impl-redis-store-cluster"
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/subscriptions-ui",
+        "fix/ios-load-time",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "saikatdas0790-patch-1",
+        "test/force-update"
       ]
     },
     {
-      "sha": "90f991fb7a221b5ffa5a0860e7f8caa1c1022684",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/redis-store-cluster",
-      "timestamp": "2026-01-09T12:12:06Z",
-      "message": "fix: script fix for sentinel setup",
+      "sha": "9516acd997cfa1639a5125edcfa162804cdef792",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-09T05:36:49Z",
+      "message": "Migrates to Media3 Compose UI and implements Feed screen wake lock (#769)",
       "stats": {
-        "additions": 24,
-        "deletions": 24,
-        "total": 48
+        "additions": 41,
+        "deletions": 37,
+        "total": 78
       },
       "branches": [
-        "naitik/impl-redis-store-cluster"
-      ]
-    },
-    {
-      "sha": "1466b1ec617e3e91802568e57a76c9f9c3a43ec4",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/redis-store-cluster",
-      "timestamp": "2026-01-09T11:38:16Z",
-      "message": "added sentinel support",
-      "stats": {
-        "additions": 168,
-        "deletions": 15,
-        "total": 183
-      },
-      "branches": [
-        "naitik/impl-redis-store-cluster"
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
       ]
     }
   ],
-  "commit_count": 19
+  "commit_count": 15
 }

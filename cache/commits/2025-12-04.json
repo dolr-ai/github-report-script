@@ -1,0 +1,295 @@
+{
+  "date": "2025-12-04",
+  "cached_at": "2026-02-06T07:02:33.184035Z",
+  "commits": [
+    {
+      "sha": "907ef5478a5694ed8ef1d1a6abacea6a5a74ddc7",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2025-12-04T05:15:45Z",
+      "message": "feat: add capability to read from podman secrets",
+      "stats": {
+        "additions": 28,
+        "deletions": 18,
+        "total": 46
+      },
+      "branches": [
+        "feat/add-capability-to-read-from-podman-secrets",
+        "feat/add-routes-to-update-user-credits",
+        "feat/add-sentry-setup",
+        "feat/add-total-credits-alloted",
+        "fix/remove-aud-check-from-jwt-validation",
+        "fix/type-for-google-play-subscription-response",
+        "main"
+      ]
+    },
+    {
+      "sha": "a794f09c2797685aa0ea430c61af86503eb292d2",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2025-12-04T04:51:34Z",
+      "message": "feat: add event handling for purchase lifecycle",
+      "stats": {
+        "additions": 3187,
+        "deletions": 356,
+        "total": 3543
+      },
+      "branches": [
+        "feat/add-capability-to-read-from-podman-secrets",
+        "feat/add-routes-to-update-user-credits",
+        "feat/add-sentry-setup",
+        "feat/add-total-credits-alloted",
+        "fix/remove-aud-check-from-jwt-validation",
+        "fix/type-for-google-play-subscription-response",
+        "main"
+      ]
+    },
+    {
+      "sha": "a44a6ccf3fe23e5990df05f5b596644155566882",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2025-12-04T04:41:28Z",
+      "message": "copy static html for swagger ui",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "feat/add-capability-to-read-from-podman-secrets",
+        "feat/add-purchase-event-handling",
+        "feat/add-routes-to-update-user-credits",
+        "feat/add-sentry-setup",
+        "feat/add-total-credits-alloted",
+        "fix/remove-aud-check-from-jwt-validation",
+        "fix/type-for-google-play-subscription-response",
+        "main"
+      ]
+    },
+    {
+      "sha": "1c5559a498e6e7c360e2949d0973adc20eed2f58",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2025-12-04T04:37:36Z",
+      "message": "update rustc version",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "feat/add-capability-to-read-from-podman-secrets",
+        "feat/add-purchase-event-handling",
+        "feat/add-routes-to-update-user-credits",
+        "feat/add-sentry-setup",
+        "feat/add-total-credits-alloted",
+        "fix/remove-aud-check-from-jwt-validation",
+        "fix/type-for-google-play-subscription-response",
+        "main"
+      ]
+    },
+    {
+      "sha": "115edc5cb6d55417ac07b04e29a623c721aac762",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2025-12-04T04:35:03Z",
+      "message": "Update Rust version to 1.83 to support Cargo.lock v4",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "feat/add-capability-to-read-from-podman-secrets",
+        "feat/add-purchase-event-handling",
+        "feat/add-routes-to-update-user-credits",
+        "feat/add-sentry-setup",
+        "feat/add-total-credits-alloted",
+        "fix/remove-aud-check-from-jwt-validation",
+        "fix/type-for-google-play-subscription-response",
+        "main"
+      ]
+    },
+    {
+      "sha": "5e97707d0ddcdedb781d0faed1a212e6159af093",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2025-12-04T04:33:32Z",
+      "message": "Simplify Dockerfile build process",
+      "stats": {
+        "additions": 2,
+        "deletions": 13,
+        "total": 15
+      },
+      "branches": [
+        "feat/add-capability-to-read-from-podman-secrets",
+        "feat/add-purchase-event-handling",
+        "feat/add-routes-to-update-user-credits",
+        "feat/add-sentry-setup",
+        "feat/add-total-credits-alloted",
+        "fix/remove-aud-check-from-jwt-validation",
+        "fix/type-for-google-play-subscription-response",
+        "main"
+      ]
+    },
+    {
+      "sha": "3674479255ff0fe3e3dda3b2e03db6b42590c1eb",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2025-12-04T04:32:10Z",
+      "message": "Fix Docker tag format issue in workflow",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "feat/add-capability-to-read-from-podman-secrets",
+        "feat/add-purchase-event-handling",
+        "feat/add-routes-to-update-user-credits",
+        "feat/add-sentry-setup",
+        "feat/add-total-credits-alloted",
+        "fix/remove-aud-check-from-jwt-validation",
+        "fix/type-for-google-play-subscription-response",
+        "main"
+      ]
+    },
+    {
+      "sha": "3fd8608bf6429095774f1433d2bfeeae6b15ae10",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2025-12-04T04:30:04Z",
+      "message": "refactor codebase to include purchase event handling",
+      "stats": {
+        "additions": 3197,
+        "deletions": 356,
+        "total": 3553
+      },
+      "branches": [
+        "feat/add-capability-to-read-from-podman-secrets",
+        "feat/add-purchase-event-handling",
+        "feat/add-routes-to-update-user-credits",
+        "feat/add-sentry-setup",
+        "feat/add-total-credits-alloted",
+        "fix/remove-aud-check-from-jwt-validation",
+        "fix/type-for-google-play-subscription-response",
+        "main"
+      ]
+    },
+    {
+      "sha": "6414b7623855196537faa2d7f45726de6a9979b8",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2025-12-04T08:26:45Z",
+      "message": "mark purchase token as unique in database",
+      "stats": {
+        "additions": 22,
+        "deletions": 4,
+        "total": 26
+      },
+      "branches": [
+        "feat/add-routes-to-update-user-credits",
+        "feat/add-sentry-setup",
+        "feat/add-total-credits-alloted",
+        "fix/remove-aud-check-from-jwt-validation",
+        "fix/type-for-google-play-subscription-response",
+        "main"
+      ]
+    },
+    {
+      "sha": "2e32798370df7b07cbdd3dae15ff6209fc5fb9bc",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2025-12-04T08:08:06Z",
+      "message": "fix schema migration",
+      "stats": {
+        "additions": 5,
+        "deletions": 4,
+        "total": 9
+      },
+      "branches": [
+        "feat/add-routes-to-update-user-credits",
+        "feat/add-sentry-setup",
+        "feat/add-total-credits-alloted",
+        "fix/remove-aud-check-from-jwt-validation",
+        "fix/type-for-google-play-subscription-response",
+        "main"
+      ]
+    },
+    {
+      "sha": "2af10525d1303c3c7d0686f0f0d89ef0a25bbfa8",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2025-12-04T07:48:52Z",
+      "message": "add attestations permission",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "feat/add-routes-to-update-user-credits",
+        "feat/add-sentry-setup",
+        "feat/add-total-credits-alloted",
+        "fix/remove-aud-check-from-jwt-validation",
+        "fix/type-for-google-play-subscription-response",
+        "main"
+      ]
+    },
+    {
+      "sha": "f7d7e35953df12cff1c8d4fd338fa6b541153064",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2025-12-04T05:33:57Z",
+      "message": "feat: add capability to read from podman secrets",
+      "stats": {
+        "additions": 28,
+        "deletions": 18,
+        "total": 46
+      },
+      "branches": [
+        "feat/add-routes-to-update-user-credits",
+        "feat/add-sentry-setup",
+        "feat/add-total-credits-alloted",
+        "fix/remove-aud-check-from-jwt-validation",
+        "fix/type-for-google-play-subscription-response",
+        "main"
+      ]
+    },
+    {
+      "sha": "675303ebc3d775bb0cadcbe6c3b4590320e06429",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/ai-influencers-content",
+      "timestamp": "2025-12-04T11:34:53Z",
+      "message": "Share=True",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "changes-td",
+        "grad-v2",
+        "main"
+      ]
+    },
+    {
+      "sha": "0bdab02318f18b78ccc7b0955b15f6c6b16aae5e",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/ai-influencers-content",
+      "timestamp": "2025-12-04T08:40:01Z",
+      "message": "final changes",
+      "stats": {
+        "additions": 366,
+        "deletions": 117,
+        "total": 483
+      },
+      "branches": [
+        "changes-td",
+        "grad-v2",
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 14
+}

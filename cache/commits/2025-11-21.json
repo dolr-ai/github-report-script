@@ -1,0 +1,328 @@
+{
+  "date": "2025-11-21",
+  "cached_at": "2026-02-06T07:02:01.214502Z",
+  "commits": [
+    {
+      "sha": "2cdd8488561d098517fb5dd33611c83165244bbe",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2025-11-21T04:25:45Z",
+      "message": "fix: log statements for jwk refresh",
+      "stats": {
+        "additions": 7,
+        "deletions": 71,
+        "total": 78
+      },
+      "branches": [
+        "feat/deploy-to-dolr-ai",
+        "feat/fix-error-type-for-api",
+        "feat/implement-phone-auth",
+        "fix/redirect-uri-for-multiple-deployments",
+        "fix/remove-cookies-in-verify-endpoint",
+        "joel/ai-accounts-integration",
+        "joel/dnm-remove-bot-limit",
+        "joel/fly-migration",
+        "joel/json-ser-ai-endpoint",
+        "joel/json-ser-fix",
+        "joel/restore-fly-deps",
+        "main",
+        "naitik/bare-metal-script-fix",
+        "naitik/fix_bare_metal_deployment",
+        "naitik/fix_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration-to-dragonfly-redis",
+        "revert-41-fix/redirect-uri-for-multiple-deployments"
+      ]
+    },
+    {
+      "sha": "3a4f302b3ec0d7e66b68886c00e566479b0e624e",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2025-11-21T03:44:53Z",
+      "message": "adding print statements in jwk rotation task",
+      "stats": {
+        "additions": 3,
+        "deletions": 0,
+        "total": 3
+      },
+      "branches": [
+        "feat/deploy-to-dolr-ai",
+        "feat/fix-error-type-for-api",
+        "feat/implement-phone-auth",
+        "fix/redirect-uri-for-multiple-deployments",
+        "fix/remove-cookies-in-verify-endpoint",
+        "joel/ai-accounts-integration",
+        "joel/dnm-remove-bot-limit",
+        "joel/fly-migration",
+        "joel/json-ser-ai-endpoint",
+        "joel/json-ser-fix",
+        "joel/restore-fly-deps",
+        "main",
+        "naitik/bare-metal-script-fix",
+        "naitik/fix_bare_metal_deployment",
+        "naitik/fix_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration-to-dragonfly-redis",
+        "revert-41-fix/redirect-uri-for-multiple-deployments"
+      ]
+    },
+    {
+      "sha": "bb736c26607e5ab3b9c61b037aa0f015a5b09032",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2025-11-21T03:29:59Z",
+      "message": "fix lint",
+      "stats": {
+        "additions": 1,
+        "deletions": 2,
+        "total": 3
+      },
+      "branches": [
+        "feat/deploy-to-dolr-ai",
+        "feat/fix-error-type-for-api",
+        "feat/implement-phone-auth",
+        "fix/redirect-uri-for-multiple-deployments",
+        "fix/remove-cookies-in-verify-endpoint",
+        "joel/ai-accounts-integration",
+        "joel/dnm-remove-bot-limit",
+        "joel/fly-migration",
+        "joel/json-ser-ai-endpoint",
+        "joel/json-ser-fix",
+        "joel/restore-fly-deps",
+        "main",
+        "naitik/bare-metal-script-fix",
+        "naitik/fix_bare_metal_deployment",
+        "naitik/fix_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration-to-dragonfly-redis",
+        "revert-41-fix/redirect-uri-for-multiple-deployments"
+      ]
+    },
+    {
+      "sha": "946fc77b3e1b2af3468e739a2424452aa39d7188",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2025-11-21T03:28:17Z",
+      "message": "feat: implement refresh jwk for google oauth (#27)",
+      "stats": {
+        "additions": 476,
+        "deletions": 14,
+        "total": 490
+      },
+      "branches": [
+        "feat/deploy-to-dolr-ai",
+        "feat/fix-error-type-for-api",
+        "feat/implement-phone-auth",
+        "fix/redirect-uri-for-multiple-deployments",
+        "fix/remove-cookies-in-verify-endpoint",
+        "joel/ai-accounts-integration",
+        "joel/dnm-remove-bot-limit",
+        "joel/fly-migration",
+        "joel/json-ser-ai-endpoint",
+        "joel/json-ser-fix",
+        "joel/restore-fly-deps",
+        "main",
+        "naitik/bare-metal-script-fix",
+        "naitik/fix_bare_metal_deployment",
+        "naitik/fix_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration-to-dragonfly-redis",
+        "revert-41-fix/redirect-uri-for-multiple-deployments"
+      ]
+    },
+    {
+      "sha": "39d77e3dc7a392c3192a97191cc598efa93e9c34",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-backend-cloudflare-workers",
+      "timestamp": "2025-11-21T09:00:33Z",
+      "message": "remove user_id as optional parameter to send notification",
+      "stats": {
+        "additions": 25,
+        "deletions": 36,
+        "total": 61
+      },
+      "branches": [
+        "feat/send-notification-on-video-upload"
+      ]
+    },
+    {
+      "sha": "665dbebdc15bed3ae976d70e3791c61674d49c4e",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-backend-cloudflare-workers",
+      "timestamp": "2025-11-21T04:59:38Z",
+      "message": "Merge branch 'main' into feat/send-notification-on-video-upload",
+      "stats": {
+        "additions": 483,
+        "deletions": 4,
+        "total": 487
+      },
+      "branches": [
+        "feat/send-notification-on-video-upload"
+      ]
+    },
+    {
+      "sha": "88913829c40b11d97895df0314c9e7bf424f7a51",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-backend-cloudflare-workers",
+      "timestamp": "2025-11-21T04:35:39Z",
+      "message": "send notification on video upload",
+      "stats": {
+        "additions": 161,
+        "deletions": 7,
+        "total": 168
+      },
+      "branches": [
+        "feat/send-notification-on-video-upload"
+      ]
+    },
+    {
+      "sha": "eb79a3f74ba6561541fa4cf52e4f51ce17ac2d07",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-backend-cloudflare-workers",
+      "timestamp": "2025-11-21T12:15:00Z",
+      "message": "feat: send notification on video upload (#104)",
+      "stats": {
+        "additions": 150,
+        "deletions": 7,
+        "total": 157
+      },
+      "branches": [
+        "fix/remove-expiry-check-for-jwt",
+        "fix/update-yral-canisters-client-candid",
+        "main"
+      ]
+    },
+    {
+      "sha": "42dbce9d873952a6e7a2182569744ccd17e5b3da",
+      "author": "samarth-paboowal-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-21T05:43:15Z",
+      "message": "Adds ban logic for smiley game scammers (#669)",
+      "stats": {
+        "additions": 100,
+        "deletions": 650,
+        "total": 750
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "chore/new-upload-video-endpoint",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/download-video",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/test-install-referrers",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "1c0f0d010eeb7525cbba4b492c30e3801d80f52d",
+      "author": "samarth-paboowal-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-21T11:31:24Z",
+      "message": "build: migrates from cloudflare to storj",
+      "stats": {
+        "additions": 78,
+        "deletions": 52,
+        "total": 130
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "0774ba2cdce1843937339afb4233ff27fb0143f3",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-21T05:50:16Z",
+      "message": "Add Firebase Performance trace attribute support for iOS (#668)",
+      "stats": {
+        "additions": 18,
+        "deletions": 1,
+        "total": 19
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/download-video",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/test-install-referrers",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "621be195e54adaf2875327a0de7d2b90e0e3d734",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-21T05:10:39Z",
+      "message": "Improves focus clearing on EditProfileScreen (#667)",
+      "stats": {
+        "additions": 16,
+        "deletions": 31,
+        "total": 47
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "chore/new-upload-video-endpoint",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/download-video",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/test-install-referrers",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    }
+  ],
+  "commit_count": 12
+}

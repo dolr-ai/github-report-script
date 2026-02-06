@@ -1,32 +1,23 @@
 {
   "date": "2026-01-28",
   "username": "naitik-makwana-yral",
-  "additions": 42,
-  "deletions": 314,
-  "total_loc": 356,
+  "additions": 15,
+  "deletions": 240,
+  "total_loc": 255,
   "commit_count": 2,
   "repositories": [
-    "dolr-ai/hot-or-not-web-leptos-ssr",
-    "dolr-ai/off-chain-agent"
+    "dolr-ai/yral-auth-v2"
   ],
-  "repo_count": 2,
+  "repo_count": 1,
   "branch_breakdown": {
-    "dolr-ai/hot-or-not-web-leptos-ssr": {
+    "dolr-ai/yral-auth-v2": {
       "main": {
-        "additions": 39,
+        "additions": 15,
         "deletions": 240,
-        "total_loc": 279,
-        "commit_count": 1
-      }
-    },
-    "dolr-ai/off-chain-agent": {
-      "main": {
-        "additions": 3,
-        "deletions": 74,
-        "total_loc": 77,
-        "commit_count": 1
+        "total_loc": 255,
+        "commit_count": 2
       }
     }
   },
-  "processed_at": "2026-02-05T09:19:15.752783Z"
+  "processed_at": "2026-02-06T07:06:59.076635Z"
 }

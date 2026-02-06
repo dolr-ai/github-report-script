@@ -1,0 +1,288 @@
+{
+  "date": "2025-12-12",
+  "cached_at": "2026-02-06T07:02:58.723207Z",
+  "commits": [
+    {
+      "sha": "2d6b9e0f4587003a33e2244457c741510b6ea645",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-12T21:00:17Z",
+      "message": "Use control-plane/worker bu files for ignition",
+      "stats": {
+        "additions": 282,
+        "deletions": 18,
+        "total": 300
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "38e37e879fdba5176acd82fe8647663dc5b5317f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-12T20:51:24Z",
+      "message": "Add ignition config workflow and Butane files",
+      "stats": {
+        "additions": 400,
+        "deletions": 1,
+        "total": 401
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "1cd94528c64ccccc2b94cf83816ed6cc3f51cf52",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-12T12:06:44Z",
+      "message": "Initial commit",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9ee976fc28e497e75f92f64310eb9bcf18fcb051",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2025-12-12T07:24:50Z",
+      "message": "migration of metadata api from ntex to axum (#62)",
+      "stats": {
+        "additions": 1542,
+        "deletions": 1567,
+        "total": 3109
+      },
+      "branches": [
+        "copilot/fix-username-release-on-delete",
+        "joel/broken_pipe_retries",
+        "joel/fcm-notification-migration",
+        "master",
+        "naitik/add_writes_to_dragonfly",
+        "naitik/comment_out_test_from_prod_ci",
+        "naitik/exp-remove-sentry-layer",
+        "naitik/fix_high_memory_utilization",
+        "naitik/fix_sentry_config_and_memory_leak",
+        "naitik/migrate-reads-to-dragonfly",
+        "naitik/open_api_endpoint_fix",
+        "naitik/1403_migration_to_bare_metal"
+      ]
+    },
+    {
+      "sha": "9933bbcc556772dfe319e629b9e5df9156885339",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2025-12-12T06:14:03Z",
+      "message": "fix: removed redundant path",
+      "stats": {
+        "additions": 0,
+        "deletions": 1,
+        "total": 1
+      },
+      "branches": [
+        "naitik/1399_migrate_ntex_to_axum"
+      ]
+    },
+    {
+      "sha": "6a7452f0813f759de6d6bf81460cebf607e2d10b",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2025-12-12T05:41:50Z",
+      "message": "fix: use {*tail} wildcard syntax",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/1399_migrate_ntex_to_axum"
+      ]
+    },
+    {
+      "sha": "460fc378605af770ae6c1786f23428007d898e6c",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2025-12-12T05:22:57Z",
+      "message": "fix: axum route paths",
+      "stats": {
+        "additions": 9,
+        "deletions": 9,
+        "total": 18
+      },
+      "branches": [
+        "naitik/1399_migrate_ntex_to_axum"
+      ]
+    },
+    {
+      "sha": "8ca7801ebd9c1054d79e2a200102369f99e780b5",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-12-12T12:30:07Z",
+      "message": "Merge pull request #718 from dolr-ai/release/android-2.3.2",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "2f0aa0d8d07a30677605c6e4660401bde2fda06b",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-12-12T08:54:01Z",
+      "message": "Bump android version to 2.3.2(49)",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "db89de688abf34b9d20baa3bfb515092e76c477f",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-12-12T07:53:46Z",
+      "message": "Fixes referrer json parsing issue and force flush referral_received event (#716)",
+      "stats": {
+        "additions": 7,
+        "deletions": 18,
+        "total": 25
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "33110666c4a4a3e684a1d64609eb1d2f99c6a458",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-12-12T12:29:51Z",
+      "message": "Merge pull request #717 from dolr-ai/release/android-2.3.2",
+      "stats": {
+        "additions": 11,
+        "deletions": 22,
+        "total": 33
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/subscriptions-ui",
+        "fix/ios-load-time",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "675104be113b6bbc068e1b8f58790b8cb0bb296e",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2025-12-12T02:21:56Z",
+      "message": "added bare metal migration (#28)",
+      "stats": {
+        "additions": 539,
+        "deletions": 140,
+        "total": 679
+      },
+      "branches": [
+        "feat/deploy-to-dolr-ai",
+        "feat/fix-error-type-for-api",
+        "feat/implement-phone-auth",
+        "fix/redirect-uri-for-multiple-deployments",
+        "fix/remove-cookies-in-verify-endpoint",
+        "joel/ai-accounts-integration",
+        "joel/dnm-remove-bot-limit",
+        "joel/json-ser-ai-endpoint",
+        "joel/json-ser-fix",
+        "joel/restore-fly-deps",
+        "main",
+        "naitik/bare-metal-script-fix",
+        "naitik/fix_bare_metal_deployment",
+        "naitik/fix_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration-to-dragonfly-redis",
+        "revert-41-fix/redirect-uri-for-multiple-deployments"
+      ]
+    }
+  ],
+  "commit_count": 12
+}

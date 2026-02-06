@@ -1,470 +1,20 @@
 {
   "date": "2026-01-27",
-  "cached_at": "2026-02-03T21:23:48.831402Z",
+  "cached_at": "2026-02-06T07:06:25.787819Z",
   "commits": [
     {
-      "sha": "8b4964962ad2bc35434f64c7b935b0a192664b65",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
-      "timestamp": "2026-01-27T12:50:09Z",
-      "message": "fix: remove post status filtering from profiles (#1163)",
+      "sha": "70f8dab0d4dbed53103d8a1f4b36b52f42f7a4ab",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-01-27T05:14:07Z",
+      "message": "Update Ansible configurations and playbooks for improved structure and linting",
       "stats": {
-        "additions": 24,
-        "deletions": 42,
-        "total": 66
+        "additions": 64,
+        "deletions": 12,
+        "total": 76
       },
       "branches": [
-        "dependabot/cargo/bytes-1.11.1",
-        "dependabot/cargo/hon-worker-common-2a723cd",
-        "dependabot/cargo/openidconnect-4.0.1",
-        "dependabot/cargo/opentelemetry_sdk-0.31.0",
-        "dependabot/cargo/videogen-common-2a723cd",
-        "main",
-        "naitik/fix_dragonfly_broken_pipe_issue",
-        "naitik/migrate_reads_to_dragonfly"
-      ]
-    },
-    {
-      "sha": "70ae1fbf06391953c71763c82cf24bc8863e4725",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
-      "timestamp": "2026-01-27T03:43:52Z",
-      "message": "dual writes to dragonfly redis (#1158)",
-      "stats": {
-        "additions": 793,
-        "deletions": 45,
-        "total": 838
-      },
-      "branches": [
-        "dependabot/cargo/bytes-1.11.1",
-        "dependabot/cargo/hon-worker-common-2a723cd",
-        "dependabot/cargo/openidconnect-4.0.1",
-        "dependabot/cargo/opentelemetry_sdk-0.31.0",
-        "dependabot/cargo/rsa-0.9.10",
-        "dependabot/cargo/videogen-common-2a723cd",
-        "dependabot/npm_and_yarn/tests/e2e/lodash-4.17.23",
-        "dependabot/npm_and_yarn/tests/e2e/multi-549b90733e",
-        "dependabot/npm_and_yarn/tests/e2e/multi-ac680358f5",
-        "fix/remove-post-status-filtering",
-        "main",
-        "naitik/fix_dragonfly_broken_pipe_issue",
-        "naitik/migrate_reads_to_dragonfly"
-      ]
-    },
-    {
-      "sha": "25d52d63335cf8cabc55bcae47c3ade720cc56b6",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
-      "timestamp": "2026-01-27T11:37:51Z",
-      "message": "Merge remote-tracking branch 'origin/main' into naitik/migrate_reads_to_dragonfly",
-      "stats": {
-        "additions": 1,
-        "deletions": 3,
-        "total": 4
-      },
-      "branches": [
-        "naitik/migrate_reads_to_dragonfly"
-      ]
-    },
-    {
-      "sha": "51c48e32490b6a8fb48950c18c885b78c43c81fe",
-      "author": "gravityvi",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-27T14:11:44Z",
-      "message": "Merge remote-tracking branch 'origin/main' into feat/add-support-for-yral-subscription",
-      "stats": {
-        "additions": 1935,
-        "deletions": 420,
-        "total": 2355
-      },
-      "branches": [
-        "copilot/sub-pr-378",
-        "feat/add-support-for-yral-subscription"
-      ]
-    },
-    {
-      "sha": "b2ad22dcd82ecbd7521d7cd0027e997fa25c8b16",
-      "author": "gravityvi",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-27T14:00:25Z",
-      "message": "refactored code and added yral pro subscription as a way to pay for ai videogen",
-      "stats": {
-        "additions": 1368,
-        "deletions": 1850,
-        "total": 3218
-      },
-      "branches": [
-        "copilot/sub-pr-378",
-        "feat/add-support-for-yral-subscription"
-      ]
-    },
-    {
-      "sha": "9bb719187be36f0763221a1809904ccc04b64f94",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-27T07:25:42Z",
-      "message": "fix: standardize field names and improve serialization for video payloads (#375)",
-      "stats": {
-        "additions": 21,
-        "deletions": 42,
-        "total": 63
-      },
-      "branches": [
-        "copilot/sub-pr-378",
-        "feat/add-support-for-yral-subscription",
-        "fix/user-agent-issue-with-pro-subscription",
-        "fix/yral-pro-subscription-token-operation",
-        "joel/apps-script-reports-api",
-        "joel/dolr-rewards",
-        "joel/fix-btc-dolr-notif",
-        "joel/fix-event-ser",
-        "joel/fix-gchat-report-buttons",
-        "joel/fix-logging",
-        "joel/fix-report-env",
-        "joel/fix-reports",
-        "joel/icp-swap-dolr-price-fetch",
-        "joel/offchain-broken-pipe-fix",
-        "joel/phash-redis-migration",
-        "joel/profile-views-check",
-        "joel/rewards-mode",
-        "joel/upload-flow-content",
-        "main",
-        "naitik/broken_pipe_issue_fix",
-        "naitik/migrate_reads_to_dragonfly"
-      ]
-    },
-    {
-      "sha": "316ce436f82c0d312758913305e9b3350a433fe3",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-27T03:18:05Z",
-      "message": "refactor: remove metrics integration and related code (#374)",
-      "stats": {
-        "additions": 0,
-        "deletions": 28,
-        "total": 28
-      },
-      "branches": [
-        "copilot/sub-pr-378",
-        "feat/add-support-for-yral-subscription",
-        "fix/user-agent-issue-with-pro-subscription",
-        "fix/yral-pro-subscription-token-operation",
-        "joel/apps-script-reports-api",
-        "joel/dolr-rewards",
-        "joel/fix-btc-dolr-notif",
-        "joel/fix-event-name",
-        "joel/fix-event-ser",
-        "joel/fix-gchat-report-buttons",
-        "joel/fix-logging",
-        "joel/fix-report-env",
-        "joel/fix-reports",
-        "joel/icp-swap-dolr-price-fetch",
-        "joel/offchain-broken-pipe-fix",
-        "joel/phash-redis-migration",
-        "joel/profile-views-check",
-        "joel/rewards-mode",
-        "joel/upload-flow-content",
-        "main",
-        "naitik/broken_pipe_issue_fix",
-        "naitik/migrate_reads_to_dragonfly"
-      ]
-    },
-    {
-      "sha": "49be9533ecf466f0b3ba0d11151761db8a0767fc",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-27T13:22:39Z",
-      "message": "fix: passing of YRAL_MOBILE_SERVICE_ACCOUNT_KEY in preview deployment files",
-      "stats": {
-        "additions": 2,
-        "deletions": 2,
-        "total": 4
-      },
-      "branches": [
-        "naitik/migrate_reads_to_dragonfly"
-      ]
-    },
-    {
-      "sha": "6c4c473c39ddef9310c04dfb887b9841dcb39e6f",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-27T12:34:04Z",
-      "message": "Merge remote-tracking branch 'origin/main' into naitik/migrate_reads_to_dragonfly",
-      "stats": {
-        "additions": 307,
-        "deletions": 275,
-        "total": 582
-      },
-      "branches": [
-        "naitik/migrate_reads_to_dragonfly"
-      ]
-    },
-    {
-      "sha": "f954e3d254f262ad7f4882eb6d14831c43fb4fc6",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/yral-metadata",
-      "timestamp": "2026-01-27T22:26:46Z",
-      "message": "reads from dragonfly too, removed fly redis usage (#70)",
-      "stats": {
-        "additions": 235,
-        "deletions": 698,
-        "total": 933
-      },
-      "branches": [
-        "copilot/fix-username-release-on-delete",
-        "joel/broken_pipe_retries",
-        "joel/fcm-notification-migration",
-        "master"
-      ]
-    },
-    {
-      "sha": "ecf2aa5888a16e98cce02ce78ae306dae0119821",
-      "author": "mayank-k-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-27T17:27:58Z",
-      "message": "Merge pull request #805 from dolr-ai/optim",
-      "stats": {
-        "additions": 242,
-        "deletions": 53,
-        "total": 295
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/create-ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/hot-or-not-onboarding",
-        "feature/yral-pro-for-tournaments",
-        "feature/yral-pro-for-tournaments-sarvesh",
         "main"
-      ]
-    },
-    {
-      "sha": "ede67bf7be8a40047c846b2e6165ad70362d5303",
-      "author": "mayank-k-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-27T17:19:02Z",
-      "message": "comment out ShortformCacheProvider release in AndroidPlaybackCoordinator",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/create-ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/hot-or-not-onboarding",
-        "feature/yral-pro-for-tournaments",
-        "feature/yral-pro-for-tournaments-sarvesh",
-        "main"
-      ]
-    },
-    {
-      "sha": "96559a30ed30b39cdb45246471395d01c6e7856a",
-      "author": "mayank-k-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-27T17:19:02Z",
-      "message": "Passes surfaceType to VideoFeed and disables offscreen compositing strategy in SwipeableCardStackIte",
-      "stats": {
-        "additions": 3,
-        "deletions": 5,
-        "total": 8
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/create-ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/hot-or-not-onboarding",
-        "feature/yral-pro-for-tournaments",
-        "feature/yral-pro-for-tournaments-sarvesh",
-        "main"
-      ]
-    },
-    {
-      "sha": "32326aaacc2eef52104e385853377f030762bdea",
-      "author": "mayank-k-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-27T16:25:10Z",
-      "message": "update IosVideoSurface to use transparent backgrounds and clip to bounds",
-      "stats": {
-        "additions": 7,
-        "deletions": 2,
-        "total": 9
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/create-ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/hot-or-not-onboarding",
-        "feature/yral-pro-for-tournaments",
-        "feature/yral-pro-for-tournaments-sarvesh",
-        "main"
-      ]
-    },
-    {
-      "sha": "1f77104143afbe39f0b8fa1e0b762c0ed14ac898",
-      "author": "mayank-k-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-27T16:23:36Z",
-      "message": "update suppressShutter logic in ReelSwipeableCardStack",
-      "stats": {
-        "additions": 2,
-        "deletions": 2,
-        "total": 4
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/create-ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/hot-or-not-onboarding",
-        "feature/yral-pro-for-tournaments",
-        "feature/yral-pro-for-tournaments-sarvesh",
-        "main"
-      ]
-    },
-    {
-      "sha": "635c5b943be0de06f010d12de0edde777f490055",
-      "author": "mayank-k-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-27T15:42:22Z",
-      "message": "linting",
-      "stats": {
-        "additions": 4,
-        "deletions": 4,
-        "total": 8
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/create-ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/hot-or-not-onboarding",
-        "feature/yral-pro-for-tournaments",
-        "feature/yral-pro-for-tournaments-sarvesh",
-        "main"
-      ]
-    },
-    {
-      "sha": "9d9dd09b1a5a327905ccd5a41770e2ace4c8d576",
-      "author": "mayank-k-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-27T15:42:22Z",
-      "message": "button click dismiss card animation",
-      "stats": {
-        "additions": 67,
-        "deletions": 5,
-        "total": 72
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/create-ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/hot-or-not-onboarding",
-        "feature/yral-pro-for-tournaments",
-        "feature/yral-pro-for-tournaments-sarvesh",
-        "main"
-      ]
-    },
-    {
-      "sha": "43d2d5bed9b1d290474590d2e77371fea16548e5",
-      "author": "mayank-k-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-27T15:42:22Z",
-      "message": "fix flicker",
-      "stats": {
-        "additions": 85,
-        "deletions": 18,
-        "total": 103
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/create-ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/hot-or-not-onboarding",
-        "feature/yral-pro-for-tournaments",
-        "feature/yral-pro-for-tournaments-sarvesh",
-        "main"
-      ]
-    },
-    {
-      "sha": "e9aeaefbed7b52521a124ad29e1f7a4f2c4cf9d5",
-      "author": "mayank-k-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-27T15:42:22Z",
-      "message": "optimise video playback in hot or not game",
-      "stats": {
-        "additions": 80,
-        "deletions": 23,
-        "total": 103
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/create-ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/hot-or-not-onboarding",
-        "feature/yral-pro-for-tournaments",
-        "feature/yral-pro-for-tournaments-sarvesh",
-        "main"
-      ]
-    },
-    {
-      "sha": "0e5573302637540f6e2c161bbddd2f62be21a4fc",
-      "author": "mayank-k-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-27T15:41:28Z",
-      "message": "optimize video player performance and compositing for iOS (#807)",
-      "stats": {
-        "additions": 13,
-        "deletions": 2,
-        "total": 15
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/create-ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/hot-or-not-onboarding",
-        "feature/yral-pro-for-tournaments",
-        "feature/yral-pro-for-tournaments-sarvesh",
-        "main"
-      ]
-    },
-    {
-      "sha": "85c41adbbb818a669fb63a0afb1ce2a2422c116d",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-common",
-      "timestamp": "2026-01-27T12:39:35Z",
-      "message": "Revert \"chore: filter out banned posts\" (#151)",
-      "stats": {
-        "additions": 3,
-        "deletions": 31,
-        "total": 34
-      },
-      "branches": [
-        "feat/update-candid-for-user-info-service",
-        "feat/update-user-info-deps",
-        "fix/update-user-info-service-candid",
-        "fix/yral-pro-subscription-token-transaction-implmentation",
-        "master",
-        "revert-153-fix/update-user-info-service-candid"
       ]
     },
     {
@@ -482,6 +32,7 @@
         "feat/deploy-to-dolr-ai",
         "fix/redirect-uri-for-multiple-deployments",
         "joel/ai-accounts-integration",
+        "joel/dnm-remove-bot-limit",
         "joel/json-ser-ai-endpoint",
         "joel/json-ser-fix",
         "main",
@@ -506,6 +57,7 @@
         "feat/deploy-to-dolr-ai",
         "fix/redirect-uri-for-multiple-deployments",
         "joel/ai-accounts-integration",
+        "joel/dnm-remove-bot-limit",
         "joel/json-ser-ai-endpoint",
         "joel/json-ser-fix",
         "main",
@@ -514,22 +66,6 @@
         "naitik/fix_broken_pipe_issue",
         "naitik/migrate_reads_to_dragonfly",
         "revert-41-fix/redirect-uri-for-multiple-deployments"
-      ]
-    },
-    {
-      "sha": "6354b36a37a36d0aec4df7bc53a3d1e14a91fa6b",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-01-27T17:56:39Z",
-      "message": "Merge branch 'main' into joel/ai-accounts-integration",
-      "stats": {
-        "additions": 729,
-        "deletions": 19,
-        "total": 748
-      },
-      "branches": [
-        "joel/ai-accounts-integration",
-        "joel/json-ser-ai-endpoint"
       ]
     },
     {
@@ -578,21 +114,6 @@
       ]
     },
     {
-      "sha": "70f8dab0d4dbed53103d8a1f4b36b52f42f7a4ab",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
-      "timestamp": "2026-01-27T05:14:07Z",
-      "message": "Update Ansible configurations and playbooks for improved structure and linting",
-      "stats": {
-        "additions": 64,
-        "deletions": 12,
-        "total": 76
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
       "sha": "d569d727ed5ed6559bc7c13a8df9e12e293d186f",
       "author": "naitik-makwana-yral",
       "repository": "dolr-ai/hashicorp-vault-service",
@@ -607,7 +128,419 @@
         "main",
         "naitik/initial_setup"
       ]
+    },
+    {
+      "sha": "70ae1fbf06391953c71763c82cf24bc8863e4725",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-27T03:43:52Z",
+      "message": "dual writes to dragonfly redis (#1158)",
+      "stats": {
+        "additions": 793,
+        "deletions": 45,
+        "total": 838
+      },
+      "branches": [
+        "dependabot/cargo/bytes-1.11.1",
+        "dependabot/cargo/hon-worker-common-2a723cd",
+        "dependabot/cargo/openidconnect-4.0.1",
+        "dependabot/cargo/opentelemetry_sdk-0.31.0",
+        "dependabot/cargo/rsa-0.9.10",
+        "dependabot/cargo/videogen-common-2a723cd",
+        "dependabot/npm_and_yarn/tests/e2e/lodash-4.17.23",
+        "dependabot/npm_and_yarn/tests/e2e/multi-549b90733e",
+        "dependabot/npm_and_yarn/tests/e2e/multi-ac680358f5",
+        "feat/ltx2-model",
+        "fix/remove-post-status-filtering",
+        "main",
+        "naitik/fix_dragonfly_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly"
+      ]
+    },
+    {
+      "sha": "25d52d63335cf8cabc55bcae47c3ade720cc56b6",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-27T11:37:51Z",
+      "message": "Merge remote-tracking branch 'origin/main' into naitik/migrate_reads_to_dragonfly",
+      "stats": {
+        "additions": 1,
+        "deletions": 3,
+        "total": 4
+      },
+      "branches": [
+        "naitik/migrate_reads_to_dragonfly"
+      ]
+    },
+    {
+      "sha": "9bb719187be36f0763221a1809904ccc04b64f94",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-27T07:25:42Z",
+      "message": "fix: standardize field names and improve serialization for video payloads (#375)",
+      "stats": {
+        "additions": 21,
+        "deletions": 42,
+        "total": 63
+      },
+      "branches": [
+        "copilot/sub-pr-378",
+        "feat/add-support-for-yral-subscription",
+        "fix/user-agent-issue-with-pro-subscription",
+        "fix/yral-pro-subscription-token-operation",
+        "joel/ai-video-detector",
+        "joel/apps-script-reports-api",
+        "joel/dolr-rewards",
+        "joel/fix-btc-dolr-notif",
+        "joel/fix-event-ser",
+        "joel/fix-gchat-report-buttons",
+        "joel/fix-logging",
+        "joel/fix-report-env",
+        "joel/fix-reports",
+        "joel/icp-swap-dolr-price-fetch",
+        "joel/ltx-intergration",
+        "joel/offchain-broken-pipe-fix",
+        "joel/phash-redis-migration",
+        "joel/profile-views-check",
+        "joel/rewards-mode",
+        "joel/upload-flow-content",
+        "main",
+        "naitik/broken_pipe_issue_fix",
+        "naitik/migrate_reads_to_dragonfly"
+      ]
+    },
+    {
+      "sha": "316ce436f82c0d312758913305e9b3350a433fe3",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-27T03:18:05Z",
+      "message": "refactor: remove metrics integration and related code (#374)",
+      "stats": {
+        "additions": 0,
+        "deletions": 28,
+        "total": 28
+      },
+      "branches": [
+        "copilot/sub-pr-378",
+        "feat/add-support-for-yral-subscription",
+        "fix/user-agent-issue-with-pro-subscription",
+        "fix/yral-pro-subscription-token-operation",
+        "joel/ai-video-detector",
+        "joel/apps-script-reports-api",
+        "joel/dolr-rewards",
+        "joel/fix-btc-dolr-notif",
+        "joel/fix-event-name",
+        "joel/fix-event-ser",
+        "joel/fix-gchat-report-buttons",
+        "joel/fix-logging",
+        "joel/fix-report-env",
+        "joel/fix-reports",
+        "joel/icp-swap-dolr-price-fetch",
+        "joel/ltx-intergration",
+        "joel/offchain-broken-pipe-fix",
+        "joel/phash-redis-migration",
+        "joel/profile-views-check",
+        "joel/rewards-mode",
+        "joel/upload-flow-content",
+        "main",
+        "naitik/broken_pipe_issue_fix",
+        "naitik/migrate_reads_to_dragonfly"
+      ]
+    },
+    {
+      "sha": "85c41adbbb818a669fb63a0afb1ce2a2422c116d",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-01-27T12:39:35Z",
+      "message": "Revert \"chore: filter out banned posts\" (#151)",
+      "stats": {
+        "additions": 3,
+        "deletions": 31,
+        "total": 34
+      },
+      "branches": [
+        "feat/ltx2-model",
+        "feat/update-candid-for-user-info-service",
+        "feat/update-user-info-deps",
+        "fix/update-user-info-service-candid",
+        "fix/yral-pro-subscription-token-transaction-implmentation",
+        "master",
+        "revert-153-fix/update-user-info-service-candid"
+      ]
+    },
+    {
+      "sha": "8b4964962ad2bc35434f64c7b935b0a192664b65",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-27T12:50:09Z",
+      "message": "fix: remove post status filtering from profiles (#1163)",
+      "stats": {
+        "additions": 24,
+        "deletions": 42,
+        "total": 66
+      },
+      "branches": [
+        "dependabot/cargo/bytes-1.11.1",
+        "dependabot/cargo/hon-worker-common-2a723cd",
+        "dependabot/cargo/openidconnect-4.0.1",
+        "dependabot/cargo/opentelemetry_sdk-0.31.0",
+        "dependabot/cargo/videogen-common-2a723cd",
+        "feat/ltx2-model",
+        "main",
+        "naitik/fix_dragonfly_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly"
+      ]
+    },
+    {
+      "sha": "ecf2aa5888a16e98cce02ce78ae306dae0119821",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-27T17:27:58Z",
+      "message": "Merge pull request #805 from dolr-ai/optim",
+      "stats": {
+        "additions": 242,
+        "deletions": 53,
+        "total": 295
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "fix/ios-load-time",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "ede67bf7be8a40047c846b2e6165ad70362d5303",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-27T17:19:02Z",
+      "message": "comment out ShortformCacheProvider release in AndroidPlaybackCoordinator",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "fix/ios-load-time",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "96559a30ed30b39cdb45246471395d01c6e7856a",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-27T17:19:02Z",
+      "message": "Passes surfaceType to VideoFeed and disables offscreen compositing strategy in SwipeableCardStackIte",
+      "stats": {
+        "additions": 3,
+        "deletions": 5,
+        "total": 8
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "fix/ios-load-time",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "32326aaacc2eef52104e385853377f030762bdea",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-27T16:25:10Z",
+      "message": "update IosVideoSurface to use transparent backgrounds and clip to bounds",
+      "stats": {
+        "additions": 7,
+        "deletions": 2,
+        "total": 9
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "fix/ios-load-time",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "1f77104143afbe39f0b8fa1e0b762c0ed14ac898",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-27T16:23:36Z",
+      "message": "update suppressShutter logic in ReelSwipeableCardStack",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "fix/ios-load-time",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "635c5b943be0de06f010d12de0edde777f490055",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-27T15:42:22Z",
+      "message": "linting",
+      "stats": {
+        "additions": 4,
+        "deletions": 4,
+        "total": 8
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "fix/ios-load-time",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "9d9dd09b1a5a327905ccd5a41770e2ace4c8d576",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-27T15:42:22Z",
+      "message": "button click dismiss card animation",
+      "stats": {
+        "additions": 67,
+        "deletions": 5,
+        "total": 72
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "fix/ios-load-time",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "43d2d5bed9b1d290474590d2e77371fea16548e5",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-27T15:42:22Z",
+      "message": "fix flicker",
+      "stats": {
+        "additions": 85,
+        "deletions": 18,
+        "total": 103
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "fix/ios-load-time",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "e9aeaefbed7b52521a124ad29e1f7a4f2c4cf9d5",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-27T15:42:22Z",
+      "message": "optimise video playback in hot or not game",
+      "stats": {
+        "additions": 80,
+        "deletions": 23,
+        "total": 103
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "fix/ios-load-time",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "0e5573302637540f6e2c161bbddd2f62be21a4fc",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-27T15:41:28Z",
+      "message": "optimize video player performance and compositing for iOS (#807)",
+      "stats": {
+        "additions": 13,
+        "deletions": 2,
+        "total": 15
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "fix/ios-load-time",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
     }
   ],
-  "commit_count": 29
+  "commit_count": 23
 }

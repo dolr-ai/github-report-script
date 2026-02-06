@@ -1,478 +1,7 @@
 {
   "date": "2026-01-16",
-  "cached_at": "2026-02-03T21:20:57.732798Z",
+  "cached_at": "2026-02-06T07:05:08.865747Z",
   "commits": [
-    {
-      "sha": "0a75cc06b99553477992a12643186846b50833c6",
-      "author": "gravityvi",
-      "repository": "dolr-ai/hot-or-not-backend-canister",
-      "timestamp": "2026-01-16T12:14:38Z",
-      "message": "Merge branch 'main' into feat/add-yral-pro-subcription-token-type-in-rate-limits",
-      "stats": {
-        "additions": 797,
-        "deletions": 72,
-        "total": 869
-      },
-      "branches": [
-        "feat/add-yral-pro-subcription-token-type-in-rate-limits"
-      ]
-    },
-    {
-      "sha": "2145ca0b5c00a92738c7b396e982a9cc8a388436",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/yral-metadata",
-      "timestamp": "2026-01-16T06:53:17Z",
-      "message": "uncommented concurrent test",
-      "stats": {
-        "additions": 51,
-        "deletions": 51,
-        "total": 102
-      },
-      "branches": [
-        "naitik/1403_migration_to_bare_metal"
-      ]
-    },
-    {
-      "sha": "54f3e360ef197e1e05950d77868a3017ce1c5ec1",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/data-science-directed-acyclic-graphs",
-      "timestamp": "2026-01-16T15:23:23Z",
-      "message": "Update workflow to deploy from main branch",
-      "stats": {
-        "additions": 3,
-        "deletions": 3,
-        "total": 6
-      },
-      "branches": [
-        "self-hosted-airflow"
-      ]
-    },
-    {
-      "sha": "24bbb5da044c537718c933c767cb246cf6cc0ba3",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/data-science-directed-acyclic-graphs",
-      "timestamp": "2026-01-16T14:49:19Z",
-      "message": "Use environment variables for secrets, delete and recreate admin user on each deploy",
-      "stats": {
-        "additions": 4,
-        "deletions": 7,
-        "total": 11
-      },
-      "branches": [
-        "self-hosted-airflow"
-      ]
-    },
-    {
-      "sha": "25a4f12aec8ad671188e4d68e5bc56d2319ed1fb",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/data-science-directed-acyclic-graphs",
-      "timestamp": "2026-01-16T14:39:34Z",
-      "message": "Store admin password in .env file for persistence",
-      "stats": {
-        "additions": 5,
-        "deletions": 3,
-        "total": 8
-      },
-      "branches": [
-        "self-hosted-airflow"
-      ]
-    },
-    {
-      "sha": "dd7e50cbd2fe89c386e5ddece935e0038010019c",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/data-science-directed-acyclic-graphs",
-      "timestamp": "2026-01-16T14:33:38Z",
-      "message": "Trigger redeploy with updated admin password",
-      "stats": {
-        "additions": 1,
-        "deletions": 0,
-        "total": 1
-      },
-      "branches": [
-        "self-hosted-airflow"
-      ]
-    },
-    {
-      "sha": "d8f94127af1844c5ba39594bd5b06a42cdfc0a82",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/data-science-directed-acyclic-graphs",
-      "timestamp": "2026-01-16T14:21:36Z",
-      "message": "Use separate init container for database setup",
-      "stats": {
-        "additions": 18,
-        "deletions": 6,
-        "total": 24
-      },
-      "branches": [
-        "self-hosted-airflow"
-      ]
-    },
-    {
-      "sha": "96131beccb6e6a9c7402f434f416a838ad0fd5d0",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/data-science-directed-acyclic-graphs",
-      "timestamp": "2026-01-16T14:18:37Z",
-      "message": "Remove set -e and log db migrate output",
-      "stats": {
-        "additions": 1,
-        "deletions": 2,
-        "total": 3
-      },
-      "branches": [
-        "self-hosted-airflow"
-      ]
-    },
-    {
-      "sha": "ff9837a53fb10deae73d7b4d75f49a0fad6391ff",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/data-science-directed-acyclic-graphs",
-      "timestamp": "2026-01-16T14:15:39Z",
-      "message": "Add logging to debug startup sequence",
-      "stats": {
-        "additions": 5,
-        "deletions": 0,
-        "total": 5
-      },
-      "branches": [
-        "self-hosted-airflow"
-      ]
-    },
-    {
-      "sha": "f669e59d3079432582c908a6ec68d784eac152fa",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/data-science-directed-acyclic-graphs",
-      "timestamp": "2026-01-16T14:11:34Z",
-      "message": "Use db migrate instead of deprecated db init",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "self-hosted-airflow"
-      ]
-    },
-    {
-      "sha": "4a540692efa26797d6117f5cee179a160741c019",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/data-science-directed-acyclic-graphs",
-      "timestamp": "2026-01-16T14:06:27Z",
-      "message": "Initialize database before installing requirements",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "self-hosted-airflow"
-      ]
-    },
-    {
-      "sha": "a24e295e12491f3be673de603168489a092ff094",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/data-science-directed-acyclic-graphs",
-      "timestamp": "2026-01-16T14:02:28Z",
-      "message": "Filter out database init errors during pip install",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "self-hosted-airflow"
-      ]
-    },
-    {
-      "sha": "5561392d933df01f91a620e9d209dc772fa83de0",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/data-science-directed-acyclic-graphs",
-      "timestamp": "2026-01-16T13:55:34Z",
-      "message": "Use airflow db init for PostgreSQL setup",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "self-hosted-airflow"
-      ]
-    },
-    {
-      "sha": "9e4b768a4167e1d4c01310ec3fcd3e6db5189505",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/data-science-directed-acyclic-graphs",
-      "timestamp": "2026-01-16T13:51:20Z",
-      "message": "Add PostgreSQL for LocalExecutor support",
-      "stats": {
-        "additions": 22,
-        "deletions": 4,
-        "total": 26
-      },
-      "branches": [
-        "self-hosted-airflow"
-      ]
-    },
-    {
-      "sha": "1337c7ea21c3c01f07ed223dea814da36c508e4b",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/data-science-directed-acyclic-graphs",
-      "timestamp": "2026-01-16T13:45:58Z",
-      "message": "Set CHECK_MIGRATIONS as container environment variable",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "self-hosted-airflow"
-      ]
-    },
-    {
-      "sha": "e4d29618e34d328f0ba80888250f8183458129bf",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/data-science-directed-acyclic-graphs",
-      "timestamp": "2026-01-16T13:41:24Z",
-      "message": "Fix Airflow initialization: use db init instead of migrate for first setup",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "self-hosted-airflow"
-      ]
-    },
-    {
-      "sha": "a08832abd1961a09ba9e1d8e60f5639319b8f6c1",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/data-science-directed-acyclic-graphs",
-      "timestamp": "2026-01-16T13:31:58Z",
-      "message": "Fix Airflow initialization: skip DB check during pip install and use db migrate",
-      "stats": {
-        "additions": 2,
-        "deletions": 1,
-        "total": 3
-      },
-      "branches": [
-        "self-hosted-airflow"
-      ]
-    },
-    {
-      "sha": "94cb58861fee090045871cef832e3f11274c577d",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/data-science-directed-acyclic-graphs",
-      "timestamp": "2026-01-16T13:20:55Z",
-      "message": "Fix workflow to checkout self-hosted-airflow branch instead of main",
-      "stats": {
-        "additions": 2,
-        "deletions": 1,
-        "total": 3
-      },
-      "branches": [
-        "self-hosted-airflow"
-      ]
-    },
-    {
-      "sha": "f94f60e0ccd9a64f5ef599e6821fb000a3490d96",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/data-science-directed-acyclic-graphs",
-      "timestamp": "2026-01-16T13:15:37Z",
-      "message": "Add Docker Compose setup for self-hosted Airflow with Caddy TLS",
-      "stats": {
-        "additions": 133,
-        "deletions": 98,
-        "total": 231
-      },
-      "branches": [
-        "self-hosted-airflow"
-      ]
-    },
-    {
-      "sha": "7b9e75f7bb8ed412f2c8d4d3f1806eeb23b506b0",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-16T14:40:58Z",
-      "message": "Merge pull request #792 from dolr-ai/release/android-2.6.1",
-      "stats": {
-        "additions": 2,
-        "deletions": 2,
-        "total": 4
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/create-ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/hot-or-not-onboarding",
-        "feature/subscriptions-ui",
-        "feature/yral-pro-for-tournaments",
-        "feature/yral-pro-for-tournaments-sarvesh",
-        "fix/hot-or-not-load-time",
-        "fix/state-button",
-        "main",
-        "release/3.2.0"
-      ]
-    },
-    {
-      "sha": "2f6ae5625d4e07a34992d708791f9c6a6714b492",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-16T14:40:40Z",
-      "message": "Merge pull request #793 from dolr-ai/release/android-2.6.1",
-      "stats": {
-        "additions": 2137,
-        "deletions": 823,
-        "total": 2960
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/create-ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/hot-or-not-onboarding",
-        "feature/subscriptions-ui",
-        "feature/yral-pro-for-tournaments",
-        "feature/yral-pro-for-tournaments-sarvesh",
-        "main"
-      ]
-    },
-    {
-      "sha": "9c1cda18b2168e6d8bd556ae912e2ba9fa09af94",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-16T11:02:32Z",
-      "message": "chore: Increments android app version",
-      "stats": {
-        "additions": 2,
-        "deletions": 2,
-        "total": 4
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/create-ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/hot-or-not-onboarding",
-        "feature/subscriptions-ui",
-        "feature/yral-pro-for-tournaments",
-        "feature/yral-pro-for-tournaments-sarvesh",
-        "fix/hot-or-not-load-time",
-        "fix/state-button",
-        "main",
-        "release/3.2.0"
-      ]
-    },
-    {
-      "sha": "3e95dace20ffe0a2ac6e1b4f94a6d247eab8e44f",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-16T10:59:24Z",
-      "message": "Handles update priority for android app updates (#791)",
-      "stats": {
-        "additions": 50,
-        "deletions": 4,
-        "total": 54
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/create-ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/hot-or-not-onboarding",
-        "feature/subscriptions-ui",
-        "feature/yral-pro-for-tournaments",
-        "feature/yral-pro-for-tournaments-sarvesh",
-        "fix/hot-or-not-load-time",
-        "fix/state-button",
-        "main",
-        "release/3.2.0"
-      ]
-    },
-    {
-      "sha": "eb66d4ab066a7c6793daf0a60872c95ebaf3f86f",
-      "author": "samarth-paboowal-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-16T08:53:04Z",
-      "message": "Adds talk to me cta in influencer profile (#768)",
-      "stats": {
-        "additions": 1178,
-        "deletions": 581,
-        "total": 1759
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/create-ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/hot-or-not-onboarding",
-        "feature/subscriptions-ui",
-        "feature/yral-pro-for-tournaments",
-        "feature/yral-pro-for-tournaments-sarvesh",
-        "fix/hot-or-not-load-time",
-        "fix/state-button",
-        "main",
-        "release/3.2.0"
-      ]
-    },
-    {
-      "sha": "0d89bdb9c3a4c01729c1279966d99dd3f13bb4a7",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-16T07:59:35Z",
-      "message": "Fix/tournament info (#790)",
-      "stats": {
-        "additions": 29,
-        "deletions": 8,
-        "total": 37
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/create-ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/hot-or-not-onboarding",
-        "feature/subscriptions-ui",
-        "feature/yral-pro-for-tournaments",
-        "feature/yral-pro-for-tournaments-sarvesh",
-        "fix/hot-or-not-load-time",
-        "fix/state-button",
-        "main",
-        "release/3.2.0"
-      ]
-    },
-    {
-      "sha": "355ece41b50462610f6fb0f314dcc3d97596cdde",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-16T07:35:03Z",
-      "message": "Fix/tournament voting (#789)",
-      "stats": {
-        "additions": 233,
-        "deletions": 40,
-        "total": 273
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/create-ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/hot-or-not-onboarding",
-        "feature/subscriptions-ui",
-        "feature/yral-pro-for-tournaments",
-        "feature/yral-pro-for-tournaments-sarvesh",
-        "fix/hot-or-not-load-time",
-        "fix/state-button",
-        "main",
-        "release/3.2.0"
-      ]
-    },
     {
       "sha": "5042496bea33a5a7abc8aabd5b30ff968dda6fcd",
       "author": "saikatdas0790",
@@ -819,6 +348,124 @@
       ]
     },
     {
+      "sha": "0d89bdb9c3a4c01729c1279966d99dd3f13bb4a7",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-16T07:59:35Z",
+      "message": "Fix/tournament info (#790)",
+      "stats": {
+        "additions": 29,
+        "deletions": 8,
+        "total": 37
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/subscriptions-ui",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "355ece41b50462610f6fb0f314dcc3d97596cdde",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-16T07:35:03Z",
+      "message": "Fix/tournament voting (#789)",
+      "stats": {
+        "additions": 233,
+        "deletions": 40,
+        "total": 273
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/subscriptions-ui",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "c95da6f281c05e6500de4795a2eeee7d4b48db10",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-01-16T06:02:31Z",
+      "message": "added endpoints for upload url and update metadata",
+      "stats": {
+        "additions": 4031,
+        "deletions": 261,
+        "total": 4292
+      },
+      "branches": [
+        "feat/add-endpoints-for-upload-video-and-update-metadata",
+        "main"
+      ]
+    },
+    {
+      "sha": "6c7b14b7097edc002e7d462a46976c9e3e71d216",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-01-16T06:06:07Z",
+      "message": "feat: add upload endpoints",
+      "stats": {
+        "additions": 4057,
+        "deletions": 241,
+        "total": 4298
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "eb66d4ab066a7c6793daf0a60872c95ebaf3f86f",
+      "author": "samarth-paboowal-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-16T08:53:04Z",
+      "message": "Adds talk to me cta in influencer profile (#768)",
+      "stats": {
+        "additions": 1178,
+        "deletions": 581,
+        "total": 1759
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/subscriptions-ui",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
       "sha": "093e599211229407b99f2c84c3ed0b349ece7a15",
       "author": "kevin-antony-yral",
       "repository": "dolr-ai/yral-ai-chat",
@@ -835,6 +482,7 @@
         "c_inf_2",
         "create_influencers",
         "fix/envsubst-litestream-config",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "lat_op_stage",
@@ -865,6 +513,7 @@
         "fix/envsubst-litestream-config",
         "fix_pragma_optimize",
         "further_joel_sugg",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
@@ -901,6 +550,7 @@
         "c_inf_2",
         "create_influencers",
         "fix/envsubst-litestream-config",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "lat_op_stage",
@@ -928,6 +578,7 @@
         "c_inf_2",
         "create_influencers",
         "fix/envsubst-litestream-config",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "lat_op_stage",
@@ -956,6 +607,7 @@
         "c_inf_2",
         "create_influencers",
         "fix/envsubst-litestream-config",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "lat_op_stage",
@@ -989,6 +641,7 @@
         "fix_pragma_optimize",
         "further_joel_sugg",
         "i_e_error",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
@@ -1025,6 +678,7 @@
         "c_inf_2",
         "create_influencers",
         "fix/envsubst-litestream-config",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "lat_op_stage",
@@ -1054,6 +708,7 @@
         "c_inf_2",
         "create_influencers",
         "fix/envsubst-litestream-config",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "lat_op_stage",
@@ -1084,6 +739,7 @@
         "c_inf_2",
         "create_influencers",
         "fix/envsubst-litestream-config",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "lat_op_stage",
@@ -1115,6 +771,7 @@
         "c_inf_2",
         "create_influencers",
         "fix/envsubst-litestream-config",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "lat_op_stage",
@@ -1147,6 +804,7 @@
         "c_inf_2",
         "create_influencers",
         "fix/envsubst-litestream-config",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "lat_op_stage",
@@ -1179,6 +837,7 @@
         "c_inf_2",
         "create_influencers",
         "fix/envsubst-litestream-config",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "lat_op_stage",
@@ -1211,6 +870,7 @@
         "c_inf_2",
         "create_influencers",
         "fix/envsubst-litestream-config",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "lat_op_stage",
@@ -1246,6 +906,7 @@
         "fix_pragma_optimize",
         "further_joel_sugg",
         "i_e_error",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
@@ -1288,6 +949,7 @@
         "c_inf_2",
         "create_influencers",
         "fix/envsubst-litestream-config",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "lat_op_stage",
@@ -1324,6 +986,7 @@
         "fix_pragma_optimize",
         "further_joel_sugg",
         "i_e_error",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
@@ -1366,6 +1029,7 @@
         "c_inf_2",
         "create_influencers",
         "fix/envsubst-litestream-config",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "lat_op_stage",
@@ -1398,6 +1062,7 @@
         "c_inf_2",
         "create_influencers",
         "fix/envsubst-litestream-config",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "lat_op_stage",
@@ -1434,6 +1099,7 @@
         "fix_pragma_optimize",
         "further_joel_sugg",
         "i_e_error",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
@@ -1478,6 +1144,7 @@
         "c_inf_2",
         "create_influencers",
         "fix/envsubst-litestream-config",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "lat_op_stage",
@@ -1514,6 +1181,7 @@
         "fix_pragma_optimize",
         "further_joel_sugg",
         "i_e_error",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
@@ -1558,6 +1226,7 @@
         "c_inf_2",
         "create_influencers",
         "fix/envsubst-litestream-config",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "lat_op_stage",
@@ -1590,6 +1259,7 @@
         "c_inf_2",
         "create_influencers",
         "fix/envsubst-litestream-config",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "lat_op_stage",
@@ -1623,6 +1293,7 @@
         "fix/envsubst-litestream-config",
         "fix_pragma_optimize",
         "further_joel_sugg",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
@@ -1717,81 +1388,118 @@
       ]
     },
     {
-      "sha": "c95da6f281c05e6500de4795a2eeee7d4b48db10",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-video-upload-service",
-      "timestamp": "2026-01-16T06:02:31Z",
-      "message": "added endpoints for upload url and update metadata",
+      "sha": "7b9e75f7bb8ed412f2c8d4d3f1806eeb23b506b0",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-16T14:40:58Z",
+      "message": "Merge pull request #792 from dolr-ai/release/android-2.6.1",
       "stats": {
-        "additions": 4031,
-        "deletions": 261,
-        "total": 4292
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
       },
       "branches": [
-        "feat/add-endpoints-for-upload-video-and-update-metadata",
-        "main"
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/subscriptions-ui",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
       ]
     },
     {
-      "sha": "6c7b14b7097edc002e7d462a46976c9e3e71d216",
-      "author": "ravi-sawlani-yral",
-      "repository": "dolr-ai/yral-video-upload-service",
-      "timestamp": "2026-01-16T06:06:07Z",
-      "message": "feat: add upload endpoints",
+      "sha": "2f6ae5625d4e07a34992d708791f9c6a6714b492",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-16T14:40:40Z",
+      "message": "Merge pull request #793 from dolr-ai/release/android-2.6.1",
       "stats": {
-        "additions": 4057,
-        "deletions": 241,
-        "total": 4298
+        "additions": 2137,
+        "deletions": 823,
+        "total": 2960
       },
       "branches": [
-        "main"
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/subscriptions-ui",
+        "fix/ios-load-time",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "saikatdas0790-patch-1",
+        "test/force-update"
       ]
     },
     {
-      "sha": "d6935d33e4c472b47ae122d4ef6893157452b22c",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/redis-store-cluster",
-      "timestamp": "2026-01-16T05:09:09Z",
-      "message": "trigger CI",
+      "sha": "9c1cda18b2168e6d8bd556ae912e2ba9fa09af94",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-16T11:02:32Z",
+      "message": "chore: Increments android app version",
       "stats": {
-        "additions": 1,
-        "deletions": 0,
-        "total": 1
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
       },
       "branches": [
-        "naitik/impl-redis-store-cluster"
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/subscriptions-ui",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
       ]
     },
     {
-      "sha": "4284ae764044d7012b4b0f76a7cdbf9560426fbd",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/redis-store-cluster",
-      "timestamp": "2026-01-16T04:52:52Z",
-      "message": "fix: enable tls replication",
+      "sha": "3e95dace20ffe0a2ac6e1b4f94a6d247eab8e44f",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-16T10:59:24Z",
+      "message": "Handles update priority for android app updates (#791)",
       "stats": {
-        "additions": 1,
-        "deletions": 0,
-        "total": 1
+        "additions": 50,
+        "deletions": 4,
+        "total": 54
       },
       "branches": [
-        "naitik/impl-redis-store-cluster"
-      ]
-    },
-    {
-      "sha": "e18ff2984fba4cf641078ca4ecea7352c561717e",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/redis-store-cluster",
-      "timestamp": "2026-01-16T04:29:12Z",
-      "message": "fix: rewrite sentinel config on cluster restart",
-      "stats": {
-        "additions": 32,
-        "deletions": 38,
-        "total": 70
-      },
-      "branches": [
-        "naitik/impl-redis-store-cluster"
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/subscriptions-ui",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
       ]
     }
   ],
-  "commit_count": 83
+  "commit_count": 61
 }

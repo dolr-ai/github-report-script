@@ -1,37 +1,7 @@
 {
   "date": "2026-01-05",
-  "cached_at": "2026-02-03T20:41:44.397769Z",
+  "cached_at": "2026-02-06T07:04:29.808837Z",
   "commits": [
-    {
-      "sha": "f93629980e5739b8ecdbda7e46b2b9e48edd0c95",
-      "author": "ravi-sawlani-yral",
-      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
-      "timestamp": "2026-01-05T07:11:47Z",
-      "message": "fix format",
-      "stats": {
-        "additions": 2,
-        "deletions": 1,
-        "total": 3
-      },
-      "branches": [
-        "feat/use-yral-auth-phone-auth-preview-link"
-      ]
-    },
-    {
-      "sha": "06cbe1bd9aeb0629a14af42f0ce17f7526129942",
-      "author": "ravi-sawlani-yral",
-      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
-      "timestamp": "2026-01-05T06:21:44Z",
-      "message": "use yral auth preview url",
-      "stats": {
-        "additions": 3,
-        "deletions": 3,
-        "total": 6
-      },
-      "branches": [
-        "feat/use-yral-auth-phone-auth-preview-link"
-      ]
-    },
     {
       "sha": "801cca4940c9e0eb1f7076962edab2910b44835b",
       "author": "sarvesh-sharma-yral",
@@ -47,21 +17,23 @@
         "chore/events-to-offchain-api",
         "create-pull-request/update-did-files-v3.5.9",
         "develop",
+        "enhancement/chat-error-ui",
         "feature/ai-influencer",
         "feature/create-ai-chat-bot",
-        "feature/create-ai-influencer",
         "feature/dolr-wallet-ui-bk",
-        "feature/hot-or-not-onboarding",
         "feature/iap-ui",
         "feature/subcription-video-gen",
         "feature/subscription-ui",
         "feature/subscriptions-ui",
-        "feature/yral-pro-for-tournaments",
-        "feature/yral-pro-for-tournaments-sarvesh",
         "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
         "fix/state-button",
+        "fix-video-reporting",
         "main",
-        "release/3.2.0"
+        "release/android-2.6.5",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
       ]
     },
     {
@@ -79,21 +51,23 @@
         "chore/events-to-offchain-api",
         "create-pull-request/update-did-files-v3.5.9",
         "develop",
+        "enhancement/chat-error-ui",
         "feature/ai-influencer",
         "feature/create-ai-chat-bot",
-        "feature/create-ai-influencer",
         "feature/dolr-wallet-ui-bk",
-        "feature/hot-or-not-onboarding",
         "feature/iap-ui",
         "feature/subcription-video-gen",
         "feature/subscription-ui",
         "feature/subscriptions-ui",
-        "feature/yral-pro-for-tournaments",
-        "feature/yral-pro-for-tournaments-sarvesh",
         "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
         "fix/state-button",
+        "fix-video-reporting",
         "main",
-        "release/3.2.0"
+        "release/android-2.6.5",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
       ]
     },
     {
@@ -111,37 +85,24 @@
         "chore/events-to-offchain-api",
         "create-pull-request/update-did-files-v3.5.9",
         "develop",
+        "enhancement/chat-error-ui",
         "feature/ai-influencer",
         "feature/create-ai-chat-bot",
-        "feature/create-ai-influencer",
         "feature/dolr-wallet-ui-bk",
-        "feature/hot-or-not-onboarding",
         "feature/iap-ui",
         "feature/subcription-video-gen",
         "feature/subscription-ui",
         "feature/subscriptions-ui",
-        "feature/yral-pro-for-tournaments",
-        "feature/yral-pro-for-tournaments-sarvesh",
         "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
         "fix/state-button",
+        "fix-video-reporting",
         "main",
+        "release/android-2.6.5",
         "release/3.1.0",
-        "release/3.2.0"
-      ]
-    },
-    {
-      "sha": "ed901aec6b35fd0d76861a6dbafc4121aa87fbb9",
-      "author": "samarth-paboowal-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-05T11:25:51Z",
-      "message": "chore: bumps version to 3.1.0",
-      "stats": {
-        "additions": 29,
-        "deletions": 7,
-        "total": 36
-      },
-      "branches": [
-        "release/3.1.0"
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
       ]
     },
     {
@@ -162,6 +123,7 @@
         "fix/redirect-uri-for-multiple-deployments",
         "fix/remove-cookies-in-verify-endpoint",
         "joel/ai-accounts-integration",
+        "joel/dnm-remove-bot-limit",
         "joel/json-ser-ai-endpoint",
         "joel/json-ser-fix",
         "main",
@@ -191,6 +153,7 @@
         "fix/redirect-uri-for-multiple-deployments",
         "fix/remove-cookies-in-verify-endpoint",
         "joel/ai-accounts-integration",
+        "joel/dnm-remove-bot-limit",
         "joel/json-ser-ai-endpoint",
         "joel/json-ser-fix",
         "main",
@@ -220,6 +183,7 @@
         "fix/redirect-uri-for-multiple-deployments",
         "fix/remove-cookies-in-verify-endpoint",
         "joel/ai-accounts-integration",
+        "joel/dnm-remove-bot-limit",
         "joel/json-ser-ai-endpoint",
         "joel/json-ser-fix",
         "main",
@@ -249,6 +213,7 @@
         "fix/redirect-uri-for-multiple-deployments",
         "fix/remove-cookies-in-verify-endpoint",
         "joel/ai-accounts-integration",
+        "joel/dnm-remove-bot-limit",
         "joel/json-ser-ai-endpoint",
         "joel/json-ser-fix",
         "main",
@@ -278,6 +243,7 @@
         "fix/redirect-uri-for-multiple-deployments",
         "fix/remove-cookies-in-verify-endpoint",
         "joel/ai-accounts-integration",
+        "joel/dnm-remove-bot-limit",
         "joel/json-ser-ai-endpoint",
         "joel/json-ser-fix",
         "main",
@@ -307,6 +273,7 @@
         "fix/redirect-uri-for-multiple-deployments",
         "fix/remove-cookies-in-verify-endpoint",
         "joel/ai-accounts-integration",
+        "joel/dnm-remove-bot-limit",
         "joel/json-ser-ai-endpoint",
         "joel/json-ser-fix",
         "main",
@@ -336,6 +303,7 @@
         "fix/redirect-uri-for-multiple-deployments",
         "fix/remove-cookies-in-verify-endpoint",
         "joel/ai-accounts-integration",
+        "joel/dnm-remove-bot-limit",
         "joel/json-ser-ai-endpoint",
         "joel/json-ser-fix",
         "main",
@@ -365,6 +333,7 @@
         "fix/redirect-uri-for-multiple-deployments",
         "fix/remove-cookies-in-verify-endpoint",
         "joel/ai-accounts-integration",
+        "joel/dnm-remove-bot-limit",
         "joel/json-ser-ai-endpoint",
         "joel/json-ser-fix",
         "main",
@@ -374,6 +343,21 @@
         "naitik/migrate_reads_to_dragonfly",
         "naitik/migration-to-dragonfly-redis",
         "revert-41-fix/redirect-uri-for-multiple-deployments"
+      ]
+    },
+    {
+      "sha": "325e5cfdf6040fc31cf996e8409455a4ffd84f63",
+      "author": "jay-dhanwant-yral",
+      "repository": "dolr-ai/ai-feed-recommendation-system",
+      "timestamp": "2026-01-05T01:42:32Z",
+      "message": "Merge pull request #4 from dolr-ai/stage",
+      "stats": {
+        "additions": 2666,
+        "deletions": 1806,
+        "total": 4472
+      },
+      "branches": [
+        "main"
       ]
     },
     {
@@ -408,6 +392,7 @@
         "fk_exeption_handle",
         "further_joel_sugg",
         "i_e_error",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
@@ -491,6 +476,7 @@
         "fk_exeption_handle",
         "further_joel_sugg",
         "i_e_error",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
@@ -575,6 +561,7 @@
         "fk_exeption_handle",
         "further_joel_sugg",
         "i_e_error",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
@@ -660,6 +647,7 @@
         "fk_exeption_handle",
         "further_joel_sugg",
         "i_e_error",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
@@ -745,6 +733,7 @@
         "fk_exeption_handle",
         "further_joel_sugg",
         "i_e_error",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
@@ -831,6 +820,7 @@
         "fk_exeption_handle",
         "further_joel_sugg",
         "i_e_error",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
@@ -917,6 +907,7 @@
         "fk_exeption_handle",
         "further_joel_sugg",
         "i_e_error",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
@@ -1003,6 +994,7 @@
         "fk_exeption_handle",
         "further_joel_sugg",
         "i_e_error",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
@@ -1090,6 +1082,7 @@
         "fk_exeption_handle",
         "further_joel_sugg",
         "i_e_error",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
@@ -1176,6 +1169,7 @@
         "fk_exeption_handle",
         "further_joel_sugg",
         "i_e_error",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
@@ -1264,6 +1258,7 @@
         "further_joel_sugg",
         "gemini_aync",
         "i_e_error",
+        "id_staging",
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
@@ -1348,232 +1343,7 @@
       "branches": [
         "revert-17-revert-15-thread_to_async"
       ]
-    },
-    {
-      "sha": "325e5cfdf6040fc31cf996e8409455a4ffd84f63",
-      "author": "jay-dhanwant-yral",
-      "repository": "dolr-ai/ai-feed-recommendation-system",
-      "timestamp": "2026-01-05T01:42:32Z",
-      "message": "Merge pull request #4 from dolr-ai/stage",
-      "stats": {
-        "additions": 2666,
-        "deletions": 1806,
-        "total": 4472
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "6c1cecf6e786f8819707593ec620554680522cfa",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/redis-store-cluster",
-      "timestamp": "2026-01-05T20:43:38Z",
-      "message": "[skip ci] migration script",
-      "stats": {
-        "additions": 355,
-        "deletions": 0,
-        "total": 355
-      },
-      "branches": [
-        "naitik/impl-redis-store-cluster"
-      ]
-    },
-    {
-      "sha": "56a2444372196fd6f5af50b222be7d811309f463",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/redis-store-cluster",
-      "timestamp": "2026-01-05T19:23:49Z",
-      "message": "added script for cluster - 2",
-      "stats": {
-        "additions": 308,
-        "deletions": 12,
-        "total": 320
-      },
-      "branches": [
-        "naitik/impl-redis-store-cluster"
-      ]
-    },
-    {
-      "sha": "cee57ab5811d78f87d16e169ff657be1e944d45f",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/redis-store-cluster",
-      "timestamp": "2026-01-05T13:57:44Z",
-      "message": "exp: test with network_mode : host",
-      "stats": {
-        "additions": 10,
-        "deletions": 10,
-        "total": 20
-      },
-      "branches": [
-        "naitik/impl-redis-store-cluster"
-      ]
-    },
-    {
-      "sha": "afa9812c65556d1352809864c273fd22c5382c1a",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/redis-store-cluster",
-      "timestamp": "2026-01-05T13:50:58Z",
-      "message": "fix: use host network mode for dragonfly and haproxy services",
-      "stats": {
-        "additions": 12,
-        "deletions": 8,
-        "total": 20
-      },
-      "branches": [
-        "naitik/impl-redis-store-cluster"
-      ]
-    },
-    {
-      "sha": "9f3d72aa301b3f9716c1fdaf3dcb2a80e77ecce3",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/redis-store-cluster",
-      "timestamp": "2026-01-05T13:33:22Z",
-      "message": "fix: added check for addr initialization",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "naitik/impl-redis-store-cluster"
-      ]
-    },
-    {
-      "sha": "9359c40ae4cd187ee36a93ef406abae0f9ceeabe",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/redis-store-cluster",
-      "timestamp": "2026-01-05T13:23:19Z",
-      "message": "fix: wait for dragon fly to initiated before ha proxy",
-      "stats": {
-        "additions": 2,
-        "deletions": 6,
-        "total": 8
-      },
-      "branches": [
-        "naitik/impl-redis-store-cluster"
-      ]
-    },
-    {
-      "sha": "f7abb428bbf668ed3c908f86c0a13f2799837fb7",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/redis-store-cluster",
-      "timestamp": "2026-01-05T13:14:54Z",
-      "message": "fix: name of docker service",
-      "stats": {
-        "additions": 8,
-        "deletions": 8,
-        "total": 16
-      },
-      "branches": [
-        "naitik/impl-redis-store-cluster"
-      ]
-    },
-    {
-      "sha": "da34d2afde7448c875e3e7a7afb225fd2feb6069",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/redis-store-cluster",
-      "timestamp": "2026-01-05T13:11:02Z",
-      "message": "fix: issue in connetion to dragonfly",
-      "stats": {
-        "additions": 11,
-        "deletions": 16,
-        "total": 27
-      },
-      "branches": [
-        "naitik/impl-redis-store-cluster"
-      ]
-    },
-    {
-      "sha": "b8d9f6e35709e3904ad3e161958a6dc1465fc50d",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/redis-store-cluster",
-      "timestamp": "2026-01-05T12:54:51Z",
-      "message": "fix : port connectio issue",
-      "stats": {
-        "additions": 2,
-        "deletions": 0,
-        "total": 2
-      },
-      "branches": [
-        "naitik/impl-redis-store-cluster"
-      ]
-    },
-    {
-      "sha": "8e81f91c740915c7debbd4b83f080b3223eab294",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/redis-store-cluster",
-      "timestamp": "2026-01-05T12:40:23Z",
-      "message": "fix: port update for tls and replication link",
-      "stats": {
-        "additions": 7,
-        "deletions": 7,
-        "total": 14
-      },
-      "branches": [
-        "naitik/impl-redis-store-cluster"
-      ]
-    },
-    {
-      "sha": "d0af1adedea523a1d482c8e6f9c71533f9aaca4b",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/redis-store-cluster",
-      "timestamp": "2026-01-05T12:25:01Z",
-      "message": "fix: added non tls port for replication",
-      "stats": {
-        "additions": 11,
-        "deletions": 3,
-        "total": 14
-      },
-      "branches": [
-        "naitik/impl-redis-store-cluster"
-      ]
-    },
-    {
-      "sha": "f52e5c50a369ad6c31aeda60ca49b2fd4ba7e97c",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/redis-store-cluster",
-      "timestamp": "2026-01-05T11:57:54Z",
-      "message": "fix: HAproxy setup",
-      "stats": {
-        "additions": 7,
-        "deletions": 13,
-        "total": 20
-      },
-      "branches": [
-        "naitik/impl-redis-store-cluster"
-      ]
-    },
-    {
-      "sha": "fad91999a2cec2c1acea455d216c2cd69201d131",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/redis-store-cluster",
-      "timestamp": "2026-01-05T10:52:25Z",
-      "message": "fix: service name",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "naitik/impl-redis-store-cluster"
-      ]
-    },
-    {
-      "sha": "d7efeabba5d03e82caca3f766e81787fed462291",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/redis-store-cluster",
-      "timestamp": "2026-01-05T10:48:39Z",
-      "message": "enable tls with HAproxy",
-      "stats": {
-        "additions": 153,
-        "deletions": 34,
-        "total": 187
-      },
-      "branches": [
-        "naitik/impl-redis-store-cluster"
-      ]
     }
   ],
-  "commit_count": 42
+  "commit_count": 25
 }

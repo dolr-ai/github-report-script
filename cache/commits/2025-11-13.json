@@ -1,0 +1,260 @@
+{
+  "date": "2025-11-13",
+  "cached_at": "2026-02-06T07:01:45.088195Z",
+  "commits": [
+    {
+      "sha": "c0d5df769f3a61f2273d2dc0115f06c6a9ea3bf6",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2025-11-13T11:22:07Z",
+      "message": "fix: add speech to video in provider info",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "1399_migrate_ntex_to_axum_support",
+        "chore-update-user-info-service-canister-did",
+        "feat/ltx2-model",
+        "feat/update-candid-for-user-info-service",
+        "feat/update-rate-limit-canister-did-file",
+        "feat/update-user-info-deps",
+        "fix/update-user-info-service-candid",
+        "fix/yral-pro-subscription-token-transaction-implmentation",
+        "joel/notification_store_ty",
+        "master",
+        "naitik/updata_metadata_url",
+        "revert-153-fix/update-user-info-service-candid",
+        "revert-banned-posts-filter"
+      ]
+    },
+    {
+      "sha": "54e44ffd385ab3c5e3aa390a473e20565694900d",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2025-11-13T09:18:10Z",
+      "message": "feat: add speech to video model (#144)",
+      "stats": {
+        "additions": 124,
+        "deletions": 2,
+        "total": 126
+      },
+      "branches": [
+        "1399_migrate_ntex_to_axum_support",
+        "chore-update-user-info-service-canister-did",
+        "feat/ltx2-model",
+        "feat/update-candid-for-user-info-service",
+        "feat/update-rate-limit-canister-did-file",
+        "feat/update-user-info-deps",
+        "fix/update-user-info-service-candid",
+        "fix/yral-pro-subscription-token-transaction-implmentation",
+        "joel/notification_store_ty",
+        "master",
+        "naitik/updata_metadata_url",
+        "revert-153-fix/update-user-info-service-candid",
+        "revert-banned-posts-filter"
+      ]
+    },
+    {
+      "sha": "27c290b8e86d5feea64c74a56e22914f9ddcdb90",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2025-11-13T09:08:39Z",
+      "message": "add get_provider_info for speech to video model",
+      "stats": {
+        "additions": 42,
+        "deletions": 1,
+        "total": 43
+      },
+      "branches": [
+        "copilot/sub-pr-144",
+        "feat/add-speech-to-video-model"
+      ]
+    },
+    {
+      "sha": "673ffe91b15ddbb12fb1aeeb319667a9f249f9b9",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-11-13T12:38:39Z",
+      "message": "remove check for empty prompt for speech to video model",
+      "stats": {
+        "additions": 1,
+        "deletions": 3,
+        "total": 4
+      },
+      "branches": [
+        "copilot/add-total-credits-user-profile",
+        "feat/add-bulk-methods-for-profile-details"
+      ]
+    },
+    {
+      "sha": "abdbfeacd8ae7d3cfc44c1a74e3aa310b37a009e",
+      "author": "samarth-paboowal-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-13T12:30:32Z",
+      "message": "Adds signup bottom sheet in normal upload flow (#649)",
+      "stats": {
+        "additions": 130,
+        "deletions": 15,
+        "total": 145
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "chore/new-upload-video-endpoint",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/download-video",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/test-install-referrers",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "2a80a56c4435e4976e7146287ddc60914a0771bb",
+      "author": "samarth-paboowal-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-13T07:23:18Z",
+      "message": "chore: updates prize structure for leaderboard (#647)",
+      "stats": {
+        "additions": 19,
+        "deletions": 9,
+        "total": 28
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "chore/new-upload-video-endpoint",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/download-video",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/test-install-referrers",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "feecc9ed8a24405a335e8cca26b1b54825619438",
+      "author": "samarth-paboowal-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-13T06:43:15Z",
+      "message": "WIP",
+      "stats": {
+        "additions": 150,
+        "deletions": 1,
+        "total": 151
+      },
+      "branches": [
+        "feature/subscription-nudge-in-feed"
+      ]
+    },
+    {
+      "sha": "df674fe573c2b8c01d2f8e69267079fbecd59ee4",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-13T13:32:17Z",
+      "message": "Handles navigation on AccountScreen for login and logout action (#650)",
+      "stats": {
+        "additions": 37,
+        "deletions": 20,
+        "total": 57
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "chore/new-upload-video-endpoint",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/download-video",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/test-install-referrers",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "9138915b53ab5f644f0fe4cb79262dcdcaaf1636",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2025-11-13T05:48:32Z",
+      "message": "Trigger E2E tests for raw upload endpoint (#26)",
+      "stats": {
+        "additions": 17,
+        "deletions": 6,
+        "total": 23
+      },
+      "branches": [
+        "joel/new-upload-flow",
+        "joel/thumbnails",
+        "main"
+      ]
+    },
+    {
+      "sha": "9e78a3a9ed8d3d4dd40ecffbf44e73bd84241700",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2025-11-13T04:33:19Z",
+      "message": "added raw endpoint (#25)",
+      "stats": {
+        "additions": 153,
+        "deletions": 7,
+        "total": 160
+      },
+      "branches": [
+        "joel/new-upload-flow",
+        "joel/thumbnails",
+        "main",
+        "test-raw-upload-endpoint"
+      ]
+    }
+  ],
+  "commit_count": 10
+}

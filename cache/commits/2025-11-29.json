@@ -1,0 +1,37 @@
+{
+  "date": "2025-11-29",
+  "cached_at": "2026-02-06T07:02:19.472957Z",
+  "commits": [
+    {
+      "sha": "afdab71e030dd701c3ea0f6ed3df055931cfb00f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-29T08:32:46Z",
+      "message": "Add serial reboot task to update playbook",
+      "stats": {
+        "additions": 13,
+        "deletions": 0,
+        "total": 13
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7a8822456fef7d1d0b106434907054b7a6d0c2e9",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-29T08:29:35Z",
+      "message": "Remove unused host group definitions from inventory",
+      "stats": {
+        "additions": 0,
+        "deletions": 43,
+        "total": 43
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 2
+}

@@ -2,11 +2,12 @@
 
 A configuration-driven Python script that fetches GitHub commits and lines of code metrics for specified users within an organization, and generates comparative visualizations showing daily activity.
 
-**No command-line arguments needed** - all configuration is managed through `src/config.py` and secrets through Ansible Vault.
+**Configuration via `src/config.py`** with optional CLI overrides for automation and flexibility.
 
 ## Features
 
 - **Configuration-Driven**: All settings in `src/config.py` - just edit and run
+- **CLI Support**: Override mode and parameters via command-line arguments
 - **Secure Secret Management**: Ansible Vault for encrypted credential storage
 - **Concurrent API Fetching**: Configurable thread pool (default 4 threads)
 - **Smart Caching**: Day-wise JSON caching with selective refresh
@@ -47,35 +48,75 @@ cd ansible
 # Follow the prompts to set vault password and GitHub token
 cd ..
 
-# 3. Configure execution
-# Edit src/config.py and set:
-#   MODE = ExecutionMode.FETCH
-#   DATE_RANGE_MODE = DateRangeMode.LAST_N_DAYS
-#   DAYS_BACK = 7
-
-# 4. Run the script
+# 3. Run with defaults (fetch and chart last 30 days)
 python src/main.py
+
+# Or customize with CLI arguments
+python src/main.py --mode refresh --days 90    # Refresh last 90 days
+python src/main.py --mode chart --days 7        # Chart last 7 days
+python src/main.py --mode status                # Check status
+```
+
+## Usage
+
+### Command-Line Interface
+
+```bash
+# Use defaults from config.py (fetch_and_chart mode, 30 days)
+python src/main.py
+
+# Override execution mode
+python src/main.py --mode fetch              # Fetch only
+python src/main.py --mode refresh --days 90  # Force refresh 90 days
+python src/main.py --mode chart              # Generate charts only
+python src/main.py --mode status             # Check status
+
+# Get help
+python src/main.py --help
+```
+
+**Available Modes:**
+- `fetch` - Fetch and process new data
+- `refresh` - Re-fetch and overwrite existing cache
+- `chart` - Generate visualizations from existing data
+- `status` - Show cache status and API rate limits
+- `fetch_and_chart` - Fetch + process + generate charts (default)
+
+### Configuration File
+
+For persistent settings, edit `src/config.py`:
+
+```python
+from src.config import ExecutionMode, DateRangeMode
+
+# Default execution mode (can be overridden with --mode)
+MODE = ExecutionMode.FETCH_AND_CHART
+
+# Date range settings (DAYS_BACK can be overridden with --days)
+DATE_RANGE_MODE = DateRangeMode.LAST_N_DAYS
+DAYS_BACK = 30
 ```
 
 ## Configuration
 
 ### Execution Modes
 
-Edit `src/config.py` to set the execution mode:
+The script supports multiple execution modes that can be set in `src/config.py` or via CLI:
 
 ```python
 from src.config import ExecutionMode, DateRangeMode
 
 # What should the script do?
-MODE = ExecutionMode.FETCH      # Fetch and process new data
-# MODE = ExecutionMode.REFRESH  # Re-fetch specific dates (overwrites cache)
-# MODE = ExecutionMode.CHART    # Generate visualizations
-# MODE = ExecutionMode.STATUS   # Show status and rate limits
-# MODE = ExecutionMode.FETCH_AND_CHART  # Fetch + process + generate charts (CI mode)
+MODE = ExecutionMode.FETCH_AND_CHART  # Default: Fetch + Chart
+# MODE = ExecutionMode.FETCH      # Fetch and process new data
+# MODE = ExecutionMode.REFRESH    # Re-fetch specific dates (overwrites cache)
+# MODE = ExecutionMode.CHART      # Generate visualizations
+# MODE = ExecutionMode.STATUS     # Show status and rate limits
 ```
 
 **Mode Descriptions:**
 
+- **FETCH_AND_CHART**: Fetch new commits, process metrics, and generate charts (default)
 - **FETCH**: Fetch commits from GitHub API and process them into metrics
 - **REFRESH**: Re-fetch and overwrite existing cached data for specific dates
 - **CHART**: Generate visualization charts from existing processed data

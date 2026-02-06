@@ -1,0 +1,43 @@
+{
+  "date": "2025-12-06",
+  "cached_at": "2026-02-06T07:02:39.262328Z",
+  "commits": [
+    {
+      "sha": "44097e0ee298207b05cd95df7180e8fa83091ee2",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-12-06T16:02:57Z",
+      "message": "Implements app onboarding (#696)",
+      "stats": {
+        "additions": 996,
+        "deletions": 95,
+        "total": 1091
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    }
+  ],
+  "commit_count": 1
+}

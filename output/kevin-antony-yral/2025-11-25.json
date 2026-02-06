@@ -1,0 +1,32 @@
+{
+  "date": "2025-11-25",
+  "username": "kevin-antony-yral",
+  "additions": 4969,
+  "deletions": 254,
+  "total_loc": 5223,
+  "commit_count": 5,
+  "repositories": [
+    "dolr-ai/dragonfly-bare-metal",
+    "dolr-ai/yral-ai-chat"
+  ],
+  "repo_count": 2,
+  "branch_breakdown": {
+    "dolr-ai/dragonfly-bare-metal": {
+      "main": {
+        "additions": 0,
+        "deletions": 226,
+        "total_loc": 226,
+        "commit_count": 2
+      }
+    },
+    "dolr-ai/yral-ai-chat": {
+      "main": {
+        "additions": 4969,
+        "deletions": 28,
+        "total_loc": 4997,
+        "commit_count": 3
+      }
+    }
+  },
+  "processed_at": "2026-02-06T07:06:58.502035Z"
+}

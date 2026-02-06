@@ -1,0 +1,197 @@
+{
+  "date": "2025-12-17",
+  "cached_at": "2026-02-06T07:03:16.450151Z",
+  "commits": [
+    {
+      "sha": "8875f6fae45c1b6c995a02397aeff209c468ae43",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-17T13:11:05Z",
+      "message": "Expand env vars, drop CI apply, move rescue script",
+      "stats": {
+        "additions": 11,
+        "deletions": 18,
+        "total": 29
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "0e7bb7fc3eee7903d94a447b64427191c171a8bb",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-17T08:39:51Z",
+      "message": "Add initial Cluster API manifests for Hetzner cluster",
+      "stats": {
+        "additions": 821,
+        "deletions": 3,
+        "total": 824
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "2544fce81c5ccf249c43d12cedbc34c24de37aa8",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2025-12-17T12:42:19Z",
+      "message": "initial setup for video upload service",
+      "stats": {
+        "additions": 585,
+        "deletions": 0,
+        "total": 585
+      },
+      "branches": [
+        "feat/add-endpoints-for-upload-video-and-update-metadata",
+        "main"
+      ]
+    },
+    {
+      "sha": "0d7fcf8c8c383bb1a448b04474bbc45651c78367",
+      "author": "jay-dhanwant-yral",
+      "repository": "dolr-ai/ai-feed-recommendation-system",
+      "timestamp": "2025-12-17T17:21:21Z",
+      "message": "Merge pull request #1 from dolr-ai/stage",
+      "stats": {
+        "additions": 5,
+        "deletions": 1,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "1b58392c954bd4ecdc7589bcc804fbddadc812f0",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/ai-influencers-content",
+      "timestamp": "2025-12-17T06:50:59Z",
+      "message": "WIP",
+      "stats": {
+        "additions": 667,
+        "deletions": 313,
+        "total": 980
+      },
+      "branches": [
+        "changes-td",
+        "main"
+      ]
+    },
+    {
+      "sha": "c4b7efd2cc3d8c97606f1a3dec6ceb07e58ae42d",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2025-12-17T10:10:07Z",
+      "message": "Merge pull request #7 from dolr-ai/schema-changes",
+      "stats": {
+        "additions": 281,
+        "deletions": 110,
+        "total": 391
+      },
+      "branches": [
+        "aioboto_implementation",
+        "backward_chat_api",
+        "beszel_ai_chat",
+        "beszel_to_main",
+        "bf_msg_sys",
+        "bf_small_num",
+        "bf_14jan",
+        "bugfix_database_lock",
+        "c_inf_2",
+        "chat/wip",
+        "create_influencers",
+        "debug_or_fmissue",
+        "debugging_env_check",
+        "delete_bug",
+        "docker_staging_to_main",
+        "docker_staging",
+        "enum_is_active",
+        "fix/envsubst-config-substitution",
+        "fix/envsubst-litestream-config",
+        "fix_pragma_optimize",
+        "fk_exeption_handle",
+        "further_joel_sugg",
+        "gemini_aync",
+        "gemini-nsfw-fy",
+        "i_e_error",
+        "id_staging",
+        "img_in_chat",
+        "inbox_apis",
+        "indempotency_msg_fix",
+        "infra_rl",
+        "jatin_og_prompt",
+        "jay_review",
+        "joel/optim-suggestions",
+        "jwt_in",
+        "lat_op_stage",
+        "lat_op",
+        "latencytrack_optimization",
+        "linitng",
+        "litestream_integrety",
+        "litestream_sync_interval",
+        "logs_sm_num",
+        "ls_1s",
+        "m_replica_14jan",
+        "main_deployment_fixes",
+        "main_replica_14jan",
+        "main_replica__16jan",
+        "main",
+        "mb_resource_alloc",
+        "metabase_bf2",
+        "metabase_hosting",
+        "metabase_prod",
+        "metabase_staging_rw",
+        "metabase",
+        "migrations_clear",
+        "more_op_latency",
+        "msg_type_normalization",
+        "new_deployment",
+        "nsfw_detection",
+        "nsfw_openrouter",
+        "nsfw_pre_push",
+        "pn_inbox",
+        "post-conv-10-last",
+        "postgre_db",
+        "prod_err",
+        "prompt_changes_astro_dating_sexed",
+        "prompt_changes_new_29_dec",
+        "revert-15-thread_to_async",
+        "revert-17-revert-15-thread_to_async",
+        "revert-27-nsfw_detection",
+        "revert-29-revert-27-nsfw_detection",
+        "revert-34-infra_rl",
+        "revert-36-revert-34-infra_rl",
+        "rm_adhoc",
+        "rm_dupli_from_context",
+        "rm_greeting_messages",
+        "s3-pvt",
+        "safety_check",
+        "sec-auth",
+        "send_msg_rogue",
+        "sentry_bf",
+        "sentry_everywhere",
+        "sentry_fix_stageing",
+        "sentry_fix",
+        "sentry_webhook",
+        "sentry",
+        "slow_msg",
+        "small_num_bug",
+        "sqlite_optimisations",
+        "staging",
+        "storj_integration",
+        "sys_prompt_prod",
+        "temp_fix_db_lock",
+        "test_fix_url_n_storj_k",
+        "test_robust_gc",
+        "thread_to_async",
+        "truncated_response",
+        "uptime_kuma",
+        "v2-auth",
+        "wal_ckpt_bug_fix"
+      ]
+    }
+  ],
+  "commit_count": 6
+}

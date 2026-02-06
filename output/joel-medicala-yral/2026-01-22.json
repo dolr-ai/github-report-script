@@ -1,32 +1,23 @@
 {
   "date": "2026-01-22",
   "username": "joel-medicala-yral",
-  "additions": 272,
-  "deletions": 28,
-  "total_loc": 300,
-  "commit_count": 2,
+  "additions": 331,
+  "deletions": 292,
+  "total_loc": 623,
+  "commit_count": 3,
   "repositories": [
-    "dolr-ai/hot-or-not-backend-canister",
     "dolr-ai/off-chain-agent"
   ],
-  "repo_count": 2,
+  "repo_count": 1,
   "branch_breakdown": {
-    "dolr-ai/hot-or-not-backend-canister": {
-      "main": {
-        "additions": 237,
-        "deletions": 14,
-        "total_loc": 251,
-        "commit_count": 1
-      }
-    },
     "dolr-ai/off-chain-agent": {
       "main": {
-        "additions": 35,
-        "deletions": 14,
-        "total_loc": 49,
-        "commit_count": 1
+        "additions": 331,
+        "deletions": 292,
+        "total_loc": 623,
+        "commit_count": 3
       }
     }
   },
-  "processed_at": "2026-02-05T09:19:15.729505Z"
+  "processed_at": "2026-02-06T07:06:58.958565Z"
 }

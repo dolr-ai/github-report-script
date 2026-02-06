@@ -1,20 +1,99 @@
 {
   "date": "2026-02-05",
-  "cached_at": "2026-02-06T03:48:47.914788Z",
+  "cached_at": "2026-02-06T07:20:00.985089Z",
   "commits": [
     {
-      "sha": "002d559b7c0498f379ecbe1f5b1481ce892c34d9",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-02-05T07:11:38Z",
-      "message": "chore: use GitHub vars for ComfyUI tunnel URLs",
+      "sha": "7b847b2d88a18eb15db1c2a5dcf52a654965d8e6",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-02-05T12:18:10Z",
+      "message": "add notification client",
       "stats": {
-        "additions": 12,
+        "additions": 34,
         "deletions": 8,
-        "total": 20
+        "total": 42
       },
       "branches": [
-        "joel/ltx-intergration"
+        "main"
+      ]
+    },
+    {
+      "sha": "b7b3bdc2c1ecfda64e4598d25ecaca857c947e69",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-02-05T12:09:17Z",
+      "message": "integrate events service",
+      "stats": {
+        "additions": 427,
+        "deletions": 26,
+        "total": 453
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7e740c8ece8510609b5588f42dfc993922c7db5c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-05T09:47:44Z",
+      "message": "Fix: Filter out merge commits to prevent double-counting",
+      "stats": {
+        "additions": 17,
+        "deletions": 1,
+        "total": 18
+      },
+      "branches": [
+        "main",
+        "push-event-based"
+      ]
+    },
+    {
+      "sha": "c184a79a030ceced2a2d530aa72d723f862f553c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-05T09:17:39Z",
+      "message": "Update processed_at timestamps and adjust commit statistics for January 2026",
+      "stats": {
+        "additions": 1011,
+        "deletions": 1662,
+        "total": 2673
+      },
+      "branches": [
+        "main",
+        "push-event-based"
+      ]
+    },
+    {
+      "sha": "04916c39106c163db2f90ef7d26fd48655a28eb2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-05T08:56:02Z",
+      "message": "Fix: Implement two-pass deduplication for squash-merge commits",
+      "stats": {
+        "additions": 85,
+        "deletions": 1,
+        "total": 86
+      },
+      "branches": [
+        "main",
+        "push-event-based"
+      ]
+    },
+    {
+      "sha": "a969bde6e1c3430ec018de2c325d8177adfadc31",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-05T08:31:20Z",
+      "message": "Add daily contribution reports for February 4, 2026",
+      "stats": {
+        "additions": 1524,
+        "deletions": 4,
+        "total": 1528
+      },
+      "branches": [
+        "main",
+        "push-event-based"
       ]
     },
     {
@@ -29,6 +108,7 @@
         "total": 3
       },
       "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
         "develop",
         "feature/ai-influencer",
         "fix-video-reporting",
@@ -47,9 +127,25 @@
         "total": 1225
       },
       "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
         "develop",
         "feature/ai-influencer",
         "fix-video-reporting",
+        "release/android-2.6.5"
+      ]
+    },
+    {
+      "sha": "745a4c134d990882f9830383922ed8349703de0b",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-05T15:56:23Z",
+      "message": "fix: Sends correct event type for how to play event",
+      "stats": {
+        "additions": 16,
+        "deletions": 0,
+        "total": 16
+      },
+      "branches": [
         "release/android-2.6.5"
       ]
     },
@@ -65,70 +161,11 @@
         "total": 178
       },
       "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
         "develop",
         "feature/ai-influencer",
         "fix-video-reporting",
         "release/android-2.6.5"
-      ]
-    },
-    {
-      "sha": "cc4b33ae70ffbe0c2b146fb9ac95f1ecba129de9",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-05T07:20:51Z",
-      "message": "Adds document for current UX for errors in chat",
-      "stats": {
-        "additions": 133,
-        "deletions": 0,
-        "total": 133
-      },
-      "branches": [
-        "enhancement/chat-error-ui"
-      ]
-    },
-    {
-      "sha": "aa0831cb21cd079f239cd0e37f1b2037a489691d",
-      "author": "samarth-paboowal-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-05T15:57:21Z",
-      "message": "Adds UI improvements for AI influencer (#848)",
-      "stats": {
-        "additions": 419,
-        "deletions": 165,
-        "total": 584
-      },
-      "branches": [
-        "feature/ai-influencer"
-      ]
-    },
-    {
-      "sha": "140d19bf7af1ff891f824fce504f5a365db62231",
-      "author": "samarth-paboowal-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-05T15:57:21Z",
-      "message": "Adds bot creation & account switching (#822)",
-      "stats": {
-        "additions": 5422,
-        "deletions": 60,
-        "total": 5482
-      },
-      "branches": [
-        "feature/ai-influencer"
-      ]
-    },
-    {
-      "sha": "bd6b8f24525ca2d7fee9b0f313b580919fe9e9af",
-      "author": "samarth-paboowal-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-05T15:57:21Z",
-      "message": "build: adds AI influencer module to features",
-      "stats": {
-        "additions": 62,
-        "deletions": 0,
-        "total": 62
-      },
-      "branches": [
-        "feature/ai-influencer"
       ]
     },
     {
@@ -175,367 +212,7 @@
       "branches": [
         "fix-video-reporting"
       ]
-    },
-    {
-      "sha": "745a4c134d990882f9830383922ed8349703de0b",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-05T15:56:23Z",
-      "message": "fix: Sends correct event type for how to play event",
-      "stats": {
-        "additions": 16,
-        "deletions": 0,
-        "total": 16
-      },
-      "branches": [
-        "release/android-2.6.5"
-      ]
-    },
-    {
-      "sha": "72f8b4a28749c4f9c9879394da87a3ef2cb078a4",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-05T15:25:12Z",
-      "message": "chore: Increments android app version",
-      "stats": {
-        "additions": 2,
-        "deletions": 2,
-        "total": 4
-      },
-      "branches": [
-        "release/android-2.6.5"
-      ]
-    },
-    {
-      "sha": "f835f2f6d4f7c3c6631ee237ad09635695671805",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-05T04:38:53Z",
-      "message": "Update AI video credits string in XML",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "saikatdas0790-patch-1"
-      ]
-    },
-    {
-      "sha": "09cd249f12e99f85425c7962583a94d51560ed71",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-05T05:21:20Z",
-      "message": "Increments build version name for testing",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "test/force-update"
-      ]
-    },
-    {
-      "sha": "7b847b2d88a18eb15db1c2a5dcf52a654965d8e6",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-video-upload-service",
-      "timestamp": "2026-02-05T12:18:10Z",
-      "message": "add notification client",
-      "stats": {
-        "additions": 34,
-        "deletions": 8,
-        "total": 42
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "b7b3bdc2c1ecfda64e4598d25ecaca857c947e69",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-video-upload-service",
-      "timestamp": "2026-02-05T12:09:17Z",
-      "message": "integrate events service",
-      "stats": {
-        "additions": 427,
-        "deletions": 26,
-        "total": 453
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "0b31fa32f27bad2fb7858083255a3440e6a0b0a7",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/redis-store-cluster",
-      "timestamp": "2026-02-05T21:54:45Z",
-      "message": "chore: remove push to deploy",
-      "stats": {
-        "additions": 0,
-        "deletions": 1,
-        "total": 1
-      },
-      "branches": [
-        "naitik/impl-redis-store-cluster"
-      ]
-    },
-    {
-      "sha": "7c8b49413fe739f3d1fcc3c0b4a1a15e555fd223",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hashicorp-vault-service",
-      "timestamp": "2026-02-05T21:06:10Z",
-      "message": "chore: remove deploy on push",
-      "stats": {
-        "additions": 0,
-        "deletions": 3,
-        "total": 3
-      },
-      "branches": [
-        "naitik/initial_setup"
-      ]
-    },
-    {
-      "sha": "b48e1d6e98665e7e251e60c7e3fb21a3da54278a",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hashicorp-vault-service",
-      "timestamp": "2026-02-05T20:44:23Z",
-      "message": "fix: ports",
-      "stats": {
-        "additions": 3,
-        "deletions": 3,
-        "total": 6
-      },
-      "branches": [
-        "naitik/initial_setup"
-      ]
-    },
-    {
-      "sha": "0c94132b433173d1344343799a45be61b6f93911",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hashicorp-vault-service",
-      "timestamp": "2026-02-05T20:25:55Z",
-      "message": "fix: vault initalize",
-      "stats": {
-        "additions": 2,
-        "deletions": 1,
-        "total": 3
-      },
-      "branches": [
-        "naitik/initial_setup"
-      ]
-    },
-    {
-      "sha": "635854ae3fe98057eb81e88ea3ad491b1ae13385",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hashicorp-vault-service",
-      "timestamp": "2026-02-05T20:06:28Z",
-      "message": "fix: CN name mismatch",
-      "stats": {
-        "additions": 1,
-        "deletions": 0,
-        "total": 1
-      },
-      "branches": [
-        "naitik/initial_setup"
-      ]
-    },
-    {
-      "sha": "fc53b5d49e58089d4bb6d32b7a03d70598984361",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hashicorp-vault-service",
-      "timestamp": "2026-02-05T19:56:43Z",
-      "message": "fix: file permissions",
-      "stats": {
-        "additions": 1,
-        "deletions": 2,
-        "total": 3
-      },
-      "branches": [
-        "naitik/initial_setup"
-      ]
-    },
-    {
-      "sha": "a0e5d638a6d9cc5ebf20e34a8b2b2b534e6bbff3",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hashicorp-vault-service",
-      "timestamp": "2026-02-05T19:53:40Z",
-      "message": "fix: updated file permissions",
-      "stats": {
-        "additions": 3,
-        "deletions": 1,
-        "total": 4
-      },
-      "branches": [
-        "naitik/initial_setup"
-      ]
-    },
-    {
-      "sha": "ecc75022196a1b0199b04972360e52a218a5d5b7",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hashicorp-vault-service",
-      "timestamp": "2026-02-05T19:26:54Z",
-      "message": "test: removed client cert from caddy",
-      "stats": {
-        "additions": 0,
-        "deletions": 1,
-        "total": 1
-      },
-      "branches": [
-        "naitik/initial_setup"
-      ]
-    },
-    {
-      "sha": "2aae7156b0b1f0a1b93e9ec6e221dcaa0ea99ac1",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hashicorp-vault-service",
-      "timestamp": "2026-02-05T19:09:50Z",
-      "message": "fix: caddy client auth",
-      "stats": {
-        "additions": 1,
-        "deletions": 4,
-        "total": 5
-      },
-      "branches": [
-        "naitik/initial_setup"
-      ]
-    },
-    {
-      "sha": "7f1f67fb3562bc249ad9fa68cfd8c3633d226105",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hashicorp-vault-service",
-      "timestamp": "2026-02-05T19:06:35Z",
-      "message": "fix: caddy",
-      "stats": {
-        "additions": 2,
-        "deletions": 1,
-        "total": 3
-      },
-      "branches": [
-        "naitik/initial_setup"
-      ]
-    },
-    {
-      "sha": "97692020cd9b6e3f110e4155641868ea1aa5ada8",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hashicorp-vault-service",
-      "timestamp": "2026-02-05T19:00:06Z",
-      "message": "fix: caddy syntax",
-      "stats": {
-        "additions": 5,
-        "deletions": 3,
-        "total": 8
-      },
-      "branches": [
-        "naitik/initial_setup"
-      ]
-    },
-    {
-      "sha": "49585de7b7586d74949439171e34afef339aa7ef",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hashicorp-vault-service",
-      "timestamp": "2026-02-05T18:54:27Z",
-      "message": "fix: caddy connection failure",
-      "stats": {
-        "additions": 4,
-        "deletions": 0,
-        "total": 4
-      },
-      "branches": [
-        "naitik/initial_setup"
-      ]
-    },
-    {
-      "sha": "ace0d36b7f44e8c22dbbbf86c60323de5d381f03",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hashicorp-vault-service",
-      "timestamp": "2026-02-05T18:20:44Z",
-      "message": "fix: health status check",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "naitik/initial_setup"
-      ]
-    },
-    {
-      "sha": "fba0919e247428d28e09311d750ef08e5c2d7b3f",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hashicorp-vault-service",
-      "timestamp": "2026-02-05T18:17:06Z",
-      "message": "fix: Caddyfile path",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "naitik/initial_setup"
-      ]
-    },
-    {
-      "sha": "1a54aed94525ea7a6e04e478be7bdcdcff4605fa",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hashicorp-vault-service",
-      "timestamp": "2026-02-05T11:52:01Z",
-      "message": "fix: caddy file to root",
-      "stats": {
-        "additions": 2,
-        "deletions": 0,
-        "total": 2
-      },
-      "branches": [
-        "naitik/initial_setup"
-      ]
-    },
-    {
-      "sha": "eef9c6ad34ab9264ccccf63d2986f10e7b901c48",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hashicorp-vault-service",
-      "timestamp": "2026-02-05T11:47:11Z",
-      "message": "added reverse proxy",
-      "stats": {
-        "additions": 94,
-        "deletions": 8,
-        "total": 102
-      },
-      "branches": [
-        "naitik/initial_setup"
-      ]
-    },
-    {
-      "sha": "d4dfac990ba072877762ff528cd8fb048ad76ea3",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hashicorp-vault-service",
-      "timestamp": "2026-02-05T06:35:59Z",
-      "message": "fix: docs",
-      "stats": {
-        "additions": 12,
-        "deletions": 7,
-        "total": 19
-      },
-      "branches": [
-        "naitik/initial_setup"
-      ]
-    },
-    {
-      "sha": "a969bde6e1c3430ec018de2c325d8177adfadc31",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/github-report-script",
-      "timestamp": "2026-02-05T08:31:20Z",
-      "message": "Add daily contribution reports for February 4, 2026",
-      "stats": {
-        "additions": 1524,
-        "deletions": 4,
-        "total": 1528
-      },
-      "branches": [
-        "main"
-      ]
     }
   ],
-  "commit_count": 35
+  "commit_count": 13
 }

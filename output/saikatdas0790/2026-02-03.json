@@ -1,38 +1,23 @@
 {
   "date": "2026-02-03",
   "username": "saikatdas0790",
-  "additions": 15795,
-  "deletions": 1484,
-  "total_loc": 17279,
-  "commit_count": 7,
+  "additions": 30096,
+  "deletions": 10796,
+  "total_loc": 40892,
+  "commit_count": 14,
   "repositories": [
-    "dolr-ai/github-report-script",
-    "dolr-ai/hetzner-bare-metal-fleet"
+    "dolr-ai/github-report-script"
   ],
-  "repo_count": 2,
+  "repo_count": 1,
   "branch_breakdown": {
-    "dolr-ai/hetzner-bare-metal-fleet": {
-      "main": {
-        "additions": 6,
-        "deletions": 6,
-        "total_loc": 12,
-        "commit_count": 1
-      }
-    },
     "dolr-ai/github-report-script": {
       "main": {
-        "additions": 1824,
-        "deletions": 844,
-        "total_loc": 2668,
-        "commit_count": 1
-      },
-      "unknown": {
-        "additions": 13965,
-        "deletions": 634,
-        "total_loc": 14599,
-        "commit_count": 5
+        "additions": 30096,
+        "deletions": 10796,
+        "total_loc": 40892,
+        "commit_count": 14
       }
     }
   },
-  "processed_at": "2026-02-05T09:19:15.777090Z"
+  "processed_at": "2026-02-06T07:06:59.293431Z"
 }

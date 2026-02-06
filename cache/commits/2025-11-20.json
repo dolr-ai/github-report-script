@@ -1,0 +1,367 @@
+{
+  "date": "2025-11-20",
+  "cached_at": "2026-02-06T07:02:06.397093Z",
+  "commits": [
+    {
+      "sha": "c9e85aa91cc444634a53addc79e6d89c8ae4d802",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-20T16:35:55Z",
+      "message": "Merge pull request #664 from dolr-ai/chore/commonization-final",
+      "stats": {
+        "additions": 76,
+        "deletions": 16,
+        "total": 92
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "chore/new-upload-video-endpoint",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/download-video",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/test-install-referrers",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "76353317e8304887aa3b5c0e4c57667c385fe3c7",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-20T13:28:33Z",
+      "message": "Merge pull request #644 from dolr-ai/release/2.0.7",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "chore/new-upload-video-endpoint",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/download-video",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/test-install-referrers",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "98b1c1ee1a3834a09640ba5ba0765d99472a801d",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-20T13:27:47Z",
+      "message": "Merge pull request #659 from dolr-ai/release/2.0.7",
+      "stats": {
+        "additions": 4666,
+        "deletions": 1765,
+        "total": 6431
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/subscriptions-ui",
+        "fix/ios-load-time",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "b76316f555c6e969f91938bae9a874ed685a3c50",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2025-11-20T10:09:33Z",
+      "message": "remove unused keys from jwkRotationConfig",
+      "stats": {
+        "additions": 0,
+        "deletions": 8,
+        "total": 8
+      },
+      "branches": [
+        "feat/add-client-jwk-refresh",
+        "feat/deploy-to-dolr-ai",
+        "feat/fix-error-type-for-api",
+        "feat/implement-phone-auth",
+        "fix/redirect-uri-for-multiple-deployments",
+        "fix/remove-cookies-in-verify-endpoint",
+        "joel/ai-accounts-integration",
+        "joel/dnm-remove-bot-limit",
+        "joel/fly-migration",
+        "joel/json-ser-ai-endpoint",
+        "joel/json-ser-fix",
+        "joel/restore-fly-deps",
+        "main",
+        "naitik/bare-metal-script-fix",
+        "naitik/fix_bare_metal_deployment",
+        "naitik/fix_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration-to-dragonfly-redis",
+        "revert-41-fix/redirect-uri-for-multiple-deployments"
+      ]
+    },
+    {
+      "sha": "32686e184b0cbfda4f6569a396c2fe1a6e00a123",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2025-11-20T10:07:48Z",
+      "message": "remove comments",
+      "stats": {
+        "additions": 0,
+        "deletions": 60,
+        "total": 60
+      },
+      "branches": [
+        "feat/add-client-jwk-refresh",
+        "feat/deploy-to-dolr-ai",
+        "feat/fix-error-type-for-api",
+        "feat/implement-phone-auth",
+        "fix/redirect-uri-for-multiple-deployments",
+        "fix/remove-cookies-in-verify-endpoint",
+        "joel/ai-accounts-integration",
+        "joel/dnm-remove-bot-limit",
+        "joel/fly-migration",
+        "joel/json-ser-ai-endpoint",
+        "joel/json-ser-fix",
+        "joel/restore-fly-deps",
+        "main",
+        "naitik/bare-metal-script-fix",
+        "naitik/fix_bare_metal_deployment",
+        "naitik/fix_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration-to-dragonfly-redis",
+        "revert-41-fix/redirect-uri-for-multiple-deployments"
+      ]
+    },
+    {
+      "sha": "be58d063ccee95ab8cad1b4b825f3b1195e7baa3",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2025-11-20T05:15:48Z",
+      "message": "add client key refresh for google oauth client",
+      "stats": {
+        "additions": 544,
+        "deletions": 14,
+        "total": 558
+      },
+      "branches": [
+        "feat/add-client-jwk-refresh",
+        "feat/deploy-to-dolr-ai",
+        "feat/fix-error-type-for-api",
+        "feat/implement-phone-auth",
+        "fix/redirect-uri-for-multiple-deployments",
+        "fix/remove-cookies-in-verify-endpoint",
+        "joel/ai-accounts-integration",
+        "joel/dnm-remove-bot-limit",
+        "joel/fly-migration",
+        "joel/json-ser-ai-endpoint",
+        "joel/json-ser-fix",
+        "joel/restore-fly-deps",
+        "main",
+        "naitik/bare-metal-script-fix",
+        "naitik/fix_bare_metal_deployment",
+        "naitik/fix_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration-to-dragonfly-redis",
+        "revert-41-fix/redirect-uri-for-multiple-deployments"
+      ]
+    },
+    {
+      "sha": "47c0d4fc8e7efc8a90d61015f6b55688809f7ad2",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2025-11-20T04:51:22Z",
+      "message": "fix lint",
+      "stats": {
+        "additions": 3,
+        "deletions": 4,
+        "total": 7
+      },
+      "branches": [
+        "staging"
+      ]
+    },
+    {
+      "sha": "6152677072e3aaf427d3938a3953a0159feff421",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2025-11-20T04:46:43Z",
+      "message": "add client key refresh for google oauth client",
+      "stats": {
+        "additions": 545,
+        "deletions": 14,
+        "total": 559
+      },
+      "branches": [
+        "staging"
+      ]
+    },
+    {
+      "sha": "96c2d020a40ea014ba40b3dc96ec7ec10222d06e",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2025-11-20T07:43:01Z",
+      "message": "Merge branch 'main' into DO-NOT-MERGE]use-google-refresh-client",
+      "stats": {
+        "additions": 0,
+        "deletions": 8,
+        "total": 8
+      },
+      "branches": [
+        "DO-NOT-MERGE]use-google-refresh-client"
+      ]
+    },
+    {
+      "sha": "ca8a11892f767f7a2ef7f3a1ef1884e7eb4dcf39",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2025-11-20T07:41:47Z",
+      "message": "[skip ci] remove neon branch from preview workflow",
+      "stats": {
+        "additions": 0,
+        "deletions": 31,
+        "total": 31
+      },
+      "branches": [
+        "DO-NOT-MERGE]use-google-refresh-client",
+        "dependabot/cargo/bytes-1.11.1",
+        "dependabot/cargo/hon-worker-common-2a723cd",
+        "dependabot/cargo/openidconnect-4.0.1",
+        "dependabot/cargo/opentelemetry_sdk-0.31.0",
+        "dependabot/cargo/rsa-0.9.10",
+        "dependabot/cargo/videogen-common-2a723cd",
+        "dependabot/npm_and_yarn/tests/e2e/lodash-4.17.23",
+        "dependabot/npm_and_yarn/tests/e2e/multi-549b90733e",
+        "dependabot/npm_and_yarn/tests/e2e/multi-ac680358f5",
+        "feat/bump-revs-banned-filter",
+        "feat/ltx2-model",
+        "feat/use-yral-auth-phone-auth-preview-link",
+        "fix/remove-post-status-filtering",
+        "joel/approval-flow",
+        "joel/bare-metal-migr",
+        "joel/hot-fix-disable-web-btc",
+        "joel/offchain-urls",
+        "joel/sentry_cleanup",
+        "joel-medicala-yral-patch-2",
+        "main",
+        "ml-feed-migration",
+        "naitik/fix_dragonfly_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration_to_dragonfly_redis",
+        "naitik/update-metadata-link",
+        "revert-1150-naitik/migration_to_dragonfly_redis",
+        "revert-1153-naitik/migration_to_dragonfly_redis",
+        "revert-dual-write"
+      ]
+    },
+    {
+      "sha": "8cff139db5c461f80091e180de67d00f46424346",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2025-11-20T05:49:31Z",
+      "message": "remove creation of neon branch",
+      "stats": {
+        "additions": 0,
+        "deletions": 23,
+        "total": 23
+      },
+      "branches": [
+        "DO-NOT-MERGE]use-google-refresh-client"
+      ]
+    },
+    {
+      "sha": "aa9d7caedaddc215a4416bd6b11ba483e6e62ee3",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2025-11-20T05:10:02Z",
+      "message": "Update YRAL_AUTH URLs to staging environment",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "DO-NOT-MERGE]use-google-refresh-client"
+      ]
+    },
+    {
+      "sha": "445ef9c11176056c9120883c6f18a03e842611f5",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-20T17:09:22Z",
+      "message": "delegate deeplink handling to common from ios (#656)",
+      "stats": {
+        "additions": 36,
+        "deletions": 18,
+        "total": 54
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "chore/new-upload-video-endpoint",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/download-video",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/test-install-referrers",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    }
+  ],
+  "commit_count": 13
+}

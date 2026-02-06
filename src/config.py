@@ -83,6 +83,13 @@ MODE = ExecutionMode.FETCH_AND_CHART
 """
 What should the script do when run?
 
+Default: FETCH_AND_CHART (fetch new data and generate charts)
+Can be overridden with command-line arguments:
+    python src/main.py --mode fetch
+    python src/main.py --mode refresh --days 90
+    python src/main.py --mode chart
+    python src/main.py --mode status
+
 Examples:
     MODE = ExecutionMode.FETCH       # Fetch and process new data
     MODE = ExecutionMode.REFRESH     # Re-fetch specific date range
@@ -103,8 +110,8 @@ Examples:
     DATE_RANGE_MODE = DateRangeMode.ALL_CACHED      # All cached dates
 """
 
-DAYS_BACK = 30
-"""Number of days to go back when DATE_RANGE_MODE = LAST_N_DAYS"""
+DAYS_BACK = 90
+"""Number of days to go back when DATE_RANGE_MODE = LAST_N_DAYS. Can be overridden with --days argument."""
 
 START_DATE: Optional[str] = '2026-01-05'
 """
