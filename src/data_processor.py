@@ -102,21 +102,46 @@ class DataProcessor:
 
         commits = cached_data.get('commits', [])
 
-        # Filter out merge commits (they represent integration of existing work)
+        # Filter out trivial merge commits (only keep merges with substantial code changes)
+        # Merge commits with substantial changes likely represent:
+        # - Squash merges where all work is in the merge commit
+        # - Merges from deleted branches that we never fetched
+        # We keep these to avoid losing real contributions
         non_merge_commits = []
+        filtered_merge_count = 0
+        kept_merge_count = 0
+        
         for commit in commits:
             message = commit.get('message', '')
+            stats = commit.get('stats', {})
+            total_loc = stats.get('total', 0)
+            
             # Detect merge commits by message pattern
-            if message.startswith('Merge pull request') or message.startswith('Merge branch'):
-                logger.debug(
-                    f"Skipping merge commit {commit.get('sha', '')[:7]} by {commit.get('author')}: {message.split(chr(10))[0][:60]}"
-                )
-                continue
-            non_merge_commits.append(commit)
+            is_merge = message.startswith('Merge pull request') or message.startswith('Merge branch')
+            
+            if is_merge:
+                # Keep merge commits with substantial code changes (likely squash merge or deleted branch)
+                if total_loc > 10:
+                    logger.debug(
+                        f"Keeping merge commit {commit.get('sha', '')[:7]} by {commit.get('author')} "
+                        f"with {total_loc} LOC changes (likely squash merge or deleted branch)"
+                    )
+                    non_merge_commits.append(commit)
+                    kept_merge_count += 1
+                else:
+                    logger.debug(
+                        f"Skipping trivial merge commit {commit.get('sha', '')[:7]} by {commit.get('author')}: "
+                        f"{message.split(chr(10))[0][:60]}"
+                    )
+                    filtered_merge_count += 1
+            else:
+                non_merge_commits.append(commit)
 
-        logger.info(
-            f"Date {date_str}: Filtered out {len(commits) - len(non_merge_commits)} merge commits"
-        )
+        if filtered_merge_count > 0 or kept_merge_count > 0:
+            logger.info(
+                f"Date {date_str}: Filtered {filtered_merge_count} trivial merge commits, "
+                f"kept {kept_merge_count} merge commits with substantial changes"
+            )
 
         # Deduplicate commits by SHA to avoid counting merge commits and their constituent commits
         seen_shas = set()
