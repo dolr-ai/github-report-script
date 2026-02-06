@@ -218,28 +218,9 @@ class ChartGenerator:
         logger.info(
             f"Generating Plotly chart for {len(all_data)} users")
 
-        # Detect all branches for dropdown
-        all_branches = self._detect_all_branches(all_data)
-        logger.info(f"Detected branches: {all_branches}")
-
-        # Prepare data for all branches and individual branch filters
-        branch_filters = ['all'] + all_branches
-        traces_by_filter = {}
-
-        for branch_filter in branch_filters:
-            filtered_data = self._filter_data_by_branch(
-                all_data, branch_filter)
-            dates, usernames, additions_data, deletions_data, total_loc_data, commits_data = \
-                self._prepare_data(filtered_data)
-
-            traces_by_filter[branch_filter] = {
-                'dates': dates,
-                'usernames': usernames,
-                'additions': additions_data,
-                'deletions': deletions_data,
-                'total_loc': total_loc_data,
-                'commits': commits_data
-            }
+        # Prepare data (show all branches)
+        dates, usernames, additions_data, deletions_data, total_loc_data, commits_data = \
+            self._prepare_data(all_data)
 
         # Create 2x2 subplot layout
         fig = make_subplots(
@@ -254,132 +235,80 @@ class ChartGenerator:
             horizontal_spacing=0.1
         )
 
-        # Get the "all branches" data for initial display
-        initial_data = traces_by_filter['all']
-        dates = initial_data['dates']
-        usernames = initial_data['usernames']
+        # Add traces for each user
+        for idx, username in enumerate(usernames):
+            color = self.colors[idx % len(self.colors)]
 
-        # Add traces for each user and each branch filter
-        for branch_filter in branch_filters:
-            data = traces_by_filter[branch_filter]
-            visible = (branch_filter == 'all')  # Only 'all' visible initially
-
-            for idx, username in enumerate(data['usernames']):
-                color = self.colors[idx % len(self.colors)]
-
-                # Additions
-                fig.add_trace(
-                    go.Scatter(
-                        name=username,
-                        x=data['dates'],
-                        y=data['additions'][username],
-                        mode='lines+markers',
-                        line=dict(color=color, width=2),
-                        marker=dict(size=6),
-                        legendgroup=username,
-                        # Only show legend for first set
-                        showlegend=(branch_filter == 'all'),
-                        visible=visible,
-                        hovertemplate='%{x}<br>Additions: %{y}<extra></extra>'
-                    ),
-                    row=1, col=1
-                )
-
-                # Deletions
-                fig.add_trace(
-                    go.Scatter(
-                        name=username,
-                        x=data['dates'],
-                        y=data['deletions'][username],
-                        mode='lines+markers',
-                        line=dict(color=color, width=2),
-                        marker=dict(size=6),
-                        legendgroup=username,
-                        showlegend=False,
-                        visible=visible,
-                        hovertemplate='%{x}<br>Deletions: %{y}<extra></extra>'
-                    ),
-                    row=1, col=2
-                )
-
-                # Total LOC
-                fig.add_trace(
-                    go.Scatter(
-                        name=username,
-                        x=data['dates'],
-                        y=data['total_loc'][username],
-                        mode='lines+markers',
-                        line=dict(color=color, width=2),
-                        marker=dict(size=6),
-                        legendgroup=username,
-                        showlegend=False,
-                        visible=visible,
-                        hovertemplate='%{x}<br>Total LOC: %{y}<extra></extra>'
-                    ),
-                    row=2, col=1
-                )
-
-                # Commits
-                fig.add_trace(
-                    go.Scatter(
-                        name=username,
-                        x=data['dates'],
-                        y=data['commits'][username],
-                        mode='lines+markers',
-                        line=dict(color=color, width=2),
-                        marker=dict(size=6),
-                        legendgroup=username,
-                        showlegend=False,
-                        visible=visible,
-                        hovertemplate='%{x}<br>Commits: %{y}<extra></extra>'
-                    ),
-                    row=2, col=2
-                )
-
-        # Create dropdown buttons for branch filtering
-        num_users = len(usernames)
-        total_traces = len(branch_filters) * num_users * 4
-        dropdown_buttons = []
-
-        for idx, branch_filter in enumerate(branch_filters):
-            # Calculate which traces should be visible for this filter
-            # Each filter has 4 traces per user (4 subplots)
-            visible_array = [False] * total_traces
-            start_idx = idx * num_users * 4
-            end_idx = start_idx + num_users * 4
-            for i in range(start_idx, end_idx):
-                visible_array[i] = True
-
-            label = f"All Branches" if branch_filter == 'all' else f"Branch: {branch_filter}"
-            dropdown_buttons.append(
-                dict(
-                    label=label,
-                    method="update",
-                    args=[{"visible": visible_array}]
-                )
+            # Additions
+            fig.add_trace(
+                go.Scatter(
+                    name=username,
+                    x=dates,
+                    y=additions_data[username],
+                    mode='lines+markers',
+                    line=dict(color=color, width=2),
+                    marker=dict(size=6),
+                    legendgroup=username,
+                    showlegend=True,
+                    hovertemplate='%{x}<br>Additions: %{y}<extra></extra>'
+                ),
+                row=1, col=1
             )
 
-        # Update layout with dropdown menu
+            # Deletions
+            fig.add_trace(
+                go.Scatter(
+                    name=username,
+                    x=dates,
+                    y=deletions_data[username],
+                    mode='lines+markers',
+                    line=dict(color=color, width=2),
+                    marker=dict(size=6),
+                    legendgroup=username,
+                    showlegend=False,
+                    hovertemplate='%{x}<br>Deletions: %{y}<extra></extra>'
+                ),
+                row=1, col=2
+            )
+
+            # Total LOC
+            fig.add_trace(
+                go.Scatter(
+                    name=username,
+                    x=dates,
+                    y=total_loc_data[username],
+                    mode='lines+markers',
+                    line=dict(color=color, width=2),
+                    marker=dict(size=6),
+                    legendgroup=username,
+                    showlegend=False,
+                    hovertemplate='%{x}<br>Total LOC: %{y}<extra></extra>'
+                ),
+                row=2, col=1
+            )
+
+            # Commits
+            fig.add_trace(
+                go.Scatter(
+                    name=username,
+                    x=dates,
+                    y=commits_data[username],
+                    mode='lines+markers',
+                    line=dict(color=color, width=2),
+                    marker=dict(size=6),
+                    legendgroup=username,
+                    showlegend=False,
+                    hovertemplate='%{x}<br>Commits: %{y}<extra></extra>'
+                ),
+                row=2, col=2
+            )
+
+        # Update layout without dropdown menu
         fig.update_layout(
             title_text=f"GitHub Activity Report ({start_date} to {end_date})",
             title_font_size=20,
             showlegend=True,
             height=900,
-            updatemenus=[
-                dict(
-                    buttons=dropdown_buttons,
-                    direction="down",
-                    pad={"r": 10, "t": 10},
-                    showactive=True,
-                    x=0.01,
-                    xanchor="left",
-                    y=1.15,
-                    yanchor="top",
-                    bgcolor="white",
-                    bordercolor="#888",
-                    borderwidth=1
-                )
-            ],
             legend=dict(
                 orientation="h",
                 yanchor="bottom",
