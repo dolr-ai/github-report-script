@@ -1,10 +1,10 @@
 {
   "date": "2026-01-30",
   "username": "joel-medicala-yral",
-  "additions": 1042,
-  "deletions": 463,
-  "total_loc": 1505,
-  "commit_count": 4,
+  "additions": 1107,
+  "deletions": 710,
+  "total_loc": 1817,
+  "commit_count": 5,
   "repositories": [
     "dolr-ai/off-chain-agent",
     "dolr-ai/yral-auth-v2",
@@ -26,6 +26,12 @@
         "deletions": 3,
         "total_loc": 205,
         "commit_count": 1
+      },
+      "joel/ai-accounts-integration": {
+        "additions": 65,
+        "deletions": 247,
+        "total_loc": 312,
+        "commit_count": 1
       }
     },
     "dolr-ai/yral-metadata": {
@@ -37,5 +43,5 @@
       }
     }
   },
-  "processed_at": "2026-02-06T07:06:59.082322Z"
+  "processed_at": "2026-02-06T09:04:14.202776Z"
 }

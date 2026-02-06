@@ -1,14 +1,15 @@
 {
   "date": "2025-12-17",
   "username": "kevin-antony-yral",
-  "additions": 667,
-  "deletions": 313,
-  "total_loc": 980,
-  "commit_count": 1,
+  "additions": 948,
+  "deletions": 423,
+  "total_loc": 1371,
+  "commit_count": 2,
   "repositories": [
-    "dolr-ai/ai-influencers-content"
+    "dolr-ai/ai-influencers-content",
+    "dolr-ai/yral-ai-chat"
   ],
-  "repo_count": 1,
+  "repo_count": 2,
   "branch_breakdown": {
     "dolr-ai/ai-influencers-content": {
       "main": {
@@ -17,7 +18,15 @@
         "total_loc": 980,
         "commit_count": 1
       }
+    },
+    "dolr-ai/yral-ai-chat": {
+      "main": {
+        "additions": 281,
+        "deletions": 110,
+        "total_loc": 391,
+        "commit_count": 1
+      }
     }
   },
-  "processed_at": "2026-02-06T07:06:58.566638Z"
+  "processed_at": "2026-02-06T09:04:14.058113Z"
 }
