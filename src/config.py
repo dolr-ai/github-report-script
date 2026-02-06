@@ -198,7 +198,7 @@ CACHE_DIR = 'cache'
 CACHE_COMMITS_DIR = os.path.join(CACHE_DIR, 'commits')
 CACHE_METADATA_FILE = os.path.join(CACHE_DIR, 'metadata.json')
 OUTPUT_DIR = 'output'
-REPORTS_DIR = 'reports'
+REPORTS_DIR = 'docs'
 
 
 # ============================================================================
