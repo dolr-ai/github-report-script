@@ -1,6 +1,6 @@
 {
   "date": "2026-01-30",
-  "cached_at": "2026-02-06T08:14:59.849064Z",
+  "cached_at": "2026-02-06T20:27:10.992320Z",
   "commits": [
     {
       "sha": "627440dd40872b9db69a8d72b443764f129c4a19",
@@ -37,12 +37,14 @@
       "branches": [
         "fix/user-agent-issue-with-pro-subscription",
         "fix/yral-pro-subscription-token-operation",
+        "joel/add_wan_i2v_support",
         "joel/ai-video-detector",
         "joel/apps-script-reports-api",
         "joel/fix-btc-dolr-notif",
         "joel/fix-gchat-report-buttons",
         "joel/fix-logging",
         "joel/fix-report-env",
+        "joel/hot-fix-notification-panic",
         "joel/ltx-intergration",
         "joel/offchain-broken-pipe-fix",
         "joel/rewards-mode",
@@ -64,6 +66,7 @@
       "branches": [
         "fix/user-agent-issue-with-pro-subscription",
         "fix/yral-pro-subscription-token-operation",
+        "joel/add_wan_i2v_support",
         "joel/ai-video-detector",
         "joel/apps-script-reports-api",
         "joel/fix-btc-dolr-notif",
@@ -71,6 +74,7 @@
         "joel/fix-gchat-report-buttons",
         "joel/fix-logging",
         "joel/fix-report-env",
+        "joel/hot-fix-notification-panic",
         "joel/ltx-intergration",
         "joel/offchain-broken-pipe-fix",
         "joel/rewards-mode",
@@ -92,6 +96,7 @@
       "branches": [
         "fix/user-agent-issue-with-pro-subscription",
         "fix/yral-pro-subscription-token-operation",
+        "joel/add_wan_i2v_support",
         "joel/ai-video-detector",
         "joel/apps-script-reports-api",
         "joel/fix-btc-dolr-notif",
@@ -99,6 +104,7 @@
         "joel/fix-gchat-report-buttons",
         "joel/fix-logging",
         "joel/fix-report-env",
+        "joel/hot-fix-notification-panic",
         "joel/ltx-intergration",
         "joel/offchain-broken-pipe-fix",
         "joel/rewards-mode",
@@ -325,6 +331,8 @@
       },
       "branches": [
         "copilot/fix-username-release-on-delete",
+        "joel/fix-get-notification-key-logging",
+        "joel/fix-noisy-fcm-logs",
         "master"
       ]
     },
@@ -420,6 +428,139 @@
       ]
     },
     {
+      "sha": "902a2060156c7aa801bf98648f2875640cbdb51b",
+      "author": "gravityvi",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-30T09:49:15Z",
+      "message": "add user agent in case of yral pro subscription",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "fix/user-agent-issue-with-pro-subscription"
+      ]
+    },
+    {
+      "sha": "a9ef4379063cd0027dcd0bb682088581e8a0f149",
+      "author": "gravityvi",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-30T15:18:42Z",
+      "message": "fix lint",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "fix/yral-pro-subscription-token-operation"
+      ]
+    },
+    {
+      "sha": "08c87c66cac14a3b9647e69df216cf58b0df84fa",
+      "author": "gravityvi",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-30T12:02:59Z",
+      "message": "fix yral pro subscription token operation",
+      "stats": {
+        "additions": 29,
+        "deletions": 59,
+        "total": 88
+      },
+      "branches": [
+        "fix/yral-pro-subscription-token-operation"
+      ]
+    },
+    {
+      "sha": "857c53e53ef3fd4ed3943089673356ee5e4b0a54",
+      "author": "gravityvi",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-30T09:50:46Z",
+      "message": "fix: add user agent in case of yral pro subscription (#385)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "fix/yral-pro-subscription-token-operation",
+        "joel/add_wan_i2v_support",
+        "joel/ai-video-detector",
+        "joel/apps-script-reports-api",
+        "joel/fix-btc-dolr-notif",
+        "joel/fix-gchat-report-buttons",
+        "joel/fix-logging",
+        "joel/fix-report-env",
+        "joel/hot-fix-notification-panic",
+        "joel/ltx-intergration",
+        "joel/offchain-broken-pipe-fix",
+        "joel/rewards-mode",
+        "main",
+        "naitik/broken_pipe_issue_fix"
+      ]
+    },
+    {
+      "sha": "ab31102ebffb202f6219ba19a01efc69fb7d58f9",
+      "author": "gravityvi",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-30T15:37:12Z",
+      "message": "fix yral pro subscription token operation (#386)",
+      "stats": {
+        "additions": 31,
+        "deletions": 61,
+        "total": 92
+      },
+      "branches": [
+        "joel/add_wan_i2v_support",
+        "joel/ai-video-detector",
+        "joel/apps-script-reports-api",
+        "joel/fix-btc-dolr-notif",
+        "joel/fix-gchat-report-buttons",
+        "joel/fix-logging",
+        "joel/fix-report-env",
+        "joel/hot-fix-notification-panic",
+        "joel/ltx-intergration",
+        "joel/offchain-broken-pipe-fix",
+        "joel/rewards-mode",
+        "main",
+        "naitik/broken_pipe_issue_fix"
+      ]
+    },
+    {
+      "sha": "2a723cde83d834e7dc2fdbdb469621367b626937",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-01-30T11:52:44Z",
+      "message": "fix: yral pro subscription token type (#155)",
+      "stats": {
+        "additions": 6,
+        "deletions": 7,
+        "total": 13
+      },
+      "branches": [
+        "feat/ltx2-model",
+        "feat/update-user-info-deps",
+        "feat/wan25-image-support",
+        "master"
+      ]
+    },
+    {
+      "sha": "20fcfa6d0f4b6f57770032c952a99363985ee02a",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-01-30T11:48:20Z",
+      "message": "fix yral pro subscription token type",
+      "stats": {
+        "additions": 6,
+        "deletions": 7,
+        "total": 13
+      },
+      "branches": [
+        "fix/yral-pro-subscription-token-transaction-implmentation"
+      ]
+    },
+    {
       "sha": "58c247015e8f51ee03bdcf12f66626031a1345bd",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
@@ -436,7 +577,6 @@
         "enhancement/chat-error-ui",
         "feature/ai-influencer",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
@@ -460,7 +600,6 @@
         "enhancement/chat-error-ui",
         "feature/ai-influencer",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
@@ -484,7 +623,6 @@
         "enhancement/chat-error-ui",
         "feature/ai-influencer",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
@@ -582,135 +720,8 @@
       "branches": [
         "main"
       ]
-    },
-    {
-      "sha": "902a2060156c7aa801bf98648f2875640cbdb51b",
-      "author": "gravityvi",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-30T09:49:15Z",
-      "message": "add user agent in case of yral pro subscription",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "fix/user-agent-issue-with-pro-subscription"
-      ]
-    },
-    {
-      "sha": "a9ef4379063cd0027dcd0bb682088581e8a0f149",
-      "author": "gravityvi",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-30T15:18:42Z",
-      "message": "fix lint",
-      "stats": {
-        "additions": 2,
-        "deletions": 2,
-        "total": 4
-      },
-      "branches": [
-        "fix/yral-pro-subscription-token-operation"
-      ]
-    },
-    {
-      "sha": "08c87c66cac14a3b9647e69df216cf58b0df84fa",
-      "author": "gravityvi",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-30T12:02:59Z",
-      "message": "fix yral pro subscription token operation",
-      "stats": {
-        "additions": 29,
-        "deletions": 59,
-        "total": 88
-      },
-      "branches": [
-        "fix/yral-pro-subscription-token-operation"
-      ]
-    },
-    {
-      "sha": "857c53e53ef3fd4ed3943089673356ee5e4b0a54",
-      "author": "gravityvi",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-30T09:50:46Z",
-      "message": "fix: add user agent in case of yral pro subscription (#385)",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "fix/yral-pro-subscription-token-operation",
-        "joel/ai-video-detector",
-        "joel/apps-script-reports-api",
-        "joel/fix-btc-dolr-notif",
-        "joel/fix-gchat-report-buttons",
-        "joel/fix-logging",
-        "joel/fix-report-env",
-        "joel/ltx-intergration",
-        "joel/offchain-broken-pipe-fix",
-        "joel/rewards-mode",
-        "main",
-        "naitik/broken_pipe_issue_fix"
-      ]
-    },
-    {
-      "sha": "ab31102ebffb202f6219ba19a01efc69fb7d58f9",
-      "author": "gravityvi",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-30T15:37:12Z",
-      "message": "fix yral pro subscription token operation (#386)",
-      "stats": {
-        "additions": 31,
-        "deletions": 61,
-        "total": 92
-      },
-      "branches": [
-        "joel/ai-video-detector",
-        "joel/apps-script-reports-api",
-        "joel/fix-btc-dolr-notif",
-        "joel/fix-gchat-report-buttons",
-        "joel/fix-logging",
-        "joel/fix-report-env",
-        "joel/ltx-intergration",
-        "joel/offchain-broken-pipe-fix",
-        "joel/rewards-mode",
-        "main",
-        "naitik/broken_pipe_issue_fix"
-      ]
-    },
-    {
-      "sha": "2a723cde83d834e7dc2fdbdb469621367b626937",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-common",
-      "timestamp": "2026-01-30T11:52:44Z",
-      "message": "fix: yral pro subscription token type (#155)",
-      "stats": {
-        "additions": 6,
-        "deletions": 7,
-        "total": 13
-      },
-      "branches": [
-        "feat/ltx2-model",
-        "feat/update-user-info-deps",
-        "master"
-      ]
-    },
-    {
-      "sha": "20fcfa6d0f4b6f57770032c952a99363985ee02a",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-common",
-      "timestamp": "2026-01-30T11:48:20Z",
-      "message": "fix yral pro subscription token type",
-      "stats": {
-        "additions": 6,
-        "deletions": 7,
-        "total": 13
-      },
-      "branches": [
-        "fix/yral-pro-subscription-token-transaction-implmentation"
-      ]
     }
   ],
-  "commit_count": 40
+  "commit_count": 40,
+  "contributor_stats": {}
 }

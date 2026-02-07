@@ -1,6 +1,6 @@
 {
   "date": "2026-01-25",
-  "cached_at": "2026-02-06T07:05:47.838288Z",
+  "cached_at": "2026-02-06T18:46:49.303247Z",
   "commits": [
     {
       "sha": "49905afab503d98db15d450b8b988ecfca0f763a",
@@ -18,6 +18,7 @@
         "feat/add-support-for-yral-subscription",
         "fix/user-agent-issue-with-pro-subscription",
         "fix/yral-pro-subscription-token-operation",
+        "joel/add_wan_i2v_support",
         "joel/ai-video-detector",
         "joel/apps-script-reports-api",
         "joel/dolr-rewards",
@@ -28,6 +29,7 @@
         "joel/fix-logging",
         "joel/fix-report-env",
         "joel/fix-reports",
+        "joel/hot-fix-notification-panic",
         "joel/icp-swap-dolr-price-fetch",
         "joel/ltx-intergration",
         "joel/metric-server-cleanup",
@@ -42,5 +44,6 @@
       ]
     }
   ],
-  "commit_count": 1
+  "commit_count": 1,
+  "contributor_stats": {}
 }

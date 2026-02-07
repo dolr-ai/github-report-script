@@ -63,5 +63,18 @@
       ]
     }
   ],
-  "commit_count": 2
+  "commit_count": 2,
+  "contributor_stats": {
+    "ravi-sawlani-yral": {
+      "2026-01-04": {
+        "commits": 12,
+        "additions": 196,
+        "deletions": 122,
+        "total": 318,
+        "repos": [
+          "dolr-ai/yral-auth-v2"
+        ]
+      }
+    }
+  }
 }

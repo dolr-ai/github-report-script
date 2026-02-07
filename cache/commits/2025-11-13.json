@@ -1,91 +1,40 @@
 {
   "date": "2025-11-13",
-  "cached_at": "2026-02-06T07:01:45.088195Z",
+  "cached_at": "2026-02-06T12:16:52.862961Z",
   "commits": [
     {
-      "sha": "c0d5df769f3a61f2273d2dc0115f06c6a9ea3bf6",
-      "author": "ravi-sawlani-yral",
-      "repository": "dolr-ai/yral-common",
-      "timestamp": "2025-11-13T11:22:07Z",
-      "message": "fix: add speech to video in provider info",
+      "sha": "9138915b53ab5f644f0fe4cb79262dcdcaaf1636",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2025-11-13T05:48:32Z",
+      "message": "Trigger E2E tests for raw upload endpoint (#26)",
       "stats": {
-        "additions": 1,
-        "deletions": 0,
-        "total": 1
+        "additions": 17,
+        "deletions": 6,
+        "total": 23
       },
       "branches": [
-        "1399_migrate_ntex_to_axum_support",
-        "chore-update-user-info-service-canister-did",
-        "feat/ltx2-model",
-        "feat/update-candid-for-user-info-service",
-        "feat/update-rate-limit-canister-did-file",
-        "feat/update-user-info-deps",
-        "fix/update-user-info-service-candid",
-        "fix/yral-pro-subscription-token-transaction-implmentation",
-        "joel/notification_store_ty",
-        "master",
-        "naitik/updata_metadata_url",
-        "revert-153-fix/update-user-info-service-candid",
-        "revert-banned-posts-filter"
+        "joel/new-upload-flow",
+        "joel/thumbnails",
+        "main"
       ]
     },
     {
-      "sha": "54e44ffd385ab3c5e3aa390a473e20565694900d",
-      "author": "ravi-sawlani-yral",
-      "repository": "dolr-ai/yral-common",
-      "timestamp": "2025-11-13T09:18:10Z",
-      "message": "feat: add speech to video model (#144)",
+      "sha": "9e78a3a9ed8d3d4dd40ecffbf44e73bd84241700",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2025-11-13T04:33:19Z",
+      "message": "added raw endpoint (#25)",
       "stats": {
-        "additions": 124,
-        "deletions": 2,
-        "total": 126
+        "additions": 153,
+        "deletions": 7,
+        "total": 160
       },
       "branches": [
-        "1399_migrate_ntex_to_axum_support",
-        "chore-update-user-info-service-canister-did",
-        "feat/ltx2-model",
-        "feat/update-candid-for-user-info-service",
-        "feat/update-rate-limit-canister-did-file",
-        "feat/update-user-info-deps",
-        "fix/update-user-info-service-candid",
-        "fix/yral-pro-subscription-token-transaction-implmentation",
-        "joel/notification_store_ty",
-        "master",
-        "naitik/updata_metadata_url",
-        "revert-153-fix/update-user-info-service-candid",
-        "revert-banned-posts-filter"
-      ]
-    },
-    {
-      "sha": "27c290b8e86d5feea64c74a56e22914f9ddcdb90",
-      "author": "ravi-sawlani-yral",
-      "repository": "dolr-ai/yral-common",
-      "timestamp": "2025-11-13T09:08:39Z",
-      "message": "add get_provider_info for speech to video model",
-      "stats": {
-        "additions": 42,
-        "deletions": 1,
-        "total": 43
-      },
-      "branches": [
-        "copilot/sub-pr-144",
-        "feat/add-speech-to-video-model"
-      ]
-    },
-    {
-      "sha": "673ffe91b15ddbb12fb1aeeb319667a9f249f9b9",
-      "author": "ravi-sawlani-yral",
-      "repository": "dolr-ai/hot-or-not-backend-canister",
-      "timestamp": "2025-11-13T12:38:39Z",
-      "message": "remove check for empty prompt for speech to video model",
-      "stats": {
-        "additions": 1,
-        "deletions": 3,
-        "total": 4
-      },
-      "branches": [
-        "copilot/add-total-credits-user-profile",
-        "feat/add-bulk-methods-for-profile-details"
+        "joel/new-upload-flow",
+        "joel/thumbnails",
+        "main",
+        "test-raw-upload-endpoint"
       ]
     },
     {
@@ -221,40 +170,104 @@
       ]
     },
     {
-      "sha": "9138915b53ab5f644f0fe4cb79262dcdcaaf1636",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-video-storage-service",
-      "timestamp": "2025-11-13T05:48:32Z",
-      "message": "Trigger E2E tests for raw upload endpoint (#26)",
+      "sha": "c0d5df769f3a61f2273d2dc0115f06c6a9ea3bf6",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2025-11-13T11:22:07Z",
+      "message": "fix: add speech to video in provider info",
       "stats": {
-        "additions": 17,
-        "deletions": 6,
-        "total": 23
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
       },
       "branches": [
-        "joel/new-upload-flow",
-        "joel/thumbnails",
-        "main"
+        "1399_migrate_ntex_to_axum_support",
+        "chore-update-user-info-service-canister-did",
+        "feat/ltx2-model",
+        "feat/update-candid-for-user-info-service",
+        "feat/update-rate-limit-canister-did-file",
+        "feat/update-user-info-deps",
+        "feat/wan25-image-support",
+        "fix/update-user-info-service-candid",
+        "fix/yral-pro-subscription-token-transaction-implmentation",
+        "joel/notification_store_ty",
+        "master",
+        "naitik/updata_metadata_url",
+        "revert-153-fix/update-user-info-service-candid",
+        "revert-banned-posts-filter"
       ]
     },
     {
-      "sha": "9e78a3a9ed8d3d4dd40ecffbf44e73bd84241700",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-video-storage-service",
-      "timestamp": "2025-11-13T04:33:19Z",
-      "message": "added raw endpoint (#25)",
+      "sha": "54e44ffd385ab3c5e3aa390a473e20565694900d",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2025-11-13T09:18:10Z",
+      "message": "feat: add speech to video model (#144)",
       "stats": {
-        "additions": 153,
-        "deletions": 7,
-        "total": 160
+        "additions": 124,
+        "deletions": 2,
+        "total": 126
       },
       "branches": [
-        "joel/new-upload-flow",
-        "joel/thumbnails",
+        "1399_migrate_ntex_to_axum_support",
+        "chore-update-user-info-service-canister-did",
+        "feat/ltx2-model",
+        "feat/update-candid-for-user-info-service",
+        "feat/update-rate-limit-canister-did-file",
+        "feat/update-user-info-deps",
+        "feat/wan25-image-support",
+        "fix/update-user-info-service-candid",
+        "fix/yral-pro-subscription-token-transaction-implmentation",
+        "joel/notification_store_ty",
+        "master",
+        "naitik/updata_metadata_url",
+        "revert-153-fix/update-user-info-service-candid",
+        "revert-banned-posts-filter"
+      ]
+    },
+    {
+      "sha": "27c290b8e86d5feea64c74a56e22914f9ddcdb90",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2025-11-13T09:08:39Z",
+      "message": "add get_provider_info for speech to video model",
+      "stats": {
+        "additions": 42,
+        "deletions": 1,
+        "total": 43
+      },
+      "branches": [
+        "copilot/sub-pr-144",
+        "feat/add-speech-to-video-model"
+      ]
+    },
+    {
+      "sha": "673ffe91b15ddbb12fb1aeeb319667a9f249f9b9",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2025-11-13T12:38:39Z",
+      "message": "remove check for empty prompt for speech to video model",
+      "stats": {
+        "additions": 1,
+        "deletions": 3,
+        "total": 4
+      },
+      "branches": [
+        "copilot/add-total-credits-user-profile",
+        "feat/add-bulk-methods-for-profile-details",
+        "feat/add-subscription-plan-support",
+        "feat/add-yral-pro-subcription-token-type-in-rate-limits",
+        "feat/include-total-number-of-free-credits-alloted-in-subscription",
+        "fix/candid-generation-script",
+        "joel/add_bot_account_addition",
+        "joel/fix-accept-new-registration-guard",
+        "joel/notif-store-approve-variant",
+        "joel/nsfw-info-for-pfp",
         "main",
-        "test-raw-upload-endpoint"
+        "set-ai-influencers"
       ]
     }
   ],
-  "commit_count": 10
+  "commit_count": 10,
+  "contributor_stats": {}
 }

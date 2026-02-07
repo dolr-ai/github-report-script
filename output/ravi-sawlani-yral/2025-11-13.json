@@ -2,22 +2,31 @@
   "date": "2025-11-13",
   "username": "ravi-sawlani-yral",
   "additions": 125,
-  "deletions": 2,
-  "total_loc": 127,
+  "deletions": 5,
+  "total_loc": 130,
   "commit_count": 2,
   "repositories": [
+    "dolr-ai/hot-or-not-backend-canister",
     "dolr-ai/yral-common"
   ],
-  "repo_count": 1,
+  "repo_count": 2,
   "branch_breakdown": {
+    "dolr-ai/hot-or-not-backend-canister": {
+      "main": {
+        "additions": 1,
+        "deletions": 3,
+        "total_loc": 4,
+        "commit_count": 1
+      }
+    },
     "dolr-ai/yral-common": {
       "master": {
-        "additions": 125,
+        "additions": 124,
         "deletions": 2,
-        "total_loc": 127,
-        "commit_count": 2
+        "total_loc": 126,
+        "commit_count": 1
       }
     }
   },
-  "processed_at": "2026-02-06T09:04:13.949880Z"
+  "processed_at": "2026-02-06T21:54:58.883044Z"
 }

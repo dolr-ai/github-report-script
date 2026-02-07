@@ -1,125 +1,7 @@
 {
   "date": "2025-11-25",
-  "cached_at": "2026-02-06T07:02:13.700043Z",
+  "cached_at": "2026-02-06T12:19:28.687651Z",
   "commits": [
-    {
-      "sha": "2ada56a7247432b324b9e7113610a2050e18c35d",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2025-11-25T12:45:11Z",
-      "message": "Remove quick-start.sh script from ansible directory",
-      "stats": {
-        "additions": 0,
-        "deletions": 173,
-        "total": 173
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "d64c497917b087efb953fa76b5d4a2c2e450c2ea",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2025-11-25T12:43:51Z",
-      "message": "Remove netdata cleanup playbook and related workflow steps",
-      "stats": {
-        "additions": 2,
-        "deletions": 94,
-        "total": 96
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "8bf29766e80265e34b9a1edc089a3e127b4a2d55",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2025-11-25T12:36:39Z",
-      "message": "Add netdata cleanup playbook and workflow integration",
-      "stats": {
-        "additions": 95,
-        "deletions": 1,
-        "total": 96
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "10dcd3835a3fff030988d9b675d3000c99d6843b",
-      "author": "samarth-paboowal-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2025-11-25T14:05:52Z",
-      "message": "Shows toast when a user is banned (#677)",
-      "stats": {
-        "additions": 26,
-        "deletions": 1,
-        "total": 27
-      },
-      "branches": [
-        "chore/events-to-offchain-api",
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "feature/create-ai-chat-bot",
-        "feature/dolr-wallet-ui-bk",
-        "feature/iap-ui",
-        "feature/subcription-video-gen",
-        "feature/subscription-ui",
-        "feature/subscriptions-ui",
-        "feature/tournament-be-changes",
-        "fix/hot-or-not-load-time",
-        "fix/ios-load-time",
-        "fix/state-button",
-        "fix-video-reporting",
-        "main",
-        "release/android-2.6.5",
-        "release/3.1.0",
-        "release/3.2.0",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
-    },
-    {
-      "sha": "ca5170432d69d1d7a1f1292aed1451da38997ca4",
-      "author": "samarth-paboowal-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2025-11-25T08:01:36Z",
-      "message": "Scam prevention improvements (#672)",
-      "stats": {
-        "additions": 496,
-        "deletions": 121,
-        "total": 617
-      },
-      "branches": [
-        "chore/events-to-offchain-api",
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "feature/create-ai-chat-bot",
-        "feature/dolr-wallet-ui-bk",
-        "feature/download-video",
-        "feature/iap-ui",
-        "feature/subcription-video-gen",
-        "feature/subscription-ui",
-        "feature/subscriptions-ui",
-        "feature/tournament-be-changes",
-        "fix/hot-or-not-load-time",
-        "fix/ios-load-time",
-        "fix/state-button",
-        "fix-video-reporting",
-        "main",
-        "release/android-2.6.5",
-        "release/3.1.0",
-        "release/3.2.0",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
-    },
     {
       "sha": "4b780f91203ae07d573ec2b88016876f615c0e19",
       "author": "kevin-antony-yral",
@@ -305,6 +187,8 @@
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
+        "infl_ep_updates",
+        "infl_util_apis",
         "infra_rl",
         "jatin_og_prompt",
         "jay_review",
@@ -363,6 +247,7 @@
         "sentry_fix",
         "sentry_webhook",
         "sentry",
+        "show_sp_on_influencers",
         "slow_msg",
         "small_num_bug",
         "sqlite_optimisations",
@@ -370,6 +255,7 @@
         "storj_integration",
         "sys_prompt_prod",
         "temp_fix_db_lock",
+        "temp_rm_beszel",
         "test_fix_url_n_storj_k",
         "test_robust_gc",
         "tests-and-more",
@@ -422,6 +308,8 @@
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
+        "infl_ep_updates",
+        "infl_util_apis",
         "infra_rl",
         "jatin_og_prompt",
         "jay_review",
@@ -480,6 +368,7 @@
         "sentry_fix",
         "sentry_webhook",
         "sentry",
+        "show_sp_on_influencers",
         "slow_msg",
         "small_num_bug",
         "sqlite_optimisations",
@@ -487,6 +376,7 @@
         "storj_integration",
         "sys_prompt_prod",
         "temp_fix_db_lock",
+        "temp_rm_beszel",
         "test_fix_url_n_storj_k",
         "test_robust_gc",
         "tests-and-more",
@@ -539,6 +429,8 @@
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
+        "infl_ep_updates",
+        "infl_util_apis",
         "infra_rl",
         "jatin_og_prompt",
         "jay_review",
@@ -597,6 +489,7 @@
         "sentry_fix",
         "sentry_webhook",
         "sentry",
+        "show_sp_on_influencers",
         "slow_msg",
         "small_num_bug",
         "sqlite_optimisations",
@@ -604,6 +497,7 @@
         "storj_integration",
         "sys_prompt_prod",
         "temp_fix_db_lock",
+        "temp_rm_beszel",
         "test_fix_url_n_storj_k",
         "test_robust_gc",
         "tests-and-more",
@@ -612,6 +506,79 @@
         "uptime_kuma",
         "v2-auth",
         "wal_ckpt_bug_fix"
+      ]
+    },
+    {
+      "sha": "10dcd3835a3fff030988d9b675d3000c99d6843b",
+      "author": "samarth-paboowal-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-25T14:05:52Z",
+      "message": "Shows toast when a user is banned (#677)",
+      "stats": {
+        "additions": 26,
+        "deletions": 1,
+        "total": 27
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "ca5170432d69d1d7a1f1292aed1451da38997ca4",
+      "author": "samarth-paboowal-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-25T08:01:36Z",
+      "message": "Scam prevention improvements (#672)",
+      "stats": {
+        "additions": 496,
+        "deletions": 121,
+        "total": 617
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/download-video",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
       ]
     },
     {
@@ -791,7 +758,53 @@
       "branches": [
         "feature/download-video"
       ]
+    },
+    {
+      "sha": "2ada56a7247432b324b9e7113610a2050e18c35d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-25T12:45:11Z",
+      "message": "Remove quick-start.sh script from ansible directory",
+      "stats": {
+        "additions": 0,
+        "deletions": 173,
+        "total": 173
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d64c497917b087efb953fa76b5d4a2c2e450c2ea",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-25T12:43:51Z",
+      "message": "Remove netdata cleanup playbook and related workflow steps",
+      "stats": {
+        "additions": 2,
+        "deletions": 94,
+        "total": 96
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8bf29766e80265e34b9a1edc089a3e127b4a2d55",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-25T12:36:39Z",
+      "message": "Add netdata cleanup playbook and workflow integration",
+      "stats": {
+        "additions": 95,
+        "deletions": 1,
+        "total": 96
+      },
+      "branches": [
+        "main"
+      ]
     }
   ],
-  "commit_count": 25
+  "commit_count": 25,
+  "contributor_stats": {}
 }

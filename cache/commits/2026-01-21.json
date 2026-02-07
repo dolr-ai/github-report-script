@@ -1,22 +1,7 @@
 {
   "date": "2026-01-21",
-  "cached_at": "2026-02-06T07:05:50.585104Z",
+  "cached_at": "2026-02-06T18:48:56.359461Z",
   "commits": [
-    {
-      "sha": "74c386795b6ba0987ae637b838408110ac9713bd",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-21T07:05:35Z",
-      "message": "Update SSH key for Joel in grant-ssh-access workflow",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "main"
-      ]
-    },
     {
       "sha": "22818febd3e9277de1d16b58f15aa9bf92a32418",
       "author": "naitik-makwana-yral",
@@ -35,6 +20,7 @@
         "fix/gchat-oauth-for-report-buttons",
         "fix/user-agent-issue-with-pro-subscription",
         "fix/yral-pro-subscription-token-operation",
+        "joel/add_wan_i2v_support",
         "joel/ai-video-detector",
         "joel/apps-script-reports-api",
         "joel/btc-rewards-builder-err",
@@ -46,6 +32,7 @@
         "joel/fix-logging",
         "joel/fix-report-env",
         "joel/fix-reports",
+        "joel/hot-fix-notification-panic",
         "joel/icp-swap-dolr-price-fetch",
         "joel/leaderboard-redis-migration",
         "joel/ltx-intergration",
@@ -210,163 +197,6 @@
       ]
     },
     {
-      "sha": "b7c86af8e4ad6bcbd2f894e5eb6bf73c34203a34",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-21T06:22:19Z",
-      "message": "Fix/hot or not load time (#802)",
-      "stats": {
-        "additions": 97,
-        "deletions": 17,
-        "total": 114
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/subscriptions-ui",
-        "fix/hot-or-not-load-time",
-        "fix/ios-load-time",
-        "fix/state-button",
-        "fix-video-reporting",
-        "main",
-        "release/android-2.6.5",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
-    },
-    {
-      "sha": "092fabbec9ae6110ab5e1c95b8004cc61281678c",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-21T06:24:46Z",
-      "message": "wip",
-      "stats": {
-        "additions": 777,
-        "deletions": 112,
-        "total": 889
-      },
-      "branches": [
-        "fix/hot-or-not-load-time"
-      ]
-    },
-    {
-      "sha": "ac980da0e4bd82a87a9b1c3e0d67c508d44b2af4",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-billing",
-      "timestamp": "2026-01-21T13:59:06Z",
-      "message": "fix acknowledgement request",
-      "stats": {
-        "additions": 2,
-        "deletions": 0,
-        "total": 2
-      },
-      "branches": [
-        "feat/add-routes-to-update-user-credits",
-        "feat/add-sentry-setup",
-        "feat/add-total-credits-alloted",
-        "fix/remove-aud-check-from-jwt-validation",
-        "main"
-      ]
-    },
-    {
-      "sha": "91a91e39c128f5a16e4fcec0240114256e8ec3bc",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-billing",
-      "timestamp": "2026-01-21T13:01:20Z",
-      "message": "fix type for google play subscription response",
-      "stats": {
-        "additions": 17,
-        "deletions": 13,
-        "total": 30
-      },
-      "branches": [
-        "feat/add-routes-to-update-user-credits",
-        "feat/add-sentry-setup",
-        "feat/add-total-credits-alloted",
-        "fix/remove-aud-check-from-jwt-validation",
-        "fix/type-for-google-play-subscription-response",
-        "main"
-      ]
-    },
-    {
-      "sha": "c146b71d30a2d56aece0b6187341a534791f505c",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-billing",
-      "timestamp": "2026-01-21T13:58:41Z",
-      "message": "fix acknowledgement request",
-      "stats": {
-        "additions": 2,
-        "deletions": 0,
-        "total": 2
-      },
-      "branches": [
-        "fix/type-for-google-play-subscription-response"
-      ]
-    },
-    {
-      "sha": "c882886632a99d7bf6c56a7299d5bbdc458893e1",
-      "author": "ravi-sawlani-yral",
-      "repository": "dolr-ai/yral-billing",
-      "timestamp": "2026-01-21T13:15:07Z",
-      "message": "fix: type for google play subscription response",
-      "stats": {
-        "additions": 17,
-        "deletions": 13,
-        "total": 30
-      },
-      "branches": [
-        "feat/add-routes-to-update-user-credits",
-        "feat/add-sentry-setup",
-        "feat/add-total-credits-alloted",
-        "fix/remove-aud-check-from-jwt-validation",
-        "main"
-      ]
-    },
-    {
-      "sha": "43a5a117d6394622704ed96b07fe55ac0c7d4711",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-21T07:02:15Z",
-      "message": "Merge pull request #798 from dolr-ai/release/android-2.6.2",
-      "stats": {
-        "additions": 2,
-        "deletions": 2,
-        "total": 4
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/subscriptions-ui",
-        "fix/ios-load-time",
-        "fix-video-reporting",
-        "main",
-        "release/android-2.6.5",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
-    },
-    {
-      "sha": "5621bc1aa224f070febe909db9dc5ec52ccb2170",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-21T07:01:58Z",
-      "message": "Merge pull request #797 from dolr-ai/release/android-2.6.2",
-      "stats": {
-        "additions": 30,
-        "deletions": 13,
-        "total": 43
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
       "sha": "a913e208d71721930dbf848aea06bc9592a24af2",
       "author": "joel-medicala-yral",
       "repository": "dolr-ai/off-chain-agent",
@@ -384,6 +214,7 @@
         "fix/gchat-oauth-for-report-buttons",
         "fix/user-agent-issue-with-pro-subscription",
         "fix/yral-pro-subscription-token-operation",
+        "joel/add_wan_i2v_support",
         "joel/ai-video-detector",
         "joel/apps-script-reports-api",
         "joel/dolr-rewards",
@@ -394,6 +225,7 @@
         "joel/fix-logging",
         "joel/fix-report-env",
         "joel/fix-reports",
+        "joel/hot-fix-notification-panic",
         "joel/icp-swap-dolr-price-fetch",
         "joel/ltx-intergration",
         "joel/metric-server-cleanup",
@@ -432,6 +264,7 @@
         "fix/gchat-oauth-for-report-buttons",
         "fix/user-agent-issue-with-pro-subscription",
         "fix/yral-pro-subscription-token-operation",
+        "joel/add_wan_i2v_support",
         "joel/ai-video-detector",
         "joel/apps-script-reports-api",
         "joel/dolr-rewards",
@@ -442,6 +275,7 @@
         "joel/fix-logging",
         "joel/fix-report-env",
         "joel/fix-reports",
+        "joel/hot-fix-notification-panic",
         "joel/icp-swap-dolr-price-fetch",
         "joel/leaderboard-redis-migration",
         "joel/ltx-intergration",
@@ -481,6 +315,7 @@
         "fix/gchat-oauth-for-report-buttons",
         "fix/user-agent-issue-with-pro-subscription",
         "fix/yral-pro-subscription-token-operation",
+        "joel/add_wan_i2v_support",
         "joel/ai-video-detector",
         "joel/apps-script-reports-api",
         "joel/btc-rewards-builder-err",
@@ -492,6 +327,7 @@
         "joel/fix-logging",
         "joel/fix-report-env",
         "joel/fix-reports",
+        "joel/hot-fix-notification-panic",
         "joel/icp-swap-dolr-price-fetch",
         "joel/leaderboard-redis-migration",
         "joel/ltx-intergration",
@@ -531,6 +367,7 @@
         "fix/gchat-oauth-for-report-buttons",
         "fix/user-agent-issue-with-pro-subscription",
         "fix/yral-pro-subscription-token-operation",
+        "joel/add_wan_i2v_support",
         "joel/ai-video-detector",
         "joel/apps-script-reports-api",
         "joel/btc-rewards-builder-err",
@@ -542,6 +379,7 @@
         "joel/fix-logging",
         "joel/fix-report-env",
         "joel/fix-reports",
+        "joel/hot-fix-notification-panic",
         "joel/icp-swap-dolr-price-fetch",
         "joel/leaderboard-redis-migration",
         "joel/ltx-intergration",
@@ -690,6 +528,100 @@
       ]
     },
     {
+      "sha": "ac980da0e4bd82a87a9b1c3e0d67c508d44b2af4",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-01-21T13:59:06Z",
+      "message": "fix acknowledgement request",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "feat/add-routes-to-update-user-credits",
+        "feat/add-sentry-setup",
+        "feat/add-total-credits-alloted",
+        "fix/remove-aud-check-from-jwt-validation",
+        "main"
+      ]
+    },
+    {
+      "sha": "91a91e39c128f5a16e4fcec0240114256e8ec3bc",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-01-21T13:01:20Z",
+      "message": "fix type for google play subscription response",
+      "stats": {
+        "additions": 17,
+        "deletions": 13,
+        "total": 30
+      },
+      "branches": [
+        "feat/add-routes-to-update-user-credits",
+        "feat/add-sentry-setup",
+        "feat/add-total-credits-alloted",
+        "fix/remove-aud-check-from-jwt-validation",
+        "fix/type-for-google-play-subscription-response",
+        "main"
+      ]
+    },
+    {
+      "sha": "c146b71d30a2d56aece0b6187341a534791f505c",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-01-21T13:58:41Z",
+      "message": "fix acknowledgement request",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "fix/type-for-google-play-subscription-response"
+      ]
+    },
+    {
+      "sha": "43a5a117d6394622704ed96b07fe55ac0c7d4711",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-21T07:02:15Z",
+      "message": "Merge pull request #798 from dolr-ai/release/android-2.6.2",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/subscriptions-ui",
+        "fix/ios-load-time",
+        "main",
+        "release/android-2.6.5",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "5621bc1aa224f070febe909db9dc5ec52ccb2170",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-21T07:01:58Z",
+      "message": "Merge pull request #797 from dolr-ai/release/android-2.6.2",
+      "stats": {
+        "additions": 30,
+        "deletions": 13,
+        "total": 43
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
       "sha": "fcbf48da77476e07e15f4e23529a6f1690029792",
       "author": "mayank-k-yral",
       "repository": "dolr-ai/yral-mobile",
@@ -707,13 +639,89 @@
         "feature/ai-influencer",
         "feature/dolr-wallet-ui-bk",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
         "test/force-update"
       ]
+    },
+    {
+      "sha": "c882886632a99d7bf6c56a7299d5bbdc458893e1",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-01-21T13:15:07Z",
+      "message": "fix: type for google play subscription response",
+      "stats": {
+        "additions": 17,
+        "deletions": 13,
+        "total": 30
+      },
+      "branches": [
+        "feat/add-routes-to-update-user-credits",
+        "feat/add-sentry-setup",
+        "feat/add-total-credits-alloted",
+        "fix/remove-aud-check-from-jwt-validation",
+        "main"
+      ]
+    },
+    {
+      "sha": "b7c86af8e4ad6bcbd2f894e5eb6bf73c34203a34",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-21T06:22:19Z",
+      "message": "Fix/hot or not load time (#802)",
+      "stats": {
+        "additions": 97,
+        "deletions": 17,
+        "total": 114
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/subscriptions-ui",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "main",
+        "release/android-2.6.5",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "092fabbec9ae6110ab5e1c95b8004cc61281678c",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-21T06:24:46Z",
+      "message": "wip",
+      "stats": {
+        "additions": 777,
+        "deletions": 112,
+        "total": 889
+      },
+      "branches": [
+        "fix/hot-or-not-load-time"
+      ]
+    },
+    {
+      "sha": "74c386795b6ba0987ae637b838408110ac9713bd",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-21T07:05:35Z",
+      "message": "Update SSH key for Joel in grant-ssh-access workflow",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
     }
   ],
-  "commit_count": 29
+  "commit_count": 29,
+  "contributor_stats": {}
 }

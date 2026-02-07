@@ -1,7 +1,25 @@
 {
   "date": "2025-11-18",
-  "cached_at": "2026-02-06T07:01:49.274358Z",
+  "cached_at": "2026-02-06T12:15:50.173999Z",
   "commits": [
+    {
+      "sha": "ad04a220be49676536dca990c831ea610c076aa8",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/dragonfly-bare-metal",
+      "timestamp": "2025-11-18T05:21:03Z",
+      "message": "Update README.md",
+      "stats": {
+        "additions": 1,
+        "deletions": 317,
+        "total": 318
+      },
+      "branches": [
+        "feature/kevin/scratchpad_tools",
+        "main",
+        "newconfig",
+        "ssd-tier"
+      ]
+    },
     {
       "sha": "1eeeb9316d5e294d620dbef6ea18d0ea033a1ea5",
       "author": "ravi-sawlani-yral",
@@ -23,6 +41,7 @@
         "fix/report-handler",
         "fix/user-agent-issue-with-pro-subscription",
         "fix/yral-pro-subscription-token-operation",
+        "joel/add_wan_i2v_support",
         "joel/ai-video-detector",
         "joel/apps-script-reports-api",
         "joel/aqpproval-notification",
@@ -94,6 +113,7 @@
         "fix/report-handler",
         "fix/user-agent-issue-with-pro-subscription",
         "fix/yral-pro-subscription-token-operation",
+        "joel/add_wan_i2v_support",
         "joel/ai-video-detector",
         "joel/apps-script-reports-api",
         "joel/aqpproval-notification",
@@ -143,25 +163,8 @@
         "revert-358-naitik/migrate_fly_redis_to_dragonfly",
         "revert-359-revert-358-naitik/migrate_fly_redis_to_dragonfly"
       ]
-    },
-    {
-      "sha": "ad04a220be49676536dca990c831ea610c076aa8",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/dragonfly-bare-metal",
-      "timestamp": "2025-11-18T05:21:03Z",
-      "message": "Update README.md",
-      "stats": {
-        "additions": 1,
-        "deletions": 317,
-        "total": 318
-      },
-      "branches": [
-        "feature/kevin/scratchpad_tools",
-        "main",
-        "newconfig",
-        "ssd-tier"
-      ]
     }
   ],
-  "commit_count": 3
+  "commit_count": 3,
+  "contributor_stats": {}
 }

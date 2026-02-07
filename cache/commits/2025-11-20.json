@@ -1,17 +1,17 @@
 {
   "date": "2025-11-20",
-  "cached_at": "2026-02-06T07:02:06.397093Z",
+  "cached_at": "2026-02-06T12:20:03.411292Z",
   "commits": [
     {
-      "sha": "c9e85aa91cc444634a53addc79e6d89c8ae4d802",
-      "author": "sarvesh-sharma-yral",
+      "sha": "445ef9c11176056c9120883c6f18a03e842611f5",
+      "author": "mayank-k-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2025-11-20T16:35:55Z",
-      "message": "Merge pull request #664 from dolr-ai/chore/commonization-final",
+      "timestamp": "2025-11-20T17:09:22Z",
+      "message": "delegate deeplink handling to common from ios (#656)",
       "stats": {
-        "additions": 76,
-        "deletions": 16,
-        "total": 92
+        "additions": 36,
+        "deletions": 18,
+        "total": 54
       },
       "branches": [
         "chore/events-to-offchain-api",
@@ -37,71 +37,6 @@
         "release/test-install-referrers",
         "release/3.1.0",
         "release/3.2.0",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
-    },
-    {
-      "sha": "76353317e8304887aa3b5c0e4c57667c385fe3c7",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2025-11-20T13:28:33Z",
-      "message": "Merge pull request #644 from dolr-ai/release/2.0.7",
-      "stats": {
-        "additions": 2,
-        "deletions": 2,
-        "total": 4
-      },
-      "branches": [
-        "chore/events-to-offchain-api",
-        "chore/new-upload-video-endpoint",
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "feature/create-ai-chat-bot",
-        "feature/dolr-wallet-ui-bk",
-        "feature/download-video",
-        "feature/iap-ui",
-        "feature/subcription-video-gen",
-        "feature/subscription-ui",
-        "feature/subscriptions-ui",
-        "feature/tournament-be-changes",
-        "fix/hot-or-not-load-time",
-        "fix/ios-load-time",
-        "fix/state-button",
-        "fix-video-reporting",
-        "main",
-        "release/android-2.6.5",
-        "release/test-install-referrers",
-        "release/3.1.0",
-        "release/3.2.0",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
-    },
-    {
-      "sha": "98b1c1ee1a3834a09640ba5ba0765d99472a801d",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2025-11-20T13:27:47Z",
-      "message": "Merge pull request #659 from dolr-ai/release/2.0.7",
-      "stats": {
-        "additions": 4666,
-        "deletions": 1765,
-        "total": 6431
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/subscriptions-ui",
-        "fix/ios-load-time",
-        "fix-video-reporting",
-        "main",
-        "release/android-2.6.5",
         "saikatdas0790-patch-1",
         "test/force-update"
       ]
@@ -324,15 +259,15 @@
       ]
     },
     {
-      "sha": "445ef9c11176056c9120883c6f18a03e842611f5",
-      "author": "mayank-k-yral",
+      "sha": "c9e85aa91cc444634a53addc79e6d89c8ae4d802",
+      "author": "sarvesh-sharma-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2025-11-20T17:09:22Z",
-      "message": "delegate deeplink handling to common from ios (#656)",
+      "timestamp": "2025-11-20T16:35:55Z",
+      "message": "Merge pull request #664 from dolr-ai/chore/commonization-final",
       "stats": {
-        "additions": 36,
-        "deletions": 18,
-        "total": 54
+        "additions": 76,
+        "deletions": 16,
+        "total": 92
       },
       "branches": [
         "chore/events-to-offchain-api",
@@ -361,7 +296,73 @@
         "saikatdas0790-patch-1",
         "test/force-update"
       ]
+    },
+    {
+      "sha": "76353317e8304887aa3b5c0e4c57667c385fe3c7",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-20T13:28:33Z",
+      "message": "Merge pull request #644 from dolr-ai/release/2.0.7",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "chore/new-upload-video-endpoint",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/download-video",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/test-install-referrers",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "98b1c1ee1a3834a09640ba5ba0765d99472a801d",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-20T13:27:47Z",
+      "message": "Merge pull request #659 from dolr-ai/release/2.0.7",
+      "stats": {
+        "additions": 4666,
+        "deletions": 1765,
+        "total": 6431
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/subscriptions-ui",
+        "fix/ios-load-time",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
     }
   ],
-  "commit_count": 13
+  "commit_count": 13,
+  "contributor_stats": {}
 }

@@ -1,7 +1,82 @@
 {
   "date": "2025-11-17",
-  "cached_at": "2026-02-06T07:01:50.440658Z",
+  "cached_at": "2026-02-06T12:16:40.685339Z",
   "commits": [
+    {
+      "sha": "98e43a9b3b2608348388af94ee0afb453cf823e9",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/dragonfly-bare-metal",
+      "timestamp": "2025-11-17T09:07:01Z",
+      "message": "Remove .env and ignore it",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "feature/kevin/scratchpad_tools",
+        "main",
+        "newconfig",
+        "ssd-tier"
+      ]
+    },
+    {
+      "sha": "84d0eb1bdea99e8216f4a176f284d4a18f659b3f",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/dragonfly-bare-metal",
+      "timestamp": "2025-11-17T04:36:32Z",
+      "message": "New tools + Flags",
+      "stats": {
+        "additions": 1389,
+        "deletions": 4,
+        "total": 1393
+      },
+      "branches": [
+        "feature/kevin/scratchpad_tools",
+        "main",
+        "newconfig",
+        "ssd-tier"
+      ]
+    },
+    {
+      "sha": "9d900d778d7e734e224fa871065013f086fe658a",
+      "author": "samarth-paboowal-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-17T05:58:51Z",
+      "message": "Adds smiley game improvements (#657)",
+      "stats": {
+        "additions": 183,
+        "deletions": 8,
+        "total": 191
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "chore/new-upload-video-endpoint",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/download-video",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/test-install-referrers",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
     {
       "sha": "6a8ba202a92569694ae2a3fde9f5f5a2d4dfee0a",
       "author": "ravi-sawlani-yral",
@@ -23,6 +98,7 @@
         "fix/report-handler",
         "fix/user-agent-issue-with-pro-subscription",
         "fix/yral-pro-subscription-token-operation",
+        "joel/add_wan_i2v_support",
         "joel/ai-video-detector",
         "joel/apps-script-reports-api",
         "joel/aqpproval-notification",
@@ -94,6 +170,7 @@
         "fix/report-handler",
         "fix/user-agent-issue-with-pro-subscription",
         "fix/yral-pro-subscription-token-operation",
+        "joel/add_wan_i2v_support",
         "joel/ai-video-detector",
         "joel/apps-script-reports-api",
         "joel/aqpproval-notification",
@@ -165,6 +242,7 @@
         "fix/report-handler",
         "fix/user-agent-issue-with-pro-subscription",
         "fix/yral-pro-subscription-token-operation",
+        "joel/add_wan_i2v_support",
         "joel/ai-video-detector",
         "joel/apps-script-reports-api",
         "joel/aqpproval-notification",
@@ -236,6 +314,7 @@
         "fix/report-handler",
         "fix/user-agent-issue-with-pro-subscription",
         "fix/yral-pro-subscription-token-operation",
+        "joel/add_wan_i2v_support",
         "joel/ai-video-detector",
         "joel/apps-script-reports-api",
         "joel/aqpproval-notification",
@@ -307,6 +386,7 @@
         "fix/report-handler",
         "fix/user-agent-issue-with-pro-subscription",
         "fix/yral-pro-subscription-token-operation",
+        "joel/add_wan_i2v_support",
         "joel/ai-video-detector",
         "joel/apps-script-reports-api",
         "joel/aqpproval-notification",
@@ -378,6 +458,7 @@
         "fix/report-handler",
         "fix/user-agent-issue-with-pro-subscription",
         "fix/yral-pro-subscription-token-operation",
+        "joel/add_wan_i2v_support",
         "joel/ai-video-detector",
         "joel/apps-script-reports-api",
         "joel/aqpproval-notification",
@@ -490,15 +571,15 @@
       ]
     },
     {
-      "sha": "9d900d778d7e734e224fa871065013f086fe658a",
-      "author": "samarth-paboowal-yral",
+      "sha": "131e85d0638788a0f58412d34a5f5d0569ba785e",
+      "author": "sarvesh-sharma-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2025-11-17T05:58:51Z",
-      "message": "Adds smiley game improvements (#657)",
+      "timestamp": "2025-11-17T16:26:43Z",
+      "message": "chore: Increments android build version",
       "stats": {
-        "additions": 183,
-        "deletions": 8,
-        "total": 191
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
       },
       "branches": [
         "chore/events-to-offchain-api",
@@ -529,41 +610,45 @@
       ]
     },
     {
-      "sha": "98e43a9b3b2608348388af94ee0afb453cf823e9",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/dragonfly-bare-metal",
-      "timestamp": "2025-11-17T09:07:01Z",
-      "message": "Remove .env and ignore it",
+      "sha": "b7425f6dc01812389cc8c139c8ceda4fbdd46838",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-17T15:05:54Z",
+      "message": "build: Adds login sheet on share (#653)",
       "stats": {
-        "additions": 1,
-        "deletions": 0,
-        "total": 1
+        "additions": 210,
+        "deletions": 9,
+        "total": 219
       },
       "branches": [
-        "feature/kevin/scratchpad_tools",
+        "chore/events-to-offchain-api",
+        "chore/new-upload-video-endpoint",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/download-video",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
         "main",
-        "newconfig",
-        "ssd-tier"
-      ]
-    },
-    {
-      "sha": "84d0eb1bdea99e8216f4a176f284d4a18f659b3f",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/dragonfly-bare-metal",
-      "timestamp": "2025-11-17T04:36:32Z",
-      "message": "New tools + Flags",
-      "stats": {
-        "additions": 1389,
-        "deletions": 4,
-        "total": 1393
-      },
-      "branches": [
-        "feature/kevin/scratchpad_tools",
-        "main",
-        "newconfig",
-        "ssd-tier"
+        "release/android-2.6.5",
+        "release/test-install-referrers",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
       ]
     }
   ],
-  "commit_count": 13
+  "commit_count": 15,
+  "contributor_stats": {}
 }
