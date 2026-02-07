@@ -1,6 +1,6 @@
 {
   "date": "2026-01-18",
-  "cached_at": "2026-02-06T07:05:03.002409Z",
+  "cached_at": "2026-02-06T17:11:53.714007Z",
   "commits": [
     {
       "sha": "06dea31e1a068c2dbcf3402d2da9ff814f98bff5",
@@ -20,8 +20,11 @@
         "id_staging",
         "img_in_chat",
         "inbox_apis",
+        "infl_ep_updates",
+        "infl_util_apis",
         "lat_op_stage",
         "pn_inbox",
+        "show_sp_on_influencers",
         "staging",
         "sys_prompt_prod"
       ]
@@ -50,9 +53,23 @@
         "more_op_latency",
         "send_msg_rogue",
         "sentry_everywhere",
+        "temp_rm_beszel",
         "wal_ckpt_bug_fix"
       ]
     }
   ],
-  "commit_count": 2
+  "commit_count": 2,
+  "contributor_stats": {
+    "kevin-antony-yral": {
+      "2026-01-18": {
+        "commits": 4,
+        "additions": 388,
+        "deletions": 500,
+        "total": 888,
+        "repos": [
+          "dolr-ai/yral-ai-chat"
+        ]
+      }
+    }
+  }
 }

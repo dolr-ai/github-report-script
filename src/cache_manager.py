@@ -109,6 +109,10 @@ class CacheManager:
             'commits': new_commits,
             'commit_count': len(new_commits)
         }
+        
+        # Include contributor_stats if present
+        if 'contributor_stats' in data:
+            cache_data['contributor_stats'] = data['contributor_stats']
 
         with self.cache_lock:
             try:

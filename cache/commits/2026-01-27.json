@@ -1,22 +1,7 @@
 {
   "date": "2026-01-27",
-  "cached_at": "2026-02-06T07:06:25.787819Z",
+  "cached_at": "2026-02-06T20:21:54.303847Z",
   "commits": [
-    {
-      "sha": "70f8dab0d4dbed53103d8a1f4b36b52f42f7a4ab",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
-      "timestamp": "2026-01-27T05:14:07Z",
-      "message": "Update Ansible configurations and playbooks for improved structure and linting",
-      "stats": {
-        "additions": 64,
-        "deletions": 12,
-        "total": 76
-      },
-      "branches": [
-        "main"
-      ]
-    },
     {
       "sha": "12fd90090f069d11bab498f0a1a9788cbd4e64a9",
       "author": "naitik-makwana-yral",
@@ -188,6 +173,7 @@
         "feat/add-support-for-yral-subscription",
         "fix/user-agent-issue-with-pro-subscription",
         "fix/yral-pro-subscription-token-operation",
+        "joel/add_wan_i2v_support",
         "joel/ai-video-detector",
         "joel/apps-script-reports-api",
         "joel/dolr-rewards",
@@ -197,6 +183,7 @@
         "joel/fix-logging",
         "joel/fix-report-env",
         "joel/fix-reports",
+        "joel/hot-fix-notification-panic",
         "joel/icp-swap-dolr-price-fetch",
         "joel/ltx-intergration",
         "joel/offchain-broken-pipe-fix",
@@ -225,6 +212,7 @@
         "feat/add-support-for-yral-subscription",
         "fix/user-agent-issue-with-pro-subscription",
         "fix/yral-pro-subscription-token-operation",
+        "joel/add_wan_i2v_support",
         "joel/ai-video-detector",
         "joel/apps-script-reports-api",
         "joel/dolr-rewards",
@@ -235,6 +223,7 @@
         "joel/fix-logging",
         "joel/fix-report-env",
         "joel/fix-reports",
+        "joel/hot-fix-notification-panic",
         "joel/icp-swap-dolr-price-fetch",
         "joel/ltx-intergration",
         "joel/offchain-broken-pipe-fix",
@@ -262,6 +251,7 @@
         "feat/ltx2-model",
         "feat/update-candid-for-user-info-service",
         "feat/update-user-info-deps",
+        "feat/wan25-image-support",
         "fix/update-user-info-service-candid",
         "fix/yral-pro-subscription-token-transaction-implmentation",
         "master",
@@ -309,7 +299,6 @@
         "feature/ai-influencer",
         "feature/dolr-wallet-ui-bk",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
@@ -334,7 +323,6 @@
         "feature/ai-influencer",
         "feature/dolr-wallet-ui-bk",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
@@ -359,7 +347,6 @@
         "feature/ai-influencer",
         "feature/dolr-wallet-ui-bk",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
@@ -384,7 +371,6 @@
         "feature/ai-influencer",
         "feature/dolr-wallet-ui-bk",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
@@ -409,7 +395,6 @@
         "feature/ai-influencer",
         "feature/dolr-wallet-ui-bk",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
@@ -434,7 +419,6 @@
         "feature/ai-influencer",
         "feature/dolr-wallet-ui-bk",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
@@ -459,7 +443,6 @@
         "feature/ai-influencer",
         "feature/dolr-wallet-ui-bk",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
@@ -484,7 +467,6 @@
         "feature/ai-influencer",
         "feature/dolr-wallet-ui-bk",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
@@ -509,7 +491,6 @@
         "feature/ai-influencer",
         "feature/dolr-wallet-ui-bk",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
@@ -534,13 +515,28 @@
         "feature/ai-influencer",
         "feature/dolr-wallet-ui-bk",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
         "test/force-update"
       ]
+    },
+    {
+      "sha": "70f8dab0d4dbed53103d8a1f4b36b52f42f7a4ab",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-01-27T05:14:07Z",
+      "message": "Update Ansible configurations and playbooks for improved structure and linting",
+      "stats": {
+        "additions": 64,
+        "deletions": 12,
+        "total": 76
+      },
+      "branches": [
+        "main"
+      ]
     }
   ],
-  "commit_count": 23
+  "commit_count": 23,
+  "contributor_stats": {}
 }

@@ -1,6 +1,6 @@
 {
   "date": "2026-01-19",
-  "cached_at": "2026-02-06T07:05:24.571015Z",
+  "cached_at": "2026-02-06T18:43:48.555065Z",
   "commits": [
     {
       "sha": "4534b71fbd789dfb7e3c6abbca14a02a36eb37c1",
@@ -149,6 +149,7 @@
         "fix/gchat-oauth-for-report-buttons",
         "fix/user-agent-issue-with-pro-subscription",
         "fix/yral-pro-subscription-token-operation",
+        "joel/add_wan_i2v_support",
         "joel/ai-video-detector",
         "joel/apps-script-reports-api",
         "joel/ban-event",
@@ -161,6 +162,7 @@
         "joel/fix-logging",
         "joel/fix-report-env",
         "joel/fix-reports",
+        "joel/hot-fix-notification-panic",
         "joel/icp-swap-dolr-price-fetch",
         "joel/leaderboard-redis-migration",
         "joel/ltx-intergration",
@@ -202,6 +204,7 @@
         "feat/ltx2-model",
         "feat/update-candid-for-user-info-service",
         "feat/update-user-info-deps",
+        "feat/wan25-image-support",
         "fix/update-user-info-service-candid",
         "fix/yral-pro-subscription-token-transaction-implmentation",
         "master",
@@ -261,5 +264,6 @@
       ]
     }
   ],
-  "commit_count": 12
+  "commit_count": 12,
+  "contributor_stats": {}
 }

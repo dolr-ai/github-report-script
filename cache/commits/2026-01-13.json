@@ -1,99 +1,107 @@
 {
   "date": "2026-01-13",
-  "cached_at": "2026-02-06T07:04:50.567891Z",
+  "cached_at": "2026-02-06T17:10:06.693311Z",
   "commits": [
     {
-      "sha": "7aa17f41df587222716fd73d59883b251d3e3c74",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-13T15:18:43Z",
-      "message": "refactor",
+      "sha": "d3e31540f3dbd4baeafce83d3ecb1977c516076d",
+      "author": "samarth-paboowal-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-13T14:52:21Z",
+      "message": "Merge pull request #771 from dolr-ai/release/2.5.2",
       "stats": {
-        "additions": 180,
-        "deletions": 46,
-        "total": 226
+        "additions": 67,
+        "deletions": 310,
+        "total": 377
       },
       "branches": [
-        "main"
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/subscriptions-ui",
+        "fix/ios-load-time",
+        "main",
+        "release/android-2.6.5",
+        "saikatdas0790-patch-1",
+        "test/force-update"
       ]
     },
     {
-      "sha": "1f941f6b957160287b1df7aa2acb6af8997ba701",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-13T10:18:33Z",
-      "message": "Add Ubuntu 24.04 image path to installimage command",
+      "sha": "92c67a2a9315732c7e3dab9b9004fa17f19274aa",
+      "author": "samarth-paboowal-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-13T14:52:03Z",
+      "message": "Merge pull request #770 from dolr-ai/release/2.5.2",
       "stats": {
-        "additions": 1,
-        "deletions": 1,
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "main",
+        "release/android-2.6.5",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "a16bc47078826324beb049ba7b68691dd3462f3a",
+      "author": "samarth-paboowal-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-13T13:34:36Z",
+      "message": "build: adds firebase in app message sdk (#776)",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
         "total": 2
       },
       "branches": [
-        "main"
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "main",
+        "release/android-2.6.5",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
       ]
     },
     {
-      "sha": "83dc1bfc57762f588f98cf8bbd9c6afc689d0074",
-      "author": "sarvesh-sharma-yral",
+      "sha": "41ae906d682f16fd2713fc086710ba8b9b66498c",
+      "author": "samarth-paboowal-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-13T09:21:20Z",
-      "message": "build: Adds hot or not tournaments (#774)",
+      "timestamp": "2026-01-13T07:37:52Z",
+      "message": "build: adds AIBot module in features",
       "stats": {
-        "additions": 968,
+        "additions": 77,
         "deletions": 0,
-        "total": 968
+        "total": 77
       },
       "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/iap-ui",
-        "feature/subcription-video-gen",
-        "feature/subscription-ui",
-        "feature/subscriptions-ui",
-        "fix/hot-or-not-load-time",
-        "fix/ios-load-time",
-        "fix/state-button",
-        "fix-video-reporting",
-        "main",
-        "release/android-2.6.5",
-        "release/3.2.0",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
-    },
-    {
-      "sha": "c5ed43868407182cc60618dca2fea48bd8cc4f15",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-13T09:18:18Z",
-      "message": "build: Adds card overlay in the feeds screen (#772)",
-      "stats": {
-        "additions": 1242,
-        "deletions": 35,
-        "total": 1277
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/iap-ui",
-        "feature/subcription-video-gen",
-        "feature/subscription-ui",
-        "feature/subscriptions-ui",
-        "fix/hot-or-not-load-time",
-        "fix/ios-load-time",
-        "fix/state-button",
-        "fix-video-reporting",
-        "main",
-        "release/android-2.6.5",
-        "release/3.2.0",
-        "saikatdas0790-patch-1",
-        "test/force-update"
+        "feature/create-ai-chat-bot"
       ]
     },
     {
@@ -152,41 +160,15 @@
       ]
     },
     {
-      "sha": "d3e31540f3dbd4baeafce83d3ecb1977c516076d",
-      "author": "samarth-paboowal-yral",
+      "sha": "83dc1bfc57762f588f98cf8bbd9c6afc689d0074",
+      "author": "sarvesh-sharma-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-13T14:52:21Z",
-      "message": "Merge pull request #771 from dolr-ai/release/2.5.2",
+      "timestamp": "2026-01-13T09:21:20Z",
+      "message": "build: Adds hot or not tournaments (#774)",
       "stats": {
-        "additions": 67,
-        "deletions": 310,
-        "total": 377
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/subscriptions-ui",
-        "fix/ios-load-time",
-        "fix-video-reporting",
-        "main",
-        "release/android-2.6.5",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
-    },
-    {
-      "sha": "92c67a2a9315732c7e3dab9b9004fa17f19274aa",
-      "author": "samarth-paboowal-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-13T14:52:03Z",
-      "message": "Merge pull request #770 from dolr-ai/release/2.5.2",
-      "stats": {
-        "additions": 2,
-        "deletions": 2,
-        "total": 4
+        "additions": 968,
+        "deletions": 0,
+        "total": 968
       },
       "branches": [
         "create-pull-request/update-did-files-v3.5.9",
@@ -201,7 +183,6 @@
         "fix/hot-or-not-load-time",
         "fix/ios-load-time",
         "fix/state-button",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "release/3.2.0",
@@ -210,52 +191,67 @@
       ]
     },
     {
-      "sha": "a16bc47078826324beb049ba7b68691dd3462f3a",
-      "author": "samarth-paboowal-yral",
+      "sha": "c5ed43868407182cc60618dca2fea48bd8cc4f15",
+      "author": "sarvesh-sharma-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-13T13:34:36Z",
-      "message": "build: adds firebase in app message sdk (#776)",
+      "timestamp": "2026-01-13T09:18:18Z",
+      "message": "build: Adds card overlay in the feeds screen (#772)",
       "stats": {
-        "additions": 2,
-        "deletions": 0,
+        "additions": 1242,
+        "deletions": 35,
+        "total": 1277
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "main",
+        "release/android-2.6.5",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "7aa17f41df587222716fd73d59883b251d3e3c74",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-13T15:18:43Z",
+      "message": "refactor",
+      "stats": {
+        "additions": 180,
+        "deletions": 46,
+        "total": 226
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "1f941f6b957160287b1df7aa2acb6af8997ba701",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-13T10:18:33Z",
+      "message": "Add Ubuntu 24.04 image path to installimage command",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
         "total": 2
       },
       "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/iap-ui",
-        "feature/subcription-video-gen",
-        "feature/subscription-ui",
-        "feature/subscriptions-ui",
-        "fix/hot-or-not-load-time",
-        "fix/ios-load-time",
-        "fix/state-button",
-        "fix-video-reporting",
-        "main",
-        "release/android-2.6.5",
-        "release/3.2.0",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
-    },
-    {
-      "sha": "41ae906d682f16fd2713fc086710ba8b9b66498c",
-      "author": "samarth-paboowal-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-13T07:37:52Z",
-      "message": "build: adds AIBot module in features",
-      "stats": {
-        "additions": 77,
-        "deletions": 0,
-        "total": 77
-      },
-      "branches": [
-        "feature/create-ai-chat-bot"
+        "main"
       ]
     }
   ],
-  "commit_count": 10
+  "commit_count": 10,
+  "contributor_stats": {}
 }

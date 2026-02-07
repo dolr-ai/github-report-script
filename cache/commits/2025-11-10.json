@@ -1,6 +1,6 @@
 {
   "date": "2025-11-10",
-  "cached_at": "2026-02-06T07:00:27.217106Z",
+  "cached_at": "2026-02-06T12:12:50.276374Z",
   "commits": [
     {
       "sha": "0f194e93ab838acddbd65c908c927d57b03e365d",
@@ -25,6 +25,7 @@
         "fix/report-handler",
         "fix/user-agent-issue-with-pro-subscription",
         "fix/yral-pro-subscription-token-operation",
+        "joel/add_wan_i2v_support",
         "joel/ai-video-detector",
         "joel/apps-script-reports-api",
         "joel/aqpproval-notification",
@@ -78,5 +79,6 @@
       ]
     }
   ],
-  "commit_count": 1
+  "commit_count": 1,
+  "contributor_stats": {}
 }

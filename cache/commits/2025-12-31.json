@@ -1,61 +1,7 @@
 {
   "date": "2025-12-31",
-  "cached_at": "2026-02-06T07:04:10.894309Z",
+  "cached_at": "2026-02-06T15:38:03.877932Z",
   "commits": [
-    {
-      "sha": "ae1af17d57e3f63ef456ba868b166ad42be579c5",
-      "author": "ravi-sawlani-yral",
-      "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2025-12-31T07:06:15Z",
-      "message": "refactor and implement phone auth",
-      "stats": {
-        "additions": 1256,
-        "deletions": 183,
-        "total": 1439
-      },
-      "branches": [
-        "feat/deploy-to-dolr-ai",
-        "feat/fix-error-type-for-api",
-        "feat/implement-phone-auth",
-        "fix/redirect-uri-for-multiple-deployments",
-        "fix/remove-cookies-in-verify-endpoint",
-        "joel/ai-accounts-integration",
-        "joel/dnm-remove-bot-limit",
-        "joel/json-ser-ai-endpoint",
-        "joel/json-ser-fix",
-        "main",
-        "naitik/bare-metal-script-fix",
-        "naitik/fix_bare_metal_deployment",
-        "naitik/fix_broken_pipe_issue",
-        "naitik/migrate_reads_to_dragonfly",
-        "naitik/migration-to-dragonfly-redis",
-        "revert-41-fix/redirect-uri-for-multiple-deployments"
-      ]
-    },
-    {
-      "sha": "0bdd562fcaab44be17dc04266726e71f6712500f",
-      "author": "ravi-sawlani-yral",
-      "repository": "dolr-ai/yral-common",
-      "timestamp": "2025-12-31T06:46:39Z",
-      "message": "update ic depedencies for identity crate",
-      "stats": {
-        "additions": 315,
-        "deletions": 175,
-        "total": 490
-      },
-      "branches": [
-        "chore-update-user-info-service-canister-did",
-        "feat/ltx2-model",
-        "feat/update-candid-for-user-info-service",
-        "feat/update-rate-limit-canister-did-file",
-        "feat/update-user-info-deps",
-        "fix/update-user-info-service-candid",
-        "fix/yral-pro-subscription-token-transaction-implmentation",
-        "master",
-        "revert-153-fix/update-user-info-service-candid",
-        "revert-banned-posts-filter"
-      ]
-    },
     {
       "sha": "9fe87cd023a9fda2bdf919ea6bb0faada5efbe1d",
       "author": "kevin-antony-yral",
@@ -94,6 +40,8 @@
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
+        "infl_ep_updates",
+        "infl_util_apis",
         "infra_rl",
         "jatin_og_prompt",
         "jay_review",
@@ -140,12 +88,14 @@
         "sentry_fix",
         "sentry_webhook",
         "sentry",
+        "show_sp_on_influencers",
         "slow_msg",
         "sqlite_optimisations",
         "staging",
         "storj_integration",
         "sys_prompt_prod",
         "temp_fix_db_lock",
+        "temp_rm_beszel",
         "test_fix_url_n_storj_k",
         "test_robust_gc",
         "thread_to_async",
@@ -205,7 +155,63 @@
         "revert-1153-naitik/migration_to_dragonfly_redis",
         "revert-dual-write"
       ]
+    },
+    {
+      "sha": "ae1af17d57e3f63ef456ba868b166ad42be579c5",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2025-12-31T07:06:15Z",
+      "message": "refactor and implement phone auth",
+      "stats": {
+        "additions": 1256,
+        "deletions": 183,
+        "total": 1439
+      },
+      "branches": [
+        "feat/deploy-to-dolr-ai",
+        "feat/fix-error-type-for-api",
+        "feat/implement-phone-auth",
+        "fix/redirect-uri-for-multiple-deployments",
+        "fix/remove-cookies-in-verify-endpoint",
+        "joel/ai-accounts-integration",
+        "joel/dnm-remove-bot-limit",
+        "joel/json-ser-ai-endpoint",
+        "joel/json-ser-fix",
+        "main",
+        "naitik/bare-metal-script-fix",
+        "naitik/fix_bare_metal_deployment",
+        "naitik/fix_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration-to-dragonfly-redis",
+        "revert-41-fix/redirect-uri-for-multiple-deployments"
+      ]
+    },
+    {
+      "sha": "0bdd562fcaab44be17dc04266726e71f6712500f",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2025-12-31T06:46:39Z",
+      "message": "update ic depedencies for identity crate",
+      "stats": {
+        "additions": 315,
+        "deletions": 175,
+        "total": 490
+      },
+      "branches": [
+        "chore-update-user-info-service-canister-did",
+        "feat/ltx2-model",
+        "feat/update-candid-for-user-info-service",
+        "feat/update-rate-limit-canister-did-file",
+        "feat/update-user-info-deps",
+        "feat/wan25-image-support",
+        "fix/update-user-info-service-candid",
+        "fix/yral-pro-subscription-token-transaction-implmentation",
+        "master",
+        "revert-153-fix/update-user-info-service-candid",
+        "revert-banned-posts-filter"
+      ]
     }
   ],
-  "commit_count": 5
+  "commit_count": 5,
+  "contributor_stats": {}
 }

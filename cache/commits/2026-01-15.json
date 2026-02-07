@@ -1,7 +1,216 @@
 {
   "date": "2026-01-15",
-  "cached_at": "2026-02-06T07:04:53.654524Z",
+  "cached_at": "2026-02-06T17:10:51.096340Z",
   "commits": [
+    {
+      "sha": "b77554351492ad8b3231fef967b8d002321ce954",
+      "author": "samarth-paboowal-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-15T07:38:59Z",
+      "message": "build: adds firebase in app messaging sdk (#782)",
+      "stats": {
+        "additions": 14,
+        "deletions": 1,
+        "total": 15
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/subscriptions-ui",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "main",
+        "release/android-2.6.5",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "968d7fc3c366fd143fa2e70437c3bd2686cee33e",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-01-15T08:56:33Z",
+      "message": "added development flake",
+      "stats": {
+        "additions": 46,
+        "deletions": 0,
+        "total": 46
+      },
+      "branches": [
+        "feat/add-endpoints-for-upload-video-and-update-metadata",
+        "main"
+      ]
+    },
+    {
+      "sha": "c40a82df6f556dc90eea09a47d8294639ed1e3b3",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-15T17:11:20Z",
+      "message": "Adds and updates events for login (#787)",
+      "stats": {
+        "additions": 313,
+        "deletions": 19,
+        "total": 332
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/subscriptions-ui",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "main",
+        "release/android-2.6.5",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "4a4b4397f6d1928a3dba22aefe953b035c07d13d",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-15T17:07:30Z",
+      "message": "chore: Adds tournament events in branch (#788)",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/subscriptions-ui",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "main",
+        "release/android-2.6.5",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "0148bc5399646b37e0692a8e4866de33da6c6159",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-15T14:39:12Z",
+      "message": "chore: Adds tournament events in branch (#786)",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/subscriptions-ui",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "main",
+        "release/android-2.6.5",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "e02b9c7229da2f1bd9a21554b698baa782037aa8",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-15T12:44:21Z",
+      "message": "Login design fixes (#785)",
+      "stats": {
+        "additions": 329,
+        "deletions": 182,
+        "total": 511
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/subscriptions-ui",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "main",
+        "release/android-2.6.5",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "b06dde6d9acad5e239f21d8801577a998d4be84a",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-15T08:23:47Z",
+      "message": "Merge pull request #780 from dolr-ai/release/2.6.0",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/subscriptions-ui",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "main",
+        "release/android-2.6.5",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "8cd740d509bd599ec2a9164c352b35727c64bd7f",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-15T08:22:23Z",
+      "message": "Merge pull request #781 from dolr-ai/release/2.6.0",
+      "stats": {
+        "additions": 7374,
+        "deletions": 1298,
+        "total": 8672
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/subscriptions-ui",
+        "fix/ios-load-time",
+        "main",
+        "release/android-2.6.5",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
     {
       "sha": "a7c2baf1039483829a16e866b8bc80f045bf495a",
       "author": "saikatdas0790",
@@ -106,223 +315,8 @@
       "branches": [
         "main"
       ]
-    },
-    {
-      "sha": "b06dde6d9acad5e239f21d8801577a998d4be84a",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-15T08:23:47Z",
-      "message": "Merge pull request #780 from dolr-ai/release/2.6.0",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/subscriptions-ui",
-        "fix/hot-or-not-load-time",
-        "fix/ios-load-time",
-        "fix/state-button",
-        "fix-video-reporting",
-        "main",
-        "release/android-2.6.5",
-        "release/3.2.0",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
-    },
-    {
-      "sha": "8cd740d509bd599ec2a9164c352b35727c64bd7f",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-15T08:22:23Z",
-      "message": "Merge pull request #781 from dolr-ai/release/2.6.0",
-      "stats": {
-        "additions": 7374,
-        "deletions": 1298,
-        "total": 8672
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/subscriptions-ui",
-        "fix/ios-load-time",
-        "fix-video-reporting",
-        "main",
-        "release/android-2.6.5",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
-    },
-    {
-      "sha": "968d7fc3c366fd143fa2e70437c3bd2686cee33e",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-video-upload-service",
-      "timestamp": "2026-01-15T08:56:33Z",
-      "message": "added development flake",
-      "stats": {
-        "additions": 46,
-        "deletions": 0,
-        "total": 46
-      },
-      "branches": [
-        "feat/add-endpoints-for-upload-video-and-update-metadata",
-        "main"
-      ]
-    },
-    {
-      "sha": "b77554351492ad8b3231fef967b8d002321ce954",
-      "author": "samarth-paboowal-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-15T07:38:59Z",
-      "message": "build: adds firebase in app messaging sdk (#782)",
-      "stats": {
-        "additions": 14,
-        "deletions": 1,
-        "total": 15
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/subscriptions-ui",
-        "fix/hot-or-not-load-time",
-        "fix/ios-load-time",
-        "fix/state-button",
-        "fix-video-reporting",
-        "main",
-        "release/android-2.6.5",
-        "release/3.2.0",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
-    },
-    {
-      "sha": "c40a82df6f556dc90eea09a47d8294639ed1e3b3",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-15T17:11:20Z",
-      "message": "Adds and updates events for login (#787)",
-      "stats": {
-        "additions": 313,
-        "deletions": 19,
-        "total": 332
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/subscriptions-ui",
-        "fix/hot-or-not-load-time",
-        "fix/ios-load-time",
-        "fix/state-button",
-        "fix-video-reporting",
-        "main",
-        "release/android-2.6.5",
-        "release/3.2.0",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
-    },
-    {
-      "sha": "4a4b4397f6d1928a3dba22aefe953b035c07d13d",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-15T17:07:30Z",
-      "message": "chore: Adds tournament events in branch (#788)",
-      "stats": {
-        "additions": 1,
-        "deletions": 0,
-        "total": 1
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/subscriptions-ui",
-        "fix/hot-or-not-load-time",
-        "fix/ios-load-time",
-        "fix/state-button",
-        "fix-video-reporting",
-        "main",
-        "release/android-2.6.5",
-        "release/3.2.0",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
-    },
-    {
-      "sha": "0148bc5399646b37e0692a8e4866de33da6c6159",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-15T14:39:12Z",
-      "message": "chore: Adds tournament events in branch (#786)",
-      "stats": {
-        "additions": 2,
-        "deletions": 0,
-        "total": 2
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/subscriptions-ui",
-        "fix/hot-or-not-load-time",
-        "fix/ios-load-time",
-        "fix/state-button",
-        "fix-video-reporting",
-        "main",
-        "release/android-2.6.5",
-        "release/3.2.0",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
-    },
-    {
-      "sha": "e02b9c7229da2f1bd9a21554b698baa782037aa8",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-15T12:44:21Z",
-      "message": "Login design fixes (#785)",
-      "stats": {
-        "additions": 329,
-        "deletions": 182,
-        "total": 511
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/subscriptions-ui",
-        "fix/hot-or-not-load-time",
-        "fix/ios-load-time",
-        "fix/state-button",
-        "fix-video-reporting",
-        "main",
-        "release/android-2.6.5",
-        "release/3.2.0",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
     }
   ],
-  "commit_count": 15
+  "commit_count": 15,
+  "contributor_stats": {}
 }

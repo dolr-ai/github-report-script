@@ -315,6 +315,109 @@ class GitHubFetcher:
             # If we can't determine, assume it's not a bot
             return False
 
+    @retry_with_exponential_backoff(max_retries=5, base_delay=60)
+    def _fetch_contributor_stats(self, repo_full_name: str, username: str, 
+                                 start_date: datetime, end_date: datetime) -> Dict:
+        """Fetch contributor statistics from GitHub's stats API
+        
+        This API provides the authoritative commit counts and LOC that match
+        what GitHub shows in the contributors graph. It aggregates by week.
+        
+        NOTE: This API can return 202 Accepted when stats need to be computed.
+        We handle this by retrying with exponential backoff.
+        
+        Args:
+            repo_full_name: Full repository name (e.g., 'dolr-ai/yral-mobile')
+            username: GitHub username
+            start_date: Start date for filtering
+            end_date: End date for filtering
+            
+        Returns:
+            Dictionary with stats by date: {
+                'date': {'commits': X, 'additions': Y, 'deletions': Z}
+            }
+        """
+        try:
+            endpoint = f"/repos/{repo_full_name}/stats/contributors"
+            
+            # Try up to 3 times if we get 202 (stats being computed)
+            for attempt in range(3):
+                data = self._api_request(endpoint)
+                
+                # _api_request returns None or empty list for 202
+                if data is None or (isinstance(data, list) and len(data) == 0):
+                    if attempt < 2:
+                        logger.debug(
+                            f"Stats API returned 202 for {repo_full_name}, waiting 10s (attempt {attempt + 1}/3)"
+                        )
+                        time.sleep(10)
+                        continue
+                    else:
+                        logger.warning(
+                            f"Stats API still computing for {repo_full_name} after 3 attempts, skipping"
+                        )
+                        return {}
+                
+                # We got data, process it
+                break
+            
+            if not data:
+                logger.debug(f"No contributor stats found for {repo_full_name}")
+                return {}
+            
+            # Find the user's contribution data
+            user_data = None
+            for contributor in data:
+                author = contributor.get('author', {})
+                if author and author.get('login') == username:
+                    user_data = contributor
+                    break
+            
+            if not user_data:
+                logger.debug(f"User {username} not found in contributor stats for {repo_full_name}")
+                return {}
+            
+            # Extract weekly stats and convert to daily
+            weeks = user_data.get('weeks', [])
+            start_timestamp = int(start_date.timestamp())
+            end_timestamp = int(end_date.timestamp())
+            
+            stats_by_date = {}
+            
+            for week in weeks:
+                week_timestamp = week.get('w', 0)
+                
+                # Skip weeks outside our date range
+                if week_timestamp < start_timestamp or week_timestamp > end_timestamp:
+                    continue
+                
+                commits = week.get('c', 0)
+                additions = week.get('a', 0)
+                deletions = week.get('d', 0)
+                
+                if commits > 0:
+                    # Convert timestamp to date
+                    week_date = datetime.fromtimestamp(week_timestamp).date()
+                    date_str = week_date.isoformat()
+                    
+                    stats_by_date[date_str] = {
+                        'commits': commits,
+                        'additions': additions,
+                        'deletions': deletions,
+                        'total': additions + deletions
+                    }
+            
+            logger.debug(
+                f"Fetched contributor stats for {username} in {repo_full_name}: "
+                f"{len(stats_by_date)} weeks with activity"
+            )
+            
+            return stats_by_date
+            
+        except Exception as e:
+            logger.debug(f"Error fetching contributor stats for {username} in {repo_full_name}: {e}")
+            return {}
+
     def _get_user_active_repos(self, username: str, start_datetime: datetime,
                                end_datetime: datetime) -> List[str]:
         """Get list of repos where user has contributions in the date range
@@ -416,42 +519,22 @@ class GitHubFetcher:
                 for repo_full_name in repos:
                     owner, repo_short = repo_full_name.split('/')
 
-                    # GraphQL query to fetch ALL branches with commits
-                    branches_query = f"""
-                    query($owner: String!, $repo: String!, $cursor: String) {{
-                      repository(owner: $owner, name: $repo) {{
-                        refs(refPrefix: "refs/heads/", first: 50, after: $cursor) {{
+                    # First, fetch all branches (without commits)
+                    branches_query = """
+                    query($owner: String!, $repo: String!, $cursor: String) {
+                      repository(owner: $owner, name: $repo) {
+                        refs(refPrefix: "refs/heads/", first: 50, after: $cursor) {
                           totalCount
-                          pageInfo {{
+                          pageInfo {
                             hasNextPage
                             endCursor
-                          }}
-                          nodes {{
+                          }
+                          nodes {
                             name
-                            target {{
-                              ... on Commit {{
-                                history(first: 100, since: "{start_datetime.isoformat()}Z", until: "{end_datetime.isoformat()}Z") {{
-                                  nodes {{
-                                    oid
-                                    author {{
-                                      user {{
-                                        login
-                                      }}
-                                      name
-                                      email
-                                    }}
-                                    committedDate
-                                    message
-                                    additions
-                                    deletions
-                                  }}
-                                }}
-                              }}
-                            }}
-                          }}
-                        }}
-                      }}
-                    }}
+                          }
+                        }
+                      }
+                    }
                     """
 
                     branch_variables = {
@@ -460,11 +543,10 @@ class GitHubFetcher:
                         'cursor': None
                     }
 
+                    # Collect all branch names first
+                    all_branches = []
                     has_next_branch_page = True
-                    repo_commit_count = 0
-                    total_branches_processed = 0
 
-                    # Paginate through all branches
                     while has_next_branch_page:
                         branch_data = self._graphql_request(
                             branches_query, branch_variables)
@@ -480,20 +562,79 @@ class GitHubFetcher:
                         branch_variables['cursor'] = branch_page_info['endCursor']
 
                         branches = refs.get('nodes', [])
-                        total_branches_processed += len(branches)
+                        all_branches.extend([b['name'] for b in branches])
 
-                        # Process each branch
-                        for branch in branches:
-                            branch_name = branch['name']
-                            target = branch.get('target')
+                    # Now fetch commits for each branch with pagination
+                    repo_commit_count = 0
+                    total_branches_processed = len(all_branches)
 
-                            if not target:
-                                continue
+                    for branch_name in all_branches:
+                        # Query to fetch commits from a specific branch with pagination
+                        commits_query = f"""
+                        query($owner: String!, $repo: String!, $branch: String!, $cursor: String) {{
+                          repository(owner: $owner, name: $repo) {{
+                            ref(qualifiedName: $branch) {{
+                              target {{
+                                ... on Commit {{
+                                  history(first: 100, since: "{start_datetime.isoformat()}Z", until: "{end_datetime.isoformat()}Z", after: $cursor) {{
+                                    totalCount
+                                    pageInfo {{
+                                      hasNextPage
+                                      endCursor
+                                    }}
+                                    nodes {{
+                                      oid
+                                      author {{
+                                        user {{
+                                          login
+                                        }}
+                                        name
+                                        email
+                                      }}
+                                      committedDate
+                                      message
+                                      additions
+                                      deletions
+                                    }}
+                                  }}
+                                }}
+                              }}
+                            }}
+                          }}
+                        }}
+                        """
 
-                            history = target.get(
-                                'history', {}).get('nodes', [])
+                        commit_variables = {
+                            'owner': owner,
+                            'repo': repo_short,
+                            'branch': f"refs/heads/{branch_name}",
+                            'cursor': None
+                        }
 
-                            for commit in history:
+                        has_next_commit_page = True
+                        branch_commit_count = 0
+
+                        # Paginate through all commits in this branch
+                        while has_next_commit_page:
+                            commit_data = self._graphql_request(
+                                commits_query, commit_variables)
+
+                            if not commit_data or 'repository' not in commit_data:
+                                break
+
+                            ref = commit_data['repository'].get('ref')
+                            if not ref or not ref.get('target'):
+                                break
+
+                            history = ref['target'].get('history', {})
+                            commits = history.get('nodes', [])
+                            commit_page_info = history.get('pageInfo', {})
+                            
+                            has_next_commit_page = commit_page_info.get('hasNextPage', False)
+                            commit_variables['cursor'] = commit_page_info.get('endCursor')
+
+                            # Process commits from this page
+                            for commit in commits:
                                 try:
                                     commit_sha = commit['oid']
 
@@ -548,11 +689,17 @@ class GitHubFetcher:
                                     commits_by_sha[commit_sha] = commit_data
                                     commits_data.append(commit_data)
                                     repo_commit_count += 1
+                                    branch_commit_count += 1
 
                                 except Exception as e:
                                     logger.debug(
                                         f"Skipped commit in {repo_full_name}: {e}")
                                     continue
+
+                        # Log if branch had commits
+                        if branch_commit_count > 0:
+                            logger.debug(
+                                f"Branch {branch_name}: fetched {branch_commit_count} commits (paginated)")
 
                     if repo_commit_count > 0:
                         logger.debug(
@@ -571,9 +718,41 @@ class GitHubFetcher:
             f"Date {date_str}: {len(commits_data)} commits from {unique_repos} repos, {unique_authors} authors"
         )
 
+        # Fetch contributor stats for validation
+        # This provides the authoritative counts that match GitHub's UI
+        contributor_stats = {}
+        for username in user_ids:
+            active_repos = user_repos.get(username, [])
+            user_stats = {}
+            
+            for repo_full_name in active_repos:
+                repo_stats = self._fetch_contributor_stats(
+                    repo_full_name, username, start_datetime, end_datetime
+                )
+                if repo_stats:
+                    # Merge stats from this repo
+                    for stat_date, stats in repo_stats.items():
+                        if stat_date not in user_stats:
+                            user_stats[stat_date] = {
+                                'commits': 0,
+                                'additions': 0,
+                                'deletions': 0,
+                                'total': 0,
+                                'repos': []
+                            }
+                        user_stats[stat_date]['commits'] += stats['commits']
+                        user_stats[stat_date]['additions'] += stats['additions']
+                        user_stats[stat_date]['deletions'] += stats['deletions']
+                        user_stats[stat_date]['total'] += stats['total']
+                        user_stats[stat_date]['repos'].append(repo_full_name)
+            
+            if user_stats:
+                contributor_stats[username] = user_stats
+        
         return {
             'date': date_str,
-            'commits': commits_data
+            'commits': commits_data,
+            'contributor_stats': contributor_stats  # Authoritative stats from GitHub
         }
 
     def fetch_commits(self, start_date: datetime, end_date: datetime,

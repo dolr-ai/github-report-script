@@ -1,7 +1,37 @@
 {
   "date": "2026-02-05",
-  "cached_at": "2026-02-06T08:11:46.705696Z",
+  "cached_at": "2026-02-06T20:28:19.761421Z",
   "commits": [
+    {
+      "sha": "7b847b2d88a18eb15db1c2a5dcf52a654965d8e6",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-02-05T12:18:10Z",
+      "message": "add notification client",
+      "stats": {
+        "additions": 34,
+        "deletions": 8,
+        "total": 42
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b7b3bdc2c1ecfda64e4598d25ecaca857c947e69",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-02-05T12:09:17Z",
+      "message": "integrate events service",
+      "stats": {
+        "additions": 427,
+        "deletions": 26,
+        "total": 453
+      },
+      "branches": [
+        "main"
+      ]
+    },
     {
       "sha": "95a21bd2c3002adf0a6c5e83297e2f5cc67ea78e",
       "author": "mayank-k-yral",
@@ -17,23 +47,7 @@
         "create-pull-request/update-did-files-v3.5.9",
         "develop",
         "feature/ai-influencer",
-        "fix-video-reporting",
         "release/android-2.6.5"
-      ]
-    },
-    {
-      "sha": "bb791ebf9f03a95ff6d72f9d39aec4854d7042dd",
-      "author": "mayank-k-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-05T21:29:31Z",
-      "message": "add surfaceId validation to unbindSurface in PlaybackCoordinator",
-      "stats": {
-        "additions": 19,
-        "deletions": 6,
-        "total": 25
-      },
-      "branches": [
-        "fix-video-reporting"
       ]
     },
     {
@@ -48,7 +62,8 @@
         "total": 201
       },
       "branches": [
-        "fix-video-reporting"
+        "develop",
+        "feature/ai-influencer"
       ]
     },
     {
@@ -63,7 +78,8 @@
         "total": 67
       },
       "branches": [
-        "fix-video-reporting"
+        "develop",
+        "feature/ai-influencer"
       ]
     },
     {
@@ -81,7 +97,6 @@
         "create-pull-request/update-did-files-v3.5.9",
         "develop",
         "feature/ai-influencer",
-        "fix-video-reporting",
         "release/android-2.6.5"
       ]
     },
@@ -100,7 +115,6 @@
         "create-pull-request/update-did-files-v3.5.9",
         "develop",
         "feature/ai-influencer",
-        "fix-video-reporting",
         "release/android-2.6.5"
       ]
     },
@@ -178,37 +192,8 @@
       "branches": [
         "main"
       ]
-    },
-    {
-      "sha": "7b847b2d88a18eb15db1c2a5dcf52a654965d8e6",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-video-upload-service",
-      "timestamp": "2026-02-05T12:18:10Z",
-      "message": "add notification client",
-      "stats": {
-        "additions": 34,
-        "deletions": 8,
-        "total": 42
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "b7b3bdc2c1ecfda64e4598d25ecaca857c947e69",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-video-upload-service",
-      "timestamp": "2026-02-05T12:09:17Z",
-      "message": "integrate events service",
-      "stats": {
-        "additions": 427,
-        "deletions": 26,
-        "total": 453
-      },
-      "branches": [
-        "main"
-      ]
     }
   ],
-  "commit_count": 13
+  "commit_count": 12,
+  "contributor_stats": {}
 }

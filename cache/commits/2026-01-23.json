@@ -1,7 +1,409 @@
 {
   "date": "2026-01-23",
-  "cached_at": "2026-02-06T07:05:52.112853Z",
+  "cached_at": "2026-02-06T18:51:24.075639Z",
   "commits": [
+    {
+      "sha": "6b4dc318563855500b9aff967a10c234c89087c8",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-23T14:48:32Z",
+      "message": "Revert \"dual write to dragonfly redis (#1156)\" (#1157)",
+      "stats": {
+        "additions": 45,
+        "deletions": 794,
+        "total": 839
+      },
+      "branches": [
+        "dependabot/cargo/bytes-1.11.1",
+        "dependabot/cargo/hon-worker-common-2a723cd",
+        "dependabot/cargo/openidconnect-4.0.1",
+        "dependabot/cargo/opentelemetry_sdk-0.31.0",
+        "dependabot/cargo/rsa-0.9.10",
+        "dependabot/cargo/videogen-common-2a723cd",
+        "dependabot/npm_and_yarn/tests/e2e/lodash-4.17.23",
+        "dependabot/npm_and_yarn/tests/e2e/multi-549b90733e",
+        "dependabot/npm_and_yarn/tests/e2e/multi-ac680358f5",
+        "feat/ltx2-model",
+        "fix/remove-post-status-filtering",
+        "main",
+        "naitik/fix_dragonfly_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration_to_dragonfly_redis"
+      ]
+    },
+    {
+      "sha": "c58b5951003507186391d65efb6cf259e9ecd6f2",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-23T13:50:59Z",
+      "message": "dual write to dragonfly redis (#1156)",
+      "stats": {
+        "additions": 794,
+        "deletions": 45,
+        "total": 839
+      },
+      "branches": [
+        "dependabot/cargo/bytes-1.11.1",
+        "dependabot/cargo/hon-worker-common-2a723cd",
+        "dependabot/cargo/openidconnect-4.0.1",
+        "dependabot/cargo/opentelemetry_sdk-0.31.0",
+        "dependabot/cargo/rsa-0.9.10",
+        "dependabot/cargo/videogen-common-2a723cd",
+        "dependabot/npm_and_yarn/tests/e2e/lodash-4.17.23",
+        "dependabot/npm_and_yarn/tests/e2e/multi-549b90733e",
+        "dependabot/npm_and_yarn/tests/e2e/multi-ac680358f5",
+        "feat/ltx2-model",
+        "fix/remove-post-status-filtering",
+        "main",
+        "naitik/fix_dragonfly_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration_to_dragonfly_redis",
+        "revert-dual-write"
+      ]
+    },
+    {
+      "sha": "31e1fe83259e8506703db371fea825b6b1f7db75",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-23T08:55:56Z",
+      "message": "dual write to dragonfly redis (#1153)",
+      "stats": {
+        "additions": 793,
+        "deletions": 44,
+        "total": 837
+      },
+      "branches": [
+        "dependabot/cargo/bytes-1.11.1",
+        "dependabot/cargo/hon-worker-common-2a723cd",
+        "dependabot/cargo/openidconnect-4.0.1",
+        "dependabot/cargo/opentelemetry_sdk-0.31.0",
+        "dependabot/cargo/rsa-0.9.10",
+        "dependabot/cargo/videogen-common-2a723cd",
+        "dependabot/npm_and_yarn/tests/e2e/lodash-4.17.23",
+        "dependabot/npm_and_yarn/tests/e2e/multi-549b90733e",
+        "dependabot/npm_and_yarn/tests/e2e/multi-ac680358f5",
+        "feat/ltx2-model",
+        "fix/remove-post-status-filtering",
+        "main",
+        "naitik/fix_dragonfly_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration_to_dragonfly_redis",
+        "revert-1153-naitik/migration_to_dragonfly_redis",
+        "revert-dual-write"
+      ]
+    },
+    {
+      "sha": "66d096ca20876d4a5723be98f75004cc3c846a5f",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-23T12:28:19Z",
+      "message": "Merge branch 'main' into naitik/migration_to_dragonfly_redis",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "naitik/migration_to_dragonfly_redis"
+      ]
+    },
+    {
+      "sha": "c40be7b959472d31fdff9a1cdb3fba9dd5cd6ccf",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-23T12:25:09Z",
+      "message": "fix: default image name in compose file.",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "naitik/migration_to_dragonfly_redis"
+      ]
+    },
+    {
+      "sha": "8195481c6eabbaf20157c47fb780d45a0e3a9c24",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-23T14:37:41Z",
+      "message": "Revert \"dual write to dragonfly redis (#1156)\"",
+      "stats": {
+        "additions": 45,
+        "deletions": 794,
+        "total": 839
+      },
+      "branches": [
+        "revert-dual-write"
+      ]
+    },
+    {
+      "sha": "5ea506129ce65deb6e620ccb442af361ef033615",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-23T10:24:20Z",
+      "message": "fix: handle fallback for updating user post view details on error (#372)",
+      "stats": {
+        "additions": 20,
+        "deletions": 2,
+        "total": 22
+      },
+      "branches": [
+        "copilot/sub-pr-378",
+        "feat/add-support-for-yral-subscription",
+        "fix/user-agent-issue-with-pro-subscription",
+        "fix/yral-pro-subscription-token-operation",
+        "joel/add_wan_i2v_support",
+        "joel/ai-video-detector",
+        "joel/apps-script-reports-api",
+        "joel/dolr-rewards",
+        "joel/fix-btc-dolr-notif",
+        "joel/fix-event-name",
+        "joel/fix-event-ser",
+        "joel/fix-gchat-report-buttons",
+        "joel/fix-logging",
+        "joel/fix-report-env",
+        "joel/fix-reports",
+        "joel/hot-fix-notification-panic",
+        "joel/icp-swap-dolr-price-fetch",
+        "joel/ltx-intergration",
+        "joel/metric-server-cleanup",
+        "joel/offchain-broken-pipe-fix",
+        "joel/phash-redis-migration",
+        "joel/profile-views-check",
+        "joel/rewards-mode",
+        "joel/rm-panic",
+        "joel/upload-flow-content",
+        "main",
+        "naitik/broken_pipe_issue_fix",
+        "naitik/migrate_reads_to_dragonfly"
+      ]
+    },
+    {
+      "sha": "483b7fb5e7cece1607de2e3e00d31293ebb91e97",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-23T10:09:18Z",
+      "message": "Fix/gchat oauth for report buttons (#371)",
+      "stats": {
+        "additions": 3,
+        "deletions": 1,
+        "total": 4
+      },
+      "branches": [
+        "copilot/sub-pr-378",
+        "feat/add-support-for-yral-subscription",
+        "fix/user-agent-issue-with-pro-subscription",
+        "fix/yral-pro-subscription-token-operation",
+        "joel/add_wan_i2v_support",
+        "joel/ai-video-detector",
+        "joel/apps-script-reports-api",
+        "joel/dolr-rewards",
+        "joel/fix-btc-dolr-notif",
+        "joel/fix-event-name",
+        "joel/fix-event-ser",
+        "joel/fix-gchat-report-buttons",
+        "joel/fix-logging",
+        "joel/fix-report-env",
+        "joel/fix-reports",
+        "joel/hot-fix-notification-panic",
+        "joel/icp-swap-dolr-price-fetch",
+        "joel/ltx-intergration",
+        "joel/metric-server-cleanup",
+        "joel/offchain-broken-pipe-fix",
+        "joel/phash-redis-migration",
+        "joel/profile-views-check",
+        "joel/rewards-mode",
+        "joel/rm-panic",
+        "joel/upload-flow-content",
+        "joel/views-fix",
+        "main",
+        "naitik/broken_pipe_issue_fix",
+        "naitik/migrate_reads_to_dragonfly"
+      ]
+    },
+    {
+      "sha": "79efb02900224ded1aae6d8fd9abf758ad671014",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-23T09:37:04Z",
+      "message": "fix: use OAuth for Google Chat report messages (interactive buttons) (#370)",
+      "stats": {
+        "additions": 93,
+        "deletions": 8,
+        "total": 101
+      },
+      "branches": [
+        "copilot/sub-pr-378",
+        "feat/add-support-for-yral-subscription",
+        "fix/gchat-oauth-for-report-buttons",
+        "fix/user-agent-issue-with-pro-subscription",
+        "fix/yral-pro-subscription-token-operation",
+        "joel/add_wan_i2v_support",
+        "joel/ai-video-detector",
+        "joel/apps-script-reports-api",
+        "joel/dolr-rewards",
+        "joel/fix-btc-dolr-notif",
+        "joel/fix-event-name",
+        "joel/fix-event-ser",
+        "joel/fix-gchat-report-buttons",
+        "joel/fix-logging",
+        "joel/fix-report-env",
+        "joel/fix-reports",
+        "joel/hot-fix-notification-panic",
+        "joel/icp-swap-dolr-price-fetch",
+        "joel/ltx-intergration",
+        "joel/metric-server-cleanup",
+        "joel/offchain-broken-pipe-fix",
+        "joel/phash-redis-migration",
+        "joel/profile-views-check",
+        "joel/rewards-mode",
+        "joel/rm-panic",
+        "joel/upload-flow-content",
+        "joel/views-fix",
+        "main",
+        "naitik/broken_pipe_issue_fix",
+        "naitik/migrate_reads_to_dragonfly"
+      ]
+    },
+    {
+      "sha": "dc33a5d3d5c2852d1ad5992981a51ecdaa446f3e",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-23T08:30:42Z",
+      "message": "feat: add GOOGLE_CHAT_REPORT_SPACE_URL as a dynamic environment variable (#369)",
+      "stats": {
+        "additions": 7,
+        "deletions": 4,
+        "total": 11
+      },
+      "branches": [
+        "copilot/sub-pr-378",
+        "feat/add-support-for-yral-subscription",
+        "fix/gchat-oauth-for-report-buttons",
+        "fix/user-agent-issue-with-pro-subscription",
+        "fix/yral-pro-subscription-token-operation",
+        "joel/add_wan_i2v_support",
+        "joel/ai-video-detector",
+        "joel/apps-script-reports-api",
+        "joel/dolr-rewards",
+        "joel/fix-btc-dolr-notif",
+        "joel/fix-event-name",
+        "joel/fix-event-ser",
+        "joel/fix-gchat-report-buttons",
+        "joel/fix-logging",
+        "joel/fix-report-env",
+        "joel/fix-reports",
+        "joel/hot-fix-notification-panic",
+        "joel/icp-swap-dolr-price-fetch",
+        "joel/ltx-intergration",
+        "joel/metric-server-cleanup",
+        "joel/offchain-broken-pipe-fix",
+        "joel/phash-redis-migration",
+        "joel/profile-views-check",
+        "joel/rewards-mode",
+        "joel/rm-panic",
+        "joel/upload-flow-content",
+        "joel/views-fix",
+        "main",
+        "naitik/broken_pipe_issue_fix",
+        "naitik/migrate_reads_to_dragonfly"
+      ]
+    },
+    {
+      "sha": "c45a3baa96602b57cc8d3a3eb7bf7bd0fa095518",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-23T10:02:00Z",
+      "message": "Merge branch 'main' into fix/gchat-oauth-for-report-buttons",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "fix/gchat-oauth-for-report-buttons"
+      ]
+    },
+    {
+      "sha": "d8ef1417561f0e266d4e1b6f472d273fe617c8c3",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-23T09:26:12Z",
+      "message": "Merge branch 'main' into fix/gchat-oauth-for-report-buttons",
+      "stats": {
+        "additions": 6,
+        "deletions": 2,
+        "total": 8
+      },
+      "branches": [
+        "fix/gchat-oauth-for-report-buttons"
+      ]
+    },
+    {
+      "sha": "38e84dd8aa8609331a8e0461208c91317221ceb9",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-23T09:40:52Z",
+      "message": "[skip ci] Revert \"Naitik/migration to dragonfly redis\" (#1155)",
+      "stats": {
+        "additions": 44,
+        "deletions": 793,
+        "total": 837
+      },
+      "branches": [
+        "dependabot/cargo/bytes-1.11.1",
+        "dependabot/cargo/hon-worker-common-2a723cd",
+        "dependabot/cargo/openidconnect-4.0.1",
+        "dependabot/cargo/opentelemetry_sdk-0.31.0",
+        "dependabot/cargo/rsa-0.9.10",
+        "dependabot/cargo/videogen-common-2a723cd",
+        "dependabot/npm_and_yarn/tests/e2e/lodash-4.17.23",
+        "dependabot/npm_and_yarn/tests/e2e/multi-549b90733e",
+        "dependabot/npm_and_yarn/tests/e2e/multi-ac680358f5",
+        "feat/ltx2-model",
+        "fix/remove-post-status-filtering",
+        "main",
+        "naitik/fix_dragonfly_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration_to_dragonfly_redis",
+        "revert-dual-write"
+      ]
+    },
+    {
+      "sha": "a67fba9b7fef0101527be898b54d46097ae02f09",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-01-23T09:40:22Z",
+      "message": "Revert \"dual write to dragonfly redis (#1153)\"",
+      "stats": {
+        "additions": 44,
+        "deletions": 793,
+        "total": 837
+      },
+      "branches": [
+        "revert-1153-naitik/migration_to_dragonfly_redis"
+      ]
+    },
+    {
+      "sha": "100d76a9241f792c8c49408d2b0a719c78c7b60f",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-01-23T11:12:40Z",
+      "message": "feat: added litestream backup",
+      "stats": {
+        "additions": 48,
+        "deletions": 3,
+        "total": 51
+      },
+      "branches": [
+        "feat/add-routes-to-update-user-credits",
+        "feat/add-sentry-setup",
+        "feat/add-total-credits-alloted",
+        "fix/remove-aud-check-from-jwt-validation",
+        "main"
+      ]
+    },
     {
       "sha": "904abeea12fba1d9bb5c62a154308a44c532f1a4",
       "author": "saikatdas0790",
@@ -301,401 +703,8 @@
       "branches": [
         "main"
       ]
-    },
-    {
-      "sha": "6b4dc318563855500b9aff967a10c234c89087c8",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
-      "timestamp": "2026-01-23T14:48:32Z",
-      "message": "Revert \"dual write to dragonfly redis (#1156)\" (#1157)",
-      "stats": {
-        "additions": 45,
-        "deletions": 794,
-        "total": 839
-      },
-      "branches": [
-        "dependabot/cargo/bytes-1.11.1",
-        "dependabot/cargo/hon-worker-common-2a723cd",
-        "dependabot/cargo/openidconnect-4.0.1",
-        "dependabot/cargo/opentelemetry_sdk-0.31.0",
-        "dependabot/cargo/rsa-0.9.10",
-        "dependabot/cargo/videogen-common-2a723cd",
-        "dependabot/npm_and_yarn/tests/e2e/lodash-4.17.23",
-        "dependabot/npm_and_yarn/tests/e2e/multi-549b90733e",
-        "dependabot/npm_and_yarn/tests/e2e/multi-ac680358f5",
-        "feat/ltx2-model",
-        "fix/remove-post-status-filtering",
-        "main",
-        "naitik/fix_dragonfly_broken_pipe_issue",
-        "naitik/migrate_reads_to_dragonfly",
-        "naitik/migration_to_dragonfly_redis"
-      ]
-    },
-    {
-      "sha": "c58b5951003507186391d65efb6cf259e9ecd6f2",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
-      "timestamp": "2026-01-23T13:50:59Z",
-      "message": "dual write to dragonfly redis (#1156)",
-      "stats": {
-        "additions": 794,
-        "deletions": 45,
-        "total": 839
-      },
-      "branches": [
-        "dependabot/cargo/bytes-1.11.1",
-        "dependabot/cargo/hon-worker-common-2a723cd",
-        "dependabot/cargo/openidconnect-4.0.1",
-        "dependabot/cargo/opentelemetry_sdk-0.31.0",
-        "dependabot/cargo/rsa-0.9.10",
-        "dependabot/cargo/videogen-common-2a723cd",
-        "dependabot/npm_and_yarn/tests/e2e/lodash-4.17.23",
-        "dependabot/npm_and_yarn/tests/e2e/multi-549b90733e",
-        "dependabot/npm_and_yarn/tests/e2e/multi-ac680358f5",
-        "feat/ltx2-model",
-        "fix/remove-post-status-filtering",
-        "main",
-        "naitik/fix_dragonfly_broken_pipe_issue",
-        "naitik/migrate_reads_to_dragonfly",
-        "naitik/migration_to_dragonfly_redis",
-        "revert-dual-write"
-      ]
-    },
-    {
-      "sha": "31e1fe83259e8506703db371fea825b6b1f7db75",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
-      "timestamp": "2026-01-23T08:55:56Z",
-      "message": "dual write to dragonfly redis (#1153)",
-      "stats": {
-        "additions": 793,
-        "deletions": 44,
-        "total": 837
-      },
-      "branches": [
-        "dependabot/cargo/bytes-1.11.1",
-        "dependabot/cargo/hon-worker-common-2a723cd",
-        "dependabot/cargo/openidconnect-4.0.1",
-        "dependabot/cargo/opentelemetry_sdk-0.31.0",
-        "dependabot/cargo/rsa-0.9.10",
-        "dependabot/cargo/videogen-common-2a723cd",
-        "dependabot/npm_and_yarn/tests/e2e/lodash-4.17.23",
-        "dependabot/npm_and_yarn/tests/e2e/multi-549b90733e",
-        "dependabot/npm_and_yarn/tests/e2e/multi-ac680358f5",
-        "feat/ltx2-model",
-        "fix/remove-post-status-filtering",
-        "main",
-        "naitik/fix_dragonfly_broken_pipe_issue",
-        "naitik/migrate_reads_to_dragonfly",
-        "naitik/migration_to_dragonfly_redis",
-        "revert-1153-naitik/migration_to_dragonfly_redis",
-        "revert-dual-write"
-      ]
-    },
-    {
-      "sha": "66d096ca20876d4a5723be98f75004cc3c846a5f",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
-      "timestamp": "2026-01-23T12:28:19Z",
-      "message": "Merge branch 'main' into naitik/migration_to_dragonfly_redis",
-      "stats": {
-        "additions": 0,
-        "deletions": 0,
-        "total": 0
-      },
-      "branches": [
-        "naitik/migration_to_dragonfly_redis"
-      ]
-    },
-    {
-      "sha": "c40be7b959472d31fdff9a1cdb3fba9dd5cd6ccf",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
-      "timestamp": "2026-01-23T12:25:09Z",
-      "message": "fix: default image name in compose file.",
-      "stats": {
-        "additions": 2,
-        "deletions": 2,
-        "total": 4
-      },
-      "branches": [
-        "naitik/migration_to_dragonfly_redis"
-      ]
-    },
-    {
-      "sha": "8195481c6eabbaf20157c47fb780d45a0e3a9c24",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
-      "timestamp": "2026-01-23T14:37:41Z",
-      "message": "Revert \"dual write to dragonfly redis (#1156)\"",
-      "stats": {
-        "additions": 45,
-        "deletions": 794,
-        "total": 839
-      },
-      "branches": [
-        "revert-dual-write"
-      ]
-    },
-    {
-      "sha": "100d76a9241f792c8c49408d2b0a719c78c7b60f",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-billing",
-      "timestamp": "2026-01-23T11:12:40Z",
-      "message": "feat: added litestream backup",
-      "stats": {
-        "additions": 48,
-        "deletions": 3,
-        "total": 51
-      },
-      "branches": [
-        "feat/add-routes-to-update-user-credits",
-        "feat/add-sentry-setup",
-        "feat/add-total-credits-alloted",
-        "fix/remove-aud-check-from-jwt-validation",
-        "main"
-      ]
-    },
-    {
-      "sha": "5ea506129ce65deb6e620ccb442af361ef033615",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-23T10:24:20Z",
-      "message": "fix: handle fallback for updating user post view details on error (#372)",
-      "stats": {
-        "additions": 20,
-        "deletions": 2,
-        "total": 22
-      },
-      "branches": [
-        "copilot/sub-pr-378",
-        "feat/add-support-for-yral-subscription",
-        "fix/user-agent-issue-with-pro-subscription",
-        "fix/yral-pro-subscription-token-operation",
-        "joel/ai-video-detector",
-        "joel/apps-script-reports-api",
-        "joel/dolr-rewards",
-        "joel/fix-btc-dolr-notif",
-        "joel/fix-event-name",
-        "joel/fix-event-ser",
-        "joel/fix-gchat-report-buttons",
-        "joel/fix-logging",
-        "joel/fix-report-env",
-        "joel/fix-reports",
-        "joel/icp-swap-dolr-price-fetch",
-        "joel/ltx-intergration",
-        "joel/metric-server-cleanup",
-        "joel/offchain-broken-pipe-fix",
-        "joel/phash-redis-migration",
-        "joel/profile-views-check",
-        "joel/rewards-mode",
-        "joel/rm-panic",
-        "joel/upload-flow-content",
-        "main",
-        "naitik/broken_pipe_issue_fix",
-        "naitik/migrate_reads_to_dragonfly"
-      ]
-    },
-    {
-      "sha": "483b7fb5e7cece1607de2e3e00d31293ebb91e97",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-23T10:09:18Z",
-      "message": "Fix/gchat oauth for report buttons (#371)",
-      "stats": {
-        "additions": 3,
-        "deletions": 1,
-        "total": 4
-      },
-      "branches": [
-        "copilot/sub-pr-378",
-        "feat/add-support-for-yral-subscription",
-        "fix/user-agent-issue-with-pro-subscription",
-        "fix/yral-pro-subscription-token-operation",
-        "joel/ai-video-detector",
-        "joel/apps-script-reports-api",
-        "joel/dolr-rewards",
-        "joel/fix-btc-dolr-notif",
-        "joel/fix-event-name",
-        "joel/fix-event-ser",
-        "joel/fix-gchat-report-buttons",
-        "joel/fix-logging",
-        "joel/fix-report-env",
-        "joel/fix-reports",
-        "joel/icp-swap-dolr-price-fetch",
-        "joel/ltx-intergration",
-        "joel/metric-server-cleanup",
-        "joel/offchain-broken-pipe-fix",
-        "joel/phash-redis-migration",
-        "joel/profile-views-check",
-        "joel/rewards-mode",
-        "joel/rm-panic",
-        "joel/upload-flow-content",
-        "joel/views-fix",
-        "main",
-        "naitik/broken_pipe_issue_fix",
-        "naitik/migrate_reads_to_dragonfly"
-      ]
-    },
-    {
-      "sha": "79efb02900224ded1aae6d8fd9abf758ad671014",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-23T09:37:04Z",
-      "message": "fix: use OAuth for Google Chat report messages (interactive buttons) (#370)",
-      "stats": {
-        "additions": 93,
-        "deletions": 8,
-        "total": 101
-      },
-      "branches": [
-        "copilot/sub-pr-378",
-        "feat/add-support-for-yral-subscription",
-        "fix/gchat-oauth-for-report-buttons",
-        "fix/user-agent-issue-with-pro-subscription",
-        "fix/yral-pro-subscription-token-operation",
-        "joel/ai-video-detector",
-        "joel/apps-script-reports-api",
-        "joel/dolr-rewards",
-        "joel/fix-btc-dolr-notif",
-        "joel/fix-event-name",
-        "joel/fix-event-ser",
-        "joel/fix-gchat-report-buttons",
-        "joel/fix-logging",
-        "joel/fix-report-env",
-        "joel/fix-reports",
-        "joel/icp-swap-dolr-price-fetch",
-        "joel/ltx-intergration",
-        "joel/metric-server-cleanup",
-        "joel/offchain-broken-pipe-fix",
-        "joel/phash-redis-migration",
-        "joel/profile-views-check",
-        "joel/rewards-mode",
-        "joel/rm-panic",
-        "joel/upload-flow-content",
-        "joel/views-fix",
-        "main",
-        "naitik/broken_pipe_issue_fix",
-        "naitik/migrate_reads_to_dragonfly"
-      ]
-    },
-    {
-      "sha": "dc33a5d3d5c2852d1ad5992981a51ecdaa446f3e",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-23T08:30:42Z",
-      "message": "feat: add GOOGLE_CHAT_REPORT_SPACE_URL as a dynamic environment variable (#369)",
-      "stats": {
-        "additions": 7,
-        "deletions": 4,
-        "total": 11
-      },
-      "branches": [
-        "copilot/sub-pr-378",
-        "feat/add-support-for-yral-subscription",
-        "fix/gchat-oauth-for-report-buttons",
-        "fix/user-agent-issue-with-pro-subscription",
-        "fix/yral-pro-subscription-token-operation",
-        "joel/ai-video-detector",
-        "joel/apps-script-reports-api",
-        "joel/dolr-rewards",
-        "joel/fix-btc-dolr-notif",
-        "joel/fix-event-name",
-        "joel/fix-event-ser",
-        "joel/fix-gchat-report-buttons",
-        "joel/fix-logging",
-        "joel/fix-report-env",
-        "joel/fix-reports",
-        "joel/icp-swap-dolr-price-fetch",
-        "joel/ltx-intergration",
-        "joel/metric-server-cleanup",
-        "joel/offchain-broken-pipe-fix",
-        "joel/phash-redis-migration",
-        "joel/profile-views-check",
-        "joel/rewards-mode",
-        "joel/rm-panic",
-        "joel/upload-flow-content",
-        "joel/views-fix",
-        "main",
-        "naitik/broken_pipe_issue_fix",
-        "naitik/migrate_reads_to_dragonfly"
-      ]
-    },
-    {
-      "sha": "c45a3baa96602b57cc8d3a3eb7bf7bd0fa095518",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-23T10:02:00Z",
-      "message": "Merge branch 'main' into fix/gchat-oauth-for-report-buttons",
-      "stats": {
-        "additions": 0,
-        "deletions": 0,
-        "total": 0
-      },
-      "branches": [
-        "fix/gchat-oauth-for-report-buttons"
-      ]
-    },
-    {
-      "sha": "d8ef1417561f0e266d4e1b6f472d273fe617c8c3",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-23T09:26:12Z",
-      "message": "Merge branch 'main' into fix/gchat-oauth-for-report-buttons",
-      "stats": {
-        "additions": 6,
-        "deletions": 2,
-        "total": 8
-      },
-      "branches": [
-        "fix/gchat-oauth-for-report-buttons"
-      ]
-    },
-    {
-      "sha": "38e84dd8aa8609331a8e0461208c91317221ceb9",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
-      "timestamp": "2026-01-23T09:40:52Z",
-      "message": "[skip ci] Revert \"Naitik/migration to dragonfly redis\" (#1155)",
-      "stats": {
-        "additions": 44,
-        "deletions": 793,
-        "total": 837
-      },
-      "branches": [
-        "dependabot/cargo/bytes-1.11.1",
-        "dependabot/cargo/hon-worker-common-2a723cd",
-        "dependabot/cargo/openidconnect-4.0.1",
-        "dependabot/cargo/opentelemetry_sdk-0.31.0",
-        "dependabot/cargo/rsa-0.9.10",
-        "dependabot/cargo/videogen-common-2a723cd",
-        "dependabot/npm_and_yarn/tests/e2e/lodash-4.17.23",
-        "dependabot/npm_and_yarn/tests/e2e/multi-549b90733e",
-        "dependabot/npm_and_yarn/tests/e2e/multi-ac680358f5",
-        "feat/ltx2-model",
-        "fix/remove-post-status-filtering",
-        "main",
-        "naitik/fix_dragonfly_broken_pipe_issue",
-        "naitik/migrate_reads_to_dragonfly",
-        "naitik/migration_to_dragonfly_redis",
-        "revert-dual-write"
-      ]
-    },
-    {
-      "sha": "a67fba9b7fef0101527be898b54d46097ae02f09",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
-      "timestamp": "2026-01-23T09:40:22Z",
-      "message": "Revert \"dual write to dragonfly redis (#1153)\"",
-      "stats": {
-        "additions": 44,
-        "deletions": 793,
-        "total": 837
-      },
-      "branches": [
-        "revert-1153-naitik/migration_to_dragonfly_redis"
-      ]
     }
   ],
-  "commit_count": 35
+  "commit_count": 35,
+  "contributor_stats": {}
 }

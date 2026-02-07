@@ -1,454 +1,7 @@
 {
   "date": "2026-01-14",
-  "cached_at": "2026-02-06T07:05:00.229143Z",
+  "cached_at": "2026-02-06T17:11:51.939403Z",
   "commits": [
-    {
-      "sha": "84bba8df006ec8803063249085384d7dc7b7c134",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T19:58:52Z",
-      "message": "Refactor drive detection logic to improve second drive determination and display available drives",
-      "stats": {
-        "additions": 9,
-        "deletions": 9,
-        "total": 18
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "11cc6326a5ceb09b94db6c93cdad6a895ab6a780",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T19:43:26Z",
-      "message": "Enhance provisioning script execution and add installation success check [skip ci]",
-      "stats": {
-        "additions": 13,
-        "deletions": 2,
-        "total": 15
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "18237475d1f8a2c2fde35f22784c15df7a35bfe2",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T19:34:47Z",
-      "message": "[skip ci] Fix quote escaping issues in provisioning scripts",
-      "stats": {
-        "additions": 0,
-        "deletions": 9,
-        "total": 9
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "eee7b337025c54fb72ea2de6842a2166482b9a4d",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T19:27:42Z",
-      "message": "Refactor provisioning script command to streamline environment variable usage [skip ci]",
-      "stats": {
-        "additions": 3,
-        "deletions": 6,
-        "total": 9
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "fbe4ee0dc62e13fdcca079babd260bce08058f37",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T19:15:51Z",
-      "message": "[skip ci] Fix shell quoting issue in provisioning script",
-      "stats": {
-        "additions": 3,
-        "deletions": 3,
-        "total": 6
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "753e9d7f3c511e6e534c494974f64681e3dc4b71",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T19:03:47Z",
-      "message": "[skip ci] Move reboot handling to Ansible playbook with verification",
-      "stats": {
-        "additions": 42,
-        "deletions": 5,
-        "total": 47
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "abc03b1c7c1276c5d865f063e34a373edbbf43b1",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T18:54:33Z",
-      "message": "Fix btrfs device detection and Docker Ubuntu codename detection",
-      "stats": {
-        "additions": 3,
-        "deletions": 3,
-        "total": 6
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "d3cf7a0968b6ebf70a0ebf03b5f5b7fe8ed7a27a",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T18:42:02Z",
-      "message": "[skip ci] Refactor btrfs device detection and handling in bare metal provisioning playbook",
-      "stats": {
-        "additions": 18,
-        "deletions": 8,
-        "total": 26
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "79d440d90176b2c3296c0dd3b5f514b8c0fe274e",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T18:31:35Z",
-      "message": "Fix condition to skip already provisioned hosts in bare metal provisioning playbook",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "00188bdb0ef9744916986d5bd55ff03bc8f15359",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T16:38:29Z",
-      "message": "Add support for dynamic Ubuntu codename detection in Docker setup playbook",
-      "stats": {
-        "additions": 18,
-        "deletions": 1,
-        "total": 19
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "4c12495b061249b9ea41f249fbfc60560e9f6201",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T16:35:32Z",
-      "message": "Auto-detect drive for provisioning and update display message",
-      "stats": {
-        "additions": 10,
-        "deletions": 2,
-        "total": 12
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "e2746797350fdf072dad4c9df39df4ea761dda56",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T16:24:43Z",
-      "message": "Refactor hosts.yml to consolidate airflow-1 configuration; remove duplicate entries. Remove installa",
-      "stats": {
-        "additions": 4,
-        "deletions": 16,
-        "total": 20
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "5c98ed69a8c5e739872381419ab215bd43b2ae1e",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T16:18:40Z",
-      "message": "Enhance bare metal provisioning to support btrfs RAID 0 setup; add drive checks and display detailed",
-      "stats": {
-        "additions": 64,
-        "deletions": 20,
-        "total": 84
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "b054d0e530ac432895813cef468c65a4ef92e256",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T15:37:15Z",
-      "message": "Add provisioning workflow and playbook for new bare metal servers; update inventory with new host",
-      "stats": {
-        "additions": 386,
-        "deletions": 0,
-        "total": 386
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "7a9cbc5f2fc28c8a8a6ed050a9a1fc1993a94866",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T15:09:46Z",
-      "message": "Remove post-installation reboot and drive configuration instructions from init script; update README",
-      "stats": {
-        "additions": 1,
-        "deletions": 22,
-        "total": 23
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "cdf62297d8835f42b6fc1800aaa3499c98be198e",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T14:58:40Z",
-      "message": "Update README to clarify installation script parameters and remove post-installation drive configura",
-      "stats": {
-        "additions": 13,
-        "deletions": 30,
-        "total": 43
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "d9dde6eae939fce5a348e14a1a3fd1554d998abc",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T14:56:05Z",
-      "message": "Refactor installation script to simplify drive handling and update README for one-liner install",
-      "stats": {
-        "additions": 11,
-        "deletions": 27,
-        "total": 38
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "d2d71f1ff40da740283ef22005b0b4a441e1fedc",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T14:31:11Z",
-      "message": "Update installation script and README for post-installation drive configuration",
-      "stats": {
-        "additions": 46,
-        "deletions": 37,
-        "total": 83
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "cb90e9655d18c61107c1745603cee29aef8a79cc",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T14:19:43Z",
-      "message": "Comment out reboot command in installation script",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "b694ec72956ce575e373142ef155f78253dfad14",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T14:13:16Z",
-      "message": "Enhance drive handling in installation script to support multiple drive types and improve error mess",
-      "stats": {
-        "additions": 56,
-        "deletions": 5,
-        "total": 61
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "3cf982cbb5bddb14b115bc4f4419f20b29a2e4b1",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T14:02:44Z",
-      "message": "Update installimage command parameters for partitioning scheme",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "0139a7a43ddf8c8880d4cd756c6b2772e16068b2",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T13:52:46Z",
-      "message": "Update installimage command parameters for filesystem configuration",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "7ba5e4fcbeff3ec5bf0f8a3a8d91a79f348b0ed1",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T13:31:26Z",
-      "message": "Fix installimage command path and update README example hostname",
-      "stats": {
-        "additions": 7,
-        "deletions": 5,
-        "total": 12
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "d586b700c9b32ea13984d9d2ab34b91fa0901873",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-01-14T12:21:45Z",
-      "message": "Fix syntax in one-liner install commands in README",
-      "stats": {
-        "additions": 2,
-        "deletions": 3,
-        "total": 5
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "37478c6f62b35d5aaad7405745d90174325c128d",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-14T18:21:53Z",
-      "message": "chore: Increments android app version",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/subscriptions-ui",
-        "fix/hot-or-not-load-time",
-        "fix/ios-load-time",
-        "fix/state-button",
-        "fix-video-reporting",
-        "main",
-        "release/android-2.6.5",
-        "release/3.2.0",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
-    },
-    {
-      "sha": "4c068dc19de3642489b6fd28cdc616b6fcf36bb3",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-14T16:45:43Z",
-      "message": "chore: Increments android app version",
-      "stats": {
-        "additions": 2,
-        "deletions": 2,
-        "total": 4
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/subscriptions-ui",
-        "fix/hot-or-not-load-time",
-        "fix/ios-load-time",
-        "fix/state-button",
-        "fix-video-reporting",
-        "main",
-        "release/android-2.6.5",
-        "release/3.2.0",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
-    },
-    {
-      "sha": "c608df0ad37f67b508b6591882818236901a35d2",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-14T16:43:07Z",
-      "message": "Feature/hot or not game (#777)",
-      "stats": {
-        "additions": 1255,
-        "deletions": 433,
-        "total": 1688
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/subscriptions-ui",
-        "fix/hot-or-not-load-time",
-        "fix/ios-load-time",
-        "fix/state-button",
-        "fix-video-reporting",
-        "main",
-        "release/android-2.6.5",
-        "release/3.2.0",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
-    },
     {
       "sha": "f3bf6cb27a6c6cecd471807736d93385051209bc",
       "author": "kevin-antony-yral",
@@ -461,7 +14,6 @@
         "total": 77
       },
       "branches": [
-        "aioboto_implementation",
         "backward_chat_api",
         "bf_14jan",
         "c_inf_2",
@@ -475,6 +27,8 @@
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
+        "infl_ep_updates",
+        "infl_util_apis",
         "joel/optim-suggestions",
         "lat_op_stage",
         "lat_op",
@@ -492,13 +46,162 @@
         "sentry_bf",
         "sentry_everywhere",
         "sentry_webhook",
+        "show_sp_on_influencers",
         "slow_msg",
         "sqlite_optimisations",
         "staging",
         "sys_prompt_prod",
+        "temp_rm_beszel",
         "test_fix_url_n_storj_k",
         "test_robust_gc",
         "wal_ckpt_bug_fix"
+      ]
+    },
+    {
+      "sha": "6f9ff3ec1dd887b1e95cbf0eb20194a6c07712c3",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-14T09:43:41Z",
+      "message": "Update consts.rs (#353)",
+      "stats": {
+        "additions": 6,
+        "deletions": 0,
+        "total": 6
+      },
+      "branches": [
+        "copilot/sub-pr-378",
+        "feat/add-support-for-yral-subscription",
+        "feat/report-app-migration",
+        "fix/gchat-oauth-for-report-buttons",
+        "fix/user-agent-issue-with-pro-subscription",
+        "fix/yral-pro-subscription-token-operation",
+        "joel/add_wan_i2v_support",
+        "joel/ai-video-detector",
+        "joel/apps-script-reports-api",
+        "joel/ban-event",
+        "joel/btc-rewards-builder-err",
+        "joel/canister-health-endpoint",
+        "joel/dolr-rewards",
+        "joel/fix-btc-dolr-notif",
+        "joel/fix-event-name",
+        "joel/fix-event-ser",
+        "joel/fix-gchat-report-buttons",
+        "joel/fix-logging",
+        "joel/fix-report-env",
+        "joel/fix-reports",
+        "joel/hot-fix-notification-panic",
+        "joel/icp-swap-dolr-price-fetch",
+        "joel/leaderboard-redis-migration",
+        "joel/ltx-intergration",
+        "joel/metric-server-cleanup",
+        "joel/offchain-broken-pipe-fix",
+        "joel/phash-fix",
+        "joel/phash-redis-migration",
+        "joel/profile-views-check",
+        "joel/rewards-mode",
+        "joel/rm-panic",
+        "joel/sentry_webhooks",
+        "joel/sentry-channel-routing",
+        "joel/sentry-issues-fix",
+        "joel/sentry-spam-fix",
+        "joel/upload-flow-content",
+        "joel/views-fix",
+        "joel/webhook-fix",
+        "main",
+        "naitik/broken_pipe_issue_fix",
+        "naitik/migrate_fly_redis_to_dragonfly",
+        "naitik/migrate_reads_to_dragonfly",
+        "revert-358-naitik/migrate_fly_redis_to_dragonfly",
+        "revert-359-revert-358-naitik/migrate_fly_redis_to_dragonfly"
+      ]
+    },
+    {
+      "sha": "8bb9c02073e4cd9eab85f7f0f9be5a343cf48756",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-14T08:42:15Z",
+      "message": "fix: ignore self views (#352)",
+      "stats": {
+        "additions": 13,
+        "deletions": 2,
+        "total": 15
+      },
+      "branches": [
+        "copilot/sub-pr-378",
+        "feat/add-support-for-yral-subscription",
+        "feat/report-app-migration",
+        "fix/gchat-oauth-for-report-buttons",
+        "fix/user-agent-issue-with-pro-subscription",
+        "fix/yral-pro-subscription-token-operation",
+        "joel/add_wan_i2v_support",
+        "joel/ai-video-detector",
+        "joel/apps-script-reports-api",
+        "joel/ban-event",
+        "joel/btc-rewards-builder-err",
+        "joel/canister-health-endpoint",
+        "joel/dolr-rewards",
+        "joel/fix-btc-dolr-notif",
+        "joel/fix-event-name",
+        "joel/fix-event-ser",
+        "joel/fix-gchat-report-buttons",
+        "joel/fix-logging",
+        "joel/fix-report-env",
+        "joel/fix-reports",
+        "joel/hot-fix-notification-panic",
+        "joel/icp-swap-dolr-price-fetch",
+        "joel/leaderboard-redis-migration",
+        "joel/ltx-intergration",
+        "joel/metric-server-cleanup",
+        "joel/offchain-broken-pipe-fix",
+        "joel/phash-fix",
+        "joel/phash-redis-migration",
+        "joel/profile-views-check",
+        "joel/rewards-mode",
+        "joel/rm-panic",
+        "joel/sentry_webhooks",
+        "joel/sentry-channel-routing",
+        "joel/sentry-issues-fix",
+        "joel/sentry-spam-fix",
+        "joel/upload-flow-content",
+        "joel/views-fix",
+        "joel/webhook-fix",
+        "joel-medicala-yral-patch-2",
+        "main",
+        "naitik/broken_pipe_issue_fix",
+        "naitik/migrate_fly_redis_to_dragonfly",
+        "naitik/migrate_reads_to_dragonfly",
+        "revert-358-naitik/migrate_fly_redis_to_dragonfly",
+        "revert-359-revert-358-naitik/migrate_fly_redis_to_dragonfly"
+      ]
+    },
+    {
+      "sha": "4e413b462b7286d3396abdf42dcb72cb3158f2b5",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-14T09:42:05Z",
+      "message": "Update consts.rs",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "joel-medicala-yral-patch-2"
+      ]
+    },
+    {
+      "sha": "4eaeba8adcd6f206a3526f56df25d5ecd4b51cff",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-01-14T09:33:59Z",
+      "message": "Update consts.rs",
+      "stats": {
+        "additions": 6,
+        "deletions": 0,
+        "total": 6
+      },
+      "branches": [
+        "joel-medicala-yral-patch-2"
       ]
     },
     {
@@ -522,7 +225,6 @@
         "fix/hot-or-not-load-time",
         "fix/ios-load-time",
         "fix/state-button",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "release/3.2.0",
@@ -551,7 +253,6 @@
         "fix/hot-or-not-load-time",
         "fix/ios-load-time",
         "fix/state-button",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "release/3.2.0",
@@ -580,7 +281,6 @@
         "fix/hot-or-not-load-time",
         "fix/ios-load-time",
         "fix/state-button",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "release/3.2.0",
@@ -609,7 +309,6 @@
         "fix/hot-or-not-load-time",
         "fix/ios-load-time",
         "fix/state-button",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "release/3.2.0",
@@ -638,7 +337,6 @@
         "fix/hot-or-not-load-time",
         "fix/ios-load-time",
         "fix/state-button",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "release/3.2.0",
@@ -667,7 +365,6 @@
         "fix/hot-or-not-load-time",
         "fix/ios-load-time",
         "fix/state-button",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "release/3.2.0",
@@ -696,7 +393,6 @@
         "fix/hot-or-not-load-time",
         "fix/ios-load-time",
         "fix/state-button",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "release/3.2.0",
@@ -725,7 +421,6 @@
         "fix/hot-or-not-load-time",
         "fix/ios-load-time",
         "fix/state-button",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "release/3.2.0",
@@ -754,7 +449,6 @@
         "fix/hot-or-not-load-time",
         "fix/ios-load-time",
         "fix/state-button",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "release/3.2.0",
@@ -783,7 +477,6 @@
         "fix/hot-or-not-load-time",
         "fix/ios-load-time",
         "fix/state-button",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "release/3.2.0",
@@ -812,7 +505,6 @@
         "fix/hot-or-not-load-time",
         "fix/ios-load-time",
         "fix/state-button",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "release/3.2.0",
@@ -841,7 +533,6 @@
         "fix/hot-or-not-load-time",
         "fix/ios-load-time",
         "fix/state-button",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "release/3.2.0",
@@ -870,7 +561,6 @@
         "fix/hot-or-not-load-time",
         "fix/ios-load-time",
         "fix/state-button",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "release/3.2.0",
@@ -899,7 +589,6 @@
         "fix/hot-or-not-load-time",
         "fix/ios-load-time",
         "fix/state-button",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "release/3.2.0",
@@ -928,7 +617,6 @@
         "fix/hot-or-not-load-time",
         "fix/ios-load-time",
         "fix/state-button",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "release/3.2.0",
@@ -957,7 +645,6 @@
         "fix/hot-or-not-load-time",
         "fix/ios-load-time",
         "fix/state-button",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "release/3.2.0",
@@ -986,7 +673,6 @@
         "fix/hot-or-not-load-time",
         "fix/ios-load-time",
         "fix/state-button",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "release/3.2.0",
@@ -1015,7 +701,6 @@
         "fix/hot-or-not-load-time",
         "fix/ios-load-time",
         "fix/state-button",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "release/3.2.0",
@@ -1044,7 +729,6 @@
         "fix/hot-or-not-load-time",
         "fix/ios-load-time",
         "fix/state-button",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "release/3.2.0",
@@ -1073,7 +757,6 @@
         "fix/hot-or-not-load-time",
         "fix/ios-load-time",
         "fix/state-button",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "release/3.2.0",
@@ -1560,148 +1243,450 @@
       ]
     },
     {
-      "sha": "6f9ff3ec1dd887b1e95cbf0eb20194a6c07712c3",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-14T09:43:41Z",
-      "message": "Update consts.rs (#353)",
-      "stats": {
-        "additions": 6,
-        "deletions": 0,
-        "total": 6
-      },
-      "branches": [
-        "copilot/sub-pr-378",
-        "feat/add-support-for-yral-subscription",
-        "feat/report-app-migration",
-        "fix/gchat-oauth-for-report-buttons",
-        "fix/user-agent-issue-with-pro-subscription",
-        "fix/yral-pro-subscription-token-operation",
-        "joel/ai-video-detector",
-        "joel/apps-script-reports-api",
-        "joel/ban-event",
-        "joel/btc-rewards-builder-err",
-        "joel/canister-health-endpoint",
-        "joel/dolr-rewards",
-        "joel/fix-btc-dolr-notif",
-        "joel/fix-event-name",
-        "joel/fix-event-ser",
-        "joel/fix-gchat-report-buttons",
-        "joel/fix-logging",
-        "joel/fix-report-env",
-        "joel/fix-reports",
-        "joel/icp-swap-dolr-price-fetch",
-        "joel/leaderboard-redis-migration",
-        "joel/ltx-intergration",
-        "joel/metric-server-cleanup",
-        "joel/offchain-broken-pipe-fix",
-        "joel/phash-fix",
-        "joel/phash-redis-migration",
-        "joel/profile-views-check",
-        "joel/rewards-mode",
-        "joel/rm-panic",
-        "joel/sentry_webhooks",
-        "joel/sentry-channel-routing",
-        "joel/sentry-issues-fix",
-        "joel/sentry-spam-fix",
-        "joel/upload-flow-content",
-        "joel/views-fix",
-        "joel/webhook-fix",
-        "main",
-        "naitik/broken_pipe_issue_fix",
-        "naitik/migrate_fly_redis_to_dragonfly",
-        "naitik/migrate_reads_to_dragonfly",
-        "revert-358-naitik/migrate_fly_redis_to_dragonfly",
-        "revert-359-revert-358-naitik/migrate_fly_redis_to_dragonfly"
-      ]
-    },
-    {
-      "sha": "8bb9c02073e4cd9eab85f7f0f9be5a343cf48756",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-14T08:42:15Z",
-      "message": "fix: ignore self views (#352)",
-      "stats": {
-        "additions": 13,
-        "deletions": 2,
-        "total": 15
-      },
-      "branches": [
-        "copilot/sub-pr-378",
-        "feat/add-support-for-yral-subscription",
-        "feat/report-app-migration",
-        "fix/gchat-oauth-for-report-buttons",
-        "fix/user-agent-issue-with-pro-subscription",
-        "fix/yral-pro-subscription-token-operation",
-        "joel/ai-video-detector",
-        "joel/apps-script-reports-api",
-        "joel/ban-event",
-        "joel/btc-rewards-builder-err",
-        "joel/canister-health-endpoint",
-        "joel/dolr-rewards",
-        "joel/fix-btc-dolr-notif",
-        "joel/fix-event-name",
-        "joel/fix-event-ser",
-        "joel/fix-gchat-report-buttons",
-        "joel/fix-logging",
-        "joel/fix-report-env",
-        "joel/fix-reports",
-        "joel/icp-swap-dolr-price-fetch",
-        "joel/leaderboard-redis-migration",
-        "joel/ltx-intergration",
-        "joel/metric-server-cleanup",
-        "joel/offchain-broken-pipe-fix",
-        "joel/phash-fix",
-        "joel/phash-redis-migration",
-        "joel/profile-views-check",
-        "joel/rewards-mode",
-        "joel/rm-panic",
-        "joel/sentry_webhooks",
-        "joel/sentry-channel-routing",
-        "joel/sentry-issues-fix",
-        "joel/sentry-spam-fix",
-        "joel/upload-flow-content",
-        "joel/views-fix",
-        "joel/webhook-fix",
-        "joel-medicala-yral-patch-2",
-        "main",
-        "naitik/broken_pipe_issue_fix",
-        "naitik/migrate_fly_redis_to_dragonfly",
-        "naitik/migrate_reads_to_dragonfly",
-        "revert-358-naitik/migrate_fly_redis_to_dragonfly",
-        "revert-359-revert-358-naitik/migrate_fly_redis_to_dragonfly"
-      ]
-    },
-    {
-      "sha": "4e413b462b7286d3396abdf42dcb72cb3158f2b5",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-14T09:42:05Z",
-      "message": "Update consts.rs",
+      "sha": "37478c6f62b35d5aaad7405745d90174325c128d",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-14T18:21:53Z",
+      "message": "chore: Increments android app version",
       "stats": {
         "additions": 1,
         "deletions": 1,
         "total": 2
       },
       "branches": [
-        "joel-medicala-yral-patch-2"
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/subscriptions-ui",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "main",
+        "release/android-2.6.5",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
       ]
     },
     {
-      "sha": "4eaeba8adcd6f206a3526f56df25d5ecd4b51cff",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-01-14T09:33:59Z",
-      "message": "Update consts.rs",
+      "sha": "4c068dc19de3642489b6fd28cdc616b6fcf36bb3",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-14T16:45:43Z",
+      "message": "chore: Increments android app version",
       "stats": {
-        "additions": 6,
-        "deletions": 0,
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/subscriptions-ui",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "main",
+        "release/android-2.6.5",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "c608df0ad37f67b508b6591882818236901a35d2",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-14T16:43:07Z",
+      "message": "Feature/hot or not game (#777)",
+      "stats": {
+        "additions": 1255,
+        "deletions": 433,
+        "total": 1688
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/subscriptions-ui",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "main",
+        "release/android-2.6.5",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "84bba8df006ec8803063249085384d7dc7b7c134",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-14T19:58:52Z",
+      "message": "Refactor drive detection logic to improve second drive determination and display available drives",
+      "stats": {
+        "additions": 9,
+        "deletions": 9,
+        "total": 18
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "11cc6326a5ceb09b94db6c93cdad6a895ab6a780",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-14T19:43:26Z",
+      "message": "Enhance provisioning script execution and add installation success check [skip ci]",
+      "stats": {
+        "additions": 13,
+        "deletions": 2,
+        "total": 15
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "18237475d1f8a2c2fde35f22784c15df7a35bfe2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-14T19:34:47Z",
+      "message": "[skip ci] Fix quote escaping issues in provisioning scripts",
+      "stats": {
+        "additions": 0,
+        "deletions": 9,
+        "total": 9
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "eee7b337025c54fb72ea2de6842a2166482b9a4d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-14T19:27:42Z",
+      "message": "Refactor provisioning script command to streamline environment variable usage [skip ci]",
+      "stats": {
+        "additions": 3,
+        "deletions": 6,
+        "total": 9
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "fbe4ee0dc62e13fdcca079babd260bce08058f37",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-14T19:15:51Z",
+      "message": "[skip ci] Fix shell quoting issue in provisioning script",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
         "total": 6
       },
       "branches": [
-        "joel-medicala-yral-patch-2"
+        "main"
+      ]
+    },
+    {
+      "sha": "753e9d7f3c511e6e534c494974f64681e3dc4b71",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-14T19:03:47Z",
+      "message": "[skip ci] Move reboot handling to Ansible playbook with verification",
+      "stats": {
+        "additions": 42,
+        "deletions": 5,
+        "total": 47
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "abc03b1c7c1276c5d865f063e34a373edbbf43b1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-14T18:54:33Z",
+      "message": "Fix btrfs device detection and Docker Ubuntu codename detection",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d3cf7a0968b6ebf70a0ebf03b5f5b7fe8ed7a27a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-14T18:42:02Z",
+      "message": "[skip ci] Refactor btrfs device detection and handling in bare metal provisioning playbook",
+      "stats": {
+        "additions": 18,
+        "deletions": 8,
+        "total": 26
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "79d440d90176b2c3296c0dd3b5f514b8c0fe274e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-14T18:31:35Z",
+      "message": "Fix condition to skip already provisioned hosts in bare metal provisioning playbook",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "00188bdb0ef9744916986d5bd55ff03bc8f15359",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-14T16:38:29Z",
+      "message": "Add support for dynamic Ubuntu codename detection in Docker setup playbook",
+      "stats": {
+        "additions": 18,
+        "deletions": 1,
+        "total": 19
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4c12495b061249b9ea41f249fbfc60560e9f6201",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-14T16:35:32Z",
+      "message": "Auto-detect drive for provisioning and update display message",
+      "stats": {
+        "additions": 10,
+        "deletions": 2,
+        "total": 12
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e2746797350fdf072dad4c9df39df4ea761dda56",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-14T16:24:43Z",
+      "message": "Refactor hosts.yml to consolidate airflow-1 configuration; remove duplicate entries. Remove installa",
+      "stats": {
+        "additions": 4,
+        "deletions": 16,
+        "total": 20
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "5c98ed69a8c5e739872381419ab215bd43b2ae1e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-14T16:18:40Z",
+      "message": "Enhance bare metal provisioning to support btrfs RAID 0 setup; add drive checks and display detailed",
+      "stats": {
+        "additions": 64,
+        "deletions": 20,
+        "total": 84
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b054d0e530ac432895813cef468c65a4ef92e256",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-14T15:37:15Z",
+      "message": "Add provisioning workflow and playbook for new bare metal servers; update inventory with new host",
+      "stats": {
+        "additions": 386,
+        "deletions": 0,
+        "total": 386
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7a9cbc5f2fc28c8a8a6ed050a9a1fc1993a94866",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-14T15:09:46Z",
+      "message": "Remove post-installation reboot and drive configuration instructions from init script; update README",
+      "stats": {
+        "additions": 1,
+        "deletions": 22,
+        "total": 23
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "cdf62297d8835f42b6fc1800aaa3499c98be198e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-14T14:58:40Z",
+      "message": "Update README to clarify installation script parameters and remove post-installation drive configura",
+      "stats": {
+        "additions": 13,
+        "deletions": 30,
+        "total": 43
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d9dde6eae939fce5a348e14a1a3fd1554d998abc",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-14T14:56:05Z",
+      "message": "Refactor installation script to simplify drive handling and update README for one-liner install",
+      "stats": {
+        "additions": 11,
+        "deletions": 27,
+        "total": 38
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d2d71f1ff40da740283ef22005b0b4a441e1fedc",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-14T14:31:11Z",
+      "message": "Update installation script and README for post-installation drive configuration",
+      "stats": {
+        "additions": 46,
+        "deletions": 37,
+        "total": 83
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "cb90e9655d18c61107c1745603cee29aef8a79cc",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-14T14:19:43Z",
+      "message": "Comment out reboot command in installation script",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b694ec72956ce575e373142ef155f78253dfad14",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-14T14:13:16Z",
+      "message": "Enhance drive handling in installation script to support multiple drive types and improve error mess",
+      "stats": {
+        "additions": 56,
+        "deletions": 5,
+        "total": 61
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3cf982cbb5bddb14b115bc4f4419f20b29a2e4b1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-14T14:02:44Z",
+      "message": "Update installimage command parameters for partitioning scheme",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "0139a7a43ddf8c8880d4cd756c6b2772e16068b2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-14T13:52:46Z",
+      "message": "Update installimage command parameters for filesystem configuration",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7ba5e4fcbeff3ec5bf0f8a3a8d91a79f348b0ed1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-14T13:31:26Z",
+      "message": "Fix installimage command path and update README example hostname",
+      "stats": {
+        "additions": 7,
+        "deletions": 5,
+        "total": 12
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d586b700c9b32ea13984d9d2ab34b91fa0901873",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-01-14T12:21:45Z",
+      "message": "Fix syntax in one-liner install commands in README",
+      "stats": {
+        "additions": 2,
+        "deletions": 3,
+        "total": 5
+      },
+      "branches": [
+        "main"
       ]
     }
   ],
-  "commit_count": 82
+  "commit_count": 82,
+  "contributor_stats": {}
 }

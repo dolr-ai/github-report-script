@@ -1,88 +1,7 @@
 {
   "date": "2025-12-29",
-  "cached_at": "2026-02-06T07:04:18.506427Z",
+  "cached_at": "2026-02-06T15:39:12.890321Z",
   "commits": [
-    {
-      "sha": "d5e48fbc13104c157173c10739e763de19ef35a6",
-      "author": "ravi-sawlani-yral",
-      "repository": "dolr-ai/yral-backend-cloudflare-workers",
-      "timestamp": "2025-12-29T13:24:15Z",
-      "message": "added tests",
-      "stats": {
-        "additions": 54,
-        "deletions": 0,
-        "total": 54
-      },
-      "branches": [
-        "fix/remove-expiry-check-for-jwt"
-      ]
-    },
-    {
-      "sha": "a092da11a2ce314de9cc64005213e238f7cbd35f",
-      "author": "ravi-sawlani-yral",
-      "repository": "dolr-ai/yral-backend-cloudflare-workers",
-      "timestamp": "2025-12-29T13:16:47Z",
-      "message": "remove expiry check for jwt validation",
-      "stats": {
-        "additions": 1,
-        "deletions": 0,
-        "total": 1
-      },
-      "branches": [
-        "fix/remove-expiry-check-for-jwt"
-      ]
-    },
-    {
-      "sha": "7c4946a6cb73591f786877193af9498505f19999",
-      "author": "ravi-sawlani-yral",
-      "repository": "dolr-ai/yral-backend-cloudflare-workers",
-      "timestamp": "2025-12-29T13:25:13Z",
-      "message": "fix: remove expiry check for jwt validation (#105)",
-      "stats": {
-        "additions": 55,
-        "deletions": 0,
-        "total": 55
-      },
-      "branches": [
-        "fix/update-yral-canisters-client-candid",
-        "main"
-      ]
-    },
-    {
-      "sha": "d35e18de7868ec46ec120d84cb89e3b0c2131676",
-      "author": "samarth-paboowal-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2025-12-29T17:00:45Z",
-      "message": "Adds login sheet to AI chat bot (#748)",
-      "stats": {
-        "additions": 364,
-        "deletions": 198,
-        "total": 562
-      },
-      "branches": [
-        "chore/events-to-offchain-api",
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "feature/create-ai-chat-bot",
-        "feature/dolr-wallet-ui-bk",
-        "feature/iap-ui",
-        "feature/subcription-video-gen",
-        "feature/subscription-ui",
-        "feature/subscriptions-ui",
-        "fix/hot-or-not-load-time",
-        "fix/ios-load-time",
-        "fix/state-button",
-        "fix-video-reporting",
-        "main",
-        "release/android-2.6.5",
-        "release/3.1.0",
-        "release/3.2.0",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
-    },
     {
       "sha": "e0b37d494368bf2185ab91a4754d2c9e1c13c498",
       "author": "kevin-antony-yral",
@@ -122,6 +41,8 @@
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
+        "infl_ep_updates",
+        "infl_util_apis",
         "infra_rl",
         "jatin_og_prompt",
         "jay_review",
@@ -170,6 +91,7 @@
         "sentry_fix",
         "sentry_webhook",
         "sentry",
+        "show_sp_on_influencers",
         "slow_msg",
         "small_num_bug",
         "sqlite_optimisations",
@@ -177,6 +99,7 @@
         "storj_integration",
         "sys_prompt_prod",
         "temp_fix_db_lock",
+        "temp_rm_beszel",
         "test_fix_url_n_storj_k",
         "test_robust_gc",
         "thread_to_async",
@@ -224,6 +147,8 @@
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
+        "infl_ep_updates",
+        "infl_util_apis",
         "infra_rl",
         "jatin_og_prompt",
         "jay_review",
@@ -273,6 +198,7 @@
         "sentry_fix",
         "sentry_webhook",
         "sentry",
+        "show_sp_on_influencers",
         "slow_msg",
         "small_num_bug",
         "sqlite_optimisations",
@@ -280,6 +206,7 @@
         "storj_integration",
         "sys_prompt_prod",
         "temp_fix_db_lock",
+        "temp_rm_beszel",
         "test_fix_url_n_storj_k",
         "test_robust_gc",
         "thread_to_async",
@@ -327,6 +254,8 @@
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
+        "infl_ep_updates",
+        "infl_util_apis",
         "infra_rl",
         "jatin_og_prompt",
         "jay_review",
@@ -376,6 +305,7 @@
         "sentry_fix",
         "sentry_webhook",
         "sentry",
+        "show_sp_on_influencers",
         "slow_msg",
         "small_num_bug",
         "sqlite_optimisations",
@@ -383,6 +313,7 @@
         "storj_integration",
         "sys_prompt_prod",
         "temp_fix_db_lock",
+        "temp_rm_beszel",
         "test_fix_url_n_storj_k",
         "test_robust_gc",
         "thread_to_async",
@@ -430,6 +361,8 @@
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
+        "infl_ep_updates",
+        "infl_util_apis",
         "infra_rl",
         "jatin_og_prompt",
         "jay_review",
@@ -478,6 +411,7 @@
         "sentry_fix",
         "sentry_webhook",
         "sentry",
+        "show_sp_on_influencers",
         "slow_msg",
         "small_num_bug",
         "sqlite_optimisations",
@@ -485,6 +419,7 @@
         "storj_integration",
         "sys_prompt_prod",
         "temp_fix_db_lock",
+        "temp_rm_beszel",
         "test_fix_url_n_storj_k",
         "test_robust_gc",
         "thread_to_async",
@@ -532,6 +467,8 @@
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
+        "infl_ep_updates",
+        "infl_util_apis",
         "infra_rl",
         "jatin_og_prompt",
         "jay_review",
@@ -582,6 +519,7 @@
         "sentry_fix",
         "sentry_webhook",
         "sentry",
+        "show_sp_on_influencers",
         "slow_msg",
         "small_num_bug",
         "sqlite_optimisations",
@@ -589,6 +527,7 @@
         "storj_integration",
         "sys_prompt_prod",
         "temp_fix_db_lock",
+        "temp_rm_beszel",
         "test_fix_url_n_storj_k",
         "test_robust_gc",
         "thread_to_async",
@@ -636,6 +575,8 @@
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
+        "infl_ep_updates",
+        "infl_util_apis",
         "infra_rl",
         "jatin_og_prompt",
         "jay_review",
@@ -687,6 +628,7 @@
         "sentry_fix",
         "sentry_webhook",
         "sentry",
+        "show_sp_on_influencers",
         "slow_msg",
         "small_num_bug",
         "sqlite_optimisations",
@@ -694,6 +636,7 @@
         "storj_integration",
         "sys_prompt_prod",
         "temp_fix_db_lock",
+        "temp_rm_beszel",
         "test_fix_url_n_storj_k",
         "test_robust_gc",
         "thread_to_async",
@@ -741,6 +684,8 @@
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
+        "infl_ep_updates",
+        "infl_util_apis",
         "infra_rl",
         "jatin_og_prompt",
         "jay_review",
@@ -792,6 +737,7 @@
         "sentry_fix",
         "sentry_webhook",
         "sentry",
+        "show_sp_on_influencers",
         "slow_msg",
         "small_num_bug",
         "sqlite_optimisations",
@@ -799,6 +745,7 @@
         "storj_integration",
         "sys_prompt_prod",
         "temp_fix_db_lock",
+        "temp_rm_beszel",
         "test_fix_url_n_storj_k",
         "test_robust_gc",
         "thread_to_async",
@@ -823,41 +770,6 @@
       ]
     },
     {
-      "sha": "d59a10b5d3d7fd5135ac4e6cb46cb014a8a2bb7e",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2025-12-29T12:47:07Z",
-      "message": "Implements conversation screen (#747)",
-      "stats": {
-        "additions": 2657,
-        "deletions": 191,
-        "total": 2848
-      },
-      "branches": [
-        "chore/events-to-offchain-api",
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "feature/create-ai-chat-bot",
-        "feature/dolr-wallet-ui-bk",
-        "feature/iap-ui",
-        "feature/subcription-video-gen",
-        "feature/subscription-ui",
-        "feature/subscriptions-ui",
-        "fix/hot-or-not-load-time",
-        "fix/ios-load-time",
-        "fix/state-button",
-        "fix-video-reporting",
-        "main",
-        "release/android-2.6.5",
-        "release/3.1.0",
-        "release/3.2.0",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
-    },
-    {
       "sha": "47b34ee4f48c62da4969a6b63438bdd0f1f5b321",
       "author": "joel-medicala-yral",
       "repository": "dolr-ai/off-chain-agent",
@@ -875,6 +787,7 @@
         "fix/gchat-oauth-for-report-buttons",
         "fix/user-agent-issue-with-pro-subscription",
         "fix/yral-pro-subscription-token-operation",
+        "joel/add_wan_i2v_support",
         "joel/ai-video-detector",
         "joel/apps-script-reports-api",
         "joel/ban-event",
@@ -918,7 +831,122 @@
         "revert-358-naitik/migrate_fly_redis_to_dragonfly",
         "revert-359-revert-358-naitik/migrate_fly_redis_to_dragonfly"
       ]
+    },
+    {
+      "sha": "d35e18de7868ec46ec120d84cb89e3b0c2131676",
+      "author": "samarth-paboowal-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-12-29T17:00:45Z",
+      "message": "Adds login sheet to AI chat bot (#748)",
+      "stats": {
+        "additions": 364,
+        "deletions": 198,
+        "total": 562
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "main",
+        "release/android-2.6.5",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "d59a10b5d3d7fd5135ac4e6cb46cb014a8a2bb7e",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-12-29T12:47:07Z",
+      "message": "Implements conversation screen (#747)",
+      "stats": {
+        "additions": 2657,
+        "deletions": 191,
+        "total": 2848
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "main",
+        "release/android-2.6.5",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "d5e48fbc13104c157173c10739e763de19ef35a6",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-backend-cloudflare-workers",
+      "timestamp": "2025-12-29T13:24:15Z",
+      "message": "added tests",
+      "stats": {
+        "additions": 54,
+        "deletions": 0,
+        "total": 54
+      },
+      "branches": [
+        "fix/remove-expiry-check-for-jwt"
+      ]
+    },
+    {
+      "sha": "a092da11a2ce314de9cc64005213e238f7cbd35f",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-backend-cloudflare-workers",
+      "timestamp": "2025-12-29T13:16:47Z",
+      "message": "remove expiry check for jwt validation",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "fix/remove-expiry-check-for-jwt"
+      ]
+    },
+    {
+      "sha": "7c4946a6cb73591f786877193af9498505f19999",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-backend-cloudflare-workers",
+      "timestamp": "2025-12-29T13:25:13Z",
+      "message": "fix: remove expiry check for jwt validation (#105)",
+      "stats": {
+        "additions": 55,
+        "deletions": 0,
+        "total": 55
+      },
+      "branches": [
+        "fix/update-yral-canisters-client-candid",
+        "main"
+      ]
     }
   ],
-  "commit_count": 14
+  "commit_count": 14,
+  "contributor_stats": {}
 }

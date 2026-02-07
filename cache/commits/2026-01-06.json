@@ -1,70 +1,7 @@
 {
   "date": "2026-01-06",
-  "cached_at": "2026-02-06T07:04:31.129022Z",
+  "cached_at": "2026-02-06T17:06:53.649420Z",
   "commits": [
-    {
-      "sha": "7cf45a199a9b2a6935ba8266c04f28b1a3d2b635",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-06T05:20:53Z",
-      "message": "fix: Fixes tournament not creating",
-      "stats": {
-        "additions": 4,
-        "deletions": 4,
-        "total": 8
-      },
-      "branches": [
-        "chore/events-to-offchain-api",
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "feature/create-ai-chat-bot",
-        "feature/dolr-wallet-ui-bk",
-        "feature/iap-ui",
-        "feature/subcription-video-gen",
-        "feature/subscription-ui",
-        "feature/subscriptions-ui",
-        "fix/hot-or-not-load-time",
-        "fix/ios-load-time",
-        "fix/state-button",
-        "fix-video-reporting",
-        "main",
-        "release/android-2.6.5",
-        "release/3.2.0",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
-    },
-    {
-      "sha": "0970c431366ddd99546d23daece2ffe3abe4fe21",
-      "author": "ravi-sawlani-yral",
-      "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-01-06T05:19:20Z",
-      "message": "feat: Implement phone authentication",
-      "stats": {
-        "additions": 1700,
-        "deletions": 178,
-        "total": 1878
-      },
-      "branches": [
-        "feat/deploy-to-dolr-ai",
-        "feat/fix-error-type-for-api",
-        "fix/redirect-uri-for-multiple-deployments",
-        "fix/remove-cookies-in-verify-endpoint",
-        "joel/ai-accounts-integration",
-        "joel/dnm-remove-bot-limit",
-        "joel/json-ser-ai-endpoint",
-        "joel/json-ser-fix",
-        "main",
-        "naitik/bare-metal-script-fix",
-        "naitik/fix_bare_metal_deployment",
-        "naitik/fix_broken_pipe_issue",
-        "naitik/migrate_reads_to_dragonfly",
-        "naitik/migration-to-dragonfly-redis",
-        "revert-41-fix/redirect-uri-for-multiple-deployments"
-      ]
-    },
     {
       "sha": "f1eeacb5d8cb7a4dc42e9d0413a9acf411c8f20a",
       "author": "kevin-antony-yral",
@@ -101,6 +38,8 @@
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
+        "infl_ep_updates",
+        "infl_util_apis",
         "jatin_og_prompt",
         "joel/optim-suggestions",
         "lat_op_stage",
@@ -137,11 +76,13 @@
         "sentry_fix_stageing",
         "sentry_fix",
         "sentry_webhook",
+        "show_sp_on_influencers",
         "slow_msg",
         "sqlite_optimisations",
         "staging",
         "sys_prompt_prod",
         "temp_fix_db_lock",
+        "temp_rm_beszel",
         "test_fix_url_n_storj_k",
         "test_robust_gc",
         "uptime_kuma",
@@ -179,66 +120,6 @@
       ]
     },
     {
-      "sha": "bff5300b37315f68696d09a0d045b52aef5538d6",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-06T09:01:45Z",
-      "message": "Merge pull request #757 from dolr-ai/release/2.5.0",
-      "stats": {
-        "additions": 87,
-        "deletions": 7,
-        "total": 94
-      },
-      "branches": [
-        "chore/events-to-offchain-api",
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "feature/create-ai-chat-bot",
-        "feature/dolr-wallet-ui-bk",
-        "feature/iap-ui",
-        "feature/subcription-video-gen",
-        "feature/subscription-ui",
-        "feature/subscriptions-ui",
-        "fix/hot-or-not-load-time",
-        "fix/ios-load-time",
-        "fix/state-button",
-        "fix-video-reporting",
-        "main",
-        "release/android-2.6.5",
-        "release/3.2.0",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
-    },
-    {
-      "sha": "64d16ae3d8387abd7e1e99b7e3db9c031c5126ac",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-01-06T09:03:19Z",
-      "message": "Merge pull request #758 from dolr-ai/release/2.5.0",
-      "stats": {
-        "additions": 16658,
-        "deletions": 874,
-        "total": 17532
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/subscriptions-ui",
-        "fix/ios-load-time",
-        "fix-video-reporting",
-        "main",
-        "release/android-2.6.5",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
-    },
-    {
       "sha": "5f05e73b9b7f933c005db96302f92994b1a215fa",
       "author": "joel-medicala-yral",
       "repository": "dolr-ai/off-chain-agent",
@@ -256,6 +137,7 @@
         "fix/gchat-oauth-for-report-buttons",
         "fix/user-agent-issue-with-pro-subscription",
         "fix/yral-pro-subscription-token-operation",
+        "joel/add_wan_i2v_support",
         "joel/ai-video-detector",
         "joel/apps-script-reports-api",
         "joel/ban-event",
@@ -297,7 +179,128 @@
         "revert-358-naitik/migrate_fly_redis_to_dragonfly",
         "revert-359-revert-358-naitik/migrate_fly_redis_to_dragonfly"
       ]
+    },
+    {
+      "sha": "bff5300b37315f68696d09a0d045b52aef5538d6",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-06T09:01:45Z",
+      "message": "Merge pull request #757 from dolr-ai/release/2.5.0",
+      "stats": {
+        "additions": 87,
+        "deletions": 7,
+        "total": 94
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "main",
+        "release/android-2.6.5",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "64d16ae3d8387abd7e1e99b7e3db9c031c5126ac",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-06T09:03:19Z",
+      "message": "Merge pull request #758 from dolr-ai/release/2.5.0",
+      "stats": {
+        "additions": 16658,
+        "deletions": 874,
+        "total": 17532
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/subscriptions-ui",
+        "fix/ios-load-time",
+        "main",
+        "release/android-2.6.5",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "0970c431366ddd99546d23daece2ffe3abe4fe21",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-01-06T05:19:20Z",
+      "message": "feat: Implement phone authentication",
+      "stats": {
+        "additions": 1700,
+        "deletions": 178,
+        "total": 1878
+      },
+      "branches": [
+        "feat/deploy-to-dolr-ai",
+        "feat/fix-error-type-for-api",
+        "fix/redirect-uri-for-multiple-deployments",
+        "fix/remove-cookies-in-verify-endpoint",
+        "joel/ai-accounts-integration",
+        "joel/dnm-remove-bot-limit",
+        "joel/json-ser-ai-endpoint",
+        "joel/json-ser-fix",
+        "main",
+        "naitik/bare-metal-script-fix",
+        "naitik/fix_bare_metal_deployment",
+        "naitik/fix_broken_pipe_issue",
+        "naitik/migrate_reads_to_dragonfly",
+        "naitik/migration-to-dragonfly-redis",
+        "revert-41-fix/redirect-uri-for-multiple-deployments"
+      ]
+    },
+    {
+      "sha": "7cf45a199a9b2a6935ba8266c04f28b1a3d2b635",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-01-06T05:20:53Z",
+      "message": "fix: Fixes tournament not creating",
+      "stats": {
+        "additions": 4,
+        "deletions": 4,
+        "total": 8
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "main",
+        "release/android-2.6.5",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
     }
   ],
-  "commit_count": 8
+  "commit_count": 8,
+  "contributor_stats": {}
 }

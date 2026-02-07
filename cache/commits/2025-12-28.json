@@ -1,6 +1,6 @@
 {
   "date": "2025-12-28",
-  "cached_at": "2026-02-06T07:03:50.112004Z",
+  "cached_at": "2026-02-06T15:32:00.448867Z",
   "commits": [
     {
       "sha": "9707e17fb5736ca74d53de877607c7b9264946fc",
@@ -41,6 +41,8 @@
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
+        "infl_ep_updates",
+        "infl_util_apis",
         "infra_rl",
         "jatin_og_prompt",
         "jay_review",
@@ -92,6 +94,7 @@
         "sentry_fix",
         "sentry_webhook",
         "sentry",
+        "show_sp_on_influencers",
         "slow_msg",
         "small_num_bug",
         "sqlite_optimisations",
@@ -99,6 +102,7 @@
         "storj_integration",
         "sys_prompt_prod",
         "temp_fix_db_lock",
+        "temp_rm_beszel",
         "test_fix_url_n_storj_k",
         "test_robust_gc",
         "thread_to_async",
@@ -108,5 +112,18 @@
       ]
     }
   ],
-  "commit_count": 1
+  "commit_count": 1,
+  "contributor_stats": {
+    "kevin-antony-yral": {
+      "2025-12-28": {
+        "commits": 5,
+        "additions": 84,
+        "deletions": 626,
+        "total": 710,
+        "repos": [
+          "dolr-ai/yral-ai-chat"
+        ]
+      }
+    }
+  }
 }

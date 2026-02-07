@@ -579,5 +579,18 @@
       ]
     }
   ],
-  "commit_count": 16
+  "commit_count": 16,
+  "contributor_stats": {
+    "mayank-k-yral": {
+      "2025-12-21": {
+        "commits": 39,
+        "additions": 9126,
+        "deletions": 3244,
+        "total": 12370,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      }
+    }
+  }
 }

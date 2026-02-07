@@ -1,6 +1,6 @@
 {
   "date": "2026-02-04",
-  "cached_at": "2026-02-06T08:14:39.777712Z",
+  "cached_at": "2026-02-06T21:54:45.083399Z",
   "commits": [
     {
       "sha": "1d77e65ffd61196856d2bb562abf43e216404e55",
@@ -59,6 +59,62 @@
         "total": 11997
       },
       "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "05f330ec2a721e6f35f9c91e68e9232ef533f0b5",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-04T07:26:11Z",
+      "message": "feat: add fallback logic from storj to cf (#397)",
+      "stats": {
+        "additions": 33,
+        "deletions": 5,
+        "total": 38
+      },
+      "branches": [
+        "joel/add_wan_i2v_support",
+        "joel/hot-fix-notification-panic",
+        "joel/ltx-intergration",
+        "main"
+      ]
+    },
+    {
+      "sha": "01b3fdab904ccd0f9586ad7f67b75488f8c3d83f",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-04T07:10:22Z",
+      "message": "feat: added ai video detector (#396)",
+      "stats": {
+        "additions": 324,
+        "deletions": 45,
+        "total": 369
+      },
+      "branches": [
+        "joel/add_wan_i2v_support",
+        "joel/ai-video-detector",
+        "joel/hot-fix-notification-panic",
+        "joel/ltx-intergration",
+        "main"
+      ]
+    },
+    {
+      "sha": "dac2609076bd12964ab3553007daf8ab59dd0175",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-04T05:09:02Z",
+      "message": "feat: added coin based notification (#395)",
+      "stats": {
+        "additions": 23,
+        "deletions": 3,
+        "total": 26
+      },
+      "branches": [
+        "joel/add_wan_i2v_support",
+        "joel/ai-video-detector",
+        "joel/hot-fix-notification-panic",
+        "joel/ltx-intergration",
         "main"
       ]
     },
@@ -348,23 +404,6 @@
       ]
     },
     {
-      "sha": "01b3fdab904ccd0f9586ad7f67b75488f8c3d83f",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-02-04T07:10:22Z",
-      "message": "feat: added ai video detector (#396)",
-      "stats": {
-        "additions": 324,
-        "deletions": 45,
-        "total": 369
-      },
-      "branches": [
-        "joel/ai-video-detector",
-        "joel/ltx-intergration",
-        "main"
-      ]
-    },
-    {
       "sha": "5c055b968e6e4c27b161705d255ff633824dba16",
       "author": "joel-medicala-yral",
       "repository": "dolr-ai/off-chain-agent",
@@ -377,23 +416,6 @@
       },
       "branches": [
         "joel/ai-video-detector"
-      ]
-    },
-    {
-      "sha": "dac2609076bd12964ab3553007daf8ab59dd0175",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-02-04T05:09:02Z",
-      "message": "feat: added coin based notification (#395)",
-      "stats": {
-        "additions": 23,
-        "deletions": 3,
-        "total": 26
-      },
-      "branches": [
-        "joel/ai-video-detector",
-        "joel/ltx-intergration",
-        "main"
       ]
     },
     {
@@ -547,18 +569,33 @@
       ]
     },
     {
-      "sha": "05f330ec2a721e6f35f9c91e68e9232ef533f0b5",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-02-04T07:26:11Z",
-      "message": "feat: add fallback logic from storj to cf (#397)",
+      "sha": "724ec794a687d007fbec9b1417c1a3e8f0e36893",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-02-04T06:39:31Z",
+      "message": "remove aud check",
       "stats": {
-        "additions": 33,
-        "deletions": 5,
-        "total": 38
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
       },
       "branches": [
-        "joel/ltx-intergration",
+        "fix/remove-aud-check-from-jwt-validation",
+        "main"
+      ]
+    },
+    {
+      "sha": "f441264c49e27e2d023473002c4796c3d2e0ec46",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-02-04T06:55:38Z",
+      "message": "Merge pull request #7 from dolr-ai/fix/remove-aud-check-from-jwt-validation",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
         "main"
       ]
     },
@@ -578,7 +615,6 @@
         "develop",
         "enhancement/chat-error-ui",
         "feature/ai-influencer",
-        "fix-video-reporting",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
         "test/force-update"
@@ -600,7 +636,6 @@
         "develop",
         "enhancement/chat-error-ui",
         "feature/ai-influencer",
-        "fix-video-reporting",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
         "test/force-update"
@@ -623,7 +658,6 @@
         "enhancement/chat-error-ui",
         "feature/ai-influencer",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
         "test/force-update"
@@ -646,7 +680,6 @@
         "enhancement/chat-error-ui",
         "feature/ai-influencer",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
         "test/force-update"
@@ -669,7 +702,6 @@
         "enhancement/chat-error-ui",
         "feature/ai-influencer",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
         "test/force-update"
@@ -707,7 +739,6 @@
         "enhancement/chat-error-ui",
         "feature/ai-influencer",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
         "test/force-update"
@@ -730,7 +761,6 @@
         "enhancement/chat-error-ui",
         "feature/ai-influencer",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
         "test/force-update"
@@ -780,38 +810,8 @@
       "branches": [
         "main"
       ]
-    },
-    {
-      "sha": "724ec794a687d007fbec9b1417c1a3e8f0e36893",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-billing",
-      "timestamp": "2026-02-04T06:39:31Z",
-      "message": "remove aud check",
-      "stats": {
-        "additions": 1,
-        "deletions": 0,
-        "total": 1
-      },
-      "branches": [
-        "fix/remove-aud-check-from-jwt-validation",
-        "main"
-      ]
-    },
-    {
-      "sha": "f441264c49e27e2d023473002c4796c3d2e0ec46",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-billing",
-      "timestamp": "2026-02-04T06:55:38Z",
-      "message": "Merge pull request #7 from dolr-ai/fix/remove-aud-check-from-jwt-validation",
-      "stats": {
-        "additions": 1,
-        "deletions": 0,
-        "total": 1
-      },
-      "branches": [
-        "main"
-      ]
     }
   ],
-  "commit_count": 50
+  "commit_count": 50,
+  "contributor_stats": {}
 }

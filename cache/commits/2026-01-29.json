@@ -1,7 +1,86 @@
 {
   "date": "2026-01-29",
-  "cached_at": "2026-02-06T08:14:52.226859Z",
+  "cached_at": "2026-02-06T20:22:43.280749Z",
   "commits": [
+    {
+      "sha": "5425a3ca67788ec620f56bedf6719936e9e9144f",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-29T18:10:42Z",
+      "message": "Sys prompt: Staging tests fix (#151)",
+      "stats": {
+        "additions": 124,
+        "deletions": 7,
+        "total": 131
+      },
+      "branches": [
+        "backward_chat_api",
+        "id_staging",
+        "inbox_apis",
+        "infl_ep_updates",
+        "infl_util_apis",
+        "pn_inbox",
+        "show_sp_on_influencers",
+        "staging"
+      ]
+    },
+    {
+      "sha": "6cb03a3f6de630124a2aff403381f470ea94b6b7",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-29T09:56:23Z",
+      "message": "Changes to system prompt (#150)",
+      "stats": {
+        "additions": 9,
+        "deletions": 10,
+        "total": 19
+      },
+      "branches": [
+        "backward_chat_api",
+        "id_staging",
+        "inbox_apis",
+        "infl_ep_updates",
+        "infl_util_apis",
+        "pn_inbox",
+        "show_sp_on_influencers",
+        "staging",
+        "sys_prompt_prod"
+      ]
+    },
+    {
+      "sha": "aefd1734b9d90e8130e1bc7ac2fee185b2fb1d2c",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-29T05:14:56Z",
+      "message": "Lock fixes n optimizations (#149)",
+      "stats": {
+        "additions": 7,
+        "deletions": 4,
+        "total": 11
+      },
+      "branches": [
+        "id_staging",
+        "indempotency_msg_fix",
+        "main",
+        "send_msg_rogue",
+        "temp_rm_beszel"
+      ]
+    },
+    {
+      "sha": "11633dc58ef78c714008c736486f705bd4ffcd70",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-01-29T18:10:17Z",
+      "message": "Clarify validation criteria for character concepts",
+      "stats": {
+        "additions": 4,
+        "deletions": 3,
+        "total": 7
+      },
+      "branches": [
+        "sys_prompt_prod"
+      ]
+    },
     {
       "sha": "eb0f6603684498760d10f863b7fbec54677b1201",
       "author": "naitik-makwana-yral",
@@ -55,6 +134,36 @@
       ]
     },
     {
+      "sha": "dce720716c9322fa877d85074b4206608d5f19f7",
+      "author": "jay-dhanwant-yral",
+      "repository": "dolr-ai/ai-feed-recommendation-system",
+      "timestamp": "2026-01-29T08:10:46Z",
+      "message": "feat: Implement UGC Discovery Pool to surface new, low-impression videos and have a priority queue b",
+      "stats": {
+        "additions": 29,
+        "deletions": 10,
+        "total": 39
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9dc74cc4a6eeeafea93b23f1cef55cd053a3b823",
+      "author": "jay-dhanwant-yral",
+      "repository": "dolr-ai/ai-feed-recommendation-system",
+      "timestamp": "2026-01-29T07:52:08Z",
+      "message": "Merge pull request #7 from dolr-ai/stage",
+      "stats": {
+        "additions": 727,
+        "deletions": 140,
+        "total": 867
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
       "sha": "c458eea4d3f8c53d3c59520bc9b04080b778325d",
       "author": "joel-medicala-yral",
       "repository": "dolr-ai/off-chain-agent",
@@ -68,6 +177,7 @@
       "branches": [
         "fix/user-agent-issue-with-pro-subscription",
         "fix/yral-pro-subscription-token-operation",
+        "joel/add_wan_i2v_support",
         "joel/ai-video-detector",
         "joel/apps-script-reports-api",
         "joel/fix-btc-dolr-notif",
@@ -75,6 +185,7 @@
         "joel/fix-gchat-report-buttons",
         "joel/fix-logging",
         "joel/fix-report-env",
+        "joel/hot-fix-notification-panic",
         "joel/icp-swap-dolr-price-fetch",
         "joel/ltx-intergration",
         "joel/offchain-broken-pipe-fix",
@@ -97,6 +208,7 @@
       "branches": [
         "fix/user-agent-issue-with-pro-subscription",
         "fix/yral-pro-subscription-token-operation",
+        "joel/add_wan_i2v_support",
         "joel/ai-video-detector",
         "joel/apps-script-reports-api",
         "joel/fix-btc-dolr-notif",
@@ -104,6 +216,7 @@
         "joel/fix-gchat-report-buttons",
         "joel/fix-logging",
         "joel/fix-report-env",
+        "joel/hot-fix-notification-panic",
         "joel/icp-swap-dolr-price-fetch",
         "joel/ltx-intergration",
         "joel/offchain-broken-pipe-fix",
@@ -126,6 +239,7 @@
       "branches": [
         "fix/user-agent-issue-with-pro-subscription",
         "fix/yral-pro-subscription-token-operation",
+        "joel/add_wan_i2v_support",
         "joel/ai-video-detector",
         "joel/apps-script-reports-api",
         "joel/fix-btc-dolr-notif",
@@ -133,6 +247,7 @@
         "joel/fix-gchat-report-buttons",
         "joel/fix-logging",
         "joel/fix-report-env",
+        "joel/hot-fix-notification-panic",
         "joel/icp-swap-dolr-price-fetch",
         "joel/ltx-intergration",
         "joel/offchain-broken-pipe-fix",
@@ -262,6 +377,7 @@
       "branches": [
         "feat/ltx2-model",
         "feat/update-user-info-deps",
+        "feat/wan25-image-support",
         "fix/yral-pro-subscription-token-transaction-implmentation",
         "master"
       ]
@@ -295,6 +411,8 @@
       "branches": [
         "copilot/fix-username-release-on-delete",
         "joel/fcm-notification-migration",
+        "joel/fix-get-notification-key-logging",
+        "joel/fix-noisy-fcm-logs",
         "master"
       ]
     },
@@ -375,11 +493,28 @@
         "enhancement/chat-error-ui",
         "feature/ai-influencer",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
         "test/force-update"
+      ]
+    },
+    {
+      "sha": "214ba99ccb7379869fbd9395d65eaf13e0b0d17a",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-01-29T13:13:57Z",
+      "message": "add routes for user credits",
+      "stats": {
+        "additions": 219,
+        "deletions": 12,
+        "total": 231
+      },
+      "branches": [
+        "feat/add-routes-to-update-user-credits",
+        "feat/add-sentry-setup",
+        "fix/remove-aud-check-from-jwt-validation",
+        "main"
       ]
     },
     {
@@ -399,7 +534,6 @@
         "enhancement/chat-error-ui",
         "feature/ai-influencer",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
@@ -423,7 +557,6 @@
         "enhancement/chat-error-ui",
         "feature/ai-influencer",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
@@ -447,7 +580,6 @@
         "enhancement/chat-error-ui",
         "feature/ai-influencer",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
@@ -471,7 +603,6 @@
         "enhancement/chat-error-ui",
         "feature/ai-influencer",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
@@ -495,7 +626,6 @@
         "enhancement/chat-error-ui",
         "feature/ai-influencer",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
@@ -519,7 +649,6 @@
         "enhancement/chat-error-ui",
         "feature/ai-influencer",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
@@ -543,7 +672,6 @@
         "enhancement/chat-error-ui",
         "feature/ai-influencer",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
@@ -568,41 +696,10 @@
         "feature/ai-influencer",
         "feature/dolr-wallet-ui-bk",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
         "test/force-update"
-      ]
-    },
-    {
-      "sha": "dce720716c9322fa877d85074b4206608d5f19f7",
-      "author": "jay-dhanwant-yral",
-      "repository": "dolr-ai/ai-feed-recommendation-system",
-      "timestamp": "2026-01-29T08:10:46Z",
-      "message": "feat: Implement UGC Discovery Pool to surface new, low-impression videos and have a priority queue b",
-      "stats": {
-        "additions": 29,
-        "deletions": 10,
-        "total": 39
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "9dc74cc4a6eeeafea93b23f1cef55cd053a3b823",
-      "author": "jay-dhanwant-yral",
-      "repository": "dolr-ai/ai-feed-recommendation-system",
-      "timestamp": "2026-01-29T07:52:08Z",
-      "message": "Merge pull request #7 from dolr-ai/stage",
-      "stats": {
-        "additions": 727,
-        "deletions": 140,
-        "total": 867
-      },
-      "branches": [
-        "main"
       ]
     },
     {
@@ -622,7 +719,6 @@
         "enhancement/chat-error-ui",
         "feature/ai-influencer",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
@@ -646,7 +742,6 @@
         "enhancement/chat-error-ui",
         "feature/ai-influencer",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
@@ -757,97 +852,8 @@
       "branches": [
         "feature/dolr-wallet-ui-bk"
       ]
-    },
-    {
-      "sha": "214ba99ccb7379869fbd9395d65eaf13e0b0d17a",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-billing",
-      "timestamp": "2026-01-29T13:13:57Z",
-      "message": "add routes for user credits",
-      "stats": {
-        "additions": 219,
-        "deletions": 12,
-        "total": 231
-      },
-      "branches": [
-        "feat/add-routes-to-update-user-credits",
-        "feat/add-sentry-setup",
-        "fix/remove-aud-check-from-jwt-validation",
-        "main"
-      ]
-    },
-    {
-      "sha": "5425a3ca67788ec620f56bedf6719936e9e9144f",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-29T18:10:42Z",
-      "message": "Sys prompt: Staging tests fix (#151)",
-      "stats": {
-        "additions": 124,
-        "deletions": 7,
-        "total": 131
-      },
-      "branches": [
-        "backward_chat_api",
-        "id_staging",
-        "inbox_apis",
-        "pn_inbox",
-        "staging"
-      ]
-    },
-    {
-      "sha": "6cb03a3f6de630124a2aff403381f470ea94b6b7",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-29T09:56:23Z",
-      "message": "Changes to system prompt (#150)",
-      "stats": {
-        "additions": 9,
-        "deletions": 10,
-        "total": 19
-      },
-      "branches": [
-        "backward_chat_api",
-        "id_staging",
-        "inbox_apis",
-        "pn_inbox",
-        "staging",
-        "sys_prompt_prod"
-      ]
-    },
-    {
-      "sha": "aefd1734b9d90e8130e1bc7ac2fee185b2fb1d2c",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-29T05:14:56Z",
-      "message": "Lock fixes n optimizations (#149)",
-      "stats": {
-        "additions": 7,
-        "deletions": 4,
-        "total": 11
-      },
-      "branches": [
-        "id_staging",
-        "indempotency_msg_fix",
-        "main",
-        "send_msg_rogue"
-      ]
-    },
-    {
-      "sha": "11633dc58ef78c714008c736486f705bd4ffcd70",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-01-29T18:10:17Z",
-      "message": "Clarify validation criteria for character concepts",
-      "stats": {
-        "additions": 4,
-        "deletions": 3,
-        "total": 7
-      },
-      "branches": [
-        "sys_prompt_prod"
-      ]
     }
   ],
-  "commit_count": 45
+  "commit_count": 45,
+  "contributor_stats": {}
 }

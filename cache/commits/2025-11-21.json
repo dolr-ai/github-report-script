@@ -1,7 +1,138 @@
 {
   "date": "2025-11-21",
-  "cached_at": "2026-02-06T07:02:01.214502Z",
+  "cached_at": "2026-02-06T12:18:40.169910Z",
   "commits": [
+    {
+      "sha": "42dbce9d873952a6e7a2182569744ccd17e5b3da",
+      "author": "samarth-paboowal-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-21T05:43:15Z",
+      "message": "Adds ban logic for smiley game scammers (#669)",
+      "stats": {
+        "additions": 100,
+        "deletions": 650,
+        "total": 750
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "chore/new-upload-video-endpoint",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/download-video",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/test-install-referrers",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "1c0f0d010eeb7525cbba4b492c30e3801d80f52d",
+      "author": "samarth-paboowal-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-21T11:31:24Z",
+      "message": "build: migrates from cloudflare to storj",
+      "stats": {
+        "additions": 78,
+        "deletions": 52,
+        "total": 130
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "0774ba2cdce1843937339afb4233ff27fb0143f3",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-21T05:50:16Z",
+      "message": "Add Firebase Performance trace attribute support for iOS (#668)",
+      "stats": {
+        "additions": 18,
+        "deletions": 1,
+        "total": 19
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/download-video",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/test-install-referrers",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "621be195e54adaf2875327a0de7d2b90e0e3d734",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-21T05:10:39Z",
+      "message": "Improves focus clearing on EditProfileScreen (#667)",
+      "stats": {
+        "additions": 16,
+        "deletions": 31,
+        "total": 47
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "chore/new-upload-video-endpoint",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/download-video",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/test-install-referrers",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
     {
       "sha": "2cdd8488561d098517fb5dd33611c83165244bbe",
       "author": "ravi-sawlani-yral",
@@ -191,138 +322,8 @@
         "fix/update-yral-canisters-client-candid",
         "main"
       ]
-    },
-    {
-      "sha": "42dbce9d873952a6e7a2182569744ccd17e5b3da",
-      "author": "samarth-paboowal-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2025-11-21T05:43:15Z",
-      "message": "Adds ban logic for smiley game scammers (#669)",
-      "stats": {
-        "additions": 100,
-        "deletions": 650,
-        "total": 750
-      },
-      "branches": [
-        "chore/events-to-offchain-api",
-        "chore/new-upload-video-endpoint",
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "feature/create-ai-chat-bot",
-        "feature/dolr-wallet-ui-bk",
-        "feature/download-video",
-        "feature/iap-ui",
-        "feature/subcription-video-gen",
-        "feature/subscription-ui",
-        "feature/subscriptions-ui",
-        "feature/tournament-be-changes",
-        "fix/hot-or-not-load-time",
-        "fix/ios-load-time",
-        "fix/state-button",
-        "fix-video-reporting",
-        "main",
-        "release/android-2.6.5",
-        "release/test-install-referrers",
-        "release/3.1.0",
-        "release/3.2.0",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
-    },
-    {
-      "sha": "1c0f0d010eeb7525cbba4b492c30e3801d80f52d",
-      "author": "samarth-paboowal-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2025-11-21T11:31:24Z",
-      "message": "build: migrates from cloudflare to storj",
-      "stats": {
-        "additions": 78,
-        "deletions": 52,
-        "total": 130
-      },
-      "branches": [
-        "chore/new-upload-video-endpoint"
-      ]
-    },
-    {
-      "sha": "0774ba2cdce1843937339afb4233ff27fb0143f3",
-      "author": "mayank-k-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2025-11-21T05:50:16Z",
-      "message": "Add Firebase Performance trace attribute support for iOS (#668)",
-      "stats": {
-        "additions": 18,
-        "deletions": 1,
-        "total": 19
-      },
-      "branches": [
-        "chore/events-to-offchain-api",
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "feature/create-ai-chat-bot",
-        "feature/dolr-wallet-ui-bk",
-        "feature/download-video",
-        "feature/iap-ui",
-        "feature/subcription-video-gen",
-        "feature/subscription-ui",
-        "feature/subscriptions-ui",
-        "feature/tournament-be-changes",
-        "fix/hot-or-not-load-time",
-        "fix/ios-load-time",
-        "fix/state-button",
-        "fix-video-reporting",
-        "main",
-        "release/android-2.6.5",
-        "release/test-install-referrers",
-        "release/3.1.0",
-        "release/3.2.0",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
-    },
-    {
-      "sha": "621be195e54adaf2875327a0de7d2b90e0e3d734",
-      "author": "mayank-k-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2025-11-21T05:10:39Z",
-      "message": "Improves focus clearing on EditProfileScreen (#667)",
-      "stats": {
-        "additions": 16,
-        "deletions": 31,
-        "total": 47
-      },
-      "branches": [
-        "chore/events-to-offchain-api",
-        "chore/new-upload-video-endpoint",
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "feature/create-ai-chat-bot",
-        "feature/dolr-wallet-ui-bk",
-        "feature/download-video",
-        "feature/iap-ui",
-        "feature/subcription-video-gen",
-        "feature/subscription-ui",
-        "feature/subscriptions-ui",
-        "feature/tournament-be-changes",
-        "fix/hot-or-not-load-time",
-        "fix/ios-load-time",
-        "fix/state-button",
-        "fix-video-reporting",
-        "main",
-        "release/android-2.6.5",
-        "release/test-install-referrers",
-        "release/3.1.0",
-        "release/3.2.0",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
     }
   ],
-  "commit_count": 12
+  "commit_count": 12,
+  "contributor_stats": {}
 }

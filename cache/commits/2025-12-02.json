@@ -1,7 +1,43 @@
 {
   "date": "2025-12-02",
-  "cached_at": "2026-02-06T07:02:27.565721Z",
+  "cached_at": "2026-02-06T12:21:25.430379Z",
   "commits": [
+    {
+      "sha": "da6cb44b8394db29d9505f66eb8c48bd16106c30",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-12-02T06:11:02Z",
+      "message": "chore: Improves share profile function call (#690)",
+      "stats": {
+        "additions": 4,
+        "deletions": 15,
+        "total": 19
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
     {
       "sha": "461840e4711f03457666d17c9cad230648d796c2",
       "author": "saikatdas0790",
@@ -61,43 +97,8 @@
       "branches": [
         "main"
       ]
-    },
-    {
-      "sha": "da6cb44b8394db29d9505f66eb8c48bd16106c30",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2025-12-02T06:11:02Z",
-      "message": "chore: Improves share profile function call (#690)",
-      "stats": {
-        "additions": 4,
-        "deletions": 15,
-        "total": 19
-      },
-      "branches": [
-        "chore/events-to-offchain-api",
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "feature/create-ai-chat-bot",
-        "feature/dolr-wallet-ui-bk",
-        "feature/iap-ui",
-        "feature/subcription-video-gen",
-        "feature/subscription-ui",
-        "feature/subscriptions-ui",
-        "feature/tournament-be-changes",
-        "fix/hot-or-not-load-time",
-        "fix/ios-load-time",
-        "fix/state-button",
-        "fix-video-reporting",
-        "main",
-        "release/android-2.6.5",
-        "release/3.1.0",
-        "release/3.2.0",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
     }
   ],
-  "commit_count": 5
+  "commit_count": 5,
+  "contributor_stats": {}
 }

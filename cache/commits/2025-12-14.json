@@ -198,5 +198,18 @@
       ]
     }
   ],
-  "commit_count": 13
+  "commit_count": 13,
+  "contributor_stats": {
+    "saikatdas0790": {
+      "2025-12-14": {
+        "commits": 43,
+        "additions": 5520,
+        "deletions": 3668,
+        "total": 9188,
+        "repos": [
+          "dolr-ai/yral-bare-metal-kubernetes-cluster"
+        ]
+      }
+    }
+  }
 }

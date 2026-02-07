@@ -1,311 +1,7 @@
 {
   "date": "2025-11-24",
-  "cached_at": "2026-02-06T07:02:07.440877Z",
+  "cached_at": "2026-02-06T12:18:11.070109Z",
   "commits": [
-    {
-      "sha": "14e3eae71c6d46e689a694dfd9519bce9f3d477a",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2025-11-24T18:32:18Z",
-      "message": "Update workflow logic for null inputs and clarify dry_run",
-      "stats": {
-        "additions": 8,
-        "deletions": 8,
-        "total": 16
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "e31535ba5bef601c72991f723ac4f1d6fa93f976",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2025-11-24T18:29:31Z",
-      "message": "Refactor workflow for fleet management and add playbook options",
-      "stats": {
-        "additions": 66,
-        "deletions": 8,
-        "total": 74
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "dad57a233f8f509a18481208fd5d77e4f5a3af04",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2025-11-24T18:24:28Z",
-      "message": "Add SSH security audit playbook and update docs and scripts",
-      "stats": {
-        "additions": 132,
-        "deletions": 81,
-        "total": 213
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "b581512f909f3e8d3a863acf0d2b3fa3bc713ba0",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2025-11-24T18:05:54Z",
-      "message": "Add Docker setup playbook and update docs and scripts",
-      "stats": {
-        "additions": 176,
-        "deletions": 79,
-        "total": 255
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "3d2f942f1dc24a67962039fcf11bc607bdfc6031",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2025-11-24T18:00:35Z",
-      "message": "Display root user's authorized SSH keys in debug output",
-      "stats": {
-        "additions": 26,
-        "deletions": 0,
-        "total": 26
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "5c5a250b6ee0b5d506fb21690c16af5d608b2c03",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2025-11-24T17:55:46Z",
-      "message": "Harden SSH by disabling password auth and enforcing pubkey auth",
-      "stats": {
-        "additions": 38,
-        "deletions": 0,
-        "total": 38
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "958e8350140b71b998888d1ef6519aaaa6ddf45b",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2025-11-24T17:50:34Z",
-      "message": "Trigger system update workflow on push to main",
-      "stats": {
-        "additions": 5,
-        "deletions": 1,
-        "total": 6
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "b0bdbb4aad2a837502e5435cadc1d6fca6db7d53",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2025-11-24T17:48:03Z",
-      "message": "Add Docker installation steps to system update playbook",
-      "stats": {
-        "additions": 63,
-        "deletions": 0,
-        "total": 63
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "bd3ebd35c27d3d6b99e5e5333a25202657ea7da4",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2025-11-24T17:43:42Z",
-      "message": "Remove Netdata uninstallation tasks from system update playbook",
-      "stats": {
-        "additions": 0,
-        "deletions": 78,
-        "total": 78
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "9eeb4f6c055b54f3de14738565882474176baff6",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2025-11-24T17:35:28Z",
-      "message": "Remove Netdata and clean up related files and users",
-      "stats": {
-        "additions": 78,
-        "deletions": 0,
-        "total": 78
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "64b921676c00ed5974b2a3857842e443e24b9d75",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2025-11-24T17:25:42Z",
-      "message": "Switch to enable_reboot input and logic in system update workflow",
-      "stats": {
-        "additions": 18,
-        "deletions": 6,
-        "total": 24
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "04ad18620cd46a45fd2c133abce298876a7d8ebb",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2025-11-24T17:14:53Z",
-      "message": "Disable privilege escalation and update host timeout settings",
-      "stats": {
-        "additions": 2,
-        "deletions": 5,
-        "total": 7
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "c85f8b2040309a6cc8d01200533ac0d54b27719f",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2025-11-24T16:59:26Z",
-      "message": "Update Ansible config and system update playbook",
-      "stats": {
-        "additions": 9,
-        "deletions": 4,
-        "total": 13
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "af931393cefc4f709b0902dc57fe59b7b22cd85d",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2025-11-24T16:54:47Z",
-      "message": "Update SSH key secret name in workflow and README",
-      "stats": {
-        "additions": 2,
-        "deletions": 2,
-        "total": 4
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "4fbefdac416ec82015a7024d56309c21f9d42ce3",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2025-11-24T16:49:23Z",
-      "message": "Use double quotes for all YAML strings in workflow",
-      "stats": {
-        "additions": 10,
-        "deletions": 11,
-        "total": 21
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "aff77d4a3489f0af51ada1943007d727114c8024",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2025-11-24T16:46:55Z",
-      "message": "Add Ansible automation for Hetzner bare metal fleet",
-      "stats": {
-        "additions": 776,
-        "deletions": 0,
-        "total": 776
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "af7c8e80ae2de86ad98c0314d1da692eb1383875",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2025-11-24T11:05:00Z",
-      "message": "chore: Increments ios app version (#665)",
-      "stats": {
-        "additions": 3,
-        "deletions": 3,
-        "total": 6
-      },
-      "branches": [
-        "chore/events-to-offchain-api",
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "feature/create-ai-chat-bot",
-        "feature/dolr-wallet-ui-bk",
-        "feature/download-video",
-        "feature/iap-ui",
-        "feature/subcription-video-gen",
-        "feature/subscription-ui",
-        "feature/subscriptions-ui",
-        "feature/tournament-be-changes",
-        "fix/hot-or-not-load-time",
-        "fix/ios-load-time",
-        "fix/state-button",
-        "fix-video-reporting",
-        "main",
-        "release/android-2.6.5",
-        "release/test-install-referrers",
-        "release/3.1.0",
-        "release/3.2.0",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
-    },
-    {
-      "sha": "ad3ef68de8ea12f509bc86efb67fe2ccb50c260f",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2025-11-24T11:05:15Z",
-      "message": "Merge pull request #666 from dolr-ai/release/3.0.0",
-      "stats": {
-        "additions": 265,
-        "deletions": 728,
-        "total": 993
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "feature/dolr-wallet-ui-bk",
-        "feature/subscriptions-ui",
-        "fix/ios-load-time",
-        "fix-video-reporting",
-        "main",
-        "release/android-2.6.5",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
-    },
     {
       "sha": "f55868becdfb6b74d3bb9cfbff5790fbd4b16516",
       "author": "kevin-antony-yral",
@@ -688,7 +384,312 @@
       "branches": [
         "release/test-install-referrers"
       ]
+    },
+    {
+      "sha": "af7c8e80ae2de86ad98c0314d1da692eb1383875",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-24T11:05:00Z",
+      "message": "chore: Increments ios app version (#665)",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "chore/events-to-offchain-api",
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/create-ai-chat-bot",
+        "feature/dolr-wallet-ui-bk",
+        "feature/download-video",
+        "feature/iap-ui",
+        "feature/subcription-video-gen",
+        "feature/subscription-ui",
+        "feature/subscriptions-ui",
+        "feature/tournament-be-changes",
+        "fix/hot-or-not-load-time",
+        "fix/ios-load-time",
+        "fix/state-button",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "release/test-install-referrers",
+        "release/3.1.0",
+        "release/3.2.0",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "ad3ef68de8ea12f509bc86efb67fe2ccb50c260f",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2025-11-24T11:05:15Z",
+      "message": "Merge pull request #666 from dolr-ai/release/3.0.0",
+      "stats": {
+        "additions": 265,
+        "deletions": 728,
+        "total": 993
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "enhancement/chat-error-ui",
+        "feature/ai-influencer",
+        "feature/dolr-wallet-ui-bk",
+        "feature/subscriptions-ui",
+        "fix/ios-load-time",
+        "fix-video-reporting",
+        "main",
+        "release/android-2.6.5",
+        "saikatdas0790-patch-1",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "14e3eae71c6d46e689a694dfd9519bce9f3d477a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-24T18:32:18Z",
+      "message": "Update workflow logic for null inputs and clarify dry_run",
+      "stats": {
+        "additions": 8,
+        "deletions": 8,
+        "total": 16
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e31535ba5bef601c72991f723ac4f1d6fa93f976",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-24T18:29:31Z",
+      "message": "Refactor workflow for fleet management and add playbook options",
+      "stats": {
+        "additions": 66,
+        "deletions": 8,
+        "total": 74
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "dad57a233f8f509a18481208fd5d77e4f5a3af04",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-24T18:24:28Z",
+      "message": "Add SSH security audit playbook and update docs and scripts",
+      "stats": {
+        "additions": 132,
+        "deletions": 81,
+        "total": 213
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b581512f909f3e8d3a863acf0d2b3fa3bc713ba0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-24T18:05:54Z",
+      "message": "Add Docker setup playbook and update docs and scripts",
+      "stats": {
+        "additions": 176,
+        "deletions": 79,
+        "total": 255
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3d2f942f1dc24a67962039fcf11bc607bdfc6031",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-24T18:00:35Z",
+      "message": "Display root user's authorized SSH keys in debug output",
+      "stats": {
+        "additions": 26,
+        "deletions": 0,
+        "total": 26
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "5c5a250b6ee0b5d506fb21690c16af5d608b2c03",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-24T17:55:46Z",
+      "message": "Harden SSH by disabling password auth and enforcing pubkey auth",
+      "stats": {
+        "additions": 38,
+        "deletions": 0,
+        "total": 38
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "958e8350140b71b998888d1ef6519aaaa6ddf45b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-24T17:50:34Z",
+      "message": "Trigger system update workflow on push to main",
+      "stats": {
+        "additions": 5,
+        "deletions": 1,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b0bdbb4aad2a837502e5435cadc1d6fca6db7d53",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-24T17:48:03Z",
+      "message": "Add Docker installation steps to system update playbook",
+      "stats": {
+        "additions": 63,
+        "deletions": 0,
+        "total": 63
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "bd3ebd35c27d3d6b99e5e5333a25202657ea7da4",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-24T17:43:42Z",
+      "message": "Remove Netdata uninstallation tasks from system update playbook",
+      "stats": {
+        "additions": 0,
+        "deletions": 78,
+        "total": 78
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9eeb4f6c055b54f3de14738565882474176baff6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-24T17:35:28Z",
+      "message": "Remove Netdata and clean up related files and users",
+      "stats": {
+        "additions": 78,
+        "deletions": 0,
+        "total": 78
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "64b921676c00ed5974b2a3857842e443e24b9d75",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-24T17:25:42Z",
+      "message": "Switch to enable_reboot input and logic in system update workflow",
+      "stats": {
+        "additions": 18,
+        "deletions": 6,
+        "total": 24
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "04ad18620cd46a45fd2c133abce298876a7d8ebb",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-24T17:14:53Z",
+      "message": "Disable privilege escalation and update host timeout settings",
+      "stats": {
+        "additions": 2,
+        "deletions": 5,
+        "total": 7
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c85f8b2040309a6cc8d01200533ac0d54b27719f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-24T16:59:26Z",
+      "message": "Update Ansible config and system update playbook",
+      "stats": {
+        "additions": 9,
+        "deletions": 4,
+        "total": 13
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "af931393cefc4f709b0902dc57fe59b7b22cd85d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-24T16:54:47Z",
+      "message": "Update SSH key secret name in workflow and README",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4fbefdac416ec82015a7024d56309c21f9d42ce3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-24T16:49:23Z",
+      "message": "Use double quotes for all YAML strings in workflow",
+      "stats": {
+        "additions": 10,
+        "deletions": 11,
+        "total": 21
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "aff77d4a3489f0af51ada1943007d727114c8024",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-11-24T16:46:55Z",
+      "message": "Add Ansible automation for Hetzner bare metal fleet",
+      "stats": {
+        "additions": 776,
+        "deletions": 0,
+        "total": 776
+      },
+      "branches": [
+        "main"
+      ]
     }
   ],
-  "commit_count": 41
+  "commit_count": 41,
+  "contributor_stats": {}
 }

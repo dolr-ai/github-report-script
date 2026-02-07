@@ -1,52 +1,7 @@
 {
   "date": "2025-12-05",
-  "cached_at": "2026-02-06T07:02:34.402572Z",
+  "cached_at": "2026-02-06T13:51:34.138234Z",
   "commits": [
-    {
-      "sha": "c077c506c04a965c3efb94c22171c781cc8b3eff",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/clickhouse-cluster-configuration",
-      "timestamp": "2025-12-05T15:11:46Z",
-      "message": "Update CI workflow, add SSH config, and local script",
-      "stats": {
-        "additions": 62,
-        "deletions": 4,
-        "total": 66
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "d14591e9bb8e34c194026076199babb1305d801e",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/clickhouse-cluster-configuration",
-      "timestamp": "2025-12-05T14:54:58Z",
-      "message": "Add deployment workflow and Ansible config",
-      "stats": {
-        "additions": 64,
-        "deletions": 1,
-        "total": 65
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "d8f8275345f4f64f19f0c8ae1713cf15b1580f1f",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2025-12-05T14:52:55Z",
-      "message": "Rename shard replicas in inventory and workflow [skip ci]",
-      "stats": {
-        "additions": 5,
-        "deletions": 15,
-        "total": 20
-      },
-      "branches": [
-        "main"
-      ]
-    },
     {
       "sha": "736915fa9fd92f1e180af3a524440ccbd5f11392",
       "author": "kevin-antony-yral",
@@ -94,7 +49,53 @@
         "changes-td",
         "main"
       ]
+    },
+    {
+      "sha": "c077c506c04a965c3efb94c22171c781cc8b3eff",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/clickhouse-cluster-configuration",
+      "timestamp": "2025-12-05T15:11:46Z",
+      "message": "Update CI workflow, add SSH config, and local script",
+      "stats": {
+        "additions": 62,
+        "deletions": 4,
+        "total": 66
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d14591e9bb8e34c194026076199babb1305d801e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/clickhouse-cluster-configuration",
+      "timestamp": "2025-12-05T14:54:58Z",
+      "message": "Add deployment workflow and Ansible config",
+      "stats": {
+        "additions": 64,
+        "deletions": 1,
+        "total": 65
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d8f8275345f4f64f19f0c8ae1713cf15b1580f1f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2025-12-05T14:52:55Z",
+      "message": "Rename shard replicas in inventory and workflow [skip ci]",
+      "stats": {
+        "additions": 5,
+        "deletions": 15,
+        "total": 20
+      },
+      "branches": [
+        "main"
+      ]
     }
   ],
-  "commit_count": 6
+  "commit_count": 6,
+  "contributor_stats": {}
 }

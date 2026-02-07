@@ -1,68 +1,7 @@
 {
   "date": "2025-12-17",
-  "cached_at": "2026-02-06T07:03:16.450151Z",
+  "cached_at": "2026-02-06T13:59:39.923463Z",
   "commits": [
-    {
-      "sha": "8875f6fae45c1b6c995a02397aeff209c468ae43",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
-      "timestamp": "2025-12-17T13:11:05Z",
-      "message": "Expand env vars, drop CI apply, move rescue script",
-      "stats": {
-        "additions": 11,
-        "deletions": 18,
-        "total": 29
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "0e7bb7fc3eee7903d94a447b64427191c171a8bb",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
-      "timestamp": "2025-12-17T08:39:51Z",
-      "message": "Add initial Cluster API manifests for Hetzner cluster",
-      "stats": {
-        "additions": 821,
-        "deletions": 3,
-        "total": 824
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "2544fce81c5ccf249c43d12cedbc34c24de37aa8",
-      "author": "ravi-sawlani-yral",
-      "repository": "dolr-ai/yral-video-upload-service",
-      "timestamp": "2025-12-17T12:42:19Z",
-      "message": "initial setup for video upload service",
-      "stats": {
-        "additions": 585,
-        "deletions": 0,
-        "total": 585
-      },
-      "branches": [
-        "feat/add-endpoints-for-upload-video-and-update-metadata",
-        "main"
-      ]
-    },
-    {
-      "sha": "0d7fcf8c8c383bb1a448b04474bbc45651c78367",
-      "author": "jay-dhanwant-yral",
-      "repository": "dolr-ai/ai-feed-recommendation-system",
-      "timestamp": "2025-12-17T17:21:21Z",
-      "message": "Merge pull request #1 from dolr-ai/stage",
-      "stats": {
-        "additions": 5,
-        "deletions": 1,
-        "total": 6
-      },
-      "branches": [
-        "main"
-      ]
-    },
     {
       "sha": "1b58392c954bd4ecdc7589bcc804fbddadc812f0",
       "author": "kevin-antony-yral",
@@ -120,6 +59,8 @@
         "img_in_chat",
         "inbox_apis",
         "indempotency_msg_fix",
+        "infl_ep_updates",
+        "infl_util_apis",
         "infra_rl",
         "jatin_og_prompt",
         "jay_review",
@@ -176,6 +117,7 @@
         "sentry_fix",
         "sentry_webhook",
         "sentry",
+        "show_sp_on_influencers",
         "slow_msg",
         "small_num_bug",
         "sqlite_optimisations",
@@ -183,6 +125,7 @@
         "storj_integration",
         "sys_prompt_prod",
         "temp_fix_db_lock",
+        "temp_rm_beszel",
         "test_fix_url_n_storj_k",
         "test_robust_gc",
         "thread_to_async",
@@ -191,7 +134,69 @@
         "v2-auth",
         "wal_ckpt_bug_fix"
       ]
+    },
+    {
+      "sha": "0d7fcf8c8c383bb1a448b04474bbc45651c78367",
+      "author": "jay-dhanwant-yral",
+      "repository": "dolr-ai/ai-feed-recommendation-system",
+      "timestamp": "2025-12-17T17:21:21Z",
+      "message": "Merge pull request #1 from dolr-ai/stage",
+      "stats": {
+        "additions": 5,
+        "deletions": 1,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "2544fce81c5ccf249c43d12cedbc34c24de37aa8",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2025-12-17T12:42:19Z",
+      "message": "initial setup for video upload service",
+      "stats": {
+        "additions": 585,
+        "deletions": 0,
+        "total": 585
+      },
+      "branches": [
+        "feat/add-endpoints-for-upload-video-and-update-metadata",
+        "main"
+      ]
+    },
+    {
+      "sha": "8875f6fae45c1b6c995a02397aeff209c468ae43",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-17T13:11:05Z",
+      "message": "Expand env vars, drop CI apply, move rescue script",
+      "stats": {
+        "additions": 11,
+        "deletions": 18,
+        "total": 29
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "0e7bb7fc3eee7903d94a447b64427191c171a8bb",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2025-12-17T08:39:51Z",
+      "message": "Add initial Cluster API manifests for Hetzner cluster",
+      "stats": {
+        "additions": 821,
+        "deletions": 3,
+        "total": 824
+      },
+      "branches": [
+        "main"
+      ]
     }
   ],
-  "commit_count": 6
+  "commit_count": 6,
+  "contributor_stats": {}
 }

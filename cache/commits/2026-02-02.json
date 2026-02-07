@@ -1,6 +1,6 @@
 {
   "date": "2026-02-02",
-  "cached_at": "2026-02-06T08:14:51.492603Z",
+  "cached_at": "2026-02-06T21:54:58.779500Z",
   "commits": [
     {
       "sha": "a1569e47c699a795c1133d73d79d31a2fb9eb2dd",
@@ -14,8 +14,10 @@
         "total": 14
       },
       "branches": [
+        "joel/add_wan_i2v_support",
         "joel/ai-video-detector",
         "joel/fix-btc-dolr-notif",
+        "joel/hot-fix-notification-panic",
         "joel/ltx-intergration",
         "main"
       ]
@@ -212,8 +214,10 @@
         "total": 33
       },
       "branches": [
+        "joel/add_wan_i2v_support",
         "joel/ai-video-detector",
         "joel/fix-btc-dolr-notif",
+        "joel/hot-fix-notification-panic",
         "joel/ltx-intergration",
         "main",
         "naitik/broken_pipe_issue_fix"
@@ -231,8 +235,10 @@
         "total": 137
       },
       "branches": [
+        "joel/add_wan_i2v_support",
         "joel/ai-video-detector",
         "joel/fix-btc-dolr-notif",
+        "joel/hot-fix-notification-panic",
         "joel/ltx-intergration",
         "main",
         "naitik/broken_pipe_issue_fix"
@@ -250,9 +256,11 @@
         "total": 41
       },
       "branches": [
+        "joel/add_wan_i2v_support",
         "joel/ai-video-detector",
         "joel/apps-script-reports-api",
         "joel/fix-btc-dolr-notif",
+        "joel/hot-fix-notification-panic",
         "joel/ltx-intergration",
         "main",
         "naitik/broken_pipe_issue_fix"
@@ -270,10 +278,12 @@
         "total": 645
       },
       "branches": [
+        "joel/add_wan_i2v_support",
         "joel/ai-video-detector",
         "joel/apps-script-reports-api",
         "joel/fix-btc-dolr-notif",
         "joel/fix-gchat-report-buttons",
+        "joel/hot-fix-notification-panic",
         "joel/ltx-intergration",
         "main",
         "naitik/broken_pipe_issue_fix"
@@ -402,6 +412,99 @@
       ]
     },
     {
+      "sha": "9db93432d48994f5a432a6a586cfe9bb3a9e608f",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-02-02T07:40:11Z",
+      "message": "remove sentry dsn as env variable",
+      "stats": {
+        "additions": 0,
+        "deletions": 1,
+        "total": 1
+      },
+      "branches": [
+        "feat/add-sentry-setup"
+      ]
+    },
+    {
+      "sha": "208957563eb66f86ebca32cf2639eb0a2ba7bebc",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-02-02T07:42:56Z",
+      "message": "feat: add sentry setup",
+      "stats": {
+        "additions": 483,
+        "deletions": 4,
+        "total": 487
+      },
+      "branches": [
+        "fix/remove-aud-check-from-jwt-validation",
+        "main"
+      ]
+    },
+    {
+      "sha": "663f50ac46805b2ac5406c905acf15214bfb6ebc",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-02-02T12:49:27Z",
+      "message": "feat: update user_info_service candid (#156)",
+      "stats": {
+        "additions": 5,
+        "deletions": 0,
+        "total": 5
+      },
+      "branches": [
+        "feat/ltx2-model",
+        "feat/wan25-image-support",
+        "master"
+      ]
+    },
+    {
+      "sha": "bef935a3d23505efca266daeea55afccae264a13",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-02-02T12:46:41Z",
+      "message": "update user_info_service candid",
+      "stats": {
+        "additions": 5,
+        "deletions": 0,
+        "total": 5
+      },
+      "branches": [
+        "feat/update-user-info-deps"
+      ]
+    },
+    {
+      "sha": "c3e6a47d4eaf4485047b710fb7e1948c31f53608",
+      "author": "gravityvi",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2026-02-02T12:10:37Z",
+      "message": "add query method to fetch bulk user principals",
+      "stats": {
+        "additions": 410,
+        "deletions": 20,
+        "total": 430
+      },
+      "branches": [
+        "feat/add-bulk-methods-for-profile-details"
+      ]
+    },
+    {
+      "sha": "38f33493fd99dc20f68f7112e92c558523f62934",
+      "author": "gravityvi",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2026-02-02T12:42:53Z",
+      "message": "feat: add query method to fetch bulk user principals (#641)",
+      "stats": {
+        "additions": 410,
+        "deletions": 20,
+        "total": 430
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
       "sha": "f6f1ff506c12e0478edc522c63edeff2f68c1aaa",
       "author": "sarvesh-sharma-yral",
       "repository": "dolr-ai/yral-mobile",
@@ -418,7 +521,6 @@
         "enhancement/chat-error-ui",
         "feature/ai-influencer",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
         "test/force-update"
@@ -441,7 +543,6 @@
         "enhancement/chat-error-ui",
         "feature/ai-influencer",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
@@ -465,7 +566,6 @@
         "enhancement/chat-error-ui",
         "feature/ai-influencer",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
@@ -489,7 +589,6 @@
         "enhancement/chat-error-ui",
         "feature/ai-influencer",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
@@ -513,7 +612,6 @@
         "enhancement/chat-error-ui",
         "feature/ai-influencer",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
@@ -537,7 +635,6 @@
         "enhancement/chat-error-ui",
         "feature/ai-influencer",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
@@ -561,7 +658,6 @@
         "enhancement/chat-error-ui",
         "feature/ai-influencer",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
@@ -585,7 +681,6 @@
         "enhancement/chat-error-ui",
         "feature/ai-influencer",
         "fix/ios-load-time",
-        "fix-video-reporting",
         "main",
         "release/android-2.6.5",
         "saikatdas0790-patch-1",
@@ -816,99 +911,8 @@
       "branches": [
         "main"
       ]
-    },
-    {
-      "sha": "9db93432d48994f5a432a6a586cfe9bb3a9e608f",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-billing",
-      "timestamp": "2026-02-02T07:40:11Z",
-      "message": "remove sentry dsn as env variable",
-      "stats": {
-        "additions": 0,
-        "deletions": 1,
-        "total": 1
-      },
-      "branches": [
-        "feat/add-sentry-setup"
-      ]
-    },
-    {
-      "sha": "208957563eb66f86ebca32cf2639eb0a2ba7bebc",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-billing",
-      "timestamp": "2026-02-02T07:42:56Z",
-      "message": "feat: add sentry setup",
-      "stats": {
-        "additions": 483,
-        "deletions": 4,
-        "total": 487
-      },
-      "branches": [
-        "fix/remove-aud-check-from-jwt-validation",
-        "main"
-      ]
-    },
-    {
-      "sha": "663f50ac46805b2ac5406c905acf15214bfb6ebc",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-common",
-      "timestamp": "2026-02-02T12:49:27Z",
-      "message": "feat: update user_info_service candid (#156)",
-      "stats": {
-        "additions": 5,
-        "deletions": 0,
-        "total": 5
-      },
-      "branches": [
-        "feat/ltx2-model",
-        "master"
-      ]
-    },
-    {
-      "sha": "bef935a3d23505efca266daeea55afccae264a13",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-common",
-      "timestamp": "2026-02-02T12:46:41Z",
-      "message": "update user_info_service candid",
-      "stats": {
-        "additions": 5,
-        "deletions": 0,
-        "total": 5
-      },
-      "branches": [
-        "feat/update-user-info-deps"
-      ]
-    },
-    {
-      "sha": "c3e6a47d4eaf4485047b710fb7e1948c31f53608",
-      "author": "gravityvi",
-      "repository": "dolr-ai/hot-or-not-backend-canister",
-      "timestamp": "2026-02-02T12:10:37Z",
-      "message": "add query method to fetch bulk user principals",
-      "stats": {
-        "additions": 410,
-        "deletions": 20,
-        "total": 430
-      },
-      "branches": [
-        "feat/add-bulk-methods-for-profile-details"
-      ]
-    },
-    {
-      "sha": "38f33493fd99dc20f68f7112e92c558523f62934",
-      "author": "gravityvi",
-      "repository": "dolr-ai/hot-or-not-backend-canister",
-      "timestamp": "2026-02-02T12:42:53Z",
-      "message": "feat: add query method to fetch bulk user principals (#641)",
-      "stats": {
-        "additions": 410,
-        "deletions": 20,
-        "total": 430
-      },
-      "branches": [
-        "main"
-      ]
     }
   ],
-  "commit_count": 54
+  "commit_count": 54,
+  "contributor_stats": {}
 }
