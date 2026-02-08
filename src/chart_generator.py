@@ -61,6 +61,44 @@ class ChartGenerator:
 
         return dates, usernames, additions_data, deletions_data, total_loc_data, commits_data
 
+    def _prepare_github_stats_data(self, github_stats: Dict[str, Dict[str, Dict]]) -> tuple:
+        """Prepare GitHub contributor stats data for charting
+
+        Args:
+            github_stats: Dictionary mapping usernames to week-indexed metrics
+
+        Returns:
+            Tuple of (weeks, usernames, additions_data, deletions_data,
+                     total_loc_data, commits_data)
+        """
+        if not github_stats:
+            return [], [], {}, {}, {}, {}
+
+        # Get sorted list of weeks across all users
+        all_weeks = set()
+        for user_data in github_stats.values():
+            all_weeks.update(user_data.keys())
+        weeks = sorted(all_weeks)
+
+        usernames = sorted(github_stats.keys())
+
+        # Prepare data arrays
+        additions_data = {user: [] for user in usernames}
+        deletions_data = {user: [] for user in usernames}
+        total_loc_data = {user: [] for user in usernames}
+        commits_data = {user: [] for user in usernames}
+
+        for username in usernames:
+            user_data = github_stats.get(username, {})
+            for week in weeks:
+                week_data = user_data.get(week, {})
+                additions_data[username].append(week_data.get('additions', 0))
+                deletions_data[username].append(week_data.get('deletions', 0))
+                total_loc_data[username].append(week_data.get('total_loc', 0))
+                commits_data[username].append(week_data.get('commits', 0))
+
+        return weeks, usernames, additions_data, deletions_data, total_loc_data, commits_data
+
     def _detect_all_branches(self, all_data: Dict[str, Dict[str, Dict]]) -> List[str]:
         """Detect all unique branch names from user data
 
@@ -204,13 +242,15 @@ class ChartGenerator:
         return os.path.join(generation_date, base_name)
 
     def generate_plotly_chart(self, all_data: Dict[str, Dict[str, Dict]],
-                              start_date: str, end_date: str) -> str:
+                              start_date: str, end_date: str,
+                              github_stats: Dict[str, Dict[str, Dict]] = None) -> str:
         """Generate interactive Plotly HTML chart
 
         Args:
             all_data: Dictionary mapping usernames to date-indexed metrics
             start_date: Start date string
             end_date: End date string
+            github_stats: Optional dictionary mapping usernames to week-indexed GitHub stats
 
         Returns:
             Path to generated HTML file
@@ -334,6 +374,12 @@ class ChartGenerator:
         # Generate drill-down table HTML
         table_html = self._create_drill_down_table(all_data)
 
+        # Generate GitHub stats charts if data is available
+        github_stats_fig = None
+        if github_stats:
+            github_stats_fig = self._generate_github_stats_charts(
+                github_stats, start_date, end_date)
+
         # Combine both figures into a single HTML file
         with open(filepath, 'w') as f:
             f.write('<html><head><meta charset="utf-8" />')
@@ -341,15 +387,26 @@ class ChartGenerator:
             f.write(
                 '</head><body style="margin: 0; padding: 0; font-family: Arial, sans-serif;">')
 
-            # Main chart
-            f.write('<div style="width: 100%;">')
+            # Section 1: Branch-Based Calculations
+            f.write('<div style="width: 100%; margin-bottom: 40px;">')
+            f.write('<h2 style="margin: 20px; padding: 20px 0 10px 0; color: #333; border-bottom: 2px solid #4a90e2;">Branch-Based Calculations</h2>')
             f.write(fig.to_html(include_plotlyjs='cdn',
                     full_html=False, div_id='main-chart'))
             f.write('</div>')
 
+            # Section 2: GitHub Official Stats (if available)
+            if github_stats_fig:
+                f.write(
+                    '<div style="width: 100%; margin-bottom: 40px; margin-top: 60px;">')
+                f.write(
+                    '<h2 style="margin: 20px; padding: 20px 0 10px 0; color: #333; border-bottom: 2px solid #4a90e2;">GitHub Official Stats</h2>')
+                f.write(github_stats_fig.to_html(include_plotlyjs=False,
+                        full_html=False, div_id='github-stats-chart'))
+                f.write('</div>')
+
             # Drill-down table section with header
             f.write(
-                '<div style="margin: 20px; padding: 20px; background-color: #f5f5f5; border-radius: 8px;">')
+                '<div style="margin: 60px 20px 20px 20px; padding: 20px; background-color: #f5f5f5; border-radius: 8px;">')
             f.write(
                 '<h2 style="margin-top: 0; color: #333;">Detailed Breakdown by Repository and Branch</h2>')
             f.write('<p style="color: #666; margin-bottom: 20px;">Click on contributors to expand and see their repositories. Click on repositories to see branches. Click column headers to sort.</p>')
@@ -359,6 +416,129 @@ class ChartGenerator:
             f.write('</body></html>')
 
         return filepath
+
+    def _generate_github_stats_charts(self, github_stats: Dict[str, Dict[str, Dict]],
+                                      start_date: str, end_date: str) -> go.Figure:
+        """Generate GitHub contributor stats charts (4 charts in 2x2 layout)
+
+        Args:
+            github_stats: Dictionary mapping usernames to week-indexed metrics
+            start_date: Start date string
+            end_date: End date string
+
+        Returns:
+            Plotly figure with 4 subplots showing GitHub's official stats
+        """
+        logger.info(
+            f"Generating GitHub stats charts for {len(github_stats)} users")
+
+        # Prepare GitHub stats data
+        weeks, usernames, additions_data, deletions_data, total_loc_data, commits_data = \
+            self._prepare_github_stats_data(github_stats)
+
+        if not weeks or not usernames:
+            logger.warning("No GitHub stats data available for charting")
+            return None
+
+        # Create 2x2 subplot layout
+        fig = make_subplots(
+            rows=2, cols=2,
+            subplot_titles=(
+                'GitHub Stats: Weekly Additions (Lines Added)',
+                'GitHub Stats: Weekly Deletions (Lines Removed)',
+                'GitHub Stats: Weekly Total LOC Changed',
+                'GitHub Stats: Weekly Commit Count'
+            ),
+            vertical_spacing=0.12,
+            horizontal_spacing=0.1
+        )
+
+        # Add bar traces for each user
+        for idx, username in enumerate(usernames):
+            color = self.colors[idx % len(self.colors)]
+
+            # Additions
+            fig.add_trace(
+                go.Bar(
+                    name=username,
+                    x=weeks,
+                    y=additions_data[username],
+                    marker=dict(color=color),
+                    legendgroup=username,
+                    showlegend=True,
+                    hovertemplate='%{x}<br>Additions: %{y}<extra></extra>'
+                ),
+                row=1, col=1
+            )
+
+            # Deletions
+            fig.add_trace(
+                go.Bar(
+                    name=username,
+                    x=weeks,
+                    y=deletions_data[username],
+                    marker=dict(color=color),
+                    legendgroup=username,
+                    showlegend=False,
+                    hovertemplate='%{x}<br>Deletions: %{y}<extra></extra>'
+                ),
+                row=1, col=2
+            )
+
+            # Total LOC
+            fig.add_trace(
+                go.Bar(
+                    name=username,
+                    x=weeks,
+                    y=total_loc_data[username],
+                    marker=dict(color=color),
+                    legendgroup=username,
+                    showlegend=False,
+                    hovertemplate='%{x}<br>Total LOC: %{y}<extra></extra>'
+                ),
+                row=2, col=1
+            )
+
+            # Commits
+            fig.add_trace(
+                go.Bar(
+                    name=username,
+                    x=weeks,
+                    y=commits_data[username],
+                    marker=dict(color=color),
+                    legendgroup=username,
+                    showlegend=False,
+                    hovertemplate='%{x}<br>Commits: %{y}<extra></extra>'
+                ),
+                row=2, col=2
+            )
+
+        # Update layout
+        fig.update_layout(
+            title_text=f"GitHub Official Stats ({start_date} to {end_date})",
+            title_font_size=20,
+            showlegend=True,
+            height=900,
+            legend=dict(
+                orientation="h",
+                yanchor="bottom",
+                y=1.02,
+                xanchor="right",
+                x=1
+            ),
+            hovermode='x unified',
+            barmode='group'
+        )
+
+        # Update axes
+        fig.update_xaxes(title_text="Week", row=2, col=1)
+        fig.update_xaxes(title_text="Week", row=2, col=2)
+        fig.update_yaxes(title_text="Lines", row=1, col=1)
+        fig.update_yaxes(title_text="Lines", row=1, col=2)
+        fig.update_yaxes(title_text="Lines", row=2, col=1)
+        fig.update_yaxes(title_text="Commits", row=2, col=2)
+
+        return fig
 
     def _create_drill_down_table(self, all_data: Dict[str, Dict[str, Dict]]) -> str:
         """Create interactive drill-down table HTML showing repository and branch details
@@ -860,11 +1040,31 @@ class ChartGenerator:
         Returns:
             Dictionary with path to generated HTML file
         """
+        from src.data_processor import DataProcessor
+        from datetime import datetime
+
         logger.info("Starting chart generation")
 
-        # Generate Plotly HTML
+        # Load GitHub stats if available
+        github_stats = None
+        try:
+            processor = DataProcessor()
+            start_dt = datetime.strptime(start_date, '%Y-%m-%d')
+            end_dt = datetime.strptime(end_date, '%Y-%m-%d')
+            github_stats = processor.read_github_stats_data(start_dt, end_dt)
+
+            if github_stats:
+                logger.info(
+                    f"Loaded GitHub stats for {len(github_stats)} users")
+            else:
+                logger.info("No GitHub stats data available")
+        except Exception as e:
+            logger.warning(f"Could not load GitHub stats: {e}")
+
+        # Generate Plotly HTML with both branch-based and GitHub stats
         logger.info("Creating interactive HTML chart...")
-        html_path = self.generate_plotly_chart(all_data, start_date, end_date)
+        html_path = self.generate_plotly_chart(
+            all_data, start_date, end_date, github_stats)
 
         # Cleanup old reports (keep last 90 days)
         self.cleanup_old_reports(days_to_keep=90)
