@@ -244,7 +244,7 @@ class ChartGenerator:
     def generate_plotly_chart(self, all_data: Dict[str, Dict[str, Dict]],
                               start_date: str, end_date: str,
                               github_stats: Dict[str, Dict[str, Dict]] = None) -> str:
-        """Generate interactive Plotly HTML chart
+        """Generate interactive Plotly HTML chart with side-by-side comparison
 
         Args:
             all_data: Dictionary mapping usernames to date-indexed metrics
@@ -258,28 +258,43 @@ class ChartGenerator:
         logger.info(
             f"Generating Plotly chart for {len(all_data)} users")
 
-        # Prepare data (show all branches)
+        # Prepare branch-based data
         dates, usernames, additions_data, deletions_data, total_loc_data, commits_data = \
             self._prepare_data(all_data)
 
-        # Create 2x2 subplot layout
+        # Prepare GitHub stats data if available
+        has_github_stats = github_stats and len(github_stats) > 0
+        if has_github_stats:
+            weeks, gh_usernames, gh_additions_data, gh_deletions_data, gh_total_loc_data, gh_commits_data = \
+                self._prepare_github_stats_data(github_stats)
+
+        # Create side-by-side comparison layout: 4 rows x 2 columns
+        # Left column: Branch-Based, Right column: GitHub Stats
         fig = make_subplots(
-            rows=2, cols=2,
+            rows=4, cols=2,
             subplot_titles=(
-                'Daily Additions (Lines Added)',
-                'Daily Deletions (Lines Removed)',
-                'Daily Total LOC Changed',
-                'Daily Commit Count'
+                'Branch-Based: Daily Additions',
+                'GitHub Stats: Weekly Additions',
+                'Branch-Based: Daily Deletions',
+                'GitHub Stats: Weekly Deletions',
+                'Branch-Based: Daily Total LOC',
+                'GitHub Stats: Weekly Total LOC',
+                'Branch-Based: Daily Commits',
+                'GitHub Stats: Weekly Commits'
             ),
-            vertical_spacing=0.12,
-            horizontal_spacing=0.1
+            vertical_spacing=0.08,
+            horizontal_spacing=0.1,
+            specs=[[{"type": "xy"}, {"type": "xy"}],
+                   [{"type": "xy"}, {"type": "xy"}],
+                   [{"type": "xy"}, {"type": "xy"}],
+                   [{"type": "xy"}, {"type": "xy"}]]
         )
 
-        # Add traces for each user
+        # Add branch-based traces (left column)
         for idx, username in enumerate(usernames):
             color = self.colors[idx % len(self.colors)]
 
-            # Additions
+            # Additions (row 1, col 1)
             fig.add_trace(
                 go.Scatter(
                     name=username,
@@ -295,7 +310,7 @@ class ChartGenerator:
                 row=1, col=1
             )
 
-            # Deletions
+            # Deletions (row 2, col 1)
             fig.add_trace(
                 go.Scatter(
                     name=username,
@@ -308,10 +323,10 @@ class ChartGenerator:
                     showlegend=False,
                     hovertemplate='%{x}<br>Deletions: %{y}<extra></extra>'
                 ),
-                row=1, col=2
+                row=2, col=1
             )
 
-            # Total LOC
+            # Total LOC (row 3, col 1)
             fig.add_trace(
                 go.Scatter(
                     name=username,
@@ -324,10 +339,10 @@ class ChartGenerator:
                     showlegend=False,
                     hovertemplate='%{x}<br>Total LOC: %{y}<extra></extra>'
                 ),
-                row=2, col=1
+                row=3, col=1
             )
 
-            # Commits
+            # Commits (row 4, col 1)
             fig.add_trace(
                 go.Scatter(
                     name=username,
@@ -340,15 +355,93 @@ class ChartGenerator:
                     showlegend=False,
                     hovertemplate='%{x}<br>Commits: %{y}<extra></extra>'
                 ),
-                row=2, col=2
+                row=4, col=1
             )
 
-        # Update layout without dropdown menu
+        # Add GitHub stats traces (right column) if available
+        if has_github_stats:
+            for idx, username in enumerate(gh_usernames):
+                color = self.colors[idx % len(self.colors)]
+
+                # Additions (row 1, col 2)
+                fig.add_trace(
+                    go.Scatter(
+                        name=f"{username} (GH)",
+                        x=weeks,
+                        y=gh_additions_data[username],
+                        mode='lines+markers',
+                        line=dict(color=color, width=2, dash='dot'),
+                        marker=dict(size=8, symbol='diamond'),
+                        legendgroup=username,
+                        showlegend=False,
+                        hovertemplate='%{x}<br>Additions: %{y}<extra></extra>'
+                    ),
+                    row=1, col=2
+                )
+
+                # Deletions (row 2, col 2)
+                fig.add_trace(
+                    go.Scatter(
+                        name=f"{username} (GH)",
+                        x=weeks,
+                        y=gh_deletions_data[username],
+                        mode='lines+markers',
+                        line=dict(color=color, width=2, dash='dot'),
+                        marker=dict(size=8, symbol='diamond'),
+                        legendgroup=username,
+                        showlegend=False,
+                        hovertemplate='%{x}<br>Deletions: %{y}<extra></extra>'
+                    ),
+                    row=2, col=2
+                )
+
+                # Total LOC (row 3, col 2)
+                fig.add_trace(
+                    go.Scatter(
+                        name=f"{username} (GH)",
+                        x=weeks,
+                        y=gh_total_loc_data[username],
+                        mode='lines+markers',
+                        line=dict(color=color, width=2, dash='dot'),
+                        marker=dict(size=8, symbol='diamond'),
+                        legendgroup=username,
+                        showlegend=False,
+                        hovertemplate='%{x}<br>Total LOC: %{y}<extra></extra>'
+                    ),
+                    row=3, col=2
+                )
+
+                # Commits (row 4, col 2)
+                fig.add_trace(
+                    go.Scatter(
+                        name=f"{username} (GH)",
+                        x=weeks,
+                        y=gh_commits_data[username],
+                        mode='lines+markers',
+                        line=dict(color=color, width=2, dash='dot'),
+                        marker=dict(size=8, symbol='diamond'),
+                        legendgroup=username,
+                        showlegend=False,
+                        hovertemplate='%{x}<br>Commits: %{y}<extra></extra>'
+                    ),
+                    row=4, col=2
+                )
+
+        # Update layout for side-by-side comparison
         fig.update_layout(
-            title_text=f"GitHub Activity Report ({start_date} to {end_date})",
-            title_font_size=20,
+            title=dict(
+                text=f"GitHub Activity Report: Side-by-Side Comparison ({start_date} to {end_date})",
+                font=dict(size=20),
+                x=0.5,
+                xanchor='center',
+                y=0.99,
+                yanchor='top',
+                pad=dict(t=0, b=0, l=0, r=0)
+            ),
             showlegend=True,
-            height=900,
+            height=1800,  # Increased height for 4 rows + top margin
+            # Even larger top margin to push charts down
+            margin=dict(t=200, b=50, l=80, r=80),
             legend=dict(
                 orientation="h",
                 yanchor="bottom",
@@ -356,16 +449,33 @@ class ChartGenerator:
                 xanchor="right",
                 x=1
             ),
-            hovermode='x unified'
+            hovermode='closest'
         )
 
-        # Update axes
-        fig.update_xaxes(title_text="Date", row=2, col=1)
-        fig.update_xaxes(title_text="Date", row=2, col=2)
+        # Update axes for all 4 rows
+        # Row 1: Additions
+        fig.update_xaxes(title_text="Date", row=1, col=1)
+        fig.update_xaxes(title_text="Week", row=1, col=2)
         fig.update_yaxes(title_text="Lines", row=1, col=1)
         fig.update_yaxes(title_text="Lines", row=1, col=2)
+
+        # Row 2: Deletions
+        fig.update_xaxes(title_text="Date", row=2, col=1)
+        fig.update_xaxes(title_text="Week", row=2, col=2)
         fig.update_yaxes(title_text="Lines", row=2, col=1)
-        fig.update_yaxes(title_text="Commits", row=2, col=2)
+        fig.update_yaxes(title_text="Lines", row=2, col=2)
+
+        # Row 3: Total LOC
+        fig.update_xaxes(title_text="Date", row=3, col=1)
+        fig.update_xaxes(title_text="Week", row=3, col=2)
+        fig.update_yaxes(title_text="Lines", row=3, col=1)
+        fig.update_yaxes(title_text="Lines", row=3, col=2)
+
+        # Row 4: Commits
+        fig.update_xaxes(title_text="Date", row=4, col=1)
+        fig.update_xaxes(title_text="Week", row=4, col=2)
+        fig.update_yaxes(title_text="Commits", row=4, col=1)
+        fig.update_yaxes(title_text="Commits", row=4, col=2)
 
         # Save main chart to file
         filename = self._get_filename_base(start_date, end_date) + '.html'
@@ -374,41 +484,24 @@ class ChartGenerator:
         # Generate drill-down table HTML
         table_html = self._create_drill_down_table(all_data)
 
-        # Generate GitHub stats charts if data is available
-        github_stats_fig = None
-        if github_stats:
-            github_stats_fig = self._generate_github_stats_charts(
-                github_stats, start_date, end_date)
-
-        # Combine both figures into a single HTML file
+        # Generate single combined HTML file
         with open(filepath, 'w') as f:
             f.write('<html><head><meta charset="utf-8" />')
-            f.write('<title>GitHub Activity Report</title>')
+            f.write('<title>GitHub Activity Report - Side by Side Comparison</title>')
             f.write(
-                '</head><body style="margin: 0; padding: 0; font-family: Arial, sans-serif;">')
+                '</head><body style="margin: 0; padding: 20px; font-family: Arial, sans-serif;">')
 
-            # Section 1: Branch-Based Calculations
-            f.write('<div style="width: 100%; margin-bottom: 40px;">')
-            f.write('<h2 style="margin: 20px; padding: 20px 0 10px 0; color: #333; border-bottom: 2px solid #4a90e2;">Branch-Based Calculations</h2>')
+            # Main chart with side-by-side comparison
+            f.write('<div style="width: 100%; margin-bottom: 60px;">')
             f.write(fig.to_html(include_plotlyjs='cdn',
-                    full_html=False, div_id='main-chart'))
+                    full_html=False, div_id='comparison-chart'))
             f.write('</div>')
 
-            # Section 2: GitHub Official Stats (if available)
-            if github_stats_fig:
-                f.write(
-                    '<div style="width: 100%; margin-bottom: 40px; margin-top: 60px;">')
-                f.write(
-                    '<h2 style="margin: 20px; padding: 20px 0 10px 0; color: #333; border-bottom: 2px solid #4a90e2;">GitHub Official Stats</h2>')
-                f.write(github_stats_fig.to_html(include_plotlyjs=False,
-                        full_html=False, div_id='github-stats-chart'))
-                f.write('</div>')
-
-            # Drill-down table section with header
+            # Drill-down table section with header and proper margin
             f.write(
-                '<div style="margin: 60px 20px 20px 20px; padding: 20px; background-color: #f5f5f5; border-radius: 8px;">')
+                '<div style="margin: 80px 20px 20px 20px; padding: 20px; background-color: #f5f5f5; border-radius: 8px;">')
             f.write(
-                '<h2 style="margin-top: 0; color: #333;">Detailed Breakdown by Repository and Branch</h2>')
+                '<h2 style="margin-top: 0; margin-bottom: 20px; color: #333;">Detailed Breakdown by Repository and Branch</h2>')
             f.write('<p style="color: #666; margin-bottom: 20px;">Click on contributors to expand and see their repositories. Click on repositories to see branches. Click column headers to sort.</p>')
             f.write(table_html)
             f.write('</div>')
@@ -416,129 +509,6 @@ class ChartGenerator:
             f.write('</body></html>')
 
         return filepath
-
-    def _generate_github_stats_charts(self, github_stats: Dict[str, Dict[str, Dict]],
-                                      start_date: str, end_date: str) -> go.Figure:
-        """Generate GitHub contributor stats charts (4 charts in 2x2 layout)
-
-        Args:
-            github_stats: Dictionary mapping usernames to week-indexed metrics
-            start_date: Start date string
-            end_date: End date string
-
-        Returns:
-            Plotly figure with 4 subplots showing GitHub's official stats
-        """
-        logger.info(
-            f"Generating GitHub stats charts for {len(github_stats)} users")
-
-        # Prepare GitHub stats data
-        weeks, usernames, additions_data, deletions_data, total_loc_data, commits_data = \
-            self._prepare_github_stats_data(github_stats)
-
-        if not weeks or not usernames:
-            logger.warning("No GitHub stats data available for charting")
-            return None
-
-        # Create 2x2 subplot layout
-        fig = make_subplots(
-            rows=2, cols=2,
-            subplot_titles=(
-                'GitHub Stats: Weekly Additions (Lines Added)',
-                'GitHub Stats: Weekly Deletions (Lines Removed)',
-                'GitHub Stats: Weekly Total LOC Changed',
-                'GitHub Stats: Weekly Commit Count'
-            ),
-            vertical_spacing=0.12,
-            horizontal_spacing=0.1
-        )
-
-        # Add bar traces for each user
-        for idx, username in enumerate(usernames):
-            color = self.colors[idx % len(self.colors)]
-
-            # Additions
-            fig.add_trace(
-                go.Bar(
-                    name=username,
-                    x=weeks,
-                    y=additions_data[username],
-                    marker=dict(color=color),
-                    legendgroup=username,
-                    showlegend=True,
-                    hovertemplate='%{x}<br>Additions: %{y}<extra></extra>'
-                ),
-                row=1, col=1
-            )
-
-            # Deletions
-            fig.add_trace(
-                go.Bar(
-                    name=username,
-                    x=weeks,
-                    y=deletions_data[username],
-                    marker=dict(color=color),
-                    legendgroup=username,
-                    showlegend=False,
-                    hovertemplate='%{x}<br>Deletions: %{y}<extra></extra>'
-                ),
-                row=1, col=2
-            )
-
-            # Total LOC
-            fig.add_trace(
-                go.Bar(
-                    name=username,
-                    x=weeks,
-                    y=total_loc_data[username],
-                    marker=dict(color=color),
-                    legendgroup=username,
-                    showlegend=False,
-                    hovertemplate='%{x}<br>Total LOC: %{y}<extra></extra>'
-                ),
-                row=2, col=1
-            )
-
-            # Commits
-            fig.add_trace(
-                go.Bar(
-                    name=username,
-                    x=weeks,
-                    y=commits_data[username],
-                    marker=dict(color=color),
-                    legendgroup=username,
-                    showlegend=False,
-                    hovertemplate='%{x}<br>Commits: %{y}<extra></extra>'
-                ),
-                row=2, col=2
-            )
-
-        # Update layout
-        fig.update_layout(
-            title_text=f"GitHub Official Stats ({start_date} to {end_date})",
-            title_font_size=20,
-            showlegend=True,
-            height=900,
-            legend=dict(
-                orientation="h",
-                yanchor="bottom",
-                y=1.02,
-                xanchor="right",
-                x=1
-            ),
-            hovermode='x unified',
-            barmode='group'
-        )
-
-        # Update axes
-        fig.update_xaxes(title_text="Week", row=2, col=1)
-        fig.update_xaxes(title_text="Week", row=2, col=2)
-        fig.update_yaxes(title_text="Lines", row=1, col=1)
-        fig.update_yaxes(title_text="Lines", row=1, col=2)
-        fig.update_yaxes(title_text="Lines", row=2, col=1)
-        fig.update_yaxes(title_text="Commits", row=2, col=2)
-
-        return fig
 
     def _create_drill_down_table(self, all_data: Dict[str, Dict[str, Dict]]) -> str:
         """Create interactive drill-down table HTML showing repository and branch details
