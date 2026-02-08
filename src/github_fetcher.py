@@ -195,6 +195,13 @@ class GitHubFetcher:
 
                 response = requests.get(
                     url, params=params, headers=headers, timeout=30)
+
+                # Handle 202 Accepted (stats being computed) - return None to signal retry needed
+                if response.status_code == 202:
+                    logger.debug(
+                        f"API returned 202 Accepted for {endpoint} (stats being computed)")
+                    return None
+
                 response.raise_for_status()
                 result = response.json()
                 logger.debug(
@@ -316,22 +323,22 @@ class GitHubFetcher:
             return False
 
     @retry_with_exponential_backoff(max_retries=5, base_delay=60)
-    def _fetch_contributor_stats(self, repo_full_name: str, username: str, 
+    def _fetch_contributor_stats(self, repo_full_name: str, username: str,
                                  start_date: datetime, end_date: datetime) -> Dict:
         """Fetch contributor statistics from GitHub's stats API
-        
+
         This API provides the authoritative commit counts and LOC that match
         what GitHub shows in the contributors graph. It aggregates by week.
-        
+
         NOTE: This API can return 202 Accepted when stats need to be computed.
         We handle this by retrying with exponential backoff.
-        
+
         Args:
             repo_full_name: Full repository name (e.g., 'dolr-ai/yral-mobile')
             username: GitHub username
             start_date: Start date for filtering
             end_date: End date for filtering
-            
+
         Returns:
             Dictionary with stats by date: {
                 'date': {'commits': X, 'additions': Y, 'deletions': Z}
@@ -339,11 +346,11 @@ class GitHubFetcher:
         """
         try:
             endpoint = f"/repos/{repo_full_name}/stats/contributors"
-            
+
             # Try up to 3 times if we get 202 (stats being computed)
             for attempt in range(3):
                 data = self._api_request(endpoint)
-                
+
                 # _api_request returns None or empty list for 202
                 if data is None or (isinstance(data, list) and len(data) == 0):
                     if attempt < 2:
@@ -357,14 +364,15 @@ class GitHubFetcher:
                             f"Stats API still computing for {repo_full_name} after 3 attempts, skipping"
                         )
                         return {}
-                
+
                 # We got data, process it
                 break
-            
+
             if not data:
-                logger.debug(f"No contributor stats found for {repo_full_name}")
+                logger.debug(
+                    f"No contributor stats found for {repo_full_name}")
                 return {}
-            
+
             # Find the user's contribution data
             user_data = None
             for contributor in data:
@@ -372,50 +380,52 @@ class GitHubFetcher:
                 if author and author.get('login') == username:
                     user_data = contributor
                     break
-            
+
             if not user_data:
-                logger.debug(f"User {username} not found in contributor stats for {repo_full_name}")
+                logger.debug(
+                    f"User {username} not found in contributor stats for {repo_full_name}")
                 return {}
-            
+
             # Extract weekly stats and convert to daily
             weeks = user_data.get('weeks', [])
             start_timestamp = int(start_date.timestamp())
             end_timestamp = int(end_date.timestamp())
-            
+
             stats_by_date = {}
-            
+
             for week in weeks:
                 week_timestamp = week.get('w', 0)
-                
+
                 # Skip weeks outside our date range
                 if week_timestamp < start_timestamp or week_timestamp > end_timestamp:
                     continue
-                
+
                 commits = week.get('c', 0)
                 additions = week.get('a', 0)
                 deletions = week.get('d', 0)
-                
+
                 if commits > 0:
                     # Convert timestamp to date
                     week_date = datetime.fromtimestamp(week_timestamp).date()
                     date_str = week_date.isoformat()
-                    
+
                     stats_by_date[date_str] = {
                         'commits': commits,
                         'additions': additions,
                         'deletions': deletions,
                         'total': additions + deletions
                     }
-            
+
             logger.debug(
                 f"Fetched contributor stats for {username} in {repo_full_name}: "
                 f"{len(stats_by_date)} weeks with activity"
             )
-            
+
             return stats_by_date
-            
+
         except Exception as e:
-            logger.debug(f"Error fetching contributor stats for {username} in {repo_full_name}: {e}")
+            logger.debug(
+                f"Error fetching contributor stats for {username} in {repo_full_name}: {e}")
             return {}
 
     def _get_user_active_repos(self, username: str, start_datetime: datetime,
@@ -629,9 +639,11 @@ class GitHubFetcher:
                             history = ref['target'].get('history', {})
                             commits = history.get('nodes', [])
                             commit_page_info = history.get('pageInfo', {})
-                            
-                            has_next_commit_page = commit_page_info.get('hasNextPage', False)
-                            commit_variables['cursor'] = commit_page_info.get('endCursor')
+
+                            has_next_commit_page = commit_page_info.get(
+                                'hasNextPage', False)
+                            commit_variables['cursor'] = commit_page_info.get(
+                                'endCursor')
 
                             # Process commits from this page
                             for commit in commits:
@@ -724,7 +736,7 @@ class GitHubFetcher:
         for username in user_ids:
             active_repos = user_repos.get(username, [])
             user_stats = {}
-            
+
             for repo_full_name in active_repos:
                 repo_stats = self._fetch_contributor_stats(
                     repo_full_name, username, start_datetime, end_datetime
@@ -745,10 +757,10 @@ class GitHubFetcher:
                         user_stats[stat_date]['deletions'] += stats['deletions']
                         user_stats[stat_date]['total'] += stats['total']
                         user_stats[stat_date]['repos'].append(repo_full_name)
-            
+
             if user_stats:
                 contributor_stats[username] = user_stats
-        
+
         return {
             'date': date_str,
             'commits': commits_data,

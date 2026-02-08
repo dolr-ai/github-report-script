@@ -102,11 +102,11 @@ class DataProcessor:
 
         commits = cached_data.get('commits', [])
         contributor_stats = cached_data.get('contributor_stats', {})
-        
+
         # If we have contributor stats, use them as the source of truth
         # and log discrepancies with branch-based counts
         use_contributor_stats = bool(contributor_stats)
-        
+
         if use_contributor_stats:
             logger.info(
                 f"Date {date_str}: Using GitHub contributor stats API as source of truth"
@@ -120,15 +120,16 @@ class DataProcessor:
         non_merge_commits = []
         filtered_merge_count = 0
         kept_merge_count = 0
-        
+
         for commit in commits:
             message = commit.get('message', '')
             stats = commit.get('stats', {})
             total_loc = stats.get('total', 0)
-            
+
             # Detect merge commits by message pattern
-            is_merge = message.startswith('Merge pull request') or message.startswith('Merge branch')
-            
+            is_merge = message.startswith(
+                'Merge pull request') or message.startswith('Merge branch')
+
             if is_merge:
                 # Keep merge commits with substantial code changes (likely squash merge or deleted branch)
                 if total_loc > 10:
@@ -286,17 +287,17 @@ class DataProcessor:
             for username in user_ids:
                 if username in contributor_stats:
                     user_stats_for_date = contributor_stats[username]
-                    
+
                     # Contributor stats are weekly, so find the week containing this date
                     # and compare totals
                     branch_commits = user_metrics[username]['commit_count']
                     branch_additions = user_metrics[username]['additions']
-                    
+
                     # Note: This is informational only - we log discrepancies but still use detailed commit data
                     if date_str in user_stats_for_date:
                         stats_commits = user_stats_for_date[date_str]['commits']
                         stats_additions = user_stats_for_date[date_str]['additions']
-                        
+
                         if stats_commits != branch_commits or stats_additions != branch_additions:
                             logger.warning(
                                 f"Date {date_str}, User {username}: "
@@ -513,3 +514,93 @@ class DataProcessor:
             }
 
         return summary
+
+    def read_github_stats_data(self, start_date: datetime, end_date: datetime) -> Dict[str, Dict[str, Dict]]:
+        """Read GitHub contributor stats from cached data across date range
+
+        Processes the contributor_stats field from cache files, which contains
+        GitHub's official weekly statistics from the Stats API.
+
+        Args:
+            start_date: Start date
+            end_date: End date
+
+        Returns:
+            Dictionary mapping usernames to week-indexed metrics:
+            {
+                'username': {
+                    'Week of 2026-02-02': {
+                        'commits': 10,
+                        'additions': 500,
+                        'deletions': 200,
+                        'total_loc': 700
+                    }
+                }
+            }
+        """
+        from datetime import timedelta
+
+        # Collect all stats by user and week
+        user_week_stats = defaultdict(lambda: defaultdict(lambda: {
+            'commits': 0,
+            'additions': 0,
+            'deletions': 0,
+            'total_loc': 0
+        }))
+
+        current_date = start_date.date()
+        end_date_only = end_date.date()
+
+        logger.debug(
+            f"Reading GitHub stats from {start_date.date()} to {end_date.date()}")
+
+        # Read cache files to extract contributor_stats
+        while current_date <= end_date_only:
+            date_str = current_date.isoformat()
+            cached_data = self.cache_manager.read_cache(date_str)
+
+            if cached_data:
+                contributor_stats = cached_data.get('contributor_stats', {})
+
+                # contributor_stats format: {username: {week_date: {commits, additions, deletions, total, repos}}}
+                for username, user_stats in contributor_stats.items():
+                    for week_date_str, week_stats in user_stats.items():
+                        # Parse the date to get week start
+                        try:
+                            # Handle both ISO format with time and date-only format
+                            if 'T' in week_date_str or 'Z' in week_date_str:
+                                week_date = datetime.fromisoformat(
+                                    week_date_str.replace('Z', '+00:00')).date()
+                            else:
+                                week_date = datetime.strptime(
+                                    week_date_str, '%Y-%m-%d').date()
+                        except Exception as e:
+                            logger.warning(
+                                f"Could not parse date: {week_date_str} - {e}")
+                            continue
+
+                        # Create week label "Week of YYYY-MM-DD"
+                        week_label = f"Week of {week_date.isoformat()}"
+
+                        # Aggregate stats for this user and week (avoid double counting from overlapping cache files)
+                        # Use max instead of sum to handle the same week appearing in multiple day caches
+                        if week_label not in user_week_stats[username]:
+                            user_week_stats[username][week_label]['commits'] = week_stats.get(
+                                'commits', 0)
+                            user_week_stats[username][week_label]['additions'] = week_stats.get(
+                                'additions', 0)
+                            user_week_stats[username][week_label]['deletions'] = week_stats.get(
+                                'deletions', 0)
+                            user_week_stats[username][week_label]['total_loc'] = week_stats.get(
+                                'total', 0)
+
+            current_date += timedelta(days=1)
+
+        # Convert defaultdict to regular dict for JSON serialization
+        result = {}
+        for username, weeks in user_week_stats.items():
+            result[username] = dict(weeks)
+
+        logger.info(f"Loaded GitHub stats for {len(result)} users")
+
+        return result
