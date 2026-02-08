@@ -210,6 +210,29 @@ def cmd_status():
     print("\n" + "=" * 70)
 
 
+def cmd_refresh_stats():
+    """Refresh only GitHub contributor stats without re-fetching commits"""
+    print(display_config())
+    logger.info("Starting REFRESH_STATS mode")
+
+    # Get date range
+    start_date, end_date = get_date_range()
+    logger.info(f"Date range: {start_date.date()} to {end_date.date()}")
+
+    print(
+        f"\nRefreshing GitHub contributor stats for: {start_date.date()} to {end_date.date()}")
+    print("This will update contributor_stats in cache without re-fetching commits.\n")
+
+    # Refresh stats
+    fetcher = GitHubFetcher(thread_count=THREAD_COUNT)
+    fetcher.refresh_contributor_stats(start_date, end_date, USER_IDS)
+
+    print("\n" + "=" * 70)
+    print("✓ GitHub stats refresh complete!")
+    print("  Run with --mode chart to generate updated charts")
+    print("=" * 70)
+
+
 def cmd_fetch_and_chart():
     """Combined mode: Fetch data and immediately generate charts"""
     print(display_config())
@@ -264,6 +287,7 @@ Examples:
   python src/main.py --mode refresh --days 90 # Force refresh last 90 days
   python src/main.py --mode chart             # Generate charts from existing data
   python src/main.py --mode status            # Check cache status
+  python src/main.py --mode refresh-stats     # Refresh GitHub stats only (no commits fetch)
 
 Note: Arguments override settings in src/config.py
         """
@@ -272,7 +296,8 @@ Note: Arguments override settings in src/config.py
     parser.add_argument(
         '--mode',
         type=str,
-        choices=['fetch', 'refresh', 'chart', 'status', 'fetch_and_chart'],
+        choices=['fetch', 'refresh', 'chart', 'status',
+                 'fetch_and_chart', 'refresh-stats'],
         help='Execution mode (default: from config.py, typically fetch_and_chart)'
     )
 
@@ -299,10 +324,11 @@ def main():
             'refresh': ExecutionMode.REFRESH,
             'chart': ExecutionMode.CHART,
             'status': ExecutionMode.STATUS,
-            'fetch_and_chart': ExecutionMode.FETCH_AND_CHART
+            'fetch_and_chart': ExecutionMode.FETCH_AND_CHART,
+            'refresh-stats': 'REFRESH_STATS'  # Special mode
         }
         MODE = mode_map[args.mode]
-        logger.info(f"Mode overridden via CLI: {MODE.value}")
+        logger.info(f"Mode overridden via CLI: {args.mode}")
 
     if args.days:
         import src.config as config
@@ -325,6 +351,8 @@ def main():
             cmd_status()
         elif MODE == ExecutionMode.FETCH_AND_CHART:
             cmd_fetch_and_chart()
+        elif MODE == 'REFRESH_STATS':
+            cmd_refresh_stats()
         else:
             print(f"❌ Unknown execution mode: {MODE}")
             sys.exit(1)

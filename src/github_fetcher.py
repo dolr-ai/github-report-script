@@ -324,20 +324,22 @@ class GitHubFetcher:
 
     @retry_with_exponential_backoff(max_retries=5, base_delay=60)
     def _fetch_contributor_stats(self, repo_full_name: str, username: str,
-                                 start_date: datetime, end_date: datetime) -> Dict:
+                                 start_date: datetime, end_date: datetime,
+                                 max_retries: int = 10) -> Dict:
         """Fetch contributor statistics from GitHub's stats API
 
         This API provides the authoritative commit counts and LOC that match
         what GitHub shows in the contributors graph. It aggregates by week.
 
         NOTE: This API can return 202 Accepted when stats need to be computed.
-        We handle this by retrying with exponential backoff.
+        By default, we retry with exponential backoff. Set max_retries=1 to skip retries.
 
         Args:
             repo_full_name: Full repository name (e.g., 'dolr-ai/yral-mobile')
             username: GitHub username
             start_date: Start date for filtering
             end_date: End date for filtering
+            max_retries: Maximum number of retry attempts (default: 10, use 1 for no retries)
 
         Returns:
             Dictionary with stats by date: {
@@ -347,21 +349,30 @@ class GitHubFetcher:
         try:
             endpoint = f"/repos/{repo_full_name}/stats/contributors"
 
-            # Try up to 3 times if we get 202 (stats being computed)
-            for attempt in range(3):
+            # Try up to max_retries times if we get 202 (stats being computed)
+            # Use exponential backoff: 5s, 10s, 15s, 20s, 30s, 40s, 50s, 60s, 90s, 120s
+            for attempt in range(max_retries):
                 data = self._api_request(endpoint)
 
                 # _api_request returns None or empty list for 202
                 if data is None or (isinstance(data, list) and len(data) == 0):
-                    if attempt < 2:
-                        logger.debug(
-                            f"Stats API returned 202 for {repo_full_name}, waiting 10s (attempt {attempt + 1}/3)"
+                    if attempt < max_retries - 1:
+                        # Calculate backoff delay
+                        if attempt < 4:
+                            delay = 5 + (attempt * 5)  # 5, 10, 15, 20
+                        elif attempt < 7:
+                            delay = 30 + ((attempt - 4) * 10)  # 30, 40, 50
+                        else:
+                            delay = 60 + ((attempt - 7) * 30)  # 60, 90, 120
+
+                        logger.info(
+                            f"Stats API returned 202 for {repo_full_name}, waiting {delay}s (attempt {attempt + 1}/{max_retries})"
                         )
-                        time.sleep(10)
+                        time.sleep(delay)
                         continue
                     else:
-                        logger.warning(
-                            f"Stats API still computing for {repo_full_name} after 3 attempts, skipping"
+                        logger.debug(
+                            f"Stats API still computing for {repo_full_name} after {max_retries} attempts, skipping"
                         )
                         return {}
 
@@ -882,6 +893,126 @@ class GitHubFetcher:
         print(
             f"\nFetch complete. Total: {sum(len(d.get('commits', [])) for d in results.values())} commits")
 
+        return results
+
+    def refresh_contributor_stats(self, start_date: datetime, end_date: datetime,
+                                  user_ids: List[str]) -> Dict[str, Dict]:
+        """Refresh only GitHub contributor stats without refetching commits
+
+        This updates the contributor_stats field in existing cache files
+        without re-fetching all the commit data.
+
+        Args:
+            start_date: Start date
+            end_date: End date
+            user_ids: List of GitHub user IDs to track
+
+        Returns:
+            Dictionary mapping date strings to updated cache data
+        """
+        logger.info(
+            f"Refreshing GitHub contributor stats from {start_date.date()} to {end_date.date()}")
+
+        # Get list of dates to process (only dates at least 7 days old)
+        # GitHub stats are calculated weekly, so no point in fetching for recent data
+        cutoff_date = datetime.now() - timedelta(days=7)
+        dates = []
+        current = start_date
+        while current <= end_date:
+            if current <= cutoff_date:
+                dates.append(current.date().isoformat())
+            current += timedelta(days=1)
+
+        if not dates:
+            print(f"\nNo dates to process (all data is less than 7 days old).")
+            print("GitHub stats are calculated weekly. Recent data will be captured in the next report generation.")
+            return {}
+
+        print(
+            f"\nProcessing {len(dates)} dates (at least 7 days old, skipping recent data)")
+
+        results = {}
+        start_datetime = start_date.replace(
+            hour=0, minute=0, second=0, microsecond=0)
+        end_datetime = end_date.replace(
+            hour=23, minute=59, second=59, microsecond=999999)
+
+        # Get active repos for each user (from existing cache)
+        print("\nIdentifying active repositories from cached data...")
+        user_repos = {}
+        for username in user_ids:
+            repos = set()
+            for date_str in dates:
+                cached_data = self.cache_manager.read_cache(date_str)
+                if cached_data:
+                    commits = cached_data.get('commits', [])
+                    for commit in commits:
+                        if commit.get('author') == username:
+                            repo_name = commit.get('repository')
+                            if repo_name:
+                                repos.add(repo_name)
+            if repos:
+                user_repos[username] = sorted(list(repos))
+                print(f"  {username}: {len(repos)} repos")
+
+        if not user_repos:
+            logger.warning(
+                "No active repositories found in cache. Run fetch first.")
+            return results
+
+        # Fetch contributor stats for each date
+        print(f"\nRefreshing GitHub stats for {len(dates)} dates...")
+        with tqdm(total=len(dates), desc="Refreshing stats") as pbar:
+            for date_str in dates:
+                # Read existing cache
+                cached_data = self.cache_manager.read_cache(date_str)
+                if not cached_data:
+                    logger.debug(f"No cache found for {date_str}, skipping")
+                    pbar.update(1)
+                    continue
+
+                # Fetch contributor stats
+                contributor_stats = {}
+                for username in user_ids:
+                    active_repos = user_repos.get(username, [])
+                    user_stats = {}
+
+                    for repo_full_name in active_repos:
+                        # No retries for refresh - GitHub stats are weekly, if it's 202 it will be captured next time
+                        repo_stats = self._fetch_contributor_stats(
+                            repo_full_name, username, start_datetime, end_datetime, max_retries=1
+                        )
+                        if repo_stats:
+                            # Merge stats from this repo
+                            for stat_date, stats in repo_stats.items():
+                                if stat_date not in user_stats:
+                                    user_stats[stat_date] = {
+                                        'commits': 0,
+                                        'additions': 0,
+                                        'deletions': 0,
+                                        'total': 0,
+                                        'repos': []
+                                    }
+                                user_stats[stat_date]['commits'] += stats['commits']
+                                user_stats[stat_date]['additions'] += stats['additions']
+                                user_stats[stat_date]['deletions'] += stats['deletions']
+                                user_stats[stat_date]['total'] += stats['total']
+                                user_stats[stat_date]['repos'].append(
+                                    repo_full_name)
+
+                    if user_stats:
+                        contributor_stats[username] = user_stats
+
+                # Update cache with new stats
+                cached_data['contributor_stats'] = contributor_stats
+                self.cache_manager.write_cache(date_str, cached_data)
+                results[date_str] = cached_data
+
+                stats_count = len(contributor_stats)
+                pbar.set_postfix_str(f"{date_str}: {stats_count} users")
+                pbar.update(1)
+
+        print(f"\nRefresh complete. Updated stats for {len(results)} dates")
         return results
 
     def get_rate_limit_status(self) -> Dict:

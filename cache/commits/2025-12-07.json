@@ -19,5 +19,867 @@
     }
   ],
   "commit_count": 1,
-  "contributor_stats": {}
+  "contributor_stats": {
+    "saikatdas0790": {
+      "2025-11-30": {
+        "commits": 24,
+        "additions": 378,
+        "deletions": 507,
+        "total": 885,
+        "repos": [
+          "dolr-ai/clickhouse-cluster-configuration",
+          "dolr-ai/hetzner-bare-metal-fleet"
+        ]
+      },
+      "2025-12-07": {
+        "commits": 30,
+        "additions": 1785,
+        "deletions": 502,
+        "total": 2287,
+        "repos": [
+          "dolr-ai/clickhouse-cluster-configuration",
+          "dolr-ai/kvrocks-cluster",
+          "dolr-ai/yral-bare-metal-kubernetes-cluster"
+        ]
+      },
+      "2025-11-23": {
+        "commits": 22,
+        "additions": 1740,
+        "deletions": 809,
+        "total": 2549,
+        "repos": [
+          "dolr-ai/hetzner-bare-metal-fleet"
+        ]
+      },
+      "2025-12-28": {
+        "commits": 1,
+        "additions": 16,
+        "deletions": 0,
+        "total": 16,
+        "repos": [
+          "dolr-ai/hetzner-bare-metal-fleet"
+        ]
+      },
+      "2026-01-11": {
+        "commits": 56,
+        "additions": 3206,
+        "deletions": 1077,
+        "total": 4283,
+        "repos": [
+          "dolr-ai/hetzner-bare-metal-fleet"
+        ]
+      },
+      "2026-01-18": {
+        "commits": 24,
+        "additions": 1817,
+        "deletions": 2813,
+        "total": 4630,
+        "repos": [
+          "dolr-ai/hetzner-bare-metal-fleet",
+          "dolr-ai/yral-bare-metal-kubernetes-cluster"
+        ]
+      },
+      "2026-01-25": {
+        "commits": 30,
+        "additions": 8954,
+        "deletions": 4867,
+        "total": 13821,
+        "repos": [
+          "dolr-ai/hetzner-bare-metal-fleet",
+          "dolr-ai/yral-bare-metal-kubernetes-cluster"
+        ]
+      },
+      "2026-02-01": {
+        "commits": 19,
+        "additions": 2660,
+        "deletions": 1986,
+        "total": 4646,
+        "repos": [
+          "dolr-ai/hetzner-bare-metal-fleet"
+        ]
+      },
+      "2025-12-14": {
+        "commits": 43,
+        "additions": 5520,
+        "deletions": 3668,
+        "total": 9188,
+        "repos": [
+          "dolr-ai/yral-bare-metal-kubernetes-cluster"
+        ]
+      }
+    },
+    "gravityvi": {
+      "2026-01-18": {
+        "commits": 10,
+        "additions": 84,
+        "deletions": 36,
+        "total": 120,
+        "repos": [
+          "dolr-ai/hot-or-not-backend-canister",
+          "dolr-ai/yral-billing",
+          "dolr-ai/yral-common"
+        ]
+      },
+      "2026-01-25": {
+        "commits": 10,
+        "additions": 1806,
+        "deletions": 1974,
+        "total": 3780,
+        "repos": [
+          "dolr-ai/hot-or-not-backend-canister",
+          "dolr-ai/off-chain-agent",
+          "dolr-ai/yral-billing",
+          "dolr-ai/yral-common"
+        ]
+      },
+      "2026-02-01": {
+        "commits": 9,
+        "additions": 1648,
+        "deletions": 150,
+        "total": 1798,
+        "repos": [
+          "dolr-ai/hot-or-not-backend-canister",
+          "dolr-ai/yral-auth-v2",
+          "dolr-ai/yral-billing",
+          "dolr-ai/yral-common",
+          "dolr-ai/yral-video-upload-service"
+        ]
+      },
+      "2026-01-11": {
+        "commits": 3,
+        "additions": 4181,
+        "deletions": 263,
+        "total": 4444,
+        "repos": [
+          "dolr-ai/yral-auth-v2",
+          "dolr-ai/yral-video-upload-service"
+        ]
+      },
+      "2025-12-07": {
+        "commits": 2,
+        "additions": 7,
+        "deletions": 4,
+        "total": 11,
+        "repos": [
+          "dolr-ai/yral-common"
+        ]
+      }
+    },
+    "jay-dhanwant-yral": {
+      "2026-01-25": {
+        "commits": 1,
+        "additions": 29,
+        "deletions": 10,
+        "total": 39,
+        "repos": [
+          "dolr-ai/ai-feed-recommendation-system"
+        ]
+      }
+    },
+    "joel-medicala-yral": {
+      "2025-12-07": {
+        "commits": 2,
+        "additions": 350,
+        "deletions": 29,
+        "total": 379,
+        "repos": [
+          "dolr-ai/hot-or-not-backend-canister",
+          "dolr-ai/off-chain-agent"
+        ]
+      },
+      "2026-01-04": {
+        "commits": 2,
+        "additions": 876,
+        "deletions": 230,
+        "total": 1106,
+        "repos": [
+          "dolr-ai/hot-or-not-backend-canister",
+          "dolr-ai/off-chain-agent"
+        ]
+      },
+      "2026-01-18": {
+        "commits": 20,
+        "additions": 2440,
+        "deletions": 2847,
+        "total": 5287,
+        "repos": [
+          "dolr-ai/hot-or-not-backend-canister",
+          "dolr-ai/hot-or-not-web-leptos-ssr",
+          "dolr-ai/off-chain-agent"
+        ]
+      },
+      "2026-01-25": {
+        "commits": 14,
+        "additions": 3155,
+        "deletions": 2021,
+        "total": 5176,
+        "repos": [
+          "dolr-ai/hot-or-not-backend-canister",
+          "dolr-ai/hot-or-not-web-leptos-ssr",
+          "dolr-ai/off-chain-agent",
+          "dolr-ai/yral-backend-cloudflare-workers",
+          "dolr-ai/yral-metadata"
+        ]
+      },
+      "2025-11-23": {
+        "commits": 2,
+        "additions": 560,
+        "deletions": 1,
+        "total": 561,
+        "repos": [
+          "dolr-ai/hot-or-not-web-leptos-ssr",
+          "dolr-ai/off-chain-agent"
+        ]
+      },
+      "2025-12-21": {
+        "commits": 1,
+        "additions": 628,
+        "deletions": 167,
+        "total": 795,
+        "repos": [
+          "dolr-ai/hot-or-not-web-leptos-ssr"
+        ]
+      },
+      "2025-12-28": {
+        "commits": 3,
+        "additions": 1841,
+        "deletions": 788,
+        "total": 2629,
+        "repos": [
+          "dolr-ai/hot-or-not-web-leptos-ssr",
+          "dolr-ai/off-chain-agent"
+        ]
+      },
+      "2026-01-11": {
+        "commits": 3,
+        "additions": 457,
+        "deletions": 283,
+        "total": 740,
+        "repos": [
+          "dolr-ai/hot-or-not-web-leptos-ssr",
+          "dolr-ai/off-chain-agent"
+        ]
+      },
+      "2025-11-16": {
+        "commits": 2,
+        "additions": 299,
+        "deletions": 90,
+        "total": 389,
+        "repos": [
+          "dolr-ai/off-chain-agent",
+          "dolr-ai/yral-backend-cloudflare-workers"
+        ]
+      },
+      "2025-11-30": {
+        "commits": 1,
+        "additions": 3,
+        "deletions": 0,
+        "total": 3,
+        "repos": [
+          "dolr-ai/off-chain-agent"
+        ]
+      },
+      "2025-12-14": {
+        "commits": 1,
+        "additions": 698,
+        "deletions": 122,
+        "total": 820,
+        "repos": [
+          "dolr-ai/off-chain-agent"
+        ]
+      },
+      "2026-02-01": {
+        "commits": 14,
+        "additions": 1762,
+        "deletions": 503,
+        "total": 2265,
+        "repos": [
+          "dolr-ai/off-chain-agent",
+          "dolr-ai/yral-metadata"
+        ]
+      }
+    },
+    "kevin-antony-yral": {
+      "2025-11-30": {
+        "commits": 4,
+        "additions": 1281,
+        "deletions": 198,
+        "total": 1479,
+        "repos": [
+          "dolr-ai/ai-influencers-content"
+        ]
+      },
+      "2025-12-07": {
+        "commits": 10,
+        "additions": 482,
+        "deletions": 113,
+        "total": 595,
+        "repos": [
+          "dolr-ai/ai-influencers-content"
+        ]
+      },
+      "2025-12-14": {
+        "commits": 3,
+        "additions": 676,
+        "deletions": 332,
+        "total": 1008,
+        "repos": [
+          "dolr-ai/ai-influencers-content"
+        ]
+      },
+      "2025-11-16": {
+        "commits": 3,
+        "additions": 1391,
+        "deletions": 321,
+        "total": 1712,
+        "repos": [
+          "dolr-ai/dragonfly-bare-metal"
+        ]
+      },
+      "2025-11-23": {
+        "commits": 12,
+        "additions": 45,
+        "deletions": 1100,
+        "total": 1145,
+        "repos": [
+          "dolr-ai/dragonfly-bare-metal"
+        ]
+      }
+    },
+    "mayank-k-yral": {
+      "2025-11-16": {
+        "commits": 3,
+        "additions": 70,
+        "deletions": 50,
+        "total": 120,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2025-11-23": {
+        "commits": 2,
+        "additions": 117,
+        "deletions": 8,
+        "total": 125,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2025-12-07": {
+        "commits": 5,
+        "additions": 171,
+        "deletions": 45,
+        "total": 216,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2025-12-14": {
+        "commits": 2,
+        "additions": 284,
+        "deletions": 11,
+        "total": 295,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2025-12-21": {
+        "commits": 39,
+        "additions": 9126,
+        "deletions": 3244,
+        "total": 12370,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2025-12-28": {
+        "commits": 8,
+        "additions": 399,
+        "deletions": 140,
+        "total": 539,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2026-01-04": {
+        "commits": 2,
+        "additions": 59,
+        "deletions": 52,
+        "total": 111,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2026-01-18": {
+        "commits": 11,
+        "additions": 4146,
+        "deletions": 1177,
+        "total": 5323,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2026-01-25": {
+        "commits": 9,
+        "additions": 92,
+        "deletions": 22,
+        "total": 114,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2026-02-01": {
+        "commits": 5,
+        "additions": 417,
+        "deletions": 60,
+        "total": 477,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      }
+    },
+    "naitik-makwana-yral": {
+      "2026-01-25": {
+        "commits": 11,
+        "additions": 1908,
+        "deletions": 1328,
+        "total": 3236,
+        "repos": [
+          "dolr-ai/hashicorp-vault-service",
+          "dolr-ai/hot-or-not-web-leptos-ssr",
+          "dolr-ai/off-chain-agent",
+          "dolr-ai/yral-auth-v2",
+          "dolr-ai/yral-metadata"
+        ]
+      },
+      "2026-01-18": {
+        "commits": 9,
+        "additions": 5487,
+        "deletions": 1511,
+        "total": 6998,
+        "repos": [
+          "dolr-ai/hot-or-not-web-leptos-ssr",
+          "dolr-ai/off-chain-agent",
+          "dolr-ai/yral-metadata"
+        ]
+      },
+      "2026-02-01": {
+        "commits": 1,
+        "additions": 9,
+        "deletions": 5,
+        "total": 14,
+        "repos": [
+          "dolr-ai/off-chain-agent"
+        ]
+      },
+      "2025-12-28": {
+        "commits": 1,
+        "additions": 1,
+        "deletions": 0,
+        "total": 1,
+        "repos": [
+          "dolr-ai/redis-store-cluster"
+        ]
+      },
+      "2025-12-07": {
+        "commits": 1,
+        "additions": 1542,
+        "deletions": 1567,
+        "total": 3109,
+        "repos": [
+          "dolr-ai/yral-metadata"
+        ]
+      },
+      "2025-12-14": {
+        "commits": 2,
+        "additions": 72,
+        "deletions": 39,
+        "total": 111,
+        "repos": [
+          "dolr-ai/yral-metadata"
+        ]
+      },
+      "2025-12-21": {
+        "commits": 1,
+        "additions": 39,
+        "deletions": 22,
+        "total": 61,
+        "repos": [
+          "dolr-ai/yral-metadata"
+        ]
+      }
+    },
+    "ravi-sawlani-yral": {
+      "2025-11-30": {
+        "commits": 14,
+        "additions": 7816,
+        "deletions": 410,
+        "total": 8226,
+        "repos": [
+          "dolr-ai/hot-or-not-backend-canister",
+          "dolr-ai/yral-billing",
+          "dolr-ai/yral-common"
+        ]
+      },
+      "2025-12-07": {
+        "commits": 16,
+        "additions": 1855,
+        "deletions": 1878,
+        "total": 3733,
+        "repos": [
+          "dolr-ai/hot-or-not-backend-canister",
+          "dolr-ai/hot-or-not-web-leptos-ssr",
+          "dolr-ai/yral-billing",
+          "dolr-ai/yral-metadata"
+        ]
+      },
+      "2026-01-18": {
+        "commits": 1,
+        "additions": 11,
+        "deletions": 14,
+        "total": 25,
+        "repos": [
+          "dolr-ai/hot-or-not-backend-canister"
+        ]
+      },
+      "2025-11-16": {
+        "commits": 19,
+        "additions": 1536,
+        "deletions": 643,
+        "total": 2179,
+        "repos": [
+          "dolr-ai/hot-or-not-web-leptos-ssr",
+          "dolr-ai/off-chain-agent",
+          "dolr-ai/yral-auth-v2",
+          "dolr-ai/yral-backend-cloudflare-workers",
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2025-12-14": {
+        "commits": 3,
+        "additions": 593,
+        "deletions": 6,
+        "total": 599,
+        "repos": [
+          "dolr-ai/off-chain-agent",
+          "dolr-ai/yral-video-storage-service",
+          "dolr-ai/yral-video-upload-service"
+        ]
+      },
+      "2025-12-28": {
+        "commits": 8,
+        "additions": 2639,
+        "deletions": 965,
+        "total": 3604,
+        "repos": [
+          "dolr-ai/yral-auth-v2",
+          "dolr-ai/yral-backend-cloudflare-workers",
+          "dolr-ai/yral-common"
+        ]
+      },
+      "2026-01-04": {
+        "commits": 12,
+        "additions": 196,
+        "deletions": 122,
+        "total": 318,
+        "repos": [
+          "dolr-ai/yral-auth-v2"
+        ]
+      },
+      "2026-01-11": {
+        "commits": 1,
+        "additions": 2,
+        "deletions": 0,
+        "total": 2,
+        "repos": [
+          "dolr-ai/yral-auth-v2"
+        ]
+      },
+      "2026-02-01": {
+        "commits": 2,
+        "additions": 163,
+        "deletions": 179,
+        "total": 342,
+        "repos": [
+          "dolr-ai/yral-auth-v2"
+        ]
+      }
+    },
+    "samarth-paboowal-yral": {
+      "2025-11-16": {
+        "commits": 3,
+        "additions": 299,
+        "deletions": 667,
+        "total": 966,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2025-11-23": {
+        "commits": 4,
+        "additions": 621,
+        "deletions": 244,
+        "total": 865,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2025-12-14": {
+        "commits": 1,
+        "additions": 1845,
+        "deletions": 1,
+        "total": 1846,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2025-12-21": {
+        "commits": 1,
+        "additions": 710,
+        "deletions": 35,
+        "total": 745,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2025-12-28": {
+        "commits": 3,
+        "additions": 858,
+        "deletions": 227,
+        "total": 1085,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2026-01-11": {
+        "commits": 6,
+        "additions": 1251,
+        "deletions": 885,
+        "total": 2136,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2026-01-18": {
+        "commits": 1,
+        "additions": 4598,
+        "deletions": 4,
+        "total": 4602,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2026-01-25": {
+        "commits": 2,
+        "additions": 2947,
+        "deletions": 224,
+        "total": 3171,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2026-02-01": {
+        "commits": 1,
+        "additions": 2,
+        "deletions": 2,
+        "total": 4,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      }
+    },
+    "sarvesh-sharma-yral": {
+      "2025-11-16": {
+        "commits": 4,
+        "additions": 291,
+        "deletions": 30,
+        "total": 321,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2025-11-30": {
+        "commits": 2,
+        "additions": 230,
+        "deletions": 46,
+        "total": 276,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2025-12-14": {
+        "commits": 9,
+        "additions": 1987,
+        "deletions": 78,
+        "total": 2065,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2025-12-21": {
+        "commits": 8,
+        "additions": 3806,
+        "deletions": 580,
+        "total": 4386,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2025-12-28": {
+        "commits": 9,
+        "additions": 2096,
+        "deletions": 270,
+        "total": 2366,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2026-01-04": {
+        "commits": 6,
+        "additions": 639,
+        "deletions": 83,
+        "total": 722,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2026-01-11": {
+        "commits": 7,
+        "additions": 3730,
+        "deletions": 519,
+        "total": 4249,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2026-01-18": {
+        "commits": 1,
+        "additions": 97,
+        "deletions": 17,
+        "total": 114,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2026-01-25": {
+        "commits": 4,
+        "additions": 205841,
+        "deletions": 548,
+        "total": 206389,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2026-02-01": {
+        "commits": 12,
+        "additions": 3018,
+        "deletions": 365,
+        "total": 3383,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      }
+    },
+    "shivam-bhavsar-yral": {
+      "2025-11-23": {
+        "commits": 10,
+        "additions": 4415,
+        "deletions": 845,
+        "total": 5260,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2025-11-30": {
+        "commits": 7,
+        "additions": 1290,
+        "deletions": 168,
+        "total": 1458,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2025-12-07": {
+        "commits": 15,
+        "additions": 767,
+        "deletions": 402,
+        "total": 1169,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2025-12-14": {
+        "commits": 1,
+        "additions": 81,
+        "deletions": 32,
+        "total": 113,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2025-12-21": {
+        "commits": 3,
+        "additions": 2908,
+        "deletions": 37,
+        "total": 2945,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2025-12-28": {
+        "commits": 3,
+        "additions": 3022,
+        "deletions": 390,
+        "total": 3412,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2026-01-04": {
+        "commits": 6,
+        "additions": 2033,
+        "deletions": 177,
+        "total": 2210,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2026-01-11": {
+        "commits": 24,
+        "additions": 5450,
+        "deletions": 2347,
+        "total": 7797,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2026-01-18": {
+        "commits": 4,
+        "additions": 4656,
+        "deletions": 28,
+        "total": 4684,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2026-01-25": {
+        "commits": 8,
+        "additions": 4720,
+        "deletions": 748,
+        "total": 5468,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      },
+      "2026-02-01": {
+        "commits": 6,
+        "additions": 1731,
+        "deletions": 268,
+        "total": 1999,
+        "repos": [
+          "dolr-ai/yral-mobile"
+        ]
+      }
+    }
+  }
 }
