@@ -1,0 +1,668 @@
+{
+  "date": "2026-02-10",
+  "cached_at": "2026-02-11T15:05:54.302284Z",
+  "commits": [
+    {
+      "sha": "6e0d2d4960bd19c1499524560d4ba13c4dbb2c7f",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-10T11:14:05Z",
+      "message": "Changes oauth end point (#860)",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/5-min-tournament-bk"
+      ]
+    },
+    {
+      "sha": "a5d942571488fcce854c9634f76f1f2ed8327dd8",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-10T09:36:23Z",
+      "message": "Updates using fetchFeedDetails instead of fetchPostDetailsWithNsfwInfo (#858)",
+      "stats": {
+        "additions": 5,
+        "deletions": 3,
+        "total": 8
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/5-min-tournament-bk"
+      ]
+    },
+    {
+      "sha": "603c06396f0a5fe5c86dad205b6b0f4ea858c38f",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-10T07:54:14Z",
+      "message": "Enables chat as default in remote config (#859)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/5-min-tournament-bk"
+      ]
+    },
+    {
+      "sha": "f17bbae2b88b31395987259fe33046ec4ebe15f2",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-10T04:34:32Z",
+      "message": "Implements custom error handling with bottom sheet UI for chat (#857)",
+      "stats": {
+        "additions": 405,
+        "deletions": 29,
+        "total": 434
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/5-min-tournament-bk"
+      ]
+    },
+    {
+      "sha": "a28f6a3f69e244eb823ed5bcc71505b150b427e2",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/self-hosted-video-models",
+      "timestamp": "2026-02-10T05:25:06Z",
+      "message": "Update README.md",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4b8d9a03331a764dc43caf2c3e5a9817bf965881",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-10T14:30:35Z",
+      "message": "fix tomls",
+      "stats": {
+        "additions": 31,
+        "deletions": 31,
+        "total": 62
+      },
+      "branches": [
+        "joel/add_wan_i2v_support"
+      ]
+    },
+    {
+      "sha": "51a847eb6dbce7d5fb983e91a508b5b8ce59648a",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-10T11:44:50Z",
+      "message": "refactor: future use structs lint skip",
+      "stats": {
+        "additions": 3,
+        "deletions": 0,
+        "total": 3
+      },
+      "branches": [
+        "joel/delete_bot",
+        "joel/ltx-intergration",
+        "main"
+      ]
+    },
+    {
+      "sha": "7090935ae42606181d09f7a2f605dde9a4c21d27",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-10T11:39:30Z",
+      "message": "chore: cleanup events pipeline (#402)",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "joel/delete_bot",
+        "joel/ltx-intergration",
+        "main"
+      ]
+    },
+    {
+      "sha": "e05d70131a09ec2663cf7298f4a8f2911ff072ff",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-10T11:37:57Z",
+      "message": "chore: cleanup events pipeline",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "joel/event-pipeline-cleanup"
+      ]
+    },
+    {
+      "sha": "c89c3c4d6ee17ec967ada0d2fee3f0195664cb44",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-02-10T14:12:45Z",
+      "message": "fix secrets retrival",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "joel/dockerize-storj-interface"
+      ]
+    },
+    {
+      "sha": "f2c6797375b43d61038d1bc100b893722e381c21",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-02-10T14:10:29Z",
+      "message": "stop old services for smooth deployment",
+      "stats": {
+        "additions": 11,
+        "deletions": 0,
+        "total": 11
+      },
+      "branches": [
+        "joel/dockerize-storj-interface"
+      ]
+    },
+    {
+      "sha": "f16a9e7f8b39a9ad4ba0288440391e2a8a0f2368",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-02-10T13:58:28Z",
+      "message": "lint",
+      "stats": {
+        "additions": 4,
+        "deletions": 0,
+        "total": 4
+      },
+      "branches": [
+        "joel/dockerize-storj-interface"
+      ]
+    },
+    {
+      "sha": "033d02c8eee6600e26f11a9bde27e3ee733be4a5",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-02-10T13:55:38Z",
+      "message": "feat: dockerize storj interface",
+      "stats": {
+        "additions": 280,
+        "deletions": 87,
+        "total": 367
+      },
+      "branches": [
+        "joel/dockerize-storj-interface"
+      ]
+    },
+    {
+      "sha": "821f3963c2e0ff0e1d41c993d53dde7c64bf5f31",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-02-10T14:19:02Z",
+      "message": "feat: dockerize storj interface (#29)",
+      "stats": {
+        "additions": 296,
+        "deletions": 87,
+        "total": 383
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "56739fc4db37b1643c16d766d65e68f8b2ab1860",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-10T21:21:44Z",
+      "message": "Merge pull request #863 from dolr-ai/tournaments-votes-caching",
+      "stats": {
+        "additions": 611,
+        "deletions": 23,
+        "total": 634
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/5-min-tournament-bk"
+      ]
+    },
+    {
+      "sha": "a7fce9b4a5b6b552f2a50c8c04cf94568b4ffc41",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-10T21:19:08Z",
+      "message": "fix(tournament): clear tournament cache on tournament ended error",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/5-min-tournament-bk"
+      ]
+    },
+    {
+      "sha": "99dee563d0d52be403bb1ffea154f1b5ad744392",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-10T21:05:41Z",
+      "message": "feat(tournament): hydrate in-game rank from leaderboard on entry",
+      "stats": {
+        "additions": 33,
+        "deletions": 0,
+        "total": 33
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/5-min-tournament-bk"
+      ]
+    },
+    {
+      "sha": "9954443400c4f26b25227d284f46296554367687",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-10T21:05:41Z",
+      "message": "feat(tournament): proactively clear expired resume cache",
+      "stats": {
+        "additions": 11,
+        "deletions": 0,
+        "total": 11
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/5-min-tournament-bk"
+      ]
+    },
+    {
+      "sha": "77e5f088218e9d9de0db31265db9218ffcff8448",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-10T21:05:41Z",
+      "message": "feat(tournament): persist vote progress and clear cache on timeout",
+      "stats": {
+        "additions": 94,
+        "deletions": 23,
+        "total": 117
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/5-min-tournament-bk"
+      ]
+    },
+    {
+      "sha": "f63bda0b2574944df71bfa6e412a0881c5872da1",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-10T21:05:41Z",
+      "message": "fix(feed): restore tournament page before pager initialization",
+      "stats": {
+        "additions": 9,
+        "deletions": 17,
+        "total": 26
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/5-min-tournament-bk"
+      ]
+    },
+    {
+      "sha": "4eee097f3b83ff2bbe58986d4ef5560d1c599e8e",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-10T21:05:41Z",
+      "message": "feat(feed): persist and restore tournament feed position",
+      "stats": {
+        "additions": 49,
+        "deletions": 0,
+        "total": 49
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/5-min-tournament-bk"
+      ]
+    },
+    {
+      "sha": "5f041e87e3dd6083de6b483d6e9923d923d98181",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-10T21:05:41Z",
+      "message": "feat(tournament): store resume cache in dedicated preferences datastore",
+      "stats": {
+        "additions": 19,
+        "deletions": 1,
+        "total": 20
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/5-min-tournament-bk"
+      ]
+    },
+    {
+      "sha": "a96c0feb59d04448d77ce75b18e38b324747b45f",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-10T21:05:41Z",
+      "message": "feat(tournament): add dedicated tournament resume cache store",
+      "stats": {
+        "additions": 413,
+        "deletions": 0,
+        "total": 413
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/5-min-tournament-bk"
+      ]
+    },
+    {
+      "sha": "83db2434fe4620e8ea65a60b7df3e36421ea97d6",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-10T10:21:13Z",
+      "message": "Cleaning up SQLLite",
+      "stats": {
+        "additions": 165,
+        "deletions": 364,
+        "total": 529
+      },
+      "branches": [
+        "db_mig"
+      ]
+    },
+    {
+      "sha": "57b839dbf4b76e2437b2e486853eb4fcbd030804",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-10T10:20:41Z",
+      "message": "Shifting to PostGRE",
+      "stats": {
+        "additions": 1785,
+        "deletions": 223,
+        "total": 2008
+      },
+      "branches": [
+        "db_mig"
+      ]
+    },
+    {
+      "sha": "70124c6ee6b290ced4fae2f88e6c5bc8d3c5d0d0",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-10T12:40:58Z",
+      "message": "Upgrade Litestream (#168)",
+      "stats": {
+        "additions": 15,
+        "deletions": 1,
+        "total": 16
+      },
+      "branches": [
+        "fix_prod_litestreamcrash",
+        "lite_v5_back",
+        "litestream_revert",
+        "main",
+        "revert-171-litestream_revert",
+        "temp_dis_ls",
+        "temp_rm_beszel"
+      ]
+    },
+    {
+      "sha": "20961f88b9bdcd78e9bce6f7d4c7d86c33f4ac0b",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-10T11:55:41Z",
+      "message": "Litestream safetyfix (#167)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "fix_prod_litestreamcrash",
+        "lite_v5_back",
+        "litestream_revert",
+        "litestrem_v5",
+        "main",
+        "revert-171-litestream_revert",
+        "temp_dis_ls",
+        "temp_rm_beszel"
+      ]
+    },
+    {
+      "sha": "69132ffcd4ec4b0bed83fa0318510f2be2ebdbb4",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-10T11:51:53Z",
+      "message": "Update Litestream version (#166)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "fix_prod_litestreamcrash",
+        "lite_v5_back",
+        "litestream_revert",
+        "litestream_safetyfix",
+        "litestrem_v5",
+        "main",
+        "revert-171-litestream_revert",
+        "temp_dis_ls",
+        "temp_rm_beszel"
+      ]
+    },
+    {
+      "sha": "c9883f6671bfb3e14ce2ccdad19391126412527d",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-10T11:38:20Z",
+      "message": "Indempotency msg fix (#154)",
+      "stats": {
+        "additions": 262,
+        "deletions": 18,
+        "total": 280
+      },
+      "branches": [
+        "fix_prod_litestreamcrash",
+        "lite_v5_back",
+        "litestream_revert",
+        "litestream_safetyfix",
+        "litestrem_v5",
+        "main",
+        "revert-171-litestream_revert",
+        "temp_dis_ls",
+        "temp_rm_beszel"
+      ]
+    },
+    {
+      "sha": "258457e6c45beabdce7cd0d9e1098412a224cddd",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-10T13:23:20Z",
+      "message": "Litestream revert (#171)",
+      "stats": {
+        "additions": 11,
+        "deletions": 0,
+        "total": 11
+      },
+      "branches": [
+        "lite_v5_back",
+        "main",
+        "revert-171-litestream_revert",
+        "temp_dis_ls"
+      ]
+    },
+    {
+      "sha": "8db02e8bef36ada06f9d6bfec80a6440200938a8",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-10T13:19:52Z",
+      "message": "Litestream v3 BACK (#170)",
+      "stats": {
+        "additions": 2,
+        "deletions": 14,
+        "total": 16
+      },
+      "branches": [
+        "lite_v5_back",
+        "litestream_revert",
+        "main",
+        "revert-171-litestream_revert",
+        "temp_dis_ls"
+      ]
+    },
+    {
+      "sha": "a6e302b099e01cbd86ea48832f95a8ca5a575127",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-10T13:01:07Z",
+      "message": "The litestream-vfs binary I initially used caused segmentation faults in production. The Fix: I upda",
+      "stats": {
+        "additions": 2,
+        "deletions": 3,
+        "total": 5
+      },
+      "branches": [
+        "lite_v5_back",
+        "litestream_revert",
+        "main",
+        "revert-171-litestream_revert",
+        "temp_dis_ls",
+        "temp_rm_beszel"
+      ]
+    },
+    {
+      "sha": "2dcd4385c99ebb0b3fd0c90935155b24fe36a759",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-10T13:23:08Z",
+      "message": "Merge branch 'main' into litestream_revert",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "litestream_revert"
+      ]
+    },
+    {
+      "sha": "51d971c92d47c49e8ff8c0e94c402b5cc87402c5",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-10T11:55:21Z",
+      "message": "Merge branch 'main' into litestream_safetyfix",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "litestream_safetyfix"
+      ]
+    },
+    {
+      "sha": "90c14a2218fc3b1f35efb5f3688e7bc64e5076e5",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-10T14:11:25Z",
+      "message": "v5 added back to test (#173)",
+      "stats": {
+        "additions": 8,
+        "deletions": 7,
+        "total": 15
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "da4a6cb98654b70aeeec51c626c4218fffb8a9ba",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-10T13:33:36Z",
+      "message": "Revert \"Litestream revert (#171)\"",
+      "stats": {
+        "additions": 0,
+        "deletions": 11,
+        "total": 11
+      },
+      "branches": [
+        "revert-171-litestream_revert"
+      ]
+    },
+    {
+      "sha": "8dc31fb758a355819a94779e0a3419116eb7e47d",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-10T13:38:07Z",
+      "message": "Merge branch 'main' into temp_dis_ls",
+      "stats": {
+        "additions": 7,
+        "deletions": 8,
+        "total": 15
+      },
+      "branches": [
+        "temp_dis_ls"
+      ]
+    },
+    {
+      "sha": "127dc1c8885dc14af37fa3fd2a11fbaefcfaa243",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-10T13:06:01Z",
+      "message": "Merge branch 'main' into temp_rm_beszel",
+      "stats": {
+        "additions": 15,
+        "deletions": 2,
+        "total": 17
+      },
+      "branches": [
+        "temp_rm_beszel"
+      ]
+    },
+    {
+      "sha": "665609ea9b497b71b85c5f539203adeb8559ddd2",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-10T11:38:37Z",
+      "message": "Merge branch 'main' into temp_rm_beszel",
+      "stats": {
+        "additions": 262,
+        "deletions": 18,
+        "total": 280
+      },
+      "branches": [
+        "temp_rm_beszel"
+      ]
+    }
+  ],
+  "commit_count": 39,
+  "contributor_stats": {}
+}

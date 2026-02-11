@@ -88,18 +88,16 @@ class LeaderboardGenerator:
             f"Aggregated metrics for {len(user_metrics)} users across {len(date_strings)} dates")
         return dict(user_metrics)
 
-    def get_top_contributors(
+    def get_all_contributors(
         self,
         user_metrics: Dict[str, Dict[str, int]],
-        metric: str,
-        top_n: int = 3
+        metric: str
     ) -> List[Tuple[str, int]]:
-        """Get top N contributors sorted by specified metric
+        """Get ALL contributors sorted by specified metric
 
         Args:
             user_metrics: Dict mapping username to metrics
             metric: Metric to sort by ('commit_count' or 'total_loc')
-            top_n: Number of top contributors to return
 
         Returns:
             List of tuples (username, metric_value) sorted descending
@@ -107,28 +105,14 @@ class LeaderboardGenerator:
         if not user_metrics:
             return []
 
-        # Sort by metric descending
+        # Sort by metric descending and return all users
         sorted_users = sorted(
             user_metrics.items(),
             key=lambda x: x[1][metric],
             reverse=True
         )
 
-        # Get top N, but include all users tied with the Nth position
-        if len(sorted_users) <= top_n:
-            return [(user, metrics[metric]) for user, metrics in sorted_users]
-
-        result = []
-        for i, (user, metrics) in enumerate(sorted_users):
-            if i < top_n:
-                result.append((user, metrics[metric]))
-            elif result and metrics[metric] == result[-1][1]:
-                # Include tied users
-                result.append((user, metrics[metric]))
-            else:
-                break
-
-        return result
+        return [(user, metrics[metric]) for user, metrics in sorted_users]
 
     def format_date_range(self, date_strings: List[str]) -> str:
         """Format date range for display
@@ -167,18 +151,18 @@ class LeaderboardGenerator:
 
         user_metrics = self.aggregate_commits([yesterday])
 
-        top_by_commits = self.get_top_contributors(
+        all_by_commits = self.get_all_contributors(
             user_metrics, 'commit_count')
-        top_by_loc = self.get_top_contributors(user_metrics, 'total_loc')
+        all_by_loc = self.get_all_contributors(user_metrics, 'total_loc')
 
         date_str = self.format_date_range([yesterday])
 
         logger.info(
-            f"Daily leaderboard: {len(top_by_commits)} top by commits, "
-            f"{len(top_by_loc)} top by LOC"
+            f"Daily leaderboard: {len(all_by_commits)} contributors by commits, "
+            f"{len(all_by_loc)} contributors by LOC"
         )
 
-        return top_by_commits, top_by_loc, date_str
+        return all_by_commits, all_by_loc, date_str
 
     def generate_weekly_leaderboard(self) -> Tuple[List[Tuple[str, int]], List[Tuple[str, int]], str]:
         """Generate weekly leaderboard for last 7 days
@@ -192,15 +176,15 @@ class LeaderboardGenerator:
 
         user_metrics = self.aggregate_commits(last_7_days)
 
-        top_by_commits = self.get_top_contributors(
+        all_by_commits = self.get_all_contributors(
             user_metrics, 'commit_count')
-        top_by_loc = self.get_top_contributors(user_metrics, 'total_loc')
+        all_by_loc = self.get_all_contributors(user_metrics, 'total_loc')
 
         date_str = self.format_date_range(last_7_days)
 
         logger.info(
-            f"Weekly leaderboard: {len(top_by_commits)} top by commits, "
-            f"{len(top_by_loc)} top by LOC"
+            f"Weekly leaderboard: {len(all_by_commits)} contributors by commits, "
+            f"{len(all_by_loc)} contributors by LOC"
         )
 
-        return top_by_commits, top_by_loc, date_str
+        return all_by_commits, all_by_loc, date_str

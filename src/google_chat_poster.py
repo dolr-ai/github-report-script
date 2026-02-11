@@ -67,11 +67,12 @@ class GoogleChatPoster:
         contributors: List[Tuple[str, int]],
         metric_suffix: str
     ) -> str:
-        """Format a leaderboard section with contributors
+        """Format a leaderboard section with all contributors
+        Shows badges (🥇🥈🥉) for top 3, then lists everyone else
 
         Args:
             title: Section title (e.g., "🏆 Top Contributors by Commits")
-            contributors: List of (username, metric_value) tuples
+            contributors: List of (username, metric_value) tuples (all contributors)
             metric_suffix: Suffix for metric (e.g., "commits", "lines")
 
         Returns:
@@ -91,8 +92,15 @@ class GoogleChatPoster:
             if prev_value is None or value != prev_value:
                 current_rank = idx
 
-            emoji = self._get_rank_emoji(current_rank)
-            lines.append(f"{emoji} {username}: {value:,} {metric_suffix}")
+            # Show emoji for top 3 positions only, otherwise use rank number
+            if current_rank < 3:
+                emoji = self._get_rank_emoji(current_rank)
+                lines.append(f"{emoji} {username}: {value:,} {metric_suffix}")
+            else:
+                # For positions 4 and beyond, just show the number
+                lines.append(
+                    f"{current_rank + 1}. {username}: {value:,} {metric_suffix}")
+
             prev_value = value
 
         return "\n".join(lines)
