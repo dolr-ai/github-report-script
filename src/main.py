@@ -24,10 +24,13 @@ if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
 # fmt: off - DO NOT REORDER THESE IMPORTS
-from src.config import MODE, ExecutionMode, DATE_RANGE_MODE, DateRangeMode, USER_IDS, THREAD_COUNT, GITHUB_ORG, validate_config, display_config, get_date_range
+from src.config import MODE, ExecutionMode, DATE_RANGE_MODE, DateRangeMode, USER_IDS, THREAD_COUNT, GITHUB_ORG, validate_config, display_config, get_date_range, IST_TIMEZONE
 from src.github_fetcher import GitHubFetcher
 from src.data_processor import DataProcessor
 from src.chart_generator import ChartGenerator
+from src.leaderboard_generator import LeaderboardGenerator
+from src.google_chat_poster import GoogleChatPoster
+from src.cache_manager import CacheManager
 # fmt: on
 
 logger = logging.getLogger(__name__)
@@ -275,6 +278,84 @@ def cmd_fetch_and_chart():
     print("=" * 70)
 
 
+def cmd_leaderboard():
+    """Generate and post daily/weekly leaderboards to Google Chat"""
+    print(display_config())
+    logger.info("Starting LEADERBOARD mode")
+
+    try:
+        # Initialize components
+        cache_manager = CacheManager()
+        leaderboard_generator = LeaderboardGenerator(cache_manager)
+        chat_poster = GoogleChatPoster()
+
+        # Determine if today is Sunday (post weekly) or weekday (post daily)
+        is_sunday = leaderboard_generator.is_sunday()
+
+        if is_sunday:
+            logger.info("Sunday detected - generating weekly leaderboard")
+            print("Generating weekly leaderboard for last 7 days...\n")
+
+            # Generate weekly leaderboard
+            top_by_commits, top_by_loc, date_string = leaderboard_generator.generate_weekly_leaderboard()
+
+            # Post to Google Chat
+            success = chat_poster.post_leaderboard(
+                period_type="Weekly",
+                date_string=date_string,
+                top_by_commits=top_by_commits,
+                top_by_loc=top_by_loc
+            )
+
+            if success:
+                print("\n" + "=" * 70)
+                print("✓ Weekly leaderboard posted to Google Chat!")
+                print("=" * 70)
+            else:
+                logger.warning(
+                    "Failed to post weekly leaderboard to Google Chat")
+                print("\n" + "=" * 70)
+                print("⚠️  Failed to post weekly leaderboard to Google Chat")
+                print("   Check logs for details")
+                print("=" * 70)
+
+        else:
+            logger.info("Weekday detected - generating daily leaderboard")
+            print("Generating daily leaderboard for yesterday...\n")
+
+            # Generate daily leaderboard
+            top_by_commits, top_by_loc, date_string = leaderboard_generator.generate_daily_leaderboard()
+
+            # Post to Google Chat
+            success = chat_poster.post_leaderboard(
+                period_type="Daily",
+                date_string=date_string,
+                top_by_commits=top_by_commits,
+                top_by_loc=top_by_loc
+            )
+
+            if success:
+                print("\n" + "=" * 70)
+                print("✓ Daily leaderboard posted to Google Chat!")
+                print("=" * 70)
+            else:
+                logger.warning(
+                    "Failed to post daily leaderboard to Google Chat")
+                print("\n" + "=" * 70)
+                print("⚠️  Failed to post daily leaderboard to Google Chat")
+                print("   Check logs for details")
+                print("=" * 70)
+
+    except Exception as e:
+        logger.error(
+            f"Error generating/posting leaderboard: {e}", exc_info=True)
+        print("\n" + "=" * 70)
+        print(f"❌ Error: {e}")
+        print("   Leaderboard posting failed but will not block workflow")
+        print("=" * 70)
+        # Don't raise - allow workflow to continue
+
+
 def parse_args():
     """Parse command-line arguments"""
     parser = argparse.ArgumentParser(
@@ -288,6 +369,7 @@ Examples:
   python src/main.py --mode chart             # Generate charts from existing data
   python src/main.py --mode status            # Check cache status
   python src/main.py --mode refresh-stats     # Refresh GitHub stats only (no commits fetch)
+  python src/main.py --mode leaderboard       # Post leaderboard to Google Chat (daily/weekly)
 
 Note: Arguments override settings in src/config.py
         """
@@ -297,7 +379,7 @@ Note: Arguments override settings in src/config.py
         '--mode',
         type=str,
         choices=['fetch', 'refresh', 'chart', 'status',
-                 'fetch_and_chart', 'refresh-stats'],
+                 'fetch_and_chart', 'refresh-stats', 'leaderboard'],
         help='Execution mode (default: from config.py, typically fetch_and_chart)'
     )
 
@@ -325,6 +407,7 @@ def main():
             'chart': ExecutionMode.CHART,
             'status': ExecutionMode.STATUS,
             'fetch_and_chart': ExecutionMode.FETCH_AND_CHART,
+            'leaderboard': ExecutionMode.LEADERBOARD,
             'refresh-stats': 'REFRESH_STATS'  # Special mode
         }
         MODE = mode_map[args.mode]
@@ -351,6 +434,8 @@ def main():
             cmd_status()
         elif MODE == ExecutionMode.FETCH_AND_CHART:
             cmd_fetch_and_chart()
+        elif MODE == ExecutionMode.LEADERBOARD:
+            cmd_leaderboard()
         elif MODE == 'REFRESH_STATS':
             cmd_refresh_stats()
         else:

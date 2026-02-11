@@ -10,6 +10,7 @@ from enum import Enum
 from datetime import datetime, timedelta
 from typing import Optional, List
 from dotenv import load_dotenv
+import pytz
 
 # Load environment variables from .env file
 load_dotenv()
@@ -51,12 +52,14 @@ class ExecutionMode(Enum):
     CHART: Generate visualizations from existing processed data
     STATUS: Display current status (rate limits, cached data, etc.)
     FETCH_AND_CHART: Fetch data and immediately generate charts (combined mode)
+    LEADERBOARD: Generate and post daily/weekly leaderboards to Google Chat
     """
     FETCH = "fetch"
     REFRESH = "refresh"
     CHART = "chart"
     STATUS = "status"
     FETCH_AND_CHART = "fetch_and_chart"
+    LEADERBOARD = "leaderboard"
 
 
 class DateRangeMode(Enum):
@@ -110,7 +113,7 @@ Examples:
     DATE_RANGE_MODE = DateRangeMode.ALL_CACHED      # All cached dates
 """
 
-DAYS_BACK = 90
+DAYS_BACK = 30
 """Number of days to go back when DATE_RANGE_MODE = LAST_N_DAYS. Can be overridden with --days argument."""
 
 START_DATE: Optional[str] = '2026-01-05'
@@ -139,6 +142,23 @@ GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
 
 GITHUB_ORG = os.getenv('GITHUB_ORG', 'dolr-ai')
 """GitHub organization to fetch commits from"""
+
+# --- Google Chat Configuration ---
+GOOGLE_CHAT_WEBHOOK_BASE_URL = "https://chat.googleapis.com/v1/spaces/AAAA90FUe6M/messages"
+"""Google Chat webhook base URL (without query parameters)"""
+
+GOOGLE_CHAT_KEY = os.getenv('GOOGLE_CHAT_KEY')
+"""Google Chat webhook API key (loaded from .env file)"""
+
+GOOGLE_CHAT_TOKEN = os.getenv('GOOGLE_CHAT_TOKEN')
+"""Google Chat webhook token (loaded from .env file)"""
+
+REPORTS_BASE_URL = "https://dolr-ai.github.io/github-report-script/"
+"""Public URL where reports are hosted"""
+
+# --- Timezone Configuration ---
+IST_TIMEZONE = pytz.timezone('Asia/Kolkata')
+"""IST timezone for date calculations (all contributors are primarily in IST)"""
 
 USER_IDS: List[str] = [
     'saikatdas0790',

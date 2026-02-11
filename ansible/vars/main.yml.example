@@ -7,6 +7,10 @@
 github_token: "{{ vault_github_token }}"
 github_org: "dolr-ai"
 
+# Google Chat Configuration
+google_chat_key: "{{ vault_google_chat_key }}"
+google_chat_token: "{{ vault_google_chat_token }}"
+
 # Add more variables as needed:
 # api_key: "{{ vault_api_key }}"
 # database_password: "{{ vault_database_password }}"

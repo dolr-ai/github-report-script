@@ -40,6 +40,22 @@ jobs:
             ANSIBLE_VAULT_PASSWORD=${{ secrets.ANSIBLE_VAULT_PASSWORD }}
             EXECUTION_MODE=fetch_and_chart
 
+      - name: Post leaderboard to Google Chat
+        uses: devcontainers/ci@v0.3
+        continue-on-error: true
+        with:
+          imageName: ghcr.io/dolr-ai/github-report-script
+          cacheFrom: ghcr.io/dolr-ai/github-report-script
+          push: never
+          runCmd: |
+            # Set up CI environment
+            bash .github/scripts/setup-ci.sh
+            
+            # Post leaderboard (daily Mon-Sat, weekly on Sun)
+            python src/main.py --mode leaderboard
+          env: |
+            ANSIBLE_VAULT_PASSWORD=${{ secrets.ANSIBLE_VAULT_PASSWORD }}
+
       - name: Commit and push updated data
         run: |
           git config user.name "github-actions[bot]"

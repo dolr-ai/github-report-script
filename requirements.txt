@@ -11,6 +11,12 @@ plotly>=5.17.0
 # Configuration
 python-dotenv>=1.0.0
 
+# Timezone support
+pytz>=2024.1
+
+# HTTP requests for Google Chat webhook
+requests>=2.31.0
+
 # Progress bars
 tqdm>=4.65.0
 
