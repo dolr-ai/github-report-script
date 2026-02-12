@@ -1,0 +1,47 @@
+{
+  "date": "2026-02-11",
+  "username": "gravityvi",
+  "additions": 876,
+  "deletions": 77,
+  "total_loc": 953,
+  "commit_count": 4,
+  "repositories": [
+    "dolr-ai/hot-or-not-backend-canister",
+    "dolr-ai/yral-billing",
+    "dolr-ai/yral-video-upload-service"
+  ],
+  "repo_count": 3,
+  "branch_breakdown": {
+    "dolr-ai/yral-billing": {
+      "feat/update-remove-caddy-config-from-yral-billing": {
+        "additions": 0,
+        "deletions": 0,
+        "total_loc": 0,
+        "commit_count": 1
+      },
+      "main": {
+        "additions": 4,
+        "deletions": 50,
+        "total_loc": 54,
+        "commit_count": 1
+      }
+    },
+    "dolr-ai/yral-video-upload-service": {
+      "main": {
+        "additions": 220,
+        "deletions": 8,
+        "total_loc": 228,
+        "commit_count": 1
+      }
+    },
+    "dolr-ai/hot-or-not-backend-canister": {
+      "main": {
+        "additions": 652,
+        "deletions": 19,
+        "total_loc": 671,
+        "commit_count": 1
+      }
+    }
+  },
+  "processed_at": "2026-02-12T18:55:20.855902Z"
+}
