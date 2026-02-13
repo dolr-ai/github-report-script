@@ -133,15 +133,15 @@ class GoogleChatPoster:
         lines = [f"📊 **{period_type} Leaderboard ({date_string})**\n"]
 
         current_rank = 0
-        prev_issues = None
+        prev_metrics = None
 
         for idx, (username, metrics) in enumerate(contributors_by_impact):
             issues_closed = metrics.get('issues_closed', 0)
             commit_count = metrics.get('commit_count', 0)
             total_loc = metrics.get('total_loc', 0)
 
-            # Handle ties: same issues count = same rank
-            if prev_issues is None or issues_closed != prev_issues:
+            # Handle ties: same rank if all three metrics match
+            if prev_metrics is None or (issues_closed, commit_count, total_loc) != prev_metrics:
                 current_rank = idx
 
             # Show emoji for top 3 positions only
@@ -160,7 +160,7 @@ class GoogleChatPoster:
             if idx < len(contributors_by_impact) - 1:
                 lines.append("")  # Blank line between contributors
 
-            prev_issues = issues_closed
+            prev_metrics = (issues_closed, commit_count, total_loc)
 
         lines.append(f"\n🔗 View all reports: {REPORTS_BASE_URL}")
 
@@ -272,13 +272,15 @@ class GoogleChatPoster:
             f"📝 **{period_type} Commit & Issue Details ({date_string})**\n"]
 
         current_rank = 0
-        prev_issues = None
+        prev_metrics = None
 
         for idx, (username, metrics) in enumerate(leaderboard_order):
             issues_closed = metrics.get('issues_closed', 0)
+            commit_count = metrics.get('commit_count', 0)
+            total_loc = metrics.get('total_loc', 0)
 
-            # Handle ties
-            if prev_issues is None or issues_closed != prev_issues:
+            # Handle ties: same rank if all three metrics match
+            if prev_metrics is None or (issues_closed, commit_count, total_loc) != prev_metrics:
                 current_rank = idx
 
             # Show emoji for top 3 positions
@@ -305,6 +307,8 @@ class GoogleChatPoster:
                 if len(issues) > 20:
                     message_parts.append(
                         f"  • ... and {len(issues) - 20} more issues")
+
+            prev_metrics = (issues_closed, commit_count, total_loc)
 
             # Show commits
             commits = user_commits.get(username, [])
