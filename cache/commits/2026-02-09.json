@@ -1,6 +1,6 @@
 {
   "date": "2026-02-09",
-  "cached_at": "2026-02-10T18:52:12.361226Z",
+  "cached_at": "2026-02-13T11:06:52.391602Z",
   "commits": [
     {
       "sha": "a3247f3e842d33076abedf6bb9da06f785549ee1",
@@ -59,6 +59,95 @@
         "total": 22460
       },
       "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c7fde67186130378c1ed7458f95a8734f1b2a836",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-09T14:12:21Z",
+      "message": "fix: Fixes iOS build",
+      "stats": {
+        "additions": 47,
+        "deletions": 18,
+        "total": 65
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/5-min-tournament",
+        "feature/5-min-tournament-bk",
+        "main"
+      ]
+    },
+    {
+      "sha": "d171ee6c06d4a307c0af5ac44274d3e1c85a43ef",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-09T09:05:41Z",
+      "message": "chore: Increments android app version",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/5-min-tournament",
+        "feature/5-min-tournament-bk",
+        "main"
+      ]
+    },
+    {
+      "sha": "df383d162596e3180d7194b876f5e3ef455b1d20",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-02-09T14:46:38Z",
+      "message": "add struct for error response and refine status code for apis",
+      "stats": {
+        "additions": 1080,
+        "deletions": 172,
+        "total": 1252
+      },
+      "branches": [
+        "feat/setup-ci-cd-for-build-and-deploy",
+        "main"
+      ]
+    },
+    {
+      "sha": "9e4e524d37a3837829e5ae113e6ee67edff3e3b1",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-02-09T05:22:41Z",
+      "message": "add route for marking post as published",
+      "stats": {
+        "additions": 110,
+        "deletions": 5,
+        "total": 115
+      },
+      "branches": [
+        "feat/setup-ci-cd-for-build-and-deploy",
+        "main"
+      ]
+    },
+    {
+      "sha": "8fcc70256585f120aee4087677dee830ef98f870",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-09T08:15:38Z",
+      "message": "Adds phone number in otp_validation_result event (#855)",
+      "stats": {
+        "additions": 8,
+        "deletions": 0,
+        "total": 8
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/5-min-tournament-bk",
         "main"
       ]
     },
@@ -166,55 +255,29 @@
       "branches": [
         "main"
       ]
-    },
-    {
-      "sha": "8fcc70256585f120aee4087677dee830ef98f870",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-09T08:15:38Z",
-      "message": "Adds phone number in otp_validation_result event (#855)",
-      "stats": {
-        "additions": 8,
-        "deletions": 0,
-        "total": 8
-      },
-      "branches": [
-        "develop",
-        "feature/ai-influencer",
-        "fix/crash-fix-non-unique-key"
-      ]
-    },
-    {
-      "sha": "df383d162596e3180d7194b876f5e3ef455b1d20",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-video-upload-service",
-      "timestamp": "2026-02-09T14:46:38Z",
-      "message": "add struct for error response and refine status code for apis",
-      "stats": {
-        "additions": 1080,
-        "deletions": 172,
-        "total": 1252
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "9e4e524d37a3837829e5ae113e6ee67edff3e3b1",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-video-upload-service",
-      "timestamp": "2026-02-09T05:22:41Z",
-      "message": "add route for marking post as published",
-      "stats": {
-        "additions": 110,
-        "deletions": 5,
-        "total": 115
-      },
-      "branches": [
-        "main"
-      ]
     }
   ],
-  "commit_count": 14,
+  "commit_count": 16,
+  "issues": [
+    {
+      "number": 1376,
+      "title": "Cleanup CF Upload Workers",
+      "closed_at": "2026-02-09T05:21:02Z",
+      "assignee": "joel-medicala-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1376",
+      "labels": []
+    },
+    {
+      "number": 1619,
+      "title": "setup load balancer and reverse proxy for vault service",
+      "closed_at": "2026-02-09T04:41:52Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1619",
+      "labels": []
+    }
+  ],
+  "issue_count": 2,
   "contributor_stats": {}
 }

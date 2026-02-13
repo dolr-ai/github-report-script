@@ -82,28 +82,7 @@
     }
   ],
   "commit_count": 5,
-  "contributor_stats": {
-    "naitik-makwana-yral": {
-      "2026-02-08": {
-        "commits": 6,
-        "additions": 74,
-        "deletions": 7,
-        "total": 81,
-        "repos": [
-          "dolr-ai/hello-world-vault-demo"
-        ]
-      }
-    },
-    "saikatdas0790": {
-      "2026-02-08": {
-        "commits": 4,
-        "additions": 75485,
-        "deletions": 329,
-        "total": 75814,
-        "repos": [
-          "dolr-ai/github-report-script"
-        ]
-      }
-    }
-  }
+  "issues": [],
+  "issue_count": 0,
+  "contributor_stats": {}
 }

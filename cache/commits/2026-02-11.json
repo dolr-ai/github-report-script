@@ -1,94 +1,7 @@
 {
   "date": "2026-02-11",
-  "cached_at": "2026-02-12T18:55:20.844980Z",
+  "cached_at": "2026-02-13T11:10:54.230837Z",
   "commits": [
-    {
-      "sha": "3dfd34deaed5db66505a8765b5df041cfe21cd3d",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-11T07:58:22Z",
-      "message": "build: Updates refreshToken logic (#864)",
-      "stats": {
-        "additions": 30,
-        "deletions": 30,
-        "total": 60
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/5-min-tournament-bk",
-        "release/android-2.6.6"
-      ]
-    },
-    {
-      "sha": "11972bdffdfed9854b31bc25f2f74073a2226c5a",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-11T03:46:02Z",
-      "message": "Merge pull request #847 from dolr-ai/release/android-2.6.5",
-      "stats": {
-        "additions": 48,
-        "deletions": 19,
-        "total": 67
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/5-min-tournament-bk",
-        "release/android-2.6.6"
-      ]
-    },
-    {
-      "sha": "25345f0caf52546c28634459b27f55990b10e312",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-11T03:44:32Z",
-      "message": "Merge branch 'develop' into release/android-2.6.5",
-      "stats": {
-        "additions": 1681,
-        "deletions": 137,
-        "total": 1818
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/5-min-tournament-bk",
-        "release/android-2.6.6"
-      ]
-    },
-    {
-      "sha": "4dc8a13a4d7ca6ce359f74edcd9bfad4bc679b15",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-11T03:37:29Z",
-      "message": "Crash fix non unique key (#861)",
-      "stats": {
-        "additions": 393,
-        "deletions": 15,
-        "total": 408
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/5-min-tournament-bk",
-        "release/android-2.6.6"
-      ]
-    },
-    {
-      "sha": "33255aad2b273da05c82ec2138a7e2ee0e698205",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-11T03:38:30Z",
-      "message": "Merge pull request #846 from dolr-ai/release/android-2.6.5",
-      "stats": {
-        "additions": 4323,
-        "deletions": 438,
-        "total": 4761
-      },
-      "branches": [
-        "main"
-      ]
-    },
     {
       "sha": "df267666a7920e76f6700f330c216f5c38467112",
       "author": "joel-medicala-yral",
@@ -225,7 +138,7 @@
       "branches": [
         "create-pull-request/update-did-files-v3.5.9",
         "develop",
-        "release/android-2.6.6"
+        "main"
       ]
     },
     {
@@ -242,7 +155,7 @@
       "branches": [
         "create-pull-request/update-did-files-v3.5.9",
         "develop",
-        "release/android-2.6.6"
+        "main"
       ]
     },
     {
@@ -259,7 +172,7 @@
       "branches": [
         "create-pull-request/update-did-files-v3.5.9",
         "develop",
-        "release/android-2.6.6"
+        "main"
       ]
     },
     {
@@ -276,7 +189,7 @@
       "branches": [
         "create-pull-request/update-did-files-v3.5.9",
         "develop",
-        "release/android-2.6.6"
+        "main"
       ]
     },
     {
@@ -293,7 +206,7 @@
       "branches": [
         "create-pull-request/update-did-files-v3.5.9",
         "develop",
-        "release/android-2.6.6"
+        "main"
       ]
     },
     {
@@ -435,6 +348,93 @@
       ]
     },
     {
+      "sha": "3dfd34deaed5db66505a8765b5df041cfe21cd3d",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-11T07:58:22Z",
+      "message": "build: Updates refreshToken logic (#864)",
+      "stats": {
+        "additions": 30,
+        "deletions": 30,
+        "total": 60
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/5-min-tournament-bk",
+        "main"
+      ]
+    },
+    {
+      "sha": "11972bdffdfed9854b31bc25f2f74073a2226c5a",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-11T03:46:02Z",
+      "message": "Merge pull request #847 from dolr-ai/release/android-2.6.5",
+      "stats": {
+        "additions": 48,
+        "deletions": 19,
+        "total": 67
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/5-min-tournament-bk",
+        "main"
+      ]
+    },
+    {
+      "sha": "25345f0caf52546c28634459b27f55990b10e312",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-11T03:44:32Z",
+      "message": "Merge branch 'develop' into release/android-2.6.5",
+      "stats": {
+        "additions": 1681,
+        "deletions": 137,
+        "total": 1818
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/5-min-tournament-bk",
+        "main"
+      ]
+    },
+    {
+      "sha": "4dc8a13a4d7ca6ce359f74edcd9bfad4bc679b15",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-11T03:37:29Z",
+      "message": "Crash fix non unique key (#861)",
+      "stats": {
+        "additions": 393,
+        "deletions": 15,
+        "total": 408
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/5-min-tournament-bk",
+        "main"
+      ]
+    },
+    {
+      "sha": "33255aad2b273da05c82ec2138a7e2ee0e698205",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-11T03:38:30Z",
+      "message": "Merge pull request #846 from dolr-ai/release/android-2.6.5",
+      "stats": {
+        "additions": 4323,
+        "deletions": 438,
+        "total": 4761
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
       "sha": "9ae7d8be7c134e701b989082c422aabcb86bdecc",
       "author": "saikatdas0790",
       "repository": "dolr-ai/github-report-script",
@@ -466,5 +466,37 @@
     }
   ],
   "commit_count": 29,
+  "issues": [
+    {
+      "number": 1639,
+      "title": "add support for wan 2.5 i2v and deprecate wan 2.5 t2v",
+      "closed_at": "2026-02-11T05:29:52Z",
+      "assignee": "joel-medicala-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1639",
+      "labels": []
+    },
+    {
+      "number": 1618,
+      "title": "Deprecate LUMA as its a non audio model",
+      "closed_at": "2026-02-11T05:23:59Z",
+      "assignee": "joel-medicala-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1618",
+      "labels": []
+    },
+    {
+      "number": 1634,
+      "title": "[Feature Request]: Parent Account Subscription Syncs to Bot Account.",
+      "closed_at": "2026-02-11T05:24:55Z",
+      "assignee": "ravi-sawlani-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1634",
+      "labels": [
+        "Backend Dependencies"
+      ]
+    }
+  ],
+  "issue_count": 3,
   "contributor_stats": {}
 }

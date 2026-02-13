@@ -1,6 +1,6 @@
 {
   "date": "2026-02-07",
-  "cached_at": "2026-02-08T06:26:16.071701Z",
+  "cached_at": "2026-02-13T11:06:19.448633Z",
   "commits": [
     {
       "sha": "84a2ad57cf7f9127796cbd6de04bccd3a68d2745",
@@ -14,6 +14,7 @@
         "total": 27310
       },
       "branches": [
+        "github-contributor-stats-compare",
         "main"
       ]
     },
@@ -29,6 +30,7 @@
         "total": 194
       },
       "branches": [
+        "github-contributor-stats-compare",
         "main",
         "match-github"
       ]
@@ -45,11 +47,14 @@
         "total": 26947
       },
       "branches": [
+        "github-contributor-stats-compare",
         "main",
         "match-github"
       ]
     }
   ],
   "commit_count": 3,
+  "issues": [],
+  "issue_count": 0,
   "contributor_stats": {}
 }

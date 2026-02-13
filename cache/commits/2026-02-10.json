@@ -1,79 +1,7 @@
 {
   "date": "2026-02-10",
-  "cached_at": "2026-02-11T15:05:54.302284Z",
+  "cached_at": "2026-02-13T11:10:43.033458Z",
   "commits": [
-    {
-      "sha": "6e0d2d4960bd19c1499524560d4ba13c4dbb2c7f",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-10T11:14:05Z",
-      "message": "Changes oauth end point (#860)",
-      "stats": {
-        "additions": 2,
-        "deletions": 2,
-        "total": 4
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/5-min-tournament-bk"
-      ]
-    },
-    {
-      "sha": "a5d942571488fcce854c9634f76f1f2ed8327dd8",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-10T09:36:23Z",
-      "message": "Updates using fetchFeedDetails instead of fetchPostDetailsWithNsfwInfo (#858)",
-      "stats": {
-        "additions": 5,
-        "deletions": 3,
-        "total": 8
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/5-min-tournament-bk"
-      ]
-    },
-    {
-      "sha": "603c06396f0a5fe5c86dad205b6b0f4ea858c38f",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-10T07:54:14Z",
-      "message": "Enables chat as default in remote config (#859)",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/5-min-tournament-bk"
-      ]
-    },
-    {
-      "sha": "f17bbae2b88b31395987259fe33046ec4ebe15f2",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-10T04:34:32Z",
-      "message": "Implements custom error handling with bottom sheet UI for chat (#857)",
-      "stats": {
-        "additions": 405,
-        "deletions": 29,
-        "total": 434
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/5-min-tournament-bk"
-      ]
-    },
     {
       "sha": "a28f6a3f69e244eb823ed5bcc71505b150b427e2",
       "author": "joel-medicala-yral",
@@ -118,6 +46,7 @@
       "branches": [
         "joel/delete_bot",
         "joel/ltx-intergration",
+        "joel/silence-insufficient-balance",
         "main"
       ]
     },
@@ -135,6 +64,7 @@
       "branches": [
         "joel/delete_bot",
         "joel/ltx-intergration",
+        "joel/silence-insufficient-balance",
         "main"
       ]
     },
@@ -242,7 +172,8 @@
       "branches": [
         "create-pull-request/update-did-files-v3.5.9",
         "develop",
-        "feature/5-min-tournament-bk"
+        "feature/5-min-tournament-bk",
+        "main"
       ]
     },
     {
@@ -259,7 +190,8 @@
       "branches": [
         "create-pull-request/update-did-files-v3.5.9",
         "develop",
-        "feature/5-min-tournament-bk"
+        "feature/5-min-tournament-bk",
+        "main"
       ]
     },
     {
@@ -276,7 +208,8 @@
       "branches": [
         "create-pull-request/update-did-files-v3.5.9",
         "develop",
-        "feature/5-min-tournament-bk"
+        "feature/5-min-tournament-bk",
+        "main"
       ]
     },
     {
@@ -293,7 +226,8 @@
       "branches": [
         "create-pull-request/update-did-files-v3.5.9",
         "develop",
-        "feature/5-min-tournament-bk"
+        "feature/5-min-tournament-bk",
+        "main"
       ]
     },
     {
@@ -310,7 +244,8 @@
       "branches": [
         "create-pull-request/update-did-files-v3.5.9",
         "develop",
-        "feature/5-min-tournament-bk"
+        "feature/5-min-tournament-bk",
+        "main"
       ]
     },
     {
@@ -327,7 +262,8 @@
       "branches": [
         "create-pull-request/update-did-files-v3.5.9",
         "develop",
-        "feature/5-min-tournament-bk"
+        "feature/5-min-tournament-bk",
+        "main"
       ]
     },
     {
@@ -344,7 +280,8 @@
       "branches": [
         "create-pull-request/update-did-files-v3.5.9",
         "develop",
-        "feature/5-min-tournament-bk"
+        "feature/5-min-tournament-bk",
+        "main"
       ]
     },
     {
@@ -361,7 +298,8 @@
       "branches": [
         "create-pull-request/update-did-files-v3.5.9",
         "develop",
-        "feature/5-min-tournament-bk"
+        "feature/5-min-tournament-bk",
+        "main"
       ]
     },
     {
@@ -378,7 +316,261 @@
       "branches": [
         "create-pull-request/update-did-files-v3.5.9",
         "develop",
-        "feature/5-min-tournament-bk"
+        "feature/5-min-tournament-bk",
+        "main"
+      ]
+    },
+    {
+      "sha": "6e0d2d4960bd19c1499524560d4ba13c4dbb2c7f",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-10T11:14:05Z",
+      "message": "Changes oauth end point (#860)",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/5-min-tournament-bk",
+        "main"
+      ]
+    },
+    {
+      "sha": "a5d942571488fcce854c9634f76f1f2ed8327dd8",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-10T09:36:23Z",
+      "message": "Updates using fetchFeedDetails instead of fetchPostDetailsWithNsfwInfo (#858)",
+      "stats": {
+        "additions": 5,
+        "deletions": 3,
+        "total": 8
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/5-min-tournament-bk",
+        "main"
+      ]
+    },
+    {
+      "sha": "603c06396f0a5fe5c86dad205b6b0f4ea858c38f",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-10T07:54:14Z",
+      "message": "Enables chat as default in remote config (#859)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/5-min-tournament-bk",
+        "main"
+      ]
+    },
+    {
+      "sha": "f17bbae2b88b31395987259fe33046ec4ebe15f2",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-10T04:34:32Z",
+      "message": "Implements custom error handling with bottom sheet UI for chat (#857)",
+      "stats": {
+        "additions": 405,
+        "deletions": 29,
+        "total": 434
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/5-min-tournament-bk",
+        "main"
+      ]
+    },
+    {
+      "sha": "90c14a2218fc3b1f35efb5f3688e7bc64e5076e5",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-10T14:11:25Z",
+      "message": "v5 added back to test (#173)",
+      "stats": {
+        "additions": 8,
+        "deletions": 7,
+        "total": 15
+      },
+      "branches": [
+        "auth_dolr_main",
+        "main",
+        "trivy_sec_fix"
+      ]
+    },
+    {
+      "sha": "258457e6c45beabdce7cd0d9e1098412a224cddd",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-10T13:23:20Z",
+      "message": "Litestream revert (#171)",
+      "stats": {
+        "additions": 11,
+        "deletions": 0,
+        "total": 11
+      },
+      "branches": [
+        "auth_dolr_main",
+        "lite_v5_back",
+        "main",
+        "revert-171-litestream_revert",
+        "temp_dis_ls",
+        "trivy_sec_fix"
+      ]
+    },
+    {
+      "sha": "8db02e8bef36ada06f9d6bfec80a6440200938a8",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-10T13:19:52Z",
+      "message": "Litestream v3 BACK (#170)",
+      "stats": {
+        "additions": 2,
+        "deletions": 14,
+        "total": 16
+      },
+      "branches": [
+        "auth_dolr_main",
+        "lite_v5_back",
+        "litestream_revert",
+        "main",
+        "revert-171-litestream_revert",
+        "temp_dis_ls",
+        "trivy_sec_fix"
+      ]
+    },
+    {
+      "sha": "a6e302b099e01cbd86ea48832f95a8ca5a575127",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-10T13:01:07Z",
+      "message": "The litestream-vfs binary I initially used caused segmentation faults in production. The Fix: I upda",
+      "stats": {
+        "additions": 2,
+        "deletions": 3,
+        "total": 5
+      },
+      "branches": [
+        "auth_dolr_main",
+        "lite_v5_back",
+        "litestream_revert",
+        "main",
+        "revert-171-litestream_revert",
+        "temp_dis_ls",
+        "temp_rm_beszel",
+        "trivy_sec_fix"
+      ]
+    },
+    {
+      "sha": "70124c6ee6b290ced4fae2f88e6c5bc8d3c5d0d0",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-10T12:40:58Z",
+      "message": "Upgrade Litestream (#168)",
+      "stats": {
+        "additions": 15,
+        "deletions": 1,
+        "total": 16
+      },
+      "branches": [
+        "auth_dolr_main",
+        "fix_prod_litestreamcrash",
+        "lite_v5_back",
+        "litestream_revert",
+        "main",
+        "revert-171-litestream_revert",
+        "temp_dis_ls",
+        "temp_rm_beszel",
+        "trivy_sec_fix"
+      ]
+    },
+    {
+      "sha": "20961f88b9bdcd78e9bce6f7d4c7d86c33f4ac0b",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-10T11:55:41Z",
+      "message": "Litestream safetyfix (#167)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "auth_dolr_main",
+        "fix_prod_litestreamcrash",
+        "lite_v5_back",
+        "litestream_revert",
+        "litestrem_v5",
+        "main",
+        "revert-171-litestream_revert",
+        "temp_dis_ls",
+        "temp_rm_beszel",
+        "trivy_sec_fix"
+      ]
+    },
+    {
+      "sha": "69132ffcd4ec4b0bed83fa0318510f2be2ebdbb4",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-10T11:51:53Z",
+      "message": "Update Litestream version (#166)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "auth_dolr_main",
+        "fix_prod_litestreamcrash",
+        "lite_v5_back",
+        "litestream_revert",
+        "litestream_safetyfix",
+        "litestrem_v5",
+        "main",
+        "revert-171-litestream_revert",
+        "temp_dis_ls",
+        "temp_rm_beszel",
+        "trivy_sec_fix"
+      ]
+    },
+    {
+      "sha": "c9883f6671bfb3e14ce2ccdad19391126412527d",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-10T11:38:20Z",
+      "message": "Indempotency msg fix (#154)",
+      "stats": {
+        "additions": 262,
+        "deletions": 18,
+        "total": 280
+      },
+      "branches": [
+        "auth_dolr_main",
+        "fix_prod_litestreamcrash",
+        "lite_v5_back",
+        "litestream_revert",
+        "litestream_safetyfix",
+        "litestrem_v5",
+        "main",
+        "revert-171-litestream_revert",
+        "temp_dis_ls",
+        "temp_rm_beszel",
+        "trivy_sec_fix"
       ]
     },
     {
@@ -412,152 +604,6 @@
       ]
     },
     {
-      "sha": "70124c6ee6b290ced4fae2f88e6c5bc8d3c5d0d0",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-02-10T12:40:58Z",
-      "message": "Upgrade Litestream (#168)",
-      "stats": {
-        "additions": 15,
-        "deletions": 1,
-        "total": 16
-      },
-      "branches": [
-        "fix_prod_litestreamcrash",
-        "lite_v5_back",
-        "litestream_revert",
-        "main",
-        "revert-171-litestream_revert",
-        "temp_dis_ls",
-        "temp_rm_beszel"
-      ]
-    },
-    {
-      "sha": "20961f88b9bdcd78e9bce6f7d4c7d86c33f4ac0b",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-02-10T11:55:41Z",
-      "message": "Litestream safetyfix (#167)",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "fix_prod_litestreamcrash",
-        "lite_v5_back",
-        "litestream_revert",
-        "litestrem_v5",
-        "main",
-        "revert-171-litestream_revert",
-        "temp_dis_ls",
-        "temp_rm_beszel"
-      ]
-    },
-    {
-      "sha": "69132ffcd4ec4b0bed83fa0318510f2be2ebdbb4",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-02-10T11:51:53Z",
-      "message": "Update Litestream version (#166)",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "fix_prod_litestreamcrash",
-        "lite_v5_back",
-        "litestream_revert",
-        "litestream_safetyfix",
-        "litestrem_v5",
-        "main",
-        "revert-171-litestream_revert",
-        "temp_dis_ls",
-        "temp_rm_beszel"
-      ]
-    },
-    {
-      "sha": "c9883f6671bfb3e14ce2ccdad19391126412527d",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-02-10T11:38:20Z",
-      "message": "Indempotency msg fix (#154)",
-      "stats": {
-        "additions": 262,
-        "deletions": 18,
-        "total": 280
-      },
-      "branches": [
-        "fix_prod_litestreamcrash",
-        "lite_v5_back",
-        "litestream_revert",
-        "litestream_safetyfix",
-        "litestrem_v5",
-        "main",
-        "revert-171-litestream_revert",
-        "temp_dis_ls",
-        "temp_rm_beszel"
-      ]
-    },
-    {
-      "sha": "258457e6c45beabdce7cd0d9e1098412a224cddd",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-02-10T13:23:20Z",
-      "message": "Litestream revert (#171)",
-      "stats": {
-        "additions": 11,
-        "deletions": 0,
-        "total": 11
-      },
-      "branches": [
-        "lite_v5_back",
-        "main",
-        "revert-171-litestream_revert",
-        "temp_dis_ls"
-      ]
-    },
-    {
-      "sha": "8db02e8bef36ada06f9d6bfec80a6440200938a8",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-02-10T13:19:52Z",
-      "message": "Litestream v3 BACK (#170)",
-      "stats": {
-        "additions": 2,
-        "deletions": 14,
-        "total": 16
-      },
-      "branches": [
-        "lite_v5_back",
-        "litestream_revert",
-        "main",
-        "revert-171-litestream_revert",
-        "temp_dis_ls"
-      ]
-    },
-    {
-      "sha": "a6e302b099e01cbd86ea48832f95a8ca5a575127",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-02-10T13:01:07Z",
-      "message": "The litestream-vfs binary I initially used caused segmentation faults in production. The Fix: I upda",
-      "stats": {
-        "additions": 2,
-        "deletions": 3,
-        "total": 5
-      },
-      "branches": [
-        "lite_v5_back",
-        "litestream_revert",
-        "main",
-        "revert-171-litestream_revert",
-        "temp_dis_ls",
-        "temp_rm_beszel"
-      ]
-    },
-    {
       "sha": "2dcd4385c99ebb0b3fd0c90935155b24fe36a759",
       "author": "kevin-antony-yral",
       "repository": "dolr-ai/yral-ai-chat",
@@ -585,21 +631,6 @@
       },
       "branches": [
         "litestream_safetyfix"
-      ]
-    },
-    {
-      "sha": "90c14a2218fc3b1f35efb5f3688e7bc64e5076e5",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-02-10T14:11:25Z",
-      "message": "v5 added back to test (#173)",
-      "stats": {
-        "additions": 8,
-        "deletions": 7,
-        "total": 15
-      },
-      "branches": [
-        "main"
       ]
     },
     {
@@ -664,5 +695,53 @@
     }
   ],
   "commit_count": 39,
+  "issues": [
+    {
+      "number": 1609,
+      "title": "Benchmark different models",
+      "closed_at": "2026-02-10T14:48:01Z",
+      "assignee": "joel-medicala-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1609",
+      "labels": []
+    },
+    {
+      "number": 1398,
+      "title": "Move storj interface to docker",
+      "closed_at": "2026-02-10T14:26:28Z",
+      "assignee": "joel-medicala-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1398",
+      "labels": []
+    },
+    {
+      "number": 1604,
+      "title": "Create documentation, test actions and setup demo for teams",
+      "closed_at": "2026-02-10T16:27:10Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1604",
+      "labels": []
+    },
+    {
+      "number": 1627,
+      "title": "create repo based access of vault",
+      "closed_at": "2026-02-10T16:26:58Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1627",
+      "labels": []
+    },
+    {
+      "number": 1628,
+      "title": "setup key rotation mechanism",
+      "closed_at": "2026-02-10T16:24:44Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1628",
+      "labels": []
+    }
+  ],
+  "issue_count": 5,
   "contributor_stats": {}
 }

@@ -1,7 +1,515 @@
 {
   "date": "2026-02-06",
-  "cached_at": "2026-02-06T06:52:52.169216Z",
+  "cached_at": "2026-02-13T11:13:48.627421Z",
   "commits": [
+    {
+      "sha": "244ea4b4aeff04fa29bbed8ad83234978168c795",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/self-hosted-video-models",
+      "timestamp": "2026-02-06T15:29:43Z",
+      "message": "added benchmarks for A100 gpus",
+      "stats": {
+        "additions": 28,
+        "deletions": 0,
+        "total": 28
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d0efdcdb2490b0dde4d157a0b6232b68fc6081ae",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/self-hosted-video-models",
+      "timestamp": "2026-02-06T14:58:52Z",
+      "message": "feat: added benchmark scripts",
+      "stats": {
+        "additions": 1190,
+        "deletions": 7,
+        "total": 1197
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "0baeba211443a828678f2917162774a784ec4294",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-02-06T18:32:36Z",
+      "message": "fix: use plain GET for get_notification_key and suppress recoverable error logs",
+      "stats": {
+        "additions": 11,
+        "deletions": 8,
+        "total": 19
+      },
+      "branches": [
+        "joel/fix-get-notification-key-logging"
+      ]
+    },
+    {
+      "sha": "d7845ff772758020035714e557675e1f2e6d5419",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-02-06T17:59:36Z",
+      "message": "fix noisy fcm logs + log when all recovery methods fail (#74)",
+      "stats": {
+        "additions": 20,
+        "deletions": 10,
+        "total": 30
+      },
+      "branches": [
+        "joel/fix-get-notification-key-logging",
+        "joel/fix-noisy-fcm-logs",
+        "master"
+      ]
+    },
+    {
+      "sha": "3237f5fbd0bcfbfc7a7bf667bd61ca3ed55a3904",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-02-06T17:47:49Z",
+      "message": "feat: added notification recovery",
+      "stats": {
+        "additions": 302,
+        "deletions": 89,
+        "total": 391
+      },
+      "branches": [
+        "joel/fix-get-notification-key-logging",
+        "joel/fix-noisy-fcm-logs",
+        "master"
+      ]
+    },
+    {
+      "sha": "a3bb0fca10f62399298a2c8e7ecacf77e1d7211d",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-02-06T18:22:53Z",
+      "message": "Merge branch 'master' into joel/fix-noisy-fcm-logs",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "joel/fix-noisy-fcm-logs"
+      ]
+    },
+    {
+      "sha": "b27299bb53a947bf9bad3945b8e0e8c41143ec45",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-02-06T18:22:05Z",
+      "message": "add tests",
+      "stats": {
+        "additions": 73,
+        "deletions": 1205,
+        "total": 1278
+      },
+      "branches": [
+        "joel/fix-noisy-fcm-logs"
+      ]
+    },
+    {
+      "sha": "9ca9fd7e0f8d04675822356d7c54da51e8828cf2",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-02-06T17:58:14Z",
+      "message": "fix noisy fcm logs + log when all recovery methods fail",
+      "stats": {
+        "additions": 20,
+        "deletions": 10,
+        "total": 30
+      },
+      "branches": [
+        "joel/fix-noisy-fcm-logs"
+      ]
+    },
+    {
+      "sha": "7d4cd6163616ce9f744cca83bb799a436121c65c",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-02-06T18:33:07Z",
+      "message": "fix: use plain GET for get_notification_key and suppress recoverable error logs (#76)",
+      "stats": {
+        "additions": 11,
+        "deletions": 8,
+        "total": 19
+      },
+      "branches": [
+        "master"
+      ]
+    },
+    {
+      "sha": "da9b702beffac3e7f9d0eef4b157d25a9df37033",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-02-06T09:16:10Z",
+      "message": "feat: image support + deprecate luma (#158)",
+      "stats": {
+        "additions": 31,
+        "deletions": 32,
+        "total": 63
+      },
+      "branches": [
+        "feat/ltx2-model",
+        "master"
+      ]
+    },
+    {
+      "sha": "d2f1704a83a2d8eadd148b18303cdcdf73e6193c",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-02-06T08:51:57Z",
+      "message": "feat: hide LumaLabs from prod providers list",
+      "stats": {
+        "additions": 0,
+        "deletions": 1,
+        "total": 1
+      },
+      "branches": [
+        "feat/wan25-image-support"
+      ]
+    },
+    {
+      "sha": "5c58298b8d794b62bc9d55578eed5a4f17e687a7",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-02-06T08:49:18Z",
+      "message": "Revert \"feat: remove LumaLabs video generation model\"",
+      "stats": {
+        "additions": 282,
+        "deletions": 21,
+        "total": 303
+      },
+      "branches": [
+        "feat/wan25-image-support"
+      ]
+    },
+    {
+      "sha": "3b40eed2895a1dfb9615c9096393ab69928623a2",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-02-06T08:44:28Z",
+      "message": "feat: remove LumaLabs video generation model",
+      "stats": {
+        "additions": 21,
+        "deletions": 282,
+        "total": 303
+      },
+      "branches": [
+        "feat/wan25-image-support"
+      ]
+    },
+    {
+      "sha": "9e334ba7d60fb8b69e4155cd9618398923f5f6dd",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-02-06T08:31:54Z",
+      "message": "feat: add image support to SpeechToVideoModel",
+      "stats": {
+        "additions": 11,
+        "deletions": 5,
+        "total": 16
+      },
+      "branches": [
+        "feat/wan25-image-support"
+      ]
+    },
+    {
+      "sha": "d817076a7a05fc2bf49d24e3c62650be8a1099bf",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-02-06T08:26:11Z",
+      "message": "feat: add image-to-video support for Wan 2.5 and Wan 2.5 Fast models",
+      "stats": {
+        "additions": 20,
+        "deletions": 26,
+        "total": 46
+      },
+      "branches": [
+        "feat/wan25-image-support"
+      ]
+    },
+    {
+      "sha": "53eb8c1c06228f0fc7ad1203c0d9d52f67ff9ebf",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-06T08:55:19Z",
+      "message": "feat: added wan i2v support",
+      "stats": {
+        "additions": 82,
+        "deletions": 35,
+        "total": 117
+      },
+      "branches": [
+        "joel/add_wan_i2v_support"
+      ]
+    },
+    {
+      "sha": "b0950a4676994ef4a5ee91bcb6d85e20bef5263e",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-06T17:09:49Z",
+      "message": "fix: remove unwraps while fetching user data from metadata (#401)",
+      "stats": {
+        "additions": 24,
+        "deletions": 4,
+        "total": 28
+      },
+      "branches": [
+        "joel/delete_bot",
+        "joel/event-pipeline-cleanup",
+        "joel/ltx-intergration",
+        "joel/silence-insufficient-balance",
+        "main"
+      ]
+    },
+    {
+      "sha": "474201b72bbc8ca69530818d23727dac6d558b3b",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-06T17:02:24Z",
+      "message": "fix: remove unwraps while fetching user data from metadata",
+      "stats": {
+        "additions": 24,
+        "deletions": 4,
+        "total": 28
+      },
+      "branches": [
+        "joel/hot-fix-notification-panic"
+      ]
+    },
+    {
+      "sha": "6fadcbd9e49b18dad17330bff208f35d2e2b4cc3",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-06T15:07:43Z",
+      "message": "Merge pull request #852 from dolr-ai/fix-video-reporting",
+      "stats": {
+        "additions": 192,
+        "deletions": 11,
+        "total": 203
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/5-min-tournament-bk",
+        "main"
+      ]
+    },
+    {
+      "sha": "875612a6ebdf34ee5beecc5958fd09da8ca592d5",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-06T15:06:39Z",
+      "message": "add surfaceId validation to unbindSurface in PlaybackCoordinator",
+      "stats": {
+        "additions": 19,
+        "deletions": 6,
+        "total": 25
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/5-min-tournament-bk",
+        "main"
+      ]
+    },
+    {
+      "sha": "7b86d7339db8e194e4c9dd0d2a3a972d58a57ed8",
+      "author": "samarth-paboowal-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-06T09:53:36Z",
+      "message": "chore: modifies video event names in iOS (#851)",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/5-min-tournament-bk",
+        "main"
+      ]
+    },
+    {
+      "sha": "10f19e5626cf0f4fc5663d26878c88d3a7f56177",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-06T15:24:38Z",
+      "message": "Merge pull request #853 from dolr-ai/fix/signup-overlay",
+      "stats": {
+        "additions": 80,
+        "deletions": 53,
+        "total": 133
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/5-min-tournament-bk",
+        "main"
+      ]
+    },
+    {
+      "sha": "9234bc829509ea267bbf0335ba2c322cde618a7e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-06T11:08:44Z",
+      "message": "Add commit history pagination and GitHub contributor stats API integration",
+      "stats": {
+        "additions": 338,
+        "deletions": 117,
+        "total": 455
+      },
+      "branches": [
+        "github-contributor-stats-compare",
+        "main",
+        "match-github"
+      ]
+    },
+    {
+      "sha": "462517f6f6f6ea47db4c8bf0f74a0931eee88185",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-06T09:27:57Z",
+      "message": "Remove branch selector dropdown from HTML reports",
+      "stats": {
+        "additions": 71,
+        "deletions": 142,
+        "total": 213
+      },
+      "branches": [
+        "github-contributor-stats-compare",
+        "main",
+        "match-github"
+      ]
+    },
+    {
+      "sha": "a5b3a7613812d8f429eb9158731f2feb6ae66564",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-06T09:04:56Z",
+      "message": "chore: regenerate all user data with merge commit fix",
+      "stats": {
+        "additions": 1807,
+        "deletions": 1500,
+        "total": 3307
+      },
+      "branches": [
+        "github-contributor-stats-compare",
+        "main",
+        "match-github"
+      ]
+    },
+    {
+      "sha": "4dd0716af7b9179a84ff3b533650d77432edbf2f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-06T09:01:46Z",
+      "message": "fix: keep merge commits with substantial code changes",
+      "stats": {
+        "additions": 253,
+        "deletions": 169,
+        "total": 422
+      },
+      "branches": [
+        "github-contributor-stats-compare",
+        "main",
+        "match-github"
+      ]
+    },
+    {
+      "sha": "8917036d38c0241a64910fde76acc33cc920759d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-06T08:29:22Z",
+      "message": "feat: migrate to HTML-only reports with GitHub Pages support",
+      "stats": {
+        "additions": 4,
+        "deletions": 5,
+        "total": 9
+      },
+      "branches": [
+        "github-contributor-stats-compare",
+        "main",
+        "match-github"
+      ]
+    },
+    {
+      "sha": "93edb59a29841d8b7e582d8df149d258981786c6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-06T08:20:13Z",
+      "message": "Add initial GitHub Activity Reports HTML template",
+      "stats": {
+        "additions": 2824,
+        "deletions": 1636,
+        "total": 4460
+      },
+      "branches": [
+        "github-contributor-stats-compare",
+        "main",
+        "match-github"
+      ]
+    },
+    {
+      "sha": "1ba133044665a4dcdf25093484594834118f7ab7",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-06T07:35:40Z",
+      "message": "Merge pull request #1 from dolr-ai/push-event-based",
+      "stats": {
+        "additions": 36469,
+        "deletions": 11334,
+        "total": 47803
+      },
+      "branches": [
+        "github-contributor-stats-compare",
+        "main",
+        "match-github"
+      ]
+    },
+    {
+      "sha": "8772fb93e59368788767586a8faafe4695d245b0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-06T07:28:02Z",
+      "message": "Add daily contribution records for December 30, 2025, and January 1-3, 2026",
+      "stats": {
+        "additions": 36865,
+        "deletions": 10296,
+        "total": 47161
+      },
+      "branches": [
+        "github-contributor-stats-compare",
+        "main",
+        "match-github"
+      ]
+    },
+    {
+      "sha": "67ee825e583a4094364aafc6e04ca5dc0b3fc2f3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-06T07:00:00Z",
+      "message": "feat: Optimize GitHub commit fetching by user activity",
+      "stats": {
+        "additions": 351,
+        "deletions": 1785,
+        "total": 2136
+      },
+      "branches": [
+        "github-contributor-stats-compare",
+        "main",
+        "match-github"
+      ]
+    },
     {
       "sha": "fb563e484046bf69f42d7c8756a6c023a6865d20",
       "author": "saikatdas0790",
@@ -14,7 +522,9 @@
         "total": 346
       },
       "branches": [
-        "main"
+        "github-contributor-stats-compare",
+        "main",
+        "match-github"
       ]
     },
     {
@@ -29,7 +539,9 @@
         "total": 2144
       },
       "branches": [
-        "main"
+        "github-contributor-stats-compare",
+        "main",
+        "match-github"
       ]
     },
     {
@@ -63,5 +575,36 @@
       ]
     }
   ],
-  "commit_count": 4
+  "commit_count": 35,
+  "issues": [
+    {
+      "number": 1623,
+      "title": "Delete Influencer Endpoint",
+      "closed_at": "2026-02-06T09:03:33Z",
+      "assignee": "kevin-antony-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1623",
+      "labels": []
+    },
+    {
+      "number": 1622,
+      "title": "Update System Prompt Endpoint",
+      "closed_at": "2026-02-06T09:03:22Z",
+      "assignee": "kevin-antony-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1622",
+      "labels": []
+    },
+    {
+      "number": 1617,
+      "title": "Utils APIs for Influencers- Update System Prompt and Delete Influencer",
+      "closed_at": "2026-02-06T05:16:40Z",
+      "assignee": "kevin-antony-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1617",
+      "labels": []
+    }
+  ],
+  "issue_count": 3,
+  "contributor_stats": {}
 }

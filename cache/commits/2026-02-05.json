@@ -1,34 +1,42 @@
 {
   "date": "2026-02-05",
-  "cached_at": "2026-02-06T20:28:19.761421Z",
+  "cached_at": "2026-02-13T11:08:38.908350Z",
   "commits": [
     {
-      "sha": "7b847b2d88a18eb15db1c2a5dcf52a654965d8e6",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-video-upload-service",
-      "timestamp": "2026-02-05T12:18:10Z",
-      "message": "add notification client",
+      "sha": "e129b34bba57e078edb48fc4259e0227a6d3ee29",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-05T20:57:07Z",
+      "message": "extracts video feed alignment logic into a common `FeedAlignmentPlan` helper to unify state manageme",
       "stats": {
-        "additions": 34,
-        "deletions": 8,
-        "total": 42
+        "additions": 151,
+        "deletions": 50,
+        "total": 201
       },
       "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/5-min-tournament-bk",
         "main"
       ]
     },
     {
-      "sha": "b7b3bdc2c1ecfda64e4598d25ecaca857c947e69",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-video-upload-service",
-      "timestamp": "2026-02-05T12:09:17Z",
-      "message": "integrate events service",
+      "sha": "08f27f4802a0924dc06c5b9b6d6a7918ab3a9b23",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-05T20:43:06Z",
+      "message": "improve playback state synchronization when updating video feed indices and IDs",
       "stats": {
-        "additions": 427,
-        "deletions": 26,
-        "total": 453
+        "additions": 67,
+        "deletions": 0,
+        "total": 67
       },
       "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/5-min-tournament-bk",
         "main"
       ]
     },
@@ -47,39 +55,28 @@
         "create-pull-request/update-did-files-v3.5.9",
         "develop",
         "feature/ai-influencer",
-        "release/android-2.6.5"
+        "feature/5-min-tournament",
+        "feature/5-min-tournament-bk",
+        "main"
       ]
     },
     {
-      "sha": "e129b34bba57e078edb48fc4259e0227a6d3ee29",
-      "author": "mayank-k-yral",
+      "sha": "745a4c134d990882f9830383922ed8349703de0b",
+      "author": "sarvesh-sharma-yral",
       "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-05T20:57:07Z",
-      "message": "extracts video feed alignment logic into a common `FeedAlignmentPlan` helper to unify state manageme",
+      "timestamp": "2026-02-05T15:56:23Z",
+      "message": "fix: Sends correct event type for how to play event",
       "stats": {
-        "additions": 151,
-        "deletions": 50,
-        "total": 201
-      },
-      "branches": [
-        "develop",
-        "feature/ai-influencer"
-      ]
-    },
-    {
-      "sha": "08f27f4802a0924dc06c5b9b6d6a7918ab3a9b23",
-      "author": "mayank-k-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-05T20:43:06Z",
-      "message": "improve playback state synchronization when updating video feed indices and IDs",
-      "stats": {
-        "additions": 67,
+        "additions": 16,
         "deletions": 0,
-        "total": 67
+        "total": 16
       },
       "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
         "develop",
-        "feature/ai-influencer"
+        "feature/5-min-tournament",
+        "feature/5-min-tournament-bk",
+        "main"
       ]
     },
     {
@@ -97,7 +94,9 @@
         "create-pull-request/update-did-files-v3.5.9",
         "develop",
         "feature/ai-influencer",
-        "release/android-2.6.5"
+        "feature/5-min-tournament",
+        "feature/5-min-tournament-bk",
+        "main"
       ]
     },
     {
@@ -115,22 +114,75 @@
         "create-pull-request/update-did-files-v3.5.9",
         "develop",
         "feature/ai-influencer",
-        "release/android-2.6.5"
+        "feature/5-min-tournament",
+        "feature/5-min-tournament-bk",
+        "main"
       ]
     },
     {
-      "sha": "745a4c134d990882f9830383922ed8349703de0b",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-05T15:56:23Z",
-      "message": "fix: Sends correct event type for how to play event",
+      "sha": "7b847b2d88a18eb15db1c2a5dcf52a654965d8e6",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-02-05T12:18:10Z",
+      "message": "add notification client",
       "stats": {
-        "additions": 16,
-        "deletions": 0,
-        "total": 16
+        "additions": 34,
+        "deletions": 8,
+        "total": 42
       },
       "branches": [
-        "release/android-2.6.5"
+        "feat/setup-ci-cd-for-build-and-deploy",
+        "main"
+      ]
+    },
+    {
+      "sha": "b7b3bdc2c1ecfda64e4598d25ecaca857c947e69",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-02-05T12:09:17Z",
+      "message": "integrate events service",
+      "stats": {
+        "additions": 427,
+        "deletions": 26,
+        "total": 453
+      },
+      "branches": [
+        "feat/setup-ci-cd-for-build-and-deploy",
+        "main"
+      ]
+    },
+    {
+      "sha": "72f8b4a28749c4f9c9879394da87a3ef2cb078a4",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-05T15:25:12Z",
+      "message": "chore: Increments android app version",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/5-min-tournament",
+        "feature/5-min-tournament-bk",
+        "main"
+      ]
+    },
+    {
+      "sha": "09cd249f12e99f85425c7962583a94d51560ed71",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-05T05:21:20Z",
+      "message": "Increments build version name for testing",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "test/force-update"
       ]
     },
     {
@@ -145,7 +197,9 @@
         "total": 18
       },
       "branches": [
-        "main"
+        "github-contributor-stats-compare",
+        "main",
+        "match-github"
       ]
     },
     {
@@ -160,7 +214,9 @@
         "total": 2673
       },
       "branches": [
-        "main"
+        "github-contributor-stats-compare",
+        "main",
+        "match-github"
       ]
     },
     {
@@ -175,7 +231,9 @@
         "total": 86
       },
       "branches": [
-        "main"
+        "github-contributor-stats-compare",
+        "main",
+        "match-github"
       ]
     },
     {
@@ -190,10 +248,33 @@
         "total": 1528
       },
       "branches": [
-        "main"
+        "github-contributor-stats-compare",
+        "main",
+        "match-github"
       ]
     }
   ],
-  "commit_count": 12,
+  "commit_count": 14,
+  "issues": [
+    {
+      "number": 1572,
+      "title": "AI video detection pipeline",
+      "closed_at": "2026-02-05T05:31:19Z",
+      "assignee": "jay-dhanwant-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1572",
+      "labels": []
+    },
+    {
+      "number": 1585,
+      "title": "Planning- AI Influencers Notification System",
+      "closed_at": "2026-02-05T05:37:43Z",
+      "assignee": "kevin-antony-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1585",
+      "labels": []
+    }
+  ],
+  "issue_count": 2,
   "contributor_stats": {}
 }
