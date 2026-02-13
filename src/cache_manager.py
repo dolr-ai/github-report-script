@@ -109,7 +109,7 @@ class CacheManager:
             'commits': new_commits,
             'commit_count': len(new_commits)
         }
-        
+
         # Include contributor_stats if present
         if 'contributor_stats' in data:
             cache_data['contributor_stats'] = data['contributor_stats']
@@ -248,3 +248,64 @@ class CacheManager:
             logger.info("Cleared all user output directories")
 
         logger.info("Cache clearing complete")
+
+    def cleanup_old_data(self, days_to_keep: int = 120):
+        """Remove cache and output data older than specified days
+
+        Args:
+            days_to_keep: Number of days of data to keep (default: 120)
+        """
+        import shutil
+        from src.config import OUTPUT_DIR
+        from datetime import timedelta
+
+        cutoff_date = datetime.now().date() - timedelta(days=days_to_keep)
+        cutoff_str = cutoff_date.isoformat()
+
+        logger.info(
+            f"Cleaning up data older than {days_to_keep} days (before {cutoff_str})")
+
+        # Clean up cache files
+        cache_removed = 0
+        for date_str in self.get_cached_dates():
+            if date_str < cutoff_str:
+                cache_file = self.get_cache_file_path(date_str)
+                try:
+                    os.remove(cache_file)
+                    cache_removed += 1
+                    logger.debug(f"Removed old cache: {date_str}")
+                except Exception as e:
+                    logger.warning(f"Failed to remove cache {date_str}: {e}")
+
+        if cache_removed > 0:
+            logger.info(f"Removed {cache_removed} old cache file(s)")
+
+        # Clean up output files
+        output_removed = 0
+        if os.path.exists(OUTPUT_DIR):
+            for user_dir in os.listdir(OUTPUT_DIR):
+                user_path = os.path.join(OUTPUT_DIR, user_dir)
+                if not os.path.isdir(user_path):
+                    continue
+
+                for filename in os.listdir(user_path):
+                    if not filename.endswith('.json'):
+                        continue
+
+                    date_str = filename[:-5]  # Remove .json extension
+                    if date_str < cutoff_str:
+                        file_path = os.path.join(user_path, filename)
+                        try:
+                            os.remove(file_path)
+                            output_removed += 1
+                            logger.debug(
+                                f"Removed old output: {user_dir}/{date_str}")
+                        except Exception as e:
+                            logger.warning(
+                                f"Failed to remove output {user_dir}/{date_str}: {e}")
+
+        if output_removed > 0:
+            logger.info(f"Removed {output_removed} old output file(s)")
+
+        if cache_removed == 0 and output_removed == 0:
+            logger.info("No old data to clean up")

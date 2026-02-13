@@ -41,6 +41,10 @@ def cmd_fetch():
     print(display_config())
     logger.info("Starting FETCH mode")
 
+    # Clean up old data (older than 120 days)
+    cache_manager = CacheManager()
+    cache_manager.cleanup_old_data(days_to_keep=120)
+
     # Get date range
     start_date, end_date = get_date_range()
     logger.info(f"Date range: {start_date.date()} to {end_date.date()}")
@@ -79,6 +83,10 @@ def cmd_refresh():
     """Refresh cache for specific date range"""
     print(display_config())
     logger.info("Starting REFRESH mode")
+
+    # Clean up old data (older than 120 days)
+    cache_manager = CacheManager()
+    cache_manager.cleanup_old_data(days_to_keep=120)
 
     # Get date range
     start_date, end_date = get_date_range()
@@ -241,6 +249,10 @@ def cmd_fetch_and_chart():
     print(display_config())
     logger.info("Starting FETCH_AND_CHART mode (combined operation)")
 
+    # Clean up old data (older than 120 days)
+    cache_manager = CacheManager()
+    cache_manager.cleanup_old_data(days_to_keep=120)
+
     # Get date range
     start_date, end_date = get_date_range()
     logger.info(f"Date range: {start_date.date()} to {end_date.date()}")
@@ -282,6 +294,10 @@ def cmd_fetch_and_leaderboard():
     """Combined mode: Fetch data and immediately post leaderboard"""
     print(display_config())
     logger.info("Starting FETCH_AND_LEADERBOARD mode (combined operation)")
+
+    # Clean up old data (older than 120 days)
+    cache_manager = CacheManager()
+    cache_manager.cleanup_old_data(days_to_keep=120)
 
     # Get date range
     start_date, end_date = get_date_range()
