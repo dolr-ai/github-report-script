@@ -188,3 +188,44 @@ class LeaderboardGenerator:
         )
 
         return all_by_commits, all_by_loc, date_str
+
+    def get_commits_breakdown(self, date_strings: List[str], leaderboard_order: List[Tuple[str, int]]) -> Dict[str, List[Dict]]:
+        """Get detailed commit breakdown for each user in leaderboard order
+
+        Args:
+            date_strings: List of dates in YYYY-MM-DD format
+            leaderboard_order: List of (username, metric) tuples defining the order
+
+        Returns:
+            Dict mapping username to list of commits with details
+        """
+        user_commits = defaultdict(list)
+
+        for date_str in date_strings:
+            cached_data = self.cache_manager.read_cache(date_str)
+            if not cached_data:
+                continue
+
+            commits = cached_data.get('commits', [])
+
+            for commit in commits:
+                author = commit.get('author')
+                if not author:
+                    continue
+
+                stats = commit.get('stats', {})
+                repo = commit.get('repository', '')
+                sha = commit.get('sha', '')
+                message = commit.get('message', '').split('\n')[
+                    0]  # First line only
+
+                user_commits[author].append({
+                    'sha': sha,
+                    'message': message,
+                    'repository': repo,
+                    'total_loc': stats.get('total', 0),
+                    'additions': stats.get('additions', 0),
+                    'deletions': stats.get('deletions', 0)
+                })
+
+        return dict(user_commits)

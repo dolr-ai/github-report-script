@@ -231,3 +231,100 @@ class GoogleChatPoster:
         except Exception as e:
             logger.error(f"Error posting leaderboard: {e}", exc_info=True)
             return False
+
+    def format_commits_breakdown_message(
+        self,
+        period_type: str,
+        date_string: str,
+        leaderboard_order: List[Tuple[str, int]],
+        user_commits: dict
+    ) -> str:
+        """Format detailed commit breakdown message
+
+        Args:
+            period_type: "Daily" or "Weekly"
+            date_string: Formatted date or date range
+            leaderboard_order: List of (username, metric) tuples in leaderboard order
+            user_commits: Dict mapping username to list of commit dicts
+
+        Returns:
+            Formatted message string
+        """
+        if not leaderboard_order or not user_commits:
+            return f"📝 **{period_type} Commit Details ({date_string})**\n\nNo commits for this period."
+
+        message_parts = [
+            f"📝 **{period_type} Commit Details ({date_string})**\n"]
+
+        for idx, (username, _) in enumerate(leaderboard_order):
+            commits = user_commits.get(username, [])
+            if not commits:
+                continue
+
+            # Add rank emoji for top 3, otherwise use number
+            if idx < 3:
+                rank_prefix = self._get_rank_emoji(idx)
+            else:
+                rank_prefix = f"{idx + 1}."
+
+            # Header with username and commit count
+            total_commits = len(commits)
+            total_loc = sum(c['total_loc'] for c in commits)
+            message_parts.append(
+                f"\n{rank_prefix} **{username}** ({total_commits} commits, {total_loc:,} LOC):"
+            )
+
+            # List each commit with LOC and link
+            for commit in commits:
+                sha = commit['sha'][:7]  # Short SHA
+                repo = commit['repository']
+                loc = commit['total_loc']
+                message = commit['message'][:60]  # Truncate long messages
+                if len(commit['message']) > 60:
+                    message += "..."
+
+                # GitHub commit URL
+                commit_url = f"https://github.com/{repo}/commit/{commit['sha']}"
+
+                message_parts.append(
+                    f"  • [{sha}]({commit_url}) - {loc:,} LOC - {message}"
+                )
+
+        return "\n".join(message_parts)
+
+    def post_commits_breakdown(
+        self,
+        period_type: str,
+        date_string: str,
+        leaderboard_order: List[Tuple[str, int]],
+        user_commits: dict
+    ) -> bool:
+        """Format and post detailed commit breakdown to Google Chat
+
+        Args:
+            period_type: "Daily" or "Weekly"
+            date_string: Formatted date or date range
+            leaderboard_order: List of (username, metric) tuples in leaderboard order
+            user_commits: Dict mapping username to list of commit dicts
+
+        Returns:
+            True if posted successfully, False otherwise
+        """
+        try:
+            message = self.format_commits_breakdown_message(
+                period_type,
+                date_string,
+                leaderboard_order,
+                user_commits
+            )
+
+            logger.debug(
+                f"Formatted {period_type.lower()} commits breakdown message"
+            )
+
+            return self.post_message(message)
+
+        except Exception as e:
+            logger.error(
+                f"Error posting commits breakdown: {e}", exc_info=True)
+            return False

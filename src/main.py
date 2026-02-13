@@ -339,6 +339,24 @@ def cmd_leaderboard():
             )
 
             if success:
+                # Get commit details and post breakdown as second message
+                date_strings = leaderboard_generator.get_last_7_days_ist()
+                user_commits = leaderboard_generator.get_commits_breakdown(
+                    date_strings, top_by_commits)
+
+                # Post the detailed breakdown
+                breakdown_success = chat_poster.post_commits_breakdown(
+                    period_type="Weekly",
+                    date_string=date_string,
+                    leaderboard_order=top_by_commits,
+                    user_commits=user_commits
+                )
+
+                if breakdown_success:
+                    logger.info("Successfully posted commits breakdown")
+                else:
+                    logger.warning("Failed to post commits breakdown")
+
                 print("\n" + "=" * 70)
                 print("✓ Weekly leaderboard posted to Google Chat!")
                 print("=" * 70)
@@ -366,6 +384,24 @@ def cmd_leaderboard():
             )
 
             if success:
+                # Get commit details and post breakdown as second message
+                date_strings = [leaderboard_generator.get_yesterday_ist()]
+                user_commits = leaderboard_generator.get_commits_breakdown(
+                    date_strings, top_by_commits)
+
+                # Post the detailed breakdown
+                breakdown_success = chat_poster.post_commits_breakdown(
+                    period_type="Daily",
+                    date_string=date_string,
+                    leaderboard_order=top_by_commits,
+                    user_commits=user_commits
+                )
+
+                if breakdown_success:
+                    logger.info("Successfully posted commits breakdown")
+                else:
+                    logger.warning("Failed to post commits breakdown")
+
                 print("\n" + "=" * 70)
                 print("✓ Daily leaderboard posted to Google Chat!")
                 print("=" * 70)
