@@ -101,144 +101,9 @@ class DataProcessor:
             return
 
         commits = cached_data.get('commits', [])
-        contributor_stats = cached_data.get('contributor_stats', {})
-
-        # If we have contributor stats, use them as the source of truth
-        # and log discrepancies with branch-based counts
-        use_contributor_stats = bool(contributor_stats)
-
-        if use_contributor_stats:
-            logger.info(
-                f"Date {date_str}: Using GitHub contributor stats API as source of truth"
-            )
-
-        # Filter out trivial merge commits (only keep merges with substantial code changes)
-        # Merge commits with substantial changes likely represent:
-        # - Squash merges where all work is in the merge commit
-        # - Merges from deleted branches that we never fetched
-        # We keep these to avoid losing real contributions
-        non_merge_commits = []
-        filtered_merge_count = 0
-        kept_merge_count = 0
-
-        for commit in commits:
-            message = commit.get('message', '')
-            stats = commit.get('stats', {})
-            total_loc = stats.get('total', 0)
-
-            # Detect merge commits by message pattern
-            is_merge = message.startswith(
-                'Merge pull request') or message.startswith('Merge branch')
-
-            if is_merge:
-                # Keep merge commits with substantial code changes (likely squash merge or deleted branch)
-                if total_loc > 10:
-                    logger.debug(
-                        f"Keeping merge commit {commit.get('sha', '')[:7]} by {commit.get('author')} "
-                        f"with {total_loc} LOC changes (likely squash merge or deleted branch)"
-                    )
-                    non_merge_commits.append(commit)
-                    kept_merge_count += 1
-                else:
-                    logger.debug(
-                        f"Skipping trivial merge commit {commit.get('sha', '')[:7]} by {commit.get('author')}: "
-                        f"{message.split(chr(10))[0][:60]}"
-                    )
-                    filtered_merge_count += 1
-            else:
-                non_merge_commits.append(commit)
-
-        if filtered_merge_count > 0 or kept_merge_count > 0:
-            logger.info(
-                f"Date {date_str}: Filtered {filtered_merge_count} trivial merge commits, "
-                f"kept {kept_merge_count} merge commits with substantial changes"
-            )
-
-        # Deduplicate commits by SHA to avoid counting merge commits and their constituent commits
-        seen_shas = set()
-        unique_commits = []
-
-        # First pass: deduplicate by exact SHA match
-        for commit in non_merge_commits:
-            sha = commit.get('sha')
-            if sha and sha not in seen_shas:
-                seen_shas.add(sha)
-                unique_commits.append(commit)
-            else:
-                logger.debug(
-                    f"Skipping duplicate commit {sha[:7]} on {date_str}")
-
-        # Second pass: detect and remove squash-merge duplicates
-        # (same author, same date, very similar stats, different SHAs)
-        author_commits = defaultdict(list)
-        for commit in unique_commits:
-            author = commit.get('author')
-            if author:
-                author_commits[author].append(commit)
-
-        deduped_commits = []
-        for author, author_commit_list in author_commits.items():
-            # Group commits by similar stats (within 1% difference)
-            processed_indices = set()
-
-            for i, commit in enumerate(author_commit_list):
-                if i in processed_indices:
-                    continue
-
-                stats = commit.get('stats', {})
-                additions = stats.get('additions', 0)
-                deletions = stats.get('deletions', 0)
-                total = stats.get('total', 0)
-                branches = commit.get('branches', [])
-                primary_branch = self._get_primary_branch(branches)
-
-                # Find similar commits (likely squash-merge duplicates)
-                similar_commits = [commit]
-                for j, other_commit in enumerate(author_commit_list):
-                    if j <= i or j in processed_indices:
-                        continue
-
-                    other_stats = other_commit.get('stats', {})
-                    other_additions = other_stats.get('additions', 0)
-                    other_deletions = other_stats.get('deletions', 0)
-                    other_total = other_stats.get('total', 0)
-
-                    # Check if stats are very similar (within 1% or absolute difference < 100)
-                    if total > 0 and other_total > 0:
-                        diff_ratio = abs(total - other_total) / \
-                            max(total, other_total)
-                        if diff_ratio < 0.01 or abs(total - other_total) < 100:
-                            similar_commits.append(other_commit)
-                            processed_indices.add(j)
-
-                # If we found similar commits, keep only the one on the highest priority branch
-                if len(similar_commits) > 1:
-                    logger.info(
-                        f"Found {len(similar_commits)} similar commits by {author} "
-                        f"with ~{total} LOC changes on {date_str}. Keeping only the one on highest priority branch."
-                    )
-                    # Sort by branch priority (main/master/develop first)
-                    similar_commits.sort(key=lambda c: (
-                        self.PRIORITY_BRANCHES.index(
-                            self._get_primary_branch(c.get('branches', [])))
-                        if self._get_primary_branch(c.get('branches', [])) in self.PRIORITY_BRANCHES
-                        else 999
-                    ))
-                    deduped_commits.append(similar_commits[0])
-                    for skipped in similar_commits[1:]:
-                        logger.info(
-                            f"  Skipping {skipped.get('sha', '')[:7]} on branch "
-                            f"{self._get_primary_branch(skipped.get('branches', []))}"
-                        )
-                else:
-                    deduped_commits.append(commit)
-
-                processed_indices.add(i)
 
         logger.info(
-            f"Date {date_str}: {len(commits)} total commits, "
-            f"{len(unique_commits)} unique by SHA, "
-            f"{len(deduped_commits)} after squash-merge deduplication"
+            f"Date {date_str}: Processing {len(commits)} commits (no deduplication)"
         )
 
         # Aggregate by user
@@ -256,7 +121,7 @@ class DataProcessor:
             }))
         })
 
-        for commit in deduped_commits:
+        for commit in commits:
             author = commit.get('author')
             if author and author in user_ids:
                 stats = commit.get('stats', {})
@@ -281,30 +146,6 @@ class DataProcessor:
                 user_metrics[author]['branch_breakdown'][repository][primary_branch]['total_loc'] += stats.get(
                     'total', 0)
                 user_metrics[author]['branch_breakdown'][repository][primary_branch]['commit_count'] += 1
-
-        # Validate against contributor stats if available
-        if use_contributor_stats:
-            for username in user_ids:
-                if username in contributor_stats:
-                    user_stats_for_date = contributor_stats[username]
-
-                    # Contributor stats are weekly, so find the week containing this date
-                    # and compare totals
-                    branch_commits = user_metrics[username]['commit_count']
-                    branch_additions = user_metrics[username]['additions']
-
-                    # Note: This is informational only - we log discrepancies but still use detailed commit data
-                    if date_str in user_stats_for_date:
-                        stats_commits = user_stats_for_date[date_str]['commits']
-                        stats_additions = user_stats_for_date[date_str]['additions']
-
-                        if stats_commits != branch_commits or stats_additions != branch_additions:
-                            logger.warning(
-                                f"Date {date_str}, User {username}: "
-                                f"Discrepancy detected - "
-                                f"Branch-based: {branch_commits} commits, {branch_additions} additions | "
-                                f"GitHub Stats: {stats_commits} commits, {stats_additions} additions"
-                            )
 
         # Write output for each user
         for username in user_ids:

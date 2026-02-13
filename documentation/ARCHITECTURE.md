@@ -115,17 +115,9 @@ sequenceDiagram
             Cache-->>Processor: {commits[]}
             deactivate Cache
             
-            %% Deduplication Logic
-            Processor->>Processor: Filter merge commits<br/>(message starts with "Merge")
-            Note over Processor: Filtered out merge commits
+            %% Aggregation (No Deduplication)
+            Note over Processor: All commits counted as-is from cache
             
-            Processor->>Processor: Pass 1: SHA deduplication
-            Note over Processor: Remove exact SHA duplicates
-            
-            Processor->>Processor: Pass 2: Squash-merge detection<br/>(same author, date, similar stats)
-            Note over Processor: Keep highest priority branch<br/>(main > master > develop)
-            
-            %% Aggregation
             loop For each commit
                 Processor->>Processor: Aggregate by user
                 Processor->>Processor: Track repo breakdown
@@ -258,23 +250,21 @@ sequenceDiagram
 
 ### 4. **Data Processing** (`data_processor.py`)
 
-**Three-Stage Deduplication:**
+**No Deduplication - Count Everything:**
 
-1. **Merge Commit Filtering**:
-   - Detects: Message starts with "Merge pull request" or "Merge branch"
-   - Reason: Merge commits aggregate work already counted in constituent commits
-   - Impact: ~117 merge commits filtered across 30 days
+As of February 2026, all deduplication logic has been removed. The system now counts every commit exactly as it appears in the cache without any filtering or duplicate removal. This ensures:
 
-2. **SHA Deduplication**:
-   - Removes exact duplicate SHAs
-   - Handles commits appearing on multiple branches with same SHA
+- **Complete Accuracy**: No legitimate contributions are accidentally filtered out
+- **Transparency**: Metrics reflect exactly what GitHub reports
+- **Simplicity**: No complex heuristics or branch prioritization needed
 
-3. **Squash-Merge Detection**:
-   - Groups commits by author + date
-   - Compares stats: if difference < 1% or < 100 LOC
-   - Keeps commit on highest priority branch:
-     - Priority: `main` > `master` > `develop` > `staging` > `production` > others
-   - Impact: ~50% reduction in duplicate counts (e.g., 410k → 206k LOC)
+**Branch Selection for Breakdown:**
+- Each commit can appear on multiple branches (e.g., feature branch + main after merge)
+- For the `branch_breakdown` section, the system selects one "primary" branch per commit
+- Priority order: `main` > `master` > `develop` > `staging` > `production` > others
+- This prevents the same commit from inflating individual branch metrics, while still counting it in overall totals
+
+**Note**: Since squash-merges and commits appearing on multiple branches are all counted, you may see the same work reflected multiple times (e.g., once on the PR branch, once on main). This is intentional and provides the most accurate representation of what occurred on each branch.
 
 **Output Files**: `output/{username}/{YYYY-MM-DD}.json`
 ```json
@@ -336,7 +326,7 @@ sequenceDiagram
 3. **Bot Filtering**: Early filtering before processing
 4. **Cache First**: Always check cache before API calls
 5. **Bulk Processing**: Date-level parallelization
-6. **Deduplication**: Multi-stage to minimize redundant counting
+6. **Direct Counting**: All commits counted as-is without deduplication overhead
 
 ## Execution Modes
 
