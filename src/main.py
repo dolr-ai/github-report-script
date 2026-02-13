@@ -344,28 +344,30 @@ def cmd_leaderboard():
             print("Generating weekly leaderboard for last 7 days...\n")
 
             # Generate weekly leaderboard
-            top_by_commits, top_by_loc, date_string = leaderboard_generator.generate_weekly_leaderboard()
+            contributors_by_impact, date_string = leaderboard_generator.generate_weekly_leaderboard()
 
             # Post to Google Chat
             success = chat_poster.post_leaderboard(
                 period_type="Weekly",
                 date_string=date_string,
-                top_by_commits=top_by_commits,
-                top_by_loc=top_by_loc
+                contributors_by_impact=contributors_by_impact
             )
 
             if success:
-                # Get commit details and post breakdown as second message
+                # Get commit and issue details, post breakdown as second message
                 date_strings = leaderboard_generator.get_last_7_days_ist()
                 user_commits = leaderboard_generator.get_commits_breakdown(
-                    date_strings, top_by_commits)
+                    date_strings, contributors_by_impact)
+                user_issues = leaderboard_generator.get_issues_breakdown(
+                    date_strings, contributors_by_impact)
 
                 # Post the detailed breakdown
                 breakdown_success = chat_poster.post_commits_breakdown(
                     period_type="Weekly",
                     date_string=date_string,
-                    leaderboard_order=top_by_commits,
-                    user_commits=user_commits
+                    leaderboard_order=contributors_by_impact,
+                    user_commits=user_commits,
+                    user_issues=user_issues
                 )
 
                 if breakdown_success:
@@ -389,28 +391,30 @@ def cmd_leaderboard():
             print("Generating daily leaderboard for yesterday...\n")
 
             # Generate daily leaderboard
-            top_by_commits, top_by_loc, date_string = leaderboard_generator.generate_daily_leaderboard()
+            contributors_by_impact, date_string = leaderboard_generator.generate_daily_leaderboard()
 
             # Post to Google Chat
             success = chat_poster.post_leaderboard(
                 period_type="Daily",
                 date_string=date_string,
-                top_by_commits=top_by_commits,
-                top_by_loc=top_by_loc
+                contributors_by_impact=contributors_by_impact
             )
 
             if success:
-                # Get commit details and post breakdown as second message
+                # Get commit and issue details, post breakdown as second message
                 date_strings = [leaderboard_generator.get_yesterday_ist()]
                 user_commits = leaderboard_generator.get_commits_breakdown(
-                    date_strings, top_by_commits)
+                    date_strings, contributors_by_impact)
+                user_issues = leaderboard_generator.get_issues_breakdown(
+                    date_strings, contributors_by_impact)
 
                 # Post the detailed breakdown
                 breakdown_success = chat_poster.post_commits_breakdown(
                     period_type="Daily",
                     date_string=date_string,
-                    leaderboard_order=top_by_commits,
-                    user_commits=user_commits
+                    leaderboard_order=contributors_by_impact,
+                    user_commits=user_commits,
+                    user_issues=user_issues
                 )
 
                 if breakdown_success:

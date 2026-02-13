@@ -110,6 +110,12 @@ class CacheManager:
             'commit_count': len(new_commits)
         }
 
+        # Include issues if present
+        if 'issues' in data:
+            cache_data['issues'] = data['issues']
+            cache_data['issue_count'] = data.get(
+                'issue_count', len(data['issues']))
+
         # Include contributor_stats if present
         if 'contributor_stats' in data:
             cache_data['contributor_stats'] = data['contributor_stats']

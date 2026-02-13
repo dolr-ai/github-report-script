@@ -52,16 +52,17 @@ class LeaderboardGenerator:
             dates.append(date.strftime('%Y-%m-%d'))
         return sorted(dates)  # Return in chronological order
 
-    def aggregate_commits(self, date_strings: List[str]) -> Dict[str, Dict[str, int]]:
-        """Aggregate commit metrics across multiple dates
+    def aggregate_metrics(self, date_strings: List[str]) -> Dict[str, Dict[str, int]]:
+        """Aggregate commit and issue metrics across multiple dates
 
         Args:
             date_strings: List of dates in YYYY-MM-DD format
 
         Returns:
-            Dict mapping username to metrics dict with 'commit_count' and 'total_loc'
+            Dict mapping username to metrics dict with 'issues_closed', 'commit_count', and 'total_loc'
         """
-        user_metrics = defaultdict(lambda: {'commit_count': 0, 'total_loc': 0})
+        user_metrics = defaultdict(
+            lambda: {'issues_closed': 0, 'commit_count': 0, 'total_loc': 0})
 
         for date_str in date_strings:
             cached_data = self.cache_manager.read_cache(date_str)
@@ -69,6 +70,7 @@ class LeaderboardGenerator:
                 logger.debug(f"No cache found for {date_str}, skipping")
                 continue
 
+            # Process commits
             commits = cached_data.get('commits', [])
             logger.debug(f"Processing {len(commits)} commits for {date_str}")
 
@@ -84,35 +86,48 @@ class LeaderboardGenerator:
                 user_metrics[author]['commit_count'] += 1
                 user_metrics[author]['total_loc'] += additions + deletions
 
+            # Process issues (backward compatible - old cache files won't have issues)
+            issues = cached_data.get('issues', [])
+            logger.debug(f"Processing {len(issues)} issues for {date_str}")
+
+            for issue in issues:
+                assignee = issue.get('assignee')
+                if not assignee:
+                    continue
+
+                user_metrics[assignee]['issues_closed'] += 1
+
         logger.info(
             f"Aggregated metrics for {len(user_metrics)} users across {len(date_strings)} dates")
         return dict(user_metrics)
 
-    def get_all_contributors(
+    def get_all_contributors_by_impact(
         self,
-        user_metrics: Dict[str, Dict[str, int]],
-        metric: str
-    ) -> List[Tuple[str, int]]:
-        """Get ALL contributors sorted by specified metric
+        user_metrics: Dict[str, Dict[str, int]]
+    ) -> List[Tuple[str, Dict[str, int]]]:
+        """Get ALL contributors sorted by impact (issues > commits > loc)
 
         Args:
             user_metrics: Dict mapping username to metrics
-            metric: Metric to sort by ('commit_count' or 'total_loc')
 
         Returns:
-            List of tuples (username, metric_value) sorted descending
+            List of tuples (username, full_metrics_dict) sorted by impact
         """
         if not user_metrics:
             return []
 
-        # Sort by metric descending and return all users
+        # Sort by: issues_closed (desc), then commit_count (desc), then total_loc (desc)
         sorted_users = sorted(
             user_metrics.items(),
-            key=lambda x: x[1][metric],
+            key=lambda x: (
+                x[1].get('issues_closed', 0),
+                x[1].get('commit_count', 0),
+                x[1].get('total_loc', 0)
+            ),
             reverse=True
         )
 
-        return [(user, metrics[metric]) for user, metrics in sorted_users]
+        return sorted_users
 
     def format_date_range(self, date_strings: List[str]) -> str:
         """Format date range for display
@@ -140,61 +155,57 @@ class LeaderboardGenerator:
         else:
             return f"{start_date.strftime('%b %d')} - {end_date.strftime('%b %d, %Y')}"
 
-    def generate_daily_leaderboard(self) -> Tuple[List[Tuple[str, int]], List[Tuple[str, int]], str]:
+    def generate_daily_leaderboard(self) -> Tuple[List[Tuple[str, Dict[str, int]]], str]:
         """Generate daily leaderboard for yesterday
 
         Returns:
-            Tuple of (top_by_commits, top_by_loc, date_string)
+            Tuple of (contributors_by_impact, date_string)
+            contributors_by_impact: List of (username, metrics_dict) tuples
         """
         yesterday = self.get_yesterday_ist()
         logger.info(f"Generating daily leaderboard for {yesterday}")
 
-        user_metrics = self.aggregate_commits([yesterday])
+        user_metrics = self.aggregate_metrics([yesterday])
 
-        all_by_commits = self.get_all_contributors(
-            user_metrics, 'commit_count')
-        all_by_loc = self.get_all_contributors(user_metrics, 'total_loc')
+        all_by_impact = self.get_all_contributors_by_impact(user_metrics)
 
         date_str = self.format_date_range([yesterday])
 
         logger.info(
-            f"Daily leaderboard: {len(all_by_commits)} contributors by commits, "
-            f"{len(all_by_loc)} contributors by LOC"
+            f"Daily leaderboard: {len(all_by_impact)} contributors"
         )
 
-        return all_by_commits, all_by_loc, date_str
+        return all_by_impact, date_str
 
-    def generate_weekly_leaderboard(self) -> Tuple[List[Tuple[str, int]], List[Tuple[str, int]], str]:
+    def generate_weekly_leaderboard(self) -> Tuple[List[Tuple[str, Dict[str, int]]], str]:
         """Generate weekly leaderboard for last 7 days
 
         Returns:
-            Tuple of (top_by_commits, top_by_loc, date_range_string)
+            Tuple of (contributors_by_impact, date_range_string)
+            contributors_by_impact: List of (username, metrics_dict) tuples
         """
         last_7_days = self.get_last_7_days_ist()
         logger.info(
             f"Generating weekly leaderboard for {last_7_days[0]} to {last_7_days[-1]}")
 
-        user_metrics = self.aggregate_commits(last_7_days)
+        user_metrics = self.aggregate_metrics(last_7_days)
 
-        all_by_commits = self.get_all_contributors(
-            user_metrics, 'commit_count')
-        all_by_loc = self.get_all_contributors(user_metrics, 'total_loc')
+        all_by_impact = self.get_all_contributors_by_impact(user_metrics)
 
         date_str = self.format_date_range(last_7_days)
 
         logger.info(
-            f"Weekly leaderboard: {len(all_by_commits)} contributors by commits, "
-            f"{len(all_by_loc)} contributors by LOC"
+            f"Weekly leaderboard: {len(all_by_impact)} contributors"
         )
 
-        return all_by_commits, all_by_loc, date_str
+        return all_by_impact, date_str
 
-    def get_commits_breakdown(self, date_strings: List[str], leaderboard_order: List[Tuple[str, int]]) -> Dict[str, List[Dict]]:
+    def get_commits_breakdown(self, date_strings: List[str], leaderboard_order: List[Tuple[str, Dict[str, int]]]) -> Dict[str, List[Dict]]:
         """Get detailed commit breakdown for each user in leaderboard order
 
         Args:
             date_strings: List of dates in YYYY-MM-DD format
-            leaderboard_order: List of (username, metric) tuples defining the order
+            leaderboard_order: List of (username, metrics_dict) tuples defining the order
 
         Returns:
             Dict mapping username to list of commits with details
@@ -229,3 +240,38 @@ class LeaderboardGenerator:
                 })
 
         return dict(user_commits)
+
+    def get_issues_breakdown(self, date_strings: List[str], leaderboard_order: List[Tuple[str, Dict[str, int]]]) -> Dict[str, List[Dict]]:
+        """Get detailed issue breakdown for each user in leaderboard order
+
+        Args:
+            date_strings: List of dates in YYYY-MM-DD format
+            leaderboard_order: List of (username, metrics_dict) tuples defining the order
+
+        Returns:
+            Dict mapping username to list of issues with details
+        """
+        # Extract usernames from leaderboard order
+        usernames_in_order = [username for username, _ in leaderboard_order]
+
+        user_issues = {username: [] for username in usernames_in_order}
+
+        for date_str in date_strings:
+            cached_data = self.cache_manager.read_cache(date_str)
+            if not cached_data:
+                continue
+
+            issues = cached_data.get('issues', [])
+
+            for issue in issues:
+                assignee = issue.get('assignee')
+                if assignee in user_issues:
+                    user_issues[assignee].append({
+                        'number': issue.get('number'),
+                        'title': issue.get('title', ''),
+                        'repository': issue.get('repository', ''),
+                        'url': issue.get('url', ''),
+                        'closed_at': issue.get('closed_at', '')
+                    })
+
+        return user_issues

@@ -7,7 +7,7 @@ import threading
 import time
 import requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from typing import Dict, List, Set, Callable, Any, Optional
 from collections import defaultdict
 from functools import wraps
@@ -262,6 +262,161 @@ class GitHubFetcher:
             except Exception as e:
                 # If rate limit check fails, log but continue
                 logger.warning(f"Could not check rate limit: {e}")
+
+    def _fetch_closed_issues_for_user(
+        self,
+        username: str,
+        org: str,
+        start_date: datetime,
+        end_date: datetime
+    ) -> List[Dict]:
+        """Fetch closed issues assigned to user within date range from org repos
+
+        Args:
+            username: GitHub username
+            org: GitHub organization
+            start_date: Start date for filtering (timezone-naive, will be treated as UTC)
+            end_date: End date for filtering (timezone-naive, will be treated as UTC)
+
+        Returns:
+            List of issue dicts with number, title, closed_at, url, repository, labels
+        """
+        issues = []
+        has_next_page = True
+        cursor = None
+
+        # Make dates timezone-aware (UTC) if they aren't already
+        if start_date.tzinfo is None:
+            start_date = start_date.replace(tzinfo=timezone.utc)
+        if end_date.tzinfo is None:
+            end_date = end_date.replace(tzinfo=timezone.utc)
+
+        logger.debug(
+            f"Fetching closed issues for {username} from {start_date.date()} to {end_date.date()}")
+
+        try:
+            while has_next_page:
+                # GraphQL query for closed issues assigned to user
+                query = """
+                query($username: String!, $cursor: String) {
+                  user(login: $username) {
+                    issues(
+                      first: 100
+                      after: $cursor
+                      filterBy: {states: CLOSED}
+                      orderBy: {field: UPDATED_AT, direction: DESC}
+                    ) {
+                      pageInfo {
+                        hasNextPage
+                        endCursor
+                      }
+                      nodes {
+                        number
+                        title
+                        closedAt
+                        url
+                        repository {
+                          nameWithOwner
+                          owner {
+                            login
+                          }
+                        }
+                        labels(first: 10) {
+                          nodes {
+                            name
+                          }
+                        }
+                        assignees(first: 10) {
+                          nodes {
+                            login
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                """
+
+                variables = {
+                    'username': username,
+                    'cursor': cursor
+                }
+
+                response = self._graphql_request(query, variables)
+                if not response:
+                    logger.warning(
+                        f"No response from GraphQL for issues of {username}")
+                    break
+
+                user_data = response.get('user')
+                if not user_data:
+                    logger.debug(f"No user data found for {username}")
+                    break
+
+                issues_data = user_data.get('issues', {})
+                nodes = issues_data.get('nodes', [])
+                page_info = issues_data.get('pageInfo', {})
+
+                for issue_node in nodes:
+                    # Get closedAt date
+                    closed_at_str = issue_node.get('closedAt')
+                    if not closed_at_str:
+                        continue
+
+                    closed_at = datetime.fromisoformat(
+                        closed_at_str.replace('Z', '+00:00'))
+
+                    # Filter by date range (closedAt must be within our date range)
+                    if not (start_date <= closed_at <= end_date):
+                        continue
+
+                    # Check if issue is from our organization
+                    repo_data = issue_node.get('repository', {})
+                    repo_owner = repo_data.get('owner', {}).get('login', '')
+                    if repo_owner != org:
+                        continue
+
+                    # Check if user is actually assigned to this issue
+                    assignees = issue_node.get(
+                        'assignees', {}).get('nodes', [])
+                    is_assigned = any(a.get('login') ==
+                                      username for a in assignees)
+                    if not is_assigned:
+                        continue
+
+                    # Extract issue data
+                    repo_name = repo_data.get('nameWithOwner', '')
+                    labels = [label['name'] for label in issue_node.get(
+                        'labels', {}).get('nodes', [])]
+
+                    issue_dict = {
+                        'number': issue_node.get('number'),
+                        'title': issue_node.get('title', ''),
+                        'closed_at': closed_at_str,
+                        'assignee': username,
+                        'repository': repo_name,
+                        'url': issue_node.get('url', ''),
+                        'labels': labels
+                    }
+
+                    issues.append(issue_dict)
+
+                # Check pagination
+                has_next_page = page_info.get('hasNextPage', False)
+                cursor = page_info.get('endCursor')
+
+                # Stop if we've gone far enough back in time
+                if nodes and not has_next_page:
+                    break
+
+        except Exception as e:
+            logger.error(f"Error fetching issues for {username}: {e}")
+            import traceback
+            logger.error(traceback.format_exc())
+
+        logger.info(
+            f"Found {len(issues)} closed issues for {username} in date range")
+        return issues
 
     @retry_with_exponential_backoff(max_retries=5, base_delay=60)
     def _fetch_commit_branches(self, repo_full_name: str, commit_sha: str) -> List[str]:
@@ -844,9 +999,25 @@ class GitHubFetcher:
                     f"All contributor stats already cached for week containing {date_str}"
                 )
 
+        # Fetch closed issues for each user
+        issues_data = []
+        logger.info(f"Fetching closed issues for {len(user_ids)} user(s)")
+        for username in user_ids:
+            user_issues = self._fetch_closed_issues_for_user(
+                username=username,
+                org=GITHUB_ORG,
+                start_date=start_datetime,
+                end_date=end_datetime
+            )
+            issues_data.extend(user_issues)
+
+        logger.info(f"Date {date_str}: {len(issues_data)} total issues closed")
+
         return {
             'date': date_str,
             'commits': commits_data,
+            'issues': issues_data,
+            'issue_count': len(issues_data),
             'contributor_stats': contributor_stats  # Authoritative stats from GitHub
         }
 

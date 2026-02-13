@@ -109,46 +109,62 @@ class GoogleChatPoster:
         self,
         period_type: str,
         date_string: str,
-        top_by_commits: List[Tuple[str, int]],
-        top_by_loc: List[Tuple[str, int]]
+        contributors_by_impact: List[Tuple[str, Dict[str, int]]]
     ) -> str:
-        """Format complete leaderboard message
+        """Format complete leaderboard message with new format
 
         Args:
             period_type: "Daily" or "Weekly"
             date_string: Formatted date or date range
-            top_by_commits: List of (username, commit_count) tuples
-            top_by_loc: List of (username, total_loc) tuples
+            contributors_by_impact: List of (username, metrics_dict) tuples
 
         Returns:
             Formatted message string
         """
         # Check if there's any activity
-        if not top_by_commits and not top_by_loc:
+        if not contributors_by_impact:
             return (
                 f"📊 **{period_type} Leaderboard ({date_string})**\n\n"
                 f"No activity for this period.\n\n"
                 f"🔗 View all reports: {REPORTS_BASE_URL}"
             )
 
-        # Build message with both sections
-        message_parts = [
-            f"📊 **{period_type} Leaderboard ({date_string})**\n",
-            self._format_leaderboard_section(
-                "🏆 Top Contributors by Commits",
-                top_by_commits,
-                "commits"
-            ),
-            "\n",
-            self._format_leaderboard_section(
-                "📈 Top Contributors by Lines Changed",
-                top_by_loc,
-                "lines"
-            ),
-            f"\n\n🔗 View all reports: {REPORTS_BASE_URL}"
-        ]
+        # Build message with new format
+        lines = [f"📊 **{period_type} Leaderboard ({date_string})**\n"]
 
-        return "\n".join(message_parts)
+        current_rank = 0
+        prev_issues = None
+
+        for idx, (username, metrics) in enumerate(contributors_by_impact):
+            issues_closed = metrics.get('issues_closed', 0)
+            commit_count = metrics.get('commit_count', 0)
+            total_loc = metrics.get('total_loc', 0)
+
+            # Handle ties: same issues count = same rank
+            if prev_issues is None or issues_closed != prev_issues:
+                current_rank = idx
+
+            # Show emoji for top 3 positions only
+            if current_rank < 3:
+                emoji = self._get_rank_emoji(current_rank)
+                rank_prefix = emoji
+            else:
+                rank_prefix = f"{current_rank + 1}."
+
+            # Format: 🥇 username - X issues closed / X commits / X lines of code
+            issue_text = f"{issues_closed} issue{'s' if issues_closed != 1 else ''} closed" if issues_closed > 0 else "0 issues closed"
+            lines.append(f"{rank_prefix} **{username}** - {issue_text}")
+            lines.append(
+                f"{commit_count} commit{'s' if commit_count != 1 else ''}")
+            lines.append(f"{total_loc:,} lines of code")
+            if idx < len(contributors_by_impact) - 1:
+                lines.append("")  # Blank line between contributors
+
+            prev_issues = issues_closed
+
+        lines.append(f"\n🔗 View all reports: {REPORTS_BASE_URL}")
+
+        return "\n".join(lines)
 
     def post_message(self, message: str, max_retries: int = 3) -> bool:
         """Post message to Google Chat with retry logic
@@ -201,16 +217,14 @@ class GoogleChatPoster:
         self,
         period_type: str,
         date_string: str,
-        top_by_commits: List[Tuple[str, int]],
-        top_by_loc: List[Tuple[str, int]]
+        contributors_by_impact: List[Tuple[str, Dict[str, int]]]
     ) -> bool:
         """Format and post leaderboard to Google Chat
 
         Args:
             period_type: "Daily" or "Weekly"
             date_string: Formatted date or date range
-            top_by_commits: List of (username, commit_count) tuples
-            top_by_loc: List of (username, total_loc) tuples
+            contributors_by_impact: List of (username, metrics_dict) tuples
 
         Returns:
             True if posted successfully, False otherwise
@@ -219,8 +233,7 @@ class GoogleChatPoster:
             message = self.format_leaderboard_message(
                 period_type,
                 date_string,
-                top_by_commits,
-                top_by_loc
+                contributors_by_impact
             )
 
             logger.debug(
@@ -236,59 +249,85 @@ class GoogleChatPoster:
         self,
         period_type: str,
         date_string: str,
-        leaderboard_order: List[Tuple[str, int]],
-        user_commits: dict
+        leaderboard_order: List[Tuple[str, Dict[str, int]]],
+        user_commits: dict,
+        user_issues: dict
     ) -> str:
-        """Format detailed commit breakdown message
+        """Format detailed commit and issue breakdown message
 
         Args:
             period_type: "Daily" or "Weekly"
             date_string: Formatted date or date range
-            leaderboard_order: List of (username, metric) tuples in leaderboard order
+            leaderboard_order: List of (username, metrics_dict) tuples in leaderboard order
             user_commits: Dict mapping username to list of commit dicts
+            user_issues: Dict mapping username to list of issue dicts
 
         Returns:
             Formatted message string
         """
-        if not leaderboard_order or not user_commits:
-            return f"📝 **{period_type} Commit Details ({date_string})**\n\nNo commits for this period."
+        if not leaderboard_order:
+            return f"📝 **{period_type} Commit & Issue Details ({date_string})**\n\nNo activity for this period."
 
         message_parts = [
-            f"📝 **{period_type} Commit Details ({date_string})**\n"]
+            f"📝 **{period_type} Commit & Issue Details ({date_string})**\n"]
 
-        for idx, (username, _) in enumerate(leaderboard_order):
-            commits = user_commits.get(username, [])
-            if not commits:
-                continue
+        current_rank = 0
+        prev_issues = None
 
-            # Add rank emoji for top 3, otherwise use number
-            if idx < 3:
-                rank_prefix = self._get_rank_emoji(idx)
+        for idx, (username, metrics) in enumerate(leaderboard_order):
+            issues_closed = metrics.get('issues_closed', 0)
+
+            # Handle ties
+            if prev_issues is None or issues_closed != prev_issues:
+                current_rank = idx
+
+            # Show emoji for top 3 positions
+            if current_rank < 3:
+                emoji = self._get_rank_emoji(current_rank)
+                rank_prefix = emoji
             else:
-                rank_prefix = f"{idx + 1}."
+                rank_prefix = f"{current_rank + 1}."
 
-            # Header with username and commit count
-            total_commits = len(commits)
-            total_loc = sum(c['total_loc'] for c in commits)
-            message_parts.append(
-                f"\n{rank_prefix} **{username}** ({total_commits} commits, {total_loc:,} LOC):"
-            )
+            message_parts.append(f"\n{rank_prefix} **{username}**")
 
-            # List each commit with LOC and link
-            for commit in commits:
-                sha = commit['sha'][:7]  # Short SHA
-                repo = commit['repository']
-                loc = commit['total_loc']
-                message = commit['message'][:60]  # Truncate long messages
-                if len(commit['message']) > 60:
-                    message += "..."
+            # Show issues first if any
+            issues = user_issues.get(username, [])
+            if issues:
+                message_parts.append(f"  **Issues Closed ({len(issues)}):**")
+                for issue in issues[:20]:  # Limit to first 20 issues
+                    issue_num = issue.get('number', '?')
+                    issue_title = issue.get('title', 'Untitled')[:60]
+                    issue_url = issue.get('url', '')
+                    repo = issue.get('repository', '').split(
+                        '/')[-1] if issue.get('repository') else 'unknown'
+                    message_parts.append(
+                        f"  • [{repo}#{issue_num}: {issue_title}]({issue_url})")
+                if len(issues) > 20:
+                    message_parts.append(
+                        f"  • ... and {len(issues) - 20} more issues")
 
-                # GitHub commit URL
-                commit_url = f"https://github.com/{repo}/commit/{commit['sha']}"
+            # Show commits
+            commits = user_commits.get(username, [])
+            if commits:
+                message_parts.append(f"  **Commits ({len(commits)}):**")
+                for commit in commits[:20]:  # Limit to first 20 commits
+                    sha_short = commit.get('sha', 'unknown')[:7]
+                    message = commit.get('message', 'No message')[:60]
+                    repo = commit.get('repository', '').split(
+                        '/')[-1] if commit.get('repository') else 'unknown'
+                    sha_full = commit.get('sha', '')
+                    repo_full = commit.get('repository', '')
+                    commit_url = f"https://github.com/{repo_full}/commit/{sha_full}" if repo_full and sha_full else ''
+                    loc = commit.get('total_loc', 0)
+                    message_parts.append(
+                        f"  • [{repo} {sha_short}]({commit_url}): {message} ({loc:,} LOC)")
+                if len(commits) > 20:
+                    message_parts.append(
+                        f"  • ... and {len(commits) - 20} more commits")
+            elif not issues:
+                message_parts.append("  No commits or issues")
 
-                message_parts.append(
-                    f"  • [{sha}]({commit_url}) - {loc:,} LOC - {message}"
-                )
+            prev_issues = issues_closed
 
         return "\n".join(message_parts)
 
@@ -296,16 +335,18 @@ class GoogleChatPoster:
         self,
         period_type: str,
         date_string: str,
-        leaderboard_order: List[Tuple[str, int]],
-        user_commits: dict
+        leaderboard_order: List[Tuple[str, Dict[str, int]]],
+        user_commits: dict,
+        user_issues: dict
     ) -> bool:
-        """Format and post detailed commit breakdown to Google Chat
+        """Format and post detailed breakdown to Google Chat
 
         Args:
             period_type: "Daily" or "Weekly"
             date_string: Formatted date or date range
-            leaderboard_order: List of (username, metric) tuples in leaderboard order
+            leaderboard_order: List of (username, metrics_dict) tuples in leaderboard order
             user_commits: Dict mapping username to list of commit dicts
+            user_issues: Dict mapping username to list of issue dicts
 
         Returns:
             True if posted successfully, False otherwise
@@ -315,7 +356,8 @@ class GoogleChatPoster:
                 period_type,
                 date_string,
                 leaderboard_order,
-                user_commits
+                user_commits,
+                user_issues
             )
 
             logger.debug(
