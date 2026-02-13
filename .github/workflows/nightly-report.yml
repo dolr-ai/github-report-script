@@ -31,38 +31,40 @@ jobs:
           imageName: ghcr.io/dolr-ai/github-report-script
           push: always
           runCmd: |
-            # Set up CI environment
+            set -e  # Exit on any error
+            
+            echo "=== Configuring Git ==="
+            git config --global user.name "github-actions[bot]"
+            git config --global user.email "github-actions[bot]@users.noreply.github.com"
+            
+            echo "=== Configuring Git Credentials ==="
+            git config --global credential.helper store
+            echo "https://x-access-token:${GITHUB_TOKEN}@github.com" > ~/.git-credentials
+            chmod 600 ~/.git-credentials
+            
+            echo "=== Setting up CI environment ==="
             bash .github/scripts/setup-ci.sh
             
-            # Run the report generation
+            echo "=== Running report generation ==="
             python src/main.py
+            
+            echo "=== Posting leaderboard to Google Chat ==="
+            python src/main.py --mode fetch_and_leaderboard || echo "Leaderboard posting failed (non-fatal)"
+            
+            echo "=== Committing and pushing changes ==="
+            git add cache/ output/ docs/
+            if git diff --staged --quiet; then
+              echo "No changes to commit"
+            else
+              git commit -m "chore: Update activity data and reports [skip ci]"
+              CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+              git push origin "$CURRENT_BRANCH"
+              echo "✓ Changes pushed successfully"
+            fi
           env: |
             ANSIBLE_VAULT_PASSWORD=${{ secrets.ANSIBLE_VAULT_PASSWORD }}
             EXECUTION_MODE=fetch_and_chart
-
-      - name: Post leaderboard to Google Chat
-        uses: devcontainers/ci@v0.3
-        continue-on-error: true
-        with:
-          imageName: ghcr.io/dolr-ai/github-report-script
-          cacheFrom: ghcr.io/dolr-ai/github-report-script
-          push: never
-          runCmd: |
-            # Set up CI environment
-            bash .github/scripts/setup-ci.sh
-            
-            # Fetch data and post leaderboard (daily Mon-Sat, weekly on Sun)
-            python src/main.py --mode fetch_and_leaderboard
-          env: |
-            ANSIBLE_VAULT_PASSWORD=${{ secrets.ANSIBLE_VAULT_PASSWORD }}
-
-      - name: Commit and push updated data
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add cache/ output/ docs/
-          git diff --staged --quiet || git commit -m "chore: Update activity data and reports [skip ci]"
-          git push
+            GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload report artifacts
         uses: actions/upload-artifact@v4
