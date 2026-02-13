@@ -62,11 +62,12 @@ jobs:
               exit 1
             fi
             
-            echo -e "\n=== Authenticating with GitHub CLI ==="
-            echo "$GITHUB_TOKEN" | gh auth login --with-token
-            gh auth setup-git
-            gh auth status
-            echo "✓ GitHub CLI authentication successful"
+            echo -e "\n=== Configuring Git Credentials ==="
+            # Configure git to use the GITHUB_TOKEN for authentication
+            git config --global credential.helper store
+            echo "https://x-access-token:${GITHUB_TOKEN}@github.com" > ~/.git-credentials
+            chmod 600 ~/.git-credentials
+            echo "✓ Git credentials configured"
             
             echo -e "\n=== Adding File ==="
             git add test-git-in-container.txt
