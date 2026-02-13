@@ -278,9 +278,40 @@ def cmd_fetch_and_chart():
     print("=" * 70)
 
 
+def cmd_fetch_and_leaderboard():
+    """Combined mode: Fetch data and immediately post leaderboard"""
+    print(display_config())
+    logger.info("Starting FETCH_AND_LEADERBOARD mode (combined operation)")
+
+    # Get date range
+    start_date, end_date = get_date_range()
+    logger.info(f"Date range: {start_date.date()} to {end_date.date()}")
+
+    # Step 1: Fetch commits
+    logger.info("Step 1/3: Fetching commits from GitHub")
+    fetcher = GitHubFetcher(thread_count=THREAD_COUNT)
+    fetcher.fetch_commits(start_date, end_date, USER_IDS, force_refresh=False)
+
+    # Step 2: Process data
+    logger.info("Step 2/3: Processing and aggregating data")
+    processor = DataProcessor()
+    processor.process_date_range(
+        start_date, end_date, USER_IDS, force_refresh=False)
+
+    # Step 3: Post leaderboard
+    logger.info("Step 3/3: Posting leaderboard to Google Chat")
+    cmd_leaderboard()
+
+    print("\n" + "=" * 70)
+    print("✓ FETCH_AND_LEADERBOARD complete!")
+    print("  Data fetched, processed, and leaderboard posted")
+    print("=" * 70)
+
+
 def cmd_leaderboard():
     """Generate and post daily/weekly leaderboards to Google Chat"""
-    print(display_config())
+    if MODE == ExecutionMode.LEADERBOARD:
+        print(display_config())
     logger.info("Starting LEADERBOARD mode")
 
     try:
@@ -370,6 +401,7 @@ Examples:
   python src/main.py --mode status            # Check cache status
   python src/main.py --mode refresh-stats     # Refresh GitHub stats only (no commits fetch)
   python src/main.py --mode leaderboard       # Post leaderboard to Google Chat (daily/weekly)
+  python src/main.py --mode fetch_and_leaderboard  # Fetch data and post leaderboard (combined)
 
 Note: Arguments override settings in src/config.py
         """
@@ -379,7 +411,7 @@ Note: Arguments override settings in src/config.py
         '--mode',
         type=str,
         choices=['fetch', 'refresh', 'chart', 'status',
-                 'fetch_and_chart', 'refresh-stats', 'leaderboard'],
+                 'fetch_and_chart', 'refresh-stats', 'leaderboard', 'fetch_and_leaderboard'],
         help='Execution mode (default: from config.py, typically fetch_and_chart)'
     )
 
@@ -408,6 +440,7 @@ def main():
             'status': ExecutionMode.STATUS,
             'fetch_and_chart': ExecutionMode.FETCH_AND_CHART,
             'leaderboard': ExecutionMode.LEADERBOARD,
+            'fetch_and_leaderboard': ExecutionMode.FETCH_AND_LEADERBOARD,
             'refresh-stats': 'REFRESH_STATS'  # Special mode
         }
         MODE = mode_map[args.mode]
@@ -436,6 +469,8 @@ def main():
             cmd_fetch_and_chart()
         elif MODE == ExecutionMode.LEADERBOARD:
             cmd_leaderboard()
+        elif MODE == ExecutionMode.FETCH_AND_LEADERBOARD:
+            cmd_fetch_and_leaderboard()
         elif MODE == 'REFRESH_STATS':
             cmd_refresh_stats()
         else:

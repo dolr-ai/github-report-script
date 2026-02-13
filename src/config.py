@@ -53,6 +53,7 @@ class ExecutionMode(Enum):
     STATUS: Display current status (rate limits, cached data, etc.)
     FETCH_AND_CHART: Fetch data and immediately generate charts (combined mode)
     LEADERBOARD: Generate and post daily/weekly leaderboards to Google Chat
+    FETCH_AND_LEADERBOARD: Fetch data and immediately post leaderboard (combined mode)
     """
     FETCH = "fetch"
     REFRESH = "refresh"
@@ -60,6 +61,7 @@ class ExecutionMode(Enum):
     STATUS = "status"
     FETCH_AND_CHART = "fetch_and_chart"
     LEADERBOARD = "leaderboard"
+    FETCH_AND_LEADERBOARD = "fetch_and_leaderboard"
 
 
 class DateRangeMode(Enum):

@@ -51,8 +51,8 @@ jobs:
             # Set up CI environment
             bash .github/scripts/setup-ci.sh
             
-            # Post leaderboard (daily Mon-Sat, weekly on Sun)
-            python src/main.py --mode leaderboard
+            # Fetch data and post leaderboard (daily Mon-Sat, weekly on Sun)
+            python src/main.py --mode fetch_and_leaderboard
           env: |
             ANSIBLE_VAULT_PASSWORD=${{ secrets.ANSIBLE_VAULT_PASSWORD }}
 
