@@ -24,7 +24,7 @@ if project_root not in sys.path:
     sys.path.insert(0, project_root)
 
 # fmt: off - DO NOT REORDER THESE IMPORTS
-from src.config import MODE, ExecutionMode, DATE_RANGE_MODE, DateRangeMode, USER_IDS, THREAD_COUNT, GITHUB_ORG, validate_config, display_config, get_date_range, IST_TIMEZONE
+from src.config import MODE, ExecutionMode, DATE_RANGE_MODE, DateRangeMode, USER_IDS, THREAD_COUNT, GITHUB_ORG, DATA_RETENTION_DAYS, validate_config, display_config, get_date_range, IST_TIMEZONE
 from src.github_fetcher import GitHubFetcher
 from src.data_processor import DataProcessor
 from src.chart_generator import ChartGenerator
@@ -41,9 +41,9 @@ def cmd_fetch():
     print(display_config())
     logger.info("Starting FETCH mode")
 
-    # Clean up old data (older than 120 days)
+    # Clean up old data (older than DATA_RETENTION_DAYS)
     cache_manager = CacheManager()
-    cache_manager.cleanup_old_data(days_to_keep=120)
+    cache_manager.cleanup_old_data(days_to_keep=DATA_RETENTION_DAYS)
 
     # Get date range
     start_date, end_date = get_date_range()
@@ -84,9 +84,9 @@ def cmd_refresh():
     print(display_config())
     logger.info("Starting REFRESH mode")
 
-    # Clean up old data (older than 120 days)
+    # Clean up old data (older than DATA_RETENTION_DAYS)
     cache_manager = CacheManager()
-    cache_manager.cleanup_old_data(days_to_keep=120)
+    cache_manager.cleanup_old_data(days_to_keep=DATA_RETENTION_DAYS)
 
     # Get date range
     start_date, end_date = get_date_range()
@@ -249,9 +249,9 @@ def cmd_fetch_and_chart():
     print(display_config())
     logger.info("Starting FETCH_AND_CHART mode (combined operation)")
 
-    # Clean up old data (older than 120 days)
+    # Clean up old data (older than DATA_RETENTION_DAYS)
     cache_manager = CacheManager()
-    cache_manager.cleanup_old_data(days_to_keep=120)
+    cache_manager.cleanup_old_data(days_to_keep=DATA_RETENTION_DAYS)
 
     # Get date range
     start_date, end_date = get_date_range()
@@ -295,9 +295,9 @@ def cmd_fetch_and_leaderboard():
     print(display_config())
     logger.info("Starting FETCH_AND_LEADERBOARD mode (combined operation)")
 
-    # Clean up old data (older than 120 days)
+    # Clean up old data (older than DATA_RETENTION_DAYS)
     cache_manager = CacheManager()
-    cache_manager.cleanup_old_data(days_to_keep=120)
+    cache_manager.cleanup_old_data(days_to_keep=DATA_RETENTION_DAYS)
 
     # Get date range
     start_date, end_date = get_date_range()

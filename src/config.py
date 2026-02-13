@@ -118,6 +118,9 @@ Examples:
 DAYS_BACK = 30
 """Number of days to go back when DATE_RANGE_MODE = LAST_N_DAYS. Can be overridden with --days argument."""
 
+DATA_RETENTION_DAYS = 120
+"""Number of days to retain data in cache and output folders. Older data is automatically cleaned up."""
+
 START_DATE: Optional[str] = '2026-01-05'
 """
 Start date for CUSTOM_RANGE or SPECIFIC_DATE modes.
