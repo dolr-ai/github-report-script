@@ -77,8 +77,8 @@ jobs:
   weekly-summary:
     needs: generate-report
     runs-on: ubuntu-latest
-    # Only run on Sundays (day 0)
-    if: github.event.schedule && github.event_name == 'schedule' && format('{0}', github.event.schedule) == '30 18 * * 0'
+    # Only run on Sundays (day 0 in cron schedule)
+    if: github.event_name == 'schedule' && github.event.schedule == '30 18 * * 0'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -100,10 +100,17 @@ jobs:
             This release contains the aggregated GitHub activity reports for dolr-ai organization.
             
             ### Contents
-            - Daily activity reports from the past week
-            - Commit statistics and metrics
-            - LOC (Lines of Code) changes
-            - Visualization charts
+            - **Daily activity reports** from the past week
+            - **Issues closed** - Tracking meaningful business contributions
+            - **Commit statistics** and code contributions
+            - **LOC (Lines of Code)** changes (additions/deletions)
+            - **Visualization charts** and productivity metrics
+            
+            ### Leaderboard Ranking
+            Contributors are ranked by:
+            1. **Issues closed** (assigned and closed in org repos)
+            2. **Commits** (number of commits)
+            3. **Lines of code** (total additions + deletions)
             
             ### Generated on
             ${{ github.event.repository.updated_at }}
