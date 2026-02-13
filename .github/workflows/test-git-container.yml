@@ -62,9 +62,10 @@ jobs:
               exit 1
             fi
             
-            echo -e "\n=== Configuring Git Authentication ==="
-            git config --global url."https://x-access-token:${GITHUB_TOKEN}@github.com/".insteadOf "https://github.com/"
-            echo "✓ Git authentication configured"
+            echo -e "\n=== Authenticating with GitHub CLI ==="
+            echo "$GITHUB_TOKEN" | gh auth login --with-token
+            gh auth status
+            echo "✓ GitHub CLI authentication successful"
             
             echo -e "\n=== Adding File ==="
             git add test-git-in-container.txt
@@ -76,12 +77,16 @@ jobs:
             git commit -m "test: Validate git operations in dev container [skip ci]"
             echo "✓ Commit created"
             
+            echo -e "\n=== Getting Current Branch Name ==="
+            CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+            echo "Current branch: $CURRENT_BRANCH"
+            
             echo -e "\n=== Testing Push (DRY RUN) ==="
-            git push --dry-run origin HEAD
+            git push --dry-run origin "$CURRENT_BRANCH"
             echo "✓ Dry run successful"
             
             echo -e "\n=== Actual Push ==="
-            git push origin HEAD:${GITHUB_REF#refs/heads/}
+            git push origin "$CURRENT_BRANCH"
             echo "✓ Push successful"
             
             echo -e "\n=== TEST PASSED ==="
