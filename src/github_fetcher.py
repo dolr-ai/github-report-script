@@ -322,6 +322,49 @@ class GitHubFetcher:
             # If we can't determine, assume it's not a bot
             return False
 
+    def _get_week_start_date(self, date: datetime) -> str:
+        """Get the start date (Sunday) of the week containing the given date
+
+        GitHub's contributor stats API groups data by week starting on Sunday.
+
+        Args:
+            date: The date to get the week start for
+
+        Returns:
+            ISO format date string (YYYY-MM-DD) of the Sunday starting that week
+        """
+        # Get the day of week (0=Monday, 6=Sunday)
+        weekday = date.weekday()
+        # Calculate days back to Sunday (Sunday is weekday 6)
+        days_to_sunday = (weekday + 1) % 7
+        week_start = date - timedelta(days=days_to_sunday)
+        return week_start.date().isoformat()
+
+    def _has_contributor_stats_for_week(self, date_str: str, username: str) -> bool:
+        """Check if we already have contributor stats for the week containing this date
+
+        Args:
+            date_str: Date string in YYYY-MM-DD format
+            username: GitHub username
+
+        Returns:
+            True if we have stats for this week cached
+        """
+        try:
+            cached_data = self.cache_manager.read_cache(date_str)
+            if not cached_data:
+                return False
+
+            contributor_stats = cached_data.get('contributor_stats', {})
+            user_stats = contributor_stats.get(username, {})
+
+            # If we have any stats for this user, it means we already fetched the weekly data
+            # GitHub stats API returns weekly data, so if we have it once, we have the whole week
+            return len(user_stats) > 0
+        except Exception as e:
+            logger.debug(f"Error checking cached stats for {date_str}: {e}")
+            return False
+
     @retry_with_exponential_backoff(max_retries=5, base_delay=60)
     def _fetch_contributor_stats(self, repo_full_name: str, username: str,
                                  start_date: datetime, end_date: datetime,
@@ -741,36 +784,65 @@ class GitHubFetcher:
             f"Date {date_str}: {len(commits_data)} commits from {unique_repos} repos, {unique_authors} authors"
         )
 
-        # Fetch contributor stats for validation
-        # This provides the authoritative counts that match GitHub's UI
+        # Fetch contributor stats (only if not already cached for this week)
+        # GitHub's stats API provides weekly data. If we already have stats for this week,
+        # skip fetching to save API calls.
         contributor_stats = {}
-        for username in user_ids:
-            active_repos = user_repos.get(username, [])
-            user_stats = {}
 
-            for repo_full_name in active_repos:
-                repo_stats = self._fetch_contributor_stats(
-                    repo_full_name, username, start_datetime, end_datetime
+        # Check if this date is within the last 7 days - stats might not be available yet
+        date_obj = datetime.fromisoformat(date_str)
+        days_old = (datetime.now().date() - date_obj.date()).days
+
+        if days_old < 7:
+            logger.debug(
+                f"Date {date_str} is only {days_old} days old - skipping contributor stats fetch "
+                "(GitHub stats calculated weekly)"
+            )
+        else:
+            # Check if we need to fetch stats for any users
+            users_needing_stats = []
+            for username in user_ids:
+                if not self._has_contributor_stats_for_week(date_str, username):
+                    users_needing_stats.append(username)
+
+            if users_needing_stats:
+                logger.info(
+                    f"Fetching contributor stats for {len(users_needing_stats)} user(s) "
+                    f"(skipped {len(user_ids) - len(users_needing_stats)} already cached)"
                 )
-                if repo_stats:
-                    # Merge stats from this repo
-                    for stat_date, stats in repo_stats.items():
-                        if stat_date not in user_stats:
-                            user_stats[stat_date] = {
-                                'commits': 0,
-                                'additions': 0,
-                                'deletions': 0,
-                                'total': 0,
-                                'repos': []
-                            }
-                        user_stats[stat_date]['commits'] += stats['commits']
-                        user_stats[stat_date]['additions'] += stats['additions']
-                        user_stats[stat_date]['deletions'] += stats['deletions']
-                        user_stats[stat_date]['total'] += stats['total']
-                        user_stats[stat_date]['repos'].append(repo_full_name)
 
-            if user_stats:
-                contributor_stats[username] = user_stats
+                for username in users_needing_stats:
+                    active_repos = user_repos.get(username, [])
+                    user_stats = {}
+
+                    for repo_full_name in active_repos:
+                        repo_stats = self._fetch_contributor_stats(
+                            repo_full_name, username, start_datetime, end_datetime
+                        )
+                        if repo_stats:
+                            # Merge stats from this repo
+                            for stat_date, stats in repo_stats.items():
+                                if stat_date not in user_stats:
+                                    user_stats[stat_date] = {
+                                        'commits': 0,
+                                        'additions': 0,
+                                        'deletions': 0,
+                                        'total': 0,
+                                        'repos': []
+                                    }
+                                user_stats[stat_date]['commits'] += stats['commits']
+                                user_stats[stat_date]['additions'] += stats['additions']
+                                user_stats[stat_date]['deletions'] += stats['deletions']
+                                user_stats[stat_date]['total'] += stats['total']
+                                user_stats[stat_date]['repos'].append(
+                                    repo_full_name)
+
+                    if user_stats:
+                        contributor_stats[username] = user_stats
+            else:
+                logger.info(
+                    f"All contributor stats already cached for week containing {date_str}"
+                )
 
         return {
             'date': date_str,
