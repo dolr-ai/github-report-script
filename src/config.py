@@ -84,16 +84,18 @@ class DateRangeMode(Enum):
 # ============================================================================
 
 # --- Execution Configuration ---
-MODE = ExecutionMode.FETCH_AND_CHART
+MODE = ExecutionMode.FETCH_AND_LEADERBOARD
 """
 What should the script do when run?
 
-Default: FETCH_AND_CHART (fetch new data and generate charts)
+Default: FETCH_AND_LEADERBOARD (fetch new data and post leaderboard)
 Can be overridden with command-line arguments:
     python src/main.py --mode fetch
     python src/main.py --mode refresh --days 90
     python src/main.py --mode chart
     python src/main.py --mode status
+    python src/main.py --mode leaderboard
+    python src/main.py --mode fetch_and_leaderboard
 
 Examples:
     MODE = ExecutionMode.FETCH       # Fetch and process new data
@@ -101,6 +103,8 @@ Examples:
     MODE = ExecutionMode.CHART       # Generate charts from existing data
     MODE = ExecutionMode.STATUS      # Check status
     MODE = ExecutionMode.FETCH_AND_CHART  # Fetch data and generate charts (combined)
+    MODE = ExecutionMode.LEADERBOARD # Post leaderboard to Google Chat (daily/weekly)
+    MODE = ExecutionMode.FETCH_AND_LEADERBOARD  # Fetch data and post leaderboard (combined)
 """
 
 # --- Date Range Configuration ---
