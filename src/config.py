@@ -153,7 +153,7 @@ GITHUB_ORG = os.getenv('GITHUB_ORG', 'dolr-ai')
 """GitHub organization to fetch commits from"""
 
 # --- Google Chat Configuration ---
-GOOGLE_CHAT_WEBHOOK_BASE_URL = "https://chat.googleapis.com/v1/spaces/AAQAh1xv1RI/messages"
+GOOGLE_CHAT_WEBHOOK_BASE_URL = "https://chat.googleapis.com/v1/spaces/AAAARme8JFE/messages"
 """Google Chat webhook base URL (without query parameters)"""
 
 GOOGLE_CHAT_KEY = os.getenv('GOOGLE_CHAT_KEY')
