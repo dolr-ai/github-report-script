@@ -1,0 +1,712 @@
+{
+  "date": "2026-02-13",
+  "cached_at": "2026-02-14T05:25:58.127687Z",
+  "commits": [
+    {
+      "sha": "f1cb24c738ff8b6fb7f65ba4addc1d308108e84d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-13T11:14:13Z",
+      "message": "chore: update cached commit data for 2026-02-11 and 2026-02-12",
+      "stats": {
+        "additions": 1428,
+        "deletions": 582,
+        "total": 2010
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "5043f63fc65c365c6b705390cf9870c1b9b767ec",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-13T11:01:13Z",
+      "message": "feat: Enhance leaderboard ranking logic to consider multiple metrics for ties",
+      "stats": {
+        "additions": 11,
+        "deletions": 7,
+        "total": 18
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "28ea9b286c4a0891afbb3fd24ea96e52685bc079",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-13T09:34:28Z",
+      "message": "feat: Update metadata and add cache for commits on February 12, 2026",
+      "stats": {
+        "additions": 546,
+        "deletions": 19,
+        "total": 565
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b5a800ca481497539024cd295d272bf1533627f9",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-13T08:54:01Z",
+      "message": "chore: Remove test workflow after successful integration",
+      "stats": {
+        "additions": 0,
+        "deletions": 111,
+        "total": 111
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "99847fd3dcaa7a96dab6d08b52837b51752df4c9",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-13T08:52:49Z",
+      "message": "test: Remove Feb 12 cache to validate workflow regenerates and commits it",
+      "stats": {
+        "additions": 0,
+        "deletions": 527,
+        "total": 527
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a357d0a4a90e86d56fb97f8e29e9da85d33dbf39",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-13T08:46:24Z",
+      "message": "feat: Consolidate nightly workflow into single dev container step",
+      "stats": {
+        "additions": 28,
+        "deletions": 27,
+        "total": 55
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e0c146c8d180c99e8a6a55d4d611c8191f374051",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-13T08:42:57Z",
+      "message": "fix: Use git credential store for authentication in dev container",
+      "stats": {
+        "additions": 6,
+        "deletions": 6,
+        "total": 12
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8f422fef94b1980d9f05c2409e43b49938a058f1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-13T08:42:37Z",
+      "message": "test: Validate git operations in dev container [skip ci]",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "127e4aba96bd1c702758e06a746abff300a6a29c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-13T08:42:29Z",
+      "message": "test: Validate git operations in dev container [skip ci]",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3bf289b29cb5a4c9a4a7e63b26398ad20263f61c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-13T08:39:38Z",
+      "message": "fix: Add gh auth setup-git to configure git credentials",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c2273e184de1ab68d1b8abf12cb763678f839d79",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-13T08:33:46Z",
+      "message": "feat: Update Git authentication method to use GitHub CLI in Dev Container workflow",
+      "stats": {
+        "additions": 10,
+        "deletions": 5,
+        "total": 15
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "cf0e81d7f43b5c4592e4b85918c34087af34cbd3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-13T08:26:04Z",
+      "message": "feat: Add workflow to test Git operations in a Dev Container",
+      "stats": {
+        "additions": 104,
+        "deletions": 0,
+        "total": 104
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "33470e10abc97218e59ae94fa1ebe7c6d2417094",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-13T08:21:40Z",
+      "message": "feat: Update metadata with new last updated timestamp and adjust date range start",
+      "stats": {
+        "additions": 529,
+        "deletions": 2,
+        "total": 531
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "5caedf4865958f7d5509c7af73b505d3c8122133",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-13T08:16:48Z",
+      "message": "feat: Enhance weekly summary report with detailed metrics and improved condition check",
+      "stats": {
+        "additions": 13,
+        "deletions": 6,
+        "total": 19
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "27ea8e744234d439b244aa752a52dc4ad56a85f3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-13T08:12:00Z",
+      "message": "feat: Add integration tests for GitHub issues fetching functionality",
+      "stats": {
+        "additions": 133,
+        "deletions": 333,
+        "total": 466
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "bb989744863e3a060d3a4760d2ddd9907eb22853",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-13T08:10:51Z",
+      "message": "feat: Update execution mode to FETCH_AND_LEADERBOARD for leaderboard posting",
+      "stats": {
+        "additions": 6,
+        "deletions": 2,
+        "total": 8
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "217452e42c2fa6cc45952e3c49b258a3f9fb2253",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-13T08:03:22Z",
+      "message": "Implement issues tracking feature to enhance contributor metrics",
+      "stats": {
+        "additions": 888,
+        "deletions": 659,
+        "total": 1547
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "aab0dbebe903713f572c9a2bcc6e3744b92820ef",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-13T07:22:36Z",
+      "message": "feat: Introduce DATA_RETENTION_DAYS constant for configurable data retention in cache cleanup",
+      "stats": {
+        "additions": 12,
+        "deletions": 9,
+        "total": 21
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f81b2dc3a59468f4a6f8c29673da962f9a4f7505",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-13T07:08:22Z",
+      "message": "feat: Add cleanup_old_data method to remove cache and output data older than 120 days",
+      "stats": {
+        "additions": 78,
+        "deletions": 1,
+        "total": 79
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "bdc84a3cd4edf54c92a5575af60cbe27c91588da",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-13T06:46:59Z",
+      "message": "fix: Update Google Chat webhook base URL for correct messaging",
+      "stats": {
+        "additions": 19,
+        "deletions": 19,
+        "total": 38
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "540fa9f984e508fd2babc6bae9fd2c023074d058",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-13T06:32:21Z",
+      "message": "feat: Add detailed commit breakdown messaging for daily and weekly leaderboards",
+      "stats": {
+        "additions": 174,
+        "deletions": 0,
+        "total": 174
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "fab96c764e73a9cd722fede91512a3f1ab5787ba",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-13T06:17:50Z",
+      "message": "feat: enhance contributor stats fetching logic",
+      "stats": {
+        "additions": 712,
+        "deletions": 1452,
+        "total": 2164
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b91045611f51402ccfce8edbabcc34174c263ed7",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-13T05:01:33Z",
+      "message": "feat: Remove deduplication logic for commit processing to count all contributions accurately",
+      "stats": {
+        "additions": 44,
+        "deletions": 213,
+        "total": 257
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6d8752cdbaaef99665902110eb2e3f835a434f0c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-13T04:54:42Z",
+      "message": "feat: Enhance leaderboard functionality to fetch data and post combined results",
+      "stats": {
+        "additions": 795,
+        "deletions": 8,
+        "total": 803
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a04bcc3df72ceb5e34374b539bf3c49c38c97a93",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-02-13T17:59:45Z",
+      "message": "use prod offchain URL for nsfw check, enable audio support for LTX-2",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "feat/ltx2-model"
+      ]
+    },
+    {
+      "sha": "52746e7d3f12a0019c73ab1e8c98623a5d66e217",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-02-13T08:29:21Z",
+      "message": "make ltx2 the default model",
+      "stats": {
+        "additions": 4,
+        "deletions": 4,
+        "total": 8
+      },
+      "branches": [
+        "feat/ltx2-model"
+      ]
+    },
+    {
+      "sha": "dd5c45a7feb2339625ed95911c9275da0a1405a5",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-02-13T08:12:31Z",
+      "message": "make ltx free",
+      "stats": {
+        "additions": 14,
+        "deletions": 4,
+        "total": 18
+      },
+      "branches": [
+        "feat/ltx2-model"
+      ]
+    },
+    {
+      "sha": "2568a4955956b2cd0add6c3c94cc09e41cf7e1a5",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-02-13T18:01:27Z",
+      "message": "feat: add LTX-2 video generation model (#157)",
+      "stats": {
+        "additions": 178,
+        "deletions": 8,
+        "total": 186
+      },
+      "branches": [
+        "master"
+      ]
+    },
+    {
+      "sha": "681f74408e71ecd064011d86187983b6e60c73da",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-13T18:13:02Z",
+      "message": "revert inttest to original static video handler",
+      "stats": {
+        "additions": 15,
+        "deletions": 24,
+        "total": 39
+      },
+      "branches": [
+        "joel/ltx-intergration"
+      ]
+    },
+    {
+      "sha": "1a8ba1bf146bf42f553a7b71aab78a1829a38bf6",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-13T18:05:07Z",
+      "message": "point yral-common deps to master branch",
+      "stats": {
+        "additions": 27,
+        "deletions": 39,
+        "total": 66
+      },
+      "branches": [
+        "joel/ltx-intergration"
+      ]
+    },
+    {
+      "sha": "10fb4b5b5eec5cd22a0b22c5ac3230c516f5fb86",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-13T17:53:17Z",
+      "message": "reduce VAE decode tile_size from 512 to 256 to prevent OOM with --gpu-only on H100 80GB",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "joel/ltx-intergration"
+      ]
+    },
+    {
+      "sha": "0649abb7c3a8fed787850d4bbad04b3d7dfbe0f0",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-13T08:30:47Z",
+      "message": "chore: update yral-common rev (ltx2 default)",
+      "stats": {
+        "additions": 24,
+        "deletions": 24,
+        "total": 48
+      },
+      "branches": [
+        "joel/ltx-intergration"
+      ]
+    },
+    {
+      "sha": "f036a22d9b64f64b171b47aed5fb22caab85c16f",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-13T08:17:05Z",
+      "message": "chore: update yral-common rev (make ltx2 free)",
+      "stats": {
+        "additions": 24,
+        "deletions": 24,
+        "total": 48
+      },
+      "branches": [
+        "joel/ltx-intergration"
+      ]
+    },
+    {
+      "sha": "5c10e7885a0d10bf49c49df334b5f895883c9672",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-13T13:47:16Z",
+      "message": "chore: cargo fmt",
+      "stats": {
+        "additions": 9,
+        "deletions": 13,
+        "total": 22
+      },
+      "branches": [
+        "joel/prompt-moderation"
+      ]
+    },
+    {
+      "sha": "ea46fd2a8bb2a05699da5d03ce3769012aa52284",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-13T12:53:48Z",
+      "message": "feat: wire prompt moderation into video generation flow",
+      "stats": {
+        "additions": 3,
+        "deletions": 0,
+        "total": 3
+      },
+      "branches": [
+        "joel/prompt-moderation"
+      ]
+    },
+    {
+      "sha": "236a61f7e560d1d854aee6a50605c8b3010aa6aa",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-13T12:52:39Z",
+      "message": "feat: add prompt moderation module using Gemini 2.5 Flash",
+      "stats": {
+        "additions": 190,
+        "deletions": 0,
+        "total": 190
+      },
+      "branches": [
+        "joel/prompt-moderation"
+      ]
+    },
+    {
+      "sha": "fd68c1a8a8e2bb4620577d1227cab335a10bb697",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-13T18:19:28Z",
+      "message": "feat: added ltx integration (#399)",
+      "stats": {
+        "additions": 893,
+        "deletions": 41,
+        "total": 934
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d92e04367b08ac38915a99c7f6d924abb3eadf49",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-13T10:56:07Z",
+      "message": "Merge pull request #870 from dolr-ai/release/android-2.6.6",
+      "stats": {
+        "additions": 31,
+        "deletions": 21,
+        "total": 52
+      },
+      "branches": [
+        "develop"
+      ]
+    },
+    {
+      "sha": "dcb88aaf365d2e225f9ebd62c2a19fcc7e8d6218",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-13T10:55:52Z",
+      "message": "Merge pull request #869 from dolr-ai/release/android-2.6.6",
+      "stats": {
+        "additions": 1800,
+        "deletions": 210,
+        "total": 2010
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 39,
+  "issues": [
+    {
+      "number": 1453,
+      "title": "[Feature Request]: Block endpoints for sorj and ai uploads with Draft in Cloudflare",
+      "closed_at": "2026-02-13T05:40:21Z",
+      "assignee": "ravi-sawlani-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1453",
+      "labels": [
+        "Backend Dependencies"
+      ]
+    },
+    {
+      "number": 1454,
+      "title": "[Feature Request]: Move new storj endpoint to self hosted axum server",
+      "closed_at": "2026-02-13T05:39:59Z",
+      "assignee": "ravi-sawlani-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1454",
+      "labels": [
+        "Backend Dependencies"
+      ]
+    },
+    {
+      "number": 1455,
+      "title": "[Feature Request]: Move AI uploads with draft to new self hosted axum server",
+      "closed_at": "2026-02-13T05:39:53Z",
+      "assignee": "ravi-sawlani-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1455",
+      "labels": [
+        "Backend Dependencies"
+      ]
+    },
+    {
+      "number": 1467,
+      "title": "[Feature Request]: dockerize the workflow for yral-storage-service",
+      "closed_at": "2026-02-13T05:39:39Z",
+      "assignee": "ravi-sawlani-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1467",
+      "labels": [
+        "Backend Dependencies"
+      ]
+    },
+    {
+      "number": 127,
+      "title": "Report functionality",
+      "closed_at": "2026-02-13T05:23:23Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/127",
+      "labels": []
+    },
+    {
+      "number": 122,
+      "title": "Upload flow",
+      "closed_at": "2026-02-13T05:23:18Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/122",
+      "labels": []
+    },
+    {
+      "number": 111,
+      "title": "Resolve crash reported while testing",
+      "closed_at": "2026-02-13T05:23:11Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/111",
+      "labels": []
+    },
+    {
+      "number": 82,
+      "title": "App Store release - v1.0.0",
+      "closed_at": "2026-02-13T05:23:01Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/82",
+      "labels": []
+    },
+    {
+      "number": 84,
+      "title": "Write tests for feed",
+      "closed_at": "2026-02-13T05:23:05Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/84",
+      "labels": []
+    },
+    {
+      "number": 36,
+      "title": "Base libraries and architecture",
+      "closed_at": "2026-02-13T05:22:55Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/36",
+      "labels": []
+    },
+    {
+      "number": 41,
+      "title": "Setup CI/CD for Android",
+      "closed_at": "2026-02-13T05:22:49Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/41",
+      "labels": []
+    },
+    {
+      "number": 126,
+      "title": "Integrates backend for video upload",
+      "closed_at": "2026-02-13T05:22:45Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/126",
+      "labels": []
+    }
+  ],
+  "issue_count": 12,
+  "contributor_stats": {}
+}
