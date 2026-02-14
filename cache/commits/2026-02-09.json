@@ -1,42 +1,64 @@
 {
   "date": "2026-02-09",
-  "cached_at": "2026-02-14T07:48:06.340803Z",
+  "cached_at": "2026-02-14T08:14:28.892335Z",
   "commits": [
     {
-      "sha": "c7fde67186130378c1ed7458f95a8734f1b2a836",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-09T14:12:21Z",
-      "message": "fix: Fixes iOS build",
+      "sha": "a3247f3e842d33076abedf6bb9da06f785549ee1",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/self-hosted-video-models",
+      "timestamp": "2026-02-09T21:10:31Z",
+      "message": "cleanup readme",
       "stats": {
-        "additions": 47,
-        "deletions": 18,
-        "total": 65
+        "additions": 2,
+        "deletions": 57,
+        "total": 59
       },
       "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/5-min-tournament",
-        "feature/5-min-tournament-bk",
         "main"
       ]
     },
     {
-      "sha": "d171ee6c06d4a307c0af5ac44274d3e1c85a43ef",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-09T09:05:41Z",
-      "message": "chore: Increments android app version",
+      "sha": "a43e9d0fe0cc64dd4fbcd4dbbd9e947a71a736f9",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/self-hosted-video-models",
+      "timestamp": "2026-02-09T21:06:12Z",
+      "message": "more sample videos for cmp + complete benchmark table",
       "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
+        "additions": 63,
+        "deletions": 3,
+        "total": 66
       },
       "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/5-min-tournament",
-        "feature/5-min-tournament-bk",
+        "main"
+      ]
+    },
+    {
+      "sha": "33f9caa8888a05998b9a4dcff2250865b38cad84",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/self-hosted-video-models",
+      "timestamp": "2026-02-09T18:03:22Z",
+      "message": "added sample videos for model variants",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "424604f39a782244f76a09fcb0142aa1bac44eb2",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/self-hosted-video-models",
+      "timestamp": "2026-02-09T17:59:27Z",
+      "message": "feat: added hunyuan benchmarks",
+      "stats": {
+        "additions": 21229,
+        "deletions": 1231,
+        "total": 22460
+      },
+      "branches": [
         "main"
       ]
     },
@@ -131,6 +153,59 @@
       ]
     },
     {
+      "sha": "c7fde67186130378c1ed7458f95a8734f1b2a836",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-09T14:12:21Z",
+      "message": "fix: Fixes iOS build",
+      "stats": {
+        "additions": 47,
+        "deletions": 18,
+        "total": 65
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/5-min-tournament",
+        "feature/5-min-tournament-bk",
+        "main"
+      ]
+    },
+    {
+      "sha": "d171ee6c06d4a307c0af5ac44274d3e1c85a43ef",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-09T09:05:41Z",
+      "message": "chore: Increments android app version",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/5-min-tournament",
+        "feature/5-min-tournament-bk",
+        "main"
+      ]
+    },
+    {
+      "sha": "6d034bcd77f923e84e519cd3591de62195be0b8f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-02-09T07:29:08Z",
+      "message": "Add postgres-1 host configuration and monitoring agent token",
+      "stats": {
+        "additions": 15,
+        "deletions": 0,
+        "total": 15
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
       "sha": "df383d162596e3180d7194b876f5e3ef455b1d20",
       "author": "gravityvi",
       "repository": "dolr-ai/yral-video-upload-service",
@@ -163,21 +238,6 @@
       ]
     },
     {
-      "sha": "6d034bcd77f923e84e519cd3591de62195be0b8f",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-02-09T07:29:08Z",
-      "message": "Add postgres-1 host configuration and monitoring agent token",
-      "stats": {
-        "additions": 15,
-        "deletions": 0,
-        "total": 15
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
       "sha": "8fcc70256585f120aee4087677dee830ef98f870",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
@@ -195,79 +255,10 @@
         "feature/5-min-tournament-bk",
         "main"
       ]
-    },
-    {
-      "sha": "a3247f3e842d33076abedf6bb9da06f785549ee1",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/self-hosted-video-models",
-      "timestamp": "2026-02-09T21:10:31Z",
-      "message": "cleanup readme",
-      "stats": {
-        "additions": 2,
-        "deletions": 57,
-        "total": 59
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "a43e9d0fe0cc64dd4fbcd4dbbd9e947a71a736f9",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/self-hosted-video-models",
-      "timestamp": "2026-02-09T21:06:12Z",
-      "message": "more sample videos for cmp + complete benchmark table",
-      "stats": {
-        "additions": 63,
-        "deletions": 3,
-        "total": 66
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "33f9caa8888a05998b9a4dcff2250865b38cad84",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/self-hosted-video-models",
-      "timestamp": "2026-02-09T18:03:22Z",
-      "message": "added sample videos for model variants",
-      "stats": {
-        "additions": 0,
-        "deletions": 0,
-        "total": 0
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "424604f39a782244f76a09fcb0142aa1bac44eb2",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/self-hosted-video-models",
-      "timestamp": "2026-02-09T17:59:27Z",
-      "message": "feat: added hunyuan benchmarks",
-      "stats": {
-        "additions": 21229,
-        "deletions": 1231,
-        "total": 22460
-      },
-      "branches": [
-        "main"
-      ]
     }
   ],
   "commit_count": 16,
   "issues": [
-    {
-      "number": 1619,
-      "title": "setup load balancer and reverse proxy for vault service",
-      "closed_at": "2026-02-09T04:41:52Z",
-      "assignee": "naitik-makwana-yral",
-      "repository": "dolr-ai/product-roadmap",
-      "url": "https://github.com/dolr-ai/product-roadmap/issues/1619",
-      "labels": []
-    },
     {
       "number": 1376,
       "title": "Cleanup CF Upload Workers",
@@ -275,6 +266,15 @@
       "assignee": "joel-medicala-yral",
       "repository": "dolr-ai/product-roadmap",
       "url": "https://github.com/dolr-ai/product-roadmap/issues/1376",
+      "labels": []
+    },
+    {
+      "number": 1619,
+      "title": "setup load balancer and reverse proxy for vault service",
+      "closed_at": "2026-02-09T04:41:52Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1619",
       "labels": []
     }
   ],

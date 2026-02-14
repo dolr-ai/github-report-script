@@ -87,11 +87,16 @@ class CacheManager:
 
         # Check if existing cache has the same content
         existing_cached_at = None
+        existing_contributor_stats = {}
         if os.path.exists(cache_file):
             try:
                 with open(cache_file, 'r') as f:
                     existing_data = json.load(f)
                     existing_commits = existing_data.get('commits', [])
+
+                    # Preserve existing contributor_stats before comparison
+                    existing_contributor_stats = existing_data.get(
+                        'contributor_stats', {})
 
                     # Compare commits (excluding cached_at field)
                     if existing_commits == new_commits:
@@ -116,9 +121,22 @@ class CacheManager:
             cache_data['issue_count'] = data.get(
                 'issue_count', len(data['issues']))
 
-        # Include contributor_stats if present
-        if 'contributor_stats' in data:
-            cache_data['contributor_stats'] = data['contributor_stats']
+        # Handle contributor_stats - preserve existing data if new data is empty
+        # This prevents losing cached stats when GitHub API returns 202 (stats computing)
+        new_contributor_stats = data.get('contributor_stats', {})
+        if new_contributor_stats:
+            # New data has stats - use it (may be a merge with existing)
+            cache_data['contributor_stats'] = new_contributor_stats
+            if existing_contributor_stats and existing_contributor_stats != new_contributor_stats:
+                logger.debug(f"Updated contributor_stats for {date_str}")
+        elif existing_contributor_stats:
+            # New data is empty but we have existing stats - preserve them
+            cache_data['contributor_stats'] = existing_contributor_stats
+            logger.debug(
+                f"Preserved existing contributor_stats for {date_str} (new data empty)")
+        else:
+            # Both are empty - store empty dict
+            cache_data['contributor_stats'] = {}
 
         with self.cache_lock:
             try:
