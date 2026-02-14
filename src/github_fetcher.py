@@ -78,6 +78,43 @@ class GitHubFetcher:
         self.base_url = 'https://api.github.com'
         self.graphql_url = 'https://api.github.com/graphql'
 
+    def _get_rate_limit_reset_time(self, resource_type: str = 'graphql') -> Optional[float]:
+        """Get the reset time for a specific rate limit resource
+
+        Args:
+            resource_type: Type of resource ('graphql', 'core', 'search', etc.)
+
+        Returns:
+            Seconds until reset (including 2s buffer) or None if check fails
+        """
+        try:
+            response = self.session.get(
+                f'{self.base_url}/rate_limit', timeout=10)
+            response.raise_for_status()
+            rate_data = response.json()
+
+            resource_limit = rate_data.get(
+                'resources', {}).get(resource_type, {})
+            remaining = resource_limit.get('remaining', 0)
+            reset_timestamp = resource_limit.get('reset', 0)
+
+            if reset_timestamp:
+                reset_time = datetime.fromtimestamp(reset_timestamp)
+                wait_seconds = (reset_time - datetime.now()).total_seconds()
+
+                # Add 2 second buffer to ensure rate limit has reset
+                if wait_seconds > 0:
+                    logger.info(
+                        f"{resource_type.upper()} rate limit: {remaining} remaining, "
+                        f"resets at {reset_time.strftime('%H:%M:%S')} UTC"
+                    )
+                    return wait_seconds + 2
+
+            return None
+        except Exception as e:
+            logger.warning(f"Could not check rate limit: {e}")
+            return None
+
     def _check_rate_limit_and_wait(self, min_remaining: int = 500) -> None:
         """Check GraphQL rate limit and wait if needed
 
@@ -110,20 +147,18 @@ class GitHubFetcher:
             logger.warning(f"Could not check rate limit: {e}. Proceeding...")
 
     def _graphql_request(self, query: str, variables: Optional[Dict] = None,
-                         max_retries: int = 10, base_delay: int = 5) -> Optional[Dict]:
-        """Make a GraphQL API request to GitHub with exponential backoff on rate limits
+                         max_retries: int = 10) -> Optional[Dict]:
+        """Make a GraphQL API request to GitHub with smart rate limit handling
 
         Args:
             query: GraphQL query string
             variables: Query variables
             max_retries: Maximum number of retry attempts for rate limits (default: 10)
-            base_delay: Base delay in seconds (will be doubled each retry, default: 5s)
 
         Returns:
             JSON response or None on error
         """
         retries = 0
-        delay = base_delay
 
         while retries <= max_retries:
             try:
@@ -147,13 +182,26 @@ class GitHubFetcher:
 
                     if is_rate_limit and retries < max_retries:
                         retries += 1
-                        current_delay = delay
-                        logger.warning(
-                            f"GraphQL rate limit hit. Retry {retries}/{max_retries} "
-                            f"after {current_delay}s (errors: {len(errors)})"
-                        )
-                        time.sleep(current_delay)
-                        delay *= 2  # Exponential backoff: double the delay
+
+                        # Get exact reset time from GitHub API
+                        wait_seconds = self._get_rate_limit_reset_time(
+                            'graphql')
+
+                        if wait_seconds is not None and wait_seconds > 0:
+                            logger.warning(
+                                f"GraphQL rate limit hit. Retry {retries}/{max_retries} "
+                                f"after waiting {int(wait_seconds)}s for rate limit reset"
+                            )
+                            time.sleep(wait_seconds)
+                        else:
+                            # Fallback to exponential backoff if rate limit check fails
+                            # Cap at 5 minutes
+                            fallback_delay = min(5 * (2 ** (retries - 1)), 300)
+                            logger.warning(
+                                f"GraphQL rate limit hit. Retry {retries}/{max_retries} "
+                                f"after {fallback_delay}s (fallback delay)"
+                            )
+                            time.sleep(fallback_delay)
                         continue
                     else:
                         logger.warning(f"GraphQL errors: {result['errors']}")
@@ -170,21 +218,19 @@ class GitHubFetcher:
         return None
 
     def _api_request(self, endpoint: str, params: Optional[Dict] = None,
-                     max_retries: int = 10, base_delay: int = 5) -> Optional[List]:
-        """Make a direct REST API request to GitHub with exponential backoff on rate limits
+                     max_retries: int = 10) -> Optional[List]:
+        """Make a direct REST API request to GitHub with smart rate limit handling
 
         Args:
             endpoint: API endpoint (e.g., '/repos/owner/repo/commits')
             params: Query parameters
             max_retries: Maximum number of retry attempts for rate limits (default: 10)
-            base_delay: Base delay in seconds (will be doubled each retry, default: 5s)
 
         Returns:
             JSON response (list or dict) or None on error
         """
         url = f"{self.base_url}{endpoint}"
         retries = 0
-        delay = base_delay
 
         while retries <= max_retries:
             try:
@@ -213,13 +259,25 @@ class GitHubFetcher:
                 if e.response and e.response.status_code in [403, 429]:
                     if retries < max_retries:
                         retries += 1
-                        current_delay = delay
-                        logger.warning(
-                            f"REST API rate limit hit for {endpoint}. "
-                            f"Retry {retries}/{max_retries} after {current_delay}s"
-                        )
-                        time.sleep(current_delay)
-                        delay *= 2  # Exponential backoff: double the delay
+
+                        # Get exact reset time from GitHub API
+                        wait_seconds = self._get_rate_limit_reset_time('core')
+
+                        if wait_seconds is not None and wait_seconds > 0:
+                            logger.warning(
+                                f"REST API rate limit hit for {endpoint}. "
+                                f"Retry {retries}/{max_retries} after waiting {int(wait_seconds)}s for rate limit reset"
+                            )
+                            time.sleep(wait_seconds)
+                        else:
+                            # Fallback to exponential backoff if rate limit check fails
+                            # Cap at 5 minutes
+                            fallback_delay = min(5 * (2 ** (retries - 1)), 300)
+                            logger.warning(
+                                f"REST API rate limit hit for {endpoint}. "
+                                f"Retry {retries}/{max_retries} after {fallback_delay}s (fallback delay)"
+                            )
+                            time.sleep(fallback_delay)
                         continue
                     else:
                         logger.error(
