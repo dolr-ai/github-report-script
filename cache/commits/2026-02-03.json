@@ -1,71 +1,7 @@
 {
   "date": "2026-02-03",
-  "cached_at": "2026-02-13T05:24:27.433103Z",
+  "cached_at": "2026-02-14T06:33:49.390004Z",
   "commits": [
-    {
-      "sha": "d01fa8e77d731173575432d0da0da9d96c591a04",
-      "author": "ravi-sawlani-yral",
-      "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-02-03T17:37:54Z",
-      "message": "fix: redirect uri for multiple deployments (#43)",
-      "stats": {
-        "additions": 117,
-        "deletions": 46,
-        "total": 163
-      },
-      "branches": [
-        "feat/add-backwards-compatibility-for-refresh-token-received-from-yral.com",
-        "joel/dnm-remove-bot-limit",
-        "main"
-      ]
-    },
-    {
-      "sha": "fb4a31c1a605c4504fc9f459f9f318387bd00b09",
-      "author": "ravi-sawlani-yral",
-      "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-02-03T17:08:30Z",
-      "message": "Revert \"fix: redirect uri for multiple deployments (#41)\" (#42)",
-      "stats": {
-        "additions": 46,
-        "deletions": 133,
-        "total": 179
-      },
-      "branches": [
-        "feat/add-backwards-compatibility-for-refresh-token-received-from-yral.com",
-        "joel/dnm-remove-bot-limit",
-        "main"
-      ]
-    },
-    {
-      "sha": "007340fe9a98eb4c7d159262fa07b4a7193989e0",
-      "author": "ravi-sawlani-yral",
-      "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-02-03T17:08:09Z",
-      "message": "Revert \"fix: redirect uri for multiple deployments (#41)\"",
-      "stats": {
-        "additions": 46,
-        "deletions": 133,
-        "total": 179
-      },
-      "branches": [
-        "revert-41-fix/redirect-uri-for-multiple-deployments"
-      ]
-    },
-    {
-      "sha": "c382b74edbc9a5f303e601130043b992de489642",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/self-hosted-video-models",
-      "timestamp": "2026-02-03T16:36:09Z",
-      "message": "feat: add testing workflows for comfy ui",
-      "stats": {
-        "additions": 12750,
-        "deletions": 58,
-        "total": 12808
-      },
-      "branches": [
-        "main"
-      ]
-    },
     {
       "sha": "77e0188467e138a963a3fc8fc8e55d225fcdf9ea",
       "author": "sarvesh-sharma-yral",
@@ -85,7 +21,155 @@
         "feature/5-min-tournament-bk",
         "fix/ios-load-time",
         "main",
-        "release/android-2.6.6",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "412d4d42a9510e7a8046326756934eaac860c89e",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-02-03T16:18:19Z",
+      "message": "fix: redirect uri for multiple deployments (#41)",
+      "stats": {
+        "additions": 133,
+        "deletions": 46,
+        "total": 179
+      },
+      "branches": [
+        "feat/add-backwards-compatibility-for-refresh-token-received-from-yral.com",
+        "joel/dnm-remove-bot-limit",
+        "main",
+        "revert-41-fix/redirect-uri-for-multiple-deployments"
+      ]
+    },
+    {
+      "sha": "08b23fdfe327d6920f80e2b360fc5b4251c0e15c",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-02-03T05:33:30Z",
+      "message": "feat: deploy to dolr ai (#40)",
+      "stats": {
+        "additions": 38,
+        "deletions": 0,
+        "total": 38
+      },
+      "branches": [
+        "feat/add-backwards-compatibility-for-refresh-token-received-from-yral.com",
+        "fix/redirect-uri-for-multiple-deployments",
+        "joel/dnm-remove-bot-limit",
+        "main",
+        "revert-41-fix/redirect-uri-for-multiple-deployments"
+      ]
+    },
+    {
+      "sha": "3292721576ef12917e5c658c175ce0caf54495ea",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-02-03T17:25:26Z",
+      "message": "fix base axum routes to extract server url",
+      "stats": {
+        "additions": 16,
+        "deletions": 32,
+        "total": 48
+      },
+      "branches": [
+        "fix/redirect-uri-for-multiple-deployments"
+      ]
+    },
+    {
+      "sha": "6ec58bb3d9e7cc01af106e72088abbe7db5363d1",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-02-03T14:32:47Z",
+      "message": "fix lint",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "fix/redirect-uri-for-multiple-deployments"
+      ]
+    },
+    {
+      "sha": "b48087322135906fe5154673b96dcb209530bfe8",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-02-03T13:42:16Z",
+      "message": "fix redirect uri in exhchange code",
+      "stats": {
+        "additions": 9,
+        "deletions": 2,
+        "total": 11
+      },
+      "branches": [
+        "fix/redirect-uri-for-multiple-deployments"
+      ]
+    },
+    {
+      "sha": "e0f9db2fa8f25721f5aa6dfc9a0e97576e8c9a10",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-02-03T10:46:36Z",
+      "message": "fix lint",
+      "stats": {
+        "additions": 96,
+        "deletions": 35,
+        "total": 131
+      },
+      "branches": [
+        "fix/redirect-uri-for-multiple-deployments"
+      ]
+    },
+    {
+      "sha": "4cc184ebff189634c746267ef99bd575b1f29ef6",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-02-03T09:55:14Z",
+      "message": "remove requirement of SERVER_URL from environment",
+      "stats": {
+        "additions": 0,
+        "deletions": 4,
+        "total": 4
+      },
+      "branches": [
+        "fix/redirect-uri-for-multiple-deployments"
+      ]
+    },
+    {
+      "sha": "01418b9b429db7b2994532a3a56d390a305de76d",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-02-03T09:54:33Z",
+      "message": "set oauth providers redirect uri using host headers",
+      "stats": {
+        "additions": 46,
+        "deletions": 23,
+        "total": 69
+      },
+      "branches": [
+        "fix/redirect-uri-for-multiple-deployments"
+      ]
+    },
+    {
+      "sha": "ea9db55c4566fb9ade91d49c3f3e437d7761d089",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-03T05:56:44Z",
+      "message": "Changes allowed file types to jpg and png in chat conversations (#834)",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/5-min-tournament",
+        "feature/5-min-tournament-bk",
+        "fix/ios-load-time",
+        "main",
         "test/force-update"
       ]
     },
@@ -758,156 +842,151 @@
       ]
     },
     {
-      "sha": "412d4d42a9510e7a8046326756934eaac860c89e",
-      "author": "gravityvi",
+      "sha": "d01fa8e77d731173575432d0da0da9d96c591a04",
+      "author": "ravi-sawlani-yral",
       "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-02-03T16:18:19Z",
-      "message": "fix: redirect uri for multiple deployments (#41)",
+      "timestamp": "2026-02-03T17:37:54Z",
+      "message": "fix: redirect uri for multiple deployments (#43)",
       "stats": {
-        "additions": 133,
+        "additions": 117,
         "deletions": 46,
+        "total": 163
+      },
+      "branches": [
+        "feat/add-backwards-compatibility-for-refresh-token-received-from-yral.com",
+        "joel/dnm-remove-bot-limit",
+        "main"
+      ]
+    },
+    {
+      "sha": "fb4a31c1a605c4504fc9f459f9f318387bd00b09",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-02-03T17:08:30Z",
+      "message": "Revert \"fix: redirect uri for multiple deployments (#41)\" (#42)",
+      "stats": {
+        "additions": 46,
+        "deletions": 133,
         "total": 179
       },
       "branches": [
         "feat/add-backwards-compatibility-for-refresh-token-received-from-yral.com",
         "joel/dnm-remove-bot-limit",
-        "main",
-        "revert-41-fix/redirect-uri-for-multiple-deployments"
+        "main"
       ]
     },
     {
-      "sha": "08b23fdfe327d6920f80e2b360fc5b4251c0e15c",
-      "author": "gravityvi",
+      "sha": "007340fe9a98eb4c7d159262fa07b4a7193989e0",
+      "author": "ravi-sawlani-yral",
       "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-02-03T05:33:30Z",
-      "message": "feat: deploy to dolr ai (#40)",
-      "stats": {
-        "additions": 38,
-        "deletions": 0,
-        "total": 38
-      },
-      "branches": [
-        "feat/add-backwards-compatibility-for-refresh-token-received-from-yral.com",
-        "fix/redirect-uri-for-multiple-deployments",
-        "joel/dnm-remove-bot-limit",
-        "main",
-        "revert-41-fix/redirect-uri-for-multiple-deployments"
-      ]
-    },
-    {
-      "sha": "3292721576ef12917e5c658c175ce0caf54495ea",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-02-03T17:25:26Z",
-      "message": "fix base axum routes to extract server url",
-      "stats": {
-        "additions": 16,
-        "deletions": 32,
-        "total": 48
-      },
-      "branches": [
-        "fix/redirect-uri-for-multiple-deployments"
-      ]
-    },
-    {
-      "sha": "6ec58bb3d9e7cc01af106e72088abbe7db5363d1",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-02-03T14:32:47Z",
-      "message": "fix lint",
-      "stats": {
-        "additions": 3,
-        "deletions": 3,
-        "total": 6
-      },
-      "branches": [
-        "fix/redirect-uri-for-multiple-deployments"
-      ]
-    },
-    {
-      "sha": "b48087322135906fe5154673b96dcb209530bfe8",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-02-03T13:42:16Z",
-      "message": "fix redirect uri in exhchange code",
-      "stats": {
-        "additions": 9,
-        "deletions": 2,
-        "total": 11
-      },
-      "branches": [
-        "fix/redirect-uri-for-multiple-deployments"
-      ]
-    },
-    {
-      "sha": "e0f9db2fa8f25721f5aa6dfc9a0e97576e8c9a10",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-02-03T10:46:36Z",
-      "message": "fix lint",
-      "stats": {
-        "additions": 96,
-        "deletions": 35,
-        "total": 131
-      },
-      "branches": [
-        "fix/redirect-uri-for-multiple-deployments"
-      ]
-    },
-    {
-      "sha": "4cc184ebff189634c746267ef99bd575b1f29ef6",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-02-03T09:55:14Z",
-      "message": "remove requirement of SERVER_URL from environment",
-      "stats": {
-        "additions": 0,
-        "deletions": 4,
-        "total": 4
-      },
-      "branches": [
-        "fix/redirect-uri-for-multiple-deployments"
-      ]
-    },
-    {
-      "sha": "01418b9b429db7b2994532a3a56d390a305de76d",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-auth-v2",
-      "timestamp": "2026-02-03T09:54:33Z",
-      "message": "set oauth providers redirect uri using host headers",
+      "timestamp": "2026-02-03T17:08:09Z",
+      "message": "Revert \"fix: redirect uri for multiple deployments (#41)\"",
       "stats": {
         "additions": 46,
-        "deletions": 23,
-        "total": 69
+        "deletions": 133,
+        "total": 179
       },
       "branches": [
-        "fix/redirect-uri-for-multiple-deployments"
+        "revert-41-fix/redirect-uri-for-multiple-deployments"
       ]
     },
     {
-      "sha": "ea9db55c4566fb9ade91d49c3f3e437d7761d089",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-03T05:56:44Z",
-      "message": "Changes allowed file types to jpg and png in chat conversations (#834)",
+      "sha": "c382b74edbc9a5f303e601130043b992de489642",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/self-hosted-video-models",
+      "timestamp": "2026-02-03T16:36:09Z",
+      "message": "feat: add testing workflows for comfy ui",
       "stats": {
-        "additions": 2,
-        "deletions": 2,
-        "total": 4
+        "additions": 12750,
+        "deletions": 58,
+        "total": 12808
       },
       "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/5-min-tournament",
-        "feature/5-min-tournament-bk",
-        "fix/ios-load-time",
-        "main",
-        "release/android-2.6.6",
-        "test/force-update"
+        "main"
       ]
     }
   ],
   "commit_count": 54,
+  "issues": [
+    {
+      "number": 1608,
+      "title": "[Feature Request]:  Deploy Yral auth to dolr ai domain",
+      "closed_at": "2026-02-03T05:33:32Z",
+      "assignee": "ravi-sawlani-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1608",
+      "labels": [
+        "Backend Dependencies"
+      ]
+    },
+    {
+      "number": 1421,
+      "title": "[Feature Request]: Add support for AI videos generated using Yral Pro subscription",
+      "closed_at": "2026-02-03T05:24:11Z",
+      "assignee": "ravi-sawlani-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1421",
+      "labels": [
+        "Backend Dependencies"
+      ]
+    },
+    {
+      "number": 1423,
+      "title": "[Feature Request]: Integrate Sentry and Monitoring in Yral Billing Service",
+      "closed_at": "2026-02-03T05:22:45Z",
+      "assignee": "ravi-sawlani-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1423",
+      "labels": [
+        "Backend Dependencies"
+      ]
+    },
+    {
+      "number": 1599,
+      "title": "Making Inbox APIs and Webhooks",
+      "closed_at": "2026-02-03T05:17:46Z",
+      "assignee": "kevin-antony-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1599",
+      "labels": []
+    },
+    {
+      "number": 1584,
+      "title": "Planning- Inbox APIs and Websocket ",
+      "closed_at": "2026-02-03T05:16:33Z",
+      "assignee": "kevin-antony-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1584",
+      "labels": []
+    },
+    {
+      "number": 1477,
+      "title": "Ban NSFW videos from the profile",
+      "closed_at": "2026-02-03T05:23:22Z",
+      "assignee": "jay-dhanwant-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1477",
+      "labels": []
+    },
+    {
+      "number": 1588,
+      "title": "Exploration",
+      "closed_at": "2026-02-03T16:52:10Z",
+      "assignee": "joel-medicala-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1588",
+      "labels": []
+    },
+    {
+      "number": 1589,
+      "title": "Views API not working for profile page on mobile",
+      "closed_at": "2026-02-03T05:30:29Z",
+      "assignee": "joel-medicala-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1589",
+      "labels": []
+    }
+  ],
+  "issue_count": 8,
   "contributor_stats": {}
 }

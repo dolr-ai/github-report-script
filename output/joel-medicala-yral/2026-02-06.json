@@ -1,12 +1,80 @@
 {
   "date": "2026-02-06",
   "username": "joel-medicala-yral",
-  "additions": 0,
-  "deletions": 0,
-  "total_loc": 0,
-  "commit_count": 0,
-  "repositories": [],
-  "repo_count": 0,
-  "branch_breakdown": {},
-  "processed_at": "2026-02-07T04:17:28.431719Z"
+  "additions": 2151,
+  "deletions": 1747,
+  "total_loc": 3898,
+  "commit_count": 18,
+  "repositories": [
+    "dolr-ai/off-chain-agent",
+    "dolr-ai/self-hosted-video-models",
+    "dolr-ai/yral-common",
+    "dolr-ai/yral-metadata"
+  ],
+  "repo_count": 4,
+  "branch_breakdown": {
+    "dolr-ai/self-hosted-video-models": {
+      "main": {
+        "additions": 1218,
+        "deletions": 7,
+        "total_loc": 1225,
+        "commit_count": 2
+      }
+    },
+    "dolr-ai/yral-metadata": {
+      "joel/fix-get-notification-key-logging": {
+        "additions": 11,
+        "deletions": 8,
+        "total_loc": 19,
+        "commit_count": 1
+      },
+      "master": {
+        "additions": 333,
+        "deletions": 107,
+        "total_loc": 440,
+        "commit_count": 3
+      },
+      "joel/fix-noisy-fcm-logs": {
+        "additions": 94,
+        "deletions": 1215,
+        "total_loc": 1309,
+        "commit_count": 3
+      }
+    },
+    "dolr-ai/yral-common": {
+      "master": {
+        "additions": 31,
+        "deletions": 32,
+        "total_loc": 63,
+        "commit_count": 1
+      },
+      "feat/wan25-image-support": {
+        "additions": 334,
+        "deletions": 335,
+        "total_loc": 669,
+        "commit_count": 5
+      }
+    },
+    "dolr-ai/off-chain-agent": {
+      "joel/add_wan_i2v_support": {
+        "additions": 82,
+        "deletions": 35,
+        "total_loc": 117,
+        "commit_count": 1
+      },
+      "main": {
+        "additions": 24,
+        "deletions": 4,
+        "total_loc": 28,
+        "commit_count": 1
+      },
+      "joel/hot-fix-notification-panic": {
+        "additions": 24,
+        "deletions": 4,
+        "total_loc": 28,
+        "commit_count": 1
+      }
+    }
+  },
+  "processed_at": "2026-02-14T07:57:06.248501Z"
 }

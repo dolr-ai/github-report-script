@@ -1,129 +1,7 @@
 {
   "date": "2026-02-11",
-  "cached_at": "2026-02-13T11:10:54.230837Z",
+  "cached_at": "2026-02-14T07:53:21.929780Z",
   "commits": [
-    {
-      "sha": "df267666a7920e76f6700f330c216f5c38467112",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-02-11T10:00:58Z",
-      "message": "feat: added delete endpoint",
-      "stats": {
-        "additions": 99,
-        "deletions": 3,
-        "total": 102
-      },
-      "branches": [
-        "joel/delete_bot"
-      ]
-    },
-    {
-      "sha": "b0a0640c65b4b7a4d83f5b4a72757aca7318d0db",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-02-11T18:00:17Z",
-      "message": "feat: add ChunkFeedForward + SageAttention optimizations",
-      "stats": {
-        "additions": 10,
-        "deletions": 2,
-        "total": 12
-      },
-      "branches": [
-        "joel/ltx-intergration"
-      ]
-    },
-    {
-      "sha": "635c3f82e9ef1a4f62aba80b805659c7bb387d36",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-02-11T17:24:30Z",
-      "message": "feat: use LTXVScheduler + SamplerCustomAdvanced for sampling",
-      "stats": {
-        "additions": 49,
-        "deletions": 8,
-        "total": 57
-      },
-      "branches": [
-        "joel/ltx-intergration"
-      ]
-    },
-    {
-      "sha": "1c3a20a45142ca6369887ddc4bcb1bd9ed535cd6",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-02-11T17:03:46Z",
-      "message": "chore: switch to euler_ancestral sampler",
-      "stats": {
-        "additions": 4,
-        "deletions": 4,
-        "total": 8
-      },
-      "branches": [
-        "joel/ltx-intergration"
-      ]
-    },
-    {
-      "sha": "4a87c7fd699664372bf646f4ce967688028cbcce",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-02-11T13:50:58Z",
-      "message": "chore: switch to euler sampler with 8+3 steps",
-      "stats": {
-        "additions": 5,
-        "deletions": 5,
-        "total": 10
-      },
-      "branches": [
-        "joel/ltx-intergration"
-      ]
-    },
-    {
-      "sha": "1de68aaa92910ac09e454707fbd16f4615b3fe05",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-02-11T13:34:26Z",
-      "message": "feat: LTX-2 1080p upscale workflow + update yral-common rev",
-      "stats": {
-        "additions": 105,
-        "deletions": 126,
-        "total": 231
-      },
-      "branches": [
-        "joel/ltx-intergration"
-      ]
-    },
-    {
-      "sha": "f5426dff2ebdfbd6e11afca1b2e5090d67e1fa14",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-02-11T11:45:06Z",
-      "message": "Merge branch 'main' into joel/ltx-intergration",
-      "stats": {
-        "additions": 69,
-        "deletions": 11,
-        "total": 80
-      },
-      "branches": [
-        "joel/ltx-intergration"
-      ]
-    },
-    {
-      "sha": "cd922af6baf504a0e3868f1000aae91addd4e161",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-02-11T10:02:09Z",
-      "message": "feat: added wan i2v support (#400)",
-      "stats": {
-        "additions": 80,
-        "deletions": 33,
-        "total": 113
-      },
-      "branches": [
-        "joel/ltx-intergration",
-        "joel/silence-insufficient-balance",
-        "main"
-      ]
-    },
     {
       "sha": "218d30f9a39452be30802d274268ad285ac8e02a",
       "author": "mayank-k-yral",
@@ -348,6 +226,36 @@
       ]
     },
     {
+      "sha": "9ae7d8be7c134e701b989082c422aabcb86bdecc",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-11T15:07:06Z",
+      "message": "Add daily contribution reports for February 10, 2026",
+      "stats": {
+        "additions": 1937,
+        "deletions": 39,
+        "total": 1976
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "448781bb1600e700277b050f3f8a53f85adad21b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-11T14:29:21Z",
+      "message": "feat: Implement Google Chat leaderboard posting and configuration",
+      "stats": {
+        "additions": 883,
+        "deletions": 15,
+        "total": 898
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
       "sha": "3dfd34deaed5db66505a8765b5df041cfe21cd3d",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
@@ -435,38 +343,142 @@
       ]
     },
     {
-      "sha": "9ae7d8be7c134e701b989082c422aabcb86bdecc",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/github-report-script",
-      "timestamp": "2026-02-11T15:07:06Z",
-      "message": "Add daily contribution reports for February 10, 2026",
+      "sha": "df267666a7920e76f6700f330c216f5c38467112",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-11T10:00:58Z",
+      "message": "feat: added delete endpoint",
       "stats": {
-        "additions": 1937,
-        "deletions": 39,
-        "total": 1976
+        "additions": 99,
+        "deletions": 3,
+        "total": 102
       },
       "branches": [
-        "main"
+        "joel/delete_bot"
       ]
     },
     {
-      "sha": "448781bb1600e700277b050f3f8a53f85adad21b",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/github-report-script",
-      "timestamp": "2026-02-11T14:29:21Z",
-      "message": "feat: Implement Google Chat leaderboard posting and configuration",
+      "sha": "b0a0640c65b4b7a4d83f5b4a72757aca7318d0db",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-11T18:00:17Z",
+      "message": "feat: add ChunkFeedForward + SageAttention optimizations",
       "stats": {
-        "additions": 883,
-        "deletions": 15,
-        "total": 898
+        "additions": 10,
+        "deletions": 2,
+        "total": 12
       },
       "branches": [
+        "joel/ltx-intergration"
+      ]
+    },
+    {
+      "sha": "635c3f82e9ef1a4f62aba80b805659c7bb387d36",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-11T17:24:30Z",
+      "message": "feat: use LTXVScheduler + SamplerCustomAdvanced for sampling",
+      "stats": {
+        "additions": 49,
+        "deletions": 8,
+        "total": 57
+      },
+      "branches": [
+        "joel/ltx-intergration"
+      ]
+    },
+    {
+      "sha": "1c3a20a45142ca6369887ddc4bcb1bd9ed535cd6",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-11T17:03:46Z",
+      "message": "chore: switch to euler_ancestral sampler",
+      "stats": {
+        "additions": 4,
+        "deletions": 4,
+        "total": 8
+      },
+      "branches": [
+        "joel/ltx-intergration"
+      ]
+    },
+    {
+      "sha": "4a87c7fd699664372bf646f4ce967688028cbcce",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-11T13:50:58Z",
+      "message": "chore: switch to euler sampler with 8+3 steps",
+      "stats": {
+        "additions": 5,
+        "deletions": 5,
+        "total": 10
+      },
+      "branches": [
+        "joel/ltx-intergration"
+      ]
+    },
+    {
+      "sha": "1de68aaa92910ac09e454707fbd16f4615b3fe05",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-11T13:34:26Z",
+      "message": "feat: LTX-2 1080p upscale workflow + update yral-common rev",
+      "stats": {
+        "additions": 105,
+        "deletions": 126,
+        "total": 231
+      },
+      "branches": [
+        "joel/ltx-intergration"
+      ]
+    },
+    {
+      "sha": "f5426dff2ebdfbd6e11afca1b2e5090d67e1fa14",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-11T11:45:06Z",
+      "message": "Merge branch 'main' into joel/ltx-intergration",
+      "stats": {
+        "additions": 69,
+        "deletions": 11,
+        "total": 80
+      },
+      "branches": [
+        "joel/ltx-intergration"
+      ]
+    },
+    {
+      "sha": "cd922af6baf504a0e3868f1000aae91addd4e161",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-11T10:02:09Z",
+      "message": "feat: added wan i2v support (#400)",
+      "stats": {
+        "additions": 80,
+        "deletions": 33,
+        "total": 113
+      },
+      "branches": [
+        "joel/ltx-intergration",
+        "joel/prompt-moderation",
+        "joel/silence-insufficient-balance",
         "main"
       ]
     }
   ],
   "commit_count": 29,
   "issues": [
+    {
+      "number": 1634,
+      "title": "[Feature Request]: Parent Account Subscription Syncs to Bot Account.",
+      "closed_at": "2026-02-11T05:24:55Z",
+      "assignee": "ravi-sawlani-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1634",
+      "labels": [
+        "Backend Dependencies"
+      ]
+    },
     {
       "number": 1639,
       "title": "add support for wan 2.5 i2v and deprecate wan 2.5 t2v",
@@ -484,17 +496,6 @@
       "repository": "dolr-ai/product-roadmap",
       "url": "https://github.com/dolr-ai/product-roadmap/issues/1618",
       "labels": []
-    },
-    {
-      "number": 1634,
-      "title": "[Feature Request]: Parent Account Subscription Syncs to Bot Account.",
-      "closed_at": "2026-02-11T05:24:55Z",
-      "assignee": "ravi-sawlani-yral",
-      "repository": "dolr-ai/product-roadmap",
-      "url": "https://github.com/dolr-ai/product-roadmap/issues/1634",
-      "labels": [
-        "Backend Dependencies"
-      ]
     }
   ],
   "issue_count": 3,

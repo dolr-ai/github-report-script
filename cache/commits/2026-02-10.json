@@ -1,163 +1,7 @@
 {
   "date": "2026-02-10",
-  "cached_at": "2026-02-13T11:10:43.033458Z",
+  "cached_at": "2026-02-14T07:52:42.639026Z",
   "commits": [
-    {
-      "sha": "a28f6a3f69e244eb823ed5bcc71505b150b427e2",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/self-hosted-video-models",
-      "timestamp": "2026-02-10T05:25:06Z",
-      "message": "Update README.md",
-      "stats": {
-        "additions": 2,
-        "deletions": 2,
-        "total": 4
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "4b8d9a03331a764dc43caf2c3e5a9817bf965881",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-02-10T14:30:35Z",
-      "message": "fix tomls",
-      "stats": {
-        "additions": 31,
-        "deletions": 31,
-        "total": 62
-      },
-      "branches": [
-        "joel/add_wan_i2v_support"
-      ]
-    },
-    {
-      "sha": "51a847eb6dbce7d5fb983e91a508b5b8ce59648a",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-02-10T11:44:50Z",
-      "message": "refactor: future use structs lint skip",
-      "stats": {
-        "additions": 3,
-        "deletions": 0,
-        "total": 3
-      },
-      "branches": [
-        "joel/delete_bot",
-        "joel/ltx-intergration",
-        "joel/silence-insufficient-balance",
-        "main"
-      ]
-    },
-    {
-      "sha": "7090935ae42606181d09f7a2f605dde9a4c21d27",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-02-10T11:39:30Z",
-      "message": "chore: cleanup events pipeline (#402)",
-      "stats": {
-        "additions": 2,
-        "deletions": 2,
-        "total": 4
-      },
-      "branches": [
-        "joel/delete_bot",
-        "joel/ltx-intergration",
-        "joel/silence-insufficient-balance",
-        "main"
-      ]
-    },
-    {
-      "sha": "e05d70131a09ec2663cf7298f4a8f2911ff072ff",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-02-10T11:37:57Z",
-      "message": "chore: cleanup events pipeline",
-      "stats": {
-        "additions": 2,
-        "deletions": 2,
-        "total": 4
-      },
-      "branches": [
-        "joel/event-pipeline-cleanup"
-      ]
-    },
-    {
-      "sha": "c89c3c4d6ee17ec967ada0d2fee3f0195664cb44",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-video-storage-service",
-      "timestamp": "2026-02-10T14:12:45Z",
-      "message": "fix secrets retrival",
-      "stats": {
-        "additions": 1,
-        "deletions": 0,
-        "total": 1
-      },
-      "branches": [
-        "joel/dockerize-storj-interface"
-      ]
-    },
-    {
-      "sha": "f2c6797375b43d61038d1bc100b893722e381c21",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-video-storage-service",
-      "timestamp": "2026-02-10T14:10:29Z",
-      "message": "stop old services for smooth deployment",
-      "stats": {
-        "additions": 11,
-        "deletions": 0,
-        "total": 11
-      },
-      "branches": [
-        "joel/dockerize-storj-interface"
-      ]
-    },
-    {
-      "sha": "f16a9e7f8b39a9ad4ba0288440391e2a8a0f2368",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-video-storage-service",
-      "timestamp": "2026-02-10T13:58:28Z",
-      "message": "lint",
-      "stats": {
-        "additions": 4,
-        "deletions": 0,
-        "total": 4
-      },
-      "branches": [
-        "joel/dockerize-storj-interface"
-      ]
-    },
-    {
-      "sha": "033d02c8eee6600e26f11a9bde27e3ee733be4a5",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-video-storage-service",
-      "timestamp": "2026-02-10T13:55:38Z",
-      "message": "feat: dockerize storj interface",
-      "stats": {
-        "additions": 280,
-        "deletions": 87,
-        "total": 367
-      },
-      "branches": [
-        "joel/dockerize-storj-interface"
-      ]
-    },
-    {
-      "sha": "821f3963c2e0ff0e1d41c993d53dde7c64bf5f31",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-video-storage-service",
-      "timestamp": "2026-02-10T14:19:02Z",
-      "message": "feat: dockerize storj interface (#29)",
-      "stats": {
-        "additions": 296,
-        "deletions": 87,
-        "total": 383
-      },
-      "branches": [
-        "main"
-      ]
-    },
     {
       "sha": "56739fc4db37b1643c16d766d65e68f8b2ab1860",
       "author": "mayank-k-yral",
@@ -316,82 +160,6 @@
       "branches": [
         "create-pull-request/update-did-files-v3.5.9",
         "develop",
-        "feature/5-min-tournament-bk",
-        "main"
-      ]
-    },
-    {
-      "sha": "6e0d2d4960bd19c1499524560d4ba13c4dbb2c7f",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-10T11:14:05Z",
-      "message": "Changes oauth end point (#860)",
-      "stats": {
-        "additions": 2,
-        "deletions": 2,
-        "total": 4
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/5-min-tournament-bk",
-        "main"
-      ]
-    },
-    {
-      "sha": "a5d942571488fcce854c9634f76f1f2ed8327dd8",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-10T09:36:23Z",
-      "message": "Updates using fetchFeedDetails instead of fetchPostDetailsWithNsfwInfo (#858)",
-      "stats": {
-        "additions": 5,
-        "deletions": 3,
-        "total": 8
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/5-min-tournament-bk",
-        "main"
-      ]
-    },
-    {
-      "sha": "603c06396f0a5fe5c86dad205b6b0f4ea858c38f",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-10T07:54:14Z",
-      "message": "Enables chat as default in remote config (#859)",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/5-min-tournament-bk",
-        "main"
-      ]
-    },
-    {
-      "sha": "f17bbae2b88b31395987259fe33046ec4ebe15f2",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-10T04:34:32Z",
-      "message": "Implements custom error handling with bottom sheet UI for chat (#857)",
-      "stats": {
-        "additions": 405,
-        "deletions": 29,
-        "total": 434
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
         "feature/5-min-tournament-bk",
         "main"
       ]
@@ -692,28 +460,244 @@
       "branches": [
         "temp_rm_beszel"
       ]
+    },
+    {
+      "sha": "6e0d2d4960bd19c1499524560d4ba13c4dbb2c7f",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-10T11:14:05Z",
+      "message": "Changes oauth end point (#860)",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/5-min-tournament-bk",
+        "main"
+      ]
+    },
+    {
+      "sha": "a5d942571488fcce854c9634f76f1f2ed8327dd8",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-10T09:36:23Z",
+      "message": "Updates using fetchFeedDetails instead of fetchPostDetailsWithNsfwInfo (#858)",
+      "stats": {
+        "additions": 5,
+        "deletions": 3,
+        "total": 8
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/5-min-tournament-bk",
+        "main"
+      ]
+    },
+    {
+      "sha": "603c06396f0a5fe5c86dad205b6b0f4ea858c38f",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-10T07:54:14Z",
+      "message": "Enables chat as default in remote config (#859)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/5-min-tournament-bk",
+        "main"
+      ]
+    },
+    {
+      "sha": "f17bbae2b88b31395987259fe33046ec4ebe15f2",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-10T04:34:32Z",
+      "message": "Implements custom error handling with bottom sheet UI for chat (#857)",
+      "stats": {
+        "additions": 405,
+        "deletions": 29,
+        "total": 434
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/5-min-tournament-bk",
+        "main"
+      ]
+    },
+    {
+      "sha": "a28f6a3f69e244eb823ed5bcc71505b150b427e2",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/self-hosted-video-models",
+      "timestamp": "2026-02-10T05:25:06Z",
+      "message": "Update README.md",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4b8d9a03331a764dc43caf2c3e5a9817bf965881",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-10T14:30:35Z",
+      "message": "fix tomls",
+      "stats": {
+        "additions": 31,
+        "deletions": 31,
+        "total": 62
+      },
+      "branches": [
+        "joel/add_wan_i2v_support"
+      ]
+    },
+    {
+      "sha": "51a847eb6dbce7d5fb983e91a508b5b8ce59648a",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-10T11:44:50Z",
+      "message": "refactor: future use structs lint skip",
+      "stats": {
+        "additions": 3,
+        "deletions": 0,
+        "total": 3
+      },
+      "branches": [
+        "joel/delete_bot",
+        "joel/ltx-intergration",
+        "joel/prompt-moderation",
+        "joel/silence-insufficient-balance",
+        "main"
+      ]
+    },
+    {
+      "sha": "7090935ae42606181d09f7a2f605dde9a4c21d27",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-10T11:39:30Z",
+      "message": "chore: cleanup events pipeline (#402)",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "joel/delete_bot",
+        "joel/ltx-intergration",
+        "joel/prompt-moderation",
+        "joel/silence-insufficient-balance",
+        "main"
+      ]
+    },
+    {
+      "sha": "e05d70131a09ec2663cf7298f4a8f2911ff072ff",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-10T11:37:57Z",
+      "message": "chore: cleanup events pipeline",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "joel/event-pipeline-cleanup"
+      ]
+    },
+    {
+      "sha": "c89c3c4d6ee17ec967ada0d2fee3f0195664cb44",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-02-10T14:12:45Z",
+      "message": "fix secrets retrival",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "joel/dockerize-storj-interface"
+      ]
+    },
+    {
+      "sha": "f2c6797375b43d61038d1bc100b893722e381c21",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-02-10T14:10:29Z",
+      "message": "stop old services for smooth deployment",
+      "stats": {
+        "additions": 11,
+        "deletions": 0,
+        "total": 11
+      },
+      "branches": [
+        "joel/dockerize-storj-interface"
+      ]
+    },
+    {
+      "sha": "f16a9e7f8b39a9ad4ba0288440391e2a8a0f2368",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-02-10T13:58:28Z",
+      "message": "lint",
+      "stats": {
+        "additions": 4,
+        "deletions": 0,
+        "total": 4
+      },
+      "branches": [
+        "joel/dockerize-storj-interface"
+      ]
+    },
+    {
+      "sha": "033d02c8eee6600e26f11a9bde27e3ee733be4a5",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-02-10T13:55:38Z",
+      "message": "feat: dockerize storj interface",
+      "stats": {
+        "additions": 280,
+        "deletions": 87,
+        "total": 367
+      },
+      "branches": [
+        "joel/dockerize-storj-interface"
+      ]
+    },
+    {
+      "sha": "821f3963c2e0ff0e1d41c993d53dde7c64bf5f31",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-02-10T14:19:02Z",
+      "message": "feat: dockerize storj interface (#29)",
+      "stats": {
+        "additions": 296,
+        "deletions": 87,
+        "total": 383
+      },
+      "branches": [
+        "main"
+      ]
     }
   ],
   "commit_count": 39,
   "issues": [
-    {
-      "number": 1609,
-      "title": "Benchmark different models",
-      "closed_at": "2026-02-10T14:48:01Z",
-      "assignee": "joel-medicala-yral",
-      "repository": "dolr-ai/product-roadmap",
-      "url": "https://github.com/dolr-ai/product-roadmap/issues/1609",
-      "labels": []
-    },
-    {
-      "number": 1398,
-      "title": "Move storj interface to docker",
-      "closed_at": "2026-02-10T14:26:28Z",
-      "assignee": "joel-medicala-yral",
-      "repository": "dolr-ai/product-roadmap",
-      "url": "https://github.com/dolr-ai/product-roadmap/issues/1398",
-      "labels": []
-    },
     {
       "number": 1604,
       "title": "Create documentation, test actions and setup demo for teams",
@@ -739,6 +723,24 @@
       "assignee": "naitik-makwana-yral",
       "repository": "dolr-ai/product-roadmap",
       "url": "https://github.com/dolr-ai/product-roadmap/issues/1628",
+      "labels": []
+    },
+    {
+      "number": 1609,
+      "title": "Benchmark different models",
+      "closed_at": "2026-02-10T14:48:01Z",
+      "assignee": "joel-medicala-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1609",
+      "labels": []
+    },
+    {
+      "number": 1398,
+      "title": "Move storj interface to docker",
+      "closed_at": "2026-02-10T14:26:28Z",
+      "assignee": "joel-medicala-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1398",
       "labels": []
     }
   ],

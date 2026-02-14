@@ -1,67 +1,7 @@
 {
   "date": "2026-02-12",
-  "cached_at": "2026-02-13T11:10:09.549240Z",
+  "cached_at": "2026-02-14T07:53:10.205471Z",
   "commits": [
-    {
-      "sha": "745a5f2bf7fc65416078c1c86e16d8644dc669e6",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/self-hosted-video-models",
-      "timestamp": "2026-02-12T15:15:46Z",
-      "message": "Merge branch 'main' of github.com-yral:dolr-ai/self-hosted-video-models",
-      "stats": {
-        "additions": 2,
-        "deletions": 2,
-        "total": 4
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "ae858426a1ed27c9a04ee0cc15ffde2a5b33d683",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/self-hosted-video-models",
-      "timestamp": "2026-02-12T12:03:15Z",
-      "message": "fast load times",
-      "stats": {
-        "additions": 86,
-        "deletions": 85,
-        "total": 171
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "990952472d6f4b8614e78c35246592fcc928f5e7",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-02-12T05:05:01Z",
-      "message": "fix: noisy sentry errors for unecessary balance check errs",
-      "stats": {
-        "additions": 5,
-        "deletions": 3,
-        "total": 8
-      },
-      "branches": [
-        "joel/silence-insufficient-balance"
-      ]
-    },
-    {
-      "sha": "0229e1d80f8c41b7b98ac3b6d1d11276204a467c",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-02-12T05:07:58Z",
-      "message": "fix: noisy sentry errors for unecessary balance check errs (#404)",
-      "stats": {
-        "additions": 5,
-        "deletions": 3,
-        "total": 8
-      },
-      "branches": [
-        "main"
-      ]
-    },
     {
       "sha": "4dd5791d9a9c329469efe37be0e905a695124c67",
       "author": "ravi-sawlani-yral",
@@ -195,6 +135,117 @@
       },
       "branches": [
         "develop"
+      ]
+    },
+    {
+      "sha": "6c6e1bfa68ff74dd22a37910fc059de12ffd90b0",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-12T06:28:39Z",
+      "message": "Merge pull request #7 from dolr-ai/naitik/grant_revoke_feat",
+      "stats": {
+        "additions": 4,
+        "deletions": 0,
+        "total": 4
+      },
+      "branches": [
+        "main",
+        "naitik/reinit_vault"
+      ]
+    },
+    {
+      "sha": "ca741b884c7d560c7eadfde5ceab0d787c291718",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-12T06:28:09Z",
+      "message": "fix: add vault url to repo access yml",
+      "stats": {
+        "additions": 4,
+        "deletions": 0,
+        "total": 4
+      },
+      "branches": [
+        "main",
+        "naitik/grant_revoke_feat",
+        "naitik/reinit_vault"
+      ]
+    },
+    {
+      "sha": "a2a3f92b1a1997b8545224a3bb2e8b5289aabe1f",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-12T05:11:37Z",
+      "message": "Merge pull request #6 from dolr-ai/naitik/grant_revoke_feat",
+      "stats": {
+        "additions": 82,
+        "deletions": 0,
+        "total": 82
+      },
+      "branches": [
+        "main",
+        "naitik/reinit_vault"
+      ]
+    },
+    {
+      "sha": "c0a3b3d67f98398e9bba45d88c35ceb01bfde532",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-12T05:10:55Z",
+      "message": "feat : add repo access provider yml",
+      "stats": {
+        "additions": 82,
+        "deletions": 0,
+        "total": 82
+      },
+      "branches": [
+        "main",
+        "naitik/grant_revoke_feat",
+        "naitik/reinit_vault"
+      ]
+    },
+    {
+      "sha": "4bbfa0bd2fd1b7db8632dbd69fba634fb4ede3fa",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-12T14:13:54Z",
+      "message": "chore: trigger CI",
+      "stats": {
+        "additions": 0,
+        "deletions": 1,
+        "total": 1
+      },
+      "branches": [
+        "naitik/reinit_vault"
+      ]
+    },
+    {
+      "sha": "ab5bec98d39d72bf64b6f56f48356ec3e38a2029",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-12T08:54:18Z",
+      "message": "fix: remove old data in mounted volumes",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "naitik/reinit_vault"
+      ]
+    },
+    {
+      "sha": "f81f06509045d817fa840d2f81ee8a03177b0114",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-12T08:45:38Z",
+      "message": "chore: test reinitiate vault",
+      "stats": {
+        "additions": 6,
+        "deletions": 0,
+        "total": 6
+      },
+      "branches": [
+        "naitik/reinit_vault"
       ]
     },
     {
@@ -363,6 +414,52 @@
       ]
     },
     {
+      "sha": "d3ef0e18537df753bdb56f7a378cb6187a0fca71",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-12T11:24:39Z",
+      "message": "trivy sec fix (#178)",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c1981bcd19e38da28a5fb608079b5c0ffbbb8af2",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-12T07:49:17Z",
+      "message": "Auth dolr main (#177)",
+      "stats": {
+        "additions": 26,
+        "deletions": 2,
+        "total": 28
+      },
+      "branches": [
+        "main",
+        "trivy_sec_fix"
+      ]
+    },
+    {
+      "sha": "5b1385570105458f7ac27c3133ff0775ab5508e0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-12T12:56:31Z",
+      "message": "Update AI video credits string in XML (#843)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "develop"
+      ]
+    },
+    {
       "sha": "a179b7a61349c423ca9c19dfa5f76fa908a0488a",
       "author": "shivam-bhavsar-yral",
       "repository": "dolr-ai/yral-mobile",
@@ -427,11 +524,11 @@
       ]
     },
     {
-      "sha": "d3ef0e18537df753bdb56f7a378cb6187a0fca71",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-02-12T11:24:39Z",
-      "message": "trivy sec fix (#178)",
+      "sha": "745a5f2bf7fc65416078c1c86e16d8644dc669e6",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/self-hosted-video-models",
+      "timestamp": "2026-02-12T15:15:46Z",
+      "message": "Merge branch 'main' of github.com-yral:dolr-ai/self-hosted-video-models",
       "stats": {
         "additions": 2,
         "deletions": 2,
@@ -442,145 +539,49 @@
       ]
     },
     {
-      "sha": "c1981bcd19e38da28a5fb608079b5c0ffbbb8af2",
-      "author": "kevin-antony-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-02-12T07:49:17Z",
-      "message": "Auth dolr main (#177)",
+      "sha": "ae858426a1ed27c9a04ee0cc15ffde2a5b33d683",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/self-hosted-video-models",
+      "timestamp": "2026-02-12T12:03:15Z",
+      "message": "fast load times",
       "stats": {
-        "additions": 26,
-        "deletions": 2,
-        "total": 28
+        "additions": 86,
+        "deletions": 85,
+        "total": 171
       },
       "branches": [
-        "main",
-        "trivy_sec_fix"
+        "main"
       ]
     },
     {
-      "sha": "5b1385570105458f7ac27c3133ff0775ab5508e0",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-12T12:56:31Z",
-      "message": "Update AI video credits string in XML (#843)",
+      "sha": "0229e1d80f8c41b7b98ac3b6d1d11276204a467c",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-12T05:07:58Z",
+      "message": "fix: noisy sentry errors for unecessary balance check errs (#404)",
       "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
+        "additions": 5,
+        "deletions": 3,
+        "total": 8
       },
       "branches": [
-        "develop"
+        "joel/prompt-moderation",
+        "main"
       ]
     },
     {
-      "sha": "6c6e1bfa68ff74dd22a37910fc059de12ffd90b0",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hashicorp-vault-service",
-      "timestamp": "2026-02-12T06:28:39Z",
-      "message": "Merge pull request #7 from dolr-ai/naitik/grant_revoke_feat",
+      "sha": "990952472d6f4b8614e78c35246592fcc928f5e7",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-12T05:05:01Z",
+      "message": "fix: noisy sentry errors for unecessary balance check errs",
       "stats": {
-        "additions": 4,
-        "deletions": 0,
-        "total": 4
+        "additions": 5,
+        "deletions": 3,
+        "total": 8
       },
       "branches": [
-        "main",
-        "naitik/reinit_vault"
-      ]
-    },
-    {
-      "sha": "ca741b884c7d560c7eadfde5ceab0d787c291718",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hashicorp-vault-service",
-      "timestamp": "2026-02-12T06:28:09Z",
-      "message": "fix: add vault url to repo access yml",
-      "stats": {
-        "additions": 4,
-        "deletions": 0,
-        "total": 4
-      },
-      "branches": [
-        "main",
-        "naitik/grant_revoke_feat",
-        "naitik/reinit_vault"
-      ]
-    },
-    {
-      "sha": "a2a3f92b1a1997b8545224a3bb2e8b5289aabe1f",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hashicorp-vault-service",
-      "timestamp": "2026-02-12T05:11:37Z",
-      "message": "Merge pull request #6 from dolr-ai/naitik/grant_revoke_feat",
-      "stats": {
-        "additions": 82,
-        "deletions": 0,
-        "total": 82
-      },
-      "branches": [
-        "main",
-        "naitik/reinit_vault"
-      ]
-    },
-    {
-      "sha": "c0a3b3d67f98398e9bba45d88c35ceb01bfde532",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hashicorp-vault-service",
-      "timestamp": "2026-02-12T05:10:55Z",
-      "message": "feat : add repo access provider yml",
-      "stats": {
-        "additions": 82,
-        "deletions": 0,
-        "total": 82
-      },
-      "branches": [
-        "main",
-        "naitik/grant_revoke_feat",
-        "naitik/reinit_vault"
-      ]
-    },
-    {
-      "sha": "4bbfa0bd2fd1b7db8632dbd69fba634fb4ede3fa",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hashicorp-vault-service",
-      "timestamp": "2026-02-12T14:13:54Z",
-      "message": "chore: trigger CI",
-      "stats": {
-        "additions": 0,
-        "deletions": 1,
-        "total": 1
-      },
-      "branches": [
-        "naitik/reinit_vault"
-      ]
-    },
-    {
-      "sha": "ab5bec98d39d72bf64b6f56f48356ec3e38a2029",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hashicorp-vault-service",
-      "timestamp": "2026-02-12T08:54:18Z",
-      "message": "fix: remove old data in mounted volumes",
-      "stats": {
-        "additions": 2,
-        "deletions": 2,
-        "total": 4
-      },
-      "branches": [
-        "naitik/reinit_vault"
-      ]
-    },
-    {
-      "sha": "f81f06509045d817fa840d2f81ee8a03177b0114",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hashicorp-vault-service",
-      "timestamp": "2026-02-12T08:45:38Z",
-      "message": "chore: test reinitiate vault",
-      "stats": {
-        "additions": 6,
-        "deletions": 0,
-        "total": 6
-      },
-      "branches": [
-        "naitik/reinit_vault"
+        "joel/silence-insufficient-balance"
       ]
     }
   ],

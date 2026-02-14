@@ -1,7 +1,300 @@
 {
   "date": "2026-02-06",
-  "cached_at": "2026-02-13T11:13:48.627421Z",
+  "cached_at": "2026-02-14T07:52:42.644528Z",
   "commits": [
+    {
+      "sha": "10f19e5626cf0f4fc5663d26878c88d3a7f56177",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-06T15:24:38Z",
+      "message": "Merge pull request #853 from dolr-ai/fix/signup-overlay",
+      "stats": {
+        "additions": 80,
+        "deletions": 53,
+        "total": 133
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/5-min-tournament-bk",
+        "main"
+      ]
+    },
+    {
+      "sha": "6fadcbd9e49b18dad17330bff208f35d2e2b4cc3",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-06T15:07:43Z",
+      "message": "Merge pull request #852 from dolr-ai/fix-video-reporting",
+      "stats": {
+        "additions": 192,
+        "deletions": 11,
+        "total": 203
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/5-min-tournament-bk",
+        "main"
+      ]
+    },
+    {
+      "sha": "875612a6ebdf34ee5beecc5958fd09da8ca592d5",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-06T15:06:39Z",
+      "message": "add surfaceId validation to unbindSurface in PlaybackCoordinator",
+      "stats": {
+        "additions": 19,
+        "deletions": 6,
+        "total": 25
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/5-min-tournament-bk",
+        "main"
+      ]
+    },
+    {
+      "sha": "9234bc829509ea267bbf0335ba2c322cde618a7e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-06T11:08:44Z",
+      "message": "Add commit history pagination and GitHub contributor stats API integration",
+      "stats": {
+        "additions": 338,
+        "deletions": 117,
+        "total": 455
+      },
+      "branches": [
+        "github-contributor-stats-compare",
+        "main",
+        "match-github"
+      ]
+    },
+    {
+      "sha": "462517f6f6f6ea47db4c8bf0f74a0931eee88185",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-06T09:27:57Z",
+      "message": "Remove branch selector dropdown from HTML reports",
+      "stats": {
+        "additions": 71,
+        "deletions": 142,
+        "total": 213
+      },
+      "branches": [
+        "github-contributor-stats-compare",
+        "main",
+        "match-github"
+      ]
+    },
+    {
+      "sha": "a5b3a7613812d8f429eb9158731f2feb6ae66564",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-06T09:04:56Z",
+      "message": "chore: regenerate all user data with merge commit fix",
+      "stats": {
+        "additions": 1807,
+        "deletions": 1500,
+        "total": 3307
+      },
+      "branches": [
+        "github-contributor-stats-compare",
+        "main",
+        "match-github"
+      ]
+    },
+    {
+      "sha": "4dd0716af7b9179a84ff3b533650d77432edbf2f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-06T09:01:46Z",
+      "message": "fix: keep merge commits with substantial code changes",
+      "stats": {
+        "additions": 253,
+        "deletions": 169,
+        "total": 422
+      },
+      "branches": [
+        "github-contributor-stats-compare",
+        "main",
+        "match-github"
+      ]
+    },
+    {
+      "sha": "8917036d38c0241a64910fde76acc33cc920759d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-06T08:29:22Z",
+      "message": "feat: migrate to HTML-only reports with GitHub Pages support",
+      "stats": {
+        "additions": 4,
+        "deletions": 5,
+        "total": 9
+      },
+      "branches": [
+        "github-contributor-stats-compare",
+        "main",
+        "match-github"
+      ]
+    },
+    {
+      "sha": "93edb59a29841d8b7e582d8df149d258981786c6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-06T08:20:13Z",
+      "message": "Add initial GitHub Activity Reports HTML template",
+      "stats": {
+        "additions": 2824,
+        "deletions": 1636,
+        "total": 4460
+      },
+      "branches": [
+        "github-contributor-stats-compare",
+        "main",
+        "match-github"
+      ]
+    },
+    {
+      "sha": "1ba133044665a4dcdf25093484594834118f7ab7",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-06T07:35:40Z",
+      "message": "Merge pull request #1 from dolr-ai/push-event-based",
+      "stats": {
+        "additions": 36469,
+        "deletions": 11334,
+        "total": 47803
+      },
+      "branches": [
+        "github-contributor-stats-compare",
+        "main",
+        "match-github"
+      ]
+    },
+    {
+      "sha": "8772fb93e59368788767586a8faafe4695d245b0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-06T07:28:02Z",
+      "message": "Add daily contribution records for December 30, 2025, and January 1-3, 2026",
+      "stats": {
+        "additions": 36865,
+        "deletions": 10296,
+        "total": 47161
+      },
+      "branches": [
+        "github-contributor-stats-compare",
+        "main",
+        "match-github"
+      ]
+    },
+    {
+      "sha": "67ee825e583a4094364aafc6e04ca5dc0b3fc2f3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-06T07:00:00Z",
+      "message": "feat: Optimize GitHub commit fetching by user activity",
+      "stats": {
+        "additions": 351,
+        "deletions": 1785,
+        "total": 2136
+      },
+      "branches": [
+        "github-contributor-stats-compare",
+        "main",
+        "match-github"
+      ]
+    },
+    {
+      "sha": "fb563e484046bf69f42d7c8756a6c023a6865d20",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-06T04:29:00Z",
+      "message": "Add detailed architecture documentation for GitHub Report Script",
+      "stats": {
+        "additions": 346,
+        "deletions": 0,
+        "total": 346
+      },
+      "branches": [
+        "github-contributor-stats-compare",
+        "main",
+        "match-github"
+      ]
+    },
+    {
+      "sha": "a1412c602f3f7946aa8d50d0e36a86c7fe3bc73f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-06T03:52:41Z",
+      "message": "Add daily contribution reports for February 5, 2026",
+      "stats": {
+        "additions": 1355,
+        "deletions": 789,
+        "total": 2144
+      },
+      "branches": [
+        "github-contributor-stats-compare",
+        "main",
+        "match-github"
+      ]
+    },
+    {
+      "sha": "8578e5529d255ef6578ecb4dacd1e8c15f5a71d2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-02-06T04:58:59Z",
+      "message": "Update team member SSH key entry: rename 'shivambhavsar' to 'shivam'",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b6db62a5dfa745af5f8efafa82b6af4f26a4e5ff",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-02-06T04:58:24Z",
+      "message": "Add additional team member SSH keys for access",
+      "stats": {
+        "additions": 16,
+        "deletions": 0,
+        "total": 16
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7b86d7339db8e194e4c9dd0d2a3a972d58a57ed8",
+      "author": "samarth-paboowal-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-06T09:53:36Z",
+      "message": "chore: modifies video event names in iOS (#851)",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/5-min-tournament-bk",
+        "main"
+      ]
+    },
     {
       "sha": "244ea4b4aeff04fa29bbed8ad83234978168c795",
       "author": "joel-medicala-yral",
@@ -262,6 +555,7 @@
         "joel/delete_bot",
         "joel/event-pipeline-cleanup",
         "joel/ltx-intergration",
+        "joel/prompt-moderation",
         "joel/silence-insufficient-balance",
         "main"
       ]
@@ -279,299 +573,6 @@
       },
       "branches": [
         "joel/hot-fix-notification-panic"
-      ]
-    },
-    {
-      "sha": "6fadcbd9e49b18dad17330bff208f35d2e2b4cc3",
-      "author": "mayank-k-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-06T15:07:43Z",
-      "message": "Merge pull request #852 from dolr-ai/fix-video-reporting",
-      "stats": {
-        "additions": 192,
-        "deletions": 11,
-        "total": 203
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/5-min-tournament-bk",
-        "main"
-      ]
-    },
-    {
-      "sha": "875612a6ebdf34ee5beecc5958fd09da8ca592d5",
-      "author": "mayank-k-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-06T15:06:39Z",
-      "message": "add surfaceId validation to unbindSurface in PlaybackCoordinator",
-      "stats": {
-        "additions": 19,
-        "deletions": 6,
-        "total": 25
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/5-min-tournament-bk",
-        "main"
-      ]
-    },
-    {
-      "sha": "7b86d7339db8e194e4c9dd0d2a3a972d58a57ed8",
-      "author": "samarth-paboowal-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-06T09:53:36Z",
-      "message": "chore: modifies video event names in iOS (#851)",
-      "stats": {
-        "additions": 2,
-        "deletions": 2,
-        "total": 4
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/5-min-tournament-bk",
-        "main"
-      ]
-    },
-    {
-      "sha": "10f19e5626cf0f4fc5663d26878c88d3a7f56177",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-06T15:24:38Z",
-      "message": "Merge pull request #853 from dolr-ai/fix/signup-overlay",
-      "stats": {
-        "additions": 80,
-        "deletions": 53,
-        "total": 133
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/5-min-tournament-bk",
-        "main"
-      ]
-    },
-    {
-      "sha": "9234bc829509ea267bbf0335ba2c322cde618a7e",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/github-report-script",
-      "timestamp": "2026-02-06T11:08:44Z",
-      "message": "Add commit history pagination and GitHub contributor stats API integration",
-      "stats": {
-        "additions": 338,
-        "deletions": 117,
-        "total": 455
-      },
-      "branches": [
-        "github-contributor-stats-compare",
-        "main",
-        "match-github"
-      ]
-    },
-    {
-      "sha": "462517f6f6f6ea47db4c8bf0f74a0931eee88185",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/github-report-script",
-      "timestamp": "2026-02-06T09:27:57Z",
-      "message": "Remove branch selector dropdown from HTML reports",
-      "stats": {
-        "additions": 71,
-        "deletions": 142,
-        "total": 213
-      },
-      "branches": [
-        "github-contributor-stats-compare",
-        "main",
-        "match-github"
-      ]
-    },
-    {
-      "sha": "a5b3a7613812d8f429eb9158731f2feb6ae66564",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/github-report-script",
-      "timestamp": "2026-02-06T09:04:56Z",
-      "message": "chore: regenerate all user data with merge commit fix",
-      "stats": {
-        "additions": 1807,
-        "deletions": 1500,
-        "total": 3307
-      },
-      "branches": [
-        "github-contributor-stats-compare",
-        "main",
-        "match-github"
-      ]
-    },
-    {
-      "sha": "4dd0716af7b9179a84ff3b533650d77432edbf2f",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/github-report-script",
-      "timestamp": "2026-02-06T09:01:46Z",
-      "message": "fix: keep merge commits with substantial code changes",
-      "stats": {
-        "additions": 253,
-        "deletions": 169,
-        "total": 422
-      },
-      "branches": [
-        "github-contributor-stats-compare",
-        "main",
-        "match-github"
-      ]
-    },
-    {
-      "sha": "8917036d38c0241a64910fde76acc33cc920759d",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/github-report-script",
-      "timestamp": "2026-02-06T08:29:22Z",
-      "message": "feat: migrate to HTML-only reports with GitHub Pages support",
-      "stats": {
-        "additions": 4,
-        "deletions": 5,
-        "total": 9
-      },
-      "branches": [
-        "github-contributor-stats-compare",
-        "main",
-        "match-github"
-      ]
-    },
-    {
-      "sha": "93edb59a29841d8b7e582d8df149d258981786c6",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/github-report-script",
-      "timestamp": "2026-02-06T08:20:13Z",
-      "message": "Add initial GitHub Activity Reports HTML template",
-      "stats": {
-        "additions": 2824,
-        "deletions": 1636,
-        "total": 4460
-      },
-      "branches": [
-        "github-contributor-stats-compare",
-        "main",
-        "match-github"
-      ]
-    },
-    {
-      "sha": "1ba133044665a4dcdf25093484594834118f7ab7",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/github-report-script",
-      "timestamp": "2026-02-06T07:35:40Z",
-      "message": "Merge pull request #1 from dolr-ai/push-event-based",
-      "stats": {
-        "additions": 36469,
-        "deletions": 11334,
-        "total": 47803
-      },
-      "branches": [
-        "github-contributor-stats-compare",
-        "main",
-        "match-github"
-      ]
-    },
-    {
-      "sha": "8772fb93e59368788767586a8faafe4695d245b0",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/github-report-script",
-      "timestamp": "2026-02-06T07:28:02Z",
-      "message": "Add daily contribution records for December 30, 2025, and January 1-3, 2026",
-      "stats": {
-        "additions": 36865,
-        "deletions": 10296,
-        "total": 47161
-      },
-      "branches": [
-        "github-contributor-stats-compare",
-        "main",
-        "match-github"
-      ]
-    },
-    {
-      "sha": "67ee825e583a4094364aafc6e04ca5dc0b3fc2f3",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/github-report-script",
-      "timestamp": "2026-02-06T07:00:00Z",
-      "message": "feat: Optimize GitHub commit fetching by user activity",
-      "stats": {
-        "additions": 351,
-        "deletions": 1785,
-        "total": 2136
-      },
-      "branches": [
-        "github-contributor-stats-compare",
-        "main",
-        "match-github"
-      ]
-    },
-    {
-      "sha": "fb563e484046bf69f42d7c8756a6c023a6865d20",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/github-report-script",
-      "timestamp": "2026-02-06T04:29:00Z",
-      "message": "Add detailed architecture documentation for GitHub Report Script",
-      "stats": {
-        "additions": 346,
-        "deletions": 0,
-        "total": 346
-      },
-      "branches": [
-        "github-contributor-stats-compare",
-        "main",
-        "match-github"
-      ]
-    },
-    {
-      "sha": "a1412c602f3f7946aa8d50d0e36a86c7fe3bc73f",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/github-report-script",
-      "timestamp": "2026-02-06T03:52:41Z",
-      "message": "Add daily contribution reports for February 5, 2026",
-      "stats": {
-        "additions": 1355,
-        "deletions": 789,
-        "total": 2144
-      },
-      "branches": [
-        "github-contributor-stats-compare",
-        "main",
-        "match-github"
-      ]
-    },
-    {
-      "sha": "8578e5529d255ef6578ecb4dacd1e8c15f5a71d2",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-02-06T04:58:59Z",
-      "message": "Update team member SSH key entry: rename 'shivambhavsar' to 'shivam'",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "b6db62a5dfa745af5f8efafa82b6af4f26a4e5ff",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/hetzner-bare-metal-fleet",
-      "timestamp": "2026-02-06T04:58:24Z",
-      "message": "Add additional team member SSH keys for access",
-      "stats": {
-        "additions": 16,
-        "deletions": 0,
-        "total": 16
-      },
-      "branches": [
-        "main"
       ]
     }
   ],

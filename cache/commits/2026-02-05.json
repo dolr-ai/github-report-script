@@ -1,65 +1,7 @@
 {
   "date": "2026-02-05",
-  "cached_at": "2026-02-13T11:08:38.908350Z",
+  "cached_at": "2026-02-14T06:35:23.579248Z",
   "commits": [
-    {
-      "sha": "e129b34bba57e078edb48fc4259e0227a6d3ee29",
-      "author": "mayank-k-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-05T20:57:07Z",
-      "message": "extracts video feed alignment logic into a common `FeedAlignmentPlan` helper to unify state manageme",
-      "stats": {
-        "additions": 151,
-        "deletions": 50,
-        "total": 201
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/5-min-tournament-bk",
-        "main"
-      ]
-    },
-    {
-      "sha": "08f27f4802a0924dc06c5b9b6d6a7918ab3a9b23",
-      "author": "mayank-k-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-05T20:43:06Z",
-      "message": "improve playback state synchronization when updating video feed indices and IDs",
-      "stats": {
-        "additions": 67,
-        "deletions": 0,
-        "total": 67
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/5-min-tournament-bk",
-        "main"
-      ]
-    },
-    {
-      "sha": "95a21bd2c3002adf0a6c5e83297e2f5cc67ea78e",
-      "author": "mayank-k-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-05T09:07:19Z",
-      "message": "add logging capabilities to PlaybackEventReporter (#844)",
-      "stats": {
-        "additions": 177,
-        "deletions": 1,
-        "total": 178
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "feature/ai-influencer",
-        "feature/5-min-tournament",
-        "feature/5-min-tournament-bk",
-        "main"
-      ]
-    },
     {
       "sha": "745a4c134d990882f9830383922ed8349703de0b",
       "author": "sarvesh-sharma-yral",
@@ -148,6 +90,64 @@
       },
       "branches": [
         "feat/setup-ci-cd-for-build-and-deploy",
+        "main"
+      ]
+    },
+    {
+      "sha": "e129b34bba57e078edb48fc4259e0227a6d3ee29",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-05T20:57:07Z",
+      "message": "extracts video feed alignment logic into a common `FeedAlignmentPlan` helper to unify state manageme",
+      "stats": {
+        "additions": 151,
+        "deletions": 50,
+        "total": 201
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/5-min-tournament-bk",
+        "main"
+      ]
+    },
+    {
+      "sha": "08f27f4802a0924dc06c5b9b6d6a7918ab3a9b23",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-05T20:43:06Z",
+      "message": "improve playback state synchronization when updating video feed indices and IDs",
+      "stats": {
+        "additions": 67,
+        "deletions": 0,
+        "total": 67
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/5-min-tournament-bk",
+        "main"
+      ]
+    },
+    {
+      "sha": "95a21bd2c3002adf0a6c5e83297e2f5cc67ea78e",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-05T09:07:19Z",
+      "message": "add logging capabilities to PlaybackEventReporter (#844)",
+      "stats": {
+        "additions": 177,
+        "deletions": 1,
+        "total": 178
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/5-min-tournament",
+        "feature/5-min-tournament-bk",
         "main"
       ]
     },
@@ -257,21 +257,21 @@
   "commit_count": 14,
   "issues": [
     {
-      "number": 1572,
-      "title": "AI video detection pipeline",
-      "closed_at": "2026-02-05T05:31:19Z",
-      "assignee": "jay-dhanwant-yral",
-      "repository": "dolr-ai/product-roadmap",
-      "url": "https://github.com/dolr-ai/product-roadmap/issues/1572",
-      "labels": []
-    },
-    {
       "number": 1585,
       "title": "Planning- AI Influencers Notification System",
       "closed_at": "2026-02-05T05:37:43Z",
       "assignee": "kevin-antony-yral",
       "repository": "dolr-ai/product-roadmap",
       "url": "https://github.com/dolr-ai/product-roadmap/issues/1585",
+      "labels": []
+    },
+    {
+      "number": 1572,
+      "title": "AI video detection pipeline",
+      "closed_at": "2026-02-05T05:31:19Z",
+      "assignee": "jay-dhanwant-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1572",
       "labels": []
     }
   ],

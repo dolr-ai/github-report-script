@@ -1,7 +1,254 @@
 {
   "date": "2026-02-04",
-  "cached_at": "2026-02-06T21:54:45.083399Z",
+  "cached_at": "2026-02-14T06:35:32.176903Z",
   "commits": [
+    {
+      "sha": "a2d9c7318ca349da928960dca4e5273d7c461937",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-04T13:00:11Z",
+      "message": "fix: Uses correct api response for pro users (#839)",
+      "stats": {
+        "additions": 4,
+        "deletions": 2,
+        "total": 6
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/5-min-tournament",
+        "feature/5-min-tournament-bk",
+        "fix/ios-load-time",
+        "main",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "e18dce379f4513586e494c4c34d1c50586b1e125",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-04T09:19:41Z",
+      "message": "build: Adds hot or not onboarding (#835)",
+      "stats": {
+        "additions": 259,
+        "deletions": 3,
+        "total": 262
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/5-min-tournament",
+        "feature/5-min-tournament-bk",
+        "fix/ios-load-time",
+        "main",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "5a0a9017cbc494f7929c44440f5d6477cfce1147",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-04T14:35:46Z",
+      "message": "wip: Uses seeking instead of recreation of player item",
+      "stats": {
+        "additions": 5,
+        "deletions": 5,
+        "total": 10
+      },
+      "branches": [
+        "fix/ios-load-time"
+      ]
+    },
+    {
+      "sha": "0c2625bfe1904ad4776dd62ab62542f02b3b5010",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-04T14:26:28Z",
+      "message": "fix: Fixes stalling on videos on iOS",
+      "stats": {
+        "additions": 108,
+        "deletions": 31,
+        "total": 139
+      },
+      "branches": [
+        "fix/ios-load-time"
+      ]
+    },
+    {
+      "sha": "f441264c49e27e2d023473002c4796c3d2e0ec46",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-02-04T06:55:38Z",
+      "message": "Merge pull request #7 from dolr-ai/fix/remove-aud-check-from-jwt-validation",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "feat/update-remove-caddy-config-from-yral-billing",
+        "main"
+      ]
+    },
+    {
+      "sha": "724ec794a687d007fbec9b1417c1a3e8f0e36893",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-02-04T06:39:31Z",
+      "message": "remove aud check",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "feat/update-remove-caddy-config-from-yral-billing",
+        "fix/remove-aud-check-from-jwt-validation",
+        "main"
+      ]
+    },
+    {
+      "sha": "31aa084893c7d77b7942aaed005ca2d3500bf834",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-04T15:05:16Z",
+      "message": "Implements subscription testing feedbacks (#841)",
+      "stats": {
+        "additions": 165,
+        "deletions": 15,
+        "total": 180
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/5-min-tournament",
+        "feature/5-min-tournament-bk",
+        "main",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "a41541935309103e09751fe9d992f87d224f58e8",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-04T14:42:00Z",
+      "message": "Implements force update with FirebaseRemoteConfig for android (#840)",
+      "stats": {
+        "additions": 417,
+        "deletions": 7,
+        "total": 424
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/5-min-tournament",
+        "feature/5-min-tournament-bk",
+        "main",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "c7effcb1e470b50654ea50cfb967800a58cfd471",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-04T10:43:18Z",
+      "message": "Credit consumption in tournaments + subscription instrumentation (#838)",
+      "stats": {
+        "additions": 506,
+        "deletions": 63,
+        "total": 569
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/5-min-tournament",
+        "feature/5-min-tournament-bk",
+        "fix/ios-load-time",
+        "main",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "d57cc5f82da5a99a4fdd6fb47a3fd280255fbb39",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-04T10:10:53Z",
+      "message": "temp fix: Selects india as default country when language is english (#837)",
+      "stats": {
+        "additions": 9,
+        "deletions": 2,
+        "total": 11
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/5-min-tournament",
+        "feature/5-min-tournament-bk",
+        "fix/ios-load-time",
+        "main",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "e4238b429a5ba95d284279ed098df3e9332c67d9",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-04T05:49:53Z",
+      "message": "Implements yral pro for tournaments (#836)",
+      "stats": {
+        "additions": 632,
+        "deletions": 179,
+        "total": 811
+      },
+      "branches": [
+        "create-pull-request/update-did-files-v3.5.9",
+        "develop",
+        "feature/ai-influencer",
+        "feature/5-min-tournament",
+        "feature/5-min-tournament-bk",
+        "fix/ios-load-time",
+        "main",
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "5da050e58ae6469591a4035375bbcab5984c15cd",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-04T15:24:37Z",
+      "message": "Increments build version name for testing",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "test/force-update"
+      ]
+    },
+    {
+      "sha": "ba172fd4cf27a3b89ae7f31e810c4b1ddcfb80c6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-04T04:38:24Z",
+      "message": "Set regular mode to FETCH_AND_CHART",
+      "stats": {
+        "additions": 11511,
+        "deletions": 1428,
+        "total": 12939
+      },
+      "branches": [
+        "github-contributor-stats-compare",
+        "main",
+        "match-github"
+      ]
+    },
     {
       "sha": "1d77e65ffd61196856d2bb562abf43e216404e55",
       "author": "joel-medicala-yral",
@@ -75,8 +322,12 @@
       },
       "branches": [
         "joel/add_wan_i2v_support",
+        "joel/delete_bot",
+        "joel/event-pipeline-cleanup",
         "joel/hot-fix-notification-panic",
         "joel/ltx-intergration",
+        "joel/prompt-moderation",
+        "joel/silence-insufficient-balance",
         "main"
       ]
     },
@@ -94,8 +345,12 @@
       "branches": [
         "joel/add_wan_i2v_support",
         "joel/ai-video-detector",
+        "joel/delete_bot",
+        "joel/event-pipeline-cleanup",
         "joel/hot-fix-notification-panic",
         "joel/ltx-intergration",
+        "joel/prompt-moderation",
+        "joel/silence-insufficient-balance",
         "main"
       ]
     },
@@ -113,8 +368,12 @@
       "branches": [
         "joel/add_wan_i2v_support",
         "joel/ai-video-detector",
+        "joel/delete_bot",
+        "joel/event-pipeline-cleanup",
         "joel/hot-fix-notification-panic",
         "joel/ltx-intergration",
+        "joel/prompt-moderation",
+        "joel/silence-insufficient-balance",
         "main"
       ]
     },
@@ -567,251 +826,65 @@
       "branches": [
         "joel/ltx-intergration"
       ]
-    },
-    {
-      "sha": "724ec794a687d007fbec9b1417c1a3e8f0e36893",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-billing",
-      "timestamp": "2026-02-04T06:39:31Z",
-      "message": "remove aud check",
-      "stats": {
-        "additions": 1,
-        "deletions": 0,
-        "total": 1
-      },
-      "branches": [
-        "fix/remove-aud-check-from-jwt-validation",
-        "main"
-      ]
-    },
-    {
-      "sha": "f441264c49e27e2d023473002c4796c3d2e0ec46",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-billing",
-      "timestamp": "2026-02-04T06:55:38Z",
-      "message": "Merge pull request #7 from dolr-ai/fix/remove-aud-check-from-jwt-validation",
-      "stats": {
-        "additions": 1,
-        "deletions": 0,
-        "total": 1
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "31aa084893c7d77b7942aaed005ca2d3500bf834",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-04T15:05:16Z",
-      "message": "Implements subscription testing feedbacks (#841)",
-      "stats": {
-        "additions": 165,
-        "deletions": 15,
-        "total": 180
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "release/android-2.6.5",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
-    },
-    {
-      "sha": "a41541935309103e09751fe9d992f87d224f58e8",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-04T14:42:00Z",
-      "message": "Implements force update with FirebaseRemoteConfig for android (#840)",
-      "stats": {
-        "additions": 417,
-        "deletions": 7,
-        "total": 424
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "release/android-2.6.5",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
-    },
-    {
-      "sha": "c7effcb1e470b50654ea50cfb967800a58cfd471",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-04T10:43:18Z",
-      "message": "Credit consumption in tournaments + subscription instrumentation (#838)",
-      "stats": {
-        "additions": 506,
-        "deletions": 63,
-        "total": 569
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "fix/ios-load-time",
-        "release/android-2.6.5",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
-    },
-    {
-      "sha": "d57cc5f82da5a99a4fdd6fb47a3fd280255fbb39",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-04T10:10:53Z",
-      "message": "temp fix: Selects india as default country when language is english (#837)",
-      "stats": {
-        "additions": 9,
-        "deletions": 2,
-        "total": 11
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "fix/ios-load-time",
-        "release/android-2.6.5",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
-    },
-    {
-      "sha": "e4238b429a5ba95d284279ed098df3e9332c67d9",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-04T05:49:53Z",
-      "message": "Implements yral pro for tournaments (#836)",
-      "stats": {
-        "additions": 632,
-        "deletions": 179,
-        "total": 811
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "fix/ios-load-time",
-        "release/android-2.6.5",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
-    },
-    {
-      "sha": "5da050e58ae6469591a4035375bbcab5984c15cd",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-04T15:24:37Z",
-      "message": "Increments build version name for testing",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "test/force-update"
-      ]
-    },
-    {
-      "sha": "a2d9c7318ca349da928960dca4e5273d7c461937",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-04T13:00:11Z",
-      "message": "fix: Uses correct api response for pro users (#839)",
-      "stats": {
-        "additions": 4,
-        "deletions": 2,
-        "total": 6
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "fix/ios-load-time",
-        "release/android-2.6.5",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
-    },
-    {
-      "sha": "e18dce379f4513586e494c4c34d1c50586b1e125",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-04T09:19:41Z",
-      "message": "build: Adds hot or not onboarding (#835)",
-      "stats": {
-        "additions": 259,
-        "deletions": 3,
-        "total": 262
-      },
-      "branches": [
-        "create-pull-request/update-did-files-v3.5.9",
-        "develop",
-        "enhancement/chat-error-ui",
-        "feature/ai-influencer",
-        "fix/ios-load-time",
-        "release/android-2.6.5",
-        "saikatdas0790-patch-1",
-        "test/force-update"
-      ]
-    },
-    {
-      "sha": "5a0a9017cbc494f7929c44440f5d6477cfce1147",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-04T14:35:46Z",
-      "message": "wip: Uses seeking instead of recreation of player item",
-      "stats": {
-        "additions": 5,
-        "deletions": 5,
-        "total": 10
-      },
-      "branches": [
-        "fix/ios-load-time"
-      ]
-    },
-    {
-      "sha": "0c2625bfe1904ad4776dd62ab62542f02b3b5010",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-04T14:26:28Z",
-      "message": "fix: Fixes stalling on videos on iOS",
-      "stats": {
-        "additions": 108,
-        "deletions": 31,
-        "total": 139
-      },
-      "branches": [
-        "fix/ios-load-time"
-      ]
-    },
-    {
-      "sha": "ba172fd4cf27a3b89ae7f31e810c4b1ddcfb80c6",
-      "author": "saikatdas0790",
-      "repository": "dolr-ai/github-report-script",
-      "timestamp": "2026-02-04T04:38:24Z",
-      "message": "Set regular mode to FETCH_AND_CHART",
-      "stats": {
-        "additions": 11511,
-        "deletions": 1428,
-        "total": 12939
-      },
-      "branches": [
-        "main"
-      ]
     }
   ],
   "commit_count": 50,
+  "issues": [
+    {
+      "number": 1570,
+      "title": "Freshness Bias for UGC content on Feed",
+      "closed_at": "2026-02-04T05:17:26Z",
+      "assignee": "jay-dhanwant-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1570",
+      "labels": []
+    },
+    {
+      "number": 1597,
+      "title": "prepare vault for production",
+      "closed_at": "2026-02-04T13:13:17Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1597",
+      "labels": []
+    },
+    {
+      "number": 1596,
+      "title": "test vault setup",
+      "closed_at": "2026-02-04T13:12:21Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1596",
+      "labels": []
+    },
+    {
+      "number": 1595,
+      "title": "setup hashicorp vault on bare metal",
+      "closed_at": "2026-02-04T13:12:02Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1595",
+      "labels": []
+    },
+    {
+      "number": 1610,
+      "title": "Setup RabbitMQ for high availability",
+      "closed_at": "2026-02-04T06:25:38Z",
+      "assignee": "joel-medicala-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1610",
+      "labels": []
+    },
+    {
+      "number": 1613,
+      "title": "Create dashboard for ugc and uuc video browsing",
+      "closed_at": "2026-02-04T06:02:14Z",
+      "assignee": "joel-medicala-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1613",
+      "labels": []
+    }
+  ],
+  "issue_count": 6,
   "contributor_stats": {}
 }
