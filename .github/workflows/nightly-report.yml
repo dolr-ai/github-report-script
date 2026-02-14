@@ -46,10 +46,10 @@ jobs:
             bash .github/scripts/setup-ci.sh
             
             echo "=== Running report generation ==="
-            python src/main.py
+            python src/main.py --mode fetch_and_chart
             
             echo "=== Posting leaderboard to Google Chat ==="
-            python src/main.py --mode fetch_and_leaderboard || echo "Leaderboard posting failed (non-fatal)"
+            python src/main.py --mode leaderboard || echo "Leaderboard posting failed (non-fatal)"
             
             echo "=== Committing and pushing changes ==="
             git add cache/ output/ docs/
@@ -63,7 +63,6 @@ jobs:
             fi
           env: |
             ANSIBLE_VAULT_PASSWORD=${{ secrets.ANSIBLE_VAULT_PASSWORD }}
-            EXECUTION_MODE=fetch_and_chart
             GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload report artifacts
