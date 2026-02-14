@@ -181,10 +181,62 @@ def cmd_status():
     # Get rate limit
     logger.debug("Fetching rate limit information")
     fetcher = GitHubFetcher()
-    rate_limit = fetcher.get_rate_limit_status()
-    print("GitHub API Rate Limit:")
-    print(f"  Remaining: {rate_limit['remaining']}/{rate_limit['limit']}")
-    print(f"  Resets at: {rate_limit['reset']}")
+    rate_limits = fetcher.get_rate_limit_status()
+
+    if 'error' in rate_limits:
+        print(f"GitHub API Rate Limit: {rate_limits['error']}")
+    else:
+        print("GitHub API Rate Limits:")
+        print()
+
+        # Display GraphQL rate limit
+        if 'graphql' in rate_limits:
+            rl = rate_limits['graphql']
+            print(f"  GraphQL API:")
+            print(f"    Remaining: {rl['remaining']:>5} / {rl['limit']}")
+            print(f"    Resets at: {rl['reset']}")
+            if rl['seconds_until_reset'] > 0:
+                mins = rl['seconds_until_reset'] // 60
+                secs = rl['seconds_until_reset'] % 60
+                print(f"    Resets in: {mins}m {secs}s")
+            print()
+
+        # Display Core (REST) API rate limit
+        if 'core' in rate_limits:
+            rl = rate_limits['core']
+            print(f"  Core (REST) API:")
+            print(f"    Remaining: {rl['remaining']:>5} / {rl['limit']}")
+            print(f"    Resets at: {rl['reset']}")
+            if rl['seconds_until_reset'] > 0:
+                mins = rl['seconds_until_reset'] // 60
+                secs = rl['seconds_until_reset'] % 60
+                print(f"    Resets in: {mins}m {secs}s")
+            print()
+
+        # Display Search API rate limit
+        if 'search' in rate_limits:
+            rl = rate_limits['search']
+            print(f"  Search API:")
+            print(f"    Remaining: {rl['remaining']:>5} / {rl['limit']}")
+            print(f"    Resets at: {rl['reset']}")
+            if rl['seconds_until_reset'] > 0:
+                mins = rl['seconds_until_reset'] // 60
+                secs = rl['seconds_until_reset'] % 60
+                print(f"    Resets in: {mins}m {secs}s")
+            print()
+
+        # Display Code Search API rate limit
+        if 'code_search' in rate_limits:
+            rl = rate_limits['code_search']
+            print(f"  Code Search API:")
+            print(f"    Remaining: {rl['remaining']:>5} / {rl['limit']}")
+            print(f"    Resets at: {rl['reset']}")
+            if rl['seconds_until_reset'] > 0:
+                mins = rl['seconds_until_reset'] // 60
+                secs = rl['seconds_until_reset'] % 60
+                print(f"    Resets in: {mins}m {secs}s")
+            print()
+
     print()
 
     # Check cache status

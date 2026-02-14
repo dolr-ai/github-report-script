@@ -1317,10 +1317,10 @@ class GitHubFetcher:
         return results
 
     def get_rate_limit_status(self) -> Dict:
-        """Get current rate limit status
+        """Get current rate limit status for all resource types
 
         Returns:
-            Dictionary with rate limit info
+            Dictionary with rate limit info for all resources
         """
         try:
             response = self.session.get(
@@ -1329,21 +1329,38 @@ class GitHubFetcher:
                 return {'error': 'Could not fetch rate limit'}
 
             rate_data = response.json()
-            rate_limit = rate_data['resources']['core']
+            resources = rate_data.get('resources', {})
 
-            remaining = rate_limit['remaining']
-            limit = rate_limit['limit']
-            reset_timestamp = rate_limit['reset']
-            reset = datetime.fromtimestamp(reset_timestamp).isoformat()
+            result = {}
 
-            return {
-                'remaining': remaining,
-                'limit': limit,
-                'reset': reset
-            }
+            # Process each resource type
+            for resource_name in ['core', 'graphql', 'search', 'code_search']:
+                resource = resources.get(resource_name, {})
+                if resource:
+                    remaining = resource.get('remaining', 0)
+                    limit = resource.get('limit', 0)
+                    reset_timestamp = resource.get('reset', 0)
+
+                    if reset_timestamp:
+                        reset_time = datetime.fromtimestamp(reset_timestamp)
+                        reset_str = reset_time.strftime(
+                            '%Y-%m-%d %H:%M:%S UTC')
+                        seconds_until = int(
+                            (reset_time - datetime.now()).total_seconds())
+                    else:
+                        reset_str = 'Unknown'
+                        seconds_until = 0
+
+                    result[resource_name] = {
+                        'remaining': remaining,
+                        'limit': limit,
+                        'reset': reset_str,
+                        'seconds_until_reset': max(0, seconds_until)
+                    }
+
+            return result
+
         except Exception as e:
             return {
-                'remaining': 'unknown',
-                'limit': 'unknown',
-                'reset': f'Error: {e}'
+                'error': f'Could not fetch rate limit: {e}'
             }
