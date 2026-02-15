@@ -21,7 +21,7 @@ class LeaderboardGenerator:
 
     def should_post_weekly(self) -> bool:
         """Check if we should post weekly leaderboard (Monday morning)
-        
+
         Weekly summary should post on Monday 12:00 AM IST, which includes
         the complete Sunday-Saturday week in the data (yesterday = Sunday).
 
