@@ -388,11 +388,11 @@ def cmd_leaderboard():
         leaderboard_generator = LeaderboardGenerator(cache_manager)
         chat_poster = GoogleChatPoster()
 
-        # Determine if today is Sunday (post weekly) or weekday (post daily)
-        is_sunday = leaderboard_generator.is_sunday()
+        # Determine if today is Monday (post weekly) or other days (post daily)
+        should_post_weekly = leaderboard_generator.should_post_weekly()
 
-        if is_sunday:
-            logger.info("Sunday detected - generating weekly leaderboard")
+        if should_post_weekly:
+            logger.info("Monday detected - generating weekly leaderboard")
             print("Generating weekly leaderboard for last 7 days...\n")
 
             # Generate weekly leaderboard

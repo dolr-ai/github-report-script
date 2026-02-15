@@ -19,14 +19,17 @@ class LeaderboardGenerator:
     def __init__(self, cache_manager: CacheManager):
         self.cache_manager = cache_manager
 
-    def is_sunday(self) -> bool:
-        """Check if today is Sunday in IST timezone
+    def should_post_weekly(self) -> bool:
+        """Check if we should post weekly leaderboard (Monday morning)
+        
+        Weekly summary should post on Monday 12:00 AM IST, which includes
+        the complete Sunday-Saturday week in the data (yesterday = Sunday).
 
         Returns:
-            True if today is Sunday (weekday 6)
+            True if today is Monday (weekday 0)
         """
         now = datetime.now(IST_TIMEZONE)
-        return now.weekday() == 6
+        return now.weekday() == 0
 
     def get_yesterday_ist(self) -> str:
         """Get yesterday's date in IST timezone
