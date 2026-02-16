@@ -1,0 +1,116 @@
+{
+  "date": "2026-02-15",
+  "cached_at": "2026-02-16T18:49:26.996404Z",
+  "commits": [
+    {
+      "sha": "fe7b878ddb73d7f2b1d1d077f74f210ef81052fd",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-02-15T16:16:38Z",
+      "message": "feat: add LTX2 model support (#1170)",
+      "stats": {
+        "additions": 17,
+        "deletions": 17,
+        "total": 34
+      },
+      "branches": [
+        "dependabot/cargo/rand_chacha-0.9.0",
+        "main"
+      ]
+    },
+    {
+      "sha": "e10c1b94ef0b373181c99df71c5c7d113ffda565",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-15T19:20:13Z",
+      "message": "Add SSH agent setup script and update devcontainer configuration for GitHub CLI integration",
+      "stats": {
+        "additions": 271,
+        "deletions": 3,
+        "total": 274
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "484913c4c8830a79e6fefeb61fdcdde249fb1fe6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-15T16:34:27Z",
+      "message": "Enhance CI workflows: integrate devcontainer support, streamline Ansible validation, and update prov",
+      "stats": {
+        "additions": 194,
+        "deletions": 137,
+        "total": 331
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "670e61ed470793b7b14731170d6398b25812b40e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-15T15:50:35Z",
+      "message": "Add SSH agent configuration to devcontainer for WSL support",
+      "stats": {
+        "additions": 11,
+        "deletions": 3,
+        "total": 14
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e8200b5daa2e39a3efb7314c39df1ea65c70e528",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-15T05:31:17Z",
+      "message": "Remove deprecated provision-server workflow file",
+      "stats": {
+        "additions": 0,
+        "deletions": 456,
+        "total": 456
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7293542091d560bb4e400ac56bab5ee4f2a5bfec",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-15T16:09:18Z",
+      "message": "fix: Remove unnecessary blank line in should_post_weekly method docstring",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8a065c41b5bdac8863a921a7bf07f0c4db3f2568",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-15T16:08:40Z",
+      "message": "fix: Post weekly leaderboard on Monday instead of Sunday",
+      "stats": {
+        "additions": 11,
+        "deletions": 8,
+        "total": 19
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 7,
+  "issues": [],
+  "issue_count": 0,
+  "contributor_stats": {}
+}
