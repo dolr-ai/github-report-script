@@ -1,6 +1,6 @@
 {
   "date": "2026-02-16",
-  "cached_at": "2026-02-17T03:50:24.967493Z",
+  "cached_at": "2026-02-17T04:47:17.098311Z",
   "commits": [
     {
       "sha": "f98369624304a698ef990c6526fea4c993edca10",
@@ -72,157 +72,6 @@
         "additions": 2259,
         "deletions": 565,
         "total": 2824
-      },
-      "branches": [
-        "develop"
-      ]
-    },
-    {
-      "sha": "85bcf046166b4c1a490e11b631531cfa16bca698",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-16T13:35:12Z",
-      "message": "chore: Optimise install attribution sentry logging (#882)",
-      "stats": {
-        "additions": 21,
-        "deletions": 16,
-        "total": 37
-      },
-      "branches": [
-        "develop"
-      ]
-    },
-    {
-      "sha": "0392d477e1d68428a0c820e56c318162158f48b5",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-16T12:31:47Z",
-      "message": "Fixes crash for non-unique key for chat conversation message (#880)",
-      "stats": {
-        "additions": 31,
-        "deletions": 108,
-        "total": 139
-      },
-      "branches": [
-        "develop"
-      ]
-    },
-    {
-      "sha": "b6b7b3d8c18c7d17579423ed6321ceab48a98ad5",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-02-16T14:45:20Z",
-      "message": "fix: improve logging format for rejected prompts in moderation",
-      "stats": {
-        "additions": 1,
-        "deletions": 2,
-        "total": 3
-      },
-      "branches": [
-        "joel/byte-stream-fix-on-moderation"
-      ]
-    },
-    {
-      "sha": "377d996edf67f3d82d899597c89365d54a54a437",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-02-16T10:29:37Z",
-      "message": "feat: add nsfw prompt moderation (#405)",
-      "stats": {
-        "additions": 280,
-        "deletions": 0,
-        "total": 280
-      },
-      "branches": [
-        "joel/byte-stream-fix-on-moderation",
-        "main"
-      ]
-    },
-    {
-      "sha": "cb639dd1bf7eac4789cfd09c250da86e976cd998",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-02-16T10:20:26Z",
-      "message": "Merge branch 'main' into joel/prompt-moderation",
-      "stats": {
-        "additions": 893,
-        "deletions": 41,
-        "total": 934
-      },
-      "branches": [
-        "joel/prompt-moderation"
-      ]
-    },
-    {
-      "sha": "3d8902699a3e6386e0906e105ae67c47e4201c46",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-02-16T10:18:05Z",
-      "message": "feat: integrate prompt moderation API key into deployment workflows and video generation process",
-      "stats": {
-        "additions": 111,
-        "deletions": 20,
-        "total": 131
-      },
-      "branches": [
-        "joel/prompt-moderation"
-      ]
-    },
-    {
-      "sha": "3bbcee82b3587a07e974e0b4cd7661b769608d9c",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/off-chain-agent",
-      "timestamp": "2026-02-16T14:48:23Z",
-      "message": "fix: improve logging format for rejected prompts in moderation (#407)",
-      "stats": {
-        "additions": 1,
-        "deletions": 2,
-        "total": 3
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "94d034c16a49eb7b46205a88f01a0305cfc76fa5",
-      "author": "mayank-k-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-16T15:07:42Z",
-      "message": "Merge pull request #884 from dolr-ai/sentry-cleanup",
-      "stats": {
-        "additions": 10,
-        "deletions": 7,
-        "total": 17
-      },
-      "branches": [
-        "develop"
-      ]
-    },
-    {
-      "sha": "c38fbba2271f75a13e2daf4046bcef7d96ce2c51",
-      "author": "mayank-k-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-16T15:01:42Z",
-      "message": "filter debug logs for get_log_messages in RustLogForwardingListener",
-      "stats": {
-        "additions": 9,
-        "deletions": 6,
-        "total": 15
-      },
-      "branches": [
-        "develop"
-      ]
-    },
-    {
-      "sha": "26b0be100b3b983b597fb32d25370de70a7ecd3c",
-      "author": "mayank-k-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-16T14:54:59Z",
-      "message": "remove severity name from SentryLogWriter formatted message",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
       },
       "branches": [
         "develop"
@@ -582,6 +431,51 @@
       ]
     },
     {
+      "sha": "94d034c16a49eb7b46205a88f01a0305cfc76fa5",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-16T15:07:42Z",
+      "message": "Merge pull request #884 from dolr-ai/sentry-cleanup",
+      "stats": {
+        "additions": 10,
+        "deletions": 7,
+        "total": 17
+      },
+      "branches": [
+        "develop"
+      ]
+    },
+    {
+      "sha": "c38fbba2271f75a13e2daf4046bcef7d96ce2c51",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-16T15:01:42Z",
+      "message": "filter debug logs for get_log_messages in RustLogForwardingListener",
+      "stats": {
+        "additions": 9,
+        "deletions": 6,
+        "total": 15
+      },
+      "branches": [
+        "develop"
+      ]
+    },
+    {
+      "sha": "26b0be100b3b983b597fb32d25370de70a7ecd3c",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-16T14:54:59Z",
+      "message": "remove severity name from SentryLogWriter formatted message",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "develop"
+      ]
+    },
+    {
       "sha": "6f6c874e44743ba18c41d0f081221c01b167084a",
       "author": "saikatdas0790",
       "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
@@ -756,6 +650,112 @@
         "additions": 32,
         "deletions": 0,
         "total": 32
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "85bcf046166b4c1a490e11b631531cfa16bca698",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-16T13:35:12Z",
+      "message": "chore: Optimise install attribution sentry logging (#882)",
+      "stats": {
+        "additions": 21,
+        "deletions": 16,
+        "total": 37
+      },
+      "branches": [
+        "develop"
+      ]
+    },
+    {
+      "sha": "0392d477e1d68428a0c820e56c318162158f48b5",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-16T12:31:47Z",
+      "message": "Fixes crash for non-unique key for chat conversation message (#880)",
+      "stats": {
+        "additions": 31,
+        "deletions": 108,
+        "total": 139
+      },
+      "branches": [
+        "develop"
+      ]
+    },
+    {
+      "sha": "b6b7b3d8c18c7d17579423ed6321ceab48a98ad5",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-16T14:45:20Z",
+      "message": "fix: improve logging format for rejected prompts in moderation",
+      "stats": {
+        "additions": 1,
+        "deletions": 2,
+        "total": 3
+      },
+      "branches": [
+        "joel/byte-stream-fix-on-moderation"
+      ]
+    },
+    {
+      "sha": "377d996edf67f3d82d899597c89365d54a54a437",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-16T10:29:37Z",
+      "message": "feat: add nsfw prompt moderation (#405)",
+      "stats": {
+        "additions": 280,
+        "deletions": 0,
+        "total": 280
+      },
+      "branches": [
+        "joel/byte-stream-fix-on-moderation",
+        "main"
+      ]
+    },
+    {
+      "sha": "cb639dd1bf7eac4789cfd09c250da86e976cd998",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-16T10:20:26Z",
+      "message": "Merge branch 'main' into joel/prompt-moderation",
+      "stats": {
+        "additions": 893,
+        "deletions": 41,
+        "total": 934
+      },
+      "branches": [
+        "joel/prompt-moderation"
+      ]
+    },
+    {
+      "sha": "3d8902699a3e6386e0906e105ae67c47e4201c46",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-16T10:18:05Z",
+      "message": "feat: integrate prompt moderation API key into deployment workflows and video generation process",
+      "stats": {
+        "additions": 111,
+        "deletions": 20,
+        "total": 131
+      },
+      "branches": [
+        "joel/prompt-moderation"
+      ]
+    },
+    {
+      "sha": "3bbcee82b3587a07e974e0b4cd7661b769608d9c",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-16T14:48:23Z",
+      "message": "fix: improve logging format for rejected prompts in moderation (#407)",
+      "stats": {
+        "additions": 1,
+        "deletions": 2,
+        "total": 3
       },
       "branches": [
         "main"

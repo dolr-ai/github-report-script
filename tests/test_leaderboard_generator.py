@@ -121,7 +121,7 @@ class TestLeaderboardTimezoneConsistency:
         """
         Critical test: Verify that get_date_range and get_yesterday_ist 
         return the same date when run at midnight IST.
-        
+
         This is the fix for the "No activity" bug.
         """
         # Mock current time: Feb 17, 2026 at 00:00 AM IST
@@ -130,7 +130,7 @@ class TestLeaderboardTimezoneConsistency:
             datetime(2026, 2, 17, 0, 0, 0))
 
         with patch('src.config.datetime') as mock_config_datetime, \
-             patch('src.leaderboard_generator.datetime') as mock_leaderboard_datetime:
+                patch('src.leaderboard_generator.datetime') as mock_leaderboard_datetime:
 
             # Mock both modules to return the same time
             mock_config_datetime.now.return_value = mock_ist_midnight

@@ -1,19 +1,246 @@
 {
   "date": "2026-02-12",
-  "cached_at": "2026-02-14T07:53:10.205471Z",
+  "cached_at": "2026-02-17T04:48:14.377730Z",
   "commits": [
     {
-      "sha": "4dd5791d9a9c329469efe37be0e905a695124c67",
-      "author": "ravi-sawlani-yral",
-      "repository": "dolr-ai/yral-video-upload-service",
-      "timestamp": "2026-02-12T04:58:07Z",
-      "message": "feat: setup ci cd for build and server deployment",
+      "sha": "6c6e1bfa68ff74dd22a37910fc059de12ffd90b0",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-12T06:28:39Z",
+      "message": "Merge pull request #7 from dolr-ai/naitik/grant_revoke_feat",
       "stats": {
-        "additions": 220,
-        "deletions": 8,
-        "total": 228
+        "additions": 4,
+        "deletions": 0,
+        "total": 4
       },
       "branches": [
+        "main",
+        "naitik/small_fixes"
+      ]
+    },
+    {
+      "sha": "ca741b884c7d560c7eadfde5ceab0d787c291718",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-12T06:28:09Z",
+      "message": "fix: add vault url to repo access yml",
+      "stats": {
+        "additions": 4,
+        "deletions": 0,
+        "total": 4
+      },
+      "branches": [
+        "main",
+        "naitik/grant_revoke_feat",
+        "naitik/small_fixes"
+      ]
+    },
+    {
+      "sha": "a2a3f92b1a1997b8545224a3bb2e8b5289aabe1f",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-12T05:11:37Z",
+      "message": "Merge pull request #6 from dolr-ai/naitik/grant_revoke_feat",
+      "stats": {
+        "additions": 82,
+        "deletions": 0,
+        "total": 82
+      },
+      "branches": [
+        "main",
+        "naitik/small_fixes"
+      ]
+    },
+    {
+      "sha": "c0a3b3d67f98398e9bba45d88c35ceb01bfde532",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-12T05:10:55Z",
+      "message": "feat : add repo access provider yml",
+      "stats": {
+        "additions": 82,
+        "deletions": 0,
+        "total": 82
+      },
+      "branches": [
+        "main",
+        "naitik/grant_revoke_feat",
+        "naitik/small_fixes"
+      ]
+    },
+    {
+      "sha": "54d446fa5570907dd44ee7ecbee33def3d474114",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-02-12T16:27:41Z",
+      "message": "refactor request and response structure",
+      "stats": {
+        "additions": 8,
+        "deletions": 8,
+        "total": 16
+      },
+      "branches": [
+        "feat/add-tests-for-delegated-identity",
+        "main"
+      ]
+    },
+    {
+      "sha": "4ca1e0f85721dc32bca45b51e19969fe31610ee9",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-02-12T15:57:46Z",
+      "message": "fix: method for get_upload_url route",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "feat/add-tests-for-delegated-identity",
+        "main"
+      ]
+    },
+    {
+      "sha": "12414beccdffbd79a12d05092a0c4f83ab6447d6",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-02-12T15:49:33Z",
+      "message": "fix: method for utoipa docs",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "feat/add-tests-for-delegated-identity",
+        "main"
+      ]
+    },
+    {
+      "sha": "50626f7e1d087b0cef56a21b95d7c9a99947d887",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-02-12T15:42:30Z",
+      "message": "remove video id from get upload url request",
+      "stats": {
+        "additions": 0,
+        "deletions": 2,
+        "total": 2
+      },
+      "branches": [
+        "feat/add-tests-for-delegated-identity",
+        "main"
+      ]
+    },
+    {
+      "sha": "f90541b7d0c67c077fd7fb1d210b13eed190a2ab",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-02-12T11:01:43Z",
+      "message": "use explore for swagger and return json for health check",
+      "stats": {
+        "additions": 7,
+        "deletions": 6,
+        "total": 13
+      },
+      "branches": [
+        "feat/add-tests-for-delegated-identity",
+        "main"
+      ]
+    },
+    {
+      "sha": "0a3d6166ca40aad51c77d74587d04f7cdc09d7cf",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-02-12T10:42:40Z",
+      "message": "feat: add health check to the service",
+      "stats": {
+        "additions": 6,
+        "deletions": 1,
+        "total": 7
+      },
+      "branches": [
+        "feat/add-tests-for-delegated-identity",
+        "main"
+      ]
+    },
+    {
+      "sha": "fb4b498dff80f79ce137ff80bac26cd53ff9e8fc",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-02-12T10:31:09Z",
+      "message": "fix: docker compose to use external network low_traffic_1",
+      "stats": {
+        "additions": 6,
+        "deletions": 3,
+        "total": 9
+      },
+      "branches": [
+        "feat/add-tests-for-delegated-identity",
+        "main"
+      ]
+    },
+    {
+      "sha": "d898517527424c71e1094861e02acb64cafc9aee",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-02-12T10:27:10Z",
+      "message": "feat: add utoipa open api spec",
+      "stats": {
+        "additions": 533,
+        "deletions": 205,
+        "total": 738
+      },
+      "branches": [
+        "feat/add-tests-for-delegated-identity",
+        "main"
+      ]
+    },
+    {
+      "sha": "ae28eefc9fad415862deb92ab0a132e1b9378c67",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-02-12T06:35:37Z",
+      "message": "fix: ic admin identity",
+      "stats": {
+        "additions": 15,
+        "deletions": 5,
+        "total": 20
+      },
+      "branches": [
+        "feat/add-tests-for-delegated-identity",
+        "main"
+      ]
+    },
+    {
+      "sha": "ad7b460bba2d0bd2a5a15a6e063b75b2df1f58c4",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-02-12T06:26:56Z",
+      "message": "add latest tag",
+      "stats": {
+        "additions": 8,
+        "deletions": 0,
+        "total": 8
+      },
+      "branches": [
+        "feat/add-tests-for-delegated-identity",
+        "main"
+      ]
+    },
+    {
+      "sha": "cdfb58cd2c34b04504e8d5f91ec7e0bcba704c98",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-02-12T06:15:14Z",
+      "message": "update docker compose to fetch from registry",
+      "stats": {
+        "additions": 1,
+        "deletions": 3,
+        "total": 4
+      },
+      "branches": [
+        "feat/add-tests-for-delegated-identity",
         "main"
       ]
     },
@@ -138,282 +365,6 @@
       ]
     },
     {
-      "sha": "6c6e1bfa68ff74dd22a37910fc059de12ffd90b0",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hashicorp-vault-service",
-      "timestamp": "2026-02-12T06:28:39Z",
-      "message": "Merge pull request #7 from dolr-ai/naitik/grant_revoke_feat",
-      "stats": {
-        "additions": 4,
-        "deletions": 0,
-        "total": 4
-      },
-      "branches": [
-        "main",
-        "naitik/reinit_vault"
-      ]
-    },
-    {
-      "sha": "ca741b884c7d560c7eadfde5ceab0d787c291718",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hashicorp-vault-service",
-      "timestamp": "2026-02-12T06:28:09Z",
-      "message": "fix: add vault url to repo access yml",
-      "stats": {
-        "additions": 4,
-        "deletions": 0,
-        "total": 4
-      },
-      "branches": [
-        "main",
-        "naitik/grant_revoke_feat",
-        "naitik/reinit_vault"
-      ]
-    },
-    {
-      "sha": "a2a3f92b1a1997b8545224a3bb2e8b5289aabe1f",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hashicorp-vault-service",
-      "timestamp": "2026-02-12T05:11:37Z",
-      "message": "Merge pull request #6 from dolr-ai/naitik/grant_revoke_feat",
-      "stats": {
-        "additions": 82,
-        "deletions": 0,
-        "total": 82
-      },
-      "branches": [
-        "main",
-        "naitik/reinit_vault"
-      ]
-    },
-    {
-      "sha": "c0a3b3d67f98398e9bba45d88c35ceb01bfde532",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hashicorp-vault-service",
-      "timestamp": "2026-02-12T05:10:55Z",
-      "message": "feat : add repo access provider yml",
-      "stats": {
-        "additions": 82,
-        "deletions": 0,
-        "total": 82
-      },
-      "branches": [
-        "main",
-        "naitik/grant_revoke_feat",
-        "naitik/reinit_vault"
-      ]
-    },
-    {
-      "sha": "4bbfa0bd2fd1b7db8632dbd69fba634fb4ede3fa",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hashicorp-vault-service",
-      "timestamp": "2026-02-12T14:13:54Z",
-      "message": "chore: trigger CI",
-      "stats": {
-        "additions": 0,
-        "deletions": 1,
-        "total": 1
-      },
-      "branches": [
-        "naitik/reinit_vault"
-      ]
-    },
-    {
-      "sha": "ab5bec98d39d72bf64b6f56f48356ec3e38a2029",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hashicorp-vault-service",
-      "timestamp": "2026-02-12T08:54:18Z",
-      "message": "fix: remove old data in mounted volumes",
-      "stats": {
-        "additions": 2,
-        "deletions": 2,
-        "total": 4
-      },
-      "branches": [
-        "naitik/reinit_vault"
-      ]
-    },
-    {
-      "sha": "f81f06509045d817fa840d2f81ee8a03177b0114",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hashicorp-vault-service",
-      "timestamp": "2026-02-12T08:45:38Z",
-      "message": "chore: test reinitiate vault",
-      "stats": {
-        "additions": 6,
-        "deletions": 0,
-        "total": 6
-      },
-      "branches": [
-        "naitik/reinit_vault"
-      ]
-    },
-    {
-      "sha": "54d446fa5570907dd44ee7ecbee33def3d474114",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-video-upload-service",
-      "timestamp": "2026-02-12T16:27:41Z",
-      "message": "refactor request and response structure",
-      "stats": {
-        "additions": 8,
-        "deletions": 8,
-        "total": 16
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "4ca1e0f85721dc32bca45b51e19969fe31610ee9",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-video-upload-service",
-      "timestamp": "2026-02-12T15:57:46Z",
-      "message": "fix: method for get_upload_url route",
-      "stats": {
-        "additions": 2,
-        "deletions": 2,
-        "total": 4
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "12414beccdffbd79a12d05092a0c4f83ab6447d6",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-video-upload-service",
-      "timestamp": "2026-02-12T15:49:33Z",
-      "message": "fix: method for utoipa docs",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "50626f7e1d087b0cef56a21b95d7c9a99947d887",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-video-upload-service",
-      "timestamp": "2026-02-12T15:42:30Z",
-      "message": "remove video id from get upload url request",
-      "stats": {
-        "additions": 0,
-        "deletions": 2,
-        "total": 2
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "f90541b7d0c67c077fd7fb1d210b13eed190a2ab",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-video-upload-service",
-      "timestamp": "2026-02-12T11:01:43Z",
-      "message": "use explore for swagger and return json for health check",
-      "stats": {
-        "additions": 7,
-        "deletions": 6,
-        "total": 13
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "0a3d6166ca40aad51c77d74587d04f7cdc09d7cf",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-video-upload-service",
-      "timestamp": "2026-02-12T10:42:40Z",
-      "message": "feat: add health check to the service",
-      "stats": {
-        "additions": 6,
-        "deletions": 1,
-        "total": 7
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "fb4b498dff80f79ce137ff80bac26cd53ff9e8fc",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-video-upload-service",
-      "timestamp": "2026-02-12T10:31:09Z",
-      "message": "fix: docker compose to use external network low_traffic_1",
-      "stats": {
-        "additions": 6,
-        "deletions": 3,
-        "total": 9
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "d898517527424c71e1094861e02acb64cafc9aee",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-video-upload-service",
-      "timestamp": "2026-02-12T10:27:10Z",
-      "message": "feat: add utoipa open api spec",
-      "stats": {
-        "additions": 533,
-        "deletions": 205,
-        "total": 738
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "ae28eefc9fad415862deb92ab0a132e1b9378c67",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-video-upload-service",
-      "timestamp": "2026-02-12T06:35:37Z",
-      "message": "fix: ic admin identity",
-      "stats": {
-        "additions": 15,
-        "deletions": 5,
-        "total": 20
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "ad7b460bba2d0bd2a5a15a6e063b75b2df1f58c4",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-video-upload-service",
-      "timestamp": "2026-02-12T06:26:56Z",
-      "message": "add latest tag",
-      "stats": {
-        "additions": 8,
-        "deletions": 0,
-        "total": 8
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
-      "sha": "cdfb58cd2c34b04504e8d5f91ec7e0bcba704c98",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-video-upload-service",
-      "timestamp": "2026-02-12T06:15:14Z",
-      "message": "update docker compose to fetch from registry",
-      "stats": {
-        "additions": 1,
-        "deletions": 3,
-        "total": 4
-      },
-      "branches": [
-        "main"
-      ]
-    },
-    {
       "sha": "d3ef0e18537df753bdb56f7a378cb6187a0fca71",
       "author": "kevin-antony-yral",
       "repository": "dolr-ai/yral-ai-chat",
@@ -524,6 +475,22 @@
       ]
     },
     {
+      "sha": "4dd5791d9a9c329469efe37be0e905a695124c67",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-02-12T04:58:07Z",
+      "message": "feat: setup ci cd for build and server deployment",
+      "stats": {
+        "additions": 220,
+        "deletions": 8,
+        "total": 228
+      },
+      "branches": [
+        "feat/add-tests-for-delegated-identity",
+        "main"
+      ]
+    },
+    {
       "sha": "745a5f2bf7fc65416078c1c86e16d8644dc669e6",
       "author": "joel-medicala-yral",
       "repository": "dolr-ai/self-hosted-video-models",
@@ -565,6 +532,8 @@
         "total": 8
       },
       "branches": [
+        "joel/byte-stream-fix-on-moderation",
+        "joel/download-url-proxy",
         "joel/prompt-moderation",
         "main"
       ]
@@ -585,7 +554,7 @@
       ]
     }
   ],
-  "commit_count": 38,
+  "commit_count": 35,
   "issues": [],
   "issue_count": 0,
   "contributor_stats": {}
