@@ -1,0 +1,44 @@
+{
+  "date": "2026-02-16",
+  "username": "gravityvi",
+  "additions": 479,
+  "deletions": 59,
+  "total_loc": 538,
+  "commit_count": 8,
+  "repositories": [
+    "dolr-ai/yral-billing",
+    "dolr-ai/yral-video-upload-service"
+  ],
+  "repo_count": 2,
+  "branch_breakdown": {
+    "dolr-ai/yral-video-upload-service": {
+      "feat/add-tests-for-delegated-identity": {
+        "additions": 104,
+        "deletions": 33,
+        "total_loc": 137,
+        "commit_count": 5
+      },
+      "main": {
+        "additions": 91,
+        "deletions": 20,
+        "total_loc": 111,
+        "commit_count": 1
+      }
+    },
+    "dolr-ai/yral-billing": {
+      "feat/add-authentication-for-rtdn": {
+        "additions": 142,
+        "deletions": 3,
+        "total_loc": 145,
+        "commit_count": 1
+      },
+      "main": {
+        "additions": 142,
+        "deletions": 3,
+        "total_loc": 145,
+        "commit_count": 1
+      }
+    }
+  },
+  "processed_at": "2026-02-17T03:50:24.981613Z"
+}

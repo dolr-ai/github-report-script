@@ -245,8 +245,10 @@ def get_date_range() -> tuple:
         ValueError: If configuration is invalid
     """
     if DATE_RANGE_MODE == DateRangeMode.LAST_N_DAYS:
-        # End date is yesterday (exclude today's incomplete data)
-        end_date = datetime.now() - timedelta(days=1)
+        # End date is yesterday in IST (exclude today's incomplete data)
+        # Use IST timezone to match leaderboard_generator.get_yesterday_ist()
+        now_ist = datetime.now(IST_TIMEZONE)
+        end_date = now_ist - timedelta(days=1)
         # Set to end of day
         end_date = end_date.replace(
             hour=23, minute=59, second=59, microsecond=999999)

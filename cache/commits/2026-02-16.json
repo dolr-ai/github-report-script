@@ -1,0 +1,824 @@
+{
+  "date": "2026-02-16",
+  "cached_at": "2026-02-17T03:50:24.967493Z",
+  "commits": [
+    {
+      "sha": "f98369624304a698ef990c6526fea4c993edca10",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-16T15:52:46Z",
+      "message": "chore: Adds lottie for nudge on clicking play now when tournament is scheduled (#885)",
+      "stats": {
+        "additions": 20,
+        "deletions": 6,
+        "total": 26
+      },
+      "branches": [
+        "develop"
+      ]
+    },
+    {
+      "sha": "47815866ca4b6d80f07e677f420c0ace93646cb0",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-16T14:39:52Z",
+      "message": "chore: Adds nudge on clicking play now when tournament is scheduled (#883)",
+      "stats": {
+        "additions": 200,
+        "deletions": 10,
+        "total": 210
+      },
+      "branches": [
+        "develop"
+      ]
+    },
+    {
+      "sha": "3fac7e68f51da2ed290c6423613faeb105195a87",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-16T13:26:52Z",
+      "message": "Merge pull request #881 from dolr-ai/feature/leaderboard-api",
+      "stats": {
+        "additions": 136,
+        "deletions": 44,
+        "total": 180
+      },
+      "branches": [
+        "develop"
+      ]
+    },
+    {
+      "sha": "ed73acc655d561d7689062fb93985abb93e8bddd",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-16T13:21:33Z",
+      "message": "chore: Adds live leaderboard support",
+      "stats": {
+        "additions": 137,
+        "deletions": 46,
+        "total": 183
+      },
+      "branches": [
+        "develop"
+      ]
+    },
+    {
+      "sha": "43119fa126a698f569ceedf410cdf636fd834f6d",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-16T11:45:19Z",
+      "message": "Feature/5 min tournament (#862)",
+      "stats": {
+        "additions": 2259,
+        "deletions": 565,
+        "total": 2824
+      },
+      "branches": [
+        "develop"
+      ]
+    },
+    {
+      "sha": "85bcf046166b4c1a490e11b631531cfa16bca698",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-16T13:35:12Z",
+      "message": "chore: Optimise install attribution sentry logging (#882)",
+      "stats": {
+        "additions": 21,
+        "deletions": 16,
+        "total": 37
+      },
+      "branches": [
+        "develop"
+      ]
+    },
+    {
+      "sha": "0392d477e1d68428a0c820e56c318162158f48b5",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-16T12:31:47Z",
+      "message": "Fixes crash for non-unique key for chat conversation message (#880)",
+      "stats": {
+        "additions": 31,
+        "deletions": 108,
+        "total": 139
+      },
+      "branches": [
+        "develop"
+      ]
+    },
+    {
+      "sha": "b6b7b3d8c18c7d17579423ed6321ceab48a98ad5",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-16T14:45:20Z",
+      "message": "fix: improve logging format for rejected prompts in moderation",
+      "stats": {
+        "additions": 1,
+        "deletions": 2,
+        "total": 3
+      },
+      "branches": [
+        "joel/byte-stream-fix-on-moderation"
+      ]
+    },
+    {
+      "sha": "377d996edf67f3d82d899597c89365d54a54a437",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-16T10:29:37Z",
+      "message": "feat: add nsfw prompt moderation (#405)",
+      "stats": {
+        "additions": 280,
+        "deletions": 0,
+        "total": 280
+      },
+      "branches": [
+        "joel/byte-stream-fix-on-moderation",
+        "main"
+      ]
+    },
+    {
+      "sha": "cb639dd1bf7eac4789cfd09c250da86e976cd998",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-16T10:20:26Z",
+      "message": "Merge branch 'main' into joel/prompt-moderation",
+      "stats": {
+        "additions": 893,
+        "deletions": 41,
+        "total": 934
+      },
+      "branches": [
+        "joel/prompt-moderation"
+      ]
+    },
+    {
+      "sha": "3d8902699a3e6386e0906e105ae67c47e4201c46",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-16T10:18:05Z",
+      "message": "feat: integrate prompt moderation API key into deployment workflows and video generation process",
+      "stats": {
+        "additions": 111,
+        "deletions": 20,
+        "total": 131
+      },
+      "branches": [
+        "joel/prompt-moderation"
+      ]
+    },
+    {
+      "sha": "3bbcee82b3587a07e974e0b4cd7661b769608d9c",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-16T14:48:23Z",
+      "message": "fix: improve logging format for rejected prompts in moderation (#407)",
+      "stats": {
+        "additions": 1,
+        "deletions": 2,
+        "total": 3
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "94d034c16a49eb7b46205a88f01a0305cfc76fa5",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-16T15:07:42Z",
+      "message": "Merge pull request #884 from dolr-ai/sentry-cleanup",
+      "stats": {
+        "additions": 10,
+        "deletions": 7,
+        "total": 17
+      },
+      "branches": [
+        "develop"
+      ]
+    },
+    {
+      "sha": "c38fbba2271f75a13e2daf4046bcef7d96ce2c51",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-16T15:01:42Z",
+      "message": "filter debug logs for get_log_messages in RustLogForwardingListener",
+      "stats": {
+        "additions": 9,
+        "deletions": 6,
+        "total": 15
+      },
+      "branches": [
+        "develop"
+      ]
+    },
+    {
+      "sha": "26b0be100b3b983b597fb32d25370de70a7ecd3c",
+      "author": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-16T14:54:59Z",
+      "message": "remove severity name from SentryLogWriter formatted message",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "develop"
+      ]
+    },
+    {
+      "sha": "466a4cebfb00f3ab07b1cb9707219dba94484e46",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-16T20:34:40Z",
+      "message": "Merge pull request #14 from dolr-ai/naitik/small_fixes",
+      "stats": {
+        "additions": 122,
+        "deletions": 27,
+        "total": 149
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "29b26665b5e096fe88b23326fed4d4e59ed05c8d",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-16T20:32:53Z",
+      "message": "fix: docs",
+      "stats": {
+        "additions": 122,
+        "deletions": 27,
+        "total": 149
+      },
+      "branches": [
+        "main",
+        "naitik/small_fixes"
+      ]
+    },
+    {
+      "sha": "7e2324e37064204d132d73d0a3e825e120452ec8",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-16T11:02:46Z",
+      "message": "Merge pull request #13 from dolr-ai/naitik/small_fixes",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "debdf1536812c1d4295bcdabbfb15b60af859a30",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-16T11:02:10Z",
+      "message": "fix: renaming for clear understanding",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "main",
+        "naitik/small_fixes"
+      ]
+    },
+    {
+      "sha": "9251598c0faa858220e346d2213068dec1fefb29",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-16T10:59:48Z",
+      "message": "Merge pull request #12 from dolr-ai/naitik/small_fixes",
+      "stats": {
+        "additions": 32,
+        "deletions": 13,
+        "total": 45
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ec79cbb565538e6c4ba6f974059fd55602d11a43",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-16T10:58:37Z",
+      "message": "feat: revoke shared secret access",
+      "stats": {
+        "additions": 32,
+        "deletions": 13,
+        "total": 45
+      },
+      "branches": [
+        "main",
+        "naitik/small_fixes"
+      ]
+    },
+    {
+      "sha": "317d00321d0a6e41053f2ade4fa9cbd0941c97fa",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-16T08:22:30Z",
+      "message": "Merge pull request #11 from dolr-ai/naitik/small_fixes",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "91b2fd482be2ce6a208cbc8e642f2bf38d6f2af5",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-16T08:21:18Z",
+      "message": "fix: role name in yml",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main",
+        "naitik/small_fixes"
+      ]
+    },
+    {
+      "sha": "b7b309ffed19957c03498e67cc99395af013e378",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-16T08:01:14Z",
+      "message": "Merge pull request #10 from dolr-ai/naitik/small_fixes",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3c48ca98ac13db8852b2d85446e6062296488acf",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-16T08:00:38Z",
+      "message": "fix: path for shared secret",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main",
+        "naitik/small_fixes"
+      ]
+    },
+    {
+      "sha": "23ed2d184eae8644527eeddd1a2e08d5eb619813",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-16T07:38:05Z",
+      "message": "Merge pull request #9 from dolr-ai/naitik/small_fixes",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "5735dc94ca702198a257d2043ea9ae66c51e1b9f",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-16T07:37:28Z",
+      "message": "fix: role name",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main",
+        "naitik/small_fixes"
+      ]
+    },
+    {
+      "sha": "a998e85539871ab0dea6ff304e18cc75b404a16d",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-16T06:11:12Z",
+      "message": "reinit setup fix and new access ymls (#8)",
+      "stats": {
+        "additions": 147,
+        "deletions": 5,
+        "total": 152
+      },
+      "branches": [
+        "main",
+        "naitik/small_fixes"
+      ]
+    },
+    {
+      "sha": "123bb3e2f3f8e4f613498070ced1a64c5fb8ad5d",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hello-world-vault-demo",
+      "timestamp": "2026-02-16T08:29:40Z",
+      "message": "Merge pull request #2 from dolr-ai/naitik/access_shared_secret",
+      "stats": {
+        "additions": 6,
+        "deletions": 2,
+        "total": 8
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "01414083629f2ec97f9f67d8d7a1283792abef71",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hello-world-vault-demo",
+      "timestamp": "2026-02-16T07:57:35Z",
+      "message": "feat: fetch shared secret",
+      "stats": {
+        "additions": 6,
+        "deletions": 2,
+        "total": 8
+      },
+      "branches": [
+        "main",
+        "naitik/access_shared_secret"
+      ]
+    },
+    {
+      "sha": "219e30748963c17e781c8e91de9af7abe6448665",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-02-16T10:11:34Z",
+      "message": "add rustflag config for -Dwarnings",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "feat/add-tests-for-delegated-identity"
+      ]
+    },
+    {
+      "sha": "75b79e809f9e7e4442c678adf237fb85aa1d9507",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-02-16T10:04:52Z",
+      "message": "fix main.rs",
+      "stats": {
+        "additions": 5,
+        "deletions": 3,
+        "total": 8
+      },
+      "branches": [
+        "feat/add-tests-for-delegated-identity"
+      ]
+    },
+    {
+      "sha": "8781bf957d724cca822e309b664cdade7a08bca2",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-02-16T08:16:00Z",
+      "message": "refactor: clean up",
+      "stats": {
+        "additions": 4,
+        "deletions": 16,
+        "total": 20
+      },
+      "branches": [
+        "feat/add-tests-for-delegated-identity"
+      ]
+    },
+    {
+      "sha": "0322423880c3eddb83331252fbb8f389d45448e3",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-02-16T08:01:15Z",
+      "message": "fix: spell",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "feat/add-tests-for-delegated-identity"
+      ]
+    },
+    {
+      "sha": "d027a742e5199f3f1001011ef6b2c222cbe4b85b",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-02-16T07:59:08Z",
+      "message": "feat: add tests for delegated identity and update dependencies",
+      "stats": {
+        "additions": 90,
+        "deletions": 11,
+        "total": 101
+      },
+      "branches": [
+        "feat/add-tests-for-delegated-identity"
+      ]
+    },
+    {
+      "sha": "de942a26223ff9512699c61df6b8ce727cdc5003",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-02-16T10:16:59Z",
+      "message": "feat: add tests for delegated identity and update dependencies (#3)",
+      "stats": {
+        "additions": 91,
+        "deletions": 20,
+        "total": 111
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7e3cc5dd27a2531a2ed2abdb035c1fd9ba59858a",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-02-16T15:35:47Z",
+      "message": "feat: add Google JWT authentication for RTDN webhook handling",
+      "stats": {
+        "additions": 142,
+        "deletions": 3,
+        "total": 145
+      },
+      "branches": [
+        "feat/add-authentication-for-rtdn"
+      ]
+    },
+    {
+      "sha": "b77de74ea3eabd8f3258138de4240f17fea9c8cc",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-02-16T15:46:17Z",
+      "message": "feat: add Google JWT authentication for RTDN webhook handling (#10)",
+      "stats": {
+        "additions": 142,
+        "deletions": 3,
+        "total": 145
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6f6c874e44743ba18c41d0f081221c01b167084a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-16T17:20:01Z",
+      "message": "fix: Set default values for target_host and target_hosts in provision-server.yml",
+      "stats": {
+        "additions": 8,
+        "deletions": 8,
+        "total": 16
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "17e159061150bdfc7c670797babab08c4b38b6bb",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-16T06:16:49Z",
+      "message": "refactor: Consolidate CI setup using postCreate.sh (DRY principle)",
+      "stats": {
+        "additions": 12,
+        "deletions": 9,
+        "total": 21
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c9992bc619b0012a31601f249306e36fd2969508",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-16T05:06:06Z",
+      "message": "refactor: Use Python feature and requirements.txt for Python packages",
+      "stats": {
+        "additions": 7,
+        "deletions": 14,
+        "total": 21
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9df91f3ebb31d5788f28c5201f608ae0a6219afc",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-16T04:58:21Z",
+      "message": "refactor: Use Ansible requirements.yml for collection management",
+      "stats": {
+        "additions": 9,
+        "deletions": 5,
+        "total": 14
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ab4be63f139f65743bc3a9bc51e1e4eef4904cb1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-16T04:55:20Z",
+      "message": "fix: Install community.general collection in CI workflows",
+      "stats": {
+        "additions": 12,
+        "deletions": 0,
+        "total": 12
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b6fe2fcf7e93fdc9dcb519c2659ef93b637f6950",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-16T04:48:32Z",
+      "message": "Move ansible.cfg to root directory for easier command execution",
+      "stats": {
+        "additions": 41,
+        "deletions": 41,
+        "total": 82
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "821105262bf5e2881ab22c7cf29b32742d111998",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-16T04:44:23Z",
+      "message": "Install ansible-lint and yamllint in postCreate script",
+      "stats": {
+        "additions": 20,
+        "deletions": 3,
+        "total": 23
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ac6ea180e3e906d9bdfa437e2c6e174fd4aa27d3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-16T04:27:13Z",
+      "message": "Add ansible-lint and yamllint to devcontainer via ansible feature",
+      "stats": {
+        "additions": 3,
+        "deletions": 4,
+        "total": 7
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e1ea91fd45fa10a24e48f669cdfefff539d9fb4a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-16T04:17:38Z",
+      "message": "Fix workflow syntax: remove invalid env key",
+      "stats": {
+        "additions": 1,
+        "deletions": 3,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "fceb9cde9b54cd6cc28f6819436ce6ab641840fe",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-16T04:15:59Z",
+      "message": "Refactor devcontainer setup and fix vault password in CI",
+      "stats": {
+        "additions": 54,
+        "deletions": 269,
+        "total": 323
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e606da6db6b4d41d82885833b484130f1c6a4d8d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-16T04:04:23Z",
+      "message": "Switch to Python devcontainer and add GitHub CLI feature",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "412070394911ec82fa8f6d66fb682e3d9d0b422a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-16T02:48:33Z",
+      "message": "Fix devcontainer mount failures in CI",
+      "stats": {
+        "additions": 32,
+        "deletions": 0,
+        "total": 32
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 50,
+  "issues": [
+    {
+      "number": 874,
+      "title": "Add an event on users clicking Join_now_disabled CTA",
+      "closed_at": "2026-02-16T14:40:11Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/874",
+      "labels": []
+    },
+    {
+      "number": 875,
+      "title": "leaderboard api: return data for non live/ongoing tournament",
+      "closed_at": "2026-02-16T13:26:53Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/875",
+      "labels": []
+    },
+    {
+      "number": 876,
+      "title": "Cloud scheduling job for 5 minutes tournament on prod",
+      "closed_at": "2026-02-16T11:45:20Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/876",
+      "labels": []
+    },
+    {
+      "number": 1643,
+      "title": "move ios BE domains from fly sub domains to yral sub domains",
+      "closed_at": "2026-02-16T10:49:14Z",
+      "assignee": "joel-medicala-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1643",
+      "labels": []
+    },
+    {
+      "number": 1644,
+      "title": "Integrate LTX model by pulling yral common",
+      "closed_at": "2026-02-16T10:40:27Z",
+      "assignee": "joel-medicala-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1644",
+      "labels": []
+    },
+    {
+      "number": 1641,
+      "title": "Prompt level NSFW detection",
+      "closed_at": "2026-02-16T10:39:51Z",
+      "assignee": "joel-medicala-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1641",
+      "labels": []
+    }
+  ],
+  "issue_count": 6,
+  "contributor_stats": {}
+}
