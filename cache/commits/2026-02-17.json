@@ -1,0 +1,516 @@
+{
+  "date": "2026-02-17",
+  "cached_at": "2026-02-17T18:49:43.710612Z",
+  "commits": [
+    {
+      "sha": "a9db8403f3da0ffc934f9e24d05752a5a238e5ca",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-02-17T12:36:41Z",
+      "message": "feat: handle linkedPurchase token in case of upgrade or downgrade",
+      "stats": {
+        "additions": 24,
+        "deletions": 2,
+        "total": 26
+      },
+      "branches": [
+        "feat/handle-linked-purchase-token"
+      ]
+    },
+    {
+      "sha": "62c53806afdc73a66ba67ce578ac58acd010c63c",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-02-17T12:42:07Z",
+      "message": "feat: handle linkedPurchase token in case of upgrade or downgrade (#11)",
+      "stats": {
+        "additions": 24,
+        "deletions": 2,
+        "total": 26
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8b53b4afce881d7a284040d9e2bdae770f407bb6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-17T18:47:51Z",
+      "message": "refactor: Restructure Ansible playbooks for adding control plane and worker nodes, enhancing clarity",
+      "stats": {
+        "additions": 453,
+        "deletions": 632,
+        "total": 1085
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6367b1ce31b1b0242169f5f607da3471fd094dfe",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-17T18:16:44Z",
+      "message": "refactor: Update Ansible lint configuration and role metadata for consistency and clarity",
+      "stats": {
+        "additions": 14,
+        "deletions": 12,
+        "total": 26
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a50e4ed48ae70ec26b3b0d2ab76d5bb9ee16cafb",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-17T18:08:59Z",
+      "message": "refactor: Remove drain-node playbook and update documentation for node removal process",
+      "stats": {
+        "additions": 38,
+        "deletions": 69,
+        "total": 107
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e3ab41e43c5b82a6807c6ba3bdd4174da74710d2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-17T18:04:23Z",
+      "message": "feat: Add node upgrade playbook with intelligent reboot handling and comprehensive upgrade procedure",
+      "stats": {
+        "additions": 706,
+        "deletions": 1,
+        "total": 707
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "642d93810fa8a5acce764e9f2a2f0852ae1de170",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-17T17:50:06Z",
+      "message": "refactor: Remove deprecated Ansible playbooks for cluster setup, Cilium deployment, etcd backups, He",
+      "stats": {
+        "additions": 0,
+        "deletions": 281,
+        "total": 281
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "42306ec989c12c11293ffc406120fe661e0fb343",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-17T17:47:46Z",
+      "message": "Refactor Ansible playbooks and roles for improved structure and functionality",
+      "stats": {
+        "additions": 748,
+        "deletions": 644,
+        "total": 1392
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b33257783fe3c205630ac3f9023f124cf692ee14",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-17T17:31:03Z",
+      "message": "feat: Add comprehensive cluster setup and operational documentation for YRAL Bare Metal Kubernetes",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "477621a455f3c9bb76476a15f4e30935026e2443",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-17T14:54:19Z",
+      "message": "refactor: Revise cluster setup documentation and streamline playbooks; consolidate system setup proc",
+      "stats": {
+        "additions": 109,
+        "deletions": 350,
+        "total": 459
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "935625011e680b98bd3b5ee597f77e2c544f3210",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-17T14:44:07Z",
+      "message": "refactor: Streamline control plane and worker node provisioning; consolidate role inclusion for impr",
+      "stats": {
+        "additions": 10,
+        "deletions": 50,
+        "total": 60
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7e6794173a36e454f2964d71576b41fb72fc77a8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-17T14:41:05Z",
+      "message": "feat: Revamp cluster deployment and node management playbooks; enhance provisioning process and add ",
+      "stats": {
+        "additions": 549,
+        "deletions": 71,
+        "total": 620
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "83017f74f6a3276296ee8f1857e457cb3d0e8238",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-17T14:20:20Z",
+      "message": "Refactor Kubernetes Node Management Playbooks",
+      "stats": {
+        "additions": 708,
+        "deletions": 875,
+        "total": 1583
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ad1b3efa6727d4aecb8e0b654fccdbddd53b0857",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-17T14:20:14Z",
+      "message": "chore: Remove empty VSCode settings file",
+      "stats": {
+        "additions": 0,
+        "deletions": 1,
+        "total": 1
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "2abb02c17d5d68d43901f751531b9448f0b7bf01",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-17T13:41:22Z",
+      "message": "Add playbooks for managing Kubernetes nodes",
+      "stats": {
+        "additions": 1408,
+        "deletions": 998,
+        "total": 2406
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "723d5495c63c4791bbc7dc242a94cb1697d4ad3e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-17T13:27:07Z",
+      "message": "refactor: Consolidate playbooks and enhance base system setup; remove obsolete playbooks",
+      "stats": {
+        "additions": 111,
+        "deletions": 818,
+        "total": 929
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "46025183d7bd4931154a52db87e50c905482f830",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-17T13:16:29Z",
+      "message": "feat: Add standalone playbooks for containerd, kubeadm, and system setup; enhance provisioning playb",
+      "stats": {
+        "additions": 769,
+        "deletions": 30,
+        "total": 799
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "13eae9e4adbc071da68588da034daab7433b1b2d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-17T13:13:37Z",
+      "message": "fix: Remove default value for target_hosts in multiple playbooks",
+      "stats": {
+        "additions": 15,
+        "deletions": 15,
+        "total": 30
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "19eb5a6e49b2f421c4d27625a9f9d64c85722e9d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-17T11:55:38Z",
+      "message": "fix: Update containerd installation process and improve version handling",
+      "stats": {
+        "additions": 42,
+        "deletions": 16,
+        "total": 58
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "75578634814a339fd4358a8ef7a16e6dd227d15b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-17T11:11:30Z",
+      "message": "fix: Detect and display primary network interface for kube-vip manifest generation",
+      "stats": {
+        "additions": 10,
+        "deletions": 1,
+        "total": 11
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "2c8e499e74a2052cff34591e26743f840e4bf3c1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-17T11:07:37Z",
+      "message": "fix: Remove CRI plugin from disabled_plugins list in containerd configuration",
+      "stats": {
+        "additions": 6,
+        "deletions": 0,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f21101120da70aa0244f73cfb67e000a3da2c91a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-17T11:05:06Z",
+      "message": "fix: Improve load balancer IP range handling in kube-vip deployment messages",
+      "stats": {
+        "additions": 6,
+        "deletions": 5,
+        "total": 11
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "1af78e66fad544fd92b49a489cbd227a1534b385",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-17T10:51:13Z",
+      "message": "fix: Ensure correct variable assignment for target_host and server_ip in provisioning completion",
+      "stats": {
+        "additions": 3,
+        "deletions": 0,
+        "total": 3
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "aa6c5180013464f84677d92040c403b73fadeb4c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-17T08:53:05Z",
+      "message": "fix: Prevent playbook failure on installation command error in provision-server.yml",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "487db171ba3e21577b4ae2f96da13899c1773b60",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-17T07:44:10Z",
+      "message": "fix: Update provision-server.yml to use dynamic server IP and improve SSH key handling",
+      "stats": {
+        "additions": 22,
+        "deletions": 17,
+        "total": 39
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "98819263ea775053277901a767f4d198237888c4",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-17T07:20:47Z",
+      "message": "feat: Add SSH key extraction from Ansible vault and update provision-server.yml to include vars file",
+      "stats": {
+        "additions": 39,
+        "deletions": 0,
+        "total": 39
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "041093316a42180aec032ca6a8ea7ba788909bfa",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-17T07:01:20Z",
+      "message": "fix: Update sensitive credentials to use vault variables in hosts.yml",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "454bd7d7dbc565504637b5a432dacc0e134363cc",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-17T05:35:28Z",
+      "message": "chore: update cached commit data and metadata",
+      "stats": {
+        "additions": 600,
+        "deletions": 612,
+        "total": 1212
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7b5b7a5def9b08b19e08375905517c0b255ad82b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-17T04:56:42Z",
+      "message": "test: Refactor local test into comprehensive pytest test suite",
+      "stats": {
+        "additions": 378,
+        "deletions": 139,
+        "total": 517
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c1a3585ec5b57ba85da9bd93d0d3f7c1c1c4e66e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-17T03:53:42Z",
+      "message": "Add daily contribution reports for February 16, 2026",
+      "stats": {
+        "additions": 1223,
+        "deletions": 6,
+        "total": 1229
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "31565da19ca56afa83920277ac6be03982dde5b0",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-17T14:58:22Z",
+      "message": "Merge pull request #889 from dolr-ai/chore/tournament-start-nudge",
+      "stats": {
+        "additions": 470,
+        "deletions": 315,
+        "total": 785
+      },
+      "branches": [
+        "develop"
+      ]
+    }
+  ],
+  "commit_count": 31,
+  "issues": [
+    {
+      "number": 1653,
+      "title": "Phase 1: Project Scaffolding & Core Infrastructure",
+      "closed_at": "2026-02-17T06:35:56Z",
+      "assignee": "joel-medicala-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1653",
+      "labels": []
+    },
+    {
+      "number": 1662,
+      "title": "[Feature Request]: Invalidate linkedPurchase token in case of subscription upgrade or downgrade",
+      "closed_at": "2026-02-17T12:42:08Z",
+      "assignee": "ravi-sawlani-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1662",
+      "labels": [
+        "Backend Dependencies"
+      ]
+    },
+    {
+      "number": 1647,
+      "title": "[Feature Request]: Added Authentication in Pub/Sub used in Google Subscriptions.",
+      "closed_at": "2026-02-17T05:33:15Z",
+      "assignee": "ravi-sawlani-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1647",
+      "labels": [
+        "Backend Dependencies"
+      ]
+    },
+    {
+      "number": 1635,
+      "title": "enable UI and email based access for vault",
+      "closed_at": "2026-02-17T05:33:03Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1635",
+      "labels": []
+    }
+  ],
+  "issue_count": 4,
+  "contributor_stats": {}
+}
