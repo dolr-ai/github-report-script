@@ -24,12 +24,25 @@ class GoogleChatPoster:
     # Rank emojis for top 3
     RANK_EMOJIS = ['🥇', '🥈', '🥉']
 
-    def __init__(self):
-        """Initialize Google Chat poster with configuration"""
-        self.webhook_url = self._construct_webhook_url()
+    def __init__(self, dry_run: bool = False):
+        """Initialize Google Chat poster with configuration
+
+        Args:
+            dry_run: When True, print messages to stdout instead of sending
+                     to Google Chat. Useful for previewing output locally.
+        """
+        self.dry_run = dry_run
+        if not dry_run:
+            self.webhook_url = self._construct_webhook_url()
+        else:
+            self.webhook_url = ""
+            logger.info(
+                "GoogleChatPoster running in DRY-RUN mode — messages will be printed, not sent")
 
     def _construct_webhook_url(self) -> str:
-        """Construct full webhook URL with key and token
+        """Construct full webhook URL with key and token.
+
+        Not called in dry-run mode.
 
         Returns:
             Complete webhook URL
@@ -167,15 +180,27 @@ class GoogleChatPoster:
         return "\n".join(lines)
 
     def post_message(self, message: str, max_retries: int = 3) -> bool:
-        """Post message to Google Chat with retry logic
+        """Post message to Google Chat with retry logic.
+
+        In dry-run mode the message is printed to stdout and True is returned
+        without making any HTTP request.
 
         Args:
             message: Message text to post
             max_retries: Maximum number of retry attempts
 
         Returns:
-            True if posted successfully, False otherwise
+            True if posted (or printed) successfully, False otherwise
         """
+        if self.dry_run:
+            separator = "=" * 70
+            print(f"\n{separator}")
+            print("[DRY-RUN] Message that would be sent to Google Chat:")
+            print(separator)
+            print(message)
+            print(separator)
+            return True
+
         payload = {"text": message}
         headers = {"Content-Type": "application/json"}
 

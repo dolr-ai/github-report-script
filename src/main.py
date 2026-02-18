@@ -342,7 +342,7 @@ def cmd_fetch_and_chart():
     print("=" * 70)
 
 
-def cmd_fetch_and_leaderboard():
+def cmd_fetch_and_leaderboard(dry_run: bool = False):
     """Combined mode: Fetch data and immediately post leaderboard"""
     print(display_config())
     logger.info("Starting FETCH_AND_LEADERBOARD mode (combined operation)")
@@ -368,7 +368,7 @@ def cmd_fetch_and_leaderboard():
 
     # Step 3: Post leaderboard
     logger.info("Step 3/3: Posting leaderboard to Google Chat")
-    cmd_leaderboard()
+    cmd_leaderboard(dry_run=dry_run)
 
     print("\n" + "=" * 70)
     print("✓ FETCH_AND_LEADERBOARD complete!")
@@ -376,17 +376,24 @@ def cmd_fetch_and_leaderboard():
     print("=" * 70)
 
 
-def cmd_leaderboard():
-    """Generate and post daily/weekly leaderboards to Google Chat"""
+def cmd_leaderboard(dry_run: bool = False):
+    """Generate and post daily/weekly leaderboards to Google Chat
+
+    Args:
+        dry_run: When True, print messages to stdout instead of sending them.
+    """
     if MODE == ExecutionMode.LEADERBOARD:
         print(display_config())
-    logger.info("Starting LEADERBOARD mode")
+    if dry_run:
+        print(
+            "[DRY-RUN] Leaderboard messages will be printed, not sent to Google Chat\n")
+    logger.info("Starting LEADERBOARD mode%s", " (dry-run)" if dry_run else "")
 
     try:
         # Initialize components
         cache_manager = CacheManager()
         leaderboard_generator = LeaderboardGenerator(cache_manager)
-        chat_poster = GoogleChatPoster()
+        chat_poster = GoogleChatPoster(dry_run=dry_run)
 
         # Determine if today is Monday (post weekly) or other days (post daily)
         should_post_weekly = leaderboard_generator.should_post_weekly()
@@ -510,6 +517,7 @@ Examples:
   python src/main.py --mode refresh-stats     # Refresh GitHub stats only (no commits fetch)
   python src/main.py --mode leaderboard       # Post leaderboard to Google Chat (daily/weekly)
   python src/main.py --mode fetch_and_leaderboard  # Fetch data and post leaderboard (combined)
+  python src/main.py --mode leaderboard --dry-run  # Preview leaderboard without sending
 
 Note: Arguments override settings in src/config.py
         """
@@ -527,6 +535,13 @@ Note: Arguments override settings in src/config.py
         '--days',
         type=int,
         help='Number of days back to process (default: from config.py, typically 30)'
+    )
+
+    parser.add_argument(
+        '--dry-run',
+        action='store_true',
+        default=False,
+        help='Print leaderboard messages to stdout instead of sending to Google Chat'
     )
 
     return parser.parse_args()
@@ -576,9 +591,9 @@ def main():
         elif MODE == ExecutionMode.FETCH_AND_CHART:
             cmd_fetch_and_chart()
         elif MODE == ExecutionMode.LEADERBOARD:
-            cmd_leaderboard()
+            cmd_leaderboard(dry_run=args.dry_run)
         elif MODE == ExecutionMode.FETCH_AND_LEADERBOARD:
-            cmd_fetch_and_leaderboard()
+            cmd_fetch_and_leaderboard(dry_run=args.dry_run)
         elif MODE == 'REFRESH_STATS':
             cmd_refresh_stats()
         else:
