@@ -604,7 +604,8 @@ def main():
         elif MODE == ExecutionMode.FETCH_AND_CHART:
             cmd_fetch_and_chart()
         elif MODE == ExecutionMode.LEADERBOARD:
-            cmd_leaderboard(dry_run=args.dry_run)
+            cmd_leaderboard(dry_run=args.dry_run,
+                            test_channel=args.test_channel)
         elif MODE == ExecutionMode.FETCH_AND_LEADERBOARD:
             cmd_fetch_and_leaderboard(
                 dry_run=args.dry_run, test_channel=args.test_channel)
