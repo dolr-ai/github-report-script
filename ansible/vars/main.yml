@@ -9,3 +9,7 @@ github_org: "dolr-ai"
 # Google Chat Configuration
 google_chat_key: "{{ vault_google_chat_key }}"
 google_chat_token: "{{ vault_google_chat_token }}"
+
+# Test credentials (optional, can be left empty if not used)
+google_chat_test_key: "{{ vault_google_chat_test_key }}"
+google_chat_test_token: "{{ vault_google_chat_test_token }}"
