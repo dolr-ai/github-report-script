@@ -87,16 +87,11 @@ class CacheManager:
 
         # Check if existing cache has the same content
         existing_cached_at = None
-        existing_contributor_stats = {}
         if os.path.exists(cache_file):
             try:
                 with open(cache_file, 'r') as f:
                     existing_data = json.load(f)
                     existing_commits = existing_data.get('commits', [])
-
-                    # Preserve existing contributor_stats before comparison
-                    existing_contributor_stats = existing_data.get(
-                        'contributor_stats', {})
 
                     # Compare commits (excluding cached_at field)
                     if existing_commits == new_commits:
@@ -120,23 +115,6 @@ class CacheManager:
             cache_data['issues'] = data['issues']
             cache_data['issue_count'] = data.get(
                 'issue_count', len(data['issues']))
-
-        # Handle contributor_stats - preserve existing data if new data is empty
-        # This prevents losing cached stats when GitHub API returns 202 (stats computing)
-        new_contributor_stats = data.get('contributor_stats', {})
-        if new_contributor_stats:
-            # New data has stats - use it (may be a merge with existing)
-            cache_data['contributor_stats'] = new_contributor_stats
-            if existing_contributor_stats and existing_contributor_stats != new_contributor_stats:
-                logger.debug(f"Updated contributor_stats for {date_str}")
-        elif existing_contributor_stats:
-            # New data is empty but we have existing stats - preserve them
-            cache_data['contributor_stats'] = existing_contributor_stats
-            logger.debug(
-                f"Preserved existing contributor_stats for {date_str} (new data empty)")
-        else:
-            # Both are empty - store empty dict
-            cache_data['contributor_stats'] = {}
 
         with self.cache_lock:
             try:
@@ -244,11 +222,8 @@ class CacheManager:
         return has_branches
 
     def clear_all_cache(self):
-        """Clear all cache files, metadata, and output directories"""
-        import shutil
-        from src.config import OUTPUT_DIR
-
-        logger.info("Clearing all cache and output data...")
+        """Clear all cache files and metadata"""
+        logger.info("Clearing all cache data...")
 
         # Clear cache commits
         if os.path.exists(CACHE_COMMITS_DIR):
@@ -263,24 +238,14 @@ class CacheManager:
             os.remove(CACHE_METADATA_FILE)
             logger.info("Cleared cache metadata")
 
-        # Clear output directories
-        if os.path.exists(OUTPUT_DIR):
-            for user_dir in os.listdir(OUTPUT_DIR):
-                user_path = os.path.join(OUTPUT_DIR, user_dir)
-                if os.path.isdir(user_path):
-                    shutil.rmtree(user_path)
-            logger.info("Cleared all user output directories")
-
         logger.info("Cache clearing complete")
 
     def cleanup_old_data(self, days_to_keep: int = 120):
-        """Remove cache and output data older than specified days
+        """Remove cache data older than specified days
 
         Args:
             days_to_keep: Number of days of data to keep (default: 120)
         """
-        import shutil
-        from src.config import OUTPUT_DIR
         from datetime import timedelta
 
         cutoff_date = datetime.now().date() - timedelta(days=days_to_keep)
@@ -303,33 +268,5 @@ class CacheManager:
 
         if cache_removed > 0:
             logger.info(f"Removed {cache_removed} old cache file(s)")
-
-        # Clean up output files
-        output_removed = 0
-        if os.path.exists(OUTPUT_DIR):
-            for user_dir in os.listdir(OUTPUT_DIR):
-                user_path = os.path.join(OUTPUT_DIR, user_dir)
-                if not os.path.isdir(user_path):
-                    continue
-
-                for filename in os.listdir(user_path):
-                    if not filename.endswith('.json'):
-                        continue
-
-                    date_str = filename[:-5]  # Remove .json extension
-                    if date_str < cutoff_str:
-                        file_path = os.path.join(user_path, filename)
-                        try:
-                            os.remove(file_path)
-                            output_removed += 1
-                            logger.debug(
-                                f"Removed old output: {user_dir}/{date_str}")
-                        except Exception as e:
-                            logger.warning(
-                                f"Failed to remove output {user_dir}/{date_str}: {e}")
-
-        if output_removed > 0:
-            logger.info(f"Removed {output_removed} old output file(s)")
-
-        if cache_removed == 0 and output_removed == 0:
-            logger.info("No old data to clean up")
+        else:
+            logger.info("No old cache data to clean up")

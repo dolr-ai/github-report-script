@@ -296,7 +296,7 @@ class TestGetUserActiveReposFromEvents:
 
 
 class TestGetUserActiveReposCombined:
-    """Unit tests for _get_user_active_repos — verifies the two-source merge."""
+    """Unit tests for _get_user_active_repos — verifies delegation to Events API."""
 
     def _make_fetcher(self):
         fetcher = GitHubFetcher(thread_count=1)
@@ -304,151 +304,39 @@ class TestGetUserActiveReposCombined:
         return fetcher
 
     @pytest.mark.unit
-    def test_merges_contributions_and_events(self):
-        """Repos from both contributionsCollection and Events API are returned."""
+    def test_delegates_to_events_api(self):
+        """_get_user_active_repos delegates entirely to _get_user_active_repos_from_events."""
         fetcher = self._make_fetcher()
 
         start = datetime(2026, 2, 17, 0, 0, 0)
         end = datetime(2026, 2, 17, 23, 59, 59)
 
-        graphql_repo = f'{GITHUB_ORG}/hot-or-not-web-leptos-ssr'
-        events_repo = f'{GITHUB_ORG}/yral-ai-chat'
-
-        fetcher._graphql_request = MagicMock(return_value={
-            'user': {
-                'contributionsCollection': {
-                    'commitContributionsByRepository': [
-                        {'repository': {'nameWithOwner': graphql_repo}}
-                    ]
-                }
-            }
-        })
+        events_repos = [f'{GITHUB_ORG}/yral-ai-chat',
+                        f'{GITHUB_ORG}/hot-or-not-web-leptos-ssr']
         fetcher._get_user_active_repos_from_events = MagicMock(
-            return_value=[events_repo])
+            return_value=events_repos)
 
         result = fetcher._get_user_active_repos(
             'joel-medicala-yral', start, end)
 
-        assert graphql_repo in result
-        assert events_repo in result
-
-    @pytest.mark.unit
-    def test_deduplicates_across_sources(self):
-        """A repo appearing in both sources is not duplicated in the result."""
-        fetcher = self._make_fetcher()
-
-        start = datetime(2026, 2, 17, 0, 0, 0)
-        end = datetime(2026, 2, 17, 23, 59, 59)
-        shared_repo = f'{GITHUB_ORG}/yral-ai-chat'
-
-        fetcher._graphql_request = MagicMock(return_value={
-            'user': {
-                'contributionsCollection': {
-                    'commitContributionsByRepository': [
-                        {'repository': {'nameWithOwner': shared_repo}}
-                    ]
-                }
-            }
-        })
-        fetcher._get_user_active_repos_from_events = MagicMock(
-            return_value=[shared_repo])
-
-        result = fetcher._get_user_active_repos(
+        fetcher._get_user_active_repos_from_events.assert_called_once_with(
             'joel-medicala-yral', start, end)
-
-        assert result.count(shared_repo) == 1
-
-    @pytest.mark.unit
-    def test_returns_events_repos_when_contributions_empty(self):
-        """When contributionsCollection is empty (feature-branch-only work),
-        repos from the Events API are still returned."""
-        fetcher = self._make_fetcher()
-
-        start = datetime(2026, 2, 17, 0, 0, 0)
-        end = datetime(2026, 2, 17, 23, 59, 59)
-        events_repo = f'{GITHUB_ORG}/yral-ai-chat'
-
-        # contributionsCollection returns nothing (commits not on default branch)
-        fetcher._graphql_request = MagicMock(return_value={
-            'user': {
-                'contributionsCollection': {
-                    'commitContributionsByRepository': []
-                }
-            }
-        })
-        fetcher._get_user_active_repos_from_events = MagicMock(
-            return_value=[events_repo])
-
-        result = fetcher._get_user_active_repos(
-            'joel-medicala-yral', start, end)
-
-        assert events_repo in result
+        assert set(result) == set(events_repos)
 
     @pytest.mark.unit
-    def test_returns_contributions_repos_when_events_empty(self):
-        """When the Events API returns nothing, repos from contributionsCollection
-        are still returned."""
-        fetcher = self._make_fetcher()
-
-        start = datetime(2026, 2, 17, 0, 0, 0)
-        end = datetime(2026, 2, 17, 23, 59, 59)
-        graphql_repo = f'{GITHUB_ORG}/hot-or-not-web-leptos-ssr'
-
-        fetcher._graphql_request = MagicMock(return_value={
-            'user': {
-                'contributionsCollection': {
-                    'commitContributionsByRepository': [
-                        {'repository': {'nameWithOwner': graphql_repo}}
-                    ]
-                }
-            }
-        })
-        fetcher._get_user_active_repos_from_events = MagicMock(return_value=[])
-
-        result = fetcher._get_user_active_repos(
-            'joel-medicala-yral', start, end)
-
-        assert graphql_repo in result
-
-    @pytest.mark.unit
-    def test_returns_empty_when_both_sources_empty(self):
-        """Returns an empty list when both sources have no data."""
+    def test_returns_empty_when_events_empty(self):
+        """Returns an empty list when the Events API has no results."""
         fetcher = self._make_fetcher()
 
         start = datetime(2026, 2, 17, 0, 0, 0)
         end = datetime(2026, 2, 17, 23, 59, 59)
 
-        fetcher._graphql_request = MagicMock(return_value={
-            'user': {
-                'contributionsCollection': {
-                    'commitContributionsByRepository': []
-                }
-            }
-        })
         fetcher._get_user_active_repos_from_events = MagicMock(return_value=[])
 
         result = fetcher._get_user_active_repos(
             'joel-medicala-yral', start, end)
 
         assert result == []
-
-    @pytest.mark.unit
-    def test_handles_graphql_failure_gracefully(self):
-        """When the GraphQL call fails, events repos are still returned."""
-        fetcher = self._make_fetcher()
-
-        start = datetime(2026, 2, 17, 0, 0, 0)
-        end = datetime(2026, 2, 17, 23, 59, 59)
-        events_repo = f'{GITHUB_ORG}/yral-ai-chat'
-
-        fetcher._graphql_request = MagicMock(return_value=None)
-        fetcher._get_user_active_repos_from_events = MagicMock(
-            return_value=[events_repo])
-
-        result = fetcher._get_user_active_repos(
-            'joel-medicala-yral', start, end)
-
-        assert events_repo in result
 
 
 @pytest.mark.integration

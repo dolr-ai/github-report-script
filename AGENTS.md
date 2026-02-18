@@ -26,9 +26,7 @@ Nightly script that:
 
 1. Fetches commit and issue activity across **all branches** of all repos in the `dolr-ai` GitHub org for a configured set of contributors.
 2. Caches raw data locally as JSON (`cache/commits/YYYY-MM-DD.json`).
-3. Processes it into per-user daily summaries (`output/{username}/YYYY-MM-DD.json`).
-4. Generates interactive HTML and static PNG/PDF charts (`docs/`).
-5. Posts a ranked **leaderboard** to a Google Chat space (production or test channel).
+3. Posts a ranked **leaderboard** to a Google Chat space (production or test channel).
 
 The leaderboard ranks contributors by: **issues closed → commits → lines of code (descending)**.
 
@@ -43,14 +41,10 @@ The leaderboard ranks contributors by: **issues closed → commits → lines of 
 │   ├── main.py                 # Entry point; CLI arg parsing; mode dispatch
 │   ├── github_fetcher.py       # GitHub API calls (GraphQL + REST Events API)
 │   ├── cache_manager.py        # Read/write JSON cache files
-│   ├── data_processor.py       # Aggregate raw cache → per-user output
-│   ├── chart_generator.py      # Plotly HTML + Matplotlib PNG/PDF reports
 │   ├── leaderboard_generator.py# Rank contributors; daily/weekly logic
 │   └── google_chat_poster.py   # Format & post messages to Google Chat
 ├── tests/                      # pytest test suite
 ├── cache/commits/              # Raw daily commit+issue JSON (gitignored runtime data)
-├── output/{username}/          # Processed per-user daily summaries
-├── docs/                       # Generated HTML reports (served via GitHub Pages)
 ├── ansible/                    # Ansible playbook for .env generation
 │   ├── vars/main.yml           # Plaintext vars referencing vault secrets
 │   ├── vars/vault.yml          # Ansible-vault-encrypted secrets (never commit plaintext)
@@ -58,7 +52,6 @@ The leaderboard ranks contributors by: **issues closed → commits → lines of 
 ├── documentation/              # All supplementary markdown docs
 │   ├── ARCHITECTURE.md         # Sequence diagrams and data-flow details
 │   ├── CI_SETUP.md             # GitHub Actions setup guide
-│   ├── IMPLEMENTATION_SUMMARY.md  # Branch visualisation feature notes
 │   ├── ISSUES_TRACKING_IMPLEMENTATION.md
 │   └── LEADERBOARD_SETUP.md
 ├── AGENTS.md                   # ← this file
@@ -71,40 +64,33 @@ The leaderboard ranks contributors by: **issues closed → commits → lines of 
 ## 3. Architecture & Data Flow
 
 ```
-GitHub GraphQL API  ──┐
-GitHub Events API   ──┤─► github_fetcher.py ─► cache/commits/YYYY-MM-DD.json
-                      │                             │
-                      │                     cache_manager.py
-                      │                             │
-                      └────────────────────► data_processor.py ─► output/{user}/YYYY-MM-DD.json
-                                                                        │
-                                                               chart_generator.py ─► docs/
-                                                                        │
-                                                           leaderboard_generator.py
-                                                                        │
-                                                           google_chat_poster.py ─► Google Chat
+GitHub REST Events API  ──► github_fetcher.py ─► cache/commits/YYYY-MM-DD.json
+GitHub GraphQL API      ─┘                              │
+                                                  cache_manager.py
+                                                          │
+                                             leaderboard_generator.py
+                                                          │
+                                             google_chat_poster.py ─► Google Chat
 ```
 
 ---
 
 ## 4. Key Design Decisions
 
-### 4.1 Commit Discovery: Two-Source Repo Detection
+### 4.1 Commit Discovery: Events API as Sole Repo Source
 
-**Problem solved (Feb 2026):** GitHub's `contributionsCollection` GraphQL API only counts commits that land on the *default branch*. Commits on unmerged feature branches (open PRs) were silently missed.
+**Decision (Feb 2026):** Repo discovery uses the GitHub REST Events API exclusively. The previous implementation merged two sources — `contributionsCollection` (GraphQL) and the Events API — but `contributionsCollection` only covers commits that land on the *default branch*, making it a strict subset of what the Events API already returns.
 
-**Solution in `github_fetcher.py`:**
+**Current implementation in `github_fetcher.py`:**
 
-`_get_user_active_repos()` now merges two sources:
+`_get_user_active_repos()` is a thin wrapper that delegates entirely to `_get_user_active_repos_from_events()`, which:
+- Paginates `GET /users/{login}/events` with `per_page=100`, up to 3 pages (= 300 events, GitHub's hard cap).
+- Filters to `PushEvent` records where `repo.name` starts with `dolr-ai/`.
+- Stops early once event timestamps fall before the query window (events are newest-first).
 
-| Source | API | What it catches |
-|--------|-----|-----------------|
-| `contributionsCollection` | GraphQL | Merged/default-branch commits |
-| `_get_user_active_repos_from_events()` | REST `/users/{login}/events` | `PushEvent`s on *any* branch |
+This correctly discovers repos with pushes on *any* branch. `contributionsCollection` was removed because it was redundant.
 
-The union of both sets is used as the repo list to search. Events are paginated up to 10 pages (300 events) and are stopped early once event timestamps fall before the query window.
-
-**Implication:** Any future change to repo-discovery logic must preserve both sources.
+**Limitation:** The Events API only returns events from the last 30 days and caps at 300 events per user. For users with extremely high event volumes, older events in the window may be missed.
 
 ### 4.2 Commit Deduplication
 
@@ -180,11 +166,9 @@ When adding a new config variable:
 
 | Mode | Description |
 |------|-------------|
-| `FETCH` | Fetch + cache + process only |
+| `FETCH` | Fetch + cache raw data only |
 | `REFRESH` | Force re-fetch for date range, overwrite cache |
-| `CHART` | Generate charts from existing processed data |
 | `STATUS` | Show cache status and rate limits |
-| `FETCH_AND_CHART` | FETCH then CHART |
 | `LEADERBOARD` | Generate + post leaderboard to Google Chat |
 | `FETCH_AND_LEADERBOARD` | FETCH then LEADERBOARD |
 
@@ -206,8 +190,8 @@ When adding a new config variable:
 ### `github_fetcher.py`
 
 - Single public method: `fetch_commits(start_date, end_date, user_ids, force_refresh)` — returns raw dict and writes cache.
-- `_get_user_active_repos()` — merges contributionsCollection + Events API.
-- `_get_user_active_repos_from_events()` — REST Events API, paginates up to 10 pages, stops early when past the time window.
+- `_get_user_active_repos()` — thin wrapper; delegates entirely to `_get_user_active_repos_from_events()`.
+- `_get_user_active_repos_from_events()` — REST Events API; `per_page=100`, up to 3 pages (300 events cap); stops early when past the time window; filters to `dolr-ai/` PushEvents.
 - `_fetch_commits_for_date()` — inner loop: repo → branch → commit; deduplicates by SHA.
 - `_fetch_closed_issues_for_user()` — GraphQL; filters by assignee + closed date + org.
 
@@ -217,18 +201,13 @@ When adding a new config variable:
 - Schema: `{date, commits: [{sha, author, repository, timestamp, message, stats, branches}], issues: [{...}], issue_count}`.
 - `validate_cache_structure()` checks for the `branches` field; returns False (triggering re-fetch) if missing.
 
-### `data_processor.py`
-
-- Reads cache, writes `output/{username}/YYYY-MM-DD.json`.
-- Output schema includes `branch_breakdown: {repo: {branch: {additions, deletions, total_loc, commit_count}}}`.
-- No deduplication at this stage — cache is already deduplicated.
-
 ### `leaderboard_generator.py`
 
 - `get_yesterday_ist()` / `get_last_7_days_ist()` — always uses IST.
 - `should_post_weekly()` — True if today (IST) is Monday.
 - `generate_daily_leaderboard()` / `generate_weekly_leaderboard()` — return `(contributors_by_impact, date_string)`.
 - `get_commits_breakdown()` / `get_issues_breakdown()` — detail data for the second message.
+- Reads directly from raw cache via `CacheManager.read_cache()` — does not use any intermediate processed output.
 
 ### `google_chat_poster.py`
 
@@ -277,10 +256,9 @@ pytest -m unit
 
 - **Workflow:** `.github/workflows/nightly-report.yml`
 - **Schedule:** 12:00 AM IST daily (06:30 UTC cron)
-- **Mode:** `FETCH_AND_LEADERBOARD` (fetches data and posts to production Google Chat)
+- **Mode:** `FETCH_AND_LEADERBOARD` (fetches data and posts to production Google Chat in one run)
 - **Secret:** `ANSIBLE_VAULT_PASSWORD` — used to decrypt vault and generate `.env` at runtime.
-- Reports are published to GitHub Pages from the `docs/` directory.
-- Weekly releases are created every Sunday with aggregated reports.
+- Only `cache/` is committed back to the repo after each run; there are no generated HTML reports or GitHub Pages deployment.
 
 See `documentation/CI_SETUP.md` for full setup instructions.
 
