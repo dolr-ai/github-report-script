@@ -1,32 +1,507 @@
 {
   "date": "2026-02-17",
-  "cached_at": "2026-02-17T18:49:43.710612Z",
+  "cached_at": "2026-02-18T05:01:16.635025Z",
   "commits": [
     {
-      "sha": "a9db8403f3da0ffc934f9e24d05752a5a238e5ca",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-billing",
-      "timestamp": "2026-02-17T12:36:41Z",
-      "message": "feat: handle linkedPurchase token in case of upgrade or downgrade",
+      "sha": "31565da19ca56afa83920277ac6be03982dde5b0",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-17T14:58:22Z",
+      "message": "Merge pull request #889 from dolr-ai/chore/tournament-start-nudge",
       "stats": {
-        "additions": 24,
-        "deletions": 2,
-        "total": 26
+        "additions": 470,
+        "deletions": 315,
+        "total": 785
       },
       "branches": [
-        "feat/handle-linked-purchase-token"
+        "develop"
       ]
     },
     {
-      "sha": "62c53806afdc73a66ba67ce578ac58acd010c63c",
-      "author": "gravityvi",
-      "repository": "dolr-ai/yral-billing",
-      "timestamp": "2026-02-17T12:42:07Z",
-      "message": "feat: handle linkedPurchase token in case of upgrade or downgrade (#11)",
+      "sha": "9d5f3edf6d40571c76a4a14c1aca33afdf451f21",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-17T20:11:30Z",
+      "message": "add request/response models and entity definitions",
       "stats": {
-        "additions": 24,
-        "deletions": 2,
-        "total": 26
+        "additions": 638,
+        "deletions": 0,
+        "total": 638
+      },
+      "branches": [
+        "joel/phase-2-3-4"
+      ]
+    },
+    {
+      "sha": "95d1826195b78db8545191358bfd9a4745574ed4",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-17T20:11:23Z",
+      "message": "add config module with environment variable settings",
+      "stats": {
+        "additions": 228,
+        "deletions": 0,
+        "total": 228
+      },
+      "branches": [
+        "joel/phase-2-3-4"
+      ]
+    },
+    {
+      "sha": "e0474b6f53f8a6ee49da633e05405e56ad9f8ef4",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-17T20:11:15Z",
+      "message": "add JWT authentication with RS256 token validation",
+      "stats": {
+        "additions": 74,
+        "deletions": 0,
+        "total": 74
+      },
+      "branches": [
+        "joel/phase-2-3-4"
+      ]
+    },
+    {
+      "sha": "11d0723242efa9200bb9a11fff7708615a1f9a10",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-17T20:11:06Z",
+      "message": "add error types for API error handling",
+      "stats": {
+        "additions": 211,
+        "deletions": 0,
+        "total": 211
+      },
+      "branches": [
+        "joel/phase-2-3-4"
+      ]
+    },
+    {
+      "sha": "99d248b33fc845e98d83735cc51ea1f7eb0dae9b",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-17T06:34:44Z",
+      "message": "Merge pull request #179 from dolr-ai/joel/rust-migration-phase1-scaffolding",
+      "stats": {
+        "additions": 5745,
+        "deletions": 0,
+        "total": 5745
+      },
+      "branches": [
+        "joel/phase-2-3-4",
+        "joel/rust-migration"
+      ]
+    },
+    {
+      "sha": "eb08863b3b4550e1002bcaedf2619d9f9c8567f4",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-17T06:31:16Z",
+      "message": "refactor: move migration logic into db module and update references",
+      "stats": {
+        "additions": 17,
+        "deletions": 20,
+        "total": 37
+      },
+      "branches": [
+        "joel/phase-2-3-4",
+        "joel/rust-migration",
+        "joel/rust-migration-phase1-scaffolding"
+      ]
+    },
+    {
+      "sha": "ad4e5797b1a85b973a43e9ff22d008eb48548318",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-17T06:29:09Z",
+      "message": "refactor: add inline annotations to max size conversion methods",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "joel/phase-2-3-4",
+        "joel/rust-migration",
+        "joel/rust-migration-phase1-scaffolding"
+      ]
+    },
+    {
+      "sha": "76cbf23d9702b25e19d818bc40a00234f7af440a",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-17T06:25:46Z",
+      "message": "refactor: simplify environment handling and migration logic",
+      "stats": {
+        "additions": 77,
+        "deletions": 194,
+        "total": 271
+      },
+      "branches": [
+        "joel/phase-2-3-4",
+        "joel/rust-migration",
+        "joel/rust-migration-phase1-scaffolding"
+      ]
+    },
+    {
+      "sha": "93f97f3b8c30484ba26154a045f86a4a334cfbbf",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-17T06:19:51Z",
+      "message": "refactor: implement From trait for entity models to simplify conversions",
+      "stats": {
+        "additions": 192,
+        "deletions": 173,
+        "total": 365
+      },
+      "branches": [
+        "joel/phase-2-3-4",
+        "joel/rust-migration",
+        "joel/rust-migration-phase1-scaffolding"
+      ]
+    },
+    {
+      "sha": "fd51c9b5740f41b2177a0645882ec10aebe65857",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-17T06:13:02Z",
+      "message": "add health routes and wire up axum server",
+      "stats": {
+        "additions": 216,
+        "deletions": 0,
+        "total": 216
+      },
+      "branches": [
+        "joel/phase-2-3-4",
+        "joel/rust-migration",
+        "joel/rust-migration-phase1-scaffolding"
+      ]
+    },
+    {
+      "sha": "e2f11fdcbf79d12298e6075da0f8765972271d7a",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-17T06:12:56Z",
+      "message": "add repositories: influencer, conversation, message",
+      "stats": {
+        "additions": 814,
+        "deletions": 0,
+        "total": 814
+      },
+      "branches": [
+        "joel/phase-2-3-4",
+        "joel/rust-migration",
+        "joel/rust-migration-phase1-scaffolding"
+      ]
+    },
+    {
+      "sha": "733efaad53461f3734b799f941ac25e640236a93",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-17T06:12:50Z",
+      "message": "add database layer with SQLite pool and migration runner",
+      "stats": {
+        "additions": 242,
+        "deletions": 0,
+        "total": 242
+      },
+      "branches": [
+        "joel/phase-2-3-4",
+        "joel/rust-migration",
+        "joel/rust-migration-phase1-scaffolding"
+      ]
+    },
+    {
+      "sha": "16e1bb05b112e656baca433065e39a5171bd46bd",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-17T06:12:43Z",
+      "message": "add request/response DTOs",
+      "stats": {
+        "additions": 283,
+        "deletions": 0,
+        "total": 283
+      },
+      "branches": [
+        "joel/phase-2-3-4",
+        "joel/rust-migration",
+        "joel/rust-migration-phase1-scaffolding"
+      ]
+    },
+    {
+      "sha": "31a761451142759e3621cd068b211ab54bd66475",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-17T06:12:37Z",
+      "message": "add entity models: AIInfluencer, Conversation, Message",
+      "stats": {
+        "additions": 160,
+        "deletions": 0,
+        "total": 160
+      },
+      "branches": [
+        "joel/phase-2-3-4",
+        "joel/rust-migration",
+        "joel/rust-migration-phase1-scaffolding"
+      ]
+    },
+    {
+      "sha": "cb1d884199c209e8b969d9717bb66b5be7c9f88b",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-17T06:12:30Z",
+      "message": "add error types matching Python API exceptions",
+      "stats": {
+        "additions": 211,
+        "deletions": 0,
+        "total": 211
+      },
+      "branches": [
+        "joel/phase-2-3-4",
+        "joel/rust-migration",
+        "joel/rust-migration-phase1-scaffolding"
+      ]
+    },
+    {
+      "sha": "2a784533624c29daba4c1ceced1298680b526c80",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-17T06:12:24Z",
+      "message": "add config module with all env vars",
+      "stats": {
+        "additions": 218,
+        "deletions": 0,
+        "total": 218
+      },
+      "branches": [
+        "joel/phase-2-3-4",
+        "joel/rust-migration",
+        "joel/rust-migration-phase1-scaffolding"
+      ]
+    },
+    {
+      "sha": "7d6e6f124bf6e30e10227a4a6abb0485938f263b",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-17T06:12:14Z",
+      "message": "init rust project with dependencies",
+      "stats": {
+        "additions": 3700,
+        "deletions": 0,
+        "total": 3700
+      },
+      "branches": [
+        "joel/phase-2-3-4",
+        "joel/rust-migration",
+        "joel/rust-migration-phase1-scaffolding"
+      ]
+    },
+    {
+      "sha": "42d9bef57d79a06a1ea9b6f4edbe6514a0ec8f75",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-17T23:35:55Z",
+      "message": "fix: status code fetch",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/small_fixes"
+      ]
+    },
+    {
+      "sha": "abd55e2a985e1643412b9c5756a0bfd1275ead9d",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-17T23:13:35Z",
+      "message": "fix: removed unexpected EOF",
+      "stats": {
+        "additions": 0,
+        "deletions": 1,
+        "total": 1
+      },
+      "branches": [
+        "naitik/small_fixes"
+      ]
+    },
+    {
+      "sha": "8c21668982d8d4f736e3a081dbce453cf5170dcd",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-17T23:10:15Z",
+      "message": "fix: unexpected EOF",
+      "stats": {
+        "additions": 9,
+        "deletions": 11,
+        "total": 20
+      },
+      "branches": [
+        "naitik/small_fixes"
+      ]
+    },
+    {
+      "sha": "3d8fc56280d6a87668c2713e47b278ec472c937a",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-17T23:02:18Z",
+      "message": "fix: empty secret issue in env",
+      "stats": {
+        "additions": 12,
+        "deletions": 12,
+        "total": 24
+      },
+      "branches": [
+        "naitik/small_fixes"
+      ]
+    },
+    {
+      "sha": "2f87fd06125587aced56667f669fa3e77157793f",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-17T22:38:02Z",
+      "message": "fix: server ip var",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/small_fixes"
+      ]
+    },
+    {
+      "sha": "9294478fa4bd678a9a49db470ef03996cc894acf",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-17T22:36:28Z",
+      "message": "fix: aws cli installation",
+      "stats": {
+        "additions": 9,
+        "deletions": 3,
+        "total": 12
+      },
+      "branches": [
+        "naitik/small_fixes"
+      ]
+    },
+    {
+      "sha": "e75607a75e502d1aa72e72133fc1845592005b5e",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-17T22:28:37Z",
+      "message": "fix: vault cli installation",
+      "stats": {
+        "additions": 6,
+        "deletions": 0,
+        "total": 6
+      },
+      "branches": [
+        "naitik/small_fixes"
+      ]
+    },
+    {
+      "sha": "2d77ccf351ff66a99abc7abd095d8b91f12f390e",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-17T22:24:57Z",
+      "message": "fix: branch name",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/small_fixes"
+      ]
+    },
+    {
+      "sha": "9e1f21f171ff96855d3074d4637cac3c1394e1d2",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-17T22:23:25Z",
+      "message": "feat: snapshot script",
+      "stats": {
+        "additions": 209,
+        "deletions": 0,
+        "total": 209
+      },
+      "branches": [
+        "naitik/small_fixes"
+      ]
+    },
+    {
+      "sha": "c297cc033536e8becd8bc155a3ae927f898a930c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-17T20:04:25Z",
+      "message": "refactor: Split upgrade playbooks for control plane and worker nodes, enhancing clarity and modulari",
+      "stats": {
+        "additions": 28,
+        "deletions": 5,
+        "total": 33
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "de075e41b059543bfd9dcd4daf4ace1595eafe0c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-17T19:55:43Z",
+      "message": "refactor: Implement upgrade playbooks for control plane and worker nodes, enhancing orchestration an",
+      "stats": {
+        "additions": 623,
+        "deletions": 61,
+        "total": 684
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "02ecb33d3669ef84783fa625800d6e961d9c1511",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-17T19:52:49Z",
+      "message": "refactor: Update inventory hosts configuration for control plane and worker nodes, adding new nodes ",
+      "stats": {
+        "additions": 78,
+        "deletions": 6,
+        "total": 84
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8b9c208947887afb6bbdb4b03acebd9d358ac8ad",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-17T19:21:56Z",
+      "message": "refactor: Enhance variable management and documentation for Ansible playbooks, improving clarity and",
+      "stats": {
+        "additions": 55,
+        "deletions": 15,
+        "total": 70
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b96c311b645d41bbe90138e219f8b1d631986b65",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-17T18:56:43Z",
+      "message": "refactor: Simplify playbook role definitions and improve variable handling in provisioning tasks",
+      "stats": {
+        "additions": 31,
+        "deletions": 96,
+        "total": 127
       },
       "branches": [
         "main"
@@ -453,23 +928,281 @@
       ]
     },
     {
-      "sha": "31565da19ca56afa83920277ac6be03982dde5b0",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-17T14:58:22Z",
-      "message": "Merge pull request #889 from dolr-ai/chore/tournament-start-nudge",
+      "sha": "af1b9f05bfce77f587857ed68501e5945bea3bae",
+      "author": "kevin-antony-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-17T08:53:18Z",
+      "message": "Merge branch 'main' into temp_rm_beszel",
       "stats": {
-        "additions": 470,
-        "deletions": 315,
-        "total": 785
+        "additions": 28,
+        "deletions": 4,
+        "total": 32
       },
       "branches": [
-        "develop"
+        "temp_rm_beszel"
+      ]
+    },
+    {
+      "sha": "a9db8403f3da0ffc934f9e24d05752a5a238e5ca",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-02-17T12:36:41Z",
+      "message": "feat: handle linkedPurchase token in case of upgrade or downgrade",
+      "stats": {
+        "additions": 24,
+        "deletions": 2,
+        "total": 26
+      },
+      "branches": [
+        "feat/handle-linked-purchase-token"
+      ]
+    },
+    {
+      "sha": "62c53806afdc73a66ba67ce578ac58acd010c63c",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-02-17T12:42:07Z",
+      "message": "feat: handle linkedPurchase token in case of upgrade or downgrade (#11)",
+      "stats": {
+        "additions": 24,
+        "deletions": 2,
+        "total": 26
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "1100ff1efb90c8d9b986001de2afc04cb8a66757",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-17T07:09:49Z",
+      "message": "chore: revert .gitignore to match develop (remove .figma-token, MCP tools)",
+      "stats": {
+        "additions": 0,
+        "deletions": 4,
+        "total": 4
+      },
+      "branches": [
+        "feature/ai-influencer"
+      ]
+    },
+    {
+      "sha": "01afcab34c249fc73ab4e3341be6f80592ec91d0",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-17T07:09:49Z",
+      "message": "refactor(auth): AccountSessionPreferences, BotIdentitiesStore, session/bot identity call sites",
+      "stats": {
+        "additions": 239,
+        "deletions": 183,
+        "total": 422
+      },
+      "branches": [
+        "feature/ai-influencer"
+      ]
+    },
+    {
+      "sha": "f254bd581be113332acb21bccf55e47add1bb07f",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-17T07:09:49Z",
+      "message": "refactor: AccountDirectoryCache \u2192 AccountDirectoryStore (DRY)",
+      "stats": {
+        "additions": 106,
+        "deletions": 95,
+        "total": 201
+      },
+      "branches": [
+        "feature/ai-influencer"
+      ]
+    },
+    {
+      "sha": "6c7b378feff99f9096876b7c41a69bf078df3ec9",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-17T07:09:49Z",
+      "message": "code review: sessionManager.shouldShowCreateBotCtaFlow(maxBotCountForCta) for create-bot CTA conditi",
+      "stats": {
+        "additions": 64,
+        "deletions": 29,
+        "total": 93
+      },
+      "branches": [
+        "feature/ai-influencer"
+      ]
+    },
+    {
+      "sha": "8a42e4ad1897ca3c48f6f01873e1a21e07e2d5fd",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-17T07:09:49Z",
+      "message": "code review: ChatWallScreen sessionManager as constructor parameter",
+      "stats": {
+        "additions": 7,
+        "deletions": 8,
+        "total": 15
+      },
+      "branches": [
+        "feature/ai-influencer"
+      ]
+    },
+    {
+      "sha": "526c0790f40219b4126f3d93a3d9a52a3934fa41",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-17T07:09:49Z",
+      "message": "code review: use constant for create_ai_account path in AuthDataSourceImpl",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "feature/ai-influencer"
+      ]
+    },
+    {
+      "sha": "7652fd3273f92c599e23337c197e0be1fb72887c",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-17T07:09:49Z",
+      "message": "code review: use named imports for SignedDelegationPayload",
+      "stats": {
+        "additions": 11,
+        "deletions": 5,
+        "total": 16
+      },
+      "branches": [
+        "feature/ai-influencer"
+      ]
+    },
+    {
+      "sha": "1f67582f6f7a9f22420b6456333863b83f0d0549",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-17T07:09:49Z",
+      "message": "refactor(account): soft-delete via CommonApis, layered architecture",
+      "stats": {
+        "additions": 102,
+        "deletions": 46,
+        "total": 148
+      },
+      "branches": [
+        "feature/ai-influencer"
+      ]
+    },
+    {
+      "sha": "e03a2840a298e2734f7a918fb0dc9bc5b8c02929",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-17T07:09:49Z",
+      "message": "chore: account switcher via slot config, YralBottomSheet",
+      "stats": {
+        "additions": 64,
+        "deletions": 26,
+        "total": 90
+      },
+      "branches": [
+        "feature/ai-influencer"
+      ]
+    },
+    {
+      "sha": "ee6d641e9c1c945e3e118498a314d71801e39fbd",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-17T07:09:49Z",
+      "message": "code review: CreateInfluencer DefaultComponent, string in module, resetFlow in RootScreen",
+      "stats": {
+        "additions": 97,
+        "deletions": 22,
+        "total": 119
+      },
+      "branches": [
+        "feature/ai-influencer"
+      ]
+    },
+    {
+      "sha": "10a7631d7f04f91dd92d92ee5dee388bc592b7a5",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-17T07:09:49Z",
+      "message": "code review: Removes extra spaces in rust file",
+      "stats": {
+        "additions": 0,
+        "deletions": 3,
+        "total": 3
+      },
+      "branches": [
+        "feature/ai-influencer"
+      ]
+    },
+    {
+      "sha": "5272d0ffb27c5ada6390003a116593127c5e74b9",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-17T07:09:49Z",
+      "message": "code review: disable discouraged-comment-location and if-else-wrapping, fix remaining lint",
+      "stats": {
+        "additions": 3,
+        "deletions": 7,
+        "total": 10
+      },
+      "branches": [
+        "feature/ai-influencer"
+      ]
+    },
+    {
+      "sha": "9a7dd7501101166b260650ebbc79fc1c86b8baac",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-17T07:09:48Z",
+      "message": "chore: fix ktlint comment placement in YralMaskedVectorTextV2",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "feature/ai-influencer"
+      ]
+    },
+    {
+      "sha": "14ac451b2113dfa3037ebd17b6f9963bfab434a5",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-17T07:09:48Z",
+      "message": "code review: Uses koin factory apis",
+      "stats": {
+        "additions": 3,
+        "deletions": 1521,
+        "total": 1524
+      },
+      "branches": [
+        "feature/ai-influencer"
       ]
     }
   ],
-  "commit_count": 31,
+  "commit_count": 77,
   "issues": [
+    {
+      "number": 887,
+      "title": "Tournament cards UX changes",
+      "closed_at": "2026-02-17T14:58:24Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/887",
+      "labels": []
+    },
+    {
+      "number": 888,
+      "title": "Add timer logic in play now button",
+      "closed_at": "2026-02-17T18:51:47Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/888",
+      "labels": []
+    },
     {
       "number": 1653,
       "title": "Phase 1: Project Scaffolding & Core Infrastructure",
@@ -477,6 +1210,24 @@
       "assignee": "joel-medicala-yral",
       "repository": "dolr-ai/product-roadmap",
       "url": "https://github.com/dolr-ai/product-roadmap/issues/1653",
+      "labels": []
+    },
+    {
+      "number": 1635,
+      "title": "enable UI and email based access for vault",
+      "closed_at": "2026-02-17T05:33:03Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1635",
+      "labels": []
+    },
+    {
+      "number": 890,
+      "title": "update sentry-2",
+      "closed_at": "2026-02-17T21:05:19Z",
+      "assignee": "mayank-k-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/890",
       "labels": []
     },
     {
@@ -500,17 +1251,8 @@
       "labels": [
         "Backend Dependencies"
       ]
-    },
-    {
-      "number": 1635,
-      "title": "enable UI and email based access for vault",
-      "closed_at": "2026-02-17T05:33:03Z",
-      "assignee": "naitik-makwana-yral",
-      "repository": "dolr-ai/product-roadmap",
-      "url": "https://github.com/dolr-ai/product-roadmap/issues/1635",
-      "labels": []
     }
   ],
-  "issue_count": 4,
+  "issue_count": 7,
   "contributor_stats": {}
 }
