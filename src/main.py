@@ -342,7 +342,7 @@ def cmd_fetch_and_chart():
     print("=" * 70)
 
 
-def cmd_fetch_and_leaderboard(dry_run: bool = False):
+def cmd_fetch_and_leaderboard(dry_run: bool = False, test_channel: bool = False):
     """Combined mode: Fetch data and immediately post leaderboard"""
     print(display_config())
     logger.info("Starting FETCH_AND_LEADERBOARD mode (combined operation)")
@@ -368,7 +368,7 @@ def cmd_fetch_and_leaderboard(dry_run: bool = False):
 
     # Step 3: Post leaderboard
     logger.info("Step 3/3: Posting leaderboard to Google Chat")
-    cmd_leaderboard(dry_run=dry_run)
+    cmd_leaderboard(dry_run=dry_run, test_channel=test_channel)
 
     print("\n" + "=" * 70)
     print("✓ FETCH_AND_LEADERBOARD complete!")
@@ -376,24 +376,29 @@ def cmd_fetch_and_leaderboard(dry_run: bool = False):
     print("=" * 70)
 
 
-def cmd_leaderboard(dry_run: bool = False):
+def cmd_leaderboard(dry_run: bool = False, test_channel: bool = False):
     """Generate and post daily/weekly leaderboards to Google Chat
 
     Args:
         dry_run: When True, print messages to stdout instead of sending them.
+        test_channel: When True, post to the test Google Chat channel.
     """
     if MODE == ExecutionMode.LEADERBOARD:
         print(display_config())
     if dry_run:
         print(
             "[DRY-RUN] Leaderboard messages will be printed, not sent to Google Chat\n")
+    if test_channel and not dry_run:
+        print(
+            "[TEST CHANNEL] Leaderboard will be posted to the test Google Chat channel\n")
     logger.info("Starting LEADERBOARD mode%s", " (dry-run)" if dry_run else "")
 
     try:
         # Initialize components
         cache_manager = CacheManager()
         leaderboard_generator = LeaderboardGenerator(cache_manager)
-        chat_poster = GoogleChatPoster(dry_run=dry_run)
+        chat_poster = GoogleChatPoster(
+            dry_run=dry_run, test_channel=test_channel)
 
         # Determine if today is Monday (post weekly) or other days (post daily)
         should_post_weekly = leaderboard_generator.should_post_weekly()
@@ -518,6 +523,7 @@ Examples:
   python src/main.py --mode leaderboard       # Post leaderboard to Google Chat (daily/weekly)
   python src/main.py --mode fetch_and_leaderboard  # Fetch data and post leaderboard (combined)
   python src/main.py --mode leaderboard --dry-run  # Preview leaderboard without sending
+  python src/main.py --mode leaderboard --test-channel  # Post to the test Google Chat channel
 
 Note: Arguments override settings in src/config.py
         """
@@ -542,6 +548,13 @@ Note: Arguments override settings in src/config.py
         action='store_true',
         default=False,
         help='Print leaderboard messages to stdout instead of sending to Google Chat'
+    )
+
+    parser.add_argument(
+        '--test-channel',
+        action='store_true',
+        default=False,
+        help='Post leaderboard to the test Google Chat channel instead of production'
     )
 
     return parser.parse_args()
@@ -593,7 +606,8 @@ def main():
         elif MODE == ExecutionMode.LEADERBOARD:
             cmd_leaderboard(dry_run=args.dry_run)
         elif MODE == ExecutionMode.FETCH_AND_LEADERBOARD:
-            cmd_fetch_and_leaderboard(dry_run=args.dry_run)
+            cmd_fetch_and_leaderboard(
+                dry_run=args.dry_run, test_channel=args.test_channel)
         elif MODE == 'REFRESH_STATS':
             cmd_refresh_stats()
         else:

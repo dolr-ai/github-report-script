@@ -6,3 +6,5 @@
 vault_github_token: "your_github_token_here"
 vault_google_chat_key: "your_google_chat_key_here"
 vault_google_chat_token: "your_google_chat_token_here"
+vault_google_chat_test_key: "your_test_google_chat_key_here"
+vault_google_chat_test_token: "your_test_google_chat_token_here"

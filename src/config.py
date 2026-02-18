@@ -154,13 +154,25 @@ GITHUB_ORG = os.getenv('GITHUB_ORG', 'dolr-ai')
 
 # --- Google Chat Configuration ---
 GOOGLE_CHAT_WEBHOOK_BASE_URL = "https://chat.googleapis.com/v1/spaces/AAAARme8JFE/messages"
-"""Google Chat webhook base URL (without query parameters)"""
+"""Google Chat webhook base URL for the production channel (without query parameters)"""
 
 GOOGLE_CHAT_KEY = os.getenv('GOOGLE_CHAT_KEY')
-"""Google Chat webhook API key (loaded from .env file)"""
+"""Google Chat webhook API key for the production channel (loaded from .env file)"""
 
 GOOGLE_CHAT_TOKEN = os.getenv('GOOGLE_CHAT_TOKEN')
-"""Google Chat webhook token (loaded from .env file)"""
+"""Google Chat webhook token for the production channel (loaded from .env file)"""
+
+# --- Google Chat Test Channel Configuration ---
+# Fill in the space ID, key and token from your test Google Chat webhook URL:
+#   https://chat.googleapis.com/v1/spaces/<SPACE_ID>/messages?key=<KEY>&token=<TOKEN>
+GOOGLE_CHAT_TEST_WEBHOOK_BASE_URL = "https://chat.googleapis.com/v1/spaces/AAAA90FUe6M/messages"
+"""Google Chat webhook base URL for the test channel (without query parameters)"""
+
+GOOGLE_CHAT_TEST_KEY = os.getenv('GOOGLE_CHAT_TEST_KEY')
+"""Google Chat webhook API key for the test channel (loaded from .env file)"""
+
+GOOGLE_CHAT_TEST_TOKEN = os.getenv('GOOGLE_CHAT_TEST_TOKEN')
+"""Google Chat webhook token for the test channel (loaded from .env file)"""
 
 REPORTS_BASE_URL = "https://dolr-ai.github.io/github-report-script/"
 """Public URL where reports are hosted"""
@@ -172,13 +184,13 @@ IST_TIMEZONE = pytz.timezone('Asia/Kolkata')
 USER_IDS: List[str] = [
     'saikatdas0790',
     'gravityvi',
-    'jay-dhanwant-yral',
+    # 'jay-dhanwant-yral',
     'joel-medicala-yral',
-    'kevin-antony-yral',
-    'mayank-k-yral',
+    # 'kevin-antony-yral',
+    # 'mayank-k-yral',
     'naitik-makwana-yral',
     'ravi-sawlani-yral',
-    'samarth-paboowal-yral',
+    # 'samarth-paboowal-yral',
     'sarvesh-sharma-yral',
     'shivam-bhavsar-yral',
 ]

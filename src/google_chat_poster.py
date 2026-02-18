@@ -12,6 +12,9 @@ from src.config import (
     GOOGLE_CHAT_WEBHOOK_BASE_URL,
     GOOGLE_CHAT_KEY,
     GOOGLE_CHAT_TOKEN,
+    GOOGLE_CHAT_TEST_WEBHOOK_BASE_URL,
+    GOOGLE_CHAT_TEST_KEY,
+    GOOGLE_CHAT_TEST_TOKEN,
     REPORTS_BASE_URL
 )
 
@@ -24,16 +27,21 @@ class GoogleChatPoster:
     # Rank emojis for top 3
     RANK_EMOJIS = ['🥇', '🥈', '🥉']
 
-    def __init__(self, dry_run: bool = False):
+    def __init__(self, dry_run: bool = False, test_channel: bool = False):
         """Initialize Google Chat poster with configuration
 
         Args:
             dry_run: When True, print messages to stdout instead of sending
                      to Google Chat. Useful for previewing output locally.
+            test_channel: When True, post to the test Google Chat channel
+                          instead of the production channel.
         """
         self.dry_run = dry_run
+        self.test_channel = test_channel
         if not dry_run:
             self.webhook_url = self._construct_webhook_url()
+            if test_channel:
+                logger.info("GoogleChatPoster posting to TEST channel")
         else:
             self.webhook_url = ""
             logger.info(
@@ -42,6 +50,8 @@ class GoogleChatPoster:
     def _construct_webhook_url(self) -> str:
         """Construct full webhook URL with key and token.
 
+        Uses the test channel credentials when ``test_channel=True``,
+        otherwise uses the production channel credentials.
         Not called in dry-run mode.
 
         Returns:
@@ -50,15 +60,29 @@ class GoogleChatPoster:
         Raises:
             ValueError: If required configuration is missing
         """
-        if not GOOGLE_CHAT_WEBHOOK_BASE_URL:
-            raise ValueError("GOOGLE_CHAT_WEBHOOK_BASE_URL not configured")
-        if not GOOGLE_CHAT_KEY:
-            raise ValueError("GOOGLE_CHAT_KEY not configured in environment")
-        if not GOOGLE_CHAT_TOKEN:
-            raise ValueError("GOOGLE_CHAT_TOKEN not configured in environment")
-
-        url = f"{GOOGLE_CHAT_WEBHOOK_BASE_URL}?key={GOOGLE_CHAT_KEY}&token={GOOGLE_CHAT_TOKEN}"
-        logger.debug(f"Constructed webhook URL (key/token hidden)")
+        if self.test_channel:
+            if not GOOGLE_CHAT_TEST_WEBHOOK_BASE_URL or 'YOUR_TEST_SPACE_ID' in GOOGLE_CHAT_TEST_WEBHOOK_BASE_URL:
+                raise ValueError(
+                    "GOOGLE_CHAT_TEST_WEBHOOK_BASE_URL not configured")
+            if not GOOGLE_CHAT_TEST_KEY:
+                raise ValueError(
+                    "GOOGLE_CHAT_TEST_KEY not configured in environment")
+            if not GOOGLE_CHAT_TEST_TOKEN:
+                raise ValueError(
+                    "GOOGLE_CHAT_TEST_TOKEN not configured in environment")
+            url = f"{GOOGLE_CHAT_TEST_WEBHOOK_BASE_URL}?key={GOOGLE_CHAT_TEST_KEY}&token={GOOGLE_CHAT_TEST_TOKEN}"
+        else:
+            if not GOOGLE_CHAT_WEBHOOK_BASE_URL:
+                raise ValueError("GOOGLE_CHAT_WEBHOOK_BASE_URL not configured")
+            if not GOOGLE_CHAT_KEY:
+                raise ValueError(
+                    "GOOGLE_CHAT_KEY not configured in environment")
+            if not GOOGLE_CHAT_TOKEN:
+                raise ValueError(
+                    "GOOGLE_CHAT_TOKEN not configured in environment")
+            url = f"{GOOGLE_CHAT_WEBHOOK_BASE_URL}?key={GOOGLE_CHAT_KEY}&token={GOOGLE_CHAT_TOKEN}"
+        logger.debug("Constructed %s webhook URL (key/token hidden)",
+                     "test" if self.test_channel else "production")
         return url
 
     def _get_rank_emoji(self, rank: int) -> str:
