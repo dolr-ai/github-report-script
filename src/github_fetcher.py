@@ -695,12 +695,103 @@ class GitHubFetcher:
                 f"Error fetching contributor stats for {username} in {repo_full_name}: {e}")
             return {}
 
+    def _get_user_active_repos_from_events(self, username: str, start_datetime: datetime,
+                                           end_datetime: datetime) -> List[str]:
+        """Get list of repos where user has pushed commits, using the Events API.
+
+        This captures pushes to ALL branches (including feature branches in open PRs),
+        which contributionsCollection misses because it only counts contributions that
+        appear on a repository's default branch or a fork's default branch.
+
+        Args:
+            username: GitHub username
+            start_datetime: Start datetime for filtering
+            end_datetime: End datetime for filtering
+
+        Returns:
+            List of repository full names (owner/repo) where user has pushed commits
+        """
+        active_repos: Set[str] = set()
+        page = 1
+
+        # Limit to 10 pages (300 events) to avoid excessive API calls
+        while page <= 10:
+            endpoint = f"/users/{username}/events"
+            params = {'per_page': 30, 'page': page}
+
+            # Use session headers for auth (REST API)
+            try:
+                headers = self.session.headers.copy()
+                headers['Authorization'] = f'token {GITHUB_TOKEN}'
+                headers['Accept'] = 'application/vnd.github.v3+json'
+                response = requests.get(
+                    f"{self.base_url}{endpoint}", params=params,
+                    headers=headers, timeout=30
+                )
+
+                if response.status_code == 404:
+                    logger.debug(f"Events not accessible for {username}")
+                    break
+
+                response.raise_for_status()
+                events = response.json()
+
+                if not events:
+                    break
+
+                reached_before_start = False
+                for event in events:
+                    event_type = event.get('type')
+                    created_at_str = event.get('created_at', '')
+
+                    if not created_at_str:
+                        continue
+
+                    try:
+                        event_time = datetime.fromisoformat(
+                            created_at_str.replace('Z', '+00:00'))
+                        # Make start/end timezone-aware for comparison
+                        start_aware = start_datetime.replace(
+                            tzinfo=timezone.utc)
+                        end_aware = end_datetime.replace(tzinfo=timezone.utc)
+                    except ValueError:
+                        continue
+
+                    # Events are ordered newest-first; stop once we're before our window
+                    if event_time < start_aware:
+                        reached_before_start = True
+                        break
+
+                    if event_time > end_aware:
+                        continue
+
+                    if event_type == 'PushEvent':
+                        repo_name = event.get('repo', {}).get('name', '')
+                        if repo_name.startswith(f"{GITHUB_ORG}/"):
+                            active_repos.add(repo_name)
+
+                if reached_before_start:
+                    break
+
+                page += 1
+
+            except requests.exceptions.RequestException as e:
+                logger.debug(f"Error fetching events for {username}: {e}")
+                break
+
+        logger.debug(
+            f"User {username}: Events API found {len(active_repos)} active repos")
+        return list(active_repos)
+
     def _get_user_active_repos(self, username: str, start_datetime: datetime,
                                end_datetime: datetime) -> List[str]:
-        """Get list of repos where user has contributions in the date range
+        """Get list of repos where user has contributions in the date range.
 
-        Uses contributionsCollection to identify which repos the user has worked on,
-        so we only fetch branches from relevant repos instead of all org repos.
+        Combines two sources:
+        1. contributionsCollection (GraphQL) - catches merged/default-branch commits
+        2. Events API (REST) - catches pushes to feature branches in open PRs that
+           contributionsCollection misses (GitHub only counts contributions on default
+           branches).
 
         Args:
             username: GitHub username
@@ -732,24 +823,36 @@ class GitHubFetcher:
 
         data = self._graphql_request(query, variables)
 
-        if not data or 'user' not in data or not data['user']:
+        # Extract repos from contributionsCollection
+        active_repos: Set[str] = set()
+        if data and 'user' in data and data['user']:
+            contributions_collection = data['user'].get(
+                'contributionsCollection', {})
+            commit_contributions = contributions_collection.get(
+                'commitContributionsByRepository', [])
+
+            for repo_contrib in commit_contributions:
+                repo_name = repo_contrib['repository']['nameWithOwner']
+                if repo_name.startswith(f"{GITHUB_ORG}/"):
+                    active_repos.add(repo_name)
+        else:
             logger.debug(f"No contribution data found for user {username}")
-            return []
 
-        contributions_collection = data['user'].get(
-            'contributionsCollection', {})
-        commit_contributions = contributions_collection.get(
-            'commitContributionsByRepository', [])
+        # Also check Events API to pick up pushes to non-default branches
+        # (e.g. feature branches in open PRs that contributionsCollection misses)
+        event_repos = self._get_user_active_repos_from_events(
+            username, start_datetime, end_datetime)
+        new_from_events = set(event_repos) - active_repos
+        if new_from_events:
+            logger.debug(
+                f"User {username}: Events API added {len(new_from_events)} extra repo(s) "
+                f"not in contributionsCollection: {new_from_events}"
+            )
+        active_repos.update(event_repos)
 
-        # Extract repo names and filter to our organization
-        active_repos = []
-        for repo_contrib in commit_contributions:
-            repo_name = repo_contrib['repository']['nameWithOwner']
-            if repo_name.startswith(f"{GITHUB_ORG}/"):
-                active_repos.append(repo_name)
-
-        logger.debug(f"User {username}: Active in {len(active_repos)} repos")
-        return active_repos
+        logger.debug(
+            f"User {username}: Active in {len(active_repos)} repos (combined)")
+        return list(active_repos)
 
     def _fetch_commits_for_date(self, date_str: str, start_datetime: datetime,
                                 end_datetime: datetime, user_ids: Set[str]) -> Dict:
