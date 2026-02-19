@@ -77,20 +77,23 @@ GitHub GraphQL API      ─┘                              │
 
 ## 4. Key Design Decisions
 
-### 4.1 Commit Discovery: Events API as Sole Repo Source
+### 4.1 Commit Discovery: GraphQL Commit Search API
 
-**Decision (Feb 2026):** Repo discovery uses the GitHub REST Events API exclusively. The previous implementation merged two sources — `contributionsCollection` (GraphQL) and the Events API — but `contributionsCollection` only covers commits that land on the *default branch*, making it a strict subset of what the Events API already returns.
+**Decision:** Commit discovery uses GitHub's GraphQL `search(type: COMMIT)` API — one paginated query per user per day:
 
-**Current implementation in `github_fetcher.py`:**
+```
+author:{username} org:{GITHUB_ORG} committer-date:{start}..{end}
+```
 
-`_get_user_active_repos()` is a thin wrapper that delegates entirely to `_get_user_active_repos_from_events()`, which:
-- Paginates `GET /users/{login}/events` with `per_page=100`, up to 3 pages (= 300 events, GitHub's hard cap).
-- Filters to `PushEvent` records where `repo.name` starts with `dolr-ai/`.
-- Stops early once event timestamps fall before the query window (events are newest-first).
+This covers **all branches and all repos** in the org in a single query set per user with no repo pre-discovery step. It has no hard event cap (unlike the Events API which tops out at 300 events per user) and no default-branch restriction (unlike `contributionsCollection`).
 
-This correctly discovers repos with pushes on *any* branch. `contributionsCollection` was removed because it was redundant.
+**Why not Events API:** The Events API hard-caps at 300 events per user. High-volume contributors whose day's pushes exceed that cap disappear entirely from results. This was confirmed by a before/after diff showing 4 contributors (including the highest-volume committer at 14 commits) dropping to zero after a refresh.
 
-**Limitation:** The Events API only returns events from the last 30 days and caps at 300 events per user. For users with extremely high event volumes, older events in the window may be missed.
+**Why not contributionsCollection + Events API:** `contributionsCollection` only counts contributions that landed on the default branch. Feature-branch-only pushes require the Events API fallback — which then reintroduces the 300-event cap problem.
+
+**Search rate limit:** The `search` resource has a separate rate limit bucket from `graphql` (30 requests/minute). `_fetch_commits_for_user_via_search()` calls `_check_rate_limit_and_wait(resource_type='search')` before each page request.
+
+**`branches` field:** The commit search API does not return branch information. The `branches` field is set to `[]` in every commit record to preserve cache schema compatibility.
 
 ### 4.2 Commit Deduplication
 
@@ -190,9 +193,8 @@ When adding a new config variable:
 ### `github_fetcher.py`
 
 - Single public method: `fetch_commits(start_date, end_date, user_ids, force_refresh)` — returns raw dict and writes cache.
-- `_get_user_active_repos()` — thin wrapper; delegates entirely to `_get_user_active_repos_from_events()`.
-- `_get_user_active_repos_from_events()` — REST Events API; `per_page=100`, up to 3 pages (300 events cap); stops early when past the time window; filters to `dolr-ai/` PushEvents.
-- `_fetch_commits_for_date()` — inner loop: repo → branch → commit; deduplicates by SHA.
+- `_fetch_commits_for_user_via_search(username, date_str, start_datetime, end_datetime)` — GraphQL commit search per user; paginates with `pageInfo`; filters bots; returns list of commit dicts. Each dict has `branches: []` for schema compatibility (search API does not expose branch info).
+- `_fetch_commits_for_date(date_str, start_datetime, end_datetime, user_ids)` — calls `_fetch_commits_for_user_via_search` for each user, deduplicates by SHA, then calls `_fetch_closed_issues_for_user` for each user.
 - `_fetch_closed_issues_for_user()` — GraphQL; filters by assignee + closed date + org.
 
 ### `cache_manager.py`

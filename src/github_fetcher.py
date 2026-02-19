@@ -476,34 +476,6 @@ class GitHubFetcher:
             f"Found {len(issues)} closed issues for {username} in date range")
         return issues
 
-    @retry_with_exponential_backoff(max_retries=5, base_delay=60)
-    def _fetch_commit_branches(self, repo_full_name: str, commit_sha: str) -> List[str]:
-        """Fetch list of branch names containing the given commit
-
-        Uses GitHub REST API endpoint: /repos/{owner}/{repo}/commits/{sha}/branches-where-head
-
-        Args:
-            repo_full_name: Full repository name (e.g., 'dolr-ai/repo-name')
-            commit_sha: Commit SHA to look up
-
-        Returns:
-            List of branch names containing this commit
-        """
-        try:
-            endpoint = f"/repos/{repo_full_name}/commits/{commit_sha}/branches-where-head"
-            data = self._api_request(endpoint)
-
-            if data is None:
-                return []
-
-            # Extract branch names from response
-            branch_names = [branch['name'] for branch in data]
-            return branch_names
-
-        except Exception as e:
-            logger.debug(f"Error fetching branches for {commit_sha[:7]}: {e}")
-            return []
-
     def _is_bot_commit(self, commit_data: Dict) -> bool:
         """Check if a commit is from a bot
 
@@ -535,370 +507,234 @@ class GitHubFetcher:
             # If we can't determine, assume it's not a bot
             return False
 
-    def _get_user_active_repos_from_events(self, username: str, start_datetime: datetime,
-                                           end_datetime: datetime) -> List[str]:
-        """Get list of repos where user has pushed commits, using the Events API.
+    def _fetch_commits_for_user_via_search(self, username: str, date_str: str,
+                                           start_datetime: datetime,
+                                           end_datetime: datetime) -> List[Dict]:
+        """Fetch all commits by a user in the org for a date using GraphQL commit search.
 
-        Captures pushes to ALL branches by paginating /users/{login}/events and
-        collecting PushEvent records filtered to the dolr-ai org.
-        GitHub hard-caps this endpoint at 300 events (last 30 days).
-        Using per_page=100 reaches the cap in 3 requests instead of 10.
+        Uses GitHub's ``search(type: COMMIT)`` API which queries across ALL branches
+        and ALL repos in the org in a single paginated query per user.  This avoids
+        the 300-event hard cap of the Events API and the N×M (repos × branches) cost
+        of the old contributionsCollection approach.
+
+        Search rate limit is a separate bucket from the core GraphQL limit
+        (30 requests / minute).  The existing ``_check_rate_limit_and_wait`` helper
+        accepts a ``resource_type`` argument and is reused here with ``'search'``.
 
         Args:
-            username: GitHub username
-            start_datetime: Start datetime for filtering
-            end_datetime: End datetime for filtering
+            username: GitHub login to search commits for.
+            date_str: ISO date string (YYYY-MM-DD) used for logging only.
+            start_datetime: Start of the time window (naive UTC assumed).
+            end_datetime: End of the time window (naive UTC assumed).
 
         Returns:
-            List of repository full names (owner/repo) where user has pushed commits
+            List of commit dicts in the cache schema:
+            ``{sha, author, repository, timestamp, message, stats, branches}``.
+            ``branches`` is always ``[]`` — the search API does not expose branch info
+            but the field is kept for cache-schema compatibility.
         """
-        active_repos: Set[str] = set()
-        page = 1
+        search_query_template = (
+            'author:{username} org:{org} committer-date:{start}..{end}'
+        )
+        search_query_str = search_query_template.format(
+            username=username,
+            org=GITHUB_ORG,
+            start=start_datetime.strftime('%Y-%m-%dT%H:%M:%SZ'),
+            end=end_datetime.strftime('%Y-%m-%dT%H:%M:%SZ'),
+        )
 
-        # 3 pages × 100 events = 300 events (GitHub hard cap)
-        while page <= 3:
-            endpoint = f"/users/{username}/events"
-            params = {'per_page': 100, 'page': page}
+        graphql_query = """
+        query($searchQuery: String!, $cursor: String) {
+          search(query: $searchQuery, type: COMMIT, first: 100, after: $cursor) {
+            nodes {
+              ... on Commit {
+                oid
+                message
+                committedDate
+                additions
+                deletions
+                author {
+                  name
+                  email
+                  user {
+                    login
+                  }
+                }
+                repository {
+                  nameWithOwner
+                }
+              }
+            }
+            pageInfo {
+              hasNextPage
+              endCursor
+            }
+          }
+        }
+        """
 
-            # Use session headers for auth (REST API)
-            try:
-                headers = self.session.headers.copy()
-                headers['Authorization'] = f'token {GITHUB_TOKEN}'
-                headers['Accept'] = 'application/vnd.github.v3+json'
-                response = requests.get(
-                    f"{self.base_url}{endpoint}", params=params,
-                    headers=headers, timeout=30
+        commits: List[Dict] = []
+        seen_shas: Set[str] = set()
+        cursor: Optional[str] = None
+        page_num = 0
+
+        while True:
+            # Respect the search rate-limit bucket before each request
+            self._check_rate_limit_and_wait(
+                min_remaining=5, resource_type='search')
+
+            variables = {'searchQuery': search_query_str, 'cursor': cursor}
+            data = self._graphql_request(graphql_query, variables)
+
+            if not data or 'search' not in data:
+                logger.debug(
+                    f"No search data returned for {username} on {date_str} (page {page_num})"
                 )
-
-                if response.status_code == 404:
-                    logger.debug(f"Events not accessible for {username}")
-                    break
-
-                response.raise_for_status()
-                events = response.json()
-
-                if not events:
-                    break
-
-                reached_before_start = False
-                for event in events:
-                    event_type = event.get('type')
-                    created_at_str = event.get('created_at', '')
-
-                    if not created_at_str:
-                        continue
-
-                    try:
-                        event_time = datetime.fromisoformat(
-                            created_at_str.replace('Z', '+00:00'))
-                        # Make start/end timezone-aware for comparison
-                        start_aware = start_datetime.replace(
-                            tzinfo=timezone.utc)
-                        end_aware = end_datetime.replace(tzinfo=timezone.utc)
-                    except ValueError:
-                        continue
-
-                    # Events are ordered newest-first; stop once we're before our window
-                    if event_time < start_aware:
-                        reached_before_start = True
-                        break
-
-                    if event_time > end_aware:
-                        continue
-
-                    if event_type == 'PushEvent':
-                        repo_name = event.get('repo', {}).get('name', '')
-                        if repo_name.startswith(f"{GITHUB_ORG}/"):
-                            active_repos.add(repo_name)
-
-                if reached_before_start:
-                    break
-
-                page += 1
-
-            except requests.exceptions.RequestException as e:
-                logger.debug(f"Error fetching events for {username}: {e}")
                 break
 
+            search = data['search']
+            nodes = search.get('nodes', [])
+            page_info = search.get('pageInfo', {})
+            page_num += 1
+
+            for node in nodes:
+                try:
+                    sha = node.get('oid', '')
+                    if not sha or sha in seen_shas:
+                        continue
+
+                    # Filter to target org only (search can occasionally return
+                    # results from forks in other orgs)
+                    repo_name = node.get('repository', {}).get(
+                        'nameWithOwner', '')
+                    if not repo_name.startswith(f"{GITHUB_ORG}/"):
+                        continue
+
+                    # Bot filtering — build a surrogate commit_data dict that
+                    # matches the shape _is_bot_commit() expects
+                    author_node = node.get('author') or {}
+                    author_user = author_node.get('user') or {}
+                    author_login = author_user.get('login', '')
+                    author_name = author_node.get('name', '')
+                    author_email = author_node.get('email', '')
+
+                    surrogate = {
+                        'author': {'type': 'User', 'login': author_login},
+                        'commit': {
+                            'author': {
+                                'name': author_name,
+                                'email': author_email,
+                            }
+                        },
+                    }
+                    if self._is_bot_commit(surrogate):
+                        continue
+
+                    # The search is already scoped to the author login, but
+                    # double-check in case co-authored commits slip through.
+                    if author_login and author_login.lower() != username.lower():
+                        continue
+
+                    additions = node.get('additions', 0) or 0
+                    deletions = node.get('deletions', 0) or 0
+
+                    commit_entry = {
+                        'sha': sha,
+                        'author': author_login or username,
+                        'repository': repo_name,
+                        'timestamp': node.get('committedDate', ''),
+                        'message': (node.get('message') or '').split('\n')[0][:100],
+                        'stats': {
+                            'additions': additions,
+                            'deletions': deletions,
+                            'total': additions + deletions,
+                        },
+                        # Search API does not return branch info; kept for schema
+                        # compatibility so downstream code does not break.
+                        'branches': [],
+                    }
+
+                    seen_shas.add(sha)
+                    commits.append(commit_entry)
+
+                except Exception as exc:
+                    logger.debug(
+                        f"Skipped search result node for {username}: {exc}")
+                    continue
+
+            if not page_info.get('hasNextPage'):
+                break
+
+            cursor = page_info.get('endCursor')
+
         logger.debug(
-            f"User {username}: Events API found {len(active_repos)} active repos")
-        return list(active_repos)
-
-    def _get_user_active_repos(self, username: str, start_datetime: datetime,
-                               end_datetime: datetime) -> List[str]:
-        """Get list of repos where user has pushed commits in the date range.
-
-        Uses the GitHub REST Events API exclusively. This captures pushes to ALL
-        branches (feature branches, open PRs, default branch) and is already
-        filtered to the dolr-ai org.
-
-        Args:
-            username: GitHub username
-            start_datetime: Start datetime for filtering
-            end_datetime: End datetime for filtering
-
-        Returns:
-            List of repository full names (owner/repo) where user has commits
-        """
-        return self._get_user_active_repos_from_events(
-            username, start_datetime, end_datetime
+            f"User {username} on {date_str}: {len(commits)} commits via search "
+            f"({page_num} page(s))"
         )
+        return commits
 
     def _fetch_commits_for_date(self, date_str: str, start_datetime: datetime,
                                 end_datetime: datetime, user_ids: Set[str]) -> Dict:
-        """Fetch commits for a specific date - queries only repos active for each user
+        """Fetch all commits and closed issues for a specific date.
 
-        Instead of fetching all branches from all org repos, this:
-        1. Identifies which repos each user has pushed to (via Events API)
-        2. Only fetches branches from those specific repos for that user
-        3. Still captures ALL branches, but avoids wasting API calls on repos where user has no activity
+        Commit discovery uses the GitHub GraphQL commit search API
+        (``search(type: COMMIT)``) which covers every branch and every repo in the
+        org in a single paginated query per user — no repo pre-discovery step, no
+        Events API, no 300-event cap.
 
         Args:
-            date_str: Date in YYYY-MM-DD format
-            start_datetime: Start datetime for filtering
-            end_datetime: End datetime for filtering
-            user_ids: Set of user IDs to track
+            date_str: Date in YYYY-MM-DD format.
+            start_datetime: Start datetime for filtering (naive UTC).
+            end_datetime: End datetime for filtering (naive UTC).
+            user_ids: Set of GitHub logins to track.
 
         Returns:
-            Dictionary with commits data
+            Dictionary with schema:
+            ``{date, commits: [...], issues: [...], issue_count}``.
         """
-        commits_data = []
-        commits_by_sha = {}
+        commits_data: List[Dict] = []
+        commits_by_sha: Dict[str, Dict] = {}
 
         try:
             logger.debug(
-                f"Fetching commits for {date_str} from {len(user_ids)} users")
+                f"Fetching commits for {date_str} from {len(user_ids)} users "
+                f"via GraphQL commit search"
+            )
 
-            # Step 1: For each user, identify repos where they have activity
-            user_repos = {}
             for username in user_ids:
-                active_repos = self._get_user_active_repos(
-                    username, start_datetime, end_datetime)
-                if active_repos:
-                    user_repos[username] = active_repos
+                user_commits = self._fetch_commits_for_user_via_search(
+                    username, date_str, start_datetime, end_datetime
+                )
 
-            if not user_repos:
-                logger.info(
-                    f"No active repos found for any user on {date_str}")
-                return {'date': date_str, 'commits': []}
+                for commit in user_commits:
+                    sha = commit['sha']
+                    if sha not in commits_by_sha:
+                        commits_by_sha[sha] = commit
+                        commits_data.append(commit)
+                    # If the same SHA was already added (e.g. two users share a
+                    # co-authored commit, which is rare), keep the first entry.
 
-            # Step 2: For each user, fetch all branches from their active repos
-            for username, repos in user_repos.items():
-                logger.debug(f"Processing {len(repos)} repos for {username}")
-
-                for repo_full_name in repos:
-                    owner, repo_short = repo_full_name.split('/')
-
-                    # First, fetch all branches (without commits)
-                    branches_query = """
-                    query($owner: String!, $repo: String!, $cursor: String) {
-                      repository(owner: $owner, name: $repo) {
-                        refs(refPrefix: "refs/heads/", first: 50, after: $cursor) {
-                          totalCount
-                          pageInfo {
-                            hasNextPage
-                            endCursor
-                          }
-                          nodes {
-                            name
-                          }
-                        }
-                      }
-                    }
-                    """
-
-                    branch_variables = {
-                        'owner': owner,
-                        'repo': repo_short,
-                        'cursor': None
-                    }
-
-                    # Collect all branch names first
-                    all_branches = []
-                    has_next_branch_page = True
-
-                    while has_next_branch_page:
-                        branch_data = self._graphql_request(
-                            branches_query, branch_variables)
-
-                        if not branch_data or 'repository' not in branch_data:
-                            logger.debug(
-                                f"Could not fetch branches for {repo_full_name}")
-                            break
-
-                        refs = branch_data['repository']['refs']
-                        branch_page_info = refs['pageInfo']
-                        has_next_branch_page = branch_page_info['hasNextPage']
-                        branch_variables['cursor'] = branch_page_info['endCursor']
-
-                        branches = refs.get('nodes', [])
-                        all_branches.extend([b['name'] for b in branches])
-
-                    # Now fetch commits for each branch with pagination
-                    repo_commit_count = 0
-                    total_branches_processed = len(all_branches)
-
-                    for branch_name in all_branches:
-                        # Query to fetch commits from a specific branch with pagination
-                        commits_query = f"""
-                        query($owner: String!, $repo: String!, $branch: String!, $cursor: String) {{
-                          repository(owner: $owner, name: $repo) {{
-                            ref(qualifiedName: $branch) {{
-                              target {{
-                                ... on Commit {{
-                                  history(first: 100, since: "{start_datetime.isoformat()}Z", until: "{end_datetime.isoformat()}Z", after: $cursor) {{
-                                    totalCount
-                                    pageInfo {{
-                                      hasNextPage
-                                      endCursor
-                                    }}
-                                    nodes {{
-                                      oid
-                                      author {{
-                                        user {{
-                                          login
-                                        }}
-                                        name
-                                        email
-                                      }}
-                                      committedDate
-                                      message
-                                      additions
-                                      deletions
-                                    }}
-                                  }}
-                                }}
-                              }}
-                            }}
-                          }}
-                        }}
-                        """
-
-                        commit_variables = {
-                            'owner': owner,
-                            'repo': repo_short,
-                            'branch': f"refs/heads/{branch_name}",
-                            'cursor': None
-                        }
-
-                        has_next_commit_page = True
-                        branch_commit_count = 0
-
-                        # Paginate through all commits in this branch
-                        while has_next_commit_page:
-                            commit_data = self._graphql_request(
-                                commits_query, commit_variables)
-
-                            if not commit_data or 'repository' not in commit_data:
-                                break
-
-                            ref = commit_data['repository'].get('ref')
-                            if not ref or not ref.get('target'):
-                                break
-
-                            history = ref['target'].get('history', {})
-                            commits = history.get('nodes', [])
-                            commit_page_info = history.get('pageInfo', {})
-
-                            has_next_commit_page = commit_page_info.get(
-                                'hasNextPage', False)
-                            commit_variables['cursor'] = commit_page_info.get(
-                                'endCursor')
-
-                            # Process commits from this page
-                            for commit in commits:
-                                try:
-                                    commit_sha = commit['oid']
-
-                                    # Check if we've already seen this commit
-                                    if commit_sha in commits_by_sha:
-                                        existing_commit = commits_by_sha[commit_sha]
-                                        if branch_name not in existing_commit['branches']:
-                                            existing_commit['branches'].append(
-                                                branch_name)
-                                        continue
-
-                                    # Get author info
-                                    author_data = commit.get('author', {})
-                                    author_user = author_data.get('user')
-
-                                    if not author_user:
-                                        continue
-
-                                    author_login = author_user.get('login')
-
-                                    # Only process commits from the current user
-                                    if author_login != username:
-                                        continue
-
-                                    # Check for bot commits
-                                    author_name = author_data.get('name', '')
-                                    author_email = author_data.get('email', '')
-                                    is_bot = False
-                                    for bot in KNOWN_BOTS:
-                                        if bot.lower() in author_name.lower() or bot.lower() in author_email.lower():
-                                            is_bot = True
-                                            break
-
-                                    if is_bot:
-                                        continue
-
-                                    # Extract commit data
-                                    commit_data = {
-                                        'sha': commit_sha,
-                                        'author': author_login,
-                                        'repository': repo_full_name,
-                                        'timestamp': commit.get('committedDate', ''),
-                                        'message': commit.get('message', '').split('\n')[0][:100],
-                                        'stats': {
-                                            'additions': commit.get('additions', 0),
-                                            'deletions': commit.get('deletions', 0),
-                                            'total': commit.get('additions', 0) + commit.get('deletions', 0)
-                                        },
-                                        'branches': [branch_name]
-                                    }
-
-                                    commits_by_sha[commit_sha] = commit_data
-                                    commits_data.append(commit_data)
-                                    repo_commit_count += 1
-                                    branch_commit_count += 1
-
-                                except Exception as e:
-                                    logger.debug(
-                                        f"Skipped commit in {repo_full_name}: {e}")
-                                    continue
-
-                        # Log if branch had commits
-                        if branch_commit_count > 0:
-                            logger.debug(
-                                f"Branch {branch_name}: fetched {branch_commit_count} commits (paginated)")
-
-                    if repo_commit_count > 0:
-                        logger.debug(
-                            f"User {username}: {repo_commit_count} commits from {repo_full_name} ({total_branches_processed} branches)"
-                        )
-
-        except Exception as e:
-            logger.error(f"Error fetching commits for {date_str}: {e}")
+        except Exception as exc:
+            logger.error(f"Error fetching commits for {date_str}: {exc}")
             import traceback
             logger.error(traceback.format_exc())
 
-        # Log summary
         unique_repos = len(set(c['repository'] for c in commits_data))
         unique_authors = len(set(c['author'] for c in commits_data))
         logger.info(
-            f"Date {date_str}: {len(commits_data)} commits from {unique_repos} repos, {unique_authors} authors"
+            f"Date {date_str}: {len(commits_data)} commits from "
+            f"{unique_repos} repos, {unique_authors} authors"
         )
 
-        # Fetch closed issues for each user
-        issues_data = []
+        # Fetch closed issues for each user (pure GraphQL — unchanged)
+        issues_data: List[Dict] = []
         logger.info(f"Fetching closed issues for {len(user_ids)} user(s)")
         for username in user_ids:
             user_issues = self._fetch_closed_issues_for_user(
                 username=username,
                 org=GITHUB_ORG,
                 start_date=start_datetime,
-                end_date=end_datetime
+                end_date=end_datetime,
             )
             issues_data.extend(user_issues)
 
