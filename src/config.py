@@ -47,19 +47,15 @@ class ExecutionMode(Enum):
     """
     Execution mode for the script.
 
-    FETCH: Fetch commits from GitHub, cache them, and process to output/
+    FETCH: Fetch commits from GitHub and cache them
     REFRESH: Force re-fetch for specified date range (overwrites cache)
-    CHART: Generate visualizations from existing processed data
     STATUS: Display current status (rate limits, cached data, etc.)
-    FETCH_AND_CHART: Fetch data and immediately generate charts (combined mode)
     LEADERBOARD: Generate and post daily/weekly leaderboards to Google Chat
     FETCH_AND_LEADERBOARD: Fetch data and immediately post leaderboard (combined mode)
     """
     FETCH = "fetch"
     REFRESH = "refresh"
-    CHART = "chart"
     STATUS = "status"
-    FETCH_AND_CHART = "fetch_and_chart"
     LEADERBOARD = "leaderboard"
     FETCH_AND_LEADERBOARD = "fetch_and_leaderboard"
 
@@ -71,12 +67,10 @@ class DateRangeMode(Enum):
     LAST_N_DAYS: Last N complete days (excludes today's incomplete data)
     CUSTOM_RANGE: Use specific START_DATE and END_DATE
     SPECIFIC_DATE: Single date (use START_DATE only)
-    ALL_CACHED: Use all dates that exist in cache (for CHART mode)
     """
     LAST_N_DAYS = "last_n_days"
     CUSTOM_RANGE = "custom_range"
     SPECIFIC_DATE = "specific_date"
-    ALL_CACHED = "all_cached"
 
 
 # ============================================================================
@@ -98,11 +92,9 @@ Can be overridden with command-line arguments:
     python src/main.py --mode fetch_and_leaderboard
 
 Examples:
-    MODE = ExecutionMode.FETCH       # Fetch and process new data
+    MODE = ExecutionMode.FETCH       # Fetch and cache new data
     MODE = ExecutionMode.REFRESH     # Re-fetch specific date range
-    MODE = ExecutionMode.CHART       # Generate charts from existing data
     MODE = ExecutionMode.STATUS      # Check status
-    MODE = ExecutionMode.FETCH_AND_CHART  # Fetch data and generate charts (combined)
     MODE = ExecutionMode.LEADERBOARD # Post leaderboard to Google Chat (daily/weekly)
     MODE = ExecutionMode.FETCH_AND_LEADERBOARD  # Fetch data and post leaderboard (combined)
 """
@@ -113,10 +105,9 @@ DATE_RANGE_MODE = DateRangeMode.LAST_N_DAYS
 How to determine the date range.
 
 Examples:
-    DATE_RANGE_MODE = DateRangeMode.LAST_N_DAYS     # Last 7 days (default)
+    DATE_RANGE_MODE = DateRangeMode.LAST_N_DAYS     # Last N days (default)
     DATE_RANGE_MODE = DateRangeMode.CUSTOM_RANGE    # Specific date range
     DATE_RANGE_MODE = DateRangeMode.SPECIFIC_DATE   # Single date
-    DATE_RANGE_MODE = DateRangeMode.ALL_CACHED      # All cached dates
 """
 
 DAYS_BACK = 30
@@ -173,9 +164,6 @@ GOOGLE_CHAT_TEST_KEY = os.getenv('GOOGLE_CHAT_TEST_KEY')
 
 GOOGLE_CHAT_TEST_TOKEN = os.getenv('GOOGLE_CHAT_TEST_TOKEN')
 """Google Chat webhook token for the test channel (loaded from .env file)"""
-
-REPORTS_BASE_URL = "https://dolr-ai.github.io/github-report-script/"
-"""Public URL where reports are hosted"""
 
 # --- Timezone Configuration ---
 IST_TIMEZONE = pytz.timezone('Asia/Kolkata')
@@ -238,8 +226,6 @@ Primary filtering uses GitHub API user type check.
 CACHE_DIR = 'cache'
 CACHE_COMMITS_DIR = os.path.join(CACHE_DIR, 'commits')
 CACHE_METADATA_FILE = os.path.join(CACHE_DIR, 'metadata.json')
-OUTPUT_DIR = 'output'
-REPORTS_DIR = 'docs'
 
 
 # ============================================================================
@@ -292,10 +278,6 @@ def get_date_range() -> tuple:
         date = datetime.strptime(START_DATE, '%Y-%m-%d')
         return date, date
 
-    elif DATE_RANGE_MODE == DateRangeMode.ALL_CACHED:
-        # Will be handled by reading actual cache
-        return None, None
-
     else:
         raise ValueError(f"Unknown DATE_RANGE_MODE: {DATE_RANGE_MODE}")
 
@@ -342,8 +324,7 @@ def validate_config():
 
     # Validate date range configuration
     try:
-        if DATE_RANGE_MODE != DateRangeMode.ALL_CACHED:
-            get_date_range()
+        get_date_range()
     except ValueError as e:
         errors.append(f"❌ Date range configuration error: {e}")
 
@@ -368,8 +349,7 @@ def validate_config():
 
 def display_config():
     """Display current configuration in a readable format."""
-    start_date, end_date = get_date_range(
-    ) if DATE_RANGE_MODE != DateRangeMode.ALL_CACHED else (None, None)
+    start_date, end_date = get_date_range()
 
     config_display = f"""
 {"="*70}
@@ -388,9 +368,6 @@ Date Range Mode:      {DATE_RANGE_MODE.value}"""
 Start Date:           {start_date.date()}
 End Date:             {end_date.date()}
 Days Covered:         {(end_date - start_date).days + 1}"""
-    elif DATE_RANGE_MODE == DateRangeMode.ALL_CACHED:
-        config_display += """
-Date Range:           All cached dates"""
 
     config_display += f"""
 

@@ -68,8 +68,9 @@ class TestGitHubFetcherUnit:
         assert fetcher.session.headers['Authorization'].startswith('bearer')
 
 
-class TestGetUserActiveReposFromEvents:
-    """Unit tests for _get_user_active_repos_from_events"""
+class TestFetchCommitsViaSearch:
+    """Unit tests for _fetch_commits_for_user_via_search — the REST commit
+    search approach."""
 
     def _make_fetcher(self):
         fetcher = GitHubFetcher(thread_count=1)
@@ -78,377 +79,231 @@ class TestGetUserActiveReposFromEvents:
             'Authorization': 'bearer test-token',
             'Content-Type': 'application/json',
         }
+        # Silence the search rate-limit check in unit tests
+        fetcher._check_rate_limit_and_wait = MagicMock()
+        # Silence per-commit stats fetches in unit tests (returns zeros)
+        fetcher._fetch_commit_stats = MagicMock(
+            return_value={'additions': 10, 'deletions': 2, 'total': 12}
+        )
         return fetcher
 
-    def _utc(self, dt: datetime) -> datetime:
-        return dt.replace(tzinfo=timezone.utc)
-
-    @pytest.mark.unit
-    def test_returns_org_repos_from_push_events(self):
-        """PushEvents within the window for the target org are returned."""
-        fetcher = self._make_fetcher()
-
-        start = datetime(2026, 2, 17, 0, 0, 0)
-        end = datetime(2026, 2, 17, 23, 59, 59)
-        event_time = "2026-02-17T12:00:00Z"
-
-        mock_response = MagicMock()
-        mock_response.status_code = 200
-        mock_response.json.return_value = [
-            {
-                'type': 'PushEvent',
-                'created_at': event_time,
-                'repo': {'name': f'{GITHUB_ORG}/yral-ai-chat'},
-            }
-        ]
-
-        # Second page returns empty list to stop pagination
-        mock_response_empty = MagicMock()
-        mock_response_empty.status_code = 200
-        mock_response_empty.json.return_value = []
-
-        with patch('requests.get', side_effect=[mock_response, mock_response_empty]):
-            result = fetcher._get_user_active_repos_from_events(
-                'joel-medicala-yral', start, end)
-
-        assert f'{GITHUB_ORG}/yral-ai-chat' in result
-
-    @pytest.mark.unit
-    def test_ignores_push_events_outside_window(self):
-        """PushEvents outside the time window are not returned."""
-        fetcher = self._make_fetcher()
-
-        start = datetime(2026, 2, 17, 0, 0, 0)
-        end = datetime(2026, 2, 17, 23, 59, 59)
-
-        mock_response = MagicMock()
-        mock_response.status_code = 200
-        # Event is one day before the window
-        mock_response.json.return_value = [
-            {
-                'type': 'PushEvent',
-                'created_at': '2026-02-16T12:00:00Z',
-                'repo': {'name': f'{GITHUB_ORG}/yral-ai-chat'},
-            }
-        ]
-
-        with patch('requests.get', return_value=mock_response):
-            result = fetcher._get_user_active_repos_from_events(
-                'joel-medicala-yral', start, end)
-
-        assert result == []
-
-    @pytest.mark.unit
-    def test_ignores_non_push_events(self):
-        """Non-PushEvent events (e.g. IssuesEvent) are not returned."""
-        fetcher = self._make_fetcher()
-
-        start = datetime(2026, 2, 17, 0, 0, 0)
-        end = datetime(2026, 2, 17, 23, 59, 59)
-
-        mock_response = MagicMock()
-        mock_response.status_code = 200
-        mock_response.json.return_value = [
-            {
-                'type': 'IssuesEvent',
-                'created_at': '2026-02-17T12:00:00Z',
-                'repo': {'name': f'{GITHUB_ORG}/yral-ai-chat'},
+    def _search_item(self, sha, login, repo, message='feat: test',
+                     committed_date='2026-02-17T12:00:00Z',
+                     author_name='Test User', author_email='test@example.com'):
+        """Build a single REST search result item matching the GitHub API shape."""
+        return {
+            'sha': sha,
+            'commit': {
+                'message': message,
+                'author': {
+                    'name': author_name,
+                    'email': author_email,
+                    'date': committed_date,
+                },
             },
-            {
-                'type': 'PullRequestEvent',
-                'created_at': '2026-02-17T13:00:00Z',
-                'repo': {'name': f'{GITHUB_ORG}/yral-ai-chat'},
-            },
+            'author': {'login': login, 'type': 'User'},
+            'repository': {'full_name': repo},
+        }
+
+    def _search_response(self, items, total_count=None):
+        """Build a REST search API response dict."""
+        return {
+            'total_count': total_count if total_count is not None else len(items),
+            'items': items,
+        }
+
+    @pytest.mark.unit
+    def test_returns_commits_for_user(self):
+        """Happy path: commits belonging to the queried user are returned."""
+        fetcher = self._make_fetcher()
+        start = datetime(2026, 2, 17, 0, 0, 0)
+        end = datetime(2026, 2, 17, 23, 59, 59)
+
+        item = self._search_item(
+            sha='abc123',
+            login='joel-medicala-yral',
+            repo=f'{GITHUB_ORG}/yral-ai-chat',
+        )
+        mock_resp = MagicMock()
+        mock_resp.status_code = 200
+        mock_resp.json.return_value = self._search_response([item])
+        mock_resp.raise_for_status = MagicMock()
+
+        with patch('requests.get', return_value=mock_resp):
+            result = fetcher._fetch_commits_for_user_via_search(
+                'joel-medicala-yral', '2026-02-17', start, end)
+
+        assert len(result) == 1
+        assert result[0]['sha'] == 'abc123'
+        assert result[0]['author'] == 'joel-medicala-yral'
+        assert result[0]['repository'] == f'{GITHUB_ORG}/yral-ai-chat'
+        assert result[0]['stats']['additions'] == 10
+        assert result[0]['stats']['deletions'] == 2
+        assert result[0]['stats']['total'] == 12
+
+    @pytest.mark.unit
+    def test_deduplicates_by_sha(self):
+        """The same SHA appearing in two pages is stored only once."""
+        fetcher = self._make_fetcher()
+        start = datetime(2026, 2, 17, 0, 0, 0)
+        end = datetime(2026, 2, 17, 23, 59, 59)
+
+        item = self._search_item(
+            sha='dup999',
+            login='joel-medicala-yral',
+            repo=f'{GITHUB_ORG}/yral-ai-chat',
+        )
+        # Page 1 returns the commit with total_count=1; pagination stops after 1 item
+        mock_resp = MagicMock()
+        mock_resp.status_code = 200
+        mock_resp.json.return_value = self._search_response([item], total_count=1)
+        mock_resp.raise_for_status = MagicMock()
+
+        with patch('requests.get', return_value=mock_resp):
+            result = fetcher._fetch_commits_for_user_via_search(
+                'joel-medicala-yral', '2026-02-17', start, end)
+
+        assert len(result) == 1
+
+    @pytest.mark.unit
+    def test_filters_out_other_org_repos(self):
+        """Commits from repos outside GITHUB_ORG are dropped."""
+        fetcher = self._make_fetcher()
+        start = datetime(2026, 2, 17, 0, 0, 0)
+        end = datetime(2026, 2, 17, 23, 59, 59)
+
+        outside_item = self._search_item(
+            sha='ext001',
+            login='joel-medicala-yral',
+            repo='some-other-org/some-repo',
+        )
+        mock_resp = MagicMock()
+        mock_resp.status_code = 200
+        mock_resp.json.return_value = self._search_response([outside_item])
+        mock_resp.raise_for_status = MagicMock()
+
+        with patch('requests.get', return_value=mock_resp):
+            result = fetcher._fetch_commits_for_user_via_search(
+                'joel-medicala-yral', '2026-02-17', start, end)
+
+        assert result == []
+
+    @pytest.mark.unit
+    def test_filters_bot_commits(self):
+        """Commits whose author name/email matches KNOWN_BOTS are dropped."""
+        fetcher = self._make_fetcher()
+        start = datetime(2026, 2, 17, 0, 0, 0)
+        end = datetime(2026, 2, 17, 23, 59, 59)
+
+        bot_item = self._search_item(
+            sha='bot001',
+            login='dependabot[bot]',
+            repo=f'{GITHUB_ORG}/yral-ai-chat',
+            author_name='dependabot[bot]',
+            author_email='dependabot@github.com',
+        )
+        bot_item['author']['type'] = 'Bot'
+        mock_resp = MagicMock()
+        mock_resp.status_code = 200
+        mock_resp.json.return_value = self._search_response([bot_item])
+        mock_resp.raise_for_status = MagicMock()
+
+        with patch('requests.get', return_value=mock_resp):
+            result = fetcher._fetch_commits_for_user_via_search(
+                'dependabot[bot]', '2026-02-17', start, end)
+
+        assert result == []
+
+    @pytest.mark.unit
+    def test_paginates_until_no_next_page(self):
+        """All pages are fetched when the first page is full (== per_page)."""
+        fetcher = self._make_fetcher()
+        start = datetime(2026, 2, 17, 0, 0, 0)
+        end = datetime(2026, 2, 17, 23, 59, 59)
+
+        item2 = self._search_item(
+            sha='sha002', login='joel-medicala-yral',
+            repo=f'{GITHUB_ORG}/repo-b')
+
+        # Build 100 unique items for page 1 (fills per_page, triggers page 2 fetch)
+        page1_items = [
+            self._search_item(
+                sha=f'sha{i:05d}', login='joel-medicala-yral',
+                repo=f'{GITHUB_ORG}/repo-a')
+            for i in range(100)
         ]
+        page1_resp = MagicMock()
+        page1_resp.status_code = 200
+        page1_resp.json.return_value = {'total_count': 101, 'items': page1_items}
+        page1_resp.raise_for_status = MagicMock()
 
-        mock_empty = MagicMock()
-        mock_empty.status_code = 200
-        mock_empty.json.return_value = []
+        # Page 2 returns 1 item — less than per_page, so pagination stops
+        page2_resp = MagicMock()
+        page2_resp.status_code = 200
+        page2_resp.json.return_value = {'total_count': 101, 'items': [item2]}
+        page2_resp.raise_for_status = MagicMock()
 
-        with patch('requests.get', side_effect=[mock_response, mock_empty]):
-            result = fetcher._get_user_active_repos_from_events(
-                'joel-medicala-yral', start, end)
+        with patch('requests.get', side_effect=[page1_resp, page2_resp]):
+            result = fetcher._fetch_commits_for_user_via_search(
+                'joel-medicala-yral', '2026-02-17', start, end)
+
+        assert len(result) == 101
+        assert 'sha002' in {c['sha'] for c in result}
+
+    @pytest.mark.unit
+    def test_returns_empty_on_no_results(self):
+        """An empty search result set returns an empty list without raising."""
+        fetcher = self._make_fetcher()
+        start = datetime(2026, 2, 17, 0, 0, 0)
+        end = datetime(2026, 2, 17, 23, 59, 59)
+
+        mock_resp = MagicMock()
+        mock_resp.status_code = 200
+        mock_resp.json.return_value = self._search_response([])
+        mock_resp.raise_for_status = MagicMock()
+
+        with patch('requests.get', return_value=mock_resp):
+            result = fetcher._fetch_commits_for_user_via_search(
+                'joel-medicala-yral', '2026-02-17', start, end)
 
         assert result == []
 
     @pytest.mark.unit
-    def test_ignores_repos_outside_org(self):
-        """PushEvents to repos outside GITHUB_ORG are filtered out."""
+    def test_returns_empty_on_request_failure(self):
+        """A network error from requests.get returns an empty list without raising."""
         fetcher = self._make_fetcher()
-
         start = datetime(2026, 2, 17, 0, 0, 0)
         end = datetime(2026, 2, 17, 23, 59, 59)
 
-        mock_response = MagicMock()
-        mock_response.status_code = 200
-        mock_response.json.return_value = [
-            {
-                'type': 'PushEvent',
-                'created_at': '2026-02-17T12:00:00Z',
-                'repo': {'name': 'some-other-org/repo'},
-            }
-        ]
-
-        mock_empty = MagicMock()
-        mock_empty.status_code = 200
-        mock_empty.json.return_value = []
-
-        with patch('requests.get', side_effect=[mock_response, mock_empty]):
-            result = fetcher._get_user_active_repos_from_events(
-                'joel-medicala-yral', start, end)
+        with patch('requests.get', side_effect=requests.exceptions.ConnectionError('network down')):
+            result = fetcher._fetch_commits_for_user_via_search(
+                'joel-medicala-yral', '2026-02-17', start, end)
 
         assert result == []
 
     @pytest.mark.unit
-    def test_deduplicates_repos(self):
-        """Multiple PushEvents to the same repo are returned only once."""
+    def test_branches_field_is_present_and_empty(self):
+        """Each returned commit has a 'branches' key (schema compat) set to []."""
         fetcher = self._make_fetcher()
-
-        start = datetime(2026, 2, 17, 0, 0, 0)
-        end = datetime(2026, 2, 17, 23, 59, 59)
-        repo = f'{GITHUB_ORG}/yral-ai-chat'
-
-        mock_response = MagicMock()
-        mock_response.status_code = 200
-        mock_response.json.return_value = [
-            {'type': 'PushEvent', 'created_at': '2026-02-17T10:00:00Z',
-                'repo': {'name': repo}},
-            {'type': 'PushEvent', 'created_at': '2026-02-17T11:00:00Z',
-                'repo': {'name': repo}},
-            {'type': 'PushEvent', 'created_at': '2026-02-17T12:00:00Z',
-                'repo': {'name': repo}},
-        ]
-
-        mock_empty = MagicMock()
-        mock_empty.status_code = 200
-        mock_empty.json.return_value = []
-
-        with patch('requests.get', side_effect=[mock_response, mock_empty]):
-            result = fetcher._get_user_active_repos_from_events(
-                'joel-medicala-yral', start, end)
-
-        assert result.count(repo) == 1
-
-    @pytest.mark.unit
-    def test_stops_pagination_when_events_before_window(self):
-        """Pagination stops early once events fall before the start of the window."""
-        fetcher = self._make_fetcher()
-
         start = datetime(2026, 2, 17, 0, 0, 0)
         end = datetime(2026, 2, 17, 23, 59, 59)
 
-        # First page has one in-window event followed by one pre-window event
-        mock_page1 = MagicMock()
-        mock_page1.status_code = 200
-        mock_page1.json.return_value = [
-            {
-                'type': 'PushEvent',
-                'created_at': '2026-02-17T12:00:00Z',
-                'repo': {'name': f'{GITHUB_ORG}/repo-a'},
-            },
-            {
-                'type': 'PushEvent',
-                'created_at': '2026-02-10T00:00:00Z',  # Before window
-                'repo': {'name': f'{GITHUB_ORG}/repo-b'},
-            },
-        ]
+        item = self._search_item(
+            sha='branchtest1',
+            login='joel-medicala-yral',
+            repo=f'{GITHUB_ORG}/yral-ai-chat',
+        )
+        mock_resp = MagicMock()
+        mock_resp.status_code = 200
+        mock_resp.json.return_value = self._search_response([item])
+        mock_resp.raise_for_status = MagicMock()
 
-        with patch('requests.get', return_value=mock_page1) as mock_get:
-            result = fetcher._get_user_active_repos_from_events(
-                'joel-medicala-yral', start, end)
+        with patch('requests.get', return_value=mock_resp):
+            result = fetcher._fetch_commits_for_user_via_search(
+                'joel-medicala-yral', '2026-02-17', start, end)
 
-        # Only repo-a should appear; pagination stopped after page 1
-        assert f'{GITHUB_ORG}/repo-a' in result
-        assert f'{GITHUB_ORG}/repo-b' not in result
-        assert mock_get.call_count == 1
-
-    @pytest.mark.unit
-    def test_handles_404_gracefully(self):
-        """A 404 from the Events API returns an empty list without raising."""
-        fetcher = self._make_fetcher()
-
-        start = datetime(2026, 2, 17, 0, 0, 0)
-        end = datetime(2026, 2, 17, 23, 59, 59)
-
-        mock_response = MagicMock()
-        mock_response.status_code = 404
-        mock_response.raise_for_status = MagicMock()
-
-        with patch('requests.get', return_value=mock_response):
-            result = fetcher._get_user_active_repos_from_events(
-                'private-user', start, end)
-
-        assert result == []
-
-    @pytest.mark.unit
-    def test_handles_request_exception_gracefully(self):
-        """A network error returns an empty list without raising."""
-        fetcher = self._make_fetcher()
-
-        start = datetime(2026, 2, 17, 0, 0, 0)
-        end = datetime(2026, 2, 17, 23, 59, 59)
-
-        with patch('requests.get', side_effect=requests.exceptions.ConnectionError("network down")):
-            result = fetcher._get_user_active_repos_from_events(
-                'joel-medicala-yral', start, end)
-
-        assert result == []
-
-
-class TestGetUserActiveReposCombined:
-    """Unit tests for _get_user_active_repos — verifies the two-source merge."""
-
-    def _make_fetcher(self):
-        fetcher = GitHubFetcher(thread_count=1)
-        fetcher.session = MagicMock()
-        return fetcher
-
-    @pytest.mark.unit
-    def test_merges_contributions_and_events(self):
-        """Repos from both contributionsCollection and Events API are returned."""
-        fetcher = self._make_fetcher()
-
-        start = datetime(2026, 2, 17, 0, 0, 0)
-        end = datetime(2026, 2, 17, 23, 59, 59)
-
-        graphql_repo = f'{GITHUB_ORG}/hot-or-not-web-leptos-ssr'
-        events_repo = f'{GITHUB_ORG}/yral-ai-chat'
-
-        fetcher._graphql_request = MagicMock(return_value={
-            'user': {
-                'contributionsCollection': {
-                    'commitContributionsByRepository': [
-                        {'repository': {'nameWithOwner': graphql_repo}}
-                    ]
-                }
-            }
-        })
-        fetcher._get_user_active_repos_from_events = MagicMock(
-            return_value=[events_repo])
-
-        result = fetcher._get_user_active_repos(
-            'joel-medicala-yral', start, end)
-
-        assert graphql_repo in result
-        assert events_repo in result
-
-    @pytest.mark.unit
-    def test_deduplicates_across_sources(self):
-        """A repo appearing in both sources is not duplicated in the result."""
-        fetcher = self._make_fetcher()
-
-        start = datetime(2026, 2, 17, 0, 0, 0)
-        end = datetime(2026, 2, 17, 23, 59, 59)
-        shared_repo = f'{GITHUB_ORG}/yral-ai-chat'
-
-        fetcher._graphql_request = MagicMock(return_value={
-            'user': {
-                'contributionsCollection': {
-                    'commitContributionsByRepository': [
-                        {'repository': {'nameWithOwner': shared_repo}}
-                    ]
-                }
-            }
-        })
-        fetcher._get_user_active_repos_from_events = MagicMock(
-            return_value=[shared_repo])
-
-        result = fetcher._get_user_active_repos(
-            'joel-medicala-yral', start, end)
-
-        assert result.count(shared_repo) == 1
-
-    @pytest.mark.unit
-    def test_returns_events_repos_when_contributions_empty(self):
-        """When contributionsCollection is empty (feature-branch-only work),
-        repos from the Events API are still returned."""
-        fetcher = self._make_fetcher()
-
-        start = datetime(2026, 2, 17, 0, 0, 0)
-        end = datetime(2026, 2, 17, 23, 59, 59)
-        events_repo = f'{GITHUB_ORG}/yral-ai-chat'
-
-        # contributionsCollection returns nothing (commits not on default branch)
-        fetcher._graphql_request = MagicMock(return_value={
-            'user': {
-                'contributionsCollection': {
-                    'commitContributionsByRepository': []
-                }
-            }
-        })
-        fetcher._get_user_active_repos_from_events = MagicMock(
-            return_value=[events_repo])
-
-        result = fetcher._get_user_active_repos(
-            'joel-medicala-yral', start, end)
-
-        assert events_repo in result
-
-    @pytest.mark.unit
-    def test_returns_contributions_repos_when_events_empty(self):
-        """When the Events API returns nothing, repos from contributionsCollection
-        are still returned."""
-        fetcher = self._make_fetcher()
-
-        start = datetime(2026, 2, 17, 0, 0, 0)
-        end = datetime(2026, 2, 17, 23, 59, 59)
-        graphql_repo = f'{GITHUB_ORG}/hot-or-not-web-leptos-ssr'
-
-        fetcher._graphql_request = MagicMock(return_value={
-            'user': {
-                'contributionsCollection': {
-                    'commitContributionsByRepository': [
-                        {'repository': {'nameWithOwner': graphql_repo}}
-                    ]
-                }
-            }
-        })
-        fetcher._get_user_active_repos_from_events = MagicMock(return_value=[])
-
-        result = fetcher._get_user_active_repos(
-            'joel-medicala-yral', start, end)
-
-        assert graphql_repo in result
-
-    @pytest.mark.unit
-    def test_returns_empty_when_both_sources_empty(self):
-        """Returns an empty list when both sources have no data."""
-        fetcher = self._make_fetcher()
-
-        start = datetime(2026, 2, 17, 0, 0, 0)
-        end = datetime(2026, 2, 17, 23, 59, 59)
-
-        fetcher._graphql_request = MagicMock(return_value={
-            'user': {
-                'contributionsCollection': {
-                    'commitContributionsByRepository': []
-                }
-            }
-        })
-        fetcher._get_user_active_repos_from_events = MagicMock(return_value=[])
-
-        result = fetcher._get_user_active_repos(
-            'joel-medicala-yral', start, end)
-
-        assert result == []
-
-    @pytest.mark.unit
-    def test_handles_graphql_failure_gracefully(self):
-        """When the GraphQL call fails, events repos are still returned."""
-        fetcher = self._make_fetcher()
-
-        start = datetime(2026, 2, 17, 0, 0, 0)
-        end = datetime(2026, 2, 17, 23, 59, 59)
-        events_repo = f'{GITHUB_ORG}/yral-ai-chat'
-
-        fetcher._graphql_request = MagicMock(return_value=None)
-        fetcher._get_user_active_repos_from_events = MagicMock(
-            return_value=[events_repo])
-
-        result = fetcher._get_user_active_repos(
-            'joel-medicala-yral', start, end)
-
-        assert events_repo in result
+        assert 'branches' in result[0]
+        assert result[0]['branches'] == []
 
 
 @pytest.mark.integration

@@ -26,9 +26,7 @@ Nightly script that:
 
 1. Fetches commit and issue activity across **all branches** of all repos in the `dolr-ai` GitHub org for a configured set of contributors.
 2. Caches raw data locally as JSON (`cache/commits/YYYY-MM-DD.json`).
-3. Processes it into per-user daily summaries (`output/{username}/YYYY-MM-DD.json`).
-4. Generates interactive HTML and static PNG/PDF charts (`docs/`).
-5. Posts a ranked **leaderboard** to a Google Chat space (production or test channel).
+3. Posts a ranked **leaderboard** to a Google Chat space (production or test channel).
 
 The leaderboard ranks contributors by: **issues closed → commits → lines of code (descending)**.
 
@@ -43,14 +41,10 @@ The leaderboard ranks contributors by: **issues closed → commits → lines of 
 │   ├── main.py                 # Entry point; CLI arg parsing; mode dispatch
 │   ├── github_fetcher.py       # GitHub API calls (GraphQL + REST Events API)
 │   ├── cache_manager.py        # Read/write JSON cache files
-│   ├── data_processor.py       # Aggregate raw cache → per-user output
-│   ├── chart_generator.py      # Plotly HTML + Matplotlib PNG/PDF reports
 │   ├── leaderboard_generator.py# Rank contributors; daily/weekly logic
 │   └── google_chat_poster.py   # Format & post messages to Google Chat
 ├── tests/                      # pytest test suite
 ├── cache/commits/              # Raw daily commit+issue JSON (gitignored runtime data)
-├── output/{username}/          # Processed per-user daily summaries
-├── docs/                       # Generated HTML reports (served via GitHub Pages)
 ├── ansible/                    # Ansible playbook for .env generation
 │   ├── vars/main.yml           # Plaintext vars referencing vault secrets
 │   ├── vars/vault.yml          # Ansible-vault-encrypted secrets (never commit plaintext)
@@ -58,7 +52,6 @@ The leaderboard ranks contributors by: **issues closed → commits → lines of 
 ├── documentation/              # All supplementary markdown docs
 │   ├── ARCHITECTURE.md         # Sequence diagrams and data-flow details
 │   ├── CI_SETUP.md             # GitHub Actions setup guide
-│   ├── IMPLEMENTATION_SUMMARY.md  # Branch visualisation feature notes
 │   ├── ISSUES_TRACKING_IMPLEMENTATION.md
 │   └── LEADERBOARD_SETUP.md
 ├── AGENTS.md                   # ← this file
@@ -71,40 +64,42 @@ The leaderboard ranks contributors by: **issues closed → commits → lines of 
 ## 3. Architecture & Data Flow
 
 ```
-GitHub GraphQL API  ──┐
-GitHub Events API   ──┤─► github_fetcher.py ─► cache/commits/YYYY-MM-DD.json
-                      │                             │
-                      │                     cache_manager.py
-                      │                             │
-                      └────────────────────► data_processor.py ─► output/{user}/YYYY-MM-DD.json
-                                                                        │
-                                                               chart_generator.py ─► docs/
-                                                                        │
-                                                           leaderboard_generator.py
-                                                                        │
-                                                           google_chat_poster.py ─► Google Chat
+GitHub REST Events API  ──► github_fetcher.py ─► cache/commits/YYYY-MM-DD.json
+GitHub GraphQL API      ─┘                              │
+                                                  cache_manager.py
+                                                          │
+                                             leaderboard_generator.py
+                                                          │
+                                             google_chat_poster.py ─► Google Chat
 ```
 
 ---
 
 ## 4. Key Design Decisions
 
-### 4.1 Commit Discovery: Two-Source Repo Detection
+### 4.1 Commit Discovery: REST Commit Search API
 
-**Problem solved (Feb 2026):** GitHub's `contributionsCollection` GraphQL API only counts commits that land on the *default branch*. Commits on unmerged feature branches (open PRs) were silently missed.
+**Decision:** Commit discovery uses GitHub's **REST** `GET /search/commits` API — one paginated request per user per day:
 
-**Solution in `github_fetcher.py`:**
+```
+author:{username} org:{GITHUB_ORG} committer-date:{start}..{end}
+```
 
-`_get_user_active_repos()` now merges two sources:
+This covers **all branches and all repos** in the org in a single paginated query set per user with no repo pre-discovery step. It has no hard event cap (unlike the Events API which tops out at 300 events per user) and no default-branch restriction (unlike `contributionsCollection`).
 
-| Source | API | What it catches |
-|--------|-----|-----------------|
-| `contributionsCollection` | GraphQL | Merged/default-branch commits |
-| `_get_user_active_repos_from_events()` | REST `/users/{login}/events` | `PushEvent`s on *any* branch |
+**Why not GraphQL `search(type: COMMIT)`:** GitHub's public GraphQL API does not support `COMMIT` as a `SearchType`. The valid enum values are `ISSUE`, `ISSUE_ADVANCED`, `REPOSITORY`, `USER`, and `DISCUSSION`. Any attempt to use `type: COMMIT` returns a schema validation error.
 
-The union of both sets is used as the repo list to search. Events are paginated up to 10 pages (300 events) and are stopped early once event timestamps fall before the query window.
+**Why not Events API:** The Events API hard-caps at 300 events per user. High-volume contributors whose day's pushes exceed that cap disappear entirely from results. This was confirmed by a before/after diff showing 4 contributors (including the highest-volume committer at 14 commits) dropping to zero after a refresh.
 
-**Implication:** Any future change to repo-discovery logic must preserve both sources.
+**Why not contributionsCollection + Events API:** `contributionsCollection` only counts contributions that landed on the default branch. Feature-branch-only pushes require the Events API fallback — which then reintroduces the 300-event cap problem.
+
+**Required header:** The REST commit search endpoint requires `Accept: application/vnd.github.cloak-preview+json`.
+
+**Search rate limit:** The `search` resource has a separate rate limit bucket (30 requests/minute). `_fetch_commits_for_user_via_search()` calls `_check_rate_limit_and_wait(resource_type='search')` before each page request.
+
+**Stats fetching:** The search response does not include per-commit additions/deletions. A follow-up call to `GET /repos/{owner}/{repo}/commits/{sha}` (core rate-limit bucket) is made for each commit via `_fetch_commit_stats()` to retrieve LOC data.
+
+**`branches` field:** The search API does not return branch information. The `branches` field is set to `[]` in every commit record to preserve cache schema compatibility.
 
 ### 4.2 Commit Deduplication
 
@@ -180,11 +175,9 @@ When adding a new config variable:
 
 | Mode | Description |
 |------|-------------|
-| `FETCH` | Fetch + cache + process only |
+| `FETCH` | Fetch + cache raw data only |
 | `REFRESH` | Force re-fetch for date range, overwrite cache |
-| `CHART` | Generate charts from existing processed data |
 | `STATUS` | Show cache status and rate limits |
-| `FETCH_AND_CHART` | FETCH then CHART |
 | `LEADERBOARD` | Generate + post leaderboard to Google Chat |
 | `FETCH_AND_LEADERBOARD` | FETCH then LEADERBOARD |
 
@@ -206,9 +199,10 @@ When adding a new config variable:
 ### `github_fetcher.py`
 
 - Single public method: `fetch_commits(start_date, end_date, user_ids, force_refresh)` — returns raw dict and writes cache.
-- `_get_user_active_repos()` — merges contributionsCollection + Events API.
-- `_get_user_active_repos_from_events()` — REST Events API, paginates up to 10 pages, stops early when past the time window.
-- `_fetch_commits_for_date()` — inner loop: repo → branch → commit; deduplicates by SHA.
+- `_fetch_commits_for_user_via_search(username, date_str, start_datetime, end_datetime)` — REST `GET /search/commits` per user; paginates by page number until `len(items) < per_page` or `len(commits) >= total_count`; filters bots; returns list of commit dicts. Each dict has `branches: []` for schema compatibility. Requires `Accept: application/vnd.github.cloak-preview+json` header.
+- `_fetch_commit_stats(repo_full_name, sha)` — REST `GET /repos/{owner}/{repo}/commits/{sha}`; returns `{additions, deletions, total}` for a single commit. Called once per commit found by search.
+- `_fetch_commits_for_date(date_str, start_datetime, end_datetime, user_ids)` — calls `_fetch_commits_for_user_via_search` for each user, deduplicates by SHA, then calls `_fetch_closed_issues_for_user` for each user.
+- `_check_rate_limit_and_wait(min_remaining, resource_type)` — accepts `resource_type` param (`'graphql'` or `'search'`) to check the appropriate rate limit bucket.
 - `_fetch_closed_issues_for_user()` — GraphQL; filters by assignee + closed date + org.
 
 ### `cache_manager.py`
@@ -217,18 +211,13 @@ When adding a new config variable:
 - Schema: `{date, commits: [{sha, author, repository, timestamp, message, stats, branches}], issues: [{...}], issue_count}`.
 - `validate_cache_structure()` checks for the `branches` field; returns False (triggering re-fetch) if missing.
 
-### `data_processor.py`
-
-- Reads cache, writes `output/{username}/YYYY-MM-DD.json`.
-- Output schema includes `branch_breakdown: {repo: {branch: {additions, deletions, total_loc, commit_count}}}`.
-- No deduplication at this stage — cache is already deduplicated.
-
 ### `leaderboard_generator.py`
 
 - `get_yesterday_ist()` / `get_last_7_days_ist()` — always uses IST.
 - `should_post_weekly()` — True if today (IST) is Monday.
 - `generate_daily_leaderboard()` / `generate_weekly_leaderboard()` — return `(contributors_by_impact, date_string)`.
 - `get_commits_breakdown()` / `get_issues_breakdown()` — detail data for the second message.
+- Reads directly from raw cache via `CacheManager.read_cache()` — does not use any intermediate processed output.
 
 ### `google_chat_poster.py`
 
@@ -277,10 +266,9 @@ pytest -m unit
 
 - **Workflow:** `.github/workflows/nightly-report.yml`
 - **Schedule:** 12:00 AM IST daily (06:30 UTC cron)
-- **Mode:** `FETCH_AND_LEADERBOARD` (fetches data and posts to production Google Chat)
+- **Mode:** `FETCH_AND_LEADERBOARD` (fetches data and posts to production Google Chat in one run)
 - **Secret:** `ANSIBLE_VAULT_PASSWORD` — used to decrypt vault and generate `.env` at runtime.
-- Reports are published to GitHub Pages from the `docs/` directory.
-- Weekly releases are created every Sunday with aggregated reports.
+- Only `cache/` is committed back to the repo after each run; there are no generated HTML reports or GitHub Pages deployment.
 
 See `documentation/CI_SETUP.md` for full setup instructions.
 

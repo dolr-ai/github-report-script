@@ -115,11 +115,14 @@ class GitHubFetcher:
             logger.warning(f"Could not check rate limit: {e}")
             return None
 
-    def _check_rate_limit_and_wait(self, min_remaining: int = 500) -> None:
-        """Check GraphQL rate limit and wait if needed
+    def _check_rate_limit_and_wait(self, min_remaining: int = 500, resource_type: str = 'graphql') -> None:
+        """Check GitHub API rate limit and wait if needed
 
         Args:
             min_remaining: Minimum remaining calls required to proceed
+            resource_type: The rate-limit resource bucket to check.
+                           Use 'graphql' for GraphQL API calls and 'search'
+                           for GraphQL search queries (separate 30 req/min bucket).
         """
         try:
             response = self.session.get(
@@ -127,9 +130,9 @@ class GitHubFetcher:
             response.raise_for_status()
             rate_data = response.json()
 
-            graphql_limit = rate_data.get('resources', {}).get('graphql', {})
-            remaining = graphql_limit.get('remaining', 0)
-            reset_timestamp = graphql_limit.get('reset', 0)
+            resource_limit = rate_data.get('resources', {}).get(resource_type, {})
+            remaining = resource_limit.get('remaining', 0)
+            reset_timestamp = resource_limit.get('reset', 0)
 
             if remaining < min_remaining:
                 # Calculate wait time
@@ -138,10 +141,10 @@ class GitHubFetcher:
 
                 if wait_seconds > 0:
                     logger.warning(
-                        f"GraphQL rate limit low ({remaining} remaining). "
+                        f"{resource_type} rate limit low ({remaining} remaining). "
                         f"Waiting {int(wait_seconds)}s until {reset_time.strftime('%H:%M:%S')}"
                     )
-                    time.sleep(wait_seconds + 5)  # Add 5s buffer
+                    time.sleep(wait_seconds + 2)  # Add 2s buffer
                     logger.info("Rate limit reset complete. Resuming...")
         except Exception as e:
             logger.warning(f"Could not check rate limit: {e}. Proceeding...")
@@ -476,34 +479,6 @@ class GitHubFetcher:
             f"Found {len(issues)} closed issues for {username} in date range")
         return issues
 
-    @retry_with_exponential_backoff(max_retries=5, base_delay=60)
-    def _fetch_commit_branches(self, repo_full_name: str, commit_sha: str) -> List[str]:
-        """Fetch list of branch names containing the given commit
-
-        Uses GitHub REST API endpoint: /repos/{owner}/{repo}/commits/{sha}/branches-where-head
-
-        Args:
-            repo_full_name: Full repository name (e.g., 'dolr-ai/repo-name')
-            commit_sha: Commit SHA to look up
-
-        Returns:
-            List of branch names containing this commit
-        """
-        try:
-            endpoint = f"/repos/{repo_full_name}/commits/{commit_sha}/branches-where-head"
-            data = self._api_request(endpoint)
-
-            if data is None:
-                return []
-
-            # Extract branch names from response
-            branch_names = [branch['name'] for branch in data]
-            return branch_names
-
-        except Exception as e:
-            logger.debug(f"Error fetching branches for {commit_sha[:7]}: {e}")
-            return []
-
     def _is_bot_commit(self, commit_data: Dict) -> bool:
         """Check if a commit is from a bot
 
@@ -535,640 +510,244 @@ class GitHubFetcher:
             # If we can't determine, assume it's not a bot
             return False
 
-    def _get_week_start_date(self, date: datetime) -> str:
-        """Get the start date (Sunday) of the week containing the given date
-
-        GitHub's contributor stats API groups data by week starting on Sunday.
+    def _fetch_commit_stats(self, repo_full_name: str, sha: str) -> Dict:
+        """Fetch additions/deletions for a single commit via the REST commits endpoint.
 
         Args:
-            date: The date to get the week start for
+            repo_full_name: e.g. ``dolr-ai/yral-backend``
+            sha: Full commit SHA.
 
         Returns:
-            ISO format date string (YYYY-MM-DD) of the Sunday starting that week
+            Dict with ``additions``, ``deletions``, ``total`` keys (all int, default 0).
         """
-        # Get the day of week (0=Monday, 6=Sunday)
-        weekday = date.weekday()
-        # Calculate days back to Sunday (Sunday is weekday 6)
-        days_to_sunday = (weekday + 1) % 7
-        week_start = date - timedelta(days=days_to_sunday)
-        return week_start.date().isoformat()
-
-    def _has_contributor_stats_for_week(self, date_str: str, username: str) -> bool:
-        """Check if we already have contributor stats for the week containing this date
-
-        Args:
-            date_str: Date string in YYYY-MM-DD format
-            username: GitHub username
-
-        Returns:
-            True if we have stats for this week cached
-        """
+        endpoint = f"/repos/{repo_full_name}/commits/{sha}"
         try:
-            cached_data = self.cache_manager.read_cache(date_str)
-            if not cached_data:
-                return False
+            data = self._api_request(endpoint)
+            if data and isinstance(data, dict):
+                stats = data.get('stats', {}) or {}
+                additions = stats.get('additions', 0) or 0
+                deletions = stats.get('deletions', 0) or 0
+                return {'additions': additions, 'deletions': deletions, 'total': additions + deletions}
+        except Exception as exc:
+            logger.debug(f"Could not fetch stats for {repo_full_name}@{sha[:8]}: {exc}")
+        return {'additions': 0, 'deletions': 0, 'total': 0}
 
-            contributor_stats = cached_data.get('contributor_stats', {})
-            user_stats = contributor_stats.get(username, {})
+    def _fetch_commits_for_user_via_search(self, username: str, date_str: str,
+                                           start_datetime: datetime,
+                                           end_datetime: datetime) -> List[Dict]:
+        """Fetch all commits by a user in the org for a date using the REST commit search API.
 
-            # If we have any stats for this user, it means we already fetched the weekly data
-            # GitHub stats API returns weekly data, so if we have it once, we have the whole week
-            return len(user_stats) > 0
-        except Exception as e:
-            logger.debug(f"Error checking cached stats for {date_str}: {e}")
-            return False
+        Uses GitHub's ``GET /search/commits`` REST endpoint which queries across
+        ALL branches and ALL repos in the org in a single paginated request per user.
+        This avoids the 300-event hard cap of the Events API and the N×M (repos ×
+        branches) cost of the old contributionsCollection approach.
 
-    @retry_with_exponential_backoff(max_retries=5, base_delay=60)
-    def _fetch_contributor_stats(self, repo_full_name: str, username: str,
-                                 start_date: datetime, end_date: datetime,
-                                 max_retries: int = 10) -> Dict:
-        """Fetch contributor statistics from GitHub's stats API
+        The search resource has a separate rate-limit bucket (30 req/min).
+        ``_check_rate_limit_and_wait(resource_type='search')`` is called before
+        each page request.
 
-        This API provides the authoritative commit counts and LOC that match
-        what GitHub shows in the contributors graph. It aggregates by week.
-
-        NOTE: This API can return 202 Accepted when stats need to be computed.
-        By default, we retry with exponential backoff. Set max_retries=1 to skip retries.
-
-        Args:
-            repo_full_name: Full repository name (e.g., 'dolr-ai/yral-mobile')
-            username: GitHub username
-            start_date: Start date for filtering
-            end_date: End date for filtering
-            max_retries: Maximum number of retry attempts (default: 10, use 1 for no retries)
-
-        Returns:
-            Dictionary with stats by date: {
-                'date': {'commits': X, 'additions': Y, 'deletions': Z}
-            }
-        """
-        try:
-            endpoint = f"/repos/{repo_full_name}/stats/contributors"
-
-            # Try up to max_retries times if we get 202 (stats being computed)
-            # Use exponential backoff: 5s, 10s, 15s, 20s, 30s, 40s, 50s, 60s, 90s, 120s
-            for attempt in range(max_retries):
-                data = self._api_request(endpoint)
-
-                # _api_request returns None or empty list for 202
-                if data is None or (isinstance(data, list) and len(data) == 0):
-                    if attempt < max_retries - 1:
-                        # Calculate backoff delay
-                        if attempt < 4:
-                            delay = 5 + (attempt * 5)  # 5, 10, 15, 20
-                        elif attempt < 7:
-                            delay = 30 + ((attempt - 4) * 10)  # 30, 40, 50
-                        else:
-                            delay = 60 + ((attempt - 7) * 30)  # 60, 90, 120
-
-                        logger.info(
-                            f"Stats API returned 202 for {repo_full_name}, waiting {delay}s (attempt {attempt + 1}/{max_retries})"
-                        )
-                        time.sleep(delay)
-                        continue
-                    else:
-                        logger.debug(
-                            f"Stats API still computing for {repo_full_name} after {max_retries} attempts, skipping"
-                        )
-                        return {}
-
-                # We got data, process it
-                break
-
-            if not data:
-                logger.debug(
-                    f"No contributor stats found for {repo_full_name}")
-                return {}
-
-            # Find the user's contribution data
-            user_data = None
-            for contributor in data:
-                author = contributor.get('author', {})
-                if author and author.get('login') == username:
-                    user_data = contributor
-                    break
-
-            if not user_data:
-                logger.debug(
-                    f"User {username} not found in contributor stats for {repo_full_name}")
-                return {}
-
-            # Extract weekly stats and convert to daily
-            weeks = user_data.get('weeks', [])
-            start_timestamp = int(start_date.timestamp())
-            end_timestamp = int(end_date.timestamp())
-
-            stats_by_date = {}
-
-            for week in weeks:
-                week_timestamp = week.get('w', 0)
-
-                # Skip weeks outside our date range
-                if week_timestamp < start_timestamp or week_timestamp > end_timestamp:
-                    continue
-
-                commits = week.get('c', 0)
-                additions = week.get('a', 0)
-                deletions = week.get('d', 0)
-
-                if commits > 0:
-                    # Convert timestamp to date
-                    week_date = datetime.fromtimestamp(week_timestamp).date()
-                    date_str = week_date.isoformat()
-
-                    stats_by_date[date_str] = {
-                        'commits': commits,
-                        'additions': additions,
-                        'deletions': deletions,
-                        'total': additions + deletions
-                    }
-
-            logger.debug(
-                f"Fetched contributor stats for {username} in {repo_full_name}: "
-                f"{len(stats_by_date)} weeks with activity"
-            )
-
-            return stats_by_date
-
-        except Exception as e:
-            logger.debug(
-                f"Error fetching contributor stats for {username} in {repo_full_name}: {e}")
-            return {}
-
-    def _get_user_active_repos_from_events(self, username: str, start_datetime: datetime,
-                                           end_datetime: datetime) -> List[str]:
-        """Get list of repos where user has pushed commits, using the Events API.
-
-        This captures pushes to ALL branches (including feature branches in open PRs),
-        which contributionsCollection misses because it only counts contributions that
-        appear on a repository's default branch or a fork's default branch.
+        Commit stats (additions/deletions) are not included in the search response
+        and are fetched with a follow-up call to
+        ``GET /repos/{owner}/{repo}/commits/{sha}`` (core rate-limit bucket).
 
         Args:
-            username: GitHub username
-            start_datetime: Start datetime for filtering
-            end_datetime: End datetime for filtering
+            username: GitHub login to search commits for.
+            date_str: ISO date string (YYYY-MM-DD) used for logging only.
+            start_datetime: Start of the time window (naive UTC assumed).
+            end_datetime: End of the time window (naive UTC assumed).
 
         Returns:
-            List of repository full names (owner/repo) where user has pushed commits
+            List of commit dicts in the cache schema:
+            ``{sha, author, repository, timestamp, message, stats, branches}``.
+            ``branches`` is always ``[]`` — the search API does not expose branch info
+            but the field is kept for cache-schema compatibility.
         """
-        active_repos: Set[str] = set()
+        search_query = (
+            f'author:{username} org:{GITHUB_ORG} '
+            f'committer-date:{start_datetime.strftime("%Y-%m-%dT%H:%M:%SZ")}'
+            f'..{end_datetime.strftime("%Y-%m-%dT%H:%M:%SZ")}'
+        )
+
+        commits: List[Dict] = []
+        seen_shas: Set[str] = set()
         page = 1
+        per_page = 100
 
-        # Limit to 10 pages (300 events) to avoid excessive API calls
-        while page <= 10:
-            endpoint = f"/users/{username}/events"
-            params = {'per_page': 30, 'page': page}
+        while True:
+            # Respect the search rate-limit bucket before each request
+            self._check_rate_limit_and_wait(min_remaining=5, resource_type='search')
 
-            # Use session headers for auth (REST API)
+            params = {
+                'q': search_query,
+                'per_page': per_page,
+                'page': page,
+                'sort': 'committer-date',
+                'order': 'desc',
+            }
+
             try:
-                headers = self.session.headers.copy()
-                headers['Authorization'] = f'token {GITHUB_TOKEN}'
-                headers['Accept'] = 'application/vnd.github.v3+json'
                 response = requests.get(
-                    f"{self.base_url}{endpoint}", params=params,
-                    headers=headers, timeout=30
+                    f'{self.base_url}/search/commits',
+                    params=params,
+                    headers={
+                        'Authorization': f'token {GITHUB_TOKEN}',
+                        # Required preview header for commit search
+                        'Accept': 'application/vnd.github.cloak-preview+json',
+                    },
+                    timeout=30,
                 )
 
-                if response.status_code == 404:
-                    logger.debug(f"Events not accessible for {username}")
-                    break
+                if response.status_code == 429 or (
+                    response.status_code == 403 and
+                    'rate limit' in response.text.lower()
+                ):
+                    wait = self._get_rate_limit_reset_time('search') or 60
+                    logger.warning(
+                        f"Search rate limit hit for {username}. Waiting {int(wait)}s."
+                    )
+                    time.sleep(wait + 2)
+                    continue
 
                 response.raise_for_status()
-                events = response.json()
+                result = response.json()
 
-                if not events:
-                    break
-
-                reached_before_start = False
-                for event in events:
-                    event_type = event.get('type')
-                    created_at_str = event.get('created_at', '')
-
-                    if not created_at_str:
-                        continue
-
-                    try:
-                        event_time = datetime.fromisoformat(
-                            created_at_str.replace('Z', '+00:00'))
-                        # Make start/end timezone-aware for comparison
-                        start_aware = start_datetime.replace(
-                            tzinfo=timezone.utc)
-                        end_aware = end_datetime.replace(tzinfo=timezone.utc)
-                    except ValueError:
-                        continue
-
-                    # Events are ordered newest-first; stop once we're before our window
-                    if event_time < start_aware:
-                        reached_before_start = True
-                        break
-
-                    if event_time > end_aware:
-                        continue
-
-                    if event_type == 'PushEvent':
-                        repo_name = event.get('repo', {}).get('name', '')
-                        if repo_name.startswith(f"{GITHUB_ORG}/"):
-                            active_repos.add(repo_name)
-
-                if reached_before_start:
-                    break
-
-                page += 1
-
-            except requests.exceptions.RequestException as e:
-                logger.debug(f"Error fetching events for {username}: {e}")
+            except Exception as exc:
+                logger.warning(
+                    f"REST search request failed for {username} on {date_str}: {exc}"
+                )
                 break
 
-        logger.debug(
-            f"User {username}: Events API found {len(active_repos)} active repos")
-        return list(active_repos)
+            items = result.get('items', [])
+            total_count = result.get('total_count', 0)
 
-    def _get_user_active_repos(self, username: str, start_datetime: datetime,
-                               end_datetime: datetime) -> List[str]:
-        """Get list of repos where user has contributions in the date range.
+            if not items:
+                break
 
-        Combines two sources:
-        1. contributionsCollection (GraphQL) - catches merged/default-branch commits
-        2. Events API (REST) - catches pushes to feature branches in open PRs that
-           contributionsCollection misses (GitHub only counts contributions on default
-           branches).
+            for item in items:
+                try:
+                    sha = item.get('sha', '')
+                    if not sha or sha in seen_shas:
+                        continue
 
-        Args:
-            username: GitHub username
-            start_datetime: Start datetime for filtering
-            end_datetime: End datetime for filtering
+                    repo_name = item.get('repository', {}).get('full_name', '')
+                    if not repo_name.startswith(f"{GITHUB_ORG}/"):
+                        continue
 
-        Returns:
-            List of repository full names (owner/repo) where user has commits
-        """
-        query = """
-        query($username: String!, $from: DateTime!, $to: DateTime!) {
-          user(login: $username) {
-            contributionsCollection(from: $from, to: $to) {
-              commitContributionsByRepository {
-                repository {
-                  nameWithOwner
-                }
-              }
-            }
-          }
-        }
-        """
+                    commit_detail = item.get('commit', {})
+                    author_detail = commit_detail.get('author', {}) or {}
+                    author_login = (item.get('author') or {}).get('login', '')
+                    author_name = author_detail.get('name', '')
+                    author_email = author_detail.get('email', '')
 
-        variables = {
-            'username': username,
-            'from': start_datetime.isoformat() + 'Z',
-            'to': end_datetime.isoformat() + 'Z'
-        }
+                    # Bot filtering
+                    surrogate = {
+                        'author': {
+                            'type': 'Bot' if (item.get('author') or {}).get('type') == 'Bot' else 'User',
+                            'login': author_login,
+                        },
+                        'commit': {
+                            'author': {'name': author_name, 'email': author_email}
+                        },
+                    }
+                    if self._is_bot_commit(surrogate):
+                        continue
 
-        data = self._graphql_request(query, variables)
+                    # Fetch per-commit stats (additions + deletions)
+                    stats = self._fetch_commit_stats(repo_name, sha)
 
-        # Extract repos from contributionsCollection
-        active_repos: Set[str] = set()
-        if data and 'user' in data and data['user']:
-            contributions_collection = data['user'].get(
-                'contributionsCollection', {})
-            commit_contributions = contributions_collection.get(
-                'commitContributionsByRepository', [])
+                    commit_entry = {
+                        'sha': sha,
+                        'author': author_login or username,
+                        'repository': repo_name,
+                        'timestamp': author_detail.get('date', ''),
+                        'message': (commit_detail.get('message') or '').split('\n')[0][:100],
+                        'stats': stats,
+                        # Search API does not return branch info; kept for
+                        # cache-schema compatibility.
+                        'branches': [],
+                    }
 
-            for repo_contrib in commit_contributions:
-                repo_name = repo_contrib['repository']['nameWithOwner']
-                if repo_name.startswith(f"{GITHUB_ORG}/"):
-                    active_repos.add(repo_name)
-        else:
-            logger.debug(f"No contribution data found for user {username}")
+                    seen_shas.add(sha)
+                    commits.append(commit_entry)
 
-        # Also check Events API to pick up pushes to non-default branches
-        # (e.g. feature branches in open PRs that contributionsCollection misses)
-        event_repos = self._get_user_active_repos_from_events(
-            username, start_datetime, end_datetime)
-        new_from_events = set(event_repos) - active_repos
-        if new_from_events:
-            logger.debug(
-                f"User {username}: Events API added {len(new_from_events)} extra repo(s) "
-                f"not in contributionsCollection: {new_from_events}"
-            )
-        active_repos.update(event_repos)
+                except Exception as exc:
+                    logger.debug(f"Skipped search result for {username}: {exc}")
+                    continue
+
+            # GitHub search API caps at 1000 results; stop if we have them all
+            if len(commits) >= total_count or len(items) < per_page:
+                break
+
+            page += 1
 
         logger.debug(
-            f"User {username}: Active in {len(active_repos)} repos (combined)")
-        return list(active_repos)
+            f"User {username} on {date_str}: {len(commits)} commits via REST search "
+            f"({page} page(s))"
+        )
+        return commits
 
     def _fetch_commits_for_date(self, date_str: str, start_datetime: datetime,
                                 end_datetime: datetime, user_ids: Set[str]) -> Dict:
-        """Fetch commits for a specific date - OPTIMIZED to query only relevant repos per user
+        """Fetch all commits and closed issues for a specific date.
 
-        Instead of fetching all branches from all org repos, this:
-        1. Identifies which repos each user has contributed to (via contributionsCollection)
-        2. Only fetches branches from those specific repos for that user
-        3. Still captures ALL branches, but avoids wasting API calls on repos where user has no activity
+        Commit discovery uses the GitHub REST commit search API
+        (``GET /search/commits``) which covers every branch and every repo in the
+        org in a single paginated query per user — no repo pre-discovery step, no
+        Events API, no 300-event cap.
 
         Args:
-            date_str: Date in YYYY-MM-DD format
-            start_datetime: Start datetime for filtering
-            end_datetime: End datetime for filtering
-            user_ids: Set of user IDs to track
+            date_str: Date in YYYY-MM-DD format.
+            start_datetime: Start datetime for filtering (naive UTC).
+            end_datetime: End datetime for filtering (naive UTC).
+            user_ids: Set of GitHub logins to track.
 
         Returns:
-            Dictionary with commits data
+            Dictionary with schema:
+            ``{date, commits: [...], issues: [...], issue_count}``.
         """
-        commits_data = []
-        commits_by_sha = {}
+        commits_data: List[Dict] = []
+        commits_by_sha: Dict[str, Dict] = {}
 
         try:
             logger.debug(
-                f"Fetching commits for {date_str} from {len(user_ids)} users")
+                f"Fetching commits for {date_str} from {len(user_ids)} users "
+                f"via GraphQL commit search"
+            )
 
-            # Step 1: For each user, identify repos where they have activity
-            user_repos = {}
             for username in user_ids:
-                active_repos = self._get_user_active_repos(
-                    username, start_datetime, end_datetime)
-                if active_repos:
-                    user_repos[username] = active_repos
+                user_commits = self._fetch_commits_for_user_via_search(
+                    username, date_str, start_datetime, end_datetime
+                )
 
-            if not user_repos:
-                logger.info(
-                    f"No active repos found for any user on {date_str}")
-                return {'date': date_str, 'commits': []}
+                for commit in user_commits:
+                    sha = commit['sha']
+                    if sha not in commits_by_sha:
+                        commits_by_sha[sha] = commit
+                        commits_data.append(commit)
+                    # If the same SHA was already added (e.g. two users share a
+                    # co-authored commit, which is rare), keep the first entry.
 
-            # Step 2: For each user, fetch all branches from their active repos
-            for username, repos in user_repos.items():
-                logger.debug(f"Processing {len(repos)} repos for {username}")
-
-                for repo_full_name in repos:
-                    owner, repo_short = repo_full_name.split('/')
-
-                    # First, fetch all branches (without commits)
-                    branches_query = """
-                    query($owner: String!, $repo: String!, $cursor: String) {
-                      repository(owner: $owner, name: $repo) {
-                        refs(refPrefix: "refs/heads/", first: 50, after: $cursor) {
-                          totalCount
-                          pageInfo {
-                            hasNextPage
-                            endCursor
-                          }
-                          nodes {
-                            name
-                          }
-                        }
-                      }
-                    }
-                    """
-
-                    branch_variables = {
-                        'owner': owner,
-                        'repo': repo_short,
-                        'cursor': None
-                    }
-
-                    # Collect all branch names first
-                    all_branches = []
-                    has_next_branch_page = True
-
-                    while has_next_branch_page:
-                        branch_data = self._graphql_request(
-                            branches_query, branch_variables)
-
-                        if not branch_data or 'repository' not in branch_data:
-                            logger.debug(
-                                f"Could not fetch branches for {repo_full_name}")
-                            break
-
-                        refs = branch_data['repository']['refs']
-                        branch_page_info = refs['pageInfo']
-                        has_next_branch_page = branch_page_info['hasNextPage']
-                        branch_variables['cursor'] = branch_page_info['endCursor']
-
-                        branches = refs.get('nodes', [])
-                        all_branches.extend([b['name'] for b in branches])
-
-                    # Now fetch commits for each branch with pagination
-                    repo_commit_count = 0
-                    total_branches_processed = len(all_branches)
-
-                    for branch_name in all_branches:
-                        # Query to fetch commits from a specific branch with pagination
-                        commits_query = f"""
-                        query($owner: String!, $repo: String!, $branch: String!, $cursor: String) {{
-                          repository(owner: $owner, name: $repo) {{
-                            ref(qualifiedName: $branch) {{
-                              target {{
-                                ... on Commit {{
-                                  history(first: 100, since: "{start_datetime.isoformat()}Z", until: "{end_datetime.isoformat()}Z", after: $cursor) {{
-                                    totalCount
-                                    pageInfo {{
-                                      hasNextPage
-                                      endCursor
-                                    }}
-                                    nodes {{
-                                      oid
-                                      author {{
-                                        user {{
-                                          login
-                                        }}
-                                        name
-                                        email
-                                      }}
-                                      committedDate
-                                      message
-                                      additions
-                                      deletions
-                                    }}
-                                  }}
-                                }}
-                              }}
-                            }}
-                          }}
-                        }}
-                        """
-
-                        commit_variables = {
-                            'owner': owner,
-                            'repo': repo_short,
-                            'branch': f"refs/heads/{branch_name}",
-                            'cursor': None
-                        }
-
-                        has_next_commit_page = True
-                        branch_commit_count = 0
-
-                        # Paginate through all commits in this branch
-                        while has_next_commit_page:
-                            commit_data = self._graphql_request(
-                                commits_query, commit_variables)
-
-                            if not commit_data or 'repository' not in commit_data:
-                                break
-
-                            ref = commit_data['repository'].get('ref')
-                            if not ref or not ref.get('target'):
-                                break
-
-                            history = ref['target'].get('history', {})
-                            commits = history.get('nodes', [])
-                            commit_page_info = history.get('pageInfo', {})
-
-                            has_next_commit_page = commit_page_info.get(
-                                'hasNextPage', False)
-                            commit_variables['cursor'] = commit_page_info.get(
-                                'endCursor')
-
-                            # Process commits from this page
-                            for commit in commits:
-                                try:
-                                    commit_sha = commit['oid']
-
-                                    # Check if we've already seen this commit
-                                    if commit_sha in commits_by_sha:
-                                        existing_commit = commits_by_sha[commit_sha]
-                                        if branch_name not in existing_commit['branches']:
-                                            existing_commit['branches'].append(
-                                                branch_name)
-                                        continue
-
-                                    # Get author info
-                                    author_data = commit.get('author', {})
-                                    author_user = author_data.get('user')
-
-                                    if not author_user:
-                                        continue
-
-                                    author_login = author_user.get('login')
-
-                                    # Only process commits from the current user
-                                    if author_login != username:
-                                        continue
-
-                                    # Check for bot commits
-                                    author_name = author_data.get('name', '')
-                                    author_email = author_data.get('email', '')
-                                    is_bot = False
-                                    for bot in KNOWN_BOTS:
-                                        if bot.lower() in author_name.lower() or bot.lower() in author_email.lower():
-                                            is_bot = True
-                                            break
-
-                                    if is_bot:
-                                        continue
-
-                                    # Extract commit data
-                                    commit_data = {
-                                        'sha': commit_sha,
-                                        'author': author_login,
-                                        'repository': repo_full_name,
-                                        'timestamp': commit.get('committedDate', ''),
-                                        'message': commit.get('message', '').split('\n')[0][:100],
-                                        'stats': {
-                                            'additions': commit.get('additions', 0),
-                                            'deletions': commit.get('deletions', 0),
-                                            'total': commit.get('additions', 0) + commit.get('deletions', 0)
-                                        },
-                                        'branches': [branch_name]
-                                    }
-
-                                    commits_by_sha[commit_sha] = commit_data
-                                    commits_data.append(commit_data)
-                                    repo_commit_count += 1
-                                    branch_commit_count += 1
-
-                                except Exception as e:
-                                    logger.debug(
-                                        f"Skipped commit in {repo_full_name}: {e}")
-                                    continue
-
-                        # Log if branch had commits
-                        if branch_commit_count > 0:
-                            logger.debug(
-                                f"Branch {branch_name}: fetched {branch_commit_count} commits (paginated)")
-
-                    if repo_commit_count > 0:
-                        logger.debug(
-                            f"User {username}: {repo_commit_count} commits from {repo_full_name} ({total_branches_processed} branches)"
-                        )
-
-        except Exception as e:
-            logger.error(f"Error fetching commits for {date_str}: {e}")
+        except Exception as exc:
+            logger.error(f"Error fetching commits for {date_str}: {exc}")
             import traceback
             logger.error(traceback.format_exc())
 
-        # Log summary
         unique_repos = len(set(c['repository'] for c in commits_data))
         unique_authors = len(set(c['author'] for c in commits_data))
         logger.info(
-            f"Date {date_str}: {len(commits_data)} commits from {unique_repos} repos, {unique_authors} authors"
+            f"Date {date_str}: {len(commits_data)} commits from "
+            f"{unique_repos} repos, {unique_authors} authors"
         )
 
-        # Fetch contributor stats (only if not already cached for this week)
-        # GitHub's stats API provides weekly data. If we already have stats for this week,
-        # skip fetching to save API calls.
-        contributor_stats = {}
-
-        # Check if this date is within the last 7 days - stats might not be available yet
-        date_obj = datetime.fromisoformat(date_str)
-        days_old = (datetime.now().date() - date_obj.date()).days
-
-        if days_old < 7:
-            logger.debug(
-                f"Date {date_str} is only {days_old} days old - skipping contributor stats fetch "
-                "(GitHub stats calculated weekly)"
-            )
-        else:
-            # Check if we need to fetch stats for any users
-            users_needing_stats = []
-            for username in user_ids:
-                if not self._has_contributor_stats_for_week(date_str, username):
-                    users_needing_stats.append(username)
-
-            if users_needing_stats:
-                logger.info(
-                    f"Fetching contributor stats for {len(users_needing_stats)} user(s) "
-                    f"(skipped {len(user_ids) - len(users_needing_stats)} already cached)"
-                )
-
-                for username in users_needing_stats:
-                    active_repos = user_repos.get(username, [])
-                    user_stats = {}
-
-                    for repo_full_name in active_repos:
-                        repo_stats = self._fetch_contributor_stats(
-                            repo_full_name, username, start_datetime, end_datetime
-                        )
-                        if repo_stats:
-                            # Merge stats from this repo
-                            for stat_date, stats in repo_stats.items():
-                                if stat_date not in user_stats:
-                                    user_stats[stat_date] = {
-                                        'commits': 0,
-                                        'additions': 0,
-                                        'deletions': 0,
-                                        'total': 0,
-                                        'repos': []
-                                    }
-                                user_stats[stat_date]['commits'] += stats['commits']
-                                user_stats[stat_date]['additions'] += stats['additions']
-                                user_stats[stat_date]['deletions'] += stats['deletions']
-                                user_stats[stat_date]['total'] += stats['total']
-                                user_stats[stat_date]['repos'].append(
-                                    repo_full_name)
-
-                    if user_stats:
-                        contributor_stats[username] = user_stats
-            else:
-                logger.info(
-                    f"All contributor stats already cached for week containing {date_str}"
-                )
-
-        # Fetch closed issues for each user
-        issues_data = []
+        # Fetch closed issues for each user (pure GraphQL — unchanged)
+        issues_data: List[Dict] = []
         logger.info(f"Fetching closed issues for {len(user_ids)} user(s)")
         for username in user_ids:
             user_issues = self._fetch_closed_issues_for_user(
                 username=username,
                 org=GITHUB_ORG,
                 start_date=start_datetime,
-                end_date=end_datetime
+                end_date=end_datetime,
             )
             issues_data.extend(user_issues)
 
@@ -1179,7 +758,6 @@ class GitHubFetcher:
             'commits': commits_data,
             'issues': issues_data,
             'issue_count': len(issues_data),
-            'contributor_stats': contributor_stats  # Authoritative stats from GitHub
         }
 
     def fetch_commits(self, start_date: datetime, end_date: datetime,
@@ -1297,126 +875,6 @@ class GitHubFetcher:
         print(
             f"\nFetch complete. Total: {sum(len(d.get('commits', [])) for d in results.values())} commits")
 
-        return results
-
-    def refresh_contributor_stats(self, start_date: datetime, end_date: datetime,
-                                  user_ids: List[str]) -> Dict[str, Dict]:
-        """Refresh only GitHub contributor stats without refetching commits
-
-        This updates the contributor_stats field in existing cache files
-        without re-fetching all the commit data.
-
-        Args:
-            start_date: Start date
-            end_date: End date
-            user_ids: List of GitHub user IDs to track
-
-        Returns:
-            Dictionary mapping date strings to updated cache data
-        """
-        logger.info(
-            f"Refreshing GitHub contributor stats from {start_date.date()} to {end_date.date()}")
-
-        # Get list of dates to process (only dates at least 7 days old)
-        # GitHub stats are calculated weekly, so no point in fetching for recent data
-        cutoff_date = datetime.now() - timedelta(days=7)
-        dates = []
-        current = start_date
-        while current <= end_date:
-            if current <= cutoff_date:
-                dates.append(current.date().isoformat())
-            current += timedelta(days=1)
-
-        if not dates:
-            print(f"\nNo dates to process (all data is less than 7 days old).")
-            print("GitHub stats are calculated weekly. Recent data will be captured in the next report generation.")
-            return {}
-
-        print(
-            f"\nProcessing {len(dates)} dates (at least 7 days old, skipping recent data)")
-
-        results = {}
-        start_datetime = start_date.replace(
-            hour=0, minute=0, second=0, microsecond=0)
-        end_datetime = end_date.replace(
-            hour=23, minute=59, second=59, microsecond=999999)
-
-        # Get active repos for each user (from existing cache)
-        print("\nIdentifying active repositories from cached data...")
-        user_repos = {}
-        for username in user_ids:
-            repos = set()
-            for date_str in dates:
-                cached_data = self.cache_manager.read_cache(date_str)
-                if cached_data:
-                    commits = cached_data.get('commits', [])
-                    for commit in commits:
-                        if commit.get('author') == username:
-                            repo_name = commit.get('repository')
-                            if repo_name:
-                                repos.add(repo_name)
-            if repos:
-                user_repos[username] = sorted(list(repos))
-                print(f"  {username}: {len(repos)} repos")
-
-        if not user_repos:
-            logger.warning(
-                "No active repositories found in cache. Run fetch first.")
-            return results
-
-        # Fetch contributor stats for each date
-        print(f"\nRefreshing GitHub stats for {len(dates)} dates...")
-        with tqdm(total=len(dates), desc="Refreshing stats") as pbar:
-            for date_str in dates:
-                # Read existing cache
-                cached_data = self.cache_manager.read_cache(date_str)
-                if not cached_data:
-                    logger.debug(f"No cache found for {date_str}, skipping")
-                    pbar.update(1)
-                    continue
-
-                # Fetch contributor stats
-                contributor_stats = {}
-                for username in user_ids:
-                    active_repos = user_repos.get(username, [])
-                    user_stats = {}
-
-                    for repo_full_name in active_repos:
-                        # No retries for refresh - GitHub stats are weekly, if it's 202 it will be captured next time
-                        repo_stats = self._fetch_contributor_stats(
-                            repo_full_name, username, start_datetime, end_datetime, max_retries=1
-                        )
-                        if repo_stats:
-                            # Merge stats from this repo
-                            for stat_date, stats in repo_stats.items():
-                                if stat_date not in user_stats:
-                                    user_stats[stat_date] = {
-                                        'commits': 0,
-                                        'additions': 0,
-                                        'deletions': 0,
-                                        'total': 0,
-                                        'repos': []
-                                    }
-                                user_stats[stat_date]['commits'] += stats['commits']
-                                user_stats[stat_date]['additions'] += stats['additions']
-                                user_stats[stat_date]['deletions'] += stats['deletions']
-                                user_stats[stat_date]['total'] += stats['total']
-                                user_stats[stat_date]['repos'].append(
-                                    repo_full_name)
-
-                    if user_stats:
-                        contributor_stats[username] = user_stats
-
-                # Update cache with new stats
-                cached_data['contributor_stats'] = contributor_stats
-                self.cache_manager.write_cache(date_str, cached_data)
-                results[date_str] = cached_data
-
-                stats_count = len(contributor_stats)
-                pbar.set_postfix_str(f"{date_str}: {stats_count} users")
-                pbar.update(1)
-
-        print(f"\nRefresh complete. Updated stats for {len(results)} dates")
         return results
 
     def get_rate_limit_status(self) -> Dict:

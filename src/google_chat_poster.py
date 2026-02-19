@@ -14,8 +14,7 @@ from src.config import (
     GOOGLE_CHAT_TOKEN,
     GOOGLE_CHAT_TEST_WEBHOOK_BASE_URL,
     GOOGLE_CHAT_TEST_KEY,
-    GOOGLE_CHAT_TEST_TOKEN,
-    REPORTS_BASE_URL
+    GOOGLE_CHAT_TEST_TOKEN
 )
 
 logger = logging.getLogger(__name__)
@@ -162,8 +161,7 @@ class GoogleChatPoster:
         if not contributors_by_impact:
             return (
                 f"📊 **{period_type} Leaderboard ({date_string})**\n\n"
-                f"No activity for this period.\n\n"
-                f"🔗 View all reports: {REPORTS_BASE_URL}"
+                f"No activity for this period."
             )
 
         # Build message with new format
@@ -198,8 +196,6 @@ class GoogleChatPoster:
                 lines.append("")  # Blank line between contributors
 
             prev_metrics = (issues_closed, commit_count, total_loc)
-
-        lines.append(f"\n🔗 View all reports: {REPORTS_BASE_URL}")
 
         return "\n".join(lines)
 
