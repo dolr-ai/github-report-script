@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 from typing import Dict, List, Tuple, Optional
 from collections import defaultdict
 
-from src.config import IST_TIMEZONE
+from src.config import IST_TIMEZONE, LEADERBOARD_WEIGHTS
 from src.cache_manager import CacheManager
 
 logger = logging.getLogger(__name__)
@@ -62,10 +62,19 @@ class LeaderboardGenerator:
             date_strings: List of dates in YYYY-MM-DD format
 
         Returns:
-            Dict mapping username to metrics dict with 'issues_closed', 'commit_count', and 'total_loc'
+            Dict mapping username to metrics dict with 'issues_closed', 'commit_count',
+            'total_loc', 'total_additions', and 'total_deletions'
         """
-        user_metrics = defaultdict(
-            lambda: {'issues_closed': 0, 'commit_count': 0, 'total_loc': 0})
+        def _default_metrics():
+            return {
+                'issues_closed': 0,
+                'commit_count': 0,
+                'total_loc': 0,
+                'total_additions': 0,
+                'total_deletions': 0,
+            }
+
+        user_metrics = defaultdict(_default_metrics)
 
         for date_str in date_strings:
             cached_data = self.cache_manager.read_cache(date_str)
@@ -88,6 +97,8 @@ class LeaderboardGenerator:
 
                 user_metrics[author]['commit_count'] += 1
                 user_metrics[author]['total_loc'] += additions + deletions
+                user_metrics[author]['total_additions'] += additions
+                user_metrics[author]['total_deletions'] += deletions
 
             # Process issues (backward compatible - old cache files won't have issues)
             issues = cached_data.get('issues', [])
@@ -104,29 +115,92 @@ class LeaderboardGenerator:
             f"Aggregated metrics for {len(user_metrics)} users across {len(date_strings)} dates")
         return dict(user_metrics)
 
+    def compute_weighted_scores(
+        self,
+        user_metrics: Dict[str, Dict[str, int]]
+    ) -> Dict[str, float]:
+        """Compute weighted normalized scores for each contributor.
+
+        Each metric is min-max normalized to [0, 1] across all contributors,
+        then multiplied by its configured weight from LEADERBOARD_WEIGHTS.
+        When all contributors share the same value for a metric (max == min),
+        that metric contributes 0 to everyone's score.
+
+        Args:
+            user_metrics: Dict mapping username to metrics dict
+
+        Returns:
+            Dict mapping username to weighted score (float)
+        """
+        if not user_metrics:
+            return {}
+
+        usernames = list(user_metrics.keys())
+
+        # Map each weight key to its corresponding metrics key
+        metric_map = {
+            'issues_closed': 'issues_closed',
+            'commits': 'commit_count',
+            'additions': 'total_additions',
+            'deletions': 'total_deletions',
+        }
+
+        scores = {u: 0.0 for u in usernames}
+
+        for weight_key, metrics_key in metric_map.items():
+            weight = LEADERBOARD_WEIGHTS.get(weight_key, 0)
+            if weight == 0:
+                continue
+
+            values = [user_metrics[u].get(metrics_key, 0) for u in usernames]
+            min_val = min(values)
+            max_val = max(values)
+
+            if max_val == min_val:
+                # No differentiating signal — everyone gets 0 for this metric
+                continue
+
+            for u, v in zip(usernames, values):
+                normalized = (v - min_val) / (max_val - min_val)
+                scores[u] += weight * normalized
+
+        return scores
+
     def get_all_contributors_by_impact(
         self,
         user_metrics: Dict[str, Dict[str, int]]
     ) -> List[Tuple[str, Dict[str, int]]]:
-        """Get ALL contributors sorted by impact (issues > commits > loc)
+        """Get ALL contributors sorted by weighted normalized impact score.
+
+        Computes a weighted score from min-max normalized metrics:
+            score = w_issues * norm(issues_closed)
+                  + w_commits * norm(commit_count)
+                  + w_additions * norm(total_additions)
+                  + w_deletions * norm(total_deletions)
+
+        Weights are configured in LEADERBOARD_WEIGHTS in config.py.
 
         Args:
             user_metrics: Dict mapping username to metrics
 
         Returns:
-            List of tuples (username, full_metrics_dict) sorted by impact
+            List of tuples (username, full_metrics_dict) sorted by score descending.
+            Each metrics dict includes a 'score' key with the computed float score.
         """
         if not user_metrics:
             return []
 
-        # Sort by: issues_closed (desc), then commit_count (desc), then total_loc (desc)
+        scores = self.compute_weighted_scores(user_metrics)
+
+        # Attach score to each user's metrics dict
+        enriched = {}
+        for username, metrics in user_metrics.items():
+            enriched[username] = dict(metrics)
+            enriched[username]['score'] = scores.get(username, 0.0)
+
         sorted_users = sorted(
-            user_metrics.items(),
-            key=lambda x: (
-                x[1].get('issues_closed', 0),
-                x[1].get('commit_count', 0),
-                x[1].get('total_loc', 0)
-            ),
+            enriched.items(),
+            key=lambda x: x[1]['score'],
             reverse=True
         )
 
