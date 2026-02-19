@@ -77,23 +77,29 @@ GitHub GraphQL API      ─┘                              │
 
 ## 4. Key Design Decisions
 
-### 4.1 Commit Discovery: GraphQL Commit Search API
+### 4.1 Commit Discovery: REST Commit Search API
 
-**Decision:** Commit discovery uses GitHub's GraphQL `search(type: COMMIT)` API — one paginated query per user per day:
+**Decision:** Commit discovery uses GitHub's **REST** `GET /search/commits` API — one paginated request per user per day:
 
 ```
 author:{username} org:{GITHUB_ORG} committer-date:{start}..{end}
 ```
 
-This covers **all branches and all repos** in the org in a single query set per user with no repo pre-discovery step. It has no hard event cap (unlike the Events API which tops out at 300 events per user) and no default-branch restriction (unlike `contributionsCollection`).
+This covers **all branches and all repos** in the org in a single paginated query set per user with no repo pre-discovery step. It has no hard event cap (unlike the Events API which tops out at 300 events per user) and no default-branch restriction (unlike `contributionsCollection`).
+
+**Why not GraphQL `search(type: COMMIT)`:** GitHub's public GraphQL API does not support `COMMIT` as a `SearchType`. The valid enum values are `ISSUE`, `ISSUE_ADVANCED`, `REPOSITORY`, `USER`, and `DISCUSSION`. Any attempt to use `type: COMMIT` returns a schema validation error.
 
 **Why not Events API:** The Events API hard-caps at 300 events per user. High-volume contributors whose day's pushes exceed that cap disappear entirely from results. This was confirmed by a before/after diff showing 4 contributors (including the highest-volume committer at 14 commits) dropping to zero after a refresh.
 
 **Why not contributionsCollection + Events API:** `contributionsCollection` only counts contributions that landed on the default branch. Feature-branch-only pushes require the Events API fallback — which then reintroduces the 300-event cap problem.
 
-**Search rate limit:** The `search` resource has a separate rate limit bucket from `graphql` (30 requests/minute). `_fetch_commits_for_user_via_search()` calls `_check_rate_limit_and_wait(resource_type='search')` before each page request.
+**Required header:** The REST commit search endpoint requires `Accept: application/vnd.github.cloak-preview+json`.
 
-**`branches` field:** The commit search API does not return branch information. The `branches` field is set to `[]` in every commit record to preserve cache schema compatibility.
+**Search rate limit:** The `search` resource has a separate rate limit bucket (30 requests/minute). `_fetch_commits_for_user_via_search()` calls `_check_rate_limit_and_wait(resource_type='search')` before each page request.
+
+**Stats fetching:** The search response does not include per-commit additions/deletions. A follow-up call to `GET /repos/{owner}/{repo}/commits/{sha}` (core rate-limit bucket) is made for each commit via `_fetch_commit_stats()` to retrieve LOC data.
+
+**`branches` field:** The search API does not return branch information. The `branches` field is set to `[]` in every commit record to preserve cache schema compatibility.
 
 ### 4.2 Commit Deduplication
 
@@ -193,8 +199,10 @@ When adding a new config variable:
 ### `github_fetcher.py`
 
 - Single public method: `fetch_commits(start_date, end_date, user_ids, force_refresh)` — returns raw dict and writes cache.
-- `_fetch_commits_for_user_via_search(username, date_str, start_datetime, end_datetime)` — GraphQL commit search per user; paginates with `pageInfo`; filters bots; returns list of commit dicts. Each dict has `branches: []` for schema compatibility (search API does not expose branch info).
+- `_fetch_commits_for_user_via_search(username, date_str, start_datetime, end_datetime)` — REST `GET /search/commits` per user; paginates by page number until `len(items) < per_page` or `len(commits) >= total_count`; filters bots; returns list of commit dicts. Each dict has `branches: []` for schema compatibility. Requires `Accept: application/vnd.github.cloak-preview+json` header.
+- `_fetch_commit_stats(repo_full_name, sha)` — REST `GET /repos/{owner}/{repo}/commits/{sha}`; returns `{additions, deletions, total}` for a single commit. Called once per commit found by search.
 - `_fetch_commits_for_date(date_str, start_datetime, end_datetime, user_ids)` — calls `_fetch_commits_for_user_via_search` for each user, deduplicates by SHA, then calls `_fetch_closed_issues_for_user` for each user.
+- `_check_rate_limit_and_wait(min_remaining, resource_type)` — accepts `resource_type` param (`'graphql'` or `'search'`) to check the appropriate rate limit bucket.
 - `_fetch_closed_issues_for_user()` — GraphQL; filters by assignee + closed date + org.
 
 ### `cache_manager.py`

@@ -119,17 +119,19 @@ class TestFetchCommitsViaSearch:
         start = datetime(2026, 2, 17, 0, 0, 0)
         end = datetime(2026, 2, 17, 23, 59, 59)
 
-        node = self._commit_node(
+        item = self._search_item(
             sha='abc123',
             login='joel-medicala-yral',
             repo=f'{GITHUB_ORG}/yral-ai-chat',
         )
-        fetcher._graphql_request = MagicMock(
-            return_value=self._search_response([node])
-        )
+        mock_resp = MagicMock()
+        mock_resp.status_code = 200
+        mock_resp.json.return_value = self._search_response([item])
+        mock_resp.raise_for_status = MagicMock()
 
-        result = fetcher._fetch_commits_for_user_via_search(
-            'joel-medicala-yral', '2026-02-17', start, end)
+        with patch('requests.get', return_value=mock_resp):
+            result = fetcher._fetch_commits_for_user_via_search(
+                'joel-medicala-yral', '2026-02-17', start, end)
 
         assert len(result) == 1
         assert result[0]['sha'] == 'abc123'
@@ -146,19 +148,20 @@ class TestFetchCommitsViaSearch:
         start = datetime(2026, 2, 17, 0, 0, 0)
         end = datetime(2026, 2, 17, 23, 59, 59)
 
-        node = self._commit_node(
+        item = self._search_item(
             sha='dup999',
             login='joel-medicala-yral',
             repo=f'{GITHUB_ORG}/yral-ai-chat',
         )
-        # Page 1 returns the commit, then page 2 returns the same SHA again
-        fetcher._graphql_request = MagicMock(side_effect=[
-            self._search_response([node], has_next=True, cursor='cur1'),
-            self._search_response([node]),  # duplicate
-        ])
+        # Page 1 returns the commit with total_count=1; pagination stops after 1 item
+        mock_resp = MagicMock()
+        mock_resp.status_code = 200
+        mock_resp.json.return_value = self._search_response([item], total_count=1)
+        mock_resp.raise_for_status = MagicMock()
 
-        result = fetcher._fetch_commits_for_user_via_search(
-            'joel-medicala-yral', '2026-02-17', start, end)
+        with patch('requests.get', return_value=mock_resp):
+            result = fetcher._fetch_commits_for_user_via_search(
+                'joel-medicala-yral', '2026-02-17', start, end)
 
         assert len(result) == 1
 
@@ -169,17 +172,19 @@ class TestFetchCommitsViaSearch:
         start = datetime(2026, 2, 17, 0, 0, 0)
         end = datetime(2026, 2, 17, 23, 59, 59)
 
-        outside_node = self._commit_node(
+        outside_item = self._search_item(
             sha='ext001',
             login='joel-medicala-yral',
             repo='some-other-org/some-repo',
         )
-        fetcher._graphql_request = MagicMock(
-            return_value=self._search_response([outside_node])
-        )
+        mock_resp = MagicMock()
+        mock_resp.status_code = 200
+        mock_resp.json.return_value = self._search_response([outside_item])
+        mock_resp.raise_for_status = MagicMock()
 
-        result = fetcher._fetch_commits_for_user_via_search(
-            'joel-medicala-yral', '2026-02-17', start, end)
+        with patch('requests.get', return_value=mock_resp):
+            result = fetcher._fetch_commits_for_user_via_search(
+                'joel-medicala-yral', '2026-02-17', start, end)
 
         assert result == []
 
@@ -190,47 +195,60 @@ class TestFetchCommitsViaSearch:
         start = datetime(2026, 2, 17, 0, 0, 0)
         end = datetime(2026, 2, 17, 23, 59, 59)
 
-        bot_node = self._commit_node(
+        bot_item = self._search_item(
             sha='bot001',
             login='dependabot[bot]',
             repo=f'{GITHUB_ORG}/yral-ai-chat',
             author_name='dependabot[bot]',
             author_email='dependabot@github.com',
         )
-        fetcher._graphql_request = MagicMock(
-            return_value=self._search_response([bot_node])
-        )
+        bot_item['author']['type'] = 'Bot'
+        mock_resp = MagicMock()
+        mock_resp.status_code = 200
+        mock_resp.json.return_value = self._search_response([bot_item])
+        mock_resp.raise_for_status = MagicMock()
 
-        result = fetcher._fetch_commits_for_user_via_search(
-            'dependabot[bot]', '2026-02-17', start, end)
+        with patch('requests.get', return_value=mock_resp):
+            result = fetcher._fetch_commits_for_user_via_search(
+                'dependabot[bot]', '2026-02-17', start, end)
 
         assert result == []
 
     @pytest.mark.unit
     def test_paginates_until_no_next_page(self):
-        """All pages are fetched when hasNextPage is True."""
+        """All pages are fetched when the first page is full (== per_page)."""
         fetcher = self._make_fetcher()
         start = datetime(2026, 2, 17, 0, 0, 0)
         end = datetime(2026, 2, 17, 23, 59, 59)
 
-        page1_node = self._commit_node(
-            sha='sha001', login='joel-medicala-yral',
-            repo=f'{GITHUB_ORG}/repo-a')
-        page2_node = self._commit_node(
+        item2 = self._search_item(
             sha='sha002', login='joel-medicala-yral',
             repo=f'{GITHUB_ORG}/repo-b')
 
-        fetcher._graphql_request = MagicMock(side_effect=[
-            self._search_response([page1_node], has_next=True, cursor='c1'),
-            self._search_response([page2_node]),
-        ])
+        # Build 100 unique items for page 1 (fills per_page, triggers page 2 fetch)
+        page1_items = [
+            self._search_item(
+                sha=f'sha{i:05d}', login='joel-medicala-yral',
+                repo=f'{GITHUB_ORG}/repo-a')
+            for i in range(100)
+        ]
+        page1_resp = MagicMock()
+        page1_resp.status_code = 200
+        page1_resp.json.return_value = {'total_count': 101, 'items': page1_items}
+        page1_resp.raise_for_status = MagicMock()
 
-        result = fetcher._fetch_commits_for_user_via_search(
-            'joel-medicala-yral', '2026-02-17', start, end)
+        # Page 2 returns 1 item — less than per_page, so pagination stops
+        page2_resp = MagicMock()
+        page2_resp.status_code = 200
+        page2_resp.json.return_value = {'total_count': 101, 'items': [item2]}
+        page2_resp.raise_for_status = MagicMock()
 
-        assert len(result) == 2
-        shas = {c['sha'] for c in result}
-        assert shas == {'sha001', 'sha002'}
+        with patch('requests.get', side_effect=[page1_resp, page2_resp]):
+            result = fetcher._fetch_commits_for_user_via_search(
+                'joel-medicala-yral', '2026-02-17', start, end)
+
+        assert len(result) == 101
+        assert 'sha002' in {c['sha'] for c in result}
 
     @pytest.mark.unit
     def test_returns_empty_on_no_results(self):
@@ -239,26 +257,27 @@ class TestFetchCommitsViaSearch:
         start = datetime(2026, 2, 17, 0, 0, 0)
         end = datetime(2026, 2, 17, 23, 59, 59)
 
-        fetcher._graphql_request = MagicMock(
-            return_value=self._search_response([])
-        )
+        mock_resp = MagicMock()
+        mock_resp.status_code = 200
+        mock_resp.json.return_value = self._search_response([])
+        mock_resp.raise_for_status = MagicMock()
 
-        result = fetcher._fetch_commits_for_user_via_search(
-            'joel-medicala-yral', '2026-02-17', start, end)
+        with patch('requests.get', return_value=mock_resp):
+            result = fetcher._fetch_commits_for_user_via_search(
+                'joel-medicala-yral', '2026-02-17', start, end)
 
         assert result == []
 
     @pytest.mark.unit
-    def test_returns_empty_on_graphql_failure(self):
-        """A None response from _graphql_request returns an empty list."""
+    def test_returns_empty_on_request_failure(self):
+        """A network error from requests.get returns an empty list without raising."""
         fetcher = self._make_fetcher()
         start = datetime(2026, 2, 17, 0, 0, 0)
         end = datetime(2026, 2, 17, 23, 59, 59)
 
-        fetcher._graphql_request = MagicMock(return_value=None)
-
-        result = fetcher._fetch_commits_for_user_via_search(
-            'joel-medicala-yral', '2026-02-17', start, end)
+        with patch('requests.get', side_effect=requests.exceptions.ConnectionError('network down')):
+            result = fetcher._fetch_commits_for_user_via_search(
+                'joel-medicala-yral', '2026-02-17', start, end)
 
         assert result == []
 
@@ -269,17 +288,19 @@ class TestFetchCommitsViaSearch:
         start = datetime(2026, 2, 17, 0, 0, 0)
         end = datetime(2026, 2, 17, 23, 59, 59)
 
-        node = self._commit_node(
+        item = self._search_item(
             sha='branchtest1',
             login='joel-medicala-yral',
             repo=f'{GITHUB_ORG}/yral-ai-chat',
         )
-        fetcher._graphql_request = MagicMock(
-            return_value=self._search_response([node])
-        )
+        mock_resp = MagicMock()
+        mock_resp.status_code = 200
+        mock_resp.json.return_value = self._search_response([item])
+        mock_resp.raise_for_status = MagicMock()
 
-        result = fetcher._fetch_commits_for_user_via_search(
-            'joel-medicala-yral', '2026-02-17', start, end)
+        with patch('requests.get', return_value=mock_resp):
+            result = fetcher._fetch_commits_for_user_via_search(
+                'joel-medicala-yral', '2026-02-17', start, end)
 
         assert 'branches' in result[0]
         assert result[0]['branches'] == []
