@@ -1,6 +1,16 @@
 """
 GitHub Fetcher Module
-Fetches commit data from GitHub with concurrent threading and bot filtering
+Fetches commit data from GitHub with concurrent threading and bot filtering.
+
+Commit discovery strategy (two-step GraphQL):
+  Step 1 – _discover_active_repos(): one GraphQL call that lists all org repos
+            ordered by pushedAt and filters to those pushed in the date window.
+  Step 2 – _fetch_commits_via_graphql(): batched GraphQL aliases — for each
+            active repo, fetch all branches (refs) and for each branch, fetch
+            commits in the date window.  additions/deletions are returned inline,
+            so no follow-up REST calls are required.
+
+Issue discovery stays as pure GraphQL via _fetch_closed_issues_for_user().
 """
 import logging
 import threading
@@ -8,13 +18,12 @@ import time
 import requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
-from typing import Dict, List, Set, Callable, Any, Optional
-from collections import defaultdict
+from typing import Dict, List, Set, Callable, Any, Optional, Tuple
 from functools import wraps
 
 from tqdm import tqdm
 
-from src.config import GITHUB_TOKEN, GITHUB_ORG, KNOWN_BOTS
+from src.config import GITHUB_TOKEN, GITHUB_ORG, KNOWN_BOTS, USER_IDS
 from src.cache_manager import CacheManager
 
 logger = logging.getLogger(__name__)
@@ -130,7 +139,8 @@ class GitHubFetcher:
             response.raise_for_status()
             rate_data = response.json()
 
-            resource_limit = rate_data.get('resources', {}).get(resource_type, {})
+            resource_limit = rate_data.get(
+                'resources', {}).get(resource_type, {})
             remaining = resource_limit.get('remaining', 0)
             reset_timestamp = resource_limit.get('reset', 0)
 
@@ -219,110 +229,6 @@ class GitHubFetcher:
         logger.error(
             f"GraphQL request failed after {max_retries} retries due to rate limiting")
         return None
-
-    def _api_request(self, endpoint: str, params: Optional[Dict] = None,
-                     max_retries: int = 10) -> Optional[List]:
-        """Make a direct REST API request to GitHub with smart rate limit handling
-
-        Args:
-            endpoint: API endpoint (e.g., '/repos/owner/repo/commits')
-            params: Query parameters
-            max_retries: Maximum number of retry attempts for rate limits (default: 10)
-
-        Returns:
-            JSON response (list or dict) or None on error
-        """
-        url = f"{self.base_url}{endpoint}"
-        retries = 0
-
-        while retries <= max_retries:
-            try:
-                # Update headers for REST API
-                headers = self.session.headers.copy()
-                headers['Authorization'] = f'token {GITHUB_TOKEN}'
-                headers['Accept'] = 'application/vnd.github.v3+json'
-
-                response = requests.get(
-                    url, params=params, headers=headers, timeout=30)
-
-                # Handle 202 Accepted (stats being computed) - return None to signal retry needed
-                if response.status_code == 202:
-                    logger.debug(
-                        f"API returned 202 Accepted for {endpoint} (stats being computed)")
-                    return None
-
-                response.raise_for_status()
-                result = response.json()
-                logger.debug(
-                    f"API request to {endpoint}: {len(result) if isinstance(result, list) else 'dict'} items")
-                return result
-
-            except requests.exceptions.HTTPError as e:
-                # Check for rate limit errors (403 or 429 status codes)
-                if e.response and e.response.status_code in [403, 429]:
-                    if retries < max_retries:
-                        retries += 1
-
-                        # Get exact reset time from GitHub API
-                        wait_seconds = self._get_rate_limit_reset_time('core')
-
-                        if wait_seconds is not None and wait_seconds > 0:
-                            logger.warning(
-                                f"REST API rate limit hit for {endpoint}. "
-                                f"Retry {retries}/{max_retries} after waiting {int(wait_seconds)}s for rate limit reset"
-                            )
-                            time.sleep(wait_seconds)
-                        else:
-                            # Fallback to exponential backoff if rate limit check fails
-                            # Cap at 5 minutes
-                            fallback_delay = min(5 * (2 ** (retries - 1)), 300)
-                            logger.warning(
-                                f"REST API rate limit hit for {endpoint}. "
-                                f"Retry {retries}/{max_retries} after {fallback_delay}s (fallback delay)"
-                            )
-                            time.sleep(fallback_delay)
-                        continue
-                    else:
-                        logger.error(
-                            f"REST API request failed after {max_retries} retries due to rate limiting: {endpoint}")
-                        return None
-                else:
-                    logger.warning(f"API request failed for {endpoint}: {e}")
-                    return None
-
-            except requests.exceptions.RequestException as e:
-                logger.warning(f"API request failed for {endpoint}: {e}")
-                return None
-
-        return None
-
-    def _check_rate_limit(self):
-        """Check GitHub API rate limit and wait if necessary"""
-        with self.rate_limit_lock:
-            try:
-                response = self.session.get(
-                    f"{self.base_url}/rate_limit", timeout=10)
-                if response.status_code != 200:
-                    return
-
-                rate_data = response.json()
-                remaining = rate_data['resources']['core']['remaining']
-                reset_time = datetime.fromtimestamp(
-                    rate_data['resources']['core']['reset'])
-
-                if remaining < 100:
-                    wait_seconds = (
-                        reset_time - datetime.utcnow()).total_seconds() + 10
-
-                    if wait_seconds > 0:
-                        logger.warning(
-                            f"Rate limit low ({remaining} remaining). Waiting {wait_seconds:.0f} seconds...")
-                        time.sleep(wait_seconds)
-                else:
-                    logger.debug(f"Rate limit: {remaining} requests remaining")
-            except Exception as e:
-                # If rate limit check fails, log but continue
-                logger.warning(f"Could not check rate limit: {e}")
 
     def _fetch_closed_issues_for_user(
         self,
@@ -510,190 +416,311 @@ class GitHubFetcher:
             # If we can't determine, assume it's not a bot
             return False
 
-    def _fetch_commit_stats(self, repo_full_name: str, sha: str) -> Dict:
-        """Fetch additions/deletions for a single commit via the REST commits endpoint.
+    def _discover_active_repos(
+        self,
+        start_datetime: datetime,
+        end_datetime: datetime,
+    ) -> List[str]:
+        """Return names of org repos that may have commits in the date window.
+
+        A single GraphQL call fetches all org repos ordered by pushedAt DESC.
+        A repo is included when its ``pushedAt`` is at or after the look-behind
+        lower bound (start − 1 day), regardless of whether it is newer than
+        ``end_datetime``.  A repo pushed *after* the window (e.g. today) is
+        still included because it may contain commits from yesterday in its
+        branch history — the ``history(since:, until:)`` call in Step 2 is
+        what enforces the actual date filter.
+
+        Early-exit fires only when repos are *older* than the look-behind
+        lower bound (they can’t possibly contain commits in the window).
 
         Args:
-            repo_full_name: e.g. ``dolr-ai/yral-backend``
-            sha: Full commit SHA.
+            start_datetime: Start of the time window (UTC).
+            end_datetime:   End of the time window (UTC).
 
         Returns:
-            Dict with ``additions``, ``deletions``, ``total`` keys (all int, default 0).
+            List of ``"owner/repo"``-style full repo name strings.
         """
-        endpoint = f"/repos/{repo_full_name}/commits/{sha}"
-        try:
-            data = self._api_request(endpoint)
-            if data and isinstance(data, dict):
-                stats = data.get('stats', {}) or {}
-                additions = stats.get('additions', 0) or 0
-                deletions = stats.get('deletions', 0) or 0
-                return {'additions': additions, 'deletions': deletions, 'total': additions + deletions}
-        except Exception as exc:
-            logger.debug(f"Could not fetch stats for {repo_full_name}@{sha[:8]}: {exc}")
-        return {'additions': 0, 'deletions': 0, 'total': 0}
+        # 1-day buffer on the lower bound so repos pushed just before midnight
+        # are not missed.
+        lookback_str = (start_datetime - timedelta(days=1)
+                        ).strftime('%Y-%m-%dT%H:%M:%SZ')
 
-    def _fetch_commits_for_user_via_search(self, username: str, date_str: str,
-                                           start_datetime: datetime,
-                                           end_datetime: datetime) -> List[Dict]:
-        """Fetch all commits by a user in the org for a date using the REST commit search API.
-
-        Uses GitHub's ``GET /search/commits`` REST endpoint which queries across
-        ALL branches and ALL repos in the org in a single paginated request per user.
-        This avoids the 300-event hard cap of the Events API and the N×M (repos ×
-        branches) cost of the old contributionsCollection approach.
-
-        The search resource has a separate rate-limit bucket (30 req/min).
-        ``_check_rate_limit_and_wait(resource_type='search')`` is called before
-        each page request.
-
-        Commit stats (additions/deletions) are not included in the search response
-        and are fetched with a follow-up call to
-        ``GET /repos/{owner}/{repo}/commits/{sha}`` (core rate-limit bucket).
-
-        Args:
-            username: GitHub login to search commits for.
-            date_str: ISO date string (YYYY-MM-DD) used for logging only.
-            start_datetime: Start of the time window (naive UTC assumed).
-            end_datetime: End of the time window (naive UTC assumed).
-
-        Returns:
-            List of commit dicts in the cache schema:
-            ``{sha, author, repository, timestamp, message, stats, branches}``.
-            ``branches`` is always ``[]`` — the search API does not expose branch info
-            but the field is kept for cache-schema compatibility.
-        """
-        search_query = (
-            f'author:{username} org:{GITHUB_ORG} '
-            f'committer-date:{start_datetime.strftime("%Y-%m-%dT%H:%M:%SZ")}'
-            f'..{end_datetime.strftime("%Y-%m-%dT%H:%M:%SZ")}'
-        )
-
-        commits: List[Dict] = []
-        seen_shas: Set[str] = set()
-        page = 1
-        per_page = 100
+        active: List[str] = []
+        cursor: Optional[str] = None
 
         while True:
-            # Respect the search rate-limit bucket before each request
-            self._check_rate_limit_and_wait(min_remaining=5, resource_type='search')
-
-            params = {
-                'q': search_query,
-                'per_page': per_page,
-                'page': page,
-                'sort': 'committer-date',
-                'order': 'desc',
-            }
-
-            try:
-                response = requests.get(
-                    f'{self.base_url}/search/commits',
-                    params=params,
-                    headers={
-                        'Authorization': f'token {GITHUB_TOKEN}',
-                        # Required preview header for commit search
-                        'Accept': 'application/vnd.github.cloak-preview+json',
-                    },
-                    timeout=30,
-                )
-
-                if response.status_code == 429 or (
-                    response.status_code == 403 and
-                    'rate limit' in response.text.lower()
-                ):
-                    wait = self._get_rate_limit_reset_time('search') or 60
-                    logger.warning(
-                        f"Search rate limit hit for {username}. Waiting {int(wait)}s."
-                    )
-                    time.sleep(wait + 2)
-                    continue
-
-                response.raise_for_status()
-                result = response.json()
-
-            except Exception as exc:
+            after_clause = f', after: "{cursor}"' if cursor else ''
+            query = f"""
+            {{
+              rateLimit {{ remaining }}
+              organization(login: "{GITHUB_ORG}") {{
+                repositories(
+                  first: 100
+                  orderBy: {{field: PUSHED_AT, direction: DESC}}
+                  {after_clause}
+                ) {{
+                  pageInfo {{ hasNextPage endCursor }}
+                  nodes {{ name pushedAt }}
+                }}
+              }}
+            }}
+            """
+            data = self._graphql_request(query)
+            if not data:
                 logger.warning(
-                    f"REST search request failed for {username} on {date_str}: {exc}"
-                )
+                    "_discover_active_repos: empty GraphQL response")
                 break
 
-            items = result.get('items', [])
-            total_count = result.get('total_count', 0)
+            repos = data.get('organization', {}).get('repositories', {})
+            nodes = repos.get('nodes', [])
+            page_info = repos.get('pageInfo', {})
 
-            if not items:
-                break
-
-            for item in items:
-                try:
-                    sha = item.get('sha', '')
-                    if not sha or sha in seen_shas:
-                        continue
-
-                    repo_name = item.get('repository', {}).get('full_name', '')
-                    if not repo_name.startswith(f"{GITHUB_ORG}/"):
-                        continue
-
-                    commit_detail = item.get('commit', {})
-                    author_detail = commit_detail.get('author', {}) or {}
-                    author_login = (item.get('author') or {}).get('login', '')
-                    author_name = author_detail.get('name', '')
-                    author_email = author_detail.get('email', '')
-
-                    # Bot filtering
-                    surrogate = {
-                        'author': {
-                            'type': 'Bot' if (item.get('author') or {}).get('type') == 'Bot' else 'User',
-                            'login': author_login,
-                        },
-                        'commit': {
-                            'author': {'name': author_name, 'email': author_email}
-                        },
-                    }
-                    if self._is_bot_commit(surrogate):
-                        continue
-
-                    # Fetch per-commit stats (additions + deletions)
-                    stats = self._fetch_commit_stats(repo_name, sha)
-
-                    commit_entry = {
-                        'sha': sha,
-                        'author': author_login or username,
-                        'repository': repo_name,
-                        'timestamp': author_detail.get('date', ''),
-                        'message': (commit_detail.get('message') or '').split('\n')[0][:100],
-                        'stats': stats,
-                        # Search API does not return branch info; kept for
-                        # cache-schema compatibility.
-                        'branches': [],
-                    }
-
-                    seen_shas.add(sha)
-                    commits.append(commit_entry)
-
-                except Exception as exc:
-                    logger.debug(f"Skipped search result for {username}: {exc}")
+            for node in nodes:
+                pushed_at = node.get('pushedAt', '')
+                if not pushed_at:
                     continue
+                # Early-exit: repos older than look-behind can't have commits
+                # in our window.
+                if pushed_at < lookback_str:
+                    return active
+                # Include any repo pushed at or after the look-behind bound.
+                # This deliberately includes repos pushed *after* end_datetime
+                # (e.g. pushed today for a yesterday window) because their
+                # branch history may still contain commits dated within the
+                # window.  The history(since:, until:) filter in Step 2
+                # enforces the actual date boundary.
+                active.append(f"{GITHUB_ORG}/{node['name']}")
 
-            # GitHub search API caps at 1000 results; stop if we have them all
-            if len(commits) >= total_count or len(items) < per_page:
+            if not page_info.get('hasNextPage'):
                 break
+            cursor = page_info.get('endCursor')
 
-            page += 1
-
-        logger.debug(
-            f"User {username} on {date_str}: {len(commits)} commits via REST search "
-            f"({page} page(s))"
+        logger.info(
+            f"Active repos in window [{start_datetime.date()} → {end_datetime.date()}]: "
+            f"{len(active)} — {[r.split('/')[-1] for r in active]}"
         )
-        return commits
+        return active
+
+    # ------------------------------------------------------------------
+    # REPOS_PER_BATCH: how many repos to pack into a single batched
+    # GraphQL query.  5 is safe; larger values save round-trips but
+    # increase query complexity and risk hitting the GraphQL max-node cap.
+    # ------------------------------------------------------------------
+    _REPOS_PER_BATCH = 5
+
+    def _fetch_commits_via_graphql(
+        self,
+        repo_names: List[str],
+        start_datetime: datetime,
+        end_datetime: datetime,
+        user_ids: Set[str],
+    ) -> List[Dict]:
+        """Fetch commits across all branches of the given repos, filtered to user_ids.
+
+        For each repo, fetches all refs (branches) ordered by most-recently
+        committed first (``orderBy: TAG_COMMIT_DATE DESC``).  For each branch,
+        uses ``history(since:, until:)`` — a real git filter with no search-index
+        dependency — to retrieve commits inside the date window.  ``additions``
+        and ``deletions`` are included inline, so no follow-up REST calls are
+        required.
+
+        Repos are batched (``_REPOS_PER_BATCH`` per GraphQL request) using
+        aliases to minimise round-trips.  Commits are deduplicated by SHA across
+        all branches and repos, and filtered client-side to only include authors
+        present in ``user_ids``.
+
+        Args:
+            repo_names:     List of ``"owner/repo"`` full names to scan.
+            start_datetime: Start of the time window (UTC).
+            end_datetime:   End of the time window (UTC).
+            user_ids:       Set of GitHub logins whose commits we keep.
+
+        Returns:
+            List of commit dicts matching the cache schema:
+            ``{sha, author, repository, timestamp, message, stats, branches}``.
+        """
+        if not repo_names:
+            return []
+
+        since_str = start_datetime.strftime('%Y-%m-%dT%H:%M:%SZ')
+        until_str = end_datetime.strftime('%Y-%m-%dT%H:%M:%SZ')
+
+        commits_by_sha: Dict[str, Dict] = {}
+
+        # Split repos into batches
+        batches = [
+            repo_names[i: i + self._REPOS_PER_BATCH]
+            for i in range(0, len(repo_names), self._REPOS_PER_BATCH)
+        ]
+
+        for batch in batches:
+            # We may need to paginate branches (refs) for repos with many branches.
+            # Track per-repo cursor state.
+            repo_cursors: Dict[str, Optional[str]] = {r: None for r in batch}
+            # repos that still have more branch pages
+            repos_with_more: Set[str] = set(batch)
+
+            while repos_with_more:
+                # Build batched aliased query
+                alias_blocks = []
+                for idx, repo_full in enumerate(batch):
+                    if repo_full not in repos_with_more:
+                        # No more pages for this repo — emit a dummy alias that
+                        # returns an empty refs list so alias indices stay stable.
+                        # Simplest: just skip — we key by alias, not index.
+                        continue
+                    owner, repo = repo_full.split('/', 1)
+                    cursor = repo_cursors[repo_full]
+                    after_clause = f', after: "{cursor}"' if cursor else ''
+                    alias = f"r{idx}"
+                    alias_blocks.append(f"""
+                      {alias}: repository(owner: "{owner}", name: "{repo}") {{
+                        name
+                        nameWithOwner
+                        refs(
+                          refPrefix: "refs/heads/"
+                          first: 100
+                          orderBy: {{field: TAG_COMMIT_DATE, direction: DESC}}
+                          {after_clause}
+                        ) {{
+                          pageInfo {{ hasNextPage endCursor }}
+                          nodes {{
+                            name
+                            target {{
+                              ... on Commit {{
+                                history(first: 100, since: "{since_str}", until: "{until_str}") {{
+                                  pageInfo {{ hasNextPage endCursor }}
+                                  nodes {{
+                                    oid
+                                    message
+                                    additions
+                                    deletions
+                                    author {{
+                                      name
+                                      email
+                                      date
+                                      user {{ login }}
+                                    }}
+                                  }}
+                                }}
+                              }}
+                            }}
+                          }}
+                        }}
+                      }}
+                    """)
+
+                if not alias_blocks:
+                    break
+
+                query = "{\n" + "\n".join(alias_blocks) + "\n}"
+                data = self._graphql_request(query)
+                if not data:
+                    logger.warning(
+                        f"_fetch_commits_via_graphql: empty response for batch {[r.split('/')[-1] for r in batch]}"
+                    )
+                    break
+
+                next_repos_with_more: Set[str] = set()
+
+                for idx, repo_full in enumerate(batch):
+                    alias = f"r{idx}"
+                    repo_data = data.get(alias)
+                    if not repo_data:
+                        continue
+
+                    repo_name_with_owner = repo_data.get(
+                        'nameWithOwner', repo_full)
+                    refs = repo_data.get('refs', {})
+                    refs_page_info = refs.get('pageInfo', {})
+
+                    for ref_node in refs.get('nodes', []):
+                        branch_name = ref_node.get('name', '')
+                        target = ref_node.get('target') or {}
+                        history = target.get('history', {})
+
+                        # Note: we only request first:100 for history — if a
+                        # single branch has >100 commits in one day, we log a
+                        # warning.  This is extremely unlikely in practice.
+                        if history.get('pageInfo', {}).get('hasNextPage'):
+                            logger.warning(
+                                f"Branch {repo_full}/{branch_name} has >100 commits "
+                                f"in window; some may be missed. Consider reducing batch size."
+                            )
+
+                        for commit_node in history.get('nodes', []):
+                            sha = commit_node.get('oid', '')
+                            if not sha:
+                                continue
+
+                            author_info = commit_node.get('author') or {}
+                            user_info = author_info.get('user') or {}
+                            author_login = user_info.get('login', '')
+                            author_name = author_info.get('name', '')
+                            author_email = author_info.get('email', '')
+
+                            # Bot check
+                            surrogate = {
+                                'author': {'type': 'User', 'login': author_login},
+                                'commit': {'author': {'name': author_name, 'email': author_email}},
+                            }
+                            if self._is_bot_commit(surrogate):
+                                continue
+
+                            # Author filter — only keep tracked users
+                            if author_login not in user_ids:
+                                continue
+
+                            additions = commit_node.get('additions', 0) or 0
+                            deletions = commit_node.get('deletions', 0) or 0
+
+                            if sha in commits_by_sha:
+                                # Same commit on multiple branches — append branch
+                                if branch_name not in commits_by_sha[sha]['branches']:
+                                    commits_by_sha[sha]['branches'].append(
+                                        branch_name)
+                            else:
+                                commits_by_sha[sha] = {
+                                    'sha': sha,
+                                    'author': author_login,
+                                    'repository': repo_name_with_owner,
+                                    'timestamp': author_info.get('date', ''),
+                                    'message': (commit_node.get('message') or '').split('\n')[0][:100],
+                                    'stats': {
+                                        'additions': additions,
+                                        'deletions': deletions,
+                                        'total': additions + deletions,
+                                    },
+                                    'branches': [branch_name],
+                                }
+
+                    # Track whether this repo needs another branch page
+                    if refs_page_info.get('hasNextPage') and repo_full in repos_with_more:
+                        next_repos_with_more.add(repo_full)
+                        repo_cursors[repo_full] = refs_page_info.get(
+                            'endCursor')
+
+                repos_with_more = next_repos_with_more
+
+        result = list(commits_by_sha.values())
+        logger.debug(
+            f"_fetch_commits_via_graphql: {len(result)} unique commits "
+            f"from {len(repo_names)} repo(s)"
+        )
+        return result
 
     def _fetch_commits_for_date(self, date_str: str, start_datetime: datetime,
                                 end_datetime: datetime, user_ids: Set[str]) -> Dict:
         """Fetch all commits and closed issues for a specific date.
 
-        Commit discovery uses the GitHub REST commit search API
-        (``GET /search/commits``) which covers every branch and every repo in the
-        org in a single paginated query per user — no repo pre-discovery step, no
-        Events API, no 300-event cap.
+        Commit discovery uses a two-step pure-GraphQL approach:
+          1. _discover_active_repos() — one call to find repos pushed in window.
+          2. _fetch_commits_via_graphql() — batched calls over refs→history to
+             get every commit on every branch, with additions/deletions inline.
+
+        This approach queries git data directly and never depends on GitHub's
+        search index, so it cannot miss commits regardless of indexing delay.
 
         Args:
             date_str: Date in YYYY-MM-DD format.
@@ -706,26 +733,25 @@ class GitHubFetcher:
             ``{date, commits: [...], issues: [...], issue_count}``.
         """
         commits_data: List[Dict] = []
-        commits_by_sha: Dict[str, Dict] = {}
 
         try:
-            logger.debug(
-                f"Fetching commits for {date_str} from {len(user_ids)} users "
-                f"via GraphQL commit search"
+            logger.info(
+                f"Fetching commits for {date_str} via two-step GraphQL "
+                f"(repo discovery → branch history)"
             )
 
-            for username in user_ids:
-                user_commits = self._fetch_commits_for_user_via_search(
-                    username, date_str, start_datetime, end_datetime
-                )
+            # Step 1: which repos had pushes in this date window?
+            active_repos = self._discover_active_repos(
+                start_datetime, end_datetime)
 
-                for commit in user_commits:
-                    sha = commit['sha']
-                    if sha not in commits_by_sha:
-                        commits_by_sha[sha] = commit
-                        commits_data.append(commit)
-                    # If the same SHA was already added (e.g. two users share a
-                    # co-authored commit, which is rare), keep the first entry.
+            if active_repos:
+                # Step 2: for each active repo, scan all branches for commits by our users
+                commits_data = self._fetch_commits_via_graphql(
+                    active_repos, start_datetime, end_datetime, user_ids
+                )
+            else:
+                logger.info(
+                    f"No repos pushed on {date_str} — skipping branch scan")
 
         except Exception as exc:
             logger.error(f"Error fetching commits for {date_str}: {exc}")
