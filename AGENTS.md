@@ -107,7 +107,32 @@ Commits are deduplicated **by SHA within a single fetch run** (`commits_by_sha` 
 
 ### 4.3 Leaderboard Ranking
 
-Three-level sort (all descending): `(issues_closed, commit_count, total_loc)`. Ties share the same rank emoji position. This is implemented in `leaderboard_generator.py → get_all_contributors_by_impact()`.
+Contributors are ranked by a **weighted normalized score**:
+
+```
+score = w_issues × norm(issues_closed)
+      + w_commits × norm(commit_count)
+      + w_additions × norm(total_additions)
+      + w_deletions × norm(total_deletions)
+```
+
+Each metric is **min-max normalized** to [0, 1] across all contributors for the period:
+```
+norm(x_i) = (x_i − min(x)) / (max(x) − min(x))
+```
+If all contributors share the same value for a metric (`max == min`), that metric contributes 0 to everyone's score for that period — it provides no differentiating signal.
+
+Default weights (configured in `config.py → LEADERBOARD_WEIGHTS`):
+| Metric | Weight |
+|---|---|
+| `issues_closed` | 3 |
+| `commits` | 3 |
+| `additions` | 2 |
+| `deletions` | 2 |
+
+Max possible score = sum of all weights (10 with defaults).
+
+Ties (equal scores) share the same rank emoji position. This is implemented in `leaderboard_generator.py → compute_weighted_scores()` and `get_all_contributors_by_impact()`.
 
 ### 4.4 Timezone
 
@@ -161,6 +186,7 @@ All GraphQL and REST calls retry up to 10 times with smart wait: the exact reset
 | `GOOGLE_CHAT_WEBHOOK_BASE_URL` | `str` | Production channel space URL (hardcoded) |
 | `GOOGLE_CHAT_TEST_WEBHOOK_BASE_URL` | `str` | Test channel space URL (hardcoded) |
 | `IST_TIMEZONE` | `pytz.timezone` | Use this for all date arithmetic |
+| `LEADERBOARD_WEIGHTS` | `Dict[str, int]` | Weights for weighted scoring: keys `issues_closed`, `commits`, `additions`, `deletions` |
 
 When adding a new config variable:
 1. Add it to `config.py` with a docstring.
@@ -216,6 +242,9 @@ When adding a new config variable:
 - `get_yesterday_ist()` / `get_last_7_days_ist()` — always uses IST.
 - `should_post_weekly()` — True if today (IST) is Monday.
 - `generate_daily_leaderboard()` / `generate_weekly_leaderboard()` — return `(contributors_by_impact, date_string)`.
+- `aggregate_metrics(date_strings)` — returns per-user dict with keys `issues_closed`, `commit_count`, `total_loc`, `total_additions`, `total_deletions`.
+- `compute_weighted_scores(user_metrics)` — min-max normalizes each metric across the cohort, applies weights from `LEADERBOARD_WEIGHTS`, returns `{username: float_score}`.
+- `get_all_contributors_by_impact(user_metrics)` — calls `compute_weighted_scores`, attaches `score` key to each metrics dict, sorts descending by score.
 - `get_commits_breakdown()` / `get_issues_breakdown()` — detail data for the second message.
 - Reads directly from raw cache via `CacheManager.read_cache()` — does not use any intermediate processed output.
 

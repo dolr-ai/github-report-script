@@ -11,7 +11,7 @@ import pytz
 
 from src.leaderboard_generator import LeaderboardGenerator
 from src.cache_manager import CacheManager
-from src.config import IST_TIMEZONE
+from src.config import IST_TIMEZONE, LEADERBOARD_WEIGHTS
 
 
 class TestLeaderboardDateCalculations:
@@ -243,30 +243,41 @@ class TestLeaderboardGeneration:
         assert 'saikatdas0790' in metrics
         assert metrics['saikatdas0790']['commit_count'] == 2
         assert metrics['saikatdas0790']['total_loc'] == 450  # 150 + 300
+        assert metrics['saikatdas0790']['total_additions'] == 300  # 100 + 200
+        assert metrics['saikatdas0790']['total_deletions'] == 150  # 50 + 100
         assert metrics['saikatdas0790']['issues_closed'] == 2
 
         # Check gravityvi metrics
         assert 'gravityvi' in metrics
         assert metrics['gravityvi']['commit_count'] == 1
         assert metrics['gravityvi']['total_loc'] == 75
+        assert metrics['gravityvi']['total_additions'] == 50
+        assert metrics['gravityvi']['total_deletions'] == 25
         assert metrics['gravityvi']['issues_closed'] == 0
 
     @pytest.mark.integration
     def test_get_all_contributors_by_impact_sorting(self, leaderboard_gen_with_data):
-        """Test that contributors are sorted by impact (issues > commits > loc)"""
+        """Test that contributors are sorted by weighted score descending"""
         metrics = leaderboard_gen_with_data.aggregate_metrics(['2026-02-16'])
         sorted_contributors = leaderboard_gen_with_data.get_all_contributors_by_impact(
             metrics)
 
-        # saikatdas0790 should be first (has issues closed)
+        # saikatdas0790 should be first (has issues closed — highest weight)
         assert sorted_contributors[0][0] == 'saikatdas0790'
         assert sorted_contributors[0][1]['issues_closed'] == 2
         assert sorted_contributors[0][1]['commit_count'] == 2
+        # score key must be present and positive
+        assert 'score' in sorted_contributors[0][1]
+        assert sorted_contributors[0][1]['score'] > 0
 
-        # gravityvi should be second (no issues, fewer commits)
+        # gravityvi should be second (no issues, fewer commits, lower score)
         assert sorted_contributors[1][0] == 'gravityvi'
         assert sorted_contributors[1][1]['issues_closed'] == 0
         assert sorted_contributors[1][1]['commit_count'] == 1
+        assert sorted_contributors[1][1]['score'] >= 0
+
+        # scores should be non-increasing
+        assert sorted_contributors[0][1]['score'] >= sorted_contributors[1][1]['score']
 
     @pytest.mark.integration
     def test_generate_daily_leaderboard(self, leaderboard_gen_with_data):
@@ -376,3 +387,108 @@ class TestLeaderboardGeneration:
             # No data in cache, should return empty list
             assert len(contributors) == 0
             assert date_string == 'Feb 16, 2026'
+
+
+class TestComputeWeightedScores:
+    """Unit tests for the weighted scoring / normalization logic"""
+
+    @pytest.fixture
+    def leaderboard_gen(self, temp_cache_dir, monkeypatch):
+        monkeypatch.setattr(
+            'src.cache_manager.CACHE_COMMITS_DIR', temp_cache_dir)
+        return LeaderboardGenerator(CacheManager())
+
+    @pytest.mark.unit
+    def test_empty_metrics_returns_empty(self, leaderboard_gen):
+        """compute_weighted_scores returns {} for empty input"""
+        assert leaderboard_gen.compute_weighted_scores({}) == {}
+
+    @pytest.mark.unit
+    def test_single_contributor_scores_zero(self, leaderboard_gen):
+        """Single contributor: all metrics normalize to 0 (min == max)"""
+        metrics = {
+            'alice': {
+                'issues_closed': 3,
+                'commit_count': 10,
+                'total_additions': 500,
+                'total_deletions': 100,
+            }
+        }
+        scores = leaderboard_gen.compute_weighted_scores(metrics)
+        assert scores == {'alice': 0.0}
+
+    @pytest.mark.unit
+    def test_normalization_produces_values_in_0_1(self, leaderboard_gen):
+        """Normalized contributions per metric must be in [0, 1]"""
+        metrics = {
+            'alice': {'issues_closed': 2, 'commit_count': 10, 'total_additions': 500, 'total_deletions': 200},
+            'bob':   {'issues_closed': 0, 'commit_count': 2,  'total_additions': 100, 'total_deletions': 50},
+        }
+        scores = leaderboard_gen.compute_weighted_scores(metrics)
+        max_possible = sum(LEADERBOARD_WEIGHTS.values())
+        for score in scores.values():
+            assert 0.0 <= score <= max_possible
+
+    @pytest.mark.unit
+    def test_higher_values_yield_higher_scores(self, leaderboard_gen):
+        """Contributor with uniformly higher metrics should score higher"""
+        metrics = {
+            'alice': {'issues_closed': 3, 'commit_count': 15, 'total_additions': 1000, 'total_deletions': 300},
+            'bob':   {'issues_closed': 1, 'commit_count': 5,  'total_additions': 200,  'total_deletions': 50},
+        }
+        scores = leaderboard_gen.compute_weighted_scores(metrics)
+        assert scores['alice'] > scores['bob']
+
+    @pytest.mark.unit
+    def test_all_zeros_for_a_metric_contributes_nothing(self, leaderboard_gen):
+        """When all contributors have 0 for a metric it contributes 0 to scores"""
+        metrics = {
+            'alice': {'issues_closed': 0, 'commit_count': 5, 'total_additions': 100, 'total_deletions': 20},
+            'bob':   {'issues_closed': 0, 'commit_count': 2, 'total_additions': 50,  'total_deletions': 10},
+        }
+        scores = leaderboard_gen.compute_weighted_scores(metrics)
+        # issues_closed is 0 for everyone — should not affect ranking direction
+        # alice has more commits and LOC so should still score higher
+        assert scores['alice'] > scores['bob']
+
+    @pytest.mark.unit
+    def test_top_scorer_gets_full_weight_sum_when_dominates_all(self, leaderboard_gen):
+        """Contributor who leads every metric should score equal to sum of all weights"""
+        metrics = {
+            'alice': {'issues_closed': 5, 'commit_count': 20, 'total_additions': 1000, 'total_deletions': 500},
+            'bob':   {'issues_closed': 0, 'commit_count': 0,  'total_additions': 0,    'total_deletions': 0},
+        }
+        scores = leaderboard_gen.compute_weighted_scores(metrics)
+        max_possible = sum(LEADERBOARD_WEIGHTS.values())
+        assert scores['alice'] == pytest.approx(max_possible)
+        assert scores['bob'] == pytest.approx(0.0)
+
+    @pytest.mark.unit
+    def test_custom_weights_are_respected(self, leaderboard_gen, monkeypatch):
+        """Changing LEADERBOARD_WEIGHTS changes the scores proportionally"""
+        custom_weights = {'issues_closed': 10,
+                          'commits': 0, 'additions': 0, 'deletions': 0}
+        monkeypatch.setattr(
+            'src.leaderboard_generator.LEADERBOARD_WEIGHTS', custom_weights)
+
+        metrics = {
+            'alice': {'issues_closed': 4, 'commit_count': 100, 'total_additions': 9999, 'total_deletions': 9999},
+            'bob':   {'issues_closed': 2, 'commit_count': 1,   'total_additions': 0,    'total_deletions': 0},
+        }
+        scores = leaderboard_gen.compute_weighted_scores(metrics)
+        # Only issues_closed has weight; alice has more issues so she wins
+        assert scores['alice'] > scores['bob']
+        # Max score = weight 10 * normalized 1.0
+        assert scores['alice'] == pytest.approx(10.0)
+
+    @pytest.mark.unit
+    def test_get_all_contributors_attaches_score_key(self, leaderboard_gen):
+        """get_all_contributors_by_impact attaches 'score' to every metrics dict"""
+        metrics = {
+            'alice': {'issues_closed': 2, 'commit_count': 5, 'total_loc': 300, 'total_additions': 200, 'total_deletions': 100},
+            'bob':   {'issues_closed': 0, 'commit_count': 2, 'total_loc': 75,  'total_additions': 50,  'total_deletions': 25},
+        }
+        result = leaderboard_gen.get_all_contributors_by_impact(metrics)
+        for _username, m in result:
+            assert 'score' in m
+            assert isinstance(m['score'], float)

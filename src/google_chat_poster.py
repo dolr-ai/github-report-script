@@ -168,15 +168,17 @@ class GoogleChatPoster:
         lines = [f"📊 **{period_type} Leaderboard ({date_string})**\n"]
 
         current_rank = 0
-        prev_metrics = None
+        prev_score = None
 
         for idx, (username, metrics) in enumerate(contributors_by_impact):
             issues_closed = metrics.get('issues_closed', 0)
             commit_count = metrics.get('commit_count', 0)
-            total_loc = metrics.get('total_loc', 0)
+            total_additions = metrics.get('total_additions', 0)
+            total_deletions = metrics.get('total_deletions', 0)
+            score = metrics.get('score', 0.0)
 
-            # Handle ties: same rank if all three metrics match
-            if prev_metrics is None or (issues_closed, commit_count, total_loc) != prev_metrics:
+            # Handle ties: same rank if scores are equal
+            if prev_score is None or score != prev_score:
                 current_rank = idx
 
             # Show emoji for top 3 positions only
@@ -186,16 +188,16 @@ class GoogleChatPoster:
             else:
                 rank_prefix = f"{current_rank + 1}."
 
-            # Format: 🥇 username - X issues closed / X commits / X lines of code
-            issue_text = f"{issues_closed} issue{'s' if issues_closed != 1 else ''} closed" if issues_closed > 0 else "0 issues closed"
-            lines.append(f"{rank_prefix} **{username}** - {issue_text}")
+            lines.append(f"{rank_prefix} **{username}** — Score: {score:.1f}")
+            issue_text = f"{issues_closed} issue{'s' if issues_closed != 1 else ''} closed"
+            commit_text = f"{commit_count} commit{'s' if commit_count != 1 else ''}"
+            lines.append(f"{issue_text} | {commit_text}")
             lines.append(
-                f"{commit_count} commit{'s' if commit_count != 1 else ''}")
-            lines.append(f"{total_loc:,} lines of code")
+                f"{total_additions:,} lines added | {total_deletions:,} lines removed")
             if idx < len(contributors_by_impact) - 1:
                 lines.append("")  # Blank line between contributors
 
-            prev_metrics = (issues_closed, commit_count, total_loc)
+            prev_score = score
 
         return "\n".join(lines)
 
@@ -317,15 +319,13 @@ class GoogleChatPoster:
             f"📝 **{period_type} Commit & Issue Details ({date_string})**\n"]
 
         current_rank = 0
-        prev_metrics = None
+        prev_score = None
 
         for idx, (username, metrics) in enumerate(leaderboard_order):
-            issues_closed = metrics.get('issues_closed', 0)
-            commit_count = metrics.get('commit_count', 0)
-            total_loc = metrics.get('total_loc', 0)
+            score = metrics.get('score', 0.0)
 
-            # Handle ties: same rank if all three metrics match
-            if prev_metrics is None or (issues_closed, commit_count, total_loc) != prev_metrics:
+            # Handle ties: same rank if scores are equal
+            if prev_score is None or score != prev_score:
                 current_rank = idx
 
             # Show emoji for top 3 positions
@@ -353,8 +353,6 @@ class GoogleChatPoster:
                     message_parts.append(
                         f"  • ... and {len(issues) - 20} more issues")
 
-            prev_metrics = (issues_closed, commit_count, total_loc)
-
             # Show commits
             commits = user_commits.get(username, [])
             if commits:
@@ -376,7 +374,7 @@ class GoogleChatPoster:
             elif not issues:
                 message_parts.append("  No commits or issues")
 
-            prev_issues = issues_closed
+            prev_score = score
 
         return "\n".join(message_parts)
 

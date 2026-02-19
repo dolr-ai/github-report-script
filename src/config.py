@@ -218,6 +218,32 @@ Known bot usernames for fallback filtering.
 Primary filtering uses GitHub API user type check.
 """
 
+# --- Leaderboard Scoring Weights ---
+LEADERBOARD_WEIGHTS = {
+    'issues_closed': 3,
+    'commits': 3,
+    'additions': 2,
+    'deletions': 2,
+}
+"""
+Weights for the leaderboard weighted scoring system.
+
+Each metric is first min-max normalized to [0, 1] across all contributors
+for the period, then multiplied by its weight. The final score is the sum
+of all weighted normalized metrics. Max possible score = sum of all weights.
+
+    score = w_issues * norm(issues_closed)
+          + w_commits * norm(commit_count)
+          + w_additions * norm(total_additions)
+          + w_deletions * norm(total_deletions)
+
+When all contributors share the same value for a metric (max == min),
+that metric contributes 0 to all scores — it provides no differentiating
+signal for that period.
+
+Weights must be non-negative integers or floats.
+"""
+
 
 # ============================================================================
 # PATHS - Directory structure (usually no need to change)
