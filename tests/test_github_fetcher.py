@@ -56,8 +56,10 @@ class TestGitHubFetcherUnit:
         """Test that GraphQL query is properly structured"""
         fetcher = GitHubFetcher(thread_count=1)
 
-        # Test that the fetcher has the necessary methods for GraphQL
+        # Verify the new two-step GraphQL methods are present
         assert hasattr(fetcher, '_graphql_request')
+        assert hasattr(fetcher, '_discover_active_repos')
+        assert hasattr(fetcher, '_fetch_commits_via_graphql')
         assert hasattr(fetcher, '_fetch_commits_for_date')
 
         # Verify GraphQL URL is set correctly
@@ -68,242 +70,368 @@ class TestGitHubFetcherUnit:
         assert fetcher.session.headers['Authorization'].startswith('bearer')
 
 
-class TestFetchCommitsViaSearch:
-    """Unit tests for _fetch_commits_for_user_via_search — the REST commit
-    search approach."""
+# ---------------------------------------------------------------------------
+# Helpers shared by TestDiscoverActiveRepos and TestFetchCommitsViaGraphQL
+# ---------------------------------------------------------------------------
 
-    def _make_fetcher(self):
-        fetcher = GitHubFetcher(thread_count=1)
-        fetcher.session = MagicMock()
-        fetcher.session.headers = {
-            'Authorization': 'bearer test-token',
-            'Content-Type': 'application/json',
+def _make_fetcher():
+    """Return a GitHubFetcher with _graphql_request and rate-limit mocked out."""
+    fetcher = GitHubFetcher(thread_count=1)
+    fetcher._graphql_request = MagicMock()
+    fetcher._check_rate_limit_and_wait = MagicMock()
+    return fetcher
+
+
+def _repo_node(name, pushed_at):
+    return {'name': name, 'pushedAt': pushed_at}
+
+
+def _gql_repos_page(nodes, has_next=False, end_cursor=None):
+    return {
+        'organization': {
+            'repositories': {
+                'pageInfo': {'hasNextPage': has_next, 'endCursor': end_cursor},
+                'nodes': nodes,
+            }
         }
-        # Silence the search rate-limit check in unit tests
-        fetcher._check_rate_limit_and_wait = MagicMock()
-        # Silence per-commit stats fetches in unit tests (returns zeros)
-        fetcher._fetch_commit_stats = MagicMock(
-            return_value={'additions': 10, 'deletions': 2, 'total': 12}
-        )
-        return fetcher
+    }
 
-    def _search_item(self, sha, login, repo, message='feat: test',
-                     committed_date='2026-02-17T12:00:00Z',
-                     author_name='Test User', author_email='test@example.com'):
-        """Build a single REST search result item matching the GitHub API shape."""
-        return {
-            'sha': sha,
-            'commit': {
-                'message': message,
-                'author': {
-                    'name': author_name,
-                    'email': author_email,
-                    'date': committed_date,
-                },
+
+def _commit_node(oid, login, message='feat: test',
+                 date='2026-02-17T12:00:00Z',
+                 author_name='Test User', author_email='test@example.com',
+                 additions=10, deletions=2):
+    return {
+        'oid': oid,
+        'message': message,
+        'additions': additions,
+        'deletions': deletions,
+        'author': {
+            'name': author_name,
+            'email': author_email,
+            'date': date,
+            'user': {'login': login},
+        },
+    }
+
+
+def _ref_node(branch_name, commit_nodes):
+    return {
+        'name': branch_name,
+        'target': {
+            'history': {
+                'pageInfo': {'hasNextPage': False, 'endCursor': None},
+                'nodes': commit_nodes,
+            }
+        },
+    }
+
+
+def _gql_repo_page(idx, repo_name, ref_nodes, has_next_refs=False, end_cursor=None):
+    """Build the GraphQL alias response for a single repo."""
+    return {
+        f'r{idx}': {
+            'name': repo_name,
+            'nameWithOwner': f'{GITHUB_ORG}/{repo_name}',
+            'refs': {
+                'pageInfo': {'hasNextPage': has_next_refs, 'endCursor': end_cursor},
+                'nodes': ref_nodes,
             },
-            'author': {'login': login, 'type': 'User'},
-            'repository': {'full_name': repo},
         }
+    }
 
-    def _search_response(self, items, total_count=None):
-        """Build a REST search API response dict."""
-        return {
-            'total_count': total_count if total_count is not None else len(items),
-            'items': items,
-        }
+
+# ---------------------------------------------------------------------------
+# Tests for _discover_active_repos
+# ---------------------------------------------------------------------------
+
+class TestDiscoverActiveRepos:
+    """Unit tests for _discover_active_repos()."""
+
+    START = datetime(2026, 2, 17, 0, 0, 0)
+    END = datetime(2026, 2, 17, 23, 59, 59)
 
     @pytest.mark.unit
-    def test_returns_commits_for_user(self):
-        """Happy path: commits belonging to the queried user are returned."""
-        fetcher = self._make_fetcher()
-        start = datetime(2026, 2, 17, 0, 0, 0)
-        end = datetime(2026, 2, 17, 23, 59, 59)
+    def test_returns_repos_in_window(self):
+        """Repos pushed inside the date window are returned."""
+        fetcher = _make_fetcher()
+        fetcher._graphql_request.return_value = _gql_repos_page([
+            _repo_node('yral-billing', '2026-02-17T10:00:00Z'),
+            # too old → triggers early exit
+            _repo_node('old-repo', '2026-01-01T00:00:00Z'),
+        ])
 
-        item = self._search_item(
-            sha='abc123',
-            login='joel-medicala-yral',
-            repo=f'{GITHUB_ORG}/yral-ai-chat',
+        result = fetcher._discover_active_repos(self.START, self.END)
+
+        assert result == [f'{GITHUB_ORG}/yral-billing']
+
+    @pytest.mark.unit
+    def test_empty_when_no_repos_in_window(self):
+        """Returns empty list when no repos were pushed in the window."""
+        fetcher = _make_fetcher()
+        fetcher._graphql_request.return_value = _gql_repos_page([
+            _repo_node('ancient-repo', '2025-01-01T00:00:00Z'),
+        ])
+
+        result = fetcher._discover_active_repos(self.START, self.END)
+
+        assert result == []
+
+    @pytest.mark.unit
+    def test_paginates_when_has_next_page(self):
+        """Two pages of results are fetched when hasNextPage is True on page 1."""
+        fetcher = _make_fetcher()
+        page1 = _gql_repos_page(
+            [_repo_node('repo-a', '2026-02-17T08:00:00Z')],
+            has_next=True, end_cursor='cursor1',
         )
-        mock_resp = MagicMock()
-        mock_resp.status_code = 200
-        mock_resp.json.return_value = self._search_response([item])
-        mock_resp.raise_for_status = MagicMock()
+        page2 = _gql_repos_page(
+            [_repo_node('repo-b', '2026-02-17T09:00:00Z'),
+             # triggers early exit
+             _repo_node('old-repo', '2025-06-01T00:00:00Z')],
+        )
+        fetcher._graphql_request.side_effect = [page1, page2]
 
-        with patch('requests.get', return_value=mock_resp):
-            result = fetcher._fetch_commits_for_user_via_search(
-                'joel-medicala-yral', '2026-02-17', start, end)
+        result = fetcher._discover_active_repos(self.START, self.END)
+
+        assert set(result) == {f'{GITHUB_ORG}/repo-a', f'{GITHUB_ORG}/repo-b'}
+        assert fetcher._graphql_request.call_count == 2
+
+    @pytest.mark.unit
+    def test_early_exit_when_repos_older_than_lookback(self):
+        """Stops pagination as soon as a repo's pushedAt is before the look-behind window."""
+        fetcher = _make_fetcher()
+        # First node is in window, second is way older — should stop immediately.
+        fetcher._graphql_request.return_value = _gql_repos_page([
+            _repo_node('active-repo', '2026-02-17T14:00:00Z'),
+            _repo_node('stale-repo', '2024-01-01T00:00:00Z'),
+        ], has_next=True)  # has_next=True, but early-exit should prevent a second call
+
+        result = fetcher._discover_active_repos(self.START, self.END)
+
+        assert result == [f'{GITHUB_ORG}/active-repo']
+        # Only one GraphQL call despite hasNextPage=True
+        assert fetcher._graphql_request.call_count == 1
+
+    @pytest.mark.unit
+    def test_returns_empty_on_graphql_failure(self):
+        """Returns empty list (not an exception) when _graphql_request returns None."""
+        fetcher = _make_fetcher()
+        fetcher._graphql_request.return_value = None
+
+        result = fetcher._discover_active_repos(self.START, self.END)
+
+        assert result == []
+
+    @pytest.mark.unit
+    def test_look_behind_includes_repo_pushed_just_before_window(self):
+        """A repo pushed 12h before the window opens is included (1-day look-behind)."""
+        fetcher = _make_fetcher()
+        # Pushed 12 hours before window START
+        pushed_at = '2026-02-16T12:00:00Z'
+        fetcher._graphql_request.return_value = _gql_repos_page([
+            _repo_node('early-push-repo', pushed_at),
+        ])
+
+        result = fetcher._discover_active_repos(self.START, self.END)
+
+        # 12 h before window is within the 1-day buffer
+        assert f'{GITHUB_ORG}/early-push-repo' in result
+
+
+# ---------------------------------------------------------------------------
+# Tests for _fetch_commits_via_graphql
+# ---------------------------------------------------------------------------
+
+class TestFetchCommitsViaGraphQL:
+    """Unit tests for _fetch_commits_via_graphql()."""
+
+    START = datetime(2026, 2, 17, 0, 0, 0)
+    END = datetime(2026, 2, 17, 23, 59, 59)
+    USER_IDS = {'joel-medicala-yral', 'saikatdas0790'}
+
+    @pytest.mark.unit
+    def test_returns_commits_for_tracked_users(self):
+        """Happy path: commits by tracked users are returned."""
+        fetcher = _make_fetcher()
+        fetcher._graphql_request.return_value = _gql_repo_page(
+            0, 'yral-ai-chat',
+            [_ref_node('main', [_commit_node('abc123', 'joel-medicala-yral')])]
+        )
+
+        result = fetcher._fetch_commits_via_graphql(
+            [f'{GITHUB_ORG}/yral-ai-chat'], self.START, self.END, self.USER_IDS
+        )
 
         assert len(result) == 1
-        assert result[0]['sha'] == 'abc123'
-        assert result[0]['author'] == 'joel-medicala-yral'
-        assert result[0]['repository'] == f'{GITHUB_ORG}/yral-ai-chat'
-        assert result[0]['stats']['additions'] == 10
-        assert result[0]['stats']['deletions'] == 2
-        assert result[0]['stats']['total'] == 12
+        c = result[0]
+        assert c['sha'] == 'abc123'
+        assert c['author'] == 'joel-medicala-yral'
+        assert c['repository'] == f'{GITHUB_ORG}/yral-ai-chat'
+        assert c['stats'] == {'additions': 10, 'deletions': 2, 'total': 12}
 
     @pytest.mark.unit
-    def test_deduplicates_by_sha(self):
-        """The same SHA appearing in two pages is stored only once."""
-        fetcher = self._make_fetcher()
-        start = datetime(2026, 2, 17, 0, 0, 0)
-        end = datetime(2026, 2, 17, 23, 59, 59)
-
-        item = self._search_item(
-            sha='dup999',
-            login='joel-medicala-yral',
-            repo=f'{GITHUB_ORG}/yral-ai-chat',
+    def test_filters_out_untracked_authors(self):
+        """Commits by authors not in user_ids are silently dropped."""
+        fetcher = _make_fetcher()
+        fetcher._graphql_request.return_value = _gql_repo_page(
+            0, 'yral-ai-chat',
+            [_ref_node('main', [_commit_node('xyz999', 'random-outsider')])]
         )
-        # Page 1 returns the commit with total_count=1; pagination stops after 1 item
-        mock_resp = MagicMock()
-        mock_resp.status_code = 200
-        mock_resp.json.return_value = self._search_response([item], total_count=1)
-        mock_resp.raise_for_status = MagicMock()
 
-        with patch('requests.get', return_value=mock_resp):
-            result = fetcher._fetch_commits_for_user_via_search(
-                'joel-medicala-yral', '2026-02-17', start, end)
-
-        assert len(result) == 1
-
-    @pytest.mark.unit
-    def test_filters_out_other_org_repos(self):
-        """Commits from repos outside GITHUB_ORG are dropped."""
-        fetcher = self._make_fetcher()
-        start = datetime(2026, 2, 17, 0, 0, 0)
-        end = datetime(2026, 2, 17, 23, 59, 59)
-
-        outside_item = self._search_item(
-            sha='ext001',
-            login='joel-medicala-yral',
-            repo='some-other-org/some-repo',
+        result = fetcher._fetch_commits_via_graphql(
+            [f'{GITHUB_ORG}/yral-ai-chat'], self.START, self.END, self.USER_IDS
         )
-        mock_resp = MagicMock()
-        mock_resp.status_code = 200
-        mock_resp.json.return_value = self._search_response([outside_item])
-        mock_resp.raise_for_status = MagicMock()
-
-        with patch('requests.get', return_value=mock_resp):
-            result = fetcher._fetch_commits_for_user_via_search(
-                'joel-medicala-yral', '2026-02-17', start, end)
 
         assert result == []
 
     @pytest.mark.unit
     def test_filters_bot_commits(self):
-        """Commits whose author name/email matches KNOWN_BOTS are dropped."""
-        fetcher = self._make_fetcher()
-        start = datetime(2026, 2, 17, 0, 0, 0)
-        end = datetime(2026, 2, 17, 23, 59, 59)
-
-        bot_item = self._search_item(
-            sha='bot001',
-            login='dependabot[bot]',
-            repo=f'{GITHUB_ORG}/yral-ai-chat',
+        """Commits from bots are filtered even if the bot login is in user_ids."""
+        fetcher = _make_fetcher()
+        # Use bot name that _is_bot_commit recognises (type or known name)
+        bot_node = _commit_node(
+            'bot001', 'dependabot[bot]',
             author_name='dependabot[bot]',
             author_email='dependabot@github.com',
         )
-        bot_item['author']['type'] = 'Bot'
-        mock_resp = MagicMock()
-        mock_resp.status_code = 200
-        mock_resp.json.return_value = self._search_response([bot_item])
-        mock_resp.raise_for_status = MagicMock()
-
-        with patch('requests.get', return_value=mock_resp):
-            result = fetcher._fetch_commits_for_user_via_search(
-                'dependabot[bot]', '2026-02-17', start, end)
-
-        assert result == []
-
-    @pytest.mark.unit
-    def test_paginates_until_no_next_page(self):
-        """All pages are fetched when the first page is full (== per_page)."""
-        fetcher = self._make_fetcher()
-        start = datetime(2026, 2, 17, 0, 0, 0)
-        end = datetime(2026, 2, 17, 23, 59, 59)
-
-        item2 = self._search_item(
-            sha='sha002', login='joel-medicala-yral',
-            repo=f'{GITHUB_ORG}/repo-b')
-
-        # Build 100 unique items for page 1 (fills per_page, triggers page 2 fetch)
-        page1_items = [
-            self._search_item(
-                sha=f'sha{i:05d}', login='joel-medicala-yral',
-                repo=f'{GITHUB_ORG}/repo-a')
-            for i in range(100)
-        ]
-        page1_resp = MagicMock()
-        page1_resp.status_code = 200
-        page1_resp.json.return_value = {'total_count': 101, 'items': page1_items}
-        page1_resp.raise_for_status = MagicMock()
-
-        # Page 2 returns 1 item — less than per_page, so pagination stops
-        page2_resp = MagicMock()
-        page2_resp.status_code = 200
-        page2_resp.json.return_value = {'total_count': 101, 'items': [item2]}
-        page2_resp.raise_for_status = MagicMock()
-
-        with patch('requests.get', side_effect=[page1_resp, page2_resp]):
-            result = fetcher._fetch_commits_for_user_via_search(
-                'joel-medicala-yral', '2026-02-17', start, end)
-
-        assert len(result) == 101
-        assert 'sha002' in {c['sha'] for c in result}
-
-    @pytest.mark.unit
-    def test_returns_empty_on_no_results(self):
-        """An empty search result set returns an empty list without raising."""
-        fetcher = self._make_fetcher()
-        start = datetime(2026, 2, 17, 0, 0, 0)
-        end = datetime(2026, 2, 17, 23, 59, 59)
-
-        mock_resp = MagicMock()
-        mock_resp.status_code = 200
-        mock_resp.json.return_value = self._search_response([])
-        mock_resp.raise_for_status = MagicMock()
-
-        with patch('requests.get', return_value=mock_resp):
-            result = fetcher._fetch_commits_for_user_via_search(
-                'joel-medicala-yral', '2026-02-17', start, end)
-
-        assert result == []
-
-    @pytest.mark.unit
-    def test_returns_empty_on_request_failure(self):
-        """A network error from requests.get returns an empty list without raising."""
-        fetcher = self._make_fetcher()
-        start = datetime(2026, 2, 17, 0, 0, 0)
-        end = datetime(2026, 2, 17, 23, 59, 59)
-
-        with patch('requests.get', side_effect=requests.exceptions.ConnectionError('network down')):
-            result = fetcher._fetch_commits_for_user_via_search(
-                'joel-medicala-yral', '2026-02-17', start, end)
-
-        assert result == []
-
-    @pytest.mark.unit
-    def test_branches_field_is_present_and_empty(self):
-        """Each returned commit has a 'branches' key (schema compat) set to []."""
-        fetcher = self._make_fetcher()
-        start = datetime(2026, 2, 17, 0, 0, 0)
-        end = datetime(2026, 2, 17, 23, 59, 59)
-
-        item = self._search_item(
-            sha='branchtest1',
-            login='joel-medicala-yral',
-            repo=f'{GITHUB_ORG}/yral-ai-chat',
+        fetcher._graphql_request.return_value = _gql_repo_page(
+            0, 'yral-ai-chat', [_ref_node('main', [bot_node])]
         )
-        mock_resp = MagicMock()
-        mock_resp.status_code = 200
-        mock_resp.json.return_value = self._search_response([item])
-        mock_resp.raise_for_status = MagicMock()
 
-        with patch('requests.get', return_value=mock_resp):
-            result = fetcher._fetch_commits_for_user_via_search(
-                'joel-medicala-yral', '2026-02-17', start, end)
+        result = fetcher._fetch_commits_via_graphql(
+            [f'{GITHUB_ORG}/yral-ai-chat'],
+            self.START, self.END,
+            self.USER_IDS | {'dependabot[bot]'},
+        )
 
-        assert 'branches' in result[0]
-        assert result[0]['branches'] == []
+        assert result == []
+
+    @pytest.mark.unit
+    def test_deduplicates_by_sha(self):
+        """The same commit SHA seen on two branches is stored once with both branches."""
+        fetcher = _make_fetcher()
+        commit = _commit_node('sha_dup', 'joel-medicala-yral')
+        fetcher._graphql_request.return_value = _gql_repo_page(
+            0, 'yral-ai-chat',
+            [
+                _ref_node('main', [commit]),
+                _ref_node('feature/xyz', [commit]),
+            ]
+        )
+
+        result = fetcher._fetch_commits_via_graphql(
+            [f'{GITHUB_ORG}/yral-ai-chat'], self.START, self.END, self.USER_IDS
+        )
+
+        assert len(result) == 1
+        assert set(result[0]['branches']) == {'main', 'feature/xyz'}
+
+    @pytest.mark.unit
+    def test_branches_field_populated(self):
+        """branches field contains the actual branch name, not an empty list."""
+        fetcher = _make_fetcher()
+        fetcher._graphql_request.return_value = _gql_repo_page(
+            0, 'yral-billing',
+            [_ref_node('feat/setup-pooling',
+                       [_commit_node('sha001', 'saikatdas0790')])]
+        )
+
+        result = fetcher._fetch_commits_via_graphql(
+            [f'{GITHUB_ORG}/yral-billing'], self.START, self.END, self.USER_IDS
+        )
+
+        assert len(result) == 1
+        assert result[0]['branches'] == ['feat/setup-pooling']
+
+    @pytest.mark.unit
+    def test_stats_inline_no_rest_calls(self):
+        """additions/deletions come from the GraphQL response; requests.get is not called."""
+        fetcher = _make_fetcher()
+        fetcher._graphql_request.return_value = _gql_repo_page(
+            0, 'yral-ai-chat',
+            [_ref_node('main', [_commit_node('sha_stats', 'joel-medicala-yral',
+                                             additions=42, deletions=7)])]
+        )
+
+        with patch('requests.get') as mock_get:
+            result = fetcher._fetch_commits_via_graphql(
+                [f'{GITHUB_ORG}/yral-ai-chat'], self.START, self.END, self.USER_IDS
+            )
+            mock_get.assert_not_called()
+
+        assert result[0]['stats'] == {
+            'additions': 42, 'deletions': 7, 'total': 49}
+
+    @pytest.mark.unit
+    def test_returns_empty_for_empty_repo_list(self):
+        """No GraphQL call is made and [] is returned when repo_names is empty."""
+        fetcher = _make_fetcher()
+
+        result = fetcher._fetch_commits_via_graphql(
+            [], self.START, self.END, self.USER_IDS
+        )
+
+        assert result == []
+        fetcher._graphql_request.assert_not_called()
+
+    @pytest.mark.unit
+    def test_returns_empty_on_graphql_failure(self):
+        """Returns [] without raising when _graphql_request returns None."""
+        fetcher = _make_fetcher()
+        fetcher._graphql_request.return_value = None
+
+        result = fetcher._fetch_commits_via_graphql(
+            [f'{GITHUB_ORG}/yral-ai-chat'], self.START, self.END, self.USER_IDS
+        )
+
+        assert result == []
+
+    @pytest.mark.unit
+    def test_message_truncated_to_first_line(self):
+        """Only the first line of a multi-line commit message is stored."""
+        fetcher = _make_fetcher()
+        commit = _commit_node('sha_msg', 'joel-medicala-yral',
+                              message='feat: add feature\n\nDetailed body here.')
+        fetcher._graphql_request.return_value = _gql_repo_page(
+            0, 'yral-ai-chat', [_ref_node('main', [commit])]
+        )
+
+        result = fetcher._fetch_commits_via_graphql(
+            [f'{GITHUB_ORG}/yral-ai-chat'], self.START, self.END, self.USER_IDS
+        )
+
+        assert result[0]['message'] == 'feat: add feature'
+
+    @pytest.mark.unit
+    def test_batches_multiple_repos(self):
+        """Repos are batched; 6 repos with batch_size=5 results in exactly 2 GraphQL calls."""
+        fetcher = _make_fetcher()
+
+        # Build responses for batch1 (repos 0-4) and batch2 (repo 5)
+        def make_batch_response(idxs, repo_suffix_start):
+            resp = {}
+            for i, idx in enumerate(idxs):
+                repo_name = f'repo-{repo_suffix_start + i}'
+                resp[f'r{idx}'] = {
+                    'name': repo_name,
+                    'nameWithOwner': f'{GITHUB_ORG}/{repo_name}',
+                    'refs': {
+                        'pageInfo': {'hasNextPage': False, 'endCursor': None},
+                        'nodes': [],
+                    },
+                }
+            return resp
+
+        batch1_resp = make_batch_response([0, 1, 2, 3, 4], 0)
+        batch2_resp = make_batch_response([5], 5)
+        fetcher._graphql_request.side_effect = [batch1_resp, batch2_resp]
+
+        repo_names = [f'{GITHUB_ORG}/repo-{i}' for i in range(6)]
+        fetcher._fetch_commits_via_graphql(
+            repo_names, self.START, self.END, self.USER_IDS)
+
+        assert fetcher._graphql_request.call_count == 2
 
 
 @pytest.mark.integration
