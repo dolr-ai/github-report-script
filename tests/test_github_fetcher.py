@@ -166,6 +166,28 @@ class TestDiscoverActiveRepos:
         assert result == [f'{GITHUB_ORG}/yral-billing']
 
     @pytest.mark.unit
+    def test_includes_repos_pushed_after_window_end(self):
+        """Repos pushed AFTER the window end are included.
+
+        A repo pushed today for a yesterday window may still have commits
+        from yesterday in its branch history.  history(since:, until:) in
+        Step 2 enforces the actual date boundary.
+        """
+        fetcher = _make_fetcher()
+        fetcher._graphql_request.return_value = _gql_repos_page([
+            # Pushed on Feb 18 for a Feb 17 window — must still be included
+            _repo_node('github-report-script', '2026-02-18T10:00:00Z'),
+            _repo_node('yral-billing', '2026-02-17T10:00:00Z'),
+            # too old → early exit
+            _repo_node('old-repo', '2026-01-01T00:00:00Z'),
+        ])
+
+        result = fetcher._discover_active_repos(self.START, self.END)
+
+        assert f'{GITHUB_ORG}/github-report-script' in result
+        assert f'{GITHUB_ORG}/yral-billing' in result
+
+    @pytest.mark.unit
     def test_empty_when_no_repos_in_window(self):
         """Returns empty list when no repos were pushed in the window."""
         fetcher = _make_fetcher()

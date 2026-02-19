@@ -83,7 +83,7 @@ All commit data is fetched via pure GraphQL (no REST search API). Issue data is 
 
 **Decision:** Commit discovery uses a two-step pure-GraphQL strategy that reads git history directly, with no dependency on GitHub's search index.
 
-**Step 1 — `_discover_active_repos()`:** A single GraphQL call fetches all org repos ordered by `pushedAt DESC`, stopping as soon as repos become older than the look-behind window (start − 1 day). Returns a list of `"owner/repo"` strings for repos touched in the window.
+**Step 1 — `_discover_active_repos()`:** A single GraphQL call fetches all org repos ordered by `pushedAt DESC`, stopping as soon as repos become older than the look-behind window (start − 1 day). Returns a list of `"owner/repo"` strings. **Any repo whose `pushedAt` ≥ lookback is included — including repos pushed after the window end (e.g. today).** A repo pushed today for a yesterday window still has yesterday's commits in its branch history; `history(since:, until:)` in Step 2 enforces the actual date boundary. Using `pushedAt` as an upper-bound filter was a bug that caused commits to be silently dropped whenever a new push happened after midnight.
 
 **Step 2 — `_fetch_commits_via_graphql()`:** For each active repo, fetches all branches (`refs(refPrefix: "refs/heads/", orderBy: TAG_COMMIT_DATE DESC)`) and for each branch, uses `history(since:, until:)` — a real git filter backed by the repo's commit graph, not GitHub's search index. `additions` and `deletions` are inline on each `Commit` node, so **no follow-up REST calls are needed**. Repos are batched 5-per-GraphQL-query via aliases to minimise round-trips.
 

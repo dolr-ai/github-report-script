@@ -421,12 +421,18 @@ class GitHubFetcher:
         start_datetime: datetime,
         end_datetime: datetime,
     ) -> List[str]:
-        """Return names of org repos that were pushed to within the date window.
+        """Return names of org repos that may have commits in the date window.
 
-        A single GraphQL call fetches all org repos ordered by pushedAt.  Only
-        repos whose ``pushedAt`` timestamp falls within [start_datetime,
-        end_datetime] (with a 1-day look-behind buffer so repos pushed just
-        before midnight are not missed) are returned.
+        A single GraphQL call fetches all org repos ordered by pushedAt DESC.
+        A repo is included when its ``pushedAt`` is at or after the look-behind
+        lower bound (start − 1 day), regardless of whether it is newer than
+        ``end_datetime``.  A repo pushed *after* the window (e.g. today) is
+        still included because it may contain commits from yesterday in its
+        branch history — the ``history(since:, until:)`` call in Step 2 is
+        what enforces the actual date filter.
+
+        Early-exit fires only when repos are *older* than the look-behind
+        lower bound (they can’t possibly contain commits in the window).
 
         Args:
             start_datetime: Start of the time window (UTC).
@@ -435,11 +441,10 @@ class GitHubFetcher:
         Returns:
             List of ``"owner/repo"``-style full repo name strings.
         """
-        # Give a 1-day buffer on the lower bound so we don't miss a repo whose
-        # last push was just before the window opened.
+        # 1-day buffer on the lower bound so repos pushed just before midnight
+        # are not missed.
         lookback_str = (start_datetime - timedelta(days=1)
                         ).strftime('%Y-%m-%dT%H:%M:%SZ')
-        end_str = end_datetime.strftime('%Y-%m-%dT%H:%M:%SZ')
 
         active: List[str] = []
         cursor: Optional[str] = None
@@ -475,11 +480,17 @@ class GitHubFetcher:
                 pushed_at = node.get('pushedAt', '')
                 if not pushed_at:
                     continue
-                # Stop iterating once repos are older than our look-behind window
+                # Early-exit: repos older than look-behind can't have commits
+                # in our window.
                 if pushed_at < lookback_str:
                     return active
-                if lookback_str <= pushed_at <= end_str:
-                    active.append(f"{GITHUB_ORG}/{node['name']}")
+                # Include any repo pushed at or after the look-behind bound.
+                # This deliberately includes repos pushed *after* end_datetime
+                # (e.g. pushed today for a yesterday window) because their
+                # branch history may still contain commits dated within the
+                # window.  The history(since:, until:) filter in Step 2
+                # enforces the actual date boundary.
+                active.append(f"{GITHUB_ORG}/{node['name']}")
 
             if not page_info.get('hasNextPage'):
                 break
