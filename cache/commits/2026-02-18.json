@@ -1,0 +1,388 @@
+{
+  "date": "2026-02-18",
+  "cached_at": "2026-02-19T04:33:02.247286Z",
+  "commits": [
+    {
+      "sha": "0d30f243fb072b47493478dfa89a11af3c865fc7",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-19T03:35:07.000+05:30",
+      "message": "Merge pull request #23 from dolr-ai/naitik/reinitialize",
+      "stats": {
+        "additions": 19,
+        "deletions": 16,
+        "total": 35
+      },
+      "branches": []
+    },
+    {
+      "sha": "230b188e66f3a7c2b6c98583e2cea02d2db6c836",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-19T03:33:33.000+05:30",
+      "message": "fix: script directions",
+      "stats": {
+        "additions": 19,
+        "deletions": 16,
+        "total": 35
+      },
+      "branches": []
+    },
+    {
+      "sha": "cb916e85f9c98c271e3e6066b27bfd12d15da95b",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-19T02:56:05.000+05:30",
+      "message": "Merge pull request #22 from dolr-ai/naitik/reinitialize",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": []
+    },
+    {
+      "sha": "b88adcd81301948c834615a6c202f844a7e93d72",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-19T02:54:59.000+05:30",
+      "message": "fix: restore guide",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": []
+    },
+    {
+      "sha": "e3b2cef5ed5d26b58c77f1155dcdcb90b3346bfc",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-19T02:43:34.000+05:30",
+      "message": "Merge pull request #21 from dolr-ai/naitik/reinitialize",
+      "stats": {
+        "additions": 1,
+        "deletions": 8,
+        "total": 9
+      },
+      "branches": []
+    },
+    {
+      "sha": "8f7fea89e39c4e9d64c2f334f386434634db59e1",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-19T02:42:57.000+05:30",
+      "message": "fix: wait after restart",
+      "stats": {
+        "additions": 1,
+        "deletions": 8,
+        "total": 9
+      },
+      "branches": []
+    },
+    {
+      "sha": "60508b44916f88661d50c6c1a600b01a8e8cd102",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-19T02:08:57.000+05:30",
+      "message": "Merge pull request #20 from dolr-ai/naitik/reinitialize",
+      "stats": {
+        "additions": 286,
+        "deletions": 1,
+        "total": 287
+      },
+      "branches": []
+    },
+    {
+      "sha": "19d97c10c6d82a36c629f237f41d40c3ba277dd1",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-19T02:08:00.000+05:30",
+      "message": "fix: token validity , feat: yml for preparing restore",
+      "stats": {
+        "additions": 286,
+        "deletions": 1,
+        "total": 287
+      },
+      "branches": []
+    },
+    {
+      "sha": "df25cd92b0be4c0d4b34b247532f95f38d12749e",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-18T17:35:26.000+05:30",
+      "message": "Merge pull request #19 from dolr-ai/naitik/reinitialize",
+      "stats": {
+        "additions": 86,
+        "deletions": 0,
+        "total": 86
+      },
+      "branches": []
+    },
+    {
+      "sha": "40c30687f849ed9923080dab5413f2e949ec6d8f",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-18T17:34:28.000+05:30",
+      "message": "feat: temp write access to repo for initial upload of secret from github secrets",
+      "stats": {
+        "additions": 86,
+        "deletions": 0,
+        "total": 86
+      },
+      "branches": []
+    },
+    {
+      "sha": "246a40f5a3eeec04e1004132e71b7d220ca79e3e",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-18T16:26:30.000+05:30",
+      "message": "Merge pull request #18 from dolr-ai/naitik/reinitialize",
+      "stats": {
+        "additions": 4,
+        "deletions": 41,
+        "total": 45
+      },
+      "branches": []
+    },
+    {
+      "sha": "f050bd5254436bf749c7e453c7a58c64d7cec387",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-18T16:25:50.000+05:30",
+      "message": "fix: update docs",
+      "stats": {
+        "additions": 4,
+        "deletions": 41,
+        "total": 45
+      },
+      "branches": []
+    },
+    {
+      "sha": "23d9f8bce0588e1576eb304fc899bb5711497508",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-18T16:11:33.000+05:30",
+      "message": "fix: refactoring names for actions (#17)",
+      "stats": {
+        "additions": 5,
+        "deletions": 5,
+        "total": 10
+      },
+      "branches": []
+    },
+    {
+      "sha": "f17a56b2c1a0dc1c09d532c04f2c9e6715d58fc6",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-18T15:33:15.000+05:30",
+      "message": "Merge pull request #16 from dolr-ai/naitik/automation_optimisation",
+      "stats": {
+        "additions": 144,
+        "deletions": 21,
+        "total": 165
+      },
+      "branches": []
+    },
+    {
+      "sha": "c940d0539cc9b7807e2c535d49f652892be757cd",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-18T15:31:21.000+05:30",
+      "message": "feat: optimise oidc access provision",
+      "stats": {
+        "additions": 144,
+        "deletions": 21,
+        "total": 165
+      },
+      "branches": []
+    },
+    {
+      "sha": "f779cf3f4cbd8fe69101e172da59661c218b33a9",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-18T10:01:45.000+05:30",
+      "message": "snapshot service (#15)",
+      "stats": {
+        "additions": 216,
+        "deletions": 0,
+        "total": 216
+      },
+      "branches": []
+    },
+    {
+      "sha": "df62d3133d2555bfbb6d614ad86ec2eb124b1134",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-18T15:28:52.000+05:30",
+      "message": "feat: added delete endpoint (#403)",
+      "stats": {
+        "additions": 99,
+        "deletions": 3,
+        "total": 102
+      },
+      "branches": []
+    },
+    {
+      "sha": "bf92d3e9ba6e23e6429702460255017faba877ad",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-18T15:28:13.000+05:30",
+      "message": "fix: upload base64 images before sending to ComfyUI LoadImage node (#408)",
+      "stats": {
+        "additions": 93,
+        "deletions": 12,
+        "total": 105
+      },
+      "branches": []
+    },
+    {
+      "sha": "6db858258a99e20729cef6a9037e98008f0dfe72",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-18T13:31:21.000+05:30",
+      "message": "feat: explicitly whitelist btc viewed event (#409)",
+      "stats": {
+        "additions": 52,
+        "deletions": 4,
+        "total": 56
+      },
+      "branches": []
+    },
+    {
+      "sha": "7a041bbac562db4e61719297238c9b557b62762b",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-18T18:52:19.000+05:30",
+      "message": "fix: Fixes video generation error parsing failures (#893)",
+      "stats": {
+        "additions": 90,
+        "deletions": 10,
+        "total": 100
+      },
+      "branches": []
+    },
+    {
+      "sha": "5c61ecd772ac236f147ec831589846ec6b7df0df",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-18T13:17:51.000Z",
+      "message": "Refactor documentation: Move ISSUES_TRACKING_IMPLEMENTATION.md and LEADERBOARD_SETUP.md to documenta",
+      "stats": {
+        "additions": 316,
+        "deletions": 0,
+        "total": 316
+      },
+      "branches": []
+    },
+    {
+      "sha": "4f796db42de480d37ab9969e36c4dbeeb19156d4",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-18T13:10:09.000Z",
+      "message": "feat: Pass test_channel argument to leaderboard commands for enhanced functionality",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": []
+    },
+    {
+      "sha": "a3b0872e165c2e5adeb3e09cdc70a4bb42805d03",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-18T13:02:23.000Z",
+      "message": "feat: Add test credentials for Google Chat configuration",
+      "stats": {
+        "additions": 29,
+        "deletions": 25,
+        "total": 54
+      },
+      "branches": []
+    },
+    {
+      "sha": "0bc8d6ac59899a8f59da61568f4c987cd361a87d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-18T12:11:01.000Z",
+      "message": "feat: Enhance Google Chat integration with test channel support",
+      "stats": {
+        "additions": 110,
+        "deletions": 43,
+        "total": 153
+      },
+      "branches": []
+    },
+    {
+      "sha": "f2ef865318f53aadb9059e2069b51b98216b3ecb",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-18T12:08:13.000Z",
+      "message": "Update metadata and user contributions for February 17, 2026",
+      "stats": {
+        "additions": 872,
+        "deletions": 86,
+        "total": 958
+      },
+      "branches": []
+    },
+    {
+      "sha": "7e788a624884b4f8e3bbceb840ea1e7e922c9a85",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-18T04:54:26.000Z",
+      "message": "feat: Add dry-run mode for Google Chat posting functionality",
+      "stats": {
+        "additions": 54,
+        "deletions": 14,
+        "total": 68
+      },
+      "branches": []
+    },
+    {
+      "sha": "825e6c10cd64f259da4fe931e9028ec66c81b0b3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-18T04:51:53.000Z",
+      "message": "feat: Add method to fetch user active repos from GitHub Events API",
+      "stats": {
+        "additions": 507,
+        "deletions": 20,
+        "total": 527
+      },
+      "branches": []
+    }
+  ],
+  "commit_count": 27,
+  "issues": [
+    {
+      "number": 1649,
+      "title": "secret storage setup rework",
+      "closed_at": "2026-02-18T17:53:14Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1649",
+      "labels": []
+    },
+    {
+      "number": 892,
+      "title": "Handle video gen error parsing",
+      "closed_at": "2026-02-18T13:22:28Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/892",
+      "labels": []
+    },
+    {
+      "number": 877,
+      "title": "Create your own chatbot KT and complete remaining",
+      "closed_at": "2026-02-18T11:00:24Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/877",
+      "labels": []
+    }
+  ],
+  "issue_count": 3
+}

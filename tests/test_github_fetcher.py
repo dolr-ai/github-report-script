@@ -69,8 +69,8 @@ class TestGitHubFetcherUnit:
 
 
 class TestFetchCommitsViaSearch:
-    """Unit tests for _fetch_commits_for_user_via_search — the new GraphQL
-    commit search approach."""
+    """Unit tests for _fetch_commits_for_user_via_search — the REST commit
+    search approach."""
 
     def _make_fetcher(self):
         fetcher = GitHubFetcher(thread_count=1)
@@ -81,35 +81,35 @@ class TestFetchCommitsViaSearch:
         }
         # Silence the search rate-limit check in unit tests
         fetcher._check_rate_limit_and_wait = MagicMock()
+        # Silence per-commit stats fetches in unit tests (returns zeros)
+        fetcher._fetch_commit_stats = MagicMock(
+            return_value={'additions': 10, 'deletions': 2, 'total': 12}
+        )
         return fetcher
 
-    def _commit_node(self, sha, login, repo, message='feat: test',
-                     additions=10, deletions=2,
+    def _search_item(self, sha, login, repo, message='feat: test',
                      committed_date='2026-02-17T12:00:00Z',
                      author_name='Test User', author_email='test@example.com'):
+        """Build a single REST search result item matching the GitHub API shape."""
         return {
-            'oid': sha,
-            'message': message,
-            'committedDate': committed_date,
-            'additions': additions,
-            'deletions': deletions,
-            'author': {
-                'name': author_name,
-                'email': author_email,
-                'user': {'login': login},
+            'sha': sha,
+            'commit': {
+                'message': message,
+                'author': {
+                    'name': author_name,
+                    'email': author_email,
+                    'date': committed_date,
+                },
             },
-            'repository': {'nameWithOwner': repo},
+            'author': {'login': login, 'type': 'User'},
+            'repository': {'full_name': repo},
         }
 
-    def _search_response(self, nodes, has_next=False, cursor=None):
+    def _search_response(self, items, total_count=None):
+        """Build a REST search API response dict."""
         return {
-            'search': {
-                'nodes': nodes,
-                'pageInfo': {
-                    'hasNextPage': has_next,
-                    'endCursor': cursor,
-                },
-            }
+            'total_count': total_count if total_count is not None else len(items),
+            'items': items,
         }
 
     @pytest.mark.unit
