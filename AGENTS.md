@@ -257,6 +257,16 @@ When adding a new config variable:
 - `post_commits_breakdown(...)` — formats + posts detailed message (issues first, then commits).
 - Two messages are always posted: summary + breakdown.
 
+### `main.py` — command functions
+
+- `cmd_fetch()` — runs FETCH mode: cleans old cache, fetches date range, writes cache.
+- `cmd_refresh()` — runs REFRESH mode: same as FETCH but with `force_refresh=True`.
+- `cmd_status()` — prints rate limits and cache summary.
+- `cmd_leaderboard(dry_run, test_channel)` — generates daily or weekly leaderboard and posts to Google Chat.
+- `cmd_fetch_and_leaderboard(dry_run, test_channel)` — composite: calls `cmd_fetch()` then `cmd_leaderboard()`; this is the default CI mode. **Previously missing, which caused the nightly CI failure on 2026-02-19.**
+- `parse_args()` — parses `--mode`, `--days`, `--dry-run`, `--test-channel`.
+- `main()` — validates config, dispatches to the appropriate `cmd_*` function.
+
 ---
 
 ## 8. Credentials & Secrets
@@ -283,8 +293,10 @@ GOOGLE_CHAT_TEST_TOKEN
 - Markers: `@pytest.mark.unit` (mock-only, fast) and `@pytest.mark.integration` (real API, skipped if no token).
 - Unit tests mock `_graphql_request` and `requests.get` directly.
 - `conftest.py` provides fixtures: `temp_cache_dir`, `github_client`, `dolr_ai_org`, `sample_date_range`.
+- `tests/test_main.py` covers CLI dispatch, `cmd_fetch_and_leaderboard`, flag forwarding, and `parse_args`.
 - When adding a new module method, add corresponding unit tests in the matching `tests/test_*.py` file.
 - When adding a new source of repo/commit discovery, add tests covering: happy path, empty result, error handling, deduplication.
+- When adding a new CLI command function, add tests covering: happy path, flag forwarding, exception propagation, and `main()` dispatch.
 
 Run unit tests only (fast, no API calls):
 ```bash
@@ -333,3 +345,11 @@ After completing any of the following, edit the relevant section(s) of this file
 - Do **not** add a running changelog or timestamped entries. Keep each section a clean, up-to-date description of the **current** state. If something is no longer true, remove or replace it.
 
 The goal is that any agent starting a new session can read this file and have an accurate model of the codebase without reading source files first.
+
+### GitHub CLI (`gh`) authentication
+
+If you need to use the `gh` CLI (e.g. to inspect CI runs, list issues, or interact with the GitHub API), authenticate using the token already present in the `.env` file:
+
+```bash
+source .env && echo "$GITHUB_TOKEN" | gh auth login --with-token
+```

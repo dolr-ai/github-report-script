@@ -295,6 +295,22 @@ def cmd_leaderboard(dry_run: bool = False, test_channel: bool = False):
         # Don't raise - allow workflow to continue
 
 
+def cmd_fetch_and_leaderboard(dry_run: bool = False, test_channel: bool = False):
+    """Fetch commits, cache them, then generate and post leaderboards.
+
+    This is the default CI mode: it combines FETCH and LEADERBOARD in a single
+    run so that the leaderboard always reflects the freshly-fetched data.
+
+    Args:
+        dry_run: When True, print leaderboard messages to stdout instead of
+                 sending them to Google Chat.
+        test_channel: When True, post to the test Google Chat channel.
+    """
+    logger.info("Starting FETCH_AND_LEADERBOARD mode")
+    cmd_fetch()
+    cmd_leaderboard(dry_run=dry_run, test_channel=test_channel)
+
+
 def parse_args():
     """Parse command-line arguments"""
     parser = argparse.ArgumentParser(
