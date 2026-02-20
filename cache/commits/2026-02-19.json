@@ -1,0 +1,668 @@
+{
+  "date": "2026-02-19",
+  "cached_at": "2026-02-20T03:33:26.298517Z",
+  "commits": [
+    {
+      "sha": "a6b1e89e2e711cf184156ebbaf7fa2a4fb043ad8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-19T15:58:35+05:30",
+      "message": "Merge pull request #6 from dolr-ai:redo-fetch-logic",
+      "stats": {
+        "additions": 1212,
+        "deletions": 670,
+        "total": 1882
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ff196f09b6b66304b181a81d94cf00a81db6d223",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-19T10:25:49Z",
+      "message": "feat: Enhance commit discovery logic to include repos pushed after the window end",
+      "stats": {
+        "additions": 597,
+        "deletions": 200,
+        "total": 797
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "23d6fb6e3fb74cb7b7aa9ee955d3065af182a4ab",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-19T10:17:06Z",
+      "message": "Refactor GitHubFetcher tests to support new GraphQL methods",
+      "stats": {
+        "additions": 626,
+        "deletions": 481,
+        "total": 1107
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3de6f22120569fbe7403bcada55115c3006f8b69",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-19T14:11:26+05:30",
+      "message": "Merge pull request #5 from dolr-ai:revise-leaderboard-for-all-metrics",
+      "stats": {
+        "additions": 280,
+        "deletions": 37,
+        "total": 317
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "62fca0c5a6b25a7e95cbc5793eeeedab3dbe118c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-19T08:26:59Z",
+      "message": "Revise leaderboard scoring system to use weighted normalized metrics; update related calculations an",
+      "stats": {
+        "additions": 280,
+        "deletions": 37,
+        "total": 317
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9427bf84a7b65e4b23a84d7a4a3c10ae6d2e2dd8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-19T10:18:19+05:30",
+      "message": "Merge pull request #4 from dolr-ai:remove-chart-and-contributor-stats",
+      "stats": {
+        "additions": 678,
+        "deletions": 35909,
+        "total": 36587
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "420983955f1d5b5a2c97db10f792cbceff27c3e7",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-19T04:48:00Z",
+      "message": "Merge branch 'main' into remove-chart-and-contributor-stats",
+      "stats": {
+        "additions": 1294,
+        "deletions": 0,
+        "total": 1294
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b0531edda9f6bbd685f1adf21f833378b76beba7",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-19T04:43:27Z",
+      "message": "Refactor commit discovery to use REST API; update tests for new implementation",
+      "stats": {
+        "additions": 95,
+        "deletions": 66,
+        "total": 161
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "5f9fcd1f636be5feb299d788a30b095d87230128",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-19T04:37:45Z",
+      "message": "Update metadata and commit statistics for February 18, 2026; refactor GitHubFetcher to use REST API ",
+      "stats": {
+        "additions": 536,
+        "deletions": 134,
+        "total": 670
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6fa2af9b0c92e25415f785a519a0331c55065423",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-19T04:20:26Z",
+      "message": "Refactor GitHubFetcher to use GraphQL for commit retrieval",
+      "stats": {
+        "additions": 341,
+        "deletions": 1236,
+        "total": 1577
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a44dcf8f23ae3b9f3869a1e496dadb9c03f24bc6",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-19T13:45:24+05:30",
+      "message": "chore: Increments android app version",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "release/android-2.6.7"
+      ]
+    },
+    {
+      "sha": "f3dbe9afbbcfcc7acfbf02b109161d187c4b39b6",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-19T13:44:34+05:30",
+      "message": "Merge branch 'develop' into release/android-2.6.7",
+      "stats": {
+        "additions": 150,
+        "deletions": 84,
+        "total": 234
+      },
+      "branches": [
+        "release/android-2.6.7"
+      ]
+    },
+    {
+      "sha": "6ee797a06b55a99a248a17bb7872ab950b670157",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-19T13:40:49+05:30",
+      "message": "feat: Migrate influencer wall to trending API with new card design (#900)",
+      "stats": {
+        "additions": 150,
+        "deletions": 84,
+        "total": 234
+      },
+      "branches": [
+        "release/android-2.6.7",
+        "feature/chat-tab-navigation",
+        "develop",
+        "chore/restore-claude-md-rules",
+        "chore/events-video-playback"
+      ]
+    },
+    {
+      "sha": "6bc17e50b60ba3d5e1fdb055747a5e4f82a14cf7",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-19T16:15:18+05:30",
+      "message": "feat: Add Discover/Inbox tab navigation to Chat screen",
+      "stats": {
+        "additions": 478,
+        "deletions": 60,
+        "total": 538
+      },
+      "branches": [
+        "feature/chat-tab-navigation"
+      ]
+    },
+    {
+      "sha": "b366d2df7fab18e79c5ea3993553e9473ff6bcda",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-19T23:49:49+05:30",
+      "message": "Merge pull request #910 from dolr-ai/feature/chat-bot-feedback",
+      "stats": {
+        "additions": 142,
+        "deletions": 35,
+        "total": 177
+      },
+      "branches": [
+        "develop"
+      ]
+    },
+    {
+      "sha": "a9922eabaa91bd488e01b973125fdee6a920918f",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-19T13:49:53+05:30",
+      "message": "chore: Restore project rules and Mixpanel skill to CLAUDE.md",
+      "stats": {
+        "additions": 147,
+        "deletions": 0,
+        "total": 147
+      },
+      "branches": [
+        "chore/restore-claude-md-rules"
+      ]
+    },
+    {
+      "sha": "718ca958fa4dfc7db8967a172d84ffb2a0294a9f",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-19T23:54:08+05:30",
+      "message": "build: Adds performance tracking for firebase and improves video playback on android",
+      "stats": {
+        "additions": 367,
+        "deletions": 5,
+        "total": 372
+      },
+      "branches": [
+        "chore/events-video-playback"
+      ]
+    },
+    {
+      "sha": "54051dc3e8708153de07e24be013742a127cf280",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-19T15:22:10Z",
+      "message": "refactor: Update AGENTS.md to allow include_role with tasks_from in playbooks; enhance init-control-",
+      "stats": {
+        "additions": 227,
+        "deletions": 380,
+        "total": 607
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "af81a83623311e2911ab84003dbcd81376bc7259",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-19T14:29:10Z",
+      "message": "refactor: Update AGENTS.md to include kube-vip pre/post-init tasks in control plane bootstrap; add H",
+      "stats": {
+        "additions": 220,
+        "deletions": 3,
+        "total": 223
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "2a51dd769415ae81b27c0215d74f1cb7753338e1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-19T14:22:35Z",
+      "message": "refactor: Enhance kube-vip integration by splitting pre-init and post-init tasks; streamline control",
+      "stats": {
+        "additions": 240,
+        "deletions": 155,
+        "total": 395
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "1be189414446f0676c4da1030e0cb8f0b84e6f2b",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-02-19T21:26:40+05:30",
+      "message": "feat: setup pooling and wal-mode for db and setup tests (#12)",
+      "stats": {
+        "additions": 325,
+        "deletions": 297,
+        "total": 622
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f57c39f99e7c3908f43c7ee5c14328ac08b76f9d",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-02-19T21:20:32+05:30",
+      "message": "add cargo config",
+      "stats": {
+        "additions": 7,
+        "deletions": 2,
+        "total": 9
+      },
+      "branches": [
+        "feat/setup-pooling-and-wal-mode-for-db"
+      ]
+    },
+    {
+      "sha": "a95159977a33f1722317430f0640cbf213795939",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-02-19T21:17:42+05:30",
+      "message": "fix: tests",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "feat/setup-pooling-and-wal-mode-for-db"
+      ]
+    },
+    {
+      "sha": "4eee2bf1c8e7ab9d889c6f066137ffbbe6cbb65e",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-02-19T20:51:48+05:30",
+      "message": "refactor and remove unused feature flags",
+      "stats": {
+        "additions": 190,
+        "deletions": 196,
+        "total": 386
+      },
+      "branches": [
+        "feat/setup-pooling-and-wal-mode-for-db"
+      ]
+    },
+    {
+      "sha": "cf13c3636375a8e52f8754ac962a751ef294d211",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-02-19T15:52:41+05:30",
+      "message": "fix test and add it it github workflow",
+      "stats": {
+        "additions": 11,
+        "deletions": 15,
+        "total": 26
+      },
+      "branches": [
+        "feat/setup-pooling-and-wal-mode-for-db"
+      ]
+    },
+    {
+      "sha": "e745b6493bb4e7cb6424aadf068dcdd5e5bdf220",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hello-world-vault-demo",
+      "timestamp": "2026-02-19T20:21:19+05:30",
+      "message": "[skip ci] fix: secret name",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/test_update",
+        "main"
+      ]
+    },
+    {
+      "sha": "fce6357af44f562bb5d1eb91c2f15354a221feae",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hello-world-vault-demo",
+      "timestamp": "2026-02-19T20:22:36+05:30",
+      "message": "Merge pull request #3 from dolr-ai/naitik/test_update",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4335b35d863ae88a3a8136c52e6171891b6b8522",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-19T19:23:46+05:30",
+      "message": "fix: oauth client id read from secrets, post deployment cleanup and doc fix",
+      "stats": {
+        "additions": 28,
+        "deletions": 12,
+        "total": 40
+      },
+      "branches": [
+        "naitik/reinitialize"
+      ]
+    },
+    {
+      "sha": "2951763b24a74ef6aec9ae24f53d23fa0a208537",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-19T17:59:56+05:30",
+      "message": "chore: run init",
+      "stats": {
+        "additions": 4,
+        "deletions": 1,
+        "total": 5
+      },
+      "branches": [
+        "naitik/reinitialize"
+      ]
+    },
+    {
+      "sha": "a754ed8eaa770daaf369926aa5454264f438cbba",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-19T14:50:31+05:30",
+      "message": "fix:  remove secret read access to dev on vault ui",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/reinitialize",
+        "main"
+      ]
+    },
+    {
+      "sha": "50c60dddb884ce0525245d5ecc00eb537b13163f",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-19T19:28:14+05:30",
+      "message": "Naitik/reinitialize (#25)",
+      "stats": {
+        "additions": 29,
+        "deletions": 10,
+        "total": 39
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a304bc4100cc122eacdb1c4019665196970d3467",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-02-19T14:51:55+05:30",
+      "message": "Merge pull request #24 from dolr-ai/naitik/reinitialize",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ec96e2fe6d3e1b1aa463412db132df32d96a9ca7",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-19T18:48:11+05:30",
+      "message": "Remove integration tests for chat, health, idempotency, and influencer endpoints",
+      "stats": {
+        "additions": 57,
+        "deletions": 1718,
+        "total": 1775
+      },
+      "branches": [
+        "joel/rust-migration-deployment-scripts"
+      ]
+    },
+    {
+      "sha": "1f895d1b32832ae244927ed2f0045f009e798f8d",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-19T15:12:50+05:30",
+      "message": "refactor: streamline safety validation and remove redundant tests",
+      "stats": {
+        "additions": 27,
+        "deletions": 1030,
+        "total": 1057
+      },
+      "branches": [
+        "joel/rust-migration-deployment-scripts"
+      ]
+    },
+    {
+      "sha": "6a0bf358f684c90c82a6517376abb86665d77bb6",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-19T12:06:39+05:30",
+      "message": "remove unused test files for schema validation, timing middleware, and unit test fixtures",
+      "stats": {
+        "additions": 0,
+        "deletions": 386,
+        "total": 386
+      },
+      "branches": [
+        "joel/rust-migration-deployment-scripts"
+      ]
+    },
+    {
+      "sha": "7a0ccf76ef785ab082e8deb395c3daa4c6e80785",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-19T11:44:35+05:30",
+      "message": "add Dockerfile, docker-compose, entrypoint script, and Litestream configuration for bare metal deplo",
+      "stats": {
+        "additions": 167,
+        "deletions": 0,
+        "total": 167
+      },
+      "branches": [
+        "joel/rust-migration-deployment-scripts"
+      ]
+    }
+  ],
+  "commit_count": 36,
+  "issues": [
+    {
+      "number": 1658,
+      "title": "Phase 6: Deployment & Operations",
+      "closed_at": "2026-02-19T09:43:14Z",
+      "assignee": "joel-medicala-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1658",
+      "labels": []
+    },
+    {
+      "number": 1645,
+      "title": "Integrate ai influencers delete endpoint (offchain)",
+      "closed_at": "2026-02-19T05:30:43Z",
+      "assignee": "joel-medicala-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1645",
+      "labels": []
+    },
+    {
+      "number": 902,
+      "title": "Create your own bot feedback",
+      "closed_at": "2026-02-19T17:58:25Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/902",
+      "labels": []
+    },
+    {
+      "number": 905,
+      "title": "Bug: Profile screen created by not shown once app is reopened",
+      "closed_at": "2026-02-19T17:58:09Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/905",
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "number": 904,
+      "title": "Bot names in bio aren't clickable",
+      "closed_at": "2026-02-19T17:57:58Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/904",
+      "labels": []
+    },
+    {
+      "number": 903,
+      "title": "Bug: Chat wall refresh after bot creation",
+      "closed_at": "2026-02-19T17:54:40Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/903",
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "number": 879,
+      "title": "Implement discover bots page",
+      "closed_at": "2026-02-19T15:27:18Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/879",
+      "labels": []
+    },
+    {
+      "number": 901,
+      "title": "Migrate existing influencers api with influencers/trending api for time being",
+      "closed_at": "2026-02-19T08:11:27Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/901",
+      "labels": []
+    },
+    {
+      "number": 1650,
+      "title": "test disaster recovery",
+      "closed_at": "2026-02-19T05:33:57Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1650",
+      "labels": []
+    },
+    {
+      "number": 1598,
+      "title": "Migration of secrets to vault",
+      "closed_at": "2026-02-19T05:32:23Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1598",
+      "labels": []
+    },
+    {
+      "number": 1642,
+      "title": "rework on secret storage and policy management on vault",
+      "closed_at": "2026-02-19T05:32:15Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/product-roadmap",
+      "url": "https://github.com/dolr-ai/product-roadmap/issues/1642",
+      "labels": []
+    },
+    {
+      "number": 897,
+      "title": "Video architecture KT",
+      "closed_at": "2026-02-19T18:26:30Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/897",
+      "labels": []
+    }
+  ],
+  "issue_count": 12
+}
