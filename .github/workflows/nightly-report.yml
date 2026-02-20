@@ -4,7 +4,16 @@ on:
   schedule:
     # Runs at 12:00 AM IST (6:30 PM UTC)
     - cron: '30 18 * * *'
-  workflow_dispatch: # Allow manual triggering
+  workflow_dispatch:
+    inputs:
+      chat_channel:
+        description: 'Google Chat channel to post the leaderboard to'
+        required: false
+        default: 'production'
+        type: choice
+        options:
+          - production
+          - test
 
 jobs:
   generate-report:
@@ -44,7 +53,14 @@ jobs:
             bash .github/scripts/setup-ci.sh
 
             echo "=== Running fetch and leaderboard ==="
-            python src/main.py --mode fetch_and_leaderboard
+            EXTRA_FLAGS=""
+            if [ "${CHAT_CHANNEL}" = "test" ]; then
+              EXTRA_FLAGS="--test-channel"
+              echo "Posting to TEST Google Chat channel"
+            else
+              echo "Posting to PRODUCTION Google Chat channel"
+            fi
+            python src/main.py --mode fetch_and_leaderboard $EXTRA_FLAGS
 
             echo "=== Committing and pushing changes ==="
             git add cache/
@@ -59,6 +75,7 @@ jobs:
           env: |
             ANSIBLE_VAULT_PASSWORD=${{ secrets.ANSIBLE_VAULT_PASSWORD }}
             GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}
+            CHAT_CHANNEL=${{ github.event.inputs.chat_channel || 'production' }}
 
       - name: Upload cache artifacts
         uses: actions/upload-artifact@v4
