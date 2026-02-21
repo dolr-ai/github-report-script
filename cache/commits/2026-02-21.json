@@ -1,0 +1,249 @@
+{
+  "date": "2026-02-21",
+  "cached_at": "2026-02-21T18:46:55.941281Z",
+  "commits": [
+    {
+      "sha": "5cd4869f303f85ecc8403734b8de27fb281ec792",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-21T18:23:45Z",
+      "message": "fix(cilium): increase Helm upgrade timeout to 15m",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f23da0e5650bd1ea282ea2312f539549cae1498f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-21T18:16:04Z",
+      "message": "feat(cilium): add NET_BIND_SERVICE capability to Envoy for privileged port binding",
+      "stats": {
+        "additions": 8,
+        "deletions": 0,
+        "total": 8
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8cf70239260c792328c8ad3fa2700eb27e0df271",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-21T17:46:31Z",
+      "message": "feat: switch wildcard cert to letsencrypt-prod",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c2d0b882bef508b2b2ef5af9bc8470097d500691",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-21T17:26:07Z",
+      "message": "feat: SOPS secrets management via age+Flux",
+      "stats": {
+        "additions": 545,
+        "deletions": 365,
+        "total": 910
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "356c1fab79d0abe71e8d723f97452679029fd824",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-21T15:10:14Z",
+      "message": "feat: add Flux feature to devcontainer configuration for enhanced GitOps support",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a53720e57be948bf8b00fc1d9ac666d428bf0c12",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-21T15:02:29Z",
+      "message": "Refactor Cilium and Cert-Manager configurations for improved management and clarity",
+      "stats": {
+        "additions": 729,
+        "deletions": 353,
+        "total": 1082
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3c7d71c18506e07bfe98f6f656a0f06e52e83336",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-21T13:58:19Z",
+      "message": "refactor: update cert-manager configuration for production readiness; adjust Gateway and HTTPRoute a",
+      "stats": {
+        "additions": 27,
+        "deletions": 5,
+        "total": 32
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "992d3e2b033f71167b3030e8e8f3a6ecba92459b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-21T13:36:06Z",
+      "message": "feat: add kubectl, helm, and minikube support; configure kubeconfig setup in postCreate.sh",
+      "stats": {
+        "additions": 350,
+        "deletions": 61,
+        "total": 411
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a0667a62ab72905a8099001336c35111428b9a27",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-21T12:43:59Z",
+      "message": "refactor: Update debug messages to use ansible_facts for consistency in system information display",
+      "stats": {
+        "additions": 4,
+        "deletions": 4,
+        "total": 8
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "88fd8b43199a091f379509803492bb1ef5a0abb0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-21T12:21:29Z",
+      "message": "refactor: Replace ansible_hostname with ansible_facts['hostname'] for consistency in debug messages ",
+      "stats": {
+        "additions": 21,
+        "deletions": 21,
+        "total": 42
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d471e55bc509f730d4df5305c511d6d507581633",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-21T12:07:31Z",
+      "message": "refactor: Update Gateway API CRD installation URL to use standard-install.yaml",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "94fa0094bc465634a80429a242d3069427ecc67f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-21T11:39:27Z",
+      "message": "refactor: Update component versioning policy to require user confirmation for version pinning; adjus",
+      "stats": {
+        "additions": 12,
+        "deletions": 5,
+        "total": 17
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4486cdaab94844cca1b28c852100a4f4bca3ae93",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-21T10:49:35Z",
+      "message": "refactor: Update Hubble UI hostname to include '-ui' for consistency in routing configuration",
+      "stats": {
+        "additions": 4,
+        "deletions": 4,
+        "total": 8
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9da64b38631ac71df988dc5d03f98d78a6fc41c5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-21T06:02:44Z",
+      "message": "refactor: Update email address for Let's Encrypt ClusterIssuers in cert-manager configuration",
+      "stats": {
+        "additions": 31,
+        "deletions": 11,
+        "total": 42
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7f9ea5b77e3d3da6847babb63e494b676033455c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-21T05:28:08Z",
+      "message": "refactor: Enhance control plane initialization and networking configurations; add Gateway API suppor",
+      "stats": {
+        "additions": 296,
+        "deletions": 69,
+        "total": 365
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f6af6cbd34fa905d874e00bdd7ec3cd8184f79f2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-21T05:14:34Z",
+      "message": "refactor: Update Cilium and monitoring configurations; remove LoadBalancer services in favor of Node",
+      "stats": {
+        "additions": 70,
+        "deletions": 110,
+        "total": 180
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 16,
+  "issues": [],
+  "issue_count": 0
+}
