@@ -172,13 +172,9 @@ IST_TIMEZONE = pytz.timezone('Asia/Kolkata')
 USER_IDS: List[str] = [
     'saikatdas0790',
     'gravityvi',
-    # 'jay-dhanwant-yral',
     'joel-medicala-yral',
-    # 'kevin-antony-yral',
-    # 'mayank-k-yral',
     'naitik-makwana-yral',
     'ravi-sawlani-yral',
-    # 'samarth-paboowal-yral',
     'sarvesh-sharma-yral',
     'shivam-bhavsar-yral',
 ]
