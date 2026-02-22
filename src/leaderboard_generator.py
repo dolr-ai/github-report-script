@@ -157,7 +157,13 @@ class LeaderboardGenerator:
             max_val = max(values)
 
             if max_val == min_val:
-                # No differentiating signal — everyone gets 0 for this metric
+                if max_val == 0:
+                    # No activity for this metric — contributes nothing
+                    continue
+                # All contributors tied with the same non-zero value (includes
+                # the single-contributor case) — everyone earns the full weight
+                for u in usernames:
+                    scores[u] += weight * 1.0
                 continue
 
             for u, v in zip(usernames, values):

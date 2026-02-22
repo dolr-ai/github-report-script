@@ -120,7 +120,7 @@ Each metric is **min-max normalized** to [0, 1] across all contributors for the 
 ```
 norm(x_i) = (x_i − min(x)) / (max(x) − min(x))
 ```
-If all contributors share the same value for a metric (`max == min`), that metric contributes 0 to everyone's score for that period — it provides no differentiating signal.
+If all contributors share the same **non-zero** value for a metric (`max == min > 0`), every contributor earns the full weight for that metric (normalized = 1.0). This correctly handles the single-contributor case and genuine ties. If all contributors have zero for a metric (`max == min == 0`), that metric contributes 0 — no one did any work in it.
 
 Default weights (configured in `config.py → LEADERBOARD_WEIGHTS`):
 | Metric | Weight |
@@ -345,6 +345,10 @@ After completing any of the following, edit the relevant section(s) of this file
 - Do **not** add a running changelog or timestamped entries. Keep each section a clean, up-to-date description of the **current** state. If something is no longer true, remove or replace it.
 
 The goal is that any agent starting a new session can read this file and have an accurate model of the codebase without reading source files first.
+
+### Dev Container Environment
+
+This repository runs inside a **dev container**. All required runtimes, CLI tools, and Python packages are pre-installed and available on the `PATH` — do **not** attempt to install system packages, configure Python environments, or set up tooling manually. If something is missing, it should be added to the dev container definition, not installed ad-hoc in a terminal session.
 
 ### GitHub CLI (`gh`) authentication
 

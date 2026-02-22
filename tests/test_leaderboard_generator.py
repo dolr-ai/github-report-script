@@ -404,8 +404,8 @@ class TestComputeWeightedScores:
         assert leaderboard_gen.compute_weighted_scores({}) == {}
 
     @pytest.mark.unit
-    def test_single_contributor_scores_zero(self, leaderboard_gen):
-        """Single contributor: all metrics normalize to 0 (min == max)"""
+    def test_single_contributor_with_activity_scores_max(self, leaderboard_gen):
+        """Single contributor with non-zero activity earns full weight sum (max possible score)"""
         metrics = {
             'alice': {
                 'issues_closed': 3,
@@ -415,7 +415,49 @@ class TestComputeWeightedScores:
             }
         }
         scores = leaderboard_gen.compute_weighted_scores(metrics)
-        assert scores == {'alice': 0.0}
+        max_possible = sum(LEADERBOARD_WEIGHTS.values())
+        assert scores['alice'] == pytest.approx(max_possible)
+
+    @pytest.mark.unit
+    def test_single_contributor_all_zeros_scores_zero(self, leaderboard_gen):
+        """Single contributor with all-zero metrics still scores 0 (no activity)"""
+        metrics = {
+            'alice': {
+                'issues_closed': 0,
+                'commit_count': 0,
+                'total_additions': 0,
+                'total_deletions': 0,
+            }
+        }
+        scores = leaderboard_gen.compute_weighted_scores(metrics)
+        assert scores['alice'] == pytest.approx(0.0)
+
+    @pytest.mark.unit
+    def test_all_contributors_tied_nonzero_each_earn_full_weight(self, leaderboard_gen):
+        """When all contributors share the same non-zero value for a metric, each earns its full weight"""
+        metrics = {
+            'alice': {'issues_closed': 5, 'commit_count': 10, 'total_additions': 200, 'total_deletions': 50},
+            'bob':   {'issues_closed': 5, 'commit_count': 10, 'total_additions': 200, 'total_deletions': 50},
+        }
+        scores = leaderboard_gen.compute_weighted_scores(metrics)
+        max_possible = sum(LEADERBOARD_WEIGHTS.values())
+        assert scores['alice'] == pytest.approx(max_possible)
+        assert scores['bob'] == pytest.approx(max_possible)
+
+    @pytest.mark.unit
+    def test_partial_tie_nonzero_metric_still_gives_full_weight(self, leaderboard_gen):
+        """When contributors tie on one non-zero metric but differ on another, the tied metric gives full weight"""
+        # Both have same issues_closed (non-zero), alice has more commits
+        metrics = {
+            'alice': {'issues_closed': 3, 'commit_count': 10, 'total_additions': 0, 'total_deletions': 0},
+            'bob':   {'issues_closed': 3, 'commit_count': 2,  'total_additions': 0, 'total_deletions': 0},
+        }
+        scores = leaderboard_gen.compute_weighted_scores(metrics)
+        issues_weight = LEADERBOARD_WEIGHTS['issues_closed']
+        commits_weight = LEADERBOARD_WEIGHTS['commits']
+        # Both earn the full issues weight; alice earns full commits weight, bob earns 0
+        assert scores['alice'] == pytest.approx(issues_weight + commits_weight)
+        assert scores['bob'] == pytest.approx(issues_weight + 0.0)
 
     @pytest.mark.unit
     def test_normalization_produces_values_in_0_1(self, leaderboard_gen):
