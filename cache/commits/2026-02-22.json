@@ -1,0 +1,264 @@
+{
+  "date": "2026-02-22",
+  "cached_at": "2026-02-22T18:46:36.638383Z",
+  "commits": [
+    {
+      "sha": "04014c63f5b5d5c5e05391dd3ba1bccde298b89e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-22T18:07:57Z",
+      "message": "docs(AGENTS.md): document cloudflared tunnel vs Gateway exposure model",
+      "stats": {
+        "additions": 25,
+        "deletions": 1,
+        "total": 26
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d1e0bb96d0fa432454a146ad65627b6d59748880",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-22T17:11:17Z",
+      "message": "docs(AGENTS.md): prohibit kubectl apply/delete once Flux bootstrapped; document cilium-envoy source ",
+      "stats": {
+        "additions": 14,
+        "deletions": 1,
+        "total": 15
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3d72870352ed3b25a5a40604f278331eebde7f23",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-22T17:02:26Z",
+      "message": "revert: remove CiliumNetworkPolicy hubble-ui-cloudflare-only",
+      "stats": {
+        "additions": 0,
+        "deletions": 59,
+        "total": 59
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f03f7c35b3f6b8acfed3e9102a94b23ff0557968",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-22T16:54:47Z",
+      "message": "feat(networking): add CiliumNetworkPolicy restricting hubble-ui to Cloudflare IPs",
+      "stats": {
+        "additions": 59,
+        "deletions": 0,
+        "total": 59
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "39174345a17efc720b705c9c92907d3bd60af8d3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-22T16:41:52Z",
+      "message": "remove apply-firewall.yml \u2014 no longer needed",
+      "stats": {
+        "additions": 0,
+        "deletions": 16,
+        "total": 16
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b2a65dce8c65864db1b63271f1a3bbc7e2a33a22",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-22T16:40:54Z",
+      "message": "fix(hetzner-firewall): reset to permissive default; move Cloudflare restrictions to CiliumNetworkPol",
+      "stats": {
+        "additions": 35,
+        "deletions": 106,
+        "total": 141
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d8eb537402170c4d39a471b453981c1e6f9316df",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-22T06:40:39Z",
+      "message": "fix: correct SSH key extraction in postCreate.sh",
+      "stats": {
+        "additions": 32,
+        "deletions": 16,
+        "total": 48
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9d38465903c9a0528cd57e8f376d362d821d4782",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-22T05:33:59Z",
+      "message": "fix: run etcdctl via kubectl exec in node-remove role",
+      "stats": {
+        "additions": 16,
+        "deletions": 7,
+        "total": 23
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d5423ad3cf471947f8530c00810453b14df0b05f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-22T05:24:09Z",
+      "message": "fix: always start from clean state in provision role",
+      "stats": {
+        "additions": 20,
+        "deletions": 3,
+        "total": 23
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a753f695bac7fbda08f2737bffd9917adf8e9390",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-22T05:20:30Z",
+      "message": "fix: use ansible_facts[] notation and refresh facts post-provision",
+      "stats": {
+        "additions": 4,
+        "deletions": 1,
+        "total": 5
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "bc66730f59266229c80119b688886dc9ba30b7fd",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-22T17:31:09+05:30",
+      "message": "chore: Changes endpoint to post",
+      "stats": {
+        "additions": 1,
+        "deletions": 2,
+        "total": 3
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "b2157f3b014c3a44e3ae45dfcb9b8d868dd125b4",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-22T17:24:07+05:30",
+      "message": "fix: Use PUT for Storj upload and resolve content type from file",
+      "stats": {
+        "additions": 14,
+        "deletions": 11,
+        "total": 25
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "1d0f730ecde8988e14ad1f5d1a8a1b3b2ace52f4",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-22T17:23:59+05:30",
+      "message": "chore: Migrate upload DTOs and URLs to new Storj backend",
+      "stats": {
+        "additions": 45,
+        "deletions": 48,
+        "total": 93
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "380056a14ea33ef9b9bf97da551b0e6337936bce",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-20T18:38:32+05:30",
+      "message": "chore: Migrate to v3/v2 upload video endpoints",
+      "stats": {
+        "additions": 66,
+        "deletions": 42,
+        "total": 108
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "38b817dfa3d832d45935cd78db03405ca5e3f854",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-20T18:38:01+05:30",
+      "message": "chore: Migrate video URLs from Cloudflare to Storj",
+      "stats": {
+        "additions": 14,
+        "deletions": 12,
+        "total": 26
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "5c1eecc2fb1f5da09c58ee6fe3737ddb9b09f02a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-22T04:45:48Z",
+      "message": "feat: Enhance leaderboard scoring logic for contributors with non-zero metrics and add corresponding",
+      "stats": {
+        "additions": 57,
+        "deletions": 5,
+        "total": 62
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3977fea14e277ae2ef6e90a37810898958863bce",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-22T04:33:28Z",
+      "message": "chore: Remove commented-out user IDs from configuration",
+      "stats": {
+        "additions": 0,
+        "deletions": 4,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 17,
+  "issues": [],
+  "issue_count": 0
+}
