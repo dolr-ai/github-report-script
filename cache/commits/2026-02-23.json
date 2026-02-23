@@ -1,0 +1,721 @@
+{
+  "date": "2026-02-23",
+  "cached_at": "2026-02-23T18:50:40.495230Z",
+  "commits": [
+    {
+      "sha": "a1892650123824e62228b7a50baa41eb9c84e939",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-23T17:59:06Z",
+      "message": "fix(metrics-server): use 'args' not 'extraArgs' for kubelet-insecure-tls",
+      "stats": {
+        "additions": 3,
+        "deletions": 1,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "32759d7b5589c4b8e1a9dc2890e0c6199bece82e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-23T17:48:30Z",
+      "message": "fix(coredns): replace invalid kustomize patches with kubectl-apply manifests",
+      "stats": {
+        "additions": 55,
+        "deletions": 63,
+        "total": 118
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "564386205c316197f9a7d2fd4bbe3298e35e3428",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-23T17:39:05Z",
+      "message": "fix(coredns): topology-aware DNS to eliminate cross-datacenter UDP drops",
+      "stats": {
+        "additions": 64,
+        "deletions": 2,
+        "total": 66
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a8bc18569139de05496b78f06e3ed864a14cc9eb",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-23T16:56:17Z",
+      "message": "fix(coredns): force_tcp for upstream DNS \u2014 UDP port 53 may be filtered",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "650d183d1a8efebcf062acb856c2a59c4da3596b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-23T16:48:29Z",
+      "message": "fix: manage CoreDNS config via Flux, use public DNS upstream",
+      "stats": {
+        "additions": 51,
+        "deletions": 0,
+        "total": 51
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "97bb0bf0e1d65bc9ed0a40b0f1b4600940a30c10",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-23T16:23:43Z",
+      "message": "feat: add metrics-server and kube-prometheus-stack via Flux",
+      "stats": {
+        "additions": 311,
+        "deletions": 0,
+        "total": 311
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "305747cf75dc299240d686addd67933ec1d218ec",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-23T16:08:44Z",
+      "message": "revert(devcontainer): remove AWS CLI \u2014 one-off cleanup already done",
+      "stats": {
+        "additions": 1,
+        "deletions": 41,
+        "total": 42
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "545b79fb75e569fc40a9491ef574d42e3c9193ec",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-23T15:54:15Z",
+      "message": "feat(devcontainer): add AWS CLI + configure for Hetzner S3",
+      "stats": {
+        "additions": 41,
+        "deletions": 1,
+        "total": 42
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6190d3525628e97080da3e3aa86b5b71aa6a1079",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-23T15:28:01Z",
+      "message": "chore: webhook auto-reconcile smoke test",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "14617b422948024fb1f4c966ce46b02452bd2fce",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-23T15:25:24Z",
+      "message": "docs(agents): expand NetworkPolicy/cilium-envoy constraint section",
+      "stats": {
+        "additions": 18,
+        "deletions": 3,
+        "total": 21
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a5997520fb8f8077ef7131d01fa62e0674946f8c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-23T15:21:16Z",
+      "message": "fix(flux-receiver): allow gateway traffic to webhook-receiver",
+      "stats": {
+        "additions": 28,
+        "deletions": 0,
+        "total": 28
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a19192692b337f479233ab619dc3116a94ad6b8e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-23T15:12:09Z",
+      "message": "fix(flux-receiver): route to webhook-receiver svc, not notification-controller",
+      "stats": {
+        "additions": 4,
+        "deletions": 4,
+        "total": 8
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b933ead0cdee9356f96c9085b3167f8f210730f5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-23T15:00:30Z",
+      "message": "feat(flux): add GitHub webhook receiver for instant reconciliation",
+      "stats": {
+        "additions": 122,
+        "deletions": 0,
+        "total": 122
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "98fd9a89f7e0cca550c178a946e77a27209a6c98",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-23T14:45:56Z",
+      "message": "fix(velero): pin kubectl image tag to 1.32",
+      "stats": {
+        "additions": 6,
+        "deletions": 0,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "451dbeab5fd87d205b1e38f8f62fcebb083ba8ea",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-23T14:26:45Z",
+      "message": "feat(velero): add Velero backup to Hetzner S3 via Flux",
+      "stats": {
+        "additions": 137,
+        "deletions": 0,
+        "total": 137
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a6d168521f013d4b1a30c06979dbf50d61565373",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-23T14:01:15Z",
+      "message": "feat(dns): manage *.yral.com A records on node add/remove",
+      "stats": {
+        "additions": 94,
+        "deletions": 0,
+        "total": 94
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3a5ea9ebc11468efd8b6bdc3ea3ce6d10a0c32e1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-23T13:47:19Z",
+      "message": "docs: update AGENTS.md and CLUSTER-SETUP.md for DNS round-robin lifecycle",
+      "stats": {
+        "additions": 4,
+        "deletions": 3,
+        "total": 7
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "0ad04bfcd8a1badb5fe3668a17631a42df3fa37a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-23T13:35:04Z",
+      "message": "fix(node-remove, control-plane-join): manage Cloudflare DNS A records on CP add/remove",
+      "stats": {
+        "additions": 452,
+        "deletions": 337,
+        "total": 789
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "13396c79f645c47f80b1b76146986283baad5b90",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-23T13:12:33Z",
+      "message": "Fix all ansible-lint violations in roles (production profile)",
+      "stats": {
+        "additions": 59,
+        "deletions": 59,
+        "total": 118
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "1d0c8cb6a18231e3cdafc5d9bc89aec27ab09927",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-23T13:02:16Z",
+      "message": "Remove all kube-vip references from codebase",
+      "stats": {
+        "additions": 17,
+        "deletions": 89,
+        "total": 106
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "21068398cb8fc91f1bc9b3dc9ab38456957158c3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-23T12:54:54Z",
+      "message": "Remove kube-vip, replace with DNS round-robin HA",
+      "stats": {
+        "additions": 75,
+        "deletions": 558,
+        "total": 633
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b5bd98282e23a9070125c0e0e03bdfb542dc4b93",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-23T06:39:43Z",
+      "message": "remove hetzner-firewall role and all references",
+      "stats": {
+        "additions": 0,
+        "deletions": 39,
+        "total": 39
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ae7b3aeb8e1bdec510c2399794136d911e9f8fb2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-23T06:11:06Z",
+      "message": "archive: encrypt yral.com DNS zone file with SOPS",
+      "stats": {
+        "additions": 20,
+        "deletions": 0,
+        "total": 20
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "855b6c14ff04e5c320df2a79cd56f74aeeb284bd",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-23T04:21:43Z",
+      "message": "oauth2-proxy: restrict hubble-ui to developer-admin@gobazzinga.io group",
+      "stats": {
+        "additions": 39,
+        "deletions": 18,
+        "total": 57
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f732cf55100569c9d8e7ca4713fd2fe8dd0d08f9",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-23T03:42:29Z",
+      "message": "feat(oauth2-proxy): add Google Workspace SSO proxy for internal tools",
+      "stats": {
+        "additions": 169,
+        "deletions": 22,
+        "total": 191
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "60823c9e13eafd51ee73df7295b373b2689211cc",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-23T17:28:03+05:30",
+      "message": "chore: Increments android app version",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "release/android-2.6.8"
+      ]
+    },
+    {
+      "sha": "41c26bd1073b8c3cbefcf2be1a4cd0a3d1461ee6",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-23T17:23:36+05:30",
+      "message": "Merge pull request #895 from dolr-ai/release/android-2.6.7",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "release/android-2.6.8",
+        "develop"
+      ]
+    },
+    {
+      "sha": "ce1dbbe8042e7fe1e9cf5b0d3e83f6d1e7c87797",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-23T17:18:33+05:30",
+      "message": "Adds event instrumentation for create ai influencer flow (#917)",
+      "stats": {
+        "additions": 432,
+        "deletions": 36,
+        "total": 468
+      },
+      "branches": [
+        "release/android-2.6.8",
+        "develop"
+      ]
+    },
+    {
+      "sha": "6b83b2866b39515e181340fc91478d7073b49496",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-23T16:43:44+05:30",
+      "message": "Merge pull request #911 from dolr-ai/chore/events-video-playback",
+      "stats": {
+        "additions": 367,
+        "deletions": 5,
+        "total": 372
+      },
+      "branches": [
+        "release/android-2.6.8",
+        "develop"
+      ]
+    },
+    {
+      "sha": "760052e192192d5eb772c8cab0cc0ef347e565ba",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-23T13:04:32+05:30",
+      "message": "Enhances error reporting ai video gen (#916)",
+      "stats": {
+        "additions": 52,
+        "deletions": 0,
+        "total": 52
+      },
+      "branches": [
+        "release/android-2.6.8",
+        "develop"
+      ]
+    },
+    {
+      "sha": "e12538b83f10c958ab3ce61070d397a5ce70418e",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-23T17:23:50+05:30",
+      "message": "Merge pull request #896 from dolr-ai/release/android-2.6.7",
+      "stats": {
+        "additions": 10279,
+        "deletions": 1491,
+        "total": 11770
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7898e9630909a00006b522e84dc996c179e8fb35",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-23T21:16:28+05:30",
+      "message": "Merge pull request #920 from dolr-ai/chore/linear-issues",
+      "stats": {
+        "additions": 375,
+        "deletions": 0,
+        "total": 375
+      },
+      "branches": [
+        "develop"
+      ]
+    },
+    {
+      "sha": "56234e1a1935c3d4c6026df0ef62fedc9cd8b9f8",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-23T19:23:48+05:30",
+      "message": "Chore/events feed (#918)",
+      "stats": {
+        "additions": 108,
+        "deletions": 1,
+        "total": 109
+      },
+      "branches": [
+        "develop"
+      ]
+    },
+    {
+      "sha": "0b01bd348a5d6ffef75363263104fe575a838100",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-23T16:44:41+05:30",
+      "message": "wip",
+      "stats": {
+        "additions": 31,
+        "deletions": 12,
+        "total": 43
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "7a129ee5abe56ef1a3112f5f7bd2cdfbfcf66c09",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-02-23T13:12:36+05:30",
+      "message": "feat: added exponential backoff (#30)",
+      "stats": {
+        "additions": 318,
+        "deletions": 99,
+        "total": 417
+      },
+      "branches": [
+        "main",
+        "joel/fix-stdin-frame-extracts"
+      ]
+    },
+    {
+      "sha": "bc5ea7606a443fbbdd0e37189201b310a658bd71",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-02-23T17:35:36+05:30",
+      "message": "fmt",
+      "stats": {
+        "additions": 12,
+        "deletions": 17,
+        "total": 29
+      },
+      "branches": [
+        "joel/fix-stdin-frame-extracts"
+      ]
+    },
+    {
+      "sha": "ff427cfa96f28f6a0f7bfca160ad4053e206df25",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-02-23T17:29:44+05:30",
+      "message": "fix uploads",
+      "stats": {
+        "additions": 279,
+        "deletions": 340,
+        "total": 619
+      },
+      "branches": [
+        "joel/fix-stdin-frame-extracts"
+      ]
+    },
+    {
+      "sha": "464e886e383ab0b181f05a7ae3de075183e4ac23",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-02-23T16:58:00+05:30",
+      "message": "feat: add temp file as a dep for easy integration",
+      "stats": {
+        "additions": 61,
+        "deletions": 27,
+        "total": 88
+      },
+      "branches": [
+        "joel/fix-stdin-frame-extracts"
+      ]
+    },
+    {
+      "sha": "89ffd2214d518c24c1422276e031455e86ee8f2c",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-02-23T16:51:07+05:30",
+      "message": "fmt",
+      "stats": {
+        "additions": 1,
+        "deletions": 2,
+        "total": 3
+      },
+      "branches": [
+        "joel/fix-stdin-frame-extracts"
+      ]
+    },
+    {
+      "sha": "3c652cf8fb126fd1f687aebb057cd57bd2837212",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-02-23T16:49:31+05:30",
+      "message": "fix: stdin frame extracts",
+      "stats": {
+        "additions": 53,
+        "deletions": 52,
+        "total": 105
+      },
+      "branches": [
+        "joel/fix-stdin-frame-extracts"
+      ]
+    },
+    {
+      "sha": "271968d97412dc28425324fc01350213e690da38",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-02-23T13:06:10+05:30",
+      "message": "fix sentry envs",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "joel/add-exp-backoff"
+      ]
+    },
+    {
+      "sha": "b57b83cacc332d493eaaebc71da7960190fbecbb",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-02-23T12:49:19+05:30",
+      "message": "fix hostname",
+      "stats": {
+        "additions": 3,
+        "deletions": 1,
+        "total": 4
+      },
+      "branches": [
+        "joel/add-exp-backoff"
+      ]
+    },
+    {
+      "sha": "1f7104c2b439457bcb34529a005c019be39ab91f",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-02-23T12:11:18+05:30",
+      "message": "feat: added exponential backoff",
+      "stats": {
+        "additions": 314,
+        "deletions": 97,
+        "total": 411
+      },
+      "branches": [
+        "joel/add-exp-backoff"
+      ]
+    },
+    {
+      "sha": "a007f35d5fb3f8edcb1f2ebbb0b2ea9faee0c5ee",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-02-23T05:38:02Z",
+      "message": "Add ai-chat-2 host configuration and Beszel monitoring agent variables",
+      "stats": {
+        "additions": 16,
+        "deletions": 0,
+        "total": 16
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "1e04119a60424c455c3e104572ea8b66533ddc1e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-02-23T04:37:52Z",
+      "message": "Add coolify-1 host configuration and variables for Beszel monitoring agent",
+      "stats": {
+        "additions": 16,
+        "deletions": 0,
+        "total": 16
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 45,
+  "issues": [
+    {
+      "number": 1673,
+      "title": "Enhance error reporting to crashlytics for ai video generation",
+      "closed_at": "2026-02-23T11:18:45Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1673",
+      "labels": []
+    },
+    {
+      "number": 1674,
+      "title": "Move documentation from linear tickets to github",
+      "closed_at": "2026-02-23T15:46:13Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1674",
+      "labels": [
+        "documentation"
+      ]
+    },
+    {
+      "number": 919,
+      "title": "Events for loader and number of videos from recommendedation service",
+      "closed_at": "2026-02-23T14:25:58Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/919",
+      "labels": [
+        "enhancement"
+      ]
+    }
+  ],
+  "issue_count": 3
+}
