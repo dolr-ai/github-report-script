@@ -1,0 +1,1070 @@
+{
+  "date": "2026-02-24",
+  "cached_at": "2026-02-24T18:50:21.424858Z",
+  "commits": [
+    {
+      "sha": "53ef53324c12b585d1009db3bdfb8fae7564aa6e",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-23T17:28:03+05:30",
+      "message": "chore: Increments android app version",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "release/android-2.6.8"
+      ]
+    },
+    {
+      "sha": "656d43e586748125017b6fe61179f437c4a9d38e",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-24T13:41:03+05:30",
+      "message": "Adds bot account deleted event (#922)",
+      "stats": {
+        "additions": 97,
+        "deletions": 28,
+        "total": 125
+      },
+      "branches": [
+        "release/android-2.6.8",
+        "feature/tara-subscription",
+        "develop"
+      ]
+    },
+    {
+      "sha": "24307f6d1d5ccfc8d94aa924d98e12650c07d36e",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-24T09:55:32+05:30",
+      "message": "Enhances bot creation instrumentation (#921)",
+      "stats": {
+        "additions": 29,
+        "deletions": 9,
+        "total": 38
+      },
+      "branches": [
+        "release/android-2.6.8",
+        "feature/tara-subscription",
+        "develop"
+      ]
+    },
+    {
+      "sha": "ead5b89c89beeb2c458fbee459ea817e07c36884",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-25T00:11:12+05:30",
+      "message": "build: Adds expires in time for influencer subscription",
+      "stats": {
+        "additions": 183,
+        "deletions": 53,
+        "total": 236
+      },
+      "branches": [
+        "feature/tara-subscription"
+      ]
+    },
+    {
+      "sha": "74fda91344761ddd7a7e1888d874c47fc664bb76",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-24T23:14:40+05:30",
+      "message": "build: Returns early for fetching products when subscription is disabled",
+      "stats": {
+        "additions": 4,
+        "deletions": 0,
+        "total": 4
+      },
+      "branches": [
+        "feature/tara-subscription"
+      ]
+    },
+    {
+      "sha": "c6d47479067f76b5efccaa02b61d61d5e419bb7c",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-24T22:54:48+05:30",
+      "message": "build: Enhances code",
+      "stats": {
+        "additions": 64,
+        "deletions": 34,
+        "total": 98
+      },
+      "branches": [
+        "feature/tara-subscription"
+      ]
+    },
+    {
+      "sha": "2820f976d063af0718a5daed5606e5d973c6b14a",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-24T22:16:33+05:30",
+      "message": "build: Updates message counting logic",
+      "stats": {
+        "additions": 11,
+        "deletions": 16,
+        "total": 27
+      },
+      "branches": [
+        "feature/tara-subscription"
+      ]
+    },
+    {
+      "sha": "97e71d0ffb1abd0fb8d90f488605ee3a6fa24037",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-24T20:12:59+05:30",
+      "message": "build: Gate influencer subscription to only tara chat bot",
+      "stats": {
+        "additions": 54,
+        "deletions": 2,
+        "total": 56
+      },
+      "branches": [
+        "feature/tara-subscription"
+      ]
+    },
+    {
+      "sha": "12d514bf96c7e8eed492dc3e48ae407eab0f700e",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-24T19:34:29+05:30",
+      "message": "build: Adds influencer subscription",
+      "stats": {
+        "additions": 409,
+        "deletions": 33,
+        "total": 442
+      },
+      "branches": [
+        "feature/tara-subscription"
+      ]
+    },
+    {
+      "sha": "e544fed635ca03a0074537335e30204463b802d2",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-24T17:52:37+05:30",
+      "message": "build: Updates condition to show pro button, add check that yral_pro product should be available",
+      "stats": {
+        "additions": 67,
+        "deletions": 4,
+        "total": 71
+      },
+      "branches": [
+        "feature/tara-subscription"
+      ]
+    },
+    {
+      "sha": "ac91f5d9b26e344a448a517c62f3aedb833f0058",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-24T20:42:04+05:30",
+      "message": "fix: Add missing status field to PostDetailsDto",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "7525a03708dcf6700790c230c0eebb7264f588aa",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-24T20:41:56+05:30",
+      "message": "chore: Convert uploadFile to multipart form data request",
+      "stats": {
+        "additions": 21,
+        "deletions": 13,
+        "total": 34
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "b4e6d1ac9543d1d227e519fcb9a1faa0d13876c6",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-24T20:41:45+05:30",
+      "message": "feat: Add expect/actual readFileBytes for platform file reading",
+      "stats": {
+        "additions": 28,
+        "deletions": 0,
+        "total": 28
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "155bef429f08e92102a587b9b4fc26b5b9359d8d",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-24T20:41:38+05:30",
+      "message": "fix: Pin detekt jvmTarget to 17 to support JDK 23",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "2700194fe6bbef2cc822e1aea13e90572bdd79b6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-24T16:48:37Z",
+      "message": "docs: document all-nodes DNS round-robin preference for service exposure",
+      "stats": {
+        "additions": 15,
+        "deletions": 0,
+        "total": 15
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "27f424672a863ee5c07fa29a79347175426b9e2a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-24T16:43:17Z",
+      "message": "fix: disable basic auth again, revert temp change",
+      "stats": {
+        "additions": 1,
+        "deletions": 3,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "dc0b4fa2f8579fd0b4ac98626e529ab25fcf538d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-24T16:39:37Z",
+      "message": "temp: re-enable basic auth to allow admin API user promotion",
+      "stats": {
+        "additions": 7,
+        "deletions": 1,
+        "total": 8
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e2d55739c0abd778dcf0c295520724579fcbeeb0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-24T16:00:32Z",
+      "message": "fix: forward user email to Grafana upstream via --pass-user-headers",
+      "stats": {
+        "additions": 9,
+        "deletions": 3,
+        "total": 12
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "5083f810e4422e9fc828bab03a3ef666aea77dc9",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-24T15:53:01Z",
+      "message": "fix: set Grafana server.root_url to fix post-oauth2-proxy redirect loop",
+      "stats": {
+        "additions": 4,
+        "deletions": 0,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "63298d6f0c5e62172fe6c38b80f9d6be587a478c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-24T15:44:25Z",
+      "message": "fix: upgrade and node-management role bug fixes",
+      "stats": {
+        "additions": 144,
+        "deletions": 21,
+        "total": 165
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "359ed2e0afaddd41b64ee7b7888456d20e5ca0da",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-24T15:44:02Z",
+      "message": "docs: update AGENTS.md with Cilium BPF stale table pattern and Longhorn state",
+      "stats": {
+        "additions": 35,
+        "deletions": 4,
+        "total": 39
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e1b17c3bd7f01be3f563867711b2ea66542eca60",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-24T10:46:19Z",
+      "message": "fix: scale CoreDNS to 8 replicas for zone coverage, Longhorn replicas to 3",
+      "stats": {
+        "additions": 14,
+        "deletions": 8,
+        "total": 22
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "002363a3c923680688d7e1312aa0d0c7a191a021",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-24T09:35:37Z",
+      "message": "fix: persist Ansible collections across container rebuilds",
+      "stats": {
+        "additions": 7,
+        "deletions": 1,
+        "total": 8
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "89e28ac9e23d869ebbfa0ca19aae18081f620e95",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-24T08:38:40Z",
+      "message": "chore: remove old-control-plane-2 from inventory, clean up transition comments",
+      "stats": {
+        "additions": 2,
+        "deletions": 25,
+        "total": 27
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "5cbcde8134ee9bfd4f8b167a636a23ba10aaac5f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-24T07:11:37Z",
+      "message": "fix: add timeout 60 to kubectl exec in etcd health check to prevent indefinite hang",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "841f431efdcf3957644227df454204c962e06e30",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-24T07:09:39Z",
+      "message": "fix: remove old-control-plane-3 from inventory; fix missing task name in node-remove",
+      "stats": {
+        "additions": 1,
+        "deletions": 8,
+        "total": 9
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "38c85f6315e4b1af3b35b424c4aa37ac489ac6c4",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-24T06:54:17Z",
+      "message": "docs: broaden serial multi-node principle to cover all levels (playbooks, role loops, task loops)",
+      "stats": {
+        "additions": 7,
+        "deletions": 3,
+        "total": 10
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "238899fb32a4f93e813b595ce05aec9c7f94ee97",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-24T06:53:25Z",
+      "message": "fix: restart NotReady workers serially (restart+wait per node) after CP removal",
+      "stats": {
+        "additions": 39,
+        "deletions": 20,
+        "total": 59
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6877166adf5848eb30640e8d7c1cd9c7741d274e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-24T06:49:12Z",
+      "message": "feat: restart NotReady worker kubelets after CP removal",
+      "stats": {
+        "additions": 48,
+        "deletions": 1,
+        "total": 49
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "29d8e90eff605f37dbd0d8d3ed06c32e1bbf77e6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-24T06:43:24Z",
+      "message": "fix: retry kubectl get nodes after etcd member removal",
+      "stats": {
+        "additions": 4,
+        "deletions": 0,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8b88f66558e00d3c8ec8054ea597de2aa6119334",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-24T06:29:02Z",
+      "message": "chore: remove old-control-plane-4 from inventory (node removed from cluster)",
+      "stats": {
+        "additions": 0,
+        "deletions": 7,
+        "total": 7
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "246b4ceccea2554a3ca51d5271d00f0e31ffa750",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-24T05:58:59Z",
+      "message": "fix: node-remove etcd pod names use k8s node name, not inventory name",
+      "stats": {
+        "additions": 10,
+        "deletions": 10,
+        "total": 20
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7b821a5788188d23c89a4d7139feb5393befd597",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-24T05:54:35Z",
+      "message": "fix: node-remove Cloudflare URLs had newline folded to space",
+      "stats": {
+        "additions": 2,
+        "deletions": 6,
+        "total": 8
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a2197f9a0688fe119f1d8a6871fb9b244da01c95",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-24T05:53:38Z",
+      "message": "fix: add confirm_node_remove=yes bypass to node-remove role for automation",
+      "stats": {
+        "additions": 8,
+        "deletions": 3,
+        "total": 11
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "27e9266d94d2a753de9d570d3da6b211c3f6f38d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-24T05:52:21Z",
+      "message": "fix: node-remove role supports k8s_node_name override + safe kubectl_delegate",
+      "stats": {
+        "additions": 35,
+        "deletions": 15,
+        "total": 50
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "bd83355f5030c1061a40aae66de131eb6e777e38",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-24T05:44:48Z",
+      "message": "fix: install dnsutils (dig, nslookup, host) in postCreate.sh",
+      "stats": {
+        "additions": 6,
+        "deletions": 0,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "583955c5f7e7235894aa36b7ea75d3a840bf639d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-24T05:21:53Z",
+      "message": "fix: disable Longhorn zone anti-affinity + update AGENTS.md cluster topology",
+      "stats": {
+        "additions": 16,
+        "deletions": 4,
+        "total": 20
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7b7a61c5f7f0f47ae19d23158dfb05472d259134",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-24T05:13:43Z",
+      "message": "feat: redesign cluster topology \u2014 5 CPs across 5 Helsinki buildings, 36 workers",
+      "stats": {
+        "additions": 133,
+        "deletions": 20,
+        "total": 153
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "49d33df02d1ae4d90880188b6d1e01aa57cb6417",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-24T04:33:49Z",
+      "message": "feat: install nfs-common on all nodes for Longhorn RWX volume support",
+      "stats": {
+        "additions": 10,
+        "deletions": 3,
+        "total": 13
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "675a28f4cb4ce841d390b8f37c41a7b9efa9d91f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-24T04:26:17Z",
+      "message": "fix: use btrfs RAID0 striping for data across both NVMe drives",
+      "stats": {
+        "additions": 16,
+        "deletions": 4,
+        "total": 20
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "0a5ee0a4e0edd35056f8673b11208f233ea291ff",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-24T04:09:46Z",
+      "message": "fix: disable btrfs CoW for Longhorn data path in storage-setup role",
+      "stats": {
+        "additions": 84,
+        "deletions": 2,
+        "total": 86
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e6504b43fa8b7272768455fd2e151be2785f0c06",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-24T04:03:58Z",
+      "message": "docs: document CoreDNS topology / cross-DC VXLAN DNS issue and worker scaling guidance",
+      "stats": {
+        "additions": 49,
+        "deletions": 0,
+        "total": 49
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b5425d50f747d1b5bacf6bb643f17c8cbab5b611",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-24T03:49:33Z",
+      "message": "feat: add Longhorn v1.10.2 for Prometheus persistent storage",
+      "stats": {
+        "additions": 60,
+        "deletions": 0,
+        "total": 60
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "5fcfca5d14f15bceb012284d5dac9060bc8b012c",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-24T21:24:08+05:30",
+      "message": "chore: bump yral-common revs",
+      "stats": {
+        "additions": 13,
+        "deletions": 13,
+        "total": 26
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "dbbf7c8d38ea009eb600d440882dd179575b9ad6",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-24T20:58:47+05:30",
+      "message": "Update STORJ_SFW_BUCKET_URL to new link (#416)",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c669d8a4a1a0f676b8f3ac592d8f03c1e5fc7808",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-24T11:33:36+05:30",
+      "message": "feat: add sentry instrumentation for ltx (#415)",
+      "stats": {
+        "additions": 10,
+        "deletions": 177,
+        "total": 187
+      },
+      "branches": [
+        "main",
+        "joel-medicala-yral-patch-3"
+      ]
+    },
+    {
+      "sha": "fd425cae657de170e3b2fe7c5d117fd0c0a8f07b",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-24T20:58:20+05:30",
+      "message": "Update NSFW bucket URL in consts.rs",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "joel-medicala-yral-patch-3"
+      ]
+    },
+    {
+      "sha": "ba71d38e59c8d05791e5240b7f981dc7f21072be",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-24T20:57:10+05:30",
+      "message": "Update STORJ_SFW_BUCKET_URL to new link",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "joel-medicala-yral-patch-3"
+      ]
+    },
+    {
+      "sha": "8a955e83519538322ca988a35f8c331af77dfdc5",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-24T11:27:24+05:30",
+      "message": "feat: add sentry instrumentation for ltx",
+      "stats": {
+        "additions": 10,
+        "deletions": 177,
+        "total": 187
+      },
+      "branches": [
+        "joel/sentry-ltx-instrumentation"
+      ]
+    },
+    {
+      "sha": "f83d1b2d71d63c2e14d385089d53e73c4d860e7e",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-02-24T19:01:55+05:30",
+      "message": "update candid for rate limits canister (#159)",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "master"
+      ]
+    },
+    {
+      "sha": "f9e037f7ff874f5464c66f83c45a958f283c4968",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-02-24T11:28:18+05:30",
+      "message": "chore: deprecate wan 2.5 models",
+      "stats": {
+        "additions": 2,
+        "deletions": 12,
+        "total": 14
+      },
+      "branches": [
+        "master",
+        "feat/update-candid-for-rate-limits"
+      ]
+    },
+    {
+      "sha": "5c2745f56239af9b01215667f7676f5533a5dfce",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-02-24T18:50:15+05:30",
+      "message": "update candid for rate limits canister",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "feat/update-candid-for-rate-limits"
+      ]
+    },
+    {
+      "sha": "57a25f4f7888ab1f12f8e7ef1c305a0b02551de5",
+      "author": "gravityvi",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2026-02-24T18:43:38+05:30",
+      "message": "feat: update RateLimitStatus to include window duration and max requests per user (#643)",
+      "stats": {
+        "additions": 40,
+        "deletions": 6,
+        "total": 46
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7574519706c7aa6961adf911e9a80aff830346d4",
+      "author": "gravityvi",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2026-02-24T16:56:12+05:30",
+      "message": "feat: update RateLimitStatus to include window duration and max requests per user",
+      "stats": {
+        "additions": 40,
+        "deletions": 6,
+        "total": 46
+      },
+      "branches": [
+        "feat/update-rate-limits-status"
+      ]
+    },
+    {
+      "sha": "06f9067b8eb571d2925e786a57b1b0c0e0a30d24",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-24T17:36:32+05:30",
+      "message": "fix: health check port 8000 not mapped to host, use port 80 via caddy",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "joel/rust-migration"
+      ]
+    },
+    {
+      "sha": "8ef4b279e80183f785e4b1a33ba7b69faf1966bd",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-24T17:30:05+05:30",
+      "message": "fix env reference",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "joel/rust-migration"
+      ]
+    },
+    {
+      "sha": "99a20e75e84a98de666740b8b78c0ec6c9c8731e",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-24T17:26:25+05:30",
+      "message": "clean up workflow",
+      "stats": {
+        "additions": 1,
+        "deletions": 31,
+        "total": 32
+      },
+      "branches": [
+        "joel/rust-migration"
+      ]
+    },
+    {
+      "sha": "f552132624e351f684a5815034bf794dd22b824e",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-24T17:21:11+05:30",
+      "message": "test production deps",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "joel/rust-migration"
+      ]
+    },
+    {
+      "sha": "9ef7598d98d11ee4f77e3c22b1a03ca851a7790a",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-24T17:13:39+05:30",
+      "message": "feat: add fuzzing",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "joel/rust-migration"
+      ]
+    },
+    {
+      "sha": "40806d89af2badef355c685eaba35ad8cbb89f38",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-24T17:08:00+05:30",
+      "message": "fix tests",
+      "stats": {
+        "additions": 10,
+        "deletions": 2,
+        "total": 12
+      },
+      "branches": [
+        "joel/rust-migration"
+      ]
+    },
+    {
+      "sha": "22c575330f8ac6fa0ccd6a7e50481adffa6ecb1b",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-24T17:06:46+05:30",
+      "message": "fix docs",
+      "stats": {
+        "additions": 220,
+        "deletions": 24,
+        "total": 244
+      },
+      "branches": [
+        "joel/rust-migration"
+      ]
+    },
+    {
+      "sha": "ab1ab2ce5023022d4e54aaa9896f3e317068ddf1",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-24T16:10:05+05:30",
+      "message": "fix health endpoint",
+      "stats": {
+        "additions": 0,
+        "deletions": 14,
+        "total": 14
+      },
+      "branches": [
+        "joel/rust-migration"
+      ]
+    },
+    {
+      "sha": "9e26eaf7d60d503cd5769ac19b0346a453f0196a",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-24T16:03:16+05:30",
+      "message": "swagger fix",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "joel/rust-migration"
+      ]
+    },
+    {
+      "sha": "0a10d9ccd2a6fe2383d6ee510056005220c78b37",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-24T15:49:05+05:30",
+      "message": "Merge origin/main: resolve conflicts, align migrations",
+      "stats": {
+        "additions": 25,
+        "deletions": 10,
+        "total": 35
+      },
+      "branches": [
+        "joel/rust-migration"
+      ]
+    },
+    {
+      "sha": "7c0c42619d27c4bae7948aa04a37ab83aed5ac67",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-24T12:22:49+05:30",
+      "message": "add swagger",
+      "stats": {
+        "additions": 539,
+        "deletions": 58,
+        "total": 597
+      },
+      "branches": [
+        "joel/rust-migration"
+      ]
+    },
+    {
+      "sha": "8bb7ee65fc50e9e5f51120f95a46dcd2190f860c",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-24T11:45:27+05:30",
+      "message": "add more test coverage",
+      "stats": {
+        "additions": 459,
+        "deletions": 0,
+        "total": 459
+      },
+      "branches": [
+        "joel/rust-migration"
+      ]
+    },
+    {
+      "sha": "8448535bacf3b73c8d99ece596e043c6df870d0e",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ml-feed-server",
+      "timestamp": "2026-02-24T11:38:22+05:30",
+      "message": "Merge pull request #38 from dolr-ai/joel/update-offchain-urls",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8a7aafaf4637704f287f20373e50bfba5625163d",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ml-feed-server",
+      "timestamp": "2026-02-24T11:37:48+05:30",
+      "message": "chore: update offchain urls",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main",
+        "joel/update-offchain-urls"
+      ]
+    },
+    {
+      "sha": "e7bd343c9ae0845d1f4024489a9c10f13d1f5ebd",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-02-24T10:31:59+05:30",
+      "message": "init setup for preview deployment to coolify",
+      "stats": {
+        "additions": 358,
+        "deletions": 65,
+        "total": 423
+      },
+      "branches": [
+        "naitik/test-coolify-pr-setup"
+      ]
+    }
+  ],
+  "commit_count": 69,
+  "issues": [
+    {
+      "number": 1680,
+      "title": "BE side yral common changes",
+      "closed_at": "2026-02-24T07:12:32Z",
+      "assignee": "joel-medicala-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1680",
+      "labels": []
+    },
+    {
+      "number": 1651,
+      "title": "explore available services for preview deployment",
+      "closed_at": "2026-02-24T05:11:18Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1651",
+      "labels": []
+    }
+  ],
+  "issue_count": 2
+}
