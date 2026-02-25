@@ -262,22 +262,30 @@ class GitHubFetcher:
             f"Fetching closed issues for {username} from {start_date.date()} to {end_date.date()}")
 
         try:
+            # Use GitHub search API to find issues assigned to the user (not authored by them).
+            # user.issues only returns issues *created* by the user, so issues created by
+            # someone else but assigned to this user would be silently missed.
+            search_query = (
+                f"is:issue is:closed assignee:{username} org:{org} "
+                f"closed:{start_date.strftime('%Y-%m-%d')}..{end_date.strftime('%Y-%m-%d')}"
+            )
+
             while has_next_page:
-                # GraphQL query for closed issues assigned to user
+                # GraphQL search query for closed issues assigned to user
                 query = """
-                query($username: String!, $cursor: String) {
-                  user(login: $username) {
-                    issues(
-                      first: 100
-                      after: $cursor
-                      filterBy: {states: CLOSED}
-                      orderBy: {field: UPDATED_AT, direction: DESC}
-                    ) {
-                      pageInfo {
-                        hasNextPage
-                        endCursor
-                      }
-                      nodes {
+                query($searchQuery: String!, $cursor: String) {
+                  search(
+                    query: $searchQuery
+                    type: ISSUE
+                    first: 100
+                    after: $cursor
+                  ) {
+                    pageInfo {
+                      hasNextPage
+                      endCursor
+                    }
+                    nodes {
+                      ... on Issue {
                         number
                         title
                         closedAt
@@ -305,7 +313,7 @@ class GitHubFetcher:
                 """
 
                 variables = {
-                    'username': username,
+                    'searchQuery': search_query,
                     'cursor': cursor
                 }
 
@@ -315,16 +323,19 @@ class GitHubFetcher:
                         f"No response from GraphQL for issues of {username}")
                     break
 
-                user_data = response.get('user')
-                if not user_data:
-                    logger.debug(f"No user data found for {username}")
+                search_data = response.get('search')
+                if not search_data:
+                    logger.debug(f"No search data found for {username}")
                     break
 
-                issues_data = user_data.get('issues', {})
-                nodes = issues_data.get('nodes', [])
-                page_info = issues_data.get('pageInfo', {})
+                nodes = search_data.get('nodes', [])
+                page_info = search_data.get('pageInfo', {})
 
                 for issue_node in nodes:
+                    # Skip non-Issue nodes (search can return PRs too, though filtered above)
+                    if not issue_node or 'closedAt' not in issue_node:
+                        continue
+
                     # Get closedAt date
                     closed_at_str = issue_node.get('closedAt')
                     if not closed_at_str:
@@ -337,21 +348,8 @@ class GitHubFetcher:
                     if not (start_date <= closed_at <= end_date):
                         continue
 
-                    # Check if issue is from our organization
+                    # Extract issue data (org filter already applied via search query)
                     repo_data = issue_node.get('repository', {})
-                    repo_owner = repo_data.get('owner', {}).get('login', '')
-                    if repo_owner != org:
-                        continue
-
-                    # Check if user is actually assigned to this issue
-                    assignees = issue_node.get(
-                        'assignees', {}).get('nodes', [])
-                    is_assigned = any(a.get('login') ==
-                                      username for a in assignees)
-                    if not is_assigned:
-                        continue
-
-                    # Extract issue data
                     repo_name = repo_data.get('nameWithOwner', '')
                     labels = [label['name'] for label in issue_node.get(
                         'labels', {}).get('nodes', [])]
@@ -372,8 +370,7 @@ class GitHubFetcher:
                 has_next_page = page_info.get('hasNextPage', False)
                 cursor = page_info.get('endCursor')
 
-                # Stop if we've gone far enough back in time
-                if nodes and not has_next_page:
+                if not has_next_page:
                     break
 
         except Exception as e:

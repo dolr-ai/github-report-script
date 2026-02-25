@@ -456,6 +456,158 @@ class TestFetchCommitsViaGraphQL:
         assert fetcher._graphql_request.call_count == 2
 
 
+# ---------------------------------------------------------------------------
+# Helper for _fetch_closed_issues_for_user tests
+# ---------------------------------------------------------------------------
+
+def _gql_search_issues_page(issue_nodes, has_next=False, end_cursor=None):
+    """Build the GraphQL search response for closed issues."""
+    return {
+        'search': {
+            'pageInfo': {'hasNextPage': has_next, 'endCursor': end_cursor},
+            'nodes': issue_nodes,
+        }
+    }
+
+
+def _issue_node(number, title, closed_at, repo_with_owner, labels=None):
+    owner = repo_with_owner.split('/')[0]
+    return {
+        'number': number,
+        'title': title,
+        'closedAt': closed_at,
+        'url': f'https://github.com/{repo_with_owner}/issues/{number}',
+        'repository': {
+            'nameWithOwner': repo_with_owner,
+            'owner': {'login': owner},
+        },
+        'labels': {'nodes': [{'name': l} for l in (labels or [])]},
+        'assignees': {'nodes': [{'login': repo_with_owner.split('/')[0]}]},
+    }
+
+
+class TestFetchClosedIssuesForUser:
+    """Unit tests for _fetch_closed_issues_for_user()."""
+
+    START = datetime(2026, 2, 24, 0, 0, 0, tzinfo=timezone.utc)
+    END = datetime(2026, 2, 24, 23, 59, 59, tzinfo=timezone.utc)
+
+    @pytest.mark.unit
+    def test_returns_assigned_issues_in_range(self):
+        """Issues closed within the date window and assigned to the user are returned."""
+        fetcher = _make_fetcher()
+        fetcher._graphql_request.return_value = _gql_search_issues_page([
+            _issue_node(1669, 'Increase rate limit', '2026-02-24T13:13:39Z',
+                        f'{GITHUB_ORG}/product'),
+        ])
+
+        result = fetcher._fetch_closed_issues_for_user(
+            'ravi-sawlani-yral', GITHUB_ORG, self.START, self.END)
+
+        assert len(result) == 1
+        assert result[0]['number'] == 1669
+        assert result[0]['assignee'] == 'ravi-sawlani-yral'
+        assert result[0]['repository'] == f'{GITHUB_ORG}/product'
+
+    @pytest.mark.unit
+    def test_issues_authored_by_others_are_included(self):
+        """Issues created by someone else but assigned to the user must be returned.
+
+        This is the core bug that was fixed: the old user.issues query returned
+        issues *authored* by the user, so externally-authored issues were dropped.
+        The search-based query has no such restriction.
+        """
+        fetcher = _make_fetcher()
+        # Simulate issue #1669: authored by jatin-agarwal-yral, assigned to ravi-sawlani-yral
+        fetcher._graphql_request.return_value = _gql_search_issues_page([
+            _issue_node(1669, 'Increase rate limit of video gen',
+                        '2026-02-24T13:13:39Z', f'{GITHUB_ORG}/product'),
+        ])
+
+        result = fetcher._fetch_closed_issues_for_user(
+            'ravi-sawlani-yral', GITHUB_ORG, self.START, self.END)
+
+        # Must be returned regardless of who authored the issue
+        assert len(result) == 1
+        assert result[0]['number'] == 1669
+
+    @pytest.mark.unit
+    def test_issues_outside_date_range_are_excluded(self):
+        """Issues closed outside the window are filtered out."""
+        fetcher = _make_fetcher()
+        fetcher._graphql_request.return_value = _gql_search_issues_page([
+            _issue_node(100, 'Old issue', '2026-01-01T10:00:00Z',
+                        f'{GITHUB_ORG}/product'),
+        ])
+
+        result = fetcher._fetch_closed_issues_for_user(
+            'ravi-sawlani-yral', GITHUB_ORG, self.START, self.END)
+
+        assert result == []
+
+    @pytest.mark.unit
+    def test_empty_search_result(self):
+        """Returns empty list when no issues match."""
+        fetcher = _make_fetcher()
+        fetcher._graphql_request.return_value = _gql_search_issues_page([])
+
+        result = fetcher._fetch_closed_issues_for_user(
+            'ravi-sawlani-yral', GITHUB_ORG, self.START, self.END)
+
+        assert result == []
+
+    @pytest.mark.unit
+    def test_pagination_fetches_all_pages(self):
+        """All pages are consumed before returning."""
+        fetcher = _make_fetcher()
+        fetcher._graphql_request.side_effect = [
+            _gql_search_issues_page(
+                [_issue_node(1, 'Issue A', '2026-02-24T09:00:00Z',
+                             f'{GITHUB_ORG}/product')],
+                has_next=True, end_cursor='cursor1',
+            ),
+            _gql_search_issues_page(
+                [_issue_node(2, 'Issue B', '2026-02-24T11:00:00Z',
+                             f'{GITHUB_ORG}/product')],
+                has_next=False,
+            ),
+        ]
+
+        result = fetcher._fetch_closed_issues_for_user(
+            'ravi-sawlani-yral', GITHUB_ORG, self.START, self.END)
+
+        assert len(result) == 2
+        assert fetcher._graphql_request.call_count == 2
+
+    @pytest.mark.unit
+    def test_search_query_uses_assignee_and_org(self):
+        """The GraphQL search query targets the correct assignee and organisation."""
+        fetcher = _make_fetcher()
+        fetcher._graphql_request.return_value = _gql_search_issues_page([])
+
+        fetcher._fetch_closed_issues_for_user(
+            'ravi-sawlani-yral', GITHUB_ORG, self.START, self.END)
+
+        call_args = fetcher._graphql_request.call_args
+        # positional (query, variables)
+        search_query = call_args[0][1]['searchQuery']
+        assert 'assignee:ravi-sawlani-yral' in search_query
+        assert f'org:{GITHUB_ORG}' in search_query
+        assert 'is:issue' in search_query
+        assert 'is:closed' in search_query
+
+    @pytest.mark.unit
+    def test_no_response_returns_empty_list(self):
+        """None response from GraphQL results in empty list (no crash)."""
+        fetcher = _make_fetcher()
+        fetcher._graphql_request.return_value = None
+
+        result = fetcher._fetch_closed_issues_for_user(
+            'ravi-sawlani-yral', GITHUB_ORG, self.START, self.END)
+
+        assert result == []
+
+
 @pytest.mark.integration
 class TestGitHubFetcherIntegration:
     """Integration tests using real GitHub API"""

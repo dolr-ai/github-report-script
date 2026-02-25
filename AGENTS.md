@@ -73,7 +73,7 @@ GitHub GraphQL API ──► github_fetcher.py ─► cache/commits/YYYY-MM-DD.j
                                              google_chat_poster.py ─► Google Chat
 ```
 
-All commit data is fetched via pure GraphQL (no REST search API). Issue data is also pure GraphQL.
+All commit data is fetched via pure GraphQL (no REST search API). Issue data is fetched via GraphQL `search(type: ISSUE)` with `assignee:` and `org:` qualifiers.
 
 ---
 
@@ -101,11 +101,21 @@ All commit data is fetched via pure GraphQL (no REST search API). Issue data is 
 
 **Author filtering:** Client-side only — all commits in the date window are fetched and filtered by `author.user.login ∈ user_ids`. No per-user query is issued.
 
-### 4.2 Commit Deduplication
+### 4.2 Issue Discovery: GraphQL Search With `assignee:` Qualifier
+
+**Decision:** `_fetch_closed_issues_for_user()` uses `search(type: ISSUE, query: "is:issue is:closed assignee:{username} org:{org} closed:{date}..{date}")` — **not** `user(login: ...) { issues(...) }`.
+
+**Why not `user.issues`:** GitHub's GraphQL `user.issues` field returns issues *authored by* the user, not issues *assigned to* them. A user who is assigned to an issue created by someone else will never see it through `user.issues`. This caused issue dolr-ai/product#1669 (authored by `jatin-agarwal-yral`, assigned to `ravi-sawlani-yral`) to be silently skipped for `ravi-sawlani-yral` on 2026-02-24.
+
+**Why `search(type: ISSUE)` works:** The `assignee:` qualifier in GitHub search matches issues where the user is in the assignees list, regardless of authorship. `org:` scopes results to the organisation. `closed:{date}..{date}` applies a server-side date filter so client-side filtering only needs to guard against edge cases (e.g. off-by-one from timezone differences).
+
+**Rate limit note:** Each `search(type: ISSUE)` call consumes from the GraphQL rate-limit bucket, same as commit queries.
+
+### 4.3 Commit Deduplication
 
 Commits are deduplicated **by SHA within a single fetch run** (`commits_by_sha` dict). The same SHA on multiple branches is stored once with a `branches: [...]` list. Do not add cross-date or cross-run deduplication — the cache is the source of truth per day.
 
-### 4.3 Leaderboard Ranking
+### 4.4 Leaderboard Ranking
 
 Contributors are ranked by a **weighted normalized score**:
 
@@ -134,11 +144,11 @@ Max possible score = sum of all weights (10 with defaults).
 
 Ties (equal scores) share the same rank emoji position. This is implemented in `leaderboard_generator.py → compute_weighted_scores()` and `get_all_contributors_by_impact()`.
 
-### 4.4 Timezone
+### 4.5 Timezone
 
 All date boundary calculations (yesterday, last 7 days, etc.) use **IST (`Asia/Kolkata`)**, not UTC. This is intentional — the team is India-based. The `IST_TIMEZONE` constant is defined in `config.py` and must be used everywhere date arithmetic is done for leaderboard/reporting purposes.
 
-### 4.5 Cache Invalidation
+### 4.6 Cache Invalidation
 
 Cache files for a date are only overwritten in two cases:
 - `force_refresh=True` (REFRESH mode or `--days` flag)
@@ -146,7 +156,7 @@ Cache files for a date are only overwritten in two cases:
 
 Do **not** silently overwrite cache unless one of these conditions is true.
 
-### 4.6 Google Chat: Two Channels
+### 4.7 Google Chat: Two Channels
 
 There are two configured Google Chat channels:
 
@@ -159,11 +169,11 @@ The test channel space ID is stored in `config.py`. Keys/tokens come from `.env`
 
 `GoogleChatPoster(dry_run=True)` prints messages to stdout and never hits the network — safe for local previews. `GoogleChatPoster(test_channel=True)` routes to the test webhook. Both flags can be combined.
 
-### 4.7 Bot Filtering
+### 4.8 Bot Filtering
 
 Bots are filtered by matching `author.name` or `author.email` against `KNOWN_BOTS` in `config.py`. The list is the fallback; GitHub's own user-type field is the primary check where available.
 
-### 4.8 Rate Limit Handling
+### 4.9 Rate Limit Handling
 
 All GraphQL calls retry up to 10 times with smart wait: the exact reset timestamp is read from `/rate_limit` and used as the sleep duration (+ 2 s buffer). Exponential backoff is used only if the rate-limit check itself fails.
 
@@ -231,7 +241,7 @@ When adding a new config variable:
 - `_fetch_commits_via_graphql(repo_names, start_datetime, end_datetime, user_ids) → List[Dict]` — batched GraphQL queries (5 repos per query via aliases). For each repo, fetches all branches (`refs`) ordered by most-recently committed first, then uses `history(since:, until:)` per branch to retrieve commits. `additions`/`deletions` are inline — no REST follow-up. Deduplicates by SHA; same commit on multiple branches accumulates branch names. Filters bots and non-tracked authors client-side.
 - `_fetch_commits_for_date(date_str, start_datetime, end_datetime, user_ids)` — calls `_discover_active_repos` then `_fetch_commits_via_graphql`, then calls `_fetch_closed_issues_for_user` for each user.
 - `_check_rate_limit_and_wait(min_remaining, resource_type)` — accepts `resource_type` param (`'graphql'` or `'core'`); during normal commit fetching only `graphql` is used.
-- `_fetch_closed_issues_for_user()` — GraphQL; filters by assignee + closed date + org.
+- `_fetch_closed_issues_for_user()` — Uses GraphQL `search(type: ISSUE)` with query `is:issue is:closed assignee:{username} org:{org} closed:{date}..{date}`. Returns issues *assigned to* the user, not authored by them. Pagination via `pageInfo`/`cursor`. Client-side date filter as a safety guard against timezone edge cases.
 
 ### `cache_manager.py`
 

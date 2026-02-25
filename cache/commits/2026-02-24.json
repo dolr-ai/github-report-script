@@ -1,219 +1,230 @@
 {
   "date": "2026-02-24",
-  "cached_at": "2026-02-24T18:50:21.424858Z",
+  "cached_at": "2026-02-25T06:24:13.084734Z",
   "commits": [
     {
-      "sha": "53ef53324c12b585d1009db3bdfb8fae7564aa6e",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-23T17:28:03+05:30",
-      "message": "chore: Increments android app version",
+      "sha": "06f9067b8eb571d2925e786a57b1b0c0e0a30d24",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-24T17:36:32+05:30",
+      "message": "fix: health check port 8000 not mapped to host, use port 80 via caddy",
       "stats": {
         "additions": 2,
         "deletions": 2,
         "total": 4
       },
       "branches": [
-        "release/android-2.6.8"
+        "joel/rust-migration"
       ]
     },
     {
-      "sha": "656d43e586748125017b6fe61179f437c4a9d38e",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-24T13:41:03+05:30",
-      "message": "Adds bot account deleted event (#922)",
+      "sha": "8ef4b279e80183f785e4b1a33ba7b69faf1966bd",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-24T17:30:05+05:30",
+      "message": "fix env reference",
       "stats": {
-        "additions": 97,
-        "deletions": 28,
-        "total": 125
-      },
-      "branches": [
-        "release/android-2.6.8",
-        "feature/tara-subscription",
-        "develop"
-      ]
-    },
-    {
-      "sha": "24307f6d1d5ccfc8d94aa924d98e12650c07d36e",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-24T09:55:32+05:30",
-      "message": "Enhances bot creation instrumentation (#921)",
-      "stats": {
-        "additions": 29,
-        "deletions": 9,
-        "total": 38
-      },
-      "branches": [
-        "release/android-2.6.8",
-        "feature/tara-subscription",
-        "develop"
-      ]
-    },
-    {
-      "sha": "ead5b89c89beeb2c458fbee459ea817e07c36884",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-25T00:11:12+05:30",
-      "message": "build: Adds expires in time for influencer subscription",
-      "stats": {
-        "additions": 183,
-        "deletions": 53,
-        "total": 236
-      },
-      "branches": [
-        "feature/tara-subscription"
-      ]
-    },
-    {
-      "sha": "74fda91344761ddd7a7e1888d874c47fc664bb76",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-24T23:14:40+05:30",
-      "message": "build: Returns early for fetching products when subscription is disabled",
-      "stats": {
-        "additions": 4,
-        "deletions": 0,
-        "total": 4
-      },
-      "branches": [
-        "feature/tara-subscription"
-      ]
-    },
-    {
-      "sha": "c6d47479067f76b5efccaa02b61d61d5e419bb7c",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-24T22:54:48+05:30",
-      "message": "build: Enhances code",
-      "stats": {
-        "additions": 64,
-        "deletions": 34,
-        "total": 98
-      },
-      "branches": [
-        "feature/tara-subscription"
-      ]
-    },
-    {
-      "sha": "2820f976d063af0718a5daed5606e5d973c6b14a",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-24T22:16:33+05:30",
-      "message": "build: Updates message counting logic",
-      "stats": {
-        "additions": 11,
-        "deletions": 16,
-        "total": 27
-      },
-      "branches": [
-        "feature/tara-subscription"
-      ]
-    },
-    {
-      "sha": "97e71d0ffb1abd0fb8d90f488605ee3a6fa24037",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-24T20:12:59+05:30",
-      "message": "build: Gate influencer subscription to only tara chat bot",
-      "stats": {
-        "additions": 54,
-        "deletions": 2,
-        "total": 56
-      },
-      "branches": [
-        "feature/tara-subscription"
-      ]
-    },
-    {
-      "sha": "12d514bf96c7e8eed492dc3e48ae407eab0f700e",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-24T19:34:29+05:30",
-      "message": "build: Adds influencer subscription",
-      "stats": {
-        "additions": 409,
-        "deletions": 33,
-        "total": 442
-      },
-      "branches": [
-        "feature/tara-subscription"
-      ]
-    },
-    {
-      "sha": "e544fed635ca03a0074537335e30204463b802d2",
-      "author": "shivam-bhavsar-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-24T17:52:37+05:30",
-      "message": "build: Updates condition to show pro button, add check that yral_pro product should be available",
-      "stats": {
-        "additions": 67,
-        "deletions": 4,
-        "total": 71
-      },
-      "branches": [
-        "feature/tara-subscription"
-      ]
-    },
-    {
-      "sha": "ac91f5d9b26e344a448a517c62f3aedb833f0058",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-24T20:42:04+05:30",
-      "message": "fix: Add missing status field to PostDetailsDto",
-      "stats": {
-        "additions": 2,
-        "deletions": 0,
+        "additions": 1,
+        "deletions": 1,
         "total": 2
       },
       "branches": [
-        "chore/new-upload-video-endpoint"
+        "joel/rust-migration"
       ]
     },
     {
-      "sha": "7525a03708dcf6700790c230c0eebb7264f588aa",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-24T20:41:56+05:30",
-      "message": "chore: Convert uploadFile to multipart form data request",
+      "sha": "99a20e75e84a98de666740b8b78c0ec6c9c8731e",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-24T17:26:25+05:30",
+      "message": "clean up workflow",
       "stats": {
-        "additions": 21,
-        "deletions": 13,
-        "total": 34
+        "additions": 1,
+        "deletions": 31,
+        "total": 32
       },
       "branches": [
-        "chore/new-upload-video-endpoint"
+        "joel/rust-migration"
       ]
     },
     {
-      "sha": "b4e6d1ac9543d1d227e519fcb9a1faa0d13876c6",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-24T20:41:45+05:30",
-      "message": "feat: Add expect/actual readFileBytes for platform file reading",
-      "stats": {
-        "additions": 28,
-        "deletions": 0,
-        "total": 28
-      },
-      "branches": [
-        "chore/new-upload-video-endpoint"
-      ]
-    },
-    {
-      "sha": "155bef429f08e92102a587b9b4fc26b5b9359d8d",
-      "author": "sarvesh-sharma-yral",
-      "repository": "dolr-ai/yral-mobile",
-      "timestamp": "2026-02-24T20:41:38+05:30",
-      "message": "fix: Pin detekt jvmTarget to 17 to support JDK 23",
+      "sha": "f552132624e351f684a5815034bf794dd22b824e",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-24T17:21:11+05:30",
+      "message": "test production deps",
       "stats": {
         "additions": 1,
         "deletions": 0,
         "total": 1
       },
       "branches": [
-        "chore/new-upload-video-endpoint"
+        "joel/rust-migration"
+      ]
+    },
+    {
+      "sha": "9ef7598d98d11ee4f77e3c22b1a03ca851a7790a",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-24T17:13:39+05:30",
+      "message": "feat: add fuzzing",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "joel/rust-migration"
+      ]
+    },
+    {
+      "sha": "40806d89af2badef355c685eaba35ad8cbb89f38",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-24T17:08:00+05:30",
+      "message": "fix tests",
+      "stats": {
+        "additions": 10,
+        "deletions": 2,
+        "total": 12
+      },
+      "branches": [
+        "joel/rust-migration"
+      ]
+    },
+    {
+      "sha": "22c575330f8ac6fa0ccd6a7e50481adffa6ecb1b",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-24T17:06:46+05:30",
+      "message": "fix docs",
+      "stats": {
+        "additions": 220,
+        "deletions": 24,
+        "total": 244
+      },
+      "branches": [
+        "joel/rust-migration"
+      ]
+    },
+    {
+      "sha": "ab1ab2ce5023022d4e54aaa9896f3e317068ddf1",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-24T16:10:05+05:30",
+      "message": "fix health endpoint",
+      "stats": {
+        "additions": 0,
+        "deletions": 14,
+        "total": 14
+      },
+      "branches": [
+        "joel/rust-migration"
+      ]
+    },
+    {
+      "sha": "9e26eaf7d60d503cd5769ac19b0346a453f0196a",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-24T16:03:16+05:30",
+      "message": "swagger fix",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "joel/rust-migration"
+      ]
+    },
+    {
+      "sha": "0a10d9ccd2a6fe2383d6ee510056005220c78b37",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-24T15:49:05+05:30",
+      "message": "Merge origin/main: resolve conflicts, align migrations",
+      "stats": {
+        "additions": 25,
+        "deletions": 10,
+        "total": 35
+      },
+      "branches": [
+        "joel/rust-migration"
+      ]
+    },
+    {
+      "sha": "7c0c42619d27c4bae7948aa04a37ab83aed5ac67",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-24T12:22:49+05:30",
+      "message": "add swagger",
+      "stats": {
+        "additions": 539,
+        "deletions": 58,
+        "total": 597
+      },
+      "branches": [
+        "joel/rust-migration"
+      ]
+    },
+    {
+      "sha": "8bb7ee65fc50e9e5f51120f95a46dcd2190f860c",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-24T11:45:27+05:30",
+      "message": "add more test coverage",
+      "stats": {
+        "additions": 459,
+        "deletions": 0,
+        "total": 459
+      },
+      "branches": [
+        "joel/rust-migration"
+      ]
+    },
+    {
+      "sha": "48202561adcc295115ff795020ded19dff16ec4c",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-02-25T02:21:24+05:30",
+      "message": "fix: dockerfile for preview",
+      "stats": {
+        "additions": 18,
+        "deletions": 1,
+        "total": 19
+      },
+      "branches": [
+        "naitik/test-coolify-pr-setup"
+      ]
+    },
+    {
+      "sha": "dd1c11150abf4415455041073d7c689342ad8874",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-02-25T01:42:13+05:30",
+      "message": "fix: github app through access fiir ghcr",
+      "stats": {
+        "additions": 30,
+        "deletions": 33,
+        "total": 63
+      },
+      "branches": [
+        "naitik/test-coolify-pr-setup"
+      ]
+    },
+    {
+      "sha": "e7bd343c9ae0845d1f4024489a9c10f13d1f5ebd",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-02-24T10:31:59+05:30",
+      "message": "init setup for preview deployment to coolify",
+      "stats": {
+        "additions": 358,
+        "deletions": 65,
+        "total": 423
+      },
+      "branches": [
+        "naitik/test-coolify-pr-setup"
       ]
     },
     {
@@ -652,6 +663,220 @@
       ]
     },
     {
+      "sha": "53ef53324c12b585d1009db3bdfb8fae7564aa6e",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-23T17:28:03+05:30",
+      "message": "chore: Increments android app version",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "release/android-2.6.8"
+      ]
+    },
+    {
+      "sha": "656d43e586748125017b6fe61179f437c4a9d38e",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-24T13:41:03+05:30",
+      "message": "Adds bot account deleted event (#922)",
+      "stats": {
+        "additions": 97,
+        "deletions": 28,
+        "total": 125
+      },
+      "branches": [
+        "release/android-2.6.8",
+        "feature/tara-subscription",
+        "develop"
+      ]
+    },
+    {
+      "sha": "24307f6d1d5ccfc8d94aa924d98e12650c07d36e",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-24T09:55:32+05:30",
+      "message": "Enhances bot creation instrumentation (#921)",
+      "stats": {
+        "additions": 29,
+        "deletions": 9,
+        "total": 38
+      },
+      "branches": [
+        "release/android-2.6.8",
+        "feature/tara-subscription",
+        "develop"
+      ]
+    },
+    {
+      "sha": "ead5b89c89beeb2c458fbee459ea817e07c36884",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-25T00:11:12+05:30",
+      "message": "build: Adds expires in time for influencer subscription",
+      "stats": {
+        "additions": 183,
+        "deletions": 53,
+        "total": 236
+      },
+      "branches": [
+        "feature/tara-subscription"
+      ]
+    },
+    {
+      "sha": "74fda91344761ddd7a7e1888d874c47fc664bb76",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-24T23:14:40+05:30",
+      "message": "build: Returns early for fetching products when subscription is disabled",
+      "stats": {
+        "additions": 4,
+        "deletions": 0,
+        "total": 4
+      },
+      "branches": [
+        "feature/tara-subscription"
+      ]
+    },
+    {
+      "sha": "c6d47479067f76b5efccaa02b61d61d5e419bb7c",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-24T22:54:48+05:30",
+      "message": "build: Enhances code",
+      "stats": {
+        "additions": 64,
+        "deletions": 34,
+        "total": 98
+      },
+      "branches": [
+        "feature/tara-subscription"
+      ]
+    },
+    {
+      "sha": "2820f976d063af0718a5daed5606e5d973c6b14a",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-24T22:16:33+05:30",
+      "message": "build: Updates message counting logic",
+      "stats": {
+        "additions": 11,
+        "deletions": 16,
+        "total": 27
+      },
+      "branches": [
+        "feature/tara-subscription"
+      ]
+    },
+    {
+      "sha": "97e71d0ffb1abd0fb8d90f488605ee3a6fa24037",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-24T20:12:59+05:30",
+      "message": "build: Gate influencer subscription to only tara chat bot",
+      "stats": {
+        "additions": 54,
+        "deletions": 2,
+        "total": 56
+      },
+      "branches": [
+        "feature/tara-subscription"
+      ]
+    },
+    {
+      "sha": "12d514bf96c7e8eed492dc3e48ae407eab0f700e",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-24T19:34:29+05:30",
+      "message": "build: Adds influencer subscription",
+      "stats": {
+        "additions": 409,
+        "deletions": 33,
+        "total": 442
+      },
+      "branches": [
+        "feature/tara-subscription"
+      ]
+    },
+    {
+      "sha": "e544fed635ca03a0074537335e30204463b802d2",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-24T17:52:37+05:30",
+      "message": "build: Updates condition to show pro button, add check that yral_pro product should be available",
+      "stats": {
+        "additions": 67,
+        "deletions": 4,
+        "total": 71
+      },
+      "branches": [
+        "feature/tara-subscription"
+      ]
+    },
+    {
+      "sha": "ac91f5d9b26e344a448a517c62f3aedb833f0058",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-24T20:42:04+05:30",
+      "message": "fix: Add missing status field to PostDetailsDto",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "7525a03708dcf6700790c230c0eebb7264f588aa",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-24T20:41:56+05:30",
+      "message": "chore: Convert uploadFile to multipart form data request",
+      "stats": {
+        "additions": 21,
+        "deletions": 13,
+        "total": 34
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "b4e6d1ac9543d1d227e519fcb9a1faa0d13876c6",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-24T20:41:45+05:30",
+      "message": "feat: Add expect/actual readFileBytes for platform file reading",
+      "stats": {
+        "additions": 28,
+        "deletions": 0,
+        "total": 28
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "155bef429f08e92102a587b9b4fc26b5b9359d8d",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-24T20:41:38+05:30",
+      "message": "fix: Pin detekt jvmTarget to 17 to support JDK 23",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
       "sha": "5fcfca5d14f15bceb012284d5dac9060bc8b012c",
       "author": "joel-medicala-yral",
       "repository": "dolr-ai/off-chain-agent",
@@ -804,201 +1029,6 @@
       ]
     },
     {
-      "sha": "7574519706c7aa6961adf911e9a80aff830346d4",
-      "author": "gravityvi",
-      "repository": "dolr-ai/hot-or-not-backend-canister",
-      "timestamp": "2026-02-24T16:56:12+05:30",
-      "message": "feat: update RateLimitStatus to include window duration and max requests per user",
-      "stats": {
-        "additions": 40,
-        "deletions": 6,
-        "total": 46
-      },
-      "branches": [
-        "feat/update-rate-limits-status"
-      ]
-    },
-    {
-      "sha": "06f9067b8eb571d2925e786a57b1b0c0e0a30d24",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-02-24T17:36:32+05:30",
-      "message": "fix: health check port 8000 not mapped to host, use port 80 via caddy",
-      "stats": {
-        "additions": 2,
-        "deletions": 2,
-        "total": 4
-      },
-      "branches": [
-        "joel/rust-migration"
-      ]
-    },
-    {
-      "sha": "8ef4b279e80183f785e4b1a33ba7b69faf1966bd",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-02-24T17:30:05+05:30",
-      "message": "fix env reference",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "joel/rust-migration"
-      ]
-    },
-    {
-      "sha": "99a20e75e84a98de666740b8b78c0ec6c9c8731e",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-02-24T17:26:25+05:30",
-      "message": "clean up workflow",
-      "stats": {
-        "additions": 1,
-        "deletions": 31,
-        "total": 32
-      },
-      "branches": [
-        "joel/rust-migration"
-      ]
-    },
-    {
-      "sha": "f552132624e351f684a5815034bf794dd22b824e",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-02-24T17:21:11+05:30",
-      "message": "test production deps",
-      "stats": {
-        "additions": 1,
-        "deletions": 0,
-        "total": 1
-      },
-      "branches": [
-        "joel/rust-migration"
-      ]
-    },
-    {
-      "sha": "9ef7598d98d11ee4f77e3c22b1a03ca851a7790a",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-02-24T17:13:39+05:30",
-      "message": "feat: add fuzzing",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "joel/rust-migration"
-      ]
-    },
-    {
-      "sha": "40806d89af2badef355c685eaba35ad8cbb89f38",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-02-24T17:08:00+05:30",
-      "message": "fix tests",
-      "stats": {
-        "additions": 10,
-        "deletions": 2,
-        "total": 12
-      },
-      "branches": [
-        "joel/rust-migration"
-      ]
-    },
-    {
-      "sha": "22c575330f8ac6fa0ccd6a7e50481adffa6ecb1b",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-02-24T17:06:46+05:30",
-      "message": "fix docs",
-      "stats": {
-        "additions": 220,
-        "deletions": 24,
-        "total": 244
-      },
-      "branches": [
-        "joel/rust-migration"
-      ]
-    },
-    {
-      "sha": "ab1ab2ce5023022d4e54aaa9896f3e317068ddf1",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-02-24T16:10:05+05:30",
-      "message": "fix health endpoint",
-      "stats": {
-        "additions": 0,
-        "deletions": 14,
-        "total": 14
-      },
-      "branches": [
-        "joel/rust-migration"
-      ]
-    },
-    {
-      "sha": "9e26eaf7d60d503cd5769ac19b0346a453f0196a",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-02-24T16:03:16+05:30",
-      "message": "swagger fix",
-      "stats": {
-        "additions": 1,
-        "deletions": 1,
-        "total": 2
-      },
-      "branches": [
-        "joel/rust-migration"
-      ]
-    },
-    {
-      "sha": "0a10d9ccd2a6fe2383d6ee510056005220c78b37",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-02-24T15:49:05+05:30",
-      "message": "Merge origin/main: resolve conflicts, align migrations",
-      "stats": {
-        "additions": 25,
-        "deletions": 10,
-        "total": 35
-      },
-      "branches": [
-        "joel/rust-migration"
-      ]
-    },
-    {
-      "sha": "7c0c42619d27c4bae7948aa04a37ab83aed5ac67",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-02-24T12:22:49+05:30",
-      "message": "add swagger",
-      "stats": {
-        "additions": 539,
-        "deletions": 58,
-        "total": 597
-      },
-      "branches": [
-        "joel/rust-migration"
-      ]
-    },
-    {
-      "sha": "8bb7ee65fc50e9e5f51120f95a46dcd2190f860c",
-      "author": "joel-medicala-yral",
-      "repository": "dolr-ai/yral-ai-chat",
-      "timestamp": "2026-02-24T11:45:27+05:30",
-      "message": "add more test coverage",
-      "stats": {
-        "additions": 459,
-        "deletions": 0,
-        "total": 459
-      },
-      "branches": [
-        "joel/rust-migration"
-      ]
-    },
-    {
       "sha": "8448535bacf3b73c8d99ece596e043c6df870d0e",
       "author": "joel-medicala-yral",
       "repository": "dolr-ai/yral-ml-feed-server",
@@ -1030,30 +1060,39 @@
       ]
     },
     {
-      "sha": "e7bd343c9ae0845d1f4024489a9c10f13d1f5ebd",
-      "author": "naitik-makwana-yral",
-      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
-      "timestamp": "2026-02-24T10:31:59+05:30",
-      "message": "init setup for preview deployment to coolify",
+      "sha": "7574519706c7aa6961adf911e9a80aff830346d4",
+      "author": "gravityvi",
+      "repository": "dolr-ai/hot-or-not-backend-canister",
+      "timestamp": "2026-02-24T16:56:12+05:30",
+      "message": "feat: update RateLimitStatus to include window duration and max requests per user",
       "stats": {
-        "additions": 358,
-        "deletions": 65,
-        "total": 423
+        "additions": 40,
+        "deletions": 6,
+        "total": 46
       },
       "branches": [
-        "naitik/test-coolify-pr-setup"
+        "feat/update-rate-limits-status"
       ]
     }
   ],
-  "commit_count": 69,
+  "commit_count": 71,
   "issues": [
     {
-      "number": 1680,
-      "title": "BE side yral common changes",
-      "closed_at": "2026-02-24T07:12:32Z",
-      "assignee": "joel-medicala-yral",
+      "number": 1669,
+      "title": "Increase rate limit of video gen to 60 videos for 30 days",
+      "closed_at": "2026-02-24T13:13:39Z",
+      "assignee": "ravi-sawlani-yral",
       "repository": "dolr-ai/product",
-      "url": "https://github.com/dolr-ai/product/issues/1680",
+      "url": "https://github.com/dolr-ai/product/issues/1669",
+      "labels": []
+    },
+    {
+      "number": 1672,
+      "title": "Instrumentation of Create Your Own Bots",
+      "closed_at": "2026-02-24T17:26:34Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1672",
       "labels": []
     },
     {
@@ -1064,7 +1103,25 @@
       "repository": "dolr-ai/product",
       "url": "https://github.com/dolr-ai/product/issues/1651",
       "labels": []
+    },
+    {
+      "number": 1680,
+      "title": "BE side yral common changes",
+      "closed_at": "2026-02-24T07:12:32Z",
+      "assignee": "joel-medicala-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1680",
+      "labels": []
+    },
+    {
+      "number": 1640,
+      "title": "KT",
+      "closed_at": "2026-02-24T05:32:10Z",
+      "assignee": "joel-medicala-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1640",
+      "labels": []
     }
   ],
-  "issue_count": 2
+  "issue_count": 5
 }
