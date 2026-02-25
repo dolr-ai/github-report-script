@@ -1,0 +1,788 @@
+{
+  "date": "2026-02-25",
+  "cached_at": "2026-02-25T18:50:34.335704Z",
+  "commits": [
+    {
+      "sha": "b6ac86966e81197df72e2a2b7d27890468188187",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-25T21:14:53+05:30",
+      "message": "chore: Increments android app version",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "release/android-2.6.9"
+      ]
+    },
+    {
+      "sha": "7e5cd743865314683f8c5f804ad073dd2015dc42",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-25T21:12:52+05:30",
+      "message": "Merge pull request #923 from dolr-ai/release/android-2.6.8",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "release/android-2.6.9",
+        "feature/ai-drafts",
+        "develop"
+      ]
+    },
+    {
+      "sha": "e468e163968fdf3be19b32174a93e0aabbeaf3f3",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-25T20:38:21+05:30",
+      "message": "Optimise Yral Pro availability check and other subscription enhancements (#927)",
+      "stats": {
+        "additions": 148,
+        "deletions": 121,
+        "total": 269
+      },
+      "branches": [
+        "release/android-2.6.9",
+        "feature/free-credits-handling",
+        "feature/ai-drafts",
+        "develop"
+      ]
+    },
+    {
+      "sha": "03edaf930e67a71992cd96632d18972303661dd8",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-25T14:57:27+05:30",
+      "message": "Implements influencer specific subscription (#925)",
+      "stats": {
+        "additions": 970,
+        "deletions": 100,
+        "total": 1070
+      },
+      "branches": [
+        "release/android-2.6.9",
+        "feature/free-credits-handling",
+        "feature/ai-drafts",
+        "develop"
+      ]
+    },
+    {
+      "sha": "4b498bf97def28af20161fffc3336bf00d25e3f2",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-25T21:12:31+05:30",
+      "message": "Merge pull request #924 from dolr-ai/release/android-2.6.8",
+      "stats": {
+        "additions": 1736,
+        "deletions": 103,
+        "total": 1839
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "84c4e81b784857037730afa4c8d7f99ec447ba58",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-25T21:11:54+05:30",
+      "message": "build: Updates logic of free credits status",
+      "stats": {
+        "additions": 195,
+        "deletions": 50,
+        "total": 245
+      },
+      "branches": [
+        "feature/free-credits-handling"
+      ]
+    },
+    {
+      "sha": "365486a20b43ce1632819fcf3dcc0afab1f781bb",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-25T20:53:34+05:30",
+      "message": "build: Exposes get_property_rate_limit_config function from rust",
+      "stats": {
+        "additions": 41,
+        "deletions": 2,
+        "total": 43
+      },
+      "branches": [
+        "feature/free-credits-handling"
+      ]
+    },
+    {
+      "sha": "c29c1f7a0a03638ef5a804b27f533fd6746f1561",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-25T19:08:44+05:30",
+      "message": "build: Use rate limits for free credits from canister",
+      "stats": {
+        "additions": 12,
+        "deletions": 15,
+        "total": 27
+      },
+      "branches": [
+        "feature/free-credits-handling"
+      ]
+    },
+    {
+      "sha": "e2c72040c8691c82d88140c225a714d5dc6738d2",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-25T18:22:18+05:30",
+      "message": "build: Uses published rust",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "feature/free-credits-handling"
+      ]
+    },
+    {
+      "sha": "fe785a890bb5707837c87aa88a884809531b32e8",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-25T15:15:26+05:30",
+      "message": "build: Updates RateLimitStatusWrapper struct",
+      "stats": {
+        "additions": 329,
+        "deletions": 169,
+        "total": 498
+      },
+      "branches": [
+        "feature/free-credits-handling"
+      ]
+    },
+    {
+      "sha": "b62247c1bc459712e04dc50110a0185a6561de4a",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-25T22:28:25+05:30",
+      "message": "feat: Add draft label overlay on profile video grid",
+      "stats": {
+        "additions": 54,
+        "deletions": 12,
+        "total": 66
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "b082e7f0cad46dd458f0b72a053b98b93c1046e3",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-25T22:27:57+05:30",
+      "message": "feat: Add VideoGenerationTracker and profile generating card",
+      "stats": {
+        "additions": 139,
+        "deletions": 0,
+        "total": 139
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "386339710ee2398e3846df1c01227cdffd5e058c",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-25T22:21:57+05:30",
+      "message": "feat: Add video upload/publish toasts",
+      "stats": {
+        "additions": 16,
+        "deletions": 0,
+        "total": 16
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "2b65fd5a4fda2d584d7052b53c00c92fbae872cc",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-25T22:21:30+05:30",
+      "message": "feat: Add AI video generation toasts",
+      "stats": {
+        "additions": 35,
+        "deletions": 0,
+        "total": 35
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "2cb2408861ec30d0e96fc9ba951efb6d431e0143",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-25T22:18:10+05:30",
+      "message": "feat: Add goToProfile navigation to AI video gen component",
+      "stats": {
+        "additions": 17,
+        "deletions": 0,
+        "total": 17
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "9170a127413681eb0e95d0672aa5fcf85cab9be3",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-02-25T21:51:16+05:30",
+      "message": "fix:  api calls to coolify",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "naitik/test-coolify-pr-setup"
+      ]
+    },
+    {
+      "sha": "4b840cd96a026159b5d32cb9c3dd1db47b36c500",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-02-25T18:43:09+05:30",
+      "message": "fix: json issue",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "naitik/test-coolify-pr-setup"
+      ]
+    },
+    {
+      "sha": "01d2560750c9b78ecc01c2a37e481a565e5dead1",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-02-25T18:10:16+05:30",
+      "message": "fix: coolify api schema fix",
+      "stats": {
+        "additions": 9,
+        "deletions": 7,
+        "total": 16
+      },
+      "branches": [
+        "naitik/test-coolify-pr-setup"
+      ]
+    },
+    {
+      "sha": "2490cef82ea319b92ad8b41d4a1df4ff6064e00a",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-02-25T09:59:30+05:30",
+      "message": "fix: git checkout step",
+      "stats": {
+        "additions": 6,
+        "deletions": 2,
+        "total": 8
+      },
+      "branches": [
+        "naitik/test-coolify-pr-setup"
+      ]
+    },
+    {
+      "sha": "4bdc7d45a8588f2bac58c3b2b1b90d4be711301f",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-02-25T21:07:59+05:30",
+      "message": "fix check for delegated identity",
+      "stats": {
+        "additions": 14,
+        "deletions": 6,
+        "total": 20
+      },
+      "branches": [
+        "fix/delegated-identity-check"
+      ]
+    },
+    {
+      "sha": "a727799b5d3c133cbefaa817ac6d4ff4b687fa56",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-02-25T20:50:54+05:30",
+      "message": "added tests for delegated identity",
+      "stats": {
+        "additions": 47,
+        "deletions": 0,
+        "total": 47
+      },
+      "branches": [
+        "fix/generation-of-delegated-identities"
+      ]
+    },
+    {
+      "sha": "47dbb1e55bc2b34581e7124800088332cce209d3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-25T15:18:15Z",
+      "message": "chore: install ansible collections to ~/.ansible/collections (default path)",
+      "stats": {
+        "additions": 3,
+        "deletions": 5,
+        "total": 8
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "287914f8f62c4b5e4bd957f6f249bcc797b2b4d3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-25T15:15:55Z",
+      "message": "chore: remove worker-19 (HEL1-DC6) and renumber 20-36 to 19-35",
+      "stats": {
+        "additions": 16,
+        "deletions": 22,
+        "total": 38
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "89658f48d9ce7cdad54077c34bd2a67a71842475",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-25T03:44:31Z",
+      "message": "chore: renumber workers sequentially (1\u201336, no gaps)",
+      "stats": {
+        "additions": 19,
+        "deletions": 22,
+        "total": 41
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d7b3de4d2bac8a78b38dbce4efb0995962331537",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-25T17:56:13+05:30",
+      "message": "fix path",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main",
+        "joel/popstgre-migration"
+      ]
+    },
+    {
+      "sha": "4fda3a92a8916ad16e37b6a4ab7b9bba0f18d0ef",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-25T17:26:35+05:30",
+      "message": "add better timeouts",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main",
+        "joel/popstgre-migration"
+      ]
+    },
+    {
+      "sha": "1b4ce5d5f26b821cc3391ef580711abfd3b830f4",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-25T17:05:44+05:30",
+      "message": "fix: envsubst for litestream config, correct S3 path, chat.yral.com, emoji panic",
+      "stats": {
+        "additions": 7,
+        "deletions": 2,
+        "total": 9
+      },
+      "branches": [
+        "main",
+        "joel/popstgre-migration"
+      ]
+    },
+    {
+      "sha": "ecbd5c7018b43ad6e5d2bbf71a53348e9b1e1d1a",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-25T16:59:19+05:30",
+      "message": "fix db mapping",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "main",
+        "joel/popstgre-migration"
+      ]
+    },
+    {
+      "sha": "477b9df182aa87f99e6f353541971b1eec9cc44a",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-25T16:47:41+05:30",
+      "message": "fix byte slicing",
+      "stats": {
+        "additions": 3,
+        "deletions": 2,
+        "total": 5
+      },
+      "branches": [
+        "main",
+        "joel/popstgre-migration"
+      ]
+    },
+    {
+      "sha": "d40f57690b86a1f0df28d38d39b75c049d30f178",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-25T16:41:53+05:30",
+      "message": "fix caddy file",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main",
+        "joel/popstgre-migration"
+      ]
+    },
+    {
+      "sha": "bd428c0986362464d1a21ef292b1a26076d92d18",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-25T13:50:06+05:30",
+      "message": "Merge pull request #180 from dolr-ai/joel/rust-migration",
+      "stats": {
+        "additions": 14159,
+        "deletions": 24938,
+        "total": 39097
+      },
+      "branches": [
+        "main",
+        "joel/popstgre-migration"
+      ]
+    },
+    {
+      "sha": "a0c19e4ea4bd3c2c2c5b077e9e747e458c344ae0",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-25T12:59:33+05:30",
+      "message": "merge: resolve CODEOWNERS conflict with main",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "main",
+        "joel/rust-migration",
+        "joel/popstgre-migration"
+      ]
+    },
+    {
+      "sha": "35d7afd558c7a1b72276ca5dbef97624fbdba022",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-25T12:08:26+05:30",
+      "message": "productionize baremetal workflow",
+      "stats": {
+        "additions": 0,
+        "deletions": 1,
+        "total": 1
+      },
+      "branches": [
+        "main",
+        "joel/rust-migration",
+        "joel/popstgre-migration"
+      ]
+    },
+    {
+      "sha": "74ffd46b86facb68debf64a65e1f23e8ce037874",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-25T11:50:10+05:30",
+      "message": "fix types for ai system",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main",
+        "joel/rust-migration",
+        "joel/popstgre-migration"
+      ]
+    },
+    {
+      "sha": "3d1aa59f21edf90f8fa5dc427911b76660a62fb7",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-25T19:29:10+05:30",
+      "message": "wire PG pool through routes, health, main, and Dockerfile",
+      "stats": {
+        "additions": 57,
+        "deletions": 27,
+        "total": 84
+      },
+      "branches": [
+        "joel/popstgre-migration"
+      ]
+    },
+    {
+      "sha": "190ec1c301d48c0ebe49199988822fc59e69dff9",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-25T19:29:02+05:30",
+      "message": "add PG dual-write to all repositories",
+      "stats": {
+        "additions": 193,
+        "deletions": 9,
+        "total": 202
+      },
+      "branches": [
+        "joel/popstgre-migration"
+      ]
+    },
+    {
+      "sha": "cbba574b4999e0f67f81e111d2b28b14cf2cee0b",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-25T19:28:54+05:30",
+      "message": "add PG pool to Database struct",
+      "stats": {
+        "additions": 81,
+        "deletions": 9,
+        "total": 90
+      },
+      "branches": [
+        "joel/popstgre-migration"
+      ]
+    },
+    {
+      "sha": "5f841baa98f624544d522fba703f683254a16317",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-25T19:28:49+05:30",
+      "message": "add PG write functions for dual-write",
+      "stats": {
+        "additions": 199,
+        "deletions": 0,
+        "total": 199
+      },
+      "branches": [
+        "joel/popstgre-migration"
+      ]
+    },
+    {
+      "sha": "4afae530a87fd5f8b1b1b9a53be6f3191b4d7a2a",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-25T19:28:42+05:30",
+      "message": "add PostgreSQL initial schema migration",
+      "stats": {
+        "additions": 102,
+        "deletions": 0,
+        "total": 102
+      },
+      "branches": [
+        "joel/popstgre-migration"
+      ]
+    },
+    {
+      "sha": "9eaeb8dd76f0feb0732f1b7ca0335ea6bb55ca63",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-25T19:27:37+05:30",
+      "message": "add postgres dependency and PG config settings",
+      "stats": {
+        "additions": 17,
+        "deletions": 2,
+        "total": 19
+      },
+      "branches": [
+        "joel/popstgre-migration"
+      ]
+    },
+    {
+      "sha": "9505653f62c717df1a3f4de1bd5b30f11eaeab20",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-02-25T07:13:27Z",
+      "message": "fix: update GitHub issue fetching to use search API for assigned issues",
+      "stats": {
+        "additions": 603,
+        "deletions": 387,
+        "total": 990
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a4ef2e8ca8c462b745003668d866afb5c979951a",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-02-25T12:28:07+05:30",
+      "message": "feat: don't grant access for yral pro on other subscription (#13)",
+      "stats": {
+        "additions": 20,
+        "deletions": 3,
+        "total": 23
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d8a2371d6421eaa53a9449eef8245be34740b2c6",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-02-25T12:05:40+05:30",
+      "message": "feat: don't grant access for yral pro on other subscription",
+      "stats": {
+        "additions": 20,
+        "deletions": 3,
+        "total": 23
+      },
+      "branches": [
+        "feat/support-tara-subscription"
+      ]
+    }
+  ],
+  "commit_count": 43,
+  "issues": [
+    {
+      "number": 1684,
+      "title": "Update SSR to use the new flow",
+      "closed_at": "2026-02-25T05:41:43Z",
+      "assignee": "joel-medicala-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1684",
+      "labels": []
+    },
+    {
+      "number": 1664,
+      "title": "Deprecate WAN once LTX is stable",
+      "closed_at": "2026-02-25T05:14:25Z",
+      "assignee": "joel-medicala-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1664",
+      "labels": []
+    },
+    {
+      "number": 1652,
+      "title": "Port AI Chat to rust",
+      "closed_at": "2026-02-25T05:17:26Z",
+      "assignee": "joel-medicala-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1652",
+      "labels": []
+    },
+    {
+      "number": 931,
+      "title": "Drafts flow thumbnail states UI",
+      "closed_at": "2026-02-25T17:01:58Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/931",
+      "labels": []
+    },
+    {
+      "number": 930,
+      "title": "UI toasts for draft flow",
+      "closed_at": "2026-02-25T17:01:34Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/930",
+      "labels": []
+    },
+    {
+      "number": 1676,
+      "title": "Mobile Integration",
+      "closed_at": "2026-02-25T05:14:15Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1676",
+      "labels": []
+    },
+    {
+      "number": 1679,
+      "title": "[Feature Request]: Changes in rate limit canister for Videogen",
+      "closed_at": "2026-02-25T07:00:17Z",
+      "assignee": "ravi-sawlani-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1679",
+      "labels": [
+        "Backend Dependencies"
+      ]
+    },
+    {
+      "number": 1678,
+      "title": "[Feature Request]: Create a Google Play Subscription for Tara",
+      "closed_at": "2026-02-25T05:49:06Z",
+      "assignee": "ravi-sawlani-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1678",
+      "labels": [
+        "Backend Dependencies"
+      ]
+    },
+    {
+      "number": 1688,
+      "title": "Instrumentations for bot subscription",
+      "closed_at": "2026-02-25T18:05:39Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1688",
+      "labels": []
+    },
+    {
+      "number": 1685,
+      "title": "Testing python to rust migration and backward compatibility for chat apis",
+      "closed_at": "2026-02-25T06:37:36Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1685",
+      "labels": []
+    },
+    {
+      "number": 1682,
+      "title": "Android release 2.6.8",
+      "closed_at": "2026-02-25T18:04:51Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1682",
+      "labels": []
+    },
+    {
+      "number": 1667,
+      "title": "Mobile Integration",
+      "closed_at": "2026-02-25T18:05:13Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1667",
+      "labels": []
+    }
+  ],
+  "issue_count": 12
+}
