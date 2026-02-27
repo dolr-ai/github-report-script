@@ -1,0 +1,1168 @@
+{
+  "date": "2026-02-27",
+  "cached_at": "2026-02-27T18:47:51.487065Z",
+  "commits": [
+    {
+      "sha": "0acdce4fc7683d6d2b7e4b6986196111adb8b986",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-27T16:58:42Z",
+      "message": "fix: prevent noisy DatasourceError alerts during Prometheus rollouts",
+      "stats": {
+        "additions": 7,
+        "deletions": 7,
+        "total": 14
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3af71804933f2f468c047719b975cb95c2be7432",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-27T16:34:48Z",
+      "message": "fix: increase Prometheus memory limits to 4Gi",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "cea919b9940f45cebc24641af624070cf5ad1bf4",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-27T13:36:12Z",
+      "message": "fix(monitoring): add skipReload to alerts sidecar and wire Reloader to alert ConfigMaps",
+      "stats": {
+        "additions": 7,
+        "deletions": 0,
+        "total": 7
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "2e14bdc8116d42e9375ec04872aa1d298108afed",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-27T13:22:00Z",
+      "message": "chore: clear resolved TODO items",
+      "stats": {
+        "additions": 0,
+        "deletions": 6,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "082026d1c307188285439abdff9a689a6761a62b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-27T13:21:30Z",
+      "message": "fix(loki): move lokiCanary to top-level to actually disable it",
+      "stats": {
+        "additions": 6,
+        "deletions": 2,
+        "total": 8
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c17caf62c7a537f89d89e21130e9d3d8dd36f27b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-27T13:01:15Z",
+      "message": "feat(alloy): set maxUnavailable=4 for DaemonSet rolling updates",
+      "stats": {
+        "additions": 4,
+        "deletions": 0,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "59e39ad0dc553accb6c9b1d914eccfc58475248b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-27T12:51:26Z",
+      "message": "fix(resources): raise Loki and Alloy requests/limits to match VPA recommendations",
+      "stats": {
+        "additions": 12,
+        "deletions": 8,
+        "total": 20
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6dffe86583500f6cc71ef91eb321a7d203aab36d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-27T12:39:49Z",
+      "message": "fix(monitoring): remove instant:true and add relativeTimeRange to expression steps",
+      "stats": {
+        "additions": 45,
+        "deletions": 10,
+        "total": 55
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c6b1637e6957afb81a4b93cc1ca56ebfc69dbe96",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-27T12:14:54Z",
+      "message": "fix(sysctl): raise max_user_instances from 512 to 8192",
+      "stats": {
+        "additions": 13,
+        "deletions": 3,
+        "total": 16
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "dce65edbe162556b01d11880d30b9744275bd835",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-27T11:51:38Z",
+      "message": "fix(monitoring): switch alert rules to reduce+threshold for per-series label propagation",
+      "stats": {
+        "additions": 124,
+        "deletions": 101,
+        "total": 225
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9f49aa7c05823e79e21c993c25c8889cb1c72eba",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-27T10:26:23Z",
+      "message": "feat(monitoring): add Grafana alerting with Google Chat notifications",
+      "stats": {
+        "additions": 431,
+        "deletions": 0,
+        "total": 431
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "961b2e654c03cac705e6c4a266e9370ea6112943",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-27T05:59:45Z",
+      "message": "fix: reloader reloadStrategy rollingUpdate \u2192 default (schema change in 2.2.8)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "17f95de20836ef4346a39b97923b54d1e3ce6be5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-27T05:53:15Z",
+      "message": "fix: flux logs dashboard \u2014 drop stream selector, use detected_level filter",
+      "stats": {
+        "additions": 19,
+        "deletions": 25,
+        "total": 44
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "384da16fb257ff3246a9bb5d341b3644e76da7b0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-27T04:28:28Z",
+      "message": "fix: revert singleBinary.persistence.size to 20Gi in HelmRelease",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a5f5cd94ecab40dcd703ca34c0d1f6d7797d32b9",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-27T04:23:00Z",
+      "message": "fix: manage Loki PVC declaratively at 200Gi",
+      "stats": {
+        "additions": 13,
+        "deletions": 0,
+        "total": 13
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b14a4ff9849554c3b19cf408093dbadcf5cc0232",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-27T04:21:28Z",
+      "message": "fix: add 30d retention and expand Loki PVC to 200Gi",
+      "stats": {
+        "additions": 8,
+        "deletions": 1,
+        "total": 9
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "be88b88b5f66a79005a28b30eb11e4c7efbed9ff",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-27T21:30:48+05:30",
+      "message": "build: Disallow talking to user from bot account",
+      "stats": {
+        "additions": 6,
+        "deletions": 3,
+        "total": 9
+      },
+      "branches": [
+        "feature/chat-tab-navigation"
+      ]
+    },
+    {
+      "sha": "cb39e000403da7c1cbfe42775253d054962abfb3",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-27T21:25:45+05:30",
+      "message": "build: Improves ChatConversationScreen data",
+      "stats": {
+        "additions": 69,
+        "deletions": 129,
+        "total": 198
+      },
+      "branches": [
+        "feature/chat-tab-navigation"
+      ]
+    },
+    {
+      "sha": "486bc3d3fd2020e64b7d7065a6a1d4db9c2b8b68",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-27T20:43:56+05:30",
+      "message": "feat(chat): add principal param, conversationUser model, and bot account bubble flip",
+      "stats": {
+        "additions": 80,
+        "deletions": 101,
+        "total": 181
+      },
+      "branches": [
+        "feature/chat-tab-navigation"
+      ]
+    },
+    {
+      "sha": "070c16832307d34c77e3868fe858838a4a2ba97e",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-27T17:39:46+05:30",
+      "message": "build: Improves refresh UI for inbox screen to show refresh loader only when manual refresh",
+      "stats": {
+        "additions": 22,
+        "deletions": 3,
+        "total": 25
+      },
+      "branches": [
+        "feature/chat-tab-navigation"
+      ]
+    },
+    {
+      "sha": "68c4094fbcf50c83cf679a60004ffa6c63019fd1",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-27T17:33:38+05:30",
+      "message": "build: Implements api to mark conversation as read",
+      "stats": {
+        "additions": 72,
+        "deletions": 0,
+        "total": 72
+      },
+      "branches": [
+        "feature/chat-tab-navigation"
+      ]
+    },
+    {
+      "sha": "27519096a183d00522b2cc9ac6e90d8933f6df3a",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-27T15:17:13+05:30",
+      "message": "refactor(chat): replace environmentPrefix with chatBaseUrl via Koin qualifier",
+      "stats": {
+        "additions": 57,
+        "deletions": 62,
+        "total": 119
+      },
+      "branches": [
+        "feature/chat-tab-navigation"
+      ]
+    },
+    {
+      "sha": "eb9a872f52f676dc5ee06a62cc82e5f6d831c13b",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-27T13:05:11+05:30",
+      "message": "chore: Enhances PTR flicker on chat wall and inbox",
+      "stats": {
+        "additions": 34,
+        "deletions": 4,
+        "total": 38
+      },
+      "branches": [
+        "feature/chat-tab-navigation"
+      ]
+    },
+    {
+      "sha": "be39813babc390f03a2a325fdab8efdae458b451",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-27T11:16:03+05:30",
+      "message": "fix: Show publishing toast on draft publish, not on upload",
+      "stats": {
+        "additions": 6,
+        "deletions": 5,
+        "total": 11
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "49389d52ff4d00966d3639f36ac084debd3f282a",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-27T11:13:01+05:30",
+      "message": "fix: Navigate to profile instead of feed after draft upload",
+      "stats": {
+        "additions": 10,
+        "deletions": 2,
+        "total": 12
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "6a52bc6763e8573b2076650e44d2150580dd1f4b",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-27T21:14:23+05:30",
+      "message": "chore: Adds mixpanel event for splash time",
+      "stats": {
+        "additions": 31,
+        "deletions": 1,
+        "total": 32
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "9b41773e618ba5a1f437ed5d307d39c4491cf212",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-27T21:05:36+05:30",
+      "message": "chore: Calls updateYralSession on token refresh",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "0269356d7252ee0cdeee1a0508d6a4f432a9dfa1",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-27T20:58:28+05:30",
+      "message": "fix: Fixes 2.6.9 crashes",
+      "stats": {
+        "additions": 12,
+        "deletions": 10,
+        "total": 22
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "fd8f870aa77e4c706f7690baf68435d3f1b20822",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-27T17:09:45+05:30",
+      "message": "chore: Switch video storage from Storj to Hetzner",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "fb7b3dad99a79d3626a498712b5bda000710c58d",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-24T20:42:04+05:30",
+      "message": "fix: Add missing status field to PostDetailsDto",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "803cd9eb71cc16ed6b4a84bfc13e06a444d28bc1",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-24T20:41:56+05:30",
+      "message": "chore: Convert uploadFile to multipart form data request",
+      "stats": {
+        "additions": 21,
+        "deletions": 13,
+        "total": 34
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "fd4019a1cf8becdedbe2a494b576192a9098a896",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-24T20:41:45+05:30",
+      "message": "feat: Add expect/actual readFileBytes for platform file reading",
+      "stats": {
+        "additions": 28,
+        "deletions": 0,
+        "total": 28
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "e05c76ee058b3e4e18edba256530f19f5d75a26b",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-24T20:41:38+05:30",
+      "message": "fix: Pin detekt jvmTarget to 17 to support JDK 23",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "3219176b851a5469c24f32385559b3d9340e4f0a",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-22T17:31:09+05:30",
+      "message": "chore: Changes endpoint to post",
+      "stats": {
+        "additions": 1,
+        "deletions": 2,
+        "total": 3
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "bfdb892389d04fccac0df3e1ea48e00558764df5",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-22T17:24:07+05:30",
+      "message": "fix: Use PUT for Storj upload and resolve content type from file",
+      "stats": {
+        "additions": 14,
+        "deletions": 11,
+        "total": 25
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "47ee6b6ed90860c839567e6011fd94d37df20e5b",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-22T17:23:59+05:30",
+      "message": "chore: Migrate upload DTOs and URLs to new Storj backend",
+      "stats": {
+        "additions": 45,
+        "deletions": 48,
+        "total": 93
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "9a9b202f4b255c507e2277c3d5d26cd3598736f2",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-20T18:38:32+05:30",
+      "message": "chore: Migrate to v3/v2 upload video endpoints",
+      "stats": {
+        "additions": 66,
+        "deletions": 42,
+        "total": 108
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "5072825758020335d0ef91cc431df70cd84999d1",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-20T18:38:01+05:30",
+      "message": "chore: Migrate video URLs from Cloudflare to Storj",
+      "stats": {
+        "additions": 14,
+        "deletions": 12,
+        "total": 26
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "e754d2b2adf4e392c967c58e0005749d15a1b1a3",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-02-27T19:53:52+05:30",
+      "message": "fix: removed double wrapping",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/coolify-preview-deployment"
+      ]
+    },
+    {
+      "sha": "76165d0d94ee5cba6d2819dfc659c063afd028a6",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-02-27T19:38:36+05:30",
+      "message": "fix: missing app uuid env vatr",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/coolify-preview-deployment"
+      ]
+    },
+    {
+      "sha": "05ed3cc54ef12e5a2bd988125229f252c628fb0d",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-02-27T19:24:14+05:30",
+      "message": "fix: curl command and remove deleting container",
+      "stats": {
+        "additions": 9,
+        "deletions": 27,
+        "total": 36
+      },
+      "branches": [
+        "naitik/coolify-preview-deployment"
+      ]
+    },
+    {
+      "sha": "6c0f322e57fd2c3c2390b37104a41d37658ddbb0",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-02-27T08:44:52+05:30",
+      "message": "[skip ci] fix: api path rollback",
+      "stats": {
+        "additions": 1,
+        "deletions": 2,
+        "total": 3
+      },
+      "branches": [
+        "naitik/coolify-preview-deployment"
+      ]
+    },
+    {
+      "sha": "e55ac508ad63f3f626ec32edb0db2a5572e5121b",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-02-27T13:04:34+05:30",
+      "message": "fix: username-deletion (#78)",
+      "stats": {
+        "additions": 851,
+        "deletions": 1110,
+        "total": 1961
+      },
+      "branches": [
+        "master"
+      ]
+    },
+    {
+      "sha": "3094fe6d13932dc0193daa20792cba4dd4222a0e",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-02-27T12:52:41+05:30",
+      "message": "add back dragonfly test env variables",
+      "stats": {
+        "additions": 6,
+        "deletions": 0,
+        "total": 6
+      },
+      "branches": [
+        "fix/username-deletion"
+      ]
+    },
+    {
+      "sha": "61c6475a906e606777f27c0ff4eb4f3998d07c12",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-02-27T11:43:29+05:30",
+      "message": "remove unsed variables",
+      "stats": {
+        "additions": 0,
+        "deletions": 7,
+        "total": 7
+      },
+      "branches": [
+        "fix/username-deletion"
+      ]
+    },
+    {
+      "sha": "740f696da145bf50959569ea080e7907aea7d4a4",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-27T19:34:41+05:30",
+      "message": "add UserBasicInfo schema to swagger docs",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "staging"
+      ]
+    },
+    {
+      "sha": "e35de8f982e76be49ff2ec0cdd8425b01ee03dce",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-27T19:25:17+05:30",
+      "message": "accept principal as query param instead of using JWT sub",
+      "stats": {
+        "additions": 8,
+        "deletions": 5,
+        "total": 13
+      },
+      "branches": [
+        "staging"
+      ]
+    },
+    {
+      "sha": "6bb37da48b7cc246a6395fae9a9e61a0a15b4a37",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-27T15:11:07+05:30",
+      "message": "fix clippy: collapse nested if into let-chain",
+      "stats": {
+        "additions": 5,
+        "deletions": 10,
+        "total": 15
+      },
+      "branches": [
+        "staging"
+      ]
+    },
+    {
+      "sha": "c383e70d601e58f2c2ccde1366d9533ebfdafd91",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-27T15:03:23+05:30",
+      "message": "add username fetching from metadata server to user profiles",
+      "stats": {
+        "additions": 118,
+        "deletions": 28,
+        "total": 146
+      },
+      "branches": [
+        "staging"
+      ]
+    },
+    {
+      "sha": "97e430aa3c96f3110a62fc8e47de09bc6d12ebff",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-27T15:00:12+05:30",
+      "message": "fmt",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "staging"
+      ]
+    },
+    {
+      "sha": "566b578bf07e544629c2bb15815fe1891336ee1b",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-27T14:59:37+05:30",
+      "message": "restrict PR preview workflow to PRs targeting main only",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "staging"
+      ]
+    },
+    {
+      "sha": "bb4bf70cacdfd8af344f430113ecf3e3bc5ba9b6",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-27T14:58:01+05:30",
+      "message": "enforce single machine for SQLite staging deployment",
+      "stats": {
+        "additions": 22,
+        "deletions": 24,
+        "total": 46
+      },
+      "branches": [
+        "staging"
+      ]
+    },
+    {
+      "sha": "16d63f166f3f86f4172290c60174044e70a1543e",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-27T14:54:21+05:30",
+      "message": "add bot/user detection to v2 conversations endpoint",
+      "stats": {
+        "additions": 1478,
+        "deletions": 87,
+        "total": 1565
+      },
+      "branches": [
+        "staging"
+      ]
+    },
+    {
+      "sha": "805ef04690e43ccfe0b82e9d4f01e3052dae6f52",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-27T14:41:09+05:30",
+      "message": "make migrations idempotent and add staging feature flag",
+      "stats": {
+        "additions": 73,
+        "deletions": 49,
+        "total": 122
+      },
+      "branches": [
+        "staging"
+      ]
+    },
+    {
+      "sha": "3b682868225749b99a4eac404194421f35a63857",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-02-27T13:15:43+05:30",
+      "message": "trigger staging deploy",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "staging"
+      ]
+    },
+    {
+      "sha": "794e248f2e0705c9bec1db65bd1d243448d22777",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-27T18:58:12+05:30",
+      "message": "fix: port",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/coolify-preview-deployment"
+      ]
+    },
+    {
+      "sha": "6199cdae46887285efe7740f6b088ae4699a24cd",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-27T18:26:10+05:30",
+      "message": "fix: setting port in env",
+      "stats": {
+        "additions": 7,
+        "deletions": 4,
+        "total": 11
+      },
+      "branches": [
+        "naitik/coolify-preview-deployment"
+      ]
+    },
+    {
+      "sha": "440329ebcb5cefd04649e6212dc7ea66c99002ee",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-27T17:32:48+05:30",
+      "message": "fix: missing vars on env push",
+      "stats": {
+        "additions": 4,
+        "deletions": 1,
+        "total": 5
+      },
+      "branches": [
+        "naitik/coolify-preview-deployment"
+      ]
+    },
+    {
+      "sha": "33d2b9288c8e262ab438bcc98db6a3fe79f3342f",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-27T17:22:08+05:30",
+      "message": "fix: added missing vars",
+      "stats": {
+        "additions": 6,
+        "deletions": 0,
+        "total": 6
+      },
+      "branches": [
+        "naitik/coolify-preview-deployment"
+      ]
+    },
+    {
+      "sha": "e6e38b010e7b408ab5330a71854e43031efe6138",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-27T17:07:05+05:30",
+      "message": "fix: http code check",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "naitik/coolify-preview-deployment"
+      ]
+    },
+    {
+      "sha": "4c91cb7eac9462976a3ce8f0b9879b3039496911",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-27T16:57:48+05:30",
+      "message": "fix: curl command fix",
+      "stats": {
+        "additions": 12,
+        "deletions": 3,
+        "total": 15
+      },
+      "branches": [
+        "naitik/coolify-preview-deployment"
+      ]
+    },
+    {
+      "sha": "d3fc3be7f8edba8c6bc0935a6ecb46fefc5a9b2f",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-27T10:43:59+05:30",
+      "message": "fix:  flatting json and formatting",
+      "stats": {
+        "additions": 50,
+        "deletions": 50,
+        "total": 100
+      },
+      "branches": [
+        "naitik/coolify-preview-deployment"
+      ]
+    },
+    {
+      "sha": "a28a4dbad530396f613be188f4d06e8b5d7f8897",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-27T10:18:09+05:30",
+      "message": "fix: arg issue",
+      "stats": {
+        "additions": 68,
+        "deletions": 68,
+        "total": 136
+      },
+      "branches": [
+        "naitik/coolify-preview-deployment"
+      ]
+    },
+    {
+      "sha": "b5b011e6ac68d9523a052149e5d1a3e45322a3c3",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-02-27T09:41:01+05:30",
+      "message": "coolify preview deployment",
+      "stats": {
+        "additions": 350,
+        "deletions": 99,
+        "total": 449
+      },
+      "branches": [
+        "naitik/coolify-preview-deployment"
+      ]
+    },
+    {
+      "sha": "df6dc1340dfa350f55c42a1ebc2ab273c31b2a00",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-02-27T16:03:49+05:30",
+      "message": "fix: github workflow",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "feat/setup-rate-limiting"
+      ]
+    },
+    {
+      "sha": "00442063539a131e0b4310b4f8f03cc0ad7ddd8d",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-02-27T15:36:02+05:30",
+      "message": "fix dragon fly host in ci test pipeline",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "feat/setup-rate-limiting"
+      ]
+    },
+    {
+      "sha": "5d447b561a61d033168e81b5196909bd39a1e150",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-02-27T15:24:29+05:30",
+      "message": "add dragonfly env variables while running ci tests",
+      "stats": {
+        "additions": 6,
+        "deletions": 0,
+        "total": 6
+      },
+      "branches": [
+        "feat/setup-rate-limiting"
+      ]
+    },
+    {
+      "sha": "773b67d0d83ae6c0cd42f486b5d0d3c9b6e182f0",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-02-27T13:14:02+05:30",
+      "message": "fix lint",
+      "stats": {
+        "additions": 10,
+        "deletions": 10,
+        "total": 20
+      },
+      "branches": [
+        "feat/setup-rate-limiting"
+      ]
+    },
+    {
+      "sha": "de8dfb6d9cc4e5d642f1b4b5aad110fa6c07703b",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-02-27T15:18:46+05:30",
+      "message": "fic: http code check",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "naitik/test-coolify-pr-setup"
+      ]
+    },
+    {
+      "sha": "12093a5c68732e0c70a7995389fb810883254a77",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-02-27T14:47:41+05:30",
+      "message": "fix: not to print command even if fails",
+      "stats": {
+        "additions": 7,
+        "deletions": 2,
+        "total": 9
+      },
+      "branches": [
+        "naitik/test-coolify-pr-setup"
+      ]
+    }
+  ],
+  "commit_count": 70,
+  "issues": [
+    {
+      "number": 945,
+      "title": "App crash due to repeating video ids",
+      "closed_at": "2026-02-27T15:48:43Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/945",
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "number": 944,
+      "title": "call meta data api on refreshing tokens",
+      "closed_at": "2026-02-27T15:48:25Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/944",
+      "labels": []
+    },
+    {
+      "number": 943,
+      "title": "Log non fatals for video not starting up",
+      "closed_at": "2026-02-27T15:48:12Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/943",
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "number": 942,
+      "title": "App crash due to exoplayer changes",
+      "closed_at": "2026-02-27T15:48:33Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/942",
+      "labels": []
+    },
+    {
+      "number": 940,
+      "title": "Splash screen time spent data",
+      "closed_at": "2026-02-27T15:48:52Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/940",
+      "labels": [
+        "enhancement"
+      ]
+    },
+    {
+      "number": 1666,
+      "title": "Supabase KT",
+      "closed_at": "2026-02-27T15:22:26Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1666",
+      "labels": []
+    },
+    {
+      "number": 1606,
+      "title": "[Bug]:  username is not released when user account is deleted",
+      "closed_at": "2026-02-27T07:34:35Z",
+      "assignee": "ravi-sawlani-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1606",
+      "labels": [
+        "bug",
+        "Backend Dependencies"
+      ]
+    },
+    {
+      "number": 1700,
+      "title": "Update v2/list/conversations api",
+      "closed_at": "2026-02-27T14:05:47Z",
+      "assignee": "joel-medicala-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1700",
+      "labels": []
+    },
+    {
+      "number": 1694,
+      "title": "reroute yral-chat staging env internally",
+      "closed_at": "2026-02-27T08:49:45Z",
+      "assignee": "joel-medicala-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1694",
+      "labels": []
+    },
+    {
+      "number": 1626,
+      "title": "API Level Code Changes & Optimizations",
+      "closed_at": "2026-02-27T05:14:37Z",
+      "assignee": "joel-medicala-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1626",
+      "labels": []
+    },
+    {
+      "number": 1625,
+      "title": "Cache Level Code Changes & Optimizations",
+      "closed_at": "2026-02-27T05:14:53Z",
+      "assignee": "joel-medicala-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1625",
+      "labels": []
+    }
+  ],
+  "issue_count": 11
+}
