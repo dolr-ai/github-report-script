@@ -1,0 +1,219 @@
+{
+  "date": "2026-02-28",
+  "cached_at": "2026-02-28T18:46:19.742914Z",
+  "commits": [
+    {
+      "sha": "5b9b2a1222404695feae06b447a0605ee36ffa20",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-28T13:59:49Z",
+      "message": "chore: update TODO.md with new tasks and remove obsolete item",
+      "stats": {
+        "additions": 3,
+        "deletions": 0,
+        "total": 3
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3725fba386f8350688aaec5526fd508fc4d8d71f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-28T13:58:11Z",
+      "message": "chore: add HANDOFF.md for Kafka pipeline agent handoff",
+      "stats": {
+        "additions": 135,
+        "deletions": 0,
+        "total": 135
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "63a2e3845c9ca555abdbb0ea2ef04262d1c9d90b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-28T13:52:45Z",
+      "message": "fix(kafka-connect): remove AWS SDK v1 credentials provider class; SDK v2 default chain reads env var",
+      "stats": {
+        "additions": 8,
+        "deletions": 8,
+        "total": 16
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3848cedfa58b538f6aeffc204ba56aa1ecac8364",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-28T13:47:05Z",
+      "message": "fix(kafka-connect): add spec.authentication; remove manual SASL config from spec.config",
+      "stats": {
+        "additions": 15,
+        "deletions": 16,
+        "total": 31
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "db9dd05551d386449fd1c743e6cfc225c5735e29",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-28T12:18:41Z",
+      "message": "fix(snowplow): rewrite enrich config for 6.8.0 format",
+      "stats": {
+        "additions": 73,
+        "deletions": 55,
+        "total": 128
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b52db56624fbb6de02ca95e179535f5b75ba1975",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-28T11:58:57Z",
+      "message": "fix(snowplow): add required --enrichments arg to enrich 6.8.0",
+      "stats": {
+        "additions": 22,
+        "deletions": 1,
+        "total": 23
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "709b0a2a9e5471cf633949d28ca87d344717f1ad",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-28T11:54:21Z",
+      "message": "fix(snowplow): remove --disable-telemetry from enrich args (not a valid flag in 6.8.0)",
+      "stats": {
+        "additions": 1,
+        "deletions": 2,
+        "total": 3
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "72d4e3121b226612cd7ac31af356d2375456db7d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-28T11:43:33Z",
+      "message": "fix(snowplow): add missing KafkaSinkConfig required fields and quote producerConf values",
+      "stats": {
+        "additions": 17,
+        "deletions": 8,
+        "total": 25
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8c899da55c307624672a475c4f4ddb049c7325f7",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-28T11:34:04Z",
+      "message": "fix(snowplow): rewrite collector config for 3.7.0 streams format",
+      "stats": {
+        "additions": 35,
+        "deletions": 18,
+        "total": 53
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "1c3f4c7011409f9ac610999a780ecb209e526353",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-28T11:23:21Z",
+      "message": "fix: collector sink block, enrich iglu config, KafkaConnect env via template",
+      "stats": {
+        "additions": 68,
+        "deletions": 21,
+        "total": 89
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "bced5f1ad4fe25f840bcf2f0941eb6a2f1ca84f7",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-28T10:54:51Z",
+      "message": "fix(strimzi): create kafka and kafka-connect namespaces before HelmRelease install",
+      "stats": {
+        "additions": 4,
+        "deletions": 0,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a33dfc8d81d54f67a10280fbd1057ac1fd9c03c0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-28T10:50:40Z",
+      "message": "fix(kafka-connect): download connector in Dockerfile RUN using hub-downloads.confluent.io",
+      "stats": {
+        "additions": 4,
+        "deletions": 14,
+        "total": 18
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "92f30c9d30c17a123c5efa910a03d2c706a0a1c9",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-28T10:47:27Z",
+      "message": "fix(kafka-connect): download connector zip on GHA runner, not inside BuildKit",
+      "stats": {
+        "additions": 16,
+        "deletions": 12,
+        "total": 28
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "5fc0502cbc09327c254ff962eab1151098a54007",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-02-28T10:35:40Z",
+      "message": "feat(kafka): add Kafka infrastructure for Snowplow event pipeline",
+      "stats": {
+        "additions": 1296,
+        "deletions": 0,
+        "total": 1296
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 14,
+  "issues": [],
+  "issue_count": 0
+}
