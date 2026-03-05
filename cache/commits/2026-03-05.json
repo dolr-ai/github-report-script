@@ -1,0 +1,897 @@
+{
+  "date": "2026-03-05",
+  "cached_at": "2026-03-05T18:59:48.337043Z",
+  "commits": [
+    {
+      "sha": "155fab2244e87e53439162cbe9eb4143e6b4995c",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-03-06T00:14:29+05:30",
+      "message": "chore: clean up and re run deployment",
+      "stats": {
+        "additions": 2,
+        "deletions": 47,
+        "total": 49
+      },
+      "branches": [
+        "naitik/coolify-and-vault-integration"
+      ]
+    },
+    {
+      "sha": "801f0735e91263076f01157075934255b3fa9722",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-03-06T00:10:14+05:30",
+      "message": "fetch secret from vault on deploy to baremetal,  update secrets and small fixes",
+      "stats": {
+        "additions": 91,
+        "deletions": 19,
+        "total": 110
+      },
+      "branches": [
+        "naitik/coolify-and-vault-integration"
+      ]
+    },
+    {
+      "sha": "5621024975bd82fc4425471ee74bdaf9ee165b19",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-03-05T21:24:19+05:30",
+      "message": "revert cert upload change",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "naitik/coolify-and-vault-integration"
+      ]
+    },
+    {
+      "sha": "953a5fcbb3d9acfe43757758722e8d533129631a",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-03-05T21:07:26+05:30",
+      "message": "fix: cert formatting issue",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "naitik/coolify-and-vault-integration"
+      ]
+    },
+    {
+      "sha": "9c2cc9826e1bbb6d032fb3579d953800edeb2989",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-03-05T20:04:05+05:30",
+      "message": "fix: removed overiding permission",
+      "stats": {
+        "additions": 0,
+        "deletions": 3,
+        "total": 3
+      },
+      "branches": [
+        "naitik/coolify-and-vault-integration"
+      ]
+    },
+    {
+      "sha": "18f441bd49658167b19eb2b9905425f2dc42f2d8",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-03-05T19:52:55+05:30",
+      "message": "fix: id tokem write permission",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "naitik/coolify-and-vault-integration"
+      ]
+    },
+    {
+      "sha": "8cb6432b3e6419faade567e914dd4e5e62d20f60",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-03-05T19:45:16+05:30",
+      "message": "fix: removed upload script, deployment preview on coolify",
+      "stats": {
+        "additions": 18,
+        "deletions": 75,
+        "total": 93
+      },
+      "branches": [
+        "naitik/coolify-and-vault-integration"
+      ]
+    },
+    {
+      "sha": "e0cb205d54d569faee3ed48c40a87ef87d1b3c43",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-03-05T19:00:52+05:30",
+      "message": "fix: removed unwanted backslash",
+      "stats": {
+        "additions": 9,
+        "deletions": 9,
+        "total": 18
+      },
+      "branches": [
+        "naitik/coolify-and-vault-integration"
+      ]
+    },
+    {
+      "sha": "173becff83e9945a3bc785053fedcd3085c2593b",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-03-05T18:56:37+05:30",
+      "message": "upload secrets to vault",
+      "stats": {
+        "additions": 20,
+        "deletions": 16,
+        "total": 36
+      },
+      "branches": [
+        "naitik/coolify-and-vault-integration"
+      ]
+    },
+    {
+      "sha": "19434b3d525cd441db98367229ea8e2c765c8270",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-03-05T10:28:58+05:30",
+      "message": "read secrets from vault",
+      "stats": {
+        "additions": 24,
+        "deletions": 11,
+        "total": 35
+      },
+      "branches": [
+        "naitik/coolify-and-vault-integration"
+      ]
+    },
+    {
+      "sha": "20f72e3c9b3e42c4db949fa5b29d067291d0f3b9",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-05T20:21:50+05:30",
+      "message": "Merge pull request #995 from dolr-ai/feature/feed-bifuraction",
+      "stats": {
+        "additions": 168,
+        "deletions": 15,
+        "total": 183
+      },
+      "branches": [
+        "yral-2.0"
+      ]
+    },
+    {
+      "sha": "7cb93c11a7bcf7675ae9acaf50f076cd559f03dc",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-05T20:17:52+05:30",
+      "message": "feat: Add FeedTab enum and selectedFeedTab to FeedState",
+      "stats": {
+        "additions": 10,
+        "deletions": 0,
+        "total": 10
+      },
+      "branches": [
+        "yral-2.0"
+      ]
+    },
+    {
+      "sha": "cd4bf4d14b64a914908fc154832b33cc893df5ea",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-05T20:17:46+05:30",
+      "message": "feat: Use PNG button assets and read tab state from ViewModel",
+      "stats": {
+        "additions": 25,
+        "deletions": 53,
+        "total": 78
+      },
+      "branches": [
+        "yral-2.0"
+      ]
+    },
+    {
+      "sha": "fe2cb472f9e462abc2743102cac7049dac81ff03",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-05T19:49:38+05:30",
+      "message": "feat: Wire onNavigateToChat from HomeScreen to FeedScaffoldScreen",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "yral-2.0"
+      ]
+    },
+    {
+      "sha": "be4048ba0f4c104a5d273fa0b0e81f7179e9c6f1",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-05T19:49:33+05:30",
+      "message": "feat: Add FeedTabBar and FeedActionButtons to feed screen",
+      "stats": {
+        "additions": 181,
+        "deletions": 15,
+        "total": 196
+      },
+      "branches": [
+        "yral-2.0"
+      ]
+    },
+    {
+      "sha": "3e549018104f9ed31a07cd1713b172f742cf7122",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-05T19:48:33+05:30",
+      "message": "feat: Add Explore/Influencers feed tab string resources",
+      "stats": {
+        "additions": 4,
+        "deletions": 0,
+        "total": 4
+      },
+      "branches": [
+        "yral-2.0"
+      ]
+    },
+    {
+      "sha": "7e862fe8f3bdf1443f21f6634c4ab8e64f53a881",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-05T15:43:48+05:30",
+      "message": "Merge pull request #951 from dolr-ai/release/android-2.7.0",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "yral-2.0",
+        "develop",
+        "966-chat-initial-suggestions-ui-change"
+      ]
+    },
+    {
+      "sha": "c0496c1d2034847eaba473b52f5fe2798ad7b1ee",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-05T11:52:49+05:30",
+      "message": "chore: Increments android app version",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "yral-2.0",
+        "main",
+        "hotfix/android-2.7.1",
+        "develop",
+        "966-chat-initial-suggestions-ui-change"
+      ]
+    },
+    {
+      "sha": "635c1a996a178806f9f2efd32e05eed44a64c06b",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-05T11:51:38+05:30",
+      "message": "Hides discover for bot accounts (#949)",
+      "stats": {
+        "additions": 57,
+        "deletions": 28,
+        "total": 85
+      },
+      "branches": [
+        "yral-2.0",
+        "main",
+        "hotfix/android-2.7.1",
+        "develop",
+        "chore/new-upload-video-endpoint",
+        "966-chat-initial-suggestions-ui-change"
+      ]
+    },
+    {
+      "sha": "bbe484c824616e3180eed141478172500468b797",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-05T15:43:36+05:30",
+      "message": "Merge pull request #950 from dolr-ai/release/android-2.7.0",
+      "stats": {
+        "additions": 2315,
+        "deletions": 646,
+        "total": 2961
+      },
+      "branches": [
+        "main",
+        "hotfix/android-2.7.1"
+      ]
+    },
+    {
+      "sha": "3ef6a9d698b21befb7568565c4b5bb8cf2b300d5",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-05T15:46:26+05:30",
+      "message": "chore: Increments android app version",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "hotfix/android-2.7.1"
+      ]
+    },
+    {
+      "sha": "f6d2b774d3813a212cbf8fc498aaaacbd81dc574",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-27T20:58:28+05:30",
+      "message": "fix: Fixes 2.6.9 crashes",
+      "stats": {
+        "additions": 12,
+        "deletions": 10,
+        "total": 22
+      },
+      "branches": [
+        "hotfix/android-2.7.1"
+      ]
+    },
+    {
+      "sha": "0ba4b2d14f79ad4ffd619511324c2c3335706297",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-05T15:41:10+05:30",
+      "message": "fix: strip surrogate pairs before markdown rendering to prevent crash",
+      "stats": {
+        "additions": 12,
+        "deletions": 1,
+        "total": 13
+      },
+      "branches": [
+        "hotfix/android-2.7.1"
+      ]
+    },
+    {
+      "sha": "3604720eea3c9ce2c7ff2324055a56e21a852345",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-05T15:22:38+05:30",
+      "message": "fix: deduplicate influencers in TrendingInfluencersPagingSource to prevent duplicate key crash",
+      "stats": {
+        "additions": 5,
+        "deletions": 1,
+        "total": 6
+      },
+      "branches": [
+        "hotfix/android-2.7.1"
+      ]
+    },
+    {
+      "sha": "9c568d3c5155e2f689729684ea4a33144c34c4f0",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-02T23:00:37+05:30",
+      "message": "fix: Reduce feed screen jank by batching state updates and fixing VelocityTracker",
+      "stats": {
+        "additions": 27,
+        "deletions": 28,
+        "total": 55
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "b5fa14fe0caebba278f7d82aeaefc8a55403d530",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-27T21:14:23+05:30",
+      "message": "chore: Adds mixpanel event for splash time",
+      "stats": {
+        "additions": 31,
+        "deletions": 1,
+        "total": 32
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "fa00b58ef42369f0cbdd2cc6da35d5b928b226e9",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-27T21:05:36+05:30",
+      "message": "chore: Calls updateYralSession on token refresh",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "be7e12aa869c272e6409cf96a1a0446a6955c7ae",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-27T20:58:28+05:30",
+      "message": "fix: Fixes 2.6.9 crashes",
+      "stats": {
+        "additions": 12,
+        "deletions": 10,
+        "total": 22
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "d9b7a6a1ee8bd041caa61a77cc59d10481d5b777",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-27T17:09:45+05:30",
+      "message": "chore: Switch video storage from Storj to Hetzner",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "e713fa2330f4626a1ca7789b1e342c4bbfae92d8",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-24T20:42:04+05:30",
+      "message": "fix: Add missing status field to PostDetailsDto",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "a1550c45bc0bcf7ead48fd69a164b749dccf2985",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-24T20:41:56+05:30",
+      "message": "chore: Convert uploadFile to multipart form data request",
+      "stats": {
+        "additions": 21,
+        "deletions": 13,
+        "total": 34
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "c17b88881772e727ddede2abcfe5ea237e10dd79",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-24T20:41:45+05:30",
+      "message": "feat: Add expect/actual readFileBytes for platform file reading",
+      "stats": {
+        "additions": 28,
+        "deletions": 0,
+        "total": 28
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "de95aa3f6bc6fea1ff8c94c205af738fe28ad7a2",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-24T20:41:38+05:30",
+      "message": "fix: Pin detekt jvmTarget to 17 to support JDK 23",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "b3961908ff7bf6de49a08fed55cf543ce50c871f",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-22T17:31:09+05:30",
+      "message": "chore: Changes endpoint to post",
+      "stats": {
+        "additions": 1,
+        "deletions": 2,
+        "total": 3
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "86140b14e918496e25fe1d287aad936697a82158",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-22T17:24:07+05:30",
+      "message": "fix: Use PUT for Storj upload and resolve content type from file",
+      "stats": {
+        "additions": 14,
+        "deletions": 11,
+        "total": 25
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "5876c73de9d097300bb79ba3ad549f8ad7b5ccdd",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-22T17:23:59+05:30",
+      "message": "chore: Migrate upload DTOs and URLs to new Storj backend",
+      "stats": {
+        "additions": 45,
+        "deletions": 48,
+        "total": 93
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "25ae7309e789ae1feb2ff52830f3e056c553f409",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-20T18:38:32+05:30",
+      "message": "chore: Migrate to v3/v2 upload video endpoints",
+      "stats": {
+        "additions": 66,
+        "deletions": 42,
+        "total": 108
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "ccc9569709c0b3f996c729e018153847978c7d5f",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-20T18:38:01+05:30",
+      "message": "chore: Migrate video URLs from Cloudflare to Storj",
+      "stats": {
+        "additions": 14,
+        "deletions": 12,
+        "total": 26
+      },
+      "branches": [
+        "chore/new-upload-video-endpoint"
+      ]
+    },
+    {
+      "sha": "13788157de4dacca7d8cb18cac465b1f63448582",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-05T19:00:18+05:30",
+      "message": "build: Updates suggestion message ui to be column instead of horizontal row",
+      "stats": {
+        "additions": 19,
+        "deletions": 14,
+        "total": 33
+      },
+      "branches": [
+        "966-chat-initial-suggestions-ui-change"
+      ]
+    },
+    {
+      "sha": "0a38d26e6aaa59010971f2b7b0a2d8ce884e4821",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-05T13:23:58+05:30",
+      "message": "filter out deleted bots from conversation listings",
+      "stats": {
+        "additions": 4,
+        "deletions": 4,
+        "total": 8
+      },
+      "branches": [
+        "staging"
+      ]
+    },
+    {
+      "sha": "8f8431b9d4f037e635033467bf21f120575ebb80",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-05T12:48:51+05:30",
+      "message": "trigger staging CI",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "staging"
+      ]
+    },
+    {
+      "sha": "24a197b4599e420d85727e69f6004083445fc21c",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-05T13:06:00+05:30",
+      "message": "fix: separate v2 params from v1 - principal field broke v1 conversations endpoint",
+      "stats": {
+        "additions": 23,
+        "deletions": 5,
+        "total": 28
+      },
+      "branches": [
+        "staging",
+        "main"
+      ]
+    },
+    {
+      "sha": "a674a8c39d7a0aa011db089f69aefe960fc5d4e6",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-05T09:37:21+05:30",
+      "message": "fix: allow bots to access their conversations + fix username parsing",
+      "stats": {
+        "additions": 6,
+        "deletions": 6,
+        "total": 12
+      },
+      "branches": [
+        "staging",
+        "main"
+      ]
+    },
+    {
+      "sha": "b31fe03c3757ae6607a4637311ba91c3c71463ab",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-05T13:23:58+05:30",
+      "message": "filter out deleted bots from conversation listings",
+      "stats": {
+        "additions": 4,
+        "deletions": 4,
+        "total": 8
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "010d76a9e32369d881cf827b84fa8fc804672beb",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-03-05T10:24:40+05:30",
+      "message": "read secrets from vault",
+      "stats": {
+        "additions": 53,
+        "deletions": 33,
+        "total": 86
+      },
+      "branches": [
+        "naitik/coolify-and-vault-integration"
+      ]
+    },
+    {
+      "sha": "e3911e6e8b6b3b695257624e5cf6d01493f709c2",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-05T10:17:37+05:30",
+      "message": "read secrets from vault",
+      "stats": {
+        "additions": 142,
+        "deletions": 86,
+        "total": 228
+      },
+      "branches": [
+        "naitik/coolify-and-vault-integration"
+      ]
+    }
+  ],
+  "commit_count": 46,
+  "issues": [
+    {
+      "number": 1711,
+      "title": "Android release 2.7.1",
+      "closed_at": "2026-03-05T13:23:38Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1711",
+      "labels": []
+    },
+    {
+      "number": 992,
+      "title": "Handle app crash on mark down for chat",
+      "closed_at": "2026-03-05T10:48:09Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/992",
+      "labels": []
+    },
+    {
+      "number": 991,
+      "title": "Handle app crash on chat wall screen",
+      "closed_at": "2026-03-05T10:48:02Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/991",
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "number": 1708,
+      "title": "Android release 2.7.0",
+      "closed_at": "2026-03-05T10:33:34Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1708",
+      "labels": []
+    },
+    {
+      "number": 1699,
+      "title": "Set up alerts on this group for each subscription success",
+      "closed_at": "2026-03-05T05:33:38Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1699",
+      "labels": []
+    },
+    {
+      "number": 938,
+      "title": "Handle user object in conversation message object",
+      "closed_at": "2026-03-05T05:33:55Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/938",
+      "labels": []
+    },
+    {
+      "number": 937,
+      "title": "Load conversation screen based on conversation id",
+      "closed_at": "2026-03-05T05:30:45Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/937",
+      "labels": []
+    },
+    {
+      "number": 936,
+      "title": "Conversations list screen UI",
+      "closed_at": "2026-03-05T05:30:03Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/936",
+      "labels": []
+    },
+    {
+      "number": 935,
+      "title": "Implement and integrate list conversations api",
+      "closed_at": "2026-03-05T05:30:09Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/935",
+      "labels": []
+    },
+    {
+      "number": 878,
+      "title": "Implement inbox for chat",
+      "closed_at": "2026-03-05T05:29:51Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/878",
+      "labels": []
+    },
+    {
+      "number": 1629,
+      "title": "Preview links on bare metal",
+      "closed_at": "2026-03-05T05:11:34Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1629",
+      "labels": []
+    },
+    {
+      "number": 1703,
+      "title": "Mistmatch in paid users on mix panel vs google console",
+      "closed_at": "2026-03-05T05:23:25Z",
+      "assignee": "ravi-sawlani-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1703",
+      "labels": []
+    },
+    {
+      "number": 963,
+      "title": "Yral or not buttons",
+      "closed_at": "2026-03-05T14:52:03Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/963",
+      "labels": [
+        "yral2.0-phase1"
+      ]
+    },
+    {
+      "number": 960,
+      "title": "Feed to cross button behaviour",
+      "closed_at": "2026-03-05T14:52:23Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/960",
+      "labels": [
+        "yral2.0-phase1"
+      ]
+    },
+    {
+      "number": 958,
+      "title": "New tab for explore and influencers in feed overlay",
+      "closed_at": "2026-03-05T14:50:21Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/958",
+      "labels": [
+        "yral2.0-phase1"
+      ]
+    },
+    {
+      "number": 956,
+      "title": "Feed tabs - Explore and influencers",
+      "closed_at": "2026-03-05T14:53:07Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/956",
+      "labels": [
+        "yral2.0-phase1"
+      ]
+    },
+    {
+      "number": 1692,
+      "title": "Video gen fails for new users - Rate Limit Exceeded",
+      "closed_at": "2026-03-05T05:25:45Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1692",
+      "labels": []
+    },
+    {
+      "number": 1670,
+      "title": "AI Draft Flow",
+      "closed_at": "2026-03-05T05:26:01Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1670",
+      "labels": []
+    },
+    {
+      "number": 1646,
+      "title": "[Feature Request]: Migration Strategy",
+      "closed_at": "2026-03-05T05:25:35Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1646",
+      "labels": [
+        "Backend Dependencies"
+      ]
+    }
+  ],
+  "issue_count": 19
+}
