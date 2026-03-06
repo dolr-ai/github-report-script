@@ -1,0 +1,885 @@
+{
+  "date": "2026-03-06",
+  "cached_at": "2026-03-06T18:47:50.557058Z",
+  "commits": [
+    {
+      "sha": "72cfd0bd6ce05a1be7145de519d8a2bf199f91ec",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-06T15:08:19+05:30",
+      "message": "build: Updates suggestion message ui to be column instead of horizontal row (#998)",
+      "stats": {
+        "additions": 19,
+        "deletions": 14,
+        "total": 33
+      },
+      "branches": [
+        "yral-2.0",
+        "feature/videos-2.0",
+        "964-firebase-cleanup"
+      ]
+    },
+    {
+      "sha": "34d93e8a69d4c4d53dd058d5df276e4427780d5b",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-05T20:17:52+05:30",
+      "message": "feat: Add FeedTab enum and selectedFeedTab to FeedState",
+      "stats": {
+        "additions": 10,
+        "deletions": 0,
+        "total": 10
+      },
+      "branches": [
+        "yral-2.0",
+        "feature/videos-2.0",
+        "964-firebase-cleanup"
+      ]
+    },
+    {
+      "sha": "9c71510fefea623e285ac40b9eb4238b204ee33a",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-05T20:17:46+05:30",
+      "message": "feat: Use PNG button assets and read tab state from ViewModel",
+      "stats": {
+        "additions": 25,
+        "deletions": 53,
+        "total": 78
+      },
+      "branches": [
+        "yral-2.0",
+        "feature/videos-2.0",
+        "964-firebase-cleanup"
+      ]
+    },
+    {
+      "sha": "03a736a3b097994e1126a30b8d6a0e2975fcf2b9",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-05T19:49:38+05:30",
+      "message": "feat: Wire onNavigateToChat from HomeScreen to FeedScaffoldScreen",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "yral-2.0",
+        "feature/videos-2.0",
+        "964-firebase-cleanup"
+      ]
+    },
+    {
+      "sha": "537f9d46a157676e452c5d5bf658462e6fdbd119",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-05T19:49:33+05:30",
+      "message": "feat: Add FeedTabBar and FeedActionButtons to feed screen",
+      "stats": {
+        "additions": 181,
+        "deletions": 15,
+        "total": 196
+      },
+      "branches": [
+        "yral-2.0",
+        "feature/videos-2.0",
+        "964-firebase-cleanup"
+      ]
+    },
+    {
+      "sha": "5a14e872e1810e080676174e0bce755c7a6a3b59",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-05T19:48:33+05:30",
+      "message": "feat: Add Explore/Influencers feed tab string resources",
+      "stats": {
+        "additions": 4,
+        "deletions": 0,
+        "total": 4
+      },
+      "branches": [
+        "yral-2.0",
+        "feature/videos-2.0",
+        "964-firebase-cleanup"
+      ]
+    },
+    {
+      "sha": "b5df382b81423224583ecdf56b6e982dea20ecbb",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-06T15:05:06+05:30",
+      "message": "Merge pull request #997 from dolr-ai/hotfix/android-2.7.2",
+      "stats": {
+        "additions": 28,
+        "deletions": 8,
+        "total": 36
+      },
+      "branches": [
+        "yral-2.0",
+        "feature/videos-2.0",
+        "develop",
+        "964-firebase-cleanup"
+      ]
+    },
+    {
+      "sha": "f2ab3461f99badcb5cdc38505bdaea82fd943690",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-06T13:19:41+05:30",
+      "message": "chore: Increments android app version",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "yral-2.0",
+        "main",
+        "feature/videos-2.0",
+        "develop",
+        "964-firebase-cleanup"
+      ]
+    },
+    {
+      "sha": "e7d74e3de5cd95e6b740ab80c03e73400fee9db4",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-06T13:17:15+05:30",
+      "message": "fix: Adds default profile picture and username for conversation",
+      "stats": {
+        "additions": 26,
+        "deletions": 6,
+        "total": 32
+      },
+      "branches": [
+        "yral-2.0",
+        "main",
+        "feature/videos-2.0",
+        "develop",
+        "964-firebase-cleanup"
+      ]
+    },
+    {
+      "sha": "067d8dad911eab887fd6f8d76ff050ab7b467d61",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-06T12:03:25+05:30",
+      "message": "Merge pull request #994 from dolr-ai/hotfix/android-2.7.1",
+      "stats": {
+        "additions": 31,
+        "deletions": 14,
+        "total": 45
+      },
+      "branches": [
+        "yral-2.0",
+        "main",
+        "feature/videos-2.0",
+        "develop",
+        "964-firebase-cleanup"
+      ]
+    },
+    {
+      "sha": "0ddce64d3b095b27d31028fa4d42b9415e589e82",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-06T15:04:53+05:30",
+      "message": "Merge pull request #996 from dolr-ai/hotfix/android-2.7.2",
+      "stats": {
+        "additions": 28,
+        "deletions": 8,
+        "total": 36
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "aba336c163aae8d060f7618f94e01004d2fb7027",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-06T12:03:09+05:30",
+      "message": "Merge pull request #993 from dolr-ai/hotfix/android-2.7.1",
+      "stats": {
+        "additions": 31,
+        "deletions": 14,
+        "total": 45
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "13ac754f8b4578ca36db8ac30f86762a95e5dbef",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-06T21:09:49+05:30",
+      "message": "feat: Add profile video section tabs with exclusive/draft content",
+      "stats": {
+        "additions": 269,
+        "deletions": 35,
+        "total": 304
+      },
+      "branches": [
+        "feature/videos-2.0"
+      ]
+    },
+    {
+      "sha": "aab209e08a7dbe6705cb9a3b222cdffd1982d981",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-06T21:09:42+05:30",
+      "message": "feat: Add ProfileVideoTab enum and tab state to ProfileViewModel",
+      "stats": {
+        "additions": 29,
+        "deletions": 1,
+        "total": 30
+      },
+      "branches": [
+        "feature/videos-2.0"
+      ]
+    },
+    {
+      "sha": "d44249e8b265f9fcb67dc097bdd4ed97cb320578",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-06T21:06:09+05:30",
+      "message": "feat: Add string resources for profile video tabs",
+      "stats": {
+        "additions": 6,
+        "deletions": 0,
+        "total": 6
+      },
+      "branches": [
+        "feature/videos-2.0"
+      ]
+    },
+    {
+      "sha": "623c44779b800fb52e0560f0f09cc487def46936",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-06T21:06:00+05:30",
+      "message": "feat: Add profile video tab drawable icons",
+      "stats": {
+        "additions": 80,
+        "deletions": 0,
+        "total": 80
+      },
+      "branches": [
+        "feature/videos-2.0"
+      ]
+    },
+    {
+      "sha": "b12beb51643aae2a19f3d09880387d8a094d4bcf",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-06T20:30:20+05:30",
+      "message": "refactor: remove unused session param from signInWithToken",
+      "stats": {
+        "additions": 2,
+        "deletions": 6,
+        "total": 8
+      },
+      "branches": [
+        "964-firebase-cleanup"
+      ]
+    },
+    {
+      "sha": "ad4a54a354bfc225e0e202f8fb5149b6210374c5",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-06T20:28:21+05:30",
+      "message": "feat: remove Firestore document writes from auth",
+      "stats": {
+        "additions": 6,
+        "deletions": 52,
+        "total": 58
+      },
+      "branches": [
+        "964-firebase-cleanup"
+      ]
+    },
+    {
+      "sha": "244914e51a50e468ab368bbd5aab8a25b6c44b23",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-06T20:19:23+05:30",
+      "message": "feat: remove game feature",
+      "stats": {
+        "additions": 43,
+        "deletions": 5367,
+        "total": 5410
+      },
+      "branches": [
+        "964-firebase-cleanup"
+      ]
+    },
+    {
+      "sha": "69922711788edd383efbee74a855a6765c38bc6e",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-06T20:03:44+05:30",
+      "message": "feat: remove leaderboard feature",
+      "stats": {
+        "additions": 11,
+        "deletions": 5160,
+        "total": 5171
+      },
+      "branches": [
+        "964-firebase-cleanup"
+      ]
+    },
+    {
+      "sha": "39ec1424a5d511b474719a3b5f96aa7b133dcffd",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-06T19:40:53+05:30",
+      "message": "feat: remove tournament feature",
+      "stats": {
+        "additions": 7,
+        "deletions": 11155,
+        "total": 11162
+      },
+      "branches": [
+        "964-firebase-cleanup"
+      ]
+    },
+    {
+      "sha": "990285eba70dd6016b5d4e2cbb373a806d2afd24",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-03-06T21:09:09+05:30",
+      "message": "added tests",
+      "stats": {
+        "additions": 12,
+        "deletions": 10,
+        "total": 22
+      },
+      "branches": [
+        "feat/add-support-for-one-time-product"
+      ]
+    },
+    {
+      "sha": "a01d0831b3357e83b6545a43f821aa149cae5af1",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-03-06T20:18:47+05:30",
+      "message": "feat: add one time product purchase support for bot access",
+      "stats": {
+        "additions": 313,
+        "deletions": 4,
+        "total": 317
+      },
+      "branches": [
+        "feat/add-support-for-one-time-product"
+      ]
+    },
+    {
+      "sha": "9ad820aca0996fc12671304dc74524a07da68a38",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-06T15:04:45Z",
+      "message": "chore: remove timer-counter submodule",
+      "stats": {
+        "additions": 3,
+        "deletions": 23,
+        "total": 26
+      },
+      "branches": [
+        "renovate/velero-11.x",
+        "renovate/python-3.x",
+        "renovate/oauth2-proxy",
+        "renovate/major-github-actions",
+        "renovate/longhorn-1.x",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "1f5547bfd50794421a5688f37c32538b2a843a4e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-06T15:01:45Z",
+      "message": "chore: remove timer-counter from Kubernetes cluster",
+      "stats": {
+        "additions": 1,
+        "deletions": 253,
+        "total": 254
+      },
+      "branches": [
+        "renovate/velero-11.x",
+        "renovate/python-3.x",
+        "renovate/oauth2-proxy",
+        "renovate/major-github-actions",
+        "renovate/longhorn-1.x",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "4368da1f871a7aa3d9e572ab21d7120e7a2ff942",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-06T14:56:52Z",
+      "message": "chore: update timer-counter subproject commit to 0fe4c97",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/velero-11.x",
+        "renovate/python-3.x",
+        "renovate/oauth2-proxy",
+        "renovate/major-github-actions",
+        "renovate/longhorn-1.x",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "d5622ea4964e0831bea9c27d918cdaa5fa132542",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-06T10:53:11Z",
+      "message": "chore: update TODO list with additional tasks and remove obsolete entry",
+      "stats": {
+        "additions": 6,
+        "deletions": 2,
+        "total": 8
+      },
+      "branches": [
+        "renovate/velero-11.x",
+        "renovate/python-3.x",
+        "renovate/oauth2-proxy",
+        "renovate/major-github-actions",
+        "renovate/longhorn-1.x",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "60b4b0c76cc8f3e948c738c1dd661afc075b0db7",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-06T10:51:20Z",
+      "message": "docs: document flux bootstrap flags and --token-auth requirement",
+      "stats": {
+        "additions": 9,
+        "deletions": 1,
+        "total": 10
+      },
+      "branches": [
+        "renovate/velero-11.x",
+        "renovate/python-3.x",
+        "renovate/oauth2-proxy",
+        "renovate/major-github-actions",
+        "renovate/longhorn-1.x",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "fd950b51d9462fd17fd726ee841ae9f54af9e51e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-06T10:27:53Z",
+      "message": "fix: correct ImageUpdateAutomation message template and pin image tag",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "renovate/velero-11.x",
+        "renovate/python-3.x",
+        "renovate/oauth2-proxy",
+        "renovate/major-github-actions",
+        "renovate/longhorn-1.x",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "fd4b77efb2cff8e44afe7af3eeca2e8de7023d83",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-06T10:14:17Z",
+      "message": "fix: correct ImagePolicy filter pattern and tag format",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "renovate/velero-11.x",
+        "renovate/python-3.x",
+        "renovate/oauth2-proxy",
+        "renovate/major-github-actions",
+        "renovate/longhorn-1.x",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "862c3892d5ff515b56a573f18307654f2740b5cb",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-06T10:03:44Z",
+      "message": "fix: revert flux-system GitRepository URL back to HTTPS",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/velero-11.x",
+        "renovate/python-3.x",
+        "renovate/oauth2-proxy",
+        "renovate/major-github-actions",
+        "renovate/longhorn-1.x",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "0f017f6d73edaa3ab31634c6e43f6cc39037f8e8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-06T09:48:35Z",
+      "message": "feat: add Flux image automation for timer-counter",
+      "stats": {
+        "additions": 51,
+        "deletions": 2,
+        "total": 53
+      },
+      "branches": [
+        "renovate/velero-11.x",
+        "renovate/python-3.x",
+        "renovate/oauth2-proxy",
+        "renovate/major-github-actions",
+        "renovate/longhorn-1.x",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "a593b709b45e81c0a5006dfed3be2ea50d0d9ba4",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-06T19:57:22+05:30",
+      "message": "fix: test provide explicit permissions",
+      "stats": {
+        "additions": 6,
+        "deletions": 0,
+        "total": 6
+      },
+      "branches": [
+        "naitik/coolify-and-vault-integration"
+      ]
+    },
+    {
+      "sha": "39161082bd7c2e1185fac07618d898eb46d54376",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-06T10:02:40+05:30",
+      "message": "fix: var name",
+      "stats": {
+        "additions": 4,
+        "deletions": 7,
+        "total": 11
+      },
+      "branches": [
+        "naitik/coolify-and-vault-integration"
+      ]
+    },
+    {
+      "sha": "9b2774291c9e5ad4992e02c82c57e5d8ba3cde31",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-06T08:31:30+05:30",
+      "message": "chore: cleanup and deploy preview",
+      "stats": {
+        "additions": 2,
+        "deletions": 43,
+        "total": 45
+      },
+      "branches": [
+        "naitik/coolify-and-vault-integration"
+      ]
+    },
+    {
+      "sha": "26cb619db135f7ba86d696dfcaf8c40ad729e5ef",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-06T08:29:19+05:30",
+      "message": "upload remaining secret",
+      "stats": {
+        "additions": 1,
+        "deletions": 113,
+        "total": 114
+      },
+      "branches": [
+        "naitik/coolify-and-vault-integration"
+      ]
+    },
+    {
+      "sha": "4f5a6387e60301a11408df303209dd467d8387bc",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-06T15:55:55+05:30",
+      "message": "fix uburuatuib",
+      "stats": {
+        "additions": 3,
+        "deletions": 1,
+        "total": 4
+      },
+      "branches": [
+        "joel/nsfw-pfp-detection"
+      ]
+    },
+    {
+      "sha": "4d09f1ba867564631b8fce9114f182cb9908ff8d",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-06T15:29:55+05:30",
+      "message": "fix tls handshake",
+      "stats": {
+        "additions": 9,
+        "deletions": 3,
+        "total": 12
+      },
+      "branches": [
+        "joel/nsfw-pfp-detection"
+      ]
+    },
+    {
+      "sha": "26f92f7f9ea7435caa88c60bf271d21d1eda84bd",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-06T15:17:44+05:30",
+      "message": "fix fail open errors messages",
+      "stats": {
+        "additions": 43,
+        "deletions": 13,
+        "total": 56
+      },
+      "branches": [
+        "joel/nsfw-pfp-detection"
+      ]
+    },
+    {
+      "sha": "d995d28c3b9cc687db179b40b7e0d630b244edf2",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-06T15:12:31+05:30",
+      "message": "feat: added pfp nsfw detection",
+      "stats": {
+        "additions": 67,
+        "deletions": 3,
+        "total": 70
+      },
+      "branches": [
+        "joel/nsfw-pfp-detection"
+      ]
+    },
+    {
+      "sha": "cc6cbc49f207e64f42971ce751ef5cc6eb89b27b",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-06T13:51:08+05:30",
+      "message": "fix: filter out bot-to-bot conversations from list API",
+      "stats": {
+        "additions": 4,
+        "deletions": 2,
+        "total": 6
+      },
+      "branches": [
+        "staging",
+        "main"
+      ]
+    },
+    {
+      "sha": "672550cfcb34a47227c2a77618755e6668e15fd5",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-06T13:06:18+05:30",
+      "message": "fix: clippy collapsible_if",
+      "stats": {
+        "additions": 4,
+        "deletions": 4,
+        "total": 8
+      },
+      "branches": [
+        "staging",
+        "main"
+      ]
+    },
+    {
+      "sha": "8e2aa415d339a7187ac27eea2af3c81a6467e9fd",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-06T13:03:52+05:30",
+      "message": "fix: allow bot owners to access their bot's conversations",
+      "stats": {
+        "additions": 39,
+        "deletions": 5,
+        "total": 44
+      },
+      "branches": [
+        "staging",
+        "main"
+      ]
+    },
+    {
+      "sha": "5702e23b40c00d43d9d219b4fae8c6f8578b06be",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-06T13:03:47+05:30",
+      "message": "Merge branch 'main' into staging",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "staging",
+        "main"
+      ]
+    },
+    {
+      "sha": "aa8288af31057e55ead841935b537da4dc65d5f5",
+      "author": "joel-medicala-yral",
+      "repository": "dolr-ai/self-hosted-video-models",
+      "timestamp": "2026-03-06T10:38:21+05:30",
+      "message": "[skip ci] update ltx bootstrap scripts",
+      "stats": {
+        "additions": 48,
+        "deletions": 190,
+        "total": 238
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "91a90053417e290a42123477b1e33c5e842b3c3d",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-03-06T09:04:30+05:30",
+      "message": "[skip ci] fix: secret name",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/coolify-and-vault-integration"
+      ]
+    },
+    {
+      "sha": "12a70cf09469b9e7f0d89cb1d8a150778f448a59",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-03-06T08:17:41+05:30",
+      "message": "fix: secret name",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/coolify-and-vault-integration"
+      ]
+    }
+  ],
+  "commit_count": 47,
+  "issues": [
+    {
+      "number": 1716,
+      "title": "[Bug]:  Inbox screen images not loading",
+      "closed_at": "2026-03-06T09:24:50Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1716",
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "number": 1715,
+      "title": "Decrease Tara paywall to 50 messages total",
+      "closed_at": "2026-03-06T09:28:57Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1715",
+      "labels": []
+    },
+    {
+      "number": 966,
+      "title": "Chat initial suggestions UI change",
+      "closed_at": "2026-03-06T09:38:34Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/966",
+      "labels": [
+        "yral2.0-phase1"
+      ]
+    }
+  ],
+  "issue_count": 3
+}
