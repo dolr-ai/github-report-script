@@ -1,0 +1,53 @@
+{
+  "date": "2026-03-08",
+  "cached_at": "2026-03-08T18:46:08.132595Z",
+  "commits": [
+    {
+      "sha": "49c2ee45daa03e1d5ec44db02f85fdbcef875f19",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-03-08T17:33:48Z",
+      "message": "Add SSH agent and GitHub CLI config placeholders in workflow files",
+      "stats": {
+        "additions": 39,
+        "deletions": 0,
+        "total": 39
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e617e27ceec3734211d0744c4f9f06fdbbaa0428",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-08T08:48:58-07:00",
+      "message": "Merge pull request #2 from dolr-ai/renovate/cert-manager",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "renovate/vpa-4.x",
+        "renovate/velero-velero-plugin-for-aws-1.x",
+        "renovate/velero-11.x",
+        "renovate/strimzi-kafka-operator-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/quay.io-strimzi-kafka-0.x",
+        "renovate/python-3.x",
+        "renovate/oauth2-proxy",
+        "renovate/major-github-actions",
+        "renovate/longhorn-1.x",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 2,
+  "issues": [],
+  "issue_count": 0
+}
