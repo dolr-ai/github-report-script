@@ -1,0 +1,743 @@
+{
+  "date": "2026-03-10",
+  "cached_at": "2026-03-10T18:48:23.960339Z",
+  "commits": [
+    {
+      "sha": "136b9eda53afac8cdda461181f45216dd0a287ad",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-03-10T23:19:27+05:30",
+      "message": "removed unnecessary comment",
+      "stats": {
+        "additions": 0,
+        "deletions": 2,
+        "total": 2
+      },
+      "branches": [
+        "naitik/coolify-and-vault-integration"
+      ]
+    },
+    {
+      "sha": "6a1387fa587d8ff5d5949699886a6cab319dfe82",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-03-10T23:13:03+05:30",
+      "message": "[skip ci] fix: removed branch to run, added required permission and sfix secret passing",
+      "stats": {
+        "additions": 7,
+        "deletions": 3,
+        "total": 10
+      },
+      "branches": [
+        "naitik/coolify-and-vault-integration"
+      ]
+    },
+    {
+      "sha": "cb07ef11559b9a2c1f7aeaace6c67478fc689869",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-03-10T09:13:36+05:30",
+      "message": "fix: secret path",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "naitik/coolify-and-vault-integration"
+      ]
+    },
+    {
+      "sha": "ee1caaa21c865c78fc442396946e98db4cbae0b1",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-03-10T23:57:15+05:30",
+      "message": "Naitik/coolify and vault integration (#1176)",
+      "stats": {
+        "additions": 457,
+        "deletions": 112,
+        "total": 569
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b014dcee21c0e839cc0b6566d007c2271aced6fb",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-10T22:38:48+05:30",
+      "message": "chore: Increments android app version",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "release/2.8.0"
+      ]
+    },
+    {
+      "sha": "729310d7f5e8f47397ee50347161c39a59472682",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-10T23:22:10+05:30",
+      "message": "chore: Add detailed billing response logging to ProductFetcher",
+      "stats": {
+        "additions": 22,
+        "deletions": 3,
+        "total": 25
+      },
+      "branches": [
+        "feature/subscriptions-all-bots"
+      ]
+    },
+    {
+      "sha": "f1bb0ba7113b502cc1ae5a8311aa7f97f3af6e29",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-10T22:35:15+05:30",
+      "message": "chore: Adds logs for debugging",
+      "stats": {
+        "additions": 17,
+        "deletions": 7,
+        "total": 24
+      },
+      "branches": [
+        "feature/subscriptions-all-bots"
+      ]
+    },
+    {
+      "sha": "f9a570ee2c3316773a4c7bc67c965761c44fed5f",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-10T22:04:17+05:30",
+      "message": "test: Lower subscription threshold to 1 for testing",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "feature/subscriptions-all-bots"
+      ]
+    },
+    {
+      "sha": "a9d1f7fa5345afa6f732e8cd3602754c4cdc11bb",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-10T22:04:06+05:30",
+      "message": "feat: Extend chat subscription to all bots with server-authoritative access",
+      "stats": {
+        "additions": 311,
+        "deletions": 90,
+        "total": 401
+      },
+      "branches": [
+        "feature/subscriptions-all-bots"
+      ]
+    },
+    {
+      "sha": "2bb31651d687e739fc731798ac75f7e37b976e93",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-10T16:26:15Z",
+      "message": "fix: remove outdated TODO items and add kafka native schema validation task",
+      "stats": {
+        "additions": 1,
+        "deletions": 3,
+        "total": 4
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "c9d3cb3462f7d71c3939d909cfb444788483c35a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-10T16:22:17Z",
+      "message": "fix: correct upstream service name for kafka-console oauth2-proxy",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "88812eea32202a5908782f1e5b4d3503192bc8b5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-10T16:14:50Z",
+      "message": "fix: add SASL auth for Redpanda Console \u2192 Kafka connection",
+      "stats": {
+        "additions": 102,
+        "deletions": 18,
+        "total": 120
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "1cd37c9f2b16b3783410b6f9f32784c30f60662e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-10T15:43:29Z",
+      "message": "fix: correct Redpanda Console chart values schema (config: not console.config:)",
+      "stats": {
+        "additions": 6,
+        "deletions": 5,
+        "total": 11
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "841957fa114ff84180e2aadc4f32064768441bda",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-10T15:30:46Z",
+      "message": "feat: add Redpanda Console (Kafka UI) at kafka-console.yral.com",
+      "stats": {
+        "additions": 211,
+        "deletions": 0,
+        "total": 211
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "1c8c5654c34fe2606ff3f08b065ba74424f66723",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-10T15:03:16Z",
+      "message": "fix: set 30-day cookie expiry on all oauth2-proxy deployments",
+      "stats": {
+        "additions": 5,
+        "deletions": 0,
+        "total": 5
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "dab81c2886e5efd237c5d5e4b81ad2d61f915cf4",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-10T07:58:00-07:00",
+      "message": "Merge pull request #14 from dolr-ai/renovate/major-github-actions",
+      "stats": {
+        "additions": 6,
+        "deletions": 6,
+        "total": 12
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "46a79228289dade014e2d785b2910fdb92ad2be2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-10T13:33:44Z",
+      "message": "fix: expand Prometheus PVC 50Gi\u2192100Gi and add 90GB retentionSize cap",
+      "stats": {
+        "additions": 4,
+        "deletions": 1,
+        "total": 5
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "d33a80f56f80067308b371a662889e5c95ae2183",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-10T05:52:40-07:00",
+      "message": "Merge pull request #21 from dolr-ai/renovate/velero-velero-plugin-for-aws-1.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "6250af9d0c20237121b59cb7a67f672c52a59674",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-10T12:50:00Z",
+      "message": "feat(kubernetes): parameterize Kubernetes version in installation tasks and add version pin in defau",
+      "stats": {
+        "additions": 24,
+        "deletions": 5,
+        "total": 29
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "82b7700352a06bea04819d073136bbd8bd95555c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-10T05:31:43-07:00",
+      "message": "Merge pull request #20 from dolr-ai/renovate/snowplow-snowplow-enrich-kafka-6.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "be93318e171d42e0e8f4dc7b1dfbfd7ea51dd954",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-10T05:23:59-07:00",
+      "message": "Merge pull request #19 from dolr-ai/renovate/quay.io-strimzi-kafka-0.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "07a060e57edb0ad3ba0bfca3d9cc3979e29ad14b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-10T05:21:04-07:00",
+      "message": "Merge pull request #13 from dolr-ai/renovate/velero-11.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "ed03d5f0e5179706b21c9357049116964ad711d0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-10T05:18:07-07:00",
+      "message": "Merge pull request #18 from dolr-ai/renovate/strimzi-kafka-operator-0.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "bd3eae1790867da38edabb95b1d3079e197e902e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-10T02:45:05-07:00",
+      "message": "Merge pull request #11 from dolr-ai/renovate/kube-prometheus-stack-82.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "196a262dbca219232fb2184d0ddec9cf67cb0c92",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-10T02:33:58-07:00",
+      "message": "Merge pull request #6 from dolr-ai/renovate/python-3.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "63fb5bf581161ca6ae4ee81da9fd1254850a5e9d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-10T02:29:33-07:00",
+      "message": "Merge pull request #5 from dolr-ai/renovate/kubernetes-sigs-gateway-api-1.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "822a9ec8f8f2b9fca9829dea076f609c3ee91880",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-10T02:26:44-07:00",
+      "message": "Merge pull request #3 from dolr-ai/renovate/oauth2-proxy",
+      "stats": {
+        "additions": 5,
+        "deletions": 5,
+        "total": 10
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "5f954126f9b771782bfa5d4c1af2bf39aec5b7f8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-10T02:25:04-07:00",
+      "message": "Merge pull request #17 from dolr-ai/renovate/vpa-4.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "4028b0c2c1e8909ea5ca4e7c537c69fa4817b745",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-10T02:22:45-07:00",
+      "message": "Merge pull request #16 from dolr-ai/renovate/reloader-2.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "15453be06844f68e732e78dad4b939c7c83d97c6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-10T04:56:16Z",
+      "message": "fix: adjust parallelism and completions for storj migration job to 8 pods",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "7c46f973ea14433c86329cceec64d727277fa67e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-10T04:53:22Z",
+      "message": "feat: scale storj migration to 10 pods",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "27bd961a91a0b7a5683a328025cde1ede76b86af",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-10T04:49:51Z",
+      "message": "fix: add force: true to storj-migration Kustomization for immutable Job updates",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "97041f4418dabbe964b9c9607a330e9672cf8c47",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-10T04:48:21Z",
+      "message": "fix: reduce rclone transfers to 2 per pod to ease rate limiting",
+      "stats": {
+        "additions": 1,
+        "deletions": 2,
+        "total": 3
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "664e0b41b2ef3c0857541323b6f3ea5793e9d3d5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-10T04:43:20Z",
+      "message": "fix: reduce parallelism to 4 pods to avoid Storj rate limiting",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "39b10e47d5cf9213a4b67e3573d4142f031ee57f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-10T04:39:00Z",
+      "message": "fix: quote storj-crypt arg, set source bucket name, use obscured rclone password",
+      "stats": {
+        "additions": 23,
+        "deletions": 23,
+        "total": 46
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "90e6c978e293d34fe73a4ad28b4a5a332803f370",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-10T04:26:26Z",
+      "message": "feat: storj migration job \u2014 35-pod rclone copy to encrypted bucket",
+      "stats": {
+        "additions": 156,
+        "deletions": 0,
+        "total": 156
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "a218f910678317561e31a6c6133e7534afd896ab",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-09T20:09:00-07:00",
+      "message": "Merge pull request #15 from dolr-ai/renovate/alloy-1.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "316eed2b25980f8172cba54fbb6bcedcbbf433d7",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-03-10T16:43:45Z",
+      "message": "Refactor hosts.yml: replace multiple clickhouse keeper and replica entries with a single clickhouse-",
+      "stats": {
+        "additions": 49,
+        "deletions": 57,
+        "total": 106
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "577f50ebe4c524fc93657535a6f02bf10bbf4a01",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/nsfw_detect",
+      "timestamp": "2026-03-10T15:00:18+05:30",
+      "message": "fix: update http2 support",
+      "stats": {
+        "additions": 4,
+        "deletions": 1,
+        "total": 5
+      },
+      "branches": [
+        "naitik/fix_http2_support",
+        "main"
+      ]
+    },
+    {
+      "sha": "858603c262edf08632303e4de86edf30cf25c696",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/nsfw_detect",
+      "timestamp": "2026-03-10T15:15:57+05:30",
+      "message": "Merge pull request #4 from dolr-ai/naitik/fix_http2_support",
+      "stats": {
+        "additions": 4,
+        "deletions": 1,
+        "total": 5
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "651c14f2545543b7c4519551a8f37d9090af0342",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-10T12:02:12+05:30",
+      "message": "remove secrets upload yml",
+      "stats": {
+        "additions": 0,
+        "deletions": 74,
+        "total": 74
+      },
+      "branches": [
+        "naitik/upload_secret_to_vault"
+      ]
+    },
+    {
+      "sha": "50853d556781d9d11338974087c95d10ad443a68",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-10T11:56:39+05:30",
+      "message": "fix: upload remaining secrets",
+      "stats": {
+        "additions": 1,
+        "deletions": 17,
+        "total": 18
+      },
+      "branches": [
+        "naitik/upload_secret_to_vault"
+      ]
+    },
+    {
+      "sha": "fa5463e3bf3a40e2f68d62b02a48106c4c826671",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-10T11:52:28+05:30",
+      "message": "upload secrets to vault",
+      "stats": {
+        "additions": 90,
+        "deletions": 0,
+        "total": 90
+      },
+      "branches": [
+        "naitik/upload_secret_to_vault"
+      ]
+    }
+  ],
+  "commit_count": 43,
+  "issues": [
+    {
+      "number": 1705,
+      "title": "fix issue with coolify key reset",
+      "closed_at": "2026-03-10T05:24:03Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1705",
+      "labels": []
+    },
+    {
+      "number": 1704,
+      "title": "integrate vault with current services",
+      "closed_at": "2026-03-10T05:23:58Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1704",
+      "labels": []
+    },
+    {
+      "number": 1712,
+      "title": "KT from Jay",
+      "closed_at": "2026-03-10T05:14:34Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1712",
+      "labels": []
+    },
+    {
+      "number": 1425,
+      "title": "[Bug]:  Refactor get_post_details_with_creator_info function",
+      "closed_at": "2026-03-10T10:31:12Z",
+      "assignee": "ravi-sawlani-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1425",
+      "labels": [
+        "bug",
+        "Backend Dependencies"
+      ]
+    },
+    {
+      "number": 1000,
+      "title": "Crash in 2.7.2",
+      "closed_at": "2026-03-10T17:06:13Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/1000",
+      "labels": [
+        "bug"
+      ]
+    },
+    {
+      "number": 941,
+      "title": "Frozen frames in home feed",
+      "closed_at": "2026-03-10T17:06:23Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/941",
+      "labels": []
+    }
+  ],
+  "issue_count": 6
+}
