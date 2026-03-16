@@ -1,0 +1,1160 @@
+{
+  "date": "2026-03-16",
+  "cached_at": "2026-03-16T18:49:40.840036Z",
+  "commits": [
+    {
+      "sha": "cd9c83621174d9add0006f1cbf1fbfedd68f6901",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-16T18:36:16Z",
+      "message": "feat: deploy ClickHouse with Kafka->MergeTree Snowplow pipeline",
+      "stats": {
+        "additions": 439,
+        "deletions": 7,
+        "total": 446
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "ec494fd810e7229d393bd88af7e618c8bb0009bc",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-16T17:37:25Z",
+      "message": "chore: remove Trino \u2014 ClickHouse will replace as the single query engine",
+      "stats": {
+        "additions": 1,
+        "deletions": 425,
+        "total": 426
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "dacbecb6e6b42c52110564976c4979ce43782ab0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-16T16:59:29Z",
+      "message": "fix: store Trino file metastore in S3 (file:// URI incompatible with fs.native-s3.enabled), remove c",
+      "stats": {
+        "additions": 11,
+        "deletions": 15,
+        "total": 26
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "bdda32df08c18860024a784f918fedada8de4dae",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-16T16:50:55Z",
+      "message": "fix: set fsGroup=1000 at top-level securityContext so PVC mount is writable by trino user",
+      "stats": {
+        "additions": 8,
+        "deletions": 4,
+        "total": 12
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "c81072768695e6c979811ddae0f2d5088b72b410",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-16T16:47:49Z",
+      "message": "fix: set coordinator fsGroup=1000 so trino user can write to catalog PVC",
+      "stats": {
+        "additions": 5,
+        "deletions": 0,
+        "total": 5
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "561d3434f4604bc89856d5e48c71a248e682f72e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-16T16:44:29Z",
+      "message": "fix: set includeCoordinator under coordinator.config (not server.config) \u2014 correct chart path",
+      "stats": {
+        "additions": 6,
+        "deletions": 5,
+        "total": 11
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "7e36d5c015c7473e3400735af870aece64b9d5f5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-16T16:36:04Z",
+      "message": "fix: enable nodeScheduler.includeCoordinator=true for coordinator-only mode",
+      "stats": {
+        "additions": 5,
+        "deletions": 0,
+        "total": 5
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "b518c5e15d972f53e8e2ce90b6e4ade42c3159f9",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-16T16:25:02Z",
+      "message": "fix: add http-server.process-forwarded=true to accept oauth2-proxy X-Forwarded-* headers",
+      "stats": {
+        "additions": 4,
+        "deletions": 0,
+        "total": 4
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "1f32425ff74f11f21e0fdc7cc0d1d87b9def1b49",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-16T16:14:57Z",
+      "message": "fix: remove s3.ssl.enabled (TLS implied by https endpoint in native S3 client)",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "2ccc4e3072be70359ba2657c4cdddf317e217aaa",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-16T16:04:46Z",
+      "message": "fix: migrate Trino catalog to native S3 filesystem (hive.s3.* removed in Trino 435+)",
+      "stats": {
+        "additions": 11,
+        "deletions": 9,
+        "total": 20
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "1e72ca5deaa2bc77d44daa0f0212696109e967b6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-16T16:01:19Z",
+      "message": "fix: use uninstall remediation strategy and reset stalled HelmRelease via requestedAt annotation",
+      "stats": {
+        "additions": 9,
+        "deletions": 0,
+        "total": 9
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "84aaa7fa6c249bbcd1749921909d6aa3f5e9cbbf",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-16T15:54:12Z",
+      "message": "fix: null rollingUpdate to allow Recreate strategy upgrade (Kubernetes rejects mixed spec)",
+      "stats": {
+        "additions": 4,
+        "deletions": 1,
+        "total": 5
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "138d0b8b472ba247fefa4911e438d70f0fa7b735",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-16T15:47:28Z",
+      "message": "fix: set coordinator deployment strategy to Recreate (RWO PVC deadlock on RollingUpdate)",
+      "stats": {
+        "additions": 6,
+        "deletions": 0,
+        "total": 6
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "287a2253eea02f2b439635a97d0ee2c59b3d9546",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-16T15:39:29Z",
+      "message": "fix: move Trino env vars to top-level chart key (coordinator.env is not supported)",
+      "stats": {
+        "additions": 15,
+        "deletions": 14,
+        "total": 29
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "06cfdcbc2242433ec9f4d4fa24bd4302794dde93",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-16T15:31:07Z",
+      "message": "feat: add Trino (chart 1.42.1) and Metabase (v0.59.2.6) with oauth2-proxy and Analytics dashboard se",
+      "stats": {
+        "additions": 675,
+        "deletions": 17,
+        "total": 692
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "5433c470e3c747db38ed912aad5ba45d42ea521b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-16T15:08:03Z",
+      "message": "feat: add Kafka Connect metrics configuration and monitoring resources",
+      "stats": {
+        "additions": 640,
+        "deletions": 1,
+        "total": 641
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "e6bbf7e30ead41199a6c4bf082342086b85bcde9",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-16T14:16:23Z",
+      "message": "fix: update yral-mobile submodule and add partition duration to S3 sink connector configuration",
+      "stats": {
+        "additions": 4,
+        "deletions": 1,
+        "total": 5
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "6ba68662ba27aaee697b47de35ca24442d5144d4",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-16T05:26:24-07:00",
+      "message": "Merge pull request #22 from dolr-ai/renovate/helm-helm-4.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "f4d98512353f9f3bd16ea6bb380e6054c0747be4",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-16T05:24:14-07:00",
+      "message": "Merge pull request #4 from dolr-ai/renovate/fluxcd-flux2-2.x",
+      "stats": {
+        "additions": 56,
+        "deletions": 54,
+        "total": 110
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "83a792948784426396bcf1afdea1409fd598c503",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-16T04:05:15Z",
+      "message": "fix: update yral-mobile submodule to latest commit and add missing newline in settings.json",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "575970cb603db3084033d7d436a06ec6c8f14084",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-16T03:55:49Z",
+      "message": "fix: double vpa-recommender memory limits (OOMKilled after 17d)",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "4d14538d38c825c4d8ee31e8af23a2effccf6f46",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-16T14:37:34+05:30",
+      "message": "fix: update SSH private key variable to use PG_SSH_PRIVATE_KEY for consistency",
+      "stats": {
+        "additions": 5,
+        "deletions": 5,
+        "total": 10
+      },
+      "branches": [
+        "sreyas/per-repo-ssh-deploy-keys"
+      ]
+    },
+    {
+      "sha": "1e4459cd631166c4e9b2ec51fd6bddf4eb4235a9",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-16T14:36:28+05:30",
+      "message": "revert fix ssh",
+      "stats": {
+        "additions": 306,
+        "deletions": 31,
+        "total": 337
+      },
+      "branches": [
+        "sreyas/per-repo-ssh-deploy-keys"
+      ]
+    },
+    {
+      "sha": "663f00aaef221cb096addbb217603a43529b42b5",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-16T14:34:49+05:30",
+      "message": "temporary: add a proper key for pg server",
+      "stats": {
+        "additions": 31,
+        "deletions": 306,
+        "total": 337
+      },
+      "branches": [
+        "sreyas/per-repo-ssh-deploy-keys"
+      ]
+    },
+    {
+      "sha": "073ca2f5e2d82a16cef768b936247e29716f9c51",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-16T14:10:00+05:30",
+      "message": "feat: implement SSH key rotation workflow with Vault integration for pg backup",
+      "stats": {
+        "additions": 88,
+        "deletions": 1,
+        "total": 89
+      },
+      "branches": [
+        "sreyas/per-repo-ssh-deploy-keys"
+      ]
+    },
+    {
+      "sha": "e0d71d5ba0e7528746b76c297652df6abcb25ca4",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-16T14:01:09+05:30",
+      "message": "fix: simplify SSH connectivity check by removing redundant options",
+      "stats": {
+        "additions": 1,
+        "deletions": 5,
+        "total": 6
+      },
+      "branches": [
+        "sreyas/per-repo-ssh-deploy-keys"
+      ]
+    },
+    {
+      "sha": "c4ac011e487f18f858594314d0cb479948dcf735",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-16T13:50:37+05:30",
+      "message": "refactor: restructure deployment workflow for bare metal servers and enhance SSH key management",
+      "stats": {
+        "additions": 306,
+        "deletions": 27,
+        "total": 333
+      },
+      "branches": [
+        "sreyas/per-repo-ssh-deploy-keys"
+      ]
+    },
+    {
+      "sha": "4929866773fd51b9fa0bb2ed689bcbdaffa1f42d",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-16T13:48:54+05:30",
+      "message": "temporary: update SSH key management process and streamline Vault integration",
+      "stats": {
+        "additions": 27,
+        "deletions": 306,
+        "total": 333
+      },
+      "branches": [
+        "sreyas/per-repo-ssh-deploy-keys"
+      ]
+    },
+    {
+      "sha": "8e93c4df1be388798d85b7533f1172637ec4f0b4",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-16T12:44:38+05:30",
+      "message": "fix: correct typo for updating private key in Vault",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "sreyas/per-repo-ssh-deploy-keys"
+      ]
+    },
+    {
+      "sha": "323282807bb46c1b3ccc948a09c1213ab2bd9898",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-16T12:34:01+05:30",
+      "message": "fix: simplify Vault authentication process and update private key handling",
+      "stats": {
+        "additions": 9,
+        "deletions": 22,
+        "total": 31
+      },
+      "branches": [
+        "sreyas/per-repo-ssh-deploy-keys"
+      ]
+    },
+    {
+      "sha": "41e77ee0d68c11d21ce23db450fd73138d6797d2",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-16T12:21:21+05:30",
+      "message": "fix: streamline installation of Vault CLI and update private key in Vault",
+      "stats": {
+        "additions": 21,
+        "deletions": 21,
+        "total": 42
+      },
+      "branches": [
+        "sreyas/per-repo-ssh-deploy-keys"
+      ]
+    },
+    {
+      "sha": "d1403459f2fa5d00dfb96a16d3cbbf375e71d6f7",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-16T12:18:37+05:30",
+      "message": "fix: install Vault CLI and update private key using OIDC token",
+      "stats": {
+        "additions": 22,
+        "deletions": 13,
+        "total": 35
+      },
+      "branches": [
+        "sreyas/per-repo-ssh-deploy-keys"
+      ]
+    },
+    {
+      "sha": "2b36254685c3ca95ff43d8caaf998e47e885571e",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-16T11:42:05+05:30",
+      "message": "fix: mask VAULT_TOKEN in logs for security",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "sreyas/per-repo-ssh-deploy-keys"
+      ]
+    },
+    {
+      "sha": "9901e216c8a0544aa972027a06939fd9e4f5b502",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-16T11:36:02+05:30",
+      "message": "rotate ssh keys",
+      "stats": {
+        "additions": 111,
+        "deletions": 0,
+        "total": 111
+      },
+      "branches": [
+        "sreyas/per-repo-ssh-deploy-keys"
+      ]
+    },
+    {
+      "sha": "6986f6fd3618e9b0e3f0127d913345e5adc57f52",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-16T13:24:38+05:30",
+      "message": "feat: add workflow to update YRAL SSH key and integrate with Vault",
+      "stats": {
+        "additions": 86,
+        "deletions": 0,
+        "total": 86
+      },
+      "branches": [
+        "sreyas/fix-ssh-yral"
+      ]
+    },
+    {
+      "sha": "35a9448255eaad42b87c47a7124a2cbcb3724c73",
+      "author": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-16T23:25:29+05:30",
+      "message": "feat: setup metabase",
+      "stats": {
+        "additions": 44,
+        "deletions": 2,
+        "total": 46
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "64f50569cf80fa7896fdbc87cf48309996f8103f",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-16T23:08:30+05:30",
+      "message": "use h2 database for metabase",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "main",
+        "feat/setup-metabase-for-ai-chat"
+      ]
+    },
+    {
+      "sha": "e99524fb8619a90233248c12ffd035363ff62f19",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-16T23:05:58+05:30",
+      "message": "cleanup up docker compose",
+      "stats": {
+        "additions": 2,
+        "deletions": 22,
+        "total": 24
+      },
+      "branches": [
+        "main",
+        "feat/setup-metabase-for-ai-chat"
+      ]
+    },
+    {
+      "sha": "13c1022d846d6b807005024b96cc0317db21e415",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-16T23:00:34+05:30",
+      "message": "use h2 database for metabase",
+      "stats": {
+        "additions": 5,
+        "deletions": 34,
+        "total": 39
+      },
+      "branches": [
+        "main",
+        "feat/setup-metabase-for-ai-chat"
+      ]
+    },
+    {
+      "sha": "f97ae4bc2c566ead26f1c5299dd8b360c5f31b1d",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-16T16:00:45+05:30",
+      "message": "fix postgres url and db pass for yral-chat app",
+      "stats": {
+        "additions": 7,
+        "deletions": 5,
+        "total": 12
+      },
+      "branches": [
+        "main",
+        "feat/setup-metabase-for-ai-chat"
+      ]
+    },
+    {
+      "sha": "9aa1f0448b94526d0a7cd04168d4fda8a3bcf79e",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-16T15:53:19+05:30",
+      "message": "setup metabase container for ai chats",
+      "stats": {
+        "additions": 91,
+        "deletions": 4,
+        "total": 95
+      },
+      "branches": [
+        "main",
+        "feat/setup-metabase-for-ai-chat"
+      ]
+    },
+    {
+      "sha": "0bda5997a600da6ad70f42f2e15a034dbbedfd03",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/data-science-directed-acyclic-graphs",
+      "timestamp": "2026-03-16T21:16:15+05:30",
+      "message": "Merge pull request #15 from dolr-ai/feat/clickhouse-dual-write-phase3",
+      "stats": {
+        "additions": 119,
+        "deletions": 28,
+        "total": 147
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7fe05f3e0197a6236730ae0e986fcdd7782ba5de",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/data-science-directed-acyclic-graphs",
+      "timestamp": "2026-03-16T21:01:15+05:30",
+      "message": "Read ClickHouse connection flags from Airflow connection",
+      "stats": {
+        "additions": 119,
+        "deletions": 28,
+        "total": 147
+      },
+      "branches": [
+        "main",
+        "feat/clickhouse-dual-write-phase3"
+      ]
+    },
+    {
+      "sha": "c93395cb2b702180b60c6c7840b77e95e6b59898",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/data-science-directed-acyclic-graphs",
+      "timestamp": "2026-03-16T17:51:33+05:30",
+      "message": "Merge pull request #14 from dolr-ai/feat/clickhouse-dual-write-phase3",
+      "stats": {
+        "additions": 836,
+        "deletions": 18,
+        "total": 854
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "bd153207b3d8aec206f44ea7d9e9fa6f14d15229",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/data-science-directed-acyclic-graphs",
+      "timestamp": "2026-03-16T17:49:49+05:30",
+      "message": "removed the Install clickhouse-connect in Cloud Composer step from ci.yml",
+      "stats": {
+        "additions": 0,
+        "deletions": 13,
+        "total": 13
+      },
+      "branches": [
+        "main",
+        "feat/clickhouse-dual-write-phase3"
+      ]
+    },
+    {
+      "sha": "8fdffceca050ee35d306994d1d2b2086b4bf3c15",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/data-science-directed-acyclic-graphs",
+      "timestamp": "2026-03-16T17:31:38+05:30",
+      "message": "Add ClickHouse dual-write for Phase 3 DAGs",
+      "stats": {
+        "additions": 849,
+        "deletions": 18,
+        "total": 867
+      },
+      "branches": [
+        "main",
+        "feat/clickhouse-dual-write-phase3"
+      ]
+    },
+    {
+      "sha": "8b0be0313a4c9a79e95d1a5bb17d5b137b59d777",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-16T14:47:01Z",
+      "message": "feat: Update test commands in documentation for clarity",
+      "stats": {
+        "additions": 5,
+        "deletions": 5,
+        "total": 10
+      },
+      "branches": [
+        "push-all-events-to-kafka"
+      ]
+    },
+    {
+      "sha": "61933bc7a39aaea81151e94b9982ae1334fe0ebf",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-16T14:11:35Z",
+      "message": "fix: Correct tracker ID in SnowplowAnalyticsProvider",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "push-all-events-to-kafka"
+      ]
+    },
+    {
+      "sha": "34b152b141a23a3265be8577480870a00afd1cba",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-16T14:08:13Z",
+      "message": "feat: Update Snowplow event tracking configuration and fix import statement",
+      "stats": {
+        "additions": 8,
+        "deletions": 9,
+        "total": 17
+      },
+      "branches": [
+        "push-all-events-to-kafka"
+      ]
+    },
+    {
+      "sha": "f9e0cfa0abb4549235bfc1cfdcec1668c41f96c7",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-16T13:24:22Z",
+      "message": "feat: Add gradle-daemon-jvm.properties to .gitignore",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "push-all-events-to-kafka"
+      ]
+    },
+    {
+      "sha": "b110733cc9e8ad82fe8c5eef8a2fe568738fae3d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-16T13:24:15Z",
+      "message": "feat: Remove gradle-daemon-jvm.properties file and update toolchain vendor",
+      "stats": {
+        "additions": 0,
+        "deletions": 3,
+        "total": 3
+      },
+      "branches": [
+        "push-all-events-to-kafka"
+      ]
+    },
+    {
+      "sha": "dc6bc452a71416df2c4e350aed63ac361cf5ad1f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-16T13:08:07Z",
+      "message": "feat: Remove Cocoapods updates from Dependabot configuration",
+      "stats": {
+        "additions": 0,
+        "deletions": 5,
+        "total": 5
+      },
+      "branches": [
+        "push-all-events-to-kafka"
+      ]
+    },
+    {
+      "sha": "b0c2c625a383c342cf51032710f6a33cedf6ee7c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-16T13:01:33Z",
+      "message": "feat: Update GitHub Actions configuration for Dependabot version updates",
+      "stats": {
+        "additions": 42,
+        "deletions": 1,
+        "total": 43
+      },
+      "branches": [
+        "push-all-events-to-kafka"
+      ]
+    },
+    {
+      "sha": "f85dfbfdb882f8e4ed37ed49d546c6d85a633aec",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-16T10:30:06+05:30",
+      "message": "Merge remote-tracking branch 'origin/develop' into push-all-events-to-kafka",
+      "stats": {
+        "additions": 1076,
+        "deletions": 509,
+        "total": 1585
+      },
+      "branches": [
+        "push-all-events-to-kafka"
+      ]
+    },
+    {
+      "sha": "421722e6f2168c2282db21618a4b904b7a3572a6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-16T04:04:57Z",
+      "message": "feat: Update devcontainer configuration and post-create script for improved SSH and Git integration",
+      "stats": {
+        "additions": 13,
+        "deletions": 6,
+        "total": 19
+      },
+      "branches": [
+        "push-all-events-to-kafka"
+      ]
+    },
+    {
+      "sha": "de5f8ea09bb3ee58deced5cb278eb5f16822065d",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-16T20:35:10+05:30",
+      "message": "feat: Add subscribe button to influencer profile that triggers daily_product purchase",
+      "stats": {
+        "additions": 94,
+        "deletions": 0,
+        "total": 94
+      },
+      "branches": [
+        "feature/subscribe-button"
+      ]
+    },
+    {
+      "sha": "cc4093fc2cd2714a6c2ac45bc7d4beedde4d5b0a",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-16T20:51:52+05:30",
+      "message": "feat: Remove feed tab bifurcation, show chat/skip buttons for influencer videos only",
+      "stats": {
+        "additions": 36,
+        "deletions": 133,
+        "total": 169
+      },
+      "branches": [
+        "feature/single-feed"
+      ]
+    },
+    {
+      "sha": "01e396ea5cd4ec058d57ab328a69e8e3c253069c",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-16T16:34:15+05:30",
+      "message": "feat: overhaul deployment workflow for off-chain-agent with SSH key rotation and enhanced server pre",
+      "stats": {
+        "additions": 379,
+        "deletions": 81,
+        "total": 460
+      },
+      "branches": [
+        "sreyas/per-repo-ssh-keys"
+      ]
+    },
+    {
+      "sha": "262870cdd74acf19a7c717f0afb345c089ea0306",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-16T16:33:08+05:30",
+      "message": "temp ssh user setup",
+      "stats": {
+        "additions": 81,
+        "deletions": 379,
+        "total": 460
+      },
+      "branches": [
+        "sreyas/per-repo-ssh-keys"
+      ]
+    },
+    {
+      "sha": "820eab539bee0e7d57d42312c54206378718d498",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-16T16:32:21+05:30",
+      "message": "feat: exclude .ssh directory when syncing deployment files to server",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "sreyas/per-repo-ssh-keys"
+      ]
+    },
+    {
+      "sha": "c52ea39ac4fa604c157af26a58ebb5e62133357b",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-16T16:20:24+05:30",
+      "message": "feat: add permissions section to deploy-baremetal workflow",
+      "stats": {
+        "additions": 5,
+        "deletions": 0,
+        "total": 5
+      },
+      "branches": [
+        "sreyas/per-repo-ssh-keys"
+      ]
+    },
+    {
+      "sha": "aa3f8cebea738533aec2c5f5d32f8a5e17817129",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-16T16:12:48+05:30",
+      "message": "feat: overhaul deployment workflow for off-chain-agent with SSH key rotation",
+      "stats": {
+        "additions": 376,
+        "deletions": 84,
+        "total": 460
+      },
+      "branches": [
+        "sreyas/per-repo-ssh-keys"
+      ]
+    },
+    {
+      "sha": "d20d5d06d465f879ee114ea1389f777d8d475e5d",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-16T16:10:40+05:30",
+      "message": "feat: enhance SSH user setup workflow with key generation and Vault integration",
+      "stats": {
+        "additions": 86,
+        "deletions": 57,
+        "total": 143
+      },
+      "branches": [
+        "sreyas/per-repo-ssh-keys"
+      ]
+    },
+    {
+      "sha": "cff86c44d0ce5e74c2773ae4d61fa09ed1733af5",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-16T16:04:08+05:30",
+      "message": "setup user temporary wf",
+      "stats": {
+        "additions": 82,
+        "deletions": 295,
+        "total": 377
+      },
+      "branches": [
+        "sreyas/per-repo-ssh-keys"
+      ]
+    },
+    {
+      "sha": "b559919be3a7a9a1a815435063f4ea22bd975bc4",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-or-not",
+      "timestamp": "2026-03-16T09:35:52+05:30",
+      "message": "Initial commit",
+      "stats": {
+        "additions": 21,
+        "deletions": 0,
+        "total": 21
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 65,
+  "issues": [],
+  "issue_count": 0
+}
