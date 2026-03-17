@@ -1,0 +1,736 @@
+{
+  "date": "2026-03-17",
+  "cached_at": "2026-03-17T18:49:44.545726Z",
+  "commits": [
+    {
+      "sha": "f94e029af3dd105e092c2298ec8af05648970ee4",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-17T23:52:56+05:30",
+      "message": "feat: Replace wallet UI with new INR earnings design",
+      "stats": {
+        "additions": 357,
+        "deletions": 585,
+        "total": 942
+      },
+      "branches": [
+        "feature/new-wallet-ui"
+      ]
+    },
+    {
+      "sha": "446cc7185fdcf6362447a6b498e7054c7e01fb8e",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-17T13:11:46+05:30",
+      "message": "Merge pull request #999 from dolr-ai/964-firebase-cleanup",
+      "stats": {
+        "additions": 215,
+        "deletions": 2111,
+        "total": 2326
+      },
+      "branches": [
+        "feature/new-wallet-ui",
+        "develop",
+        "automated-testing-on-ci-for-all-pull-requests"
+      ]
+    },
+    {
+      "sha": "b48300f0106bd3dd2c6fffa8c4b857286bf11037",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-17T10:53:38+05:30",
+      "message": "Merge pull request #1018 from dolr-ai/push-all-events-to-kafka",
+      "stats": {
+        "additions": 654,
+        "deletions": 8,
+        "total": 662
+      },
+      "branches": [
+        "feature/new-wallet-ui",
+        "develop",
+        "dependabot/pip/functions/mixpanel-5.1.0",
+        "dependabot/pip/functions/google-cloud-tasks-2.21.0",
+        "dependabot/pip/functions/firebase-functions-0.5.0",
+        "dependabot/pip/functions/firebase-admin-7.2.0",
+        "dependabot/gradle/org.robolectric-robolectric-4.16.1",
+        "dependabot/gradle/org.jetbrains.kotlinx-kotlinx-datetime-0.7.1-0.6.x-compat",
+        "dependabot/gradle/ktor-3.4.1",
+        "dependabot/gradle/com.facebook.android-facebook-core-18.1.3",
+        "dependabot/gradle/coil-3.4.0",
+        "dependabot/github_actions/step-security/changed-files-47",
+        "dependabot/github_actions/google-github-actions/auth-3",
+        "dependabot/github_actions/actions/setup-java-5",
+        "dependabot/github_actions/actions/checkout-6",
+        "dependabot/github_actions/actions/cache-5",
+        "dependabot/cargo/shared/rust/rust-agent/rust-agent-uniffi/yral-metadata-types-c8db8ef",
+        "dependabot/cargo/shared/rust/rust-agent/rust-agent-uniffi/uniffi-0.31.0",
+        "dependabot/cargo/shared/rust/rust-agent/rust-agent-uniffi/tokio-1.50.0",
+        "dependabot/cargo/shared/rust/rust-agent/rust-agent-uniffi/ic-agent-0.46.2",
+        "dependabot/cargo/shared/rust/rust-agent/rust-agent-uniffi/candid-0.10.25",
+        "dependabot/cargo/rust-agent/yral-types-f83d1b2",
+        "dependabot/cargo/rust-agent/yral-metadata-client-c8db8ef",
+        "dependabot/cargo/rust-agent/yral-identity-f83d1b2",
+        "dependabot/cargo/rust-agent/yral-canisters-client-f83d1b2",
+        "dependabot/cargo/rust-agent/candid-0.10.25",
+        "create-pull-request/update-did-files-v3.5.9",
+        "automated-testing-on-ci-for-all-pull-requests"
+      ]
+    },
+    {
+      "sha": "e0ae473ca4119e8842bdd27b595174677d0ccf26",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-17T23:41:20+05:30",
+      "message": "Merge pull request #1050 from dolr-ai/feature/subscribe-button",
+      "stats": {
+        "additions": 156,
+        "deletions": 3,
+        "total": 159
+      },
+      "branches": [
+        "develop"
+      ]
+    },
+    {
+      "sha": "e6a2d9b4b3af0a9e8fecfc26ec32c54d62bbb2ae",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-17T23:33:26+05:30",
+      "message": "fix: Fixes iOS build",
+      "stats": {
+        "additions": 9,
+        "deletions": 9,
+        "total": 18
+      },
+      "branches": [
+        "automated-testing-on-ci-for-all-pull-requests"
+      ]
+    },
+    {
+      "sha": "88ee10bd7f8c89f9e3cb1ba36cb2a7d0693d19a7",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-17T21:16:16+05:30",
+      "message": "chore: Provides username and token in swift-lint-build-test",
+      "stats": {
+        "additions": 5,
+        "deletions": 0,
+        "total": 5
+      },
+      "branches": [
+        "automated-testing-on-ci-for-all-pull-requests"
+      ]
+    },
+    {
+      "sha": "c8aca8a40b53fc9e19aad1b5dc54289e4adb7b71",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-17T20:52:50+05:30",
+      "message": "chore: Fixes swift-lint-build-test",
+      "stats": {
+        "additions": 4,
+        "deletions": 2,
+        "total": 6
+      },
+      "branches": [
+        "automated-testing-on-ci-for-all-pull-requests"
+      ]
+    },
+    {
+      "sha": "689633675053ff7cb86c5c8fc5fd4684ab6983cb",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-17T15:20:45Z",
+      "message": "fix: Correct Xcode version setup in CI workflow for consistency",
+      "stats": {
+        "additions": 2,
+        "deletions": 4,
+        "total": 6
+      },
+      "branches": [
+        "automated-testing-on-ci-for-all-pull-requests"
+      ]
+    },
+    {
+      "sha": "281615e33b091caeabffa582fc308d6869b4a43a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-17T15:19:36Z",
+      "message": "feat: Update Xcode version to latest stable in CI workflow",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "automated-testing-on-ci-for-all-pull-requests"
+      ]
+    },
+    {
+      "sha": "fbf67029a68e36a37dfc0f0d37bf56709152c6a6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-17T06:46:22-07:00",
+      "message": "Potential fix for code scanning alert no. 56: Workflow does not contain permissions",
+      "stats": {
+        "additions": 3,
+        "deletions": 0,
+        "total": 3
+      },
+      "branches": [
+        "automated-testing-on-ci-for-all-pull-requests"
+      ]
+    },
+    {
+      "sha": "1fb7feb0be487ed4eae31bda8b4c48f87ca6e3ce",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-17T13:42:50Z",
+      "message": "feat: Reintroduce Gradle and SwiftLint workflows for CI testing",
+      "stats": {
+        "additions": 94,
+        "deletions": 19,
+        "total": 113
+      },
+      "branches": [
+        "automated-testing-on-ci-for-all-pull-requests"
+      ]
+    },
+    {
+      "sha": "df0f8ee53f9b35368be7062fb51b20d0b399352f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-17T12:55:16Z",
+      "message": "feat: Remove obsolete tasks from todo list",
+      "stats": {
+        "additions": 0,
+        "deletions": 2,
+        "total": 2
+      },
+      "branches": [
+        "automated-testing-on-ci-for-all-pull-requests"
+      ]
+    },
+    {
+      "sha": "cad8b7b8f10c75b6545ef4b6f49cce01665317d9",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-17T12:55:13Z",
+      "message": "Implement feature X to enhance user experience and fix bug Y in module Z",
+      "stats": {
+        "additions": 0,
+        "deletions": 203203,
+        "total": 203203
+      },
+      "branches": [
+        "automated-testing-on-ci-for-all-pull-requests"
+      ]
+    },
+    {
+      "sha": "d177cb824aa29fe2875907c5de05923a61cc3913",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-17T12:54:05Z",
+      "message": "feat: Enhance feature flag management and routing tests with new functionality and validations",
+      "stats": {
+        "additions": 45,
+        "deletions": 12,
+        "total": 57
+      },
+      "branches": [
+        "automated-testing-on-ci-for-all-pull-requests"
+      ]
+    },
+    {
+      "sha": "be7677b7f91b6329b45f4989697745922634036f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-17T08:40:52Z",
+      "message": "feat: Update todo list to indicate tests run on devcontainer CI",
+      "stats": {
+        "additions": 0,
+        "deletions": 1,
+        "total": 1
+      },
+      "branches": [
+        "automated-testing-on-ci-for-all-pull-requests"
+      ]
+    },
+    {
+      "sha": "3c8efdcf220ab88ae09e6441e7c53c183b84441b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-17T08:29:05Z",
+      "message": "feat: Update postCreate.sh to install Python packages from pyproject.toml",
+      "stats": {
+        "additions": 4,
+        "deletions": 6,
+        "total": 10
+      },
+      "branches": [
+        "automated-testing-on-ci-for-all-pull-requests"
+      ]
+    },
+    {
+      "sha": "eb3d787eb14196e6db960a964c646dc6229a597d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-17T08:26:13Z",
+      "message": "feat: Update .gitignore to include Python build artifacts and add pyproject.toml for project configu",
+      "stats": {
+        "additions": 20,
+        "deletions": 0,
+        "total": 20
+      },
+      "branches": [
+        "automated-testing-on-ci-for-all-pull-requests"
+      ]
+    },
+    {
+      "sha": "76f6f290b4f7724153fddd5b97ed6f74e3bb88f1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-17T08:04:35Z",
+      "message": "feat: Add CI workflow for running Gradle tests on push events",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "automated-testing-on-ci-for-all-pull-requests"
+      ]
+    },
+    {
+      "sha": "6d72819185bc6a2ddd240d117fdf1c38930c64de",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-17T08:03:25Z",
+      "message": "feat: Add CI workflow for running Gradle tests on pull requests and update todo list",
+      "stats": {
+        "additions": 78,
+        "deletions": 0,
+        "total": 78
+      },
+      "branches": [
+        "automated-testing-on-ci-for-all-pull-requests"
+      ]
+    },
+    {
+      "sha": "6073fec2e92cb6c8ccd931ff15f0b0e8e7c3d85b",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-03-17T17:55:32+05:30",
+      "message": "add implementation for fetch  main account from bot account",
+      "stats": {
+        "additions": 270,
+        "deletions": 3,
+        "total": 273
+      },
+      "branches": [
+        "feat/implement-wallet-for-user-bot-subscription"
+      ]
+    },
+    {
+      "sha": "5f07d16df364be7ddd69922c7b06191736c4d6ef",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-03-17T17:34:03+05:30",
+      "message": "add apis and implementation for transactions and user balance",
+      "stats": {
+        "additions": 259,
+        "deletions": 7,
+        "total": 266
+      },
+      "branches": [
+        "feat/implement-wallet-for-user-bot-subscription"
+      ]
+    },
+    {
+      "sha": "88ac4bba48b080b6cc814ccaf37d07bf2e32b1d1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-17T05:23:43-07:00",
+      "message": "Merge pull request #23 from dolr-ai/renovate/kubernetes-sigs-gateway-api-1.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "ce051db5fdafc7cb3bfa4ce62cab5614cfbaa395",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-17T12:22:48Z",
+      "message": "feat: add dependabot configuration for automated dependency updates",
+      "stats": {
+        "additions": 17,
+        "deletions": 1,
+        "total": 18
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-0.51.0-kafka-4.2.0"
+      ]
+    },
+    {
+      "sha": "8b8563756681068e6a400409083f617ff0d427ca",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-17T06:23:35Z",
+      "message": "fix(metabase): restrict oauth2-proxy access to internal-dashboard-user group",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-0.51.0-kafka-4.2.0"
+      ]
+    },
+    {
+      "sha": "bec44d5dbb6871721470b5ad4facd7d86b222bda",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-17T04:51:12Z",
+      "message": "fix: use wait_for_connection instead of bare ssh in upgrade-control-plane role",
+      "stats": {
+        "additions": 9,
+        "deletions": 9,
+        "total": 18
+      },
+      "branches": [
+        "renovate/longhorn-1.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-0.51.0-kafka-4.2.0"
+      ]
+    },
+    {
+      "sha": "20dd24ee8df041c48834fd08a56afddd9a8025be",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-17T12:43:56+05:30",
+      "message": "revert rotatation",
+      "stats": {
+        "additions": 221,
+        "deletions": 86,
+        "total": 307
+      },
+      "branches": [
+        "sreyas/per-repo-ssh-deploy-keys"
+      ]
+    },
+    {
+      "sha": "3af0767b1c374609c4bfc183bb107088f11b4af5",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-17T12:42:09+05:30",
+      "message": "rotate test",
+      "stats": {
+        "additions": 86,
+        "deletions": 221,
+        "total": 307
+      },
+      "branches": [
+        "sreyas/per-repo-ssh-deploy-keys"
+      ]
+    },
+    {
+      "sha": "2d39172dbf411364b2d6b2b35b18b1c3d0d11446",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-17T12:36:59+05:30",
+      "message": "deploy to bare metal servers",
+      "stats": {
+        "additions": 207,
+        "deletions": 116,
+        "total": 323
+      },
+      "branches": [
+        "sreyas/per-repo-ssh-deploy-keys"
+      ]
+    },
+    {
+      "sha": "aa5385b9a68f979d2a53f8841686ab88a288e8d3",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-17T12:34:39+05:30",
+      "message": "set permission properly",
+      "stats": {
+        "additions": 19,
+        "deletions": 6,
+        "total": 25
+      },
+      "branches": [
+        "sreyas/per-repo-ssh-deploy-keys"
+      ]
+    },
+    {
+      "sha": "731960eaf1410c90b77c66dfea2bda5b7ba3a3e8",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-17T12:29:56+05:30",
+      "message": "fix: enhance SSH key rotation workflow with combined server list and environment variable usage",
+      "stats": {
+        "additions": 4,
+        "deletions": 4,
+        "total": 8
+      },
+      "branches": [
+        "sreyas/per-repo-ssh-deploy-keys"
+      ]
+    },
+    {
+      "sha": "2bc991f1d71c365b8bb76fcb2916b7568a41bbc7",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-17T12:26:09+05:30",
+      "message": "fix: update SSH key rotation workflow to use combined server list",
+      "stats": {
+        "additions": 101,
+        "deletions": 205,
+        "total": 306
+      },
+      "branches": [
+        "sreyas/per-repo-ssh-deploy-keys"
+      ]
+    },
+    {
+      "sha": "8d0f4a48f379a3fe3785e310392631c732a433aa",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-17T12:22:15+05:30",
+      "message": "revert",
+      "stats": {
+        "additions": 222,
+        "deletions": 87,
+        "total": 309
+      },
+      "branches": [
+        "sreyas/per-repo-ssh-deploy-keys"
+      ]
+    },
+    {
+      "sha": "8a1a4414efa8cffa523593cfeffb02ac72d7a4dc",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-17T12:19:16+05:30",
+      "message": "fix: update SSH private key reference to use secrets for security",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "sreyas/per-repo-ssh-deploy-keys"
+      ]
+    },
+    {
+      "sha": "89729000eddf9912c330e3717d8ac838e24b8925",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-17T12:11:29+05:30",
+      "message": "fix: update SSH private key reference and correct user for key rotation",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "sreyas/per-repo-ssh-deploy-keys"
+      ]
+    },
+    {
+      "sha": "6687099b90e616ec02d1f846d07fa49c0b2e0c8f",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-17T12:03:31+05:30",
+      "message": "temporary: rorate ssh",
+      "stats": {
+        "additions": 86,
+        "deletions": 221,
+        "total": 307
+      },
+      "branches": [
+        "sreyas/per-repo-ssh-deploy-keys"
+      ]
+    },
+    {
+      "sha": "7ad1f3f77812e925b633eaf4ca01ed35eb523d90",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-17T11:25:41+05:30",
+      "message": "refactor: remove SSH key rotation job from backup workflow",
+      "stats": {
+        "additions": 1,
+        "deletions": 88,
+        "total": 89
+      },
+      "branches": [
+        "sreyas/per-repo-ssh-deploy-keys"
+      ]
+    },
+    {
+      "sha": "cd937d69741892e75f18f8da1eb95920f44167fe",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-17T11:24:25+05:30",
+      "message": "feat: sepearate SSH key rotation job into it's own workflow",
+      "stats": {
+        "additions": 119,
+        "deletions": 110,
+        "total": 229
+      },
+      "branches": [
+        "sreyas/per-repo-ssh-deploy-keys"
+      ]
+    },
+    {
+      "sha": "18e0dd78220e3b50ed43411aea2ead6074ad587b",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-or-not",
+      "timestamp": "2026-03-17T17:31:37+05:30",
+      "message": "initial folder structre for service",
+      "stats": {
+        "additions": 1425,
+        "deletions": 0,
+        "total": 1425
+      },
+      "branches": [
+        "naitik/daily-streaks"
+      ]
+    },
+    {
+      "sha": "189f8f52814a1324b08948e22f95ded57d6f5276",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-03-17T13:11:10+05:30",
+      "message": "seperate rotate ssh into seperate workflow",
+      "stats": {
+        "additions": 108,
+        "deletions": 107,
+        "total": 215
+      },
+      "branches": [
+        "sreyas/repo-specific-ssh"
+      ]
+    },
+    {
+      "sha": "9346137f358b19805899d7415b7f65c47082afaa",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-17T12:58:21+05:30",
+      "message": "revert unnecessary changes",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "sreyas/per-repo-ssh-keys"
+      ]
+    },
+    {
+      "sha": "bffdb6b0fdbd18a0f599ca85c2bddac3a09c0ecc",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-17T12:54:15+05:30",
+      "message": "minor changes",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "sreyas/per-repo-ssh-keys"
+      ]
+    },
+    {
+      "sha": "9da4de88d2fde0ea78591ed0e37a4cd06730a074",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-17T11:32:40+05:30",
+      "message": "feat: seperate SSH key rotation job into a speicificworkflow for off-chain-agent",
+      "stats": {
+        "additions": 109,
+        "deletions": 102,
+        "total": 211
+      },
+      "branches": [
+        "sreyas/per-repo-ssh-keys"
+      ]
+    }
+  ],
+  "commit_count": 42,
+  "issues": [
+    {
+      "number": 1013,
+      "title": "add a subscribe button to all bots (basis new flow)",
+      "closed_at": "2026-03-17T18:11:21Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/1013",
+      "labels": []
+    },
+    {
+      "number": 1012,
+      "title": "Replace bottom nav tournaments by new wallet",
+      "closed_at": "2026-03-17T05:27:31Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/1012",
+      "labels": []
+    },
+    {
+      "number": 1011,
+      "title": "remove leaderboard + how to play + wallet from feed",
+      "closed_at": "2026-03-17T05:27:19Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/1011",
+      "labels": []
+    },
+    {
+      "number": 1010,
+      "title": "Remove tournaments",
+      "closed_at": "2026-03-17T05:28:01Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/1010",
+      "labels": []
+    }
+  ],
+  "issue_count": 4
+}
