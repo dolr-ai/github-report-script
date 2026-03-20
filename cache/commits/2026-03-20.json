@@ -1,0 +1,750 @@
+{
+  "date": "2026-03-20",
+  "cached_at": "2026-03-20T18:48:08.936835Z",
+  "commits": [
+    {
+      "sha": "c016bfd901b10cecfb5469bdee1af8a66967b902",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-20T10:38:12-07:00",
+      "message": "Merge pull request #1055 from dolr-ai/develop",
+      "stats": {
+        "additions": 1822,
+        "deletions": 205728,
+        "total": 207550
+      },
+      "branches": [
+        "main",
+        "dependabot/pip/functions/firebase-admin-7.3.0",
+        "dependabot/cargo/shared/rust/rust-agent/rust-agent-uniffi/candid-0.10.26",
+        "dependabot/cargo/rust-agent/candid-0.10.26"
+      ]
+    },
+    {
+      "sha": "4c7649b322f3671bd577291c9124fa82be31bf81",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-20T16:05:38Z",
+      "message": "ci: update refFilterForPush to main branch for Gradle tests workflow",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main",
+        "dependabot/pip/functions/firebase-admin-7.3.0",
+        "dependabot/cargo/shared/rust/rust-agent/rust-agent-uniffi/candid-0.10.26",
+        "dependabot/cargo/rust-agent/candid-0.10.26"
+      ]
+    },
+    {
+      "sha": "49ebf1130fbf1675e7537588508576ddfb8794b6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-20T15:05:31Z",
+      "message": "ci: remove obsolete iOS staging distribution workflow and add deployment workflows for Apple App Sto",
+      "stats": {
+        "additions": 7,
+        "deletions": 45,
+        "total": 52
+      },
+      "branches": [
+        "main",
+        "develop-bk",
+        "dependabot/pip/functions/firebase-admin-7.3.0",
+        "dependabot/cargo/shared/rust/rust-agent/rust-agent-uniffi/candid-0.10.26",
+        "dependabot/cargo/rust-agent/candid-0.10.26"
+      ]
+    },
+    {
+      "sha": "71496c9649da752f052cd2ce312866b721bd024d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-20T07:46:09-07:00",
+      "message": "Merge pull request #1049 from dolr-ai/automated-testing-on-ci-for-all-pull-requests",
+      "stats": {
+        "additions": 691,
+        "deletions": 203514,
+        "total": 204205
+      },
+      "branches": [
+        "main",
+        "feature/new-wallet-ui",
+        "develop-bk",
+        "dependabot/pip/functions/firebase-admin-7.3.0",
+        "dependabot/github_actions/actions/setup-java-5",
+        "dependabot/github_actions/actions/checkout-6",
+        "dependabot/github_actions/actions/cache-5",
+        "dependabot/cargo/shared/rust/rust-agent/rust-agent-uniffi/candid-0.10.26",
+        "dependabot/cargo/rust-agent/candid-0.10.26"
+      ]
+    },
+    {
+      "sha": "3a7f361db3bd6055ea61bc46aa95ec21748d7418",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-20T20:06:09+05:30",
+      "message": "Fix/ios action fix (#1053)",
+      "stats": {
+        "additions": 38,
+        "deletions": 16,
+        "total": 54
+      },
+      "branches": [
+        "main",
+        "feature/new-wallet-ui",
+        "develop-bk",
+        "dependabot/pip/functions/firebase-admin-7.3.0",
+        "dependabot/github_actions/actions/setup-java-5",
+        "dependabot/github_actions/actions/checkout-6",
+        "dependabot/github_actions/actions/cache-5",
+        "dependabot/cargo/shared/rust/rust-agent/rust-agent-uniffi/candid-0.10.26",
+        "dependabot/cargo/rust-agent/candid-0.10.26"
+      ]
+    },
+    {
+      "sha": "c5f2ec30db6993361019c98c72dc57125bd0fb66",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-20T06:42:24-07:00",
+      "message": "ci: remove iOS ad-hoc distribution workflow",
+      "stats": {
+        "additions": 0,
+        "deletions": 138,
+        "total": 138
+      },
+      "branches": [
+        "main",
+        "feature/new-wallet-ui",
+        "develop-bk",
+        "dependabot/pip/functions/firebase-admin-7.3.0",
+        "dependabot/github_actions/actions/setup-java-5",
+        "dependabot/github_actions/actions/checkout-6",
+        "dependabot/github_actions/actions/cache-5",
+        "dependabot/cargo/shared/rust/rust-agent/rust-agent-uniffi/candid-0.10.26",
+        "dependabot/cargo/rust-agent/candid-0.10.26"
+      ]
+    },
+    {
+      "sha": "855bbaf74db63f585344efda45f68f519dffd869",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-20T05:30:59-07:00",
+      "message": "ci: use latest-stable Xcode for ad-hoc build",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main",
+        "feature/new-wallet-ui",
+        "develop-bk",
+        "dependabot/pip/functions/firebase-admin-7.3.0",
+        "dependabot/github_actions/actions/setup-java-5",
+        "dependabot/github_actions/actions/checkout-6",
+        "dependabot/github_actions/actions/cache-5",
+        "dependabot/cargo/shared/rust/rust-agent/rust-agent-uniffi/candid-0.10.26",
+        "dependabot/cargo/rust-agent/candid-0.10.26"
+      ]
+    },
+    {
+      "sha": "e3ada19dc4d82bd64e03e20625bb23220adde108",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-20T05:07:42-07:00",
+      "message": "ci: remove xcodebuild -downloadPlatform iOS step",
+      "stats": {
+        "additions": 0,
+        "deletions": 3,
+        "total": 3
+      },
+      "branches": [
+        "main",
+        "feature/new-wallet-ui",
+        "develop-bk",
+        "dependabot/pip/functions/firebase-admin-7.3.0",
+        "dependabot/github_actions/actions/setup-java-5",
+        "dependabot/github_actions/actions/checkout-6",
+        "dependabot/github_actions/actions/cache-5",
+        "dependabot/cargo/shared/rust/rust-agent/rust-agent-uniffi/candid-0.10.26",
+        "dependabot/cargo/rust-agent/candid-0.10.26"
+      ]
+    },
+    {
+      "sha": "fa57c8b9efaa640b7fc9b56588662cef84e97ecb",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-20T04:48:01-07:00",
+      "message": "ci: pass GitHub credentials to Gradle steps; add pod install; upload build logs",
+      "stats": {
+        "additions": 18,
+        "deletions": 1,
+        "total": 19
+      },
+      "branches": [
+        "main",
+        "feature/new-wallet-ui",
+        "develop-bk",
+        "dependabot/pip/functions/firebase-admin-7.3.0",
+        "dependabot/github_actions/actions/setup-java-5",
+        "dependabot/github_actions/actions/checkout-6",
+        "dependabot/github_actions/actions/cache-5",
+        "dependabot/cargo/shared/rust/rust-agent/rust-agent-uniffi/candid-0.10.26",
+        "dependabot/cargo/rust-agent/candid-0.10.26"
+      ]
+    },
+    {
+      "sha": "faa4a7de6db4561ec98ef7ad62fb2cd6ba1ca95b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-20T03:13:22-07:00",
+      "message": "ci: download iOS platform before ad-hoc build",
+      "stats": {
+        "additions": 3,
+        "deletions": 0,
+        "total": 3
+      },
+      "branches": [
+        "main",
+        "feature/new-wallet-ui",
+        "develop-bk",
+        "dependabot/pip/functions/firebase-admin-7.3.0",
+        "dependabot/github_actions/actions/setup-java-5",
+        "dependabot/github_actions/actions/checkout-6",
+        "dependabot/github_actions/actions/cache-5",
+        "dependabot/cargo/shared/rust/rust-agent/rust-agent-uniffi/candid-0.10.26",
+        "dependabot/cargo/rust-agent/candid-0.10.26"
+      ]
+    },
+    {
+      "sha": "e1c99fbea55b210b3b051a6cf04ac8211de118d8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-20T09:47:38Z",
+      "message": "Merge remote-tracking branch 'origin/develop' into automated-testing-on-ci-for-all-pull-requests",
+      "stats": {
+        "additions": 64,
+        "deletions": 34,
+        "total": 98
+      },
+      "branches": [
+        "main",
+        "feature/new-wallet-ui",
+        "develop-bk",
+        "dependabot/pip/functions/firebase-admin-7.3.0",
+        "dependabot/github_actions/actions/setup-java-5",
+        "dependabot/github_actions/actions/checkout-6",
+        "dependabot/github_actions/actions/cache-5",
+        "dependabot/cargo/shared/rust/rust-agent/rust-agent-uniffi/candid-0.10.26",
+        "dependabot/cargo/rust-agent/candid-0.10.26"
+      ]
+    },
+    {
+      "sha": "6fb78fafd6017506b76f8e04591dececd8506a97",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-20T02:45:31-07:00",
+      "message": "fix: replace fixed sleep with polling in async tests; add CI test timeouts",
+      "stats": {
+        "additions": 36,
+        "deletions": 8,
+        "total": 44
+      },
+      "branches": [
+        "main",
+        "feature/new-wallet-ui",
+        "develop-bk",
+        "dependabot/pip/functions/firebase-admin-7.3.0",
+        "dependabot/github_actions/actions/setup-java-5",
+        "dependabot/github_actions/actions/checkout-6",
+        "dependabot/github_actions/actions/cache-5",
+        "dependabot/cargo/shared/rust/rust-agent/rust-agent-uniffi/candid-0.10.26",
+        "dependabot/cargo/rust-agent/candid-0.10.26"
+      ]
+    },
+    {
+      "sha": "20fbdb9742ed271b71c065a5b88abf1f87010db9",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-20T11:54:50+05:30",
+      "message": "Implements chat ui feedback (#1051)",
+      "stats": {
+        "additions": 64,
+        "deletions": 34,
+        "total": 98
+      },
+      "branches": [
+        "main",
+        "feature/new-wallet-ui",
+        "feature/ai-drafts",
+        "develop-bk",
+        "dependabot/pip/functions/firebase-admin-7.3.0",
+        "dependabot/github_actions/actions/setup-java-5",
+        "dependabot/github_actions/actions/checkout-6",
+        "dependabot/github_actions/actions/cache-5",
+        "dependabot/cargo/shared/rust/rust-agent/rust-agent-uniffi/candid-0.10.26",
+        "dependabot/cargo/rust-agent/candid-0.10.26"
+      ]
+    },
+    {
+      "sha": "22dfbc0428608e0a8956e93b6e6bcf9cd69d6852",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-19T22:04:08-07:00",
+      "message": "chore: gitignore SwiftLint generated rule_docs directory",
+      "stats": {
+        "additions": 3,
+        "deletions": 0,
+        "total": 3
+      },
+      "branches": [
+        "main",
+        "feature/new-wallet-ui",
+        "develop-bk",
+        "dependabot/pip/functions/firebase-admin-7.3.0",
+        "dependabot/github_actions/actions/setup-java-5",
+        "dependabot/github_actions/actions/checkout-6",
+        "dependabot/github_actions/actions/cache-5",
+        "dependabot/cargo/shared/rust/rust-agent/rust-agent-uniffi/candid-0.10.26",
+        "dependabot/cargo/rust-agent/candid-0.10.26"
+      ]
+    },
+    {
+      "sha": "b55dd7f25fb1ca69a5d82800e545edc4c91c2839",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-19T22:01:44-07:00",
+      "message": "chore: add SwiftLint config to exclude Generated and Pods directories",
+      "stats": {
+        "additions": 3,
+        "deletions": 0,
+        "total": 3
+      },
+      "branches": [
+        "main",
+        "feature/new-wallet-ui",
+        "develop-bk",
+        "dependabot/pip/functions/firebase-admin-7.3.0",
+        "dependabot/github_actions/actions/setup-java-5",
+        "dependabot/github_actions/actions/checkout-6",
+        "dependabot/github_actions/actions/cache-5",
+        "dependabot/cargo/shared/rust/rust-agent/rust-agent-uniffi/candid-0.10.26",
+        "dependabot/cargo/rust-agent/candid-0.10.26"
+      ]
+    },
+    {
+      "sha": "f4e7edf4ae2efe301d06ec0f31f96aee09e73ef8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-19T21:33:25-07:00",
+      "message": "fix: get iOS tests passing on CI and locally",
+      "stats": {
+        "additions": 316,
+        "deletions": 96,
+        "total": 412
+      },
+      "branches": [
+        "main",
+        "feature/new-wallet-ui",
+        "develop-bk",
+        "dependabot/pip/functions/firebase-admin-7.3.0",
+        "dependabot/github_actions/actions/setup-java-5",
+        "dependabot/github_actions/actions/checkout-6",
+        "dependabot/github_actions/actions/cache-5",
+        "dependabot/cargo/shared/rust/rust-agent/rust-agent-uniffi/candid-0.10.26",
+        "dependabot/cargo/rust-agent/candid-0.10.26"
+      ]
+    },
+    {
+      "sha": "3d7fd20639d80a330bd9a1e2f795fb804306fdec",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-20T20:24:45+05:30",
+      "message": "feat: Show login popup when logged-out user taps Create Influencer",
+      "stats": {
+        "additions": 24,
+        "deletions": 14,
+        "total": 38
+      },
+      "branches": [
+        "feature/new-wallet-ui"
+      ]
+    },
+    {
+      "sha": "77fd18e9444505288d7b32e9f31dcb6b0bf8ff4a",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-20T20:23:41+05:30",
+      "message": "feat: Integrate billing APIs for wallet balance & transactions",
+      "stats": {
+        "additions": 289,
+        "deletions": 80,
+        "total": 369
+      },
+      "branches": [
+        "feature/new-wallet-ui"
+      ]
+    },
+    {
+      "sha": "f1e106aab792482ea24a24e32d276dd7ef6ebc3b",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-17T23:52:56+05:30",
+      "message": "feat: Replace wallet UI with new INR earnings design",
+      "stats": {
+        "additions": 357,
+        "deletions": 585,
+        "total": 942
+      },
+      "branches": [
+        "feature/new-wallet-ui"
+      ]
+    },
+    {
+      "sha": "e52acc02afd92bf23e6dd32f2fb0747c2f12961f",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-18T15:25:23+05:30",
+      "message": "feat: Auto-select Drafts tab on profile after AI video generation",
+      "stats": {
+        "additions": 22,
+        "deletions": 0,
+        "total": 22
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "4271cd99601de22f33e6eff3f6ada5e8e9a97451",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-18T15:16:38+05:30",
+      "message": "feat: Add Published/Drafts tabs to own profile with separate paging sources",
+      "stats": {
+        "additions": 447,
+        "deletions": 61,
+        "total": 508
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "d1f3a72a81d770709647588eb640b1380ecea044",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-18T13:19:45+05:30",
+      "message": "feat: Add ServerDraft upload handling for AI video gen and navigate to profile on success",
+      "stats": {
+        "additions": 39,
+        "deletions": 47,
+        "total": 86
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "3b35c7d578cbf3284f41ca87dcea49aaf95a34a0",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-18T12:26:21+05:30",
+      "message": "chore: Uses published rust",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "0e968eb4998b2495a7b9af2cf2a51fcd2b34e635",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-06T20:03:44+05:30",
+      "message": "chore: Enables local rust",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "b9de2e9df264f40b0f8b7b5445527a7ace9b1bee",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-18T10:55:40+05:30",
+      "message": "feat: Fetch draft posts from canister and show in profile grid",
+      "stats": {
+        "additions": 259,
+        "deletions": 193,
+        "total": 452
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "f626ba8623da2f74fd439b779cf57756171dab37",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-27T11:16:03+05:30",
+      "message": "fix: Show publishing toast on draft publish, not on upload",
+      "stats": {
+        "additions": 6,
+        "deletions": 5,
+        "total": 11
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "f67299a6a585e991391ed889748e5411ebab0fb4",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-27T11:13:01+05:30",
+      "message": "fix: Navigate to profile instead of feed after draft upload",
+      "stats": {
+        "additions": 10,
+        "deletions": 2,
+        "total": 12
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "ac051a350e4eea98ff99f4dcbf2f41e39f1e95f4",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-26T23:04:07+05:30",
+      "message": "feat: Add draft video detail screen with publish flow",
+      "stats": {
+        "additions": 112,
+        "deletions": 4,
+        "total": 116
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "1b5505fba61b18a4854d415646fcd5ecd038532c",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-26T23:03:56+05:30",
+      "message": "feat: Upload videos as drafts and add mark-as-published API",
+      "stats": {
+        "additions": 71,
+        "deletions": 4,
+        "total": 75
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "0965af4f33334de87712c98a558776ade9bf3704",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-25T22:28:25+05:30",
+      "message": "feat: Add draft label overlay on profile video grid",
+      "stats": {
+        "additions": 53,
+        "deletions": 13,
+        "total": 66
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "be46de77ed5671de399e101930da039bb1226635",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-25T22:27:57+05:30",
+      "message": "feat: Add VideoGenerationTracker and profile generating card",
+      "stats": {
+        "additions": 137,
+        "deletions": 1,
+        "total": 138
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "e5356fd77669374594fe0e6cea4a30fa50a26288",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-25T22:21:57+05:30",
+      "message": "feat: Add video upload/publish toasts",
+      "stats": {
+        "additions": 16,
+        "deletions": 0,
+        "total": 16
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "187f3dec7f8d4b1d30e1d264aad92cb2ef527b44",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-25T22:21:30+05:30",
+      "message": "feat: Add AI video generation toasts",
+      "stats": {
+        "additions": 35,
+        "deletions": 0,
+        "total": 35
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "a40564e3c145453749727a37a8bdbaf2db939a3f",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-25T22:18:10+05:30",
+      "message": "feat: Add goToProfile navigation to AI video gen component",
+      "stats": {
+        "additions": 17,
+        "deletions": 0,
+        "total": 17
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "001786c402d796b0826d38793eb190399173e127",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-20T20:20:58+05:30",
+      "message": "feat: add unban routes and ban can take in username as well (#224)",
+      "stats": {
+        "additions": 146,
+        "deletions": 6,
+        "total": 152
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d07132a396e6305f3cf947d8a935312023d51ea9",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-20T10:53:31+05:30",
+      "message": "fix: add admin in docker compose",
+      "stats": {
+        "additions": 5,
+        "deletions": 3,
+        "total": 8
+      },
+      "branches": [
+        "main",
+        "feat/update-ban-methods"
+      ]
+    },
+    {
+      "sha": "d1ee4c238e17b148ee138dd0a0f26da564c2c454",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-20T18:56:45+05:30",
+      "message": "feat: migrate video upload service to upload.yral.com (#422)",
+      "stats": {
+        "additions": 23,
+        "deletions": 30,
+        "total": 53
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a0ccdcb104584fad6bb2b9c849834bf2740c3cf5",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-or-not",
+      "timestamp": "2026-03-20T17:48:43+05:30",
+      "message": "fix: timezone to use IST for streak",
+      "stats": {
+        "additions": 44,
+        "deletions": 5,
+        "total": 49
+      },
+      "branches": [
+        "naitik/daily-streaks"
+      ]
+    },
+    {
+      "sha": "cf4aa23fa2bbdfd5cab95e4f5997acda13eae048",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-or-not",
+      "timestamp": "2026-03-20T17:04:18+05:30",
+      "message": "added testcases and fixed functions",
+      "stats": {
+        "additions": 485,
+        "deletions": 25,
+        "total": 510
+      },
+      "branches": [
+        "naitik/daily-streaks"
+      ]
+    },
+    {
+      "sha": "2513a61a7688a1409b5bab64a6ec65dcef5ce82b",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-or-not",
+      "timestamp": "2026-03-20T11:44:30+05:30",
+      "message": "add impl for checkin and delete",
+      "stats": {
+        "additions": 93,
+        "deletions": 35,
+        "total": 128
+      },
+      "branches": [
+        "naitik/daily-streaks"
+      ]
+    },
+    {
+      "sha": "16bdc5565c37a3f257e17ee632b02dd6ad9cd51c",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-20T20:11:37+05:30",
+      "message": "feat: add unban routes and ban can take in username as well",
+      "stats": {
+        "additions": 146,
+        "deletions": 6,
+        "total": 152
+      },
+      "branches": [
+        "feat/update-ban-methods"
+      ]
+    }
+  ],
+  "commit_count": 41,
+  "issues": [
+    {
+      "number": 1747,
+      "title": "Update keyboard handling for chat UI",
+      "closed_at": "2026-03-20T06:29:28Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1747",
+      "labels": []
+    }
+  ],
+  "issue_count": 1
+}
