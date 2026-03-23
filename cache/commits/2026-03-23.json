@@ -1,0 +1,921 @@
+{
+  "date": "2026-03-23",
+  "cached_at": "2026-03-23T18:48:18.695175Z",
+  "commits": [
+    {
+      "sha": "8e29a8c57d2523d64d59959d9fe36a116ebae63f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-23T18:36:07Z",
+      "message": "chore: enhance Longhorn volume health check during node upgrade process",
+      "stats": {
+        "additions": 12,
+        "deletions": 3,
+        "total": 15
+      },
+      "branches": [
+        "renovate/velero-12.x",
+        "renovate/oauth2-proxy",
+        "renovate/metabase-metabase-0.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/ghcr.io-headlamp-k8s-headlamp-plugin-flux-0.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "578f5a787274c426ae4569dddbc56e6e41ec6901",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-23T17:59:51Z",
+      "message": "chore: update TODO list with additional tasks for Metabase and Loki log management",
+      "stats": {
+        "additions": 3,
+        "deletions": 1,
+        "total": 4
+      },
+      "branches": [
+        "renovate/velero-12.x",
+        "renovate/oauth2-proxy",
+        "renovate/metabase-metabase-0.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/ghcr.io-headlamp-k8s-headlamp-plugin-flux-0.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "4afb4a9a6eaf95740f02266f322583b58d388b1a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-23T17:39:39Z",
+      "message": "chore: update Longhorn volume placement model details for improved clarity and automation",
+      "stats": {
+        "additions": 6,
+        "deletions": 4,
+        "total": 10
+      },
+      "branches": [
+        "renovate/velero-12.x",
+        "renovate/oauth2-proxy",
+        "renovate/metabase-metabase-0.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/ghcr.io-headlamp-k8s-headlamp-plugin-flux-0.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "051a372585ce13d8b3acdd27d0eefc8ba16ec52b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-23T15:12:25Z",
+      "message": "chore: enable revision counter in Longhorn to optimize replica syncing during node reboots",
+      "stats": {
+        "additions": 12,
+        "deletions": 0,
+        "total": 12
+      },
+      "branches": [
+        "renovate/velero-12.x",
+        "renovate/oauth2-proxy",
+        "renovate/metabase-metabase-0.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/ghcr.io-headlamp-k8s-headlamp-plugin-flux-0.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "8a64c8b4f63b8fe5f6c597730acaf4b2ee937588",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-23T14:34:39Z",
+      "message": "chore: update upgrade-worker process to retain node object during reboot for Longhorn compatibility",
+      "stats": {
+        "additions": 29,
+        "deletions": 84,
+        "total": 113
+      },
+      "branches": [
+        "renovate/velero-12.x",
+        "renovate/oauth2-proxy",
+        "renovate/metabase-metabase-0.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/ghcr.io-headlamp-k8s-headlamp-plugin-flux-0.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "684b0f5d0e5856a331f12e9f81a50e0445e36fa0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-23T13:22:11Z",
+      "message": "chore: simplify node rejoin process by removing unnecessary kubeadm join steps",
+      "stats": {
+        "additions": 5,
+        "deletions": 28,
+        "total": 33
+      },
+      "branches": [
+        "renovate/velero-12.x",
+        "renovate/oauth2-proxy",
+        "renovate/metabase-metabase-0.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/ghcr.io-headlamp-k8s-headlamp-plugin-flux-0.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "567162150d6b7b5a092460a83535b28b2e19ed33",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-23T11:54:35Z",
+      "message": "chore: enhance reboot process with node rejoin check and improved SSH confirmation",
+      "stats": {
+        "additions": 38,
+        "deletions": 3,
+        "total": 41
+      },
+      "branches": [
+        "renovate/velero-12.x",
+        "renovate/oauth2-proxy",
+        "renovate/metabase-metabase-0.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/ghcr.io-headlamp-k8s-headlamp-plugin-flux-0.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "60d81a7dc9e5ed6f6115b709bddac7e2a40d4956",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-23T11:16:31Z",
+      "message": "chore: replace SSH command with wait_for_connection for improved reliability",
+      "stats": {
+        "additions": 8,
+        "deletions": 9,
+        "total": 17
+      },
+      "branches": [
+        "renovate/velero-12.x",
+        "renovate/oauth2-proxy",
+        "renovate/metabase-metabase-0.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/ghcr.io-headlamp-k8s-headlamp-plugin-flux-0.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "16faf570aba5a05f5351412d3cd431019babd6eb",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-23T10:30:34Z",
+      "message": "chore: update Longhorn version to 1.11.1 and enhance topology scheduling settings",
+      "stats": {
+        "additions": 34,
+        "deletions": 26,
+        "total": 60
+      },
+      "branches": [
+        "renovate/velero-12.x",
+        "renovate/oauth2-proxy",
+        "renovate/metabase-metabase-0.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/ghcr.io-headlamp-k8s-headlamp-plugin-flux-0.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "8c9358add8379382f0167a16b31c97694039b356",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-23T10:06:23Z",
+      "message": "chore: adjust reboot timing and improve wait conditions in upgrade tasks",
+      "stats": {
+        "additions": 18,
+        "deletions": 22,
+        "total": 40
+      },
+      "branches": [
+        "renovate/velero-12.x",
+        "renovate/oauth2-proxy",
+        "renovate/metabase-metabase-0.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/ghcr.io-headlamp-k8s-headlamp-plugin-flux-0.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "c3bf341d5d70ce6e2ad5a157f0566b9674f5e53d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-23T09:47:26Z",
+      "message": "chore: fix usage comments in upgrade-worker.yml for correct file path",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "renovate/velero-12.x",
+        "renovate/oauth2-proxy",
+        "renovate/metabase-metabase-0.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/ghcr.io-headlamp-k8s-headlamp-plugin-flux-0.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "a398c1779df9a5944efce0a71ab0f5505330f9e0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-23T09:42:59Z",
+      "message": "chore: fix usage comments in upgrade-control-plane.yml for clarity",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "renovate/velero-12.x",
+        "renovate/oauth2-proxy",
+        "renovate/metabase-metabase-0.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/ghcr.io-headlamp-k8s-headlamp-plugin-flux-0.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "0992bfd083a7320f07711889e74bc9320a5c397b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-23T09:42:03Z",
+      "message": "chore: remove package pinning for kubelet, kubeadm, and kubectl during upgrades",
+      "stats": {
+        "additions": 12,
+        "deletions": 24,
+        "total": 36
+      },
+      "branches": [
+        "renovate/velero-12.x",
+        "renovate/oauth2-proxy",
+        "renovate/metabase-metabase-0.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/ghcr.io-headlamp-k8s-headlamp-plugin-flux-0.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "62f2fe8e4463ca8564390991511a14dd3f9083e6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-23T09:14:57Z",
+      "message": "chore: remove weekly system update workflow and update submodule reference",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/velero-12.x",
+        "renovate/oauth2-proxy",
+        "renovate/metabase-metabase-0.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/ghcr.io-headlamp-k8s-headlamp-plugin-flux-0.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "5daa54446bf7a4ab54a17c55fd3b05afb844e9e6",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-24T00:05:35+05:30",
+      "message": "Feature/new wallet UI (#1054)",
+      "stats": {
+        "additions": 1482,
+        "deletions": 617,
+        "total": 2099
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "dbbabae18311c791f5acfdf707885f4e30bb3145",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-23T13:24:44+05:30",
+      "message": "fix: Isolate account resolution failures in refreshAccountDirectory",
+      "stats": {
+        "additions": 62,
+        "deletions": 31,
+        "total": 93
+      },
+      "branches": [
+        "fix/account-resolve-fix"
+      ]
+    },
+    {
+      "sha": "b50a6c9be4cfbd0f5667e2635a2e7d7a9ab864ac",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-23T13:55:39+05:30",
+      "message": "fix: Code review fixes - error handling, UI state, copy, and cleanup",
+      "stats": {
+        "additions": 50,
+        "deletions": 32,
+        "total": 82
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "466f3b9a2daaeebc56ec99f430c82ed7efb843f1",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-23T13:08:54+05:30",
+      "message": "build: Moves video generating item to draft section and update video grid items for drafts",
+      "stats": {
+        "additions": 48,
+        "deletions": 34,
+        "total": 82
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "908332acf5ec1fca8dcd58923c296c9e8c61e7b9",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-18T15:25:23+05:30",
+      "message": "feat: Auto-select Drafts tab on profile after AI video generation",
+      "stats": {
+        "additions": 22,
+        "deletions": 0,
+        "total": 22
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "a0035622af23a3029c5556a8fdf824f8e88c7067",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-18T15:16:38+05:30",
+      "message": "feat: Add Published/Drafts tabs to own profile with separate paging sources",
+      "stats": {
+        "additions": 447,
+        "deletions": 61,
+        "total": 508
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "2bf67edee5dcbb1ba3390d37e460e102b68f3631",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-18T13:19:45+05:30",
+      "message": "feat: Add ServerDraft upload handling for AI video gen and navigate to profile on success",
+      "stats": {
+        "additions": 39,
+        "deletions": 47,
+        "total": 86
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "84e7aba84009d4f9e514a29a94764fefa44c990a",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-18T12:26:21+05:30",
+      "message": "chore: Uses published rust",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "1c908c4f13c8dbfe1f11409ccce1f875c02dad18",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-06T20:03:44+05:30",
+      "message": "chore: Enables local rust",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "f2cad98037ad5fe26b655b54a8cfa6846d9f1ddd",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-18T10:55:40+05:30",
+      "message": "feat: Fetch draft posts from canister and show in profile grid",
+      "stats": {
+        "additions": 259,
+        "deletions": 193,
+        "total": 452
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "b84129143526ab49e41fb78e90e4d2e08d893e31",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-27T11:16:03+05:30",
+      "message": "fix: Show publishing toast on draft publish, not on upload",
+      "stats": {
+        "additions": 6,
+        "deletions": 5,
+        "total": 11
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "2c8e4080aa9f39d41e4fd9c9d14be9b0d808330b",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-27T11:13:01+05:30",
+      "message": "fix: Navigate to profile instead of feed after draft upload",
+      "stats": {
+        "additions": 10,
+        "deletions": 2,
+        "total": 12
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "4b953acc04eecd4086533803db287b3ae1dbf665",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-26T23:04:07+05:30",
+      "message": "feat: Add draft video detail screen with publish flow",
+      "stats": {
+        "additions": 112,
+        "deletions": 4,
+        "total": 116
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "1b0505a599e29dbcb0117cf804bbbbd1323fef48",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-26T23:03:56+05:30",
+      "message": "feat: Upload videos as drafts and add mark-as-published API",
+      "stats": {
+        "additions": 71,
+        "deletions": 4,
+        "total": 75
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "344e3e3caa09e18b32b7e4655d3b65da7635dc55",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-25T22:28:25+05:30",
+      "message": "feat: Add draft label overlay on profile video grid",
+      "stats": {
+        "additions": 53,
+        "deletions": 13,
+        "total": 66
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "9b5af6097fdd8d7fe3afe8e96de639f8657a76ce",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-25T22:27:57+05:30",
+      "message": "feat: Add VideoGenerationTracker and profile generating card",
+      "stats": {
+        "additions": 137,
+        "deletions": 1,
+        "total": 138
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "365b282ac7c4e6967cac71b439a43d30ca4e68f4",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-25T22:21:57+05:30",
+      "message": "feat: Add video upload/publish toasts",
+      "stats": {
+        "additions": 16,
+        "deletions": 0,
+        "total": 16
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "0d354882843322f487aaae2b096040e2080d8d03",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-25T22:21:30+05:30",
+      "message": "feat: Add AI video generation toasts",
+      "stats": {
+        "additions": 35,
+        "deletions": 0,
+        "total": 35
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "0d0590495a6f0b470b2f264aa7de92d2ecf83243",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-25T22:18:10+05:30",
+      "message": "feat: Add goToProfile navigation to AI video gen component",
+      "stats": {
+        "additions": 17,
+        "deletions": 0,
+        "total": 17
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "861b17ba864f80d3ce9300dcbab884a46c98cd4d",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-03-23T19:09:24+05:30",
+      "message": "feat: implement wallet for user bot subscription (#19)",
+      "stats": {
+        "additions": 10,
+        "deletions": 22,
+        "total": 32
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7d5025b0221fb9acc2e4a45ac1dc064a142f54e6",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-03-23T19:02:42+05:30",
+      "message": "fix import issue",
+      "stats": {
+        "additions": 0,
+        "deletions": 1,
+        "total": 1
+      },
+      "branches": [
+        "feat/implement-wallet-for-user-bot-subscription"
+      ]
+    },
+    {
+      "sha": "85f7b4affd845820b36b2bb2fb09d1d7fe17192d",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-03-23T19:00:59+05:30",
+      "message": "Merge remote-tracking branch 'origin/main' into feat/implement-wallet-for-user-bot-subscription",
+      "stats": {
+        "additions": 46,
+        "deletions": 7,
+        "total": 53
+      },
+      "branches": [
+        "feat/implement-wallet-for-user-bot-subscription"
+      ]
+    },
+    {
+      "sha": "af6eaa0844125ae0ac92815e44d3b4f913c2d1a0",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-03-23T18:56:40+05:30",
+      "message": "add bot-id as recipient id for transactions",
+      "stats": {
+        "additions": 6,
+        "deletions": 56,
+        "total": 62
+      },
+      "branches": [
+        "feat/implement-wallet-for-user-bot-subscription"
+      ]
+    },
+    {
+      "sha": "6b217171eba17d8ad3d3065231ff497cf3e9dd70",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-23T17:44:41+05:30",
+      "message": "run rust fmt",
+      "stats": {
+        "additions": 11,
+        "deletions": 3,
+        "total": 14
+      },
+      "branches": [
+        "sreyas/upload-fix"
+      ]
+    },
+    {
+      "sha": "df338a3ef92504a965c6d78753712a344f61e96c",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-23T17:44:20+05:30",
+      "message": "feat: Introduce videogen module with Replicate integrations for Wan2.5, Wan2.5 Fast, and Speech-to-V",
+      "stats": {
+        "additions": 18,
+        "deletions": 4,
+        "total": 22
+      },
+      "branches": [
+        "sreyas/upload-fix"
+      ]
+    },
+    {
+      "sha": "36ab091e20d1a83d1e714dff5e6f6e95977fd126",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-23T17:33:33+05:30",
+      "message": "feat: Add video generation processing, queuing, and utility functions for new video generation featu",
+      "stats": {
+        "additions": 62,
+        "deletions": 38,
+        "total": 100
+      },
+      "branches": [
+        "sreyas/upload-fix"
+      ]
+    },
+    {
+      "sha": "8182f81858e9e78d0c8286b3469e6203614bbb4b",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-23T16:19:58+05:30",
+      "message": "run rust fmt",
+      "stats": {
+        "additions": 9,
+        "deletions": 7,
+        "total": 16
+      },
+      "branches": [
+        "sreyas/upload-fix"
+      ]
+    },
+    {
+      "sha": "1b4e1ecab3832a929193c3f581e0ad6eec85775a",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-23T16:16:44+05:30",
+      "message": "clippy suppress",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "sreyas/upload-fix"
+      ]
+    },
+    {
+      "sha": "16a4ed5b26bd9e03a833d9043896c1f9b100c4ee",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-23T16:12:48+05:30",
+      "message": "supress clippy import warnings for now",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "sreyas/upload-fix"
+      ]
+    },
+    {
+      "sha": "561f43145beb78abda30c2ad2f4b534925fc6c59",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-23T16:09:56+05:30",
+      "message": "temporarily suppress clippy",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "sreyas/upload-fix"
+      ]
+    },
+    {
+      "sha": "87c895944ae65de2f218332aa9c81a2517b74735",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-23T16:06:06+05:30",
+      "message": "test what's happening when sending video",
+      "stats": {
+        "additions": 52,
+        "deletions": 6,
+        "total": 58
+      },
+      "branches": [
+        "sreyas/upload-fix"
+      ]
+    },
+    {
+      "sha": "051471d989cf3854490c3638521451f167fb6468",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-03-23T08:58:00Z",
+      "message": "Refactor hosts.yml: remove obsolete entries and reorganize ansuman and naitik hosts for clarity",
+      "stats": {
+        "additions": 8,
+        "deletions": 6,
+        "total": 14
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a84c7ee89ee5c67c74b3c544e4e946dcc34f3ded",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-or-not",
+      "timestamp": "2026-03-23T09:45:39+05:30",
+      "message": "deployment files",
+      "stats": {
+        "additions": 402,
+        "deletions": 0,
+        "total": 402
+      },
+      "branches": [
+        "naitik/daily-streaks"
+      ]
+    }
+  ],
+  "commit_count": 47,
+  "issues": [
+    {
+      "number": 986,
+      "title": "Wallet locked UI",
+      "closed_at": "2026-03-23T18:35:36Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/986",
+      "labels": []
+    },
+    {
+      "number": 959,
+      "title": "Feed to chat navigation",
+      "closed_at": "2026-03-23T12:53:44Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/959",
+      "labels": [
+        "yral2.0-phase1"
+      ]
+    },
+    {
+      "number": 926,
+      "title": "Cleanup repo to remove log files and add entries in gitignore",
+      "closed_at": "2026-03-23T12:52:39Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/926",
+      "labels": []
+    },
+    {
+      "number": 908,
+      "title": "HttpLogWriter",
+      "closed_at": "2026-03-23T12:58:52Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/908",
+      "labels": []
+    }
+  ],
+  "issue_count": 4
+}
