@@ -1,0 +1,1098 @@
+{
+  "date": "2026-03-24",
+  "cached_at": "2026-03-24T18:49:27.365982Z",
+  "commits": [
+    {
+      "sha": "f1df417bf0be922bc186523fa160ac219c4d02d8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-24T07:39:36-07:00",
+      "message": "Merge pull request #1071 from dolr-ai/change-yral-alpha-track-to-production",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main",
+        "chore/version-increment"
+      ]
+    },
+    {
+      "sha": "60b28960e1cad7706e571641c338b39f39a109f5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-24T13:08:46Z",
+      "message": "fix: change Play Store deployment track from internal to production",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main",
+        "chore/version-increment"
+      ]
+    },
+    {
+      "sha": "b1de4d0e75b337138325e036ac8add1c81aff0bb",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-24T17:35:12+05:30",
+      "message": "ci: add prod Play Store deploy on GitHub release, refactor version management (#1068)",
+      "stats": {
+        "additions": 204,
+        "deletions": 71,
+        "total": 275
+      },
+      "branches": [
+        "main",
+        "dependabot/github_actions/google-github-actions/auth-3",
+        "dependabot/github_actions/actions/setup-java-5",
+        "dependabot/github_actions/actions/checkout-6",
+        "dependabot/github_actions/actions/cache-5",
+        "chore/version-increment"
+      ]
+    },
+    {
+      "sha": "05dedc695243ca653ee17c51f26691bd25369f1f",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-24T10:33:09+05:30",
+      "message": "fix: Isolate account resolution failures in refreshAccountDirectory (#1067)",
+      "stats": {
+        "additions": 62,
+        "deletions": 31,
+        "total": 93
+      },
+      "branches": [
+        "main",
+        "feature/ai-drafts",
+        "dependabot/github_actions/google-github-actions/auth-3",
+        "dependabot/github_actions/actions/setup-java-5",
+        "dependabot/github_actions/actions/checkout-6",
+        "dependabot/github_actions/actions/cache-5",
+        "chore/version-increment"
+      ]
+    },
+    {
+      "sha": "4e25a53e8a6a4348b1ba0b58bf510d8d99d08eb9",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-23T13:55:39+05:30",
+      "message": "fix: Code review fixes - error handling, UI state, copy, and cleanup",
+      "stats": {
+        "additions": 50,
+        "deletions": 32,
+        "total": 82
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "e2e5daa27928b66ef48202362a7b78c2ed1ca574",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-23T13:08:54+05:30",
+      "message": "build: Moves video generating item to draft section and update video grid items for drafts",
+      "stats": {
+        "additions": 48,
+        "deletions": 34,
+        "total": 82
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "68e9d47d19d3582ed1e9961f75d845796fc22c44",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-18T15:25:23+05:30",
+      "message": "feat: Auto-select Drafts tab on profile after AI video generation",
+      "stats": {
+        "additions": 22,
+        "deletions": 0,
+        "total": 22
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "58163fcc0766676f6de3bca2f5919428159e4433",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-18T15:16:38+05:30",
+      "message": "feat: Add Published/Drafts tabs to own profile with separate paging sources",
+      "stats": {
+        "additions": 447,
+        "deletions": 61,
+        "total": 508
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "39039957918c1c8b646737c2eca9bdc1ab8dae40",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-18T13:19:45+05:30",
+      "message": "feat: Add ServerDraft upload handling for AI video gen and navigate to profile on success",
+      "stats": {
+        "additions": 39,
+        "deletions": 47,
+        "total": 86
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "5c5b4b5741aecedca6aadb7687f33d3fe06492f4",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-18T12:26:21+05:30",
+      "message": "chore: Uses published rust",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "74402652681befab03a390d9af32e93edc2ccfbd",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-06T20:03:44+05:30",
+      "message": "chore: Enables local rust",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "f157a421e73ad912a9520120bfcc8da48185045f",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-18T10:55:40+05:30",
+      "message": "feat: Fetch draft posts from canister and show in profile grid",
+      "stats": {
+        "additions": 232,
+        "deletions": 168,
+        "total": 400
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "e551e9049f278c773e76f8c49de10b5d05ff0c24",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-27T11:16:03+05:30",
+      "message": "fix: Show publishing toast on draft publish, not on upload",
+      "stats": {
+        "additions": 6,
+        "deletions": 5,
+        "total": 11
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "93b664745c5674b0e9d6eb590549d10cf93e4f59",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-27T11:13:01+05:30",
+      "message": "fix: Navigate to profile instead of feed after draft upload",
+      "stats": {
+        "additions": 10,
+        "deletions": 2,
+        "total": 12
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "b454bb702b04ad8585f48d26c361ebd281a3bf42",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-26T23:04:07+05:30",
+      "message": "feat: Add draft video detail screen with publish flow",
+      "stats": {
+        "additions": 112,
+        "deletions": 4,
+        "total": 116
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "bfe026e591a68a9164a13f4fd8c6bd7ae5577379",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-26T23:03:56+05:30",
+      "message": "feat: Upload videos as drafts and add mark-as-published API",
+      "stats": {
+        "additions": 71,
+        "deletions": 4,
+        "total": 75
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "4fe2a561ff047633f80c0ea9961ec39671ab8c40",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-25T22:28:25+05:30",
+      "message": "feat: Add draft label overlay on profile video grid",
+      "stats": {
+        "additions": 53,
+        "deletions": 13,
+        "total": 66
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "810261f8bb8821672d1dd5292e32e152fc72c7c7",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-25T22:27:57+05:30",
+      "message": "feat: Add VideoGenerationTracker and profile generating card",
+      "stats": {
+        "additions": 137,
+        "deletions": 1,
+        "total": 138
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "4d499d525c58317c913b1881e38b88bc3de2fde7",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-25T22:21:57+05:30",
+      "message": "feat: Add video upload/publish toasts",
+      "stats": {
+        "additions": 16,
+        "deletions": 0,
+        "total": 16
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "ce2f4da4058ee495bced89a6d7dd680891717f41",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-25T22:21:30+05:30",
+      "message": "feat: Add AI video generation toasts",
+      "stats": {
+        "additions": 35,
+        "deletions": 0,
+        "total": 35
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "e6a95017c20274263f660e129c0a5e0af4a1cf01",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-02-25T22:18:10+05:30",
+      "message": "feat: Add goToProfile navigation to AI video gen component",
+      "stats": {
+        "additions": 17,
+        "deletions": 0,
+        "total": 17
+      },
+      "branches": [
+        "feature/ai-drafts"
+      ]
+    },
+    {
+      "sha": "2970904b872e965f33334887833233512b1315c8",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-24T17:40:33+05:30",
+      "message": "fix: replace xcpretty with xcbeautify, remove redundant build step",
+      "stats": {
+        "additions": 5,
+        "deletions": 18,
+        "total": 23
+      },
+      "branches": [
+        "ci/prod-release-workflow"
+      ]
+    },
+    {
+      "sha": "bcb7b0e4f30a7c587b22820c27d53f3710cf7d09",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-24T15:52:20+05:30",
+      "message": "chore: remove unnecessary ENABLE_USER_SCRIPT_SANDBOXING from Podfile",
+      "stats": {
+        "additions": 0,
+        "deletions": 1,
+        "total": 1
+      },
+      "branches": [
+        "ci/prod-release-workflow"
+      ]
+    },
+    {
+      "sha": "4fc7e2046bcfe2586581f5e44607d719d70ebec6",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-24T15:47:17+05:30",
+      "message": "fix: disable user script sandboxing to fix Xcode 26.3 test build",
+      "stats": {
+        "additions": 32,
+        "deletions": 8,
+        "total": 40
+      },
+      "branches": [
+        "ci/prod-release-workflow"
+      ]
+    },
+    {
+      "sha": "bd28c60e9daa5bd31afc0678493d1ff5ffe1fa26",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-24T15:22:26+05:30",
+      "message": "fix: pin Xcode 16.4 (runner default) instead of 16.2",
+      "stats": {
+        "additions": 2,
+        "deletions": 5,
+        "total": 7
+      },
+      "branches": [
+        "ci/prod-release-workflow"
+      ]
+    },
+    {
+      "sha": "6223362bc5485cd8a27a35b93a95666be5a4737c",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-24T15:19:04+05:30",
+      "message": "fix: add iOS platform download step for pinned Xcode 16.2",
+      "stats": {
+        "additions": 3,
+        "deletions": 0,
+        "total": 3
+      },
+      "branches": [
+        "ci/prod-release-workflow"
+      ]
+    },
+    {
+      "sha": "c3b1698920ed921a5a8776fcbc68753225fe7fa3",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-24T13:53:22+05:30",
+      "message": "fix: pin Xcode 16.2 and align deployment targets to fix iOS CI test failure",
+      "stats": {
+        "additions": 5,
+        "deletions": 3,
+        "total": 8
+      },
+      "branches": [
+        "ci/prod-release-workflow"
+      ]
+    },
+    {
+      "sha": "39c72d90633c58705e22347f8b84d45dac9880c4",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-24T23:34:07+05:30",
+      "message": "ci: trigger iOS prod distribution on release with iOS tag",
+      "stats": {
+        "additions": 3,
+        "deletions": 29,
+        "total": 32
+      },
+      "branches": [
+        "chore/version-increment"
+      ]
+    },
+    {
+      "sha": "bccf4858d32e6bf801fe99429a8bf726311317b6",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-24T23:28:10+05:30",
+      "message": "fix: update staging provisioning profile name to Yral-Staging-Distribution",
+      "stats": {
+        "additions": 4,
+        "deletions": 4,
+        "total": 8
+      },
+      "branches": [
+        "chore/version-increment"
+      ]
+    },
+    {
+      "sha": "8de31acdcf12ac046b2fa49da3ae93b7ac8a65ab",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-24T23:07:56+05:30",
+      "message": "fix: replace xcpretty with xcbeautify, add env vars for test step",
+      "stats": {
+        "additions": 8,
+        "deletions": 20,
+        "total": 28
+      },
+      "branches": [
+        "chore/version-increment"
+      ]
+    },
+    {
+      "sha": "ceff7c1aae4eddfcdf53a8a5c2dd41283f15f7f7",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-24T20:44:34+05:30",
+      "message": "chore: Increments android app version",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "chore/version-increment"
+      ]
+    },
+    {
+      "sha": "1661e721c9ed640105e6b52971f0e07afae2206e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-24T09:59:12-07:00",
+      "message": "Merge pull request #35 from dolr-ai/renovate/fluxcd-flux2-2.x",
+      "stats": {
+        "additions": 47,
+        "deletions": 47,
+        "total": 94
+      },
+      "branches": [
+        "renovate/oauth2-proxy",
+        "renovate/metabase-metabase-0.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "357c5ef79c02c0b1b677de30cadaf842ed56a8b8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-24T09:44:01-07:00",
+      "message": "Merge pull request #39 from dolr-ai/renovate/velero-12.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/oauth2-proxy",
+        "renovate/metabase-metabase-0.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "96695ae03d4071875450875ab90bfb7b4ff8e336",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-24T09:37:40-07:00",
+      "message": "Merge pull request #37 from dolr-ai/renovate/ghcr.io-headlamp-k8s-headlamp-plugin-flux-0.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/oauth2-proxy",
+        "renovate/metabase-metabase-0.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "5e660dec353e68977301c063d7ed07f660305739",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-24T09:34:36-07:00",
+      "message": "Merge pull request #34 from dolr-ai/renovate/clickhouse-clickhouse-server-26.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/oauth2-proxy",
+        "renovate/metabase-metabase-0.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "cdaf4f427c17830df976d349c91bc36eb4e0a719",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-24T16:21:45Z",
+      "message": "docs(todos): update notes on Longhorn replicas and relocate Loki volume to HEL",
+      "stats": {
+        "additions": 3,
+        "deletions": 2,
+        "total": 5
+      },
+      "branches": [
+        "renovate/oauth2-proxy",
+        "renovate/metabase-metabase-0.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "92add007e05aedb8dbaf3606e5cbf0ea9d4002db",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-24T16:07:54Z",
+      "message": "fix: add upgrade.force=true to loki HelmRelease to unblock stalled StatefulSet upgrade",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "renovate/oauth2-proxy",
+        "renovate/metabase-metabase-0.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "56b8adc1a33def98e19631fb68a1469bf21c695d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-24T14:25:06Z",
+      "message": "docs(todos): add notes on Loki log cleanup and Longhorn replica strategy",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "renovate/oauth2-proxy",
+        "renovate/metabase-metabase-0.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "a71ca3b1a134b501f167f12c54015b257ea9f6e5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-24T14:14:45Z",
+      "message": "docs(agents): clarify two distinct Longhorn storage reservation knobs",
+      "stats": {
+        "additions": 4,
+        "deletions": 2,
+        "total": 6
+      },
+      "branches": [
+        "renovate/oauth2-proxy",
+        "renovate/metabase-metabase-0.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "b3f817e38defab59c38c76adfad244249ae4f35e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-24T14:13:29Z",
+      "message": "fix(longhorn): set storageMinimalAvailablePercentage to 0",
+      "stats": {
+        "additions": 6,
+        "deletions": 0,
+        "total": 6
+      },
+      "branches": [
+        "renovate/oauth2-proxy",
+        "renovate/metabase-metabase-0.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "f386527c9e80cfd3b3e87968fc965bfc84ed6538",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-24T13:42:49Z",
+      "message": "fix(loki): resize PVC from 200Gi to 600Gi",
+      "stats": {
+        "additions": 4,
+        "deletions": 4,
+        "total": 8
+      },
+      "branches": [
+        "renovate/oauth2-proxy",
+        "renovate/metabase-metabase-0.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "3ef0aa34cf3a0aaad3ff038a6a1cfc82bfb880f2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-24T13:25:42Z",
+      "message": "fix(longhorn): increase staleReplicaTimeout from 30 to 90 min",
+      "stats": {
+        "additions": 9,
+        "deletions": 1,
+        "total": 10
+      },
+      "branches": [
+        "renovate/oauth2-proxy",
+        "renovate/metabase-metabase-0.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "c988eee72d2967cf0827e6e45476dc0e301c158b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-24T13:22:12Z",
+      "message": "fix(todos): clarify kubernetes packages unholding logic in TODO.md",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/oauth2-proxy",
+        "renovate/metabase-metabase-0.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "14fb710b21c2a39c611ac63c51876654162b0f45",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-24T12:54:14Z",
+      "message": "feat(upgrade): add script to upgrade a range of worker nodes using Ansible playbook",
+      "stats": {
+        "additions": 17,
+        "deletions": 186,
+        "total": 203
+      },
+      "branches": [
+        "renovate/oauth2-proxy",
+        "renovate/metabase-metabase-0.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "6cd152b5fb56253d3249fbb5d79dca5a1ca47a43",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-24T12:07:21Z",
+      "message": "docs(agents): document Longhorn disableRevisionCounter JSON format bug and Engine CR salvage failure",
+      "stats": {
+        "additions": 42,
+        "deletions": 0,
+        "total": 42
+      },
+      "branches": [
+        "renovate/oauth2-proxy",
+        "renovate/metabase-metabase-0.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "6f47804aeb28f0657d4fc0e460cd629ec24c4c09",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-24T11:33:10Z",
+      "message": "fix(longhorn): add disableRevisionCounter to defaultSettings section",
+      "stats": {
+        "additions": 17,
+        "deletions": 0,
+        "total": 17
+      },
+      "branches": [
+        "renovate/oauth2-proxy",
+        "renovate/metabase-metabase-0.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "b1ab699806a63e0e509923129f449d92f05ed914",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-24T11:26:45Z",
+      "message": "fix(longhorn): use JSON format for disableRevisionCounter in HelmRelease",
+      "stats": {
+        "additions": 5,
+        "deletions": 1,
+        "total": 6
+      },
+      "branches": [
+        "renovate/oauth2-proxy",
+        "renovate/metabase-metabase-0.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "98f08805488991764bf9d7da1331874477f2e799",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-24T09:00:06Z",
+      "message": "chore: remove Longhorn instance-manager PDB before node drain to prevent eviction blocking",
+      "stats": {
+        "additions": 67,
+        "deletions": 1,
+        "total": 68
+      },
+      "branches": [
+        "renovate/oauth2-proxy",
+        "renovate/metabase-metabase-0.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "fab9bf668f18e1790eeb183155ec4cef59edf28f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-24T03:05:32Z",
+      "message": "chore: update subproject commit for yral-mobile to latest version",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/oauth2-proxy",
+        "renovate/metabase-metabase-0.x",
+        "renovate/loki-6.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/headlamp-0.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "82188e5fc87ec0a31d44a31e0b6d475057a79251",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-24T19:48:29+05:30",
+      "message": "run rust fmt",
+      "stats": {
+        "additions": 4,
+        "deletions": 1,
+        "total": 5
+      },
+      "branches": [
+        "sreyas/upload-fix"
+      ]
+    },
+    {
+      "sha": "f2908627a4ef21a0b65698890abbca40f30cd00a",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-24T19:41:29+05:30",
+      "message": "feat: introduce crypto module for delegated identity encryption and decryption.",
+      "stats": {
+        "additions": 15,
+        "deletions": 14,
+        "total": 29
+      },
+      "branches": [
+        "sreyas/upload-fix"
+      ]
+    },
+    {
+      "sha": "9e17c89c0e7afad93ed98463cc213a2b5f7889ad",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-24T19:16:04+05:30",
+      "message": "run rust fmt",
+      "stats": {
+        "additions": 9,
+        "deletions": 4,
+        "total": 13
+      },
+      "branches": [
+        "sreyas/upload-fix"
+      ]
+    },
+    {
+      "sha": "b285e8f07800e95592288a4b4d2ae81bd0ddc167",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-24T19:15:47+05:30",
+      "message": "encrypt delegated identity before passing to third parties",
+      "stats": {
+        "additions": 236,
+        "deletions": 27,
+        "total": 263
+      },
+      "branches": [
+        "sreyas/upload-fix"
+      ]
+    },
+    {
+      "sha": "06693e135d28acd2967082e2a6db9b909d1e50ef",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-24T15:32:57+05:30",
+      "message": "Merge branch 'main' into sreyas/per-repo-ssh-deploy-keys",
+      "stats": {
+        "additions": 599,
+        "deletions": 9,
+        "total": 608
+      },
+      "branches": [
+        "sreyas/per-repo-ssh-deploy-keys"
+      ]
+    },
+    {
+      "sha": "fc918d02d987f3daa564e05c33f88b2d6afe864e",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-24T16:41:04+05:30",
+      "message": "feat: set transaction for chat api and response time for ai generation (#226)",
+      "stats": {
+        "additions": 50,
+        "deletions": 2,
+        "total": 52
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "91dcc8331100eab3330ccf46137537ffbd66356f",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-24T15:57:26+05:30",
+      "message": "feat: sanitize repo (#225)",
+      "stats": {
+        "additions": 480,
+        "deletions": 2827,
+        "total": 3307
+      },
+      "branches": [
+        "main",
+        "feat/add-analytics-for-chat-apis"
+      ]
+    },
+    {
+      "sha": "5d234c201b46664562f784e58bf357bc33143727",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-24T12:40:22+05:30",
+      "message": "fix formatting",
+      "stats": {
+        "additions": 1,
+        "deletions": 4,
+        "total": 5
+      },
+      "branches": [
+        "feat/santize-repo"
+      ]
+    },
+    {
+      "sha": "1ec3d14190aa722a8e51b4e335de9f3ddb258c24",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-24T12:37:42+05:30",
+      "message": "cleanup gitignore",
+      "stats": {
+        "additions": 16,
+        "deletions": 77,
+        "total": 93
+      },
+      "branches": [
+        "feat/santize-repo"
+      ]
+    },
+    {
+      "sha": "aa8e9fede1fbc9c824ed8796cebf5c46d2014e72",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-24T12:35:02+05:30",
+      "message": "remove unnecessary integration tests refine preview workflow",
+      "stats": {
+        "additions": 9,
+        "deletions": 2743,
+        "total": 2752
+      },
+      "branches": [
+        "feat/santize-repo"
+      ]
+    },
+    {
+      "sha": "e530076feeb10c625ff2f76bffef8dbf71fc0956",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-24T12:31:04+05:30",
+      "message": "added sentry integration",
+      "stats": {
+        "additions": 458,
+        "deletions": 7,
+        "total": 465
+      },
+      "branches": [
+        "feat/santize-repo"
+      ]
+    },
+    {
+      "sha": "2e67a829a16adfd20c42bf325ea78f7f39de50a8",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-24T16:39:38+05:30",
+      "message": "remove codeowners",
+      "stats": {
+        "additions": 0,
+        "deletions": 1,
+        "total": 1
+      },
+      "branches": [
+        "feat/add-analytics-for-chat-apis"
+      ]
+    },
+    {
+      "sha": "df487c1bedd35632c1ba26312941b9d99c1de9bc",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-24T16:35:36+05:30",
+      "message": "set transaction for chat api and response time for ai generation",
+      "stats": {
+        "additions": 50,
+        "deletions": 1,
+        "total": 51
+      },
+      "branches": [
+        "feat/add-analytics-for-chat-apis"
+      ]
+    }
+  ],
+  "commit_count": 62,
+  "issues": [
+    {
+      "number": 53,
+      "title": "Migrate to per repo ssh keys - yral-auth-v2",
+      "closed_at": "2026-03-24T10:03:36Z",
+      "assignee": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "url": "https://github.com/dolr-ai/yral-auth-v2/issues/53",
+      "labels": []
+    },
+    {
+      "number": 1069,
+      "title": "Fix staging android distribution action to use skip ci commits",
+      "closed_at": "2026-03-24T12:05:13Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/1069",
+      "labels": []
+    }
+  ],
+  "issue_count": 2
+}
