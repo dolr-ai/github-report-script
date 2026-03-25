@@ -1,0 +1,885 @@
+{
+  "date": "2026-03-25",
+  "cached_at": "2026-03-25T18:48:57.553479Z",
+  "commits": [
+    {
+      "sha": "d67b801c7746c06f9daf43a69ce578503d0d7a23",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-25T06:07:21-07:00",
+      "message": "Increment versionCode to 1585 in build.gradle.kts (#1074)",
+      "stats": {
+        "additions": 7,
+        "deletions": 7,
+        "total": 14
+      },
+      "branches": [
+        "main",
+        "dependabot/github_actions/actions/setup-java-5",
+        "dependabot/github_actions/actions/checkout-6"
+      ]
+    },
+    {
+      "sha": "e1ca58df7b06ab806b1b49223e07f4728ea879a6",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-25T23:46:17+05:30",
+      "message": "fix: eliminate flakiness in FeedsPlayerTests and HLSDownloadManagerTests",
+      "stats": {
+        "additions": 49,
+        "deletions": 56,
+        "total": 105
+      },
+      "branches": [
+        "fix/ios-action"
+      ]
+    },
+    {
+      "sha": "4c9e2c3bb3c9caf7ce668f4b9f6fc800803042a6",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-25T22:54:33+05:30",
+      "message": "fix: correct staging provisioning profile name and add PR trigger for testing",
+      "stats": {
+        "additions": 4,
+        "deletions": 1,
+        "total": 5
+      },
+      "branches": [
+        "fix/ios-action"
+      ]
+    },
+    {
+      "sha": "0ab848d944c95a079c8087ab5c58a09cf9761d32",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-25T22:49:32+05:30",
+      "message": "fix: prevent double fulfillment in FeedsPlayerTests with phase-based state machine",
+      "stats": {
+        "additions": 28,
+        "deletions": 18,
+        "total": 46
+      },
+      "branches": [
+        "fix/ios-action"
+      ]
+    },
+    {
+      "sha": "da02407373aa38090b0dd52f845469f8c5f9c2ca",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-25T09:02:32-07:00",
+      "message": "Merge pull request #44 from dolr-ai/renovate/migrate-config",
+      "stats": {
+        "additions": 17,
+        "deletions": 17,
+        "total": 34
+      },
+      "branches": [
+        "renovate/headlamp-0.x",
+        "renovate/cilium-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "126d02310a772ccc018ba8065a2569d1f814a28e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-25T08:59:05-07:00",
+      "message": "Merge pull request #41 from dolr-ai/renovate/altinity-clickhouse-operator-0.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/headlamp-0.x",
+        "renovate/cilium-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "5010c9fa4ad48829597630de46d80bb45f3430f8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-25T08:53:42-07:00",
+      "message": "Merge pull request #40 from dolr-ai/renovate/cilium-cilium-1.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/headlamp-0.x",
+        "renovate/cilium-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "dfd45d51bcda7431da4cf5cce6cf7c8aad9aca62",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-25T15:33:38Z",
+      "message": "chore: update title in internal dashboard HTML for consistency",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/headlamp-0.x",
+        "renovate/cilium-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "a2e91f45911b2e8f75fadaf63dd786f35dc2a95e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-25T15:31:22Z",
+      "message": "chore: add favicon link to internal dashboard HTML",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "renovate/headlamp-0.x",
+        "renovate/cilium-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "4e7345d2355c9b4dfcca8b1ff6f6c55d0369518f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-25T15:25:09Z",
+      "message": "chore: update dashboard configmap with new service links and improve organization",
+      "stats": {
+        "additions": 57,
+        "deletions": 42,
+        "total": 99
+      },
+      "branches": [
+        "renovate/headlamp-0.x",
+        "renovate/cilium-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "a728fa720dbe5aaff163d22d06f10a42fbffd7ce",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-25T13:34:22Z",
+      "message": "chore: update dashboard configmap with new public services and remove analytics section",
+      "stats": {
+        "additions": 90,
+        "deletions": 26,
+        "total": 116
+      },
+      "branches": [
+        "renovate/headlamp-0.x",
+        "renovate/cilium-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "575ec90f14cf64cc165e38bc249aca215865733c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-25T12:47:55Z",
+      "message": "chore: update yral-mobile subproject to latest commit",
+      "stats": {
+        "additions": 4,
+        "deletions": 4,
+        "total": 8
+      },
+      "branches": [
+        "renovate/headlamp-0.x",
+        "renovate/cilium-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "b52dc083d6eeb17f827595ca90e0910090e8a4c1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-25T05:43:38-07:00",
+      "message": "Merge pull request #38 from dolr-ai/renovate/oauth2-proxy",
+      "stats": {
+        "additions": 7,
+        "deletions": 7,
+        "total": 14
+      },
+      "branches": [
+        "renovate/headlamp-0.x",
+        "renovate/cilium-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "46e93204ec221402ee4c33f1d5455a2f5f05f0fe",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-25T05:35:32-07:00",
+      "message": "Merge pull request #32 from dolr-ai/renovate/loki-6.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/headlamp-0.x",
+        "renovate/cilium-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "77d84107bd603373add38c213d8cc8a688ddc00e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-25T05:07:10-07:00",
+      "message": "Merge pull request #30 from dolr-ai/renovate/kube-prometheus-stack-82.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/headlamp-0.x",
+        "renovate/cilium-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "6e7791ecf4ed531d4dca86828c3855795bad0130",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-25T04:17:14-07:00",
+      "message": "Merge pull request #31 from dolr-ai/renovate/cert-manager",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "renovate/headlamp-0.x",
+        "renovate/cilium-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "f5204ca1193eee6c53ce1b611dfe43693abbae01",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-25T10:08:36Z",
+      "message": "fix: revert PVC storageClassName to longhorn \u2014 spec is immutable on bound PVCs",
+      "stats": {
+        "additions": 8,
+        "deletions": 5,
+        "total": 13
+      },
+      "branches": [
+        "renovate/headlamp-0.x",
+        "renovate/cilium-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "a3c6b23f575fe8aebf37371537fa428d4e576cdd",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-25T09:59:32Z",
+      "message": "docs: correct csiAllowedTopologyKeys \u2014 replica placement only, not pod scheduling",
+      "stats": {
+        "additions": 53,
+        "deletions": 23,
+        "total": 76
+      },
+      "branches": [
+        "renovate/headlamp-0.x",
+        "renovate/cilium-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "2a1478bd8292b8b0d0c02352946300e01434074c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-25T04:00:03Z",
+      "message": "fix(longhorn): revert to region-only topology + best-effort data locality",
+      "stats": {
+        "additions": 30,
+        "deletions": 11,
+        "total": 41
+      },
+      "branches": [
+        "renovate/headlamp-0.x",
+        "renovate/cilium-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "313ac040e814ad3718ce8f1e0e20d60ed8de099c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-25T03:18:09Z",
+      "message": "feat(longhorn): reduce default replica count to 1, add longhorn-2replicas StorageClass",
+      "stats": {
+        "additions": 60,
+        "deletions": 10,
+        "total": 70
+      },
+      "branches": [
+        "renovate/headlamp-0.x",
+        "renovate/cilium-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "d66e4b0519d2a160baec8bac2e7fa93feb38494e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-25T02:48:29Z",
+      "message": "fix: use Recreate strategy for Metabase (RWO Longhorn PVC multi-attach)",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "renovate/headlamp-0.x",
+        "renovate/cilium-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "0077851960242d3c332e6c63575494814eb988d2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-24T19:36:43-07:00",
+      "message": "Merge pull request #36 from dolr-ai/renovate/metabase-metabase-0.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/headlamp-0.x",
+        "renovate/cilium-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "fe6187e878cc32d5205913e2ba627494aed94e18",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-25T02:32:58Z",
+      "message": "fix(headlamp): revert Helm chart version to 0.40.0 to avoid crash due to removed flag",
+      "stats": {
+        "additions": 4,
+        "deletions": 1,
+        "total": 5
+      },
+      "branches": [
+        "renovate/headlamp-0.x",
+        "renovate/cilium-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "594b2ade7a210f49f039913e59bde3ee331ad4be",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-24T19:18:04-07:00",
+      "message": "Merge pull request #29 from dolr-ai/renovate/headlamp-0.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/headlamp-0.x",
+        "renovate/cilium-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "18c9aa10147dcac8546080d418654a60c67d18ac",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-24T19:14:38-07:00",
+      "message": "Merge pull request #24 from dolr-ai/renovate/kubernetes-kubernetes-1.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/headlamp-0.x",
+        "renovate/cilium-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "d697c89964f8a3c4a751701758308cfeb0000c69",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-25T20:44:41+05:30",
+      "message": "feat: capture all errors and enhance auth middleware tracing (#229)",
+      "stats": {
+        "additions": 20,
+        "deletions": 9,
+        "total": 29
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d7a0fd08e1d154dec33d21d358df12d7ce971d1f",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-25T20:27:07+05:30",
+      "message": "fix: capture errors irrespective of their status code (#228)",
+      "stats": {
+        "additions": 1,
+        "deletions": 3,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8c50bf27f1481a1cf7b87024b9eb05a28197f2a4",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-25T20:09:21+05:30",
+      "message": "feat: capture app errors (#227)",
+      "stats": {
+        "additions": 3,
+        "deletions": 0,
+        "total": 3
+      },
+      "branches": [
+        "main",
+        "feat/capture-app-errors-into-sentry"
+      ]
+    },
+    {
+      "sha": "cea152b824b25106454acba733ce2e2ad89dc89a",
+      "author": "gravityvi",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-25T19:36:17+05:30",
+      "message": "implement Crypto struct for identity encryption and decryption; update app state and related functio",
+      "stats": {
+        "additions": 75,
+        "deletions": 49,
+        "total": 124
+      },
+      "branches": [
+        "sreyas/upload-fix"
+      ]
+    },
+    {
+      "sha": "8a3c4d810fdf302fdbc3ea48a7ca8ce2172dcbf5",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-25T15:01:51+05:30",
+      "message": "remove unused vars",
+      "stats": {
+        "additions": 0,
+        "deletions": 8,
+        "total": 8
+      },
+      "branches": [
+        "sreyas/upload-fix"
+      ]
+    },
+    {
+      "sha": "aa74798443b69bad451218bf16c3ec736ec1a059",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-25T14:53:08+05:30",
+      "message": "no need for that extra params and declare video bytes",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "sreyas/upload-fix"
+      ]
+    },
+    {
+      "sha": "36ef4440cd7152e73c18b91e9fde5ce6ca02fc8c",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-25T14:46:57+05:30",
+      "message": "fetch encryption key from vault and remove the debugging key",
+      "stats": {
+        "additions": 11,
+        "deletions": 11,
+        "total": 22
+      },
+      "branches": [
+        "sreyas/upload-fix"
+      ]
+    },
+    {
+      "sha": "b147088de30c4fe9317c4c048d517d242c011d2e",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-25T14:37:28+05:30",
+      "message": "run rust fmt",
+      "stats": {
+        "additions": 0,
+        "deletions": 2,
+        "total": 2
+      },
+      "branches": [
+        "sreyas/upload-fix"
+      ]
+    },
+    {
+      "sha": "d134eb3719b5cce80a53f780e21a33baa076b13f",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-25T14:35:18+05:30",
+      "message": "cleanup",
+      "stats": {
+        "additions": 0,
+        "deletions": 37,
+        "total": 37
+      },
+      "branches": [
+        "sreyas/upload-fix"
+      ]
+    },
+    {
+      "sha": "2d4e24dd89271ab0b1a7f60fcef1e4231be7b627",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-25T14:21:27+05:30",
+      "message": "video id should be this",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "sreyas/upload-fix"
+      ]
+    },
+    {
+      "sha": "421bdad698fa4018b1369fde2eb55d236af10dee",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-25T13:59:59+05:30",
+      "message": "Use Dynamic Filename",
+      "stats": {
+        "additions": 8,
+        "deletions": 6,
+        "total": 14
+      },
+      "branches": [
+        "sreyas/upload-fix"
+      ]
+    },
+    {
+      "sha": "bece5583fff31c657a6efeb3a04dabdd5219f6fa",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-25T13:37:14+05:30",
+      "message": "try with multipart and auth token",
+      "stats": {
+        "additions": 14,
+        "deletions": 2,
+        "total": 16
+      },
+      "branches": [
+        "sreyas/upload-fix"
+      ]
+    },
+    {
+      "sha": "6d8fd32bf41da57e0e4abdb3e7da8d3e569da8d2",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-25T13:23:06+05:30",
+      "message": "run rust fmt",
+      "stats": {
+        "additions": 4,
+        "deletions": 1,
+        "total": 5
+      },
+      "branches": [
+        "sreyas/upload-fix"
+      ]
+    },
+    {
+      "sha": "f55784e4c92cffb20d58f86406e7085323b18a54",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-25T13:12:19+05:30",
+      "message": "try with authentication in storj",
+      "stats": {
+        "additions": 6,
+        "deletions": 10,
+        "total": 16
+      },
+      "branches": [
+        "sreyas/upload-fix"
+      ]
+    },
+    {
+      "sha": "e485afa9c3f1c6852050675c321dd9e5ee9e262f",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-25T13:00:00+05:30",
+      "message": "run rust fmt",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "sreyas/upload-fix"
+      ]
+    },
+    {
+      "sha": "dafbc85481f709543e44ec5eec7e38dfb170f19c",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-25T12:56:08+05:30",
+      "message": "debug fomat",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "sreyas/upload-fix"
+      ]
+    },
+    {
+      "sha": "51367fcd8265e05d3c48ae133df181eded5ffd12",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-25T12:53:27+05:30",
+      "message": "debug the structure of identity",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "sreyas/upload-fix"
+      ]
+    },
+    {
+      "sha": "87ce54784cfbb4e6021e21aef2340d7691b266d1",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-25T12:21:16+05:30",
+      "message": "dbug",
+      "stats": {
+        "additions": 34,
+        "deletions": 0,
+        "total": 34
+      },
+      "branches": [
+        "sreyas/upload-fix"
+      ]
+    },
+    {
+      "sha": "292b051d207ffc133bce689bff9c07ba90764a2d",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-25T11:23:19+05:30",
+      "message": "Revert \"send raw bytes instead of multipart form as storj expects that\"",
+      "stats": {
+        "additions": 9,
+        "deletions": 2,
+        "total": 11
+      },
+      "branches": [
+        "sreyas/upload-fix"
+      ]
+    },
+    {
+      "sha": "f38944dd6d0a32512cb0edd5bbf537a7a54bdca2",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-25T10:41:43+05:30",
+      "message": "send raw bytes instead of multipart form as storj expects that",
+      "stats": {
+        "additions": 2,
+        "deletions": 9,
+        "total": 11
+      },
+      "branches": [
+        "sreyas/upload-fix"
+      ]
+    },
+    {
+      "sha": "71c3d8083cc9b76e97b666ee8cdafe9d391d6c74",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-03-25T19:45:45+05:30",
+      "message": "fix: draft video upload issue (#430)",
+      "stats": {
+        "additions": 361,
+        "deletions": 20,
+        "total": 381
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c397bc09c5ad7d385661f9fc41e009bf39c290b0",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ai-feed-recommendation-system",
+      "timestamp": "2026-03-25T17:51:56+05:30",
+      "message": "Merge pull request #17 from dolr-ai/logging-phase-1",
+      "stats": {
+        "additions": 59,
+        "deletions": 0,
+        "total": 59
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "09f55b923ebad3edd8308bf6a3d9bf5b8655decb",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ai-feed-recommendation-system",
+      "timestamp": "2026-03-25T17:27:15+05:30",
+      "message": "Add phase 1 production logging",
+      "stats": {
+        "additions": 59,
+        "deletions": 0,
+        "total": 59
+      },
+      "branches": [
+        "main",
+        "logging-phase-1"
+      ]
+    },
+    {
+      "sha": "61ecd0e0a2f554ec529b5f40607aa505a53f51c1",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-25T20:41:08+05:30",
+      "message": "add tracing and error in auth middleware",
+      "stats": {
+        "additions": 20,
+        "deletions": 9,
+        "total": 29
+      },
+      "branches": [
+        "feat/capture-app-errors-into-sentry"
+      ]
+    },
+    {
+      "sha": "f7468f528955ddf281e1556fe35f07b09f537311",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-ai-chat",
+      "timestamp": "2026-03-25T20:23:53+05:30",
+      "message": "capture errors irrespective of their status code",
+      "stats": {
+        "additions": 1,
+        "deletions": 3,
+        "total": 4
+      },
+      "branches": [
+        "feat/capture-app-errors-into-sentry"
+      ]
+    },
+    {
+      "sha": "4cc5393de4dbb0493eb86b61cd80a34ca3c5f798",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-daily-streaks",
+      "timestamp": "2026-03-25T14:21:30+05:30",
+      "message": "open api doc",
+      "stats": {
+        "additions": 3,
+        "deletions": 2,
+        "total": 5
+      },
+      "branches": [
+        "naitik/daily-streaks"
+      ]
+    },
+    {
+      "sha": "f3545fc56680fda89dfa9c45de1f08f7b41fd77e",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-daily-streaks",
+      "timestamp": "2026-03-25T10:53:55+05:30",
+      "message": "fix: renaming service",
+      "stats": {
+        "additions": 544,
+        "deletions": 26,
+        "total": 570
+      },
+      "branches": [
+        "naitik/daily-streaks"
+      ]
+    }
+  ],
+  "commit_count": 52,
+  "issues": [
+    {
+      "number": 1783,
+      "title": "Make dashboard.yral.com accessible for anyone with a @gobazzinga.io email. Also add all the team hosted UIs like apm, sentry to this list",
+      "closed_at": "2026-03-25T13:37:27Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1783",
+      "labels": []
+    },
+    {
+      "number": 1739,
+      "title": "[Feature Request]: Add internal tooling for seeing chats for users and influencers",
+      "closed_at": "2026-03-25T05:53:47Z",
+      "assignee": "ravi-sawlani-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1739",
+      "labels": [
+        "Backend Dependencies"
+      ]
+    },
+    {
+      "number": 1738,
+      "title": "new Wallet API (New Flow)",
+      "closed_at": "2026-03-25T05:42:17Z",
+      "assignee": "ravi-sawlani-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1738",
+      "labels": []
+    },
+    {
+      "number": 1361,
+      "title": "[Feature Request]: Refactor yral-upload-video from Cloudflare Worker to Axum server for improved integration and maintainability",
+      "closed_at": "2026-03-25T07:15:37Z",
+      "assignee": "ravi-sawlani-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1361",
+      "labels": [
+        "Backend Dependencies"
+      ]
+    },
+    {
+      "number": 1713,
+      "title": "Split the feed into Explore vs Influencers",
+      "closed_at": "2026-03-25T06:12:06Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/product",
+      "url": "https://github.com/dolr-ai/product/issues/1713",
+      "labels": []
+    }
+  ],
+  "issue_count": 5
+}
