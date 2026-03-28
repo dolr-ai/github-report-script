@@ -1,0 +1,333 @@
+{
+  "date": "2026-03-28",
+  "cached_at": "2026-03-28T18:47:11.021335Z",
+  "commits": [
+    {
+      "sha": "95c142c01adecbbcc5a95a0e9aab2f472aa19527",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-28T18:33:42Z",
+      "message": "feat: backfill S3 data lake from earliest Kafka offset on first run",
+      "stats": {
+        "additions": 3,
+        "deletions": 0,
+        "total": 3
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "06f62ae35296c499be4e6c39acbcb68d47606699",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-28T18:15:07Z",
+      "message": "fix: correct timestamp.extractor case to Wallclock in S3 sink connector",
+      "stats": {
+        "additions": 3,
+        "deletions": 6,
+        "total": 9
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d8c133d004146eb2a9a583b790b7f5489054c7a8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-28T17:58:57Z",
+      "message": "chore: remove one-time DROP statements from ClickHouse startup_scripts",
+      "stats": {
+        "additions": 0,
+        "deletions": 9,
+        "total": 9
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "691eb12009315031dcc5000f820bb36577c7004e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-28T15:21:31Z",
+      "message": "fix: bump Bytebase Terraform provider to 3.16.3 to match server version",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "53b472803d2ad26f0ccbc518ae638bb86fbcaed9",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-28T15:19:57Z",
+      "message": "fix: correct Terraform provider version to 3.8.5 and use writable workspace for state",
+      "stats": {
+        "additions": 9,
+        "deletions": 3,
+        "total": 12
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a1cc595081e9ce3bd1dcbe2603308aeba3542ad8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-28T15:17:09Z",
+      "message": "feat: declarative Bytebase bootstrap via Terraform Job",
+      "stats": {
+        "additions": 170,
+        "deletions": 0,
+        "total": 170
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "1accc3a2d9cdd58c5208ef1e8d5e066d94d88c59",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-28T14:34:48Z",
+      "message": "fix: correct Bytebase upstream service name and port in oauth2-proxy",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8bb2ef2d6ec9ce511bb07bdcb2c7c5423e4991d4",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-28T14:24:43Z",
+      "message": "fix: add bytebase HTTPRoute to networking kustomization",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d91c2e7b6f9a2b314f319b8367cbdea4fe440454",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-28T14:03:11Z",
+      "message": "feat: change Longhorn default to 2 replicas, add longhorn-1replica for Kafka",
+      "stats": {
+        "additions": 38,
+        "deletions": 52,
+        "total": 90
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "1b522dfda0786182ee5d9e3a26cd389b994d619c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-28T13:45:03Z",
+      "message": "feat: co-locate Bytebase and Postgres via podAffinity on topology.kubernetes.io/region",
+      "stats": {
+        "additions": 32,
+        "deletions": 0,
+        "total": 32
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "082863f8d233973aa1fda5d95294a7979c4962d7",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-28T13:40:02Z",
+      "message": "feat: deploy Bytebase with PostgreSQL backend for ClickHouse schema management",
+      "stats": {
+        "additions": 312,
+        "deletions": 0,
+        "total": 312
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "30af01c1f3e5d31278e5793e5aba6f4c5e53ce88",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-28T12:47:10Z",
+      "message": "revert: remove Bytebase \u2014 requires external Postgres, too much overhead",
+      "stats": {
+        "additions": 0,
+        "deletions": 230,
+        "total": 230
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3350ebf80d429c65f1611fd16ce87c06bce33e14",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-28T11:38:18Z",
+      "message": "feat: add Bytebase to internal dashboard",
+      "stats": {
+        "additions": 6,
+        "deletions": 0,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ccf1d4e469610f484fc093fce47838fbde16e390",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-28T11:37:00Z",
+      "message": "fix: pin Bytebase chart to 1.1.2 and fix values structure",
+      "stats": {
+        "additions": 10,
+        "deletions": 11,
+        "total": 21
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b9255173ed37b581f93919658ef8bfaba4ee40a8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-28T11:06:23Z",
+      "message": "fix: update HelmRepository URL to point to the correct Bytebase GitHub page",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "779cfe292ad20d0c62276d821a6c6e3e5fde0277",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-28T04:40:44Z",
+      "message": "feat: add Bytebase integration with oauth2-proxy and update kustomization files",
+      "stats": {
+        "additions": 229,
+        "deletions": 17,
+        "total": 246
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 16,
+  "issues": [
+    {
+      "number": 1816,
+      "title": "Check why ansuman-1 and ansuman-2 was not added to the beszel monitor",
+      "closed_at": "2026-03-28T06:32:25Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1816",
+      "labels": []
+    },
+    {
+      "number": 1814,
+      "title": "Point *.ansuman.yral.com to the 2 IPs that ansuman provides for the redundant load balancer that he hosts",
+      "closed_at": "2026-03-28T06:32:15Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1814",
+      "labels": []
+    },
+    {
+      "number": 1800,
+      "title": "Toggle for alert toggle button not vertically aligned",
+      "closed_at": "2026-03-28T07:03:22Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1800",
+      "labels": []
+    },
+    {
+      "number": 1749,
+      "title": "Rename these servers by repo",
+      "closed_at": "2026-03-28T07:01:22Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1749",
+      "labels": []
+    },
+    {
+      "number": 1697,
+      "title": "Figure out how to send all mobile events to sentry",
+      "closed_at": "2026-03-28T06:35:35Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1697",
+      "labels": []
+    },
+    {
+      "number": 1689,
+      "title": "Decide future for these 2 services",
+      "closed_at": "2026-03-28T06:33:55Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1689",
+      "labels": []
+    },
+    {
+      "number": 971,
+      "title": "Bot subscription paywall",
+      "closed_at": "2026-03-28T07:38:25Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/971",
+      "labels": []
+    },
+    {
+      "number": 970,
+      "title": "Subscribe button on bot profile",
+      "closed_at": "2026-03-28T07:38:07Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/970",
+      "labels": []
+    },
+    {
+      "number": 947,
+      "title": "Performance dashboard",
+      "closed_at": "2026-03-28T05:39:56Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/947",
+      "labels": [
+        "enhancement"
+      ]
+    }
+  ],
+  "issue_count": 9
+}
