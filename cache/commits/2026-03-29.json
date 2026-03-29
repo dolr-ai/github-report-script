@@ -1,0 +1,471 @@
+{
+  "date": "2026-03-29",
+  "cached_at": "2026-03-29T18:47:07.851098Z",
+  "commits": [
+    {
+      "sha": "dbf585b2b53684474f9e310778ce428d5088dbc0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-29T08:44:08-07:00",
+      "message": "chore: bump versions to latest (#1078)",
+      "stats": {
+        "additions": 11,
+        "deletions": 9,
+        "total": 20
+      },
+      "branches": [
+        "main",
+        "dependabot/gradle/org.robolectric-robolectric-4.16.1",
+        "dependabot/gradle/ktor-3.4.1",
+        "dependabot/gradle/coil-3.4.0",
+        "bump-more-versions"
+      ]
+    },
+    {
+      "sha": "b5c838b6722cce78c07c50e1bf645778ba56a8b6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-29T18:35:07Z",
+      "message": "chore: bump androidx-lifecycle from 2.9.1 to 2.10.0",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "bump-more-versions"
+      ]
+    },
+    {
+      "sha": "501690fdf4b5b7ccc430868f229a006061d886f9",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-29T18:16:36Z",
+      "message": "chore: comment out python feature in devcontainer configuration",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "bump-more-versions"
+      ]
+    },
+    {
+      "sha": "23f3692c47dc2142f55c338ee85ce91b0b6dab06",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-29T18:16:12Z",
+      "message": "chore: simplify devcontainer features configuration",
+      "stats": {
+        "additions": 3,
+        "deletions": 11,
+        "total": 14
+      },
+      "branches": [
+        "bump-more-versions"
+      ]
+    },
+    {
+      "sha": "62057dc156fe16405e44bccc2150cb20ceef71f0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-29T18:16:02Z",
+      "message": "chore: bump androidx-paging 3.4.0-alpha04 \u2192 3.4.2",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "bump-more-versions"
+      ]
+    },
+    {
+      "sha": "380356953e448ed7f8352295be96b3ef9cbef0fc",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-29T18:09:57Z",
+      "message": "chore: bump androidx-browser 1.8.0 \u2192 1.10.0",
+      "stats": {
+        "additions": 3,
+        "deletions": 2,
+        "total": 5
+      },
+      "branches": [
+        "bump-more-versions"
+      ]
+    },
+    {
+      "sha": "977064efc35eca4a701c23d803162fac8b28bad5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-29T18:06:30Z",
+      "message": "chore: bump androidx-datastore 1.1.7 \u2192 1.2.1",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "bump-more-versions"
+      ]
+    },
+    {
+      "sha": "558b4af5210d2f687f702e8e535c4529d9b23176",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-29T17:54:03Z",
+      "message": "chore: bump compileSdk 35 \u2192 36, media3Exoplayer 1.9.0 \u2192 1.10.0, activityCompose 1.10.1 \u2192 1.13.0",
+      "stats": {
+        "additions": 4,
+        "deletions": 4,
+        "total": 8
+      },
+      "branches": [
+        "bump-more-versions"
+      ]
+    },
+    {
+      "sha": "623d04a82147a5fb92755060dee793de24e1d75d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-29T12:52:50Z",
+      "message": "refactor(longhorn): simplify to dataLocality-only placement, remove region constraints",
+      "stats": {
+        "additions": 21,
+        "deletions": 152,
+        "total": 173
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/postgres-18.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "4794932a7736ea9129948b8934a31cacfa4995ab",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-29T05:06:42Z",
+      "message": "fix: update subproject commit to indicate dirty state",
+      "stats": {
+        "additions": 14,
+        "deletions": 12,
+        "total": 26
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/postgres-18.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "345085c20f646bf5666b42c1495ec400c9f06982",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-29T04:57:24Z",
+      "message": "fix: update Longhorn volume nodeSelector documentation for new PVC provisioning",
+      "stats": {
+        "additions": 16,
+        "deletions": 0,
+        "total": 16
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/postgres-18.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "c8eeaad438a119714e4f6873a965a117600e382e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-29T04:51:31Z",
+      "message": "fix: update Longhorn upgrade instructions and clarify engine image patching process",
+      "stats": {
+        "additions": 12,
+        "deletions": 0,
+        "total": 12
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/postgres-18.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "578a082d0d12915db11919f2076f345ba6f31c96",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-29T04:38:34Z",
+      "message": "fix: replace deprecated storageclass-1replica with kafka-specific storage class and update documenta",
+      "stats": {
+        "additions": 23,
+        "deletions": 9,
+        "total": 32
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/postgres-18.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "4706145803049d50d70660f71620f47e2d2da60d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-29T04:36:28Z",
+      "message": "fix: update Longhorn storage settings in documentation and Kafka configuration for clarity on replic",
+      "stats": {
+        "additions": 16,
+        "deletions": 3,
+        "total": 19
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/postgres-18.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "a7faf58077e15a42d98692107ed9971784fb494c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-29T04:24:31Z",
+      "message": "fix: enhance Longhorn storage settings for same-region enforcement and replica placement",
+      "stats": {
+        "additions": 79,
+        "deletions": 37,
+        "total": 116
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/postgres-18.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "0d762f3f6c8acbb23cf82e5ad90c5311f2e2dac4",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-29T03:49:54Z",
+      "message": "fix: update Kafka storage class to use Longhorn and clarify storage details in comments",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/postgres-18.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "14dcdd1a5051da365fb0a1dd0fe36442c90705d4",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-29T03:47:24Z",
+      "message": "fix: remove deprecated Longhorn settings.yaml file",
+      "stats": {
+        "additions": 0,
+        "deletions": 16,
+        "total": 16
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/postgres-18.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "5d673e446a397fd69852fb6c32eda1aebad854e6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-29T03:47:12Z",
+      "message": "fix: revert invalid replica-region-soft-anti-affinity Setting CR (not in Longhorn 1.11.1)",
+      "stats": {
+        "additions": 7,
+        "deletions": 7,
+        "total": 14
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/postgres-18.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "75496382f4da7b73c2e9566e75e2f48131a06af7",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-29T03:43:59Z",
+      "message": "fix: apply replica-region-soft-anti-affinity via Setting CR (not HelmRelease values)",
+      "stats": {
+        "additions": 19,
+        "deletions": 4,
+        "total": 23
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/postgres-18.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "ba68b5ca97784e8f00b8fd5132c3ce2d5350a2e1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-29T03:36:30Z",
+      "message": "docs: document replicaRegionSoftAntiAffinity requirement for same-region replica placement",
+      "stats": {
+        "additions": 6,
+        "deletions": 4,
+        "total": 10
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/postgres-18.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "d3c92cf6186a8823fc1fb586ff81d362ebf908ce",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-29T03:34:41Z",
+      "message": "fix: add replicaRegionSoftAntiAffinity=false to prevent cross-region Longhorn replicas",
+      "stats": {
+        "additions": 4,
+        "deletions": 0,
+        "total": 4
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/postgres-18.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "f3e13a31d340056ca1a8f9eb1d32fb75234499e7",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-03-29T03:21:37Z",
+      "message": "fix: cap Kafka Connect JVM heap at 2g to prevent OOM alerts during backfill bursts",
+      "stats": {
+        "additions": 7,
+        "deletions": 0,
+        "total": 7
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/postgres-18.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "812525d3c29280d91302035c59b252079fc1c7f5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/website",
+      "timestamp": "2026-03-29T03:08:50-07:00",
+      "message": "Initial commit",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "version/v2",
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 23,
+  "issues": [],
+  "issue_count": 0
+}
