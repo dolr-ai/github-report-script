@@ -1,0 +1,526 @@
+{
+  "date": "2026-03-30",
+  "cached_at": "2026-03-30T18:49:17.090728Z",
+  "commits": [
+    {
+      "sha": "7b27f5cec8581134c4a2ef1d068edc35d3a78107",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-30T23:58:02+05:30",
+      "message": "Chore/subscribe button (#1080)",
+      "stats": {
+        "additions": 265,
+        "deletions": 19,
+        "total": 284
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d77959c4486e7b8fe3e06b94f26d7ffe8953ba9b",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-30T23:13:27+05:30",
+      "message": "Run staging iOS distribution workflow on PR updates",
+      "stats": {
+        "additions": 17,
+        "deletions": 1,
+        "total": 18
+      },
+      "branches": [
+        "fix/ios-action"
+      ]
+    },
+    {
+      "sha": "93a5cb0cd1a6064cc5d0bd9bebdd0b035727009b",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-30T23:12:41+05:30",
+      "message": "Remove legacy Rust steps from iOS distribution workflows",
+      "stats": {
+        "additions": 34,
+        "deletions": 45,
+        "total": 79
+      },
+      "branches": [
+        "fix/ios-action"
+      ]
+    },
+    {
+      "sha": "36c641de23c84ca0ca0960af57b3b50099b16c80",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-03-30T23:12:06+05:30",
+      "message": "Remove unused iOS wrapper code and deps",
+      "stats": {
+        "additions": 117,
+        "deletions": 34895,
+        "total": 35012
+      },
+      "branches": [
+        "fix/ios-action"
+      ]
+    },
+    {
+      "sha": "16347ee8c377aa47750775f4f914016eab223b39",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-03-30T16:57:43Z",
+      "message": "ci: move objcopy strip steps inside devcontainer runCmd",
+      "stats": {
+        "additions": 5,
+        "deletions": 11,
+        "total": 16
+      },
+      "branches": [
+        "move-to-legacy-yral-com"
+      ]
+    },
+    {
+      "sha": "22d42cbb3d24e35e85eb86d97c798bb0aacb9e9a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-03-30T15:35:24Z",
+      "message": "chore: update .gitignore to include pnpm-store and ensure docs directory is ignored",
+      "stats": {
+        "additions": 3,
+        "deletions": 1,
+        "total": 4
+      },
+      "branches": [
+        "move-to-legacy-yral-com"
+      ]
+    },
+    {
+      "sha": "eb335d417aa8006b5a263394236509e0a2e4f925",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-03-30T15:34:05Z",
+      "message": "ci: run build checks inside devcontainer via devcontainers/ci",
+      "stats": {
+        "additions": 108,
+        "deletions": 94,
+        "total": 202
+      },
+      "branches": [
+        "move-to-legacy-yral-com"
+      ]
+    },
+    {
+      "sha": "e30d251262c82e65106cb0f574fa3d2195598d82",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-03-30T15:27:28Z",
+      "message": "ci: move build checks from self-hosted to GitHub-hosted runner",
+      "stats": {
+        "additions": 17,
+        "deletions": 42,
+        "total": 59
+      },
+      "branches": [
+        "move-to-legacy-yral-com"
+      ]
+    },
+    {
+      "sha": "1e0dc7f3c6e2143968bb4f73dcfc961a6a802f11",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-03-30T09:52:13Z",
+      "message": "chore: move app domain from yral.com to legacy.yral.com",
+      "stats": {
+        "additions": 9,
+        "deletions": 9,
+        "total": 18
+      },
+      "branches": [
+        "move-to-legacy-yral-com"
+      ]
+    },
+    {
+      "sha": "b1b14895c303f36f207c574e766826616bcfb8ec",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-03-30T09:50:49Z",
+      "message": "fix: add Flyctl feature to devcontainer configuration",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "move-to-legacy-yral-com"
+      ]
+    },
+    {
+      "sha": "4d7d1372ed9c8717a8650e47df3b9bf31613aacf",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-03-30T08:30:02Z",
+      "message": "fix: update setup script to install 'whois' package alongside 'dnsutils'",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "move-to-legacy-yral-com"
+      ]
+    },
+    {
+      "sha": "e987424932338cedec81f118cb0426ab65f9611b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-03-30T08:24:38Z",
+      "message": "chore: remove Fly.io config and deploy workflow",
+      "stats": {
+        "additions": 0,
+        "deletions": 165,
+        "total": 165
+      },
+      "branches": [
+        "move-to-legacy-yral-com"
+      ]
+    },
+    {
+      "sha": "fa508af1ed822b3210c9caa79078213e30ff7e3d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-03-30T08:20:13Z",
+      "message": "fix: add installation of system packages in setup script",
+      "stats": {
+        "additions": 6,
+        "deletions": 0,
+        "total": 6
+      },
+      "branches": [
+        "move-to-legacy-yral-com"
+      ]
+    },
+    {
+      "sha": "e1c0689aaff7d0b4cb39e19a805cd0b8e8345762",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-03-30T08:15:49Z",
+      "message": "fix: remove GitHub Copilot extensions from devcontainer configuration",
+      "stats": {
+        "additions": 0,
+        "deletions": 3,
+        "total": 3
+      },
+      "branches": [
+        "move-to-legacy-yral-com"
+      ]
+    },
+    {
+      "sha": "f89b4181631b9fb43eefe0a5727d0468b5a2b453",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-03-30T17:21:55+05:30",
+      "message": "[skip ci] remove fly deployment file",
+      "stats": {
+        "additions": 0,
+        "deletions": 59,
+        "total": 59
+      },
+      "branches": [
+        "naitik/coolify-and-vault-integration"
+      ]
+    },
+    {
+      "sha": "9719fb637cbb4dccd58dcf619ed3cf4f718f4818",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-03-30T07:33:30-07:00",
+      "message": "feat: enhance devcontainer setup with additional tools and dependencies (#55)",
+      "stats": {
+        "additions": 82,
+        "deletions": 64,
+        "total": 146
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f7d944d4c348dbdd504185cbd3751e68453f5677",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-03-30T17:27:59+05:30",
+      "message": "deploy preview on coolify and upload secrets to vault (#51)",
+      "stats": {
+        "additions": 392,
+        "deletions": 158,
+        "total": 550
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a17710a75ea7c3f74333fc9d12c602c666105e55",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-03-30T04:52:02-07:00",
+      "message": "refactor: update redirect URL for Google authentication (#54)",
+      "stats": {
+        "additions": 86,
+        "deletions": 23,
+        "total": 109
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f2a54573353e1018d1dc31903d855ee87897ab5c",
+      "author": "sreyas-sreelal-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-03-30T19:28:16+05:30",
+      "message": "re order",
+      "stats": {
+        "additions": 17,
+        "deletions": 16,
+        "total": 33
+      },
+      "branches": [
+        "sreyas/repo-specific-ssh"
+      ]
+    },
+    {
+      "sha": "bdc08252499e88be3ac0a0d0601e3c23faee95b8",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-03-30T18:30:21+05:30",
+      "message": "add debug for sentry (#10)",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f8a372144586247de66df2552813ef18d92787c6",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-03-30T18:13:21+05:30",
+      "message": "fix: trace sample rate to 100% (#9)",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "main",
+        "feat/add-debug-for-sentry-integration"
+      ]
+    },
+    {
+      "sha": "39904e8c6fe549e760f1a49856bb3e4793af1352",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-03-30T16:56:07+05:30",
+      "message": "feat: integrate sentry with traces and matched transactions (#8)",
+      "stats": {
+        "additions": 361,
+        "deletions": 244,
+        "total": 605
+      },
+      "branches": [
+        "main",
+        "feat/improve-trace-sample-rate",
+        "feat/add-debug-for-sentry-integration"
+      ]
+    },
+    {
+      "sha": "5c4a718bf30a9d7c8822a6e1464cf0b2bf049ba2",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-03-30T14:02:59+05:30",
+      "message": "fix: remove body for notification info (#7)",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main",
+        "feat/integrate-sentry-with-http-transaction-and-tracing",
+        "feat/improve-trace-sample-rate",
+        "feat/add-debug-for-sentry-integration"
+      ]
+    },
+    {
+      "sha": "f0361d88ebc8f0871d419b0d9ec7ec893940d700",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-03-30T11:16:14+05:30",
+      "message": "remove body for notification info",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "feat/update-notification-body"
+      ]
+    },
+    {
+      "sha": "c4261bc1402c3f77627d290b0ee7032a60af11fe",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-03-30T16:45:53+05:30",
+      "message": "integrate sentry with traces and matched transactions",
+      "stats": {
+        "additions": 361,
+        "deletions": 244,
+        "total": 605
+      },
+      "branches": [
+        "feat/integrate-sentry-with-http-transaction-and-tracing"
+      ]
+    },
+    {
+      "sha": "d3ba036187e4e31c2cc2c6f0a0303f9b298fb496",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-03-30T18:08:46+05:30",
+      "message": "fix: trace sample rate to 100%",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "feat/improve-trace-sample-rate"
+      ]
+    },
+    {
+      "sha": "3bd61aabcf386856bf112e634e83c1e6d38dedc7",
+      "author": "gravityvi",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-03-30T18:29:45+05:30",
+      "message": "add debug for sentry",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "feat/add-debug-for-sentry-integration"
+      ]
+    },
+    {
+      "sha": "a2f1f99c753054bf852eaf37acf65a572bdd9fef",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-03-30T09:43:01Z",
+      "message": "Update service inventory with new services and owners",
+      "stats": {
+        "additions": 27,
+        "deletions": 12,
+        "total": 39
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "26b7a1148efba9f28f7987dee6f4a8a7bae809ce",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-03-29T20:40:36-07:00",
+      "message": "Rename VISION.md to vision.md",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "add-vision-document"
+      ]
+    },
+    {
+      "sha": "d0db2a324e118b51b5d9ef6223a328ff834a023d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/website",
+      "timestamp": "2026-03-30T08:43:22Z",
+      "message": "feat: add CNAME file for custom domain configuration",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "084f14662b64e1bebcbcd69514bd889bb1706d01",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/website",
+      "timestamp": "2026-03-30T08:04:38Z",
+      "message": "fix: update sitemap URL to point to the main site",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "fd4985d5bb5447b1c89fadbd037cb9595b50836c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/website",
+      "timestamp": "2026-03-30T07:53:25Z",
+      "message": "feat: add devcontainer configuration and post-create setup script",
+      "stats": {
+        "additions": 53,
+        "deletions": 0,
+        "total": 53
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 32,
+  "issues": [
+    {
+      "number": 1837,
+      "title": "Remove the body from notificatoion in upload service",
+      "closed_at": "2026-03-30T08:33:33Z",
+      "assignee": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1837",
+      "labels": []
+    },
+    {
+      "number": 1808,
+      "title": "[Bug]:  Increase the limit for images and sound for media upload in ai chats.",
+      "closed_at": "2026-03-30T05:29:38Z",
+      "assignee": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1808",
+      "labels": [
+        "bug",
+        "Backend Dependencies"
+      ]
+    },
+    {
+      "number": 1833,
+      "title": "Android staging app publish action completes successfully but new versions not being published to production",
+      "closed_at": "2026-03-30T17:55:54Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1833",
+      "labels": []
+    }
+  ],
+  "issue_count": 3
+}
