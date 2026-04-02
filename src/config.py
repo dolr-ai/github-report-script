@@ -178,6 +178,7 @@ USER_IDS: List[str] = [
     'shivam-bhavsar-yral',
     'ansuman-yral',
     'sreyas-sreelal-yral',
+    'rishichadha30',
 ]
 """
 GitHub usernames to track.
