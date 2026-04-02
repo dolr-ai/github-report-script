@@ -1,0 +1,749 @@
+{
+  "date": "2026-04-02",
+  "cached_at": "2026-04-02T18:48:44.022711Z",
+  "commits": [
+    {
+      "sha": "a5fe630c3ff78ea50f9fef79b68708d7c1964acb",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-04-02T17:22:01Z",
+      "message": "refactor: remove e2e-tests job from deploy preview workflow",
+      "stats": {
+        "additions": 0,
+        "deletions": 9,
+        "total": 9
+      },
+      "branches": [
+        "saikatdas0790/remove-percy-nightwatch"
+      ]
+    },
+    {
+      "sha": "c2b6976496d313e18aeab3954fa6d23f659a15fb",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-04-02T17:06:53Z",
+      "message": "fix: correct devcontainer image name format in workflow",
+      "stats": {
+        "additions": 1,
+        "deletions": 8,
+        "total": 9
+      },
+      "branches": [
+        "saikatdas0790/remove-percy-nightwatch"
+      ]
+    },
+    {
+      "sha": "3ac2fc4eb0bd84ac208b4fa254dfcd4a821df9ed",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-04-02T16:57:12Z",
+      "message": "refactor: remove unused CI tasks from tasks.json",
+      "stats": {
+        "additions": 0,
+        "deletions": 38,
+        "total": 38
+      },
+      "branches": [
+        "saikatdas0790/remove-percy-nightwatch"
+      ]
+    },
+    {
+      "sha": "acc14a017376a9d704e75b6405d727e30f0757ea",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-04-02T16:52:48Z",
+      "message": "fix: set DEBIAN_FRONTEND environment variable in Dockerfile",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "saikatdas0790/remove-percy-nightwatch"
+      ]
+    },
+    {
+      "sha": "a2a4658fb93b9788b59f5c70ebe6e9274cd225b9",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-04-02T16:51:17Z",
+      "message": "refactor: clean up devcontainer and tasks configuration by removing unused extensions and problem ma",
+      "stats": {
+        "additions": 5,
+        "deletions": 20,
+        "total": 25
+      },
+      "branches": [
+        "saikatdas0790/remove-percy-nightwatch"
+      ]
+    },
+    {
+      "sha": "01f21fffc774229924e0841c4c6d303bcce0eb02",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-04-02T16:42:09Z",
+      "message": "Merge branch 'main' into saikatdas0790/remove-percy-nightwatch",
+      "stats": {
+        "additions": 1,
+        "deletions": 2,
+        "total": 3
+      },
+      "branches": [
+        "saikatdas0790/remove-percy-nightwatch"
+      ]
+    },
+    {
+      "sha": "87273de733db4d87b56ad12f82fe019e9aa08783",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-04-02T16:27:28Z",
+      "message": "[skip ci] refactor: move setup commands to post-create.sh and remove setup.sh",
+      "stats": {
+        "additions": 1,
+        "deletions": 2,
+        "total": 3
+      },
+      "branches": [
+        "saikatdas0790/remove-percy-nightwatch",
+        "main"
+      ]
+    },
+    {
+      "sha": "3bf7dec991ec501f5e883475ff409da0f48ef438",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-04-02T10:22:36Z",
+      "message": "Remove deprecated end-to-end test files for feed, menu, profile, and wallet pages",
+      "stats": {
+        "additions": 0,
+        "deletions": 8349,
+        "total": 8349
+      },
+      "branches": [
+        "saikatdas0790/remove-percy-nightwatch"
+      ]
+    },
+    {
+      "sha": "7f58094f0b6dbe540590a95051c53477b2dd2326",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-04-02T15:46:44+05:30",
+      "message": "Refactor and remove unused code and configurations (#1186)",
+      "stats": {
+        "additions": 22,
+        "deletions": 681,
+        "total": 703
+      },
+      "branches": [
+        "saikatdas0790/remove-percy-nightwatch",
+        "main"
+      ]
+    },
+    {
+      "sha": "3b848f89b22d0a311799c666078e86190ed473aa",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-04-02T01:39:55Z",
+      "message": "[skip ci] fix: ensure cargo and user-installed binaries are on PATH in setup script",
+      "stats": {
+        "additions": 3,
+        "deletions": 0,
+        "total": 3
+      },
+      "branches": [
+        "saikatdas0790/remove-percy-nightwatch",
+        "main"
+      ]
+    },
+    {
+      "sha": "e56e9b4456911994b8716bd8e074e9957119d6a0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-04-02T23:25:26+05:30",
+      "message": "Remove deprecated end-to-end tests and clean up configurations (#1188)",
+      "stats": {
+        "additions": 4,
+        "deletions": 8420,
+        "total": 8424
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "2165ae6242cc00d2660ddf6acd61e7a47e0ba243",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-02T22:44:02+05:30",
+      "message": "Fix/android prod action (#1095)",
+      "stats": {
+        "additions": 201,
+        "deletions": 5,
+        "total": 206
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6d75ea12e13994ca00bb10d7d06b8c36c62fac65",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-02T20:38:51+05:30",
+      "message": "Fix/ios prod action (#1093)",
+      "stats": {
+        "additions": 244,
+        "deletions": 25,
+        "total": 269
+      },
+      "branches": [
+        "main",
+        "dependabot/gradle/org.robolectric-robolectric-4.16.1"
+      ]
+    },
+    {
+      "sha": "28cf1c7ffb4d99cbd95ce4aab777d44e31d4966b",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-02T17:19:23+05:30",
+      "message": "Add draft delete action in profile (#1087)",
+      "stats": {
+        "additions": 190,
+        "deletions": 36,
+        "total": 226
+      },
+      "branches": [
+        "main",
+        "dependabot/gradle/org.robolectric-robolectric-4.16.1",
+        "chore/new-endpoints"
+      ]
+    },
+    {
+      "sha": "b62dded90bf435b830594ccf2514533793dd748c",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-02T12:11:17+05:30",
+      "message": "Add inbox navigation shortcut on feed screen (#1088)",
+      "stats": {
+        "additions": 73,
+        "deletions": 8,
+        "total": 81
+      },
+      "branches": [
+        "main",
+        "dependabot/gradle/org.robolectric-robolectric-4.16.1",
+        "chore/new-endpoints"
+      ]
+    },
+    {
+      "sha": "c33ee8e0f3a7146efc3dc352c3f9c88a8ba7d467",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-02T21:28:05+05:30",
+      "message": "Use recsys influencer feed for chat discover",
+      "stats": {
+        "additions": 275,
+        "deletions": 13,
+        "total": 288
+      },
+      "branches": [
+        "chore/new-endpoints"
+      ]
+    },
+    {
+      "sha": "2884888de7257ea513719e555f14a3fe8dc5a3df",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-02T20:00:03+05:30",
+      "message": "Use CDN host for generated thumbnails",
+      "stats": {
+        "additions": 5,
+        "deletions": 7,
+        "total": 12
+      },
+      "branches": [
+        "chore/new-endpoints"
+      ]
+    },
+    {
+      "sha": "ff750e41b3ca97679d457226fc5bd19f458ca45a",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-02T19:57:37+05:30",
+      "message": "Use CDN host for generated video URLs",
+      "stats": {
+        "additions": 35,
+        "deletions": 3,
+        "total": 38
+      },
+      "branches": [
+        "chore/new-endpoints"
+      ]
+    },
+    {
+      "sha": "7c5ad0c1b1ebbe35fd9649d6ff62687ab6dd3ece",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-04-02T01:37:02Z",
+      "message": "fix(devcontainer): comment out SSH agent and environment variable configurations",
+      "stats": {
+        "additions": 9,
+        "deletions": 0,
+        "total": 9
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/postgres-18.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "73722f0725acf915a3d03b410c7285ac0cd2a9ca",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-04-02T01:36:48Z",
+      "message": "fix(devcontainer): remove SSH agent and configuration mounts from devcontainer setup",
+      "stats": {
+        "additions": 0,
+        "deletions": 9,
+        "total": 9
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/postgres-18.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cert-manager",
+        "main"
+      ]
+    },
+    {
+      "sha": "7146ab430dc9531ce9a83b844fe0e4bd9c164f5a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-04-02T13:25:25Z",
+      "message": "feat(todos): add tasks for cleaning up DNS entries and managing secrets with Ansible Vault",
+      "stats": {
+        "additions": 3,
+        "deletions": 1,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "afa29e7bd074a04a632a0e5e6f54a6f176f95480",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-04-02T13:16:08Z",
+      "message": "feat(docs): add DevPod onboarding guide with setup instructions and resource quotas",
+      "stats": {
+        "additions": 55,
+        "deletions": 0,
+        "total": 55
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7f25332d40157d4555c51fa3395c4c5c3d846d55",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-04-02T08:23:46+05:30",
+      "message": "Update error instrumentation for services",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "naitik/update-entries"
+      ]
+    },
+    {
+      "sha": "7fdde74cea39d9d3b02b2ef1cc5c490bd9c51adc",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-04-02T12:43:49Z",
+      "message": "Add onboarding documents for getting started and CI deployment procedures",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f286933a179ce14c8dcdaf6a514426e1b158b6b0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-04-02T12:43:04Z",
+      "message": "Update getting started guide with SSH key creation and server setup instructions",
+      "stats": {
+        "additions": 4,
+        "deletions": 4,
+        "total": 8
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "245f5bc3b3a989368d3c4ce075b2f83f30f168cc",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-04-02T12:21:04Z",
+      "message": "Remove outdated onboarding documents and add new getting started and CI deployment guides",
+      "stats": {
+        "additions": 25,
+        "deletions": 56,
+        "total": 81
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8d28f3f7554b012981ea84927045cb5f9c141db3",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-04-02T16:27:50+05:30",
+      "message": "Add Rishi Chadha SSH key in alphabetical order (#1877)",
+      "stats": {
+        "additions": 6,
+        "deletions": 0,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9ea2fd04a857dae7cc01038c66abbcfbe6f71adb",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-04-02T11:30:10Z",
+      "message": "Add rishi-1 and rishi-2 entries to hosts.yml",
+      "stats": {
+        "additions": 4,
+        "deletions": 2,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4dc9d6ea1c293f5eeae7116c79afafcc25cd143d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-04-02T11:04:29Z",
+      "message": "Add rishi to team_members in vars.yml and update grant-ssh-access.yml",
+      "stats": {
+        "additions": 4,
+        "deletions": 6,
+        "total": 10
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ac33faeb9eb2ea624a9e280c477b563ded9723d1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-04-02T11:25:08Z",
+      "message": "chore: Add GitHub username 'rishichadha30' to USER_IDS list",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ea7d9376882bb7a65cf4b21aa615de687eb6eadf",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/github-report-script",
+      "timestamp": "2026-04-02T11:10:23Z",
+      "message": "chore: Update postCreateCommand to use a separate script for package installation",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c20628c5090775e8c68b6498efac8e9477072153",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/ai-feed-recommendation-system",
+      "timestamp": "2026-04-02T11:22:48+05:30",
+      "message": "Remove duplicate entry in influencer_feed.toml",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "jatin-changes"
+      ]
+    },
+    {
+      "sha": "3484bb204cd89f59acd0c652ec6764dbdb814f39",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-daily-streaks",
+      "timestamp": "2026-04-02T10:49:54+05:30",
+      "message": "updated deployment script",
+      "stats": {
+        "additions": 123,
+        "deletions": 5,
+        "total": 128
+      },
+      "branches": [
+        "naitik/daily-streaks"
+      ]
+    },
+    {
+      "sha": "cff19cf52b365562ecaf96808f5cff4d18fc7bb5",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-daily-streaks",
+      "timestamp": "2026-04-02T10:30:34+05:30",
+      "message": "fix: preview setup",
+      "stats": {
+        "additions": 7,
+        "deletions": 23,
+        "total": 30
+      },
+      "branches": [
+        "naitik/daily-streaks"
+      ]
+    },
+    {
+      "sha": "d6515255972c88430311d633107e2ff25cc32d7c",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-daily-streaks",
+      "timestamp": "2026-04-02T10:25:02+05:30",
+      "message": "added docker compose and database url logic",
+      "stats": {
+        "additions": 22,
+        "deletions": 57,
+        "total": 79
+      },
+      "branches": [
+        "naitik/daily-streaks"
+      ]
+    },
+    {
+      "sha": "6ffd086c307affe5830e0f3137035f4f456dcbc5",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-daily-streaks",
+      "timestamp": "2026-04-02T10:12:09+05:30",
+      "message": "added postgres. removed redis, updated testcases",
+      "stats": {
+        "additions": 1260,
+        "deletions": 1355,
+        "total": 2615
+      },
+      "branches": [
+        "naitik/daily-streaks"
+      ]
+    }
+  ],
+  "commit_count": 36,
+  "issues": [
+    {
+      "number": 1853,
+      "title": "Support a mechanism to delete drafts as part of the draft flow feature",
+      "closed_at": "2026-04-02T11:49:25Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1853",
+      "labels": []
+    },
+    {
+      "number": 1848,
+      "title": "Remove old dead code for game, leaderboard and tournament",
+      "closed_at": "2026-04-02T06:41:59Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1848",
+      "labels": []
+    },
+    {
+      "number": 1847,
+      "title": "Implement test-support layer",
+      "closed_at": "2026-04-02T06:41:53Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1847",
+      "labels": []
+    },
+    {
+      "number": 1745,
+      "title": "Draft flow for ai video gen",
+      "closed_at": "2026-04-02T11:49:43Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1745",
+      "labels": []
+    },
+    {
+      "number": 955,
+      "title": "Inbox shortcut on homescreen",
+      "closed_at": "2026-04-02T06:41:18Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/955",
+      "labels": [
+        "yral2.0-phase1"
+      ]
+    },
+    {
+      "number": 1817,
+      "title": "Provide naitik-3 and ansuman-3 to the team",
+      "closed_at": "2026-04-02T06:02:27Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1817",
+      "labels": []
+    },
+    {
+      "number": 1252,
+      "title": "Refactor and remove unused hot or not secrets and code",
+      "closed_at": "2026-04-02T06:28:33Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1252",
+      "labels": []
+    },
+    {
+      "number": 1779,
+      "title": "Add Cloudflare's free CDN in front of Hetzner video serving bucket to have the CDN benefits for video delivery",
+      "closed_at": "2026-04-02T05:30:42Z",
+      "assignee": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1779",
+      "labels": []
+    },
+    {
+      "number": 1457,
+      "title": "[Feature Request]: Remove Cloudflare Queue",
+      "closed_at": "2026-04-02T05:31:14Z",
+      "assignee": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1457",
+      "labels": [
+        "Backend Dependencies"
+      ]
+    },
+    {
+      "number": 1867,
+      "title": "Send a pull request [here](https://github.com/dolr-ai/yral/blob/main/service-summary.md)",
+      "closed_at": "2026-04-02T05:55:08Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1867",
+      "labels": []
+    },
+    {
+      "number": 1864,
+      "title": "Host it on https://recsys-influencer-feed.ansuman.yral.com/docs",
+      "closed_at": "2026-04-02T05:46:51Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1864",
+      "labels": []
+    },
+    {
+      "number": 1773,
+      "title": "Figure out how to get redundancy on feed-recommendation-system API endoint",
+      "closed_at": "2026-04-02T05:56:49Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1773",
+      "labels": []
+    },
+    {
+      "number": 1764,
+      "title": "Bare metal deployment of new feed system",
+      "closed_at": "2026-04-02T05:55:35Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1764",
+      "labels": []
+    },
+    {
+      "number": 1407,
+      "title": "Data modelling",
+      "closed_at": "2026-04-02T06:06:29Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1407",
+      "labels": []
+    },
+    {
+      "number": 1842,
+      "title": "Deploy a HA reverse proxy  to naitik-1 and naitik-2",
+      "closed_at": "2026-04-02T06:20:37Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1842",
+      "labels": []
+    },
+    {
+      "number": 1782,
+      "title": "change db from redis to postgres for daily streaks",
+      "closed_at": "2026-04-02T06:24:41Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1782",
+      "labels": []
+    },
+    {
+      "number": 1766,
+      "title": "deployment setup for daily streak api",
+      "closed_at": "2026-04-02T06:22:49Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1766",
+      "labels": []
+    },
+    {
+      "number": 1744,
+      "title": "test daily-streak APIs",
+      "closed_at": "2026-04-02T06:22:25Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1744",
+      "labels": []
+    },
+    {
+      "number": 1742,
+      "title": "plan and design daily streak APIs",
+      "closed_at": "2026-04-02T06:23:05Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1742",
+      "labels": []
+    }
+  ],
+  "issue_count": 19
+}
