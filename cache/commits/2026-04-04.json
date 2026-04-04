@@ -1,0 +1,404 @@
+{
+  "date": "2026-04-04",
+  "cached_at": "2026-04-04T18:47:16.603340Z",
+  "commits": [
+    {
+      "sha": "f981a35eb29fa633f5cb0cf8d0f22838aa2ab0d7",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-04T11:15:44-07:00",
+      "message": "fix: update ktlint version to 1.8.0 in build.gradle.kts",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "saikatdas0790/fix-security-vulnerabilities"
+      ]
+    },
+    {
+      "sha": "889f76d2dba1cb51759250757997ddff32746956",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-04T11:08:13-07:00",
+      "message": "fix: remove unused build.gradle.kts file from composeApp",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "saikatdas0790/fix-security-vulnerabilities"
+      ]
+    },
+    {
+      "sha": "9b562330a35db9e9c56c3ef717f831d22ab9252e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-04T11:07:23-07:00",
+      "message": "refactor: fix linting by running ktlint on the entire repo",
+      "stats": {
+        "additions": 1110,
+        "deletions": 331,
+        "total": 1441
+      },
+      "branches": [
+        "saikatdas0790/fix-security-vulnerabilities"
+      ]
+    },
+    {
+      "sha": "9011bd919b3ef617dec514ec239c9f7b73f35cca",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-04T11:01:05-07:00",
+      "message": "feat: add Kotlin formatter extension and configuration for VSCode",
+      "stats": {
+        "additions": 13,
+        "deletions": 1,
+        "total": 14
+      },
+      "branches": [
+        "saikatdas0790/fix-security-vulnerabilities"
+      ]
+    },
+    {
+      "sha": "13d1947580b8491e0a2fb70b1b7af3c8b4da8026",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-04T09:13:46-07:00",
+      "message": "fix: remove error suppression from lint and detekt commands in CI workflow",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "saikatdas0790/fix-security-vulnerabilities"
+      ]
+    },
+    {
+      "sha": "e171903c504b4bcbf0755de1b0b547d05f9c477a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-04T09:13:10-07:00",
+      "message": "fix: update staging versioning logic to increment versionName correctly",
+      "stats": {
+        "additions": 8,
+        "deletions": 1,
+        "total": 9
+      },
+      "branches": [
+        "saikatdas0790/fix-security-vulnerabilities"
+      ]
+    },
+    {
+      "sha": "c16bd92d9ce2a6523ba8633dbf4cd360ce3eb4cc",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-04T08:43:41-07:00",
+      "message": "Merge branch 'main' into saikatdas0790/fix-security-vulnerabilities",
+      "stats": {
+        "additions": 2,
+        "deletions": 14378,
+        "total": 14380
+      },
+      "branches": [
+        "saikatdas0790/fix-security-vulnerabilities"
+      ]
+    },
+    {
+      "sha": "94f6921189a57aa19ab84fada7782d6fffcb1d74",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-04T21:11:32+05:30",
+      "message": "Add iOS production distribution workflow and clean up deprecated code (#1099)",
+      "stats": {
+        "additions": 0,
+        "deletions": 14376,
+        "total": 14376
+      },
+      "branches": [
+        "saikatdas0790/fix-security-vulnerabilities",
+        "main",
+        "dependabot/github_actions/google-github-actions/auth-3",
+        "dependabot/github_actions/actions/setup-java-5",
+        "dependabot/github_actions/actions/checkout-6",
+        "dependabot/github_actions/actions/cache-5"
+      ]
+    },
+    {
+      "sha": "bc41ceb66f62122a6b6d52e84ac3fce0d1ee7ba9",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-04T02:49:34-07:00",
+      "message": "Merge branch 'main' into saikatdas0790/fix-security-vulnerabilities",
+      "stats": {
+        "additions": 1160,
+        "deletions": 116,
+        "total": 1276
+      },
+      "branches": [
+        "saikatdas0790/fix-security-vulnerabilities"
+      ]
+    },
+    {
+      "sha": "b4f66bde3fb4f9cffb4dd312b0542fc84419623a",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-04T13:49:47+05:30",
+      "message": "Fix/chat human profile switch prompt (#1098)",
+      "stats": {
+        "additions": 849,
+        "deletions": 97,
+        "total": 946
+      },
+      "branches": [
+        "saikatdas0790/fix-security-vulnerabilities",
+        "main",
+        "dependabot/github_actions/google-github-actions/auth-3",
+        "dependabot/github_actions/actions/setup-java-5",
+        "dependabot/github_actions/actions/checkout-6",
+        "dependabot/github_actions/actions/cache-5"
+      ]
+    },
+    {
+      "sha": "91a04a9fb6f4dc41124ea14bb0141336492c16d7",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-04T00:18:49-07:00",
+      "message": "Fix: clean up tasks.json by removing commented sections and updating task group settings",
+      "stats": {
+        "additions": 3,
+        "deletions": 11,
+        "total": 14
+      },
+      "branches": [
+        "saikatdas0790/fix-security-vulnerabilities"
+      ]
+    },
+    {
+      "sha": "ed1a4dd8f4d93e59ce819a6f91ed985b7c6012cc",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-04T09:51:28+05:30",
+      "message": "Chore/new endpoints (#1094)",
+      "stats": {
+        "additions": 309,
+        "deletions": 17,
+        "total": 326
+      },
+      "branches": [
+        "saikatdas0790/fix-security-vulnerabilities",
+        "main",
+        "dependabot/github_actions/google-github-actions/auth-3",
+        "dependabot/github_actions/actions/setup-java-5",
+        "dependabot/github_actions/actions/checkout-6",
+        "dependabot/github_actions/actions/cache-5"
+      ]
+    },
+    {
+      "sha": "95727bbdf811e0f2ae574a14c69b974d525b61c3",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-04T07:49:43+05:30",
+      "message": "Chore/new endpoints (#1094)",
+      "stats": {
+        "additions": 309,
+        "deletions": 17,
+        "total": 326
+      },
+      "branches": [
+        "gh-readonly-queue/main/pr-1094-768be1cddb1803d5a96a19885e1f949c5a37d557"
+      ]
+    },
+    {
+      "sha": "1f45287c4361c6a977e8d8075f256bf3cd9c1757",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-04-04T09:58:12Z",
+      "message": "Update getting started guide with new \"Hello visitor\" service task and database integration instruct",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "main",
+        "ansuman-yral-patch-1"
+      ]
+    },
+    {
+      "sha": "dd6491623e74677cf1a1aa5c96b44dbc8fd7ded3",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-04-04T21:23:24+05:30",
+      "message": "Update service-summary.md",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "ansuman-yral-patch-1"
+      ]
+    },
+    {
+      "sha": "a5695546dbdc154895025334ad9c7a03ba6203fa",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-hello-world-rishi",
+      "timestamp": "2026-04-04T12:03:47+05:30",
+      "message": "Change Hello World back to Rishi",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4833018e86a60a087a7acbbf1847750fccf94571",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-hello-world-rishi",
+      "timestamp": "2026-04-04T11:41:08+05:30",
+      "message": "Change Hello Rishi to Hello World",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f0cc9330e43a6241973aeae95ecd9c158fc2a11c",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-hello-world-rishi",
+      "timestamp": "2026-04-04T11:30:11+05:30",
+      "message": "Change Hello World to Hello Rishi",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a934456de1512bdeaa05a78d70c33da203d80729",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-hello-world-rishi",
+      "timestamp": "2026-04-04T11:20:10+05:30",
+      "message": "Update README: reflect CI/CD improvements and complete server setup",
+      "stats": {
+        "additions": 47,
+        "deletions": 26,
+        "total": 73
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8a5d8103798a584fb83c18405e3512d5002b87dd",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-hello-world-rishi",
+      "timestamp": "2026-04-04T11:07:25+05:30",
+      "message": "Fix health check: curl Caddy locally with Host header instead of docker exec",
+      "stats": {
+        "additions": 5,
+        "deletions": 4,
+        "total": 9
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a4c8497746c57a17d41890cd3c2318be835c4155",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-hello-world-rishi",
+      "timestamp": "2026-04-04T11:03:08+05:30",
+      "message": "Fix 3 gaps: Caddy in CI, per-server health checks, complete server-setup.sh",
+      "stats": {
+        "additions": 186,
+        "deletions": 86,
+        "total": 272
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 21,
+  "issues": [
+    {
+      "number": 1878,
+      "title": "Add an event for URLs being fetched but video response being 4xx Forbidden. Follow this to confirm that this isn't a widespread problem for all users",
+      "closed_at": "2026-04-04T08:19:49Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1878",
+      "labels": []
+    },
+    {
+      "number": 1851,
+      "title": "Fix iOS product app deployment on release creation Github actions workflow breakage",
+      "closed_at": "2026-04-04T06:06:36Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1851",
+      "labels": []
+    },
+    {
+      "number": 1832,
+      "title": "iOS staging builds are breaking. I thought we fixed this? https://github.com/dolr-ai/yral-mobile/actions/workflows/deploy-staging-app-to-apple-app-store-on-merge-to-main.yml",
+      "closed_at": "2026-04-04T06:05:41Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1832",
+      "labels": []
+    },
+    {
+      "number": 1829,
+      "title": "I subscribed from a secondary account to a bot on my primary account. Some usability issues noted",
+      "closed_at": "2026-04-04T06:08:25Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1829",
+      "labels": []
+    },
+    {
+      "number": 1795,
+      "title": "Remove Sentry altogether from the app",
+      "closed_at": "2026-04-04T06:05:30Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1795",
+      "labels": []
+    },
+    {
+      "number": 1794,
+      "title": "Auth URL retry on fallback url - auth.dolr.ai if auth.yral.com DNS resolution is failing",
+      "closed_at": "2026-04-04T06:05:08Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1794",
+      "labels": []
+    },
+    {
+      "number": 977,
+      "title": "Subscription button state in My bot profile screen",
+      "closed_at": "2026-04-04T06:08:12Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/977",
+      "labels": []
+    }
+  ],
+  "issue_count": 7
+}
