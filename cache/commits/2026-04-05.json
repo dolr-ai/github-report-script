@@ -1,0 +1,75 @@
+{
+  "date": "2026-04-05",
+  "cached_at": "2026-04-05T18:47:10.955077Z",
+  "commits": [
+    {
+      "sha": "168e008e005aece303c1b4fa29813ac4553fe3b3",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-05T17:41:26+05:30",
+      "message": "Remove Firebase auth, Firestore, and functions usage (#1082)",
+      "stats": {
+        "additions": 342,
+        "deletions": 3067,
+        "total": 3409
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "094a3b363c024ad04018bd9b729df93d8f38e095",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-04-05T08:54:38Z",
+      "message": "Add rishi-3 entry to hosts.yml",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d7a532dfb88b7b3efc87fc51441c8dc00493f8e8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-04-05T08:52:52Z",
+      "message": "Uncomment SSH and GitHub CLI mounts in devcontainer.json",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 3,
+  "issues": [
+    {
+      "number": 964,
+      "title": "Firebase cleanup",
+      "closed_at": "2026-04-05T12:11:28Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/964",
+      "labels": [
+        "yral2.0-phase1"
+      ]
+    },
+    {
+      "number": 1840,
+      "title": "Show the team the service summary and invite to update it for themselves",
+      "closed_at": "2026-04-05T17:00:35Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1840",
+      "labels": []
+    }
+  ],
+  "issue_count": 2
+}
