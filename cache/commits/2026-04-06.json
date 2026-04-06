@@ -1,0 +1,271 @@
+{
+  "date": "2026-04-06",
+  "cached_at": "2026-04-06T18:48:54.649243Z",
+  "commits": [
+    {
+      "sha": "6a1f3d4bdd8519e5e57223f68380dd3900d5ae47",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-06T17:04:05+05:30",
+      "message": "Fixes uniffi checksum failure (#1102)",
+      "stats": {
+        "additions": 12,
+        "deletions": 9,
+        "total": 21
+      },
+      "branches": [
+        "main",
+        "feature/referral-received-gclid"
+      ]
+    },
+    {
+      "sha": "be449f0e23ff7f8ffa378013b57776aec081079f",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-06T10:45:11+05:30",
+      "message": "fix: always refresh chat history when conversation screen opens (#1096)",
+      "stats": {
+        "additions": 12,
+        "deletions": 2,
+        "total": 14
+      },
+      "branches": [
+        "main",
+        "feature/referral-received-gclid"
+      ]
+    },
+    {
+      "sha": "6189a948b161889a1a1809de0257d2ebe8a0f07d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-06T10:05:55+05:30",
+      "message": "Update documentation and upgrade dependencies (#1101)",
+      "stats": {
+        "additions": 266,
+        "deletions": 863,
+        "total": 1129
+      },
+      "branches": [
+        "main",
+        "feature/referral-received-gclid",
+        "dependabot/gradle/ktor-3.4.2"
+      ]
+    },
+    {
+      "sha": "05ac515372e37cec26a8d07fb570cfa93eb7d7f7",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-06T17:34:45+05:30",
+      "message": "feat(attribution): emit gclid on referral_received and persist for analytics",
+      "stats": {
+        "additions": 86,
+        "deletions": 1,
+        "total": 87
+      },
+      "branches": [
+        "feature/referral-received-gclid"
+      ]
+    },
+    {
+      "sha": "dab016b88609ef2ba7b2313eea944b4c64982db8",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-04-06T11:16:27+05:30",
+      "message": "Update service-summary.md (#1889)",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7983f87a4289e826ec7bfd1051b9925c1a49cfe0",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-daily-streaks",
+      "timestamp": "2026-04-06T11:12:56+05:30",
+      "message": "fix: jq",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/daily-streaks"
+      ]
+    },
+    {
+      "sha": "c38516e85da68de3fd6901638dc31a7edc39027d",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-daily-streaks",
+      "timestamp": "2026-04-06T10:59:33+05:30",
+      "message": "fix: build name",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/daily-streaks"
+      ]
+    },
+    {
+      "sha": "d74a01fcfd0710ce336c6f33f5514fae48bb4dab",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-daily-streaks",
+      "timestamp": "2026-04-06T10:49:00+05:30",
+      "message": "fix: build name",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "naitik/daily-streaks"
+      ]
+    },
+    {
+      "sha": "40245b15abb1346ddcb46da5e398c250e95a8ef0",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-daily-streaks",
+      "timestamp": "2026-04-06T10:42:15+05:30",
+      "message": "fix: cargo fmt",
+      "stats": {
+        "additions": 3,
+        "deletions": 6,
+        "total": 9
+      },
+      "branches": [
+        "naitik/daily-streaks"
+      ]
+    },
+    {
+      "sha": "4c834f65f2d06d074fbfff012f396db534ad380d",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-daily-streaks",
+      "timestamp": "2026-04-06T10:40:47+05:30",
+      "message": "fix: clippy issues",
+      "stats": {
+        "additions": 24,
+        "deletions": 94,
+        "total": 118
+      },
+      "branches": [
+        "naitik/daily-streaks"
+      ]
+    },
+    {
+      "sha": "1b098a5c4e5de5bebddc1fbe8e4974ed26f8be7f",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-daily-streaks",
+      "timestamp": "2026-04-06T10:21:26+05:30",
+      "message": "updated config. postgres related changes and sentry integration",
+      "stats": {
+        "additions": 338,
+        "deletions": 22,
+        "total": 360
+      },
+      "branches": [
+        "naitik/daily-streaks"
+      ]
+    }
+  ],
+  "commit_count": 11,
+  "issues": [
+    {
+      "number": 1797,
+      "title": "Remove sentry error logging from mobile if no extra utility",
+      "closed_at": "2026-04-06T05:42:00Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1797",
+      "labels": []
+    },
+    {
+      "number": 1772,
+      "title": "Figure out how to get redundancy on Clickhouse to handle server failure",
+      "closed_at": "2026-04-06T05:49:01Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1772",
+      "labels": []
+    },
+    {
+      "number": 1750,
+      "title": "AI influencer discovery feed",
+      "closed_at": "2026-04-06T05:47:10Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1750",
+      "labels": []
+    },
+    {
+      "number": 1891,
+      "title": "Fix the Crashlytics crash first",
+      "closed_at": "2026-04-06T11:34:07Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1891",
+      "labels": []
+    },
+    {
+      "number": 1853,
+      "title": "Support a mechanism to delete drafts as part of the draft flow feature",
+      "closed_at": "2026-04-06T05:28:09Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1853",
+      "labels": []
+    },
+    {
+      "number": 1848,
+      "title": "Remove old dead code for game, leaderboard and tournament",
+      "closed_at": "2026-04-06T05:22:07Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1848",
+      "labels": []
+    },
+    {
+      "number": 1847,
+      "title": "Implement test-support layer",
+      "closed_at": "2026-04-06T05:22:00Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1847",
+      "labels": []
+    },
+    {
+      "number": 1745,
+      "title": "Draft flow for ai video gen",
+      "closed_at": "2026-04-06T05:21:50Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1745",
+      "labels": []
+    },
+    {
+      "number": 969,
+      "title": "Normal and drafts for own user's profile",
+      "closed_at": "2026-04-06T05:21:18Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/969",
+      "labels": []
+    },
+    {
+      "number": 955,
+      "title": "Inbox shortcut on homescreen",
+      "closed_at": "2026-04-06T05:27:55Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/955",
+      "labels": [
+        "yral2.0-phase1"
+      ]
+    }
+  ],
+  "issue_count": 10
+}
