@@ -1,0 +1,825 @@
+{
+  "date": "2026-04-07",
+  "cached_at": "2026-04-07T18:49:35.966780Z",
+  "commits": [
+    {
+      "sha": "8e99f2f8af8650dc98e68da17f29f87ff1b63997",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-07T05:27:41-07:00",
+      "message": "fix: make share always work by falling back to internal URL when Branch fails",
+      "stats": {
+        "additions": 175,
+        "deletions": 21,
+        "total": 196
+      },
+      "branches": [
+        "saikatdas0790/upgrade-dependencies-and-cleanup"
+      ]
+    },
+    {
+      "sha": "928111e163738fe5d418a66fa12191f58b21c0a0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-07T04:39:53-07:00",
+      "message": "Merge branch 'main' into saikatdas0790/upgrade-dependencies-and-cleanup",
+      "stats": {
+        "additions": 171,
+        "deletions": 86,
+        "total": 257
+      },
+      "branches": [
+        "saikatdas0790/upgrade-dependencies-and-cleanup"
+      ]
+    },
+    {
+      "sha": "5cbf305562450bbcf60f5d848219259575772416",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-07T04:38:48-07:00",
+      "message": "refactor: update test function names for clarity and consistency",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "saikatdas0790/upgrade-dependencies-and-cleanup"
+      ]
+    },
+    {
+      "sha": "fcd2e84368a02ec4609115a6d197624f9f0a5955",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-07T04:33:01-07:00",
+      "message": "test: add AndroidShareService regression tests for share fallback behavior",
+      "stats": {
+        "additions": 126,
+        "deletions": 0,
+        "total": 126
+      },
+      "branches": [
+        "saikatdas0790/upgrade-dependencies-and-cleanup"
+      ]
+    },
+    {
+      "sha": "1b9c68d0168ef103dfc8213c4ba2f9f959907eb1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-07T03:46:53-07:00",
+      "message": "fix: fall back to text-only share when profile image unavailable on Android",
+      "stats": {
+        "additions": 4,
+        "deletions": 2,
+        "total": 6
+      },
+      "branches": [
+        "saikatdas0790/upgrade-dependencies-and-cleanup"
+      ]
+    },
+    {
+      "sha": "411920d71461e8fb12bb145fa32e044ac42705a0",
+      "author": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-07T15:40:02+05:30",
+      "message": "Rollback rust and gobley versions (#1105)",
+      "stats": {
+        "additions": 167,
+        "deletions": 82,
+        "total": 249
+      },
+      "branches": [
+        "saikatdas0790/upgrade-dependencies-and-cleanup",
+        "main",
+        "dependabot/cargo/shared/rust/rust-agent/rust-agent-uniffi/uniffi-0.31.0",
+        "dependabot/cargo/shared/rust/rust-agent/rust-agent-uniffi/tokio-1.50.0",
+        "dependabot/cargo/shared/rust/rust-agent/rust-agent-uniffi/ic-agent-0.46.2",
+        "chore/rever-compose-update"
+      ]
+    },
+    {
+      "sha": "191a2f1ba600933f18ed5127f0a1c1ca64e784fe",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-07T02:58:06-07:00",
+      "message": "fix: hide pull-to-refresh indicator when not pulling or refreshing",
+      "stats": {
+        "additions": 21,
+        "deletions": 15,
+        "total": 36
+      },
+      "branches": [
+        "saikatdas0790/upgrade-dependencies-and-cleanup"
+      ]
+    },
+    {
+      "sha": "546a1c93582d4d54890082e0eba22b393efcbf4b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-07T00:24:41-07:00",
+      "message": "Merge branch 'main' into saikatdas0790/upgrade-dependencies-and-cleanup",
+      "stats": {
+        "additions": 26,
+        "deletions": 13,
+        "total": 39
+      },
+      "branches": [
+        "saikatdas0790/upgrade-dependencies-and-cleanup"
+      ]
+    },
+    {
+      "sha": "4cd715252cc54449e05a179f10215b405310f650",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-06T21:00:55-07:00",
+      "message": "chore: replace deprecated compose.components.* DSL aliases with direct catalog references",
+      "stats": {
+        "additions": 33,
+        "deletions": 48,
+        "total": 81
+      },
+      "branches": [
+        "saikatdas0790/upgrade-dependencies-and-cleanup"
+      ]
+    },
+    {
+      "sha": "2a3f82003253af5ebd9b29f90e508fbeabcdc14c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-06T20:53:43-07:00",
+      "message": "chore: add dependency version policy to AGENTS.md",
+      "stats": {
+        "additions": 4,
+        "deletions": 0,
+        "total": 4
+      },
+      "branches": [
+        "saikatdas0790/upgrade-dependencies-and-cleanup"
+      ]
+    },
+    {
+      "sha": "8eb1a0b0975d8f1951d540be59cc069d311cf50b",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-07T23:50:35+05:30",
+      "message": "chore: Increments rust agent version",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "chore/rever-compose-update"
+      ]
+    },
+    {
+      "sha": "db0dfae2f506ccd9b7157b8b0398ee01b2a6220d",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-07T21:40:26+05:30",
+      "message": "Revert dependency updates from 6189a948",
+      "stats": {
+        "additions": 15,
+        "deletions": 10,
+        "total": 25
+      },
+      "branches": [
+        "chore/rever-compose-update"
+      ]
+    },
+    {
+      "sha": "e29fa2001d2d1a23a7f2f8836ab82ea451eec0d3",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-hetzner-infra-template",
+      "timestamp": "2026-04-07T17:30:03+05:30",
+      "message": "Initial commit: yral-rishi-hetzner-infra-template",
+      "stats": {
+        "additions": 2731,
+        "deletions": 0,
+        "total": 2731
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b43b6fb0ba1578b6476bc806ae38c3557f2f4f48",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-hello-world-counter",
+      "timestamp": "2026-04-07T17:18:46+05:30",
+      "message": "Migrate to Caddy snippet directory pattern (one-time, decoupling)",
+      "stats": {
+        "additions": 36,
+        "deletions": 52,
+        "total": 88
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e11a4413a662dbbc1794e58200d20ca1592a1449",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-hello-world-counter",
+      "timestamp": "2026-04-07T15:38:47+05:30",
+      "message": "Switch to per-project overlay network (counter-db-internal)",
+      "stats": {
+        "additions": 22,
+        "deletions": 3,
+        "total": 25
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "babb2e8cd6cf97022c5638ddf78043593a8f8068",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-hello-world-counter",
+      "timestamp": "2026-04-07T14:54:50+05:30",
+      "message": "Fix template: rolling updates for Patroni and etcd",
+      "stats": {
+        "additions": 37,
+        "deletions": 0,
+        "total": 37
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f9b10ef90d6274834193b1b750f23a68f748f5b7",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-hello-world-counter",
+      "timestamp": "2026-04-07T14:46:14+05:30",
+      "message": "Fix template bug: namespace Swarm secrets per-stack",
+      "stats": {
+        "additions": 29,
+        "deletions": 16,
+        "total": 45
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b1e14d956c175db49360d12092c662c2abf4d9da",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-hello-world-counter",
+      "timestamp": "2026-04-07T13:29:38+05:30",
+      "message": "Add rishi-offline-testing block to Caddyfile (template validation)",
+      "stats": {
+        "additions": 10,
+        "deletions": 4,
+        "total": 14
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "93068149c0754a8563d0d05c313b24d5f2cd5102",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-hello-world-counter",
+      "timestamp": "2026-04-07T12:54:06+05:30",
+      "message": "Add README and finish templatising",
+      "stats": {
+        "additions": 163,
+        "deletions": 19,
+        "total": 182
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a108ad82014a2210515372b0b491801a0ca1f5f3",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-hello-world-counter",
+      "timestamp": "2026-04-07T12:22:09+05:30",
+      "message": "Wire up Sentry properly: FastAPI integration, capture, release tagging",
+      "stats": {
+        "additions": 60,
+        "deletions": 4,
+        "total": 64
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "32e3a5171e5738e78d2585a84ca0dcb0247bfc6d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-hello-world-counter",
+      "timestamp": "2026-04-07T12:05:23+05:30",
+      "message": "Fix sporadic 503s: retry on dead pool connections + TCP keepalives",
+      "stats": {
+        "additions": 79,
+        "deletions": 21,
+        "total": 100
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a6c299ed2e028bab7fdd1e50b27edbc9fe53e6da",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-hello-world-counter",
+      "timestamp": "2026-04-07T11:38:14+05:30",
+      "message": "Retrigger CI (transient GHCR TLS timeout on rishi-2)",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a07174db924e25269bd327c20b309bcd225a7b19",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-hello-world-counter",
+      "timestamp": "2026-04-07T11:30:24+05:30",
+      "message": "Bake security and ops improvements into the template",
+      "stats": {
+        "additions": 457,
+        "deletions": 263,
+        "total": 720
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "530dc4eb0767fbc49db09ca91ff2d95637d617f0",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-hello-world-counter",
+      "timestamp": "2026-04-07T11:12:12+05:30",
+      "message": "Add template documentation and rename script",
+      "stats": {
+        "additions": 228,
+        "deletions": 0,
+        "total": 228
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "97e190aed1ee5e891531b608715070a2e77bf5c1",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-hello-world-counter",
+      "timestamp": "2026-04-07T10:38:53+05:30",
+      "message": "Trigger redeploy: set SENTRY_DSN",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "0e641f62f3c55431877f6454db192de7eb8d805d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-hello-world-counter",
+      "timestamp": "2026-04-07T10:29:27+05:30",
+      "message": "Fix: post_init.sh handles Patroni's key=value connection string",
+      "stats": {
+        "additions": 21,
+        "deletions": 21,
+        "total": 42
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ebd2514e51138799cb2c5f905ffe0f60a7c5cd57",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-hello-world-counter",
+      "timestamp": "2026-04-07T10:07:09+05:30",
+      "message": "Fix: chmod 0700 on /data/patroni \u2014 PostgreSQL refuses looser perms",
+      "stats": {
+        "additions": 3,
+        "deletions": 1,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d1c12ca6ba6a4a57bf31da47424df1088a61d9ae",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-hello-world-counter",
+      "timestamp": "2026-04-07T09:57:44+05:30",
+      "message": "Fix: use Patroni native env vars for replication auth, idempotent init.sql",
+      "stats": {
+        "additions": 31,
+        "deletions": 11,
+        "total": 42
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "846b7b949c5d558489d50a78b49349e2acb39df8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-hello-world-counter",
+      "timestamp": "2026-04-07T09:41:17+05:30",
+      "message": "Fix: chown /data parent so Patroni can rename failed bootstrap dir",
+      "stats": {
+        "additions": 4,
+        "deletions": 2,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a5b76f81c8116bf03fcf88697de6f67314cf4648",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-offline-testing",
+      "timestamp": "2026-04-07T15:52:02+05:30",
+      "message": "Update init-from-template.sh: source pattern is rishi-offline-testing",
+      "stats": {
+        "additions": 32,
+        "deletions": 23,
+        "total": 55
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6fe8afa96e1a3bfef0fa340f56803c433de8a686",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-offline-testing",
+      "timestamp": "2026-04-07T15:31:59+05:30",
+      "message": "Retry: transient Docker Hub 504",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f78d922cb49d9fc0063cb9fc875880b8e6af7fe1",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-offline-testing",
+      "timestamp": "2026-04-07T15:27:11+05:30",
+      "message": "Fix: declare per-project network identically in all merged stack files",
+      "stats": {
+        "additions": 9,
+        "deletions": 3,
+        "total": 12
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c238947781884da7cd527c544dfa886e8849c92d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-offline-testing",
+      "timestamp": "2026-04-07T15:21:50+05:30",
+      "message": "Critical fix: per-project overlay network + correct etcd token",
+      "stats": {
+        "additions": 18,
+        "deletions": 4,
+        "total": 22
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "fe55eab3b5c5647a8233d4cacf404ae22b73cd7e",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-offline-testing",
+      "timestamp": "2026-04-07T15:06:56+05:30",
+      "message": "Trigger fresh deploy after manual stack+volume cleanup",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "659f8cfa128c77f8b5a6a2d51e2e524e804dc0e6",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-offline-testing",
+      "timestamp": "2026-04-07T15:00:04+05:30",
+      "message": "Fix template: namespaced Swarm secrets + rolling Patroni/etcd updates",
+      "stats": {
+        "additions": 69,
+        "deletions": 19,
+        "total": 88
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "095cce670ab3ee8f1a148e58bbd196f62d2f88eb",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-offline-testing",
+      "timestamp": "2026-04-07T14:36:21+05:30",
+      "message": "Initial commit: counter service via dolr-ai HA template",
+      "stats": {
+        "additions": 2431,
+        "deletions": 0,
+        "total": 2431
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "74c93ea71c26368dafb36cf76194cc3a3e28f8df",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-04-07T03:21:48Z",
+      "message": "feat(todos): add evaluation of Kubernetes secrets security and consider HashiCorp Vault for manageme",
+      "stats": {
+        "additions": 3,
+        "deletions": 1,
+        "total": 4
+      },
+      "branches": [
+        "renovate/vpa-4.x",
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/postgres-18.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "729e72b7995eda72fcb52969548906d998c77061",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-04-07T03:16:00Z",
+      "message": "fix(todos): update subproject commit for yral-mobile",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/vpa-4.x",
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/postgres-18.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "562c01b2e7ba59de71cc4089e7cb48900d784b0d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-04-07T03:15:29Z",
+      "message": "fix(todos): update subproject commit for yral-mobile",
+      "stats": {
+        "additions": 36,
+        "deletions": 2,
+        "total": 38
+      },
+      "branches": [
+        "renovate/vpa-4.x",
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/postgres-18.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "e7780014da9b885d1d592187dd48094dd4e22366",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-04-07T09:08:55+05:30",
+      "message": "luma cleanup",
+      "stats": {
+        "additions": 0,
+        "deletions": 317,
+        "total": 317
+      },
+      "branches": [
+        "naitik/luma_cleanup"
+      ]
+    },
+    {
+      "sha": "a9565f8cdf8f055cae7efabcff2e3437ca97eeb9",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/data-science-directed-acyclic-graphs",
+      "timestamp": "2026-04-07T05:34:38+05:30",
+      "message": "Merge pull request #16 from dolr-ai/clickhouse-cutover-composer-rotation",
+      "stats": {
+        "additions": 351,
+        "deletions": 60,
+        "total": 411
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "659efb258546482c939229fe48c67001d110d772",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/data-science-directed-acyclic-graphs",
+      "timestamp": "2026-04-07T05:33:26+05:30",
+      "message": "Make Composer connection rotation non-blocking",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "main",
+        "clickhouse-cutover-composer-rotation"
+      ]
+    }
+  ],
+  "commit_count": 42,
+  "issues": [
+    {
+      "number": 1748,
+      "title": "Feed performance feedback",
+      "closed_at": "2026-04-07T06:59:51Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1748",
+      "labels": []
+    },
+    {
+      "number": 1893,
+      "title": "Update airflow scripts to push data into this new Clickhouse",
+      "closed_at": "2026-04-07T05:46:44Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1893",
+      "labels": []
+    },
+    {
+      "number": 1869,
+      "title": "Provide named buckets to ansuman and naitik",
+      "closed_at": "2026-04-07T04:26:16Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1869",
+      "labels": []
+    },
+    {
+      "number": 1841,
+      "title": "Ensure Coolify is used on all the active repos",
+      "closed_at": "2026-04-07T05:04:44Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1841",
+      "labels": []
+    },
+    {
+      "number": 1892,
+      "title": "Confirm once regarding the feed incluencer endpoint being part of this production release",
+      "closed_at": "2026-04-07T04:35:17Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1892",
+      "labels": []
+    },
+    {
+      "number": 1891,
+      "title": "Fix the Crashlytics crash first",
+      "closed_at": "2026-04-07T10:10:04Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1891",
+      "labels": []
+    },
+    {
+      "number": 1885,
+      "title": "Refresh chat conversation history when opening screen",
+      "closed_at": "2026-04-07T06:20:03Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1885",
+      "labels": []
+    },
+    {
+      "number": 964,
+      "title": "Firebase cleanup",
+      "closed_at": "2026-04-07T06:19:51Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/964",
+      "labels": [
+        "yral2.0-phase1"
+      ]
+    },
+    {
+      "number": 1854,
+      "title": "Debug and figure out the backend API flow of why draft videos are not showing up on the UI",
+      "closed_at": "2026-04-07T05:19:10Z",
+      "assignee": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1854",
+      "labels": []
+    },
+    {
+      "number": 81,
+      "title": "Migrate to per repo ssh keys - yral-metadata",
+      "closed_at": "2026-04-07T05:17:35Z",
+      "assignee": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "url": "https://github.com/dolr-ai/yral-metadata/issues/81",
+      "labels": []
+    },
+    {
+      "number": 429,
+      "title": "Migrate to per repo ssh keys - off-chain-agent",
+      "closed_at": "2026-04-07T05:17:53Z",
+      "assignee": "ravi-sawlani-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "url": "https://github.com/dolr-ai/off-chain-agent/issues/429",
+      "labels": []
+    },
+    {
+      "number": 218,
+      "title": "Migrate to per repo ssh keys - yral-ai-chat",
+      "closed_at": "2026-04-07T05:17:43Z",
+      "assignee": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral-ai-chat",
+      "url": "https://github.com/dolr-ai/yral-ai-chat/issues/218",
+      "labels": []
+    },
+    {
+      "number": 1736,
+      "title": "[Feature Request]: Remove the org Hetzner Key and use self provisioned ssh keys to access server in github actions.",
+      "closed_at": "2026-04-07T05:17:06Z",
+      "assignee": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1736",
+      "labels": [
+        "Backend Dependencies"
+      ]
+    },
+    {
+      "number": 1458,
+      "title": "[Feature Request]: Remove cloudflare Stream",
+      "closed_at": "2026-04-07T05:13:18Z",
+      "assignee": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1458",
+      "labels": [
+        "Backend Dependencies"
+      ]
+    },
+    {
+      "number": 1456,
+      "title": "[Feature Request]: Remove Cloudflare worker for upload video",
+      "closed_at": "2026-04-07T05:12:44Z",
+      "assignee": "ravi-sawlani-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1456",
+      "labels": [
+        "Backend Dependencies"
+      ]
+    }
+  ],
+  "issue_count": 15
+}
