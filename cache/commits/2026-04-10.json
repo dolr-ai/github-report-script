@@ -1,0 +1,414 @@
+{
+  "date": "2026-04-10",
+  "cached_at": "2026-04-10T18:48:15.296386Z",
+  "commits": [
+    {
+      "sha": "5f9092053c770df6e17f15fee49b61d61f907684",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-04-10T13:02:22Z",
+      "message": "fix: correct CephCluster field skipUpgradeChecks (was skipUpgradesChecks)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/vpa-4.x",
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/postgres-18.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "6a95b867f803bb8519dcaa40d43488390c153878",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-04-10T12:37:04Z",
+      "message": "feat: add Rook/Ceph distributed storage",
+      "stats": {
+        "additions": 776,
+        "deletions": 2,
+        "total": 778
+      },
+      "branches": [
+        "renovate/vpa-4.x",
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/postgres-18.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "8f8e8d9308363dae5333c69c565571a76911e91e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-04-10T10:55:38Z",
+      "message": "feat(provisioning): enhance OS partition size handling for worker and control plane nodes",
+      "stats": {
+        "additions": 305,
+        "deletions": 190,
+        "total": 495
+      },
+      "branches": [
+        "renovate/vpa-4.x",
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/postgres-18.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "136f59776917159cff1373874c63b99e3fbb1e44",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-hetzner-infra-template",
+      "timestamp": "2026-04-10T17:34:31+05:30",
+      "message": "backup: switch from aws-cli to MinIO Client (mc)",
+      "stats": {
+        "additions": 46,
+        "deletions": 68,
+        "total": 114
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "fb40ca41b50579b9b01ccb0ba04b87a1db28dbc1",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-hetzner-infra-template",
+      "timestamp": "2026-04-10T17:13:09+05:30",
+      "message": "fix(backup): show S3 errors + path-style addressing + fix double-date",
+      "stats": {
+        "additions": 9,
+        "deletions": 4,
+        "total": 13
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f3329df4eec4ef574db8384988c6b840d8faf27b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-hetzner-infra-template",
+      "timestamp": "2026-04-10T17:05:27+05:30",
+      "message": "backup: use scheduled GitHub Actions workflow instead of server cron",
+      "stats": {
+        "additions": 70,
+        "deletions": 40,
+        "total": 110
+      },
+      "branches": [
+        "main",
+        "dependabot/github_actions/actions/checkout-6"
+      ]
+    },
+    {
+      "sha": "b3fecda09da7c82f3bc470aced7821251f7f18ff",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-hetzner-infra-template",
+      "timestamp": "2026-04-10T16:52:49+05:30",
+      "message": "fix(backup): use docker-run cron on rishi-1 instead of Swarm service",
+      "stats": {
+        "additions": 41,
+        "deletions": 74,
+        "total": 115
+      },
+      "branches": [
+        "main",
+        "dependabot/github_actions/actions/checkout-6"
+      ]
+    },
+    {
+      "sha": "84fb559b4c25a154749cd6f955c7fc570de88e20",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-hetzner-infra-template",
+      "timestamp": "2026-04-10T15:13:06+05:30",
+      "message": "fix(migrations): use psql -tA to query applied migrations",
+      "stats": {
+        "additions": 5,
+        "deletions": 3,
+        "total": 8
+      },
+      "branches": [
+        "main",
+        "dependabot/github_actions/actions/checkout-6"
+      ]
+    },
+    {
+      "sha": "dbdddc2f689e7de740cdb2b4b244296c214af5a8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-hetzner-infra-template",
+      "timestamp": "2026-04-10T15:07:29+05:30",
+      "message": "fix(migrations): only run on Swarm manager (rishi-1), skip on workers",
+      "stats": {
+        "additions": 10,
+        "deletions": 1,
+        "total": 11
+      },
+      "branches": [
+        "main",
+        "dependabot/github_actions/actions/checkout-6"
+      ]
+    },
+    {
+      "sha": "495cdeeac9f12b4f2b068e56513ae22c2fdcb745",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-hetzner-infra-template",
+      "timestamp": "2026-04-10T14:45:13+05:30",
+      "message": "fix(migrations): pipe SQL to psql directly instead of via run_sql(\"-\")",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "main",
+        "dependabot/github_actions/actions/checkout-6"
+      ]
+    },
+    {
+      "sha": "d17bc769637b82ab4e623c4a1e19b0afba5708c7",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-hetzner-infra-template",
+      "timestamp": "2026-04-10T14:39:48+05:30",
+      "message": "fix(backup): use stack's default network instead of overlay",
+      "stats": {
+        "additions": 12,
+        "deletions": 14,
+        "total": 26
+      },
+      "branches": [
+        "main",
+        "dependabot/github_actions/actions/checkout-6"
+      ]
+    },
+    {
+      "sha": "056b857e81ca3f7fd205d1702effc5b4131eef09",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-hetzner-infra-template",
+      "timestamp": "2026-04-10T11:44:21+05:30",
+      "message": "fix(backup): don't redeclare overlay network \u2014 it's already in patroni/stack.yml",
+      "stats": {
+        "additions": 5,
+        "deletions": 5,
+        "total": 10
+      },
+      "branches": [
+        "main",
+        "dependabot/github_actions/actions/checkout-6"
+      ]
+    },
+    {
+      "sha": "43b64e0198c4b4591a83e934b1cc77a00b826a3b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-hetzner-infra-template",
+      "timestamp": "2026-04-10T11:20:43+05:30",
+      "message": "fix(backup): match overlay network declaration with patroni/etcd/haproxy stacks",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "main",
+        "dependabot/github_actions/actions/checkout-6"
+      ]
+    },
+    {
+      "sha": "410e4460a66b0d3bda89e5849ea4780db2d19aa8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-hetzner-infra-template",
+      "timestamp": "2026-04-10T11:08:12+05:30",
+      "message": "fix(backup): add explicit name: to overlay network in backup/stack.yml",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "main",
+        "dependabot/github_actions/actions/checkout-6"
+      ]
+    },
+    {
+      "sha": "5328fa9e1c1c3a63c64c1cc5c881b6194fc9e194",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-hetzner-infra-template",
+      "timestamp": "2026-04-10T11:03:21+05:30",
+      "message": "feat: database durability \u2014 backups, migrations, idempotent bootstrap",
+      "stats": {
+        "additions": 628,
+        "deletions": 28,
+        "total": 656
+      },
+      "branches": [
+        "main",
+        "dependabot/github_actions/docker/build-push-action-7",
+        "dependabot/github_actions/actions/checkout-6"
+      ]
+    },
+    {
+      "sha": "b16ab9929f84aa7c728112379781766f5a23aca1",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/website",
+      "timestamp": "2026-04-10T15:05:25+05:30",
+      "message": "fix: update \"Web App\" links in nav and footer to point to legacy.yral.com",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3d8a79136bcaaf2f6743a6cf2dff9d4c86ade8c1",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/website",
+      "timestamp": "2026-04-10T15:00:57+05:30",
+      "message": "fix: update \"Or open yral.com in your browser\" link to point to legacy.yral.com",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "2d820a2adf3425d33d523ba7fc0a191476c421dc",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/website",
+      "timestamp": "2026-04-10T14:55:25+05:30",
+      "message": "fix: update \"Try on Web\" button link to point to legacy.yral.com",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d8c2c74c8c3cf304ed13452778af4510c511b078",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-09T20:57:26+05:30",
+      "message": "fix: Fixes wrong posts being queried for old canisters",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "fix/old-canister-post-query"
+      ]
+    },
+    {
+      "sha": "f9c3968a0a1fc34f8515c756b9e12ee8d9615b1e",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-daily-streaks",
+      "timestamp": "2026-04-10T10:07:37+05:30",
+      "message": "fix: formatting",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/auth_fix"
+      ]
+    },
+    {
+      "sha": "4e98f3c28adbed95f268d9ab915e165ccd87c914",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-daily-streaks",
+      "timestamp": "2026-04-10T10:06:14+05:30",
+      "message": "fix: claim check",
+      "stats": {
+        "additions": 3,
+        "deletions": 2,
+        "total": 5
+      },
+      "branches": [
+        "naitik/auth_fix"
+      ]
+    },
+    {
+      "sha": "8ee9e6d6f91bef5c8fb6391e9eeef335d48fccd0",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-daily-streaks",
+      "timestamp": "2026-04-10T10:38:00+05:30",
+      "message": "Naitik/auth fix (#6)",
+      "stats": {
+        "additions": 6,
+        "deletions": 5,
+        "total": 11
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 22,
+  "issues": [
+    {
+      "number": 1774,
+      "title": "Should test backup and restoring from that backup for the Clickhouse database",
+      "closed_at": "2026-04-10T05:09:38Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1774",
+      "labels": []
+    },
+    {
+      "number": 1114,
+      "title": "Integrate api and show streak on feed screen chip",
+      "closed_at": "2026-04-10T05:41:12Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/1114",
+      "labels": []
+    },
+    {
+      "number": 1891,
+      "title": "Fix the Crashlytics crash first",
+      "closed_at": "2026-04-10T04:54:55Z",
+      "assignee": "shivam-bhavsar-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1891",
+      "labels": []
+    }
+  ],
+  "issue_count": 3
+}
