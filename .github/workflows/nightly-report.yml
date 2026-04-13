@@ -32,6 +32,19 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
+      # devcontainer.json bind-mounts ~/.ssh/agent.sock from the host so
+      # developers can forward their SSH agent into the container. In CI
+      # there is no SSH agent socket, so create a placeholder file to
+      # prevent Docker from failing on the missing bind-mount source.
+      - name: Create SSH agent socket placeholder
+        run: mkdir -p ~/.ssh && touch ~/.ssh/agent.sock
+
+      # devcontainer.json bind-mounts ~/.config/gh so the gh CLI config is
+      # available inside the container. GitHub-hosted runners don't have this
+      # directory by default, so create it as an empty placeholder.
+      - name: Create gh config placeholder
+        run: mkdir -p ~/.config/gh
+
       - name: Run in Dev Container
         uses: devcontainers/ci@v0.3
         with:
