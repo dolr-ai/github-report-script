@@ -8,6 +8,15 @@
 		"ghcr.io/devcontainers-extra/features/ansible:2": {},
 		"ghcr.io/devcontainers/features/github-cli:1": {}
 	},
+	// Mount SSH agent socket from WSL host into container
+	"mounts": [
+		"type=bind,source=${env:HOME}/.ssh/agent.sock,target=/ssh-agent,consistency=cached",
+		"type=bind,source=${env:HOME}/.config/gh,target=/home/vscode/.config/gh,consistency=cached"
+	],
+	// Set SSH_AUTH_SOCK environment variable to point to mounted socket
+	"remoteEnv": {
+		"SSH_AUTH_SOCK": "/ssh-agent"
+	},
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.

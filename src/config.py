@@ -170,15 +170,13 @@ IST_TIMEZONE = pytz.timezone('Asia/Kolkata')
 """IST timezone for date calculations (all contributors are primarily in IST)"""
 
 USER_IDS: List[str] = [
-    'saikatdas0790',
-    'gravityvi',
-    'naitik-makwana-yral',
-    'ravi-sawlani-yral',
-    'sarvesh-sharma-yral',
-    'shivam-bhavsar-yral',
     'ansuman-yral',
-    'sreyas-sreelal-yral',
+    'naitik-makwana-yral',
+    'prakash-bhatt-yral',
     'rishichadha30',
+    'saikatdas0790',
+    'sarvesh-sharma-yral',
+
 ]
 """
 GitHub usernames to track.
