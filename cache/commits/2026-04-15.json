@@ -1,0 +1,166 @@
+{
+  "date": "2026-04-15",
+  "cached_at": "2026-04-15T18:54:09.969178Z",
+  "commits": [
+    {
+      "sha": "a69fa34ee5eb65c25877a0357ffbb0470ca0112d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-15T09:47:44-07:00",
+      "message": "Remove SNS-related modules: SnsIndex, SnsRoot, and SnsSwap from rust-agent-uniffi",
+      "stats": {
+        "additions": 16,
+        "deletions": 2575,
+        "total": 2591
+      },
+      "branches": [
+        "saikatdas0790/remove-canister-code-round-1"
+      ]
+    },
+    {
+      "sha": "727b0f3c2baaf47b56cd4c5ec5a8c165b34a3a49",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-15T09:07:33-07:00",
+      "message": "feat: add rust toolchain configuration and update yral-mobile-uniffi version to 4.1.0",
+      "stats": {
+        "additions": 21,
+        "deletions": 2,
+        "total": 23
+      },
+      "branches": [
+        "saikatdas0790/remove-canister-code-round-1"
+      ]
+    },
+    {
+      "sha": "f580a1d3175a5dc102b430a9fc725844a70b1c62",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-15T14:49:29+05:30",
+      "message": "Add daily streak celebration entry from streak chip (#1122)",
+      "stats": {
+        "additions": 20,
+        "deletions": 2,
+        "total": 22
+      },
+      "branches": [
+        "saikatdas0790/remove-canister-code-round-1",
+        "main",
+        "fix/main-thread-blocking",
+        "dependabot/cargo/shared/rust/rust-agent/rust-agent-uniffi/tokio-1.50.0"
+      ]
+    },
+    {
+      "sha": "8bc7b10f560c56c991513e4ce4e41e5adc8ed75f",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-15T23:17:27+05:30",
+      "message": "fix: reduce home feed scroll jank",
+      "stats": {
+        "additions": 21,
+        "deletions": 22,
+        "total": 43
+      },
+      "branches": [
+        "fix/main-thread-blocking"
+      ]
+    },
+    {
+      "sha": "b69774ca12ae9aff417c31fb2356fba6d32f2461",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-chat-ai",
+      "timestamp": "2026-04-15T19:35:39+05:30",
+      "message": "Redeploy \u2014 API secrets now available (Gemini, S3, OpenRouter, Replicate)",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "43aaf15cbc92d50ed577fd389f867df26627365b",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ai-feed-recommendation-system",
+      "timestamp": "2026-04-15T08:26:59+05:30",
+      "message": "Merge pull request #25 from dolr-ai/annotate-yral-maintained-bots",
+      "stats": {
+        "additions": 5,
+        "deletions": 5,
+        "total": 10
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 6,
+  "issues": [
+    {
+      "number": 1925,
+      "title": "Enable retry mechanism on listing page and details page if no results",
+      "closed_at": "2026-04-15T04:54:12Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1925",
+      "labels": []
+    },
+    {
+      "number": 1897,
+      "title": "Verify that Sarvesh, Shivam and I are added to Firebase Console error alerts",
+      "closed_at": "2026-04-15T05:14:41Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1897",
+      "labels": []
+    },
+    {
+      "number": 1942,
+      "title": "Add navigation from home screen daily streak icon to daily streak screen",
+      "closed_at": "2026-04-15T09:19:32Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1942",
+      "labels": []
+    },
+    {
+      "number": 1906,
+      "title": "Automate adding build to public group in testflight",
+      "closed_at": "2026-04-15T04:54:48Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1906",
+      "labels": []
+    },
+    {
+      "number": 1879,
+      "title": "Add Snowplow Swift SDK for the ios app",
+      "closed_at": "2026-04-15T05:16:01Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1879",
+      "labels": []
+    },
+    {
+      "number": 1921,
+      "title": "video_unique_v2 table in ClickHouse is Still has 0 row",
+      "closed_at": "2026-04-15T04:14:34Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1921",
+      "labels": []
+    },
+    {
+      "number": 1870,
+      "title": "Self hosted airflow infrastructure",
+      "closed_at": "2026-04-15T04:14:02Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1870",
+      "labels": []
+    }
+  ],
+  "issue_count": 7
+}
