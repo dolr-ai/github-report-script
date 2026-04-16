@@ -1,0 +1,244 @@
+{
+  "date": "2026-04-16",
+  "cached_at": "2026-04-16T18:52:21.153313Z",
+  "commits": [
+    {
+      "sha": "5f1975446c6c193dd1031480f5195021f076da9b",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-04-17T00:15:20+05:30",
+      "message": "update client function input",
+      "stats": {
+        "additions": 6,
+        "deletions": 0,
+        "total": 6
+      },
+      "branches": [
+        "naitik/support-staging-notification"
+      ]
+    },
+    {
+      "sha": "129f6bf64b813ef128221d5720ce1399aee872f2",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-04-16T23:59:29+05:30",
+      "message": "request payload update",
+      "stats": {
+        "additions": 3,
+        "deletions": 0,
+        "total": 3
+      },
+      "branches": [
+        "naitik/support-staging-notification"
+      ]
+    },
+    {
+      "sha": "3b9a50d445d77fd406abbf587e8404ea7155b276",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-04-16T23:55:15+05:30",
+      "message": "updated test with new struct",
+      "stats": {
+        "additions": 22,
+        "deletions": 4,
+        "total": 26
+      },
+      "branches": [
+        "naitik/support-staging-notification"
+      ]
+    },
+    {
+      "sha": "e0bb69c63eb399e0f154293982ea42bc9ec5106f",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-04-16T23:47:43+05:30",
+      "message": "added staging notification key field",
+      "stats": {
+        "additions": 8,
+        "deletions": 0,
+        "total": 8
+      },
+      "branches": [
+        "naitik/support-staging-notification"
+      ]
+    },
+    {
+      "sha": "d74542491d5e4d06bc66a545c86d1841680fcf0d",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-04-16T10:23:26+05:30",
+      "message": "import staging secret",
+      "stats": {
+        "additions": 24,
+        "deletions": 0,
+        "total": 24
+      },
+      "branches": [
+        "naitik/support-staging-notification"
+      ]
+    },
+    {
+      "sha": "0084b4551142e4676d88844c21e166a9527fd369",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-04-16T14:50:26Z",
+      "message": "Simplify usage instructions in ssh-access.yml by removing line breaks",
+      "stats": {
+        "additions": 1,
+        "deletions": 3,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8c48ffaaa59b91fa420a102df27673a8153a2b9b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-04-16T14:24:58Z",
+      "message": "Add usage example for force_provision and skip_rescue_activation in provision.yml",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ae4327cc99e047590cd5a6cdf77db5be986926a2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-04-16T14:05:42Z",
+      "message": "Update ansible_host for prakash-3 in hosts.yml",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e5b0e7c008dadaa3d47036b559115cb091d4f443",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-04-16T13:06:33Z",
+      "message": "Add prakash-3 entry to hosts.yml and remove Ansible settings from devcontainer.json",
+      "stats": {
+        "additions": 3,
+        "deletions": 18,
+        "total": 21
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7036626352dbc9125f83b2e84ebc7a4d2d65e966",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-chat-ai",
+      "timestamp": "2026-04-16T18:11:37+05:30",
+      "message": "Fix: Pass API secrets through CI deploy to containers",
+      "stats": {
+        "additions": 47,
+        "deletions": 7,
+        "total": 54
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "43d692f7921aae1c01409f240d08bc78525c943c",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-chat-ai",
+      "timestamp": "2026-04-16T16:49:43+05:30",
+      "message": "Trigger clean deploy to rebuild backup Docker image",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8dbb13d2b837c86c444873c7c481fcf7691e6afa",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-chat-ai",
+      "timestamp": "2026-04-16T16:43:09+05:30",
+      "message": "Add session handoff doc and harden .gitignore",
+      "stats": {
+        "additions": 272,
+        "deletions": 0,
+        "total": 272
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "73fd0e25a888d07f98ad2ab87a4d2d924846948e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-16T04:55:20Z",
+      "message": "fix: ensure stable channel is specified in rust-toolchain.toml",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "saikatdas0790/remove-canister-code-round-1"
+      ]
+    },
+    {
+      "sha": "35b5268024052e8809884d7eac0253b876a5268f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-04-16T10:00:07+05:30",
+      "message": "Adjust server count and add note for database servers",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d11eaf23428db19038fe14141e374e8594e8a313",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-04-16T09:58:32+05:30",
+      "message": "Change server count for load balancer setup",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 15,
+  "issues": [
+    {
+      "number": 1944,
+      "title": "Hello-world sentry app",
+      "closed_at": "2026-04-16T04:36:20Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1944",
+      "labels": []
+    }
+  ],
+  "issue_count": 1
+}
