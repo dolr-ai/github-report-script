@@ -1,0 +1,787 @@
+{
+  "date": "2026-04-22",
+  "cached_at": "2026-04-22T18:52:15.141417Z",
+  "commits": [
+    {
+      "sha": "02ec0e0b68d21a6a5a9010c0b800a8e2da13df38",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-22T23:41:09+05:30",
+      "message": "Remove legacy Tara subscription paths (#1134)",
+      "stats": {
+        "additions": 10,
+        "deletions": 118,
+        "total": 128
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3953fe05f4ca8e49f75285732a94ee8a24cffee1",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-22T22:35:57+05:30",
+      "message": "fix: keep crashlytics exception names readable (#1133)",
+      "stats": {
+        "additions": 3,
+        "deletions": 0,
+        "total": 3
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a66d8863e7f414898ade252d91f4b173abca663e",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-22T20:44:01+05:30",
+      "message": "Increment versionCode to 88 for production build (#1132)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "71873bc27acd5f794f8ed313287a5e8761760aa7",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-22T21:09:15+05:30",
+      "message": "Centralize Firebase iOS SDK version",
+      "stats": {
+        "additions": 62,
+        "deletions": 119,
+        "total": 181
+      },
+      "branches": [
+        "chore/gitlive-removal"
+      ]
+    },
+    {
+      "sha": "c748cd3e6ce0df2dc54eec87b68424a864e51437",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-21T23:50:25+05:30",
+      "message": "Remove GitLive Firebase dependency",
+      "stats": {
+        "additions": 589,
+        "deletions": 137,
+        "total": 726
+      },
+      "branches": [
+        "chore/gitlive-removal"
+      ]
+    },
+    {
+      "sha": "0cb262fbcc694c573cc0d68e0a2e835e8eb79b5a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-hetzner-infra-template",
+      "timestamp": "2026-04-22T13:54:10+05:30",
+      "message": "Bump SENTRY_TRACES_RATE 0.5 \u2192 1.0 (#23)",
+      "stats": {
+        "additions": 6,
+        "deletions": 1,
+        "total": 7
+      },
+      "branches": [
+        "main",
+        "dependabot/pip/uvicorn-0.45.0",
+        "dependabot/pip/psycopg2-binary-2.9.12",
+        "dependabot/pip/httpx-gte-0.28.1",
+        "dependabot/pip/fastapi-0.136.0"
+      ]
+    },
+    {
+      "sha": "bb00b4cd594175449b31b14f7207e554410fcf85",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-hetzner-infra-template",
+      "timestamp": "2026-04-22T10:54:04+05:30",
+      "message": "Default sample rates: TRACES=0.5, PROFILES=0.05 (#22)",
+      "stats": {
+        "additions": 25,
+        "deletions": 0,
+        "total": 25
+      },
+      "branches": [
+        "main",
+        "dependabot/pip/uvicorn-0.45.0",
+        "dependabot/pip/psycopg2-binary-2.9.12",
+        "dependabot/pip/httpx-gte-0.28.1",
+        "dependabot/pip/fastapi-0.136.0"
+      ]
+    },
+    {
+      "sha": "52ba7e3237f0fde88161e698a07ac33e2bbc8941",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-04-22T17:59:46Z",
+      "message": "Enhance devcontainer setup and workflows",
+      "stats": {
+        "additions": 128,
+        "deletions": 101,
+        "total": 229
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "85f919629ed642ec52ca32698888a1ae83e4a860",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-04-22T16:41:35Z",
+      "message": "Add VSCode tasks configuration for Ansible playbooks",
+      "stats": {
+        "additions": 110,
+        "deletions": 0,
+        "total": 110
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6f6af9b59e50d6639f20e9eb50bac52fdb560b7e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-04-22T16:38:16Z",
+      "message": "Update SSH agent socket configuration in devcontainer and workflows",
+      "stats": {
+        "additions": 20,
+        "deletions": 16,
+        "total": 36
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "791b052ae7272e800082f7692d02d2aa082ccc17",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-04-22T22:51:39+05:30",
+      "message": "sentry url updated (#432)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a83ad155f8b6d5c2f405a188f033d2a26c07a1cb",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-04-22T21:49:12+05:30",
+      "message": "removed debug profile",
+      "stats": {
+        "additions": 0,
+        "deletions": 4,
+        "total": 4
+      },
+      "branches": [
+        "naitik/sentry-update"
+      ]
+    },
+    {
+      "sha": "a7f234c6cd6feaea07cf420e425d1e530cb24e98",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-04-22T22:15:08+05:30",
+      "message": "updated sentry enpoint (#56)",
+      "stats": {
+        "additions": 3,
+        "deletions": 1,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "589e96d5895814b547941d921a48dc5b5446aa05",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-04-22T15:03:40Z",
+      "message": "feat: remove obsolete configuration and build files for cleanup",
+      "stats": {
+        "additions": 0,
+        "deletions": 43,
+        "total": 43
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "21bd67bd6e0841c9a7ce82ef72133b337b8b5249",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-04-22T15:00:34Z",
+      "message": "feat: remove deprecated CI workflows and scripts for project management and image publishing",
+      "stats": {
+        "additions": 2,
+        "deletions": 152,
+        "total": 154
+      },
+      "branches": [
+        "main",
+        "dependabot/github_actions/docker/login-action-4",
+        "dependabot/github_actions/actions/checkout-6",
+        "dependabot/cargo/serde-1.0.228",
+        "dependabot/cargo/rmp-serde-1.3.1",
+        "dependabot/cargo/pprof-0.15.0",
+        "dependabot/cargo/flate2-1.0.35",
+        "dependabot/cargo/candid-0.10.27"
+      ]
+    },
+    {
+      "sha": "187967786fb52dd5cafbb9aaf09aa2e095bf5b01",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-04-22T14:54:22Z",
+      "message": "feat: refactor CI scripts to remove 'ci' subdirectory and update README",
+      "stats": {
+        "additions": 18,
+        "deletions": 21,
+        "total": 39
+      },
+      "branches": [
+        "main",
+        "dependabot/github_actions/docker/login-action-4",
+        "dependabot/github_actions/actions/checkout-6",
+        "dependabot/cargo/serde-1.0.228",
+        "dependabot/cargo/rmp-serde-1.3.1",
+        "dependabot/cargo/pprof-0.15.0",
+        "dependabot/cargo/flate2-1.0.35",
+        "dependabot/cargo/candid-0.10.27"
+      ]
+    },
+    {
+      "sha": "0060bf497c36d0a0c3298cc0e3cd2ba087507350",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-04-22T14:42:19Z",
+      "message": "Refactor deployment scripts and CI/CD processes",
+      "stats": {
+        "additions": 430,
+        "deletions": 1351,
+        "total": 1781
+      },
+      "branches": [
+        "main",
+        "dependabot/github_actions/docker/login-action-4",
+        "dependabot/github_actions/actions/checkout-6",
+        "dependabot/cargo/serde-1.0.228",
+        "dependabot/cargo/rmp-serde-1.3.1",
+        "dependabot/cargo/pprof-0.15.0",
+        "dependabot/cargo/flate2-1.0.35",
+        "dependabot/cargo/candid-0.10.27"
+      ]
+    },
+    {
+      "sha": "6e2187de630328751e0e0506ab79b5cdd227e8ed",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-04-22T02:04:51Z",
+      "message": "feat: update devcontainer configuration and scripts for improved setup",
+      "stats": {
+        "additions": 7,
+        "deletions": 22,
+        "total": 29
+      },
+      "branches": [
+        "main",
+        "dependabot/github_actions/docker/login-action-4",
+        "dependabot/github_actions/actions/checkout-6",
+        "dependabot/cargo/serde-1.0.228",
+        "dependabot/cargo/rmp-serde-1.3.1",
+        "dependabot/cargo/pprof-0.15.0",
+        "dependabot/cargo/flate2-1.0.35",
+        "dependabot/cargo/candid-0.10.27"
+      ]
+    },
+    {
+      "sha": "c8c112510770e9e2180e3968a055adfc97e31dee",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-04-22T14:52:08Z",
+      "message": "feat: remove Sentry card from the dashboard",
+      "stats": {
+        "additions": 1,
+        "deletions": 7,
+        "total": 8
+      },
+      "branches": [
+        "renovate/vpa-4.x",
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/postgres-18.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-83.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "322e8d8f0d35dacc2351bec9bbdd39ffec1be6bf",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-04-22T14:24:18Z",
+      "message": "fix: update bitnami/kubectl to latest",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/vpa-4.x",
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/postgres-18.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-83.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "c18d79ea473824b4009d0dbd902b610852f07835",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-04-22T14:23:37Z",
+      "message": "fix: pin bitnami/kubectl to stable digest sha256:99060de12fa53cdd358daee69447697ce32705a01ecc6459460",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/vpa-4.x",
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/postgres-18.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-83.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "62e692a91e756ac1a6d1154d2a11277ecbe98dcf",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-04-22T14:20:17Z",
+      "message": "fix: update bitnami/kubectl image tag from invalid 1.32 to latest",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/vpa-4.x",
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/postgres-18.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-83.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "e425c5879ac14d081979a700f9edb8b1c44543a0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-04-22T14:04:44Z",
+      "message": "feat: update Flux Kustomization to use wait: false for rook-ceph-cluster to prevent blocking on OSD ",
+      "stats": {
+        "additions": 8,
+        "deletions": 3,
+        "total": 11
+      },
+      "branches": [
+        "renovate/vpa-4.x",
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/postgres-18.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-83.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "ae1777b3ca12be17be064e2299f0a3c49b397274",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-04-22T12:49:56Z",
+      "message": "feat: update memory limits for CephCluster to 2Gi and adjust submodule reference for yral-backend-ca",
+      "stats": {
+        "additions": 4,
+        "deletions": 3,
+        "total": 7
+      },
+      "branches": [
+        "renovate/vpa-4.x",
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/postgres-18.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-83.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "2518590ef7af310abc431493cc548d17779e3f76",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-daily-streaks",
+      "timestamp": "2026-04-22T19:49:03+05:30",
+      "message": "sentry url update (#7)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8c90fe3c7d6a7baee7c2ca45227c328d69029f8d",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-04-22T16:17:54+05:30",
+      "message": "Merge pull request #34 from dolr-ai/fix/thumbnail-extraction-frame",
+      "stats": {
+        "additions": 161,
+        "deletions": 52,
+        "total": 213
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6d04ac8f8fb23b0d21b6a037efbad918ff382375",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-04-22T16:17:37+05:30",
+      "message": "Merge pull request #35 from dolr-ai/ci/migrate-pr-preview-to-coolify",
+      "stats": {
+        "additions": 287,
+        "deletions": 49,
+        "total": 336
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4d041bde6079bc0a4cd98b328a50ccec3118dc82",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-chat-ai",
+      "timestamp": "2026-04-22T13:52:46+05:30",
+      "message": "Bump SENTRY_TRACES_RATE 0.5 \u2192 1.0 (CPU headroom available)",
+      "stats": {
+        "additions": 6,
+        "deletions": 1,
+        "total": 7
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9f0461e801781f719d059939da86c1cfd50feccc",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-chat-ai",
+      "timestamp": "2026-04-22T10:52:45+05:30",
+      "message": "Throttle Sentry traces + profiles sample rates (relieve rishi-3 CPU)",
+      "stats": {
+        "additions": 8,
+        "deletions": 0,
+        "total": 8
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "03e2b33b74f30dec6a645023a784a43446c9448f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-sentry",
+      "timestamp": "2026-04-22T13:25:07+05:30",
+      "message": "Revert Clickhouse config.d mount \u2014 Sentry was down",
+      "stats": {
+        "additions": 11,
+        "deletions": 16,
+        "total": 27
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "35fa12ba588a18447af8f151f34e95ec1f8353d1",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-sentry",
+      "timestamp": "2026-04-22T13:22:25+05:30",
+      "message": "Clickhouse tuning v2: satisfy pool sanity check",
+      "stats": {
+        "additions": 39,
+        "deletions": 62,
+        "total": 101
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b75900b9f6542a05ef779ae939c4a46f2c1b7e37",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-sentry",
+      "timestamp": "2026-04-22T13:14:31+05:30",
+      "message": "install.sh: symlink Clickhouse tuning file + set retention env var",
+      "stats": {
+        "additions": 28,
+        "deletions": 0,
+        "total": 28
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8828fa864df4bb0b092cb4527b5736e1383f9af9",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-sentry",
+      "timestamp": "2026-04-22T13:04:35+05:30",
+      "message": "Fix Clickhouse config mount: file path, not directory",
+      "stats": {
+        "additions": 15,
+        "deletions": 4,
+        "total": 19
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a6330cbedcb911504b4bfdd5cb24f46e390446a7",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-sentry",
+      "timestamp": "2026-04-22T12:57:46+05:30",
+      "message": "Tune Clickhouse for rishi-3: cap merge concurrency, 16g mem",
+      "stats": {
+        "additions": 98,
+        "deletions": 2,
+        "total": 100
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "156c6d5bebfc5dd1cfa6158b37d092a3adefe20d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-sentry",
+      "timestamp": "2026-04-22T10:55:14+05:30",
+      "message": "Add rishi-3 CPU-pressure watchdog to health-check workflow",
+      "stats": {
+        "additions": 50,
+        "deletions": 0,
+        "total": 50
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "fdac3321cadf5bd88ad767b81f008f54ff48873c",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-04-22T09:46:24+05:30",
+      "message": "Fix Sentry links for various services",
+      "stats": {
+        "additions": 4,
+        "deletions": 4,
+        "total": 8
+      },
+      "branches": [
+        "naitik/sentry_update"
+      ]
+    }
+  ],
+  "commit_count": 36,
+  "issues": [
+    {
+      "number": 1967,
+      "title": "Fix this: UseCaseException.<init>",
+      "closed_at": "2026-04-22T18:11:11Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1967",
+      "labels": []
+    },
+    {
+      "number": 1956,
+      "title": "Provide the app variant - staging/prod as part of the common struct payload to the device registration/deregistration endpoint to yral-metadata",
+      "closed_at": "2026-04-22T05:12:01Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1956",
+      "labels": []
+    },
+    {
+      "number": 1809,
+      "title": "Check if possible to only use the optimization, speeding up and minification features of Proguard. Don't use the obfuscation feature so that we may get better traceability of which class/functions exactly causing crashes/exceptions",
+      "closed_at": "2026-04-22T17:05:58Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1809",
+      "labels": []
+    },
+    {
+      "number": 1965,
+      "title": "save the dragonfly secrets to vault",
+      "closed_at": "2026-04-22T04:26:25Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1965",
+      "labels": []
+    },
+    {
+      "number": 1948,
+      "title": "Add an additional parameter to accept app variant - alpha/prod to be able to discern which app's notification tokens to register",
+      "closed_at": "2026-04-22T05:26:57Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1948",
+      "labels": []
+    },
+    {
+      "number": 1974,
+      "title": "Migrate PR preview deployments from Fly to Coolify for yral-video-storage-service",
+      "closed_at": "2026-04-22T10:47:38Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1974",
+      "labels": []
+    },
+    {
+      "number": 1937,
+      "title": "Setup PR links to Coolify on our self hosted infrastructure instead of using Fly",
+      "closed_at": "2026-04-22T04:46:15Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1937",
+      "labels": []
+    },
+    {
+      "number": 1934,
+      "title": "Evaluate the current video post-processing pipeline and figure out the thumbnail generation bit. Make it so that the thumbnail generated is the first frame of the video",
+      "closed_at": "2026-04-22T10:47:56Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1934",
+      "labels": []
+    },
+    {
+      "number": 1923,
+      "title": "Host all of the nofeebooking services on the same self hosted infrastructure",
+      "closed_at": "2026-04-22T04:57:48Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1923",
+      "labels": []
+    }
+  ],
+  "issue_count": 9
+}
