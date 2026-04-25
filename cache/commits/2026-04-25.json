@@ -1,0 +1,102 @@
+{
+  "date": "2026-04-25",
+  "cached_at": "2026-04-25T18:48:02.579400Z",
+  "commits": [
+    {
+      "sha": "8c6ecdbbac1098d7c01a000477a0dcde9c10c750",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-25T22:38:35+05:30",
+      "message": "refactor: improve formatting and readability of SnowplowAnalyticsProvider",
+      "stats": {
+        "additions": 32,
+        "deletions": 28,
+        "total": 60
+      },
+      "branches": [
+        "saikatdas0790/add-canisters-repo-and-more-cleanup"
+      ]
+    },
+    {
+      "sha": "6f5cf1330007590c8f91928485897bb24aff8aaf",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-25T22:00:51+05:30",
+      "message": "feat: integrate SnowplowTracker for enhanced analytics tracking",
+      "stats": {
+        "additions": 67,
+        "deletions": 8,
+        "total": 75
+      },
+      "branches": [
+        "saikatdas0790/add-canisters-repo-and-more-cleanup"
+      ]
+    },
+    {
+      "sha": "91d74aa36760b6663874cdf8bf2248e17d2962d5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-25T20:44:25+05:30",
+      "message": "Merge branch 'main' into saikatdas0790/add-canisters-repo-and-more-cleanup",
+      "stats": {
+        "additions": 1270,
+        "deletions": 256,
+        "total": 1526
+      },
+      "branches": [
+        "saikatdas0790/add-canisters-repo-and-more-cleanup"
+      ]
+    },
+    {
+      "sha": "540b3cae05794c7ab37e8feb7daad0371dd4ae0e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-04-25T14:00:38Z",
+      "message": "feat: update CI tasks and add SQL queries for IC canister snapshot functionality",
+      "stats": {
+        "additions": 293,
+        "deletions": 141,
+        "total": 434
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "03670b11034923e39f8cf6ce1dbca6e41aa20526",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-04-25T02:23:32Z",
+      "message": "fix(yral-backend): update subproject commit and remove deprecated sops configuration",
+      "stats": {
+        "additions": 1,
+        "deletions": 18,
+        "total": 19
+      },
+      "branches": [
+        "renovate/vpa-4.x",
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 5,
+  "issues": [],
+  "issue_count": 0
+}
