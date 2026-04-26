@@ -1,0 +1,129 @@
+{
+  "date": "2026-04-26",
+  "cached_at": "2026-04-26T18:47:57.338140Z",
+  "commits": [
+    {
+      "sha": "93311aa596309815fd9d281d6c9c712a5ce3ef3f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-04-26T12:13:12Z",
+      "message": "fix(ci-e2e-reader): use pods/portforward instead of services/portforward",
+      "stats": {
+        "additions": 4,
+        "deletions": 1,
+        "total": 5
+      },
+      "branches": [
+        "renovate/vpa-4.x",
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "c8a7a167de9b84236cc57050fac5d91973932e23",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-04-26T11:27:27Z",
+      "message": "feat(ci-e2e-reader): add Kustomization and RBAC resources for CI E2E reader",
+      "stats": {
+        "additions": 86,
+        "deletions": 0,
+        "total": 86
+      },
+      "branches": [
+        "renovate/vpa-4.x",
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "2508d313a688fee0bae3dfc04e6b0a1886d05390",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-04-26T06:31:03Z",
+      "message": "fix(devcontainer): update runArgs formatting and comment out aws-cli feature",
+      "stats": {
+        "additions": 7,
+        "deletions": 5,
+        "total": 12
+      },
+      "branches": [
+        "renovate/vpa-4.x",
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "fcd4377f1b7321f1f1de366fbfcbce9fd300cce3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-26T11:20:32+05:30",
+      "message": "chore: update todo with removal of Roboelectric and corresponding tests",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "saikatdas0790/add-canisters-repo-and-more-cleanup"
+      ]
+    }
+  ],
+  "commit_count": 4,
+  "issues": [],
+  "issue_count": 0
+}
