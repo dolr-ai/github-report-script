@@ -1,0 +1,610 @@
+{
+  "date": "2026-04-28",
+  "cached_at": "2026-04-28T19:03:56.671563Z",
+  "commits": [
+    {
+      "sha": "c4337e721bef23e541c86676280c6720bd83cec5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-04-28T14:06:29Z",
+      "message": "fix(kafka): correct per-broker TLSRoute backend service names",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "renovate/vpa-4.x",
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/ansible-lint-gte-26.4.0",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.0.0-kafka-4.2.0"
+      ]
+    },
+    {
+      "sha": "8785ab36505bf2118d4fd8443b0ad1534b2581e3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-04-28T14:02:49Z",
+      "message": "fix(cilium): restart operator to initialize TLSRoute controller",
+      "stats": {
+        "additions": 4,
+        "deletions": 0,
+        "total": 4
+      },
+      "branches": [
+        "renovate/vpa-4.x",
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/ansible-lint-gte-26.4.0",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.0.0-kafka-4.2.0"
+      ]
+    },
+    {
+      "sha": "579820bfbbab6d8ae211890e45cbda166c23835d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-04-28T13:55:47Z",
+      "message": "fix(cilium): enable experimentalChannel for TLSRoute support",
+      "stats": {
+        "additions": 5,
+        "deletions": 0,
+        "total": 5
+      },
+      "branches": [
+        "renovate/vpa-4.x",
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/ansible-lint-gte-26.4.0",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.0.0-kafka-4.2.0"
+      ]
+    },
+    {
+      "sha": "0c2a6b1815cf5f546ae6a719fe6c2a28828a952a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-04-28T08:07:15Z",
+      "message": "fix(dns): update usage instructions for Cloudflare DNS playbook",
+      "stats": {
+        "additions": 1,
+        "deletions": 2,
+        "total": 3
+      },
+      "branches": [
+        "renovate/vpa-4.x",
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/ansible-lint-gte-26.4.0",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.0.0-kafka-4.2.0"
+      ]
+    },
+    {
+      "sha": "a6da744e1e4edababf9599ae3917535e8a29bd08",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-04-28T08:06:05Z",
+      "message": "fix(dns): remove vault password file reference from usage instructions",
+      "stats": {
+        "additions": 1,
+        "deletions": 2,
+        "total": 3
+      },
+      "branches": [
+        "renovate/vpa-4.x",
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/ansible-lint-gte-26.4.0",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.0.0-kafka-4.2.0"
+      ]
+    },
+    {
+      "sha": "7c23315d1cb7950622c4c044ad2a022cedb94246",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-04-28T03:54:55Z",
+      "message": "fix(kafka): rotate TLS secret name to force PKCS8 re-issuance",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "renovate/vpa-4.x",
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/ansible-lint-gte-26.4.0",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.0.0-kafka-4.2.0"
+      ]
+    },
+    {
+      "sha": "3c4d4ddfe68ef1dea2f9cb7378aaa6449acf49e1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-04-28T03:51:16Z",
+      "message": "fix(kafka): use PKCS8 key encoding for external TLS cert",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "renovate/vpa-4.x",
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/ansible-lint-gte-26.4.0",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.0.0-kafka-4.2.0"
+      ]
+    },
+    {
+      "sha": "17bfcd72aaf484c5357134cd3f4eb80f87feb047",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-04-28T03:41:00Z",
+      "message": "fix(kafka): cluster-ip listener type + add Gateway API experimental CRDs",
+      "stats": {
+        "additions": 30,
+        "deletions": 1,
+        "total": 31
+      },
+      "branches": [
+        "renovate/vpa-4.x",
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/ansible-lint-gte-26.4.0",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.0.0-kafka-4.2.0"
+      ]
+    },
+    {
+      "sha": "b15bf38f7a85d5d74a1974df730d6b6ae8b91d90",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-04-28T03:25:44Z",
+      "message": "feat(kafka): enhance Kafka setup with external TLS support and Cloudflare DNS management",
+      "stats": {
+        "additions": 410,
+        "deletions": 10,
+        "total": 420
+      },
+      "branches": [
+        "renovate/vpa-4.x",
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/ansible-lint-gte-26.4.0",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.0.0-kafka-4.2.0"
+      ]
+    },
+    {
+      "sha": "13e8a834ca1adc6458a637ebcfc6e1548897d95c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-28T17:18:59+05:30",
+      "message": "fix: update task configurations for allChecks; streamline working directory and improve task depende",
+      "stats": {
+        "additions": 8,
+        "deletions": 9,
+        "total": 17
+      },
+      "branches": [
+        "saikatdas0790/add-canisters-repo-and-more-cleanup"
+      ]
+    },
+    {
+      "sha": "fbd4761c51c1afd95ef00e12c4d561f2d40a41ea",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-28T16:23:14+05:30",
+      "message": "feat: Refactor E2E tests for Android and iOS; consolidate checks and improve structure",
+      "stats": {
+        "additions": 225,
+        "deletions": 175,
+        "total": 400
+      },
+      "branches": [
+        "saikatdas0790/add-canisters-repo-and-more-cleanup"
+      ]
+    },
+    {
+      "sha": "748ac02d6815e340eeb4201977c6dc36e300cea1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-28T16:05:58+05:30",
+      "message": "feat: Refactor CI checks and remove legacy scripts; integrate Gradle tasks for streamlined testing",
+      "stats": {
+        "additions": 357,
+        "deletions": 459,
+        "total": 816
+      },
+      "branches": [
+        "saikatdas0790/add-canisters-repo-and-more-cleanup"
+      ]
+    },
+    {
+      "sha": "4ae3156754588960072dc23832dd9ab8b8416b7c",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-28T20:31:11+05:30",
+      "message": "Add DNS fallback resolvers (#1146)",
+      "stats": {
+        "additions": 320,
+        "deletions": 30,
+        "total": 350
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d1e4644956c06087e4a33890c8cc238c02441cef",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-04-28T19:57:48+05:30",
+      "message": "fix(aiInfluencer): use ServerDraft flow for bot welcome-video upload (#1145)",
+      "stats": {
+        "additions": 121,
+        "deletions": 515,
+        "total": 636
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7e64fc42beec4cc54b23d268e7d799c3959d00a3",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-04-28T18:25:51+05:30",
+      "message": "Update service-summary.md",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "ansuman-yral-patch-3"
+      ]
+    },
+    {
+      "sha": "7702b4d2b642e19a9669db0095365409e55c9406",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-04-28T18:23:53+05:30",
+      "message": "Update service-summary.md",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "ansuman-yral-patch-2"
+      ]
+    },
+    {
+      "sha": "c884941fc3869053b3271b9e047af9014d7d8d10",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-chat-ai",
+      "timestamp": "2026-04-28T13:05:07+05:30",
+      "message": "fix(influencers): return starter_video_prompt on create \u2014 match Rust behavior",
+      "stats": {
+        "additions": 15,
+        "deletions": 2,
+        "total": 17
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4e9fb1611b6b4eadabe40d9bfd3548ffe863043d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-chat-ai",
+      "timestamp": "2026-04-28T10:31:51+05:30",
+      "message": "fix(sentry): scrub sensitive query params from breadcrumbs and events",
+      "stats": {
+        "additions": 110,
+        "deletions": 0,
+        "total": 110
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "58ec962d21b0235d8751fa0054b0fe5388d9de9c",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-chat-ai",
+      "timestamp": "2026-04-28T10:26:01+05:30",
+      "message": "fix(influencers): port avatar gen + relax safety + surface real errors",
+      "stats": {
+        "additions": 124,
+        "deletions": 7,
+        "total": 131
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f29c85081e459c8d1f9e3ebaf2163364c3796e31",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-04-28T07:59:43+05:30",
+      "message": "Ansuman/google chat report approved fix clippy (#437)",
+      "stats": {
+        "additions": 42,
+        "deletions": 42,
+        "total": 84
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ba7773d41d2181676e82ba1bfa19e38ac0a4137b",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-04-28T07:14:49+05:30",
+      "message": "Ansuman/google chat report approved fix clippy (#436)",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c0fec636ed16945d24c4c90207a8058d7a77dea5",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-04-28T07:35:42+05:30",
+      "message": "Fix Clippy warnings in videohash and dragonfly",
+      "stats": {
+        "additions": 42,
+        "deletions": 42,
+        "total": 84
+      },
+      "branches": [
+        "ansuman/google-chat-report-approved-fix-clippy"
+      ]
+    }
+  ],
+  "commit_count": 22,
+  "issues": [
+    {
+      "number": 2013,
+      "title": "Fix video creation flow on generating a new bot",
+      "closed_at": "2026-04-28T14:27:51Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2013",
+      "labels": []
+    },
+    {
+      "number": 2011,
+      "title": "Investigate and come back with findings and recommendation on the attached issue",
+      "closed_at": "2026-04-28T15:01:14Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2011",
+      "labels": []
+    },
+    {
+      "number": 1918,
+      "title": "Use the chat.rishi.yral.com domain instead of chat.yral.com",
+      "closed_at": "2026-04-28T04:21:15Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1918",
+      "labels": []
+    },
+    {
+      "number": 1959,
+      "title": "Reimplement the nsfw private bot channel for review by internal team before banning",
+      "closed_at": "2026-04-28T04:47:51Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1959",
+      "labels": []
+    },
+    {
+      "number": 1947,
+      "title": "Cleanup Cloud Composer resources once confirmed that self hosted Airflow is working flawlessly",
+      "closed_at": "2026-04-28T04:40:05Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1947",
+      "labels": []
+    },
+    {
+      "number": 1949,
+      "title": "handle yral-stating notification key on redis",
+      "closed_at": "2026-04-28T05:04:43Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1949",
+      "labels": []
+    },
+    {
+      "number": 1979,
+      "title": "Delete the estate fly org once prakash done pointing nofeebooking to self hosted servers",
+      "closed_at": "2026-04-28T05:11:00Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1979",
+      "labels": []
+    },
+    {
+      "number": 1856,
+      "title": "Reclaim postgres-1. It's triggering external abuse systems",
+      "closed_at": "2026-04-28T05:08:55Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1856",
+      "labels": []
+    }
+  ],
+  "issue_count": 8
+}
