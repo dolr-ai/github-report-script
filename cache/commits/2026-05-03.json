@@ -1,0 +1,419 @@
+{
+  "date": "2026-05-03",
+  "cached_at": "2026-05-03T18:48:48.863517Z",
+  "commits": [
+    {
+      "sha": "c635a96f87869e9f64e3f523a5c6d6df72f9b377",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ai-feed-recommendation-system",
+      "timestamp": "2026-05-03T22:25:12+05:30",
+      "message": "Merge pull request #28 from dolr-ai/ansuman/feed_recommendation_algorithm",
+      "stats": {
+        "additions": 6929,
+        "deletions": 37,
+        "total": 6966
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "1d24ceb567d617224ed42bb7ae0779c5df54b193",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ai-feed-recommendation-system",
+      "timestamp": "2026-05-03T22:18:51+05:30",
+      "message": "feat: add script to backfill user_video_relation data from BigQuery to ClickHouse",
+      "stats": {
+        "additions": 475,
+        "deletions": 0,
+        "total": 475
+      },
+      "branches": [
+        "main",
+        "ansuman/feed_recommendation_algorithm"
+      ]
+    },
+    {
+      "sha": "b42bd821e887b75ff49cf31cb574ee2c7625b19d",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ai-feed-recommendation-system",
+      "timestamp": "2026-05-03T22:18:31+05:30",
+      "message": "refactor: cleanup unused KVRocks utilities, improve job resource lifecycle management, and expand ob",
+      "stats": {
+        "additions": 155,
+        "deletions": 122,
+        "total": 277
+      },
+      "branches": [
+        "main",
+        "ansuman/feed_recommendation_algorithm"
+      ]
+    },
+    {
+      "sha": "4f5df75be37fca6b5c4778f2114d4e1c234d4536",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ai-feed-recommendation-system",
+      "timestamp": "2026-05-03T21:33:31+05:30",
+      "message": "feat: add backfill script for user-video relations and update feed pool service documentation",
+      "stats": {
+        "additions": 502,
+        "deletions": 663,
+        "total": 1165
+      },
+      "branches": [
+        "main",
+        "ansuman/feed_recommendation_algorithm"
+      ]
+    },
+    {
+      "sha": "282edfe43423dcc519c7dcee2266371e51abc2a3",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ai-feed-recommendation-system",
+      "timestamp": "2026-05-03T20:58:06+05:30",
+      "message": "Merge branch 'main' into ansuman/feed_recommendation_algorithm",
+      "stats": {
+        "additions": 256,
+        "deletions": 6,
+        "total": 262
+      },
+      "branches": [
+        "main",
+        "ansuman/feed_recommendation_algorithm"
+      ]
+    },
+    {
+      "sha": "ce4a8ac30c5e19d90a9073c42173dd543a6ac7a4",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ai-feed-recommendation-system",
+      "timestamp": "2026-05-03T20:54:25+05:30",
+      "message": "feat: implement feed recommendation system architecture, documentation, and background sync infrastr",
+      "stats": {
+        "additions": 1030,
+        "deletions": 82,
+        "total": 1112
+      },
+      "branches": [
+        "main",
+        "ansuman/feed_recommendation_algorithm"
+      ]
+    },
+    {
+      "sha": "b81c620a758fe9dfce8eb5a36fbeddb5cc6754a1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-03T20:36:42+05:30",
+      "message": "feat: update pocket-ic version to 7.0.0 and simplify installation script",
+      "stats": {
+        "additions": 5,
+        "deletions": 8,
+        "total": 13
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f8f893348593299fa3140c3171cec077c1574c76",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-03T18:04:21+05:30",
+      "message": "feat: update AGENTS.md and README.md for improved clarity on scripts and workflows",
+      "stats": {
+        "additions": 70,
+        "deletions": 133,
+        "total": 203
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ac5cca0fb3833d81f9952aaf0af0a38da45280dd",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-03T18:00:03+05:30",
+      "message": "feat: refactor CI workflows and scripts; remove obsolete files and add new installation and testing ",
+      "stats": {
+        "additions": 46,
+        "deletions": 18,
+        "total": 64
+      },
+      "branches": [
+        "main",
+        "dependabot/github_actions/actions/checkout-6"
+      ]
+    },
+    {
+      "sha": "b8e14a667cdc34d4d4d6ae80fa314f44e6b4a86f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-03T17:45:24+05:30",
+      "message": "feat: update workflows to use macOS for CI jobs and install dfx; add agent guide for repository conv",
+      "stats": {
+        "additions": 142,
+        "deletions": 30,
+        "total": 172
+      },
+      "branches": [
+        "main",
+        "dependabot/github_actions/actions/checkout-6"
+      ]
+    },
+    {
+      "sha": "4a81a73bbe0684d9cb5ddcb6394f70b0225ae5bc",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-03T14:31:15+05:30",
+      "message": "feat: remove obsolete devcontainer configuration and scripts; add dfx installation script",
+      "stats": {
+        "additions": 3,
+        "deletions": 96,
+        "total": 99
+      },
+      "branches": [
+        "main",
+        "dependabot/github_actions/actions/checkout-6"
+      ]
+    },
+    {
+      "sha": "5a1a8551d44c1f9eb0ab9fce55d7cbfe5ec5a8db",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-chat-ai",
+      "timestamp": "2026-05-03T17:14:15+05:30",
+      "message": "fix(caddy): render metabase snippet on Caddy-only hosts (rishi-3)",
+      "stats": {
+        "additions": 19,
+        "deletions": 0,
+        "total": 19
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3a3274d75d1835f17a33df1b7866a4700ecf8d4b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-chat-ai",
+      "timestamp": "2026-05-03T17:09:50+05:30",
+      "message": "fix(metabase): bump memory cap 1G\u21924G to stop OOM crash loop",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "60ec625d3aa48312f29b534a063f047ed23c4589",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-chat-ai",
+      "timestamp": "2026-05-03T15:47:35+05:30",
+      "message": "feat(caddy): persistent overlay attachment + rishi-3 in CI pipeline (#27)",
+      "stats": {
+        "additions": 454,
+        "deletions": 24,
+        "total": 478
+      },
+      "branches": [
+        "main",
+        "dependabot/github_actions/appleboy/ssh-action-1.2.5",
+        "dependabot/github_actions/appleboy/scp-action-1.0.0"
+      ]
+    },
+    {
+      "sha": "a22a8b4a53c8501da9c7d86d6231eac55ff3c807",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-chat-ai",
+      "timestamp": "2026-05-03T14:45:51+05:30",
+      "message": "chore(infra): bump chat-ai container limits 512M/1cpu \u2192 10G/4cpu",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main",
+        "dependabot/github_actions/appleboy/ssh-action-1.2.5",
+        "dependabot/github_actions/appleboy/scp-action-1.0.0"
+      ]
+    },
+    {
+      "sha": "84af74d35a8509eb5ac86b03cfe29351f25fb10f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-hetzner-infra-template",
+      "timestamp": "2026-05-03T15:47:22+05:30",
+      "message": "feat(caddy): persistent overlay attachment + rishi-3 in CI pipeline (#28)",
+      "stats": {
+        "additions": 457,
+        "deletions": 25,
+        "total": 482
+      },
+      "branches": [
+        "main",
+        "dependabot/github_actions/appleboy/ssh-action-1.2.5",
+        "dependabot/github_actions/appleboy/scp-action-1.0.0"
+      ]
+    },
+    {
+      "sha": "c106a4083b455016b9aca317bb868d228b30d7fd",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-hetzner-infra-template",
+      "timestamp": "2026-05-03T15:46:59+05:30",
+      "message": "fix(ci): haproxy_cfg rotation + service-teardown gotchas (#29)",
+      "stats": {
+        "additions": 314,
+        "deletions": 36,
+        "total": 350
+      },
+      "branches": [
+        "main",
+        "dependabot/github_actions/appleboy/ssh-action-1.2.5",
+        "dependabot/github_actions/appleboy/scp-action-1.0.0"
+      ]
+    },
+    {
+      "sha": "f70f6217772ea4176c8c48f4698258a153a5f94b",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-05-03T10:44:55+05:30",
+      "message": "enable info logs",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "naitik/enable-info-logs"
+      ]
+    },
+    {
+      "sha": "73b09c58b9b04ce14b853e2f42eeeb3f31d88584",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-05-03T10:17:48+05:30",
+      "message": "Naitik/debug-apple-auth (#59)",
+      "stats": {
+        "additions": 95,
+        "deletions": 30,
+        "total": 125
+      },
+      "branches": [
+        "naitik/enable-info-logs",
+        "main"
+      ]
+    },
+    {
+      "sha": "60b85413401dad5c22b7a36d4e39d4147320c200",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-05-03T11:06:26+05:30",
+      "message": "enable info logs (#60)",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6bbd310732a3e7dd8e2788245fffbe73fea61173",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-03T10:51:21+05:30",
+      "message": "refactor: remove unused methods for fetching post details with creator and NSFW info",
+      "stats": {
+        "additions": 0,
+        "deletions": 1285,
+        "total": 1285
+      },
+      "branches": [
+        "saikatdas0790/remove-canisters-round-2"
+      ]
+    },
+    {
+      "sha": "9fa71ae8df3dbac063aac2cdd0058b71e0bc71ee",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-03T08:42:17+05:30",
+      "message": "Remove Detekt SARIF workflow file",
+      "stats": {
+        "additions": 0,
+        "deletions": 44,
+        "total": 44
+      },
+      "branches": [
+        "saikatdas0790/remove-canisters-round-2"
+      ]
+    },
+    {
+      "sha": "d5e82fefee190f9c1d76f2a32f357c4c0e549d57",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-03T08:18:17+05:30",
+      "message": "Enhance CI caching and integrate SnowplowTracker for analytics (#1141)",
+      "stats": {
+        "additions": 1180,
+        "deletions": 703,
+        "total": 1883
+      },
+      "branches": [
+        "saikatdas0790/remove-canisters-round-2",
+        "main",
+        "dependabot/gradle/org.apache.kafka-kafka-clients-3.9.2",
+        "dependabot/github_actions/android-actions/setup-android-4"
+      ]
+    },
+    {
+      "sha": "f323d6b81b663204536b39253a1d0104d810e08e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-05-03T09:16:27+05:30",
+      "message": "chore(devcontainer): remove old configuration files and add backups",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/vpa-4.x",
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 24,
+  "issues": [
+    {
+      "number": 2004,
+      "title": "Create a new video recommendation feed algorithm that consumes data from a self-hosted ClickHouse database.",
+      "closed_at": "2026-05-03T16:55:14Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2004",
+      "labels": []
+    }
+  ],
+  "issue_count": 1
+}
