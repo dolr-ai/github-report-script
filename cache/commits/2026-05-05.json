@@ -1,0 +1,439 @@
+{
+  "date": "2026-05-05",
+  "cached_at": "2026-05-05T18:57:32.670338Z",
+  "commits": [
+    {
+      "sha": "da64155ee66d1998736e1255eb1bae9ca03fda4c",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-06T00:05:06+05:30",
+      "message": "chore: restore home feed thumbnails (#1151)",
+      "stats": {
+        "additions": 53,
+        "deletions": 8,
+        "total": 61
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "eca05c933b1241b5b854bb7bc9c3f8bc50cf3252",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-05-05T22:48:45+05:30",
+      "message": "added error capture for oauth failiure",
+      "stats": {
+        "additions": 31,
+        "deletions": 7,
+        "total": 38
+      },
+      "branches": [
+        "naitik/error_capture_for_oauth"
+      ]
+    },
+    {
+      "sha": "651ce6fed8563ddaff2652ecb821d08c8833d997",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-05-05T23:54:07+05:30",
+      "message": "added error capture for oauth failiure (#67)",
+      "stats": {
+        "additions": 31,
+        "deletions": 7,
+        "total": 38
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b25b2b24919943e29ddfc9b6e9d5b474b5fa3a29",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ai-feed-recommendation-system",
+      "timestamp": "2026-05-05T21:57:55+05:30",
+      "message": "Merge pull request #31 from dolr-ai/ansuman/feat-feed-only-view-count-push-endpoint",
+      "stats": {
+        "additions": 454,
+        "deletions": 188,
+        "total": 642
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c0f92b00e80afb94b353710b4f23feed5b2164db",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-05T19:08:51+05:30",
+      "message": "Day 3 EOD: idling Session 1 STATE at Day 4 boundary",
+      "stats": {
+        "additions": 37,
+        "deletions": 34,
+        "total": 71
+      },
+      "branches": [
+        "session-1/state-idle-at-day-4-boundary"
+      ]
+    },
+    {
+      "sha": "8982af5006cb6fa80fcf615b31a5154227d162bd",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-05T18:57:44+05:30",
+      "message": "EOD daily report 2026-05-05",
+      "stats": {
+        "additions": 117,
+        "deletions": 0,
+        "total": 117
+      },
+      "branches": [
+        "session-1/state-idle-at-day-4-boundary",
+        "main"
+      ]
+    },
+    {
+      "sha": "bbdc101c35c6a66a4d9bc1f052206d9e66a865df",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-05T18:53:58+05:30",
+      "message": "Day 3 chaos tests: fill-rishi-5-disk + partition-rishi-6 + runner",
+      "stats": {
+        "additions": 970,
+        "deletions": 40,
+        "total": 1010
+      },
+      "branches": [
+        "session-1/state-idle-at-day-4-boundary",
+        "main",
+        "coordinator/eod-2026-05-05-daily-report"
+      ]
+    },
+    {
+      "sha": "48351ffa985f24cd4a362cc4748e2d97eb33770c",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-05T18:49:44+05:30",
+      "message": "Day 3 chaos tests: kill-rishi-6 + kill-patroni-leader",
+      "stats": {
+        "additions": 619,
+        "deletions": 37,
+        "total": 656
+      },
+      "branches": [
+        "session-1/state-idle-at-day-4-boundary",
+        "session-1/day-3-chaos-tests-fill-partition-runner",
+        "main",
+        "coordinator/eod-2026-05-05-daily-report"
+      ]
+    },
+    {
+      "sha": "6203eed810adbbb977180253770c6b5966ac75c4",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-05T18:10:50+05:30",
+      "message": "Reconcile ownership doc with lint on session-log access (D.4)",
+      "stats": {
+        "additions": 12,
+        "deletions": 0,
+        "total": 12
+      },
+      "branches": [
+        "session-1/state-idle-at-day-4-boundary",
+        "session-1/day-3-chaos-tests-fill-partition-runner",
+        "session-1/day-3-chaos-test-scripts",
+        "main",
+        "coordinator/eod-2026-05-05-daily-report"
+      ]
+    },
+    {
+      "sha": "2032647178d75e4e65ac8c48d2d755dbb6bd74c7",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-05T18:07:44+05:30",
+      "message": "Day 1-2 cluster stateful core: Patroni + Redis Sentinel + Langfuse drafts",
+      "stats": {
+        "additions": 1687,
+        "deletions": 39,
+        "total": 1726
+      },
+      "branches": [
+        "session-1/state-idle-at-day-4-boundary",
+        "session-1/day-3-chaos-tests-fill-partition-runner",
+        "session-1/day-3-chaos-test-scripts",
+        "main",
+        "coordinator/eod-2026-05-05-daily-report",
+        "coordinator/d4-doc-lint-reconcile-session-log-access"
+      ]
+    },
+    {
+      "sha": "6668eb5fc28f29a36378a57662e128a8cf3dfb92",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-05T17:57:52+05:30",
+      "message": "Day 1-2 cluster bootstrap foundation: node + Caddy + cluster-secrets manifest",
+      "stats": {
+        "additions": 1286,
+        "deletions": 44,
+        "total": 1330
+      },
+      "branches": [
+        "session-1/state-idle-at-day-4-boundary",
+        "session-1/day-3-chaos-tests-fill-partition-runner",
+        "session-1/day-3-chaos-test-scripts",
+        "session-1/cluster-stateful-core-draft",
+        "main",
+        "coordinator/eod-2026-05-05-daily-report",
+        "coordinator/d4-doc-lint-reconcile-session-log-access"
+      ]
+    },
+    {
+      "sha": "7da8579f45db0b87ac5aed56ab46c97ba173ea70",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-05T15:57:27+05:30",
+      "message": "Tighten coordinator scope in lint-scope-violations (D.3)",
+      "stats": {
+        "additions": 19,
+        "deletions": 11,
+        "total": 30
+      },
+      "branches": [
+        "session-1/state-idle-at-day-4-boundary",
+        "session-1/day-3-chaos-tests-fill-partition-runner",
+        "session-1/day-3-chaos-test-scripts",
+        "session-1/cluster-stateful-core-draft",
+        "session-1/cluster-bootstrap-scripts-draft",
+        "main",
+        "coordinator/eod-2026-05-05-daily-report",
+        "coordinator/d4-doc-lint-reconcile-session-log-access"
+      ]
+    },
+    {
+      "sha": "218e84a778e738efbca2b80f2102b2664350c7e4",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-05T15:54:25+05:30",
+      "message": "Fix gh CLI access in launchd context (D.2)",
+      "stats": {
+        "additions": 8,
+        "deletions": 0,
+        "total": 8
+      },
+      "branches": [
+        "session-1/state-idle-at-day-4-boundary",
+        "session-1/day-3-chaos-tests-fill-partition-runner",
+        "session-1/day-3-chaos-test-scripts",
+        "session-1/cluster-stateful-core-draft",
+        "session-1/cluster-bootstrap-scripts-draft",
+        "main",
+        "coordinator/eod-2026-05-05-daily-report",
+        "coordinator/d4-doc-lint-reconcile-session-log-access"
+      ]
+    },
+    {
+      "sha": "73a84a93cc42fea70e7866023be7867e8df94cb5",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-05T15:54:09+05:30",
+      "message": "Gitignore Claude Code runtime state files (D.1)",
+      "stats": {
+        "additions": 5,
+        "deletions": 0,
+        "total": 5
+      },
+      "branches": [
+        "session-1/state-idle-at-day-4-boundary",
+        "session-1/day-3-chaos-tests-fill-partition-runner",
+        "session-1/day-3-chaos-test-scripts",
+        "session-1/cluster-stateful-core-draft",
+        "session-1/cluster-bootstrap-scripts-draft",
+        "main",
+        "coordinator/eod-2026-05-05-daily-report",
+        "coordinator/d4-doc-lint-reconcile-session-log-access"
+      ]
+    },
+    {
+      "sha": "96d16df2fcc48cdfaac7fd6885fb5b27c493d29e",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-05T18:38:20+05:30",
+      "message": "Day 3 PR B \u2014 chaos tests: disk fill + network partition + orchestrator",
+      "stats": {
+        "additions": 970,
+        "deletions": 40,
+        "total": 1010
+      },
+      "branches": [
+        "session-1/day-3-chaos-tests-fill-partition-runner"
+      ]
+    },
+    {
+      "sha": "e7f32657a71867db6a34f7a6c2f0f5bb11e7bcf6",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-05T18:34:30+05:30",
+      "message": "Day 3 PR A \u2014 chaos test kill scripts (rishi-6 drain + Patroni leader kill)",
+      "stats": {
+        "additions": 619,
+        "deletions": 37,
+        "total": 656
+      },
+      "branches": [
+        "session-1/day-3-chaos-test-scripts"
+      ]
+    },
+    {
+      "sha": "e65369f15b3ff5cf4800a2b2d07d4c0ed222ecee",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-05T16:52:18+05:30",
+      "message": "Day 1-2 PR B \u2014 Patroni + Redis Sentinel + Langfuse stateful core drafts",
+      "stats": {
+        "additions": 1687,
+        "deletions": 39,
+        "total": 1726
+      },
+      "branches": [
+        "session-1/cluster-stateful-core-draft"
+      ]
+    },
+    {
+      "sha": "ab0fa88bb83e21db8e4dbc076067a905550c9d64",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-05T16:36:01+05:30",
+      "message": "Day 1-2 PR A \u2014 node-bootstrap + Caddy edge stack + cluster secrets manifest",
+      "stats": {
+        "additions": 1286,
+        "deletions": 44,
+        "total": 1330
+      },
+      "branches": [
+        "session-1/cluster-bootstrap-scripts-draft"
+      ]
+    },
+    {
+      "sha": "bf5ecba5278d1413c5cdad775e29f0a8b93c37df",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-05T18:56:13+05:30",
+      "message": "docs: EOD daily report 2026-05-05",
+      "stats": {
+        "additions": 117,
+        "deletions": 0,
+        "total": 117
+      },
+      "branches": [
+        "coordinator/eod-2026-05-05-daily-report"
+      ]
+    },
+    {
+      "sha": "a260b83886309cf4a9244ff56a1a98a4bfa2b086",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-05T18:08:55+05:30",
+      "message": "docs: reconcile ownership doc with lint \u2014 sessions own their own log/state",
+      "stats": {
+        "additions": 12,
+        "deletions": 0,
+        "total": 12
+      },
+      "branches": [
+        "coordinator/d4-doc-lint-reconcile-session-log-access"
+      ]
+    },
+    {
+      "sha": "353429cc79a9a50d739adecd2d51edf786e5d35a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-05T15:55:36+05:30",
+      "message": "fix: end-anchor coordinator root-file regex (Codex catch on PR #8)",
+      "stats": {
+        "additions": 4,
+        "deletions": 1,
+        "total": 5
+      },
+      "branches": [
+        "coordinator/d3-tighten-coordinator-scope"
+      ]
+    },
+    {
+      "sha": "bb761815beafd0202bad64421733ee3819282745",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-05T15:49:58+05:30",
+      "message": "fix: tighten coordinator scope in lint-scope-violations (D.3)",
+      "stats": {
+        "additions": 16,
+        "deletions": 11,
+        "total": 27
+      },
+      "branches": [
+        "coordinator/d3-tighten-coordinator-scope"
+      ]
+    },
+    {
+      "sha": "94ec874cabbd3f624480a93d15cf294a6e5b282f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-05T15:48:04+05:30",
+      "message": "fix: explicit PATH+HOME export in regenerate-master-status.sh (D.2)",
+      "stats": {
+        "additions": 8,
+        "deletions": 0,
+        "total": 8
+      },
+      "branches": [
+        "coordinator/d2-fix-gh-cli-in-launchd"
+      ]
+    },
+    {
+      "sha": "19d63ae32a901e89d6334b3a3994969f5f2c69b0",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-05T15:46:38+05:30",
+      "message": "chore: gitignore Claude Code runtime state files",
+      "stats": {
+        "additions": 5,
+        "deletions": 0,
+        "total": 5
+      },
+      "branches": [
+        "coordinator/d1-gitignore-claude-code-runtime-state"
+      ]
+    }
+  ],
+  "commit_count": 24,
+  "issues": [
+    {
+      "number": 30,
+      "title": "Bug Fix: video Recsys API and latency optimization",
+      "closed_at": "2026-05-05T04:30:25Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/ai-feed-recommendation-system",
+      "url": "https://github.com/dolr-ai/ai-feed-recommendation-system/issues/30",
+      "labels": []
+    },
+    {
+      "number": 2034,
+      "title": "Endpoint for feed api service to receive view counts from offchain",
+      "closed_at": "2026-05-05T16:27:56Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2034",
+      "labels": []
+    },
+    {
+      "number": 2025,
+      "title": "Re-enable thumbnails for videos on the feed and test on yral-alpha. The reimplementation uses `-` hyphen characters instead of underscore.",
+      "closed_at": "2026-05-05T18:35:08Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2025",
+      "labels": []
+    }
+  ],
+  "issue_count": 3
+}
