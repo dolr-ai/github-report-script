@@ -1,0 +1,274 @@
+{
+  "date": "2026-05-11",
+  "cached_at": "2026-05-11T19:10:56.260358Z",
+  "commits": [
+    {
+      "sha": "140c41c479c0152c9c0703212058db48cdff5d7c",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-05-11T22:51:45+05:30",
+      "message": "Add iOS chat billing support",
+      "stats": {
+        "additions": 883,
+        "deletions": 9,
+        "total": 892
+      },
+      "branches": [
+        "ios-chat-billing"
+      ]
+    },
+    {
+      "sha": "8897afd447540fadcfcdec3bdb816ecb1c4590b7",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-11T19:19:04+05:30",
+      "message": "Cleanup devcontainer configuration and refactor module references (#1156)",
+      "stats": {
+        "additions": 11,
+        "deletions": 123,
+        "total": 134
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d4fb7378c2e786dbba4049b3fef929c1d50430f4",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-chat-ai",
+      "timestamp": "2026-05-11T14:51:28+05:30",
+      "message": "feat(docs): polish Swagger UI / ReDoc to industry-standard UX",
+      "stats": {
+        "additions": 130,
+        "deletions": 1,
+        "total": 131
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f6bca0a2249d5e1e5d8e39fde82fae1cec5c2120",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-chat-ai",
+      "timestamp": "2026-05-11T13:16:10+05:30",
+      "message": "fix(caddy): use ? + > operators so scoped CSP override actually wins",
+      "stats": {
+        "additions": 14,
+        "deletions": 6,
+        "total": 20
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8ca173c5020309caa89c6e110df45305f71cff16",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-chat-ai",
+      "timestamp": "2026-05-11T13:02:21+05:30",
+      "message": "fix(caddy): relax CSP + COEP scoped to /docs and /redoc paths",
+      "stats": {
+        "additions": 31,
+        "deletions": 0,
+        "total": 31
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "fa327db1e91c08db02e4eb1cd63edfdf4d02655d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-chat-ai",
+      "timestamp": "2026-05-11T12:51:22+05:30",
+      "message": "feat(api): expose public OpenAPI docs (/docs, /redoc, /openapi.json)",
+      "stats": {
+        "additions": 68,
+        "deletions": 24,
+        "total": 92
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c56754ec1ea74c653e4043f5f8235346cf68ddb7",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-11T10:25:07+05:30",
+      "message": "formatting",
+      "stats": {
+        "additions": 182,
+        "deletions": 67,
+        "total": 249
+      },
+      "branches": [
+        "naitik/dual_write_to_dragonfly_redis"
+      ]
+    },
+    {
+      "sha": "f18ee017d70841556d4b9be93dadafd7a5bf40b3",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-11T10:22:16+05:30",
+      "message": "unused dependency import",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/dual_write_to_dragonfly_redis"
+      ]
+    },
+    {
+      "sha": "486705d2f6c8b790ffc39e70c91e4bdf414a0312",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-11T10:11:59+05:30",
+      "message": "changes for dual write in rewards",
+      "stats": {
+        "additions": 42,
+        "deletions": 1,
+        "total": 43
+      },
+      "branches": [
+        "naitik/dual_write_to_dragonfly_redis"
+      ]
+    },
+    {
+      "sha": "b223ad4ee61bf969e794b626a67b7f4314286b9f",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-11T09:59:27+05:30",
+      "message": "fix : key clone",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "naitik/dual_write_to_dragonfly_redis"
+      ]
+    },
+    {
+      "sha": "cbe549924099cec0f3b1abe19dba6de61301f776",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-11T09:55:46+05:30",
+      "message": "clippy issue fix",
+      "stats": {
+        "additions": 21,
+        "deletions": 24,
+        "total": 45
+      },
+      "branches": [
+        "naitik/dual_write_to_dragonfly_redis"
+      ]
+    }
+  ],
+  "commit_count": 11,
+  "issues": [
+    {
+      "number": 2052,
+      "title": "ios store app doables",
+      "closed_at": "2026-05-11T04:36:21Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2052",
+      "labels": []
+    },
+    {
+      "number": 2051,
+      "title": "Doables for iOS submission",
+      "closed_at": "2026-05-11T04:31:48Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2051",
+      "labels": []
+    },
+    {
+      "number": 2010,
+      "title": "Markdown renderer library is crashing. Handle the crashes gracefully and just render the plaintext on UI instead of swallowing the error",
+      "closed_at": "2026-05-11T04:21:20Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2010",
+      "labels": []
+    },
+    {
+      "number": 1999,
+      "title": "Move the Delete Account link inside a 2nd level navigation of `Account Settings`",
+      "closed_at": "2026-05-11T04:29:50Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1999",
+      "labels": []
+    },
+    {
+      "number": 1972,
+      "title": "Set the resolution compression to 1920*1080 instead of 1600*900",
+      "closed_at": "2026-05-11T04:29:42Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1972",
+      "labels": []
+    },
+    {
+      "number": 1971,
+      "title": "On image tap on the chat interface for sent images, open a full-screen preview of the image",
+      "closed_at": "2026-05-11T04:29:29Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1971",
+      "labels": []
+    },
+    {
+      "number": 1970,
+      "title": "Make the image preview on chats match the Whatsapp experience. Don't crop or hide the photo in a cover fill property.",
+      "closed_at": "2026-05-11T04:29:21Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1970",
+      "labels": []
+    },
+    {
+      "number": 1967,
+      "title": "Fix this: UseCaseException.<init>",
+      "closed_at": "2026-05-11T04:21:46Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1967",
+      "labels": []
+    },
+    {
+      "number": 1907,
+      "title": "remove gitlive dependency from android",
+      "closed_at": "2026-05-11T04:30:12Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1907",
+      "labels": []
+    },
+    {
+      "number": 979,
+      "title": "Non logged in user profile UI change - Implement the attached screen",
+      "closed_at": "2026-05-11T04:28:19Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/979",
+      "labels": []
+    },
+    {
+      "number": 2058,
+      "title": "On iOS, the api/v1/influencers/create endpoint is failing. Please investigate and fix. Please discuss with @saikatdas0790 if issue with another upstream API like yral-auth. Also find mobile crash details attached",
+      "closed_at": "2026-05-11T04:34:49Z",
+      "assignee": "rishichadha30",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2058",
+      "labels": []
+    }
+  ],
+  "issue_count": 11
+}
