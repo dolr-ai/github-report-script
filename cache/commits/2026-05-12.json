@@ -1,0 +1,253 @@
+{
+  "date": "2026-05-12",
+  "cached_at": "2026-05-12T19:10:28.828228Z",
+  "commits": [
+    {
+      "sha": "c888fc908c93522e3caa9085c888e4dff71b6a7c",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-13T00:10:13+05:30",
+      "message": "fix: adding envs to compose",
+      "stats": {
+        "additions": 7,
+        "deletions": 0,
+        "total": 7
+      },
+      "branches": [
+        "naitik/dual_write_to_dragonfly_redis"
+      ]
+    },
+    {
+      "sha": "16dc78eda3bfef70165292ba8db6b1676905e805",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-12T10:09:57+05:30",
+      "message": "removed reading from new redis for now",
+      "stats": {
+        "additions": 97,
+        "deletions": 42,
+        "total": 139
+      },
+      "branches": [
+        "naitik/dual_write_to_dragonfly_redis"
+      ]
+    },
+    {
+      "sha": "0c3da26c7b22bc2c42eb02668c118b5ff4175505",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-12T09:27:04+05:30",
+      "message": "Merge remote-tracking branch 'origin/main' into naitik/dual_write_to_dragonfly_redis",
+      "stats": {
+        "additions": 178,
+        "deletions": 2,
+        "total": 180
+      },
+      "branches": [
+        "naitik/dual_write_to_dragonfly_redis"
+      ]
+    },
+    {
+      "sha": "d8b5a0bee9e3bcc4403b4f95253ab35ae19f519b",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-12T09:23:04+05:30",
+      "message": "removed reading from new redis for now",
+      "stats": {
+        "additions": 8,
+        "deletions": 8,
+        "total": 16
+      },
+      "branches": [
+        "naitik/dual_write_to_dragonfly_redis"
+      ]
+    },
+    {
+      "sha": "0addb11f5586e506c347371ebdfabd71d70b5bcb",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-13T00:21:41+05:30",
+      "message": "Naitik/dual write to dragonfly redis (#442)",
+      "stats": {
+        "additions": 668,
+        "deletions": 60,
+        "total": 728
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9a3c009a083cbbb6ed2d9d9f73e4e4f5c03065d3",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-05-12T23:04:24+05:30",
+      "message": "Harden Apple JWS certificate validation",
+      "stats": {
+        "additions": 107,
+        "deletions": 8,
+        "total": 115
+      },
+      "branches": [
+        "ios-chat-billing"
+      ]
+    },
+    {
+      "sha": "f5d1962727db9135b444d84dc45162f59334c441",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-05-12T22:44:18+05:30",
+      "message": "Test Apple IAP account token flow",
+      "stats": {
+        "additions": 90,
+        "deletions": 8,
+        "total": 98
+      },
+      "branches": [
+        "ios-chat-billing"
+      ]
+    },
+    {
+      "sha": "e5ecb02c1d889a75a212dd46bd7c02b05ed2d086",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-05-12T22:44:01+05:30",
+      "message": "Add Apple IAP account token support",
+      "stats": {
+        "additions": 369,
+        "deletions": 33,
+        "total": 402
+      },
+      "branches": [
+        "ios-chat-billing"
+      ]
+    },
+    {
+      "sha": "17aeb896de82c0e37979cf5d62d96f8ef6babe2b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-12T19:09:26+05:30",
+      "message": "refactor: remove CLAUDE.md as part of canister cleanup",
+      "stats": {
+        "additions": 0,
+        "deletions": 1,
+        "total": 1
+      },
+      "branches": [
+        "remove_individual_canisters_and_prepare_them_for_cleanup"
+      ]
+    },
+    {
+      "sha": "3155493e11e1f1458829f4aaf413e9909473e227",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-12T19:07:38+05:30",
+      "message": "refactor: update AGENTS.md and remove individual user canister definitions from can.did",
+      "stats": {
+        "additions": 3,
+        "deletions": 449,
+        "total": 452
+      },
+      "branches": [
+        "remove_individual_canisters_and_prepare_them_for_cleanup"
+      ]
+    },
+    {
+      "sha": "2f16d359b089fe8ecd27689f79db211bffba64e0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-12T19:07:31+05:30",
+      "message": "feat: add script to build canisters and extract candid files",
+      "stats": {
+        "additions": 46,
+        "deletions": 0,
+        "total": 46
+      },
+      "branches": [
+        "remove_individual_canisters_and_prepare_them_for_cleanup"
+      ]
+    },
+    {
+      "sha": "4238095ffa336bdd9c3860f3075c5b058a707336",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-12T19:07:18+05:30",
+      "message": "Remove unused API endpoints and related utility functions",
+      "stats": {
+        "additions": 4,
+        "deletions": 5054,
+        "total": 5058
+      },
+      "branches": [
+        "remove_individual_canisters_and_prepare_them_for_cleanup"
+      ]
+    },
+    {
+      "sha": "96ee2fc69f5ef37e64d04e2aa78ea304b5d41fa6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-12T18:44:03+05:30",
+      "message": "feat: add .idea to .gitignore to exclude IDE configuration files",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "remove_individual_canisters_and_prepare_them_for_cleanup"
+      ]
+    },
+    {
+      "sha": "10ec0149c7ea2390a5d2a47bb1405dfce2603b06",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ai-feed-recommendation-system",
+      "timestamp": "2026-05-12T08:10:42+05:30",
+      "message": "Merge pull request #35 from dolr-ai/ansuman/chore/removing_harcoded_influncer",
+      "stats": {
+        "additions": 5,
+        "deletions": 50,
+        "total": 55
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "657f8cbbd70f3cd33e029f1670bdf1620daf26e7",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ai-feed-recommendation-system",
+      "timestamp": "2026-05-12T08:10:11+05:30",
+      "message": "Update influencer_feed.toml",
+      "stats": {
+        "additions": 5,
+        "deletions": 50,
+        "total": 55
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 15,
+  "issues": [
+    {
+      "number": 2063,
+      "title": "Revert this change that we did for app store review: chat feed has clean influencers for the first 50 or so odd profiles",
+      "closed_at": "2026-05-12T02:40:43Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2063",
+      "labels": []
+    },
+    {
+      "number": 2062,
+      "title": "self hosted AIR FLOW patch",
+      "closed_at": "2026-05-12T04:26:23Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2062",
+      "labels": []
+    }
+  ],
+  "issue_count": 2
+}
