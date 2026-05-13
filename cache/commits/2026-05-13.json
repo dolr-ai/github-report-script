@@ -1,0 +1,1296 @@
+{
+  "date": "2026-05-13",
+  "cached_at": "2026-05-13T19:09:25.374444Z",
+  "commits": [
+    {
+      "sha": "ea1a703465cc9e122d714e898fae5099a303c1d4",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-13T23:49:36+05:30",
+      "message": "fix: Fixes missing stack trace for crashlytics on iOS (#1157)",
+      "stats": {
+        "additions": 73,
+        "deletions": 5,
+        "total": 78
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "996b9154819bd600061fca3f93f1851b66cfce79",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-13T23:13:20+05:30",
+      "message": "fix: mirror ios iap fetch diagnostics",
+      "stats": {
+        "additions": 25,
+        "deletions": 5,
+        "total": 30
+      },
+      "branches": [
+        "feature/ios-apple-iap-billing"
+      ]
+    },
+    {
+      "sha": "f49e87b20342defd87a0cbbac9a7abf343528736",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-13T23:08:10+05:30",
+      "message": "fix: enable ios iap fetch logs in production",
+      "stats": {
+        "additions": 15,
+        "deletions": 3,
+        "total": 18
+      },
+      "branches": [
+        "feature/ios-apple-iap-billing"
+      ]
+    },
+    {
+      "sha": "af25c66ba60e7643c0049522c7ad3c2a01d1f0c0",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-13T22:53:30+05:30",
+      "message": "chore: log ios iap product fetch",
+      "stats": {
+        "additions": 9,
+        "deletions": 0,
+        "total": 9
+      },
+      "branches": [
+        "feature/ios-apple-iap-billing"
+      ]
+    },
+    {
+      "sha": "56aa3386fef530f8db8efe9b9b134ba676151057",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-13T22:45:56+05:30",
+      "message": "feat: wire apple iap billing",
+      "stats": {
+        "additions": 173,
+        "deletions": 12,
+        "total": 185
+      },
+      "branches": [
+        "feature/ios-apple-iap-billing"
+      ]
+    },
+    {
+      "sha": "5ffb3443dc11c68a7c661f7f63b2ebfde29247a3",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-08T16:15:36+05:30",
+      "message": "fix: remove global cache feed startup",
+      "stats": {
+        "additions": 1,
+        "deletions": 114,
+        "total": 115
+      },
+      "branches": [
+        "chore/feed-change"
+      ]
+    },
+    {
+      "sha": "5497a96548a5a6020dde4bd3c06106a9eeff2b4c",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-08T15:57:37+05:30",
+      "message": "fix: gate influencer feed controls",
+      "stats": {
+        "additions": 70,
+        "deletions": 22,
+        "total": 92
+      },
+      "branches": [
+        "chore/feed-change"
+      ]
+    },
+    {
+      "sha": "cc33c77e3f76f8bb7d2f34e35d07de9f5979a6b8",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-05-14T00:04:14+05:30",
+      "message": "Update service-summary.md",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "ansuman-yral-patch-2"
+      ]
+    },
+    {
+      "sha": "3c426faa114995d1168729eb3b9bcdd2dee2128c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-13T22:44:35+05:30",
+      "message": "refactor: remove individual canister integration tests in preparation for cleanup",
+      "stats": {
+        "additions": 0,
+        "deletions": 1106,
+        "total": 1106
+      },
+      "branches": [
+        "remove_individual_canisters_and_prepare_them_for_cleanup"
+      ]
+    },
+    {
+      "sha": "7efec7e81cddc585ce61ca6a8dd824282f457536",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-13T22:44:29+05:30",
+      "message": "refactor: remove pump_n_dump integration tests and related mock ledger files in preparation for clea",
+      "stats": {
+        "additions": 0,
+        "deletions": 1360,
+        "total": 1360
+      },
+      "branches": [
+        "remove_individual_canisters_and_prepare_them_for_cleanup"
+      ]
+    },
+    {
+      "sha": "dd2cbc36d370e33ad1b5cc8ad7882e8686f487ba",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-13T21:30:19+05:30",
+      "message": "refactor: remove individual canister integration tests in preparation for cleanup",
+      "stats": {
+        "additions": 0,
+        "deletions": 951,
+        "total": 951
+      },
+      "branches": [
+        "remove_individual_canisters_and_prepare_them_for_cleanup"
+      ]
+    },
+    {
+      "sha": "38b1051407b06d258c8f64e3afa8a3ce882024d3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-13T16:19:30+05:30",
+      "message": "refactor: remove individual canister integration tests and related files in preparation for cleanup",
+      "stats": {
+        "additions": 0,
+        "deletions": 814,
+        "total": 814
+      },
+      "branches": [
+        "remove_individual_canisters_and_prepare_them_for_cleanup"
+      ]
+    },
+    {
+      "sha": "03be3a6215961294364a9453d9629e4380d3baf8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-13T16:03:58+05:30",
+      "message": "refactor: remove individual canister integration tests in preparation for cleanup",
+      "stats": {
+        "additions": 0,
+        "deletions": 148,
+        "total": 148
+      },
+      "branches": [
+        "remove_individual_canisters_and_prepare_them_for_cleanup"
+      ]
+    },
+    {
+      "sha": "905e44b6f56541281293f3427ae6269df696b4a3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-13T15:58:40+05:30",
+      "message": "Remove unused types and utility functions from creator_dao integration tests",
+      "stats": {
+        "additions": 4,
+        "deletions": 2801,
+        "total": 2805
+      },
+      "branches": [
+        "remove_individual_canisters_and_prepare_them_for_cleanup"
+      ]
+    },
+    {
+      "sha": "c2a6f321dcd21ed118fdb73917a0f20890e891a0",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-13T22:18:46+05:30",
+      "message": "chore: trigger CI",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/remove_dragonfly_dual_write"
+      ]
+    },
+    {
+      "sha": "dc5b0e296887bf711a2b800890ba557190a29e4f",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-13T21:50:27+05:30",
+      "message": "fix: undo removal of break statement",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "naitik/remove_dragonfly_dual_write"
+      ]
+    },
+    {
+      "sha": "7e3e0e1fa4575b3aed172ef83345a0a9c8352049",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-13T09:40:01+05:30",
+      "message": "formatting",
+      "stats": {
+        "additions": 18,
+        "deletions": 20,
+        "total": 38
+      },
+      "branches": [
+        "naitik/remove_dragonfly_dual_write"
+      ]
+    },
+    {
+      "sha": "0955dc0f0048ea9ef4795dd3dd65d49f67d33620",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-13T09:35:35+05:30",
+      "message": "fix: clippy error",
+      "stats": {
+        "additions": 2,
+        "deletions": 3,
+        "total": 5
+      },
+      "branches": [
+        "naitik/remove_dragonfly_dual_write"
+      ]
+    },
+    {
+      "sha": "dcfd3e2e2a7dbc89e538f942809fa023d809e4bf",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-13T09:17:46+05:30",
+      "message": "formatting and clippy changes",
+      "stats": {
+        "additions": 61,
+        "deletions": 127,
+        "total": 188
+      },
+      "branches": [
+        "naitik/remove_dragonfly_dual_write"
+      ]
+    },
+    {
+      "sha": "6e7c78cbeb3bb6a89e44d00949419b18ee98e484",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-13T08:57:54+05:30",
+      "message": "removed dual write to dragonfly",
+      "stats": {
+        "additions": 61,
+        "deletions": 711,
+        "total": 772
+      },
+      "branches": [
+        "naitik/remove_dragonfly_dual_write"
+      ]
+    },
+    {
+      "sha": "c9279d1a6aad39e6af9c9b3bfad5683fbdb9f221",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-13T22:31:50+05:30",
+      "message": "removed dual write to dragonfly (#444)",
+      "stats": {
+        "additions": 93,
+        "deletions": 811,
+        "total": 904
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8e02b1aaf86eda3f2e721a81fd19ee556e1fdb8c",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-auth-v2",
+      "timestamp": "2026-05-13T17:51:10+05:30",
+      "message": "removed dual write (#70)",
+      "stats": {
+        "additions": 111,
+        "deletions": 269,
+        "total": 380
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "2bdd2d189c3656a43430ff7ccb4813e6d40a0a46",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T15:17:48+05:30",
+      "message": "Session 2 LOG: auto-append hook entry for 6abba4d (PR 1 commit)",
+      "stats": {
+        "additions": 17,
+        "deletions": 0,
+        "total": 17
+      },
+      "branches": [
+        "session-2/template-skeleton-pyproject-and-dockerfile"
+      ]
+    },
+    {
+      "sha": "6abba4d2fe11e3125742f6993819edf45020da09",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T15:15:54+05:30",
+      "message": "Session 2 Day 1 PR 1: pyproject.toml + Dockerfile + .dockerignore",
+      "stats": {
+        "additions": 456,
+        "deletions": 25,
+        "total": 481
+      },
+      "branches": [
+        "session-2/template-skeleton-pyproject-and-dockerfile"
+      ]
+    },
+    {
+      "sha": "f02bbd26be3b030f61c2b0ebb3210c1b57225659",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T15:01:42+05:30",
+      "message": "Tighten rishi-1/2/3 access + over-engineering check-in (2026-05-13)",
+      "stats": {
+        "additions": 14,
+        "deletions": 5,
+        "total": 19
+      },
+      "branches": [
+        "session-2/template-skeleton-pyproject-and-dockerfile",
+        "session-2/template-skeleton-configs",
+        "session-2/template-skeleton-compose",
+        "session-2/sentry-middleware",
+        "session-2/request-id-and-logging",
+        "session-2/langfuse-middleware",
+        "session-2/f8-walkthrough-glossary-lost-docs",
+        "session-2/f8-compliant-doc-scaffolds",
+        "session-2/config-loader",
+        "session-2/ci-workflow-template",
+        "session-1/harden-placement-labels-by-node-id",
+        "session-1/fix-swarm-state-exact-match",
+        "session-1/fix-overlay-encrypted-flag",
+        "session-1/fix-docker-apt-repo-idempotency",
+        "session-1/fix-advertise-ipv4",
+        "session-1/day-4-cluster-bringup-complete",
+        "main",
+        "coordinator/b2-init-carveout",
+        "coordinator/b2-ecosystem-app-carveout",
+        "coordinator/b2-ci-carveout"
+      ]
+    },
+    {
+      "sha": "3a0bb3ee287e8676201e0fe5d1a2c4f02a7f31a8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T12:44:34+05:30",
+      "message": "Day 3 EOD: idle Session 1 STATE at Day 4 boundary",
+      "stats": {
+        "additions": 37,
+        "deletions": 34,
+        "total": 71
+      },
+      "branches": [
+        "session-2/template-skeleton-pyproject-and-dockerfile",
+        "session-2/template-skeleton-configs",
+        "session-2/template-skeleton-compose",
+        "session-2/sentry-middleware",
+        "session-2/request-id-and-logging",
+        "session-2/langfuse-middleware",
+        "session-2/f8-walkthrough-glossary-lost-docs",
+        "session-2/f8-compliant-doc-scaffolds",
+        "session-2/config-loader",
+        "session-2/ci-workflow-template",
+        "session-1/harden-placement-labels-by-node-id",
+        "session-1/fix-swarm-state-exact-match",
+        "session-1/fix-overlay-encrypted-flag",
+        "session-1/fix-docker-apt-repo-idempotency",
+        "session-1/fix-advertise-ipv4",
+        "session-1/day-4-cluster-bringup-complete",
+        "main",
+        "coordinator/2026-05-13-tighten-rishi-1-2-3-access",
+        "coordinator/b2-init-carveout",
+        "coordinator/b2-ecosystem-app-carveout",
+        "coordinator/b2-ci-carveout"
+      ]
+    },
+    {
+      "sha": "d3b445fb46fb1d59bbcc737177798569bef7a9ec",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T15:29:23+05:30",
+      "message": "Session 2 Day 1 PR 3: project.config + shared-config.yaml + secrets.yaml.template + .env.example",
+      "stats": {
+        "additions": 739,
+        "deletions": 14,
+        "total": 753
+      },
+      "branches": [
+        "session-2/template-skeleton-configs"
+      ]
+    },
+    {
+      "sha": "189055dba851d3482d27935ca25dac9cda6499b5",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T15:51:03+05:30",
+      "message": "Session 2 Day 1: template docker-compose.yml + docker-compose.swarm.yml",
+      "stats": {
+        "additions": 506,
+        "deletions": 21,
+        "total": 527
+      },
+      "branches": [
+        "session-2/template-skeleton-configs",
+        "session-2/sentry-middleware",
+        "session-2/request-id-and-logging",
+        "session-2/langfuse-middleware",
+        "session-2/f8-walkthrough-glossary-lost-docs",
+        "session-2/f8-compliant-doc-scaffolds",
+        "session-2/config-loader",
+        "session-2/ci-workflow-template",
+        "session-1/harden-placement-labels-by-node-id",
+        "session-1/fix-swarm-state-exact-match",
+        "session-1/fix-overlay-encrypted-flag",
+        "session-1/fix-advertise-ipv4",
+        "session-1/day-4-cluster-bringup-complete",
+        "main",
+        "coordinator/b2-init-carveout",
+        "coordinator/b2-ecosystem-app-carveout",
+        "coordinator/b2-ci-carveout"
+      ]
+    },
+    {
+      "sha": "5e054486e1c9634329e456e338791bfebcde4553",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T15:39:44+05:30",
+      "message": "Session 2 Day 1: template pyproject.toml + Dockerfile + .dockerignore",
+      "stats": {
+        "additions": 473,
+        "deletions": 25,
+        "total": 498
+      },
+      "branches": [
+        "session-2/template-skeleton-configs",
+        "session-2/template-skeleton-compose",
+        "session-2/sentry-middleware",
+        "session-2/request-id-and-logging",
+        "session-2/langfuse-middleware",
+        "session-2/f8-walkthrough-glossary-lost-docs",
+        "session-2/f8-compliant-doc-scaffolds",
+        "session-2/config-loader",
+        "session-2/ci-workflow-template",
+        "session-1/harden-placement-labels-by-node-id",
+        "session-1/fix-swarm-state-exact-match",
+        "session-1/fix-overlay-encrypted-flag",
+        "session-1/fix-advertise-ipv4",
+        "session-1/day-4-cluster-bringup-complete",
+        "main",
+        "coordinator/b2-init-carveout",
+        "coordinator/b2-ecosystem-app-carveout",
+        "coordinator/b2-ci-carveout"
+      ]
+    },
+    {
+      "sha": "ad010e60e3441a6195ca6c13117873d8f6d82f38",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T15:34:37+05:30",
+      "message": "fix: node-bootstrap.sh apt-repo idempotency for docker.sources layout",
+      "stats": {
+        "additions": 14,
+        "deletions": 4,
+        "total": 18
+      },
+      "branches": [
+        "session-2/template-skeleton-configs",
+        "session-2/template-skeleton-compose",
+        "session-2/sentry-middleware",
+        "session-2/request-id-and-logging",
+        "session-2/langfuse-middleware",
+        "session-2/f8-walkthrough-glossary-lost-docs",
+        "session-2/f8-compliant-doc-scaffolds",
+        "session-2/config-loader",
+        "session-2/ci-workflow-template",
+        "session-1/harden-placement-labels-by-node-id",
+        "session-1/fix-swarm-state-exact-match",
+        "session-1/fix-overlay-encrypted-flag",
+        "session-1/fix-advertise-ipv4",
+        "session-1/day-4-cluster-bringup-complete",
+        "main",
+        "coordinator/b2-init-carveout",
+        "coordinator/b2-ecosystem-app-carveout",
+        "coordinator/b2-ci-carveout"
+      ]
+    },
+    {
+      "sha": "e63c7db7c5bf397bef6f62c37b219131b1b16c3d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T15:21:45+05:30",
+      "message": "Session 2 Day 1 PR 2: docker-compose.yml + docker-compose.swarm.yml",
+      "stats": {
+        "additions": 506,
+        "deletions": 21,
+        "total": 527
+      },
+      "branches": [
+        "session-2/template-skeleton-compose"
+      ]
+    },
+    {
+      "sha": "bca493464a40ba9a3c4c13de4bf5be4d996ad91e",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T16:04:31+05:30",
+      "message": "Session 2 Day 2 PR 1: app/main.py + Sentry middleware",
+      "stats": {
+        "additions": 234,
+        "deletions": 21,
+        "total": 255
+      },
+      "branches": [
+        "session-2/sentry-middleware"
+      ]
+    },
+    {
+      "sha": "26a60125416e82da8d4f0c3a0dca6ab43d58f1f4",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T15:59:35+05:30",
+      "message": "Session 2 Day 1 PR 3: project.config + shared-config.yaml + secrets.yaml.template + .env.example",
+      "stats": {
+        "additions": 739,
+        "deletions": 14,
+        "total": 753
+      },
+      "branches": [
+        "session-2/sentry-middleware",
+        "session-2/request-id-and-logging",
+        "session-2/langfuse-middleware",
+        "session-2/f8-walkthrough-glossary-lost-docs",
+        "session-2/f8-compliant-doc-scaffolds",
+        "session-2/config-loader",
+        "session-2/ci-workflow-template",
+        "session-1/harden-placement-labels-by-node-id",
+        "session-1/fix-overlay-encrypted-flag",
+        "session-1/fix-advertise-ipv4",
+        "session-1/day-4-cluster-bringup-complete",
+        "main",
+        "coordinator/b2-init-carveout",
+        "coordinator/b2-ecosystem-app-carveout",
+        "coordinator/b2-ci-carveout"
+      ]
+    },
+    {
+      "sha": "894edcc233b067bd4cfebc3cc76378c3c0629dbf",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T16:40:44+05:30",
+      "message": "Session 2 Day 2 PR 3: request-ID middleware + structured logging",
+      "stats": {
+        "additions": 292,
+        "deletions": 21,
+        "total": 313
+      },
+      "branches": [
+        "session-2/request-id-and-logging"
+      ]
+    },
+    {
+      "sha": "fc2097fa568b77aad22c3e055ff7ad21e6752ee2",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T16:34:38+05:30",
+      "message": "Session 2 Day 2 PR 2: Langfuse middleware (init_langfuse + get_langfuse + flush_langfuse)",
+      "stats": {
+        "additions": 187,
+        "deletions": 21,
+        "total": 208
+      },
+      "branches": [
+        "session-2/request-id-and-logging",
+        "session-2/f8-walkthrough-glossary-lost-docs",
+        "session-2/f8-compliant-doc-scaffolds",
+        "session-2/config-loader",
+        "session-2/ci-workflow-template",
+        "session-1/harden-placement-labels-by-node-id",
+        "session-1/fix-advertise-ipv4",
+        "session-1/day-4-cluster-bringup-complete",
+        "main",
+        "coordinator/b2-ci-carveout"
+      ]
+    },
+    {
+      "sha": "c029ad1e22b76f8adcefe02bce142cfb437c5b0b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T16:34:31+05:30",
+      "message": "constraints(B2): allow 'init' under ecosystem/developer-convention carve-out",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "session-2/request-id-and-logging",
+        "session-2/f8-walkthrough-glossary-lost-docs",
+        "session-2/f8-compliant-doc-scaffolds",
+        "session-2/config-loader",
+        "session-2/ci-workflow-template",
+        "session-1/harden-placement-labels-by-node-id",
+        "session-1/fix-advertise-ipv4",
+        "session-1/day-4-cluster-bringup-complete",
+        "main",
+        "coordinator/b2-ci-carveout"
+      ]
+    },
+    {
+      "sha": "ef14f380ca2d83d80d9d1117e567b22866d80a16",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T16:26:16+05:30",
+      "message": "fix(node-bootstrap.sh): encrypted=true overlay flag + C3 defense-in-depth verification",
+      "stats": {
+        "additions": 159,
+        "deletions": 3,
+        "total": 162
+      },
+      "branches": [
+        "session-2/request-id-and-logging",
+        "session-2/f8-walkthrough-glossary-lost-docs",
+        "session-2/f8-compliant-doc-scaffolds",
+        "session-2/config-loader",
+        "session-2/ci-workflow-template",
+        "session-1/harden-placement-labels-by-node-id",
+        "session-1/fix-advertise-ipv4",
+        "session-1/day-4-cluster-bringup-complete",
+        "main",
+        "coordinator/b2-init-carveout",
+        "coordinator/b2-ci-carveout"
+      ]
+    },
+    {
+      "sha": "00ac99de4f03eabbb20a8982828116e328bb7d7a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T16:16:37+05:30",
+      "message": "Session 2 Day 2 PR 1: app/main.py + Sentry middleware (B2 'app' carve-out now in main)",
+      "stats": {
+        "additions": 234,
+        "deletions": 21,
+        "total": 255
+      },
+      "branches": [
+        "session-2/request-id-and-logging",
+        "session-2/langfuse-middleware",
+        "session-2/f8-walkthrough-glossary-lost-docs",
+        "session-2/f8-compliant-doc-scaffolds",
+        "session-2/config-loader",
+        "session-2/ci-workflow-template",
+        "session-1/harden-placement-labels-by-node-id",
+        "session-1/fix-advertise-ipv4",
+        "session-1/day-4-cluster-bringup-complete",
+        "main",
+        "coordinator/b2-init-carveout",
+        "coordinator/b2-ci-carveout"
+      ]
+    },
+    {
+      "sha": "bda21e773367f3ed9a35a770932592cf4f0961f5",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T16:16:30+05:30",
+      "message": "constraints(B2): allow 'app' under ecosystem-convention carve-out (FastAPI/uvicorn)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "session-2/request-id-and-logging",
+        "session-2/langfuse-middleware",
+        "session-2/f8-walkthrough-glossary-lost-docs",
+        "session-2/f8-compliant-doc-scaffolds",
+        "session-2/config-loader",
+        "session-2/ci-workflow-template",
+        "session-1/harden-placement-labels-by-node-id",
+        "session-1/fix-advertise-ipv4",
+        "session-1/day-4-cluster-bringup-complete",
+        "main",
+        "coordinator/b2-init-carveout",
+        "coordinator/b2-ci-carveout"
+      ]
+    },
+    {
+      "sha": "8d81d433fb9d7707a2de35d43e2a63faba5b14b8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T16:01:38+05:30",
+      "message": "fix(node-bootstrap.sh): swarm-state exact-match idempotency (catches inactive-contains-active substr",
+      "stats": {
+        "additions": 72,
+        "deletions": 2,
+        "total": 74
+      },
+      "branches": [
+        "session-2/request-id-and-logging",
+        "session-2/langfuse-middleware",
+        "session-2/f8-walkthrough-glossary-lost-docs",
+        "session-2/f8-compliant-doc-scaffolds",
+        "session-2/config-loader",
+        "session-2/ci-workflow-template",
+        "session-1/harden-placement-labels-by-node-id",
+        "session-1/fix-overlay-encrypted-flag",
+        "session-1/fix-advertise-ipv4",
+        "session-1/day-4-cluster-bringup-complete",
+        "main",
+        "coordinator/b2-init-carveout",
+        "coordinator/b2-ecosystem-app-carveout",
+        "coordinator/b2-ci-carveout"
+      ]
+    },
+    {
+      "sha": "ec30f8c5f4daa126a7940ca6d2bf8acd30744b47",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T16:22:43+05:30",
+      "message": "Session 2 Day 2 PR 2: Langfuse middleware (init + get + flush)",
+      "stats": {
+        "additions": 187,
+        "deletions": 21,
+        "total": 208
+      },
+      "branches": [
+        "session-2/langfuse-middleware"
+      ]
+    },
+    {
+      "sha": "018ebfdd30440895db706e4e5c2789a7a02c741e",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T17:43:20+05:30",
+      "message": "Session 2 Day 3 PR 2b: 3 B7-new doc scaffolds",
+      "stats": {
+        "additions": 256,
+        "deletions": 28,
+        "total": 284
+      },
+      "branches": [
+        "session-2/f8-walkthrough-glossary-lost-docs"
+      ]
+    },
+    {
+      "sha": "e901656fd312708ad8b3fbea71f77ed349657cc4",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T17:30:03+05:30",
+      "message": "Session 2 Day 3 PR 2a (redo): F8-compliant 5-doc scaffolds (DEEP-DIVE/READING-ORDER/CLAUDE/RUNBOOK/S",
+      "stats": {
+        "additions": 540,
+        "deletions": 21,
+        "total": 561
+      },
+      "branches": [
+        "session-2/f8-walkthrough-glossary-lost-docs",
+        "main"
+      ]
+    },
+    {
+      "sha": "117e1e1ff88f56516b745d3bd40730036656d0a4",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T17:27:14+05:30",
+      "message": "harden(node-bootstrap.sh): apply placement labels by Swarm NodeID instead of hostname",
+      "stats": {
+        "additions": 101,
+        "deletions": 3,
+        "total": 104
+      },
+      "branches": [
+        "session-2/f8-walkthrough-glossary-lost-docs",
+        "session-1/day-4-cluster-bringup-complete",
+        "main"
+      ]
+    },
+    {
+      "sha": "ce6ec7e5e5726755c775776026ccff23009661b6",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T17:02:43+05:30",
+      "message": "Session 2 Day 3 PR 1: per-service CI workflow template (py_compile lint + docker-build with GHA cach",
+      "stats": {
+        "additions": 166,
+        "deletions": 21,
+        "total": 187
+      },
+      "branches": [
+        "session-2/f8-walkthrough-glossary-lost-docs",
+        "session-2/f8-compliant-doc-scaffolds",
+        "session-1/harden-placement-labels-by-node-id",
+        "session-1/day-4-cluster-bringup-complete",
+        "main"
+      ]
+    },
+    {
+      "sha": "05371603bfee9719dd874bbb46761c46b4c127e7",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T17:02:37+05:30",
+      "message": "constraints(B2): allow 'ci' under DevOps-convention carve-out",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "session-2/f8-walkthrough-glossary-lost-docs",
+        "session-2/f8-compliant-doc-scaffolds",
+        "session-1/harden-placement-labels-by-node-id",
+        "session-1/day-4-cluster-bringup-complete",
+        "main"
+      ]
+    },
+    {
+      "sha": "d3eb22143b8c48d31c91bedbdaf715f688067a6d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T16:56:24+05:30",
+      "message": "fix(node-bootstrap.sh): require YRAL_NODE_ADVERTISE_IPV4 for swarm-init/join (catches Hetzner IPv6-f",
+      "stats": {
+        "additions": 132,
+        "deletions": 2,
+        "total": 134
+      },
+      "branches": [
+        "session-2/f8-walkthrough-glossary-lost-docs",
+        "session-2/f8-compliant-doc-scaffolds",
+        "session-1/harden-placement-labels-by-node-id",
+        "session-1/day-4-cluster-bringup-complete",
+        "main",
+        "coordinator/b2-ci-carveout"
+      ]
+    },
+    {
+      "sha": "3b073e7cf661f2ed944bc9008945b50ac20ce0d8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T16:52:39+05:30",
+      "message": "Session 2 Day 2 PR 4: config loader (typed pydantic-settings + cached singleton)",
+      "stats": {
+        "additions": 177,
+        "deletions": 15,
+        "total": 192
+      },
+      "branches": [
+        "session-2/f8-walkthrough-glossary-lost-docs",
+        "session-2/f8-compliant-doc-scaffolds",
+        "session-2/ci-workflow-template",
+        "session-1/harden-placement-labels-by-node-id",
+        "session-1/day-4-cluster-bringup-complete",
+        "main",
+        "coordinator/b2-ci-carveout"
+      ]
+    },
+    {
+      "sha": "d9d4102812310aff3ea668b6da7df05c8e9b0caa",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T16:43:57+05:30",
+      "message": "Session 2 Day 2 PR 3: request-ID middleware + structured logging (PII-safe allowlist)",
+      "stats": {
+        "additions": 292,
+        "deletions": 21,
+        "total": 313
+      },
+      "branches": [
+        "session-2/f8-walkthrough-glossary-lost-docs",
+        "session-2/f8-compliant-doc-scaffolds",
+        "session-2/config-loader",
+        "session-2/ci-workflow-template",
+        "session-1/harden-placement-labels-by-node-id",
+        "session-1/fix-advertise-ipv4",
+        "session-1/day-4-cluster-bringup-complete",
+        "main",
+        "coordinator/b2-ci-carveout"
+      ]
+    },
+    {
+      "sha": "71d01c539e0fb69b0eb24c7307af671fd9d32fb2",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T17:25:16+05:30",
+      "message": "Session 2 Day 3 PR 2a REDO: F8-compliant 5 doc scaffolds",
+      "stats": {
+        "additions": 540,
+        "deletions": 21,
+        "total": 561
+      },
+      "branches": [
+        "session-2/f8-compliant-doc-scaffolds"
+      ]
+    },
+    {
+      "sha": "7e2a335b2517b02546766950300caa73881cda5e",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T16:47:45+05:30",
+      "message": "Session 2 Day 2 PR 4: config loader (env-based pydantic-settings)",
+      "stats": {
+        "additions": 177,
+        "deletions": 15,
+        "total": 192
+      },
+      "branches": [
+        "session-2/config-loader"
+      ]
+    },
+    {
+      "sha": "d292a8662ecea02866a54feefbb73e733fdf32a2",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T16:57:24+05:30",
+      "message": "Session 2 Day 3 PR 1: per-service CI workflow template",
+      "stats": {
+        "additions": 166,
+        "deletions": 21,
+        "total": 187
+      },
+      "branches": [
+        "session-2/ci-workflow-template"
+      ]
+    },
+    {
+      "sha": "e87d6e72395aacf33fdd5a033d53fdbf0bdbc6e2",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T17:24:24+05:30",
+      "message": "fix(node-bootstrap.sh): apply_placement_labels_to_this_node targets local NodeID",
+      "stats": {
+        "additions": 101,
+        "deletions": 3,
+        "total": 104
+      },
+      "branches": [
+        "session-1/harden-placement-labels-by-node-id"
+      ]
+    },
+    {
+      "sha": "24f99b16261fe463aeaf8bed00283c24fd9fc1c4",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T15:58:10+05:30",
+      "message": "log: PR #21 swarm-state exact-match fix",
+      "stats": {
+        "additions": 59,
+        "deletions": 0,
+        "total": 59
+      },
+      "branches": [
+        "session-1/fix-swarm-state-exact-match"
+      ]
+    },
+    {
+      "sha": "d4c99d29f799f0778fdfd97b1387ccf878c24ccf",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T15:52:29+05:30",
+      "message": "fix: node-bootstrap.sh swarm-state idempotency exact-match",
+      "stats": {
+        "additions": 13,
+        "deletions": 2,
+        "total": 15
+      },
+      "branches": [
+        "session-1/fix-swarm-state-exact-match"
+      ]
+    },
+    {
+      "sha": "c420e22fbb5f160eb3b0a4d109617555184cf9ae",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T16:22:36+05:30",
+      "message": "fix(node-bootstrap.sh): defense-in-depth \u2014 verify existing overlay encryption",
+      "stats": {
+        "additions": 67,
+        "deletions": 1,
+        "total": 68
+      },
+      "branches": [
+        "session-1/fix-overlay-encrypted-flag"
+      ]
+    },
+    {
+      "sha": "541861deb50ce2c191042b85edfdb5aafcd626d0",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T16:12:55+05:30",
+      "message": "fix(node-bootstrap.sh): docker overlay --opt encrypted=true (catches silent unencrypted-overlay trap",
+      "stats": {
+        "additions": 92,
+        "deletions": 2,
+        "total": 94
+      },
+      "branches": [
+        "session-1/fix-overlay-encrypted-flag"
+      ]
+    },
+    {
+      "sha": "8d471b2a711a27c3cc613b934dde1257d8707265",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T15:28:20+05:30",
+      "message": "fix: node-bootstrap.sh apt-repo idempotency for docker.sources layout",
+      "stats": {
+        "additions": 14,
+        "deletions": 4,
+        "total": 18
+      },
+      "branches": [
+        "session-1/fix-docker-apt-repo-idempotency"
+      ]
+    },
+    {
+      "sha": "21a3cb0742f2a8156b2f31c1c3219869d81fa04d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T16:53:08+05:30",
+      "message": "fix(node-bootstrap.sh): IPv4 --advertise-addr (catches IPv6-first hostname trap on swarm-init + swar",
+      "stats": {
+        "additions": 132,
+        "deletions": 2,
+        "total": 134
+      },
+      "branches": [
+        "session-1/fix-advertise-ipv4"
+      ]
+    },
+    {
+      "sha": "76b875efc3091a8c707f517ef36537c5ef7a2561",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T17:40:42+05:30",
+      "message": "Session 1 Day 4: cluster bringup complete (3 nodes, 3 encrypted overlays, 5 script bugs caught + fix",
+      "stats": {
+        "additions": 270,
+        "deletions": 46,
+        "total": 316
+      },
+      "branches": [
+        "session-1/day-4-cluster-bringup-complete"
+      ]
+    },
+    {
+      "sha": "6f3fe2be649c020c10336ec9daede0926526aa6f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T17:47:50+05:30",
+      "message": "Session 2 Day 3 PR 2b: F8 B7-upgrade docs (WALKTHROUGH + GLOSSARY + WHEN-YOU-GET-LOST) \u2014 8-doc set c",
+      "stats": {
+        "additions": 256,
+        "deletions": 28,
+        "total": 284
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "403107721d68adcfee431876e8485efce5f2e3a8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T17:44:20+05:30",
+      "message": "Session 1 Day 4: cluster bringup complete (3 nodes, 3 encrypted overlays, 5 script bugs caught + fix",
+      "stats": {
+        "additions": 270,
+        "deletions": 46,
+        "total": 316
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "107f5d16e56d4106bda85c450450e4550306da9f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T14:59:45+05:30",
+      "message": "constraints: tighten rishi-1/2/3 access + add over-engineering check-in + defer Day 7",
+      "stats": {
+        "additions": 14,
+        "deletions": 5,
+        "total": 19
+      },
+      "branches": [
+        "coordinator/2026-05-13-tighten-rishi-1-2-3-access"
+      ]
+    },
+    {
+      "sha": "2383209f736fb42de4581d319c29656d94b72b5f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T16:32:41+05:30",
+      "message": "constraints(B2): allow 'init' under ecosystem/developer-convention carve-out",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "coordinator/b2-init-carveout"
+      ]
+    },
+    {
+      "sha": "2a5a3831c1026a2390ecdab5a575e4856b995592",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T16:14:40+05:30",
+      "message": "constraints(B2): allow 'app' under ecosystem-convention carve-out",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "coordinator/b2-ecosystem-app-carveout"
+      ]
+    },
+    {
+      "sha": "e55f61aab4ded18a8e63f4e0ba855a25526d928c",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-13T17:00:10+05:30",
+      "message": "constraints(B2): allow 'ci' under DevOps-convention carve-out",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "coordinator/b2-ci-carveout"
+      ]
+    },
+    {
+      "sha": "11b96806583b1c995f0f0c426999e5ff199b4ca8",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-05-13T16:34:20+05:30",
+      "message": "fix: permission issue",
+      "stats": {
+        "additions": 0,
+        "deletions": 1,
+        "total": 1
+      },
+      "branches": [
+        "naitik/fix_workflow_permission"
+      ]
+    },
+    {
+      "sha": "1c051fa7836be19725c0b0c615e801f3b8be4c5c",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-05-13T16:25:10+05:30",
+      "message": "removed dual write to dragonfly (#85)",
+      "stats": {
+        "additions": 267,
+        "deletions": 479,
+        "total": 746
+      },
+      "branches": [
+        "naitik/fix_workflow_permission",
+        "master"
+      ]
+    },
+    {
+      "sha": "813a468ce2159db729ea4767142e419e85d7d20a",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-05-13T16:40:54+05:30",
+      "message": "fix: permission issue (#86)",
+      "stats": {
+        "additions": 0,
+        "deletions": 1,
+        "total": 1
+      },
+      "branches": [
+        "master"
+      ]
+    }
+  ],
+  "commit_count": 69,
+  "issues": [
+    {
+      "number": 2021,
+      "title": "remove dual writes from all the services",
+      "closed_at": "2026-05-13T10:55:11Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2021",
+      "labels": []
+    },
+    {
+      "number": 2020,
+      "title": "resync data on new cluster once dual write impl on all services is completed",
+      "closed_at": "2026-05-13T05:34:03Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2020",
+      "labels": []
+    },
+    {
+      "number": 2019,
+      "title": "impl dual write to both redis in existing service",
+      "closed_at": "2026-05-13T05:33:47Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2019",
+      "labels": []
+    },
+    {
+      "number": 2060,
+      "title": "Add missing stack trace on iOS - The non fatal reporting is correct, but stack trace is missing for iOS app",
+      "closed_at": "2026-05-13T18:19:38Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2060",
+      "labels": []
+    },
+    {
+      "number": 2013,
+      "title": "Fix video creation flow on generating a new bot",
+      "closed_at": "2026-05-13T05:09:43Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2013",
+      "labels": []
+    },
+    {
+      "number": 1968,
+      "title": "Fix this: AndroidPlaybackCoordinator$listener$1.onPlayerError",
+      "closed_at": "2026-05-13T05:13:55Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1968",
+      "labels": []
+    }
+  ],
+  "issue_count": 6
+}
