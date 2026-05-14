@@ -1,0 +1,704 @@
+{
+  "date": "2026-05-14",
+  "cached_at": "2026-05-14T19:09:20.534627Z",
+  "commits": [
+    {
+      "sha": "da75bbd58cf60e88048678ece237f885c0159d78",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-14T18:42:55+05:30",
+      "message": "fix: increment prod android version code (#1160)",
+      "stats": {
+        "additions": 6,
+        "deletions": 1,
+        "total": 7
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "222078ce463a40a6e768b889fd07a71ee471f8e4",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-14T18:30:09+05:30",
+      "message": "Update build.gradle.kts (#1159)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main",
+        "chore/draft-in-progress"
+      ]
+    },
+    {
+      "sha": "7bdbb0be67f9fb7ad7e43ca842c256d4ffefc223",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-14T21:59:57+05:30",
+      "message": "Poll in-progress video drafts",
+      "stats": {
+        "additions": 252,
+        "deletions": 20,
+        "total": 272
+      },
+      "branches": [
+        "chore/draft-in-progress"
+      ]
+    },
+    {
+      "sha": "b02095a0d74ca0ea0fe2d389fbff493b95d36ec5",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-14T15:54:18+05:30",
+      "message": "Session 2 Day 3 PR 5: spawn yral-rishi-agent-hello-world (Phase 0 close)",
+      "stats": {
+        "additions": 4084,
+        "deletions": 45,
+        "total": 4129
+      },
+      "branches": [
+        "session-2/spawn-hello-world"
+      ]
+    },
+    {
+      "sha": "c8bb688c27edf789746686257bffb97dfd2d7f55",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-14T15:50:50+05:30",
+      "message": "fix(patroni-install.sh): real-server prereq alignment + WAL-G optional + production-mode guard (D2)",
+      "stats": {
+        "additions": 361,
+        "deletions": 51,
+        "total": 412
+      },
+      "branches": [
+        "session-2/spawn-hello-world",
+        "session-2/phase-0-close-state-update",
+        "session-1/patroni-stack-etcd-bind-dirs-and-pgbouncer-tag",
+        "session-1/patroni-install-export-resolved-secret-name-in-both-branches",
+        "session-1/patroni-install-empty-secret-fix",
+        "session-1/patroni-disable-wale-when-walg-off",
+        "session-1/patroni-data-ownership-101-103-for-spilo",
+        "session-1/etcd-enable-v2-api-for-patroni-compat",
+        "session-1/day-5-step-1-eod-capture",
+        "main"
+      ]
+    },
+    {
+      "sha": "e4f961046fcc4aaecb257d725d028b373c236e2a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-14T15:35:55+05:30",
+      "message": "Session 2 Day 3 PR 4: D8 bridge scripts + tests + CI job + PR #37 NIT fix",
+      "stats": {
+        "additions": 1009,
+        "deletions": 24,
+        "total": 1033
+      },
+      "branches": [
+        "session-2/spawn-hello-world",
+        "session-2/phase-0-close-state-update",
+        "session-1/patroni-stack-etcd-bind-dirs-and-pgbouncer-tag",
+        "session-1/patroni-install-export-resolved-secret-name-in-both-branches",
+        "session-1/patroni-install-empty-secret-fix",
+        "session-1/patroni-disable-wale-when-walg-off",
+        "session-1/patroni-data-ownership-101-103-for-spilo",
+        "session-1/etcd-enable-v2-api-for-patroni-compat",
+        "session-1/day-5-step-1-eod-capture",
+        "main"
+      ]
+    },
+    {
+      "sha": "e88adca9622711822b9a8ad290229aa6e52c0e8e",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-14T15:09:55+05:30",
+      "message": "Session 2 Day 3 PR 3: new-service.sh spawner (1-command, rsync --exclude + perl -i, no rm)",
+      "stats": {
+        "additions": 334,
+        "deletions": 20,
+        "total": 354
+      },
+      "branches": [
+        "session-2/spawn-hello-world",
+        "session-2/phase-0-close-state-update",
+        "session-2/d8-bridge-scripts",
+        "session-1/patroni-stack-etcd-bind-dirs-and-pgbouncer-tag",
+        "session-1/patroni-install-real-server-fixes",
+        "session-1/patroni-install-export-resolved-secret-name-in-both-branches",
+        "session-1/patroni-install-empty-secret-fix",
+        "session-1/patroni-disable-wale-when-walg-off",
+        "session-1/patroni-data-ownership-101-103-for-spilo",
+        "session-1/etcd-enable-v2-api-for-patroni-compat",
+        "session-1/day-5-step-1-eod-capture",
+        "main"
+      ]
+    },
+    {
+      "sha": "2f0204646bc14af3ec7d2575233ac9014225eb19",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-14T15:06:59+05:30",
+      "message": "constraints(A1): relax deletion rule \u2014 7-step safety check + hard-stop list (Rishi YES 2026-05-14)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "session-2/spawn-hello-world",
+        "session-2/phase-0-close-state-update",
+        "session-2/d8-bridge-scripts",
+        "session-1/patroni-stack-etcd-bind-dirs-and-pgbouncer-tag",
+        "session-1/patroni-install-real-server-fixes",
+        "session-1/patroni-install-export-resolved-secret-name-in-both-branches",
+        "session-1/patroni-install-empty-secret-fix",
+        "session-1/patroni-disable-wale-when-walg-off",
+        "session-1/patroni-data-ownership-101-103-for-spilo",
+        "session-1/etcd-enable-v2-api-for-patroni-compat",
+        "session-1/day-5-step-1-eod-capture",
+        "main"
+      ]
+    },
+    {
+      "sha": "cb4702c7f78cfdaf4f94ae8b3f7fe18477ef50e5",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-14T14:54:32+05:30",
+      "message": "fix(infra): align overlay names with CONSTRAINTS C3 (yral-v2-*) \u2014 DEP-003 RESOLVED",
+      "stats": {
+        "additions": 105,
+        "deletions": 28,
+        "total": 133
+      },
+      "branches": [
+        "session-2/spawn-hello-world",
+        "session-2/phase-0-close-state-update",
+        "session-2/d8-bridge-scripts",
+        "session-1/patroni-stack-etcd-bind-dirs-and-pgbouncer-tag",
+        "session-1/patroni-install-real-server-fixes",
+        "session-1/patroni-install-export-resolved-secret-name-in-both-branches",
+        "session-1/patroni-install-empty-secret-fix",
+        "session-1/patroni-disable-wale-when-walg-off",
+        "session-1/patroni-data-ownership-101-103-for-spilo",
+        "session-1/etcd-enable-v2-api-for-patroni-compat",
+        "session-1/day-5-step-1-eod-capture",
+        "main",
+        "coordinator/a1-relaxed-deletion-rule"
+      ]
+    },
+    {
+      "sha": "c668c00b8ff94142b7c6cdf63b032c3c286e3511",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-14T16:08:34+05:30",
+      "message": "Session 2: Phase 0 close \u2014 STATE + LOG record",
+      "stats": {
+        "additions": 70,
+        "deletions": 28,
+        "total": 98
+      },
+      "branches": [
+        "session-2/phase-0-close-state-update"
+      ]
+    },
+    {
+      "sha": "4be23a627e3e89c36cfdf3dad0ca923b00ee3ff5",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-14T16:00:25+05:30",
+      "message": "Session 2 Day 3 PR 5: spawn yral-rishi-agent-hello-world end-to-end (Phase 0 template close)",
+      "stats": {
+        "additions": 4084,
+        "deletions": 45,
+        "total": 4129
+      },
+      "branches": [
+        "session-2/phase-0-close-state-update",
+        "session-1/patroni-stack-etcd-bind-dirs-and-pgbouncer-tag",
+        "session-1/patroni-install-export-resolved-secret-name-in-both-branches",
+        "session-1/patroni-install-empty-secret-fix",
+        "session-1/patroni-disable-wale-when-walg-off",
+        "session-1/patroni-data-ownership-101-103-for-spilo",
+        "session-1/etcd-enable-v2-api-for-patroni-compat",
+        "session-1/day-5-step-1-eod-capture",
+        "main"
+      ]
+    },
+    {
+      "sha": "4ef7dccbb665e065740ea3f0907ceccfd66e2f48",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-14T14:54:26+05:30",
+      "message": "Session 2 Day 3 PR 3 refactor: A1-spirit fixes (no rm anywhere)",
+      "stats": {
+        "additions": 67,
+        "deletions": 24,
+        "total": 91
+      },
+      "branches": [
+        "session-2/new-service-spawner"
+      ]
+    },
+    {
+      "sha": "27e6f6e6c6491441c5e51529d0d9185107f430e8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-14T14:41:38+05:30",
+      "message": "Session 2 Day 3 PR 3: scripts/new-service.sh (1-command spawner)",
+      "stats": {
+        "additions": 291,
+        "deletions": 20,
+        "total": 311
+      },
+      "branches": [
+        "session-2/new-service-spawner"
+      ]
+    },
+    {
+      "sha": "98b3c80f1f96c658af34ea77186c8cc3c6f38700",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-14T15:32:29+05:30",
+      "message": "Session 2 Day 3 PR 4: D8 bridge scripts + test suite + CI job",
+      "stats": {
+        "additions": 1009,
+        "deletions": 24,
+        "total": 1033
+      },
+      "branches": [
+        "session-2/d8-bridge-scripts"
+      ]
+    },
+    {
+      "sha": "781a5f3c47e01654c282ee7caa3c84dec8389583",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-14T16:35:51+05:30",
+      "message": "fix(patroni-stack): add etcd per-node bind dirs to pre-flight + fix pgbouncer image tag",
+      "stats": {
+        "additions": 168,
+        "deletions": 13,
+        "total": 181
+      },
+      "branches": [
+        "session-1/patroni-stack-etcd-bind-dirs-and-pgbouncer-tag"
+      ]
+    },
+    {
+      "sha": "b90ade7e428095e1dde45a523e24c9998595bad4",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-14T16:24:35+05:30",
+      "message": "fix(patroni-install): export resolved-secret-name in BOTH create + skip branches",
+      "stats": {
+        "additions": 107,
+        "deletions": 7,
+        "total": 114
+      },
+      "branches": [
+        "session-1/patroni-stack-etcd-bind-dirs-and-pgbouncer-tag",
+        "session-1/patroni-disable-wale-when-walg-off",
+        "session-1/patroni-data-ownership-101-103-for-spilo",
+        "session-1/etcd-enable-v2-api-for-patroni-compat",
+        "session-1/day-5-step-1-eod-capture",
+        "main"
+      ]
+    },
+    {
+      "sha": "23f380ae2c731440d298a0447c9a74e0c9912e4d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-14T16:13:12+05:30",
+      "message": "fix(patroni-install): use non-empty placeholder for S3 secrets when WAL-G off",
+      "stats": {
+        "additions": 106,
+        "deletions": 11,
+        "total": 117
+      },
+      "branches": [
+        "session-1/patroni-stack-etcd-bind-dirs-and-pgbouncer-tag",
+        "session-1/patroni-install-export-resolved-secret-name-in-both-branches",
+        "session-1/patroni-disable-wale-when-walg-off",
+        "session-1/patroni-data-ownership-101-103-for-spilo",
+        "session-1/etcd-enable-v2-api-for-patroni-compat",
+        "session-1/day-5-step-1-eod-capture",
+        "main"
+      ]
+    },
+    {
+      "sha": "b921d6c756b26f98e5fa22887d0f4c88db4895ad",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-14T16:13:04+05:30",
+      "message": "Session 2: Phase 0 close \u2014 STATE + LOG record",
+      "stats": {
+        "additions": 70,
+        "deletions": 28,
+        "total": 98
+      },
+      "branches": [
+        "session-1/patroni-stack-etcd-bind-dirs-and-pgbouncer-tag",
+        "session-1/patroni-install-export-resolved-secret-name-in-both-branches",
+        "session-1/patroni-disable-wale-when-walg-off",
+        "session-1/patroni-data-ownership-101-103-for-spilo",
+        "session-1/etcd-enable-v2-api-for-patroni-compat",
+        "session-1/day-5-step-1-eod-capture",
+        "main"
+      ]
+    },
+    {
+      "sha": "eb96de05ac335f05864ba78d651608a6c9e81d89",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-14T15:48:13+05:30",
+      "message": "fix(patroni-install): add production-mode guard (D2 compliance gate)",
+      "stats": {
+        "additions": 87,
+        "deletions": 0,
+        "total": 87
+      },
+      "branches": [
+        "session-1/patroni-install-real-server-fixes"
+      ]
+    },
+    {
+      "sha": "75d4078c5c34e48f379a53e3bf45a0e9381cdc66",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-14T15:33:32+05:30",
+      "message": "fix(patroni-install): SSH-by-IP + verify-only bind-mount/registry + WAL-G optional",
+      "stats": {
+        "additions": 274,
+        "deletions": 51,
+        "total": 325
+      },
+      "branches": [
+        "session-1/patroni-install-real-server-fixes"
+      ]
+    },
+    {
+      "sha": "4092f88209fddbbcdf6b4dd6e0142c2982892577",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-14T16:21:39+05:30",
+      "message": "fix(patroni-install): export resolved secret name in BOTH create + skip branches",
+      "stats": {
+        "additions": 107,
+        "deletions": 7,
+        "total": 114
+      },
+      "branches": [
+        "session-1/patroni-install-export-resolved-secret-name-in-both-branches"
+      ]
+    },
+    {
+      "sha": "197420d5070ae97c0f432822cfe29de8c974d463",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-14T16:11:05+05:30",
+      "message": "fix(patroni-install): use non-empty placeholder for S3 secrets when WAL-G off",
+      "stats": {
+        "additions": 106,
+        "deletions": 11,
+        "total": 117
+      },
+      "branches": [
+        "session-1/patroni-install-empty-secret-fix"
+      ]
+    },
+    {
+      "sha": "e8c21565e3111fdc52a356f8188e3d387c3811f2",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-14T17:37:39+05:30",
+      "message": "fix(patroni): empty out WAL/S3 env vars when WAL-G off so wal-e standby bootstrap skips",
+      "stats": {
+        "additions": 166,
+        "deletions": 26,
+        "total": 192
+      },
+      "branches": [
+        "session-1/patroni-disable-wale-when-walg-off"
+      ]
+    },
+    {
+      "sha": "aa5cc1d5b28efc72563490bcbf1186a7b134c7be",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-14T17:22:29+05:30",
+      "message": "fix(patroni-install): correct /data/patroni-data ownership to Spilo postgres uid 101:103 (not 999:99",
+      "stats": {
+        "additions": 169,
+        "deletions": 9,
+        "total": 178
+      },
+      "branches": [
+        "session-1/patroni-disable-wale-when-walg-off",
+        "session-1/day-5-step-1-eod-capture",
+        "main"
+      ]
+    },
+    {
+      "sha": "c90eab18d01c57702b74fcfd4bfde425a4d36f51",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-14T17:02:36+05:30",
+      "message": "fix(patroni-stack): enable etcd v2 REST API for Spilo 3.0 Patroni compatibility",
+      "stats": {
+        "additions": 101,
+        "deletions": 0,
+        "total": 101
+      },
+      "branches": [
+        "session-1/patroni-disable-wale-when-walg-off",
+        "session-1/patroni-data-ownership-101-103-for-spilo",
+        "session-1/day-5-step-1-eod-capture",
+        "main"
+      ]
+    },
+    {
+      "sha": "298612e15df134a9da1509faa2453d25fe4675cd",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-14T16:42:00+05:30",
+      "message": "fix(patroni-stack): add etcd per-node bind dirs to pre-flight + fix pgbouncer image tag",
+      "stats": {
+        "additions": 168,
+        "deletions": 13,
+        "total": 181
+      },
+      "branches": [
+        "session-1/patroni-disable-wale-when-walg-off",
+        "session-1/patroni-data-ownership-101-103-for-spilo",
+        "session-1/etcd-enable-v2-api-for-patroni-compat",
+        "session-1/day-5-step-1-eod-capture",
+        "main"
+      ]
+    },
+    {
+      "sha": "f0655639d0b46c2e12cbb32f19601d991a5e9922",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-14T17:16:23+05:30",
+      "message": "fix(patroni-install): /data/patroni-data owned 101:103 (Spilo postgres uid), not 999:999",
+      "stats": {
+        "additions": 169,
+        "deletions": 9,
+        "total": 178
+      },
+      "branches": [
+        "session-1/patroni-data-ownership-101-103-for-spilo"
+      ]
+    },
+    {
+      "sha": "8de5c94026355af253b46ee07f165c78828722f0",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-14T16:58:09+05:30",
+      "message": "fix(patroni-stack): enable etcd v2 REST API for Spilo 3.0 Patroni compat",
+      "stats": {
+        "additions": 101,
+        "deletions": 0,
+        "total": 101
+      },
+      "branches": [
+        "session-1/etcd-enable-v2-api-for-patroni-compat"
+      ]
+    },
+    {
+      "sha": "4f4edf06e1908d93691036fe573b5bfb9d55c9d9",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-14T19:02:02+05:30",
+      "message": "Day-5 Step 1 EOD capture: STATE + LOG milestone (Patroni HA verified)",
+      "stats": {
+        "additions": 233,
+        "deletions": 74,
+        "total": 307
+      },
+      "branches": [
+        "session-1/day-5-step-1-eod-capture"
+      ]
+    },
+    {
+      "sha": "ba45b0f271089f04c90e95662944dcaa4f7fde20",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-14T17:52:38+05:30",
+      "message": "fix(patroni-install + patroni-stack): empty wal-e/wal-g env on replicas so standby bootstrap falls t",
+      "stats": {
+        "additions": 166,
+        "deletions": 26,
+        "total": 192
+      },
+      "branches": [
+        "session-1/day-5-step-1-eod-capture",
+        "main"
+      ]
+    },
+    {
+      "sha": "c4b0d41738a37015034174b4b3c19945cb10ecda",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-14T14:49:00+05:30",
+      "message": "align(overlays): rename to CONSTRAINTS C3 verbatim names + RESOLVE DEP-003",
+      "stats": {
+        "additions": 105,
+        "deletions": 28,
+        "total": 133
+      },
+      "branches": [
+        "session-1/align-overlay-names-with-constraints-c3"
+      ]
+    },
+    {
+      "sha": "545db96434d2fdbe9ab6ef7b57588ddc152421b8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-14T15:04:20+05:30",
+      "message": "constraints(A1): relax deletion rule \u2014 7-step safety check + hard-stop list",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "coordinator/a1-relaxed-deletion-rule"
+      ]
+    },
+    {
+      "sha": "21b8e7ef14fad6097b3b0ca01b5c90c09a4404a2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-14T18:39:53+05:30",
+      "message": "refactor: update release-and-submit-proposals.sh to auto-increment version and improve usage instruc",
+      "stats": {
+        "additions": 24,
+        "deletions": 9,
+        "total": 33
+      },
+      "branches": [
+        "remove_individual_canisters_and_prepare_them_for_cleanup"
+      ]
+    },
+    {
+      "sha": "75b38bc72274bb5364237d48972549c2bfebb82c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-14T18:31:30+05:30",
+      "message": "refactor: remove obsolete CI workflows and update scripts for canister cleanup",
+      "stats": {
+        "additions": 71,
+        "deletions": 198,
+        "total": 269
+      },
+      "branches": [
+        "remove_individual_canisters_and_prepare_them_for_cleanup"
+      ]
+    },
+    {
+      "sha": "508cfbce6681d982612b7deffb6a5b47a2324909",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-05-14T10:05:22+05:30",
+      "message": "Update storage service and LTS model links for Prakash (#2083)",
+      "stats": {
+        "additions": 7,
+        "deletions": 7,
+        "total": 14
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 35,
+  "issues": [
+    {
+      "number": 2088,
+      "title": "Fix versionCode of android app not being updated by github action",
+      "closed_at": "2026-05-14T13:12:57Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2088",
+      "labels": []
+    },
+    {
+      "number": 2079,
+      "title": "Check why we are consuming Gemini API here: https://console.cloud.google.com/apis/api/generativelanguage.googleapis.com/metrics?project=yral-mobile Usage should be 0",
+      "closed_at": "2026-05-14T04:19:43Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2079",
+      "labels": []
+    },
+    {
+      "number": 2071,
+      "title": "1 issue each for influencer being reported as human and 1 for human being reported as influencer",
+      "closed_at": "2026-05-14T04:20:21Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2071",
+      "labels": []
+    },
+    {
+      "number": 2070,
+      "title": "Clean up certificates and devices here",
+      "closed_at": "2026-05-14T04:20:03Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2070",
+      "labels": []
+    },
+    {
+      "number": 1991,
+      "title": "Add an endpoint using which we can fetch which videos are currently in the \"In Progress\" state for a given principal ID",
+      "closed_at": "2026-05-14T04:40:19Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1991",
+      "labels": []
+    },
+    {
+      "number": 2021,
+      "title": "remove dual writes from all the services",
+      "closed_at": "2026-05-14T04:28:53Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2021",
+      "labels": []
+    },
+    {
+      "number": 1989,
+      "title": "integrate with existing services",
+      "closed_at": "2026-05-14T04:26:48Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1989",
+      "labels": []
+    },
+    {
+      "number": 1964,
+      "title": "Add all the owned services to self hosted sentry",
+      "closed_at": "2026-05-14T04:29:23Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1964",
+      "labels": []
+    },
+    {
+      "number": 1957,
+      "title": "Own redis cluster corresponding to yral-metadata. Once migrated, remove the existing wasteful 6 server cluster",
+      "closed_at": "2026-05-14T04:26:56Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1957",
+      "labels": []
+    }
+  ],
+  "issue_count": 9
+}
