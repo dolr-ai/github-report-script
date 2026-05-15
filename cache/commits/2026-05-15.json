@@ -1,0 +1,165 @@
+{
+  "date": "2026-05-15",
+  "cached_at": "2026-05-15T19:03:34.661970Z",
+  "commits": [
+    {
+      "sha": "bcfe7804e68eb866f840340e4969bae9cc25de67",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-15T19:16:59+05:30",
+      "message": "Cleanup and refactor canister codebase (#654)",
+      "stats": {
+        "additions": 158,
+        "deletions": 12889,
+        "total": 13047
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7be4afc56b8f2afea8ad66014aaaa1cdc4ff0efb",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ai-feed-recommendation-system",
+      "timestamp": "2026-05-15T18:03:04+05:30",
+      "message": "Merge pull request #36 from dolr-ai/ansuman/feat/updated_post_api_payload",
+      "stats": {
+        "additions": 413,
+        "deletions": 14962,
+        "total": 15375
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b06fb0b930050a5a0c5737496975caa2d6034c0b",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ai-feed-recommendation-system",
+      "timestamp": "2026-05-15T18:00:30+05:30",
+      "message": "feat(api): update feed view-count payload and app entrypoint",
+      "stats": {
+        "additions": 413,
+        "deletions": 14962,
+        "total": 15375
+      },
+      "branches": [
+        "main",
+        "ansuman/feat/updated_post_api_payload"
+      ]
+    },
+    {
+      "sha": "471cece62bf264d59024e3454470deeb5e2277d3",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-15T14:04:15+05:30",
+      "message": "feat(patroni-install): strengthen verifier \u2014 add layer-2 zero-replica/no-placement check + expand DC",
+      "stats": {
+        "additions": 80,
+        "deletions": 25,
+        "total": 105
+      },
+      "branches": [
+        "session-1/confirm-stack-actually-deployed-verifier"
+      ]
+    },
+    {
+      "sha": "bbb731a4bc3cc69bdc6e29b071005a2200d4e766",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-15T13:50:22+05:30",
+      "message": "feat(patroni-install): confirm_stack_actually_deployed post-deploy verifier",
+      "stats": {
+        "additions": 103,
+        "deletions": 0,
+        "total": 103
+      },
+      "branches": [
+        "session-1/confirm-stack-actually-deployed-verifier"
+      ]
+    },
+    {
+      "sha": "11068ddd4cb23e541a7692f2289400725f732358",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-15T12:31:33+05:30",
+      "message": "ci(auto-merge): workflow to auto-merge small Session-N fix PRs (per I14)",
+      "stats": {
+        "additions": 294,
+        "deletions": 0,
+        "total": 294
+      },
+      "branches": [
+        "session-1/confirm-stack-actually-deployed-verifier",
+        "main"
+      ]
+    },
+    {
+      "sha": "927c67cb230557cf71e02f84bb5a94aa64c37e98",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-15T12:30:06+05:30",
+      "message": "ci(auto-merge): pass --repo to gh CLI calls (workflow has no checkout)",
+      "stats": {
+        "additions": 9,
+        "deletions": 4,
+        "total": 13
+      },
+      "branches": [
+        "coordinator/auto-merge-small-session-fix-prs"
+      ]
+    },
+    {
+      "sha": "8754e4ad87dc9f52b8bd03f0541172772e44d438",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-15T12:27:24+05:30",
+      "message": "ci(auto-merge): add workflow to auto-merge small session-N fix PRs (per I14)",
+      "stats": {
+        "additions": 289,
+        "deletions": 0,
+        "total": 289
+      },
+      "branches": [
+        "coordinator/auto-merge-small-session-fix-prs"
+      ]
+    },
+    {
+      "sha": "8788b6fbb73fb4dcc70b94e10c36db830abe412f",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-05-15T11:32:42+05:30",
+      "message": "Update service-summary.md (#2081)",
+      "stats": {
+        "additions": 2,
+        "deletions": 4,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 9,
+  "issues": [
+    {
+      "number": 2080,
+      "title": "update the service doc with new links",
+      "closed_at": "2026-05-15T06:02:43Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2080",
+      "labels": []
+    },
+    {
+      "number": 2034,
+      "title": "Endpoint for feed api service to receive view counts from offchain",
+      "closed_at": "2026-05-15T12:33:06Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2034",
+      "labels": []
+    }
+  ],
+  "issue_count": 2
+}
