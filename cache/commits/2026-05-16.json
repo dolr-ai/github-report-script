@@ -1,0 +1,717 @@
+{
+  "date": "2026-05-16",
+  "cached_at": "2026-05-16T18:49:06.759064Z",
+  "commits": [
+    {
+      "sha": "6dceba5c7850f205c27bd23867cc104dc4bf8348",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-16T13:30:56+05:30",
+      "message": "fix(redis-sentinel-stack): redis-primary + replica command form (folded scalar \u2192 list-with-literal-|",
+      "stats": {
+        "additions": 135,
+        "deletions": 28,
+        "total": 163
+      },
+      "branches": [
+        "session-1/redis-stack-fix-yaml-folded-command"
+      ]
+    },
+    {
+      "sha": "b2d799a25dcbf9a3a3a670df0d887f393fc39e55",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-16T13:21:24+05:30",
+      "message": "fix(redis-sentinel-stack): escape $(cat /run/secrets/...) in command blocks ($ \u2192 $$) (#58)",
+      "stats": {
+        "additions": 74,
+        "deletions": 22,
+        "total": 96
+      },
+      "branches": [
+        "session-1/redis-stack-fix-yaml-folded-command",
+        "session-1/pgbouncer-image-bump-1.23",
+        "session-1/pgbouncer-db-password-inline",
+        "session-1/pgbouncer-auth-type-scram",
+        "session-1/pgbouncer-auth-query-config",
+        "session-1/langfuse-install-port-hardening",
+        "session-1/langfuse-direct-url-and-worker-env-parity",
+        "session-1/langfuse-database-url-format",
+        "session-1/langfuse-clickhouse-password-inline",
+        "session-1/langfuse-clickhouse-migration-url",
+        "main"
+      ]
+    },
+    {
+      "sha": "5a076be54b3dc98df47597c996675facc2965dac",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-16T13:17:16+05:30",
+      "message": "fix(redis-sentinel): envsubst whitelist + revert $$REDIS_PASSWORD escape (supersedes PR #56's wrong ",
+      "stats": {
+        "additions": 103,
+        "deletions": 27,
+        "total": 130
+      },
+      "branches": [
+        "session-1/redis-stack-fix-yaml-folded-command",
+        "session-1/redis-sentinel-stack-escape-cat-secrets",
+        "session-1/pgbouncer-image-bump-1.23",
+        "session-1/pgbouncer-db-password-inline",
+        "session-1/pgbouncer-auth-type-scram",
+        "session-1/pgbouncer-auth-query-config",
+        "session-1/langfuse-install-port-hardening",
+        "session-1/langfuse-direct-url-and-worker-env-parity",
+        "session-1/langfuse-database-url-format",
+        "session-1/langfuse-clickhouse-password-inline",
+        "session-1/langfuse-clickhouse-migration-url",
+        "main"
+      ]
+    },
+    {
+      "sha": "601f98f860ae955e0680a44db489c49a9d0840fa",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-16T13:11:10+05:30",
+      "message": "fix(redis-sentinel-stack): use $$$$REDIS_PASSWORD for two-layer escape (envsubst + Compose interpola",
+      "stats": {
+        "additions": 75,
+        "deletions": 7,
+        "total": 82
+      },
+      "branches": [
+        "session-1/redis-stack-fix-yaml-folded-command",
+        "session-1/redis-sentinel-stack-escape-cat-secrets",
+        "session-1/redis-envsubst-whitelist-fix",
+        "session-1/pgbouncer-image-bump-1.23",
+        "session-1/pgbouncer-db-password-inline",
+        "session-1/pgbouncer-auth-type-scram",
+        "session-1/pgbouncer-auth-query-config",
+        "session-1/langfuse-install-port-hardening",
+        "session-1/langfuse-direct-url-and-worker-env-parity",
+        "session-1/langfuse-database-url-format",
+        "session-1/langfuse-clickhouse-password-inline",
+        "session-1/langfuse-clickhouse-migration-url",
+        "main"
+      ]
+    },
+    {
+      "sha": "be8582c2c6d8713ff57f87199e13cb7eed927ae0",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-16T13:04:35+05:30",
+      "message": "feat(redis-sentinel-install): harden \u2014 port patroni patterns (verifier + verify-only ops + SSH-by-IP",
+      "stats": {
+        "additions": 342,
+        "deletions": 35,
+        "total": 377
+      },
+      "branches": [
+        "session-1/redis-stack-fix-yaml-folded-command",
+        "session-1/redis-sentinel-stack-escape-cat-secrets",
+        "session-1/redis-sentinel-stack-double-dollar-escape",
+        "session-1/redis-envsubst-whitelist-fix",
+        "session-1/pgbouncer-image-bump-1.23",
+        "session-1/pgbouncer-db-password-inline",
+        "session-1/pgbouncer-auth-type-scram",
+        "session-1/pgbouncer-auth-query-config",
+        "session-1/langfuse-install-port-hardening",
+        "session-1/langfuse-direct-url-and-worker-env-parity",
+        "session-1/langfuse-database-url-format",
+        "session-1/langfuse-clickhouse-password-inline",
+        "session-1/langfuse-clickhouse-migration-url",
+        "main"
+      ]
+    },
+    {
+      "sha": "c134a4765e07db9c5eee7836c00c79faffb6f1d9",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-16T12:43:59+05:30",
+      "message": "docs(session-1): Day-5 Step 1 close \u2014 Patroni HA verified + verifier + ETCD3 migration (#54)",
+      "stats": {
+        "additions": 160,
+        "deletions": 73,
+        "total": 233
+      },
+      "branches": [
+        "session-1/redis-stack-fix-yaml-folded-command",
+        "session-1/redis-sentinel-stack-escape-cat-secrets",
+        "session-1/redis-sentinel-stack-double-dollar-escape",
+        "session-1/redis-sentinel-install-port-patroni-hardening",
+        "session-1/redis-envsubst-whitelist-fix",
+        "session-1/pgbouncer-image-bump-1.23",
+        "session-1/pgbouncer-db-password-inline",
+        "session-1/pgbouncer-auth-type-scram",
+        "session-1/pgbouncer-auth-query-config",
+        "session-1/langfuse-install-port-hardening",
+        "session-1/langfuse-direct-url-and-worker-env-parity",
+        "session-1/langfuse-database-url-format",
+        "session-1/langfuse-clickhouse-password-inline",
+        "session-1/langfuse-clickhouse-migration-url",
+        "main"
+      ]
+    },
+    {
+      "sha": "cfef3d8008a7502e70b92a1f013f8a4f67cc05f8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-16T12:39:41+05:30",
+      "message": "feat(patroni-stack): migrate Patroni from etcd v2 REST to v3 native (ETCD_HOSTS \u2192 ETCD3_HOSTS) (#53)",
+      "stats": {
+        "additions": 80,
+        "deletions": 3,
+        "total": 83
+      },
+      "branches": [
+        "session-1/redis-stack-fix-yaml-folded-command",
+        "session-1/redis-sentinel-stack-escape-cat-secrets",
+        "session-1/redis-sentinel-stack-double-dollar-escape",
+        "session-1/redis-sentinel-install-port-patroni-hardening",
+        "session-1/redis-envsubst-whitelist-fix",
+        "session-1/pgbouncer-image-bump-1.23",
+        "session-1/pgbouncer-db-password-inline",
+        "session-1/pgbouncer-auth-type-scram",
+        "session-1/pgbouncer-auth-query-config",
+        "session-1/langfuse-install-port-hardening",
+        "session-1/langfuse-direct-url-and-worker-env-parity",
+        "session-1/langfuse-database-url-format",
+        "session-1/langfuse-clickhouse-password-inline",
+        "session-1/langfuse-clickhouse-migration-url",
+        "session-1/day-5-step-1-patroni-ha-complete",
+        "main"
+      ]
+    },
+    {
+      "sha": "6d781c6840480a62dc1c5581a5a1058292213496",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-16T12:32:28+05:30",
+      "message": "ci(auto-merge): use workflow_run trigger (check_suite doesn't fire on PR branches)",
+      "stats": {
+        "additions": 34,
+        "deletions": 17,
+        "total": 51
+      },
+      "branches": [
+        "session-1/redis-stack-fix-yaml-folded-command",
+        "session-1/redis-sentinel-stack-escape-cat-secrets",
+        "session-1/redis-sentinel-stack-double-dollar-escape",
+        "session-1/redis-sentinel-install-port-patroni-hardening",
+        "session-1/redis-envsubst-whitelist-fix",
+        "session-1/pgbouncer-image-bump-1.23",
+        "session-1/pgbouncer-db-password-inline",
+        "session-1/pgbouncer-auth-type-scram",
+        "session-1/pgbouncer-auth-query-config",
+        "session-1/patroni-etcd3-code-path-migration",
+        "session-1/langfuse-install-port-hardening",
+        "session-1/langfuse-direct-url-and-worker-env-parity",
+        "session-1/langfuse-database-url-format",
+        "session-1/langfuse-clickhouse-password-inline",
+        "session-1/langfuse-clickhouse-migration-url",
+        "session-1/day-5-step-1-patroni-ha-complete",
+        "main"
+      ]
+    },
+    {
+      "sha": "bbbe4664a651db938125c616a2dc94a9257fb81a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-16T12:29:45+05:30",
+      "message": "feat(patroni-install): confirm_stack_actually_deployed post-deploy verifier (closes Day-5 silent-fai",
+      "stats": {
+        "additions": 158,
+        "deletions": 0,
+        "total": 158
+      },
+      "branches": [
+        "session-1/redis-stack-fix-yaml-folded-command",
+        "session-1/redis-sentinel-stack-escape-cat-secrets",
+        "session-1/redis-sentinel-stack-double-dollar-escape",
+        "session-1/redis-sentinel-install-port-patroni-hardening",
+        "session-1/redis-envsubst-whitelist-fix",
+        "session-1/pgbouncer-image-bump-1.23",
+        "session-1/pgbouncer-db-password-inline",
+        "session-1/pgbouncer-auth-type-scram",
+        "session-1/pgbouncer-auth-query-config",
+        "session-1/patroni-etcd3-code-path-migration",
+        "session-1/langfuse-install-port-hardening",
+        "session-1/langfuse-direct-url-and-worker-env-parity",
+        "session-1/langfuse-database-url-format",
+        "session-1/langfuse-clickhouse-password-inline",
+        "session-1/langfuse-clickhouse-migration-url",
+        "session-1/day-5-step-1-patroni-ha-complete",
+        "main",
+        "coordinator/fix-auto-merge-trigger-workflow-run"
+      ]
+    },
+    {
+      "sha": "3575f8c48de141162bce57993b017147d0bb43a0",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-16T13:20:24+05:30",
+      "message": "fix(redis-sentinel-stack): escape $(cat /run/secrets/...) in command blocks ($ \u2192 $$)",
+      "stats": {
+        "additions": 74,
+        "deletions": 22,
+        "total": 96
+      },
+      "branches": [
+        "session-1/redis-sentinel-stack-escape-cat-secrets"
+      ]
+    },
+    {
+      "sha": "b48dd8a4db78e383dfa82d0da4ff157f790b0ae2",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-16T13:10:06+05:30",
+      "message": "fix(redis-sentinel-stack): use $$$$REDIS_PASSWORD for two-layer escape (envsubst + Compose interpola",
+      "stats": {
+        "additions": 75,
+        "deletions": 7,
+        "total": 82
+      },
+      "branches": [
+        "session-1/redis-sentinel-stack-double-dollar-escape"
+      ]
+    },
+    {
+      "sha": "2c462eef96a044125b1c34aa3db3359f5857c9ba",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-16T13:03:26+05:30",
+      "message": "feat(redis-sentinel-install): harden \u2014 port patroni patterns (verifier + verify-only ops + SSH-by-IP",
+      "stats": {
+        "additions": 342,
+        "deletions": 35,
+        "total": 377
+      },
+      "branches": [
+        "session-1/redis-sentinel-install-port-patroni-hardening"
+      ]
+    },
+    {
+      "sha": "b6e45324ec1ba3a53a55b9125428d62cd4001caf",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-16T13:16:12+05:30",
+      "message": "fix(redis-sentinel): envsubst whitelist + revert $$REDIS_PASSWORD escape (supersedes PR #56's wrong ",
+      "stats": {
+        "additions": 103,
+        "deletions": 27,
+        "total": 130
+      },
+      "branches": [
+        "session-1/redis-envsubst-whitelist-fix"
+      ]
+    },
+    {
+      "sha": "56cb4a2deac11e712809dae9eae8c329dae9cbbe",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-16T19:44:55+05:30",
+      "message": "fix(patroni-stack): bump pgbouncer image 1.21.0-p2 \u2192 v1.23.1-p3 (1.21.x scram+auth_query crash)",
+      "stats": {
+        "additions": 75,
+        "deletions": 5,
+        "total": 80
+      },
+      "branches": [
+        "session-1/pgbouncer-image-bump-1.23"
+      ]
+    },
+    {
+      "sha": "c0184ff8866a73de569c09bef6a425e3d4c818af",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-16T19:32:34+05:30",
+      "message": "fix(patroni-stack): pgbouncer AUTH_TYPE md5 \u2192 scram-sha-256 (PG 15 stores SCRAM hashes) (#64)",
+      "stats": {
+        "additions": 62,
+        "deletions": 1,
+        "total": 63
+      },
+      "branches": [
+        "session-1/pgbouncer-image-bump-1.23",
+        "session-1/langfuse-direct-url-and-worker-env-parity",
+        "session-1/langfuse-clickhouse-password-inline",
+        "session-1/langfuse-clickhouse-migration-url",
+        "main"
+      ]
+    },
+    {
+      "sha": "eae8748ed5c5b5cf1d9024fbc42a7742f350063a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-16T19:22:36+05:30",
+      "message": "fix(patroni-stack): pgbouncer DB_PASSWORD inline (edoburu doesn't support DB_PASSWORD_FILE) (#63)",
+      "stats": {
+        "additions": 94,
+        "deletions": 6,
+        "total": 100
+      },
+      "branches": [
+        "session-1/pgbouncer-image-bump-1.23",
+        "session-1/pgbouncer-auth-type-scram",
+        "session-1/langfuse-direct-url-and-worker-env-parity",
+        "session-1/langfuse-clickhouse-password-inline",
+        "session-1/langfuse-clickhouse-migration-url",
+        "main"
+      ]
+    },
+    {
+      "sha": "961ee46c3567339345fd24b8615fc37f1f9a5520",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-16T19:13:47+05:30",
+      "message": "fix(patroni-stack): pgbouncer auth_query + DB_USER/DB_PASSWORD_FILE (clients couldn't auth) (#62)",
+      "stats": {
+        "additions": 94,
+        "deletions": 3,
+        "total": 97
+      },
+      "branches": [
+        "session-1/pgbouncer-image-bump-1.23",
+        "session-1/pgbouncer-db-password-inline",
+        "session-1/pgbouncer-auth-type-scram",
+        "session-1/langfuse-direct-url-and-worker-env-parity",
+        "session-1/langfuse-clickhouse-password-inline",
+        "session-1/langfuse-clickhouse-migration-url",
+        "main"
+      ]
+    },
+    {
+      "sha": "da6b6a82281e90f37c1535aaaa51d98602297400",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-16T19:03:34+05:30",
+      "message": "fix(langfuse-stack): use DATABASE_URL single env var (Langfuse 3 doesn't accept discrete DATABASE_HO",
+      "stats": {
+        "additions": 126,
+        "deletions": 23,
+        "total": 149
+      },
+      "branches": [
+        "session-1/pgbouncer-image-bump-1.23",
+        "session-1/pgbouncer-db-password-inline",
+        "session-1/pgbouncer-auth-type-scram",
+        "session-1/pgbouncer-auth-query-config",
+        "session-1/langfuse-direct-url-and-worker-env-parity",
+        "session-1/langfuse-clickhouse-password-inline",
+        "session-1/langfuse-clickhouse-migration-url",
+        "main"
+      ]
+    },
+    {
+      "sha": "74a99051b3b0e7663576bd1be27b35e94be7c164",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-16T18:53:51+05:30",
+      "message": "feat(langfuse-install): harden \u2014 port patroni/redis patterns (verifier + verify-only ops + SSH-by-IP",
+      "stats": {
+        "additions": 341,
+        "deletions": 27,
+        "total": 368
+      },
+      "branches": [
+        "session-1/pgbouncer-image-bump-1.23",
+        "session-1/pgbouncer-db-password-inline",
+        "session-1/pgbouncer-auth-type-scram",
+        "session-1/pgbouncer-auth-query-config",
+        "session-1/langfuse-direct-url-and-worker-env-parity",
+        "session-1/langfuse-database-url-format",
+        "session-1/langfuse-clickhouse-password-inline",
+        "session-1/langfuse-clickhouse-migration-url",
+        "main"
+      ]
+    },
+    {
+      "sha": "641698b285ddbfc9721246642e62484a45e88d01",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-16T13:32:07+05:30",
+      "message": "fix(redis-sentinel-stack): redis-primary + replica command form (folded scalar \u2192 list-with-literal-|",
+      "stats": {
+        "additions": 135,
+        "deletions": 28,
+        "total": 163
+      },
+      "branches": [
+        "session-1/pgbouncer-image-bump-1.23",
+        "session-1/pgbouncer-db-password-inline",
+        "session-1/pgbouncer-auth-type-scram",
+        "session-1/pgbouncer-auth-query-config",
+        "session-1/langfuse-install-port-hardening",
+        "session-1/langfuse-direct-url-and-worker-env-parity",
+        "session-1/langfuse-database-url-format",
+        "session-1/langfuse-clickhouse-password-inline",
+        "session-1/langfuse-clickhouse-migration-url",
+        "main"
+      ]
+    },
+    {
+      "sha": "49283a40471c23e02c980d00dfd352ff02fd0825",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-16T19:21:37+05:30",
+      "message": "fix(patroni-stack): pgbouncer DB_PASSWORD inline (edoburu doesn't support DB_PASSWORD_FILE)",
+      "stats": {
+        "additions": 94,
+        "deletions": 6,
+        "total": 100
+      },
+      "branches": [
+        "session-1/pgbouncer-db-password-inline"
+      ]
+    },
+    {
+      "sha": "22b1e7b1bfe74e84a286d67afa312721271149dd",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-16T19:31:37+05:30",
+      "message": "fix(patroni-stack): pgbouncer AUTH_TYPE md5 \u2192 scram-sha-256 (PG 15 stores SCRAM hashes)",
+      "stats": {
+        "additions": 62,
+        "deletions": 1,
+        "total": 63
+      },
+      "branches": [
+        "session-1/pgbouncer-auth-type-scram"
+      ]
+    },
+    {
+      "sha": "981b110b7647f624658e81eef7515c4fb69559ce",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-16T19:12:45+05:30",
+      "message": "fix(patroni-stack): pgbouncer auth_query + DB_USER/DB_PASSWORD_FILE (clients couldn't auth)",
+      "stats": {
+        "additions": 94,
+        "deletions": 3,
+        "total": 97
+      },
+      "branches": [
+        "session-1/pgbouncer-auth-query-config"
+      ]
+    },
+    {
+      "sha": "0c24d27ea5cc252a02fa1f0b17f9abce53288bab",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-16T12:38:46+05:30",
+      "message": "feat(patroni-stack): migrate Patroni from etcd v2 REST to v3 native (ETCD_HOSTS \u2192 ETCD3_HOSTS)",
+      "stats": {
+        "additions": 80,
+        "deletions": 3,
+        "total": 83
+      },
+      "branches": [
+        "session-1/patroni-etcd3-code-path-migration"
+      ]
+    },
+    {
+      "sha": "33599cae921d8ae7473fa0f04a10d67ff39defdd",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-16T18:52:36+05:30",
+      "message": "feat(langfuse-install): harden \u2014 port patroni/redis patterns (verifier + verify-only ops + SSH-by-IP",
+      "stats": {
+        "additions": 341,
+        "deletions": 27,
+        "total": 368
+      },
+      "branches": [
+        "session-1/langfuse-install-port-hardening"
+      ]
+    },
+    {
+      "sha": "52a917de160b42184bb2c9d215041fa1d7680aad",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-16T21:04:57+05:30",
+      "message": "feat(langfuse-stack): Prisma DIRECT_URL + worker env parity (LANGFUSE_S3_EVENT_UPLOAD_BUCKET) \u2014 bund",
+      "stats": {
+        "additions": 116,
+        "deletions": 0,
+        "total": 116
+      },
+      "branches": [
+        "session-1/langfuse-direct-url-and-worker-env-parity"
+      ]
+    },
+    {
+      "sha": "fb3abdc6d35da95321cf6fa88c19715544d0dd94",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-16T20:35:24+05:30",
+      "message": "fix(langfuse-stack): CLICKHOUSE_PASSWORD inline for web + worker (Langfuse 3 no _FILE variant for cl",
+      "stats": {
+        "additions": 64,
+        "deletions": 2,
+        "total": 66
+      },
+      "branches": [
+        "session-1/langfuse-direct-url-and-worker-env-parity",
+        "main"
+      ]
+    },
+    {
+      "sha": "ff9e9580203bb9c370dc961f2de305e5215c1a1a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-16T19:55:58+05:30",
+      "message": "fix(langfuse-stack): add CLICKHOUSE_MIGRATION_URL (Langfuse 3 migration CLI needs native-port URL) (",
+      "stats": {
+        "additions": 92,
+        "deletions": 5,
+        "total": 97
+      },
+      "branches": [
+        "session-1/langfuse-direct-url-and-worker-env-parity",
+        "session-1/langfuse-clickhouse-password-inline",
+        "main"
+      ]
+    },
+    {
+      "sha": "6d4cf01a3dafab341f7929a13d11f85ab14d984b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-16T19:46:03+05:30",
+      "message": "fix(patroni-stack): bump pgbouncer image 1.21.0-p2 \u2192 v1.23.1-p3 (1.21.x scram+auth_query crash) (#65",
+      "stats": {
+        "additions": 75,
+        "deletions": 5,
+        "total": 80
+      },
+      "branches": [
+        "session-1/langfuse-direct-url-and-worker-env-parity",
+        "session-1/langfuse-clickhouse-password-inline",
+        "session-1/langfuse-clickhouse-migration-url",
+        "main"
+      ]
+    },
+    {
+      "sha": "570632983b5e4b9098d9435fa65c8b339725ae6d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-16T19:02:26+05:30",
+      "message": "fix(langfuse-stack): use DATABASE_URL single env var (Langfuse 3 doesn't accept discrete DATABASE_HO",
+      "stats": {
+        "additions": 126,
+        "deletions": 23,
+        "total": 149
+      },
+      "branches": [
+        "session-1/langfuse-database-url-format"
+      ]
+    },
+    {
+      "sha": "34cf34676d82e87fd3a377d837ed44785c0a7af9",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-16T20:34:26+05:30",
+      "message": "fix(langfuse-stack): CLICKHOUSE_PASSWORD inline for web + worker (Langfuse 3 no _FILE variant for cl",
+      "stats": {
+        "additions": 64,
+        "deletions": 2,
+        "total": 66
+      },
+      "branches": [
+        "session-1/langfuse-clickhouse-password-inline"
+      ]
+    },
+    {
+      "sha": "48ec7496c2ed4bd74939d113257e5ce9a3813d8b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-16T19:54:56+05:30",
+      "message": "fix(langfuse-stack): add CLICKHOUSE_MIGRATION_URL (Langfuse 3 migration CLI needs native-port URL)",
+      "stats": {
+        "additions": 92,
+        "deletions": 5,
+        "total": 97
+      },
+      "branches": [
+        "session-1/langfuse-clickhouse-migration-url"
+      ]
+    },
+    {
+      "sha": "d3a5c6936c32e21f0eee36f26711211e1fff3f43",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-16T12:43:03+05:30",
+      "message": "docs(session-1): Day-5 Step 1 close \u2014 Patroni HA verified + verifier + ETCD3 migration",
+      "stats": {
+        "additions": 160,
+        "deletions": 73,
+        "total": 233
+      },
+      "branches": [
+        "session-1/day-5-step-1-patroni-ha-complete"
+      ]
+    },
+    {
+      "sha": "b1ebfb71143d784d7cd3d210032597b10fa90e5a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-16T21:06:16+05:30",
+      "message": "feat(langfuse-stack): Prisma DIRECT_URL + worker env parity (LANGFUSE_S3_EVENT_UPLOAD_BUCKET) \u2014 bund",
+      "stats": {
+        "additions": 116,
+        "deletions": 0,
+        "total": 116
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "26a81608c6da8345d2a75ab674ed09a36dce8a4e",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-16T12:30:45+05:30",
+      "message": "ci(auto-merge): use workflow_run instead of check_suite trigger (check_suite doesn't fire on PR bran",
+      "stats": {
+        "additions": 34,
+        "deletions": 17,
+        "total": 51
+      },
+      "branches": [
+        "coordinator/fix-auto-merge-trigger-workflow-run"
+      ]
+    },
+    {
+      "sha": "5457266508c98cff492faa58a778acad74decc73",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-16T16:26:02+05:30",
+      "message": "feat: enhance release management with new proposal options for canisters",
+      "stats": {
+        "additions": 81,
+        "deletions": 11,
+        "total": 92
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a63b2bf6103208a034041ae1ad57d3482fff7423",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-16T16:10:16+05:30",
+      "message": "feat: add bulk operation management for platform orchestrator controllers",
+      "stats": {
+        "additions": 126,
+        "deletions": 0,
+        "total": 126
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 37,
+  "issues": [],
+  "issue_count": 0
+}
