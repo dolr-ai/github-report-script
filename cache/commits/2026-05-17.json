@@ -1,0 +1,655 @@
+{
+  "date": "2026-05-17",
+  "cached_at": "2026-05-17T18:50:07.755873Z",
+  "commits": [
+    {
+      "sha": "61acba7da0434e535de5862c5bde2e3e33283fc6",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-17T13:09:43+05:30",
+      "message": "feat(langfuse): bundle SALT + NEXTAUTH_SECRET + ENCRYPTION_KEY inline for Next.js env validator",
+      "stats": {
+        "additions": 114,
+        "deletions": 9,
+        "total": 123
+      },
+      "branches": [
+        "session-1/langfuse-web-nextjs-env-bundle"
+      ]
+    },
+    {
+      "sha": "905be694c9be640c30e855205a2852bf9c19014a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-17T14:10:30+05:30",
+      "message": "fix(langfuse-stack): bind Next.js to 0.0.0.0 so wget healthcheck reaches loopback",
+      "stats": {
+        "additions": 88,
+        "deletions": 0,
+        "total": 88
+      },
+      "branches": [
+        "session-1/langfuse-web-hostname-bind-fix"
+      ]
+    },
+    {
+      "sha": "cf72712d7178690173be27f73899f7845e49ecc8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-17T13:10:53+05:30",
+      "message": "feat(langfuse): bundle SALT + NEXTAUTH_SECRET + ENCRYPTION_KEY inline for Next.js env validator (#70",
+      "stats": {
+        "additions": 114,
+        "deletions": 9,
+        "total": 123
+      },
+      "branches": [
+        "session-1/langfuse-web-hostname-bind-fix",
+        "session-1/langfuse-install-bind-mount-verify-bypass",
+        "session-1/intra-cluster-ssh-for-rishi-deploy",
+        "session-1/healthcheck-probe-127-0-0-1-not-localhost",
+        "session-1/day-5-step-4-caddy-cluster-edge",
+        "session-1/day-5-step-3-close",
+        "session-1/day-5-close",
+        "session-1/chaos-tests-hardening-2026-05-17",
+        "session-1/chaos-test-real-failover-via-service-scale",
+        "session-1/chaos-test-psql-retry-during-failover-lag",
+        "session-1/chaos-test-psql-filter-and-reorder",
+        "session-1/chaos-test-fill-disk-mechanics",
+        "session-1/chaos-test-capture-leader-not-hardcode",
+        "session-1/caddy-placeholder-hostname-pin",
+        "session-1/caddy-drop-read-only-for-tls-internal-tmp",
+        "session-1/caddy-auto-https-tls-internal-fix",
+        "main"
+      ]
+    },
+    {
+      "sha": "8c1ced60cb67d632115bba1cca9cdc6dcfd76868",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-17T14:42:59+05:30",
+      "message": "fix(langfuse-install): add operator-bypass for pre-flight bind-mount verifier",
+      "stats": {
+        "additions": 87,
+        "deletions": 0,
+        "total": 87
+      },
+      "branches": [
+        "session-1/langfuse-install-bind-mount-verify-bypass"
+      ]
+    },
+    {
+      "sha": "bb26bc5f230cc0c2a06a5f24c28bb1c0204b9357",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-17T14:11:24+05:30",
+      "message": "fix(langfuse-stack): bind Next.js to 0.0.0.0 so wget healthcheck reaches loopback (#71)",
+      "stats": {
+        "additions": 88,
+        "deletions": 0,
+        "total": 88
+      },
+      "branches": [
+        "session-1/langfuse-install-bind-mount-verify-bypass",
+        "session-1/intra-cluster-ssh-for-rishi-deploy",
+        "session-1/healthcheck-probe-127-0-0-1-not-localhost",
+        "session-1/day-5-step-4-caddy-cluster-edge",
+        "session-1/day-5-step-3-close",
+        "session-1/day-5-close",
+        "session-1/chaos-tests-hardening-2026-05-17",
+        "session-1/chaos-test-real-failover-via-service-scale",
+        "session-1/chaos-test-psql-retry-during-failover-lag",
+        "session-1/chaos-test-psql-filter-and-reorder",
+        "session-1/chaos-test-fill-disk-mechanics",
+        "session-1/chaos-test-capture-leader-not-hardcode",
+        "session-1/caddy-placeholder-hostname-pin",
+        "session-1/caddy-drop-read-only-for-tls-internal-tmp",
+        "session-1/caddy-auto-https-tls-internal-fix",
+        "main"
+      ]
+    },
+    {
+      "sha": "2d0ee33d4c476808bbd80f7810e22b29bad38b32",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-17T15:20:53+05:30",
+      "message": "feat(node-bootstrap): provision intra-cluster ssh keypair for rishi-deploy",
+      "stats": {
+        "additions": 169,
+        "deletions": 0,
+        "total": 169
+      },
+      "branches": [
+        "session-1/intra-cluster-ssh-for-rishi-deploy"
+      ]
+    },
+    {
+      "sha": "8603bfe44b41efdc087cbf06a000ca91a5273908",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-17T15:15:16+05:30",
+      "message": "docs(session-1): close Day-5 Step 3 \u2014 14-bug arc complete, Langfuse 3/3 healthy (#74)",
+      "stats": {
+        "additions": 163,
+        "deletions": 48,
+        "total": 211
+      },
+      "branches": [
+        "session-1/intra-cluster-ssh-for-rishi-deploy",
+        "session-1/day-5-step-4-caddy-cluster-edge",
+        "session-1/day-5-close",
+        "session-1/chaos-tests-hardening-2026-05-17",
+        "session-1/chaos-test-real-failover-via-service-scale",
+        "session-1/chaos-test-psql-retry-during-failover-lag",
+        "session-1/chaos-test-psql-filter-and-reorder",
+        "session-1/chaos-test-fill-disk-mechanics",
+        "session-1/chaos-test-capture-leader-not-hardcode",
+        "session-1/caddy-placeholder-hostname-pin",
+        "session-1/caddy-drop-read-only-for-tls-internal-tmp",
+        "session-1/caddy-auto-https-tls-internal-fix",
+        "main"
+      ]
+    },
+    {
+      "sha": "5a3524725b7e7690b65f0f41dcc3fd421c891505",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-17T15:00:39+05:30",
+      "message": "fix(langfuse-stack): healthcheck probe targets 127.0.0.1 not localhost (#73)",
+      "stats": {
+        "additions": 91,
+        "deletions": 1,
+        "total": 92
+      },
+      "branches": [
+        "session-1/intra-cluster-ssh-for-rishi-deploy",
+        "session-1/day-5-step-4-caddy-cluster-edge",
+        "session-1/day-5-step-3-close",
+        "session-1/day-5-close",
+        "session-1/chaos-tests-hardening-2026-05-17",
+        "session-1/chaos-test-real-failover-via-service-scale",
+        "session-1/chaos-test-psql-retry-during-failover-lag",
+        "session-1/chaos-test-psql-filter-and-reorder",
+        "session-1/chaos-test-fill-disk-mechanics",
+        "session-1/chaos-test-capture-leader-not-hardcode",
+        "session-1/caddy-placeholder-hostname-pin",
+        "session-1/caddy-drop-read-only-for-tls-internal-tmp",
+        "session-1/caddy-auto-https-tls-internal-fix",
+        "main"
+      ]
+    },
+    {
+      "sha": "e30ca01d2802ec17896764d90e8822351195c7be",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-17T14:43:48+05:30",
+      "message": "fix(langfuse-install): add operator-bypass for pre-flight bind-mount verifier (#72)",
+      "stats": {
+        "additions": 87,
+        "deletions": 0,
+        "total": 87
+      },
+      "branches": [
+        "session-1/intra-cluster-ssh-for-rishi-deploy",
+        "session-1/healthcheck-probe-127-0-0-1-not-localhost",
+        "session-1/day-5-step-4-caddy-cluster-edge",
+        "session-1/day-5-step-3-close",
+        "session-1/day-5-close",
+        "session-1/chaos-tests-hardening-2026-05-17",
+        "session-1/chaos-test-real-failover-via-service-scale",
+        "session-1/chaos-test-psql-retry-during-failover-lag",
+        "session-1/chaos-test-psql-filter-and-reorder",
+        "session-1/chaos-test-fill-disk-mechanics",
+        "session-1/chaos-test-capture-leader-not-hardcode",
+        "session-1/caddy-placeholder-hostname-pin",
+        "session-1/caddy-drop-read-only-for-tls-internal-tmp",
+        "session-1/caddy-auto-https-tls-internal-fix",
+        "main"
+      ]
+    },
+    {
+      "sha": "11af04cbda71d953d684c559dcd2a3b0472a0c69",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-17T14:59:43+05:30",
+      "message": "fix(langfuse-stack): healthcheck probe targets 127.0.0.1 not localhost",
+      "stats": {
+        "additions": 91,
+        "deletions": 1,
+        "total": 92
+      },
+      "branches": [
+        "session-1/healthcheck-probe-127-0-0-1-not-localhost"
+      ]
+    },
+    {
+      "sha": "4f5442ae26965c0cf0fc6692250910236f64e877",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-17T15:52:40+05:30",
+      "message": "feat(caddy-install): Day-5 Step 4 deploy artifacts for cluster-side Caddy",
+      "stats": {
+        "additions": 498,
+        "deletions": 11,
+        "total": 509
+      },
+      "branches": [
+        "session-1/day-5-step-4-caddy-cluster-edge"
+      ]
+    },
+    {
+      "sha": "4c78106cf96d07775fd54c51406125860d8f27ad",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-17T15:21:44+05:30",
+      "message": "feat(node-bootstrap): provision intra-cluster ssh keypair for rishi-deploy (#75)",
+      "stats": {
+        "additions": 169,
+        "deletions": 0,
+        "total": 169
+      },
+      "branches": [
+        "session-1/day-5-step-4-caddy-cluster-edge",
+        "session-1/day-5-close",
+        "session-1/chaos-tests-hardening-2026-05-17",
+        "session-1/chaos-test-real-failover-via-service-scale",
+        "session-1/chaos-test-psql-retry-during-failover-lag",
+        "session-1/chaos-test-psql-filter-and-reorder",
+        "session-1/chaos-test-fill-disk-mechanics",
+        "session-1/chaos-test-capture-leader-not-hardcode",
+        "session-1/caddy-placeholder-hostname-pin",
+        "session-1/caddy-drop-read-only-for-tls-internal-tmp",
+        "session-1/caddy-auto-https-tls-internal-fix",
+        "main"
+      ]
+    },
+    {
+      "sha": "cc0d71959068f7a5e7a4783bd9b848ad131f1843",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-17T15:14:27+05:30",
+      "message": "docs(session-1): close Day-5 Step 3 \u2014 14-bug arc complete, Langfuse 3/3 healthy",
+      "stats": {
+        "additions": 163,
+        "deletions": 48,
+        "total": 211
+      },
+      "branches": [
+        "session-1/day-5-step-3-close"
+      ]
+    },
+    {
+      "sha": "d11fcb3c617cb7c35b3139720a122842822e07f1",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-17T18:56:08+05:30",
+      "message": "docs(session-1): Day-5 close \u2014 Phase 0 OFFICIALLY COMPLETE",
+      "stats": {
+        "additions": 227,
+        "deletions": 38,
+        "total": 265
+      },
+      "branches": [
+        "session-1/day-5-close"
+      ]
+    },
+    {
+      "sha": "f366017f5591c1b0454023661038a74084cc55bb",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-17T18:17:21+05:30",
+      "message": "hardening(chaos): kill-patroni-leader retries psql during pgbouncer routing lag (#85)",
+      "stats": {
+        "additions": 87,
+        "deletions": 24,
+        "total": 111
+      },
+      "branches": [
+        "session-1/day-5-close",
+        "main"
+      ]
+    },
+    {
+      "sha": "0a14823434e602f0f4588ef27b54b99c20766622",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-17T18:07:18+05:30",
+      "message": "hardening(chaos): fill-rishi-5-disk SSH-by-IP + drop-sudo + write-under-home (#84)",
+      "stats": {
+        "additions": 76,
+        "deletions": 20,
+        "total": 96
+      },
+      "branches": [
+        "session-1/day-5-close",
+        "session-1/chaos-test-psql-retry-during-failover-lag",
+        "main"
+      ]
+    },
+    {
+      "sha": "4be0756a950b7425634889d85be53f07d2c31486",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-17T17:54:04+05:30",
+      "message": "hardening(chaos): kill-rishi-6 Patroni-leader check is node-agnostic (#83)",
+      "stats": {
+        "additions": 59,
+        "deletions": 10,
+        "total": 69
+      },
+      "branches": [
+        "session-1/day-5-close",
+        "session-1/chaos-test-psql-retry-during-failover-lag",
+        "session-1/chaos-test-fill-disk-mechanics",
+        "main"
+      ]
+    },
+    {
+      "sha": "1ef268a7d821471d3b06c39ae96701c7198425eb",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-17T17:43:19+05:30",
+      "message": "hardening(chaos): psql executor filter + restore-before-sanity ordering (#82)",
+      "stats": {
+        "additions": 56,
+        "deletions": 3,
+        "total": 59
+      },
+      "branches": [
+        "session-1/day-5-close",
+        "session-1/chaos-test-psql-retry-during-failover-lag",
+        "session-1/chaos-test-fill-disk-mechanics",
+        "session-1/chaos-test-capture-leader-not-hardcode",
+        "main"
+      ]
+    },
+    {
+      "sha": "c350f38df504be35dd72c4b088eeb2ffbfd63580",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-17T17:26:44+05:30",
+      "message": "hardening(chaos): kill-patroni-leader uses service-scale=0 to force election (#81)",
+      "stats": {
+        "additions": 155,
+        "deletions": 23,
+        "total": 178
+      },
+      "branches": [
+        "session-1/day-5-close",
+        "session-1/chaos-test-psql-retry-during-failover-lag",
+        "session-1/chaos-test-psql-filter-and-reorder",
+        "session-1/chaos-test-fill-disk-mechanics",
+        "session-1/chaos-test-capture-leader-not-hardcode",
+        "main"
+      ]
+    },
+    {
+      "sha": "b6647e86afa726ad1a990408f409c6590d3eb249",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-17T17:01:02+05:30",
+      "message": "hardening(chaos-tests): host-vs-overlay-DNS, trap-cleanup, existence-gating (#80)",
+      "stats": {
+        "additions": 251,
+        "deletions": 68,
+        "total": 319
+      },
+      "branches": [
+        "session-1/day-5-close",
+        "session-1/chaos-test-real-failover-via-service-scale",
+        "session-1/chaos-test-psql-retry-during-failover-lag",
+        "session-1/chaos-test-psql-filter-and-reorder",
+        "session-1/chaos-test-fill-disk-mechanics",
+        "session-1/chaos-test-capture-leader-not-hardcode",
+        "main"
+      ]
+    },
+    {
+      "sha": "ea1211941bfc43d4cc11eed76d21f05a891167d0",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-17T16:30:07+05:30",
+      "message": "fix(caddyfile): pin hostname so `tls internal` has a cert SUBJECT (#79)",
+      "stats": {
+        "additions": 105,
+        "deletions": 3,
+        "total": 108
+      },
+      "branches": [
+        "session-1/day-5-close",
+        "session-1/chaos-tests-hardening-2026-05-17",
+        "session-1/chaos-test-real-failover-via-service-scale",
+        "session-1/chaos-test-psql-retry-during-failover-lag",
+        "session-1/chaos-test-psql-filter-and-reorder",
+        "session-1/chaos-test-fill-disk-mechanics",
+        "session-1/chaos-test-capture-leader-not-hardcode",
+        "main"
+      ]
+    },
+    {
+      "sha": "c6d575f4355c6a4fed274312c2222d9153930ee9",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-17T16:19:40+05:30",
+      "message": "fix(caddy-stack): drop read_only so /tmp is writable for tls internal (#78)",
+      "stats": {
+        "additions": 64,
+        "deletions": 3,
+        "total": 67
+      },
+      "branches": [
+        "session-1/day-5-close",
+        "session-1/chaos-tests-hardening-2026-05-17",
+        "session-1/chaos-test-real-failover-via-service-scale",
+        "session-1/chaos-test-psql-retry-during-failover-lag",
+        "session-1/chaos-test-psql-filter-and-reorder",
+        "session-1/chaos-test-fill-disk-mechanics",
+        "session-1/chaos-test-capture-leader-not-hardcode",
+        "session-1/caddy-placeholder-hostname-pin",
+        "main"
+      ]
+    },
+    {
+      "sha": "bdaf25e5c13da3b88cd3ab56eb2d7e7bf47ad380",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-17T16:08:29+05:30",
+      "message": "fix(caddyfile): drop `auto_https off` so `tls internal` provisions certs (#77)",
+      "stats": {
+        "additions": 91,
+        "deletions": 7,
+        "total": 98
+      },
+      "branches": [
+        "session-1/day-5-close",
+        "session-1/chaos-tests-hardening-2026-05-17",
+        "session-1/chaos-test-real-failover-via-service-scale",
+        "session-1/chaos-test-psql-retry-during-failover-lag",
+        "session-1/chaos-test-psql-filter-and-reorder",
+        "session-1/chaos-test-fill-disk-mechanics",
+        "session-1/chaos-test-capture-leader-not-hardcode",
+        "session-1/caddy-placeholder-hostname-pin",
+        "session-1/caddy-drop-read-only-for-tls-internal-tmp",
+        "main"
+      ]
+    },
+    {
+      "sha": "eaa3492a7d5c22bd7a92e5223925994fce0af55f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-17T15:58:08+05:30",
+      "message": "Day-5 Step 4: caddy-install.sh + caddyfile.placeholder + caddy-swarm-service.yml updates (cluster-si",
+      "stats": {
+        "additions": 498,
+        "deletions": 11,
+        "total": 509
+      },
+      "branches": [
+        "session-1/day-5-close",
+        "session-1/chaos-tests-hardening-2026-05-17",
+        "session-1/chaos-test-real-failover-via-service-scale",
+        "session-1/chaos-test-psql-retry-during-failover-lag",
+        "session-1/chaos-test-psql-filter-and-reorder",
+        "session-1/chaos-test-fill-disk-mechanics",
+        "session-1/chaos-test-capture-leader-not-hardcode",
+        "session-1/caddy-placeholder-hostname-pin",
+        "session-1/caddy-drop-read-only-for-tls-internal-tmp",
+        "session-1/caddy-auto-https-tls-internal-fix",
+        "main"
+      ]
+    },
+    {
+      "sha": "db3152cfde9f3bc9ae91a4f0d68028d57c903ae6",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-17T17:00:10+05:30",
+      "message": "hardening(chaos-tests): host-vs-overlay-DNS, trap-cleanup, existence-gating",
+      "stats": {
+        "additions": 251,
+        "deletions": 68,
+        "total": 319
+      },
+      "branches": [
+        "session-1/chaos-tests-hardening-2026-05-17"
+      ]
+    },
+    {
+      "sha": "28c7b14975a1a7ee871e1bd46e31a0f003f0bc15",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-17T17:25:46+05:30",
+      "message": "hardening(chaos): kill-patroni-leader uses service-scale=0 to force election",
+      "stats": {
+        "additions": 155,
+        "deletions": 23,
+        "total": 178
+      },
+      "branches": [
+        "session-1/chaos-test-real-failover-via-service-scale"
+      ]
+    },
+    {
+      "sha": "89de15ae1875d1468312fe7582cbebbe6d26b4ec",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-17T18:16:34+05:30",
+      "message": "hardening(chaos): kill-patroni-leader retries psql during pgbouncer routing lag",
+      "stats": {
+        "additions": 87,
+        "deletions": 24,
+        "total": 111
+      },
+      "branches": [
+        "session-1/chaos-test-psql-retry-during-failover-lag"
+      ]
+    },
+    {
+      "sha": "551b8a1d95612ccf2af52b3dc38cfb49a8c82370",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-17T17:42:32+05:30",
+      "message": "hardening(chaos): psql executor filter + restore-before-sanity ordering",
+      "stats": {
+        "additions": 56,
+        "deletions": 3,
+        "total": 59
+      },
+      "branches": [
+        "session-1/chaos-test-psql-filter-and-reorder"
+      ]
+    },
+    {
+      "sha": "cdb4c28c73023699da8449fb3e8c866643083410",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-17T18:06:29+05:30",
+      "message": "hardening(chaos): fill-rishi-5-disk SSH-by-IP + drop-sudo + write-under-home",
+      "stats": {
+        "additions": 76,
+        "deletions": 20,
+        "total": 96
+      },
+      "branches": [
+        "session-1/chaos-test-fill-disk-mechanics"
+      ]
+    },
+    {
+      "sha": "6f1ea0b0bd36d2186ad12700aad7486a88ffcc58",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-17T17:53:16+05:30",
+      "message": "hardening(chaos): kill-rishi-6 Patroni-leader check is node-agnostic",
+      "stats": {
+        "additions": 59,
+        "deletions": 10,
+        "total": 69
+      },
+      "branches": [
+        "session-1/chaos-test-capture-leader-not-hardcode"
+      ]
+    },
+    {
+      "sha": "7544217b7c284e59f597623e30ad2b066cbb3b3b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-17T16:29:16+05:30",
+      "message": "fix(caddyfile): pin hostname so `tls internal` has a cert SUBJECT",
+      "stats": {
+        "additions": 105,
+        "deletions": 3,
+        "total": 108
+      },
+      "branches": [
+        "session-1/caddy-placeholder-hostname-pin"
+      ]
+    },
+    {
+      "sha": "1eaf0e771e66960d7013b40988faad658f49c395",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-17T16:18:49+05:30",
+      "message": "fix(caddy-stack): drop read_only so /tmp is writable for tls internal",
+      "stats": {
+        "additions": 64,
+        "deletions": 3,
+        "total": 67
+      },
+      "branches": [
+        "session-1/caddy-drop-read-only-for-tls-internal-tmp"
+      ]
+    },
+    {
+      "sha": "befe31eb3174fae8812bfb31a97ba2314b4b512a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-17T16:07:38+05:30",
+      "message": "fix(caddyfile): drop `auto_https off` so `tls internal` provisions certs",
+      "stats": {
+        "additions": 91,
+        "deletions": 7,
+        "total": 98
+      },
+      "branches": [
+        "session-1/caddy-auto-https-tls-internal-fix"
+      ]
+    },
+    {
+      "sha": "ed1e32eab50a2de002431909e124a9e3c705967a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-17T18:57:07+05:30",
+      "message": "docs(session-1): Day-5 close \u2014 Phase 0 OFFICIALLY COMPLETE (#86)",
+      "stats": {
+        "additions": 227,
+        "deletions": 38,
+        "total": 265
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 34,
+  "issues": [],
+  "issue_count": 0
+}
