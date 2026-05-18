@@ -1,0 +1,1149 @@
+{
+  "date": "2026-05-18",
+  "cached_at": "2026-05-18T19:07:31.023637Z",
+  "commits": [
+    {
+      "sha": "798fd914fe1dc0c31cb57343187fe9bb0715e585",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-18T23:29:00+05:30",
+      "message": "Integrates new feed endpoint (#1155)",
+      "stats": {
+        "additions": 694,
+        "deletions": 155,
+        "total": 849
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "634db9fed29ce0f2bedd8db6f95456afffd42f42",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-18T21:48:21+05:30",
+      "message": "Update bot creation profile controls (#1162)",
+      "stats": {
+        "additions": 11,
+        "deletions": 144,
+        "total": 155
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b989469d0fbcc49f6912a76b43e2b1617f456f84",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-18T21:10:01+05:30",
+      "message": "Poll in-progress video drafts (#1161)",
+      "stats": {
+        "additions": 442,
+        "deletions": 51,
+        "total": 493
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "09cde480e8f906b8e83a3729ceda1473780c42bc",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-18T23:45:29+05:30",
+      "message": "adding header to payload",
+      "stats": {
+        "additions": 35,
+        "deletions": 0,
+        "total": 35
+      },
+      "branches": [
+        "naitik/apple_notification_fix"
+      ]
+    },
+    {
+      "sha": "9c171e4bfd45c5c8a15e689573f9ceeca5b7a267",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-18T22:23:10+05:30",
+      "message": "feat: enhance canister call scripts with helper functions for status tracking and deduplication",
+      "stats": {
+        "additions": 104,
+        "deletions": 15,
+        "total": 119
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "cfff1502f3f2a4df0755d057ce5514750d7d8c0a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-18T21:31:43+05:30",
+      "message": "feat: update versioning and refine result types in platform orchestrator canister",
+      "stats": {
+        "additions": 41,
+        "deletions": 40,
+        "total": 81
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "afaee834dc9d4ddbd0d1893957447c2fb9336618",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-18T20:00:55+05:30",
+      "message": "feat: enhance canister call scripts and update controlled canisters query for authorization",
+      "stats": {
+        "additions": 16,
+        "deletions": 6,
+        "total": 22
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ef14fae0b8f6164ee576548c881a07bfa0996db4",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-18T18:17:06+05:30",
+      "message": "feat: add mainnet canister call execution script and enhance platform orchestrator with new queries",
+      "stats": {
+        "additions": 71,
+        "deletions": 4,
+        "total": 75
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f3f2d74e5de17e4819e11bc275963302ccf0c7d7",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-18T18:03:34+05:30",
+      "message": "feat: add functionality to manage controlled canisters and retrieve individual canister details",
+      "stats": {
+        "additions": 116,
+        "deletions": 1,
+        "total": 117
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d24e63e4f09730753797c0f10e94aee249b3da5d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-18T16:50:48+05:30",
+      "message": "feat: update deploy-local script to optimize wasm uploads and enhance build process",
+      "stats": {
+        "additions": 45,
+        "deletions": 29,
+        "total": 74
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "fb533b1b5eeaa46269707d557cbc91080148b3cd",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-18T15:34:44+05:30",
+      "message": "feat: add local deployment script and enhance task configuration for canister suite",
+      "stats": {
+        "additions": 196,
+        "deletions": 31,
+        "total": 227
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4b3bf74618334c01d532d4e5d750a6b42ee89741",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T15:14:02+05:30",
+      "message": "feat(session-4): spawn 3 services (orchestrator + soul-file-library + influencer-directory) from tem",
+      "stats": {
+        "additions": 12022,
+        "deletions": 36,
+        "total": 12058
+      },
+      "branches": [
+        "session-4/spawn-three-services-from-template"
+      ]
+    },
+    {
+      "sha": "be919bbb3198bdc55534d1ea971a35d38651823a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T14:55:23+05:30",
+      "message": "feat(autonomy): scaffold SESSION-3 + SESSION-4 STATE/LOG files for Phase 1 launch",
+      "stats": {
+        "additions": 182,
+        "deletions": 0,
+        "total": 182
+      },
+      "branches": [
+        "session-4/spawn-three-services-from-template",
+        "session-4/orchestrator-run-turn-rpc-handler",
+        "session-4/day-4-soul-file-library-postgres-schema-and-composer",
+        "session-4/day-3-safety-stack-middleware",
+        "session-3/spawn-public-api-from-template",
+        "session-3/day-4c-orchestrator-rpc-and-idempotency",
+        "session-3/day-4b-auth-as-real-dependency",
+        "session-3/day-4a-jwt-shadow-e9-reconciliation",
+        "session-3/day-3-jwt-shadow-mode",
+        "session-3/day-2-endpoint-handlers",
+        "main",
+        "coordinator/dep-004-update-rpc-contracts-public-api-to-orchestrator-from-sse-to-json"
+      ]
+    },
+    {
+      "sha": "a5dbfc8c79ef9f1cbd88fe14fc40324eb4718aa5",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T14:15:39+05:30",
+      "message": "feat(autonomy): Session 4 (Orchestrator + Soul-File + Influencer Directory) agent definition",
+      "stats": {
+        "additions": 201,
+        "deletions": 0,
+        "total": 201
+      },
+      "branches": [
+        "session-4/spawn-three-services-from-template",
+        "session-4/orchestrator-run-turn-rpc-handler",
+        "session-4/day-4-soul-file-library-postgres-schema-and-composer",
+        "session-4/day-3-safety-stack-middleware",
+        "session-3/spawn-public-api-from-template",
+        "session-3/day-4c-orchestrator-rpc-and-idempotency",
+        "session-3/day-4b-auth-as-real-dependency",
+        "session-3/day-4a-jwt-shadow-e9-reconciliation",
+        "session-3/day-3-jwt-shadow-mode",
+        "session-3/day-2-endpoint-handlers",
+        "main",
+        "coordinator/scaffold-session-3-and-4-state-log-files",
+        "coordinator/dep-004-update-rpc-contracts-public-api-to-orchestrator-from-sse-to-json"
+      ]
+    },
+    {
+      "sha": "b153a6521c6eef8d95c04105ef163900ef309f2b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T14:06:17+05:30",
+      "message": "fix(daily-report): webhook from Keychain + email skips gracefully when postfix down",
+      "stats": {
+        "additions": 76,
+        "deletions": 10,
+        "total": 86
+      },
+      "branches": [
+        "session-4/spawn-three-services-from-template",
+        "session-4/orchestrator-run-turn-rpc-handler",
+        "session-4/day-4-soul-file-library-postgres-schema-and-composer",
+        "session-4/day-3-safety-stack-middleware",
+        "session-3/spawn-public-api-from-template",
+        "session-3/day-4c-orchestrator-rpc-and-idempotency",
+        "session-3/day-4b-auth-as-real-dependency",
+        "session-3/day-4a-jwt-shadow-e9-reconciliation",
+        "session-3/day-3-jwt-shadow-mode",
+        "session-3/day-2-endpoint-handlers",
+        "main",
+        "coordinator/session-4-orchestrator-agent-definition",
+        "coordinator/scaffold-session-3-and-4-state-log-files",
+        "coordinator/dep-004-update-rpc-contracts-public-api-to-orchestrator-from-sse-to-json"
+      ]
+    },
+    {
+      "sha": "eb64230643b0f64691d90aefa5bf05667dcfbdc9",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T13:21:19+05:30",
+      "message": "feat(autonomy): Session 3 (Public-API) agent definition for Phase 1 launch",
+      "stats": {
+        "additions": 201,
+        "deletions": 0,
+        "total": 201
+      },
+      "branches": [
+        "session-4/spawn-three-services-from-template",
+        "session-4/orchestrator-run-turn-rpc-handler",
+        "session-4/day-4-soul-file-library-postgres-schema-and-composer",
+        "session-4/day-3-safety-stack-middleware",
+        "session-3/spawn-public-api-from-template",
+        "session-3/day-4c-orchestrator-rpc-and-idempotency",
+        "session-3/day-4b-auth-as-real-dependency",
+        "session-3/day-4a-jwt-shadow-e9-reconciliation",
+        "session-3/day-3-jwt-shadow-mode",
+        "session-3/day-2-endpoint-handlers",
+        "main",
+        "coordinator/session-4-orchestrator-agent-definition",
+        "coordinator/scaffold-session-3-and-4-state-log-files",
+        "coordinator/dep-004-update-rpc-contracts-public-api-to-orchestrator-from-sse-to-json",
+        "coordinator/daily-report-keychain-webhook-and-better-email"
+      ]
+    },
+    {
+      "sha": "1271628be029e84d04773bcddd6bb5c6c9edcb51",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T12:54:53+05:30",
+      "message": "fix(launchd): direct script call + EnvironmentVariables (PR #88 bash-c wrapper rejected by Sequoia b",
+      "stats": {
+        "additions": 57,
+        "deletions": 44,
+        "total": 101
+      },
+      "branches": [
+        "session-4/spawn-three-services-from-template",
+        "session-4/orchestrator-run-turn-rpc-handler",
+        "session-4/day-4-soul-file-library-postgres-schema-and-composer",
+        "session-4/day-3-safety-stack-middleware",
+        "session-3/spawn-public-api-from-template",
+        "session-3/day-4c-orchestrator-rpc-and-idempotency",
+        "session-3/day-4b-auth-as-real-dependency",
+        "session-3/day-4a-jwt-shadow-e9-reconciliation",
+        "session-3/day-3-jwt-shadow-mode",
+        "session-3/day-2-endpoint-handlers",
+        "main",
+        "coordinator/session-4-orchestrator-agent-definition",
+        "coordinator/session-3-public-api-agent-definition",
+        "coordinator/scaffold-session-3-and-4-state-log-files",
+        "coordinator/dep-004-update-rpc-contracts-public-api-to-orchestrator-from-sse-to-json",
+        "coordinator/daily-report-keychain-webhook-and-better-email"
+      ]
+    },
+    {
+      "sha": "c7cb4af9d379880a361c0fde9e72a65316bbf571",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T12:23:17+05:30",
+      "message": "feat(autonomy): operation charter + daily-report scaffolding (Phase 0.5 #2-#4)",
+      "stats": {
+        "additions": 658,
+        "deletions": 0,
+        "total": 658
+      },
+      "branches": [
+        "session-4/spawn-three-services-from-template",
+        "session-4/orchestrator-run-turn-rpc-handler",
+        "session-4/day-4-soul-file-library-postgres-schema-and-composer",
+        "session-4/day-3-safety-stack-middleware",
+        "session-3/spawn-public-api-from-template",
+        "session-3/day-4c-orchestrator-rpc-and-idempotency",
+        "session-3/day-4b-auth-as-real-dependency",
+        "session-3/day-4a-jwt-shadow-e9-reconciliation",
+        "session-3/day-3-jwt-shadow-mode",
+        "session-3/day-2-endpoint-handlers",
+        "main",
+        "coordinator/session-4-orchestrator-agent-definition",
+        "coordinator/session-3-public-api-agent-definition",
+        "coordinator/scaffold-session-3-and-4-state-log-files",
+        "coordinator/launchd-plist-bash-c-fix",
+        "coordinator/dep-004-update-rpc-contracts-public-api-to-orchestrator-from-sse-to-json",
+        "coordinator/daily-report-keychain-webhook-and-better-email"
+      ]
+    },
+    {
+      "sha": "be8df9fc6cc15af7e201d2f7d2ce6a715b8d7aaf",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T12:06:03+05:30",
+      "message": "ci(codex): bump prompt budget 80k\u2192250k chars (Codex truncation root cause)",
+      "stats": {
+        "additions": 10,
+        "deletions": 1,
+        "total": 11
+      },
+      "branches": [
+        "session-4/spawn-three-services-from-template",
+        "session-4/orchestrator-run-turn-rpc-handler",
+        "session-4/day-4-soul-file-library-postgres-schema-and-composer",
+        "session-4/day-3-safety-stack-middleware",
+        "session-3/spawn-public-api-from-template",
+        "session-3/day-4c-orchestrator-rpc-and-idempotency",
+        "session-3/day-4b-auth-as-real-dependency",
+        "session-3/day-4a-jwt-shadow-e9-reconciliation",
+        "session-3/day-3-jwt-shadow-mode",
+        "session-3/day-2-endpoint-handlers",
+        "main",
+        "coordinator/session-4-orchestrator-agent-definition",
+        "coordinator/session-3-public-api-agent-definition",
+        "coordinator/scaffold-session-3-and-4-state-log-files",
+        "coordinator/launchd-plist-bash-c-fix",
+        "coordinator/dep-004-update-rpc-contracts-public-api-to-orchestrator-from-sse-to-json",
+        "coordinator/daily-report-keychain-webhook-and-better-email",
+        "coordinator/autonomy-charter-and-daily-reports"
+      ]
+    },
+    {
+      "sha": "7ea7e503dde283088052606b1c6b10c8c909bf12",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T16:12:54+05:30",
+      "message": "feat(session-4): orchestrator POST /v1/turn RPC handler skeleton (JSON, NOT SSE)",
+      "stats": {
+        "additions": 943,
+        "deletions": 18,
+        "total": 961
+      },
+      "branches": [
+        "session-4/orchestrator-run-turn-rpc-handler",
+        "session-4/day-3-safety-stack-middleware"
+      ]
+    },
+    {
+      "sha": "6d8c597cba4e1b90ea9c227e6cbc4b5a50e8c3ed",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T15:20:09+05:30",
+      "message": "Session 4 Day 1: spawn 3 services (orchestrator + soul-file-library + influencer-and-profile-directo",
+      "stats": {
+        "additions": 12022,
+        "deletions": 36,
+        "total": 12058
+      },
+      "branches": [
+        "session-4/orchestrator-run-turn-rpc-handler",
+        "session-4/day-4-soul-file-library-postgres-schema-and-composer",
+        "session-4/day-3-safety-stack-middleware",
+        "session-3/day-4c-orchestrator-rpc-and-idempotency",
+        "session-3/day-4b-auth-as-real-dependency",
+        "session-3/day-4a-jwt-shadow-e9-reconciliation",
+        "session-3/day-3-jwt-shadow-mode",
+        "session-3/day-2-endpoint-handlers",
+        "main",
+        "coordinator/dep-004-update-rpc-contracts-public-api-to-orchestrator-from-sse-to-json"
+      ]
+    },
+    {
+      "sha": "68264b6f87ef43287131714ffdecaee3fcc6b1c7",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T15:17:33+05:30",
+      "message": "Session 3 Day 1: spawn yral-rishi-agent-public-api from template (40 files, smoke verified)",
+      "stats": {
+        "additions": 4020,
+        "deletions": 15,
+        "total": 4035
+      },
+      "branches": [
+        "session-4/orchestrator-run-turn-rpc-handler",
+        "session-4/day-4-soul-file-library-postgres-schema-and-composer",
+        "session-4/day-3-safety-stack-middleware",
+        "session-3/day-4c-orchestrator-rpc-and-idempotency",
+        "session-3/day-4b-auth-as-real-dependency",
+        "session-3/day-4a-jwt-shadow-e9-reconciliation",
+        "session-3/day-3-jwt-shadow-mode",
+        "session-3/day-2-endpoint-handlers",
+        "main",
+        "coordinator/dep-004-update-rpc-contracts-public-api-to-orchestrator-from-sse-to-json"
+      ]
+    },
+    {
+      "sha": "cd0b2946b85f059910aded7a318ccdb14543ff15",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T19:01:27+05:30",
+      "message": "feat(session-4): Day-4 Soul File Library \u2014 Postgres schema + 4-layer composer + GET /composed-prompt",
+      "stats": {
+        "additions": 3067,
+        "deletions": 49,
+        "total": 3116
+      },
+      "branches": [
+        "session-4/day-4-soul-file-library-postgres-schema-and-composer"
+      ]
+    },
+    {
+      "sha": "dbd40c0a25c4b8462337b09305b0eccacf23b9e8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T17:27:03+05:30",
+      "message": "feat(session-4): Day-3 H5\u2192H4\u2192A10 safety stack middleware in front of /v1/turn",
+      "stats": {
+        "additions": 1808,
+        "deletions": 24,
+        "total": 1832
+      },
+      "branches": [
+        "session-4/day-3-safety-stack-middleware"
+      ]
+    },
+    {
+      "sha": "7faf9fdd30c605759333046e0eecdc520d7f43f8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T15:07:36+05:30",
+      "message": "feat(public-api): Day 1 \u2014 spawn yral-rishi-agent-public-api from Session 2's template",
+      "stats": {
+        "additions": 4020,
+        "deletions": 15,
+        "total": 4035
+      },
+      "branches": [
+        "session-3/spawn-public-api-from-template"
+      ]
+    },
+    {
+      "sha": "e60e65a63dea42cb6692a43a93a4cd21c6ef7a60",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T18:37:34+05:30",
+      "message": "feat(public-api): Day 4C \u2014 orchestrator RPC + F10 idempotency dedup on send_message",
+      "stats": {
+        "additions": 1176,
+        "deletions": 84,
+        "total": 1260
+      },
+      "branches": [
+        "session-3/day-4c-orchestrator-rpc-and-idempotency"
+      ]
+    },
+    {
+      "sha": "38591c10e5107c92a78dec81894d489311f6a415",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T18:23:59+05:30",
+      "message": "feat(public-api): Day 4B \u2014 auth as real dependency on all chat + influencer handlers",
+      "stats": {
+        "additions": 753,
+        "deletions": 97,
+        "total": 850
+      },
+      "branches": [
+        "session-3/day-4c-orchestrator-rpc-and-idempotency",
+        "session-3/day-4b-auth-as-real-dependency"
+      ]
+    },
+    {
+      "sha": "bc8958695038da8f3badc2417d079d82ea33fbb8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T18:02:48+05:30",
+      "message": "feat(public-api): Day 4A \u2014 E9 reconciliation (flag rename + Redis JWKS cache)",
+      "stats": {
+        "additions": 650,
+        "deletions": 175,
+        "total": 825
+      },
+      "branches": [
+        "session-3/day-4c-orchestrator-rpc-and-idempotency",
+        "session-3/day-4b-auth-as-real-dependency",
+        "session-3/day-4a-jwt-shadow-e9-reconciliation"
+      ]
+    },
+    {
+      "sha": "1f525fd327bac4f7df94206422e3cd141d6e3585",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T17:25:01+05:30",
+      "message": "feat(public-api): Day 3 \u2014 JWT signature-validation shadow rig per E9 (+ 9 J1-HOT tests)",
+      "stats": {
+        "additions": 1309,
+        "deletions": 9,
+        "total": 1318
+      },
+      "branches": [
+        "session-3/day-4c-orchestrator-rpc-and-idempotency",
+        "session-3/day-4b-auth-as-real-dependency",
+        "session-3/day-4a-jwt-shadow-e9-reconciliation",
+        "session-3/day-3-jwt-shadow-mode"
+      ]
+    },
+    {
+      "sha": "c929842122d37f1597f4f3eeb44c6ce89df6bf86",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T17:11:03+05:30",
+      "message": "fixup(public-api): rename DEP-004 \u2192 DEP-005 per coordinator review on PR #97",
+      "stats": {
+        "additions": 10,
+        "deletions": 10,
+        "total": 20
+      },
+      "branches": [
+        "session-3/day-4c-orchestrator-rpc-and-idempotency",
+        "session-3/day-4b-auth-as-real-dependency",
+        "session-3/day-4a-jwt-shadow-e9-reconciliation",
+        "session-3/day-3-jwt-shadow-mode",
+        "session-3/day-2-endpoint-handlers"
+      ]
+    },
+    {
+      "sha": "7292a9394bd6357fc1ed5af77497885acc925bf2",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T16:18:15+05:30",
+      "message": "feat(public-api): Day 2 \u2014 endpoint handlers per locked API contract + 32 contract tests",
+      "stats": {
+        "additions": 2122,
+        "deletions": 12,
+        "total": 2134
+      },
+      "branches": [
+        "session-3/day-4c-orchestrator-rpc-and-idempotency",
+        "session-3/day-4b-auth-as-real-dependency",
+        "session-3/day-4a-jwt-shadow-e9-reconciliation",
+        "session-3/day-3-jwt-shadow-mode",
+        "session-3/day-2-endpoint-handlers"
+      ]
+    },
+    {
+      "sha": "bed039dd33022bdfd55fcf4945386f61d311cbb0",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T14:13:27+05:30",
+      "message": "address Codex on PR #92 \u2014 A14 STOP+ask before any live chat-ai read",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "coordinator/session-4-orchestrator-agent-definition"
+      ]
+    },
+    {
+      "sha": "9089bbed6b87ca464978f2cfe6b43a7310b81dc6",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T14:11:09+05:30",
+      "message": "feat(autonomy): Session 4 (Orchestrator + Soul-File + Influencer Directory) agent definition",
+      "stats": {
+        "additions": 201,
+        "deletions": 0,
+        "total": 201
+      },
+      "branches": [
+        "coordinator/session-4-orchestrator-agent-definition"
+      ]
+    },
+    {
+      "sha": "404c58ce305031a65fc0cc33910793c0a91af974",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T13:20:47+05:30",
+      "message": "address Codex review on PR #90 \u2014 remove direct Session 5 memory-service integration from Session 3 s",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "coordinator/session-3-public-api-agent-definition"
+      ]
+    },
+    {
+      "sha": "0ba6abacf133b8604161f2d73014b9b780704d78",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T13:18:15+05:30",
+      "message": "address Codex review on PR #90 \u2014 remove last 'hard launch' reference from CONFIRM-TO-RISHI template",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "coordinator/session-3-public-api-agent-definition"
+      ]
+    },
+    {
+      "sha": "d265fc7badc608f5eaf66aa81c15117dd56020f4",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T13:15:52+05:30",
+      "message": "address Codex review on PR #90 \u2014 Session 3 self-imposes locked I14 discipline (regardless of workflo",
+      "stats": {
+        "additions": 16,
+        "deletions": 16,
+        "total": 32
+      },
+      "branches": [
+        "coordinator/session-3-public-api-agent-definition"
+      ]
+    },
+    {
+      "sha": "34e6a930f8e93ee041042bc6f7420e496da46489",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T13:13:18+05:30",
+      "message": "address Codex review on PR #90 \u2014 honest framing of I14-vs-deployed-workflow drift",
+      "stats": {
+        "additions": 17,
+        "deletions": 10,
+        "total": 27
+      },
+      "branches": [
+        "coordinator/session-3-public-api-agent-definition"
+      ]
+    },
+    {
+      "sha": "c3b7d3ebf33fca7c9b4cdc33e46a7be4346b5765",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T13:10:11+05:30",
+      "message": "address Codex review on PR #90 \u2014 clarify Phase 1 target \u2260 A6 cutover (cutover requires Rishi typed Y",
+      "stats": {
+        "additions": 4,
+        "deletions": 2,
+        "total": 6
+      },
+      "branches": [
+        "coordinator/session-3-public-api-agent-definition"
+      ]
+    },
+    {
+      "sha": "9c38ff6976ff9a0699adee14ccbaca675a04f5a9",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T13:07:45+05:30",
+      "message": "address Codex review on PR #90 \u2014 schema-valid stub DTOs (not empty data) + feature-flag gate for non",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "coordinator/session-3-public-api-agent-definition"
+      ]
+    },
+    {
+      "sha": "ec950810a87bb2146e2c5ff351556ffcc7d0bb96",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T13:05:35+05:30",
+      "message": "address Codex review on PR #90 \u2014 match locked API contract + Session 3/4 separation + tighten Codex-",
+      "stats": {
+        "additions": 50,
+        "deletions": 42,
+        "total": 92
+      },
+      "branches": [
+        "coordinator/session-3-public-api-agent-definition"
+      ]
+    },
+    {
+      "sha": "0a64f2aaa2aee3680a8a69a44462757006ad73ce",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T13:00:50+05:30",
+      "message": "address Codex review on PR #90 \u2014 exact I12 resume protocol 6 steps",
+      "stats": {
+        "additions": 15,
+        "deletions": 4,
+        "total": 19
+      },
+      "branches": [
+        "coordinator/session-3-public-api-agent-definition"
+      ]
+    },
+    {
+      "sha": "789eba85d1c1e41375691b733cd16bc4b361734f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T12:57:47+05:30",
+      "message": "feat(autonomy): Session 3 (Public-API) agent definition for Phase 1 launch",
+      "stats": {
+        "additions": 173,
+        "deletions": 0,
+        "total": 173
+      },
+      "branches": [
+        "coordinator/session-3-public-api-agent-definition"
+      ]
+    },
+    {
+      "sha": "459d04e6a5208d6cab76426294d706847d516e25",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T14:53:19+05:30",
+      "message": "remove inadvertent MASTER-STATUS.md drift from PR #93 scope",
+      "stats": {
+        "additions": 92,
+        "deletions": 33,
+        "total": 125
+      },
+      "branches": [
+        "coordinator/scaffold-session-3-and-4-state-log-files"
+      ]
+    },
+    {
+      "sha": "0e55b0f0d1e6ec3a3ad1ffc36a8cc9f46f80a41d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T14:50:54+05:30",
+      "message": "address Codex on PR #93 \u2014 canonical contract paths + E7 citation + Phase-1-target wording",
+      "stats": {
+        "additions": 38,
+        "deletions": 97,
+        "total": 135
+      },
+      "branches": [
+        "coordinator/scaffold-session-3-and-4-state-log-files"
+      ]
+    },
+    {
+      "sha": "80243817e17a0eb2bce7af06e6615b50163e42fa",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T14:47:49+05:30",
+      "message": "address Codex on PR #93 \u2014 B4 product vocab: 'Soul File' not 'Soul-File' in human-facing titles",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "coordinator/scaffold-session-3-and-4-state-log-files"
+      ]
+    },
+    {
+      "sha": "f26f32d45cf73d97b023d507df4b0e892d7b6e5f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T14:39:07+05:30",
+      "message": "feat(autonomy): scaffold SESSION-3 + SESSION-4 STATE/LOG files for Phase 1 launch",
+      "stats": {
+        "additions": 182,
+        "deletions": 0,
+        "total": 182
+      },
+      "branches": [
+        "coordinator/scaffold-session-3-and-4-state-log-files"
+      ]
+    },
+    {
+      "sha": "f24e667bc5c2580fcfab1cac5e918ef6c33a3e6a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T12:53:10+05:30",
+      "message": "address Codex review on PR #89 \u2014 A1 uninstall safety + bootout typo + script dependency note",
+      "stats": {
+        "additions": 14,
+        "deletions": 3,
+        "total": 17
+      },
+      "branches": [
+        "coordinator/launchd-plist-bash-c-fix"
+      ]
+    },
+    {
+      "sha": "3efeaf695a5bdf5c2ff63403c2caa055e7b71a8c",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T12:49:26+05:30",
+      "message": "fix(launchd): direct script call + EnvironmentVariables (PR #88 bash -c wrapper rejected by Sequoia ",
+      "stats": {
+        "additions": 46,
+        "deletions": 44,
+        "total": 90
+      },
+      "branches": [
+        "coordinator/launchd-plist-bash-c-fix"
+      ]
+    },
+    {
+      "sha": "502cf17d313271c59a7c7babcbc58f33d3dc0263",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T16:22:48+05:30",
+      "message": "docs(rpc-contracts): public-api \u2192 orchestrator from SSE to JSON MessageDto (DEP-004)",
+      "stats": {
+        "additions": 40,
+        "deletions": 13,
+        "total": 53
+      },
+      "branches": [
+        "coordinator/dep-004-update-rpc-contracts-public-api-to-orchestrator-from-sse-to-json"
+      ]
+    },
+    {
+      "sha": "28eb614f1add36d6dd319c37c4ae3ed72ef3ca13",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T14:04:00+05:30",
+      "message": "address Codex review on PR #91 \u2014 B7 function docs + honest env-var fallback framing",
+      "stats": {
+        "additions": 53,
+        "deletions": 20,
+        "total": 73
+      },
+      "branches": [
+        "coordinator/daily-report-keychain-webhook-and-better-email"
+      ]
+    },
+    {
+      "sha": "3dd8035a545fd6bd7836c0e04e409a9d896f48a3",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T13:58:37+05:30",
+      "message": "fix(daily-report): webhook from Keychain (not env var) + email skips gracefully when postfix down",
+      "stats": {
+        "additions": 43,
+        "deletions": 10,
+        "total": 53
+      },
+      "branches": [
+        "coordinator/daily-report-keychain-webhook-and-better-email"
+      ]
+    },
+    {
+      "sha": "c902487a9026cbd8991f9be2b64a657a071d156d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T12:04:02+05:30",
+      "message": "ci(codex): bump prompt budget 80k\u2192250k chars (critical context alone exceeded prior budget)",
+      "stats": {
+        "additions": 10,
+        "deletions": 1,
+        "total": 11
+      },
+      "branches": [
+        "coordinator/codex-prompt-budget-bump"
+      ]
+    },
+    {
+      "sha": "14b86306e3cb33123ea5d8ef1e8012d0a5f58b88",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-05-18T15:07:27+05:30",
+      "message": "Refactor code structure for improved readability and maintainability",
+      "stats": {
+        "additions": 2743,
+        "deletions": 487,
+        "total": 3230
+      },
+      "branches": [
+        "renovate/vpa-4.x",
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/ansible-lint-gte-26.4.0"
+      ]
+    },
+    {
+      "sha": "61ea1bf4f066513998f8ec9c68f7349e9ab9da18",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-05-18T09:09:36+05:30",
+      "message": "feat(setup): enhance local environment setup and Python dependency management",
+      "stats": {
+        "additions": 38,
+        "deletions": 16,
+        "total": 54
+      },
+      "branches": [
+        "renovate/vpa-4.x",
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/ansible-lint-gte-26.4.0"
+      ]
+    },
+    {
+      "sha": "b7070ded2c2dc8520759a53e66c746d74e55f23d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-05-18T09:01:18+05:30",
+      "message": "feat(setup): introduce setup-local-env.sh for local environment configuration",
+      "stats": {
+        "additions": 258,
+        "deletions": 361,
+        "total": 619
+      },
+      "branches": [
+        "renovate/vpa-4.x",
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/ansible-lint-gte-26.4.0"
+      ]
+    },
+    {
+      "sha": "72242b0fc1484fea66a852149379e8086fdcdfa6",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-18T12:10:24+05:30",
+      "message": "feat(autonomy): operation charter + daily-report scaffolding (Phase 0.5 foundation #2)",
+      "stats": {
+        "additions": 658,
+        "deletions": 0,
+        "total": 658
+      },
+      "branches": [
+        "coordinator/autonomy-charter-and-daily-reports"
+      ]
+    },
+    {
+      "sha": "7842dfd9d186694c94a29050632be4a4ea6e11eb",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-chat-ai",
+      "timestamp": "2026-05-18T12:41:07+05:30",
+      "message": "fix(caddy): keep Caddy up across server reboots (autostart cron + restart: always)",
+      "stats": {
+        "additions": 219,
+        "deletions": 1,
+        "total": 220
+      },
+      "branches": [
+        "fix/caddy-autostart-on-boot"
+      ]
+    }
+  ],
+  "commit_count": 57,
+  "issues": [
+    {
+      "number": 2086,
+      "title": "Remove the bot profile picture editing button",
+      "closed_at": "2026-05-18T16:18:23Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2086",
+      "labels": []
+    },
+    {
+      "number": 2073,
+      "title": "On draft page refresh, if the draft gets fetched, then the \"Generating video\" entry on that list should get removed",
+      "closed_at": "2026-05-18T15:40:04Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2073",
+      "labels": []
+    },
+    {
+      "number": 2067,
+      "title": "On the second screen where we show the fleshed out description of the ai bot during the creation flow, the text area is short and we waste space on the bottom above the \"Next button\".",
+      "closed_at": "2026-05-18T16:18:24Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2067",
+      "labels": []
+    },
+    {
+      "number": 2060,
+      "title": "Add missing stack trace on iOS - The non fatal reporting is correct, but stack trace is missing for iOS app",
+      "closed_at": "2026-05-18T04:20:59Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2060",
+      "labels": []
+    },
+    {
+      "number": 2031,
+      "title": "Implement the new feed implemented by Ansuman",
+      "closed_at": "2026-05-18T17:59:02Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2031",
+      "labels": []
+    },
+    {
+      "number": 2025,
+      "title": "Re-enable thumbnails for videos on the feed and test on yral-alpha. The reimplementation uses `-` hyphen characters instead of underscore.",
+      "closed_at": "2026-05-18T04:13:35Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2025",
+      "labels": []
+    },
+    {
+      "number": 1969,
+      "title": "To trace how many videos are not progressing from in progress to drafts because of notification not being delivered, let's add crashlytics events for every video with relevant payload data",
+      "closed_at": "2026-05-18T15:40:03Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1969",
+      "labels": []
+    },
+    {
+      "number": 2082,
+      "title": "Explore and test Vast AI",
+      "closed_at": "2026-05-18T04:38:26Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2082",
+      "labels": []
+    },
+    {
+      "number": 2061,
+      "title": "Feed API response giving incorrect \"form_ai_influencer\" field",
+      "closed_at": "2026-05-18T04:34:28Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2061",
+      "labels": []
+    },
+    {
+      "number": 27,
+      "title": "deployment and thorough testing new video recommendation feed algorithm",
+      "closed_at": "2026-05-18T04:16:31Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/ai-feed-recommendation-system",
+      "url": "https://github.com/dolr-ai/ai-feed-recommendation-system/issues/27",
+      "labels": []
+    }
+  ],
+  "issue_count": 10
+}
