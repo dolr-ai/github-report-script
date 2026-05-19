@@ -1,0 +1,563 @@
+{
+  "date": "2026-05-19",
+  "cached_at": "2026-05-19T19:14:44.351942Z",
+  "commits": [
+    {
+      "sha": "aac7556fd27a3d10ee247785d30716e23ce4422d",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-19T21:22:27+05:30",
+      "message": "Fixes minor UI and UX issues (#1163)",
+      "stats": {
+        "additions": 179,
+        "deletions": 133,
+        "total": 312
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a150b205a79e391a390618daac41ac88fa599ff1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-19T21:10:11+05:30",
+      "message": "feat: enhance canister definitions with cycle balance retrieval and controlled canister details",
+      "stats": {
+        "additions": 63,
+        "deletions": 40,
+        "total": 103
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "1c7730d81fb07a044afd7ce082e3e79b70bfe18f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-19T21:03:16+05:30",
+      "message": "feat: add functionality to retrieve controllers and cycle balance for managed canisters",
+      "stats": {
+        "additions": 67,
+        "deletions": 6,
+        "total": 73
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "fc2e8d5d9ec92a1de360c239f6205da1da592ded",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-19T09:17:27+05:30",
+      "message": "added recsys api call secret",
+      "stats": {
+        "additions": 10,
+        "deletions": 0,
+        "total": 10
+      },
+      "branches": [
+        "naitik/view_count_api"
+      ]
+    },
+    {
+      "sha": "0310c0f0da51e8556ac0d7cdb4e804226ab7bb1f",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-19T14:30:57+05:30",
+      "message": "fix: reading secret from env",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "naitik/fix_recsys_post"
+      ]
+    },
+    {
+      "sha": "1e584d8a1c416fd6e88c402da564596582fb9b69",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-19T11:10:49+05:30",
+      "message": "push  video_view count  to recsys (#445)",
+      "stats": {
+        "additions": 94,
+        "deletions": 0,
+        "total": 94
+      },
+      "branches": [
+        "naitik/fix_recsys_post",
+        "naitik/debug_recsys_post",
+        "main"
+      ]
+    },
+    {
+      "sha": "1c25dfb58b11431d87082b12738c154f1b284638",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-19T15:22:37+05:30",
+      "message": "Merge remote-tracking branch 'origin/main' into naitik/debug_recsys_post",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "naitik/debug_recsys_post"
+      ]
+    },
+    {
+      "sha": "46fe18a2854262b7a82ed2f70be0aac1348a049e",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-19T14:44:46+05:30",
+      "message": "fix: reading secret from env (#450)",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "naitik/debug_recsys_post",
+        "main"
+      ]
+    },
+    {
+      "sha": "b75634a88fbe06a8f04606b0dffaceb7eb602371",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-19T13:31:38+05:30",
+      "message": "fix: passing secret to service",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "naitik/debug_recsys_post"
+      ]
+    },
+    {
+      "sha": "2d0dacfcf8ba239012450b74cb7f2365f27aaff6",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-19T13:17:25+05:30",
+      "message": "formatting",
+      "stats": {
+        "additions": 1,
+        "deletions": 3,
+        "total": 4
+      },
+      "branches": [
+        "naitik/debug_recsys_post"
+      ]
+    },
+    {
+      "sha": "3427a1d6a574587d61836130f7eb70e7f776df9e",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-19T13:07:08+05:30",
+      "message": "fix: make string owned",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/debug_recsys_post"
+      ]
+    },
+    {
+      "sha": "b76611b5b8e9bcbbac9ed0abf2f27d5b71b55911",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-19T13:01:45+05:30",
+      "message": "fix: add clone trait to struct",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "naitik/debug_recsys_post"
+      ]
+    },
+    {
+      "sha": "50e58c33f74c5c45674c5f70a5870dd522e0b033",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-19T12:55:10+05:30",
+      "message": "debugging if secret is set correctly",
+      "stats": {
+        "additions": 66,
+        "deletions": 38,
+        "total": 104
+      },
+      "branches": [
+        "naitik/debug_recsys_post"
+      ]
+    },
+    {
+      "sha": "f5fc99dd20d4ef639ff0ff4b413cc9462672bdda",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-19T19:05:26+05:30",
+      "message": "fix: update storage-interface URL, SFW bucket, and move-to-nsfw route (#448)",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7199ecb9ef31e0d19bbb84d1a700b665fe9a868f",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-05-19T19:13:38+05:30",
+      "message": "Merge pull request #11 from dolr-ai/prakash/storage-interface-url",
+      "stats": {
+        "additions": 250,
+        "deletions": 12,
+        "total": 262
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "980f2bafad0801b62c9905ac299e1b37e8036700",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-05-19T17:15:33+05:30",
+      "message": "Merge pull request #43 from dolr-ai/feat/storj-mirror-index",
+      "stats": {
+        "additions": 10622,
+        "deletions": 645,
+        "total": 11267
+      },
+      "branches": [
+        "prakash/fix/remove-route-smoke-check-from-ci",
+        "main"
+      ]
+    },
+    {
+      "sha": "99aa8e6cb0ecc6e73d896198339a076481d01fb8",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-05-19T17:41:28+05:30",
+      "message": "Merge pull request #44 from dolr-ai/prakash/fix/remove-route-smoke-check-from-ci",
+      "stats": {
+        "additions": 0,
+        "deletions": 16,
+        "total": 16
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "afd90fcef8a86abd337c2ab55a39bda8060f0740",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-19T15:39:02+05:30",
+      "message": "fixup(session-4): PR #96 round-4 \u2014 prod-fail-closed + X-User-Id required + UUID-validated key + TTL ",
+      "stats": {
+        "additions": 477,
+        "deletions": 44,
+        "total": 521
+      },
+      "branches": [
+        "session-4/orchestrator-run-turn-rpc-handler"
+      ]
+    },
+    {
+      "sha": "fe40fcbe236e6b493f17b322c19acc0a1b6cbac0",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-19T14:13:36+05:30",
+      "message": "fixup(session-4): PR #96 round-3 \u2014 atomic dedup + C11 Sentinel + B2 abbreviation sweep",
+      "stats": {
+        "additions": 1151,
+        "deletions": 391,
+        "total": 1542
+      },
+      "branches": [
+        "session-4/orchestrator-run-turn-rpc-handler"
+      ]
+    },
+    {
+      "sha": "104873d7863fad3494e9bf388c539ac991348da2",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-19T12:45:39+05:30",
+      "message": "fixup(session-4): PR #96 \u2014 F10 idempotency + B7 imports + DTO\u2192Response rename",
+      "stats": {
+        "additions": 886,
+        "deletions": 118,
+        "total": 1004
+      },
+      "branches": [
+        "session-4/orchestrator-run-turn-rpc-handler"
+      ]
+    },
+    {
+      "sha": "cda5c6b9b7d75845c2c1867ab485374c9b510f6f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-19T16:05:10+05:30",
+      "message": "fixup(session-4): PR #104 round-4 \u2014 composer hot-path latency, parallelize L1+L2+L4 via asyncio.gath",
+      "stats": {
+        "additions": 189,
+        "deletions": 7,
+        "total": 196
+      },
+      "branches": [
+        "session-4/day-4-soul-file-library-postgres-schema-and-composer"
+      ]
+    },
+    {
+      "sha": "4ae7c98503b59eadca38de1e1c797b6c98d92cb0",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-19T14:33:32+05:30",
+      "message": "fixup(session-4): PR #104 round-3 \u2014 app/api/__init__.py B7 + F11\u2192A4 citation + db_pool residual",
+      "stats": {
+        "additions": 149,
+        "deletions": 12,
+        "total": 161
+      },
+      "branches": [
+        "session-4/day-4-soul-file-library-postgres-schema-and-composer"
+      ]
+    },
+    {
+      "sha": "90a2a5b92514db8b8c8f9d6378cd30a9bed2d20f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-19T13:12:20+05:30",
+      "message": "fixup(session-4): PR #104 \u2014 db\u2192database rename + B7 __init__ headers + A1 migration justification",
+      "stats": {
+        "additions": 448,
+        "deletions": 58,
+        "total": 506
+      },
+      "branches": [
+        "session-4/day-4-soul-file-library-postgres-schema-and-composer"
+      ]
+    },
+    {
+      "sha": "1dadbd0eba55b405f5329696130104ada095df47",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-19T15:32:39+05:30",
+      "message": "fixup(public-api): PR #97 round-5 \u2014 7 Codex items (auth placeholder + envelope wrap + Sentinel fail-",
+      "stats": {
+        "additions": 892,
+        "deletions": 127,
+        "total": 1019
+      },
+      "branches": [
+        "session-3/day-2-endpoint-handlers"
+      ]
+    },
+    {
+      "sha": "7aaaf6da42db0835801058d9ae6fa906a68f35b5",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-19T14:35:36+05:30",
+      "message": "fixup(public-api): PR #97 round-4 \u2014 real async-Sentinel /health/ready + close DEP-006",
+      "stats": {
+        "additions": 489,
+        "deletions": 238,
+        "total": 727
+      },
+      "branches": [
+        "session-3/day-2-endpoint-handlers"
+      ]
+    },
+    {
+      "sha": "bd42ac6f4d92d0405242ac8f5ea378eed4648a46",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-19T14:13:06+05:30",
+      "message": "fixup(public-api): PR #97 Codex round-3 blockers \u2014 B1 docs + B2 503-fallback + B3 deps rename",
+      "stats": {
+        "additions": 835,
+        "deletions": 255,
+        "total": 1090
+      },
+      "branches": [
+        "session-3/day-2-endpoint-handlers"
+      ]
+    },
+    {
+      "sha": "156bfb1d0ff1581d12bb72a47434333fc04272a0",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-19T13:01:44+05:30",
+      "message": "fixup(public-api): PR #97 Codex blockers \u2014 7 issues resolved in one commit",
+      "stats": {
+        "additions": 1051,
+        "deletions": 215,
+        "total": 1266
+      },
+      "branches": [
+        "session-3/day-2-endpoint-handlers"
+      ]
+    },
+    {
+      "sha": "a4496f18da6634b221816af891c2cb94cdcd7dc4",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-19T16:32:28+05:30",
+      "message": "docs(rpc-contracts): public-api \u2192 orchestrator from SSE to JSON MessageDto (DEP-004) (#98)",
+      "stats": {
+        "additions": 111,
+        "deletions": 17,
+        "total": 128
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b732ff8ad89854f4c820209c1e4a602221101291",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-19T16:20:56+05:30",
+      "message": "fixup(codex): also tilt allocator 75/25 toward diff \u2014 Codex was right, math didn't fit",
+      "stats": {
+        "additions": 45,
+        "deletions": 23,
+        "total": 68
+      },
+      "branches": [
+        "coordinator/codex-prompt-budget-bump-for-large-prs"
+      ]
+    },
+    {
+      "sha": "bfe5b6e28c9fca856a536f7b42500174462f9c87",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-19T15:56:19+05:30",
+      "message": "ci(codex): bump CODEX_REVIEW_MAX_PROMPT_CHARACTERS 250k \u2192 400k",
+      "stats": {
+        "additions": 36,
+        "deletions": 9,
+        "total": 45
+      },
+      "branches": [
+        "coordinator/codex-prompt-budget-bump-for-large-prs"
+      ]
+    }
+  ],
+  "commit_count": 30,
+  "issues": [
+    {
+      "number": 2100,
+      "title": "Set up preview deployments for yral-video-upload-service",
+      "closed_at": "2026-05-19T13:43:41Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2100",
+      "labels": []
+    },
+    {
+      "number": 2095,
+      "title": "yral-video-upload-service migration for storj-interface.yral.com to storage-interface.prakash.yral.com",
+      "closed_at": "2026-05-19T13:43:40Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2095",
+      "labels": []
+    },
+    {
+      "number": 2094,
+      "title": "offchain migration for storj-interface.yral.com to storage-interface.prakash.yral.com",
+      "closed_at": "2026-05-19T13:35:29Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2094",
+      "labels": []
+    },
+    {
+      "number": 2032,
+      "title": "Move the storj-interface-1 hosted services to prakash-* servers. This server has a failing hard disk and we need to take it out of circulation for maintenance",
+      "closed_at": "2026-05-19T11:45:35Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2032",
+      "labels": []
+    },
+    {
+      "number": 2003,
+      "title": "Make the Storj a 1-1 mirror of Hetzner",
+      "closed_at": "2026-05-19T11:45:34Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2003",
+      "labels": []
+    },
+    {
+      "number": 2098,
+      "title": "Create video flow UI particulars",
+      "closed_at": "2026-05-19T15:52:33Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2098",
+      "labels": []
+    },
+    {
+      "number": 2097,
+      "title": "Investigate why the loading spinner shows up beside LTX",
+      "closed_at": "2026-05-19T15:52:32Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2097",
+      "labels": []
+    },
+    {
+      "number": 2096,
+      "title": "The text over here should say \"Credits used\" to clearly indicate remaining credits",
+      "closed_at": "2026-05-19T15:52:30Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2096",
+      "labels": []
+    },
+    {
+      "number": 2075,
+      "title": "When clicking \"Publish\" the loading spinner jumps right before jumping back to the center of the video",
+      "closed_at": "2026-05-19T15:52:32Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2075",
+      "labels": []
+    },
+    {
+      "number": 2072,
+      "title": "On ios, remove the \"ask to track across apps\" permission if we don't use it in any of our trackers",
+      "closed_at": "2026-05-19T15:52:33Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2072",
+      "labels": []
+    },
+    {
+      "number": 2067,
+      "title": "On the second screen where we show the fleshed out description of the ai bot during the creation flow, the text area is short and we waste space on the bottom above the \"Next button\".",
+      "closed_at": "2026-05-19T15:52:31Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2067",
+      "labels": []
+    }
+  ],
+  "issue_count": 11
+}
