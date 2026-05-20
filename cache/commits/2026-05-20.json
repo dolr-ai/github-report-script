@@ -1,0 +1,661 @@
+{
+  "date": "2026-05-20",
+  "cached_at": "2026-05-20T19:18:54.509763Z",
+  "commits": [
+    {
+      "sha": "aecb71040119c03575ea916221204e02bdfa6dd4",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-20T23:47:02+05:30",
+      "message": "Fix/minor fixes (#1165)",
+      "stats": {
+        "additions": 847,
+        "deletions": 16249,
+        "total": 17096
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e08ee0a3a4db0f89cf747f33a12e6bbf42851700",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-20T21:33:40+05:30",
+      "message": "feat: task_runner crate with SNS reinstall proposal test",
+      "stats": {
+        "additions": 52,
+        "deletions": 30,
+        "total": 82
+      },
+      "branches": [
+        "main",
+        "dependabot/cargo/candid-0.10.27"
+      ]
+    },
+    {
+      "sha": "dec2705425f20b9df5098453eb59fa7b37e7f56e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-20T21:26:42+05:30",
+      "message": "fix: correct sqlx type inference in db queries (Option<String>, non-optional COUNT)",
+      "stats": {
+        "additions": 11,
+        "deletions": 6,
+        "total": 17
+      },
+      "branches": [
+        "main",
+        "dependabot/cargo/candid-0.10.27"
+      ]
+    },
+    {
+      "sha": "8c9d8348a416ada772eb1b24accb82095df9bb06",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-20T21:14:07+05:30",
+      "message": "Refactor platform orchestrator: remove unused modules and clean up code",
+      "stats": {
+        "additions": 1218,
+        "deletions": 1205,
+        "total": 2423
+      },
+      "branches": [
+        "main",
+        "dependabot/cargo/candid-0.10.27"
+      ]
+    },
+    {
+      "sha": "95b021b3f861fbde0de1f081f215d13f9a2cba22",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-20T20:20:48+05:30",
+      "message": "refactor: simplify post_upgrade function for upgrade failure testing",
+      "stats": {
+        "additions": 5,
+        "deletions": 46,
+        "total": 51
+      },
+      "branches": [
+        "main",
+        "dependabot/cargo/candid-0.10.27"
+      ]
+    },
+    {
+      "sha": "e67e5150227421ec5afe380e7559cf7fb58601a5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-20T19:52:50+05:30",
+      "message": "debug: non-fatal stable memory restore + PO state snapshot tooling",
+      "stats": {
+        "additions": 202,
+        "deletions": 12,
+        "total": 214
+      },
+      "branches": [
+        "main",
+        "dependabot/cargo/candid-0.10.27"
+      ]
+    },
+    {
+      "sha": "c52f16837196629e94d8822f083eb62a1745992e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-20T19:12:32+05:30",
+      "message": "debug: remove update_version_from_args from post_upgrade to isolate upgrade failure",
+      "stats": {
+        "additions": 4,
+        "deletions": 49,
+        "total": 53
+      },
+      "branches": [
+        "main",
+        "dependabot/cargo/candid-0.10.27"
+      ]
+    },
+    {
+      "sha": "ebba80fd804b3e24fe2393bdd0e8a0c9027c1075",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-20T18:59:37+05:30",
+      "message": "debug: add post_upgrade instrumentation and expose via get_post_upgrade_debug query",
+      "stats": {
+        "additions": 47,
+        "deletions": 9,
+        "total": 56
+      },
+      "branches": [
+        "main",
+        "dependabot/cargo/candid-0.10.27"
+      ]
+    },
+    {
+      "sha": "233d5daec7eaff737b208e7cf378fb5e8aa6375c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-20T18:19:32+05:30",
+      "message": "fix: prevent post_upgrade panic; update release version counter to v16; update verify-backup script",
+      "stats": {
+        "additions": 69,
+        "deletions": 28,
+        "total": 97
+      },
+      "branches": [
+        "main",
+        "dependabot/cargo/candid-0.10.27"
+      ]
+    },
+    {
+      "sha": "b327b8371e489934ff372c342f77f1537444f8ca",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-20T17:08:41+05:30",
+      "message": "feat: add collect_backup_canisters function to gather backup canister IDs for bulk decommissioning",
+      "stats": {
+        "additions": 95,
+        "deletions": 2,
+        "total": 97
+      },
+      "branches": [
+        "main",
+        "dependabot/cargo/candid-0.10.27"
+      ]
+    },
+    {
+      "sha": "680a16dab1403f6695de919dc26de5299a1baafa",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-20T16:51:47+05:30",
+      "message": "feat: add backup canister verification script and enhance canister management with status tracking",
+      "stats": {
+        "additions": 191,
+        "deletions": 47,
+        "total": 238
+      },
+      "branches": [
+        "main",
+        "dependabot/cargo/candid-0.10.27"
+      ]
+    },
+    {
+      "sha": "c077f8676b1f88eea30985c09515ebe81f1823c3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-20T15:39:09+05:30",
+      "message": "feat: enhance decommissioning process with cycle recovery and reserved cycles tracking",
+      "stats": {
+        "additions": 162,
+        "deletions": 112,
+        "total": 274
+      },
+      "branches": [
+        "main",
+        "dependabot/cargo/candid-0.10.27"
+      ]
+    },
+    {
+      "sha": "d66664c2830585d6d4b3632a376453a44a8b2f74",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-20T08:24:35+05:30",
+      "message": "feat: increment version counter to 10 in release and submit proposals script",
+      "stats": {
+        "additions": 100,
+        "deletions": 76,
+        "total": 176
+      },
+      "branches": [
+        "main",
+        "dependabot/cargo/candid-0.10.27"
+      ]
+    },
+    {
+      "sha": "711752b4ab6feaa7741cf404f3e209958a61e9d6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-20T08:10:59+05:30",
+      "message": "feat: add install_individual_user_wasm function and update canister management scripts for handling ",
+      "stats": {
+        "additions": 75,
+        "deletions": 1,
+        "total": 76
+      },
+      "branches": [
+        "main",
+        "dependabot/cargo/candid-0.10.27"
+      ]
+    },
+    {
+      "sha": "dd61e26d83265bfacf946c67803ba5d39deb3059",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-20T07:57:05+05:30",
+      "message": "feat: implement decommissioning logic with idempotency tracking for canisters",
+      "stats": {
+        "additions": 166,
+        "deletions": 39,
+        "total": 205
+      },
+      "branches": [
+        "main",
+        "dependabot/cargo/candid-0.10.27"
+      ]
+    },
+    {
+      "sha": "1e03ebf0622d4e8b4885a80db46f33ed658313f4",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-20T07:05:52+05:30",
+      "message": "feat: add task to execute ad-hoc canister calls against mainnet",
+      "stats": {
+        "additions": 12,
+        "deletions": 0,
+        "total": 12
+      },
+      "branches": [
+        "main",
+        "dependabot/cargo/candid-0.10.27"
+      ]
+    },
+    {
+      "sha": "0cdcf074af1a32b14696dd2ed4d5f611a90ceaf2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-20T07:05:30+05:30",
+      "message": "feat: implement decommissioning functionality for controlled canisters and add monitoring scripts",
+      "stats": {
+        "additions": 423,
+        "deletions": 158,
+        "total": 581
+      },
+      "branches": [
+        "main",
+        "dependabot/cargo/candid-0.10.27"
+      ]
+    },
+    {
+      "sha": "66299270156d69ca3af752273530dddd76f5dac7",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-20T07:00:13+05:30",
+      "message": "feat: increment version counter to 7 in release and submit proposals script",
+      "stats": {
+        "additions": 73,
+        "deletions": 68,
+        "total": 141
+      },
+      "branches": [
+        "main",
+        "dependabot/cargo/candid-0.10.27"
+      ]
+    },
+    {
+      "sha": "a133b91e9dc807eedf7ba44a75f04fee8fcc5a99",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-20T17:32:32+05:30",
+      "message": "deploy(public-api): Day 5 cluster deploy \u2014 2 first-deploy compose fixes (uid/gid on secrets + python",
+      "stats": {
+        "additions": 134,
+        "deletions": 12,
+        "total": 146
+      },
+      "branches": [
+        "session-3/day-5-cluster-deploy-and-smoke"
+      ]
+    },
+    {
+      "sha": "4778a2d3dea6f3b75d01b9b122427e1407e127fd",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-20T15:23:35+05:30",
+      "message": "fix(public-api): Day 5 Piece A \u2014 secrets.yaml \u2194 swarm compose alignment + Phase-1 trim",
+      "stats": {
+        "additions": 144,
+        "deletions": 78,
+        "total": 222
+      },
+      "branches": [
+        "session-3/day-5-cluster-deploy-and-smoke"
+      ]
+    },
+    {
+      "sha": "30a162b53660561dc895aa4fbeee48e4a5a5b4eb",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-20T15:07:44+05:30",
+      "message": "docs(session-3): Day 5 BLOCKED \u2014 I6 pushback on missing CI/GHCR/deploy pipeline",
+      "stats": {
+        "additions": 57,
+        "deletions": 5,
+        "total": 62
+      },
+      "branches": [
+        "session-3/day-5-cluster-deploy-and-smoke"
+      ]
+    },
+    {
+      "sha": "c402729f04d6cb76493aa80bb2c1d37d63088ac6",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-20T14:49:40+05:30",
+      "message": "feat(public-api): Day 4C \u2014 orchestrator RPC + F10 idempotency dedup on send_message (#103)",
+      "stats": {
+        "additions": 1129,
+        "deletions": 124,
+        "total": 1253
+      },
+      "branches": [
+        "session-3/day-5-cluster-deploy-and-smoke",
+        "main"
+      ]
+    },
+    {
+      "sha": "6ecfcb7457c904b4f5b4199463cc86d73b89e34f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-20T14:49:11+05:30",
+      "message": "feat(public-api): Day 4B \u2014 auth as real dependency on all chat + influencer handlers (#102)",
+      "stats": {
+        "additions": 784,
+        "deletions": 478,
+        "total": 1262
+      },
+      "branches": [
+        "session-3/day-5-cluster-deploy-and-smoke",
+        "main"
+      ]
+    },
+    {
+      "sha": "e2f9b24ea09c656f3c9d1b2851c618ce847833d2",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-20T14:48:42+05:30",
+      "message": "feat(public-api): Day 4A \u2014 E9 reconciliation (flag rename + Redis JWKS cache) (#101)",
+      "stats": {
+        "additions": 643,
+        "deletions": 175,
+        "total": 818
+      },
+      "branches": [
+        "session-3/day-5-cluster-deploy-and-smoke",
+        "main"
+      ]
+    },
+    {
+      "sha": "7bde06c153c919b4b9fcfb49db41801dd50043fc",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-20T14:47:33+05:30",
+      "message": "feat(public-api): Day 3 \u2014 JWT signature-validation shadow rig per E9 (+ 9 J1-HOT tests) (#106)",
+      "stats": {
+        "additions": 1309,
+        "deletions": 9,
+        "total": 1318
+      },
+      "branches": [
+        "session-3/day-5-cluster-deploy-and-smoke",
+        "main"
+      ]
+    },
+    {
+      "sha": "801445e6fe027f8d57598f333bd441fdf9585a1b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-20T13:26:21+05:30",
+      "message": "feat(session-4): Day-4 Soul File Library \u2014 Postgres schema + 4-layer composer + GET /composed-prompt",
+      "stats": {
+        "additions": 3882,
+        "deletions": 30,
+        "total": 3912
+      },
+      "branches": [
+        "session-3/day-5-cluster-deploy-and-smoke",
+        "main"
+      ]
+    },
+    {
+      "sha": "54e4d47a3ef825ae4fdbe927f943c35bb47c730d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-20T13:23:34+05:30",
+      "message": "Session 3 / Day 2 \u2014 endpoint handlers per locked API contract + 32 contract tests (#97)",
+      "stats": {
+        "additions": 4570,
+        "deletions": 12,
+        "total": 4582
+      },
+      "branches": [
+        "session-3/day-5-cluster-deploy-and-smoke",
+        "main"
+      ]
+    },
+    {
+      "sha": "372600dbb19c43c239677c8b5066f53ecae60145",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-20T13:20:13+05:30",
+      "message": "feat(session-4): orchestrator POST /v1/turn RPC handler skeleton (JSON, NOT SSE) (#96)",
+      "stats": {
+        "additions": 3246,
+        "deletions": 21,
+        "total": 3267
+      },
+      "branches": [
+        "session-3/day-5-cluster-deploy-and-smoke",
+        "main"
+      ]
+    },
+    {
+      "sha": "9801855322667584ea502b8b46f341490728aa32",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-20T19:13:17+05:30",
+      "message": "feat(session-4): Day 6 \u2014 orchestrator-side prompt-injection + crisis + adult-content output filter (",
+      "stats": {
+        "additions": 3720,
+        "deletions": 28,
+        "total": 3748
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4961e80d5ef97b3c718e819840bad4bde36cbcdc",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-20T16:23:03+05:30",
+      "message": "ci(workflows): allow docker-push-to-ghcr to fire on workflow_dispatch too (#111)",
+      "stats": {
+        "additions": 4,
+        "deletions": 4,
+        "total": 8
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3604b3cd5e47248f3ebcf0e0d1b92593b8381d2b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-20T16:21:30+05:30",
+      "message": "ci(workflows): add workflow_dispatch trigger to all 4 service workflows (#110)",
+      "stats": {
+        "additions": 20,
+        "deletions": 0,
+        "total": 20
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "20ebe2577f13939160fdaf3cff98f7de57b03204",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-20T16:16:33+05:30",
+      "message": "feat(session-4): Day 5 \u2014 real LLM enablement (the AI actually responds) (#109)",
+      "stats": {
+        "additions": 3092,
+        "deletions": 33,
+        "total": 3125
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "51e9bbc12629d209f9d12d03982960892144ed7d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-20T15:25:40+05:30",
+      "message": "Day 5 Piece A \u2014 secrets.yaml \u2194 swarm compose alignment + Phase-1 trim (public-api) (#108)",
+      "stats": {
+        "additions": 196,
+        "deletions": 78,
+        "total": 274
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "03cdc2a618a10f7928b6c7d4f38e570a79e1c901",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-20T15:13:37+05:30",
+      "message": "ci(workflows): install per-service CI workflows at repo root (4 services) \u2014 unblocks Day-5 deploy (#",
+      "stats": {
+        "additions": 724,
+        "deletions": 0,
+        "total": 724
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f01374e48b542d9bae0888723050476ce4070235",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-05-20T11:34:43+05:30",
+      "message": "Update service summery for video upload service (#2101)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "787302fe317013f6699e5895ccc300cdb629c5df",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ai-feed-recommendation-system",
+      "timestamp": "2026-05-20T08:58:40+05:30",
+      "message": "Merge pull request #37 from dolr-ai/ansuman/chore/updating_api_desc",
+      "stats": {
+        "additions": 37,
+        "deletions": 1,
+        "total": 38
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e2b9395662e6d9f945c2d06b53f6d8a800cd1de9",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ai-feed-recommendation-system",
+      "timestamp": "2026-05-20T08:57:32+05:30",
+      "message": "chore(api): enhance internal view counts endpoint with detailed description and headers",
+      "stats": {
+        "additions": 37,
+        "deletions": 1,
+        "total": 38
+      },
+      "branches": [
+        "main",
+        "ansuman/chore/updating_api_desc"
+      ]
+    },
+    {
+      "sha": "bbb110c4868c6334f177b7dd67e39253a58c5a13",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ai-feed-recommendation-system",
+      "timestamp": "2026-05-20T10:19:58+05:30",
+      "message": "chore(api): remove unnecessary code block from view counts endpoint description",
+      "stats": {
+        "additions": 0,
+        "deletions": 6,
+        "total": 6
+      },
+      "branches": [
+        "ansuman/chore/updating_api_desc"
+      ]
+    }
+  ],
+  "commit_count": 38,
+  "issues": [
+    {
+      "number": 2091,
+      "title": "Descriptions on endpoints that require auth on how to invoke the endpoints with proper auth",
+      "closed_at": "2026-05-20T04:51:53Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2091",
+      "labels": []
+    },
+    {
+      "number": 2103,
+      "title": "VIdeo generation failing particulars",
+      "closed_at": "2026-05-20T18:17:06Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2103",
+      "labels": []
+    },
+    {
+      "number": 2102,
+      "title": "Replace the random username generator with <adverb><adjective><noun>",
+      "closed_at": "2026-05-20T18:17:05Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2102",
+      "labels": []
+    },
+    {
+      "number": 2097,
+      "title": "Fix the LTX icon",
+      "closed_at": "2026-05-20T18:17:05Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2097",
+      "labels": []
+    },
+    {
+      "number": 2076,
+      "title": "Block on video view count being delivered in a single request as part of the feed or any list of videos' metadata being returned",
+      "closed_at": "2026-05-20T18:17:06Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2076",
+      "labels": []
+    },
+    {
+      "number": 1788,
+      "title": "[Feature Request]: Add upload service endpoints to storj service.",
+      "closed_at": "2026-05-20T06:08:06Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1788",
+      "labels": [
+        "Backend Dependencies"
+      ]
+    }
+  ],
+  "issue_count": 6
+}
