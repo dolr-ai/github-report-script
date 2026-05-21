@@ -1,0 +1,391 @@
+{
+  "date": "2026-05-21",
+  "cached_at": "2026-05-21T19:13:08.856411Z",
+  "commits": [
+    {
+      "sha": "52a43c45970bbe82167fb8f531072bc966d389d8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-21T19:57:32+05:30",
+      "message": "refactor: remove KnownPrincipalType and associated struct from commons.rs",
+      "stats": {
+        "additions": 6,
+        "deletions": 23,
+        "total": 29
+      },
+      "branches": [
+        "saikatdas0790/canister-removal-round-3"
+      ]
+    },
+    {
+      "sha": "4edd0f18ebf399a42c010acf7677d1ec33e4bc7b",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-21T22:33:52+05:30",
+      "message": "Fix/minor fixes (#1166)",
+      "stats": {
+        "additions": 87,
+        "deletions": 97,
+        "total": 184
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "cf838b6cb431f50b28b30fc611a117a1fa959827",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-21T15:47:52+05:30",
+      "message": "feat(deploy): /run/secrets/* \u2192 env-var bridge for orchestrator + soul-file + influencer (Day-7 fix #",
+      "stats": {
+        "additions": 167,
+        "deletions": 0,
+        "total": 167
+      },
+      "branches": [
+        "session-4/day-7-secret-env-bridge"
+      ]
+    },
+    {
+      "sha": "73e9de40f09ec40547c40a1bb27d66ef3d34c601",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-21T13:42:17+05:30",
+      "message": "feat(deploy): add /health/{live,ready} stubs to orchestrator + soul-file + influencer (#115)",
+      "stats": {
+        "additions": 137,
+        "deletions": 0,
+        "total": 137
+      },
+      "branches": [
+        "session-4/day-7-secret-env-bridge",
+        "session-4/day-7-bundle-alembic-ini",
+        "session-1/run-soul-file-alembic-against-master",
+        "session-1/provision-soul-file-postgres-role-and-schema",
+        "session-1/fix-up-pr-119-codex-findings",
+        "main"
+      ]
+    },
+    {
+      "sha": "2893104b76d5723b46ce78d6e56c3c9915b6548b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-21T12:47:36+05:30",
+      "message": "deploy(session-4): Day-7 compose+secrets alignment for cluster deploy (3 services) (#113)",
+      "stats": {
+        "additions": 252,
+        "deletions": 145,
+        "total": 397
+      },
+      "branches": [
+        "session-4/day-7-secret-env-bridge",
+        "session-4/day-7-health-route-stubs",
+        "session-4/day-7-bundle-alembic-ini",
+        "session-1/run-soul-file-alembic-against-master",
+        "session-1/provision-soul-file-postgres-role-and-schema",
+        "session-1/fix-up-pr-119-codex-findings",
+        "main"
+      ]
+    },
+    {
+      "sha": "fa0dae225eb74ad964b0cbd78736462a47ae9aeb",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-21T13:13:14+05:30",
+      "message": "feat(deploy): add /health/{live,ready} stubs to orchestrator + soul-file + influencer",
+      "stats": {
+        "additions": 137,
+        "deletions": 0,
+        "total": 137
+      },
+      "branches": [
+        "session-4/day-7-health-route-stubs"
+      ]
+    },
+    {
+      "sha": "f85e4d867b51d01e43ddfbf7bf106987292e9657",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-21T12:47:07+05:30",
+      "message": "log(session-4): Day-7 deploy fix entry (shared-config.yaml + Sentinel)",
+      "stats": {
+        "additions": 74,
+        "deletions": 0,
+        "total": 74
+      },
+      "branches": [
+        "session-4/day-7-deploy-3-services-to-cluster"
+      ]
+    },
+    {
+      "sha": "77e5e439b712ad20d952d838c3e83ed50d0bca8d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-21T12:44:59+05:30",
+      "message": "fix(deploy): bundle shared-config.yaml in orchestrator + soul-file images; flip orchestrator to Sent",
+      "stats": {
+        "additions": 19,
+        "deletions": 0,
+        "total": 19
+      },
+      "branches": [
+        "session-4/day-7-deploy-3-services-to-cluster"
+      ]
+    },
+    {
+      "sha": "a66b09ad6e5a160d42429eb34e19667991da9060",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-21T12:30:06+05:30",
+      "message": "deploy(session-4): Day-7 compose+secrets alignment for cluster deploy (3 services)",
+      "stats": {
+        "additions": 159,
+        "deletions": 145,
+        "total": 304
+      },
+      "branches": [
+        "session-4/day-7-deploy-3-services-to-cluster"
+      ]
+    },
+    {
+      "sha": "3dfac8621b2e8f4d06a831a13c1133c499024307",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-21T16:15:58+05:30",
+      "message": "fix(deploy): bundle alembic.ini in soul-file image so one-off `alembic upgrade head` works",
+      "stats": {
+        "additions": 65,
+        "deletions": 0,
+        "total": 65
+      },
+      "branches": [
+        "session-4/day-7-bundle-alembic-ini"
+      ]
+    },
+    {
+      "sha": "b49f18087e74fb2ff87b4770620d9c50d5e1abf8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-21T16:05:04+05:30",
+      "message": "docs(session-1): record operator action \u2014 provision soul-file-library Postgres role + DB + Swarm sec",
+      "stats": {
+        "additions": 64,
+        "deletions": 0,
+        "total": 64
+      },
+      "branches": [
+        "session-4/day-7-bundle-alembic-ini",
+        "session-1/run-soul-file-alembic-against-master",
+        "session-1/fix-up-pr-119-codex-findings",
+        "main"
+      ]
+    },
+    {
+      "sha": "3ff17d7ca9da380a26c3791feb664df2c8bfbe1a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-21T15:48:42+05:30",
+      "message": "feat(deploy): /run/secrets/* \u2192 env-var bridge for orchestrator + soul-file + influencer (Day-7 fix #",
+      "stats": {
+        "additions": 167,
+        "deletions": 0,
+        "total": 167
+      },
+      "branches": [
+        "session-4/day-7-bundle-alembic-ini",
+        "session-1/run-soul-file-alembic-against-master",
+        "session-1/provision-soul-file-postgres-role-and-schema",
+        "session-1/fix-up-pr-119-codex-findings",
+        "main"
+      ]
+    },
+    {
+      "sha": "fe55f04e8c4c5f2501e12f9d11edac5f5a1ea3d2",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-21T19:24:30+05:30",
+      "message": "docs(session-1): operator action \u2014 alembic upgrade head against soul_file_library on Patroni leader",
+      "stats": {
+        "additions": 245,
+        "deletions": 3,
+        "total": 248
+      },
+      "branches": [
+        "session-1/run-soul-file-alembic-against-master"
+      ]
+    },
+    {
+      "sha": "df2a9111a7539b001431b1d2a10a232b09b455bb",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-21T16:16:40+05:30",
+      "message": "fix(deploy): bundle alembic.ini in soul-file image so one-off `alembic upgrade head` works (#118)",
+      "stats": {
+        "additions": 65,
+        "deletions": 0,
+        "total": 65
+      },
+      "branches": [
+        "session-1/run-soul-file-alembic-against-master",
+        "session-1/fix-up-pr-119-codex-findings",
+        "main"
+      ]
+    },
+    {
+      "sha": "49482f2823ccec72a35feebc9e497c2609046932",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-21T16:03:58+05:30",
+      "message": "docs(session-1): record operator action \u2014 provision soul-file-library Postgres role + DB + Swarm sec",
+      "stats": {
+        "additions": 64,
+        "deletions": 0,
+        "total": 64
+      },
+      "branches": [
+        "session-1/provision-soul-file-postgres-role-and-schema"
+      ]
+    },
+    {
+      "sha": "05bf9d980d114418d1b7f84c71ce3f6b8a40567f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-21T20:00:34+05:30",
+      "message": "fix(session-1): address Codex BLOCKERs on PR #120 \u2014 A1 violation reframing + format + branch rename",
+      "stats": {
+        "additions": 16,
+        "deletions": 26,
+        "total": 42
+      },
+      "branches": [
+        "session-1/fix-up-pr-119-codex-findings"
+      ]
+    },
+    {
+      "sha": "335050ab32855ca5d5e953f17a35fc6e620edf00",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-21T19:40:39+05:30",
+      "message": "docs(session-1): fix-up retroactive A1 + I14 correction + C6 placeholder for PR #119 LOG entry",
+      "stats": {
+        "additions": 37,
+        "deletions": 4,
+        "total": 41
+      },
+      "branches": [
+        "session-1/fix-up-pr-119-codex-findings"
+      ]
+    },
+    {
+      "sha": "50f9db1b52113cfcf4efea045d6277efb5dcd377",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-21T19:25:06+05:30",
+      "message": "docs(session-1): operator action \u2014 alembic upgrade head against soul_file_library on Patroni leader ",
+      "stats": {
+        "additions": 245,
+        "deletions": 3,
+        "total": 248
+      },
+      "branches": [
+        "session-1/fix-up-pr-119-codex-findings",
+        "main"
+      ]
+    },
+    {
+      "sha": "aa1c55a720fe1bf3545363967cdadb30c286b894",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-21T20:02:41+05:30",
+      "message": "docs(session-1): fix-up retroactive A1 + I14 correction + C6 placeholder for PR #119 LOG entry (#120",
+      "stats": {
+        "additions": 27,
+        "deletions": 4,
+        "total": 31
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6de3636573fa3768db43a3f0b5caab29d68d3d23",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-05-21T10:54:22+05:30",
+      "message": "Update status summery for offchain (#2110)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f7ba60c67fbfeac669c02b717daa48613cd3ca76",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-05-21T06:32:34+05:30",
+      "message": "feat: deregister/reinstall/reregister flow for PO and generic function approach",
+      "stats": {
+        "additions": 438,
+        "deletions": 0,
+        "total": 438
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 21,
+  "issues": [
+    {
+      "number": 2103,
+      "title": "VIdeo generation failing particulars",
+      "closed_at": "2026-05-21T17:03:56Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2103",
+      "labels": []
+    },
+    {
+      "number": 2097,
+      "title": "Fix the LTX icon",
+      "closed_at": "2026-05-21T17:03:55Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2097",
+      "labels": []
+    },
+    {
+      "number": 2068,
+      "title": "Triage these",
+      "closed_at": "2026-05-21T05:04:00Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2068",
+      "labels": []
+    },
+    {
+      "number": 2109,
+      "title": "Send a PR to service summary with offchain details - https://offchain.yral.com/swagger-ui/#/VideoGen/generate_video_with_identity",
+      "closed_at": "2026-05-21T05:24:24Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2109",
+      "labels": []
+    },
+    {
+      "number": 2047,
+      "title": "Investigate and shut down qstash usage for queues except \"ai-video-detection-backfill\"",
+      "closed_at": "2026-05-21T05:57:45Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2047",
+      "labels": []
+    }
+  ],
+  "issue_count": 5
+}
