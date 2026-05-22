@@ -1,0 +1,580 @@
+{
+  "date": "2026-05-22",
+  "cached_at": "2026-05-22T19:07:12.995534Z",
+  "commits": [
+    {
+      "sha": "7f88f836e6846dc5ed39528656bd44e6e5b9512b",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-22T12:38:20+05:30",
+      "message": "Fix: invalid digit found in string error for delete endpoint (#453)",
+      "stats": {
+        "additions": 5,
+        "deletions": 2,
+        "total": 7
+      },
+      "branches": [
+        "prakash/update-comfy-ui-client",
+        "prakash/sentry-monitoring-videogen",
+        "main"
+      ]
+    },
+    {
+      "sha": "bca00a46f56b82687287f54013b5b3ca0d6f3033",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-22T18:35:47+05:30",
+      "message": "Fix text field selection interactions",
+      "stats": {
+        "additions": 373,
+        "deletions": 112,
+        "total": 485
+      },
+      "branches": [
+        "fix/minor-fixes"
+      ]
+    },
+    {
+      "sha": "6fcd8fdabbe7c74cc239316564837d5ed9e5e239",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-22T16:50:20+05:30",
+      "message": "feat(session-5): D1 \u2014 user-memory-service schema + Alembic migration (Phase 1 conversation history)",
+      "stats": {
+        "additions": 3683,
+        "deletions": 36,
+        "total": 3719
+      },
+      "branches": [
+        "session-5/user-memory-schema-and-migration"
+      ]
+    },
+    {
+      "sha": "abf77c568e14d35f7222b1d62f2956ce7a63364a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-22T16:20:42+05:30",
+      "message": "docs(session-3): PR-C2 \u2014 retroactive LOG corrections to PR #123 (Codex BLOCKERs) (#124)",
+      "stats": {
+        "additions": 38,
+        "deletions": 0,
+        "total": 38
+      },
+      "branches": [
+        "session-5/user-memory-schema-and-migration",
+        "session-5/user-memory-rpc-endpoints",
+        "session-4/day-8-pr-b1-runturnrequest-widen-with-fallback",
+        "session-3/influencers-real-list",
+        "session-2/dep-010-template-fixture-rename",
+        "main",
+        "coordinator/scope-a2-to-mutations-per-2026-05-22",
+        "coordinator/fix-redis-sentinel-hostnames-shared-config"
+      ]
+    },
+    {
+      "sha": "6963f0f19dfd7f2953e2d710b1b089a42766fec8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-22T16:15:16+05:30",
+      "message": "fix(deploy): set ENVIRONMENT=staging on 3 Session-4 service composes \u2014 v2 dev cluster is not product",
+      "stats": {
+        "additions": 165,
+        "deletions": 4,
+        "total": 169
+      },
+      "branches": [
+        "session-5/user-memory-schema-and-migration",
+        "session-5/user-memory-rpc-endpoints",
+        "session-4/day-8-pr-b1-runturnrequest-widen-with-fallback",
+        "session-3/influencers-real-list",
+        "session-2/dep-010-template-fixture-rename",
+        "main",
+        "coordinator/scope-a2-to-mutations-per-2026-05-22",
+        "coordinator/fix-redis-sentinel-hostnames-shared-config"
+      ]
+    },
+    {
+      "sha": "6b113541886bf24789d9da10d4ca1baff48badae",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-22T15:53:43+05:30",
+      "message": "fix(public-api): compose ENVIRONMENT default production -> staging (#123)",
+      "stats": {
+        "additions": 48,
+        "deletions": 3,
+        "total": 51
+      },
+      "branches": [
+        "session-5/user-memory-schema-and-migration",
+        "session-5/user-memory-rpc-endpoints",
+        "session-4/day-8-pr-b1-runturnrequest-widen-with-fallback",
+        "session-3/pr-c-log-corrections",
+        "session-3/influencers-real-list",
+        "session-2/dep-010-template-fixture-rename",
+        "main",
+        "coordinator/scope-a2-to-mutations-per-2026-05-22",
+        "coordinator/fix-redis-sentinel-hostnames-shared-config"
+      ]
+    },
+    {
+      "sha": "9de70ad483adc17cfd2c50438a04547140543d6a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-22T10:58:27+05:30",
+      "message": "docs(coordinator): DEP-010 \u2014 template fixture bug routes to Session 2 (#121)",
+      "stats": {
+        "additions": 289,
+        "deletions": 0,
+        "total": 289
+      },
+      "branches": [
+        "session-5/user-memory-schema-and-migration",
+        "session-5/user-memory-rpc-endpoints",
+        "session-4/day-8-pr-b1-runturnrequest-widen-with-fallback",
+        "session-4/day-8-pr-a-env-gate-fix",
+        "session-3/pr-c-log-corrections",
+        "session-3/influencers-real-list",
+        "session-3/compose-env-default-staging",
+        "session-2/dep-010-template-fixture-rename",
+        "main",
+        "coordinator/scope-a2-to-mutations-per-2026-05-22",
+        "coordinator/fix-redis-sentinel-hostnames-shared-config",
+        "coordinator/fix-auto-merge-codex-gate"
+      ]
+    },
+    {
+      "sha": "3fa0c4aaa6b2e7410eb7fc16eeef6414fea0037e",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-22T10:36:49+05:30",
+      "message": "docs(session-4): Day-7 close-out \u2014 soul-file schema seeded + 3 services 3/3 Running + composed_promp",
+      "stats": {
+        "additions": 84,
+        "deletions": 1,
+        "total": 85
+      },
+      "branches": [
+        "session-5/user-memory-schema-and-migration",
+        "session-5/user-memory-rpc-endpoints",
+        "session-4/day-8-pr-b1-runturnrequest-widen-with-fallback",
+        "session-4/day-8-pr-a-env-gate-fix",
+        "session-3/pr-c-log-corrections",
+        "session-3/influencers-real-list",
+        "session-3/compose-env-default-staging",
+        "session-2/dep-010-template-fixture-rename",
+        "main",
+        "coordinator/scope-a2-to-mutations-per-2026-05-22",
+        "coordinator/fix-redis-sentinel-hostnames-shared-config",
+        "coordinator/fix-auto-merge-codex-gate"
+      ]
+    },
+    {
+      "sha": "119dd7ebfa78a3672d65940c67e40ee06dc39146",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-22T18:12:18+05:30",
+      "message": "feat(session-5): D2 \u2014 user-memory-service RPC endpoints (4 routes + migration 002)",
+      "stats": {
+        "additions": 1927,
+        "deletions": 65,
+        "total": 1992
+      },
+      "branches": [
+        "session-5/user-memory-rpc-endpoints"
+      ]
+    },
+    {
+      "sha": "a39e54c6924b56dac5b65b80bda5f5d95bda0118",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-22T17:51:21+05:30",
+      "message": "feat(session-5): D1 \u2014 user-memory-service schema + Alembic migration (Phase 1 conversation history) ",
+      "stats": {
+        "additions": 3683,
+        "deletions": 36,
+        "total": 3719
+      },
+      "branches": [
+        "session-5/user-memory-rpc-endpoints",
+        "main",
+        "coordinator/fix-redis-sentinel-hostnames-shared-config"
+      ]
+    },
+    {
+      "sha": "b507e0c39edc624745a908bdf2ef5b19f5175db0",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-22T16:52:32+05:30",
+      "message": "fix(coordinator): add Codex Review to auto-merge required-checks gate (#126)",
+      "stats": {
+        "additions": 44,
+        "deletions": 14,
+        "total": 58
+      },
+      "branches": [
+        "session-5/user-memory-rpc-endpoints",
+        "session-2/dep-010-template-fixture-rename",
+        "main",
+        "coordinator/fix-redis-sentinel-hostnames-shared-config"
+      ]
+    },
+    {
+      "sha": "0bff44595dc143f6a46ec324555b0879aed22e7d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-22T16:32:47+05:30",
+      "message": "feat(orchestrator): widen RunTurnRequest with optional influencer_id + env-var fallback (Day-8 PR-B1",
+      "stats": {
+        "additions": 205,
+        "deletions": 12,
+        "total": 217
+      },
+      "branches": [
+        "session-4/day-8-pr-b1-runturnrequest-widen-with-fallback"
+      ]
+    },
+    {
+      "sha": "04341bce9a4ad060d36a7de99ca9f7b6f788fa5b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-22T15:59:35+05:30",
+      "message": "fix(deploy): set ENVIRONMENT=staging on 3 Session-4 service composes \u2014 v2 dev cluster is not product",
+      "stats": {
+        "additions": 165,
+        "deletions": 4,
+        "total": 169
+      },
+      "branches": [
+        "session-4/day-8-pr-a-env-gate-fix"
+      ]
+    },
+    {
+      "sha": "486fbb31315c74973df5ca59df86123df0326e29",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-22T10:33:28+05:30",
+      "message": "docs(session-4): Day-7 close-out \u2014 soul-file schema seeded + 3 services 3/3 Running + composed_promp",
+      "stats": {
+        "additions": 84,
+        "deletions": 1,
+        "total": 85
+      },
+      "branches": [
+        "session-4/day-7-close-out-soul-file-seeded"
+      ]
+    },
+    {
+      "sha": "be1de205c46ef8af8b106ce5a3ef9a8de9c4a99f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-22T16:17:25+05:30",
+      "message": "fixup(session-3): PR #124 round-2 \u2014 Codex BLOCKERs 1+2 corrected",
+      "stats": {
+        "additions": 20,
+        "deletions": 19,
+        "total": 39
+      },
+      "branches": [
+        "session-3/pr-c-log-corrections"
+      ]
+    },
+    {
+      "sha": "46e335bb24e9400eb73bf81aee94f0d38342aa9d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-22T16:07:31+05:30",
+      "message": "docs(session-3): PR-C2 \u2014 retroactive LOG corrections to PR #123 (Codex BLOCKERs 1+2)",
+      "stats": {
+        "additions": 40,
+        "deletions": 3,
+        "total": 43
+      },
+      "branches": [
+        "session-3/pr-c-log-corrections"
+      ]
+    },
+    {
+      "sha": "c469a117eed5956f8181ed879e2b985c71b7bfba",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-22T17:58:12+05:30",
+      "message": "fixup(public-api): PR #130 round-2 \u2014 DEP renumber + B7 reorder + role-comments + J3 docstrings",
+      "stats": {
+        "additions": 224,
+        "deletions": 80,
+        "total": 304
+      },
+      "branches": [
+        "session-3/influencers-real-list"
+      ]
+    },
+    {
+      "sha": "7cb6c62b80cd3b459e891bae4a3ee113070539f2",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-22T17:48:32+05:30",
+      "message": "feat(public-api): PR-B \u2014 Day-8 directory-RPC wrapper for /api/v1/influencers list + by-id",
+      "stats": {
+        "additions": 1078,
+        "deletions": 64,
+        "total": 1142
+      },
+      "branches": [
+        "session-3/influencers-real-list"
+      ]
+    },
+    {
+      "sha": "6e933221228b53bb128b4a941fc95bdc3e3106b8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-22T15:58:44+05:30",
+      "message": "fixup(public-api): PR #123 round-2 \u2014 Codex BLOCKERs 1+2 corrected",
+      "stats": {
+        "additions": 9,
+        "deletions": 3,
+        "total": 12
+      },
+      "branches": [
+        "session-3/compose-env-default-staging"
+      ]
+    },
+    {
+      "sha": "4056112313d5a43087a145cbe03a02024bf6aea2",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-22T15:52:45+05:30",
+      "message": "fix(public-api): compose ENVIRONMENT default production -> staging",
+      "stats": {
+        "additions": 48,
+        "deletions": 3,
+        "total": 51
+      },
+      "branches": [
+        "session-3/compose-env-default-staging"
+      ]
+    },
+    {
+      "sha": "d98e510d0b6254a009ce1a6bfd4233b7280f9aa7",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-22T18:16:14+05:30",
+      "message": "fix(session-2): DEP-010 PR-A \u2014 rename template fixture .env.local \u2192 env.local.fixture + runtime-copy",
+      "stats": {
+        "additions": 123,
+        "deletions": 18,
+        "total": 141
+      },
+      "branches": [
+        "session-2/dep-010-template-fixture-rename"
+      ]
+    },
+    {
+      "sha": "e40acda95bea0ce34aadd0fdc7145fb9a9eb85e6",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-22T18:12:30+05:30",
+      "message": "fix(coordinator): correct redis-sentinel-{1,2,3} \u2192 -rishi-{4,5,6} in shared-config.yaml across 5 ser",
+      "stats": {
+        "additions": 18,
+        "deletions": 18,
+        "total": 36
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ebf8e77752a786fcdb6ae15af00e9328f15af55f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-22T18:06:02+05:30",
+      "message": "fix(coordinator): round-2 A2 scoping \u2014 add A14 carve-out preserving live-data-reads-need-YES per Cod",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "coordinator/scope-a2-to-mutations-per-2026-05-22"
+      ]
+    },
+    {
+      "sha": "72038eb60d867d63f1f40c6245aed5dbb2dbac4b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-22T16:51:05+05:30",
+      "message": "fix(coordinator): scope A2 to mutations only \u2014 reads have standing pre-authorization (Option C, Rish",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "coordinator/scope-a2-to-mutations-per-2026-05-22"
+      ]
+    },
+    {
+      "sha": "581c2c698b985f541896248d74e8f715ba085987",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-22T17:41:02+05:30",
+      "message": "fix(coordinator): correct redis-sentinel-{1,2,3} \u2192 -rishi-{4,5,6} in shared-config.yaml across 5 ser",
+      "stats": {
+        "additions": 18,
+        "deletions": 18,
+        "total": 36
+      },
+      "branches": [
+        "coordinator/fix-redis-sentinel-hostnames-shared-config"
+      ]
+    },
+    {
+      "sha": "51f4aee75674d9b38f44f690402ed4f1fb3ca932",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-22T16:47:48+05:30",
+      "message": "fix(coordinator): add Codex Review to auto-merge required-checks gate",
+      "stats": {
+        "additions": 44,
+        "deletions": 14,
+        "total": 58
+      },
+      "branches": [
+        "coordinator/fix-auto-merge-codex-gate"
+      ]
+    },
+    {
+      "sha": "4c5c5ed14dd33ff85747659ed64a24740bfa2fe1",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-22T10:57:03+05:30",
+      "message": "fix(coordinator): DEP-010 round 8 \u2014 clarify CI gates still apply for non-fixture work + record excep",
+      "stats": {
+        "additions": 13,
+        "deletions": 5,
+        "total": 18
+      },
+      "branches": [
+        "coordinator/dep-010-template-fixture-bug"
+      ]
+    },
+    {
+      "sha": "8f59e7944966db8068ae838c5a28d8192a0f6328",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-22T10:54:08+05:30",
+      "message": "fix(coordinator): DEP-010 round 7 \u2014 Blocks covers all 5 services with tracked .env.local + new-servi",
+      "stats": {
+        "additions": 31,
+        "deletions": 7,
+        "total": 38
+      },
+      "branches": [
+        "coordinator/dep-010-template-fixture-bug"
+      ]
+    },
+    {
+      "sha": "167efe9d23832c4bc3977bbeda732ce38c242e90",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-22T10:49:42+05:30",
+      "message": "fix(coordinator): DEP-010 round 6 \u2014 A1 deletion safety report REQUIRED (not optional vs git mv note)",
+      "stats": {
+        "additions": 13,
+        "deletions": 8,
+        "total": 21
+      },
+      "branches": [
+        "coordinator/dep-010-template-fixture-bug"
+      ]
+    },
+    {
+      "sha": "215cfbe9565ec54448ec35caf5c3f937483b8366",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-22T10:48:00+05:30",
+      "message": "fix(coordinator): DEP-010 round 5 \u2014 rephrase A2.1 reference as coordinator recommendation, not const",
+      "stats": {
+        "additions": 16,
+        "deletions": 14,
+        "total": 30
+      },
+      "branches": [
+        "coordinator/dep-010-template-fixture-bug"
+      ]
+    },
+    {
+      "sha": "cf49d49dfc7253940addfb27f30851e64d210244",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-22T10:35:34+05:30",
+      "message": "fix(coordinator): DEP-010 round 4 \u2014 add A1 typed-YES gate for .env.local renames + replace phantom A",
+      "stats": {
+        "additions": 45,
+        "deletions": 4,
+        "total": 49
+      },
+      "branches": [
+        "coordinator/dep-010-template-fixture-bug"
+      ]
+    },
+    {
+      "sha": "2ef652d09bb047a33e2e60cf7ab75a708a839735",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-22T10:28:53+05:30",
+      "message": "fix(coordinator): DEP-010 round 3 \u2014 Blocks section reframed (red CI blocks by default + exception cr",
+      "stats": {
+        "additions": 31,
+        "deletions": 12,
+        "total": 43
+      },
+      "branches": [
+        "coordinator/dep-010-template-fixture-bug"
+      ]
+    },
+    {
+      "sha": "e1dc6863c30d151f7684c18149c6b2dc90743810",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-22T09:46:23+05:30",
+      "message": "fix(coordinator): DEP-010 rewrite \u2014 address Codex BLOCKERs (D8/J5 hygiene + scope) on PR #121",
+      "stats": {
+        "additions": 119,
+        "deletions": 55,
+        "total": 174
+      },
+      "branches": [
+        "coordinator/dep-010-template-fixture-bug"
+      ]
+    },
+    {
+      "sha": "bbe8ba7f9be373ebdb266eacdf9a3693c869fed5",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-22T09:14:08+05:30",
+      "message": "docs(coordinator): DEP-010 \u2014 template fixture bug routes to Session 2 (.gitignore swallows scripts/t",
+      "stats": {
+        "additions": 126,
+        "deletions": 0,
+        "total": 126
+      },
+      "branches": [
+        "coordinator/dep-010-template-fixture-bug"
+      ]
+    }
+  ],
+  "commit_count": 34,
+  "issues": [
+    {
+      "number": 2105,
+      "title": "Delete video endpoint is failing https://offchain.yral.com/api/v2/posts Type is DELETE",
+      "closed_at": "2026-05-22T07:08:22Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2105",
+      "labels": []
+    }
+  ],
+  "issue_count": 1
+}
