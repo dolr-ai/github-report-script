@@ -1,0 +1,719 @@
+{
+  "date": "2026-05-23",
+  "cached_at": "2026-05-23T18:49:55.953462Z",
+  "commits": [
+    {
+      "sha": "2e76bfc0917d607f9a75b2d617e3938d12b0dd9d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T17:56:41+05:30",
+      "message": "feat(user-memory): PR #132 round-3 \u2014 GET /v1/conversations/{id} + migration 003 dedup indexes + Code",
+      "stats": {
+        "additions": 1078,
+        "deletions": 174,
+        "total": 1252
+      },
+      "branches": [
+        "session-5/user-memory-rpc-endpoints",
+        "session-5/etl-plan-day-9-draft"
+      ]
+    },
+    {
+      "sha": "967ceec56e0157ef334f8069320304856dee0fbc",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T16:40:35+05:30",
+      "message": "fix(session-5): PR #132 round-2 \u2014 asgi-lifespan fixes pool leak in test_client fixture",
+      "stats": {
+        "additions": 84,
+        "deletions": 44,
+        "total": 128
+      },
+      "branches": [
+        "session-5/user-memory-rpc-endpoints",
+        "session-5/etl-plan-day-9-draft"
+      ]
+    },
+    {
+      "sha": "d18c856a2ee6665fcaa723ff5d89d3a683a7f6de",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T18:52:28+05:30",
+      "message": "chore(session-5): no-op retrigger CI for PR #140 (post-DEP-renumber webhook glitch)",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "session-5/etl-plan-day-9-draft"
+      ]
+    },
+    {
+      "sha": "758b9518e9452eed564e9b420fe7f576a25be7e6",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T18:49:16+05:30",
+      "message": "chore(session-5): no-op retrigger CI for PR #140 (post-DEP-renumber)",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "session-5/etl-plan-day-9-draft"
+      ]
+    },
+    {
+      "sha": "fdd4f8f15fda3548659d11ada6f0f93f8996e104",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T18:25:49+05:30",
+      "message": "fix(session-5): rename DEP-014 \u2192 DEP-015 (collision with Session 2 PR #135)",
+      "stats": {
+        "additions": 13,
+        "deletions": 13,
+        "total": 26
+      },
+      "branches": [
+        "session-5/etl-plan-day-9-draft"
+      ]
+    },
+    {
+      "sha": "e22c2ed2e3ddfe34431e41eb8ab0330de6318826",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T18:18:02+05:30",
+      "message": "feat(session-5): D3 \u2014 ETL migration plan + script + DEP-014 + Codex test tightening",
+      "stats": {
+        "additions": 1306,
+        "deletions": 82,
+        "total": 1388
+      },
+      "branches": [
+        "session-5/etl-plan-day-9-draft"
+      ]
+    },
+    {
+      "sha": "249ea9b06ff858f38b5b03f6bba49297e4a1bdd2",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T18:44:59+05:30",
+      "message": "fixup(orchestrator): PR #136 round-4 \u2014 regenerate .env.example from secrets.yaml per D8 drift discip",
+      "stats": {
+        "additions": 97,
+        "deletions": 60,
+        "total": 157
+      },
+      "branches": [
+        "session-4/redis-client-side-auth-wiring-orchestrator"
+      ]
+    },
+    {
+      "sha": "63330c073ee5d2f835c01fadf7b4c335fc932fbd",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T18:21:53+05:30",
+      "message": "fixup(orchestrator): PR #136 round-3 \u2014 correct misleading \"ALTER ROLE on Patroni\" rotation note in s",
+      "stats": {
+        "additions": 52,
+        "deletions": 3,
+        "total": 55
+      },
+      "branches": [
+        "session-4/redis-client-side-auth-wiring-orchestrator"
+      ]
+    },
+    {
+      "sha": "e3557f4ae543dad7d17790c95aa6236ac162498b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T18:04:21+05:30",
+      "message": "fixup(orchestrator): PR #136 round-2 \u2014 rename `kwarg` / `kwargs` shorthand \u2192 \"keyword argument(s)\" p",
+      "stats": {
+        "additions": 95,
+        "deletions": 32,
+        "total": 127
+      },
+      "branches": [
+        "session-4/redis-client-side-auth-wiring-orchestrator"
+      ]
+    },
+    {
+      "sha": "013c89414bcc52185727c5920cc664c87ce0420a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T17:37:46+05:30",
+      "message": "fix(orchestrator): wire REDIS_PASSWORD AUTH credential on Sentinel-discovered Redis primary connecti",
+      "stats": {
+        "additions": 330,
+        "deletions": 2,
+        "total": 332
+      },
+      "branches": [
+        "session-4/redis-client-side-auth-wiring-orchestrator"
+      ]
+    },
+    {
+      "sha": "840faebfd9af4c8d28b114bc3b83e0fe547a5cd9",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T17:09:34+05:30",
+      "message": "feat(orchestrator): widen RunTurnRequest with optional influencer_id + env-var fallback (Day-8 PR-B1",
+      "stats": {
+        "additions": 402,
+        "deletions": 12,
+        "total": 414
+      },
+      "branches": [
+        "session-4/redis-client-side-auth-wiring-orchestrator",
+        "session-4/day-8-pr-d1-influencer-directory-service-build",
+        "session-3/redis-client-side-auth-wiring-public-api",
+        "session-3/per-request-influencer-id-forwarding",
+        "main",
+        "coordinator/template-spawn-smoke-workflow-and-auto-merge-gate",
+        "coordinator/redis-client-side-auth-wiring",
+        "coordinator/cluster-secrets-manifest-redis-consumers"
+      ]
+    },
+    {
+      "sha": "322b24aa4e4d4f35e0652ed7624ed269a3becf27",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T16:34:55+05:30",
+      "message": "fix(session-2): DEP-010 PR-A \u2014 rename template fixture .env.local \u2192 env.local.fixture (#133)",
+      "stats": {
+        "additions": 205,
+        "deletions": 18,
+        "total": 223
+      },
+      "branches": [
+        "session-4/redis-client-side-auth-wiring-orchestrator",
+        "session-4/day-8-pr-d1-influencer-directory-service-build",
+        "session-3/redis-client-side-auth-wiring-public-api",
+        "session-3/per-request-influencer-id-forwarding",
+        "session-2/template-spawn-smoke-ci-gate",
+        "main",
+        "coordinator/template-spawn-smoke-workflow-and-auto-merge-gate",
+        "coordinator/redis-client-side-auth-wiring",
+        "coordinator/cluster-secrets-manifest-redis-consumers"
+      ]
+    },
+    {
+      "sha": "95f685302b34c1f9c928f843f0ac575dafb988fa",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T16:34:47+05:30",
+      "message": "fix(coordinator): scope A2 to mutations only \u2014 reads have standing pre-auth (Rishi 2026-05-22) (#128",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "session-4/redis-client-side-auth-wiring-orchestrator",
+        "session-4/day-8-pr-d1-influencer-directory-service-build",
+        "session-3/redis-client-side-auth-wiring-public-api",
+        "session-3/per-request-influencer-id-forwarding",
+        "session-2/template-spawn-smoke-ci-gate",
+        "main",
+        "coordinator/template-spawn-smoke-workflow-and-auto-merge-gate",
+        "coordinator/redis-client-side-auth-wiring",
+        "coordinator/cluster-secrets-manifest-redis-consumers"
+      ]
+    },
+    {
+      "sha": "62433c7861797a4b87ccb05b0378c1f7177b42d7",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T16:32:54+05:30",
+      "message": "feat(public-api): PR-B \u2014 Day-8 directory-RPC wrapper for /api/v1/influencers list + by-id (DRAFT \u2014 o",
+      "stats": {
+        "additions": 1220,
+        "deletions": 64,
+        "total": 1284
+      },
+      "branches": [
+        "session-4/redis-client-side-auth-wiring-orchestrator",
+        "session-4/day-8-pr-d1-influencer-directory-service-build",
+        "session-3/redis-client-side-auth-wiring-public-api",
+        "session-3/per-request-influencer-id-forwarding",
+        "session-2/template-spawn-smoke-ci-gate",
+        "main",
+        "coordinator/template-spawn-smoke-workflow-and-auto-merge-gate",
+        "coordinator/redis-client-side-auth-wiring",
+        "coordinator/cluster-secrets-manifest-redis-consumers"
+      ]
+    },
+    {
+      "sha": "b36f1cace6dae620d63eb4dd1ec498e0b3b74141",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T18:47:22+05:30",
+      "message": "chore(session-4): PR-D1 Chunk A \u2014 pause-for-fresh-session marker + Codex workflow-401 retrigger",
+      "stats": {
+        "additions": 45,
+        "deletions": 1,
+        "total": 46
+      },
+      "branches": [
+        "session-4/day-8-pr-d1-influencer-directory-service-build"
+      ]
+    },
+    {
+      "sha": "bb23704e8d042e6e3f0f5ef1ef3da1336544e04b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T18:31:32+05:30",
+      "message": "feat(influencer-directory): Day-8 PR-D1 Chunk A \u2014 schema + Alembic + asyncpg pool + Pydantic model +",
+      "stats": {
+        "additions": 1092,
+        "deletions": 0,
+        "total": 1092
+      },
+      "branches": [
+        "session-4/day-8-pr-d1-influencer-directory-service-build"
+      ]
+    },
+    {
+      "sha": "fffeadcb178532158d797901fafadf181d1fac27",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T18:06:57+05:30",
+      "message": "feat(session-5): D2 \u2014 user-memory-service RPC endpoints (4 routes + migration 002) (#132)",
+      "stats": {
+        "additions": 2902,
+        "deletions": 96,
+        "total": 2998
+      },
+      "branches": [
+        "session-4/day-8-pr-d1-influencer-directory-service-build",
+        "main",
+        "coordinator/template-spawn-smoke-workflow-and-auto-merge-gate"
+      ]
+    },
+    {
+      "sha": "a989a609b173c9714aa9670acacca72268be2177",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T16:47:12+05:30",
+      "message": "fixup(orchestrator): PR-B1 round-2 \u2014 empty-string influencer_id validation defense (closes Codex rou",
+      "stats": {
+        "additions": 207,
+        "deletions": 10,
+        "total": 217
+      },
+      "branches": [
+        "session-4/day-8-pr-b1-runturnrequest-widen-with-fallback"
+      ]
+    },
+    {
+      "sha": "25c431060daab9d5da3a9a75f70cb3bd86382e60",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T18:54:01+05:30",
+      "message": "fixup(public-api): PR #137 round-5 \u2014 preserve REDIS_URL local-dev default in .env.example (Codex CON",
+      "stats": {
+        "additions": 36,
+        "deletions": 1,
+        "total": 37
+      },
+      "branches": [
+        "session-3/redis-client-side-auth-wiring-public-api"
+      ]
+    },
+    {
+      "sha": "cbc24a9e03535584ecad367b0c9e9c422eb92224",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T18:44:27+05:30",
+      "message": "fixup(public-api): PR #137 round-4 \u2014 regen .env.example from secrets.yaml (Codex BLOCKER D8 drift)",
+      "stats": {
+        "additions": 84,
+        "deletions": 59,
+        "total": 143
+      },
+      "branches": [
+        "session-3/redis-client-side-auth-wiring-public-api"
+      ]
+    },
+    {
+      "sha": "9c6c1d6e14b91fa2401ac18dbf06fbae1ea103df",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T18:24:14+05:30",
+      "message": "fixup(public-api): PR #137 round-3 \u2014 Codex BLOCKER scrub of B2-disallowed \"keyword argument\" abbrevi",
+      "stats": {
+        "additions": 34,
+        "deletions": 23,
+        "total": 57
+      },
+      "branches": [
+        "session-3/redis-client-side-auth-wiring-public-api"
+      ]
+    },
+    {
+      "sha": "77674e0eb5d3fc648cfb632129dd141433c6fc61",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T18:03:35+05:30",
+      "message": "fixup(public-api): PR #137 round-2 \u2014 Codex CONCERN (test-isolation leak) + defensive B2 naming scrub",
+      "stats": {
+        "additions": 93,
+        "deletions": 53,
+        "total": 146
+      },
+      "branches": [
+        "session-3/redis-client-side-auth-wiring-public-api"
+      ]
+    },
+    {
+      "sha": "62491e04a9de0f24d45e6191f315e4e18b7a16cb",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T17:38:43+05:30",
+      "message": "fix(public-api): wire REDIS_PASSWORD on both Redis paths (single-URL from_url + Sentinel master_for)",
+      "stats": {
+        "additions": 324,
+        "deletions": 2,
+        "total": 326
+      },
+      "branches": [
+        "session-3/redis-client-side-auth-wiring-public-api"
+      ]
+    },
+    {
+      "sha": "d0cb8962d5d8ddd3d31b70ac2402a65f6af2ac70",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T21:31:53+05:30",
+      "message": "fixup(public-api): PR #141 round-4 LOG entry (companion to ef242df)",
+      "stats": {
+        "additions": 11,
+        "deletions": 0,
+        "total": 11
+      },
+      "branches": [
+        "session-3/per-request-influencer-id-forwarding"
+      ]
+    },
+    {
+      "sha": "ef242df76e34c85307e2bce065164e9f7ed2d522",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T18:55:20+05:30",
+      "message": "fixup(public-api): PR #141 round-4 \u2014 B7 import role-comments on user_memory_client.py (+ defensive d",
+      "stats": {
+        "additions": 20,
+        "deletions": 0,
+        "total": 20
+      },
+      "branches": [
+        "session-3/per-request-influencer-id-forwarding"
+      ]
+    },
+    {
+      "sha": "60744f338fa279d001f1db5792ba9b4039b15bb8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T18:46:57+05:30",
+      "message": "fixup(public-api): PR #141 round-3 \u2014 type validation on derived ai_influencer_id (Codex round-2 CONC",
+      "stats": {
+        "additions": 101,
+        "deletions": 0,
+        "total": 101
+      },
+      "branches": [
+        "session-3/per-request-influencer-id-forwarding"
+      ]
+    },
+    {
+      "sha": "f6dea3e88fba545f9e4f0201e2802dd4bfe77c7b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T18:26:50+05:30",
+      "message": "fixup(public-api): PR #141 round-2 \u2014 defensive B2 scrub (preemptive, matching PR #137 round-3 lesson",
+      "stats": {
+        "additions": 5,
+        "deletions": 5,
+        "total": 10
+      },
+      "branches": [
+        "session-3/per-request-influencer-id-forwarding"
+      ]
+    },
+    {
+      "sha": "604935288cf8eb53d2784d502f17253254d3187d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T18:17:32+05:30",
+      "message": "feat(public-api): PR-B2 \u2014 per-request influencer_id forwarding with trust-boundary user-memory deriv",
+      "stats": {
+        "additions": 886,
+        "deletions": 26,
+        "total": 912
+      },
+      "branches": [
+        "session-3/per-request-influencer-id-forwarding"
+      ]
+    },
+    {
+      "sha": "02d5736592463a1497161735497e5f269ec63036",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-22T17:58:12+05:30",
+      "message": "fixup(public-api): PR #130 round-2 \u2014 DEP renumber + B7 reorder + role-comments + J3 docstrings",
+      "stats": {
+        "additions": 223,
+        "deletions": 79,
+        "total": 302
+      },
+      "branches": [
+        "session-3/influencers-real-list"
+      ]
+    },
+    {
+      "sha": "8348c8a14a891fd71781c3ad1e0005ae5a7859a7",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-22T17:48:32+05:30",
+      "message": "feat(public-api): PR-B \u2014 Day-8 directory-RPC wrapper for /api/v1/influencers list + by-id",
+      "stats": {
+        "additions": 1076,
+        "deletions": 64,
+        "total": 1140
+      },
+      "branches": [
+        "session-3/influencers-real-list"
+      ]
+    },
+    {
+      "sha": "6be6a930024b9eee5aad3673d2d975f77a3e551e",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T18:46:20+05:30",
+      "message": "fix(session-2): PR #135 round-5 \u2014 tighten assertion-3 grep per Codex CONCERN (comment/echo false-pos",
+      "stats": {
+        "additions": 118,
+        "deletions": 7,
+        "total": 125
+      },
+      "branches": [
+        "session-2/template-spawn-smoke-ci-gate"
+      ]
+    },
+    {
+      "sha": "2e31fbf1c344610d5e5da3dc7bc9a1d067f52f96",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T18:25:33+05:30",
+      "message": "fix(session-2): PR #135 round-4 \u2014 `git check-ignore --no-index` per Codex BLOCKER + regression-class",
+      "stats": {
+        "additions": 316,
+        "deletions": 15,
+        "total": 331
+      },
+      "branches": [
+        "session-2/template-spawn-smoke-ci-gate"
+      ]
+    },
+    {
+      "sha": "2e26f0c87b20d5fbd25c807a14c0e0d074ba7d3c",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T18:08:44+05:30",
+      "message": "fix(session-2): PR #135 round-3 \u2014 cwd-independence per Codex CONCERN (Option a)",
+      "stats": {
+        "additions": 85,
+        "deletions": 4,
+        "total": 89
+      },
+      "branches": [
+        "session-2/template-spawn-smoke-ci-gate"
+      ]
+    },
+    {
+      "sha": "bd538b5ca8a1c9acd6401a440ee8e63eacb542e1",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T17:56:07+05:30",
+      "message": "fix(session-2): PR #135 round-2 \u2014 scope-split (revert .github/workflows/** edits) + dir\u2192directory re",
+      "stats": {
+        "additions": 143,
+        "deletions": 222,
+        "total": 365
+      },
+      "branches": [
+        "session-2/template-spawn-smoke-ci-gate"
+      ]
+    },
+    {
+      "sha": "24416572977edbc6aec0386fe6a8d4f7ab927939",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T17:24:00+05:30",
+      "message": "feat(session-2): template spawn-smoke CI gate (D1) + new-service.sh --target-dir + DEP-014",
+      "stats": {
+        "additions": 865,
+        "deletions": 34,
+        "total": 899
+      },
+      "branches": [
+        "session-2/template-spawn-smoke-ci-gate"
+      ]
+    },
+    {
+      "sha": "77d696266a22cab32b532265243fae28101152b4",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T16:30:00+05:30",
+      "message": "fix(session-2): DEP-010 PR-A round-2 \u2014 B1/B2 var renames + B7 line-level role comments",
+      "stats": {
+        "additions": 91,
+        "deletions": 9,
+        "total": 100
+      },
+      "branches": [
+        "session-2/dep-010-template-fixture-rename"
+      ]
+    },
+    {
+      "sha": "cf295072f6958560d8e59f1cbd4c0cf8b3aee317",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T18:51:07+05:30",
+      "message": "fix(orchestrator): wire REDIS_PASSWORD AUTH credential on Sentinel-discovered Redis primary connecti",
+      "stats": {
+        "additions": 539,
+        "deletions": 62,
+        "total": 601
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6789a93bb9328341ce5bbb19f544cae8922c0b49",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T18:46:36+05:30",
+      "message": "fix(coordinator): cluster manifest declares Redis password's full consumer set + rotation runbook + ",
+      "stats": {
+        "additions": 189,
+        "deletions": 7,
+        "total": 196
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8b85ef3d00e9b16b4979c0169c78a8fddc717089",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T18:13:59+05:30",
+      "message": "feat(coordinator): template spawn-smoke CI gate workflow + conditional auto-merge gate (sibling to S",
+      "stats": {
+        "additions": 168,
+        "deletions": 0,
+        "total": 168
+      },
+      "branches": [
+        "coordinator/template-spawn-smoke-workflow-and-auto-merge-gate"
+      ]
+    },
+    {
+      "sha": "73b7a5d2d5b27875bbf6705a8ae4f32387116277",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T16:28:23+05:30",
+      "message": "fix(coordinator): round-3 A2 \u2014 add secrets / credentials / tokens carve-out + structure-first-probe ",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "coordinator/scope-a2-to-mutations-per-2026-05-22"
+      ]
+    },
+    {
+      "sha": "37d764f118dd8232c1e89737788bca95322097bc",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T17:23:55+05:30",
+      "message": "fix(coordinator): wire REDIS_PASSWORD client-side across orchestrator + public-api (cluster smoke un",
+      "stats": {
+        "additions": 282,
+        "deletions": 0,
+        "total": 282
+      },
+      "branches": [
+        "coordinator/redis-client-side-auth-wiring"
+      ]
+    },
+    {
+      "sha": "5e7abe523dd48a2696145d075b25824a64397233",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T18:44:16+05:30",
+      "message": "fix(coordinator): round-4 \u2014 correct 4-way naming map to show actual REDIS_PRIMARY_PASSWORD entry nam",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "coordinator/cluster-secrets-manifest-redis-consumers"
+      ]
+    },
+    {
+      "sha": "7a9f933b588e4cde014c8b27ff1e706dc2685026",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T18:19:02+05:30",
+      "message": "fix(coordinator): round-3 \u2014 add A1 hard-stop gate to docker secret rm step in Redis rotation runbook",
+      "stats": {
+        "additions": 49,
+        "deletions": 1,
+        "total": 50
+      },
+      "branches": [
+        "coordinator/cluster-secrets-manifest-redis-consumers"
+      ]
+    },
+    {
+      "sha": "78800985c6838f947c8fa0efb81c4af60c7c1be8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T18:04:09+05:30",
+      "message": "fix(coordinator): round-2 \u2014 expand Redis rotation runbook to cover HA components (primary + replica ",
+      "stats": {
+        "additions": 106,
+        "deletions": 17,
+        "total": 123
+      },
+      "branches": [
+        "coordinator/cluster-secrets-manifest-redis-consumers"
+      ]
+    },
+    {
+      "sha": "21f60760f7889126777ff24434d605f2e50d4f78",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T17:53:02+05:30",
+      "message": "fix(coordinator): cluster manifest declares Redis password's full consumer set + rotation runbook + ",
+      "stats": {
+        "additions": 52,
+        "deletions": 7,
+        "total": 59
+      },
+      "branches": [
+        "coordinator/cluster-secrets-manifest-redis-consumers"
+      ]
+    }
+  ],
+  "commit_count": 45,
+  "issues": [],
+  "issue_count": 0
+}
