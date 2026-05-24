@@ -1,0 +1,1010 @@
+{
+  "date": "2026-05-24",
+  "cached_at": "2026-05-24T18:52:54.767446Z",
+  "commits": [
+    {
+      "sha": "699966fb4638151286940dfebf2fb5938b6976f8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/saikat-api",
+      "timestamp": "2026-05-24T23:38:08+05:30",
+      "message": "Initialize project with Cargo configuration, add .gitignore, and implement basic test",
+      "stats": {
+        "additions": 16,
+        "deletions": 1,
+        "total": 17
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4d5175c622c1f2d771bb5344d2f5395375e282fc",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/saikat-api",
+      "timestamp": "2026-05-24T19:45:20+05:30",
+      "message": "Add initial test module and README file",
+      "stats": {
+        "additions": 9,
+        "deletions": 0,
+        "total": 9
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9a01cd32a6c5615d52269a629a04c3cf5771874d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/saikat-api",
+      "timestamp": "2026-05-24T19:20:21+05:30",
+      "message": "Initial commit",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "fe684bbe2580e8b874b5387258c2f1186c505641",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-05-24T23:21:09+05:30",
+      "message": "Refactor SSH key handling in Ansible playbooks and scripts",
+      "stats": {
+        "additions": 525,
+        "deletions": 514,
+        "total": 1039
+      },
+      "branches": [
+        "renovate/vpa-4.x",
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "ac47e9b231dcbfa6b47e1b8f4f2e066755527799",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-05-24T23:21:02+05:30",
+      "message": "feat(submodule): update saikat-api submodule URL to use HTTPS",
+      "stats": {
+        "additions": 4,
+        "deletions": 0,
+        "total": 4
+      },
+      "branches": [
+        "renovate/vpa-4.x",
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "8aa837b9ae208e8ed5750d3bdd0c3c429cde5c37",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-24T23:21:25+05:30",
+      "message": "refactor: remove yral-common references and enhance linting and code coverage processes",
+      "stats": {
+        "additions": 8,
+        "deletions": 1,
+        "total": 9
+      },
+      "branches": [
+        "saikatdas0790/canister-removal-round-3"
+      ]
+    },
+    {
+      "sha": "9190196d75fd70cf7fa288cf94e01b3aed1f21b7",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T13:12:15+05:30",
+      "message": "chore(session-5): LOG entry \u2014 PR #140 \u2192 PR #144 webhook-glitch recreation (I11)",
+      "stats": {
+        "additions": 26,
+        "deletions": 0,
+        "total": 26
+      },
+      "branches": [
+        "session-5/etl-plan-day-9-draft",
+        "session-5/etl-day-9-plan-and-script"
+      ]
+    },
+    {
+      "sha": "2fab26d467c6b367892e310c7d521d9aa45fb721",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T12:27:07+05:30",
+      "message": "chore(session-5): no-op retrigger CI for PR #140 (post-DEP-renumber webhook glitch)",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "session-5/etl-plan-day-9-draft",
+        "session-5/etl-day-9-plan-and-script"
+      ]
+    },
+    {
+      "sha": "ef76f0b0be5151cf2be5e295eda314fcf3b5f3a2",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T19:39:53+05:30",
+      "message": "fix(session-5): PR#147 round-5 \u2014 cross-tenant cursor security + ETL keyset+COPY rewrite",
+      "stats": {
+        "additions": 441,
+        "deletions": 225,
+        "total": 666
+      },
+      "branches": [
+        "session-5/d3-etl-migration"
+      ]
+    },
+    {
+      "sha": "73be50404cb7f36ae32532013edb0544f2e69fcc",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T19:17:54+05:30",
+      "message": "feat(session-5): B7 sweep on ETL script + 19-test ETL unit suite (Codex round-3)",
+      "stats": {
+        "additions": 559,
+        "deletions": 10,
+        "total": 569
+      },
+      "branches": [
+        "session-5/d3-etl-migration"
+      ]
+    },
+    {
+      "sha": "14becfc1fb72916e7e107569a1411fb129b1d4d4",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T17:57:34+05:30",
+      "message": "fix(session-5): sort late-batch ids by uuid.UUID() to fix flaky cursor test (Codex round-2)",
+      "stats": {
+        "additions": 12,
+        "deletions": 6,
+        "total": 18
+      },
+      "branches": [
+        "session-5/d3-etl-migration"
+      ]
+    },
+    {
+      "sha": "a36eafb7337e817da74120ceaaa851d4db72642c",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T17:32:19+05:30",
+      "message": "fix(session-5): compound (created_at, id) cursor + pin exact before= assertion (Codex round-1)",
+      "stats": {
+        "additions": 40,
+        "deletions": 49,
+        "total": 89
+      },
+      "branches": [
+        "session-5/d3-etl-migration"
+      ]
+    },
+    {
+      "sha": "4bca5de704cad770e74b7ca67e49f56a899e132f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T13:12:15+05:30",
+      "message": "chore(session-5): LOG entry \u2014 PR #140 \u2192 PR #144 webhook-glitch recreation (I11)",
+      "stats": {
+        "additions": 23,
+        "deletions": 1,
+        "total": 24
+      },
+      "branches": [
+        "session-5/d3-etl-migration"
+      ]
+    },
+    {
+      "sha": "e790102e9ceccec2c35e0db7a0a35b49c7c6d748",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T18:18:02+05:30",
+      "message": "feat(session-5): D3 \u2014 ETL migration plan + script + DEP-014 + Codex test tightening",
+      "stats": {
+        "additions": 1306,
+        "deletions": 82,
+        "total": 1388
+      },
+      "branches": [
+        "session-5/d3-etl-migration"
+      ]
+    },
+    {
+      "sha": "862732fff669529228d2ba2a5e3d32048853cb49",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T13:26:09+05:30",
+      "message": "feat(coordinator): template spawn-smoke CI gate workflow + conditional auto-merge gate (sibling to S",
+      "stats": {
+        "additions": 168,
+        "deletions": 0,
+        "total": 168
+      },
+      "branches": [
+        "session-5/d3-etl-migration",
+        "session-4/orchestrator-secrets-openrouter-mirror-dep-017",
+        "session-4/influencer-directory-data-layer",
+        "session-2/template-skeleton-expansion-dep-014",
+        "session-1/openrouter-api-key-cluster-manifest-and-dep-016-and-dep-017",
+        "main",
+        "coordinator/phase-1-openrouter-entry-plus-dep-reservation-plus-redis-acl-action-item",
+        "coordinator/lint-scope-workflow-allow-bootstrap-scripts"
+      ]
+    },
+    {
+      "sha": "7ed340f999767a2a063b70d3b61a3c862fa41a09",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T13:26:04+05:30",
+      "message": "feat(session-2): template spawn-smoke CI gate (D1) + new-service.sh --target-dir + DEP-014 (#135)",
+      "stats": {
+        "additions": 1667,
+        "deletions": 38,
+        "total": 1705
+      },
+      "branches": [
+        "session-5/d3-etl-migration",
+        "session-4/orchestrator-secrets-openrouter-mirror-dep-017",
+        "session-4/influencer-directory-data-layer",
+        "session-2/template-skeleton-expansion-dep-014",
+        "session-1/openrouter-api-key-cluster-manifest-and-dep-016-and-dep-017",
+        "main",
+        "coordinator/phase-1-openrouter-entry-plus-dep-reservation-plus-redis-acl-action-item",
+        "coordinator/lint-scope-workflow-allow-bootstrap-scripts"
+      ]
+    },
+    {
+      "sha": "4ea982c55204d6ff48140677db871c70d8e18ca9",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T19:28:06+05:30",
+      "message": "docs(session-4): drop incorrect \"auto-merge eligible per I14\" claim from PR #152 STATE (Codex round-",
+      "stats": {
+        "additions": 32,
+        "deletions": 2,
+        "total": 34
+      },
+      "branches": [
+        "session-4/orchestrator-secrets-openrouter-mirror-dep-017"
+      ]
+    },
+    {
+      "sha": "ff0c2d5ab6ce217087f938ef01c68bd5aadb461c",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T19:21:13+05:30",
+      "message": "feat(orchestrator/secrets): add OPENROUTER_API_KEY manifest entry (DEP-017 unblock)",
+      "stats": {
+        "additions": 98,
+        "deletions": 0,
+        "total": 98
+      },
+      "branches": [
+        "session-4/orchestrator-secrets-openrouter-mirror-dep-017"
+      ]
+    },
+    {
+      "sha": "640906027ac5af07b08ba4d0ebd2ac70b0ef7e4d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T19:35:36+05:30",
+      "message": "fixup(influencer-directory): PR-D1 Chunk A round-6 \u2014 downgrade() raises IrreversibleMigrationError f",
+      "stats": {
+        "additions": 246,
+        "deletions": 85,
+        "total": 331
+      },
+      "branches": [
+        "session-4/influencer-directory-data-layer"
+      ]
+    },
+    {
+      "sha": "497d25fcf40a2fa4d938f948c9963506fc10c6e3",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T19:11:23+05:30",
+      "message": "fixup(influencer-directory): PR-D1 Chunk A round-5 \u2014 close 3 BLOCKERs (A4/A8 actual columns + D8 fix",
+      "stats": {
+        "additions": 670,
+        "deletions": 140,
+        "total": 810
+      },
+      "branches": [
+        "session-4/influencer-directory-data-layer"
+      ]
+    },
+    {
+      "sha": "575945357d31696c1964e84ca5f51a2f76f40451",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T18:21:22+05:30",
+      "message": "fixup(influencer-directory): PR-D1 Chunk A round-4 \u2014 close 3 new BLOCKERs (A1 forward-only + A4/A8 a",
+      "stats": {
+        "additions": 272,
+        "deletions": 126,
+        "total": 398
+      },
+      "branches": [
+        "session-4/influencer-directory-data-layer"
+      ]
+    },
+    {
+      "sha": "99f0fd3af50dc04f9f527fff224aa95a2b3b724d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T18:04:11+05:30",
+      "message": "fixup(influencer-directory): PR-D1 Chunk A round-3 \u2014 close 4 BLOCKERs + 1 CONCERN from post-rebase C",
+      "stats": {
+        "additions": 171,
+        "deletions": 80,
+        "total": 251
+      },
+      "branches": [
+        "session-4/influencer-directory-data-layer"
+      ]
+    },
+    {
+      "sha": "6883e72b9faa43ae4c31093cf0bcd4dc86ae3329",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T16:57:31+05:30",
+      "message": "chore(session-4): empty commit \u2014 webhook retrigger for PR #142 round-2 (workflows stuck since 2026-0",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "session-4/influencer-directory-data-layer"
+      ]
+    },
+    {
+      "sha": "2323a8f854c4d5b3faa61a54fed9fd67a913544c",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T12:54:44+05:30",
+      "message": "fixup(influencer-directory): PR-D1 Chunk A round-2 \u2014 close 6 Codex BLOCKERs + 2 CONCERNs + architect",
+      "stats": {
+        "additions": 1538,
+        "deletions": 107,
+        "total": 1645
+      },
+      "branches": [
+        "session-4/influencer-directory-data-layer"
+      ]
+    },
+    {
+      "sha": "0f24f37652c1855f318e8fa5db96fec0b4f9d0d0",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T18:47:22+05:30",
+      "message": "chore(session-4): PR-D1 Chunk A \u2014 pause-for-fresh-session marker + Codex workflow-401 retrigger",
+      "stats": {
+        "additions": 43,
+        "deletions": 3,
+        "total": 46
+      },
+      "branches": [
+        "session-4/influencer-directory-data-layer"
+      ]
+    },
+    {
+      "sha": "1fb28542fa7c21df1e37dcf39fb9c4101c95afa8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-23T18:31:32+05:30",
+      "message": "feat(influencer-directory): Day-8 PR-D1 Chunk A \u2014 schema + Alembic + asyncpg pool + Pydantic model +",
+      "stats": {
+        "additions": 1090,
+        "deletions": 1,
+        "total": 1091
+      },
+      "branches": [
+        "session-4/influencer-directory-data-layer"
+      ]
+    },
+    {
+      "sha": "2da98bdc2bf5b4b70de576f5f2c32e7e6fb31c2e",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T16:57:31+05:30",
+      "message": "chore(session-4): empty commit \u2014 webhook retrigger for PR #142 round-2 (workflows stuck since 2026-0",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "session-4/day-8-pr-d1-influencer-directory-service-build"
+      ]
+    },
+    {
+      "sha": "2eb36337f48efa96ac505dab7e00c3c8e7884f8b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T12:54:44+05:30",
+      "message": "fixup(influencer-directory): PR-D1 Chunk A round-2 \u2014 close 6 Codex BLOCKERs + 2 CONCERNs + architect",
+      "stats": {
+        "additions": 1538,
+        "deletions": 107,
+        "total": 1645
+      },
+      "branches": [
+        "session-4/day-8-pr-d1-influencer-directory-service-build"
+      ]
+    },
+    {
+      "sha": "56e2a90ef4f98e0bab9c321be0efc5c37a1c3401",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T19:26:44+05:30",
+      "message": "fixup(public-api): PR #137 round-11 \u2014 Codex round-9 verdict (BLOCKER 1 B2 scrub + BLOCKER 3 feature ",
+      "stats": {
+        "additions": 250,
+        "deletions": 126,
+        "total": 376
+      },
+      "branches": [
+        "session-3/redis-client-side-auth-wiring-public-api"
+      ]
+    },
+    {
+      "sha": "7682cff998f8617776b11c66f40072dc64971eae",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T19:13:41+05:30",
+      "message": "fixup(public-api): PR #137 round-10 \u2014 preemptive D8 escape-hatch closure (rename + mktemp-copy-renam",
+      "stats": {
+        "additions": 84,
+        "deletions": 8,
+        "total": 92
+      },
+      "branches": [
+        "session-3/redis-client-side-auth-wiring-public-api"
+      ]
+    },
+    {
+      "sha": "3f79c2505ecebdbe5225d5c7cd067d33f6b1952a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T19:05:21+05:30",
+      "message": "fixup(public-api): PR #137 round-9 \u2014 Codex 3 BLOCKERs + validate-secrets.sh CI happy-path",
+      "stats": {
+        "additions": 75,
+        "deletions": 9,
+        "total": 84
+      },
+      "branches": [
+        "session-3/redis-client-side-auth-wiring-public-api"
+      ]
+    },
+    {
+      "sha": "d3757943802a6b100f6f0836144827cc2e32f3cf",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T18:40:46+05:30",
+      "message": "fixup(public-api): PR #137 round-8 \u2014 passwordless REDIS_URL contract + generator single source of tr",
+      "stats": {
+        "additions": 277,
+        "deletions": 35,
+        "total": 312
+      },
+      "branches": [
+        "session-3/redis-client-side-auth-wiring-public-api"
+      ]
+    },
+    {
+      "sha": "97b511aabf542cdbbf3c5241b4be1b9b9ba05182",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T12:41:33+05:30",
+      "message": "fixup(public-api): PR #137 round-6 \u2014 rename \"positional\" variadic to its full form (Codex round-5 CO",
+      "stats": {
+        "additions": 16,
+        "deletions": 4,
+        "total": 20
+      },
+      "branches": [
+        "session-3/redis-client-side-auth-wiring-public-api"
+      ]
+    },
+    {
+      "sha": "8b017fe517bf420749596987049d1d3946740269",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T12:46:15+05:30",
+      "message": "fixup(public-api): PR #141 round-5 \u2014 focused body-shape test on orchestrator_client.run_turn() (Code",
+      "stats": {
+        "additions": 145,
+        "deletions": 4,
+        "total": 149
+      },
+      "branches": [
+        "session-3/per-request-influencer-id-forwarding"
+      ]
+    },
+    {
+      "sha": "bc7f969c8cd3ae2a81bf1f94a265a715cdd691a6",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T13:03:10+05:30",
+      "message": "fix(session-2): PR #135 round-7 \u2014 tighten assertion 5 to windowed-grep + filter (Codex caught dead-c",
+      "stats": {
+        "additions": 159,
+        "deletions": 13,
+        "total": 172
+      },
+      "branches": [
+        "session-2/template-spawn-smoke-ci-gate"
+      ]
+    },
+    {
+      "sha": "c894dc9019ef1c0f73042f354f61c5cddcdba1e6",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T12:24:34+05:30",
+      "message": "fix(session-2): PR #135 round-6 \u2014 dual-side DEP-010 check (source + target when in-repo) per Codex C",
+      "stats": {
+        "additions": 250,
+        "deletions": 12,
+        "total": 262
+      },
+      "branches": [
+        "session-2/template-spawn-smoke-ci-gate"
+      ]
+    },
+    {
+      "sha": "48a7ddac09eecfdf81aa27c07076648c54491696",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T20:00:53+05:30",
+      "message": "fix(session-2): PR #151 round-3 \u2014 lifespan try/except resource-leak guard + 4 unit tests + pytest sc",
+      "stats": {
+        "additions": 498,
+        "deletions": 3,
+        "total": 501
+      },
+      "branches": [
+        "session-2/template-skeleton-expansion-dep-014"
+      ]
+    },
+    {
+      "sha": "412993af15bae9f01f6115a6708d3da628591fc6",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T19:21:41+05:30",
+      "message": "fix(session-2): PR #151 round-2 \u2014 B7 reorder + REDIS_PASSWORD ripple to hello-world + step 6b negati",
+      "stats": {
+        "additions": 340,
+        "deletions": 48,
+        "total": 388
+      },
+      "branches": [
+        "session-2/template-skeleton-expansion-dep-014"
+      ]
+    },
+    {
+      "sha": "d4d5a803baf9d2256279e3a80e84ae198ae67171",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T18:51:51+05:30",
+      "message": "feat(session-2): DEP-014 \u2014 template skeleton expansion (asyncpg pool + redis.asyncio Sentinel-aware ",
+      "stats": {
+        "additions": 1333,
+        "deletions": 44,
+        "total": 1377
+      },
+      "branches": [
+        "session-2/template-skeleton-expansion-dep-014"
+      ]
+    },
+    {
+      "sha": "eec935edc5dbc8c0d0c7b41d66f52d0a165b08ea",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T19:19:02+05:30",
+      "message": "fix(session-1): PR #150 round-4 \u2014 retract cross-session bits per Codex round-3 BLOCKER (revert orche",
+      "stats": {
+        "additions": 75,
+        "deletions": 86,
+        "total": 161
+      },
+      "branches": [
+        "session-1/openrouter-api-key-cluster-manifest-and-dep-016-and-dep-017"
+      ]
+    },
+    {
+      "sha": "5947bf159c83e7e713170f6a12ff6cf97a434d68",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T19:06:16+05:30",
+      "message": "fix(session-1): PR #150 round-3 REVISED \u2014 option-a pivot per Codex round-2 D8 BLOCKER (bundle Sessio",
+      "stats": {
+        "additions": 90,
+        "deletions": 76,
+        "total": 166
+      },
+      "branches": [
+        "session-1/openrouter-api-key-cluster-manifest-and-dep-016-and-dep-017"
+      ]
+    },
+    {
+      "sha": "4ed6bbb7dc30227750c1c64262ef84184981c9fb",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T18:54:02+05:30",
+      "message": "fix(session-1): PR #150 round-3 \u2014 trim LOG entry by 10 lines to restore I14 <200 compliance (cumulat",
+      "stats": {
+        "additions": 1,
+        "deletions": 11,
+        "total": 12
+      },
+      "branches": [
+        "session-1/openrouter-api-key-cluster-manifest-and-dep-016-and-dep-017"
+      ]
+    },
+    {
+      "sha": "10f48b183d5a8f800b27b90f29a74fad2e002b41",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T18:32:39+05:30",
+      "message": "fix(session-1): PR #150 round-2 \u2014 bump OPENROUTER_API_KEY sensitivity medium\u2192high (Codex CONCERN) + ",
+      "stats": {
+        "additions": 60,
+        "deletions": 1,
+        "total": 61
+      },
+      "branches": [
+        "session-1/openrouter-api-key-cluster-manifest-and-dep-016-and-dep-017"
+      ]
+    },
+    {
+      "sha": "678befefec4d6da22f3ca2ad07d2fa2668b6ff14",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T18:13:33+05:30",
+      "message": "feat(session-1): Phase 1 OPENROUTER_API_KEY in cluster manifest + DEP-016 (Redis ACL rotation) + DEP",
+      "stats": {
+        "additions": 142,
+        "deletions": 0,
+        "total": 142
+      },
+      "branches": [
+        "session-1/openrouter-api-key-cluster-manifest-and-dep-016-and-dep-017"
+      ]
+    },
+    {
+      "sha": "e537bf68ed9a88d13da0767cc7571c5c20451186",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T19:22:27+05:30",
+      "message": "fixup(coordinator): PR #145 round-13 \u2014 close Codex round-12 BLOCKER (Gate B scope) + CONCERN (Gate A",
+      "stats": {
+        "additions": 14,
+        "deletions": 5,
+        "total": 19
+      },
+      "branches": [
+        "coordinator/ratify-public-api-user-memory-architecture-pr-141"
+      ]
+    },
+    {
+      "sha": "adfe38955fac0263c05765a1d3926868cadfef62",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T18:58:23+05:30",
+      "message": "fixup(coordinator): PR #145 round-12 \u2014 close Codex round-11 BLOCKER (ownership-doc inconsistency) + ",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "coordinator/ratify-public-api-user-memory-architecture-pr-141"
+      ]
+    },
+    {
+      "sha": "c7812b489918d10a319db8454a9ee9d74d66c85f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T18:25:43+05:30",
+      "message": "fixup(coordinator): PR #145 round-11 \u2014 stub every downstream + automatic pull_request trigger (Codex",
+      "stats": {
+        "additions": 7,
+        "deletions": 2,
+        "total": 9
+      },
+      "branches": [
+        "coordinator/ratify-public-api-user-memory-architecture-pr-141"
+      ]
+    },
+    {
+      "sha": "8020f8927dcb248d1cb84d25d141d56b42a6dd11",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T18:17:14+05:30",
+      "message": "fixup(coordinator): PR #145 round-10 \u2014 ephemeral port + wire-shape clarity (Codex round-9 2 CONCERNs",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "coordinator/ratify-public-api-user-memory-architecture-pr-141"
+      ]
+    },
+    {
+      "sha": "aaf6d415f5944600a672d9bb27c99fc16886237f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T18:09:45+05:30",
+      "message": "fixup(coordinator): PR #145 round-9 \u2014 close Codex round-8 CONCERN + NIT (Gate A1 fake server + GET s",
+      "stats": {
+        "additions": 6,
+        "deletions": 4,
+        "total": 10
+      },
+      "branches": [
+        "coordinator/ratify-public-api-user-memory-architecture-pr-141"
+      ]
+    },
+    {
+      "sha": "57faec4219ab763c75c5be0a532cd715a8693d38",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T18:05:35+05:30",
+      "message": "fixup(coordinator): PR #145 round-8 \u2014 clarify Session 1 carve-out + split Gate A2 into PR-merge-bloc",
+      "stats": {
+        "additions": 24,
+        "deletions": 10,
+        "total": 34
+      },
+      "branches": [
+        "coordinator/ratify-public-api-user-memory-architecture-pr-141"
+      ]
+    },
+    {
+      "sha": "cd7aefe382753552c3541072373a6943cf842c34",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T17:53:44+05:30",
+      "message": "fixup(coordinator): PR #145 round-7 \u2014 split Gate A across boundaries + make Gate A2 merge-blocking p",
+      "stats": {
+        "additions": 29,
+        "deletions": 15,
+        "total": 44
+      },
+      "branches": [
+        "coordinator/ratify-public-api-user-memory-architecture-pr-141"
+      ]
+    },
+    {
+      "sha": "5848f18c4367087d6ce7978b6e44050e11a3f626",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T17:46:03+05:30",
+      "message": "fixup(coordinator): PR #145 round-6 \u2014 close 2 Codex round-5 findings (A6 sweep + D6 Google Chat)",
+      "stats": {
+        "additions": 8,
+        "deletions": 8,
+        "total": 16
+      },
+      "branches": [
+        "coordinator/ratify-public-api-user-memory-architecture-pr-141"
+      ]
+    },
+    {
+      "sha": "2aa5d851ab50d15f0079d082d6709b687ef634e4",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T17:37:11+05:30",
+      "message": "fixup(coordinator): PR #145 round-5 \u2014 close 2 Codex round-4 CONCERNs (endpoint path + J2 flake risk)",
+      "stats": {
+        "additions": 28,
+        "deletions": 12,
+        "total": 40
+      },
+      "branches": [
+        "coordinator/ratify-public-api-user-memory-architecture-pr-141"
+      ]
+    },
+    {
+      "sha": "224d4a0ad82a4b6308981307a965cffe9ec671aa",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T17:12:43+05:30",
+      "message": "fixup(coordinator): PR #145 round-4 \u2014 correct baseline file path + ownership (Session 1, not Session",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "coordinator/ratify-public-api-user-memory-architecture-pr-141"
+      ]
+    },
+    {
+      "sha": "6a2d0c571794c77bcd4792fab099617afe6e79b0",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T16:54:59+05:30",
+      "message": "fixup(coordinator): PR #145 round-3 \u2014 concrete latency acceptance gate (Codex CONCERN round-2)",
+      "stats": {
+        "additions": 29,
+        "deletions": 0,
+        "total": 29
+      },
+      "branches": [
+        "coordinator/ratify-public-api-user-memory-architecture-pr-141"
+      ]
+    },
+    {
+      "sha": "3534949c8dff13edf20feb4a5aa504bbacc50e54",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T13:32:12+05:30",
+      "message": "fix(coordinator): round-2 \u2014 add E1 latency rationale + non-duplicative clarification per Codex BLOCK",
+      "stats": {
+        "additions": 27,
+        "deletions": 0,
+        "total": 27
+      },
+      "branches": [
+        "coordinator/ratify-public-api-user-memory-architecture-pr-141"
+      ]
+    },
+    {
+      "sha": "0a8a68183f04b6771fb6bf08ed3d7b293d91a13c",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T13:14:03+05:30",
+      "message": "feat(coordinator): ratify public-api \u2192 user-memory architecture for Phase 1 per Codex CONCERN on PR ",
+      "stats": {
+        "additions": 42,
+        "deletions": 0,
+        "total": 42
+      },
+      "branches": [
+        "coordinator/ratify-public-api-user-memory-architecture-pr-141"
+      ]
+    },
+    {
+      "sha": "982145d237e1960f77829efe6ad1f581154d3f3a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T17:34:42+05:30",
+      "message": "fixup(coordinator): PR #143 round-4 \u2014 close Codex BLOCKER (D8) + CONCERN (A6) via DEP-017 + DEP-016 ",
+      "stats": {
+        "additions": 85,
+        "deletions": 11,
+        "total": 96
+      },
+      "branches": [
+        "coordinator/phase-1-openrouter-entry-plus-dep-reservation-plus-redis-acl-action-item"
+      ]
+    },
+    {
+      "sha": "48aeb2f6d7668aa2f530b2efca371796bb39f5be",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T16:55:31+05:30",
+      "message": "chore(coordinator): empty commit \u2014 webhook retrigger for PR #143 round-3",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "coordinator/phase-1-openrouter-entry-plus-dep-reservation-plus-redis-acl-action-item"
+      ]
+    },
+    {
+      "sha": "ba88609116653f90d264d4225055b4f2919edc89",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T13:31:00+05:30",
+      "message": "fix(coordinator): round-3 \u2014 clarify H4 IS Phase 1 (only the Claude-routing destination is Phase 2) p",
+      "stats": {
+        "additions": 18,
+        "deletions": 5,
+        "total": 23
+      },
+      "branches": [
+        "coordinator/phase-1-openrouter-entry-plus-dep-reservation-plus-redis-acl-action-item"
+      ]
+    },
+    {
+      "sha": "b05cd4d63193d8e148234087f2136653a2f57c39",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T13:01:03+05:30",
+      "message": "fix(coordinator): round-2 \u2014 remove A6-violating cutover timing language from DEP-016 per Codex BLOCK",
+      "stats": {
+        "additions": 8,
+        "deletions": 6,
+        "total": 14
+      },
+      "branches": [
+        "coordinator/phase-1-openrouter-entry-plus-dep-reservation-plus-redis-acl-action-item"
+      ]
+    },
+    {
+      "sha": "f4e9116bc0f62ae60a40a4ff05e87f3bd1403b36",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T12:35:57+05:30",
+      "message": "feat(coordinator): Phase 1 OpenRouter entry + DEP numbering reservation header + DEP-016 Redis ACL p",
+      "stats": {
+        "additions": 152,
+        "deletions": 0,
+        "total": 152
+      },
+      "branches": [
+        "coordinator/phase-1-openrouter-entry-plus-dep-reservation-plus-redis-acl-action-item"
+      ]
+    },
+    {
+      "sha": "00e2b0202d60ef5e3cc628aacccddf3180c0d52e",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T17:31:58+05:30",
+      "message": "fix(coordinator): lint-scope-violations workflow \u2014 add bootstrap-scripts to COORDINATOR_PATHS allowl",
+      "stats": {
+        "additions": 5,
+        "deletions": 1,
+        "total": 6
+      },
+      "branches": [
+        "coordinator/lint-scope-workflow-allow-bootstrap-scripts"
+      ]
+    }
+  ],
+  "commit_count": 63,
+  "issues": [],
+  "issue_count": 0
+}
