@@ -1,0 +1,1220 @@
+{
+  "date": "2026-05-25",
+  "cached_at": "2026-05-25T19:02:51.035148Z",
+  "commits": [
+    {
+      "sha": "9061cd7eece924caf2f23ba7e2c1250db763f834",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-25T11:50:33+05:30",
+      "message": "refactor: update dependency management strategy and enable code shrinking",
+      "stats": {
+        "additions": 12,
+        "deletions": 1,
+        "total": 13
+      },
+      "branches": [
+        "saikatdas0790/canister-removal-round-3"
+      ]
+    },
+    {
+      "sha": "895e5d27a86aa9b3eb3f51d96f2f728843eaf1e7",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-25T21:57:12+05:30",
+      "message": "Fix draft refresh empty state flicker",
+      "stats": {
+        "additions": 104,
+        "deletions": 5,
+        "total": 109
+      },
+      "branches": [
+        "chore/compose-update"
+      ]
+    },
+    {
+      "sha": "2bc91f0cafd2b58442ab14cfa662c04a87ff82db",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-25T21:35:20+05:30",
+      "message": "Remove AI video model selector",
+      "stats": {
+        "additions": 29,
+        "deletions": 260,
+        "total": 289
+      },
+      "branches": [
+        "chore/compose-update"
+      ]
+    },
+    {
+      "sha": "27e112a85bf0cdb96aefa13d75158570e9116a2e",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-22T18:35:47+05:30",
+      "message": "Fix text field selection interactions",
+      "stats": {
+        "additions": 373,
+        "deletions": 112,
+        "total": 485
+      },
+      "branches": [
+        "chore/compose-update"
+      ]
+    },
+    {
+      "sha": "693772b2f415c02e805c2d1a19429cc89fa4f955",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-gpu-inference-server",
+      "timestamp": "2026-05-25T19:57:24+05:30",
+      "message": "first commit",
+      "stats": {
+        "additions": 4673,
+        "deletions": 0,
+        "total": 4673
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "041a572894c8968c23d86e7c34faa60bd0b3e3b2",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T19:20:33+05:30",
+      "message": "fix(user-memory-service): round-10 \u2014 atomic sequence INSERT + UNIQUE constraint (race condition)",
+      "stats": {
+        "additions": 613,
+        "deletions": 111,
+        "total": 724
+      },
+      "branches": [
+        "session-5/d3-etl-migration"
+      ]
+    },
+    {
+      "sha": "df525c1a66af8aedb4a096e43b21d07683228db6",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T17:46:14+05:30",
+      "message": "fix(session-5): PR#147 round-9 \u2014 service B2 renames + migration test + RUNBOOK",
+      "stats": {
+        "additions": 312,
+        "deletions": 72,
+        "total": 384
+      },
+      "branches": [
+        "session-5/d3-etl-migration"
+      ]
+    },
+    {
+      "sha": "46efa0a2560db64aacc73a957b9a9e774302f206",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T17:30:41+05:30",
+      "message": "fix(session-5): PR#147 round-8 \u2014 J3 docstrings + sequence_in_conversation ordering fix",
+      "stats": {
+        "additions": 726,
+        "deletions": 127,
+        "total": 853
+      },
+      "branches": [
+        "session-5/d3-etl-migration"
+      ]
+    },
+    {
+      "sha": "ac356e033728c0b544b1961ac0f209817e90d0cd",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T16:55:10+05:30",
+      "message": "chore(session-5): empty commit \u2014 retrigger Codex on round-7 (OpenAI 429 swallowed the prior verdict)",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "session-5/d3-etl-migration"
+      ]
+    },
+    {
+      "sha": "646bfee40f63101fb290a53b63e22858b25ad4b1",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T16:12:30+05:30",
+      "message": "fix(session-5): PR#147 round-7 \u2014 B2 constant renames + 5 migration behaviour tests",
+      "stats": {
+        "additions": 600,
+        "deletions": 66,
+        "total": 666
+      },
+      "branches": [
+        "session-5/d3-etl-migration"
+      ]
+    },
+    {
+      "sha": "299cf6e847c771a8151a30fb75911122d8cb1c75",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T11:31:10+05:30",
+      "message": "fix(session-5): PR#147 round-6 \u2014 B2 rename sweep + CheckViolationError per-row fallback",
+      "stats": {
+        "additions": 357,
+        "deletions": 200,
+        "total": 557
+      },
+      "branches": [
+        "session-5/d3-etl-migration"
+      ]
+    },
+    {
+      "sha": "fa24c1775283deb7c1cdbed954180a0a89cc8c1f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T17:38:10+05:30",
+      "message": "docs(session-4): close-the-loop tracking entry for PR #148 (merged at 11:56 UTC via 5-round-cap over",
+      "stats": {
+        "additions": 60,
+        "deletions": 0,
+        "total": 60
+      },
+      "branches": [
+        "session-4/pr-148-merged-tracking-closeout"
+      ]
+    },
+    {
+      "sha": "106f075bd77dd5319ca338c85292f31d6774466c",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T17:26:00+05:30",
+      "message": "feat(influencer-directory): Day-8 PR-D1 \u2014 schema + Alembic + tests for influencer-and-profile-direct",
+      "stats": {
+        "additions": 4004,
+        "deletions": 114,
+        "total": 4118
+      },
+      "branches": [
+        "session-4/pr-148-merged-tracking-closeout",
+        "session-4/influencer-directory-chunk-b-endpoints",
+        "main"
+      ]
+    },
+    {
+      "sha": "055226ee9df5a3d1f99fcf5968d3411576ceed00",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T17:06:58+05:30",
+      "message": "chore(coordinator): update Codex review prompt to honor B2/B7 runtime-only scope carve-out (follow-u",
+      "stats": {
+        "additions": 4,
+        "deletions": 2,
+        "total": 6
+      },
+      "branches": [
+        "session-4/pr-148-merged-tracking-closeout",
+        "session-4/influencer-directory-chunk-b-endpoints",
+        "session-3/per-request-influencer-id-forwarding",
+        "main"
+      ]
+    },
+    {
+      "sha": "f1d0d0389854e3f7403b9bb9958d6560a7159de9",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T16:49:04+05:30",
+      "message": "chore(coordinator): adopt audit recs 1+2+4 \u2014 B2/B7 runtime-only scope + 5-round Codex cap + worktree",
+      "stats": {
+        "additions": 136,
+        "deletions": 4,
+        "total": 140
+      },
+      "branches": [
+        "session-4/pr-148-merged-tracking-closeout",
+        "session-4/influencer-directory-chunk-b-endpoints",
+        "session-3/per-request-influencer-id-forwarding",
+        "main",
+        "coordinator/codex-prompt-b2-b7-runtime-scope-carveout"
+      ]
+    },
+    {
+      "sha": "17ab8915bb2db441aaaf95f26dbe79fee44d426d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T16:21:06+05:30",
+      "message": "fix(public-api): wire REDIS_PASSWORD on both Redis paths (single-URL from_url + Sentinel master_for)",
+      "stats": {
+        "additions": 1698,
+        "deletions": 92,
+        "total": 1790
+      },
+      "branches": [
+        "session-4/pr-148-merged-tracking-closeout",
+        "session-4/influencer-directory-chunk-b-endpoints",
+        "session-3/per-request-influencer-id-forwarding",
+        "main",
+        "coordinator/codex-prompt-b2-b7-runtime-scope-carveout"
+      ]
+    },
+    {
+      "sha": "487915a6b8c8a6e59fbff89449fd827e2c753004",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T15:43:57+05:30",
+      "message": "feat(coordinator): ratify public-api \u2192 user-memory architecture for Phase 1 per Codex CONCERN on PR ",
+      "stats": {
+        "additions": 353,
+        "deletions": 3,
+        "total": 356
+      },
+      "branches": [
+        "session-4/pr-148-merged-tracking-closeout",
+        "session-4/influencer-directory-data-layer",
+        "session-4/influencer-directory-chunk-b-endpoints",
+        "session-3/per-request-influencer-id-forwarding",
+        "main",
+        "coordinator/process-fixes-from-audit-2026-05-25",
+        "coordinator/codex-prompt-b2-b7-runtime-scope-carveout"
+      ]
+    },
+    {
+      "sha": "65978570b89c57dc3ebdd0aff871ec840f0649f5",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T14:38:59+05:30",
+      "message": "chore(coordinator): move DEP-017 OPEN \u2192 RESOLVED post-PR-150 merge (#153)",
+      "stats": {
+        "additions": 9,
+        "deletions": 60,
+        "total": 69
+      },
+      "branches": [
+        "session-4/pr-148-merged-tracking-closeout",
+        "session-4/influencer-directory-data-layer",
+        "session-4/influencer-directory-chunk-b-endpoints",
+        "session-3/per-request-influencer-id-forwarding",
+        "main",
+        "coordinator/process-fixes-from-audit-2026-05-25",
+        "coordinator/codex-prompt-b2-b7-runtime-scope-carveout"
+      ]
+    },
+    {
+      "sha": "f082e851e4cf3985a3104681aa065111a330932d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T14:17:53+05:30",
+      "message": "feat(session-1): Phase 1 OPENROUTER_API_KEY in cluster manifest + DEP-016 + DEP-017 (#150)",
+      "stats": {
+        "additions": 194,
+        "deletions": 0,
+        "total": 194
+      },
+      "branches": [
+        "session-4/pr-148-merged-tracking-closeout",
+        "session-4/influencer-directory-data-layer",
+        "session-4/influencer-directory-chunk-b-endpoints",
+        "session-3/per-request-influencer-id-forwarding",
+        "main",
+        "coordinator/process-fixes-from-audit-2026-05-25",
+        "coordinator/dep-017-resolved-post-pr-150-merge",
+        "coordinator/codex-prompt-b2-b7-runtime-scope-carveout"
+      ]
+    },
+    {
+      "sha": "eac8628820a9d13020d417b626d2f954019cf2cc",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T09:53:09+05:30",
+      "message": "feat(orchestrator/secrets): add OPENROUTER_API_KEY manifest entry (DEP-017 unblock) (#152)",
+      "stats": {
+        "additions": 128,
+        "deletions": 0,
+        "total": 128
+      },
+      "branches": [
+        "session-4/pr-148-merged-tracking-closeout",
+        "session-4/influencer-directory-data-layer",
+        "session-4/influencer-directory-chunk-b-endpoints",
+        "session-3/per-request-influencer-id-forwarding",
+        "session-1/openrouter-api-key-cluster-manifest-and-dep-016-and-dep-017",
+        "main",
+        "coordinator/process-fixes-from-audit-2026-05-25",
+        "coordinator/dep-017-resolved-post-pr-150-merge",
+        "coordinator/codex-prompt-b2-b7-runtime-scope-carveout"
+      ]
+    },
+    {
+      "sha": "9a69ffbdc7190eb7ebbb8be4d9340d328573d719",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T17:11:54+05:30",
+      "message": "fixup(influencer-directory): PR-D1 Chunk A round-10 \u2014 wire Postgres secret into 2 compose files + fo",
+      "stats": {
+        "additions": 128,
+        "deletions": 17,
+        "total": 145
+      },
+      "branches": [
+        "session-4/influencer-directory-data-layer"
+      ]
+    },
+    {
+      "sha": "4a184a47135cf18063e5a235a293db1e0a7794a6",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T15:55:20+05:30",
+      "message": "feat(influencer-directory): Day-8 PR-D1 Chunk A \u2014 schema + Alembic + asyncpg pool + Pydantic model +",
+      "stats": {
+        "additions": 3878,
+        "deletions": 99,
+        "total": 3977
+      },
+      "branches": [
+        "session-4/influencer-directory-data-layer"
+      ]
+    },
+    {
+      "sha": "b546c38034092419cc0b05b216251c2a31787c88",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T18:28:45+05:30",
+      "message": "fixup(influencer-directory): PR-D1 Chunk B round-2 \u2014 close 1 BLOCKER (B7 runtime imports) + 2 CONCER",
+      "stats": {
+        "additions": 215,
+        "deletions": 28,
+        "total": 243
+      },
+      "branches": [
+        "session-4/influencer-directory-chunk-b-endpoints"
+      ]
+    },
+    {
+      "sha": "f9328fcec990fd69048ff2e81f5b610d49a12a92",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T18:19:06+05:30",
+      "message": "feat(influencer-directory): Day-8 PR-D1 Chunk B \u2014 GET /v1/influencers + GET /v1/influencers/{id} cat",
+      "stats": {
+        "additions": 1332,
+        "deletions": 60,
+        "total": 1392
+      },
+      "branches": [
+        "session-4/influencer-directory-chunk-b-endpoints"
+      ]
+    },
+    {
+      "sha": "a65ed0e1ab9dbd20a6d814c434b133c5986871c4",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T17:57:26+05:30",
+      "message": "feat(session-2): DEP-014 \u2014 template skeleton expansion (asyncpg pool + redis.asyncio Sentinel-aware ",
+      "stats": {
+        "additions": 3669,
+        "deletions": 65,
+        "total": 3734
+      },
+      "branches": [
+        "session-4/influencer-directory-chunk-b-endpoints",
+        "main"
+      ]
+    },
+    {
+      "sha": "071979282ea43b61ee087cb688ee08f79a95b514",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T17:57:10+05:30",
+      "message": "feat(public-api): PR-B2 \u2014 per-request influencer_id forwarding with trust-boundary user-memory deriv",
+      "stats": {
+        "additions": 1699,
+        "deletions": 28,
+        "total": 1727
+      },
+      "branches": [
+        "session-4/influencer-directory-chunk-b-endpoints",
+        "main"
+      ]
+    },
+    {
+      "sha": "d1b9e9451a0d9545f8592e53759b98f61dc890fd",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T17:39:26+05:30",
+      "message": "docs(session-4): close-the-loop tracking entry for PR #148 (merged at 11:56 UTC via 5-round-cap over",
+      "stats": {
+        "additions": 60,
+        "deletions": 0,
+        "total": 60
+      },
+      "branches": [
+        "session-4/influencer-directory-chunk-b-endpoints",
+        "main"
+      ]
+    },
+    {
+      "sha": "83a355778d4a57d8661b2a26947da57fc404100b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T15:50:47+05:30",
+      "message": "fixup(public-api): PR #137 round-19 \u2014 Codex round-18 (BLOCKER scope: test docstrings + CONCERN valid",
+      "stats": {
+        "additions": 179,
+        "deletions": 39,
+        "total": 218
+      },
+      "branches": [
+        "session-3/redis-client-side-auth-wiring-public-api"
+      ]
+    },
+    {
+      "sha": "85fee59bc1e4d25cf0631325e5719a0d2e541dbe",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T15:28:31+05:30",
+      "message": "fixup(public-api): PR #137 round-18 \u2014 B2 sweep on test comments + STATE refresh (Codex round-17 verd",
+      "stats": {
+        "additions": 44,
+        "deletions": 18,
+        "total": 62
+      },
+      "branches": [
+        "session-3/redis-client-side-auth-wiring-public-api"
+      ]
+    },
+    {
+      "sha": "744e9ec13f8c02c66da8090da9f775503b985c49",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T14:46:17+05:30",
+      "message": "fixup(public-api): PR #137 round-17 \u2014 Codex round-16 (1 BLOCKER scope inconsistency + 1 CONCERN STAT",
+      "stats": {
+        "additions": 73,
+        "deletions": 20,
+        "total": 93
+      },
+      "branches": [
+        "session-3/redis-client-side-auth-wiring-public-api"
+      ]
+    },
+    {
+      "sha": "c00e96cfc268c2d6e41f3bc756c029982f9b12e8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T14:31:55+05:30",
+      "message": "fixup(public-api): PR #137 round-16 \u2014 Codex round-15 (1 BLOCKER B7 function-local imports + 1 CONCER",
+      "stats": {
+        "additions": 112,
+        "deletions": 0,
+        "total": 112
+      },
+      "branches": [
+        "session-3/redis-client-side-auth-wiring-public-api"
+      ]
+    },
+    {
+      "sha": "af40ad6f1d19ced1c750b965a20a2c104429b022",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T12:11:42+05:30",
+      "message": "fixup(public-api): PR #137 round-15 \u2014 Codex round-14 (1 BLOCKER A1 guarded cleanup + 1 CONCERN env-l",
+      "stats": {
+        "additions": 181,
+        "deletions": 9,
+        "total": 190
+      },
+      "branches": [
+        "session-3/redis-client-side-auth-wiring-public-api"
+      ]
+    },
+    {
+      "sha": "edc11b26499b6a3d9d9c643bc7f4748de48e7f1d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T11:57:13+05:30",
+      "message": "fixup(public-api): PR #137 round-14 LOG entry (companion to e51af7b)",
+      "stats": {
+        "additions": 32,
+        "deletions": 0,
+        "total": 32
+      },
+      "branches": [
+        "session-3/redis-client-side-auth-wiring-public-api"
+      ]
+    },
+    {
+      "sha": "e51af7b18c826c3d5453d62ebbaf9c42a6b25b86",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T11:55:19+05:30",
+      "message": "fixup(public-api): PR #137 round-14 \u2014 Codex round-13 (1 BLOCKER B7 import role-comments + 1 CONCERN ",
+      "stats": {
+        "additions": 89,
+        "deletions": 40,
+        "total": 129
+      },
+      "branches": [
+        "session-3/redis-client-side-auth-wiring-public-api"
+      ]
+    },
+    {
+      "sha": "bc3e0d8a2049471cd766a273c79c49f2a056b03d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T11:41:56+05:30",
+      "message": "fixup(public-api): PR #137 round-13 \u2014 Codex round-12 (1 BLOCKER B7 header + 1 CONCERN STATE refresh)",
+      "stats": {
+        "additions": 51,
+        "deletions": 10,
+        "total": 61
+      },
+      "branches": [
+        "session-3/redis-client-side-auth-wiring-public-api"
+      ]
+    },
+    {
+      "sha": "e0420dd3243066f776f7ab4cf089c14a6a1d88f4",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T11:30:32+05:30",
+      "message": "fixup(public-api): PR #137 round-12 \u2014 Codex round-11 (1 BLOCKER B2 scrub on test_validate_secrets.sh",
+      "stats": {
+        "additions": 58,
+        "deletions": 30,
+        "total": 88
+      },
+      "branches": [
+        "session-3/redis-client-side-auth-wiring-public-api"
+      ]
+    },
+    {
+      "sha": "ca1e36f683600a60d8dfca52f180edc5dd9b80d1",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T17:38:29+05:30",
+      "message": "fixup(public-api): PR #141 round-7 \u2014 Codex post-squash verdict (2 BLOCKERs + 2 CONCERNs)",
+      "stats": {
+        "additions": 245,
+        "deletions": 20,
+        "total": 265
+      },
+      "branches": [
+        "session-3/per-request-influencer-id-forwarding"
+      ]
+    },
+    {
+      "sha": "5c43f3b83b0390a096cc2d71553f18085b451c1a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T17:27:05+05:30",
+      "message": "feat(public-api): PR #141 (PR-B2) \u2014 per-request influencer_id forwarding + Gate A1 scaffold (round-6",
+      "stats": {
+        "additions": 1474,
+        "deletions": 28,
+        "total": 1502
+      },
+      "branches": [
+        "session-3/per-request-influencer-id-forwarding"
+      ]
+    },
+    {
+      "sha": "844a5da9a69ddeb043e1e2132356f034904dec9f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T17:35:18+05:30",
+      "message": "fix(session-2): PR #151 round-12 \u2014 B1 function rename (production \u2192 deployed_environment) + 5 test r",
+      "stats": {
+        "additions": 182,
+        "deletions": 30,
+        "total": 212
+      },
+      "branches": [
+        "session-2/template-skeleton-expansion-dep-014"
+      ]
+    },
+    {
+      "sha": "4e81fab539eef7385af14d00e442a82502bc1a07",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T16:57:23+05:30",
+      "message": "feat(session-2): DEP-014 \u2014 template skeleton expansion (asyncpg pool + redis.asyncio Sentinel-aware ",
+      "stats": {
+        "additions": 3517,
+        "deletions": 65,
+        "total": 3582
+      },
+      "branches": [
+        "session-2/template-skeleton-expansion-dep-014"
+      ]
+    },
+    {
+      "sha": "0f947432da14c48ebb8141c4056d475e0552b0a2",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T19:19:02+05:30",
+      "message": "fix(session-1): PR #150 round-4 \u2014 retract cross-session bits per Codex round-3 BLOCKER (revert orche",
+      "stats": {
+        "additions": 75,
+        "deletions": 86,
+        "total": 161
+      },
+      "branches": [
+        "session-1/openrouter-api-key-cluster-manifest-and-dep-016-and-dep-017"
+      ]
+    },
+    {
+      "sha": "9c2628544782a6fe9ceed321fd60a745d1bfd036",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T19:06:16+05:30",
+      "message": "fix(session-1): PR #150 round-3 REVISED \u2014 option-a pivot per Codex round-2 D8 BLOCKER (bundle Sessio",
+      "stats": {
+        "additions": 90,
+        "deletions": 76,
+        "total": 166
+      },
+      "branches": [
+        "session-1/openrouter-api-key-cluster-manifest-and-dep-016-and-dep-017"
+      ]
+    },
+    {
+      "sha": "20af76214fa0ba6e6f25ec525573fd36d6b4fd46",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T18:54:02+05:30",
+      "message": "fix(session-1): PR #150 round-3 \u2014 trim LOG entry by 10 lines to restore I14 <200 compliance (cumulat",
+      "stats": {
+        "additions": 1,
+        "deletions": 11,
+        "total": 12
+      },
+      "branches": [
+        "session-1/openrouter-api-key-cluster-manifest-and-dep-016-and-dep-017"
+      ]
+    },
+    {
+      "sha": "2e09f109a2518ec932fd55c9823cb24744c1c487",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T18:32:39+05:30",
+      "message": "fix(session-1): PR #150 round-2 \u2014 bump OPENROUTER_API_KEY sensitivity medium\u2192high (Codex CONCERN) + ",
+      "stats": {
+        "additions": 60,
+        "deletions": 1,
+        "total": 61
+      },
+      "branches": [
+        "session-1/openrouter-api-key-cluster-manifest-and-dep-016-and-dep-017"
+      ]
+    },
+    {
+      "sha": "63ca83869259ea235dd08cf6d0fdaa895b841135",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-24T18:13:33+05:30",
+      "message": "feat(session-1): Phase 1 OPENROUTER_API_KEY in cluster manifest + DEP-016 (Redis ACL rotation) + DEP",
+      "stats": {
+        "additions": 142,
+        "deletions": 0,
+        "total": 142
+      },
+      "branches": [
+        "session-1/openrouter-api-key-cluster-manifest-and-dep-016-and-dep-017"
+      ]
+    },
+    {
+      "sha": "7dd7a234a5cbca654ca1e69d706ca3285841d002",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-chat-ai",
+      "timestamp": "2026-05-25T15:05:01+05:30",
+      "message": "fix(infra): autostart watchdog for caddy + app across Saikat's maintenance (#34)",
+      "stats": {
+        "additions": 511,
+        "deletions": 12,
+        "total": 523
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "83050ee6eac7897c3817e37210fb0b4009a164b4",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-chat-ai",
+      "timestamp": "2026-05-25T14:15:48+05:30",
+      "message": "fix(infra): autostart watchdog for yral-chat-ai + caddy on app hosts",
+      "stats": {
+        "additions": 292,
+        "deletions": 11,
+        "total": 303
+      },
+      "branches": [
+        "fix/caddy-autostart-on-boot"
+      ]
+    },
+    {
+      "sha": "a23212ec238fd5007684d55274425d471e1353de",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T15:34:45+05:30",
+      "message": "fixup(coordinator): PR #145 round-27 \u2014 close Codex round-26 BLOCKER (Gate A2-PROVIDER-PR ownership) ",
+      "stats": {
+        "additions": 6,
+        "deletions": 2,
+        "total": 8
+      },
+      "branches": [
+        "coordinator/ratify-public-api-user-memory-architecture-pr-141"
+      ]
+    },
+    {
+      "sha": "7242595d590ed61c46535a9ba5a8d2e800838ad9",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T15:17:37+05:30",
+      "message": "fixup(coordinator): PR #145 round-26 \u2014 close Codex round-25 BLOCKER (B2 Bash vars) + CONCERN (placeh",
+      "stats": {
+        "additions": 6,
+        "deletions": 6,
+        "total": 12
+      },
+      "branches": [
+        "coordinator/ratify-public-api-user-memory-architecture-pr-141"
+      ]
+    },
+    {
+      "sha": "4ba85291b00ea134e686d4372e751269381078e8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T15:11:29+05:30",
+      "message": "fixup(coordinator): PR #145 round-25 \u2014 close Codex round-24 BLOCKER (provider-routing gap) + CONCERN",
+      "stats": {
+        "additions": 40,
+        "deletions": 7,
+        "total": 47
+      },
+      "branches": [
+        "coordinator/ratify-public-api-user-memory-architecture-pr-141"
+      ]
+    },
+    {
+      "sha": "62874b53cc93089fd84ab62097c421040738cc43",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T15:03:12+05:30",
+      "message": "fixup(coordinator): PR #145 round-24 \u2014 close Codex round-23 2 BLOCKERs (self-protection regex + remo",
+      "stats": {
+        "additions": 15,
+        "deletions": 6,
+        "total": 21
+      },
+      "branches": [
+        "coordinator/ratify-public-api-user-memory-architecture-pr-141"
+      ]
+    },
+    {
+      "sha": "481c7d9b0cd95e0c80727ded07385c2127eb63b3",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T14:53:03+05:30",
+      "message": "fixup(coordinator): PR #145 round-23 \u2014 close Codex round-22 2 BLOCKERs (B2 workflow name + required-",
+      "stats": {
+        "additions": 126,
+        "deletions": 99,
+        "total": 225
+      },
+      "branches": [
+        "coordinator/ratify-public-api-user-memory-architecture-pr-141"
+      ]
+    },
+    {
+      "sha": "a6d182d93f241041fd7e856b0ca1e6b726f34d18",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T14:38:23+05:30",
+      "message": "fixup(coordinator): PR #145 round-22 \u2014 close Codex round-21 BLOCKER (Gate A2-PR workflow file)",
+      "stats": {
+        "additions": 99,
+        "deletions": 0,
+        "total": 99
+      },
+      "branches": [
+        "coordinator/ratify-public-api-user-memory-architecture-pr-141"
+      ]
+    },
+    {
+      "sha": "c6a7392c77b30246a2d6f24c8c97eebdf2bc4395",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T14:31:55+05:30",
+      "message": "fixup(coordinator): PR #145 round-21 \u2014 close Codex round-20 2 BLOCKERs (v2-daily-telemetry.csv owner",
+      "stats": {
+        "additions": 4,
+        "deletions": 3,
+        "total": 7
+      },
+      "branches": [
+        "coordinator/ratify-public-api-user-memory-architecture-pr-141"
+      ]
+    },
+    {
+      "sha": "bb53003f1453e192f05377b79ffd411da7e11fe4",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T12:14:07+05:30",
+      "message": "fixup(coordinator): PR #145 round-20 \u2014 close Codex round-19 BLOCKER (lint anchor) + CONCERN (templat",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "coordinator/ratify-public-api-user-memory-architecture-pr-141"
+      ]
+    },
+    {
+      "sha": "79fdfe275450c5aaa3ba7b662438202419945b8d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T12:04:00+05:30",
+      "message": "fixup(coordinator): PR #145 round-19 \u2014 close Codex round-18 BLOCKER (v2 telemetry corrupting baselin",
+      "stats": {
+        "additions": 7,
+        "deletions": 1,
+        "total": 8
+      },
+      "branches": [
+        "coordinator/ratify-public-api-user-memory-architecture-pr-141"
+      ]
+    },
+    {
+      "sha": "db0256ce3c4d315302f63b76d6c4d6ea3fa29b53",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T11:57:16+05:30",
+      "message": "fixup(coordinator): PR #145 round-18 \u2014 close Codex round-17 2 BLOCKERs (stale subtraction wording + ",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "coordinator/ratify-public-api-user-memory-architecture-pr-141"
+      ]
+    },
+    {
+      "sha": "3eff86fbcd47674487dd969fa4441cbd9e92629c",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T11:51:09+05:30",
+      "message": "fixup(coordinator): PR #145 round-17 \u2014 close Codex round-16 BLOCKER (CSV scope) + CONCERN (grep-base",
+      "stats": {
+        "additions": 3,
+        "deletions": 2,
+        "total": 5
+      },
+      "branches": [
+        "coordinator/ratify-public-api-user-memory-architecture-pr-141"
+      ]
+    },
+    {
+      "sha": "c58dcc5b6a6a6a483075b62cf24a82cc362dd257",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T11:44:35+05:30",
+      "message": "fixup(coordinator): PR #145 round-16 \u2014 close Codex round-15 BLOCKER (math formula) + CONCERN (path f",
+      "stats": {
+        "additions": 11,
+        "deletions": 2,
+        "total": 13
+      },
+      "branches": [
+        "coordinator/ratify-public-api-user-memory-architecture-pr-141"
+      ]
+    },
+    {
+      "sha": "5222e4a13fb00199156dea8fc2d7d268e8ad9f69",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T11:39:55+05:30",
+      "message": "fixup(coordinator): PR #145 round-15 \u2014 close Codex round-14 2 CONCERNs (last_message contract + owne",
+      "stats": {
+        "additions": 4,
+        "deletions": 4,
+        "total": 8
+      },
+      "branches": [
+        "coordinator/ratify-public-api-user-memory-architecture-pr-141"
+      ]
+    },
+    {
+      "sha": "db6af93bb23232ae52d6cc05c9575394f7c2383d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T11:34:34+05:30",
+      "message": "fixup(coordinator): PR #145 round-14 \u2014 close Codex round-13 BLOCKER (404 vs 503 conflict) + CONCERN ",
+      "stats": {
+        "additions": 5,
+        "deletions": 2,
+        "total": 7
+      },
+      "branches": [
+        "coordinator/ratify-public-api-user-memory-architecture-pr-141"
+      ]
+    },
+    {
+      "sha": "6ebc95a7767a6e378a68faaf2b729b4c0cd04b71",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T16:42:58+05:30",
+      "message": "fixup(coordinator): PR #154 round-5 \u2014 close Codex round-4 BLOCKER (J3 vs B7 carve-out conflict) + CO",
+      "stats": {
+        "additions": 14,
+        "deletions": 3,
+        "total": 17
+      },
+      "branches": [
+        "coordinator/process-fixes-from-audit-2026-05-25"
+      ]
+    },
+    {
+      "sha": "b5e939f8df57a84ea222808324c9908034181660",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T16:31:28+05:30",
+      "message": "fixup(coordinator): PR #154 round-4 \u2014 close Codex round-3 BLOCKER + 2 CONCERNs via wording precision",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "coordinator/process-fixes-from-audit-2026-05-25"
+      ]
+    },
+    {
+      "sha": "35dbbe89c83cd0cf6961c2790b0bcd2dd4e9e0be",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T16:15:03+05:30",
+      "message": "fixup(coordinator): PR #154 round-3 \u2014 close Codex round-2 BLOCKER (script functionally broken \u2014 git ",
+      "stats": {
+        "additions": 11,
+        "deletions": 4,
+        "total": 15
+      },
+      "branches": [
+        "coordinator/process-fixes-from-audit-2026-05-25"
+      ]
+    },
+    {
+      "sha": "f43ba5acf42aa64ca25f9dda0351afab31122573",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T16:09:10+05:30",
+      "message": "fixup(coordinator): PR #154 round-2 \u2014 close Codex round-1 BLOCKER (hardcoded paths + DIR abbrev) + C",
+      "stats": {
+        "additions": 38,
+        "deletions": 25,
+        "total": 63
+      },
+      "branches": [
+        "coordinator/process-fixes-from-audit-2026-05-25"
+      ]
+    },
+    {
+      "sha": "3cb8e865a57e3c4b8a8125fb4b429283f5d358bf",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T15:52:09+05:30",
+      "message": "chore(coordinator): adopt audit recommendations 1+2+4 \u2014 B2/B7 runtime-only scope + 5-round Codex cap",
+      "stats": {
+        "additions": 104,
+        "deletions": 3,
+        "total": 107
+      },
+      "branches": [
+        "coordinator/process-fixes-from-audit-2026-05-25"
+      ]
+    },
+    {
+      "sha": "dde1995350d8c970159506986c776a7fa12138b4",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T14:27:45+05:30",
+      "message": "fixup(coordinator): PR #153 round-2 \u2014 cite Rishi typed-YES for PR #150 override-merge (Codex round-1",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "coordinator/dep-017-resolved-post-pr-150-merge"
+      ]
+    },
+    {
+      "sha": "0c6212ae5badaffb83d3e3b479d6fcbb3e5d8266",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T14:21:31+05:30",
+      "message": "chore(coordinator): move DEP-017 OPEN \u2192 RESOLVED post-PR-150 merge",
+      "stats": {
+        "additions": 9,
+        "deletions": 60,
+        "total": 69
+      },
+      "branches": [
+        "coordinator/dep-017-resolved-post-pr-150-merge"
+      ]
+    },
+    {
+      "sha": "c3d31f10baae6b21c5a24f38fa98dd54184d1830",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-25T16:58:46+05:30",
+      "message": "chore(coordinator): update Codex review prompt to honor B2/B7 runtime-only scope carve-out (follow-u",
+      "stats": {
+        "additions": 4,
+        "deletions": 2,
+        "total": 6
+      },
+      "branches": [
+        "coordinator/codex-prompt-b2-b7-runtime-scope-carveout"
+      ]
+    },
+    {
+      "sha": "280edee0578fe1f81d139e11749948513208d7ca",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-25T08:59:24+05:30",
+      "message": "feat: add prakash-sentry monitoring for videogen routes (#454)",
+      "stats": {
+        "additions": 88,
+        "deletions": 4,
+        "total": 92
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 70,
+  "issues": [
+    {
+      "number": 2099,
+      "title": "Deploy models on Vast and setup the infra around it",
+      "closed_at": "2026-05-25T04:49:40Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2099",
+      "labels": []
+    },
+    {
+      "number": 2096,
+      "title": "The text over here should say \"Credits used\" to clearly indicate remaining credits",
+      "closed_at": "2026-05-25T04:24:12Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2096",
+      "labels": []
+    },
+    {
+      "number": 2086,
+      "title": "Remove the bot profile picture editing button",
+      "closed_at": "2026-05-25T04:17:42Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2086",
+      "labels": []
+    },
+    {
+      "number": 2075,
+      "title": "When clicking \"Publish\" the loading spinner jumps right before jumping back to the center of the video",
+      "closed_at": "2026-05-25T04:26:12Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2075",
+      "labels": []
+    },
+    {
+      "number": 2073,
+      "title": "On draft page refresh, if the draft gets fetched, then the \"Generating video\" entry on that list should get removed",
+      "closed_at": "2026-05-25T04:17:50Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2073",
+      "labels": []
+    },
+    {
+      "number": 2072,
+      "title": "On ios, remove the \"ask to track across apps\" permission if we don't use it in any of our trackers",
+      "closed_at": "2026-05-25T04:26:20Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2072",
+      "labels": []
+    },
+    {
+      "number": 2067,
+      "title": "On the second screen where we show the fleshed out description of the ai bot during the creation flow, the text area is short and we waste space on the bottom above the \"Next button\".",
+      "closed_at": "2026-05-25T04:25:36Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2067",
+      "labels": []
+    },
+    {
+      "number": 2031,
+      "title": "Implement the new feed implemented by Ansuman",
+      "closed_at": "2026-05-25T04:18:10Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2031",
+      "labels": []
+    },
+    {
+      "number": 1969,
+      "title": "To trace how many videos are not progressing from in progress to drafts because of notification not being delivered, let's add crashlytics events for every video with relevant payload data",
+      "closed_at": "2026-05-25T04:17:57Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1969",
+      "labels": []
+    },
+    {
+      "number": 2059,
+      "title": "\"Credits\" should say \"Credits Consumed\" in the videogen screen",
+      "closed_at": "2026-05-25T14:19:17Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2059",
+      "labels": []
+    },
+    {
+      "number": 2116,
+      "title": "Add Sentry monitoring to prakash-sentry as well for the videogen set of api routes on offchain. Once we have clarity on what is failing, we can decide next steps accordingly",
+      "closed_at": "2026-05-25T03:29:25Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2116",
+      "labels": []
+    },
+    {
+      "number": 2093,
+      "title": "For the rest of the 9 corrupted videos, call the ban endpoint to properly ban the posts via offchain",
+      "closed_at": "2026-05-25T05:11:01Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2093",
+      "labels": []
+    },
+    {
+      "number": 2003,
+      "title": "Make the Storj a 1-1 mirror of Hetzner",
+      "closed_at": "2026-05-25T05:09:01Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2003",
+      "labels": []
+    }
+  ],
+  "issue_count": 13
+}
