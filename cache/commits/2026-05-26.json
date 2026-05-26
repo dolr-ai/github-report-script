@@ -1,0 +1,366 @@
+{
+  "date": "2026-05-26",
+  "cached_at": "2026-05-26T19:18:39.156018Z",
+  "commits": [
+    {
+      "sha": "153e9e667e27081af0e3da2925863445d14ad764",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-26T20:47:38+05:30",
+      "message": "chore: capture noisy checks logs",
+      "stats": {
+        "additions": 149,
+        "deletions": 32,
+        "total": 181
+      },
+      "branches": [
+        "chore/compose-update"
+      ]
+    },
+    {
+      "sha": "9b33a12088d2af14adb066026415b8e89cdd0079",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-26T09:25:45+05:30",
+      "message": "Skip build_check job for destroy pr (#456)",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "prakash/cleanup-videogen-endpoint",
+        "prakash/cleanup-fly-redis-for-ml-feed-workflow",
+        "main"
+      ]
+    },
+    {
+      "sha": "886d1f0527a997b429d29db213e123dda4ffd9e9",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-26T19:35:44+05:30",
+      "message": "feat: Phase 3 \u2014 content safety (crisis, injection, NSFW filter) (#162)",
+      "stats": {
+        "additions": 281,
+        "deletions": 6,
+        "total": 287
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b93e14c18c8dfbbb123f7d0c9a0a433a40b47006",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-26T19:02:49+05:30",
+      "message": "feat: Phase 2.2-2.4 \u2014 LLM abstraction + Soul File composer + memory enhancement (#161)",
+      "stats": {
+        "additions": 166,
+        "deletions": 31,
+        "total": 197
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "01c59aaaf7208c351a66af7cbb12091747470fce",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-26T18:39:01+05:30",
+      "message": "feat: Phase 2 \u2014 Langfuse tracing + Request ID + Redis WS pub/sub (#160)",
+      "stats": {
+        "additions": 292,
+        "deletions": 9,
+        "total": 301
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "871900d74c03ac8753199f189c8f42efacb39a10",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-26T18:34:05+05:30",
+      "message": "feat: Codex review workflow \u2014 advisory PR comments, never blocks merge (#159)",
+      "stats": {
+        "additions": 129,
+        "deletions": 0,
+        "total": 129
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "70cdedc882692a4eb50034fd2b071ff4ba2e2d2f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-26T18:32:08+05:30",
+      "message": "feat: Phase 0 + Day 2 \u2014 archive v2, rebuild as monolith (#158)",
+      "stats": {
+        "additions": 7018,
+        "deletions": 69,
+        "total": 7087
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "77132947d60d53d00b9a3a86c91ecee66d3e48a1",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-26T18:29:26+05:30",
+      "message": "feat: Phase 2.5 \u2014 Request ID tracing middleware",
+      "stats": {
+        "additions": 23,
+        "deletions": 0,
+        "total": 23
+      },
+      "branches": [
+        "agent/phase-2-langfuse"
+      ]
+    },
+    {
+      "sha": "78d696d241a9752348dbe9d49067e4939c016de3",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-26T18:28:47+05:30",
+      "message": "feat: Phase 2.1 \u2014 Langfuse tracing for every LLM call",
+      "stats": {
+        "additions": 165,
+        "deletions": 0,
+        "total": 165
+      },
+      "branches": [
+        "agent/phase-2-langfuse"
+      ]
+    },
+    {
+      "sha": "78678570ce2c23055bafa44b2807c99c8cabef1a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-26T18:24:19+05:30",
+      "message": "fix: ruff lint + format pass, remove broken codex-review workflow",
+      "stats": {
+        "additions": 767,
+        "deletions": 344,
+        "total": 1111
+      },
+      "branches": [
+        "agent/phase-2-langfuse"
+      ]
+    },
+    {
+      "sha": "54c5f3f5924250a6f6baee1ee6a1121f57d8433f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-26T18:08:52+05:30",
+      "message": "fix: add /health/live endpoint for rishi-1/2 Caddy health checks",
+      "stats": {
+        "additions": 5,
+        "deletions": 0,
+        "total": 5
+      },
+      "branches": [
+        "agent/phase-2-langfuse"
+      ]
+    },
+    {
+      "sha": "5d0759766b4802a8ba8dfae1f4fd8d2ae4ead660",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-26T17:54:47+05:30",
+      "message": "feat: Day 13 \u2014 deployed to v2 cluster on rishi-4/5",
+      "stats": {
+        "additions": 39,
+        "deletions": 24,
+        "total": 63
+      },
+      "branches": [
+        "agent/phase-2-langfuse"
+      ]
+    },
+    {
+      "sha": "bd0b2209493db133ff252663851ee8d7f0d9a36d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-26T17:08:19+05:30",
+      "message": "feat: Days 12-14 \u2014 ETL script, deploy scripts, unit tests",
+      "stats": {
+        "additions": 566,
+        "deletions": 4,
+        "total": 570
+      },
+      "branches": [
+        "agent/phase-2-langfuse"
+      ]
+    },
+    {
+      "sha": "7881e2e65a68fca0b05908ce6da9596cae0e19a0",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-26T17:03:25+05:30",
+      "message": "docs: Day 10 resolved \u2014 billing is client-side, no backend code needed",
+      "stats": {
+        "additions": 1,
+        "deletions": 2,
+        "total": 3
+      },
+      "branches": [
+        "agent/phase-2-langfuse"
+      ]
+    },
+    {
+      "sha": "7ed403479c1dad8f06b3903e60cc1861d5f56fe9",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-26T16:56:40+05:30",
+      "message": "feat: Day 11 \u2014 WebSocket inbox + DAILY-LOG.md",
+      "stats": {
+        "additions": 118,
+        "deletions": 0,
+        "total": 118
+      },
+      "branches": [
+        "agent/phase-2-langfuse"
+      ]
+    },
+    {
+      "sha": "fdb1b7975ba6c02d0705450c53138c03e0096b33",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-26T16:55:25+05:30",
+      "message": "feat: Day 8+9 \u2014 human-to-human chat + unified inbox v3",
+      "stats": {
+        "additions": 371,
+        "deletions": 0,
+        "total": 371
+      },
+      "branches": [
+        "agent/phase-2-langfuse"
+      ]
+    },
+    {
+      "sha": "cc6756aadb5bc496b946556e5fef18dd3e801c11",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-26T16:54:15+05:30",
+      "message": "feat: Day 7 \u2014 media upload + image generation in conversations",
+      "stats": {
+        "additions": 171,
+        "deletions": 1,
+        "total": 172
+      },
+      "branches": [
+        "agent/phase-2-langfuse"
+      ]
+    },
+    {
+      "sha": "047788ba4313907eb6293903b59b4de2c8cd9eaf",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-26T16:53:12+05:30",
+      "message": "feat: Day 6 \u2014 influencer CREATE flow (8 endpoints)",
+      "stats": {
+        "additions": 589,
+        "deletions": 2,
+        "total": 591
+      },
+      "branches": [
+        "agent/phase-2-langfuse"
+      ]
+    },
+    {
+      "sha": "9cc8304f867e14e380d18422111a574ae57e6b93",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-26T16:51:05+05:30",
+      "message": "feat: Day 5 \u2014 ai_client + send-message (the HEART of the chat service)",
+      "stats": {
+        "additions": 864,
+        "deletions": 0,
+        "total": 864
+      },
+      "branches": [
+        "agent/phase-2-langfuse"
+      ]
+    },
+    {
+      "sha": "ae8b97dd9d0aa6eb0a119818dff59a42ba5835d3",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-26T16:48:34+05:30",
+      "message": "feat: Day 4 \u2014 conversation routes + chat_v2 bot-aware inbox",
+      "stats": {
+        "additions": 1039,
+        "deletions": 2,
+        "total": 1041
+      },
+      "branches": [
+        "agent/phase-2-langfuse"
+      ]
+    },
+    {
+      "sha": "c15a9afeb66b292d6b68f027d0b7db7717173b42",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-26T16:42:57+05:30",
+      "message": "feat: Day 3 \u2014 models.py + influencer READ endpoints + migrations",
+      "stats": {
+        "additions": 586,
+        "deletions": 0,
+        "total": 586
+      },
+      "branches": [
+        "agent/phase-2-langfuse"
+      ]
+    },
+    {
+      "sha": "9658de2506a9d73d068d80ab8468b4df8be8c029",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-26T16:33:46+05:30",
+      "message": "chore: add untracked coordinator session log to archive",
+      "stats": {
+        "additions": 1527,
+        "deletions": 0,
+        "total": 1527
+      },
+      "branches": [
+        "agent/phase-2-langfuse"
+      ]
+    },
+    {
+      "sha": "9d26916cdb18bdf9ad096745b8a7014d86b28223",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-26T16:33:05+05:30",
+      "message": "feat: Phase 0 + Day 2 \u2014 archive v2 code, rebuild as monolith with app/ skeleton",
+      "stats": {
+        "additions": 754,
+        "deletions": 69,
+        "total": 823
+      },
+      "branches": [
+        "agent/phase-2-langfuse"
+      ]
+    }
+  ],
+  "commit_count": 23,
+  "issues": [
+    {
+      "number": 2122,
+      "title": "Avoid triggering build_check when PR gets closed for offchain",
+      "closed_at": "2026-05-26T03:55:46Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2122",
+      "labels": []
+    }
+  ],
+  "issue_count": 1
+}
