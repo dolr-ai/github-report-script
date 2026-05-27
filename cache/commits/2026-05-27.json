@@ -1,0 +1,374 @@
+{
+  "date": "2026-05-27",
+  "cached_at": "2026-05-27T19:18:49.614806Z",
+  "commits": [
+    {
+      "sha": "53fbc38aff638a03755df31fb1338a8d1663d024",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-27T21:24:01+05:30",
+      "message": "Fix/ghost influencer (#1169)",
+      "stats": {
+        "additions": 280,
+        "deletions": 32,
+        "total": 312
+      },
+      "branches": [
+        "main",
+        "fix/chat-switch"
+      ]
+    },
+    {
+      "sha": "28e98822ff89b7001a4b787a6c591d9e06347b53",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-27T20:59:15+05:30",
+      "message": "Fix AI video generate button on iOS (#1168)",
+      "stats": {
+        "additions": 56,
+        "deletions": 19,
+        "total": 75
+      },
+      "branches": [
+        "main",
+        "fix/chat-switch"
+      ]
+    },
+    {
+      "sha": "fea99787132bcc11432a60830d9acca1c751a259",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-27T09:27:34+05:30",
+      "message": "Fix text field selection interactions (#1167)",
+      "stats": {
+        "additions": 655,
+        "deletions": 409,
+        "total": 1064
+      },
+      "branches": [
+        "main",
+        "fix/chat-switch",
+        "feature/image-video-gen"
+      ]
+    },
+    {
+      "sha": "9d7a65611ca6b6ce3d67c31660e62845777de2d9",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-27T21:04:04+05:30",
+      "message": "Fix bot chat profile navigation",
+      "stats": {
+        "additions": 103,
+        "deletions": 22,
+        "total": 125
+      },
+      "branches": [
+        "fix/chat-switch"
+      ]
+    },
+    {
+      "sha": "7ea979b60265b11a63941151f777d403b704e9e4",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-27T21:29:25+05:30",
+      "message": "Add image-to-video generation mode to AI video flow",
+      "stats": {
+        "additions": 678,
+        "deletions": 7,
+        "total": 685
+      },
+      "branches": [
+        "feature/image-video-gen"
+      ]
+    },
+    {
+      "sha": "9af5ce0b85a326cfe536489c3428a259222a7004",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-27T16:53:09+05:30",
+      "message": "use new user for deployment and remove redundant fly setup",
+      "stats": {
+        "additions": 31,
+        "deletions": 124,
+        "total": 155
+      },
+      "branches": [
+        "naitik/new_user_with_access"
+      ]
+    },
+    {
+      "sha": "8c70e542533c0c267d2c4a4708c4b3889bc69071",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-27T11:15:34+05:30",
+      "message": "Cleanup workflow for fly redis instance (#457)",
+      "stats": {
+        "additions": 1,
+        "deletions": 100,
+        "total": 101
+      },
+      "branches": [
+        "naitik/new_user_with_access",
+        "naitik/deployment_cleanup",
+        "main"
+      ]
+    },
+    {
+      "sha": "9a146810901c504f3b08ff7932ccc96d33d2999a",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-27T17:38:09+05:30",
+      "message": "removed clean up steps for old directory",
+      "stats": {
+        "additions": 0,
+        "deletions": 6,
+        "total": 6
+      },
+      "branches": [
+        "naitik/deployment_cleanup"
+      ]
+    },
+    {
+      "sha": "f1e20b5e2203a84bfd1fce647478d9309e8c846b",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-27T17:25:17+05:30",
+      "message": "use new user for deployment and remove redundant fly setup (#458)",
+      "stats": {
+        "additions": 31,
+        "deletions": 124,
+        "total": 155
+      },
+      "branches": [
+        "naitik/deployment_cleanup",
+        "main"
+      ]
+    },
+    {
+      "sha": "847f286f5c375ca727c88c8f3b276a19fd32810e",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-27T17:52:01+05:30",
+      "message": "removed clean up steps for old directory (#459)",
+      "stats": {
+        "additions": 0,
+        "deletions": 6,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "36743ce18d93adc1bbd7a43352e39e5ad083150d",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-gpu-inference-server",
+      "timestamp": "2026-05-27T10:02:54+05:30",
+      "message": "feat: add basic serving gateway",
+      "stats": {
+        "additions": 516,
+        "deletions": 9,
+        "total": 525
+      },
+      "branches": [
+        "ansuman/feat/basic-serving-gateway"
+      ]
+    },
+    {
+      "sha": "4c9c8c29b93a5567e53d1e248e533de5702cf6b6",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-gpu-inference-server",
+      "timestamp": "2026-05-27T09:37:41+05:30",
+      "message": "feat: enhance documentation and deployment scripts for GPU inference backend",
+      "stats": {
+        "additions": 451,
+        "deletions": 32,
+        "total": 483
+      },
+      "branches": [
+        "ansuman/feat/basic-serving-gateway",
+        "ansuman/feat/add-ci-pipeline"
+      ]
+    },
+    {
+      "sha": "f5579acf00d2d1efa26daf359b5430d00d1c9a91",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-27T20:39:37+05:30",
+      "message": "feat: endpoint test script + /debug/whoami (#169)",
+      "stats": {
+        "additions": 301,
+        "deletions": 5,
+        "total": 306
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e62811f73614063b90c5d0344b1d49189ae54143",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-27T20:06:39+05:30",
+      "message": "feat: Phase 9 \u2014 eval harness with 50 gold prompts + Gemini-as-judge scoring (#168)",
+      "stats": {
+        "additions": 522,
+        "deletions": 0,
+        "total": 522
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "2d2b6f4457c6a8c72138453f63db6297bf1c9665",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-27T19:37:38+05:30",
+      "message": "fix: Codex review uses correct secret name + fails when key missing (#167)",
+      "stats": {
+        "additions": 8,
+        "deletions": 3,
+        "total": 11
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a763b14bb7e2bbe71710c6bf929988597373f436",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-27T19:34:03+05:30",
+      "message": "feat: Phase 7+8 + background engagement loop (#166)",
+      "stats": {
+        "additions": 460,
+        "deletions": 2,
+        "total": 462
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "01a3b974c9b7ac41b53291863cf97e9f5f877c26",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-27T19:05:49+05:30",
+      "message": "feat: Phase 4+5+6 \u2014 tiered memory + proactive messages + first-turn nudge (#165)",
+      "stats": {
+        "additions": 526,
+        "deletions": 51,
+        "total": 577
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a1e29d294c8d0792d85d437aad7692a17ac2b6f6",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-27T16:49:48+05:30",
+      "message": "fix: replace Langfuse SDK with raw HTTP API for self-hosted tracing (#164)",
+      "stats": {
+        "additions": 76,
+        "deletions": 51,
+        "total": 127
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "83d5a3fe4d7cc1d44ebabfdc9cab4e5e6b6d565d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-27T14:54:24+05:30",
+      "message": "fix: presign media_urls and audio_url in chat message responses (#163)",
+      "stats": {
+        "additions": 8,
+        "deletions": 0,
+        "total": 8
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6f89a9d092969f62a7d62785e338bb64fff8f014",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-05-27T07:53:07+05:30",
+      "message": "feat(submodule): add yral-common submodule with HTTPS URL",
+      "stats": {
+        "additions": 4,
+        "deletions": 0,
+        "total": 4
+      },
+      "branches": [
+        "renovate/vpa-4.x",
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 20,
+  "issues": [
+    {
+      "number": 2126,
+      "title": "Fix offchain workflows to eliminate any failures on merge",
+      "closed_at": "2026-05-27T05:45:36Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2126",
+      "labels": []
+    },
+    {
+      "number": 2132,
+      "title": "Sanitize the checks.yml output. RIght now the log file gets so huge that its unreadable and isn't even rendered in Github",
+      "closed_at": "2026-05-27T04:12:47Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2132",
+      "labels": []
+    },
+    {
+      "number": 2130,
+      "title": "Investigate this: https://chat.google.com/room/AAAAsRNSUQM/KXTHWSDRF4I/KXTHWSDRF4I?cls=10",
+      "closed_at": "2026-05-27T15:54:03Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2130",
+      "labels": []
+    },
+    {
+      "number": 2125,
+      "title": "Ghost influencer profiles showing up on the profile switcher. Also, iOS and android profile counts not matching",
+      "closed_at": "2026-05-27T15:54:03Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2125",
+      "labels": []
+    }
+  ],
+  "issue_count": 4
+}
