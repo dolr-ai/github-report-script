@@ -1,0 +1,535 @@
+{
+  "date": "2026-05-28",
+  "cached_at": "2026-05-28T19:25:29.098246Z",
+  "commits": [
+    {
+      "sha": "35e3ebd2da764b33627e95d10cc953ee16131365",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-gpu-inference-server",
+      "timestamp": "2026-05-29T00:05:19+05:30",
+      "message": "Merge pull request #4 from dolr-ai/ansuman/fix/documentation-update",
+      "stats": {
+        "additions": 286,
+        "deletions": 37,
+        "total": 323
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4aaf868dca5477dcd2031cffa2d7a21aca6928b9",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-gpu-inference-server",
+      "timestamp": "2026-05-29T00:04:01+05:30",
+      "message": "docs: update environment variables and connectivity documentation for GPU inference backend",
+      "stats": {
+        "additions": 286,
+        "deletions": 37,
+        "total": 323
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a4d5adfebc9e60b73acd276ca007eabeb6cb6dd0",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-28T23:11:23+05:30",
+      "message": "fix(chat): address takeover review issues",
+      "stats": {
+        "additions": 58,
+        "deletions": 18,
+        "total": 76
+      },
+      "branches": [
+        "rishi/chat-as-human-takeover"
+      ]
+    },
+    {
+      "sha": "30abfd0ba919c3f6a0eb60f64325f9af56a5d890",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-28T16:08:15+05:30",
+      "message": "fix(chat): block auto-scroll to an ASSISTANT older than the newest visible item",
+      "stats": {
+        "additions": 20,
+        "deletions": 0,
+        "total": 20
+      },
+      "branches": [
+        "rishi/chat-as-human-takeover"
+      ]
+    },
+    {
+      "sha": "8f1d1984ad6780a314a631174e328a5c8a859dad",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-28T15:52:14+05:30",
+      "message": "fix(chat): snap LazyColumn to newest message on conversation entry",
+      "stats": {
+        "additions": 11,
+        "deletions": 0,
+        "total": 11
+      },
+      "branches": [
+        "rishi/chat-as-human-takeover"
+      ]
+    },
+    {
+      "sha": "1afcfed5987d7ab42f67108ac8709b0ea0d26fa6",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-28T15:52:10+05:30",
+      "message": "fix(chat): auto-scroll must not move backward in time",
+      "stats": {
+        "additions": 39,
+        "deletions": 0,
+        "total": 39
+      },
+      "branches": [
+        "rishi/chat-as-human-takeover"
+      ]
+    },
+    {
+      "sha": "7553d742747dd655d8be5ec1b5303568e7cb3b35",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-28T15:01:20+05:30",
+      "message": "fix(chat): preserve isChatAsHumanCreatorEnabled across resetState",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "rishi/chat-as-human-takeover"
+      ]
+    },
+    {
+      "sha": "d3ed8559e1721bc0160e814caed5b6e13667355c",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-28T14:17:40+05:30",
+      "message": "feat(chat): Chat as Human Creator (takeover) behind feature flag",
+      "stats": {
+        "additions": 1233,
+        "deletions": 21,
+        "total": 1254
+      },
+      "branches": [
+        "rishi/chat-as-human-takeover"
+      ]
+    },
+    {
+      "sha": "2ad96541ee33cb2934a97567c76eebc9f9675dd0",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-28T11:11:50+05:30",
+      "message": "Add image-to-video generation mode to AI video flow (#1171)",
+      "stats": {
+        "additions": 673,
+        "deletions": 6,
+        "total": 679
+      },
+      "branches": [
+        "main",
+        "fix/ios-video-playback"
+      ]
+    },
+    {
+      "sha": "c56f0e87100a7fad8db4c55b759e4683be92d4ca",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-28T10:08:52+05:30",
+      "message": "Fix bot chat profile navigation (#1170)",
+      "stats": {
+        "additions": 103,
+        "deletions": 22,
+        "total": 125
+      },
+      "branches": [
+        "main",
+        "fix/ios-video-playback"
+      ]
+    },
+    {
+      "sha": "434fe0cdc3e7760ffaeb8f95ac01af7a7ddb5bdf",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-28T22:51:29+05:30",
+      "message": "Fix iOS feed video startup stalls",
+      "stats": {
+        "additions": 239,
+        "deletions": 3,
+        "total": 242
+      },
+      "branches": [
+        "fix/ios-video-playback"
+      ]
+    },
+    {
+      "sha": "0ed24099e328b0480afba3c13abc2400ee4e5480",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-28T22:21:14+05:30",
+      "message": "docs(phase-4): flip 4.7 + 4.8 to Done, log Phase 4 completion (#184)",
+      "stats": {
+        "additions": 27,
+        "deletions": 3,
+        "total": 30
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "5359a07252f49e0c19cdc5d593d7ddff87507788",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-28T22:15:23+05:30",
+      "message": "feat(phase-4.8): nightly memory consolidation (#183)",
+      "stats": {
+        "additions": 202,
+        "deletions": 1,
+        "total": 203
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "686e39ae1f5ed3d815266618decaa57e89ae5b89",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-28T22:05:51+05:30",
+      "message": "feat(phase-4.7): Redis session memory (mood as ephemeral signal) (#182)",
+      "stats": {
+        "additions": 260,
+        "deletions": 2,
+        "total": 262
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "0dda55ac34a440350516d96b7d01eab3d137403c",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-28T21:59:06+05:30",
+      "message": "docs(phase-4.5): flip to Done, log deploy (#181)",
+      "stats": {
+        "additions": 8,
+        "deletions": 2,
+        "total": 10
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "444106633398b2c4c86ef699bb4fc03abf4fa865",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-28T21:51:09+05:30",
+      "message": "feat(phase-4.5): cross-conversation memory recall (#180)",
+      "stats": {
+        "additions": 89,
+        "deletions": 16,
+        "total": 105
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f7672b7ae12cf353e94865fb5e16c07a33c848bf",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-28T21:44:25+05:30",
+      "message": "docs(phase-4.6): flip 4.6 to Done, log deploy (#179)",
+      "stats": {
+        "additions": 12,
+        "deletions": 2,
+        "total": 14
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "90029c16a23404fcb8057adcea9ed71a352e4e73",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-28T21:37:33+05:30",
+      "message": "feat(phase-4.6): user profile memory \u2014 identity facts go global (#178)",
+      "stats": {
+        "additions": 221,
+        "deletions": 3,
+        "total": 224
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6f34609107778b15b29509296a3cad571a1c9e8b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-28T21:27:14+05:30",
+      "message": "docs(phase-4.4): flip to Done, add infra backlog + daily log (#177)",
+      "stats": {
+        "additions": 60,
+        "deletions": 23,
+        "total": 83
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "1d0acf511e0666c1919c3d5e123e6f1dfa038037",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-28T19:22:46+05:30",
+      "message": "fix(phase-4.4): switch to gemini-embedding-001 (text-embedding-004 retired) (#176)",
+      "stats": {
+        "additions": 19,
+        "deletions": 34,
+        "total": 53
+      },
+      "branches": [
+        "main",
+        "agent/phase-4-4-progress-flip"
+      ]
+    },
+    {
+      "sha": "776e6bd46d829a767e22d40e1d9e4829132d8f85",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-28T18:42:13+05:30",
+      "message": "feat(infra): custom Patroni image with pgvector (unblocks Phase 4.4) (#175)",
+      "stats": {
+        "additions": 117,
+        "deletions": 6,
+        "total": 123
+      },
+      "branches": [
+        "main",
+        "agent/phase-4-4-progress-flip"
+      ]
+    },
+    {
+      "sha": "7ea4efa135439d823fdaa473a8983b06116f81ad",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-28T17:30:32+05:30",
+      "message": "feat(phase-4.4): pgvector semantic memory (#174)",
+      "stats": {
+        "additions": 474,
+        "deletions": 13,
+        "total": 487
+      },
+      "branches": [
+        "main",
+        "agent/phase-4-4-progress-flip"
+      ]
+    },
+    {
+      "sha": "76d1349736e4b3fce672fd4c8412733d4e034b53",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-28T16:16:48+05:30",
+      "message": "feat(phase-3.8): graceful Gemini error UX (#173)",
+      "stats": {
+        "additions": 153,
+        "deletions": 7,
+        "total": 160
+      },
+      "branches": [
+        "main",
+        "agent/phase-4-4-progress-flip"
+      ]
+    },
+    {
+      "sha": "212fe18cf42b8d91bbebade20339f6456a282efb",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-28T15:45:44+05:30",
+      "message": "docs(progress): Phase 1.10 backend Done; Phase 3.8 graceful-error-UX backlog (#172)",
+      "stats": {
+        "additions": 22,
+        "deletions": 2,
+        "total": 24
+      },
+      "branches": [
+        "main",
+        "agent/phase-4-4-progress-flip"
+      ]
+    },
+    {
+      "sha": "a3d2ed9896594779a75a10b11dc12dee9702726a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-28T14:12:40+05:30",
+      "message": "feat: Chat as Human \u2014 creator takeover mode (Phase 1.10) (#170)",
+      "stats": {
+        "additions": 1368,
+        "deletions": 47,
+        "total": 1415
+      },
+      "branches": [
+        "main",
+        "agent/phase-4-4-progress-flip"
+      ]
+    },
+    {
+      "sha": "330169d9dfefd5da1b66dea5ce7ab56b8b43e167",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-28T14:12:12+05:30",
+      "message": "docs: add 'Deploy process (NEVER bypass)' rule to CLAUDE.md (#171)",
+      "stats": {
+        "additions": 11,
+        "deletions": 0,
+        "total": 11
+      },
+      "branches": [
+        "main",
+        "agent/phase-4-4-progress-flip"
+      ]
+    },
+    {
+      "sha": "e8d0612b419ebb0addbff35296ee01a1704e801c",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-28T21:23:42+05:30",
+      "message": "docs: correct DATABASE_URL fix attribution (no PR, swarm env update)",
+      "stats": {
+        "additions": 7,
+        "deletions": 4,
+        "total": 11
+      },
+      "branches": [
+        "agent/phase-4-4-progress-flip"
+      ]
+    },
+    {
+      "sha": "9e4d6837ad103ef58f1f03baa20ff9a8b0973155",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-28T21:22:30+05:30",
+      "message": "docs(phase-4.4): flip 4.4 to Done, add INFRASTRUCTURE BACKLOG, daily-log entry",
+      "stats": {
+        "additions": 57,
+        "deletions": 23,
+        "total": 80
+      },
+      "branches": [
+        "agent/phase-4-4-progress-flip"
+      ]
+    },
+    {
+      "sha": "74fcfcf98617fa80bc8d0cb446f1aac562e1138c",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-28T12:25:09+05:30",
+      "message": "fix: Chat as Human \u2014 3 bugs from Motorola testing",
+      "stats": {
+        "additions": 152,
+        "deletions": 40,
+        "total": 192
+      },
+      "branches": [
+        "agent/chat-as-human"
+      ]
+    },
+    {
+      "sha": "b3747380ebb91dd5e753598c4782ca650ca788e1",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-28T11:50:05+05:30",
+      "message": "test: AI context preservation E2E for Chat as Human (Phase 1.10)",
+      "stats": {
+        "additions": 182,
+        "deletions": 0,
+        "total": 182
+      },
+      "branches": [
+        "agent/chat-as-human"
+      ]
+    },
+    {
+      "sha": "a201ccb1cb0e3f29bc84d7f114d470a2804e7640",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-28T11:40:26+05:30",
+      "message": "feat: Chat as Human \u2014 add GET /creator/messages polling endpoint + perf check",
+      "stats": {
+        "additions": 531,
+        "deletions": 40,
+        "total": 571
+      },
+      "branches": [
+        "agent/chat-as-human"
+      ]
+    },
+    {
+      "sha": "5a260eccf865b9d1530248c6fc5e1400422254dd",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-28T11:34:37+05:30",
+      "message": "feat: Chat as Human \u2014 creator takeover mode (Phase 1.10)",
+      "stats": {
+        "additions": 545,
+        "deletions": 9,
+        "total": 554
+      },
+      "branches": [
+        "agent/chat-as-human"
+      ]
+    }
+  ],
+  "commit_count": 32,
+  "issues": [
+    {
+      "number": 2133,
+      "title": "Chat with another profile possibilities",
+      "closed_at": "2026-05-28T04:38:54Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2133",
+      "labels": []
+    },
+    {
+      "number": 2102,
+      "title": "Replace the random username generator with <adverb><adjective><noun>",
+      "closed_at": "2026-05-28T04:19:46Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2102",
+      "labels": []
+    },
+    {
+      "number": 2097,
+      "title": "Fix the LTX icon",
+      "closed_at": "2026-05-28T04:19:41Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2097",
+      "labels": []
+    },
+    {
+      "number": 2076,
+      "title": "Block on video view count being delivered in a single request as part of the feed or any list of videos' metadata being returned",
+      "closed_at": "2026-05-28T04:19:49Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2076",
+      "labels": []
+    }
+  ],
+  "issue_count": 4
+}
