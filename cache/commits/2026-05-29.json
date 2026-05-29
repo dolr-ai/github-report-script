@@ -1,0 +1,887 @@
+{
+  "date": "2026-05-29",
+  "cached_at": "2026-05-29T19:22:25.653752Z",
+  "commits": [
+    {
+      "sha": "df7a2439b18c195abb698271f666f06167444e6a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-29T21:28:01+05:30",
+      "message": "docs(chat): SSE handoff test results from the Phase 10 Motorola pass",
+      "stats": {
+        "additions": 24,
+        "deletions": 14,
+        "total": 38
+      },
+      "branches": [
+        "rishi/sse-streaming"
+      ]
+    },
+    {
+      "sha": "c56d7135e14bff061ffd601602c4b2dcfb4c64e4",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-29T21:16:55+05:30",
+      "message": "fix(chat): disable send button while AI reply is in flight (match chat-ai)",
+      "stats": {
+        "additions": 55,
+        "deletions": 14,
+        "total": 69
+      },
+      "branches": [
+        "rishi/sse-streaming"
+      ]
+    },
+    {
+      "sha": "5cda99a5443d88c74964fe5b0ec0f9ab8041e6e2",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-29T20:41:28+05:30",
+      "message": "fix(chat): drop duplicate screen-side refreshHistory trigger",
+      "stats": {
+        "additions": 7,
+        "deletions": 2,
+        "total": 9
+      },
+      "branches": [
+        "rishi/sse-streaming"
+      ]
+    },
+    {
+      "sha": "466ee47ac96132e8087b98a17369a41c4fccf43c",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-29T20:39:58+05:30",
+      "message": "fix(chat): drop Phase 8 per-buffer scrollToItem (Codex H3, primary Soma jerkiness)",
+      "stats": {
+        "additions": 0,
+        "deletions": 28,
+        "total": 28
+      },
+      "branches": [
+        "rishi/sse-streaming"
+      ]
+    },
+    {
+      "sha": "e09ddbf8675b96f2a2b74b6b651450cd71ef8806",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-29T20:37:03+05:30",
+      "message": "fix(chat): SSE Phase 7 \u2014 atomic add of user + streaming placeholder",
+      "stats": {
+        "additions": 36,
+        "deletions": 12,
+        "total": 48
+      },
+      "branches": [
+        "rishi/sse-streaming"
+      ]
+    },
+    {
+      "sha": "ebc35663e018c261ff22af609787990f4a2d64a8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-29T19:52:53+05:30",
+      "message": "docs(chat): SSE handoff doc for Sarvesh review",
+      "stats": {
+        "additions": 98,
+        "deletions": 0,
+        "total": 98
+      },
+      "branches": [
+        "rishi/sse-streaming"
+      ]
+    },
+    {
+      "sha": "44de994fb4dabf51d8d9ba731c1bc6bce50fd3d5",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-29T19:49:14+05:30",
+      "message": "feat(chat): SSE Phase 9 \u2014 consecutive-failure circuit breaker",
+      "stats": {
+        "additions": 34,
+        "deletions": 2,
+        "total": 36
+      },
+      "branches": [
+        "rishi/sse-streaming"
+      ]
+    },
+    {
+      "sha": "42293d3cde788a43ac7a8227466e3c2df92b0d79",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-29T19:40:51+05:30",
+      "message": "feat(chat): SSE Phase 8 \u2014 streaming-aware sticky-bottom auto-scroll",
+      "stats": {
+        "additions": 28,
+        "deletions": 0,
+        "total": 28
+      },
+      "branches": [
+        "rishi/sse-streaming"
+      ]
+    },
+    {
+      "sha": "11a4a35265019c3ea427471e7e238958ef2f0a36",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-29T19:36:03+05:30",
+      "message": "feat(chat): SSE Phase 7 \u2014 idle watchdog + single-stream send queue",
+      "stats": {
+        "additions": 161,
+        "deletions": 20,
+        "total": 181
+      },
+      "branches": [
+        "rishi/sse-streaming"
+      ]
+    },
+    {
+      "sha": "f7fc6361dc7aec87d687314e85df4c0d7b039f25",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-29T19:23:36+05:30",
+      "message": "feat(chat): SSE Phase 6 \u2014 AssistantErrorBubble + retry off the typed error",
+      "stats": {
+        "additions": 200,
+        "deletions": 3,
+        "total": 203
+      },
+      "branches": [
+        "rishi/sse-streaming"
+      ]
+    },
+    {
+      "sha": "8e18c47177ea60e36cf4cc0a34dce30941ab5b81",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-29T19:13:59+05:30",
+      "message": "feat(chat): SSE Phase 4 \u2014 typed AssistantError plumbing for stream errors",
+      "stats": {
+        "additions": 75,
+        "deletions": 25,
+        "total": 100
+      },
+      "branches": [
+        "rishi/sse-streaming"
+      ]
+    },
+    {
+      "sha": "f52380be040aca20ed500ec19925f6aa9a3183ce",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-29T18:59:51+05:30",
+      "message": "docs(chat): SSE planning, post-mortem, and mobile expert lessons",
+      "stats": {
+        "additions": 1718,
+        "deletions": 0,
+        "total": 1718
+      },
+      "branches": [
+        "rishi/sse-streaming"
+      ]
+    },
+    {
+      "sha": "a32bb5d0f803efd4e924b15b7198405263b6bc12",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-29T18:59:32+05:30",
+      "message": "feat(chat): SSE rendering pipeline \u2014 path lock + cursor isolation + coalescing",
+      "stats": {
+        "additions": 568,
+        "deletions": 46,
+        "total": 614
+      },
+      "branches": [
+        "rishi/sse-streaming"
+      ]
+    },
+    {
+      "sha": "2fbb25a57fbee73afd758b12f3d6bb004c90d5ae",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-29T18:55:25+05:30",
+      "message": "feat(chat): SSE 5a \u2014 core streaming plumbing (ChatStreamingDataSource, StreamEvent Flow API)",
+      "stats": {
+        "additions": 231,
+        "deletions": 0,
+        "total": 231
+      },
+      "branches": [
+        "rishi/sse-streaming"
+      ]
+    },
+    {
+      "sha": "f7b577dea757b366dd72815488becadf15d3c48b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-29T12:13:41+05:30",
+      "message": "feat(chat): Chat as Human Creator (takeover) behind feature flag (#1172)",
+      "stats": {
+        "additions": 1344,
+        "deletions": 21,
+        "total": 1365
+      },
+      "branches": [
+        "rishi/sse-streaming",
+        "main"
+      ]
+    },
+    {
+      "sha": "9adadfa9497ec276f044dda160eefb174c750af1",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-29T23:17:38+05:30",
+      "message": "Fix/upload ai video draft controls (#1175)",
+      "stats": {
+        "additions": 34,
+        "deletions": 36,
+        "total": 70
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "648260e1fd40d329a019e6cdb8c39c426d989e0e",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-29T21:47:07+05:30",
+      "message": "Default AI video flow to image mode",
+      "stats": {
+        "additions": 13,
+        "deletions": 7,
+        "total": 20
+      },
+      "branches": [
+        "chore/ui-changes"
+      ]
+    },
+    {
+      "sha": "f0ab8254812de924523345cdb783dba6e8036db3",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-29T21:37:54+05:30",
+      "message": "Open AI video screen from upload tab",
+      "stats": {
+        "additions": 12,
+        "deletions": 30,
+        "total": 42
+      },
+      "branches": [
+        "chore/ui-changes"
+      ]
+    },
+    {
+      "sha": "d273fcdff25abf8e285c2dc074e3c50dd932e985",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-28T11:11:50+05:30",
+      "message": "Add image-to-video generation mode to AI video flow (#1171)",
+      "stats": {
+        "additions": 678,
+        "deletions": 11,
+        "total": 689
+      },
+      "branches": [
+        "chore/ui-changes"
+      ]
+    },
+    {
+      "sha": "2593ffdded8e2bf6997ae095a57d48a1713055ce",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-29T21:31:53+05:30",
+      "message": "Fix draft video play pause control",
+      "stats": {
+        "additions": 10,
+        "deletions": 3,
+        "total": 13
+      },
+      "branches": [
+        "chore/ui-changes"
+      ]
+    },
+    {
+      "sha": "09a7a30d43165db6c85c067b55ad836e4f10979d",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-05-29T09:40:41+05:30",
+      "message": "Migrate comfy ui client for ltx2.3 (#455)",
+      "stats": {
+        "additions": 171,
+        "deletions": 185,
+        "total": 356
+      },
+      "branches": [
+        "naitik/send_bulk_data_to_recsys",
+        "main"
+      ]
+    },
+    {
+      "sha": "25a10069f472cae254adc98c480495d8fb4b4b7b",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-gpu-inference-server",
+      "timestamp": "2026-05-29T09:42:29+05:30",
+      "message": "feat(vllm): integrate vLLM server configuration and client with runtime commands and tests (#7)",
+      "stats": {
+        "additions": 269,
+        "deletions": 4,
+        "total": 273
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ea7cdf5433eeb001ad4066d05518c853ea081789",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-gpu-inference-server",
+      "timestamp": "2026-05-29T09:39:10+05:30",
+      "message": "feat(vllm): integrate vLLM server configuration and client with runtime commands and tests",
+      "stats": {
+        "additions": 269,
+        "deletions": 4,
+        "total": 273
+      },
+      "branches": [
+        "ansuman/feat/vllm-and-Observability"
+      ]
+    },
+    {
+      "sha": "31dd9e2d7a1998a5f5f904d000a3443492400142",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-29T22:04:27+05:30",
+      "message": "docs: day-end log + PROGRESS update for S3 ETL pivot Phases 1-4 (#215)",
+      "stats": {
+        "additions": 78,
+        "deletions": 19,
+        "total": 97
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "84f16f70f24dd9243b271f3eb0f3b2819d5184e9",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-29T21:40:26+05:30",
+      "message": "fix(etl): export script \u2014 count CSV rows, not byte newlines (#214)",
+      "stats": {
+        "additions": 47,
+        "deletions": 5,
+        "total": 52
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "47ef5ef0e1f773d7d3567056a261fb2c0217f730",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-29T20:31:27+05:30",
+      "message": "feat(etl): 4-layer integrity verification (Phase 3 of S3 ETL pivot) (#213)",
+      "stats": {
+        "additions": 1151,
+        "deletions": 119,
+        "total": 1270
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ac37e44b7c7525264d4aff64d6b644177672dd83",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-29T20:11:19+05:30",
+      "message": "feat(etl): Phase 2 \u2014 V2 S3 fetcher (replaces direct asyncpg pull) (#212)",
+      "stats": {
+        "additions": 570,
+        "deletions": 587,
+        "total": 1157
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "08c13af25e29cca047ff19fbb0f76426087271e7",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-29T19:59:52+05:30",
+      "message": "feat(etl): rishi-1 incremental exporter for S3-based ETL pivot (#211)",
+      "stats": {
+        "additions": 456,
+        "deletions": 0,
+        "total": 456
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "1200e42ec2dbbd5782c155c46f48bae40144e7d0",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-29T19:14:09+05:30",
+      "message": "fix(etl): read chat-ai DSN from Swarm secret file (file-first) (#210)",
+      "stats": {
+        "additions": 66,
+        "deletions": 12,
+        "total": 78
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a30e916d4fc720e2c06a6acdacc5a4367696adb3",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-29T18:37:25+05:30",
+      "message": "docs(cutover): flip Tasks B + C to Done, log activation steps (#209)",
+      "stats": {
+        "additions": 30,
+        "deletions": 1,
+        "total": 31
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "10046ec04656c34f681efcecf568c3b4ef402292",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-29T18:28:54+05:30",
+      "message": "feat(cutover): hourly data-integrity verifier (Task C) (#208)",
+      "stats": {
+        "additions": 497,
+        "deletions": 1,
+        "total": 498
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3b0555d013435516e0abd4ad7bde83f2c7a8a097",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-29T18:15:40+05:30",
+      "message": "feat(cutover): continuous incremental ETL from chat-ai (Task B) (#207)",
+      "stats": {
+        "additions": 526,
+        "deletions": 2,
+        "total": 528
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c4f2565f13cf5e2e333d95c1ef2df731667650d2",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-29T17:50:51+05:30",
+      "message": "docs(batch-3): flip all 5 tasks to Done, log final eval-gate + close-out (#206)",
+      "stats": {
+        "additions": 55,
+        "deletions": 5,
+        "total": 60
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "52b32027d69a4355461e9fc830d712cf3c7b11dc",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-29T17:22:53+05:30",
+      "message": "feat(phase-7.9): 5-minute bot creation wizard (Task 4) (#205)",
+      "stats": {
+        "additions": 709,
+        "deletions": 1,
+        "total": 710
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "971e82e00bdad53d78b3a06b5fec72dc25fd2854",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-29T17:09:20+05:30",
+      "message": "feat(phase-7.6): A/B testing for soul file variants (Task 3) (#204)",
+      "stats": {
+        "additions": 496,
+        "deletions": 6,
+        "total": 502
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "cc08d4587bd74172e4d02d9851f042672c31a89d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-29T16:58:22+05:30",
+      "message": "feat(phase-7.8): creator recommendations (Task 2) (#203)",
+      "stats": {
+        "additions": 353,
+        "deletions": 1,
+        "total": 354
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "df3d92475170b1b3469a0e92ceb7a231cd8315f9",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-29T16:46:34+05:30",
+      "message": "feat(phase-5.6): streak tracking (Task 5) (#202)",
+      "stats": {
+        "additions": 285,
+        "deletions": 1,
+        "total": 286
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "88d69305b52966d68bcb2f8b67222c357d57a26a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-29T16:24:45+05:30",
+      "message": "feat(phase-7.7): bot quality scorer (Task 1) (#201)",
+      "stats": {
+        "additions": 557,
+        "deletions": 3,
+        "total": 560
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e828c708a0bbb26171afc3247c34530b4073cc1f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-29T15:38:12+05:30",
+      "message": "docs(batch-2): Phase 12 partial \u2014 sentence caps reverted, temp diff kept (#200)",
+      "stats": {
+        "additions": 48,
+        "deletions": 5,
+        "total": 53
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c194f85617afacd8b2b243fd2e62db0e4305e52d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-29T15:20:57+05:30",
+      "message": "fix(phase-12): roll back sentence caps + tight max_tokens \u2014 eval regressed (#199)",
+      "stats": {
+        "additions": 92,
+        "deletions": 32,
+        "total": 124
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "55c3a896e09a4b873b08711e20a8275a165df914",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-29T15:00:38+05:30",
+      "message": "feat(phase-12): per-archetype response quality tuning (Task C) (#198)",
+      "stats": {
+        "additions": 219,
+        "deletions": 17,
+        "total": 236
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "845ac634e79f2a705a5837ca9b870d31fab0f493",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-29T14:40:17+05:30",
+      "message": "docs(batch-2): flip 5.4 to Done, log batch-2 deploy + verifications (#197)",
+      "stats": {
+        "additions": 22,
+        "deletions": 1,
+        "total": 23
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9daf3840dd717001d39adb1f7eea6e68aa5156bd",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-29T14:22:26+05:30",
+      "message": "docs(phase-9.3): eval v2-vs-chat-ai results (#195)",
+      "stats": {
+        "additions": 1926,
+        "deletions": 4,
+        "total": 1930
+      },
+      "branches": [
+        "main",
+        "agent/task-d-proactive-frequency"
+      ]
+    },
+    {
+      "sha": "899d5b18aa62a8fd73d8b629056ee6567d3cbac9",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-29T14:22:17+05:30",
+      "message": "feat(phase-2.7-follow-up): expose is_nsfw on ConversationResponse (#196)",
+      "stats": {
+        "additions": 12,
+        "deletions": 1,
+        "total": 13
+      },
+      "branches": [
+        "main",
+        "agent/task-d-proactive-frequency"
+      ]
+    },
+    {
+      "sha": "2a54d7bb1778d7b915facc256cae67863f7fb270",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-29T13:52:47+05:30",
+      "message": "fix(infra): /influencers/trending flake \u2014 60s TTL cache + test retry (#193)",
+      "stats": {
+        "additions": 100,
+        "deletions": 9,
+        "total": 109
+      },
+      "branches": [
+        "main",
+        "agent/task-d-proactive-frequency"
+      ]
+    },
+    {
+      "sha": "3935f65a1a4a3ac54e84986abf416c0ae3c9060a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-29T13:34:59+05:30",
+      "message": "docs(phase-7.5): flip backend to Done, log deploy + smoke test (#192)",
+      "stats": {
+        "additions": 27,
+        "deletions": 1,
+        "total": 28
+      },
+      "branches": [
+        "main",
+        "agent/task-d-proactive-frequency"
+      ]
+    },
+    {
+      "sha": "8729b4a14fcafa63cfb1aecbfe258b998f9214e3",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-29T13:28:12+05:30",
+      "message": "feat(phase-7.5): Soul File Coach backend (#191)",
+      "stats": {
+        "additions": 692,
+        "deletions": 1,
+        "total": 693
+      },
+      "branches": [
+        "main",
+        "agent/task-d-proactive-frequency"
+      ]
+    },
+    {
+      "sha": "6033ec53eeabf974ee2df5b2dcfd9fad43638310",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-29T13:19:40+05:30",
+      "message": "docs(phase-2.7): backend Done, log deploy + SSE smoke test (#190)",
+      "stats": {
+        "additions": 13,
+        "deletions": 1,
+        "total": 14
+      },
+      "branches": [
+        "main",
+        "agent/task-d-proactive-frequency"
+      ]
+    },
+    {
+      "sha": "39445dcfb96daa2f624ae02241765eecbf5d1187",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-29T13:14:09+05:30",
+      "message": "feat(phase-2.7): SSE streaming backend (#189)",
+      "stats": {
+        "additions": 571,
+        "deletions": 1,
+        "total": 572
+      },
+      "branches": [
+        "main",
+        "agent/task-d-proactive-frequency"
+      ]
+    },
+    {
+      "sha": "24e22c813b380476654dd45859e4c54d7419d71f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-29T13:03:50+05:30",
+      "message": "docs(polish-1-2): flip 4.9 + 5.3p to Done, log deploy (#188)",
+      "stats": {
+        "additions": 12,
+        "deletions": 2,
+        "total": 14
+      },
+      "branches": [
+        "main",
+        "agent/task-d-proactive-frequency"
+      ]
+    },
+    {
+      "sha": "ce9e63ceede9dd1c60270a360c54d75c95b98d8d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-29T12:43:40+05:30",
+      "message": "feat(phase-5-polish): proactive message quality fix (Task 2) (#187)",
+      "stats": {
+        "additions": 232,
+        "deletions": 6,
+        "total": 238
+      },
+      "branches": [
+        "main",
+        "agent/task-d-proactive-frequency"
+      ]
+    },
+    {
+      "sha": "de5ff58fe45dc9c5f865f79381e8391c0bab223b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-29T12:40:10+05:30",
+      "message": "feat(phase-4-polish): memory recitation fix (Task 1) (#186)",
+      "stats": {
+        "additions": 186,
+        "deletions": 17,
+        "total": 203
+      },
+      "branches": [
+        "main",
+        "agent/task-d-proactive-frequency"
+      ]
+    },
+    {
+      "sha": "e04018896e8363b5f9e6dc0ff68a12b31ca8f0cc",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-29T12:25:56+05:30",
+      "message": "docs: clarify PROGRESS.md vs DAILY-LOG.md ownership in CLAUDE.md (#185)",
+      "stats": {
+        "additions": 14,
+        "deletions": 0,
+        "total": 14
+      },
+      "branches": [
+        "main",
+        "agent/task-d-proactive-frequency"
+      ]
+    },
+    {
+      "sha": "395030df8b5038775e1a4a3d2af14ca7e4e2ee9b",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-05-29T09:30:47+05:30",
+      "message": "Merge pull request #161 from dolr-ai/prakash/foreward-duration-seconds",
+      "stats": {
+        "additions": 6,
+        "deletions": 10,
+        "total": 16
+      },
+      "branches": [
+        "master"
+      ]
+    }
+  ],
+  "commit_count": 54,
+  "issues": [
+    {
+      "number": 2115,
+      "title": "Minor LTX tasks to bring down GPU cost and at least make it usable",
+      "closed_at": "2026-05-29T04:10:43Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2115",
+      "labels": []
+    },
+    {
+      "number": 1778,
+      "title": "Take over LTX video generation end to end. Understand the entire pipeline and give us Veo3 comparable outputs. Discuss with @saikatdas0790 for more clarity",
+      "closed_at": "2026-05-29T04:44:35Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1778",
+      "labels": []
+    },
+    {
+      "number": 2140,
+      "title": "investigate canister connection stability issue and fix it",
+      "closed_at": "2026-05-29T04:21:27Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2140",
+      "labels": []
+    },
+    {
+      "number": 2139,
+      "title": "create user and key pair to host offchain from github action  and update deployment accordingly.",
+      "closed_at": "2026-05-29T04:21:48Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2139",
+      "labels": []
+    },
+    {
+      "number": 2141,
+      "title": "Start/Pause isn't working on the publish draft screen",
+      "closed_at": "2026-05-29T17:47:40Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2141",
+      "labels": []
+    },
+    {
+      "number": 2127,
+      "title": "Add support for image submission for video generation workflow in `create new ai video` flow",
+      "closed_at": "2026-05-29T17:47:41Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2127",
+      "labels": []
+    }
+  ],
+  "issue_count": 6
+}
