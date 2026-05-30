@@ -1,0 +1,603 @@
+{
+  "date": "2026-05-30",
+  "cached_at": "2026-05-30T18:52:14.696488Z",
+  "commits": [
+    {
+      "sha": "bedac5749945677c27c3050f2d08e0d23f1275ab",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-05-30T20:56:48+05:30",
+      "message": "chore: remove vpa autorecommender",
+      "stats": {
+        "additions": 1438,
+        "deletions": 158,
+        "total": 1596
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "98ccdb1ecae634984d2896b87271a28981a0de65",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-30T16:23:48+05:30",
+      "message": "fix(chat): make ConversationContentCache compile on iOS Native",
+      "stats": {
+        "additions": 30,
+        "deletions": 15,
+        "total": 45
+      },
+      "branches": [
+        "rishi/sse-streaming"
+      ]
+    },
+    {
+      "sha": "8e8d9daa5ae922322dfda3e67d1ffb26b41da444",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-30T15:04:48+05:30",
+      "message": "chore(chat): green up CI \u2014 detekt + ktlint fixes for SSE work",
+      "stats": {
+        "additions": 221,
+        "deletions": 186,
+        "total": 407
+      },
+      "branches": [
+        "rishi/sse-streaming"
+      ]
+    },
+    {
+      "sha": "d72c20fcdb2f21ea417f7931cb8e7a421d5ec0bc",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-30T16:26:27+05:30",
+      "message": "docs(lessons): P6 \u2014 the wire is wired \u2260 the wire carries data",
+      "stats": {
+        "additions": 72,
+        "deletions": 0,
+        "total": 72
+      },
+      "branches": [
+        "rishi/h2h-chat"
+      ]
+    },
+    {
+      "sha": "cba0dcbaace2e3a260c8e9a80e0876706d9f0ab4",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-30T15:41:20+05:30",
+      "message": "fix(chat): make H2H chat actually work \u2014 nav + send routing + AI-affordance gates",
+      "stats": {
+        "additions": 107,
+        "deletions": 33,
+        "total": 140
+      },
+      "branches": [
+        "rishi/h2h-chat"
+      ]
+    },
+    {
+      "sha": "231e9abc229bebb7b514df310129f50f86e6dbc9",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-30T13:32:15+05:30",
+      "message": "feat(profile): H2H \"Send Message\" button on other-user profile",
+      "stats": {
+        "additions": 130,
+        "deletions": 0,
+        "total": 130
+      },
+      "branches": [
+        "rishi/h2h-chat"
+      ]
+    },
+    {
+      "sha": "0174672a48d440dd55cdd829582c069cea439676",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-30T13:22:07+05:30",
+      "message": "feat(chat): H2H use cases + repo/data-source plumbing",
+      "stats": {
+        "additions": 227,
+        "deletions": 0,
+        "total": 227
+      },
+      "branches": [
+        "rishi/h2h-chat"
+      ]
+    },
+    {
+      "sha": "4349fa761349badc7ef6c450b5c49264ea5be52c",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-30T13:16:15+05:30",
+      "message": "feat(chat): H2hChatEnabled feature flag (default false)",
+      "stats": {
+        "additions": 11,
+        "deletions": 0,
+        "total": 11
+      },
+      "branches": [
+        "rishi/h2h-chat"
+      ]
+    },
+    {
+      "sha": "1eacd39622027f4b86694a2be307ed2120fe2c62",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-30T13:15:21+05:30",
+      "message": "feat(chat): Conversation.influencer nullable + conversationType field",
+      "stats": {
+        "additions": 58,
+        "deletions": 30,
+        "total": 88
+      },
+      "branches": [
+        "rishi/h2h-chat"
+      ]
+    },
+    {
+      "sha": "c77a0e573920acc4f13947e30f3695251e93667d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-30T13:10:34+05:30",
+      "message": "feat(chat): ChatMessage.senderId domain field + isFromCurrentUser",
+      "stats": {
+        "additions": 22,
+        "deletions": 0,
+        "total": 22
+      },
+      "branches": [
+        "rishi/h2h-chat"
+      ]
+    },
+    {
+      "sha": "15f71623003fa789530ac336dc0903026c64d0e7",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-30T13:09:33+05:30",
+      "message": "feat(chat): H2H wire DTOs \u2014 senderId on messages, conversationType on conversations",
+      "stats": {
+        "additions": 14,
+        "deletions": 0,
+        "total": 14
+      },
+      "branches": [
+        "rishi/h2h-chat"
+      ]
+    },
+    {
+      "sha": "7c84f65dc2f4c24cd393e2996ad8cc0b46b11476",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-30T12:18:59+05:30",
+      "message": "docs(chat): H2H implementation plan \u2014 review before any code",
+      "stats": {
+        "additions": 290,
+        "deletions": 0,
+        "total": 290
+      },
+      "branches": [
+        "rishi/h2h-chat"
+      ]
+    },
+    {
+      "sha": "2f9a1f14a4f338aa155a00b41a7a0df3d2a35d5e",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-30T18:27:08+05:30",
+      "message": "fix(emergency): extend kill-switch to all 9 background loops (#237)",
+      "stats": {
+        "additions": 91,
+        "deletions": 18,
+        "total": 109
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "141e377d02f77006c1ae32c5590f2774be1e0faa",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-30T18:20:49+05:30",
+      "message": "fix(emergency): rate_limiter dispatch \u2014 wrap all Redis calls in try/except (#236)",
+      "stats": {
+        "additions": 50,
+        "deletions": 21,
+        "total": 71
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "130a7b716f6743cb86ecf488d0cfd00cb5a68bc9",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-30T18:14:29+05:30",
+      "message": "fix(emergency): Gemini background kill-switch \u2014 master + per-loop (#235)",
+      "stats": {
+        "additions": 268,
+        "deletions": 17,
+        "total": 285
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "97c5babcce361c53fc329c27e258bad566c1c3a4",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-30T17:54:33+05:30",
+      "message": "docs(progress): mark Phase 19.1, 19.6, 24.5 done (#233)",
+      "stats": {
+        "additions": 59,
+        "deletions": 8,
+        "total": 67
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-cost-breaker"
+      ]
+    },
+    {
+      "sha": "6b30bb385bd511c671f5fc4cb434c58908f5abf7",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-30T17:42:33+05:30",
+      "message": "feat(admin): Phase 19.1 \u2014 per-user + per-IP rate limits, hot-editable (#232)",
+      "stats": {
+        "additions": 667,
+        "deletions": 10,
+        "total": 677
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-cost-breaker"
+      ]
+    },
+    {
+      "sha": "414c9c51b8a8f39958f5ff8c9bfab0696c629193",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-30T17:27:20+05:30",
+      "message": "fix(digest): _record_run datetime/asyncpg codec \u2014 parse before insert (#231)",
+      "stats": {
+        "additions": 33,
+        "deletions": 2,
+        "total": 35
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-cost-breaker"
+      ]
+    },
+    {
+      "sha": "9a34f23898d40387b07737bb3d67b50ea70dd21b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-30T17:23:06+05:30",
+      "message": "feat(admin): Phase 24.5 \u2014 daily email digest framework + dashboard tile (#230)",
+      "stats": {
+        "additions": 573,
+        "deletions": 0,
+        "total": 573
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-cost-breaker"
+      ]
+    },
+    {
+      "sha": "e5134308e046c938af10dbdf337341d16436be46",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-30T17:12:08+05:30",
+      "message": "feat(admin): Phase 19.6 \u2014 single bookmarkable observability dashboard (#229)",
+      "stats": {
+        "additions": 418,
+        "deletions": 0,
+        "total": 418
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-cost-breaker"
+      ]
+    },
+    {
+      "sha": "2e3a7cb3cca8fb000cd9f6e522c14de089f35cf0",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-30T16:43:23+05:30",
+      "message": "feat(api): v2 inbox surfaces H2H rows + peer profiles (sibling of #220) (#228)",
+      "stats": {
+        "additions": 199,
+        "deletions": 10,
+        "total": 209
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-cost-breaker"
+      ]
+    },
+    {
+      "sha": "2b714a03bddddde8fa699506a3349a2f26fe4239",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-30T15:03:52+05:30",
+      "message": "fix(etl): canonicalize timestamps before Layer 2 sample compare (#226)",
+      "stats": {
+        "additions": 110,
+        "deletions": 7,
+        "total": 117
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-cost-breaker",
+        "docs/re-bootstrap-design"
+      ]
+    },
+    {
+      "sha": "ec5fb928c4419acb77f4a87924bb8f5201563cd7",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-30T14:10:52+05:30",
+      "message": "fix(phase6.3p): nudge cap \u2014 symmetric with Phase 5 proactive cap (#225)",
+      "stats": {
+        "additions": 143,
+        "deletions": 2,
+        "total": 145
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-cost-breaker",
+        "docs/re-bootstrap-design"
+      ]
+    },
+    {
+      "sha": "332848d8ee285a69796e192311fe18933ceeece4",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-30T13:50:01+05:30",
+      "message": "chore(tests): update test_all_endpoints.py for latest_per_layer rename (#224)",
+      "stats": {
+        "additions": 5,
+        "deletions": 1,
+        "total": 6
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-cost-breaker",
+        "docs/re-bootstrap-design"
+      ]
+    },
+    {
+      "sha": "7d5b419e619ee62d42fa88437b50d49c486961cc",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-30T13:45:04+05:30",
+      "message": "chore(etl): drop vestigial etl_sync_state table (migration 022) (#223)",
+      "stats": {
+        "additions": 24,
+        "deletions": 1,
+        "total": 25
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-cost-breaker",
+        "docs/re-bootstrap-design"
+      ]
+    },
+    {
+      "sha": "56bbe4d9264384a45539ed6064ef80c74b180f7c",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-30T13:37:42+05:30",
+      "message": "fix(etl): integrity verifiers \u2014 asyncpg datetime type-codec bugs (4-bug cascade ends here) (#222)",
+      "stats": {
+        "additions": 142,
+        "deletions": 9,
+        "total": 151
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-cost-breaker",
+        "docs/re-bootstrap-design",
+        "chore/drop-vestigial-etl-sync-state"
+      ]
+    },
+    {
+      "sha": "95c2084663fdcc56b2bd7eba0a1d270172c10257",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-30T13:19:43+05:30",
+      "message": "docs: end-of-day 2026-05-30 \u2014 ETL Option A live, H2H verified (#221)",
+      "stats": {
+        "additions": 59,
+        "deletions": 0,
+        "total": 59
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-cost-breaker",
+        "docs/re-bootstrap-design",
+        "chore/drop-vestigial-etl-sync-state"
+      ]
+    },
+    {
+      "sha": "5cf134b8a2768651226f7f1edad7993daa40b0e8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-30T13:15:07+05:30",
+      "message": "feat(api): expose sender_id in message API responses (H2H polish) (#220)",
+      "stats": {
+        "additions": 43,
+        "deletions": 0,
+        "total": 43
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-cost-breaker",
+        "docs/re-bootstrap-design",
+        "chore/drop-vestigial-etl-sync-state"
+      ]
+    },
+    {
+      "sha": "f40ffd577370257f5def5e89d66c5f50ea74b079",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-30T13:07:32+05:30",
+      "message": "refactor(etl): derive cursors from etl_processed_files, drop _advance_cursor (#219)",
+      "stats": {
+        "additions": 63,
+        "deletions": 87,
+        "total": 150
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-cost-breaker",
+        "docs/re-bootstrap-design",
+        "chore/drop-vestigial-etl-sync-state"
+      ]
+    },
+    {
+      "sha": "7dcd560a3e7256028609bb446e45801db5f6d0af",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-30T13:00:25+05:30",
+      "message": "fix(etl): parse until_iso to datetime before _advance_cursor (#218)",
+      "stats": {
+        "additions": 44,
+        "deletions": 6,
+        "total": 50
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-cost-breaker",
+        "docs/re-bootstrap-design",
+        "chore/drop-vestigial-etl-sync-state"
+      ]
+    },
+    {
+      "sha": "f6147cf11555ed6c281d8d678a310cc2ed696260",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-30T12:29:10+05:30",
+      "message": "fix(etl): disambiguate $3 param types in _advance_cursor (#217)",
+      "stats": {
+        "additions": 22,
+        "deletions": 2,
+        "total": 24
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-cost-breaker",
+        "docs/re-bootstrap-design",
+        "chore/drop-vestigial-etl-sync-state"
+      ]
+    },
+    {
+      "sha": "cb6d385b8bbab81501dc25e776815f8fef0ac666",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-30T12:12:12+05:30",
+      "message": "feat(etl): Option A \u2014 skip duplicate/orphaned rows with audit log (#216)",
+      "stats": {
+        "additions": 293,
+        "deletions": 16,
+        "total": 309
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-cost-breaker",
+        "docs/re-bootstrap-design",
+        "chore/drop-vestigial-etl-sync-state"
+      ]
+    },
+    {
+      "sha": "9c7ff22e1b667d27f9e6f2c4f14294ba71d6d0ba",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-30T18:06:52+05:30",
+      "message": "feat(admin): Phase 19.2 \u2014 per-user daily LLM cost circuit breaker",
+      "stats": {
+        "additions": 759,
+        "deletions": 9,
+        "total": 768
+      },
+      "branches": [
+        "feat/phase-19-2-cost-breaker"
+      ]
+    },
+    {
+      "sha": "6348f145e91a8904abf5f0a1344d847e090a1cd3",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-30T15:40:22+05:30",
+      "message": "docs(re-bootstrap): incorporate Rishi's 5 advisory answers + 2 adds",
+      "stats": {
+        "additions": 118,
+        "deletions": 51,
+        "total": 169
+      },
+      "branches": [
+        "docs/re-bootstrap-design"
+      ]
+    },
+    {
+      "sha": "5cb0f6b7b26d0de55e3662d1fd5c249a056ee01b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-30T15:25:39+05:30",
+      "message": "docs: full epoch re-bootstrap design (DRAFT for Rishi review)",
+      "stats": {
+        "additions": 371,
+        "deletions": 0,
+        "total": 371
+      },
+      "branches": [
+        "docs/re-bootstrap-design"
+      ]
+    },
+    {
+      "sha": "d114867d45b1fea40c6e2bd6ce649c672fce96ec",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-05-30T13:43:51+05:30",
+      "message": "chore(etl): drop vestigial etl_sync_state table (migration 022)",
+      "stats": {
+        "additions": 24,
+        "deletions": 1,
+        "total": 25
+      },
+      "branches": [
+        "chore/drop-vestigial-etl-sync-state"
+      ]
+    }
+  ],
+  "commit_count": 36,
+  "issues": [],
+  "issue_count": 0
+}
