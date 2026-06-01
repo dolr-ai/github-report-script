@@ -1,0 +1,347 @@
+{
+  "date": "2026-06-01",
+  "cached_at": "2026-06-01T20:03:00.570487Z",
+  "commits": [
+    {
+      "sha": "7e97028f7efdacdeae9756759b60617901f44401",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-02T01:31:03+05:30",
+      "message": "deployment setup",
+      "stats": {
+        "additions": 613,
+        "deletions": 0,
+        "total": 613
+      },
+      "branches": [
+        "naitik/send_video_view_count_to_recsys"
+      ]
+    },
+    {
+      "sha": "2c2ea732830cf45f5cacef4da03bd08747fdbfb5",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-01T19:37:40+05:30",
+      "message": "initial project setup",
+      "stats": {
+        "additions": 19,
+        "deletions": 0,
+        "total": 19
+      },
+      "branches": [
+        "naitik/send_video_view_count_to_recsys"
+      ]
+    },
+    {
+      "sha": "1d4d050789d4ccb8507d1546d8aeeca7628ea57e",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-01T17:56:37+05:30",
+      "message": "Initial commit",
+      "stats": {
+        "additions": 22,
+        "deletions": 0,
+        "total": 22
+      },
+      "branches": [
+        "naitik/send_video_view_count_to_recsys",
+        "main"
+      ]
+    },
+    {
+      "sha": "e67e4b0c4a29119c503faac107abcecb1a110eb2",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-06-01T23:54:14+05:30",
+      "message": "fix: updated ssh key and user",
+      "stats": {
+        "additions": 48,
+        "deletions": 48,
+        "total": 96
+      },
+      "branches": [
+        "naitik/update_baremetal_user"
+      ]
+    },
+    {
+      "sha": "d3dbdd8433f90ef35ff1821178bbdc14be1b9734",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-06-02T00:06:52+05:30",
+      "message": "fix: updated ssh key and user (#27)",
+      "stats": {
+        "additions": 48,
+        "deletions": 48,
+        "total": 96
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4cb10887056b3dd93d45bd35ad11cb944250cc7d",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-01T12:50:00+05:30",
+      "message": "fix(chat): address SSE review feedback",
+      "stats": {
+        "additions": 136,
+        "deletions": 75,
+        "total": 211
+      },
+      "branches": [
+        "rishi/sse-streaming"
+      ]
+    },
+    {
+      "sha": "09d0eca257dfb6a44155ad1e4adfed7c02a3cb95",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-01T22:37:55+05:30",
+      "message": "Fix draft playback controls (#1176)",
+      "stats": {
+        "additions": 46,
+        "deletions": 32,
+        "total": 78
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8b4cacf80d9ec9f17bbd5c758710485cdb50ae4b",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-28T22:51:29+05:30",
+      "message": "Fix iOS feed video startup stalls",
+      "stats": {
+        "additions": 239,
+        "deletions": 3,
+        "total": 242
+      },
+      "branches": [
+        "fix/ios-video-playback"
+      ]
+    },
+    {
+      "sha": "0fa2fb332bb6a1717614ed8fbd62d9881fc486df",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-gpu-inference-server",
+      "timestamp": "2026-06-01T14:37:13+05:30",
+      "message": "feat: ready vast server auth docs ",
+      "stats": {
+        "additions": 1464,
+        "deletions": 158,
+        "total": 1622
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "627c077c8f249e74656a4cf4c7db32779877d8af",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-gpu-inference-server",
+      "timestamp": "2026-06-01T05:49:15+05:30",
+      "message": "ci: fail fast on deploy health HTTP errors",
+      "stats": {
+        "additions": 44,
+        "deletions": 4,
+        "total": 48
+      },
+      "branches": [
+        "main",
+        "ansuman/feat/server-readiness-auth-docs"
+      ]
+    },
+    {
+      "sha": "4629c90d6be56e64aaa8a9f2d62fdd05e62ca24b",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-gpu-inference-server",
+      "timestamp": "2026-06-01T05:40:13+05:30",
+      "message": "feat(ci): added vast deployment gh action ",
+      "stats": {
+        "additions": 210,
+        "deletions": 7,
+        "total": 217
+      },
+      "branches": [
+        "main",
+        "ansuman/feat/server-readiness-auth-docs"
+      ]
+    },
+    {
+      "sha": "ed156ef1892ca761ae8b2f669067414032d0d57a",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-gpu-inference-server",
+      "timestamp": "2026-06-01T05:38:38+05:30",
+      "message": "Merge main into vast deployment workflow",
+      "stats": {
+        "additions": 51,
+        "deletions": 5,
+        "total": 56
+      },
+      "branches": [
+        "ansuman/feat/vast-deployment-gh-action"
+      ]
+    },
+    {
+      "sha": "256041262451dac6873eed96cdac511db25ebe07",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-gpu-inference-server",
+      "timestamp": "2026-06-01T14:34:52+05:30",
+      "message": "feat: Update vLLM model to Qwen3.6 27B FP8 and enhance multimodal support",
+      "stats": {
+        "additions": 991,
+        "deletions": 74,
+        "total": 1065
+      },
+      "branches": [
+        "ansuman/feat/server-readiness-auth-docs"
+      ]
+    },
+    {
+      "sha": "b3cf66abe7ec4f9af32519383a6b43b72c370f54",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-gpu-inference-server",
+      "timestamp": "2026-06-01T07:07:18+05:30",
+      "message": "feat: ready vast server auth docs",
+      "stats": {
+        "additions": 480,
+        "deletions": 91,
+        "total": 571
+      },
+      "branches": [
+        "ansuman/feat/server-readiness-auth-docs"
+      ]
+    },
+    {
+      "sha": "599854e9652e13f39ea078ea710a0a3fcb42ef57",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-01T16:29:56+05:30",
+      "message": "fix(observability): log row-format exceptions in chat_v2._list_for_user (#239)",
+      "stats": {
+        "additions": 62,
+        "deletions": 43,
+        "total": 105
+      },
+      "branches": [
+        "main",
+        "fix/h2h-recipient-access-can-access-conversation",
+        "chore/archive-zombie-stacks-decommissioned"
+      ]
+    },
+    {
+      "sha": "70fcfa787ef344c3e89db0893ab8df88af6cc97a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-01T19:47:55+05:30",
+      "message": "fix(chat): allow H2H recipient (participant_b) to read their own conversation",
+      "stats": {
+        "additions": 38,
+        "deletions": 0,
+        "total": 38
+      },
+      "branches": [
+        "fix/h2h-recipient-access-can-access-conversation"
+      ]
+    },
+    {
+      "sha": "a200657b0f454566909cb8ceaf8fb488ff673f85",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-01T19:21:32+05:30",
+      "message": "chore(archive): add DECOMMISSIONED 2026-06-01 / DO-NOT-DEPLOY headers to renamed zombie stack files",
+      "stats": {
+        "additions": 72,
+        "deletions": 0,
+        "total": 72
+      },
+      "branches": [
+        "chore/archive-zombie-stacks-decommissioned"
+      ]
+    },
+    {
+      "sha": "40070879cc903bfff8194b7c679f9f77c538c835",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-01T19:20:34+05:30",
+      "message": "chore(archive): mark 4 decommissioned services with DO-NOT-DEPLOY headers + .bak suffix",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "chore/archive-zombie-stacks-decommissioned"
+      ]
+    },
+    {
+      "sha": "297604e084802f2fe012d97bf8e04488f9a39ea8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-06-01T08:22:03+05:30",
+      "message": "chore(vscode): update Ollama model config and add RunPod startup script",
+      "stats": {
+        "additions": 28,
+        "deletions": 5,
+        "total": 33
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 19,
+  "issues": [
+    {
+      "number": 2141,
+      "title": "Start/Pause isn't working on the publish draft screen",
+      "closed_at": "2026-06-01T17:07:58Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2141",
+      "labels": []
+    },
+    {
+      "number": 2145,
+      "title": "Load test models.ansuman.yral.com with k6 to validates approximate upper bound on requests/sec we can achieve",
+      "closed_at": "2026-06-01T04:52:26Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2145",
+      "labels": []
+    },
+    {
+      "number": 2118,
+      "title": "Model deploymnet with FastAPI wrapper on Vast ai",
+      "closed_at": "2026-06-01T04:46:53Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2118",
+      "labels": []
+    }
+  ],
+  "issue_count": 3
+}
