@@ -1,0 +1,887 @@
+{
+  "date": "2026-06-02",
+  "cached_at": "2026-06-02T19:46:48.299545Z",
+  "commits": [
+    {
+      "sha": "90df57fdaaf673d20373d31c05a5074f1b418876",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-auth",
+      "timestamp": "2026-06-03T00:56:55+05:30",
+      "message": "update ssh user",
+      "stats": {
+        "additions": 18,
+        "deletions": 17,
+        "total": 35
+      },
+      "branches": [
+        "naitik/update_ssh_key"
+      ]
+    },
+    {
+      "sha": "c88843fc2e326788edb3628b9d97c7144430289f",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-auth",
+      "timestamp": "2026-06-02T20:58:53+05:30",
+      "message": "update secret path for secrets from vault (#71)",
+      "stats": {
+        "additions": 67,
+        "deletions": 67,
+        "total": 134
+      },
+      "branches": [
+        "naitik/update_ssh_key",
+        "main"
+      ]
+    },
+    {
+      "sha": "0c205b6768266fa32b152989fd807bc85b9ba380",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-auth",
+      "timestamp": "2026-06-02T17:37:23+05:30",
+      "message": "refactor: clean up .gitignore by removing unnecessary entries and adding .idea",
+      "stats": {
+        "additions": 2,
+        "deletions": 10,
+        "total": 12
+      },
+      "branches": [
+        "naitik/update_ssh_key",
+        "main"
+      ]
+    },
+    {
+      "sha": "2dc4804eafb1035d8d80b794df5c321cb8182c1a",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-auth",
+      "timestamp": "2026-06-03T01:14:06+05:30",
+      "message": "update ssh user (#72)",
+      "stats": {
+        "additions": 18,
+        "deletions": 17,
+        "total": 35
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f45e2ebe79a1f19c6420e56cb8566c251dd4d6de",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-02T23:07:14+05:30",
+      "message": "Fix H2H chat review issues",
+      "stats": {
+        "additions": 212,
+        "deletions": 58,
+        "total": 270
+      },
+      "branches": [
+        "rishi/h2h-chat"
+      ]
+    },
+    {
+      "sha": "3e3526c7afecbb50c7330be9a177eb0c4d615ff3",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-02T16:54:23+05:30",
+      "message": "fix(chat): H2H end-to-end \u2014 five fixes from Motorola test pass",
+      "stats": {
+        "additions": 62,
+        "deletions": 13,
+        "total": 75
+      },
+      "branches": [
+        "rishi/h2h-chat"
+      ]
+    },
+    {
+      "sha": "03bf4749eb8966eee33d5769294a6854fa5dd9d1",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-02T16:53:53+05:30",
+      "message": "docs(lessons): P7 \u2014 permissive deserialization defaults are load-bearing",
+      "stats": {
+        "additions": 24,
+        "deletions": 0,
+        "total": 24
+      },
+      "branches": [
+        "rishi/h2h-chat"
+      ]
+    },
+    {
+      "sha": "d103e25b2bef09d2876a95bdee0c0de3d3de6ab3",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-30T16:26:27+05:30",
+      "message": "docs(lessons): P6 \u2014 the wire is wired \u2260 the wire carries data",
+      "stats": {
+        "additions": 72,
+        "deletions": 0,
+        "total": 72
+      },
+      "branches": [
+        "rishi/h2h-chat"
+      ]
+    },
+    {
+      "sha": "6d270a6bdb39de1da17e7061f9e8e527a8e7c93b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-30T15:41:20+05:30",
+      "message": "fix(chat): make H2H chat actually work \u2014 nav + send routing + AI-affordance gates",
+      "stats": {
+        "additions": 97,
+        "deletions": 24,
+        "total": 121
+      },
+      "branches": [
+        "rishi/h2h-chat"
+      ]
+    },
+    {
+      "sha": "12552d6eced4e326ad7173a1d863fc15cc340793",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-30T13:32:15+05:30",
+      "message": "feat(profile): H2H \"Send Message\" button on other-user profile",
+      "stats": {
+        "additions": 130,
+        "deletions": 0,
+        "total": 130
+      },
+      "branches": [
+        "rishi/h2h-chat"
+      ]
+    },
+    {
+      "sha": "cb3ab78ba8565d9e4b320dc9ad27f5f102cd6112",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-30T13:22:07+05:30",
+      "message": "feat(chat): H2H use cases + repo/data-source plumbing",
+      "stats": {
+        "additions": 227,
+        "deletions": 0,
+        "total": 227
+      },
+      "branches": [
+        "rishi/h2h-chat"
+      ]
+    },
+    {
+      "sha": "e27a5f142f70d60218145c89308c3c98d056191a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-30T13:16:15+05:30",
+      "message": "feat(chat): H2hChatEnabled feature flag (default false)",
+      "stats": {
+        "additions": 11,
+        "deletions": 0,
+        "total": 11
+      },
+      "branches": [
+        "rishi/h2h-chat"
+      ]
+    },
+    {
+      "sha": "021f43f54f075e9d73362f48bb757326cd7b6e95",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-30T13:15:21+05:30",
+      "message": "feat(chat): Conversation.influencer nullable + conversationType field",
+      "stats": {
+        "additions": 58,
+        "deletions": 30,
+        "total": 88
+      },
+      "branches": [
+        "rishi/h2h-chat"
+      ]
+    },
+    {
+      "sha": "eda3295573db011ec76c2d1ae0fcfcf62b951e97",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-30T13:10:34+05:30",
+      "message": "feat(chat): ChatMessage.senderId domain field + isFromCurrentUser",
+      "stats": {
+        "additions": 22,
+        "deletions": 0,
+        "total": 22
+      },
+      "branches": [
+        "rishi/h2h-chat"
+      ]
+    },
+    {
+      "sha": "43c5dbb60923f239c7993bd4778891a50dbb95a8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-30T13:09:33+05:30",
+      "message": "feat(chat): H2H wire DTOs \u2014 senderId on messages, conversationType on conversations",
+      "stats": {
+        "additions": 14,
+        "deletions": 0,
+        "total": 14
+      },
+      "branches": [
+        "rishi/h2h-chat"
+      ]
+    },
+    {
+      "sha": "9d12a9e1c7ca798689378dd3b16e3441ba4bb754",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-05-30T12:18:59+05:30",
+      "message": "docs(chat): H2H implementation plan \u2014 review before any code",
+      "stats": {
+        "additions": 290,
+        "deletions": 0,
+        "total": 290
+      },
+      "branches": [
+        "rishi/h2h-chat"
+      ]
+    },
+    {
+      "sha": "ac3f600e40446669c299fcedda0850ec2e8047e9",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-02T09:52:55+05:30",
+      "message": "feat(chat): SSE streaming behind feature flag (dormant by default) (#1173)",
+      "stats": {
+        "additions": 3230,
+        "deletions": 50,
+        "total": 3280
+      },
+      "branches": [
+        "rishi/h2h-chat",
+        "rishi/audio-recording-mic",
+        "main"
+      ]
+    },
+    {
+      "sha": "032d1ac828637e8af380fdad6d0ddbe70b02fe61",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-02T17:45:50+05:30",
+      "message": "feat(chat): voice-message recording \u2014 mic \u2192 record \u2192 preview \u2192 send",
+      "stats": {
+        "additions": 1185,
+        "deletions": 39,
+        "total": 1224
+      },
+      "branches": [
+        "rishi/audio-recording-mic"
+      ]
+    },
+    {
+      "sha": "5efa3c33b995c59177dd8284a86df75354a83904",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-02T23:21:56+05:30",
+      "message": "Refactor codebase by removing unused components and enhancing processes (#1177)",
+      "stats": {
+        "additions": 26,
+        "deletions": 23,
+        "total": 49
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "61e6526a6edd979a490c4f5b87d2bcb25a7d3d30",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-02T17:44:17+05:30",
+      "message": "Reduce iOS feed playback jank",
+      "stats": {
+        "additions": 111,
+        "deletions": 11,
+        "total": 122
+      },
+      "branches": [
+        "fix/ios-video-playback"
+      ]
+    },
+    {
+      "sha": "5a19d42bb7eb04b137aae717a6b0d126de0bcc38",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-02T17:11:51+05:30",
+      "message": "Improve video startup diagnostics",
+      "stats": {
+        "additions": 233,
+        "deletions": 14,
+        "total": 247
+      },
+      "branches": [
+        "fix/ios-video-playback"
+      ]
+    },
+    {
+      "sha": "6c80dbc8c20a49cf2585d5d8c8e829d2c84911da",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-06-02T20:52:03+05:30",
+      "message": "fix: update .gitignore to include .idea directory",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ba5dc2e2da933bebbacab6cd000ffcf86ffc77e4",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-06-02T14:52:41+05:30",
+      "message": "refactor: remove notification components and related code",
+      "stats": {
+        "additions": 7,
+        "deletions": 480,
+        "total": 487
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "52e08fe4565942d3f1ab065169b142579f0bac57",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-02T17:55:28+05:30",
+      "message": "feat(phase-25.4): admin hot-swap endpoint + DB-backed routing overrides (#253)",
+      "stats": {
+        "additions": 520,
+        "deletions": 7,
+        "total": 527
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "793108b9853847116803517e779459cf0e9b2a54",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-02T17:44:21+05:30",
+      "message": "feat(phase-25.3b): chat orchestration through registry \u2014 symmetry restored across all 12 processes (",
+      "stats": {
+        "additions": 512,
+        "deletions": 292,
+        "total": 804
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7e21418caecc378fdff0134721305e26c317ed73",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-02T17:28:33+05:30",
+      "message": "feat(phase-25.3): extract gemini client + wire 7 of 11 processes to llm_registry (#251)",
+      "stats": {
+        "additions": 563,
+        "deletions": 161,
+        "total": 724
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9c05d315033a8d24b172dd1087818ad1547a3210",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-02T16:52:40+05:30",
+      "message": "feat(phase-25): design + 25.1 openai_compatible client + 25.2 llm_registry + per-provider semaphore ",
+      "stats": {
+        "additions": 897,
+        "deletions": 0,
+        "total": 897
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "15f958a35ccf5f6be36a6091f7c4280f526d8779",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-02T16:24:07+05:30",
+      "message": "fix(tests): test_callers_pass_correct_viewer \u2014 strip whitespace so ruff multi-line splits don't brea",
+      "stats": {
+        "additions": 30,
+        "deletions": 12,
+        "total": 42
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3b006a8523c3407f82d336d0471460c293c65a83",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-02T16:21:04+05:30",
+      "message": "chore(format): ruff format on creator_takeover + human_chat after PR #247 (#248)",
+      "stats": {
+        "additions": 6,
+        "deletions": 2,
+        "total": 8
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "65f0fd37eb73151c9a4565fdd921cdf9e4bc4379",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-02T16:19:01+05:30",
+      "message": "fix(inbox): count_unread + mark_as_read \u2014 viewer-principal-scoped, fixes H2H /read + WS broadcast (#",
+      "stats": {
+        "additions": 76,
+        "deletions": 10,
+        "total": 86
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "5212a997e71021cc3a4e9060b10ebfd0b65b2da8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-02T16:11:39+05:30",
+      "message": "chore(progress): flip mobile rows 1.10 + 2.7 + 10.2/10.5 + M2/M3 to \u2705 (#246)",
+      "stats": {
+        "additions": 7,
+        "deletions": 7,
+        "total": 14
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e45e55e698e3250a197c5696a455fdaffb8f5e7e",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-02T16:10:00+05:30",
+      "message": "fix(inbox): H2H unread_count subquery \u2014 branch on conversation_type so recipient badge appears (#245",
+      "stats": {
+        "additions": 42,
+        "deletions": 1,
+        "total": 43
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d40a62c37a563f6d4fd68bcdb8de91030139f776",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-02T15:41:09+05:30",
+      "message": "chore: CLAUDE.md SSH-allowlist note + PROGRESS.md Phase 24 / I10-I12 status markers (#244)",
+      "stats": {
+        "additions": 10,
+        "deletions": 9,
+        "total": 19
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "2230d0cd5d5b02f4404910380dc878cbae5d43a5",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-02T14:48:25+05:30",
+      "message": "chore(progress): file Phase 21.0 \u2014 auto-deploy from CI build to swarm service (gap surfaced 2026-06-",
+      "stats": {
+        "additions": 51,
+        "deletions": 8,
+        "total": 59
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "5f7abf7b2e89810f2071f1981e2c3e7612239071",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-02T13:34:14+05:30",
+      "message": "chore(archive): mark zombie service stacks DECOMMISSIONED 2026-06-01 (#240)",
+      "stats": {
+        "additions": 72,
+        "deletions": 0,
+        "total": 72
+      },
+      "branches": [
+        "main",
+        "design/phase-25-multi-provider-llm-router"
+      ]
+    },
+    {
+      "sha": "b8fe982eff4e68fcca49ee040a4be61cdc43e28c",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-02T13:33:41+05:30",
+      "message": "fix(chat): allow H2H recipient (participant_b) to read their own conversation (#241)",
+      "stats": {
+        "additions": 38,
+        "deletions": 0,
+        "total": 38
+      },
+      "branches": [
+        "main",
+        "design/phase-25-multi-provider-llm-router"
+      ]
+    },
+    {
+      "sha": "b6d6268f682f64e51452606f7a1ed4ca0d727959",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-02T15:04:42+05:30",
+      "message": "design(phase-25): apply Rishi's 6 modifications \u2014 APPROVED 2026-06-02",
+      "stats": {
+        "additions": 73,
+        "deletions": 15,
+        "total": 88
+      },
+      "branches": [
+        "design/phase-25-multi-provider-llm-router"
+      ]
+    },
+    {
+      "sha": "6c2c45d55cc3ba74069994ffec406d1452a6a137",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-02T14:47:26+05:30",
+      "message": "design(phase-25): fold in Anshuman gist wire-format quirks",
+      "stats": {
+        "additions": 19,
+        "deletions": 0,
+        "total": 19
+      },
+      "branches": [
+        "design/phase-25-multi-provider-llm-router"
+      ]
+    },
+    {
+      "sha": "8ab0055875e2ddd01625ab1651fa0a76a7e02701",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-02T14:41:38+05:30",
+      "message": "design(phase-25): add internal_vllm provider spec \u2014 Anshuman's self-hosted Qwen 3.6 endpoint",
+      "stats": {
+        "additions": 32,
+        "deletions": 2,
+        "total": 34
+      },
+      "branches": [
+        "design/phase-25-multi-provider-llm-router"
+      ]
+    },
+    {
+      "sha": "cd1dab5e3e6af45a4d1c659cdb3a4b20bc92860a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-02T14:27:05+05:30",
+      "message": "design(phase-25): multi-provider LLM router \u2014 LiteLLM-vs-in-house + process names + concurrency cap",
+      "stats": {
+        "additions": 230,
+        "deletions": 0,
+        "total": 230
+      },
+      "branches": [
+        "design/phase-25-multi-provider-llm-router"
+      ]
+    },
+    {
+      "sha": "eb94a8fde9bc4f843ca70e226cd1b6b139694c5d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-06-02T15:23:30+05:30",
+      "message": "fix(submodule): update URLs in .gitmodules to use SSH format and mark off-chain-agent as dirty",
+      "stats": {
+        "additions": 7,
+        "deletions": 7,
+        "total": 14
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "6b02d623efb3cba73e6ab6df2b5776cece9c29ce",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-06-02T15:21:34+05:30",
+      "message": "feat(submodule): add yral-auth submodule with initial commit",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "ea375e19e47658502e1585180cd1bc102e789c7e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-06-02T15:17:14+05:30",
+      "message": "feat(submodule): rename yral-auth-v2 to yral-auth and update URLs in .gitmodules and README.md",
+      "stats": {
+        "additions": 10,
+        "deletions": 11,
+        "total": 21
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "5b1c81ef1de793852969606e7caf3383cbfdf12b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-06-02T14:56:27+05:30",
+      "message": "fix: update .gitignore to include certs and idea directories",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b03826816fba172f5fc8d43540039b669cda74ba",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-06-02T14:52:07+05:30",
+      "message": "chore: update .gitignore to include .idea directory",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "1f935a754a82d4f20b1cc84011271afeaa10365c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-06-02T14:35:15+05:30",
+      "message": "refactor: remove notification store and dedup index services",
+      "stats": {
+        "additions": 0,
+        "deletions": 73,
+        "total": 73
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "1f140318ed89037bd48322e8b4fa8cb44cece451",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-02T14:04:19+05:30",
+      "message": "Remove dedup_index and notification_store integration tests and related code",
+      "stats": {
+        "additions": 0,
+        "deletions": 1609,
+        "total": 1609
+      },
+      "branches": [
+        "main",
+        "dependabot/cargo/candid-0.10.28"
+      ]
+    },
+    {
+      "sha": "49728af5e97479e256ecb22c11049c22f538d2a1",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-02T09:46:02+05:30",
+      "message": "config and utils impl",
+      "stats": {
+        "additions": 6277,
+        "deletions": 0,
+        "total": 6277
+      },
+      "branches": [
+        "naitik/send_video_view_count_to_recsys"
+      ]
+    }
+  ],
+  "commit_count": 48,
+  "issues": [
+    {
+      "number": 432,
+      "title": "When user taps on Token in wallet page, error page loads",
+      "closed_at": "2026-06-02T14:22:25Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "url": "https://github.com/dolr-ai/hot-or-not-web-leptos-ssr/issues/432",
+      "labels": []
+    },
+    {
+      "number": 419,
+      "title": "Token creation Success screen token icon is missing",
+      "closed_at": "2026-06-02T14:22:22Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "url": "https://github.com/dolr-ai/hot-or-not-web-leptos-ssr/issues/419",
+      "labels": []
+    },
+    {
+      "number": 2144,
+      "title": "Remove manual video uploads to the platform altogether",
+      "closed_at": "2026-06-02T04:22:23Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2144",
+      "labels": []
+    },
+    {
+      "number": 2133,
+      "title": "Chat with another profile possibilities",
+      "closed_at": "2026-06-02T04:17:40Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2133",
+      "labels": []
+    },
+    {
+      "number": 2127,
+      "title": "Add support for image submission for video generation workflow in `create new ai video` flow",
+      "closed_at": "2026-06-02T04:17:49Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2127",
+      "labels": []
+    },
+    {
+      "number": 2103,
+      "title": "VIdeo generation failing particulars",
+      "closed_at": "2026-06-02T04:17:23Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2103",
+      "labels": []
+    },
+    {
+      "number": 2098,
+      "title": "Create video flow UI particulars",
+      "closed_at": "2026-06-02T04:17:29Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2098",
+      "labels": []
+    },
+    {
+      "number": 2039,
+      "title": "Create an OpenAPI endpoint for visualizing and discovering all chat related endpoints exposed",
+      "closed_at": "2026-06-02T04:41:57Z",
+      "assignee": "rishichadha30",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2039",
+      "labels": []
+    },
+    {
+      "number": 2147,
+      "title": "fix ssh key access with vault machines and fix github actions",
+      "closed_at": "2026-06-02T04:48:03Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2147",
+      "labels": []
+    },
+    {
+      "number": 2136,
+      "title": "Get to 7 daily streak",
+      "closed_at": "2026-06-02T04:45:57Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2136",
+      "labels": []
+    }
+  ],
+  "issue_count": 10
+}
