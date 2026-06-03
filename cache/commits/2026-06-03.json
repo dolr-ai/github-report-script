@@ -1,0 +1,384 @@
+{
+  "date": "2026-06-03",
+  "cached_at": "2026-06-03T19:47:45.094115Z",
+  "commits": [
+    {
+      "sha": "7714f4814903e7cf62695efc445b6a07810645ef",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-06-03T18:22:14+05:30",
+      "message": "chore(vscode): update Ollama model to qwen3.6:27b-mtp-bf16 and mark submodules as dirty",
+      "stats": {
+        "additions": 5,
+        "deletions": 5,
+        "total": 10
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "0da72d1028c47c9902e8159ea733cb6ec0b5f880",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-06-03T14:58:59+05:30",
+      "message": "fix(submodule): update submodule commits for off-chain-agent, yral-auth, yral-billing, and yral-mobi",
+      "stats": {
+        "additions": 6,
+        "deletions": 5,
+        "total": 11
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "00c8984a7b2e047b7240f6f58f9c0729cbc518e2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-03T22:27:42+05:30",
+      "message": "feat: add direct upgrade tests and dependencies for canister upgrades",
+      "stats": {
+        "additions": 267,
+        "deletions": 0,
+        "total": 267
+      },
+      "branches": [
+        "main",
+        "dependabot/cargo/candid-0.10.28"
+      ]
+    },
+    {
+      "sha": "cbd5df976fbc4693ab6a0c2fb6c7b664a5a086dd",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-03T18:33:17+05:30",
+      "message": "feat(coach): Soul File Coach UI module + nav infrastructure (Phase 7.5)",
+      "stats": {
+        "additions": 1271,
+        "deletions": 0,
+        "total": 1271
+      },
+      "branches": [
+        "rishi/soul-file-coach"
+      ]
+    },
+    {
+      "sha": "22cac36ea90f48689fd4b9e89b3d5f869bbe7634",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-03T16:29:34+05:30",
+      "message": "feat(chat): AudioRecordingEnabled feature flag \u2014 gate mic button (dormant by default)",
+      "stats": {
+        "additions": 30,
+        "deletions": 1,
+        "total": 31
+      },
+      "branches": [
+        "rishi/audio-recording-mic"
+      ]
+    },
+    {
+      "sha": "365115c40fad76bde230b51f36318affdf6a94a5",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-03T18:22:21+05:30",
+      "message": "feat(chat): H2H (Human-to-Human) chat \u2014 dormant behind feature flag (#1178)",
+      "stats": {
+        "additions": 1182,
+        "deletions": 88,
+        "total": 1270
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "76858dfa7c381070a38f37910caeae24f50e0269",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-03T20:06:04+05:30",
+      "message": "refactor(phase-23): remove skill_chat process \u2014 skills are pure prompt composition (#267)",
+      "stats": {
+        "additions": 49,
+        "deletions": 47,
+        "total": 96
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c54fca5136795beb2627b3a7b2e95e045afb7132",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-03T19:48:51+05:30",
+      "message": "refactor(phase-23): nutrition_coach_chat \u2192 skill_chat (shared LLM process) (#266)",
+      "stats": {
+        "additions": 350,
+        "deletions": 19,
+        "total": 369
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d232cb01b36c0f4ed74add88737d16a06a22fc76",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-03T19:23:12+05:30",
+      "message": "feat(phase-23.6): skill-driven scheduled check-ins (proactive loop extension) (#265)",
+      "stats": {
+        "additions": 395,
+        "deletions": 4,
+        "total": 399
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9d6c0e813a70ba337e1689e047daa1728db129b6",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-03T19:05:21+05:30",
+      "message": "feat(phase-23.5): skill state routes + first-turn onboarding hook in chat.py (#264)",
+      "stats": {
+        "additions": 783,
+        "deletions": 27,
+        "total": 810
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a20e9e8cd86552607e77f41450d855f167d75216",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-03T18:48:06+05:30",
+      "message": "feat(phase-23.1-23.4): Skills foundation \u2014 user_skill_state + skills catalog + soul_file skill layer",
+      "stats": {
+        "additions": 654,
+        "deletions": 3,
+        "total": 657
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b24c096ac01e1d28db8f4902e920a817a1c251ae",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-03T18:38:32+05:30",
+      "message": "chore(phase-25.10): remove 5 orphan legacy helpers + 1 constant from ai_client.py (#262)",
+      "stats": {
+        "additions": 79,
+        "deletions": 340,
+        "total": 419
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "549f32aa6ac0396324b671587488047ee961bb5b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-03T18:25:33+05:30",
+      "message": "feat(phase-25.9): browser-bookmarkable LLM routing dashboard (#261)",
+      "stats": {
+        "additions": 469,
+        "deletions": 13,
+        "total": 482
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c72ea95657d8bfe7090960f7f09e445ae56d9928",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-03T18:04:52+05:30",
+      "message": "chore: add mobile-docs-archive process + baseline + PR #1179 snapshot (#260)",
+      "stats": {
+        "additions": 5447,
+        "deletions": 0,
+        "total": 5447
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "41ce4bc747c52a04ed19da05b51b89fb572e6b99",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-03T17:00:22+05:30",
+      "message": "fix(engagement-loop): initialize inactive=[] before proactive gate (UnboundLocalError fix) (#259)",
+      "stats": {
+        "additions": 54,
+        "deletions": 0,
+        "total": 54
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "1c56b4fc5dc66b358292ba1f38af90a17496da53",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-03T16:34:20+05:30",
+      "message": "feat(phase-25.5b): llm_costs outcome + error_message tracking \u2014 rejection rate axis (#258)",
+      "stats": {
+        "additions": 389,
+        "deletions": 75,
+        "total": 464
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f89946dff3f82764ff1c985f60f393afd8343cfa",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-03T14:38:44+05:30",
+      "message": "fix(image): parse data: URLs directly in _messages_to_gemini_contents; stop re-fetching pre-encoded ",
+      "stats": {
+        "additions": 102,
+        "deletions": 1,
+        "total": 103
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e73b40d226e7cdab6919ced26bb9851e0b847c66",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-03T14:03:02+05:30",
+      "message": "feat(phase-25.5): llm_costs table + per-call cost recording (#256)",
+      "stats": {
+        "additions": 344,
+        "deletions": 3,
+        "total": 347
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "198c96622889210e0811c4f6744a1c1f2b5de12b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-03T13:04:50+05:30",
+      "message": "fix(audio): fork _fetch_audio_bytes_and_mime with audio defaults; raise cap from 5MB\u219220MB (#255)",
+      "stats": {
+        "additions": 138,
+        "deletions": 5,
+        "total": 143
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f6c8a716a43f8ac4ecacdd67fdf2d4a88441eb61",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-03T12:13:17+05:30",
+      "message": "fix(audio): transcribe_audio presigns storage_key before SSRF check (#254)",
+      "stats": {
+        "additions": 85,
+        "deletions": 3,
+        "total": 88
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8e1402594c3c966341040dc6e110d3bb38937710",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-06-03T14:45:24+05:30",
+      "message": "Refactor deduplication logic and remove unused components",
+      "stats": {
+        "additions": 19,
+        "deletions": 394,
+        "total": 413
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 21,
+  "issues": [
+    {
+      "number": 2150,
+      "title": "fix ssh access for yral-auth with new key setup",
+      "closed_at": "2026-06-03T04:31:40Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2150",
+      "labels": []
+    },
+    {
+      "number": 2149,
+      "title": "fix vault integration with yral-auth repo after name update and build and deployment failure",
+      "closed_at": "2026-06-03T04:26:55Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2149",
+      "labels": []
+    }
+  ],
+  "issue_count": 2
+}
