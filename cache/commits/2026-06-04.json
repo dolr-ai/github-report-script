@@ -1,0 +1,777 @@
+{
+  "date": "2026-06-04",
+  "cached_at": "2026-06-04T19:19:03.487170Z",
+  "commits": [
+    {
+      "sha": "c7dd0e7f936172b91c743d47f8b1b8a444b2062e",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-05T00:45:23+05:30",
+      "message": "fix: env vars for test",
+      "stats": {
+        "additions": 7,
+        "deletions": 1,
+        "total": 8
+      },
+      "branches": [
+        "naitik/send_video_view_count_to_recsys"
+      ]
+    },
+    {
+      "sha": "f87c47c5781c09786364d7b323c280af985dd758",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-05T00:41:31+05:30",
+      "message": "fix: add secret for test and permissions",
+      "stats": {
+        "additions": 18,
+        "deletions": 0,
+        "total": 18
+      },
+      "branches": [
+        "naitik/send_video_view_count_to_recsys"
+      ]
+    },
+    {
+      "sha": "38a9613b45d30fec2eb5f47300ede811e3ac42c6",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-05T00:30:40+05:30",
+      "message": "fix lint check",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/send_video_view_count_to_recsys"
+      ]
+    },
+    {
+      "sha": "7040cf2cdc8013a422921c33cdecb775f484c311",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-05T00:25:46+05:30",
+      "message": "fix: lint check",
+      "stats": {
+        "additions": 11,
+        "deletions": 13,
+        "total": 24
+      },
+      "branches": [
+        "naitik/send_video_view_count_to_recsys"
+      ]
+    },
+    {
+      "sha": "cf707e7b75a75fedf657623286580d0d5529c35c",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-05T00:19:18+05:30",
+      "message": "temp pausing prod deployment",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "naitik/send_video_view_count_to_recsys"
+      ]
+    },
+    {
+      "sha": "249fab279ecc29143dda3c0551be8a4029c654d3",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-04T17:49:32+05:30",
+      "message": "feat(profile): gate Video Ideas tab on VideoIdeasEnabled flag",
+      "stats": {
+        "additions": 23,
+        "deletions": 1,
+        "total": 24
+      },
+      "branches": [
+        "rishi/video-ideas-tab"
+      ]
+    },
+    {
+      "sha": "c9d0825b8dfb4bb6a29acbf3fb4f605c120a6a4a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-04T17:30:14+05:30",
+      "message": "feat(profile): Phase 22.3d \u2014 Video Idea Create handler + Option C toast",
+      "stats": {
+        "additions": 180,
+        "deletions": 3,
+        "total": 183
+      },
+      "branches": [
+        "rishi/video-ideas-tab"
+      ]
+    },
+    {
+      "sha": "b09e2a2caac54b46003fa10eff1c0f7afd1606dc",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-04T16:23:21+05:30",
+      "message": "feat(profile): Phase 22.3c \u2014 Video Ideas tab + list UI + data layer",
+      "stats": {
+        "additions": 539,
+        "deletions": 1,
+        "total": 540
+      },
+      "branches": [
+        "rishi/video-ideas-tab"
+      ]
+    },
+    {
+      "sha": "63b88685bb6d1e5554dd34d02a55b3b67722f613",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-04T13:46:21+05:30",
+      "message": "feat(coach): UX overhaul \u2014 resume, opening chips, Save CTA, Start over, receipt",
+      "stats": {
+        "additions": 394,
+        "deletions": 85,
+        "total": 479
+      },
+      "branches": [
+        "rishi/soul-file-coach"
+      ]
+    },
+    {
+      "sha": "4950703e8e2d80a031696eb95612a0a4bb041988",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-04T12:17:04+05:30",
+      "message": "fix(coach): reset chat state when switching bots in openForBot",
+      "stats": {
+        "additions": 7,
+        "deletions": 0,
+        "total": 7
+      },
+      "branches": [
+        "rishi/soul-file-coach",
+        "rishi/profile-coach-entrypoint"
+      ]
+    },
+    {
+      "sha": "38471d9680deb531b06d8ca5b1f19d54e107928b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-04T14:48:39+05:30",
+      "message": "feat(profile): gate Coach CTA on SoulFileCoachEnabled flag + Beta label",
+      "stats": {
+        "additions": 6,
+        "deletions": 2,
+        "total": 8
+      },
+      "branches": [
+        "rishi/profile-coach-entrypoint"
+      ]
+    },
+    {
+      "sha": "efd22280b3819221753302e618abbff1f2e197d7",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-04T12:20:50+05:30",
+      "message": "feat(profile): wire \"Make your AI Influencer better\" entry point",
+      "stats": {
+        "additions": 51,
+        "deletions": 0,
+        "total": 51
+      },
+      "branches": [
+        "rishi/profile-coach-entrypoint"
+      ]
+    },
+    {
+      "sha": "80793958470484248477253b363c7961ec4cfb27",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-04T15:04:10+05:30",
+      "message": "fix(chat): respect ChatAsHumanCreatorEnabled flag in BotAccountReadOnly branch",
+      "stats": {
+        "additions": 26,
+        "deletions": 7,
+        "total": 33
+      },
+      "branches": [
+        "rishi/chat-as-human-readonly-banner-fix"
+      ]
+    },
+    {
+      "sha": "10c133c734844a90554fee7d9e155be0306e41ed",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-04T12:19:08+05:30",
+      "message": "fix(auth): stop overcounting bots from stale OAuth token claim",
+      "stats": {
+        "additions": 9,
+        "deletions": 7,
+        "total": 16
+      },
+      "branches": [
+        "rishi/auth-bot-count-fix"
+      ]
+    },
+    {
+      "sha": "900c0752bb7f62d817d968b3642dbfba1fdf1cde",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-04T22:22:48+05:30",
+      "message": "fix(chat): address audio recording review issues",
+      "stats": {
+        "additions": 360,
+        "deletions": 225,
+        "total": 585
+      },
+      "branches": [
+        "rishi/audio-recording-mic"
+      ]
+    },
+    {
+      "sha": "e79ae60dc1bd4443f684dc15f5a618f248cd04cf",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-04T15:36:15+05:30",
+      "message": "fix(chat): G6 \u2014 hide mic button in H2H chats",
+      "stats": {
+        "additions": 6,
+        "deletions": 8,
+        "total": 14
+      },
+      "branches": [
+        "rishi/audio-recording-mic"
+      ]
+    },
+    {
+      "sha": "eaa1f665bff438f7b3691063801f2e844d35d25b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-03T16:29:34+05:30",
+      "message": "feat(chat): AudioRecordingEnabled feature flag \u2014 gate mic button (dormant by default)",
+      "stats": {
+        "additions": 30,
+        "deletions": 1,
+        "total": 31
+      },
+      "branches": [
+        "rishi/audio-recording-mic"
+      ]
+    },
+    {
+      "sha": "541df49bfae248d5bbd3637cfb62a443080357e9",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-02T17:45:50+05:30",
+      "message": "feat(chat): voice-message recording \u2014 mic \u2192 record \u2192 preview \u2192 send",
+      "stats": {
+        "additions": 1185,
+        "deletions": 39,
+        "total": 1224
+      },
+      "branches": [
+        "rishi/audio-recording-mic"
+      ]
+    },
+    {
+      "sha": "a192e09227bfdde1d94e8913909127dec3a7097c",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-04T17:47:40+05:30",
+      "message": "Sunset Hot-or-Not card layout feed experiment",
+      "stats": {
+        "additions": 29,
+        "deletions": 1801,
+        "total": 1830
+      },
+      "branches": [
+        "fix/ios-video-playback"
+      ]
+    },
+    {
+      "sha": "eb63803fb41fcd5726e5010a8dcd2723b78a692c",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-04T16:37:48+05:30",
+      "message": "Remove dead pooled-player code from videoPlayer lib",
+      "stats": {
+        "additions": 0,
+        "deletions": 3919,
+        "total": 3919
+      },
+      "branches": [
+        "fix/ios-video-playback"
+      ]
+    },
+    {
+      "sha": "1d3222a1a43ec157cce1fb8b86fc026423c4e3c9",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-06-04T22:43:53+05:30",
+      "message": "feat(vscode): update settings for chat models and add todo-tree configuration",
+      "stats": {
+        "additions": 20,
+        "deletions": 11,
+        "total": 31
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "536fe26329da16775f7c8ac5fcd63fe6f8fcd4a9",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-06-04T22:44:48+05:30",
+      "message": "Add .idea directory to .gitignore",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e2c99f0a66477369beb6d7013a543442ba6b33b9",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-04T22:44:18+05:30",
+      "message": "feat: refactor canister definitions and enhance monitoring API with new upgrade functionality",
+      "stats": {
+        "additions": 71,
+        "deletions": 208,
+        "total": 279
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a4418bb27c2493f9e23f8315d7cef1ee24f472ae",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-04T19:27:07+05:30",
+      "message": "feat(prompts+chat): chat history 10\u219230 + generalize India-default prompts (#288)",
+      "stats": {
+        "additions": 79,
+        "deletions": 32,
+        "total": 111
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-per-user-cost-breaker-DRAFT",
+        "docs/cutover-audits-overnight-2026-06-05"
+      ]
+    },
+    {
+      "sha": "7dc21fffbf98f4db09b8b5459eecaba7be3eb48a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-04T19:25:27+05:30",
+      "message": "docs(progress): split Phase 21 into 21\u03b1 (Alpha) + 21\u03b2 (Production) cutover phases (#287)",
+      "stats": {
+        "additions": 54,
+        "deletions": 13,
+        "total": 67
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-per-user-cost-breaker-DRAFT",
+        "docs/cutover-audits-overnight-2026-06-05"
+      ]
+    },
+    {
+      "sha": "d521b55ba236740c7e506237a66ccc8847096397",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-04T19:25:19+05:30",
+      "message": "chore(archive): refresh PR-1184 snapshot \u2014 flag-gate commit + SHA bump (#286)",
+      "stats": {
+        "additions": 13,
+        "deletions": 3,
+        "total": 16
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-per-user-cost-breaker-DRAFT",
+        "docs/cutover-audits-overnight-2026-06-05"
+      ]
+    },
+    {
+      "sha": "7fb96fd0442f94b95bb7899ab9ecbd71e7844826",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-04T17:43:14+05:30",
+      "message": "chore(archive): add PR-1184 video ideas tab snapshot (#285)",
+      "stats": {
+        "additions": 2682,
+        "deletions": 0,
+        "total": 2682
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-per-user-cost-breaker-DRAFT",
+        "docs/cutover-audits-overnight-2026-06-05"
+      ]
+    },
+    {
+      "sha": "ef853f417eb99b803411277f63f634f4046a8ee1",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-04T17:07:45+05:30",
+      "message": "fix(22.3): video_ideas max_tokens 1024\u21924096 + truncation-tolerant parser (#284)",
+      "stats": {
+        "additions": 111,
+        "deletions": 17,
+        "total": 128
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-per-user-cost-breaker-DRAFT",
+        "docs/cutover-audits-overnight-2026-06-05"
+      ]
+    },
+    {
+      "sha": "4936a5289f331c5bc7f2d778b2e4647efb6cb866",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-04T15:53:22+05:30",
+      "message": "chore(archive): add PR-1183 + PR-1179 (post-rebase + G6) snapshots (#283)",
+      "stats": {
+        "additions": 5346,
+        "deletions": 0,
+        "total": 5346
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-per-user-cost-breaker-DRAFT",
+        "docs/cutover-audits-overnight-2026-06-05"
+      ]
+    },
+    {
+      "sha": "83f1bcc26e16733b4f8e8cdf181ab5220d0c0f22",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-04T15:51:16+05:30",
+      "message": "chore: top-level cleanup \u2014 delete superseded backup, archive old log (#282)",
+      "stats": {
+        "additions": 47,
+        "deletions": 50,
+        "total": 97
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-per-user-cost-breaker-DRAFT",
+        "docs/cutover-audits-overnight-2026-06-05"
+      ]
+    },
+    {
+      "sha": "cae345835fa5107fb3269044d1864f12ffdabf07",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-04T15:42:27+05:30",
+      "message": "chore(archive): add PR-1180 + PR-1182 snapshots (Coach UX overhaul + entry point) (#281)",
+      "stats": {
+        "additions": 4592,
+        "deletions": 0,
+        "total": 4592
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-per-user-cost-breaker-DRAFT",
+        "docs/cutover-audits-overnight-2026-06-05"
+      ]
+    },
+    {
+      "sha": "b5ae10ec1dbeaf4086c1f80134a9f2c726f38392",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-04T15:41:00+05:30",
+      "message": "feat(22.3): Phase 22.3 video ideas \u2014 design + PROGRESS expansion (#278)",
+      "stats": {
+        "additions": 147,
+        "deletions": 26,
+        "total": 173
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-per-user-cost-breaker-DRAFT",
+        "docs/cutover-audits-overnight-2026-06-05"
+      ]
+    },
+    {
+      "sha": "fcb6b8a2f077cff52768a233ac17b67ae81bf9c0",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-04T15:40:55+05:30",
+      "message": "chore(archive): add PR-1181 snapshot (CTA flicker fix \u2014 Rishi-tested + passed) (#277)",
+      "stats": {
+        "additions": 2679,
+        "deletions": 0,
+        "total": 2679
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-per-user-cost-breaker-DRAFT",
+        "docs/cutover-audits-overnight-2026-06-05"
+      ]
+    },
+    {
+      "sha": "05b30c095c6ad626fc0a0b6d224687eafd438c24",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-04T14:02:46+05:30",
+      "message": "feat(22.3b): video-ideas backend \u2014 nightly loop + 2 endpoints + repo (#280)",
+      "stats": {
+        "additions": 751,
+        "deletions": 2,
+        "total": 753
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-per-user-cost-breaker-DRAFT",
+        "docs/cutover-audits-overnight-2026-06-05"
+      ]
+    },
+    {
+      "sha": "16893c2e58bc8076fbc1b32e23abe02195bab48d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-04T13:55:36+05:30",
+      "message": "feat(22.3a): migration 032 \u2014 video_ideas table (#279)",
+      "stats": {
+        "additions": 48,
+        "deletions": 0,
+        "total": 48
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-per-user-cost-breaker-DRAFT",
+        "docs/cutover-audits-overnight-2026-06-05"
+      ]
+    },
+    {
+      "sha": "951b4c8ff7b8c222f19c4872d54da98a36fa8932",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-04T13:09:54+05:30",
+      "message": "docs(walg): WAL-G is LIVE \u2014 runbook updated with the actual enable procedure (#276)",
+      "stats": {
+        "additions": 24,
+        "deletions": 11,
+        "total": 35
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-per-user-cost-breaker-DRAFT",
+        "docs/cutover-audits-overnight-2026-06-05"
+      ]
+    },
+    {
+      "sha": "f5822949404db6374885d7e82c10d649f76ff895",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-04T12:30:02+05:30",
+      "message": "feat(coach-pr2): UX overhaul \u2014 resume + coach speaks first + forced proposal + receipt (#275)",
+      "stats": {
+        "additions": 426,
+        "deletions": 7,
+        "total": 433
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-per-user-cost-breaker-DRAFT",
+        "docs/cutover-audits-overnight-2026-06-05"
+      ]
+    },
+    {
+      "sha": "f7f5753ff54b93a3f52830485902c5d575b44da7",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-04T12:20:34+05:30",
+      "message": "feat(coach-pr1): add coach_messages.suggestions JSONB for opening-chip UX (#274)",
+      "stats": {
+        "additions": 22,
+        "deletions": 0,
+        "total": 22
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-per-user-cost-breaker-DRAFT",
+        "docs/cutover-audits-overnight-2026-06-05"
+      ]
+    },
+    {
+      "sha": "a41208353c2c44a8f3a85ad10466d80027a304b5",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-04T12:16:59+05:30",
+      "message": "docs(walg): recovery runbook + enablement procedure (Blocker 2 \u2014 held pending creds) (#273)",
+      "stats": {
+        "additions": 153,
+        "deletions": 0,
+        "total": 153
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-per-user-cost-breaker-DRAFT",
+        "docs/cutover-audits-overnight-2026-06-05"
+      ]
+    },
+    {
+      "sha": "ff7ff8a53eae7a4a0e0ca3f04f8ad5d6c68c22ae",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-04T12:08:58+05:30",
+      "message": "fix(caddy): remove unhealthy_latency 3s \u2014 was 503ing all LLM-bound chat-send (Blocker 1) (#272)",
+      "stats": {
+        "additions": 141,
+        "deletions": 0,
+        "total": 141
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-per-user-cost-breaker-DRAFT",
+        "docs/cutover-audits-overnight-2026-06-05"
+      ]
+    },
+    {
+      "sha": "b9541e54bbe365b4b3df32529c55b066ca5ddff3",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-04T09:16:19+05:30",
+      "message": "chore(phase-25.10): close the two latent gaps from the audit (#271)",
+      "stats": {
+        "additions": 68,
+        "deletions": 0,
+        "total": 68
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-per-user-cost-breaker-DRAFT",
+        "docs/cutover-audits-overnight-2026-06-05"
+      ]
+    },
+    {
+      "sha": "a73775b7bbbd01f61d29880c28d3221fcff01806",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-04T09:08:49+05:30",
+      "message": "fix(streak_tracker): log exception type+repr (no more blank error lines) (#270)",
+      "stats": {
+        "additions": 48,
+        "deletions": 1,
+        "total": 49
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-per-user-cost-breaker-DRAFT",
+        "docs/cutover-audits-overnight-2026-06-05"
+      ]
+    },
+    {
+      "sha": "6a6ae7db12d8963206668c7166271b06f9ab0b5f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-04T08:57:07+05:30",
+      "message": "feat(i10): nightly pg_dump + weekly restore drill (WAL-G stopgap) (#269)",
+      "stats": {
+        "additions": 379,
+        "deletions": 0,
+        "total": 379
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-per-user-cost-breaker-DRAFT",
+        "docs/cutover-audits-overnight-2026-06-05"
+      ]
+    },
+    {
+      "sha": "db136ea3352bb80b267eafcd625c8ddedfa65865",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-04T08:11:21+05:30",
+      "message": "feat(phase-1.17): automated v2-vs-chat-ai latency comparison + cutover finding (#268)",
+      "stats": {
+        "additions": 618,
+        "deletions": 0,
+        "total": 618
+      },
+      "branches": [
+        "main",
+        "feat/phase-19-2-per-user-cost-breaker-DRAFT",
+        "docs/cutover-audits-overnight-2026-06-05"
+      ]
+    },
+    {
+      "sha": "c701c925e87fda120049811b7c97e4291da1f2fc",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-04T19:26:18+05:30",
+      "message": "DRAFT feat(phase-19.2): per-user daily LLM cost circuit breaker",
+      "stats": {
+        "additions": 395,
+        "deletions": 1,
+        "total": 396
+      },
+      "branches": [
+        "feat/phase-19-2-per-user-cost-breaker-DRAFT"
+      ]
+    },
+    {
+      "sha": "5a9fb94911a857743f8569f824fc1af8d0943050",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-04T22:37:45+05:30",
+      "message": "docs(cutover-audits): add-on overnight pack \u2014 DEV-8/9/11b/12-prep",
+      "stats": {
+        "additions": 383,
+        "deletions": 19,
+        "total": 402
+      },
+      "branches": [
+        "docs/cutover-audits-overnight-2026-06-05"
+      ]
+    },
+    {
+      "sha": "5c9ff755e86d52d034e40d2426880e483cae0512",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-04T19:29:50+05:30",
+      "message": "docs(cutover-audits): overnight 2026-06-04 \u2192 2026-06-05 audit reports",
+      "stats": {
+        "additions": 825,
+        "deletions": 0,
+        "total": 825
+      },
+      "branches": [
+        "docs/cutover-audits-overnight-2026-06-05"
+      ]
+    }
+  ],
+  "commit_count": 47,
+  "issues": [],
+  "issue_count": 0
+}
