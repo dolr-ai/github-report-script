@@ -1,0 +1,145 @@
+{
+  "date": "2026-06-05",
+  "cached_at": "2026-06-05T19:09:57.508583Z",
+  "commits": [
+    {
+      "sha": "475f16e3f3b350efa648778277afafa5de03590c",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-05T22:00:08+05:30",
+      "message": "Naitik/send video view count to recsys (#1)",
+      "stats": {
+        "additions": 7476,
+        "deletions": 0,
+        "total": 7476
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3174dec9db94aca81442c7412f0d19a3baf5049c",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-05T18:25:04+05:30",
+      "message": "feat: expose soul file coach from profile",
+      "stats": {
+        "additions": 119,
+        "deletions": 18,
+        "total": 137
+      },
+      "branches": [
+        "rishi/soul-file-coach"
+      ]
+    },
+    {
+      "sha": "13213e0be4e40725430bc909285602662e2202e1",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-04T13:46:21+05:30",
+      "message": "feat(coach): UX overhaul \u2014 resume, opening chips, Save CTA, Start over, receipt",
+      "stats": {
+        "additions": 394,
+        "deletions": 85,
+        "total": 479
+      },
+      "branches": [
+        "rishi/soul-file-coach"
+      ]
+    },
+    {
+      "sha": "636f84cfe591a7ee11b291b5a433c0e6c418bb5b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-04T12:17:04+05:30",
+      "message": "fix(coach): reset chat state when switching bots in openForBot",
+      "stats": {
+        "additions": 7,
+        "deletions": 0,
+        "total": 7
+      },
+      "branches": [
+        "rishi/soul-file-coach"
+      ]
+    },
+    {
+      "sha": "07465da8ab73b6c23a7fa0ccd8db66eb6667990d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-03T18:33:17+05:30",
+      "message": "feat(coach): Soul File Coach UI module + nav infrastructure (Phase 7.5)",
+      "stats": {
+        "additions": 1271,
+        "deletions": 0,
+        "total": 1271
+      },
+      "branches": [
+        "rishi/soul-file-coach"
+      ]
+    },
+    {
+      "sha": "a3492d8815117347a3f2bd4cbf2e84bb7feec0a6",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-05T15:35:11+05:30",
+      "message": "feat(chat): voice-message recording (Phase 1.7b mobile) (#1179)",
+      "stats": {
+        "additions": 1360,
+        "deletions": 41,
+        "total": 1401
+      },
+      "branches": [
+        "rishi/soul-file-coach",
+        "main"
+      ]
+    },
+    {
+      "sha": "a26cfc078d6369920f805cfc223147675895b623",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-05T18:06:32+05:30",
+      "message": "feat: update SQL queries and bump sqlx dependency to version 0.9",
+      "stats": {
+        "additions": 137,
+        "deletions": 1,
+        "total": 138
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a57f927f2a90de6d1e0f96deddf7ffe12673cc41",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-05T17:26:30+05:30",
+      "message": "feat: update cycle harvesting logic and enhance error handling in harvest functions",
+      "stats": {
+        "additions": 69,
+        "deletions": 64,
+        "total": 133
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4796f21da8fdab80cf576099a8b9c59267175a7a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-05T12:22:21+05:30",
+      "message": "Refactor canister management APIs and enhance cycle harvesting functionality",
+      "stats": {
+        "additions": 653,
+        "deletions": 1673,
+        "total": 2326
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 9,
+  "issues": [],
+  "issue_count": 0
+}
