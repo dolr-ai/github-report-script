@@ -1,0 +1,71 @@
+{
+  "date": "2026-06-06",
+  "cached_at": "2026-06-06T18:55:02.106587Z",
+  "commits": [
+    {
+      "sha": "c3a5cea842f657d115a9cd3db8ce4d51978dd55d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-06T22:02:01+05:30",
+      "message": "refactor: simplify subscription plan change calls and improve session type update assertions",
+      "stats": {
+        "additions": 30,
+        "deletions": 35,
+        "total": 65
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b906889ee05d9dd3f2bf1442824c19d06c73260b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-06T21:11:09+05:30",
+      "message": "refactor: clean up unused variables and improve code readability in integration tests",
+      "stats": {
+        "additions": 148,
+        "deletions": 119,
+        "total": 267
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "fd5bcb8e33aec20dece81760d7a5492cfcf7b9d3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-06T20:44:47+05:30",
+      "message": "Refactor direct_upgrade test and update SQL queries",
+      "stats": {
+        "additions": 1488,
+        "deletions": 4130,
+        "total": 5618
+      },
+      "branches": [
+        "main",
+        "dependabot/cargo/sha256-1.6.0",
+        "dependabot/cargo/candid-0.10.28"
+      ]
+    },
+    {
+      "sha": "039412901b2d432b49e1b28854bfc242d5bfa5f1",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-06-06T15:41:28+05:30",
+      "message": "Update service-summary.md",
+      "stats": {
+        "additions": 25,
+        "deletions": 24,
+        "total": 49
+      },
+      "branches": [
+        "ansuman-yral-patch-2"
+      ]
+    }
+  ],
+  "commit_count": 4,
+  "issues": [],
+  "issue_count": 0
+}
