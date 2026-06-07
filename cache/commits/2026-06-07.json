@@ -1,0 +1,180 @@
+{
+  "date": "2026-06-07",
+  "cached_at": "2026-06-07T18:56:32.363245Z",
+  "commits": [
+    {
+      "sha": "f4c66628d202bc01413d6583c7287f32d090a2f7",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-07T21:23:06+05:30",
+      "message": "fix(profile): address video ideas review findings",
+      "stats": {
+        "additions": 421,
+        "deletions": 159,
+        "total": 580
+      },
+      "branches": [
+        "rishi/video-ideas-tab"
+      ]
+    },
+    {
+      "sha": "822a3bee8e8c1de9128c5cc9c94cd2ef70f418f6",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-04T17:49:32+05:30",
+      "message": "feat(profile): gate Video Ideas tab on VideoIdeasEnabled flag",
+      "stats": {
+        "additions": 23,
+        "deletions": 1,
+        "total": 24
+      },
+      "branches": [
+        "rishi/video-ideas-tab"
+      ]
+    },
+    {
+      "sha": "8e9cb7664d9656c642fde8b816117c48e580d151",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-04T17:30:14+05:30",
+      "message": "feat(profile): Phase 22.3d \u2014 Video Idea Create handler + Option C toast",
+      "stats": {
+        "additions": 180,
+        "deletions": 3,
+        "total": 183
+      },
+      "branches": [
+        "rishi/video-ideas-tab"
+      ]
+    },
+    {
+      "sha": "bb755b87d3b2be6f9b84de647c6e9c8b36e36b94",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-04T16:23:21+05:30",
+      "message": "feat(profile): Phase 22.3c \u2014 Video Ideas tab + list UI + data layer",
+      "stats": {
+        "additions": 539,
+        "deletions": 1,
+        "total": 540
+      },
+      "branches": [
+        "rishi/video-ideas-tab"
+      ]
+    },
+    {
+      "sha": "8f4ed0ceda370a6bc9f09d087530929c117cf1e8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-07T22:13:15+05:30",
+      "message": "feat(coach): Soul File Coach UI module + nav (Phase 7.5) (#1180)",
+      "stats": {
+        "additions": 1722,
+        "deletions": 9,
+        "total": 1731
+      },
+      "branches": [
+        "rishi/video-ideas-tab",
+        "rishi/profile-coach-entrypoint",
+        "main"
+      ]
+    },
+    {
+      "sha": "ef50d9880528f7075038d8d3ca8cca2c36ad801c",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-07T21:08:32+05:30",
+      "message": "fix(auth): stop overcounting bots from stale OAuth token claim (#1181)",
+      "stats": {
+        "additions": 9,
+        "deletions": 7,
+        "total": 16
+      },
+      "branches": [
+        "rishi/video-ideas-tab",
+        "rishi/profile-coach-entrypoint",
+        "main"
+      ]
+    },
+    {
+      "sha": "95b4a252b7872d396726a36f6077a00472e3b9f6",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-07T18:44:35+05:30",
+      "message": "fix(chat): respect ChatAsHumanCreatorEnabled flag in BotAccountReadOnly branch (#1183)",
+      "stats": {
+        "additions": 26,
+        "deletions": 7,
+        "total": 33
+      },
+      "branches": [
+        "rishi/video-ideas-tab",
+        "rishi/profile-coach-entrypoint",
+        "main"
+      ]
+    },
+    {
+      "sha": "959dde10833af541d61bd876edbbce92da72da20",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-07T21:23:52+05:30",
+      "message": "refactor: remove deprecated function and improve cycle harvesting assertions",
+      "stats": {
+        "additions": 80,
+        "deletions": 56,
+        "total": 136
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "47306dc593304c0a89ec3fc52c1e30c5a0cf1e1a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-07T15:42:21+05:30",
+      "message": "refactor: streamline code and enhance clarity in various modules and tests",
+      "stats": {
+        "additions": 124,
+        "deletions": 43,
+        "total": 167
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "2e5c8fd77cea8345d532356f7342629751cfadf5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-07T13:29:25+05:30",
+      "message": "refactor: clean up imports and simplify function signatures across multiple modules",
+      "stats": {
+        "additions": 208,
+        "deletions": 202,
+        "total": 410
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "54223fc0894f0b6f47e9ffff26b8917a690a5ad3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-07T05:51:34+05:30",
+      "message": "feat: add local platform_orchestrator setup test and validate harvest methods",
+      "stats": {
+        "additions": 464,
+        "deletions": 22,
+        "total": 486
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 11,
+  "issues": [],
+  "issue_count": 0
+}
