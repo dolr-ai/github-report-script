@@ -1,0 +1,765 @@
+{
+  "date": "2026-06-08",
+  "cached_at": "2026-06-08T19:18:59.797926Z",
+  "commits": [
+    {
+      "sha": "73a1fddd6bdbb2624d384a48deb0907b9097f5d7",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-08T22:38:17+05:30",
+      "message": "init commit for event struct",
+      "stats": {
+        "additions": 1532,
+        "deletions": 111,
+        "total": 1643
+      },
+      "branches": [
+        "naitik/send_video_view_count_to_recsys"
+      ]
+    },
+    {
+      "sha": "8f184b6a69b30c9c4630c728c5d80f701a237084",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-08T23:49:03+05:30",
+      "message": "added metadata client and notification client",
+      "stats": {
+        "additions": 569,
+        "deletions": 448,
+        "total": 1017
+      },
+      "branches": [
+        "naitik/handle_events"
+      ]
+    },
+    {
+      "sha": "5afe6fe70d1da336dab23d087346e6ef46a3d1b9",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-08T23:00:09+05:30",
+      "message": "base event structs",
+      "stats": {
+        "additions": 1536,
+        "deletions": 115,
+        "total": 1651
+      },
+      "branches": [
+        "naitik/handle_events"
+      ]
+    },
+    {
+      "sha": "1ff7dd7bbc1aaf2100244338dbc35f20f5b46554",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-08T19:29:13+05:30",
+      "message": "fix(flag): SoulFileCoachEnabled defaultValue=true \u2192 false (production safety) (#1185)",
+      "stats": {
+        "additions": 5,
+        "deletions": 3,
+        "total": 8
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "be1703fcb3e04fe83c57592316dcd2a5d061a908",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-08T16:36:50+05:30",
+      "message": "feat(config): cut CHAT_BASE_URL over to agent.rishi.yral.com (#1186)",
+      "stats": {
+        "additions": 13,
+        "deletions": 1,
+        "total": 14
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "87cdbc86b4190dcd158a2712ff331c8c57649333",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-nsfw-detetction-server",
+      "timestamp": "2026-06-08T20:08:12+05:30",
+      "message": "feat(api): enhance image and text detection services with moderation prompts (#3)",
+      "stats": {
+        "additions": 758,
+        "deletions": 220,
+        "total": 978
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "1659b4dd6e3b4bb1d1ca9fecd434b2671668ce8a",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-nsfw-detetction-server",
+      "timestamp": "2026-06-08T19:57:42+05:30",
+      "message": "feat(api): enhance image and text detection services with moderation prompts",
+      "stats": {
+        "additions": 758,
+        "deletions": 220,
+        "total": 978
+      },
+      "branches": [
+        "ansuman/feat/optional-text-to-image-api"
+      ]
+    },
+    {
+      "sha": "90f9c54a799b60987ea50457032cf23c6bd4d3c9",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-08T18:49:16+05:30",
+      "message": "docs(progress): 2026-06-08 EOD wrap \u2014 13 PRs shipped, 3 21\u03b1\u03b2.I items done (#311)",
+      "stats": {
+        "additions": 35,
+        "deletions": 9,
+        "total": 44
+      },
+      "branches": [
+        "main",
+        "feat/h12-multimodal-routing",
+        "ci/i-dep2-post-deploy-smoke"
+      ]
+    },
+    {
+      "sha": "b44a113ebca5c9b5ca20a4e263054fc1e237519a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-08T18:17:09+05:30",
+      "message": "docs(progress): add 21\u03b1\u03b2.H11 cost alerting + 21\u03b1\u03b2.H12 multimodal routing + 21\u03b3 post-cutover phase (#",
+      "stats": {
+        "additions": 22,
+        "deletions": 3,
+        "total": 25
+      },
+      "branches": [
+        "main",
+        "feat/i-mig1-pre-migration-pgdump",
+        "feat/h12-multimodal-routing",
+        "feat/h11-llm-cost-alerting",
+        "docs/h2-server-side-billing-design",
+        "docs/h1-cutover-day-runbook",
+        "ci/mig3-migration-testing",
+        "ci/i-mig2-squawk-linter",
+        "ci/i-dep2-post-deploy-smoke"
+      ]
+    },
+    {
+      "sha": "aa8f2314be4a3a8e6502145b454b03ff84f5b518",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-08T18:01:48+05:30",
+      "message": "feat(21\u03b1\u03b2.I-Dep1): tag :stable in GHCR after successful deploy (#303)",
+      "stats": {
+        "additions": 78,
+        "deletions": 0,
+        "total": 78
+      },
+      "branches": [
+        "main",
+        "feat/i-mig1-pre-migration-pgdump",
+        "feat/h12-multimodal-routing",
+        "feat/h11-llm-cost-alerting",
+        "docs/h2-server-side-billing-design",
+        "docs/h1-cutover-day-runbook",
+        "ci/mig3-migration-testing",
+        "ci/i-mig2-squawk-linter",
+        "ci/i-dep2-post-deploy-smoke"
+      ]
+    },
+    {
+      "sha": "63e3ebb337c5f01593c8b2c46d7727dc9067a9bf",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-08T17:57:40+05:30",
+      "message": "feat(21\u03b1\u03b2.I-Sec2): pip-audit dependency vulnerability scan in CI (#302)",
+      "stats": {
+        "additions": 162,
+        "deletions": 8,
+        "total": 170
+      },
+      "branches": [
+        "main",
+        "feat/i-mig1-pre-migration-pgdump",
+        "feat/h12-multimodal-routing",
+        "feat/h11-llm-cost-alerting",
+        "docs/h2-server-side-billing-design",
+        "docs/h1-cutover-day-runbook",
+        "ci/mig3-migration-testing",
+        "ci/i-mig2-squawk-linter",
+        "ci/i-dep2-post-deploy-smoke"
+      ]
+    },
+    {
+      "sha": "29ecc80ae81d4668e573024b4f7700c5af985ffb",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-08T17:53:53+05:30",
+      "message": "docs(progress): 21\u03b1\u03b2.H1 \u2014 Option A locked in (hard cutover + mini re-bootstrap) (#301)",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main",
+        "feat/i-mig1-pre-migration-pgdump",
+        "feat/h12-multimodal-routing",
+        "feat/h11-llm-cost-alerting",
+        "docs/h2-server-side-billing-design",
+        "docs/h1-cutover-day-runbook",
+        "ci/mig3-migration-testing",
+        "ci/i-mig2-squawk-linter",
+        "ci/i-dep2-post-deploy-smoke"
+      ]
+    },
+    {
+      "sha": "4ad43ed2e5a5cce1d89b09955de0df06a055952f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-08T17:53:48+05:30",
+      "message": "docs(progress): Path 1 auto-deploy done + new Phase 21\u03b1\u03b2.I production-grade safety (#299)",
+      "stats": {
+        "additions": 27,
+        "deletions": 3,
+        "total": 30
+      },
+      "branches": [
+        "main",
+        "feat/i-mig1-pre-migration-pgdump",
+        "feat/h12-multimodal-routing",
+        "feat/h11-llm-cost-alerting",
+        "docs/h2-server-side-billing-design",
+        "docs/h1-cutover-day-runbook",
+        "ci/mig3-migration-testing",
+        "ci/i-mig2-squawk-linter",
+        "ci/i-dep2-post-deploy-smoke"
+      ]
+    },
+    {
+      "sha": "0a4f7d13bce07b45d75544ec0bc23c9acea41575",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-08T17:49:10+05:30",
+      "message": "feat(21\u03b1\u03b2.I-Sec1): gitleaks secret scan in CI (#300)",
+      "stats": {
+        "additions": 172,
+        "deletions": 0,
+        "total": 172
+      },
+      "branches": [
+        "main",
+        "feat/i-mig1-pre-migration-pgdump",
+        "feat/h12-multimodal-routing",
+        "feat/h11-llm-cost-alerting",
+        "docs/h2-server-side-billing-design",
+        "docs/h1-cutover-day-runbook",
+        "ci/mig3-migration-testing",
+        "ci/i-mig2-squawk-linter",
+        "ci/i-dep2-post-deploy-smoke"
+      ]
+    },
+    {
+      "sha": "8c76047309a4664f1679c6ab3b5b64072d192c31",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-08T17:35:43+05:30",
+      "message": "fix(deploy): use workflow_run trigger so deploy waits for CI's image build (#298)",
+      "stats": {
+        "additions": 62,
+        "deletions": 24,
+        "total": 86
+      },
+      "branches": [
+        "main",
+        "feat/i-mig1-pre-migration-pgdump",
+        "feat/h12-multimodal-routing",
+        "feat/h11-llm-cost-alerting",
+        "docs/progress-option-a-hard-cutover-mini-rebootstrap",
+        "docs/h2-server-side-billing-design",
+        "docs/h1-cutover-day-runbook",
+        "ci/mig3-migration-testing",
+        "ci/i-mig2-squawk-linter",
+        "ci/i-dep2-post-deploy-smoke"
+      ]
+    },
+    {
+      "sha": "ee1a389ad1ede8b1f3cf09d84e2fba3d899be84f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-08T17:21:32+05:30",
+      "message": "feat(deploy): Path 1 \u2014 auto-deploy on merge + auto-rollback + concurrency lock (#297)",
+      "stats": {
+        "additions": 249,
+        "deletions": 62,
+        "total": 311
+      },
+      "branches": [
+        "main",
+        "feat/i-mig1-pre-migration-pgdump",
+        "feat/h12-multimodal-routing",
+        "feat/h11-llm-cost-alerting",
+        "docs/progress-option-a-hard-cutover-mini-rebootstrap",
+        "docs/h2-server-side-billing-design",
+        "docs/h1-cutover-day-runbook",
+        "ci/mig3-migration-testing",
+        "ci/i-mig2-squawk-linter",
+        "ci/i-dep2-post-deploy-smoke"
+      ]
+    },
+    {
+      "sha": "0a82d08c7efe80145fe2e1deb8377aae0d61a946",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-08T16:45:29+05:30",
+      "message": "fix(llm-routing): cross-replica cache coherence \u2014 Redis pub/sub + dashboard reload-on-load (#296)",
+      "stats": {
+        "additions": 386,
+        "deletions": 5,
+        "total": 391
+      },
+      "branches": [
+        "main",
+        "feat/i-mig1-pre-migration-pgdump",
+        "feat/h12-multimodal-routing",
+        "feat/h11-llm-cost-alerting",
+        "docs/progress-option-a-hard-cutover-mini-rebootstrap",
+        "docs/h2-server-side-billing-design",
+        "docs/h1-cutover-day-runbook",
+        "ci/mig3-migration-testing",
+        "ci/i-mig2-squawk-linter",
+        "ci/i-dep2-post-deploy-smoke"
+      ]
+    },
+    {
+      "sha": "a45ceb9a6f9a80c8e105671072c46fb0a6f39efb",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-08T16:16:59+05:30",
+      "message": "feat(admin): View-DB-overrides page on /admin/llm-routing dashboard (#295)",
+      "stats": {
+        "additions": 209,
+        "deletions": 1,
+        "total": 210
+      },
+      "branches": [
+        "main",
+        "feat/i-mig1-pre-migration-pgdump",
+        "feat/h12-multimodal-routing",
+        "feat/h11-llm-cost-alerting",
+        "docs/progress-option-a-hard-cutover-mini-rebootstrap",
+        "docs/h2-server-side-billing-design",
+        "docs/h1-cutover-day-runbook",
+        "ci/mig3-migration-testing",
+        "ci/i-mig2-squawk-linter",
+        "ci/i-dep2-post-deploy-smoke"
+      ]
+    },
+    {
+      "sha": "24e504c2c3dc0249e91b56ecd96fb3e37227af4e",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-08T15:49:34+05:30",
+      "message": "feat(deploy): GitHub Actions Deploy + Rollback buttons with swarm-manager failover (#294)",
+      "stats": {
+        "additions": 410,
+        "deletions": 0,
+        "total": 410
+      },
+      "branches": [
+        "main",
+        "feat/i-mig1-pre-migration-pgdump",
+        "feat/h12-multimodal-routing",
+        "feat/h11-llm-cost-alerting",
+        "docs/progress-option-a-hard-cutover-mini-rebootstrap",
+        "docs/h2-server-side-billing-design",
+        "docs/h1-cutover-day-runbook",
+        "ci/mig3-migration-testing",
+        "ci/i-mig2-squawk-linter",
+        "ci/i-dep2-post-deploy-smoke"
+      ]
+    },
+    {
+      "sha": "3ff3e5dd9d505f2d9374f9682f08f0a509b9f90d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-08T15:30:03+05:30",
+      "message": "docs(progress): cutover model clarified \u2014 alpha PS track + 5-min lag at \u03b2 (#291)",
+      "stats": {
+        "additions": 34,
+        "deletions": 14,
+        "total": 48
+      },
+      "branches": [
+        "main",
+        "feat/i-mig1-pre-migration-pgdump",
+        "feat/h12-multimodal-routing",
+        "feat/h11-llm-cost-alerting",
+        "docs/progress-option-a-hard-cutover-mini-rebootstrap",
+        "docs/h2-server-side-billing-design",
+        "docs/h1-cutover-day-runbook",
+        "ci/mig3-migration-testing",
+        "ci/i-mig2-squawk-linter",
+        "ci/i-dep2-post-deploy-smoke"
+      ]
+    },
+    {
+      "sha": "c01ef47601af560070bbcc5f870bd10f12651e01",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-08T15:26:15+05:30",
+      "message": "feat(llm-routing): Saikat primary + Anshuman fallback for async, hard guard against gemini-leak (#29",
+      "stats": {
+        "additions": 426,
+        "deletions": 91,
+        "total": 517
+      },
+      "branches": [
+        "main",
+        "feat/i-mig1-pre-migration-pgdump",
+        "feat/h12-multimodal-routing",
+        "feat/h11-llm-cost-alerting",
+        "docs/progress-option-a-hard-cutover-mini-rebootstrap",
+        "docs/h2-server-side-billing-design",
+        "docs/h1-cutover-day-runbook",
+        "ci/mig3-migration-testing",
+        "ci/i-mig2-squawk-linter",
+        "ci/i-dep2-post-deploy-smoke"
+      ]
+    },
+    {
+      "sha": "3bda79ec0469b2f4b87d1194b601295a912ffa86",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-08T13:55:31+05:30",
+      "message": "feat(llm-registry): add runpod_vllm provider (Saikat's pod) for video_idea_generation (#292)",
+      "stats": {
+        "additions": 43,
+        "deletions": 8,
+        "total": 51
+      },
+      "branches": [
+        "main",
+        "feat/i-mig1-pre-migration-pgdump",
+        "feat/h12-multimodal-routing",
+        "feat/h11-llm-cost-alerting",
+        "docs/progress-option-a-hard-cutover-mini-rebootstrap",
+        "docs/h2-server-side-billing-design",
+        "docs/h1-cutover-day-runbook",
+        "ci/mig3-migration-testing",
+        "ci/i-mig2-squawk-linter",
+        "ci/i-dep2-post-deploy-smoke"
+      ]
+    },
+    {
+      "sha": "6aa59292611f516ed20597b59db6c20411f4a9b4",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-08T12:26:10+05:30",
+      "message": "docs(progress): sync 21\u03b1 gates with overnight audit verdicts (#290)",
+      "stats": {
+        "additions": 14,
+        "deletions": 13,
+        "total": 27
+      },
+      "branches": [
+        "main",
+        "feat/i-mig1-pre-migration-pgdump",
+        "feat/h12-multimodal-routing",
+        "feat/h11-llm-cost-alerting",
+        "docs/progress-option-a-hard-cutover-mini-rebootstrap",
+        "docs/h2-server-side-billing-design",
+        "docs/h1-cutover-day-runbook",
+        "ci/mig3-migration-testing",
+        "ci/i-mig2-squawk-linter",
+        "ci/i-dep2-post-deploy-smoke",
+        "chore/progress-cutover-model-clarified-2026-06-08"
+      ]
+    },
+    {
+      "sha": "894bb123eb6860ce3039d8c0197b027f75630cfe",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-08T18:42:52+05:30",
+      "message": "feat(migrations): 21\u03b1\u03b2.I-Mig1 \u2014 automated pre-migration pg_dump \u2192 S3",
+      "stats": {
+        "additions": 150,
+        "deletions": 0,
+        "total": 150
+      },
+      "branches": [
+        "feat/i-mig1-pre-migration-pgdump"
+      ]
+    },
+    {
+      "sha": "d7b2c4e53ba66363fd02c3a37c2493c3966932af",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-08T19:00:54+05:30",
+      "message": "feat(routing): split user_chat_main_multimodal for vision-bearing chat",
+      "stats": {
+        "additions": 329,
+        "deletions": 10,
+        "total": 339
+      },
+      "branches": [
+        "feat/h12-multimodal-routing"
+      ]
+    },
+    {
+      "sha": "a95976fa508f8af5c60648846aab31f650e8aa11",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-08T18:32:16+05:30",
+      "message": "feat(cost-alerts): 21\u03b1\u03b2.H11 \u2014 real-time LLM cost alerting (3 alerts)",
+      "stats": {
+        "additions": 323,
+        "deletions": 1,
+        "total": 324
+      },
+      "branches": [
+        "feat/h11-llm-cost-alerting"
+      ]
+    },
+    {
+      "sha": "fe9d9845db2bc0a39dba5815677a725e1358db60",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-08T18:40:34+05:30",
+      "message": "docs(designs): 21\u03b1\u03b2.H2 \u2014 server-side billing enforcement design doc",
+      "stats": {
+        "additions": 168,
+        "deletions": 0,
+        "total": 168
+      },
+      "branches": [
+        "docs/h2-server-side-billing-design"
+      ]
+    },
+    {
+      "sha": "1555429875d73789ae4945c62646a9dbdcac0e4b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-08T18:26:11+05:30",
+      "message": "docs(runbook): 21\u03b1\u03b2.H1 \u2014 Option A mini re-bootstrap runbook + Caddy 410 snippet",
+      "stats": {
+        "additions": 362,
+        "deletions": 1,
+        "total": 363
+      },
+      "branches": [
+        "docs/h1-cutover-day-runbook"
+      ]
+    },
+    {
+      "sha": "09a0430b7b630541e5c8142d22eb37b17ea90e82",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-08T17:53:19+05:30",
+      "message": "docs: I-Sec1 shipped via #300; DEV-1 closes \ud83d\udfe2 GREEN (mobile chose v2's chat_message)",
+      "stats": {
+        "additions": 29,
+        "deletions": 5,
+        "total": 34
+      },
+      "branches": [
+        "docs/cutover-audits-overnight-2026-06-05"
+      ]
+    },
+    {
+      "sha": "1a7100255cc473468da110af08535114972a983d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-08T11:38:50+05:30",
+      "message": "docs(cutover-audits): G (ETL backlog) + INDEX entry for H (push-notif fix held local)",
+      "stats": {
+        "additions": 100,
+        "deletions": 1,
+        "total": 101
+      },
+      "branches": [
+        "docs/cutover-audits-overnight-2026-06-05"
+      ]
+    },
+    {
+      "sha": "e4edd1b28215655d32335f9444f41f9818f45880",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-08T18:38:02+05:30",
+      "message": "ci(migrations): 21\u03b1\u03b2.I-Mig3 \u2014 apply every migration in CI on ephemeral pg15",
+      "stats": {
+        "additions": 174,
+        "deletions": 0,
+        "total": 174
+      },
+      "branches": [
+        "ci/mig3-migration-testing"
+      ]
+    },
+    {
+      "sha": "02c21933a69aca899c34f20eb8f152202104ec7b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-08T18:45:45+05:30",
+      "message": "ci(migrations): 21\u03b1\u03b2.I-Mig2 \u2014 squawk migration linter on changed SQL",
+      "stats": {
+        "additions": 182,
+        "deletions": 0,
+        "total": 182
+      },
+      "branches": [
+        "ci/i-mig2-squawk-linter"
+      ]
+    },
+    {
+      "sha": "f20a77ac4282b8b58411589723dc42aa93ea2cbf",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-08T19:04:40+05:30",
+      "message": "ci(deploy): 21\u03b1\u03b2.I-Dep2 \u2014 post-deploy smoke test + auto-rollback on failure",
+      "stats": {
+        "additions": 195,
+        "deletions": 0,
+        "total": 195
+      },
+      "branches": [
+        "ci/i-dep2-post-deploy-smoke"
+      ]
+    },
+    {
+      "sha": "3fdbe2e60854e47fb713f1e56c8162008fd593a3",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-08T12:40:19+05:30",
+      "message": "docs(progress): cutover model clarified \u2014 alpha PS track + 5-min lag at \u03b2",
+      "stats": {
+        "additions": 34,
+        "deletions": 14,
+        "total": 48
+      },
+      "branches": [
+        "chore/progress-cutover-model-clarified-2026-06-08"
+      ]
+    },
+    {
+      "sha": "8fdf2218ef8104a78a03a28853ffaf5a885971b8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-06-08T08:27:10+05:30",
+      "message": "Condense AGENTS.md to concise architectural rules",
+      "stats": {
+        "additions": 145,
+        "deletions": 1302,
+        "total": 1447
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "a4709bc566ca0ac307640242ae9d54680473ea09",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-06-08T09:40:35+05:30",
+      "message": "Update service-summary.md (#2154)",
+      "stats": {
+        "additions": 25,
+        "deletions": 24,
+        "total": 49
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 36,
+  "issues": [
+    {
+      "number": 2151,
+      "title": "fix public port issue flagged by hetzner for postgres",
+      "closed_at": "2026-06-08T04:35:01Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2151",
+      "labels": []
+    },
+    {
+      "number": 2141,
+      "title": "Start/Pause isn't working on the publish draft screen",
+      "closed_at": "2026-06-08T04:45:38Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2141",
+      "labels": []
+    },
+    {
+      "number": 2153,
+      "title": "add into service file, the new repo sentry and url for everyone to see it",
+      "closed_at": "2026-06-08T04:10:37Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2153",
+      "labels": []
+    },
+    {
+      "number": 2152,
+      "title": "bug fixes and cleanup",
+      "closed_at": "2026-06-08T04:11:55Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2152",
+      "labels": []
+    },
+    {
+      "number": 2146,
+      "title": "Load test models.ansuman.yral.com with k6 to validates approximate upper bound on requests/sec we can achieve",
+      "closed_at": "2026-06-08T04:30:30Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2146",
+      "labels": []
+    },
+    {
+      "number": 6,
+      "title": "Optimising and adding monitoring to the NSFW Detection Pipeline",
+      "closed_at": "2026-06-08T04:27:41Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/nsfw_detect",
+      "url": "https://github.com/dolr-ai/nsfw_detect/issues/6",
+      "labels": []
+    },
+    {
+      "number": 5,
+      "title": "Benchmarking and Evaluation of Current NSFW Classification System",
+      "closed_at": "2026-06-08T04:25:54Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/nsfw_detect",
+      "url": "https://github.com/dolr-ai/nsfw_detect/issues/5",
+      "labels": []
+    }
+  ],
+  "issue_count": 7
+}
