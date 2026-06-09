@@ -1,0 +1,861 @@
+{
+  "date": "2026-06-09",
+  "cached_at": "2026-06-09T19:16:53.081201Z",
+  "commits": [
+    {
+      "sha": "7a61f5c8a97a3643f37385ef2247627cd19e7f9f",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-10T00:36:09+05:30",
+      "message": "fix: contract path and build check",
+      "stats": {
+        "additions": 9,
+        "deletions": 1,
+        "total": 10
+      },
+      "branches": [
+        "naitik/handle_events"
+      ]
+    },
+    {
+      "sha": "539a4078b15b79e4ef069a86658b3c31eae3caba",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-10T00:25:18+05:30",
+      "message": "fix: contract path",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/handle_events"
+      ]
+    },
+    {
+      "sha": "697589af1e3c07f31753e1860aea03ecbf2b8cd7",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-10T00:11:31+05:30",
+      "message": "fix: contracts url",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/handle_events"
+      ]
+    },
+    {
+      "sha": "d535e545254cd50fcff9711cbdb3663924f1d9c4",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-10T00:04:56+05:30",
+      "message": "fix: contracts fetch from repo",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "naitik/handle_events"
+      ]
+    },
+    {
+      "sha": "10ee471294dd30418a320cff778d637898880aef",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-09T23:59:27+05:30",
+      "message": "fix: build check",
+      "stats": {
+        "additions": 0,
+        "deletions": 1,
+        "total": 1
+      },
+      "branches": [
+        "naitik/handle_events"
+      ]
+    },
+    {
+      "sha": "446865bf5c6b7e2f31269dd8febf3f41aa930935",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-09T23:58:29+05:30",
+      "message": "fix: build check",
+      "stats": {
+        "additions": 43,
+        "deletions": 36,
+        "total": 79
+      },
+      "branches": [
+        "naitik/handle_events"
+      ]
+    },
+    {
+      "sha": "982701b6aca3f73d245743f77c9df556fdf94ea9",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-09T23:35:26+05:30",
+      "message": "formatting",
+      "stats": {
+        "additions": 3,
+        "deletions": 5,
+        "total": 8
+      },
+      "branches": [
+        "naitik/handle_events"
+      ]
+    },
+    {
+      "sha": "37030cca6738e278cfaf93aabc6aa2ad0f0b3a46",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-09T23:12:31+05:30",
+      "message": "add warehouse event proto type",
+      "stats": {
+        "additions": 299,
+        "deletions": 6,
+        "total": 305
+      },
+      "branches": [
+        "naitik/handle_events"
+      ]
+    },
+    {
+      "sha": "5a534396d9149f82382790f718895675c3b4680b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-09T13:53:18+05:30",
+      "message": "fix(chat): clear stale initialOffset on every setConversationId + diagnostic logs",
+      "stats": {
+        "additions": 46,
+        "deletions": 2,
+        "total": 48
+      },
+      "branches": [
+        "rishi/audio-history-initial-offset-fix-with-diag"
+      ]
+    },
+    {
+      "sha": "c55e3f7c4faad6e5328dbede5fdec95e63b73e9a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-09T17:59:31+05:30",
+      "message": "fix(chat): recent voice/AI messages going missing after inbox re-entry (#1189)",
+      "stats": {
+        "additions": 26,
+        "deletions": 11,
+        "total": 37
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "066f0259f9beb76ff019569cfabe403e16b35bb9",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-09T17:58:31+05:30",
+      "message": "fix(chat): clear paged-history snapshot on resetState to prevent cross-conv cache poison (#1188)",
+      "stats": {
+        "additions": 4,
+        "deletions": 0,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7cf4bac67cc96a9cbf7054668bf1212b290ae83b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-09T14:40:47+05:30",
+      "message": "fix(chat): drop SSE streaming cursor; show YralLoadingDots while waiting for first token (#1187)",
+      "stats": {
+        "additions": 8,
+        "deletions": 13,
+        "total": 21
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f6f48c566d974e05600cc0e2b2d6d691551d81c2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-09T19:42:39+05:30",
+      "message": "Improve cycle harvest concurrency and robustness",
+      "stats": {
+        "additions": 219,
+        "deletions": 85,
+        "total": 304
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "67c90a1f5f1873e83d2ba601954d4cf7ad2ccfa5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-09T18:23:21+05:30",
+      "message": "Accept reserve in return_cycle_balance",
+      "stats": {
+        "additions": 169,
+        "deletions": 55,
+        "total": 224
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "0d29a57d47121a4e9cb239a00d8f5cca993d62e6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-09T16:24:57+05:30",
+      "message": "Update Storable lifetimes and remove unused code",
+      "stats": {
+        "additions": 180,
+        "deletions": 115,
+        "total": 295
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f3ae56e2f8c502b9a9779edbe8e89623b430e9e0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-09T15:28:20+05:30",
+      "message": "Remove snapshot-po-state.sh script",
+      "stats": {
+        "additions": 1140,
+        "deletions": 522,
+        "total": 1662
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e41e7a5e7bf3faa140c8ad4ec67ba8c9b543669b",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-nsfw-detetction-server",
+      "timestamp": "2026-06-09T10:12:38+05:30",
+      "message": "feat(video-status): implement video status service and integrate with existing services ",
+      "stats": {
+        "additions": 452,
+        "deletions": 21,
+        "total": 473
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "2b3b0fd69610bc40d185ad48dc143e500e0ae0b0",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-nsfw-detetction-server",
+      "timestamp": "2026-06-09T10:10:50+05:30",
+      "message": "feat(video-status): implement video status service and integrate with existing services",
+      "stats": {
+        "additions": 452,
+        "deletions": 21,
+        "total": 473
+      },
+      "branches": [
+        "ansuman/feat/video-processing-fix"
+      ]
+    },
+    {
+      "sha": "7f555e9685428e32948d65336976c7ac38fb14ac",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-09T18:58:20+05:30",
+      "message": "docs(eod-2026-06-09): record #314 incident + full migration-runner hardening (#335)",
+      "stats": {
+        "additions": 62,
+        "deletions": 6,
+        "total": 68
+      },
+      "branches": [
+        "main",
+        "fix/coach-strip-json-fences"
+      ]
+    },
+    {
+      "sha": "e3d44c0d6ddc7982be79f3f8295fb6dfc6fc02af",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-09T18:44:45+05:30",
+      "message": "feat(influencers): Fix 2 backend \u2014 plain-English summary endpoint (#334)",
+      "stats": {
+        "additions": 515,
+        "deletions": 0,
+        "total": 515
+      },
+      "branches": [
+        "main",
+        "fix/deploy-stable-tag-packages-write",
+        "fix/coach-strip-json-fences"
+      ]
+    },
+    {
+      "sha": "def46db9fcf9529a46710b23d3eacd5a869f5c5d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-09T18:39:31+05:30",
+      "message": "feat(coach): Fix 1 PR-B \u2014 platform-rule awareness + override proposal flow (re-open after #314 recov",
+      "stats": {
+        "additions": 489,
+        "deletions": 26,
+        "total": 515
+      },
+      "branches": [
+        "main",
+        "fix/deploy-stable-tag-packages-write",
+        "fix/coach-strip-json-fences"
+      ]
+    },
+    {
+      "sha": "9e13cfad158378a21fb8fb6b2f2188fa7eaf6893",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-09T18:24:38+05:30",
+      "message": "Reapply \"feat(soul-file): Coach Fix 1 PR-A \u2014 per-bot global-rule overrides infra (#314)\" (#325) (#33",
+      "stats": {
+        "additions": 314,
+        "deletions": 11,
+        "total": 325
+      },
+      "branches": [
+        "main",
+        "fix/deploy-stable-tag-packages-write",
+        "fix/coach-strip-json-fences"
+      ]
+    },
+    {
+      "sha": "403dcccef674ae54627979f7e804c9de20741e38",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-09T18:16:22+05:30",
+      "message": "fix(workflows): use ssh-keyscan instead of static KNOWN_HOSTS in new workflows (#331)",
+      "stats": {
+        "additions": 20,
+        "deletions": 12,
+        "total": 32
+      },
+      "branches": [
+        "main",
+        "fix/deploy-stable-tag-packages-write",
+        "fix/coach-strip-json-fences"
+      ]
+    },
+    {
+      "sha": "00e8c48099a8a37054c049566e17f45401649266",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-09T18:09:19+05:30",
+      "message": "feat(workflow): rolling-update workflow for patroni image (leader-last) (#330)",
+      "stats": {
+        "additions": 336,
+        "deletions": 0,
+        "total": 336
+      },
+      "branches": [
+        "main",
+        "fix/deploy-stable-tag-packages-write",
+        "fix/coach-strip-json-fences"
+      ]
+    },
+    {
+      "sha": "e84ce7fe5f8831a9ec1aa5dfab1051523147bbd3",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-09T18:00:14+05:30",
+      "message": "feat(workflow): one-shot bootstrap of schema_migrations on populated prod (#329)",
+      "stats": {
+        "additions": 230,
+        "deletions": 0,
+        "total": 230
+      },
+      "branches": [
+        "main",
+        "fix/deploy-stable-tag-packages-write",
+        "fix/coach-strip-json-fences"
+      ]
+    },
+    {
+      "sha": "5950fdc096e45f277d6dd5c4ce5edd07e8c226a8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-09T17:52:48+05:30",
+      "message": "fix(patroni-image): add python3-docutils so apt awscli actually runs (#328)",
+      "stats": {
+        "additions": 10,
+        "deletions": 1,
+        "total": 11
+      },
+      "branches": [
+        "main",
+        "fix/deploy-stable-tag-packages-write",
+        "fix/coach-strip-json-fences"
+      ]
+    },
+    {
+      "sha": "fae11b76324975baf60f9aa604971adef1a0e2ee",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-09T17:46:49+05:30",
+      "message": "fix(migrations): refuse to replay 001+ on populated DB with empty schema_migrations (#327)",
+      "stats": {
+        "additions": 86,
+        "deletions": 0,
+        "total": 86
+      },
+      "branches": [
+        "main",
+        "fix/deploy-stable-tag-packages-write",
+        "fix/coach-strip-json-fences"
+      ]
+    },
+    {
+      "sha": "4d9a6862ca31cb7a4b6db4752e244aeb4ea00b20",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-09T17:46:44+05:30",
+      "message": "fix(patroni-image): install awscli for migration runner safety dumps (#326)",
+      "stats": {
+        "additions": 11,
+        "deletions": 2,
+        "total": 13
+      },
+      "branches": [
+        "main",
+        "fix/deploy-stable-tag-packages-write",
+        "fix/coach-strip-json-fences"
+      ]
+    },
+    {
+      "sha": "3298e3ba7701f417f14e8d227105c978f849c587",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-09T17:28:34+05:30",
+      "message": "Revert \"feat(soul-file): Coach Fix 1 PR-A \u2014 per-bot global-rule overrides infra (#314)\" (#325)",
+      "stats": {
+        "additions": 11,
+        "deletions": 314,
+        "total": 325
+      },
+      "branches": [
+        "main",
+        "fix/deploy-stable-tag-packages-write",
+        "fix/coach-strip-json-fences"
+      ]
+    },
+    {
+      "sha": "acb0bd8620b27bd3db5a6128ac6f46d476a168d0",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-09T17:11:44+05:30",
+      "message": "fix(deploy): remove broken migrations_changed gate from PR #322 (#324)",
+      "stats": {
+        "additions": 7,
+        "deletions": 33,
+        "total": 40
+      },
+      "branches": [
+        "main",
+        "fix/deploy-stable-tag-packages-write",
+        "fix/coach-strip-json-fences"
+      ]
+    },
+    {
+      "sha": "918e9a67a249a44e218fa2a33ad1ec517b5dcd86",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-09T17:04:39+05:30",
+      "message": "feat(soul-file): Coach Fix 1 PR-A \u2014 per-bot global-rule overrides infra (#314)",
+      "stats": {
+        "additions": 314,
+        "deletions": 11,
+        "total": 325
+      },
+      "branches": [
+        "main",
+        "fix/deploy-stable-tag-packages-write",
+        "fix/coach-strip-json-fences"
+      ]
+    },
+    {
+      "sha": "471260e6dab70a5e1092e14f0ffd6f47efcdeebc",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-09T16:57:18+05:30",
+      "message": "fix(migrations): use UNIX socket trust auth (not TCP+md5) \u2014 closes runner auth wall (#323)",
+      "stats": {
+        "additions": 28,
+        "deletions": 29,
+        "total": 57
+      },
+      "branches": [
+        "main",
+        "fix/deploy-stable-tag-packages-write",
+        "fix/coach-strip-json-fences"
+      ]
+    },
+    {
+      "sha": "2e63cd8a888786856af4cbc2a1f58fbf7d7d6d0c",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-09T16:44:38+05:30",
+      "message": "fix(deploy): skip auto-apply-migrations step when no migrations changed (#322)",
+      "stats": {
+        "additions": 31,
+        "deletions": 0,
+        "total": 31
+      },
+      "branches": [
+        "main",
+        "fix/deploy-stable-tag-packages-write",
+        "fix/coach-strip-json-fences"
+      ]
+    },
+    {
+      "sha": "06633b745ed0d3127ae279b31152f13c62da6d35",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-09T16:24:44+05:30",
+      "message": "fix(run-migrations): read postgres-superuser-password (correct prod name) (#321)",
+      "stats": {
+        "additions": 21,
+        "deletions": 4,
+        "total": 25
+      },
+      "branches": [
+        "main",
+        "fix/deploy-stable-tag-packages-write",
+        "fix/coach-strip-json-fences"
+      ]
+    },
+    {
+      "sha": "ef42380ec56d782ec6989929cc475f279948c84e",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-09T16:09:10+05:30",
+      "message": "fix(project.config): align SWARM_STACK with production stack name (#320)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main",
+        "fix/deploy-stable-tag-packages-write",
+        "fix/coach-strip-json-fences"
+      ]
+    },
+    {
+      "sha": "3bd8030c14251ffd4197b4feea664ed6a49dcf45",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-09T15:55:34+05:30",
+      "message": "feat(deploy): auto-apply pending migrations BEFORE rolling new image (#319)",
+      "stats": {
+        "additions": 200,
+        "deletions": 0,
+        "total": 200
+      },
+      "branches": [
+        "main",
+        "fix/deploy-stable-tag-packages-write",
+        "fix/coach-strip-json-fences"
+      ]
+    },
+    {
+      "sha": "2b7137cd102eed6054cc6951bf59d6a03fd9d4a0",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-09T15:39:11+05:30",
+      "message": "fix(squawk): remove invalid rule names from excluded_rules (#318)",
+      "stats": {
+        "additions": 9,
+        "deletions": 5,
+        "total": 14
+      },
+      "branches": [
+        "main",
+        "fix/deploy-stable-tag-packages-write",
+        "fix/coach-strip-json-fences"
+      ]
+    },
+    {
+      "sha": "0e221d4cd1642f30d8a7a69067d2e209d64be103",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-09T15:33:31+05:30",
+      "message": "feat(coach): Fix 4 \u2014 action-verb classifier short-circuits LLM cycle on save/discard/undo (#315)",
+      "stats": {
+        "additions": 374,
+        "deletions": 0,
+        "total": 374
+      },
+      "branches": [
+        "main",
+        "fix/deploy-stable-tag-packages-write",
+        "fix/coach-strip-json-fences"
+      ]
+    },
+    {
+      "sha": "15ae3f023714d6c70f18fc4d95593f9dce61f093",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-09T14:39:42+05:30",
+      "message": "ci(deploy): 21\u03b1\u03b2.I-Dep2 \u2014 post-deploy smoke test + auto-rollback on failure (#313)",
+      "stats": {
+        "additions": 195,
+        "deletions": 0,
+        "total": 195
+      },
+      "branches": [
+        "main",
+        "fix/deploy-stable-tag-packages-write",
+        "fix/coach-strip-json-fences",
+        "feat/influencer-plain-english-summary",
+        "feat/coach-platform-rule-awareness"
+      ]
+    },
+    {
+      "sha": "d0cc0ad680d099b3bb2911943c7c16c76ea7ed42",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-09T14:37:26+05:30",
+      "message": "ci(migrations): 21\u03b1\u03b2.I-Mig2 \u2014 squawk migration linter on changed SQL (#310)",
+      "stats": {
+        "additions": 188,
+        "deletions": 0,
+        "total": 188
+      },
+      "branches": [
+        "main",
+        "fix/deploy-stable-tag-packages-write",
+        "fix/coach-strip-json-fences",
+        "feat/influencer-plain-english-summary",
+        "feat/coach-platform-rule-awareness"
+      ]
+    },
+    {
+      "sha": "0c5e00c013554901555163b7faa5040668bbc8ad",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-09T14:20:26+05:30",
+      "message": "feat(routing): split user_chat_main_multimodal for vision-bearing chat (#312)",
+      "stats": {
+        "additions": 329,
+        "deletions": 10,
+        "total": 339
+      },
+      "branches": [
+        "main",
+        "fix/deploy-stable-tag-packages-write",
+        "fix/coach-strip-json-fences",
+        "feat/influencer-plain-english-summary",
+        "feat/coach-platform-rule-awareness"
+      ]
+    },
+    {
+      "sha": "2daff1b1729caa77639f8e6fcef02ea68c394809",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-09T13:51:10+05:30",
+      "message": "feat(migrations): 21\u03b1\u03b2.I-Mig1 \u2014 automated pre-migration pg_dump \u2192 S3 (#309)",
+      "stats": {
+        "additions": 150,
+        "deletions": 0,
+        "total": 150
+      },
+      "branches": [
+        "main",
+        "fix/deploy-stable-tag-packages-write",
+        "fix/coach-strip-json-fences",
+        "feat/influencer-plain-english-summary",
+        "feat/coach-platform-rule-awareness"
+      ]
+    },
+    {
+      "sha": "2b62fd411ff4c1d8d435e08bdeaa7d079feb45fc",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-09T13:39:43+05:30",
+      "message": "docs(designs): 21\u03b1\u03b2.H2 \u2014 server-side billing enforcement design doc (#308)",
+      "stats": {
+        "additions": 168,
+        "deletions": 0,
+        "total": 168
+      },
+      "branches": [
+        "main",
+        "fix/deploy-stable-tag-packages-write",
+        "fix/coach-strip-json-fences",
+        "feat/influencer-plain-english-summary",
+        "feat/coach-platform-rule-awareness"
+      ]
+    },
+    {
+      "sha": "58af9e6667256224692976f0d4fcde3677a02bee",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-09T13:38:39+05:30",
+      "message": "ci(migrations): 21\u03b1\u03b2.I-Mig3 \u2014 apply every migration in CI on ephemeral pg15 (#307)",
+      "stats": {
+        "additions": 174,
+        "deletions": 0,
+        "total": 174
+      },
+      "branches": [
+        "main",
+        "fix/deploy-stable-tag-packages-write",
+        "fix/coach-strip-json-fences",
+        "feat/influencer-plain-english-summary",
+        "feat/coach-platform-rule-awareness"
+      ]
+    },
+    {
+      "sha": "07a1dfdfef6a0c2c8046a5061da663f544601566",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-09T12:44:13+05:30",
+      "message": "feat(cost-alerts): 21\u03b1\u03b2.H11 \u2014 real-time LLM cost alerting (3 alerts) (#306)",
+      "stats": {
+        "additions": 297,
+        "deletions": 1,
+        "total": 298
+      },
+      "branches": [
+        "main",
+        "fix/deploy-stable-tag-packages-write",
+        "fix/coach-strip-json-fences",
+        "feat/influencer-plain-english-summary",
+        "feat/coach-platform-rule-awareness"
+      ]
+    },
+    {
+      "sha": "9ee4d27b6feb7717eac7367fc3a3fa75ff4802be",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-09T12:37:47+05:30",
+      "message": "docs(runbook): 21\u03b1\u03b2.H1 \u2014 cutover-day mini re-bootstrap + Caddy 410 snippet (#305)",
+      "stats": {
+        "additions": 460,
+        "deletions": 1,
+        "total": 461
+      },
+      "branches": [
+        "main",
+        "fix/deploy-stable-tag-packages-write",
+        "fix/coach-strip-json-fences",
+        "feat/influencer-plain-english-summary",
+        "feat/coach-platform-rule-awareness"
+      ]
+    },
+    {
+      "sha": "8207c9bee816e1803822d843461f9d82db0c2fc7",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-09T18:56:16+05:30",
+      "message": "fix(deploy): bump permissions packages:read \u2192 packages:write so :stable tag step actually succeeds",
+      "stats": {
+        "additions": 9,
+        "deletions": 1,
+        "total": 10
+      },
+      "branches": [
+        "fix/deploy-stable-tag-packages-write"
+      ]
+    },
+    {
+      "sha": "06f5d8dd0a9cc07109efe3ebfc90f7cb52dd30b6",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-09T19:02:22+05:30",
+      "message": "fix(coach): parser strips ```json fences so Gemini-wrapped proposals don't fall back silently",
+      "stats": {
+        "additions": 225,
+        "deletions": 23,
+        "total": 248
+      },
+      "branches": [
+        "fix/coach-strip-json-fences"
+      ]
+    },
+    {
+      "sha": "826b6a8d8e1bddfc1873277f935d213a1cb9b5d8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-09T15:21:45+05:30",
+      "message": "feat(influencers): Fix 2 backend \u2014 plain-English summary endpoint",
+      "stats": {
+        "additions": 515,
+        "deletions": 0,
+        "total": 515
+      },
+      "branches": [
+        "feat/influencer-plain-english-summary"
+      ]
+    },
+    {
+      "sha": "550ff262dc2a20079545f845f4a097044262ab7e",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-09T15:04:09+05:30",
+      "message": "feat(soul-file): Coach Fix 1 PR-A \u2014 per-bot global-rule overrides infra",
+      "stats": {
+        "additions": 305,
+        "deletions": 11,
+        "total": 316
+      },
+      "branches": [
+        "feat/influencer-plain-english-summary",
+        "feat/coach-platform-rule-awareness"
+      ]
+    },
+    {
+      "sha": "3e3d6016c38dbf9d9c4fe5c364ce7703dd3f7de8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-09T15:16:35+05:30",
+      "message": "feat(coach): Fix 1 PR-B \u2014 platform-rule awareness + override proposal flow",
+      "stats": {
+        "additions": 484,
+        "deletions": 26,
+        "total": 510
+      },
+      "branches": [
+        "feat/coach-platform-rule-awareness"
+      ]
+    },
+    {
+      "sha": "8aa89c094dd2718badbd93e8f80992767c7ca5a8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-09T12:10:26+05:30",
+      "message": "docs(runbook): 21\u03b1\u03b2.H1 \u2014 relocate Caddy 410 to T+7d decommission, preserve Firebase rollback path",
+      "stats": {
+        "additions": 159,
+        "deletions": 61,
+        "total": 220
+      },
+      "branches": [
+        "docs/h1-cutover-day-runbook"
+      ]
+    }
+  ],
+  "commit_count": 52,
+  "issues": [],
+  "issue_count": 0
+}
