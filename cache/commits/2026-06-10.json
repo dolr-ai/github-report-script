@@ -1,0 +1,294 @@
+{
+  "date": "2026-06-10",
+  "cached_at": "2026-06-10T19:22:46.054246Z",
+  "commits": [
+    {
+      "sha": "f5f5bc880b2e0bf5157c2c03acc2ee51918d0f8f",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-10T21:21:26+05:30",
+      "message": "fix: lint error",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/handle_events"
+      ]
+    },
+    {
+      "sha": "27313b7322bad9d3acfd963a3cc6140342872012",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-nsfw-detetction-server",
+      "timestamp": "2026-06-10T21:01:21+05:30",
+      "message": " feat(queue): enhance video job processing with new queue management features",
+      "stats": {
+        "additions": 1243,
+        "deletions": 72,
+        "total": 1315
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "60e7c7ed656b3369f5b3b243604bea27307d2b39",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-nsfw-detetction-server",
+      "timestamp": "2026-06-10T20:59:05+05:30",
+      "message": "fix(postgres): enable connection pool pre-pinging for improved database reliability",
+      "stats": {
+        "additions": 1,
+        "deletions": 2,
+        "total": 3
+      },
+      "branches": [
+        "ansuman/nsfw-video-processing-pipeline"
+      ]
+    },
+    {
+      "sha": "bf2ad7947a53aaa54b06c89e85ca25bdfb43da24",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-nsfw-detetction-server",
+      "timestamp": "2026-06-10T20:45:21+05:30",
+      "message": "feat(clickhouse): add insert_model_rows method and refactor repository insertions",
+      "stats": {
+        "additions": 289,
+        "deletions": 28,
+        "total": 317
+      },
+      "branches": [
+        "ansuman/nsfw-video-processing-pipeline"
+      ]
+    },
+    {
+      "sha": "5d53f99da321b609d1485f8d9323ed2885c88a05",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-nsfw-detetction-server",
+      "timestamp": "2026-06-10T19:54:38+05:30",
+      "message": "feat(video-worker): implement video queue worker for processing video jobs",
+      "stats": {
+        "additions": 382,
+        "deletions": 2,
+        "total": 384
+      },
+      "branches": [
+        "ansuman/nsfw-video-processing-pipeline"
+      ]
+    },
+    {
+      "sha": "f2255dc59e0200e4109c7711a644f8ce569f0be5",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-nsfw-detetction-server",
+      "timestamp": "2026-06-10T19:52:58+05:30",
+      "message": "feat(video-processing): implement video job processing service and repository integration",
+      "stats": {
+        "additions": 175,
+        "deletions": 0,
+        "total": 175
+      },
+      "branches": [
+        "ansuman/nsfw-video-processing-pipeline"
+      ]
+    },
+    {
+      "sha": "1e2dd998d7f49ed3d15218a203ebaa0c598417d8",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-nsfw-detetction-server",
+      "timestamp": "2026-06-10T19:50:51+05:30",
+      "message": "feat(queue): enhance video job processing with new queue management features",
+      "stats": {
+        "additions": 405,
+        "deletions": 49,
+        "total": 454
+      },
+      "branches": [
+        "ansuman/nsfw-video-processing-pipeline"
+      ]
+    },
+    {
+      "sha": "86162e23589729e9de8523d10fe31d847019c23c",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-06-10T19:59:53+05:30",
+      "message": "Refactor NSFW handling and improve logging in video processing",
+      "stats": {
+        "additions": 24,
+        "deletions": 1,
+        "total": 25
+      },
+      "branches": [
+        "ansuman/feat/video-prcessing-fix"
+      ]
+    },
+    {
+      "sha": "9a5ac483af808ec7d1f0eff00c0899fc26143342",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-06-10T19:32:45+05:30",
+      "message": "Add operations section to README with Airflow migration notes",
+      "stats": {
+        "additions": 4,
+        "deletions": 0,
+        "total": 4
+      },
+      "branches": [
+        "ansuman/feat/video-prcessing-fix"
+      ]
+    },
+    {
+      "sha": "c204dbd4c1b1ea5012eaac0c729e69345d3fded0",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-06-10T19:16:06+05:30",
+      "message": "Enhance video processing and NSFW handling with improved error visibility and legacy support",
+      "stats": {
+        "additions": 12,
+        "deletions": 0,
+        "total": 12
+      },
+      "branches": [
+        "ansuman/feat/video-prcessing-fix"
+      ]
+    },
+    {
+      "sha": "74b00df211abe0beb8b5dcf4c074187d2dab502e",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-06-10T19:09:50+05:30",
+      "message": "feat(nsfw detection): Implement durable video processing worker and NSFW API integration",
+      "stats": {
+        "additions": 1214,
+        "deletions": 76,
+        "total": 1290
+      },
+      "branches": [
+        "ansuman/feat/video-prcessing-fix"
+      ]
+    },
+    {
+      "sha": "caa060115fddec53e8206e51a0b6e80406ca3250",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-10T19:01:37+05:30",
+      "message": "Fix/ios video playback (#1190)",
+      "stats": {
+        "additions": 739,
+        "deletions": 5758,
+        "total": 6497
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "98681aae7775d67bd58488934a55f5d6f807c30e",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-10T21:17:10+05:30",
+      "message": "fix(deploy): migration failover broken under set -e (PR #338 follow-up) (#343)",
+      "stats": {
+        "additions": 15,
+        "deletions": 2,
+        "total": 17
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c6a17961bb299217eb9786f3610534cb5bf51eb9",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-10T21:05:37+05:30",
+      "message": "feat(runpod_vllm): new URL + rotation workflow consuming GitHub Secret (#342)",
+      "stats": {
+        "additions": 276,
+        "deletions": 6,
+        "total": 282
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ae62ead0450a93c9f408c5e8a0794e54cc86800c",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-10T15:36:08+05:30",
+      "message": "ci(migrations): I-Mig2 expansion \u2014 document squawk defaults + add lock_timeout check (#340)",
+      "stats": {
+        "additions": 118,
+        "deletions": 0,
+        "total": 118
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "80b02129e99e8117b8fc3e080ce032e9b9551f46",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-10T15:36:02+05:30",
+      "message": "ci(migrations): I-Mig3 idempotency check \u2014 second-run no-op verification (#339)",
+      "stats": {
+        "additions": 140,
+        "deletions": 5,
+        "total": 145
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "adfbccedbb171ae0b7b38072230bd01cb897a531",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-10T15:35:57+05:30",
+      "message": "fix(migrations): distinguish runner config refusal from replica writes-rejection (#338)",
+      "stats": {
+        "additions": 83,
+        "deletions": 6,
+        "total": 89
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a678744910bf9ff217955640bea683c4be6f15ee",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-10T15:09:55+05:30",
+      "message": "fix(coach): parser strips ```json fences so Gemini-wrapped proposals don't fall back silently (#337)",
+      "stats": {
+        "additions": 225,
+        "deletions": 23,
+        "total": 248
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "bdca4698f96c1512a1bbf76b63a599c5dde89613",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-10T15:09:51+05:30",
+      "message": "fix(deploy): bump permissions packages:read \u2192 packages:write so :stable tag step actually succeeds (",
+      "stats": {
+        "additions": 9,
+        "deletions": 1,
+        "total": 10
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 19,
+  "issues": [],
+  "issue_count": 0
+}
