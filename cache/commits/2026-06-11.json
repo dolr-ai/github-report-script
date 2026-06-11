@@ -1,0 +1,1007 @@
+{
+  "date": "2026-06-11",
+  "cached_at": "2026-06-11T19:25:16.744518Z",
+  "commits": [
+    {
+      "sha": "66f5314003abd8636918979d2e0d150590931644",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-11T22:48:34+05:30",
+      "message": "enable prod deployment",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "naitik/handle_events"
+      ]
+    },
+    {
+      "sha": "bfbfbb506e70e79fbd081412d1beca0f444691a0",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-11T21:09:13+05:30",
+      "message": "fix: removed unused import",
+      "stats": {
+        "additions": 0,
+        "deletions": 2,
+        "total": 2
+      },
+      "branches": [
+        "naitik/handle_events"
+      ]
+    },
+    {
+      "sha": "d4d045e7ec74f97a95311d371c72fadeb732f321",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-11T21:01:38+05:30",
+      "message": "fix: double entry in swagger",
+      "stats": {
+        "additions": 11,
+        "deletions": 21,
+        "total": 32
+      },
+      "branches": [
+        "naitik/handle_events"
+      ]
+    },
+    {
+      "sha": "1822d43a23e6bd86e8b6848b46ddc25c5ca32ac7",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-11T20:41:58+05:30",
+      "message": "fix : swagger ui doc",
+      "stats": {
+        "additions": 4,
+        "deletions": 4,
+        "total": 8
+      },
+      "branches": [
+        "naitik/handle_events"
+      ]
+    },
+    {
+      "sha": "b142fa99937925b4152f61d6d32b9af9feb37962",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-11T20:24:02+05:30",
+      "message": "removed grpc support, since not required",
+      "stats": {
+        "additions": 15,
+        "deletions": 53,
+        "total": 68
+      },
+      "branches": [
+        "naitik/handle_events"
+      ]
+    },
+    {
+      "sha": "e5369d50f80688de7019d3cedde6257d4f8fb31b",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-11T15:09:22+05:30",
+      "message": "fix: update git ignore",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "naitik/handle_events"
+      ]
+    },
+    {
+      "sha": "23ef39cadf3813332fe90b399ffa818c2aba8ab6",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-11T14:53:52+05:30",
+      "message": "fix: fmt",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/handle_events"
+      ]
+    },
+    {
+      "sha": "059e6c166413082459e97ef9e495f6f261868817",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-11T14:53:08+05:30",
+      "message": "updated generate jwt token and claims",
+      "stats": {
+        "additions": 112,
+        "deletions": 2,
+        "total": 114
+      },
+      "branches": [
+        "naitik/handle_events"
+      ]
+    },
+    {
+      "sha": "f2954579b4d1dd0f2b6efc0f4a5388a4ef391a7f",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-11T13:13:15+05:30",
+      "message": "fix: fmt  error",
+      "stats": {
+        "additions": 1,
+        "deletions": 3,
+        "total": 4
+      },
+      "branches": [
+        "naitik/handle_events"
+      ]
+    },
+    {
+      "sha": "c813532071d9dea4205ef6a5339d136205c272db",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-11T13:10:19+05:30",
+      "message": "fix:  authenticated health response",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/handle_events"
+      ]
+    },
+    {
+      "sha": "570cf5109e903235540da08a9ac761616f4f84ea",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-11T10:55:15+05:30",
+      "message": "fix: formatting",
+      "stats": {
+        "additions": 4,
+        "deletions": 5,
+        "total": 9
+      },
+      "branches": [
+        "naitik/handle_events"
+      ]
+    },
+    {
+      "sha": "42249f6e080a4a7b13a2f3b66a5e2a3c41bc4fe7",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-11T10:44:22+05:30",
+      "message": "added authenticated health endpoint for verification",
+      "stats": {
+        "additions": 8,
+        "deletions": 74,
+        "total": 82
+      },
+      "branches": [
+        "naitik/handle_events"
+      ]
+    },
+    {
+      "sha": "63e5570b208d53403449da284a5aba2ac8292031",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-11T09:41:23+05:30",
+      "message": "fix: swagger UI",
+      "stats": {
+        "additions": 6,
+        "deletions": 3,
+        "total": 9
+      },
+      "branches": [
+        "naitik/handle_events"
+      ]
+    },
+    {
+      "sha": "ceffe50422974fd521c771cb6b3e153bd8a437c9",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-11T23:26:13+05:30",
+      "message": "fix: ssh access",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "naitik/fix_ssh"
+      ]
+    },
+    {
+      "sha": "605d0884da89256f09c020b0f6958ec1b3373c15",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-11T23:13:18+05:30",
+      "message": "fix: branch name (#3)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/fix_ssh",
+        "naitik/fix_file_sync",
+        "main"
+      ]
+    },
+    {
+      "sha": "8a22d0dbeacf82a7e99539b429ee8f229bfb8068",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-11T23:01:05+05:30",
+      "message": "Naitik/handle events (#2)",
+      "stats": {
+        "additions": 2571,
+        "deletions": 239,
+        "total": 2810
+      },
+      "branches": [
+        "naitik/fix_ssh",
+        "naitik/fix_prod_deployment",
+        "naitik/fix_file_sync",
+        "main"
+      ]
+    },
+    {
+      "sha": "29f9a37b035164c7f303e8e7b77b55392f4f74ba",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-11T23:05:44+05:30",
+      "message": "fix: branch name",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/fix_prod_deployment"
+      ]
+    },
+    {
+      "sha": "0176ba6fa23ad9333d931ad0a7f9fb456b65a55a",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-12T00:18:06+05:30",
+      "message": "fix: secret",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/fix_file_sync"
+      ]
+    },
+    {
+      "sha": "e2ddbdc5e7ab249ab52fb2b16da03145e0c633f5",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-12T00:01:13+05:30",
+      "message": "fix: file sync, temp deploy to hetzner",
+      "stats": {
+        "additions": 5,
+        "deletions": 1,
+        "total": 6
+      },
+      "branches": [
+        "naitik/fix_file_sync"
+      ]
+    },
+    {
+      "sha": "ea4efbb0168a77eb206d4d675a2295b1bfb4dae6",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-11T23:33:18+05:30",
+      "message": "fix: ssh access (#4)",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "naitik/fix_file_sync",
+        "main"
+      ]
+    },
+    {
+      "sha": "826449136ce67c0fceb68920455f2a4c5d68339b",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-12T00:26:53+05:30",
+      "message": "fix: file sync (#5)",
+      "stats": {
+        "additions": 6,
+        "deletions": 2,
+        "total": 8
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a6d62937a8f943c5f27813dadbd3d7e28017752f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-11T13:35:38+05:30",
+      "message": "wip(coach): Bucket 2 \u2014 Soul File data layer + section_hint plumbing",
+      "stats": {
+        "additions": 387,
+        "deletions": 6,
+        "total": 393
+      },
+      "branches": [
+        "rishi/coach-pivot-bucket2-soul-file-data-layer"
+      ]
+    },
+    {
+      "sha": "4d9b3abf39be25b2b13013f344748190b24fc583",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-11T17:13:42+05:30",
+      "message": "fix(coach): #1192 corrections \u2014 single Apply button + override DTO + post-apply CTAs",
+      "stats": {
+        "additions": 407,
+        "deletions": 69,
+        "total": 476
+      },
+      "branches": [
+        "rishi/coach-pivot-bucket1-item2-pending-proposal-gate"
+      ]
+    },
+    {
+      "sha": "43551b9efba7ae12142081160c58091756d97001",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-11T14:13:59+05:30",
+      "message": "feat(coach): Item 3 \u2014 bind /apply to proposal_id + unified Save flow",
+      "stats": {
+        "additions": 125,
+        "deletions": 55,
+        "total": 180
+      },
+      "branches": [
+        "rishi/coach-pivot-bucket1-item2-pending-proposal-gate"
+      ]
+    },
+    {
+      "sha": "9788cea9824a6125dc2823a2383283ff34e247a7",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-11T13:10:23+05:30",
+      "message": "wip(coach): Bucket 1 Item 2 \u2014 gate Save button on pending_proposal_exists (PR-4)",
+      "stats": {
+        "additions": 75,
+        "deletions": 13,
+        "total": 88
+      },
+      "branches": [
+        "rishi/coach-pivot-bucket1-item2-pending-proposal-gate"
+      ]
+    },
+    {
+      "sha": "08731314ab76424ea42472b48f05379c2beaf300",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-11T12:18:01+05:30",
+      "message": "feat(coach): hide raw structured proposal data from chat bubbles",
+      "stats": {
+        "additions": 8,
+        "deletions": 11,
+        "total": 19
+      },
+      "branches": [
+        "rishi/coach-pivot-bucket1-item2-pending-proposal-gate",
+        "rishi/coach-pivot-bucket1-item1-hide-raw-proposal"
+      ]
+    },
+    {
+      "sha": "08912754f0e9fb830b9464c4f93d5d48923b558f",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-12T00:01:42+05:30",
+      "message": "fix: Moves player item swaps off the main thread to stop scroll freezes",
+      "stats": {
+        "additions": 249,
+        "deletions": 66,
+        "total": 315
+      },
+      "branches": [
+        "fix/ios-video-freeze"
+      ]
+    },
+    {
+      "sha": "3a4072ae07b45875be29377cf3cecf52e80ca218",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-06-11T17:03:26+05:30",
+      "message": "Ansuman/feat/video prcessing fix (#462)",
+      "stats": {
+        "additions": 13,
+        "deletions": 1,
+        "total": 14
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "1d480d69f5fabccb2af58d6e5c592a96a7a1bdd6",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-06-11T16:31:07+05:30",
+      "message": "feat(nsfw detection): Implement durable video processing worker and NSFW API integration (#461)",
+      "stats": {
+        "additions": 1253,
+        "deletions": 76,
+        "total": 1329
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "fd520515dd32d58dbe857156dee7377139010e3f",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-06-11T17:01:21+05:30",
+      "message": "Fix NSFW API envs in deployments",
+      "stats": {
+        "additions": 13,
+        "deletions": 1,
+        "total": 14
+      },
+      "branches": [
+        "ansuman/feat/video-prcessing-fix"
+      ]
+    },
+    {
+      "sha": "dde23cb8ec55c5b07e74840859ad20be5c6355ad",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-11T16:45:59+05:30",
+      "message": "fix(coach): wrap override-apply DB calls in try/except \u2014 surface uncaught 500 (#372)",
+      "stats": {
+        "additions": 93,
+        "deletions": 27,
+        "total": 120
+      },
+      "branches": [
+        "main",
+        "chore/coach-catchall-hygiene-revert-372-tighten-truncation-2026-06-12"
+      ]
+    },
+    {
+      "sha": "7d3ebc271c498ab6a0243b685bd2b2f3568baf89",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-11T16:26:22+05:30",
+      "message": "perf(coach): trim Coach grounding fetch LIMIT 60 \u2192 20 at both call sites (#369)",
+      "stats": {
+        "additions": 65,
+        "deletions": 6,
+        "total": 71
+      },
+      "branches": [
+        "main",
+        "chore/coach-catchall-hygiene-revert-372-tighten-truncation-2026-06-12"
+      ]
+    },
+    {
+      "sha": "ca40fea5abcf41a3c27636ab092e9066e0431384",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-11T16:18:38+05:30",
+      "message": "fix(coach): /apply 500 on override + #361 contract-refinement gap (bundled) (#370)",
+      "stats": {
+        "additions": 390,
+        "deletions": 16,
+        "total": 406
+      },
+      "branches": [
+        "main",
+        "chore/coach-catchall-hygiene-revert-372-tighten-truncation-2026-06-12"
+      ]
+    },
+    {
+      "sha": "92184981faa27b5fc8815b7502d3f349af569f61",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-11T15:41:10+05:30",
+      "message": "feat(coach): Bucket 2 PR-3 \u2014 GET + PUT /api/v1/influencers/{bot_id}/soul-file (#367)",
+      "stats": {
+        "additions": 578,
+        "deletions": 0,
+        "total": 578
+      },
+      "branches": [
+        "main",
+        "chore/coach-catchall-hygiene-revert-372-tighten-truncation-2026-06-12"
+      ]
+    },
+    {
+      "sha": "0bc202e5b5919f4757b4be5818d11db6bba7b1de",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-11T15:35:10+05:30",
+      "message": "feat(coach): Bucket 2 PR-2 \u2014 sections-aware Coach (flag + migration 039 + compose + META_PROMPT + 5-",
+      "stats": {
+        "additions": 1209,
+        "deletions": 106,
+        "total": 1315
+      },
+      "branches": [
+        "main",
+        "chore/coach-catchall-hygiene-revert-372-tighten-truncation-2026-06-12"
+      ]
+    },
+    {
+      "sha": "cf5b046b93d1aa7e410f8b3c48df69474415d628",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-11T15:26:46+05:30",
+      "message": "fix(migration-038): lock_timeout 3s \u2192 30s for hot ai_influencers table (#368)",
+      "stats": {
+        "additions": 16,
+        "deletions": 4,
+        "total": 20
+      },
+      "branches": [
+        "main",
+        "chore/coach-catchall-hygiene-revert-372-tighten-truncation-2026-06-12"
+      ]
+    },
+    {
+      "sha": "b3d23054ddaa80a673f2321ca790769c33d032d5",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-11T15:12:21+05:30",
+      "message": "feat(coach): Bucket 2 PR-1 \u2014 migration 038 adds system_instructions_sections JSONB to ai_influencers",
+      "stats": {
+        "additions": 145,
+        "deletions": 0,
+        "total": 145
+      },
+      "branches": [
+        "main",
+        "chore/coach-catchall-hygiene-revert-372-tighten-truncation-2026-06-12"
+      ]
+    },
+    {
+      "sha": "d09d5cb0911bfcdaac4d009a816dd891e0a7c972",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-11T13:55:38+05:30",
+      "message": "feat(admin): Phase 21\u03b1\u03b2.H10 \u2014 /admin/backup-health dashboard + restore-drill audit (#360)",
+      "stats": {
+        "additions": 880,
+        "deletions": 1,
+        "total": 881
+      },
+      "branches": [
+        "main",
+        "docs/eod-2026-06-11-evening-shipping",
+        "chore/h7-deps-python-multipart-0-0-27-2026-06-11",
+        "chore/h7-deps-pyjwt-2-13-0-2026-06-11",
+        "chore/coach-catchall-hygiene-revert-372-tighten-truncation-2026-06-12"
+      ]
+    },
+    {
+      "sha": "598b48da7a7ec6246c7bc1b2c37069b599aa34fd",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-11T13:51:26+05:30",
+      "message": "feat(coach): PR-3 bind /apply to proposal_id + typed lifecycle (closes wrong-proposal trust bug) (#3",
+      "stats": {
+        "additions": 604,
+        "deletions": 36,
+        "total": 640
+      },
+      "branches": [
+        "main",
+        "docs/eod-2026-06-11-evening-shipping",
+        "chore/h7-deps-python-multipart-0-0-27-2026-06-11",
+        "chore/h7-deps-pyjwt-2-13-0-2026-06-11",
+        "chore/coach-catchall-hygiene-revert-372-tighten-truncation-2026-06-12"
+      ]
+    },
+    {
+      "sha": "604c47a7ee4f598af91aafb2c27e119ccbd66196",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-11T13:44:13+05:30",
+      "message": "docs(coach-bucket-2): three mobile-expert contract refinements (#361)",
+      "stats": {
+        "additions": 28,
+        "deletions": 1,
+        "total": 29
+      },
+      "branches": [
+        "main",
+        "docs/eod-2026-06-11-evening-shipping",
+        "chore/h7-deps-python-multipart-0-0-27-2026-06-11",
+        "chore/h7-deps-pyjwt-2-13-0-2026-06-11",
+        "chore/coach-catchall-hygiene-revert-372-tighten-truncation-2026-06-12"
+      ]
+    },
+    {
+      "sha": "1a4a0121027d36a09de3f1dbf4ecbe66d799ebcb",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-11T13:35:26+05:30",
+      "message": "docs(coach): Bucket 2 contract \u2014 section data model + sectioned proposal shape (#357)",
+      "stats": {
+        "additions": 360,
+        "deletions": 0,
+        "total": 360
+      },
+      "branches": [
+        "main",
+        "docs/eod-2026-06-11-evening-shipping",
+        "chore/h7-deps-python-multipart-0-0-27-2026-06-11",
+        "chore/h7-deps-pyjwt-2-13-0-2026-06-11",
+        "chore/coach-catchall-hygiene-revert-372-tighten-truncation-2026-06-12"
+      ]
+    },
+    {
+      "sha": "edf19b06fdfca9690efe22e36f2b5e422f3f12e4",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-11T13:32:18+05:30",
+      "message": "fix(squawk): exclude require-concurrent-index-creation \u2014 runner wraps in BEGIN/COMMIT (#359)",
+      "stats": {
+        "additions": 14,
+        "deletions": 0,
+        "total": 14
+      },
+      "branches": [
+        "main",
+        "docs/eod-2026-06-11-evening-shipping",
+        "chore/h7-deps-python-multipart-0-0-27-2026-06-11",
+        "chore/h7-deps-pyjwt-2-13-0-2026-06-11",
+        "chore/coach-catchall-hygiene-revert-372-tighten-truncation-2026-06-12"
+      ]
+    },
+    {
+      "sha": "812f231e57273f5cc51f99aef404279b6f4c67b5",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-11T13:23:13+05:30",
+      "message": "docs(eod-2026-06-11): record H6 cleared + 10-PR shipping day (#358)",
+      "stats": {
+        "additions": 98,
+        "deletions": 3,
+        "total": 101
+      },
+      "branches": [
+        "main",
+        "docs/eod-2026-06-11-evening-shipping",
+        "chore/h7-deps-python-multipart-0-0-27-2026-06-11",
+        "chore/h7-deps-pyjwt-2-13-0-2026-06-11",
+        "chore/coach-catchall-hygiene-revert-372-tighten-truncation-2026-06-12"
+      ]
+    },
+    {
+      "sha": "ef913bd15d4d753fb78055f6481f889e7fc25347",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-11T13:12:34+05:30",
+      "message": "docs(coach): PR-3 design \u2014 bind /apply to explicit proposal_id + status (DRAFT for Rishi review) (#3",
+      "stats": {
+        "additions": 205,
+        "deletions": 0,
+        "total": 205
+      },
+      "branches": [
+        "main",
+        "docs/eod-2026-06-11-evening-shipping",
+        "chore/h7-deps-python-multipart-0-0-27-2026-06-11",
+        "chore/h7-deps-pyjwt-2-13-0-2026-06-11",
+        "chore/coach-catchall-hygiene-revert-372-tighten-truncation-2026-06-12"
+      ]
+    },
+    {
+      "sha": "b172980b131ba4c5981c6d75b4d91efb67ab6c7c",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-11T13:05:34+05:30",
+      "message": "feat(etl): on-demand drain + reconciliation system (#344)",
+      "stats": {
+        "additions": 1906,
+        "deletions": 9,
+        "total": 1915
+      },
+      "branches": [
+        "main",
+        "docs/eod-2026-06-11-evening-shipping",
+        "chore/h7-deps-python-multipart-0-0-27-2026-06-11",
+        "chore/h7-deps-pyjwt-2-13-0-2026-06-11",
+        "chore/coach-catchall-hygiene-revert-372-tighten-truncation-2026-06-12"
+      ]
+    },
+    {
+      "sha": "ebc0106fdee24f481fb34efa3367bc9636877d97",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-11T12:18:40+05:30",
+      "message": "fix(walg-drill): drop nonexistent users-table check + numeric guard (#355)",
+      "stats": {
+        "additions": 55,
+        "deletions": 13,
+        "total": 68
+      },
+      "branches": [
+        "main",
+        "docs/eod-2026-06-11-evening-shipping",
+        "chore/h7-deps-python-multipart-0-0-27-2026-06-11",
+        "chore/h7-deps-pyjwt-2-13-0-2026-06-11",
+        "chore/coach-catchall-hygiene-revert-372-tighten-truncation-2026-06-12"
+      ]
+    },
+    {
+      "sha": "2544c2dde714efbde19ce9e46449351ead63edbd",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-11T12:11:23+05:30",
+      "message": "fix(walg-drill): pre-flight orphan cleanup + EXIT trap + full startup log (#354)",
+      "stats": {
+        "additions": 45,
+        "deletions": 1,
+        "total": 46
+      },
+      "branches": [
+        "main",
+        "docs/eod-2026-06-11-evening-shipping",
+        "chore/h7-deps-python-multipart-0-0-27-2026-06-11",
+        "chore/h7-deps-pyjwt-2-13-0-2026-06-11",
+        "chore/coach-catchall-hygiene-revert-372-tighten-truncation-2026-06-12"
+      ]
+    },
+    {
+      "sha": "e84b3267222eb365f7b003e1b382b6487a522886",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-11T12:05:20+05:30",
+      "message": "refactor(coach): PR-2 one JSON extractor + two validators (parse_proposal / parse_opening) (#349)",
+      "stats": {
+        "additions": 287,
+        "deletions": 62,
+        "total": 349
+      },
+      "branches": [
+        "main",
+        "docs/eod-2026-06-11-evening-shipping",
+        "chore/h7-deps-python-multipart-0-0-27-2026-06-11",
+        "chore/h7-deps-pyjwt-2-13-0-2026-06-11",
+        "chore/coach-catchall-hygiene-revert-372-tighten-truncation-2026-06-12"
+      ]
+    },
+    {
+      "sha": "08800da0d45089424df48ff6b089868f0c51aeda",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-11T12:01:39+05:30",
+      "message": "feat(llm-registry): PR-5 Sentry capture on soul_file_coach timeout (#351)",
+      "stats": {
+        "additions": 222,
+        "deletions": 0,
+        "total": 222
+      },
+      "branches": [
+        "main",
+        "docs/eod-2026-06-11-evening-shipping",
+        "chore/h7-deps-python-multipart-0-0-27-2026-06-11",
+        "chore/h7-deps-pyjwt-2-13-0-2026-06-11",
+        "chore/coach-catchall-hygiene-revert-372-tighten-truncation-2026-06-12"
+      ]
+    },
+    {
+      "sha": "c962c30a6b49c475c6b6f8e5a7e98decec16fe22",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-11T12:01:34+05:30",
+      "message": "feat(coach): PR-4 expose pending_proposal_exists on send-message + list-messages (#350)",
+      "stats": {
+        "additions": 122,
+        "deletions": 0,
+        "total": 122
+      },
+      "branches": [
+        "main",
+        "docs/eod-2026-06-11-evening-shipping",
+        "chore/h7-deps-python-multipart-0-0-27-2026-06-11",
+        "chore/h7-deps-pyjwt-2-13-0-2026-06-11",
+        "chore/coach-catchall-hygiene-revert-372-tighten-truncation-2026-06-12"
+      ]
+    },
+    {
+      "sha": "0767f650c637198e755a0ff7c53dc56c15ccf6df",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-11T12:01:24+05:30",
+      "message": "fix(walg-drill): make sanity queries defensive + add pre-flight diagnostics (#353)",
+      "stats": {
+        "additions": 30,
+        "deletions": 4,
+        "total": 34
+      },
+      "branches": [
+        "main",
+        "docs/eod-2026-06-11-evening-shipping",
+        "chore/h7-deps-python-multipart-0-0-27-2026-06-11",
+        "chore/h7-deps-pyjwt-2-13-0-2026-06-11",
+        "chore/coach-catchall-hygiene-revert-372-tighten-truncation-2026-06-12"
+      ]
+    },
+    {
+      "sha": "be039a7e622f11c36ec1b1e1b13463cc0e876bf8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-11T11:50:23+05:30",
+      "message": "fix: WAL-G drill quoting + Coach PR-1 truncation guard (bundled) (#347)",
+      "stats": {
+        "additions": 257,
+        "deletions": 20,
+        "total": 277
+      },
+      "branches": [
+        "main",
+        "docs/eod-2026-06-11-evening-shipping",
+        "chore/h7-deps-python-multipart-0-0-27-2026-06-11",
+        "chore/h7-deps-pyjwt-2-13-0-2026-06-11",
+        "chore/coach-catchall-hygiene-revert-372-tighten-truncation-2026-06-12"
+      ]
+    },
+    {
+      "sha": "b0b6c0ea96920a42c154c242d55b4c0bc7335470",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-11T11:36:17+05:30",
+      "message": "feat(drill): WAL-G restore drill \u2014 Phase 21\u03b1\u03b2.H6 PROD BLOCKER (#346)",
+      "stats": {
+        "additions": 675,
+        "deletions": 0,
+        "total": 675
+      },
+      "branches": [
+        "main",
+        "docs/eod-2026-06-11-evening-shipping",
+        "chore/h7-deps-python-multipart-0-0-27-2026-06-11",
+        "chore/h7-deps-pyjwt-2-13-0-2026-06-11",
+        "chore/coach-catchall-hygiene-revert-372-tighten-truncation-2026-06-12"
+      ]
+    },
+    {
+      "sha": "1939d50a9d04bc21cc76176bd670e0fda1442d3f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-11T11:25:44+05:30",
+      "message": "fix(proactive): correct cost attribution + actually use runpod_vllm for background (#345)",
+      "stats": {
+        "additions": 139,
+        "deletions": 9,
+        "total": 148
+      },
+      "branches": [
+        "main",
+        "docs/eod-2026-06-11-evening-shipping",
+        "chore/h7-deps-python-multipart-0-0-27-2026-06-11",
+        "chore/h7-deps-pyjwt-2-13-0-2026-06-11",
+        "chore/coach-catchall-hygiene-revert-372-tighten-truncation-2026-06-12"
+      ]
+    },
+    {
+      "sha": "1b5d0656f78767e52c9584bcab0464bdd6d72481",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-11T14:03:36+05:30",
+      "message": "docs(eod-2026-06-11): record evening shipping wave \u2014 #356-#361 (6 more PRs, 16 total today)",
+      "stats": {
+        "additions": 20,
+        "deletions": 1,
+        "total": 21
+      },
+      "branches": [
+        "docs/eod-2026-06-11-evening-shipping"
+      ]
+    },
+    {
+      "sha": "cfd9a1ce4e2f8437993bdc8180046dd59c3f2909",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-11T14:05:24+05:30",
+      "message": "chore(deps): Phase 21\u03b1\u03b2.H7 \u2014 bump python-multipart 0.0.20 \u2192 0.0.27",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "chore/h7-deps-python-multipart-0-0-27-2026-06-11"
+      ]
+    },
+    {
+      "sha": "1699c87cf71da926cfac71f1b8d0d4dddb7f2d2e",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-11T14:04:43+05:30",
+      "message": "chore(deps): Phase 21\u03b1\u03b2.H7 \u2014 bump pyjwt 2.10.1 \u2192 2.13.0",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "chore/h7-deps-pyjwt-2-13-0-2026-06-11"
+      ]
+    },
+    {
+      "sha": "4e947b3dfdfed4ee8f401b4b0e696d97dc32a97a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-11T17:27:58+05:30",
+      "message": "chore(coach): revert #372 diagnostic wrappers + tighten truncation heuristic",
+      "stats": {
+        "additions": 66,
+        "deletions": 102,
+        "total": 168
+      },
+      "branches": [
+        "chore/coach-catchall-hygiene-revert-372-tighten-truncation-2026-06-12"
+      ]
+    }
+  ],
+  "commit_count": 58,
+  "issues": [
+    {
+      "number": 2158,
+      "title": "fixing the NSFW video worker",
+      "closed_at": "2026-06-11T04:17:18Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2158",
+      "labels": []
+    },
+    {
+      "number": 2156,
+      "title": "Move to new gpu server. Old one getting reclaimed in 2 days",
+      "closed_at": "2026-06-11T04:11:49Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2156",
+      "labels": []
+    },
+    {
+      "number": 2155,
+      "title": "Pull request to off-chain to call the nsfw detection pipeline instead of the legacy one",
+      "closed_at": "2026-06-11T11:01:09Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2155",
+      "labels": []
+    },
+    {
+      "number": 2135,
+      "title": "Sanitization endpoint that can reject garbage video prompts if it's not possible to enhance them",
+      "closed_at": "2026-06-11T04:20:17Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2135",
+      "labels": []
+    },
+    {
+      "number": 2128,
+      "title": "Expose an endpoint on your NSFW detector where if passed an image/text prompt we can also filter during the prompt submission",
+      "closed_at": "2026-06-11T04:15:13Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2128",
+      "labels": []
+    }
+  ],
+  "issue_count": 5
+}
