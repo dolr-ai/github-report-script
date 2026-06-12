@@ -1,0 +1,343 @@
+{
+  "date": "2026-06-12",
+  "cached_at": "2026-06-12T19:16:00.256019Z",
+  "commits": [
+    {
+      "sha": "21feed4162ecb830d421049b3e0c5ce177cb06ab",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-12T18:20:49+05:30",
+      "message": "fix(chat): suppress TooManyFunctions on ChatRemoteDataSource/RepositoryImpl/Repository",
+      "stats": {
+        "additions": 3,
+        "deletions": 0,
+        "total": 3
+      },
+      "branches": [
+        "rishi/coach-pivot-bucket2-soul-file-data-layer"
+      ]
+    },
+    {
+      "sha": "ac2ef4c310d06f5d6243b3601f27db9e17eeb59b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-12T21:47:08+05:30",
+      "message": "feat(coach): Bucket 2 \u2014 View full prompt page (read-only) (#1195)",
+      "stats": {
+        "additions": 1342,
+        "deletions": 9,
+        "total": 1351
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "067beadc050cdcce5b9d3fdfc2a0222c711f64fb",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-12T19:02:29+05:30",
+      "message": "feat(coach): unify Save flow \u2014 gate on pending_proposal_exists + bind /apply to proposal_id (Bucket ",
+      "stats": {
+        "additions": 565,
+        "deletions": 108,
+        "total": 673
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "59906220b34b44cd617fb4f803c5d39a43f2eef1",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-12T17:18:35+05:30",
+      "message": "feat(coach): hide raw structured proposal data from chat bubbles (#1191)",
+      "stats": {
+        "additions": 8,
+        "deletions": 11,
+        "total": 19
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "59779f8d057f2e6d12368949931aca6ddbca722f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-12T12:27:07+05:30",
+      "message": "bump cargo dependencies",
+      "stats": {
+        "additions": 394,
+        "deletions": 364,
+        "total": 758
+      },
+      "branches": [
+        "bump-cargo-dependencies"
+      ]
+    },
+    {
+      "sha": "09f3f445854e3190364c227f0a3a0c766eedd950",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-06-12T22:21:17+05:30",
+      "message": "initial naitik multi service integration",
+      "stats": {
+        "additions": 82,
+        "deletions": 1,
+        "total": 83
+      },
+      "branches": [
+        "naitik/send_events_to_individual_service"
+      ]
+    },
+    {
+      "sha": "a4f6824cb3a57c09dcf34445eda4e0419a4579dc",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-12T15:56:51+05:30",
+      "message": "Add SNS validate_install_code to user_info_service",
+      "stats": {
+        "additions": 211,
+        "deletions": 44,
+        "total": 255
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a5e1d69eca5e3d620897cfd57f472353d9a66dde",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-12T15:16:02+05:30",
+      "message": "feat: enhance cycle harvesting with failure reprocessing and new database queries",
+      "stats": {
+        "additions": 460,
+        "deletions": 100,
+        "total": 560
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4989825f0b6e76d6f0871b96254cb5ab821e10dc",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-06-12T11:04:06+05:30",
+      "message": "Merge pull request #162 from dolr-ai/sarvesh-sharma-yral-patch-1",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7888008bc28e36eef69b96f79f0859e764a16438",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-06-12T11:03:38+05:30",
+      "message": "Change yral-metadata dependencies to 'main' branch",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "cf79493ef730a970155028504a7fbb2944dd2250",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-12T18:40:18+05:30",
+      "message": "fix(etl-drain): normalize _v2_latest_import_ts + _chat_ai_counts_from_hourly_payload to tz-aware UTC",
+      "stats": {
+        "additions": 95,
+        "deletions": 2,
+        "total": 97
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4e9253d8aaef2d77badf00c6aaaf455fba222ec8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-12T18:20:48+05:30",
+      "message": "fix(etl-drain): strip tzinfo before asyncpg call \u2014 etl_integrity_results.verified_at is TIMESTAMP, n",
+      "stats": {
+        "additions": 27,
+        "deletions": 2,
+        "total": 29
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c6c4ef89c1c2e1c1a2dcb696f8dd8093ce2d0e6b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-12T18:10:24+05:30",
+      "message": "fix(etl-drain): correct Phase-2 watermark \u2014 wall-clock datetime, not monotonic-as-epoch (#377)",
+      "stats": {
+        "additions": 101,
+        "deletions": 9,
+        "total": 110
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3ca4716521baabfcb13c2a7cbfb696eeae06108f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-12T17:14:59+05:30",
+      "message": "feat(soul-file): add engagement_schedule block to /system-prompt-preview (#376)",
+      "stats": {
+        "additions": 276,
+        "deletions": 1,
+        "total": 277
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d4f940d2b581a03ff25f1beda4a22bdf965cea24",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-12T13:14:20+05:30",
+      "message": "refactor(soul-file): extract USER_SEGMENT_PLAN_TEMPLATE to services/soul_file.py \u2014 SSOT for L4 templ",
+      "stats": {
+        "additions": 176,
+        "deletions": 11,
+        "total": 187
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "39ce39a05766970537f8955d3c3c8e397d9f4852",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-12T13:05:44+05:30",
+      "message": "feat(soul-file): add GET /api/v1/influencers/{bot_id}/system-prompt-preview (Coach Day 14 pivot) (#3",
+      "stats": {
+        "additions": 327,
+        "deletions": 0,
+        "total": 327
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d5930e50023d27dc6cfc3b53123ec37a031fd8c6",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-12T12:09:36+05:30",
+      "message": "chore(coach): revert #372 wrappers + tighten truncation heuristic + log response text (#373)",
+      "stats": {
+        "additions": 97,
+        "deletions": 118,
+        "total": 215
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "bc299d0e9ab347c4f0006cb0a014f39f13f105c4",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-06-12T10:56:49+05:30",
+      "message": "Update Cargo.toml (#89)",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f61c49bc580313acf863f55bbfce8165e1c9ec70",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-06-12T10:54:16+05:30",
+      "message": "Update yral-identity branch from master to main (#88)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a873461385f683cf76f75df05f0278959c771d9d",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-06-12T10:46:10+05:30",
+      "message": "Fix serde version specification in Cargo.toml (#87)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "fb0a858960497132a28783f0d0bddc8a5e7d8cf6",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-06-12T09:44:20+05:30",
+      "message": "Update service-summary.md (#2162)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 21,
+  "issues": [
+    {
+      "number": 2161,
+      "title": "servcie doc update",
+      "closed_at": "2026-06-12T04:14:21Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2161",
+      "labels": []
+    },
+    {
+      "number": 1824,
+      "title": "Yral NSFW Classification",
+      "closed_at": "2026-06-12T04:13:57Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1824",
+      "labels": []
+    }
+  ],
+  "issue_count": 2
+}
