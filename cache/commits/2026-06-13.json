@@ -1,0 +1,480 @@
+{
+  "date": "2026-06-13",
+  "cached_at": "2026-06-13T18:56:32.092559Z",
+  "commits": [
+    {
+      "sha": "e09901e4f6d871c51a3094dd79d1e60471c0717f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-13T17:23:25+05:30",
+      "message": "chore: initialize main (empty baseline; all work lands via reviewed PRs)",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "main",
+        "feat/phase-b-google-login-2026-06-13",
+        "feat/phase-a-sessions-view-2026-06-13",
+        "feat/phase-0-scaffold-2026-06-13"
+      ]
+    },
+    {
+      "sha": "02fc056eaabd0a858944d2c25812c18e0a4de549",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-13T18:55:35+05:30",
+      "message": "chore(phase-b): pre-stage Google OAuth Client ID (public) in deploy config",
+      "stats": {
+        "additions": 5,
+        "deletions": 3,
+        "total": 8
+      },
+      "branches": [
+        "feat/phase-b-google-login-2026-06-13"
+      ]
+    },
+    {
+      "sha": "7a7daca76ebb65732b8d253ad6698afa74f8550f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-13T18:24:35+05:30",
+      "message": "feat(phase-b): B2 \u2014 Google Workspace login + Redis sessions; retire temp token",
+      "stats": {
+        "additions": 326,
+        "deletions": 20,
+        "total": 346
+      },
+      "branches": [
+        "feat/phase-b-google-login-2026-06-13"
+      ]
+    },
+    {
+      "sha": "9c9d9d0e832a4bfaeb1d16ec5d257b720b266136",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-13T18:16:52+05:30",
+      "message": "feat(phase-b): B1 \u2014 analytics_login_audit table + login_audit repo",
+      "stats": {
+        "additions": 95,
+        "deletions": 0,
+        "total": 95
+      },
+      "branches": [
+        "feat/phase-b-google-login-2026-06-13"
+      ]
+    },
+    {
+      "sha": "e819f94dba8a62bd00e094386843c8809653f95a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-13T18:13:58+05:30",
+      "message": "docs(phase-b): operator runbook + password-substitution + both-roles-on-main notes",
+      "stats": {
+        "additions": 68,
+        "deletions": 0,
+        "total": 68
+      },
+      "branches": [
+        "feat/phase-b-google-login-2026-06-13"
+      ]
+    },
+    {
+      "sha": "0c60fec58c223e98e3a627198ee431fe5974c8dc",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-13T17:40:38+05:30",
+      "message": "feat(phase-a): hourly sessionization refresh job (replica read \u2192 leader write)",
+      "stats": {
+        "additions": 239,
+        "deletions": 18,
+        "total": 257
+      },
+      "branches": [
+        "feat/phase-b-google-login-2026-06-13",
+        "feat/phase-a-sessions-view-2026-06-13"
+      ]
+    },
+    {
+      "sha": "78e4ffecef2f66ca1e2a9cae8ad7d67a0fca6345",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-13T17:40:37+05:30",
+      "message": "feat(phase-a): Option B \u2014 sessions become a service-refreshed table + analytics_rw role",
+      "stats": {
+        "additions": 106,
+        "deletions": 96,
+        "total": 202
+      },
+      "branches": [
+        "feat/phase-b-google-login-2026-06-13",
+        "feat/phase-a-sessions-view-2026-06-13"
+      ]
+    },
+    {
+      "sha": "c17bdb8001800c109d3d58abfd1b05433db680e4",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-13T17:17:09+05:30",
+      "message": "feat(phase-a): A3 \u2014 headline route behind a temporary shared-secret token",
+      "stats": {
+        "additions": 103,
+        "deletions": 3,
+        "total": 106
+      },
+      "branches": [
+        "feat/phase-b-google-login-2026-06-13",
+        "feat/phase-a-sessions-view-2026-06-13"
+      ]
+    },
+    {
+      "sha": "971e02f092c04d43288053610bacba33ac9e6545",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-13T17:17:00+05:30",
+      "message": "feat(phase-a): A2 \u2014 analytics_repo read queries (engaged / 2nd-msg / W1 return)",
+      "stats": {
+        "additions": 103,
+        "deletions": 0,
+        "total": 103
+      },
+      "branches": [
+        "feat/phase-b-google-login-2026-06-13",
+        "feat/phase-a-sessions-view-2026-06-13"
+      ]
+    },
+    {
+      "sha": "031f4bf10b8438329f6675d9fda401c103c87e4e",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-13T17:11:09+05:30",
+      "message": "feat(phase-a): A1 \u2014 analytics_sessions sessionization materialized view DDL",
+      "stats": {
+        "additions": 111,
+        "deletions": 1,
+        "total": 112
+      },
+      "branches": [
+        "feat/phase-b-google-login-2026-06-13",
+        "feat/phase-a-sessions-view-2026-06-13"
+      ]
+    },
+    {
+      "sha": "fee5111e8d7a6d69fb8fbf08c43fe4ad7e0c70bb",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-13T17:21:26+05:30",
+      "message": "chore(phase-0): coordinator refinements \u2014 rishi-6-sized caps + scoped grant",
+      "stats": {
+        "additions": 21,
+        "deletions": 5,
+        "total": 26
+      },
+      "branches": [
+        "feat/phase-b-google-login-2026-06-13",
+        "feat/phase-a-sessions-view-2026-06-13",
+        "feat/phase-0-scaffold-2026-06-13"
+      ]
+    },
+    {
+      "sha": "21f83a549c53d282de1faafb145e5a2529cb1f88",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-13T16:37:15+05:30",
+      "message": "chore(scaffold): Phase 0 \u2014 yral-rishi-analytics service skeleton",
+      "stats": {
+        "additions": 613,
+        "deletions": 0,
+        "total": 613
+      },
+      "branches": [
+        "feat/phase-b-google-login-2026-06-13",
+        "feat/phase-a-sessions-view-2026-06-13",
+        "feat/phase-0-scaffold-2026-06-13"
+      ]
+    },
+    {
+      "sha": "a695906e8941d24582cc9c9829b9ed6137a2b072",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-06-13T13:01:14+05:30",
+      "message": "Prakash/migrate videogen (#46)",
+      "stats": {
+        "additions": 10556,
+        "deletions": 48,
+        "total": 10604
+      },
+      "branches": [
+        "prakash/enhance-sentry",
+        "main"
+      ]
+    },
+    {
+      "sha": "3b3d51edc63a67e2cd520ebe7c125e907d9937c7",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-06-13T14:26:34+05:30",
+      "message": "Enhance sentry logging (#47)",
+      "stats": {
+        "additions": 319,
+        "deletions": 93,
+        "total": 412
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d6fa1056c55b9fef18cbae58cc2bc9e132e59d6d",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/prakash-videogen",
+      "timestamp": "2026-06-13T12:41:18+05:30",
+      "message": "Feat/rabbitmq consumer (#1)",
+      "stats": {
+        "additions": 5898,
+        "deletions": 119,
+        "total": 6017
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "2bf375578ee21949cd02fec4c317504b97505087",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-13T18:31:18+05:30",
+      "message": "feat(billing): Phase 21\u03b1\u03b2.H2 PR 3 \u2014 wire paywall into /messages/stream + /images (#390)",
+      "stats": {
+        "additions": 209,
+        "deletions": 0,
+        "total": 209
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c24808a63160390e9b4aeccd38dfa7ca4a426513",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-13T18:28:27+05:30",
+      "message": "feat(billing): Phase 21\u03b1\u03b2.H2 PR 2 \u2014 wire paywall enforcement into POST /messages (#389)",
+      "stats": {
+        "additions": 247,
+        "deletions": 0,
+        "total": 247
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9bd81ae71ef8f902bf131dec1395e7ba66bb14a0",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-13T18:25:07+05:30",
+      "message": "feat(billing): Phase 21\u03b1\u03b2.H2 PR 1 \u2014 billing.yral.com client + Redis caching (#380)",
+      "stats": {
+        "additions": 435,
+        "deletions": 0,
+        "total": 435
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "0c469d117ce727f323f5e894c438b3463308cf0b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-13T18:24:19+05:30",
+      "message": "fix(security-ci): bump aquasecurity/trivy-action 0.24.0 \u2192 0.35.0 (0.24.0 doesn't exist) (#388)",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c440a3e508a431d98cc7fa5514e1c489cb8c4897",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-13T18:14:04+05:30",
+      "message": "feat(security): Phase 21\u03b1\u03b2.H8 / 24.2 \u2014 weekly security drill workflow (#387)",
+      "stats": {
+        "additions": 358,
+        "deletions": 0,
+        "total": 358
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4ae738a995313556d7f6275f25a869bc5346c76f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-13T18:13:55+05:30",
+      "message": "feat(security): Phase 21\u03b1\u03b2.H8 / 24.1 + 24.3 \u2014 add Trivy container scan + pin all 3 security jobs (#3",
+      "stats": {
+        "additions": 261,
+        "deletions": 1,
+        "total": 262
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "5c52034abd73f0a364821de4068f976fad3d438b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-13T18:13:46+05:30",
+      "message": "docs(runbook): Phase 24.4 / 21\u03b1\u03b2.H8 \u2014 secret rotation runbook (#385)",
+      "stats": {
+        "additions": 438,
+        "deletions": 0,
+        "total": 438
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "dbd8e4e87b70258813fc33021bef4dd7f4a09383",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-13T18:13:37+05:30",
+      "message": "drill(h5): prepare Redis Sentinel failover drill \u2014 script + runbook + workflow [DO NOT EXECUTE] (#38",
+      "stats": {
+        "additions": 637,
+        "deletions": 0,
+        "total": 637
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6579574526134bad4da66fad84b90c75cb711676",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-13T18:13:28+05:30",
+      "message": "drill(h4): prepare Patroni failover drill \u2014 script + runbook + workflow [DO NOT EXECUTE] (#383)",
+      "stats": {
+        "additions": 612,
+        "deletions": 0,
+        "total": 612
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "43bdd7761069d18263459097407c5660f691fbd2",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-13T14:42:18+05:30",
+      "message": "chore(deps): Phase 21\u03b1\u03b2.H7 \u2014 bump python-multipart 0.0.20 \u2192 0.0.27 (#364)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a6119f9046056b2a72fa04668c38d9d7edd37ff7",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-13T14:37:52+05:30",
+      "message": "chore(deps): Phase 21\u03b1\u03b2.H7 \u2014 bump pyjwt 2.10.1 \u2192 2.13.0 (#363)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main",
+        "feat/h2-paywall-stream-and-images-routes-2026-06-13",
+        "feat/h2-paywall-messages-route-2026-06-13"
+      ]
+    },
+    {
+      "sha": "dc784bdd94a6639ada51d1f2107bbaf8d24f90c9",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-13T14:54:51+05:30",
+      "message": "feat(billing): Phase 21\u03b1\u03b2.H2 PR 3 \u2014 wire paywall into /messages/stream + /images",
+      "stats": {
+        "additions": 209,
+        "deletions": 0,
+        "total": 209
+      },
+      "branches": [
+        "feat/h2-paywall-stream-and-images-routes-2026-06-13"
+      ]
+    },
+    {
+      "sha": "090d36802b719f47624ac116d83d226aded42fe0",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-13T14:51:36+05:30",
+      "message": "feat(billing): Phase 21\u03b1\u03b2.H2 PR 2 \u2014 wire paywall enforcement into POST /messages",
+      "stats": {
+        "additions": 247,
+        "deletions": 0,
+        "total": 247
+      },
+      "branches": [
+        "feat/h2-paywall-stream-and-images-routes-2026-06-13",
+        "feat/h2-paywall-messages-route-2026-06-13"
+      ]
+    },
+    {
+      "sha": "64f735ec92a3b660397cdaa91b20a9058db3b288",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-13T14:46:52+05:30",
+      "message": "feat(billing): Phase 21\u03b1\u03b2.H2 PR 1 \u2014 billing.yral.com client + Redis caching",
+      "stats": {
+        "additions": 435,
+        "deletions": 0,
+        "total": 435
+      },
+      "branches": [
+        "feat/h2-paywall-stream-and-images-routes-2026-06-13",
+        "feat/h2-paywall-messages-route-2026-06-13"
+      ]
+    }
+  ],
+  "commit_count": 29,
+  "issues": [
+    {
+      "number": 2157,
+      "title": "Fix this",
+      "closed_at": "2026-06-13T08:56:35Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2157",
+      "labels": []
+    },
+    {
+      "number": 2129,
+      "title": "LTX hosting",
+      "closed_at": "2026-06-13T07:31:15Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2129",
+      "labels": []
+    }
+  ],
+  "issue_count": 2
+}
