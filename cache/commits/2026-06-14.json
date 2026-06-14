@@ -1,0 +1,171 @@
+{
+  "date": "2026-06-14",
+  "cached_at": "2026-06-14T18:56:16.780410Z",
+  "commits": [
+    {
+      "sha": "d969faa18e15e0231f7b8932d6ca0777e5e49682",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-14T18:13:00+05:30",
+      "message": "Merge pull request #6 from dolr-ai/fix/headline-w1-reconcile-2026-06-14",
+      "stats": {
+        "additions": 1282,
+        "deletions": 19,
+        "total": 1301
+      },
+      "branches": [
+        "main",
+        "fix/google-login-gaps-2026-06-14"
+      ]
+    },
+    {
+      "sha": "c03d56753758b01c371f5c59b23f550065e1bf88",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-14T18:09:56+05:30",
+      "message": "Merge pull request #1 from dolr-ai/feat/phase-0-scaffold-2026-06-13",
+      "stats": {
+        "additions": 629,
+        "deletions": 0,
+        "total": 629
+      },
+      "branches": [
+        "main",
+        "fix/google-login-gaps-2026-06-14"
+      ]
+    },
+    {
+      "sha": "02e3f9ca24e1623eb870d117629877f0fc972697",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-14T17:33:14+05:30",
+      "message": "fix(headline): reconcile W1 return to the cohort definition (74% \u2192 credible)",
+      "stats": {
+        "additions": 16,
+        "deletions": 6,
+        "total": 22
+      },
+      "branches": [
+        "main",
+        "fix/headline-w1-reconcile-2026-06-14",
+        "fix/google-login-gaps-2026-06-14"
+      ]
+    },
+    {
+      "sha": "16cd68849d9d8a74cc0e6469ed645216f0dd6de0",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-14T17:12:06+05:30",
+      "message": "feat(view1): Comeback Curve \u2014 cohort retention grid (query + HTML)",
+      "stats": {
+        "additions": 191,
+        "deletions": 1,
+        "total": 192
+      },
+      "branches": [
+        "main",
+        "fix/headline-w1-reconcile-2026-06-14",
+        "fix/google-login-gaps-2026-06-14",
+        "feat/view1-cohort-retention-2026-06-14"
+      ]
+    },
+    {
+      "sha": "41ce9c8f4ab172d1cbb1c5cd4c303c5e56da7a20",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-14T17:07:56+05:30",
+      "message": "fix(phase-a): 21\u03b3.P19 HEADLINE_TOKEN file-first + P20 startup table-ensure & warming-up",
+      "stats": {
+        "additions": 61,
+        "deletions": 13,
+        "total": 74
+      },
+      "branches": [
+        "main",
+        "fix/phase-a-token-refresh-warmup-2026-06-14",
+        "fix/headline-w1-reconcile-2026-06-14",
+        "fix/google-login-gaps-2026-06-14",
+        "feat/view1-cohort-retention-2026-06-14"
+      ]
+    },
+    {
+      "sha": "4bf9687720debc37c81b930b56e8380f11089a4f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-14T19:03:04+05:30",
+      "message": "fix(auth): close 4 Google-login-flip gaps (Redis auth, master name, login_audit, rw-gate case)",
+      "stats": {
+        "additions": 70,
+        "deletions": 23,
+        "total": 93
+      },
+      "branches": [
+        "fix/google-login-gaps-2026-06-14"
+      ]
+    },
+    {
+      "sha": "4c3f67ec1a6423f00d8ae9d7c802445e3b86ea29",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-14T17:49:41+05:30",
+      "message": "revert(billing): Path A \u2014 revert H2 server-side paywall (#380 + #389 + #390) [DO NOT MERGE without R",
+      "stats": {
+        "additions": 0,
+        "deletions": 891,
+        "total": 891
+      },
+      "branches": [
+        "main",
+        "docs/eod-2026-06-12-and-pre-flip-2026-06-13"
+      ]
+    },
+    {
+      "sha": "b85f92bd75c552cc7ec174e76e9433aa5f0e0cf8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-14T17:45:15+05:30",
+      "message": "docs(h2.2): record Rishi 2026-06-14 decision \u2014 Path A revert; H11 + B6 + 19.1 cover the original PRO",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "docs/h2-paywall-chat-ai-discovery-2026-06-14"
+      ]
+    },
+    {
+      "sha": "c7abf9a94d5048e28440c67e4cb2ff4c75fc62ee",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-14T17:37:15+05:30",
+      "message": "docs(h2.2): Phase 1 discovery \u2014 chat-ai has NO server-side paywall (premise contradicted)",
+      "stats": {
+        "additions": 243,
+        "deletions": 0,
+        "total": 243
+      },
+      "branches": [
+        "docs/h2-paywall-chat-ai-discovery-2026-06-14"
+      ]
+    },
+    {
+      "sha": "33ddd80dbfb805de747eb203beacc78123569fe2",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-14T18:17:40+05:30",
+      "message": "docs: surface 2026-06-12 EOD + 2026-06-13 pre-flip worktree edits",
+      "stats": {
+        "additions": 229,
+        "deletions": 7,
+        "total": 236
+      },
+      "branches": [
+        "docs/eod-2026-06-12-and-pre-flip-2026-06-13"
+      ]
+    }
+  ],
+  "commit_count": 10,
+  "issues": [],
+  "issue_count": 0
+}
