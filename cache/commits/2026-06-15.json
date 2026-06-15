@@ -1,0 +1,338 @@
+{
+  "date": "2026-06-15",
+  "cached_at": "2026-06-15T19:48:04.790737Z",
+  "commits": [
+    {
+      "sha": "712bfed4d9e6dcecb51630e5d728cd2f2e94b238",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-15T18:38:48+05:30",
+      "message": "perf: increase cycle harvest batch concurrency limit to 128",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "09ba82565ba2058c19328a89133362c614e5ab60",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-15T16:51:25+05:30",
+      "message": "Merge pull request #8 from dolr-ai/fix/sentinel-auth-and-refresh-timeout-2026-06-15",
+      "stats": {
+        "additions": 32,
+        "deletions": 12,
+        "total": 44
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "fb03edbc4ad18225c3dd4dc66eac20a84b451666",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-15T12:10:09+05:30",
+      "message": "fix: master-only Redis auth + per-call refresh timeout (last 2 analytics gaps)",
+      "stats": {
+        "additions": 32,
+        "deletions": 12,
+        "total": 44
+      },
+      "branches": [
+        "main",
+        "fix/sentinel-auth-and-refresh-timeout-2026-06-15"
+      ]
+    },
+    {
+      "sha": "61ab7129701d1d8af487770aaa205f3619f3588a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-15T11:41:23+05:30",
+      "message": "Merge pull request #7 from dolr-ai/fix/google-login-gaps-2026-06-14",
+      "stats": {
+        "additions": 70,
+        "deletions": 23,
+        "total": 93
+      },
+      "branches": [
+        "main",
+        "fix/sentinel-auth-and-refresh-timeout-2026-06-15"
+      ]
+    },
+    {
+      "sha": "91287e48288f7697d7e590e2a799b64c29b1bedd",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-nsfw-detection-server",
+      "timestamp": "2026-06-15T13:31:00+05:30",
+      "message": "feat(kvrocks): enhance KVRocks integration and error handling",
+      "stats": {
+        "additions": 251,
+        "deletions": 15,
+        "total": 266
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f0018c25b254c541e555bc765979e8747ba1c3a3",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-nsfw-detection-server",
+      "timestamp": "2026-06-15T13:20:53+05:30",
+      "message": "Ansuman/ban flow fix",
+      "stats": {
+        "additions": 397,
+        "deletions": 5,
+        "total": 402
+      },
+      "branches": [
+        "main",
+        "ansuman/max-connection-redis-fix"
+      ]
+    },
+    {
+      "sha": "d8938e41b9a27cee36df4fa5496ff4548b433584",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-nsfw-detection-server",
+      "timestamp": "2026-06-15T13:24:42+05:30",
+      "message": "Merge remote-tracking branch 'origin/main' into ansuman/max-connection-redis-fix",
+      "stats": {
+        "additions": 397,
+        "deletions": 5,
+        "total": 402
+      },
+      "branches": [
+        "ansuman/max-connection-redis-fix"
+      ]
+    },
+    {
+      "sha": "e1fcfd64c0bee913805aa5ec63426eface5eaa80",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-nsfw-detection-server",
+      "timestamp": "2026-06-15T13:07:45+05:30",
+      "message": "feat(kvrocks): enhance KVRocks integration and error handling",
+      "stats": {
+        "additions": 251,
+        "deletions": 15,
+        "total": 266
+      },
+      "branches": [
+        "ansuman/max-connection-redis-fix"
+      ]
+    },
+    {
+      "sha": "dd6b66c48ad456887de2ba2562205c748c745b67",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-nsfw-detection-server",
+      "timestamp": "2026-06-15T09:38:07+05:30",
+      "message": "Merge remote-tracking branch 'origin/main' into ansuman/ban-flow-fix",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "ansuman/ban-flow-fix"
+      ]
+    },
+    {
+      "sha": "7935bd3f401dbccb8d1194a4206755883d539209",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-nsfw-detection-server",
+      "timestamp": "2026-06-15T09:24:16+05:30",
+      "message": "Add manual video ban endpoint",
+      "stats": {
+        "additions": 397,
+        "deletions": 5,
+        "total": 402
+      },
+      "branches": [
+        "ansuman/ban-flow-fix"
+      ]
+    },
+    {
+      "sha": "a96fc2d802a77b2fc1ee9888d100d03696106416",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-15T18:57:15+05:30",
+      "message": "docs(drill): 21\u03b3.P29 \u2014 safety-net drill plan for B6 + H11 + Phase 19.1",
+      "stats": {
+        "additions": 391,
+        "deletions": 0,
+        "total": 391
+      },
+      "branches": [
+        "docs/safety-net-drill-plan-2026-06-16"
+      ]
+    },
+    {
+      "sha": "5e1f3ff867e8493effb80a5e3e815b9b2ff0a41f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-15T18:51:07+05:30",
+      "message": "docs(21\u03b3.P26): flip PROGRESS row + add DAILY-LOG 2026-06-16 entry",
+      "stats": {
+        "additions": 47,
+        "deletions": 0,
+        "total": 47
+      },
+      "branches": [
+        "docs/safety-net-drill-plan-2026-06-16",
+        "agent/langfuse-trace-rollup-2026-06-16"
+      ]
+    },
+    {
+      "sha": "61e0dda9fa3f79d2e7ee54df98b9f5bb23801769",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-15T18:46:12+05:30",
+      "message": "fix(langfuse): 21\u03b3.P26 \u2014 propagate input/output onto trace body, not just generation",
+      "stats": {
+        "additions": 152,
+        "deletions": 0,
+        "total": 152
+      },
+      "branches": [
+        "docs/safety-net-drill-plan-2026-06-16",
+        "agent/langfuse-trace-rollup-2026-06-16"
+      ]
+    },
+    {
+      "sha": "92a1dabd019ab5cb6dcdd48ab06e29e9e9c20df9",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-15T16:30:49+05:30",
+      "message": "feat(metabase): enable Google SSO via API + script",
+      "stats": {
+        "additions": 100,
+        "deletions": 0,
+        "total": 100
+      },
+      "branches": [
+        "docs/safety-net-drill-plan-2026-06-16",
+        "agent/langfuse-trace-rollup-2026-06-16"
+      ]
+    },
+    {
+      "sha": "2e449c692676b22b46e6f292bfca2166d50d2130",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-15T16:10:08+05:30",
+      "message": "feat(metabase): bootstrap dashboards + selective team access scripts",
+      "stats": {
+        "additions": 1506,
+        "deletions": 1,
+        "total": 1507
+      },
+      "branches": [
+        "docs/safety-net-drill-plan-2026-06-16",
+        "agent/langfuse-trace-rollup-2026-06-16"
+      ]
+    },
+    {
+      "sha": "d859e01b30806d6ee99318821e163611eb0a767d",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-06-15T12:56:35+05:30",
+      "message": "Read manual ban trace id in logs",
+      "stats": {
+        "additions": 10,
+        "deletions": 2,
+        "total": 12
+      },
+      "branches": [
+        "ansuman/ban-flow-fix"
+      ]
+    },
+    {
+      "sha": "c8fc385e8fa0e367a22df0c2c64c82673bc54c55",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-06-15T12:47:55+05:30",
+      "message": "Merge remote-tracking branch 'origin/main' into ansuman/ban-flow-fix",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "ansuman/ban-flow-fix"
+      ]
+    },
+    {
+      "sha": "141d26a1be4386b993c5f1c4b2e71c8a5187c134",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-06-15T09:30:43+05:30",
+      "message": "Add manual ban deployment config",
+      "stats": {
+        "additions": 9,
+        "deletions": 0,
+        "total": 9
+      },
+      "branches": [
+        "ansuman/ban-flow-fix"
+      ]
+    },
+    {
+      "sha": "219d4e5a33aa57ace37a21c667de29faa7d0ce66",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-06-15T09:24:16+05:30",
+      "message": "Route manual bans through NSFW API",
+      "stats": {
+        "additions": 222,
+        "deletions": 19,
+        "total": 241
+      },
+      "branches": [
+        "ansuman/ban-flow-fix"
+      ]
+    }
+  ],
+  "commit_count": 19,
+  "issues": [
+    {
+      "number": 2125,
+      "title": "Ghost influencer profiles showing up on the profile switcher. Also, iOS and android profile counts not matching",
+      "closed_at": "2026-06-15T04:37:52Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2125",
+      "labels": []
+    },
+    {
+      "number": 2121,
+      "title": "Help fix this: This is blocking new bot profile creations on production",
+      "closed_at": "2026-06-15T04:39:34Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2121",
+      "labels": []
+    },
+    {
+      "number": 2167,
+      "title": "maxconnection error",
+      "closed_at": "2026-06-15T08:01:01Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2167",
+      "labels": []
+    },
+    {
+      "number": 2137,
+      "title": "Audit ban post functionality",
+      "closed_at": "2026-06-15T07:50:55Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2137",
+      "labels": []
+    }
+  ],
+  "issue_count": 4
+}
