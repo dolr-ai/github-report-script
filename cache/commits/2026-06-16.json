@@ -1,0 +1,411 @@
+{
+  "date": "2026-06-16",
+  "cached_at": "2026-06-16T19:45:58.055850Z",
+  "commits": [
+    {
+      "sha": "ad54fd4cf0b2a4063096c3a7f45c55c7e4e5fe9a",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-06-16T09:30:09+05:30",
+      "message": "Enhance sentry logs for moderation (#48)",
+      "stats": {
+        "additions": 65,
+        "deletions": 7,
+        "total": 72
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f861d2ad6ff6b61e632d83559d992fae104aa2c8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-06-16T17:05:49+05:30",
+      "message": "Remove obsolete TODO.md and readme.md documentation files",
+      "stats": {
+        "additions": 0,
+        "deletions": 219,
+        "total": 219
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "fa0f7e3031d450068d084214238d56253a81ac90",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-06-16T17:04:13+05:30",
+      "message": "Remove obsolete documentation, add sarvesh-2 and sarvesh-3 hosts, update init script image, and add ",
+      "stats": {
+        "additions": 5,
+        "deletions": 360,
+        "total": 365
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d0779816f2952776e3fd83bddad6782797e3de3f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-16T16:04:55+05:30",
+      "message": "Merge pull request #9 from dolr-ai/fix/incremental-sessionization-2026-06-16",
+      "stats": {
+        "additions": 143,
+        "deletions": 30,
+        "total": 173
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "0b2d1c2ce0cccb2c5ce4635f6ff1b99e57cde038",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-16T15:52:47+05:30",
+      "message": "fix: incremental sessionization (real refresher fix) + login_audit ownership",
+      "stats": {
+        "additions": 143,
+        "deletions": 30,
+        "total": 173
+      },
+      "branches": [
+        "main",
+        "fix/incremental-sessionization-2026-06-16"
+      ]
+    },
+    {
+      "sha": "62ebb48b34401d77877d1a0f1dec25221ad327f3",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-16T18:32:17+05:30",
+      "message": "feat(discovery-m1): vision classification, ships DORMANT (#400)",
+      "stats": {
+        "additions": 1427,
+        "deletions": 13,
+        "total": 1440
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "581d9745c75d8629a1ad4bc2107c6f9a00357e1f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-16T18:19:07+05:30",
+      "message": "feat(b6): cost circuit breaker, ships DORMANT (#398)",
+      "stats": {
+        "additions": 1476,
+        "deletions": 0,
+        "total": 1476
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "efa0623288796802c4836fbfca654020c87ab8fa",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-16T18:04:56+05:30",
+      "message": "feat(discovery-m0): admin pins for Discovery Feed (#399)",
+      "stats": {
+        "additions": 540,
+        "deletions": 0,
+        "total": 540
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7da33a504ea6f7c0db4027914e51a87b601357c1",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-16T18:00:10+05:30",
+      "message": "fix(langfuse): 21\u03b3.P26 \u2014 propagate input/output onto trace body (#396)",
+      "stats": {
+        "additions": 167,
+        "deletions": 2,
+        "total": 169
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d6bad6b3305cb075bd512b9628f8f037c68a8037",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-16T16:19:29+05:30",
+      "message": "docs: surface 2026-06-12 EOD + 2026-06-13 pre-flip worktree edits (#393)",
+      "stats": {
+        "additions": 229,
+        "deletions": 7,
+        "total": 236
+      },
+      "branches": [
+        "main",
+        "docs/b6-cost-circuit-breaker-design-2026-06-16"
+      ]
+    },
+    {
+      "sha": "c953e11b1c8ac0fa06c307aeeaaa48e5dea561aa",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-16T16:28:03+05:30",
+      "message": "docs(b6): fix PR # in 21\u03b3.P29-PREREQ row \u2014 #396 \u2192 #397 (actual PR number)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "docs/b6-cost-circuit-breaker-design-2026-06-16"
+      ]
+    },
+    {
+      "sha": "98c11a3f8144bafb3c9bc0b221d3b227f44d5678",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-16T16:26:05+05:30",
+      "message": "docs(b6): cost circuit breaker design doc + PROGRESS row flip",
+      "stats": {
+        "additions": 568,
+        "deletions": 0,
+        "total": 568
+      },
+      "branches": [
+        "docs/b6-cost-circuit-breaker-design-2026-06-16"
+      ]
+    },
+    {
+      "sha": "308df45d643f8a22873fa8566d3bf6fab65ddb23",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-15T18:57:15+05:30",
+      "message": "docs(drill): 21\u03b3.P29 \u2014 safety-net drill plan for B6 + H11 + Phase 19.1",
+      "stats": {
+        "additions": 391,
+        "deletions": 0,
+        "total": 391
+      },
+      "branches": [
+        "docs/b6-cost-circuit-breaker-design-2026-06-16"
+      ]
+    },
+    {
+      "sha": "103161b3fadf75003ef459bc7fe771485dd4eb5c",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-15T18:51:07+05:30",
+      "message": "docs(21\u03b3.P26): flip PROGRESS row + add DAILY-LOG 2026-06-16 entry",
+      "stats": {
+        "additions": 47,
+        "deletions": 0,
+        "total": 47
+      },
+      "branches": [
+        "docs/b6-cost-circuit-breaker-design-2026-06-16"
+      ]
+    },
+    {
+      "sha": "7f0395ce481708db815bf78b2f010ef9fd51e7b4",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-15T18:46:12+05:30",
+      "message": "fix(langfuse): 21\u03b3.P26 \u2014 propagate input/output onto trace body, not just generation",
+      "stats": {
+        "additions": 152,
+        "deletions": 0,
+        "total": 152
+      },
+      "branches": [
+        "docs/b6-cost-circuit-breaker-design-2026-06-16"
+      ]
+    },
+    {
+      "sha": "91aed705bc52840eba3a854b1600cf75592cc0e6",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-15T16:30:49+05:30",
+      "message": "feat(metabase): enable Google SSO via API + script",
+      "stats": {
+        "additions": 100,
+        "deletions": 0,
+        "total": 100
+      },
+      "branches": [
+        "docs/b6-cost-circuit-breaker-design-2026-06-16"
+      ]
+    },
+    {
+      "sha": "21fbd618e8c1de737aa0d33c5f4ee0dfd61f9804",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-15T16:10:08+05:30",
+      "message": "feat(metabase): bootstrap dashboards + selective team access scripts",
+      "stats": {
+        "additions": 1506,
+        "deletions": 1,
+        "total": 1507
+      },
+      "branches": [
+        "docs/b6-cost-circuit-breaker-design-2026-06-16"
+      ]
+    },
+    {
+      "sha": "a57ba01584242a094d3d2a0f5be25c5dd7bade51",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-16T09:44:21+05:30",
+      "message": "Update videogen endpoint (#1196)",
+      "stats": {
+        "additions": 7,
+        "deletions": 2,
+        "total": 9
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d800209aa05a5f49f47ccf0c050a401c3a1d96c8",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-06-16T09:31:36+05:30",
+      "message": "Ansuman/ban flow fix (#464)",
+      "stats": {
+        "additions": 239,
+        "deletions": 19,
+        "total": 258
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "5ab77a32b438b672ace1207307ea9a4f127b2dc9",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-nsfw-detection-server",
+      "timestamp": "2026-06-16T10:12:27+05:30",
+      "message": "fix(deploy): preserve dollar signs in secrets",
+      "stats": {
+        "additions": 71,
+        "deletions": 36,
+        "total": 107
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "526ee6c5bd7cb24178c780a4140e815da5ffed59",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-nsfw-detection-server",
+      "timestamp": "2026-06-16T09:48:32+05:30",
+      "message": "fix(api): tolerate manual ban ClickHouse init failure",
+      "stats": {
+        "additions": 45,
+        "deletions": 1,
+        "total": 46
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d9a5e12e25c63b964a8a58e448fab63ae7445185",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-nsfw-detection-server",
+      "timestamp": "2026-06-16T10:11:30+05:30",
+      "message": "fix(deploy): preserve dollar signs in secrets",
+      "stats": {
+        "additions": 71,
+        "deletions": 36,
+        "total": 107
+      },
+      "branches": [
+        "hotfix/manual-ban-startup-clickhouse"
+      ]
+    },
+    {
+      "sha": "fe67db1ff0a59c494628ca8699e0bd785a8e8173",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-nsfw-detection-server",
+      "timestamp": "2026-06-16T09:46:52+05:30",
+      "message": "fix(api): tolerate manual ban ClickHouse init failure",
+      "stats": {
+        "additions": 45,
+        "deletions": 1,
+        "total": 46
+      },
+      "branches": [
+        "hotfix/manual-ban-startup-clickhouse"
+      ]
+    }
+  ],
+  "commit_count": 23,
+  "issues": [
+    {
+      "number": 2090,
+      "title": "Video playback on iOS gets stuck frequently. dc23f profile, timestamp around 9:41am IST, check crashlytics events, why iOS video playback gets stuck. Also generate own profile data and check",
+      "closed_at": "2026-06-16T04:04:50Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2090",
+      "labels": []
+    },
+    {
+      "number": 2169,
+      "title": "Fix this: https://sentry.naitik.yral.com/organizations/sentry/issues/83/?project=4&query=is%3Aunresolved%20k2adj-ox4zs-gaocq-d5ctl-ggx5k-ekucz-rvgnv-4pddz-mkjzc-es4cj-aae&referrer=issue-stream",
+      "closed_at": "2026-06-16T05:15:28Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2169",
+      "labels": []
+    },
+    {
+      "number": 2164,
+      "title": "create new self managed service to handle events coming from offchain.",
+      "closed_at": "2026-06-16T05:15:39Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2164",
+      "labels": []
+    },
+    {
+      "number": 2168,
+      "title": "Mobile hits prakash endpoint",
+      "closed_at": "2026-06-16T04:14:23Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2168",
+      "labels": []
+    },
+    {
+      "number": 2142,
+      "title": "When submitting video on profile dc23f-*, two drafts showed up when 1 prompt was submitted. Try to reproduce and investigate this anomalous behaviour",
+      "closed_at": "2026-06-16T04:30:58Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2142",
+      "labels": []
+    },
+    {
+      "number": 2129,
+      "title": "LTX hosting",
+      "closed_at": "2026-06-16T04:14:23Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2129",
+      "labels": []
+    }
+  ],
+  "issue_count": 6
+}
