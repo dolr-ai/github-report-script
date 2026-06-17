@@ -1,0 +1,243 @@
+{
+  "date": "2026-06-17",
+  "cached_at": "2026-06-17T19:19:01.012411Z",
+  "commits": [
+    {
+      "sha": "357524e768bbadb9a76cb55efa791db6139e2e35",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-18T00:26:23+05:30",
+      "message": "fic: cargo fmt",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/apns_fix"
+      ]
+    },
+    {
+      "sha": "0b080d0db3404825bd196c00e0e3a45f0c224272",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-18T00:24:11+05:30",
+      "message": "add header to apns as required",
+      "stats": {
+        "additions": 102,
+        "deletions": 0,
+        "total": 102
+      },
+      "branches": [
+        "naitik/apns_fix"
+      ]
+    },
+    {
+      "sha": "f3e8633cd8364b5a01aa69eb5cfdda74e8ec0381",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-06-18T00:03:12+05:30",
+      "message": "add header to apns payload",
+      "stats": {
+        "additions": 28,
+        "deletions": 0,
+        "total": 28
+      },
+      "branches": [
+        "naitik/apns_fix"
+      ]
+    },
+    {
+      "sha": "b68f0a730634acd6ad1bdcb09356c3c01371f874",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-06-17T18:50:09+05:30",
+      "message": "Update Sarvesh's SSH key",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "07544d022f2a59aab35ced11965e78e3621da8e9",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-06-17T18:34:07+05:30",
+      "message": "Replace SSH key for Sarvesh Sharma (#2182)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "fd84dd63cd80b31895ed2fb1f4a3d831fc972301",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-06-17T18:27:39+05:30",
+      "message": "Update 1-getting-started.md",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ac4ae5892fb029efb27b4398da5cf9cac8303496",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/prakash-videogen",
+      "timestamp": "2026-06-17T16:53:38+05:30",
+      "message": "feat:  fix recursive video cleanup (#2)",
+      "stats": {
+        "additions": 201,
+        "deletions": 48,
+        "total": 249
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 7,
+  "issues": [
+    {
+      "number": 2092,
+      "title": "Vast ai machines to be provisioned. Once confirmed, assign to @saikatdas0790",
+      "closed_at": "2026-06-17T07:54:30Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2092",
+      "labels": []
+    },
+    {
+      "number": 2138,
+      "title": "Test the flow where the user is bot and the other person is bot and they click on \"Chat as Human\". It breaks API behaviour and lets the user chat as the other person. Verify the entries in DB once",
+      "closed_at": "2026-06-17T07:40:16Z",
+      "assignee": "rishichadha30",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2138",
+      "labels": []
+    },
+    {
+      "number": 2087,
+      "title": "Remove the system prompt overriding user prompt on the current bot creation flow. Set it the other way where the user prompt takes primary precedence",
+      "closed_at": "2026-06-17T07:39:38Z",
+      "assignee": "rishichadha30",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2087",
+      "labels": []
+    },
+    {
+      "number": 2064,
+      "title": "Triage and fix the incongruence between the human profiles and influencer profiles data as reported to the feed API. Coordinate with @ansuman as required",
+      "closed_at": "2026-06-17T07:41:19Z",
+      "assignee": "rishichadha30",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2064",
+      "labels": []
+    },
+    {
+      "number": 1985,
+      "title": "[Feature Request]:  Human to Human Chat - Implement Later (Already Built as a part yral-chat-ai Service)",
+      "closed_at": "2026-06-17T07:50:43Z",
+      "assignee": "rishichadha30",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1985",
+      "labels": [
+        "Backend Dependencies"
+      ]
+    },
+    {
+      "number": 1931,
+      "title": "Run an ad for 10-20$ for iOS to drive some traffic to the app and run smoke tests on the basic usability",
+      "closed_at": "2026-06-17T07:43:30Z",
+      "assignee": "rishichadha30",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1931",
+      "labels": []
+    },
+    {
+      "number": 1902,
+      "title": "Bug: Inbox Showing 99+ Messages for my YRAL profile. Shivam Suggested, its combining all message (quantum/number of messages) from human profile and bot profile.",
+      "closed_at": "2026-06-17T07:44:15Z",
+      "assignee": "rishichadha30",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1902",
+      "labels": []
+    },
+    {
+      "number": 1863,
+      "title": "Figure out how to expose databases securely via private networking to API servers that consume them",
+      "closed_at": "2026-06-17T07:42:33Z",
+      "assignee": "rishichadha30",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1863",
+      "labels": []
+    },
+    {
+      "number": 1777,
+      "title": "Evaluate and finalize architecture for creator chats memory for rich and meaningful chat capability based on past context. Discuss with @saikatdas0790 for more clarity",
+      "closed_at": "2026-06-17T07:42:55Z",
+      "assignee": "rishichadha30",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1777",
+      "labels": []
+    },
+    {
+      "number": 1776,
+      "title": "Evaluate our LLM architecture and discuss with @saikatdas0790 on how we'll improve our virtual creator chat capabilities",
+      "closed_at": "2026-06-17T07:44:02Z",
+      "assignee": "rishichadha30",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1776",
+      "labels": []
+    },
+    {
+      "number": 1751,
+      "title": "Weekly Goals - 20260315",
+      "closed_at": "2026-06-17T07:44:38Z",
+      "assignee": "rishichadha30",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1751",
+      "labels": []
+    },
+    {
+      "number": 981,
+      "title": "Make prompt editable in bot edit profile screen",
+      "closed_at": "2026-06-17T07:43:04Z",
+      "assignee": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/981",
+      "labels": []
+    },
+    {
+      "number": 978,
+      "title": "Enable human typing in chat",
+      "closed_at": "2026-06-17T07:44:27Z",
+      "assignee": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/978",
+      "labels": []
+    },
+    {
+      "number": 2069,
+      "title": "Bot creation workflow needs to provide exact feedback on why a particular bot creation flow was denied instead of providing generic rejection messages",
+      "closed_at": "2026-06-17T07:41:57Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2069",
+      "labels": []
+    }
+  ],
+  "issue_count": 14
+}
