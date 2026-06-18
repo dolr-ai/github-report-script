@@ -1,0 +1,358 @@
+{
+  "date": "2026-06-18",
+  "cached_at": "2026-06-18T19:19:21.472341Z",
+  "commits": [
+    {
+      "sha": "bed84d00779d6d48f3e348d13b28f6c72a8fd592",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-06-18T22:02:25+05:30",
+      "message": "stop sending notification",
+      "stats": {
+        "additions": 24,
+        "deletions": 24,
+        "total": 48
+      },
+      "branches": [
+        "naitik/apns_fix"
+      ]
+    },
+    {
+      "sha": "b7c5043d89e4397fba88400c7e28ebb3035c3539",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-06-18T22:35:48+05:30",
+      "message": "disable notification dispatch (#465)",
+      "stats": {
+        "additions": 52,
+        "deletions": 24,
+        "total": 76
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e3d98ca55761076cbc4c1128ef5829d0e90638d7",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-18T21:45:57+05:30",
+      "message": "add header to apns as required (#7)",
+      "stats": {
+        "additions": 125,
+        "deletions": 1,
+        "total": 126
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "384bfacb2c38fd78272c03591bfe09377eb5fea8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-18T18:10:01+05:30",
+      "message": "fix(chat): multiplatform-safe LRU cache in search VMs",
+      "stats": {
+        "additions": 74,
+        "deletions": 28,
+        "total": 102
+      },
+      "branches": [
+        "rishi/discovery-feed-v2-phase1"
+      ]
+    },
+    {
+      "sha": "e87b95aa36b6afc5525a395817dc5bc5636ea96d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-18T17:19:39+05:30",
+      "message": "fix(chat): clear detekt blockers on Phase 1 PR",
+      "stats": {
+        "additions": 194,
+        "deletions": 123,
+        "total": 317
+      },
+      "branches": [
+        "rishi/discovery-feed-v2-phase1"
+      ]
+    },
+    {
+      "sha": "3ba7d3c596711cc4ab50482e1b9043ac08911944",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-18T16:38:37+05:30",
+      "message": "fix(strings): drop unsupported \\\" and \\' escapes from compose-resources XML",
+      "stats": {
+        "additions": 9,
+        "deletions": 9,
+        "total": 18
+      },
+      "branches": [
+        "rishi/discovery-feed-v2-phase1"
+      ]
+    },
+    {
+      "sha": "4f5d272095a90543c00df2775e832a36ae35995a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-18T16:19:29+05:30",
+      "message": "feat(chat): symmetric search bar above tabs (Discover + Inbox)",
+      "stats": {
+        "additions": 595,
+        "deletions": 41,
+        "total": 636
+      },
+      "branches": [
+        "rishi/discovery-feed-v2-phase1"
+      ]
+    },
+    {
+      "sha": "f48fe7b9f3581f0d62dad692bafca05e0e1f166e",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-18T15:41:03+05:30",
+      "message": "feat(chat): Discovery search bar + debounced fetch (bundles with feed v2 cutover)",
+      "stats": {
+        "additions": 700,
+        "deletions": 12,
+        "total": 712
+      },
+      "branches": [
+        "rishi/discovery-feed-v2-phase1"
+      ]
+    },
+    {
+      "sha": "38e2e70b93d43b69a4fad527bf80cd329ada4611",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-18T15:03:26+05:30",
+      "message": "feat(chat): Discovery Feed v2 \u2014 flag-gated cutover from Anshuman to agent.rishi.yral.com",
+      "stats": {
+        "additions": 92,
+        "deletions": 15,
+        "total": 107
+      },
+      "branches": [
+        "rishi/discovery-feed-v2-phase1"
+      ]
+    },
+    {
+      "sha": "68b0116ec4d738c27c218e314fabbf10dc58b994",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-18T18:34:49+05:30",
+      "message": "fix(chat): catch FK-violation race \u2192 410 Gone (or SSE error mid-stream) [Sentry 4H+22] (#413)",
+      "stats": {
+        "additions": 154,
+        "deletions": 31,
+        "total": 185
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "fc26b487869cfa012cbad1a1752ab7a14396ff2b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-18T18:34:09+05:30",
+      "message": "fix(openai-compatible): defensive parse \u2014 surface error.message when `choices` missing [Sentry 4J] (",
+      "stats": {
+        "additions": 230,
+        "deletions": 0,
+        "total": 230
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a14bf5bd2b04284ae533c033d2e4591f00256a03",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-18T18:33:29+05:30",
+      "message": "fix(etl-integrity): NX-dedup Sentry capture by (layer, drift_bucket) [Sentry 1T+1S] (#412)",
+      "stats": {
+        "additions": 219,
+        "deletions": 4,
+        "total": 223
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c157e9e636222bfd09ef5b616dd53424926443e0",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-18T18:32:45+05:30",
+      "message": "fix(feed-ranker): chunk SIGNALS_SQL into 4 queries to stop DiskFullError (#410)",
+      "stats": {
+        "additions": 277,
+        "deletions": 62,
+        "total": 339
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e74735b13ff4e398d229a3d6dfbe9dbbd0056147",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-18T17:25:34+05:30",
+      "message": "fix(etl-drain): P12 \u2014 read chat_ai key from per-table drift dicts (#407)",
+      "stats": {
+        "additions": 86,
+        "deletions": 15,
+        "total": 101
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "489ace566e96b78c7d4b7b7d400552dfe1743a46",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-18T17:24:52+05:30",
+      "message": "feat(sentry): P13 \u2014 tag bot_id + conversation_id on chat + coach routes (#408)",
+      "stats": {
+        "additions": 16,
+        "deletions": 0,
+        "total": 16
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "613f70f7b59a008550ebb6b1953ad25b28ebbd24",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-18T17:23:00+05:30",
+      "message": "fix(inbox-search): symmetric per-row shape for PR #1197 (#409)",
+      "stats": {
+        "additions": 62,
+        "deletions": 28,
+        "total": 90
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "56e58b9dfae54090822201e0469269cd1897a9bc",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-18T16:13:10+05:30",
+      "message": "feat(inbox-search): GET /api/v2/chat/conversations/search (#406)",
+      "stats": {
+        "additions": 603,
+        "deletions": 0,
+        "total": 603
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "86c8de6265954cf9403708cae4fbbfbe6b735453",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-18T15:36:02+05:30",
+      "message": "feat(discovery-search): GET /api/v2/discovery/search (#404)",
+      "stats": {
+        "additions": 656,
+        "deletions": 1,
+        "total": 657
+      },
+      "branches": [
+        "main",
+        "feat/discovery-m7-shadow-diff-2026-06-18"
+      ]
+    },
+    {
+      "sha": "fe82633f7262a0291b7b9f0196640c9fdab0e51c",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-18T15:17:22+05:30",
+      "message": "feat(discovery-m2c): Stage A scoring + feed:global Redis blob (#403)",
+      "stats": {
+        "additions": 867,
+        "deletions": 0,
+        "total": 867
+      },
+      "branches": [
+        "main",
+        "feat/discovery-m7-shadow-diff-2026-06-18"
+      ]
+    },
+    {
+      "sha": "42df6c3122867fddbce744c4e558f2676d331225",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-18T14:38:30+05:30",
+      "message": "feat(discovery-m2b): composer \u2014 diversity + skill + cold-start gender guardrail (#402)",
+      "stats": {
+        "additions": 740,
+        "deletions": 6,
+        "total": 746
+      },
+      "branches": [
+        "main",
+        "feat/discovery-m7-shadow-diff-2026-06-18"
+      ]
+    },
+    {
+      "sha": "c692305b9186bdcc926d1681e327ba40cfa7fa3d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-18T13:40:53+05:30",
+      "message": "feat(discovery-m2a): discovery feed endpoint shell, DORMANT-FIRST (#401)",
+      "stats": {
+        "additions": 1027,
+        "deletions": 0,
+        "total": 1027
+      },
+      "branches": [
+        "main",
+        "feat/discovery-m7-shadow-diff-2026-06-18"
+      ]
+    },
+    {
+      "sha": "918c1669b1edcf0bfcfb11747fdee8a3d5de45c3",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-18T15:53:52+05:30",
+      "message": "feat(discovery-m7): cutover-prep \u2014 debug_source marker + shadow-diff vs Anshuman [DRAFT]",
+      "stats": {
+        "additions": 566,
+        "deletions": 0,
+        "total": 566
+      },
+      "branches": [
+        "feat/discovery-m7-shadow-diff-2026-06-18"
+      ]
+    },
+    {
+      "sha": "044201dc0e1829473f4e9fefcae98120cc45b1d4",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-18T13:41:28+05:30",
+      "message": "feat(discovery-m2a): Phase 21\u03b3.P34.M2a \u2014 minimum endpoint shell unblocking mobile [DRAFT]",
+      "stats": {
+        "additions": 732,
+        "deletions": 0,
+        "total": 732
+      },
+      "branches": [
+        "feat/discovery-m2a-feed-endpoint-shell-2026-06-18"
+      ]
+    }
+  ],
+  "commit_count": 23,
+  "issues": [],
+  "issue_count": 0
+}
