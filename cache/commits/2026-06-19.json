@@ -1,0 +1,124 @@
+{
+  "date": "2026-06-19",
+  "cached_at": "2026-06-19T19:10:23.374257Z",
+  "commits": [
+    {
+      "sha": "5d073d8dfe54e9d97d7ba9c02fe6a637af5cb008",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-nsfw-detection-server",
+      "timestamp": "2026-06-19T18:34:42+05:30",
+      "message": "fix(api): add retry and error instrumentation (#10)",
+      "stats": {
+        "additions": 360,
+        "deletions": 18,
+        "total": 378
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f67cbb1754fbf2d7d2d0cc51c6944174b58cdcf8",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-nsfw-detection-server",
+      "timestamp": "2026-06-19T09:44:24+05:30",
+      "message": "fix(api): add retry and error instrumentation",
+      "stats": {
+        "additions": 360,
+        "deletions": 18,
+        "total": 378
+      },
+      "branches": [
+        "ansuman/add-retry-and-error-instrumentation"
+      ]
+    },
+    {
+      "sha": "a39fcc3eae834b9b7453d9c31710c02274ddacf0",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-19T17:26:13+05:30",
+      "message": "feat(chat): login-on-first-send gate (RequireAuthBeforeFirstSend) (#1199)",
+      "stats": {
+        "additions": 43,
+        "deletions": 5,
+        "total": 48
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "30a1ebb2d8c26903b416ca14d6f89182bd031bc6",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-19T14:02:57+05:30",
+      "message": "feat(nav): bottom-nav swap \u2014 Discover first, Video feed second (21\u03b3.P16) (#1198)",
+      "stats": {
+        "additions": 113,
+        "deletions": 9,
+        "total": 122
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "efd96818ea21e43e67ffb3743e53142c558e67f6",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-19T11:55:01+05:30",
+      "message": "feat(chat): Discovery Feed v2 \u2014 flag-gated cutover + symmetric search bar (#1197)",
+      "stats": {
+        "additions": 1483,
+        "deletions": 47,
+        "total": 1530
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "aa189259c142972ba944a52844d460e4f2b3738a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-19T12:25:28+05:30",
+      "message": "fix(llm-registry): point runpod_vllm at new Saikat URL (#414)",
+      "stats": {
+        "additions": 10,
+        "deletions": 5,
+        "total": 15
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d2dd5a2b1582a251a77e27b84ab69db2b0fb6285",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-19T11:56:20+05:30",
+      "message": "refactor: harden cycle harvest validation and improve failure tracking",
+      "stats": {
+        "additions": 109,
+        "deletions": 36,
+        "total": 145
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 7,
+  "issues": [
+    {
+      "number": 1994,
+      "title": "Complete the onboarding docs to get comfortable with self hosting servers",
+      "closed_at": "2026-06-19T04:31:47Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1994",
+      "labels": []
+    }
+  ],
+  "issue_count": 1
+}
