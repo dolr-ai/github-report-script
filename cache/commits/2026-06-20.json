@@ -1,0 +1,24 @@
+{
+  "date": "2026-06-20",
+  "cached_at": "2026-06-20T18:58:13.700078Z",
+  "commits": [
+    {
+      "sha": "1a1af21415391bfb42b2e690bc5e3df7a45bcc53",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-06-21T00:19:25+05:30",
+      "message": "changes for self hosting deployment",
+      "stats": {
+        "additions": 263,
+        "deletions": 127,
+        "total": 390
+      },
+      "branches": [
+        "naitik/migrate_service_naitik_machines"
+      ]
+    }
+  ],
+  "commit_count": 1,
+  "issues": [],
+  "issue_count": 0
+}
