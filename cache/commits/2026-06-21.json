@@ -1,0 +1,24 @@
+{
+  "date": "2026-06-21",
+  "cached_at": "2026-06-21T19:02:03.355322Z",
+  "commits": [
+    {
+      "sha": "841b1d4142a73d1418c63907d22e67605b9a1b88",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-21T22:56:54+05:30",
+      "message": "feat: add parent recovery flow for failed cycle harvesting and add_controllers endpoint",
+      "stats": {
+        "additions": 584,
+        "deletions": 796,
+        "total": 1380
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 1,
+  "issues": [],
+  "issue_count": 0
+}
