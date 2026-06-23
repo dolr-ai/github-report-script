@@ -1,0 +1,1159 @@
+{
+  "date": "2026-06-23",
+  "cached_at": "2026-06-23T19:15:03.118473Z",
+  "commits": [
+    {
+      "sha": "5fb3de3d135a226cebc822cc9d2cb15f0a144335",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-06-23T14:57:10+05:30",
+      "message": "feat: add health probes to nginx kafka-bridge proxy",
+      "stats": {
+        "additions": 83,
+        "deletions": 62,
+        "total": 145
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/vastai-gte-1.1.1",
+        "dependabot/pip/ansible-core-gte-2.19.11",
+        "dependabot/github_actions/actions/checkout-7",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.0.1-kafka-4.2.0"
+      ]
+    },
+    {
+      "sha": "0b8da4afd1090ca5b72184f47e5410071cad39c2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-06-23T14:30:43+05:30",
+      "message": "fix: remove stale kafka-bridge references from oauth2-proxy kustomization",
+      "stats": {
+        "additions": 0,
+        "deletions": 2,
+        "total": 2
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/vastai-gte-1.1.1",
+        "dependabot/pip/ansible-core-gte-2.19.11",
+        "dependabot/github_actions/actions/checkout-7",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.0.1-kafka-4.2.0"
+      ]
+    },
+    {
+      "sha": "2a4c54d23f97805b97ab6811f3895c6f3f2a7ec0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-06-23T14:28:31+05:30",
+      "message": "feat: add kafka-bridge resources to oauth2-proxy kustomization",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/vastai-gte-1.1.1",
+        "dependabot/pip/ansible-core-gte-2.19.11",
+        "dependabot/github_actions/actions/checkout-7",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.0.1-kafka-4.2.0"
+      ]
+    },
+    {
+      "sha": "1c68e9ebf043f959a9bef1a19d426cd8c33aa91e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-06-23T12:29:23+05:30",
+      "message": "docs: add ReferenceGrant rule to AGENTS.md",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/vastai-gte-1.1.1",
+        "dependabot/pip/ansible-core-gte-2.19.11",
+        "dependabot/github_actions/actions/checkout-7",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.0.1-kafka-4.2.0"
+      ]
+    },
+    {
+      "sha": "3cd562e448931771c731f1ec18f6784833fe3737",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-06-23T12:27:14+05:30",
+      "message": "fix: add ReferenceGrant for cross-namespace HTTPRoute to nginx",
+      "stats": {
+        "additions": 15,
+        "deletions": 0,
+        "total": 15
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/vastai-gte-1.1.1",
+        "dependabot/pip/ansible-core-gte-2.19.11",
+        "dependabot/github_actions/actions/checkout-7",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.0.1-kafka-4.2.0"
+      ]
+    },
+    {
+      "sha": "c9eac6db9768a673bd2ae7519d9bb02b8baeda21",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-06-23T12:12:32+05:30",
+      "message": "fix: remove deleted kafka-bridge files from oauth2-proxy kustomization",
+      "stats": {
+        "additions": 0,
+        "deletions": 2,
+        "total": 2
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/vastai-gte-1.1.1",
+        "dependabot/pip/ansible-core-gte-2.19.11",
+        "dependabot/github_actions/actions/checkout-7",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.0.1-kafka-4.2.0"
+      ]
+    },
+    {
+      "sha": "3933368de2d76f69838eaf24c7f168dc911d6023",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-06-23T12:02:47+05:30",
+      "message": "chore: update yral submodule with kafka bridge docs",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/vastai-gte-1.1.1",
+        "dependabot/pip/ansible-core-gte-2.19.11",
+        "dependabot/github_actions/actions/checkout-7",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.0.1-kafka-4.2.0"
+      ]
+    },
+    {
+      "sha": "b1a722dd98b8fea47ae59d4846bac81f01a58754",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-06-23T11:59:13+05:30",
+      "message": "kafka-bridge: remove obsolete oauth2-proxy Basic Auth deployment and config",
+      "stats": {
+        "additions": 0,
+        "deletions": 104,
+        "total": 104
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/vastai-gte-1.1.1",
+        "dependabot/pip/ansible-core-gte-2.19.11",
+        "dependabot/github_actions/actions/checkout-7",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.0.1-kafka-4.2.0"
+      ]
+    },
+    {
+      "sha": "b8e6ffa2c1ffadf64d696014bb067d531ca4f8ea",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-06-23T11:58:50+05:30",
+      "message": "kafka-bridge: add nginx reverse proxy for bearer token auth",
+      "stats": {
+        "additions": 146,
+        "deletions": 7,
+        "total": 153
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/vastai-gte-1.1.1",
+        "dependabot/pip/ansible-core-gte-2.19.11",
+        "dependabot/github_actions/actions/checkout-7",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.0.1-kafka-4.2.0"
+      ]
+    },
+    {
+      "sha": "b95c877dd9001d6ada7b3732b246cbf01d17bdc4",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-06-23T10:38:01+05:30",
+      "message": "chore: update yral submodules and remove obsolete scripts",
+      "stats": {
+        "additions": 9,
+        "deletions": 29,
+        "total": 38
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/vastai-gte-1.1.1",
+        "dependabot/pip/ansible-core-gte-2.19.11",
+        "dependabot/github_actions/actions/checkout-7",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.0.1-kafka-4.2.0"
+      ]
+    },
+    {
+      "sha": "931e1acfcf0d68bfd69c8071498a9b3aca1778f7",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-06-23T10:36:47+05:30",
+      "message": "kafka-bridge: add oauth2-proxy Basic Auth and update HTTPRoute",
+      "stats": {
+        "additions": 114,
+        "deletions": 4,
+        "total": 118
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/vastai-gte-1.1.1",
+        "dependabot/pip/ansible-core-gte-2.19.11",
+        "dependabot/github_actions/actions/checkout-7",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.0.1-kafka-4.2.0"
+      ]
+    },
+    {
+      "sha": "8705112b569291761490dbd2144d90b3ef6d47c8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-06-23T08:44:19+05:30",
+      "message": "kafka-bridge: scale to 1 replica (consumers are stateful per-pod)",
+      "stats": {
+        "additions": 7,
+        "deletions": 1,
+        "total": 8
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/vastai-gte-1.1.1",
+        "dependabot/pip/ansible-core-gte-2.19.11",
+        "dependabot/github_actions/actions/checkout-7",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.0.1-kafka-4.2.0"
+      ]
+    },
+    {
+      "sha": "a164de616ab7c69cf2807b4e2a37bcb3ff83a488",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-23T19:12:56+05:30",
+      "message": "chore(analytics): remove airdrop claimed event (#1200)",
+      "stats": {
+        "additions": 0,
+        "deletions": 776,
+        "total": 776
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "cc41875278f638d646b2a2ca9d7f488384002656",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-23T19:27:12+05:30",
+      "message": "chore: remove individual_user_template canister deployment, tests, and environment setup",
+      "stats": {
+        "additions": 5,
+        "deletions": 515,
+        "total": 520
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c4b09d1e4358a8559c83172bf9aa913e4d439f9b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-23T18:38:09+05:30",
+      "message": "chore: remove individual user canister management types, constants, and tests",
+      "stats": {
+        "additions": 4,
+        "deletions": 346,
+        "total": 350
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e06d8d67fc9041a2ed5117cd7bf16b7a2b48fe21",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-23T18:23:31+05:30",
+      "message": "chore: remove remaining individual user canister management and upgrade logic",
+      "stats": {
+        "additions": 21,
+        "deletions": 625,
+        "total": 646
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "2cbf3b464fbb17d88bd2e70e8fc97f26b8e0694c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-23T18:18:16+05:30",
+      "message": "chore: remove individual user canister management and user record functionality",
+      "stats": {
+        "additions": 0,
+        "deletions": 1481,
+        "total": 1481
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "2d77b44c554759ab8450ee43430ef4c04f4853a1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-23T18:11:55+05:30",
+      "message": "chore: remove individual_user_template canister",
+      "stats": {
+        "additions": 0,
+        "deletions": 34,
+        "total": 34
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9ec14cd5feacba38154191dca39392237345d116",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-23T18:03:50+05:30",
+      "message": "chore: remove individual_user_template canister",
+      "stats": {
+        "additions": 0,
+        "deletions": 196,
+        "total": 196
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7c1ca6370d1116b533e143da524da26f52f597c7",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-23T16:30:22+05:30",
+      "message": "chore: remove unused HashMap and HashSet imports",
+      "stats": {
+        "additions": 0,
+        "deletions": 2,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "649615d4ab37a0cd2ada09524857701ac9fce805",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-23T16:20:32+05:30",
+      "message": "chore: remove creator dao functionality and related types",
+      "stats": {
+        "additions": 2,
+        "deletions": 458,
+        "total": 460
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f6f3ea888009c4cfa86bcc4cc6bc28f2b403bfa4",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-23T15:26:00+05:30",
+      "message": "refactor: enhance parent recovery with depth limits, cycle detection, and multi-parent fallback",
+      "stats": {
+        "additions": 248,
+        "deletions": 176,
+        "total": 424
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "61e4f4d52a6a28a15f5b2b52082b0f36d0f5cfd2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-23T10:36:48+05:30",
+      "message": "feat: add pre-harvest deposits, blocklist, and recursive parent recovery",
+      "stats": {
+        "additions": 316,
+        "deletions": 20,
+        "total": 336
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "79b9acb06a385e1d2f91a02f3ab8b7afed1278c0",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-sarvesh-sentry",
+      "timestamp": "2026-06-23T18:33:55+05:30",
+      "message": "Complete Sentry first-run setup during install",
+      "stats": {
+        "additions": 3,
+        "deletions": 0,
+        "total": 3
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "0833cb93d91e8f9d6591abea7a5ca6150a86416e",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-sarvesh-sentry",
+      "timestamp": "2026-06-23T18:25:04+05:30",
+      "message": "Write concrete Google OAuth values into Sentry config",
+      "stats": {
+        "additions": 3,
+        "deletions": 2,
+        "total": 5
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d31105155d55896731e7fee8a261e79a6efe13bb",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-sarvesh-sentry",
+      "timestamp": "2026-06-23T18:11:36+05:30",
+      "message": "Use yral proxy path for Sentry route",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "221a3eea5e6394e0773f03fcb1d28e363827f541",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-sarvesh-sentry",
+      "timestamp": "2026-06-23T17:55:42+05:30",
+      "message": "Enable Google SSO during Sentry install",
+      "stats": {
+        "additions": 18,
+        "deletions": 0,
+        "total": 18
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7aba8ea93251dc088aa08aba021edeae48aca5ef",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-sarvesh-sentry",
+      "timestamp": "2026-06-23T09:48:27+05:30",
+      "message": "Fix Sentry proxy install workflow",
+      "stats": {
+        "additions": 53,
+        "deletions": 20,
+        "total": 73
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8ce7623e0a3d7dd0a2d7e2b52a8ffc9685b71bba",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-sarvesh-sentry",
+      "timestamp": "2026-06-23T09:17:35+05:30",
+      "message": "Simplify Sentry self-hosted installer",
+      "stats": {
+        "additions": 136,
+        "deletions": 2618,
+        "total": 2754
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "565702e56dfc97a8914def1701090b510a9f3e94",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-sarvesh-sentry",
+      "timestamp": "2026-06-23T09:05:40+05:30",
+      "message": "Use GitHub secrets for Sentry install",
+      "stats": {
+        "additions": 10,
+        "deletions": 32,
+        "total": 42
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7ebb6e0f29a2d462ce1bcc214e2ee6f67d3addf1",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-sarvesh-sentry",
+      "timestamp": "2026-06-23T09:03:42+05:30",
+      "message": "Read Sarvesh host IPs from secrets",
+      "stats": {
+        "additions": 33,
+        "deletions": 27,
+        "total": 60
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "104dca7bb10df56f5d34f8ebaca0feb24ae29495",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-sarvesh-sentry",
+      "timestamp": "2026-06-23T08:53:43+05:30",
+      "message": "Use yral-deploy for Sarvesh Sentry install",
+      "stats": {
+        "additions": 67,
+        "deletions": 67,
+        "total": 134
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "0c8bb270ccf02aabff4f3424b22e8f4f46c31135",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-06-23T18:11:45+05:30",
+      "message": "Use yral proxy during billing deploy",
+      "stats": {
+        "additions": 5,
+        "deletions": 5,
+        "total": 10
+      },
+      "branches": [
+        "sarvesh/use-yral-proxy-name",
+        "main"
+      ]
+    },
+    {
+      "sha": "5846fafb7ea12c9d9799b22b0b9d3e5b1d86ec60",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-06-23T18:00:50+05:30",
+      "message": "Merge pull request #25 from dolr-ai/sarvesh/add-billing-public-route",
+      "stats": {
+        "additions": 41,
+        "deletions": 0,
+        "total": 41
+      },
+      "branches": [
+        "sarvesh/use-yral-proxy-name",
+        "main"
+      ]
+    },
+    {
+      "sha": "4ecb951d342ea6dad1a7453a73bd769b427f5300",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-06-23T17:55:52+05:30",
+      "message": "Keep billing public route during deploy",
+      "stats": {
+        "additions": 41,
+        "deletions": 0,
+        "total": 41
+      },
+      "branches": [
+        "sarvesh/use-yral-proxy-name",
+        "sarvesh/add-billing-public-route",
+        "main"
+      ]
+    },
+    {
+      "sha": "8b6db5e7a06810e4dc7f34a26b2ea596bedced46",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-06-23T17:38:44+05:30",
+      "message": "Merge pull request #24 from dolr-ai/sarvesh/fix-litestream-sidecar",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "sarvesh/use-yral-proxy-name",
+        "sarvesh/add-billing-public-route",
+        "main"
+      ]
+    },
+    {
+      "sha": "07672088f025419cd2564456f20b57dad39ce91f",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-06-23T17:37:15+05:30",
+      "message": "Fix Litestream sidecar permissions and healthcheck",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "sarvesh/use-yral-proxy-name",
+        "sarvesh/add-billing-public-route",
+        "main"
+      ]
+    },
+    {
+      "sha": "aa260a0ade73047b1c797c5080553c2906933b7b",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-06-23T17:34:41+05:30",
+      "message": "Merge pull request #23 from dolr-ai/sarvesh/fix-admin-secret-name",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "sarvesh/use-yral-proxy-name",
+        "sarvesh/add-billing-public-route",
+        "main"
+      ]
+    },
+    {
+      "sha": "1bbcd6f6e27b76dae4d051daf18561138044a73e",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-06-23T17:33:32+05:30",
+      "message": "Use existing admin identity secret for deploy",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "sarvesh/use-yral-proxy-name",
+        "sarvesh/add-billing-public-route",
+        "main"
+      ]
+    },
+    {
+      "sha": "0f21e4cd29f5553607a8b07b9ab4ca5beaa693dc",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-06-23T17:31:16+05:30",
+      "message": "Merge pull request #22 from dolr-ai/sarvesh/fix-sqlite-data-dir",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "sarvesh/use-yral-proxy-name",
+        "sarvesh/add-billing-public-route",
+        "main"
+      ]
+    },
+    {
+      "sha": "7e602b5e4171568cad090bf4b00f1fd88461a2d8",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-06-23T17:29:12+05:30",
+      "message": "Prepare SQLite data directory during deploy",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "sarvesh/use-yral-proxy-name",
+        "sarvesh/add-billing-public-route",
+        "main"
+      ]
+    },
+    {
+      "sha": "ce3e839822fd18d5ac0785ea1e121cc3537677c1",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-06-23T09:52:07+05:30",
+      "message": "Merge pull request #21 from dolr-ai/sarvesh/deploy-main-sqlite",
+      "stats": {
+        "additions": 52,
+        "deletions": 39,
+        "total": 91
+      },
+      "branches": [
+        "sarvesh/use-yral-proxy-name",
+        "sarvesh/add-billing-public-route",
+        "main"
+      ]
+    },
+    {
+      "sha": "a3cdf2638c53e01ff20edf67cf1cbc8d2180e7e9",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-06-23T08:51:42+05:30",
+      "message": "Configure billing Sentry from environment",
+      "stats": {
+        "additions": 29,
+        "deletions": 14,
+        "total": 43
+      },
+      "branches": [
+        "sarvesh/use-yral-proxy-name",
+        "sarvesh/add-billing-public-route",
+        "main"
+      ]
+    },
+    {
+      "sha": "1f9b2ab742cb6b4d32b9a4e6b9f470f7846974c3",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-06-23T08:22:06+05:30",
+      "message": "Deploy billing main to Sarvesh servers",
+      "stats": {
+        "additions": 23,
+        "deletions": 25,
+        "total": 48
+      },
+      "branches": [
+        "sarvesh/use-yral-proxy-name",
+        "sarvesh/add-billing-public-route",
+        "main"
+      ]
+    },
+    {
+      "sha": "98f33e4dc3dedb4e650b2ad575e5877a6c7c60f8",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-06-23T18:13:18+05:30",
+      "message": "Merge pull request #26 from dolr-ai/sarvesh/use-yral-proxy-name",
+      "stats": {
+        "additions": 5,
+        "deletions": 5,
+        "total": 10
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b797c1160b8e0506b9b6b9de32141591db8c571b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-06-23T17:39:58+05:30",
+      "message": "refactor: suppress unused variable warning for token_type",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9e1068cddb9e505414ead7fff6c14699fa39f0b8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-06-23T17:35:55+05:30",
+      "message": "refactor: remove airdrop feature and related UI and telemetry",
+      "stats": {
+        "additions": 8,
+        "deletions": 605,
+        "total": 613
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f72a686b0d334d8af38c56a44d51735ec3190b0a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-06-23T17:23:10+05:30",
+      "message": "refactor: remove devcontainer configuration and clean up airdrop references",
+      "stats": {
+        "additions": 1,
+        "deletions": 118,
+        "total": 119
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d3a625cda8c7e17052cbb0dc6630a3a177562109",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-06-23T16:50:45+05:30",
+      "message": "refactor: remove airdrop feature and related components",
+      "stats": {
+        "additions": 3,
+        "deletions": 1013,
+        "total": 1016
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "dcf136f603dc1517a1ed3aec1de965a11bcf0d88",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-06-23T16:41:07+05:30",
+      "message": "refactor: remove deprecated CDAO and creator DAO code",
+      "stats": {
+        "additions": 8,
+        "deletions": 120,
+        "total": 128
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9f75d1df379e9cc0bfc7c69fe53ba105a42754ff",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-06-23T11:59:18+05:30",
+      "message": "Update Kafka bridge documentation to use Bearer token authentication",
+      "stats": {
+        "additions": 6,
+        "deletions": 6,
+        "total": 12
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8e96fceb22907611b8899efd700f83afb9d19ce9",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-06-23T10:35:56+05:30",
+      "message": "Remove Marketing analytics and Video Upload services from service inventory",
+      "stats": {
+        "additions": 0,
+        "deletions": 2,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d485e43be4e5582bd674ebf7d439047519f72ae2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-06-23T09:41:06+05:30",
+      "message": "Update service inventory table and expand Kafka bridge documentation",
+      "stats": {
+        "additions": 114,
+        "deletions": 34,
+        "total": 148
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "437db28ed4b95e0857ce7886af42525ed44b592c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-06-23T08:36:31+05:30",
+      "message": "Update service-summary.md and add Kafka and LLM documentation",
+      "stats": {
+        "additions": 164,
+        "deletions": 132,
+        "total": 296
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "0865c60011fc3bb7183e5a00b40240cb83e15dc0",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-nsfw-detection-server",
+      "timestamp": "2026-06-23T09:18:48+05:30",
+      "message": "fix(sentry): report handled 5xx errors and attach request tags reliably (#11)",
+      "stats": {
+        "additions": 329,
+        "deletions": 4,
+        "total": 333
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f3487394ca69af2b0afab4d02ed1dd778ba2b69d",
+      "author": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-nsfw-detection-server",
+      "timestamp": "2026-06-23T09:11:50+05:30",
+      "message": "fix(sentry): report handled 5xx errors and attach request tags reliably",
+      "stats": {
+        "additions": 329,
+        "deletions": 4,
+        "total": 333
+      },
+      "branches": [
+        "ansuman/fix/sentry-5xx-error-reporting"
+      ]
+    }
+  ],
+  "commit_count": 56,
+  "issues": [],
+  "issue_count": 0
+}
