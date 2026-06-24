@@ -1,0 +1,939 @@
+{
+  "date": "2026-06-24",
+  "cached_at": "2026-06-24T19:05:22.560108Z",
+  "commits": [
+    {
+      "sha": "90dff99c2fb0d0ed1abb36d34e8a0203785fab17",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-25T00:04:41+05:30",
+      "message": "chore: clean up fetch_posts loop indexing and remove unused get_canister_id helper",
+      "stats": {
+        "additions": 4,
+        "deletions": 20,
+        "total": 24
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4bf03d3ba78ebbd5ca97b096d738c5408c8ffd3f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-24T14:06:27+05:30",
+      "message": "chore: add principal.csv with platform orchestrator principals",
+      "stats": {
+        "additions": 405798,
+        "deletions": 0,
+        "total": 405798
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "006fde81d231e3520c64b96e82fd2d342b424169",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-24T13:50:25+05:30",
+      "message": "chore: remove platform_orchestrator and individual_user_template canisters and associated scripts",
+      "stats": {
+        "additions": 1,
+        "deletions": 244,
+        "total": 245
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6b13590d0f3e33100e2396973ed6d533edef1806",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-24T13:43:17+05:30",
+      "message": "chore: remove reference to ic_repl_tests from AGENTS.md",
+      "stats": {
+        "additions": 0,
+        "deletions": 2,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b372d447b2236715793a163c61e08244289de3b9",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-24T13:42:44+05:30",
+      "message": "chore: remove ic_repl_tests and vscode configuration files",
+      "stats": {
+        "additions": 0,
+        "deletions": 532,
+        "total": 532
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "14d13f4ea4abf7af916b3cd3b1a89dd185b88772",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-24T13:22:05+05:30",
+      "message": "chore: remove trailing comma in dfx.json",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d42c7904c56e39903d08ec14ab1f396af5ae473f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-24T13:13:00+05:30",
+      "message": "chore: move UpgradeStatus definition to platform_orchestrator types",
+      "stats": {
+        "additions": 7,
+        "deletions": 2,
+        "total": 9
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "33bd14f1c4cce9a093c1776a8be7ed7374557ea8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-24T07:59:34+05:30",
+      "message": "chore: remove user_index canister and all associated scripts, tests, and configurations",
+      "stats": {
+        "additions": 39,
+        "deletions": 592,
+        "total": 631
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8cbe4fd2e569eee51fe2ae30f871ed0e5b2d565c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-24T07:55:57+05:30",
+      "message": "chore: remove subnet orchestrator management tests",
+      "stats": {
+        "additions": 0,
+        "deletions": 865,
+        "total": 865
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6569d37943cd6552170b518211a7eb956930247c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-06-24T07:55:37+05:30",
+      "message": "chore: remove user_index canister and related shared types",
+      "stats": {
+        "additions": 0,
+        "deletions": 1709,
+        "total": 1709
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ebecb2e6e6dffd1cc771a33af70b6b5d2e39c8d9",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-24T23:00:48+05:30",
+      "message": "Implement iOS daily chat billing",
+      "stats": {
+        "additions": 421,
+        "deletions": 28,
+        "total": 449
+      },
+      "branches": [
+        "sarvesh/ios-billing"
+      ]
+    },
+    {
+      "sha": "3c107f6a59c0c843352f3a68498a3857009dbba7",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-24T22:25:07+05:30",
+      "message": "chore: Changes billing base url",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "sarvesh/ios-billing"
+      ]
+    },
+    {
+      "sha": "2809180743f0420d7fb09b100f9e80d4797ee6a4",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-24T23:56:06+05:30",
+      "message": "chore: Changes billing base url (#1201)",
+      "stats": {
+        "additions": 3,
+        "deletions": 4,
+        "total": 7
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b774b41b6e0d3ace408e7cf5d51241414700d8a0",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-06-24T09:14:37+05:30",
+      "message": "Prakash/migrate phash (#49)",
+      "stats": {
+        "additions": 7645,
+        "deletions": 165,
+        "total": 7810
+      },
+      "branches": [
+        "prakash/videogen-moderation-retry",
+        "prakash/resumable-batched-import",
+        "main"
+      ]
+    },
+    {
+      "sha": "52b2c0e4ae5f97fb976a1ed1803cc17d11a4d7c3",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-06-24T14:03:38+05:30",
+      "message": "Fix: add videogen moderation retry (#50)",
+      "stats": {
+        "additions": 166,
+        "deletions": 48,
+        "total": 214
+      },
+      "branches": [
+        "prakash/resumable-batched-import",
+        "main"
+      ]
+    },
+    {
+      "sha": "ba039af289876a188233d3e8e85f0339ee6ff2ce",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-06-24T21:26:21+05:30",
+      "message": "Prakash/resumable batched import (#51)",
+      "stats": {
+        "additions": 1160,
+        "deletions": 121,
+        "total": 1281
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "53a3b290a7d64c5a30d579da007b84aae1885ae1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-06-24T14:07:57+05:30",
+      "message": "refactor: separate secrets into .env and use committed .envrc",
+      "stats": {
+        "additions": 27,
+        "deletions": 24,
+        "total": 51
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "3083589d823180c8746ae99ae2170d217d2b7a95",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-06-24T13:50:45+05:30",
+      "message": "chore: update git submodules",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "ba65b4952a22699dfdf910c166a471ce6eb0539f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-06-24T13:40:19+05:30",
+      "message": "chore: update git submodules",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "bdfb4bb89b12d63f7a4adde4e6c9c46d66c1c3b1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-06-24T13:26:57+05:30",
+      "message": "chore: update git submodules",
+      "stats": {
+        "additions": 5,
+        "deletions": 5,
+        "total": 10
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "0e9969d8a4505ec38fff1dd81a2110697a67142b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-06-24T10:41:11+05:30",
+      "message": "chore: update git submodules",
+      "stats": {
+        "additions": 7,
+        "deletions": 7,
+        "total": 14
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "4f1b38f0e37660918b7470ffb751045b4df4782e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-auth",
+      "timestamp": "2026-06-24T18:32:30+05:30",
+      "message": "temporarily disable banning logic to allow users to re-login",
+      "stats": {
+        "additions": 4,
+        "deletions": 4,
+        "total": 8
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4eeb8535035f60aa3c2961b18a2b74ed64f03a49",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-auth",
+      "timestamp": "2026-06-24T17:38:58+05:30",
+      "message": "Revert \"update vault secret paths and roles to v2\"",
+      "stats": {
+        "additions": 43,
+        "deletions": 43,
+        "total": 86
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "dc48c9f0f8a4f5d2409617761173f20cea48528d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-auth",
+      "timestamp": "2026-06-24T17:33:43+05:30",
+      "message": "update vault secret paths and roles to v2",
+      "stats": {
+        "additions": 43,
+        "deletions": 43,
+        "total": 86
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "fbb2c77dd7ad403ed8f8092be9a5e3d06e78c05b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-auth",
+      "timestamp": "2026-06-24T14:06:20+05:30",
+      "message": "remove nix flake setup",
+      "stats": {
+        "additions": 1,
+        "deletions": 131,
+        "total": 132
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "14689a46d2cd02bf386dedc36d3c9ffac59b5a9c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-06-24T14:06:15+05:30",
+      "message": "Remove Nix flake setup and switch to dotenv",
+      "stats": {
+        "additions": 1,
+        "deletions": 94,
+        "total": 95
+      },
+      "branches": [
+        "main",
+        "ios-chat-billing"
+      ]
+    },
+    {
+      "sha": "5e02bb2dfaadb9b4c27889b9646eb353b809a7de",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-05-12T23:04:24+05:30",
+      "message": "Harden Apple JWS certificate validation",
+      "stats": {
+        "additions": 107,
+        "deletions": 8,
+        "total": 115
+      },
+      "branches": [
+        "ios-chat-billing"
+      ]
+    },
+    {
+      "sha": "464451d8803053af2e9842c1d8d11d8a55dbd00a",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-05-12T22:44:18+05:30",
+      "message": "Test Apple IAP account token flow",
+      "stats": {
+        "additions": 90,
+        "deletions": 8,
+        "total": 98
+      },
+      "branches": [
+        "ios-chat-billing"
+      ]
+    },
+    {
+      "sha": "d06d5def604c18dc2e25a427f0a71f659c2cdde7",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-05-12T22:44:01+05:30",
+      "message": "Add Apple IAP account token support",
+      "stats": {
+        "additions": 369,
+        "deletions": 33,
+        "total": 402
+      },
+      "branches": [
+        "ios-chat-billing"
+      ]
+    },
+    {
+      "sha": "4c8cc40adf4e2db61f99b6a6b1afb0f24c352481",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-05-11T22:51:45+05:30",
+      "message": "Add iOS chat billing support",
+      "stats": {
+        "additions": 883,
+        "deletions": 9,
+        "total": 892
+      },
+      "branches": [
+        "ios-chat-billing"
+      ]
+    },
+    {
+      "sha": "55e7ec1d1cff6ff19b74f45714c21a1cc4fff15d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-06-24T14:06:34+05:30",
+      "message": "refactor: remove Nix flake configuration",
+      "stats": {
+        "additions": 0,
+        "deletions": 129,
+        "total": 129
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "748ca5f79e66e91c4b8833d3976e323f068f1cb3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-06-24T13:39:44+05:30",
+      "message": "refactor: remove deprecated platform-orchestrator canister code",
+      "stats": {
+        "additions": 2,
+        "deletions": 160,
+        "total": 162
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "df542e9ccd3f0378270c48f46ff354f23b8b676f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-06-24T13:24:16+05:30",
+      "message": "refactor: remove deprecated user_index canister code",
+      "stats": {
+        "additions": 1,
+        "deletions": 227,
+        "total": 228
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b207047b7828203a57e7a4aea92e2c9d74907576",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-06-24T07:31:47+05:30",
+      "message": "refactor: remove Nix devcontainer and flake-based direnv configuration",
+      "stats": {
+        "additions": 1,
+        "deletions": 21,
+        "total": 22
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "bbe36e72d12e7c69a91b0f30f095ff4980fe93d5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-common",
+      "timestamp": "2026-06-24T06:42:34+05:30",
+      "message": "refactor: remove deprecated individual-user feature and individual_user_template canister code",
+      "stats": {
+        "additions": 88,
+        "deletions": 601,
+        "total": 689
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e4e9eeb4286feb692a9ad232dc0dfcd71522166a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-06-24T13:40:07+05:30",
+      "message": "chore: remove deprecated platform orchestrator canister logic",
+      "stats": {
+        "additions": 22,
+        "deletions": 128,
+        "total": 150
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a228ec777059abc16a1e33386ef9d549e8dd0708",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-06-24T13:26:31+05:30",
+      "message": "chore: remove deprecated subnet orchestrator (user_index) canister logic",
+      "stats": {
+        "additions": 22,
+        "deletions": 79,
+        "total": 101
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c4d8eb622abf4d50178ff7a395246eb1c3d9ab87",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-06-24T07:47:22+05:30",
+      "message": "chore: switch git dependencies to main branch and update ffmpeg-next",
+      "stats": {
+        "additions": 788,
+        "deletions": 783,
+        "total": 1571
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "57894d534d9f485ff5fd201707ce1d3e302187ad",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-06-24T07:32:08+05:30",
+      "message": "chore: remove devcontainer configuration and switch to dotenv",
+      "stats": {
+        "additions": 1,
+        "deletions": 76,
+        "total": 77
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "97a4bdf09e45bc6dc1714abc078f3ad71b3ea0ce",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-06-24T07:05:07+05:30",
+      "message": "chore: remove deprecated service canister migration and post sync logic",
+      "stats": {
+        "additions": 2,
+        "deletions": 46,
+        "total": 48
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "42e99246281919e6ee1ec86637da3e7f132626f4",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-06-24T07:02:08+05:30",
+      "message": "chore: remove deprecated individual user canister fallback and backup routes",
+      "stats": {
+        "additions": 13,
+        "deletions": 182,
+        "total": 195
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6daf373272715bbf51bf665b6aa29a52e3de7324",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-06-24T06:49:15+05:30",
+      "message": "feat: decommission individual user canisters and migrate to UserPostService",
+      "stats": {
+        "additions": 120,
+        "deletions": 543,
+        "total": 663
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "2afc84cee901b1b3909c81b715d21ec799fc1b1c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-06-24T13:39:53+05:30",
+      "message": "refactor: remove platform-orchestrator feature from yral-canisters-client",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8eba110944072b7b8687093509d596325dcf1095",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-06-24T13:26:08+05:30",
+      "message": "refactor: remove logic for decommissioned user_index and platform_orchestrator canisters",
+      "stats": {
+        "additions": 19,
+        "deletions": 96,
+        "total": 115
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9e8156bfdb9d5a1ec592b98628d8da146cf7d662",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-metadata",
+      "timestamp": "2026-06-24T07:31:58+05:30",
+      "message": "refactor: remove deprecated update_session_as_registered endpoint and clean up related code",
+      "stats": {
+        "additions": 65,
+        "deletions": 219,
+        "total": 284
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f01210350b82c2b8df5d075226de21da840545db",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-24T13:38:25+05:30",
+      "message": "feat(watchdog): overlay DNS alias watchdog \u2014 Sentry-alert on Swarm gossip loss (#415)",
+      "stats": {
+        "additions": 114,
+        "deletions": 0,
+        "total": 114
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "564cf2a24a86863cae4c06cf96d74ac9b5a3cd72",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-06-24T13:25:51+05:30",
+      "message": "refactor: remove decommissioned user_index canister and migrate to user_info_service",
+      "stats": {
+        "additions": 10,
+        "deletions": 14,
+        "total": 24
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7cb760df70ff34a50afb2c4e65cd033cda1b812d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-06-24T07:35:22+05:30",
+      "message": "refactor: replace flake usage with dotenv in .envrc",
+      "stats": {
+        "additions": 1,
+        "deletions": 2,
+        "total": 3
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "2e4b251e0a8c07a518860f918a231a6248687500",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-06-24T07:16:41+05:30",
+      "message": "fix: correct typo in Result_3 type reference",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d661a103ec83cbaafd1e7a496c3ab1f7324550bc",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-06-24T07:12:11+05:30",
+      "message": "refactor: migrate from individual_user_template to user_info_service and user_post_service",
+      "stats": {
+        "additions": 112,
+        "deletions": 183,
+        "total": 295
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f077162105f10ba56adafae0e29551776f1b9630",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-06-24T13:24:48+05:30",
+      "message": "Update service summery (#2195)",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4eabfe5bf98d7b268626621e960a84c2cba2d210",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/prakash-videogen",
+      "timestamp": "2026-06-24T11:33:53+05:30",
+      "message": "fix: bust ComfyUI cache, reject permanent RabbitMQ errors, unauth health/swagger (#3)",
+      "stats": {
+        "additions": 79,
+        "deletions": 14,
+        "total": 93
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 52,
+  "issues": [
+    {
+      "number": 2194,
+      "title": "Handle ComfyUI returning cached videos for similar prompts being submitted",
+      "closed_at": "2026-06-24T06:03:55Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2194",
+      "labels": []
+    },
+    {
+      "number": 2188,
+      "title": "Use Saikat's LLM for moderation for now",
+      "closed_at": "2026-06-24T04:15:04Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2188",
+      "labels": []
+    },
+    {
+      "number": 2183,
+      "title": "Fix this",
+      "closed_at": "2026-06-24T08:33:39Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2183",
+      "labels": []
+    },
+    {
+      "number": 2143,
+      "title": "Find the queue length for comfyui video generation",
+      "closed_at": "2026-06-24T04:26:06Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2143",
+      "labels": []
+    },
+    {
+      "number": 2187,
+      "title": "Host sentry at sentry.sarvesh.yral.com",
+      "closed_at": "2026-06-24T04:31:28Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2187",
+      "labels": []
+    }
+  ],
+  "issue_count": 5
+}
