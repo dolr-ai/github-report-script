@@ -1,0 +1,774 @@
+{
+  "date": "2026-06-25",
+  "cached_at": "2026-06-25T19:13:50.119504Z",
+  "commits": [
+    {
+      "sha": "a20c44634f8a8968be0dc8f5d740ace5c44e7008",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-06-25T14:26:19+05:30",
+      "message": "chore: update rust-analyzer path, enable kubernetes completion, and update submodules",
+      "stats": {
+        "additions": 6,
+        "deletions": 4,
+        "total": 10
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "8e742386d9d9a288117868e29bb694ef06b4948d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-06-25T10:39:51+05:30",
+      "message": "chore: add saikat-data to rust-analyzer settings and update submodule",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "de431f86bdb71d22b63fd7aba35cf1df9aa7ae8d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-06-25T10:36:16+05:30",
+      "message": "chore: update off-chain-agent submodule",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "fa118d42681c9331c3112fc9edaea6b7df57ab1a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-06-25T10:35:25+05:30",
+      "message": "chore: update git submodules",
+      "stats": {
+        "additions": 5,
+        "deletions": 4,
+        "total": 9
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "3dfc370333b06e97d81f87b98b02af237fe6e225",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-06-25T10:35:11+05:30",
+      "message": "chore: add saikat-data submodule",
+      "stats": {
+        "additions": 4,
+        "deletions": 0,
+        "total": 4
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "67b742e824fedf25b3a06f0f4dae488d1bf9cc9e",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-06-25T15:50:14+05:30",
+      "message": "ci: reclaim disk before Docker build to fix 'No space left on device' (#53)",
+      "stats": {
+        "additions": 15,
+        "deletions": 0,
+        "total": 15
+      },
+      "branches": [
+        "prakash/upload-storage-merge",
+        "main"
+      ]
+    },
+    {
+      "sha": "ad218febb8bed74be7fe97ff7693ad7ac20f7ae2",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-06-25T15:39:37+05:30",
+      "message": "Prakash/media jobs observability (#52)",
+      "stats": {
+        "additions": 2034,
+        "deletions": 102,
+        "total": 2136
+      },
+      "branches": [
+        "prakash/upload-storage-merge",
+        "prakash/fix-deploy-build-disk",
+        "main"
+      ]
+    },
+    {
+      "sha": "69459b94e137c3b2e8650dfe8ba8021cc0726216",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-auth",
+      "timestamp": "2026-06-25T20:59:28+05:30",
+      "message": "Add /account page with delete account and sign out",
+      "stats": {
+        "additions": 6,
+        "deletions": 9,
+        "total": 15
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a419a6f35023d9393258a0f7c91a10f9d499eddc",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-auth",
+      "timestamp": "2026-06-25T20:43:00+05:30",
+      "message": "refactor local deployment to use default SSH keys, switch to root user, and pass env vars via temp f",
+      "stats": {
+        "additions": 58,
+        "deletions": 44,
+        "total": 102
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6d09a726eb08267a0e6ebcdb849f39a10241f854",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-auth",
+      "timestamp": "2026-06-25T20:06:15+05:30",
+      "message": "refactor local deployment to use tarball transfer, remove GHCR push logic, and add SSH key support",
+      "stats": {
+        "additions": 109,
+        "deletions": 147,
+        "total": 256
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6dd30643a42db14d11a656984d871c33527667c5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-auth",
+      "timestamp": "2026-06-25T17:15:05+05:30",
+      "message": "refactor account deletion for hydration support, fix direnv PEM parsing, and handle Apple OAuth PKCE",
+      "stats": {
+        "additions": 242,
+        "deletions": 241,
+        "total": 483
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e8b29c95979f905f1a16e7f251ff322eac873156",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-auth",
+      "timestamp": "2026-06-25T15:59:33+05:30",
+      "message": "add local task runner for Hetzner deployment",
+      "stats": {
+        "additions": 525,
+        "deletions": 1,
+        "total": 526
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "032f80775abb9d6a9a1af6c4c8af190d9c51ae4b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-auth",
+      "timestamp": "2026-06-25T15:32:55+05:30",
+      "message": "implement self-service account management and deletion",
+      "stats": {
+        "additions": 667,
+        "deletions": 0,
+        "total": 667
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "279fe95576a88c216d6a2614f88679dbf1053a8a",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-06-25T19:18:30+05:30",
+      "message": "Merge remote-tracking branch 'origin/main' into naitik/fix_apns_payload",
+      "stats": {
+        "additions": 72,
+        "deletions": 983,
+        "total": 1055
+      },
+      "branches": [
+        "naitik/fix_apns_payload"
+      ]
+    },
+    {
+      "sha": "eb2245e91a88ad647c3ec7b14e2e1c4ef8b5629a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-06-25T12:46:07+05:30",
+      "message": "chore: remove deprecated canister deletion and reclamation logic",
+      "stats": {
+        "additions": 11,
+        "deletions": 237,
+        "total": 248
+      },
+      "branches": [
+        "naitik/fix_apns_payload",
+        "main"
+      ]
+    },
+    {
+      "sha": "e704e85a220c3c683f31e0bb2bd3300c5c09578f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-06-25T11:50:28+05:30",
+      "message": "chore: update CANISTER_REDIS_URL to CANISTER_BACKUP_CACHE_REDIS_URL in deployment workflows",
+      "stats": {
+        "additions": 7,
+        "deletions": 3,
+        "total": 10
+      },
+      "branches": [
+        "naitik/fix_apns_payload",
+        "main"
+      ]
+    },
+    {
+      "sha": "eb640302669be1d51b49a744583c884ce8c3a4a9",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-06-25T11:42:46+05:30",
+      "message": "style: format code and clean up imports",
+      "stats": {
+        "additions": 3,
+        "deletions": 8,
+        "total": 11
+      },
+      "branches": [
+        "naitik/fix_apns_payload",
+        "main"
+      ]
+    },
+    {
+      "sha": "2b2e0264a16dfa7349cbeb04f43622f9f2ff3903",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-06-25T11:36:38+05:30",
+      "message": "chore: remove deprecated canister backup logic",
+      "stats": {
+        "additions": 19,
+        "deletions": 729,
+        "total": 748
+      },
+      "branches": [
+        "naitik/fix_apns_payload",
+        "main"
+      ]
+    },
+    {
+      "sha": "30c1372df58c7cb6db700317561b779a5a8e7a60",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-06-25T10:36:08+05:30",
+      "message": "chore: remove unnecessary allow attribute",
+      "stats": {
+        "additions": 0,
+        "deletions": 1,
+        "total": 1
+      },
+      "branches": [
+        "naitik/fix_apns_payload",
+        "main"
+      ]
+    },
+    {
+      "sha": "cf7cc3b2daf64590f3262c5f4e1de8020319c148",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-06-25T09:29:09+05:30",
+      "message": "fix: clippy error",
+      "stats": {
+        "additions": 3,
+        "deletions": 2,
+        "total": 5
+      },
+      "branches": [
+        "naitik/fix_apns_payload"
+      ]
+    },
+    {
+      "sha": "1b270c20fda442af14ea5461307db01c614d6cac",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-06-25T09:19:00+05:30",
+      "message": "cargo fmt",
+      "stats": {
+        "additions": 26,
+        "deletions": 28,
+        "total": 54
+      },
+      "branches": [
+        "naitik/fix_apns_payload"
+      ]
+    },
+    {
+      "sha": "0f698a918b532f5bca588856a78feaa40798af7c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-06-25T08:58:46+05:30",
+      "message": "style: format code and box Redis Client in DragonflyPool",
+      "stats": {
+        "additions": 37,
+        "deletions": 35,
+        "total": 72
+      },
+      "branches": [
+        "naitik/fix_apns_payload",
+        "main"
+      ]
+    },
+    {
+      "sha": "4e545bd9c4ee022f0d87027396d45b31fce11e09",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-06-25T08:16:57+05:30",
+      "message": "refactor: support direct Redis connections in DragonflyPool and update tests",
+      "stats": {
+        "additions": 57,
+        "deletions": 33,
+        "total": 90
+      },
+      "branches": [
+        "naitik/fix_apns_payload",
+        "main"
+      ]
+    },
+    {
+      "sha": "689090781b988ab07ac98599563d03603c1ffc97",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-06-25T19:31:01+05:30",
+      "message": "add mutable content field in aps (#467)",
+      "stats": {
+        "additions": 7,
+        "deletions": 0,
+        "total": 7
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6701f62d2d8e13d823761e5436893135c3d413cc",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-06-25T15:25:11+05:30",
+      "message": "ci: remove obsolete GitHub Actions workflows",
+      "stats": {
+        "additions": 0,
+        "deletions": 938,
+        "total": 938
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8abddf5fc16ac11839c70b906b715dea9440af21",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hot-or-not-web-leptos-ssr",
+      "timestamp": "2026-06-25T15:23:42+05:30",
+      "message": "refactor: remove app settings page and update account deletion to external auth URL",
+      "stats": {
+        "additions": 13,
+        "deletions": 14,
+        "total": 27
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c6e58d0066b0f79a60fc281381dee46fc5badfe1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-06-25T14:05:52+05:30",
+      "message": "Add empty VS Code settings file",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "21977d91e169097549bdb9fdf0ba8cac13b1a73b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-06-25T14:02:14+05:30",
+      "message": "Add build/ to .gitignore",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8c2d1024d29b764c7fdeeaad0960e4a29c1d8382",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-06-25T12:47:07+05:30",
+      "message": "Add reassign-1 through reassign-6 hosts to Ansible inventory",
+      "stats": {
+        "additions": 12,
+        "deletions": 0,
+        "total": 12
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "1e59478dc72e0ff99cdcb17902a91282c18bfb3a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-25T13:06:04+05:30",
+      "message": "probe: build instance URLs from public base + follow redirects",
+      "stats": {
+        "additions": 8,
+        "deletions": 6,
+        "total": 14
+      },
+      "branches": [
+        "kafka-probe"
+      ]
+    },
+    {
+      "sha": "de3421c881ba25fc52f779c7b3cbb2ff32f60565",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-25T13:02:58+05:30",
+      "message": "probe: robust poll handling",
+      "stats": {
+        "additions": 16,
+        "deletions": 10,
+        "total": 26
+      },
+      "branches": [
+        "kafka-probe"
+      ]
+    },
+    {
+      "sha": "a1528d7d571d51ca2975b1ad2d33ae6ec71636ed",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-25T13:00:37+05:30",
+      "message": "probe: real bridge sample (policy fixed by Naitik)",
+      "stats": {
+        "additions": 46,
+        "deletions": 36,
+        "total": 82
+      },
+      "branches": [
+        "kafka-probe"
+      ]
+    },
+    {
+      "sha": "4261bcedaf01d1896df66aef7949ffc2fe7667bf",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-25T11:53:20+05:30",
+      "message": "diag: capture token policies + path->cap map",
+      "stats": {
+        "additions": 5,
+        "deletions": 11,
+        "total": 16
+      },
+      "branches": [
+        "kafka-probe"
+      ]
+    },
+    {
+      "sha": "097c3ce5b89926d752d39475582cf138b30a6c76",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-25T11:50:45+05:30",
+      "message": "re-trigger probe: Naitik added SAIKAT_KAFKA_BRIDGE_BEARER_TOKEN-policy",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "kafka-probe"
+      ]
+    },
+    {
+      "sha": "5add5e6d22cac94c30556dbf457ff0b4fa412c8e",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-25T11:33:45+05:30",
+      "message": "diag(probe): capabilities-self check for the 403 cause",
+      "stats": {
+        "additions": 42,
+        "deletions": 62,
+        "total": 104
+      },
+      "branches": [
+        "kafka-probe"
+      ]
+    },
+    {
+      "sha": "a46eabae50037f73fd96bd996e0ecd80b0184a11",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-25T10:36:03+05:30",
+      "message": "chore(probe): one-off CI probe of Saikat's Snowplow Kafka bridge (structure-only, no PII)",
+      "stats": {
+        "additions": 80,
+        "deletions": 0,
+        "total": 80
+      },
+      "branches": [
+        "kafka-probe"
+      ]
+    },
+    {
+      "sha": "6db11aebd28cfbf5d40cfeb34f5cd8a4e352f350",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-06-25T12:19:21+05:30",
+      "message": "fix: name",
+      "stats": {
+        "additions": 1,
+        "deletions": 2,
+        "total": 3
+      },
+      "branches": [
+        "naitik/add_yml_for_creating_shared_secret_policy"
+      ]
+    },
+    {
+      "sha": "16eb45579fbf8329b72b5e425219c38b330b6bff",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-06-25T12:17:54+05:30",
+      "message": "added yml to create shared secret policy",
+      "stats": {
+        "additions": 49,
+        "deletions": 0,
+        "total": 49
+      },
+      "branches": [
+        "naitik/add_yml_for_creating_shared_secret_policy"
+      ]
+    },
+    {
+      "sha": "05843ab8408e0f555e30050cb752109af6a3cde9",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/hashicorp-vault-service",
+      "timestamp": "2026-06-25T12:20:18+05:30",
+      "message": "Naitik/add yml for creating shared secret policy (#28)",
+      "stats": {
+        "additions": 48,
+        "deletions": 0,
+        "total": 48
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "0c67c4d96c8a835c6e83fda326dd50363d6ddc64",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/saikat-data",
+      "timestamp": "2026-06-25T11:44:36+05:30",
+      "message": "pin spacetimedb and log versions, add .gitignore and Cargo.lock",
+      "stats": {
+        "additions": 799,
+        "deletions": 2,
+        "total": 801
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c07a4e044e4f683ef3202f1d5eaccac812a67577",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/saikat-data",
+      "timestamp": "2026-06-25T10:39:41+05:30",
+      "message": "add dependabot configuration for cargo and github actions",
+      "stats": {
+        "additions": 10,
+        "deletions": 0,
+        "total": 10
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "662f05849f1cb013be7f77b75ca28aff409c91ef",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/saikat-data",
+      "timestamp": "2026-06-25T09:28:49+05:30",
+      "message": "remove SpacetimeDB documentation and AI assistant configuration files",
+      "stats": {
+        "additions": 0,
+        "deletions": 2174,
+        "total": 2174
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b9cc7eaaa069b9295389e0ef8b9fd383f3b24482",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/saikat-data",
+      "timestamp": "2026-06-25T09:16:56+05:30",
+      "message": "first commit",
+      "stats": {
+        "additions": 2768,
+        "deletions": 0,
+        "total": 2768
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 43,
+  "issues": [
+    {
+      "number": 12,
+      "title": "response json malformed",
+      "closed_at": "2026-06-25T04:14:14Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-nsfw-detection-server",
+      "url": "https://github.com/dolr-ai/ansuman-nsfw-detection-server/issues/12",
+      "labels": []
+    }
+  ],
+  "issue_count": 1
+}
