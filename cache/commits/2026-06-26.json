@@ -1,0 +1,580 @@
+{
+  "date": "2026-06-26",
+  "cached_at": "2026-06-26T19:07:59.584041Z",
+  "commits": [
+    {
+      "sha": "bfd15489c475d539d31e800fb2bd9a17281623fb",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-06-26T20:44:06+05:30",
+      "message": "chore: remove saikat submodules, add reqwest to task-runner, bump kafka-bridge memory",
+      "stats": {
+        "additions": 1734,
+        "deletions": 280,
+        "total": 2014
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "53afd49142104c74e6264cb77e5a7844560abbdb",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-06-26T11:25:41+05:30",
+      "message": "feat: add task-runner app to workspace and local dev helpers",
+      "stats": {
+        "additions": 38,
+        "deletions": 3,
+        "total": 41
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "29f482ddbc8d57a1988c27778967a48a0792d532",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-06-26T10:11:56+05:30",
+      "message": "feat: add yral-database-spacetime app and Rust workspace setup",
+      "stats": {
+        "additions": 1429,
+        "deletions": 12,
+        "total": 1441
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/vastai-gte-1.1.3"
+      ]
+    },
+    {
+      "sha": "db226af8c9bd9dbc9c9e010ee7df8cbfdf306d3e",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-26T16:49:51+05:30",
+      "message": "fix(events): event_retention JOIN-ON inequality (CH 24.3 403) + /events resilience (#15)",
+      "stats": {
+        "additions": 46,
+        "deletions": 29,
+        "total": 75
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d92c5d95fbd927f0bcf676d2e03aac44645c7b0f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-26T16:13:38+05:30",
+      "message": "feat(events) PR-C: polish & segmentation \u2014 WoW, event-type, recent tile (#14)",
+      "stats": {
+        "additions": 116,
+        "deletions": 2,
+        "total": 118
+      },
+      "branches": [
+        "main",
+        "fix/events-retention-resilience-2026-06-26"
+      ]
+    },
+    {
+      "sha": "d2728151e9a536d7a7ce49f5feede0071df28589",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-26T16:05:49+05:30",
+      "message": "feat(events) PR-B: PMF views \u2014 influencers, retention, depth, PMF glance (#13)",
+      "stats": {
+        "additions": 203,
+        "deletions": 0,
+        "total": 203
+      },
+      "branches": [
+        "main",
+        "fix/events-retention-resilience-2026-06-26",
+        "feat/events-pr-c-polish-2026-06-26"
+      ]
+    },
+    {
+      "sha": "2e08ab40288805e08f30275f7ce86c96796ba440",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-26T15:35:13+05:30",
+      "message": "feat(events) PR-A: live funnel + identity/top-views fixes + secret reconcile (#12)",
+      "stats": {
+        "additions": 81,
+        "deletions": 37,
+        "total": 118
+      },
+      "branches": [
+        "main",
+        "fix/events-retention-resilience-2026-06-26",
+        "feat/events-pr-c-polish-2026-06-26",
+        "feat/events-pr-b-pmf-2026-06-26"
+      ]
+    },
+    {
+      "sha": "114945c5e5348a3a9ae1c580d35645da83a64a65",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-26T13:49:56+05:30",
+      "message": "Merge pull request #11 from dolr-ai/feat/events-dashboards-2026-06-26",
+      "stats": {
+        "additions": 455,
+        "deletions": 1,
+        "total": 456
+      },
+      "branches": [
+        "main",
+        "fix/events-retention-resilience-2026-06-26",
+        "feat/events-pr-c-polish-2026-06-26",
+        "feat/events-pr-b-pmf-2026-06-26",
+        "feat/events-pr-a-funnel-2026-06-26"
+      ]
+    },
+    {
+      "sha": "8f7775ac34823e024001cffa57a06e185f29f408",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-26T13:27:24+05:30",
+      "message": "feat(events): Mixpanel/PostHog-style /events dashboards over raw_events",
+      "stats": {
+        "additions": 455,
+        "deletions": 1,
+        "total": 456
+      },
+      "branches": [
+        "main",
+        "fix/events-retention-resilience-2026-06-26",
+        "feat/events-pr-c-polish-2026-06-26",
+        "feat/events-pr-b-pmf-2026-06-26",
+        "feat/events-pr-a-funnel-2026-06-26",
+        "feat/events-dashboards-2026-06-26"
+      ]
+    },
+    {
+      "sha": "697fa0e222519a451890d53d7cf2e44f5802ab1d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-26T12:33:52+05:30",
+      "message": "Merge pull request #10 from dolr-ai/feat/analytics-events-consumer-2026-06-26",
+      "stats": {
+        "additions": 561,
+        "deletions": 0,
+        "total": 561
+      },
+      "branches": [
+        "main",
+        "fix/events-retention-resilience-2026-06-26",
+        "feat/events-pr-c-polish-2026-06-26",
+        "feat/events-pr-b-pmf-2026-06-26",
+        "feat/events-pr-a-funnel-2026-06-26",
+        "feat/events-dashboards-2026-06-26"
+      ]
+    },
+    {
+      "sha": "97ab404afff395a2f02147714c30bf603dda6140",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-26T12:00:34+05:30",
+      "message": "feat: analytics-events-consumer (Snowplow bridge \u2192 ClickHouse)",
+      "stats": {
+        "additions": 561,
+        "deletions": 0,
+        "total": 561
+      },
+      "branches": [
+        "main",
+        "fix/events-retention-resilience-2026-06-26",
+        "feat/events-pr-c-polish-2026-06-26",
+        "feat/events-pr-b-pmf-2026-06-26",
+        "feat/events-pr-a-funnel-2026-06-26",
+        "feat/events-dashboards-2026-06-26",
+        "feat/analytics-events-consumer-2026-06-26"
+      ]
+    },
+    {
+      "sha": "5e6ea214c36d7997b4659a9d5350c587c1194cbc",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-26T16:45:35+05:30",
+      "message": "fix(events): event_retention JOIN-ON inequality (CH 24.3 403) + /events resilience",
+      "stats": {
+        "additions": 46,
+        "deletions": 29,
+        "total": 75
+      },
+      "branches": [
+        "fix/events-retention-resilience-2026-06-26"
+      ]
+    },
+    {
+      "sha": "089dcae9f281d6d8ba425606da2a90505feec040",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-26T14:26:23+05:30",
+      "message": "feat(events) PR-C: polish & segmentation \u2014 WoW, event-type, recent tile",
+      "stats": {
+        "additions": 116,
+        "deletions": 2,
+        "total": 118
+      },
+      "branches": [
+        "feat/events-pr-c-polish-2026-06-26"
+      ]
+    },
+    {
+      "sha": "77e055b987c02fe5a3749d7422381d690c29158b",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-26T15:41:34+05:30",
+      "message": "fix(events) PR-B: _INFLUENCER = nested se_property extract (confirmed live) + type breakdown",
+      "stats": {
+        "additions": 20,
+        "deletions": 19,
+        "total": 39
+      },
+      "branches": [
+        "feat/events-pr-b-pmf-2026-06-26"
+      ]
+    },
+    {
+      "sha": "3066795cae99f2aff3e7e902bbb1c9f02d92640d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-26T14:21:34+05:30",
+      "message": "feat(events) PR-B: PMF views \u2014 influencers, retention, depth, PMF glance",
+      "stats": {
+        "additions": 202,
+        "deletions": 0,
+        "total": 202
+      },
+      "branches": [
+        "feat/events-pr-b-pmf-2026-06-26"
+      ]
+    },
+    {
+      "sha": "7fd60a4062ae5713c0fc33026981c4e1fd812923",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-06-26T14:15:39+05:30",
+      "message": "feat(events) PR-A: live funnel + identity/top-views fixes + secret reconcile",
+      "stats": {
+        "additions": 81,
+        "deletions": 37,
+        "total": 118
+      },
+      "branches": [
+        "feat/events-pr-a-funnel-2026-06-26"
+      ]
+    },
+    {
+      "sha": "898c864a23d167ec6f78c9793917ded60e267023",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-26T10:16:26+05:30",
+      "message": "fix: remove mutable content field",
+      "stats": {
+        "additions": 0,
+        "deletions": 6,
+        "total": 6
+      },
+      "branches": [
+        "naitik/fix_apple_notification"
+      ]
+    },
+    {
+      "sha": "a510afc260701163435f61f75a532195c5076eac",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-26T16:27:27+05:30",
+      "message": "feat(llm-registry): alert on primary\u2192fallback transitions [gates task 9 fallback removal] (#425)",
+      "stats": {
+        "additions": 440,
+        "deletions": 4,
+        "total": 444
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3c8de96c630f5c7817a12c2c5ac133975570e141",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-26T14:53:30+05:30",
+      "message": "fix(ai-client): synthesize NSFW stream from non-streaming call instead of yielding NO_PROVIDER [prod",
+      "stats": {
+        "additions": 269,
+        "deletions": 22,
+        "total": 291
+      },
+      "branches": [
+        "main",
+        "agent/l0-eval-per-reply-storage-2026-06-26"
+      ]
+    },
+    {
+      "sha": "86dfe496e87e87a305bcc8ad4817acbedcf5e7be",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-26T14:19:17+05:30",
+      "message": "docs: roundup \u2014 2026-06-26 daily log + 21\u03b3.P22 + session artifacts (#423)",
+      "stats": {
+        "additions": 1408,
+        "deletions": 0,
+        "total": 1408
+      },
+      "branches": [
+        "main",
+        "agent/l0-eval-per-reply-storage-2026-06-26"
+      ]
+    },
+    {
+      "sha": "e02bb5c9174285a5c2345c8b3545e6b6e0b73507",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-26T13:56:57+05:30",
+      "message": "feat(proactive): back off skill check-in cadence on consecutive unanswered rounds (#422)",
+      "stats": {
+        "additions": 189,
+        "deletions": 6,
+        "total": 195
+      },
+      "branches": [
+        "main",
+        "agent/l0-eval-per-reply-storage-2026-06-26"
+      ]
+    },
+    {
+      "sha": "c21d9bd91f64a3366393a113c9486c525498b0f3",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-26T13:51:48+05:30",
+      "message": "feat(langfuse): set sessionId=conversation_id so chats group in Sessions tab (#421)",
+      "stats": {
+        "additions": 33,
+        "deletions": 22,
+        "total": 55
+      },
+      "branches": [
+        "main",
+        "agent/l0-eval-per-reply-storage-2026-06-26"
+      ]
+    },
+    {
+      "sha": "6013a5602316f1b32cc8fb823b4b62df03fe5976",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-26T13:33:24+05:30",
+      "message": "fix(spill): chunk video_ideas + feed_ranker by bot_id [Sentry #144 + #220] (#420)",
+      "stats": {
+        "additions": 136,
+        "deletions": 31,
+        "total": 167
+      },
+      "branches": [
+        "main",
+        "agent/l0-eval-per-reply-storage-2026-06-26"
+      ]
+    },
+    {
+      "sha": "8f3fc27911c89fc97afac3c5c633550a9ed426ce",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-26T13:33:20+05:30",
+      "message": "fix(streak-tracker): chunked + SKIP LOCKED to break deadlock [Sentry #124 + #246] (#419)",
+      "stats": {
+        "additions": 188,
+        "deletions": 60,
+        "total": 248
+      },
+      "branches": [
+        "main",
+        "agent/l0-eval-per-reply-storage-2026-06-26"
+      ]
+    },
+    {
+      "sha": "a81ee8c1ca27082ccec39f57001fec90d5d8d2ed",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-26T13:33:15+05:30",
+      "message": "fix(ws): retain fire-and-forget tasks against GC [Sentry #40/42/46/48/53/61/91/229/242/243] (#418)",
+      "stats": {
+        "additions": 238,
+        "deletions": 8,
+        "total": 246
+      },
+      "branches": [
+        "main",
+        "agent/l0-eval-per-reply-storage-2026-06-26"
+      ]
+    },
+    {
+      "sha": "d3db082c3cbcdd1f409cea7f445a1431213226d1",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-26T13:33:11+05:30",
+      "message": "ci(watchdog): build + push watchdog image to GHCR [DRAFT, unblocks PR #415 deploy] (#417)",
+      "stats": {
+        "additions": 54,
+        "deletions": 0,
+        "total": 54
+      },
+      "branches": [
+        "main",
+        "agent/l0-eval-per-reply-storage-2026-06-26"
+      ]
+    },
+    {
+      "sha": "591971a20f6449b66c81985ffb4cdcb198af2937",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-26T13:33:07+05:30",
+      "message": "fix(etl-integrity): asymmetric drift rule + drop tick verifier [Sentry #208, DRAFT] (#416)",
+      "stats": {
+        "additions": 171,
+        "deletions": 62,
+        "total": 233
+      },
+      "branches": [
+        "main",
+        "agent/l0-eval-per-reply-storage-2026-06-26"
+      ]
+    },
+    {
+      "sha": "d79dd172bf23e8f242834e47934df1a58654d108",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-26T16:29:35+05:30",
+      "message": "chore(migration-044): squawk compliance \u2014 statement_timeout, IDENTITY, bigint counters",
+      "stats": {
+        "additions": 26,
+        "deletions": 6,
+        "total": 32
+      },
+      "branches": [
+        "agent/l0-eval-per-reply-storage-2026-06-26"
+      ]
+    },
+    {
+      "sha": "d3bb8444aed41d0da2e02eac77f2a3b62a919b85",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-06-26T16:19:36+05:30",
+      "message": "feat(l0-eval): per-reply deterministic eval + storage [obs brief task 3]",
+      "stats": {
+        "additions": 821,
+        "deletions": 0,
+        "total": 821
+      },
+      "branches": [
+        "agent/l0-eval-per-reply-storage-2026-06-26"
+      ]
+    },
+    {
+      "sha": "dea6ecb56e1df04002cb421b2dd58333cd2dba16",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-06-26T10:10:49+05:30",
+      "message": "Add example to temporary root SSH access documentation",
+      "stats": {
+        "additions": 3,
+        "deletions": 1,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3396e176ca066468bc129c820de70cda4bc746e6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-06-26T10:07:54+05:30",
+      "message": "Add documentation for getting temporary root SSH access",
+      "stats": {
+        "additions": 7,
+        "deletions": 0,
+        "total": 7
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 31,
+  "issues": [
+    {
+      "number": 15,
+      "title": "max connection error",
+      "closed_at": "2026-06-26T04:07:18Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/ansuman-nsfw-detection-server",
+      "url": "https://github.com/dolr-ai/ansuman-nsfw-detection-server/issues/15",
+      "labels": []
+    }
+  ],
+  "issue_count": 1
+}
