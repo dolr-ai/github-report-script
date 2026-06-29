@@ -1,0 +1,194 @@
+{
+  "date": "2026-06-29",
+  "cached_at": "2026-06-29T19:13:23.041885Z",
+  "commits": [
+    {
+      "sha": "d4e3d1d6a952b298dc54e56163e063ba92feba59",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-06-29T19:17:26+05:30",
+      "message": "Prakash/steady state phash (#56)",
+      "stats": {
+        "additions": 1926,
+        "deletions": 4,
+        "total": 1930
+      },
+      "branches": [
+        "prakash/sweep-worker-toggle",
+        "main"
+      ]
+    },
+    {
+      "sha": "bc32fc7877650d529b4ebcdcfc04afc9748ec12d",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-06-29T10:17:19+05:30",
+      "message": "feat: readonly Postgres allowlist firewall + deploy wiring + validation (#55)",
+      "stats": {
+        "additions": 126,
+        "deletions": 1,
+        "total": 127
+      },
+      "branches": [
+        "prakash/sweep-worker-toggle",
+        "main"
+      ]
+    },
+    {
+      "sha": "ad5353e7ee6c203f24888d45e3d4723cd6197c1c",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-06-29T23:18:18+05:30",
+      "message": "ci: source RUN_SWEEP_WORKER from a repo variable (toggle without code change) (#57)",
+      "stats": {
+        "additions": 5,
+        "deletions": 2,
+        "total": 7
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e6cecf28ba2a9d0136f7011da69606e03bc5bc42",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-29T20:34:42+05:30",
+      "message": "fix: cargo fmt",
+      "stats": {
+        "additions": 4,
+        "deletions": 4,
+        "total": 8
+      },
+      "branches": [
+        "naitik/remove_importing_types"
+      ]
+    },
+    {
+      "sha": "286111b238aa9730e80b7606f04b99e2d25d6a96",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-29T16:40:49+05:30",
+      "message": "fix: lint error",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/remove_importing_types"
+      ]
+    },
+    {
+      "sha": "752f811fde006669269b2c7b3800e4ffa1650160",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-29T15:12:52+05:30",
+      "message": "impl yral metadata types and client",
+      "stats": {
+        "additions": 2256,
+        "deletions": 106,
+        "total": 2362
+      },
+      "branches": [
+        "naitik/remove_importing_types"
+      ]
+    },
+    {
+      "sha": "1cdffd29dd2d7f57dc69f0fa93a84c96fe596d3b",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-29T09:43:28+05:30",
+      "message": "impl yral-common types",
+      "stats": {
+        "additions": 308,
+        "deletions": 55,
+        "total": 363
+      },
+      "branches": [
+        "naitik/remove_importing_types"
+      ]
+    },
+    {
+      "sha": "f8323bac1ec14fd997b981c8cfd3f5c1adde1411",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-29T22:13:46+05:30",
+      "message": "Naitik/remove importing types (#10)",
+      "stats": {
+        "additions": 2520,
+        "deletions": 117,
+        "total": 2637
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "66e04046c36afc692243035bd1e378149b5c1ec5",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-06-29T18:41:10+05:30",
+      "message": "Merge pull request #27 from dolr-ai/ios-chat-billing",
+      "stats": {
+        "additions": 1735,
+        "deletions": 45,
+        "total": 1780
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d23d6c6282f08870f672776c1d9c7d6803d200df",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-06-29T18:29:49+05:30",
+      "message": "Handle existing billing container during deploy",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "main",
+        "ios-chat-billing"
+      ]
+    },
+    {
+      "sha": "3d23c6b56df70f130b7e6005628361d62656f010",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-06-29T18:21:18+05:30",
+      "message": "Deploy billing with single SQLite writer",
+      "stats": {
+        "additions": 101,
+        "deletions": 36,
+        "total": 137
+      },
+      "branches": [
+        "main",
+        "ios-chat-billing"
+      ]
+    },
+    {
+      "sha": "5ed63590b108a02b2976f509aaac41d3e9d643e9",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-06-29T18:15:17+05:30",
+      "message": "Document billing runtime topology",
+      "stats": {
+        "additions": 234,
+        "deletions": 1,
+        "total": 235
+      },
+      "branches": [
+        "main",
+        "ios-chat-billing"
+      ]
+    }
+  ],
+  "commit_count": 12,
+  "issues": [],
+  "issue_count": 0
+}
