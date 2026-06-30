@@ -1,0 +1,238 @@
+{
+  "date": "2026-06-30",
+  "cached_at": "2026-06-30T19:08:28.920563Z",
+  "commits": [
+    {
+      "sha": "6b85599ba743d548b39bfa3de0d92ebcca1afc9e",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-30T23:10:27+05:30",
+      "message": "fix: json",
+      "stats": {
+        "additions": 7,
+        "deletions": 7,
+        "total": 14
+      },
+      "branches": [
+        "naitik/update_apns_struct"
+      ]
+    },
+    {
+      "sha": "2eb53c153bcb870d7c5d3017a8f77dfa5a85634e",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-30T09:04:17+05:30",
+      "message": "fix: test",
+      "stats": {
+        "additions": 1,
+        "deletions": 2,
+        "total": 3
+      },
+      "branches": [
+        "naitik/update_apns_struct"
+      ]
+    },
+    {
+      "sha": "a4de0110e21d44081c50be1d9151655470ef24c8",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-06-30T08:54:29+05:30",
+      "message": "updated apns struct",
+      "stats": {
+        "additions": 9,
+        "deletions": 10,
+        "total": 19
+      },
+      "branches": [
+        "naitik/update_apns_struct"
+      ]
+    },
+    {
+      "sha": "570bbf32ecd8b1398bfc9f49f2777519f55ac433",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-06-30T10:22:59+05:30",
+      "message": "Fix IP whitelist on post DNAT postgres port (#58)",
+      "stats": {
+        "additions": 52,
+        "deletions": 3,
+        "total": 55
+      },
+      "branches": [
+        "prakash/videogen-phash-key-fix",
+        "main"
+      ]
+    },
+    {
+      "sha": "87fe0f223ca7dd8393ad5b8ea65ea625146ec8ee",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-06-30T22:04:28+05:30",
+      "message": "Prakash/videogen phash key fix (#59)",
+      "stats": {
+        "additions": 1065,
+        "deletions": 111,
+        "total": 1176
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "283bebcc5bf61406a44741d1dc7b599d97be390d",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-06-30T18:07:27+05:30",
+      "message": "Merge pull request #30 from dolr-ai/ios-chat-billing",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4f7cd4303f0d66d3ba9a13c2f843d565db945516",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-06-30T17:53:27+05:30",
+      "message": "Use isolated Sarvesh billing backup path",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main",
+        "ios-chat-billing"
+      ]
+    },
+    {
+      "sha": "b6dd141d64e3845e7cc161e6b3dd8e2016815a38",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-06-30T17:43:14+05:30",
+      "message": "Merge pull request #29 from dolr-ai/ios-chat-billing",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e5ad3429470a2aa64fc81a75aa7506ccf12964c6",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-06-30T17:38:56+05:30",
+      "message": "Keep SQLite files writable during deploy",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main",
+        "ios-chat-billing"
+      ]
+    },
+    {
+      "sha": "b038857859451038a13a481df48410eea2deac61",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-06-30T17:13:36+05:30",
+      "message": "Pass Apple billing config to deploy",
+      "stats": {
+        "additions": 22,
+        "deletions": 0,
+        "total": 22
+      },
+      "branches": [
+        "main",
+        "ios-chat-billing"
+      ]
+    },
+    {
+      "sha": "97f0c1abdcd3b67656056cf3a024f5826b1d6799",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-30T18:06:17+05:30",
+      "message": "Log iOS StoreKit product lookup",
+      "stats": {
+        "additions": 6,
+        "deletions": 0,
+        "total": 6
+      },
+      "branches": [
+        "sarvesh/ios-billing"
+      ]
+    },
+    {
+      "sha": "8c394cdfb011c32f5b6785b29472a84e0b2e4f61",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-30T16:55:17+05:30",
+      "message": "Fix iOS billing verifier endpoint",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "sarvesh/ios-billing"
+      ]
+    },
+    {
+      "sha": "8db4db2949e2d665db41fbf9cea0212d6dab6983",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-24T23:00:48+05:30",
+      "message": "Implement iOS daily chat billing",
+      "stats": {
+        "additions": 421,
+        "deletions": 28,
+        "total": 449
+      },
+      "branches": [
+        "sarvesh/ios-billing"
+      ]
+    },
+    {
+      "sha": "53fbb39425d4ec9b6b68ff033eb3d511f8855d9b",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-06-24T22:25:07+05:30",
+      "message": "chore: Changes billing base url",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "sarvesh/ios-billing"
+      ]
+    },
+    {
+      "sha": "9b36a58b22b3e1636c34ec1b23cff820bb967503",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/prakash-videogen",
+      "timestamp": "2026-06-30T14:28:01+05:30",
+      "message": "Fix rabbitmq reconnect (#4)",
+      "stats": {
+        "additions": 28,
+        "deletions": 17,
+        "total": 45
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 15,
+  "issues": [],
+  "issue_count": 0
+}
