@@ -1,0 +1,79 @@
+{
+  "date": "2026-07-01",
+  "cached_at": "2026-07-01T19:11:00.112907Z",
+  "commits": [
+    {
+      "sha": "5c2700cd2cd6f4bb7dc3ff4540ccc042cf4c3445",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-01T23:52:47+05:30",
+      "message": "Split media load Crashlytics grouping",
+      "stats": {
+        "additions": 125,
+        "deletions": 19,
+        "total": 144
+      },
+      "branches": [
+        "fix/crashlytics"
+      ]
+    },
+    {
+      "sha": "41e309614b030f51799309a3dd24b62d6f83ea56",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-01T23:40:55+05:30",
+      "message": "Gate after-release playback timeout reporting",
+      "stats": {
+        "additions": 93,
+        "deletions": 1,
+        "total": 94
+      },
+      "branches": [
+        "fix/crashlytics"
+      ]
+    },
+    {
+      "sha": "8c9c29c5618e0ade177ed2361a73207bc963b24b",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-07-01T22:42:31+05:30",
+      "message": "Prakash/upload storage merge (#54)",
+      "stats": {
+        "additions": 2425,
+        "deletions": 296,
+        "total": 2721
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d7766a229f7bf85637fd3400fc68b951864d351e",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-01T16:45:10+05:30",
+      "message": "feat(migration-045): user_nsfw_consent \u2014 audit row for the spicy chat gate [track 1a]",
+      "stats": {
+        "additions": 59,
+        "deletions": 0,
+        "total": 59
+      },
+      "branches": [
+        "agent/nsfw-consent-migration-045-2026-07-01"
+      ]
+    }
+  ],
+  "commit_count": 4,
+  "issues": [
+    {
+      "number": 2197,
+      "title": "Merge upload service endpoints to storage service",
+      "closed_at": "2026-07-01T17:12:33Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2197",
+      "labels": []
+    }
+  ],
+  "issue_count": 1
+}
