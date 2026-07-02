@@ -1,0 +1,259 @@
+{
+  "date": "2026-07-02",
+  "cached_at": "2026-07-02T19:00:47.648781Z",
+  "commits": [
+    {
+      "sha": "af59349afdaf1d785127025f9e872bf2cd850419",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-07-02T19:23:18+05:30",
+      "message": "Prakash/chain coverage audit (#60)",
+      "stats": {
+        "additions": 3340,
+        "deletions": 0,
+        "total": 3340
+      },
+      "branches": [
+        "prakash/chain-join-key-diagnose",
+        "prakash/chain-audit-index-fix",
+        "prakash/chain-audit-canonical-key-index",
+        "main"
+      ]
+    },
+    {
+      "sha": "c1db14716dcfa4cf3006578ad188d06edfd7abd6",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-07-02T23:42:57+05:30",
+      "message": "fix(chain-audit): functional indexes on canonical video key \u2014 normalized joins were seq-scanning mas",
+      "stats": {
+        "additions": 14,
+        "deletions": 0,
+        "total": 14
+      },
+      "branches": [
+        "prakash/chain-audit-index-fix",
+        "main"
+      ]
+    },
+    {
+      "sha": "c762d8cc9a113c2e9c9583182f311ea78d10da2b",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-07-02T23:15:13+05:30",
+      "message": "feat(chain-audit): read-only /chain/diagnose join-key diagnostic + ch\u2026 (#61)",
+      "stats": {
+        "additions": 238,
+        "deletions": 22,
+        "total": 260
+      },
+      "branches": [
+        "prakash/chain-audit-index-fix",
+        "prakash/chain-audit-canonical-key-index",
+        "main"
+      ]
+    },
+    {
+      "sha": "218516026e4b4d4b3e75e2716830a75f73de3221",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-07-03T00:08:44+05:30",
+      "message": "fix(chain-audit): move video_index canonical-key index to db schema (media_index init runs without v",
+      "stats": {
+        "additions": 6,
+        "deletions": 2,
+        "total": 8
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "027067f94feb807a9ca3f47efb9e17b203a5443e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-02T12:12:05+09:00",
+      "message": "chore: update auth base url to auth.yral.com (#1202)",
+      "stats": {
+        "additions": 5,
+        "deletions": 5,
+        "total": 10
+      },
+      "branches": [
+        "main",
+        "chore/image-blur"
+      ]
+    },
+    {
+      "sha": "065e8fbd8ba5b0364dae6c5105c133d63c519d40",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-02T23:52:37+05:30",
+      "message": "feat(chat): add isBlur to message DTO and blurred image unlock UI",
+      "stats": {
+        "additions": 208,
+        "deletions": 66,
+        "total": 274
+      },
+      "branches": [
+        "chore/image-blur"
+      ]
+    },
+    {
+      "sha": "668d104e9f65a87872bafcb31b9a279445b5e8e4",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-02T22:39:22+09:00",
+      "message": "feat: bump spacetimedb to 2.6.1, fix yral-mobile path, and tune Alloy/Loki logging",
+      "stats": {
+        "additions": 60,
+        "deletions": 36,
+        "total": 96
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-kustomize-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/ghcr.io-fluxcd-helm-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "9bc2d016376ff77caa411bfe63369a0ef8b2944d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-02T22:52:11+09:00",
+      "message": "fix(alloy): drop old log entries to prevent Loki timestamp errors",
+      "stats": {
+        "additions": 22,
+        "deletions": 9,
+        "total": 31
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "5ca99e194d077338694d89baeae289b203e19083",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral-video-upload-service",
+      "timestamp": "2026-07-02T15:16:12+05:30",
+      "message": "upload secrets to vault",
+      "stats": {
+        "additions": 45,
+        "deletions": 0,
+        "total": 45
+      },
+      "branches": [
+        "naitik/upload_secrets_to_vault"
+      ]
+    },
+    {
+      "sha": "d427f0b714affe263dba13fa6445650f30c80f6a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-02T13:42:21+05:30",
+      "message": "feat(spicy): handoff mint (JWT) + exchange (X-Amorae-Secret) [track 2a] (#429)",
+      "stats": {
+        "additions": 558,
+        "deletions": 0,
+        "total": 558
+      },
+      "branches": [
+        "main",
+        "agent/spicy-context-2b-2026-07-02"
+      ]
+    },
+    {
+      "sha": "6f1a653a4867c1794d27bfb5f667781ec5e8ac06",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-02T13:31:17+05:30",
+      "message": "feat(nsfw-consent): consent GET (JWT) + POST (X-Amorae-Secret) endpoints [track 1b] (#428)",
+      "stats": {
+        "additions": 508,
+        "deletions": 0,
+        "total": 508
+      },
+      "branches": [
+        "main",
+        "agent/spicy-context-2b-2026-07-02"
+      ]
+    },
+    {
+      "sha": "cdf3d2d4008a4e1fbebb49fd887a31c051c943fc",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-02T11:47:49+05:30",
+      "message": "feat(migration-045): user_nsfw_consent \u2014 audit row for the spicy chat gate [track 1a] (#427)",
+      "stats": {
+        "additions": 66,
+        "deletions": 0,
+        "total": 66
+      },
+      "branches": [
+        "main",
+        "agent/spicy-context-2b-2026-07-02"
+      ]
+    },
+    {
+      "sha": "96cda69db6448a94091343a7da10a7d6948ee6de",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-02T13:47:56+05:30",
+      "message": "feat(spicy): context read endpoint [track 2b]",
+      "stats": {
+        "additions": 411,
+        "deletions": 0,
+        "total": 411
+      },
+      "branches": [
+        "agent/spicy-context-2b-2026-07-02"
+      ]
+    },
+    {
+      "sha": "8a633b528a6b8d999cb763cc86da384be2c441bc",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-07-02T11:26:26+09:00",
+      "message": "Update self-hosted LLM documentation to use general endpoint",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 14,
+  "issues": [
+    {
+      "number": 2112,
+      "title": "Create a master index of all servable videos on our platform",
+      "closed_at": "2026-07-02T13:53:20Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2112",
+      "labels": []
+    }
+  ],
+  "issue_count": 1
+}
