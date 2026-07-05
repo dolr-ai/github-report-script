@@ -1,0 +1,44 @@
+{
+  "date": "2026-07-05",
+  "cached_at": "2026-07-05T19:50:18.847586Z",
+  "commits": [
+    {
+      "sha": "ac643cd3cd4597463c615bc82d966874ecadc2e5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-05T09:51:13+09:00",
+      "message": "fix: push images via internal Harbor URL to bypass Cloudflare 100MB upload limit",
+      "stats": {
+        "additions": 4,
+        "deletions": 25,
+        "total": 29
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/imagerepository-1.x",
+        "renovate/imagepolicy-1.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 1,
+  "issues": [],
+  "issue_count": 0
+}
