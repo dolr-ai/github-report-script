@@ -1,0 +1,189 @@
+{
+  "date": "2026-07-06",
+  "cached_at": "2026-07-06T20:22:54.595291Z",
+  "commits": [
+    {
+      "sha": "7a86d9b579c04cff9145c0405ace1249824c4fe5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-06T10:24:25+09:00",
+      "message": "revert: use harbor.yral.com for image push (internal URL doesn't support TLS)",
+      "stats": {
+        "additions": 1,
+        "deletions": 3,
+        "total": 4
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/imagerepository-1.x",
+        "renovate/imagepolicy-1.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "e7bb903b8df0d37f666d1cf51ff9e3339e3634a8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-06T10:19:35+09:00",
+      "message": "fix: recreate missing harbor-pull-secret.sops.yaml + AGENTS.md poll preference",
+      "stats": {
+        "additions": 23,
+        "deletions": 0,
+        "total": 23
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/imagerepository-1.x",
+        "renovate/imagepolicy-1.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "f80eb1e065251c79819d9891ec0c05263c7099d3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-06T10:18:01+09:00",
+      "message": "fix: configure safe auto-approve rules and clarify polling strategy",
+      "stats": {
+        "additions": 8,
+        "deletions": 1,
+        "total": 9
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/imagerepository-1.x",
+        "renovate/imagepolicy-1.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "b9b078a472161783a8102586aac3bf41494b25ae",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-06T22:31:13+05:30",
+      "message": "feat(chat): add Request Image option sending is_blur in message request",
+      "stats": {
+        "additions": 101,
+        "deletions": 18,
+        "total": 119
+      },
+      "branches": [
+        "chore/image-blur"
+      ]
+    },
+    {
+      "sha": "8babf1767eb4209da129c196ed984ebb2ceeffd2",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-06T14:20:21+05:30",
+      "message": "fix(replicate): route versioned model refs to the versioned predictions endpoint (#436)",
+      "stats": {
+        "additions": 71,
+        "deletions": 7,
+        "total": 78
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "1dfa5b0ef5459a94c8452d3b539b0ebeec4fcad9",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-06T14:00:13+05:30",
+      "message": "fix(replicate): route ostris-trained LoRA model refs through model=, not lora_weights= (#435)",
+      "stats": {
+        "additions": 119,
+        "deletions": 9,
+        "total": 128
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3d395acc66c239142e9f9d2dbc6aa1b4144b7421",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-06T13:37:07+05:30",
+      "message": "feat(request-images): services + endpoints + tests [phase 0 track B] (#434)",
+      "stats": {
+        "additions": 968,
+        "deletions": 0,
+        "total": 968
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6dd936fef6d61b61883d9911170723e9d724d973",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-06T13:23:37+05:30",
+      "message": "feat(migration-046): request_images storage \u2014 collages + rate limit + LoRA columns [track A] (#433)",
+      "stats": {
+        "additions": 93,
+        "deletions": 0,
+        "total": 93
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 8,
+  "issues": [],
+  "issue_count": 0
+}
