@@ -1,0 +1,419 @@
+{
+  "date": "2026-07-07",
+  "cached_at": "2026-07-07T20:23:54.733114Z",
+  "commits": [
+    {
+      "sha": "e2bbe32534450c43009deb54e88f82f77c579a8e",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-07-08T00:11:02+05:30",
+      "message": "formatting",
+      "stats": {
+        "additions": 13,
+        "deletions": 9,
+        "total": 22
+      },
+      "branches": [
+        "naitik/chat_notification_enable"
+      ]
+    },
+    {
+      "sha": "c806ed81c90e3c7b261d7a784f02a730f537de7f",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-07-08T00:09:04+05:30",
+      "message": "fix: update log",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/chat_notification_enable"
+      ]
+    },
+    {
+      "sha": "2e1cdc22ff8a8b863455ad7af8643c96e8c7af7d",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-07-07T23:58:04+05:30",
+      "message": "added api endpoint",
+      "stats": {
+        "additions": 57,
+        "deletions": 2,
+        "total": 59
+      },
+      "branches": [
+        "naitik/chat_notification_enable"
+      ]
+    },
+    {
+      "sha": "5e5e8c8e9aa8361cc5dbb8063af81fc09308c2a4",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-07-07T23:28:10+05:30",
+      "message": "fix: notification  payload",
+      "stats": {
+        "additions": 52,
+        "deletions": 8,
+        "total": 60
+      },
+      "branches": [
+        "naitik/chat_notification_enable"
+      ]
+    },
+    {
+      "sha": "a7e34c21bd607fada48caf4701f723f3fccd1436",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-07-07T22:44:51+05:30",
+      "message": "added chat notif",
+      "stats": {
+        "additions": 43,
+        "deletions": 0,
+        "total": 43
+      },
+      "branches": [
+        "naitik/chat_notification_enable"
+      ]
+    },
+    {
+      "sha": "3878fa61ddf98cfe16d3b353befa38e67aa93c7f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-07T23:33:30+09:00",
+      "message": "debug: step 3 \u2014 uncomment cargo-binstall + cargo-leptos",
+      "stats": {
+        "additions": 6,
+        "deletions": 6,
+        "total": 12
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/imagerepository-1.x",
+        "renovate/imagepolicy-1.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/vastai-gte-1.2.1"
+      ]
+    },
+    {
+      "sha": "12c1399f2e5e394351e33401cecf896f841bb15f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-07T21:45:49+09:00",
+      "message": "debug: step 2 \u2014 uncomment Node.js installation",
+      "stats": {
+        "additions": 4,
+        "deletions": 4,
+        "total": 8
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/imagerepository-1.x",
+        "renovate/imagepolicy-1.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/vastai-gte-1.2.1"
+      ]
+    },
+    {
+      "sha": "789e2bac6c2696b85441b5f1f744082e20ba130d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-07T19:58:59+09:00",
+      "message": "infra: grey-cloud all DNS records (proxied: false)",
+      "stats": {
+        "additions": 41,
+        "deletions": 41,
+        "total": 82
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/imagerepository-1.x",
+        "renovate/imagepolicy-1.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/vastai-gte-1.2.1"
+      ]
+    },
+    {
+      "sha": "a3c1c56cf5a19759dad91e0aa0f8acce71bbf46c",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-07-07T23:39:25+05:30",
+      "message": "Add per-bot auto-renewable subscriptions",
+      "stats": {
+        "additions": 2091,
+        "deletions": 18,
+        "total": 2109
+      },
+      "branches": [
+        "image-access"
+      ]
+    },
+    {
+      "sha": "82a8ec673c42fe8fa0fcb7878ab1396a60d50ec2",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-07T21:16:40+05:30",
+      "message": "fix(patroni): persist anti-timeline-drift settings via env vars (#443)",
+      "stats": {
+        "additions": 24,
+        "deletions": 0,
+        "total": 24
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "db0da013b1245e84aa41575e37139fd1a1984f31",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-07T17:49:55+05:30",
+      "message": "docs(request-images): land the Phase 0 design doc (#440)",
+      "stats": {
+        "additions": 200,
+        "deletions": 0,
+        "total": 200
+      },
+      "branches": [
+        "main",
+        "agent/patroni-config-anti-drift-2026-07-07"
+      ]
+    },
+    {
+      "sha": "a2faf9ed48725cfd0f41ba1e7b29394826c5d30e",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-07T17:49:41+05:30",
+      "message": "feat(collage): LLM-generated autonomous themes per batch (#442)",
+      "stats": {
+        "additions": 527,
+        "deletions": 6,
+        "total": 533
+      },
+      "branches": [
+        "main",
+        "agent/patroni-config-anti-drift-2026-07-07"
+      ]
+    },
+    {
+      "sha": "13fc891313f950462d7adea988bb9f35c8649374",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-07T17:49:36+05:30",
+      "message": "feat(collage): Option C hybrid \u2014 LoRA anchor + nano-banana-pro batch (#441)",
+      "stats": {
+        "additions": 138,
+        "deletions": 42,
+        "total": 180
+      },
+      "branches": [
+        "main",
+        "agent/patroni-config-anti-drift-2026-07-07"
+      ]
+    },
+    {
+      "sha": "e5cb87cabd01e5c8dd98671096de87c2fb924229",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-07T11:50:45+05:30",
+      "message": "fix(watchdog): Dockerfile \u2014 COPY autoheal.py so PR #438's module ships (#439)",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "main",
+        "agent/patroni-config-anti-drift-2026-07-07",
+        "agent/land-request-images-design-doc-2026-07-07",
+        "agent/collage-theme-generator-llm-autonomous-2026-07-07",
+        "agent/collage-hybrid-lora-anchor-plus-nano-banana-pro-2026-07-07"
+      ]
+    },
+    {
+      "sha": "634e131bff13dae4455227cdccdb159824aa9774",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-07T11:37:34+05:30",
+      "message": "feat(watchdog): auto-heal on the Saikat-Monday failure signatures (#438)",
+      "stats": {
+        "additions": 790,
+        "deletions": 10,
+        "total": 800
+      },
+      "branches": [
+        "main",
+        "agent/patroni-config-anti-drift-2026-07-07",
+        "agent/land-request-images-design-doc-2026-07-07",
+        "agent/fix-watchdog-dockerfile-autoheal-2026-07-07",
+        "agent/collage-theme-generator-llm-autonomous-2026-07-07",
+        "agent/collage-hybrid-lora-anchor-plus-nano-banana-pro-2026-07-07"
+      ]
+    },
+    {
+      "sha": "7f440f023f57d4f7089c905e88c28a86c9a6869f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-07T11:37:27+05:30",
+      "message": "fix(watchdog): run overlay-watchdog as UID 0 so replica-drift check works (#437)",
+      "stats": {
+        "additions": 21,
+        "deletions": 0,
+        "total": 21
+      },
+      "branches": [
+        "main",
+        "agent/patroni-config-anti-drift-2026-07-07",
+        "agent/land-request-images-design-doc-2026-07-07",
+        "agent/fix-watchdog-dockerfile-autoheal-2026-07-07",
+        "agent/collage-theme-generator-llm-autonomous-2026-07-07",
+        "agent/collage-hybrid-lora-anchor-plus-nano-banana-pro-2026-07-07"
+      ]
+    },
+    {
+      "sha": "33acf08ed5bfcda27407ad58a39f40a1dffa2a1f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-07T19:47:26+05:30",
+      "message": "fix(patroni): persist anti-timeline-drift settings via env vars",
+      "stats": {
+        "additions": 24,
+        "deletions": 0,
+        "total": 24
+      },
+      "branches": [
+        "agent/patroni-config-anti-drift-2026-07-07"
+      ]
+    },
+    {
+      "sha": "0c1a0f45b4196e596dff3d2d463b47130efa32ab",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-07T16:50:56+05:30",
+      "message": "docs(request-images): land the Phase 0 design doc",
+      "stats": {
+        "additions": 200,
+        "deletions": 0,
+        "total": 200
+      },
+      "branches": [
+        "agent/land-request-images-design-doc-2026-07-07"
+      ]
+    },
+    {
+      "sha": "9c281d36eb875510c1e3a478d6c4c80167730453",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-07T11:47:49+05:30",
+      "message": "fix(watchdog): Dockerfile \u2014 COPY autoheal.py so PR #438's module ships",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "agent/fix-watchdog-dockerfile-autoheal-2026-07-07"
+      ]
+    },
+    {
+      "sha": "a36c7b42ad674e9b2f8c8994eda68d9b1a774f0f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-07T17:45:59+05:30",
+      "message": "chore: ruff format theme_generator.py",
+      "stats": {
+        "additions": 1,
+        "deletions": 3,
+        "total": 4
+      },
+      "branches": [
+        "agent/collage-theme-generator-llm-autonomous-2026-07-07"
+      ]
+    },
+    {
+      "sha": "27f8a35ef78f9953a78e51ae1d96bf3b810b6166",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-07T17:39:58+05:30",
+      "message": "feat(collage): LLM-generated autonomous themes per batch",
+      "stats": {
+        "additions": 529,
+        "deletions": 6,
+        "total": 535
+      },
+      "branches": [
+        "agent/collage-theme-generator-llm-autonomous-2026-07-07"
+      ]
+    },
+    {
+      "sha": "c7c7d76e492a348e1f9309ee1d03fa6944ee1cc6",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-07T17:26:20+05:30",
+      "message": "feat(collage): Option C hybrid \u2014 LoRA anchor + nano-banana-pro batch",
+      "stats": {
+        "additions": 138,
+        "deletions": 42,
+        "total": 180
+      },
+      "branches": [
+        "agent/collage-hybrid-lora-anchor-plus-nano-banana-pro-2026-07-07"
+      ]
+    }
+  ],
+  "commit_count": 22,
+  "issues": [],
+  "issue_count": 0
+}
