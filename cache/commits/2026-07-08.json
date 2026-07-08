@@ -1,0 +1,445 @@
+{
+  "date": "2026-07-08",
+  "cached_at": "2026-07-08T20:02:31.821604Z",
+  "commits": [
+    {
+      "sha": "9b3f325cffc7e82086e7fb7b678c56e2aa492bdc",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-07-09T01:16:39+05:30",
+      "message": "Naitik/chat notification enable (#11)",
+      "stats": {
+        "additions": 147,
+        "deletions": 1,
+        "total": 148
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6785d07b66ca17f73d91127918c8851eaf732579",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-08T23:47:00+05:30",
+      "message": "feat(chat): integrate collage Request Images API with render-time blur",
+      "stats": {
+        "additions": 1102,
+        "deletions": 83,
+        "total": 1185
+      },
+      "branches": [
+        "chore/image-blur"
+      ]
+    },
+    {
+      "sha": "c413023ead2eea70bd7a091c57cc2489b9cbc0b9",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-08T11:17:19+09:00",
+      "message": "refactor: use mise for Node.js, remove task_runner from workspace, delete fly.toml",
+      "stats": {
+        "additions": 20,
+        "deletions": 83,
+        "total": 103
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/imagerepository-1.x",
+        "renovate/imagepolicy-1.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "315325e158321785e6ee4307dce116636215a61b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-08T10:59:47+09:00",
+      "message": "fix: make musl-gcc symlink conditional (same file on x86_64)",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/imagerepository-1.x",
+        "renovate/imagepolicy-1.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "848a23fb32dda451d897244b48b11b51ef433f18",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-08T10:56:25+09:00",
+      "message": "feat: complete Dockerfile.buildkit with full build pipeline",
+      "stats": {
+        "additions": 50,
+        "deletions": 57,
+        "total": 107
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/imagerepository-1.x",
+        "renovate/imagepolicy-1.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "a8b0182a136207bf4336713c078b9de5baf10a9c",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-08T15:45:00+05:30",
+      "message": "fix(collage): forward bot_id + generation_date in _ready_response (#451)",
+      "stats": {
+        "additions": 41,
+        "deletions": 4,
+        "total": 45
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "20091e848cc475cbf47aa3945887236af831f069",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-08T15:33:30+05:30",
+      "message": "fix(v2): Dockerfile HEALTHCHECK \u2014 kill the ~15s deploy downtime blip (#450)",
+      "stats": {
+        "additions": 17,
+        "deletions": 0,
+        "total": 17
+      },
+      "branches": [
+        "main",
+        "agent/collage-response-carries-bot-id-and-date-2026-07-08"
+      ]
+    },
+    {
+      "sha": "68312a81b7c8e96c2e5f6231a2ade41ab7764600",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-08T13:57:34+05:30",
+      "message": "tune(collage): blur radius 30 \u2192 15 px + env-tunable via COLLAGE_BLUR_RADIUS_PX (#449)",
+      "stats": {
+        "additions": 21,
+        "deletions": 7,
+        "total": 28
+      },
+      "branches": [
+        "main",
+        "agent/v2-dockerfile-healthcheck-2026-07-08",
+        "agent/collage-response-carries-bot-id-and-date-2026-07-08"
+      ]
+    },
+    {
+      "sha": "fe5741bf1b708bb41047333fb4444f4a392a2f8f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-08T13:31:27+05:30",
+      "message": "feat(collage): server-side pre-blurred variants + client is_subscribed flag (#448)",
+      "stats": {
+        "additions": 549,
+        "deletions": 19,
+        "total": 568
+      },
+      "branches": [
+        "main",
+        "agent/v2-dockerfile-healthcheck-2026-07-08",
+        "agent/collage-response-carries-bot-id-and-date-2026-07-08",
+        "agent/collage-blur-radius-tune-15px-2026-07-08"
+      ]
+    },
+    {
+      "sha": "bc97837d17dfdd964de920ee00e85c2713bb8ede",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-08T12:47:18+05:30",
+      "message": "feat(collage): nightly 04:00 UTC pre-gen loop for LoRA-enabled bots (#447)",
+      "stats": {
+        "additions": 449,
+        "deletions": 0,
+        "total": 449
+      },
+      "branches": [
+        "main",
+        "agent/v2-dockerfile-healthcheck-2026-07-08",
+        "agent/collage-server-side-blur-subscribed-flag-2026-07-08",
+        "agent/collage-response-carries-bot-id-and-date-2026-07-08",
+        "agent/collage-blur-radius-tune-15px-2026-07-08"
+      ]
+    },
+    {
+      "sha": "3fbda860f5ddcb86f3ab51d216bbd19d7017672f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-08T12:41:30+05:30",
+      "message": "feat(collage): per-bot LoRA trigger word from ai_influencers.metadata (#446)",
+      "stats": {
+        "additions": 161,
+        "deletions": 20,
+        "total": 181
+      },
+      "branches": [
+        "main",
+        "agent/v2-dockerfile-healthcheck-2026-07-08",
+        "agent/collage-server-side-blur-subscribed-flag-2026-07-08",
+        "agent/collage-response-carries-bot-id-and-date-2026-07-08",
+        "agent/collage-nightly-pregen-loop-2026-07-08",
+        "agent/collage-blur-radius-tune-15px-2026-07-08"
+      ]
+    },
+    {
+      "sha": "fd658ce36bedf1085e0714c7a03bf21fcdf24c68",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-08T12:23:01+05:30",
+      "message": "fix(collage): tighten theme validator + Gemini params after prod truncation (#445)",
+      "stats": {
+        "additions": 128,
+        "deletions": 17,
+        "total": 145
+      },
+      "branches": [
+        "main",
+        "agent/v2-dockerfile-healthcheck-2026-07-08",
+        "agent/collage-server-side-blur-subscribed-flag-2026-07-08",
+        "agent/collage-response-carries-bot-id-and-date-2026-07-08",
+        "agent/collage-per-bot-trigger-from-db-2026-07-08",
+        "agent/collage-nightly-pregen-loop-2026-07-08",
+        "agent/collage-blur-radius-tune-15px-2026-07-08"
+      ]
+    },
+    {
+      "sha": "1a5af5459773b09a29914ea653dd9d5c2b58ca88",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-08T15:25:44+05:30",
+      "message": "fix(v2): Dockerfile HEALTHCHECK \u2014 kill the ~15s deploy downtime blip",
+      "stats": {
+        "additions": 17,
+        "deletions": 0,
+        "total": 17
+      },
+      "branches": [
+        "agent/v2-dockerfile-healthcheck-2026-07-08"
+      ]
+    },
+    {
+      "sha": "a7dfc9a83f110447bec6094c4638b61ab5ee0f91",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-08T12:20:48+05:30",
+      "message": "fix(collage): tighten theme validator + Gemini params after prod truncation",
+      "stats": {
+        "additions": 128,
+        "deletions": 17,
+        "total": 145
+      },
+      "branches": [
+        "agent/theme-generator-quality-fix-2026-07-08"
+      ]
+    },
+    {
+      "sha": "de2de3cb7dc3c62148b86cd7ced7dff38c164fa8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-08T13:30:12+05:30",
+      "message": "fix(#448): Pillow 12.3.0 (clean CVEs) + squawk NOT VALID + VALIDATE",
+      "stats": {
+        "additions": 14,
+        "deletions": 2,
+        "total": 16
+      },
+      "branches": [
+        "agent/collage-server-side-blur-subscribed-flag-2026-07-08"
+      ]
+    },
+    {
+      "sha": "176ccdde67fa7b619123dfb7f28e61ec87640109",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-08T13:27:26+05:30",
+      "message": "feat(collage): server-side pre-blurred variants + client is_subscribed flag",
+      "stats": {
+        "additions": 537,
+        "deletions": 19,
+        "total": 556
+      },
+      "branches": [
+        "agent/collage-server-side-blur-subscribed-flag-2026-07-08"
+      ]
+    },
+    {
+      "sha": "fe3bd5f5fa53b0f96d91a81d69fe0ab3bffe087e",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-08T15:43:28+05:30",
+      "message": "fix(collage): forward bot_id + generation_date in _ready_response",
+      "stats": {
+        "additions": 41,
+        "deletions": 4,
+        "total": 45
+      },
+      "branches": [
+        "agent/collage-response-carries-bot-id-and-date-2026-07-08"
+      ]
+    },
+    {
+      "sha": "27681b2ce313936b1c284a0f45650cfc55c9bd3c",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-08T12:38:01+05:30",
+      "message": "feat(collage): per-bot LoRA trigger word from ai_influencers.metadata",
+      "stats": {
+        "additions": 161,
+        "deletions": 20,
+        "total": 181
+      },
+      "branches": [
+        "agent/collage-per-bot-trigger-from-db-2026-07-08"
+      ]
+    },
+    {
+      "sha": "a85dd4d6cf06a317593a4e76114126923417b591",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-08T12:45:40+05:30",
+      "message": "feat(collage): nightly 04:00 UTC pre-gen loop for LoRA-enabled bots",
+      "stats": {
+        "additions": 449,
+        "deletions": 0,
+        "total": 449
+      },
+      "branches": [
+        "agent/collage-nightly-pregen-loop-2026-07-08"
+      ]
+    },
+    {
+      "sha": "84310db7ef5f1fabdf377140e155263bd316d621",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-08T13:56:03+05:30",
+      "message": "tune(collage): blur radius 30 \u2192 15 px + env-tunable via COLLAGE_BLUR_RADIUS_PX",
+      "stats": {
+        "additions": 21,
+        "deletions": 7,
+        "total": 28
+      },
+      "branches": [
+        "agent/collage-blur-radius-tune-15px-2026-07-08"
+      ]
+    }
+  ],
+  "commit_count": 20,
+  "issues": [
+    {
+      "number": 2200,
+      "title": "Create endpoint for Ansuman's service to consume the master video table",
+      "closed_at": "2026-07-08T04:28:08Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2200",
+      "labels": []
+    },
+    {
+      "number": 2192,
+      "title": "Handle expired upload signed URLs",
+      "closed_at": "2026-07-08T04:23:34Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2192",
+      "labels": []
+    },
+    {
+      "number": 2113,
+      "title": "Refactor pHash and move it from offchain to prakash owned service",
+      "closed_at": "2026-07-08T04:24:04Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2113",
+      "labels": []
+    },
+    {
+      "number": 2074,
+      "title": "Check why the draft video has the first frame as the seeded image from the profile picture and not the first frame of the video being played.",
+      "closed_at": "2026-07-08T04:29:33Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2074",
+      "labels": []
+    },
+    {
+      "number": 2206,
+      "title": "implement notifications for AI chatbot messages",
+      "closed_at": "2026-07-08T19:46:40Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2206",
+      "labels": []
+    },
+    {
+      "number": 2204,
+      "title": "investigate AI chat flow for planning notification implementation",
+      "closed_at": "2026-07-08T04:25:01Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2204",
+      "labels": []
+    }
+  ],
+  "issue_count": 6
+}
