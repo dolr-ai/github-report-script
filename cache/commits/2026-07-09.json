@@ -1,0 +1,275 @@
+{
+  "date": "2026-07-09",
+  "cached_at": "2026-07-09T20:18:03.500161Z",
+  "commits": [
+    {
+      "sha": "6c5447f9e5c0bcdb4c9db401df8f4aa6118f60e4",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-07-09T23:51:07+05:30",
+      "message": "Add per-bot auto-renewable subscriptions",
+      "stats": {
+        "additions": 2091,
+        "deletions": 18,
+        "total": 2109
+      },
+      "branches": [
+        "image-access"
+      ]
+    },
+    {
+      "sha": "ed98d67e1dbd51e297dc3aeabc203c9ddb4e379e",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-07-09T22:14:21+05:30",
+      "message": "Fix clippy lint error (#68)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "29eb8dd2eb4a0023c35dead922303aaab22de327",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-07-09T22:07:56+05:30",
+      "message": "Video re-encoding spec (#66)",
+      "stats": {
+        "additions": 512,
+        "deletions": 3,
+        "total": 515
+      },
+      "branches": [
+        "main",
+        "fix/clippy-lint-error"
+      ]
+    },
+    {
+      "sha": "b99331e0f61f60dda80fbba7c180e7f06571ca3b",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-07-09T22:05:29+05:30",
+      "message": "Prakash/verify hetzner object (#67)",
+      "stats": {
+        "additions": 335,
+        "deletions": 27,
+        "total": 362
+      },
+      "branches": [
+        "main",
+        "fix/clippy-lint-error"
+      ]
+    },
+    {
+      "sha": "6db7d21a3814971f801d662d47cc95142fdca75e",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-07-09T08:42:55+05:30",
+      "message": "Cleanup cloudflare streams (#45)",
+      "stats": {
+        "additions": 54,
+        "deletions": 323,
+        "total": 377
+      },
+      "branches": [
+        "main",
+        "fix/clippy-lint-error"
+      ]
+    },
+    {
+      "sha": "36fbf042aaf4b4e2ee5cf62dbae2c9649b1e06df",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/amorae-web",
+      "timestamp": "2026-07-09T10:30:29+05:30",
+      "message": "Initial: amorae-web walking skeleton + CI/CD + Swarm stack (#1)",
+      "stats": {
+        "additions": 2780,
+        "deletions": 0,
+        "total": 2780
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f0638aa1017d5c8c6ddf0f17f7d42ff869e2a5a3",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/amorae-web",
+      "timestamp": "2026-07-09T10:23:01+05:30",
+      "message": "chore(ci): point codex-review at OPENAI_API_KEY_AMORAE_AI secret",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "feat/amorae-walking-skeleton"
+      ]
+    },
+    {
+      "sha": "110f60e2f791e190a653002b140545e9bd68e872",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-09T12:38:56+05:30",
+      "message": "fix(collage): mirror clear to our S3 + store keys + fresh-sign on read (#453)",
+      "stats": {
+        "additions": 249,
+        "deletions": 70,
+        "total": 319
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "07b0260182ff7fda1b41d1adfdd2057072f21f25",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-09T11:27:51+05:30",
+      "message": "feat(collage): add collage_id UUID + ?collage_id / ?date query params (#452)",
+      "stats": {
+        "additions": 236,
+        "deletions": 32,
+        "total": 268
+      },
+      "branches": [
+        "main",
+        "agent/collage-mirror-clear-store-keys-2026-07-09"
+      ]
+    },
+    {
+      "sha": "52c339e711e3c85587edfcdb22264c0ba402b1c9",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-09T12:37:29+05:30",
+      "message": "fix(#453): mock _mirror_batch in existing request_images tests",
+      "stats": {
+        "additions": 28,
+        "deletions": 0,
+        "total": 28
+      },
+      "branches": [
+        "agent/collage-mirror-clear-store-keys-2026-07-09"
+      ]
+    },
+    {
+      "sha": "5cdfa8dd5b64c5c626f4d2e9001cdc3355634046",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-09T12:24:35+05:30",
+      "message": "fix(collage): mirror clear to our S3 + store keys + fresh-sign on read",
+      "stats": {
+        "additions": 221,
+        "deletions": 70,
+        "total": 291
+      },
+      "branches": [
+        "agent/collage-mirror-clear-store-keys-2026-07-09"
+      ]
+    },
+    {
+      "sha": "a57f24dd7daeff17227d826828cd91cc03d32546",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-09T11:26:14+05:30",
+      "message": "fix(#452): 048 \u2014 two txns satisfy both squawk rules",
+      "stats": {
+        "additions": 30,
+        "deletions": 20,
+        "total": 50
+      },
+      "branches": [
+        "agent/collage-id-and-historical-fetch-2026-07-09"
+      ]
+    },
+    {
+      "sha": "1091384a1511b5324075376c8f908d1b664e97c8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-09T11:16:16+05:30",
+      "message": "fix(#452): 048 \u2014 DO block + separate txns to satisfy squawk + rerun",
+      "stats": {
+        "additions": 38,
+        "deletions": 27,
+        "total": 65
+      },
+      "branches": [
+        "agent/collage-id-and-historical-fetch-2026-07-09"
+      ]
+    },
+    {
+      "sha": "2e0516b2929a91a8ee029d3e2e28a745d2338a1a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-09T11:14:08+05:30",
+      "message": "fix(#452): wrap 048 in txn + use CHECK NOT VALID + VALIDATE for NOT NULL",
+      "stats": {
+        "additions": 28,
+        "deletions": 14,
+        "total": 42
+      },
+      "branches": [
+        "agent/collage-id-and-historical-fetch-2026-07-09"
+      ]
+    },
+    {
+      "sha": "3f7659991429a8c2ae66dd190c6d454a4169fcfd",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-09T11:11:12+05:30",
+      "message": "feat(collage): add collage_id UUID + ?collage_id / ?date query params",
+      "stats": {
+        "additions": 201,
+        "deletions": 32,
+        "total": 233
+      },
+      "branches": [
+        "agent/collage-id-and-historical-fetch-2026-07-09"
+      ]
+    }
+  ],
+  "commit_count": 15,
+  "issues": [
+    {
+      "number": 2207,
+      "title": "Fix this sentry phash issue",
+      "closed_at": "2026-07-09T16:35:30Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2207",
+      "labels": []
+    },
+    {
+      "number": 2108,
+      "title": "Cleanup yral-video-storage-service",
+      "closed_at": "2026-07-09T03:12:56Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2108",
+      "labels": []
+    },
+    {
+      "number": 2077,
+      "title": "Add standardized re-encoding for all videos uploaded to our platform. Come with recommendations and then discuss with @saikatdas0790",
+      "closed_at": "2026-07-09T16:37:58Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2077",
+      "labels": []
+    },
+    {
+      "number": 1992,
+      "title": "Standardize the video re-encoding after user submitted video is uploaded and received on our servers. Do your research and come with recommendation. Discuss with @saikatdas0790 after",
+      "closed_at": "2026-07-09T16:37:57Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1992",
+      "labels": []
+    }
+  ],
+  "issue_count": 4
+}
