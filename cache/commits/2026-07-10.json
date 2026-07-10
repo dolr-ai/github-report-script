@@ -1,0 +1,395 @@
+{
+  "date": "2026-07-10",
+  "cached_at": "2026-07-10T19:58:44.170523Z",
+  "commits": [
+    {
+      "sha": "9de29c369ac801962c6edb25fd53c843ace15c2c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-10T10:48:56+09:00",
+      "message": "refactor: migrate from direnv to mise for env var management",
+      "stats": {
+        "additions": 31,
+        "deletions": 33,
+        "total": 64
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/imagerepository-1.x",
+        "renovate/imagepolicy-1.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "069de9363194fc2c33456fe6f5bd78d715b368cd",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-10T10:17:28+09:00",
+      "message": "fix: simplify ImageUpdateAutomation commit message template",
+      "stats": {
+        "additions": 0,
+        "deletions": 5,
+        "total": 5
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/imagerepository-1.x",
+        "renovate/imagepolicy-1.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "a71677fbbf525ae3e0997f6a00b044e91f17e275",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-10T10:15:14+09:00",
+      "message": "fix: use .Changed instead of removed .Updated field in ImageUpdateAutomation template",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/imagerepository-1.x",
+        "renovate/imagepolicy-1.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "e150ede6d20884896a214d22620449487cc95395",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-10T10:09:49+09:00",
+      "message": "fix: remove invalid .Repository template variable from ImageUpdateAutomation",
+      "stats": {
+        "additions": 0,
+        "deletions": 2,
+        "total": 2
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/imagerepository-1.x",
+        "renovate/imagepolicy-1.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "8b8f398982db6cf4bab8c8a83f5d0ab6ef9f6271",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-10T10:06:52+09:00",
+      "message": "fix: use alphabetical desc with timestamp filter for image policy",
+      "stats": {
+        "additions": 6,
+        "deletions": 3,
+        "total": 9
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/imagerepository-1.x",
+        "renovate/imagepolicy-1.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "81406649ffe644ee26956b095138295f55b2c0f5",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/amorae-web",
+      "timestamp": "2026-07-10T13:54:54+05:30",
+      "message": "fix(swarm): use stop-first for updates to avoid 2-node scheduling deadlock (#4)",
+      "stats": {
+        "additions": 9,
+        "deletions": 1,
+        "total": 10
+      },
+      "branches": [
+        "main",
+        "feat/amorae-landing-tara-2026-07-10"
+      ]
+    },
+    {
+      "sha": "715280f7357e229ef92519ff12d17d94a404da97",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/amorae-web",
+      "timestamp": "2026-07-10T12:06:13+05:30",
+      "message": "fix(swarm): add yral-v2-internal so L2 Caddy can reach amorae_web (#3)",
+      "stats": {
+        "additions": 15,
+        "deletions": 5,
+        "total": 20
+      },
+      "branches": [
+        "main",
+        "feat/amorae-landing-tara-2026-07-10"
+      ]
+    },
+    {
+      "sha": "4262e19e707828de4bcbae4df6f37e2ad8de1cfe",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/amorae-web",
+      "timestamp": "2026-07-10T11:32:12+05:30",
+      "message": "fix(swarm): world-readable secret mounts so appuser can read them (#2)",
+      "stats": {
+        "additions": 7,
+        "deletions": 2,
+        "total": 9
+      },
+      "branches": [
+        "main",
+        "feat/amorae-landing-tara-2026-07-10"
+      ]
+    },
+    {
+      "sha": "946f33224c4b9dec16f72a81ddffd693c80e63d5",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/amorae-web",
+      "timestamp": "2026-07-10T11:16:00+05:30",
+      "message": "fix(swarm): world-readable secret mounts so appuser can read them",
+      "stats": {
+        "additions": 7,
+        "deletions": 2,
+        "total": 9
+      },
+      "branches": [
+        "fix/swarm-secret-mount-mode-appuser"
+      ]
+    },
+    {
+      "sha": "8b4271eb22cf4370558cdfc2ea02e0a07381d7cd",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/amorae-web",
+      "timestamp": "2026-07-10T15:57:51+05:30",
+      "message": "fix(amorae): PR1 hero = CANONICAL spicy-Tara + her platform tease copy",
+      "stats": {
+        "additions": 7,
+        "deletions": 8,
+        "total": 15
+      },
+      "branches": [
+        "feat/amorae-landing-tara-2026-07-10"
+      ]
+    },
+    {
+      "sha": "36f7ba5a27b28873ac6d700b037e274aa204f4be",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/amorae-web",
+      "timestamp": "2026-07-10T15:51:06+05:30",
+      "message": "fix(amorae): serve Tara hero locally \u2014 the L1 CSP img-src blocks external",
+      "stats": {
+        "additions": 8,
+        "deletions": 24,
+        "total": 32
+      },
+      "branches": [
+        "feat/amorae-landing-tara-2026-07-10"
+      ]
+    },
+    {
+      "sha": "470b84af73ee149aa5b5320b8be7b4dac76e948d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/amorae-web",
+      "timestamp": "2026-07-10T15:43:25+05:30",
+      "message": "feat(amorae): PR1 \u2014 real Tara landing page (photo + tease + 18+ CTA)",
+      "stats": {
+        "additions": 50,
+        "deletions": 17,
+        "total": 67
+      },
+      "branches": [
+        "feat/amorae-landing-tara-2026-07-10"
+      ]
+    },
+    {
+      "sha": "332fd336530ff1e69ce87fa54f9776aee84142eb",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-07-10T09:48:31+05:30",
+      "message": "fix: update deserialization logic for chat notification",
+      "stats": {
+        "additions": 4,
+        "deletions": 0,
+        "total": 4
+      },
+      "branches": [
+        "naitik/fix_chat_notification"
+      ]
+    },
+    {
+      "sha": "29e498ef8485bb41dcd374fe52b4c1e226bcc596",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-10T17:09:03+05:30",
+      "message": "feat(spicy): streaming-path deflection parity (Amendment 2)",
+      "stats": {
+        "additions": 286,
+        "deletions": 5,
+        "total": 291
+      },
+      "branches": [
+        "agent/spicy-native-deflection-2026-07-10"
+      ]
+    },
+    {
+      "sha": "45585b51c47099f35ee0454766e30060acfd64ca",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-10T16:33:53+05:30",
+      "message": "chore(link_cta): snake_case wire format \u2014 cta_url / cta_label",
+      "stats": {
+        "additions": 505,
+        "deletions": 9,
+        "total": 514
+      },
+      "branches": [
+        "agent/spicy-native-deflection-2026-07-10"
+      ]
+    },
+    {
+      "sha": "e34e8cc3e0cdf67da69211b036529ace1914a4d2",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-10T15:48:21+05:30",
+      "message": "feat(spicy): native SFW-constrain + deflect, surface flag, migration 049",
+      "stats": {
+        "additions": 841,
+        "deletions": 10,
+        "total": 851
+      },
+      "branches": [
+        "agent/spicy-native-deflection-2026-07-10"
+      ]
+    },
+    {
+      "sha": "aee3663c5e75b1d36efe225f82b506ef757f7024",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/off-chain-agent",
+      "timestamp": "2026-07-10T10:49:37+09:00",
+      "message": "chore: add mise.toml configuration for environment variables",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 17,
+  "issues": [
+    {
+      "number": 2208,
+      "title": "Remove reliance on gcloud and cloudflare services completely",
+      "closed_at": "2026-07-10T04:07:11Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2208",
+      "labels": []
+    },
+    {
+      "number": 2104,
+      "title": "On video generation failure, the corresponding detailed event on Sentry is missing. Needs to be instrumented",
+      "closed_at": "2026-07-10T04:18:55Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2104",
+      "labels": []
+    },
+    {
+      "number": 1993,
+      "title": "Migrate and own the yral-billing service end to end",
+      "closed_at": "2026-07-10T04:53:32Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1993",
+      "labels": []
+    }
+  ],
+  "issue_count": 3
+}
