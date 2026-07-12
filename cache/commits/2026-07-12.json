@@ -1,0 +1,112 @@
+{
+  "date": "2026-07-12",
+  "cached_at": "2026-07-12T19:38:16.185782Z",
+  "commits": [
+    {
+      "sha": "7bfe42bf2cfcffdd1610a4c4a587e840a4f8e0b9",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-07-12T21:45:33+05:30",
+      "message": "Merge pull request #31 from dolr-ai/image-access",
+      "stats": {
+        "additions": 3368,
+        "deletions": 34,
+        "total": 3402
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9c1bc66c00a68cf6be1d1fcc2883a9fadad21a28",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-07-12T20:51:16+05:30",
+      "message": "fix: wait for Patroni REST readiness before db-backup primary gate (#70)",
+      "stats": {
+        "additions": 23,
+        "deletions": 0,
+        "total": 23
+      },
+      "branches": [
+        "prakash/db-backup-race-fix-2",
+        "main"
+      ]
+    },
+    {
+      "sha": "1de674026fb573104c53bf743139b76bbc26b2cd",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-07-12T20:13:11+05:30",
+      "message": "feat: automated DB backup to Hetzner with 30-day rolling retention (#69)",
+      "stats": {
+        "additions": 286,
+        "deletions": 6,
+        "total": 292
+      },
+      "branches": [
+        "prakash/db-backup-race-fix-2",
+        "prakash/db-backup-race-fix",
+        "main"
+      ]
+    },
+    {
+      "sha": "df9e8bc4b04ba3fedddf043f6452750ca4b59381",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-07-12T21:36:39+05:30",
+      "message": "fix: poll Patroni /primary until role is definitive in db-backup (#71)",
+      "stats": {
+        "additions": 29,
+        "deletions": 22,
+        "total": 51
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b2c39c4153289192c58903440c4f54bc09f4c13c",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-12T21:26:06+05:30",
+      "message": "Merge remote-tracking branch 'origin/main' into feature/ios-apple-iap-billing",
+      "stats": {
+        "additions": 17678,
+        "deletions": 23431,
+        "total": 41109
+      },
+      "branches": [
+        "feature/ios-apple-iap-billing"
+      ]
+    },
+    {
+      "sha": "94fbf5c2eff7b6729219140c46b3006c847607d4",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-12T19:40:29+05:30",
+      "message": "feat(chat): fetch collages by collage_id with date fallback",
+      "stats": {
+        "additions": 127,
+        "deletions": 67,
+        "total": 194
+      },
+      "branches": [
+        "chore/image-blur"
+      ]
+    }
+  ],
+  "commit_count": 6,
+  "issues": [
+    {
+      "number": 2211,
+      "title": "Backup database goes on hetzner bucket",
+      "closed_at": "2026-07-12T14:43:12Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2211",
+      "labels": []
+    }
+  ],
+  "issue_count": 1
+}
