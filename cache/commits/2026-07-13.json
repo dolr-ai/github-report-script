@@ -1,0 +1,703 @@
+{
+  "date": "2026-07-13",
+  "cached_at": "2026-07-13T19:57:40.486605Z",
+  "commits": [
+    {
+      "sha": "32f24d1ba55cfee488c7875068773ac31fc997e9",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-14T00:15:31+05:30",
+      "message": "chore(chat): log collage image URLs and per-tile Coil load results",
+      "stats": {
+        "additions": 9,
+        "deletions": 2,
+        "total": 11
+      },
+      "branches": [
+        "sarvesh/image-access"
+      ]
+    },
+    {
+      "sha": "7009e96ac5f320c12b6a72aae97f27c4a96da9bf",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-13T18:20:19+05:30",
+      "message": "fix(chat): self-heal collage rows persisted without reference fields",
+      "stats": {
+        "additions": 36,
+        "deletions": 9,
+        "total": 45
+      },
+      "branches": [
+        "sarvesh/image-access"
+      ]
+    },
+    {
+      "sha": "ec00dd453d07695445674d17b0130ed4ec877576",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-13T18:14:28+05:30",
+      "message": "chore(chat): log collage refs on send request and message rows",
+      "stats": {
+        "additions": 14,
+        "deletions": 0,
+        "total": 14
+      },
+      "branches": [
+        "sarvesh/image-access"
+      ]
+    },
+    {
+      "sha": "c90116fc8bf4aa0b3c387cb34e11eea2809b3c91",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-13T18:10:42+05:30",
+      "message": "fix(chat): keep collage bubble after send-echo swap",
+      "stats": {
+        "additions": 42,
+        "deletions": 2,
+        "total": 44
+      },
+      "branches": [
+        "sarvesh/image-access"
+      ]
+    },
+    {
+      "sha": "94bd8ac82d09de7c08735f73f9db1642c31cdbc8",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-13T17:57:56+05:30",
+      "message": "feat(chat): Tara-only bot_sub subscription flow + Tara-only Request Image",
+      "stats": {
+        "additions": 142,
+        "deletions": 36,
+        "total": 178
+      },
+      "branches": [
+        "sarvesh/image-access"
+      ]
+    },
+    {
+      "sha": "63882db763d5568afb14cc8cfb91e2c9cd8ae88a",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-13T17:21:55+05:30",
+      "message": "fix(chat): collage quota day is the UTC calendar day, not 04:00 UTC",
+      "stats": {
+        "additions": 7,
+        "deletions": 11,
+        "total": 18
+      },
+      "branches": [
+        "sarvesh/image-access"
+      ]
+    },
+    {
+      "sha": "48d933ecfeb8f040093f92378922b3770e00790e",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-13T17:18:36+05:30",
+      "message": "chore(chat): add CollageX logs across collage request/fetch pipeline",
+      "stats": {
+        "additions": 26,
+        "deletions": 0,
+        "total": 26
+      },
+      "branches": [
+        "sarvesh/image-access"
+      ]
+    },
+    {
+      "sha": "32333df66f7bce9ceb0853332985b646d7819b02",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-12T19:40:29+05:30",
+      "message": "feat(chat): fetch collages by collage_id with date fallback",
+      "stats": {
+        "additions": 127,
+        "deletions": 67,
+        "total": 194
+      },
+      "branches": [
+        "sarvesh/image-access"
+      ]
+    },
+    {
+      "sha": "11292add998b5a5f2a610e6c6ee55c3783981570",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-08T23:47:00+05:30",
+      "message": "feat(chat): integrate collage Request Images API with render-time blur",
+      "stats": {
+        "additions": 1098,
+        "deletions": 79,
+        "total": 1177
+      },
+      "branches": [
+        "sarvesh/image-access"
+      ]
+    },
+    {
+      "sha": "5fcd0939a032b0c170c94ff0c654c8262c900af2",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-06T22:31:13+05:30",
+      "message": "feat(chat): add Request Image option sending is_blur in message request",
+      "stats": {
+        "additions": 101,
+        "deletions": 18,
+        "total": 119
+      },
+      "branches": [
+        "sarvesh/image-access"
+      ]
+    },
+    {
+      "sha": "f2e3830c0d1626f7582b4ed4c94141bf9810fd00",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-02T23:52:37+05:30",
+      "message": "feat(chat): add isBlur to message DTO and blurred image unlock UI",
+      "stats": {
+        "additions": 208,
+        "deletions": 66,
+        "total": 274
+      },
+      "branches": [
+        "sarvesh/image-access"
+      ]
+    },
+    {
+      "sha": "5a079c4f0ddefa51a297ce01fdbc3cfea68ed934",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-13T17:02:49+05:30",
+      "message": "feat: wire apple iap billing (#1158)",
+      "stats": {
+        "additions": 218,
+        "deletions": 16,
+        "total": 234
+      },
+      "branches": [
+        "sarvesh/image-access",
+        "main"
+      ]
+    },
+    {
+      "sha": "7716cc49f42d1b67bd944e640eb8d6ff783face4",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-13T17:52:32+05:30",
+      "message": "Add MIT License to the project (#1206)",
+      "stats": {
+        "additions": 21,
+        "deletions": 0,
+        "total": 21
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ff724bc026f3656ae7747ff0de78597f1076608c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-13T14:49:30Z",
+      "message": "fix: correct kubeconfig path and add extraction to bootstrap",
+      "stats": {
+        "additions": 16,
+        "deletions": 3,
+        "total": 19
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/imagerepository-1.x",
+        "renovate/imagepolicy-1.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "e21c3c7bc8a84b48d48d2cc190287fe6df2ec632",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-13T14:43:58Z",
+      "message": "refactor: introduce pitchfork process manager for local development daemons",
+      "stats": {
+        "additions": 90,
+        "deletions": 12,
+        "total": 102
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/imagerepository-1.x",
+        "renovate/imagepolicy-1.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "c57a35c69bbdc0fa74aaedc3b64345531ae53815",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-13T13:01:39Z",
+      "message": "refactor: remove dotenvy dependency and migrate to declarative mise/fnox configuration",
+      "stats": {
+        "additions": 81,
+        "deletions": 494,
+        "total": 575
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/imagerepository-1.x",
+        "renovate/imagepolicy-1.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "aeb0d367b46883b098a22f50dc1306842470d8c0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-13T10:54:14Z",
+      "message": "fix: initialize git submodules during bootstrap",
+      "stats": {
+        "additions": 3,
+        "deletions": 0,
+        "total": 3
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/imagerepository-1.x",
+        "renovate/imagepolicy-1.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "e9921b8c907a35d53619e7ee8265289e8a251332",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-13T10:52:20Z",
+      "message": "refactor: migrate Ansible Vault tasks to mise.toml",
+      "stats": {
+        "additions": 8,
+        "deletions": 36,
+        "total": 44
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/imagerepository-1.x",
+        "renovate/imagepolicy-1.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "bc0d6f68345f74192ca5c33ecc9746d936e4dab2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-13T09:57:26Z",
+      "message": "refactor: commit secrets to fnox.toml and update local environment documentation",
+      "stats": {
+        "additions": 14,
+        "deletions": 48,
+        "total": 62
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/imagerepository-1.x",
+        "renovate/imagepolicy-1.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "eda91590fed5922e0d9ecf05da1b6f3cbf966f71",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-13T09:49:00Z",
+      "message": "refactor: migrate local environment setup to declarative mise tasks and fnox",
+      "stats": {
+        "additions": 667,
+        "deletions": 3531,
+        "total": 4198
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/imagerepository-1.x",
+        "renovate/imagepolicy-1.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "29b3e0b4b526d6f4dfe0d631cd6e60c725729942",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-13T03:53:34Z",
+      "message": "refactor: consolidate local environment toolchain and bootstrap in mise.toml",
+      "stats": {
+        "additions": 96,
+        "deletions": 202,
+        "total": 298
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/imagerepository-1.x",
+        "renovate/imagepolicy-1.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "3fa8199ae31c8d44696b8b1adf90a798cfebf58f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-13T08:10:14+05:30",
+      "message": "chore: update apps/off-chain-agent and apps/yral-billing submodules",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/imagerepository-1.x",
+        "renovate/imagepolicy-1.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "e4468de2d0598a5169e3865f1518eebfd7921b97",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-07-13T09:32:57+05:30",
+      "message": "fix: clippy error",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/fix_chat_notification"
+      ]
+    },
+    {
+      "sha": "ed5ca5fea2bb0668c8b90daae1151ebb55bab430",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-07-13T09:27:05+05:30",
+      "message": "fix: deserialization logic",
+      "stats": {
+        "additions": 26,
+        "deletions": 4,
+        "total": 30
+      },
+      "branches": [
+        "naitik/fix_chat_notification"
+      ]
+    },
+    {
+      "sha": "3a36f646c938f9136ee7a3b91c653df5a2300cf3",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-07-13T08:50:41+05:30",
+      "message": "fix: clippy error",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/fix_chat_notification"
+      ]
+    },
+    {
+      "sha": "2afc7a4373e7143df665a6aead9b1e22e753f850",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-07-13T08:40:28+05:30",
+      "message": "cargo fmt",
+      "stats": {
+        "additions": 1,
+        "deletions": 4,
+        "total": 5
+      },
+      "branches": [
+        "naitik/fix_chat_notification"
+      ]
+    },
+    {
+      "sha": "7495e200ff5e3fa640a9d07476b1fb974d2bc5a9",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-07-13T08:36:25+05:30",
+      "message": "fix: add url to notification payload",
+      "stats": {
+        "additions": 7,
+        "deletions": 3,
+        "total": 10
+      },
+      "branches": [
+        "naitik/fix_chat_notification"
+      ]
+    },
+    {
+      "sha": "8322c89d31a69231b05948b73d6c7c328cd59474",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-07-13T11:29:45+05:30",
+      "message": "fix: update notification payload (#12)",
+      "stats": {
+        "additions": 31,
+        "deletions": 4,
+        "total": 35
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a51b9472fa0dd2094c1572688176e754ed1c5373",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-13T20:13:04+05:30",
+      "message": "feat(patroni): add shm_size: 2g + sequenced update_config on all 3 patroni services",
+      "stats": {
+        "additions": 91,
+        "deletions": 0,
+        "total": 91
+      },
+      "branches": [
+        "rishi/patroni-shm-size-2g-planned-fix"
+      ]
+    },
+    {
+      "sha": "4a481d35d0452de10c1a3fa7f51b048d5fed8a17",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-13T19:09:36+05:30",
+      "message": "feat(chat): persist collage message reference fields (migration 050) [unblocks Sarvesh] (#456)",
+      "stats": {
+        "additions": 565,
+        "deletions": 11,
+        "total": 576
+      },
+      "branches": [
+        "rishi/patroni-shm-size-2g-planned-fix",
+        "main"
+      ]
+    },
+    {
+      "sha": "66c67863dd2d2b17a7046c771292b87380a5037e",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-13T19:04:33+05:30",
+      "message": "feat(collage): serve most-recent succeeded when today failed [prod-inspired hardening] (#455)",
+      "stats": {
+        "additions": 562,
+        "deletions": 8,
+        "total": 570
+      },
+      "branches": [
+        "rishi/patroni-shm-size-2g-planned-fix",
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 31,
+  "issues": [
+    {
+      "number": 2045,
+      "title": "Move kvrocks to ansuman-* servers and return the kvrocks-1,2,3,4 to the common pool",
+      "closed_at": "2026-07-13T04:24:22Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2045",
+      "labels": []
+    },
+    {
+      "number": 2037,
+      "title": "Consume all events from self hosted Kafka instead of from BigQuery",
+      "closed_at": "2026-07-13T04:20:43Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2037",
+      "labels": []
+    },
+    {
+      "number": 1895,
+      "title": "Once validated that self hosted clickhouse and airflow are working, after a week, go and remove the google cloud bigquery tables and google cloud composer infrastructure",
+      "closed_at": "2026-07-13T04:19:36Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1895",
+      "labels": []
+    },
+    {
+      "number": 1771,
+      "title": "Clean up existing pending Bigquery tables and leftover data",
+      "closed_at": "2026-07-13T04:24:01Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1771",
+      "labels": []
+    },
+    {
+      "number": 1730,
+      "title": "ClickHouse Deployment -  Phase 5",
+      "closed_at": "2026-07-13T04:22:47Z",
+      "assignee": "ansuman-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1730",
+      "labels": []
+    }
+  ],
+  "issue_count": 5
+}
