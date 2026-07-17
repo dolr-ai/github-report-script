@@ -1,0 +1,1187 @@
+{
+  "date": "2026-07-17",
+  "cached_at": "2026-07-17T19:40:15.479959Z",
+  "commits": [
+    {
+      "sha": "e91d757dd6f372b0260f27ab227372ed587f41a0",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-07-18T00:36:10+05:30",
+      "message": "clippy fix",
+      "stats": {
+        "additions": 14,
+        "deletions": 6,
+        "total": 20
+      },
+      "branches": [
+        "naitik/migrate_notification_endpoint"
+      ]
+    },
+    {
+      "sha": "f851fb565c402f798973712e6d2cf487fb16ac53",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-07-17T11:07:47+05:30",
+      "message": "formatting",
+      "stats": {
+        "additions": 9,
+        "deletions": 4,
+        "total": 13
+      },
+      "branches": [
+        "naitik/migrate_notification_endpoint"
+      ]
+    },
+    {
+      "sha": "0948fc38dd5d91edc20739d8464d8d1116dd860b",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-07-17T11:07:28+05:30",
+      "message": "make notification endpoints live",
+      "stats": {
+        "additions": 42,
+        "deletions": 35,
+        "total": 77
+      },
+      "branches": [
+        "naitik/migrate_notification_endpoint"
+      ]
+    },
+    {
+      "sha": "a9080eb56f16d1592bfcf8af5cc8f9a78b1fd3cb",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-07-17T09:40:33+05:30",
+      "message": "cargo fmt",
+      "stats": {
+        "additions": 12,
+        "deletions": 16,
+        "total": 28
+      },
+      "branches": [
+        "naitik/migrate_notification_endpoint"
+      ]
+    },
+    {
+      "sha": "3167947af8f6bb07c445be7c83788c6b8aa9af77",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-07-17T09:39:49+05:30",
+      "message": "added notification endpoints",
+      "stats": {
+        "additions": 1199,
+        "deletions": 48,
+        "total": 1247
+      },
+      "branches": [
+        "naitik/migrate_notification_endpoint"
+      ]
+    },
+    {
+      "sha": "05b8b6632a078478fdd7ec16ade7aebe314fe48c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-17T13:13:01Z",
+      "message": "chore: update dependencies and remove stringreader crate",
+      "stats": {
+        "additions": 367,
+        "deletions": 383,
+        "total": 750
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "7269383047e0231fc99641b8f6fa66ed8b103ee6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-17T12:41:45Z",
+      "message": "chore: remove Milvus URL configuration and secret",
+      "stats": {
+        "additions": 0,
+        "deletions": 2,
+        "total": 2
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "c1a5efab06b8310d99ab6f18095e0eb5e7c2b539",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-17T12:35:54Z",
+      "message": "chore: update yral-mobile submodule, add binaryen platform entries, and document DNS migration task",
+      "stats": {
+        "additions": 28,
+        "deletions": 3,
+        "total": 31
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "16a21455add0dd8a540973ea792483bf0f799658",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-17T08:27:19Z",
+      "message": "chore: consolidate shared secrets, add dev tooling for legacy/metadata/agent, and update ic-agent",
+      "stats": {
+        "additions": 1220,
+        "deletions": 1956,
+        "total": 3176
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "3950bc653b28e13b06e083f842427cd20a142633",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-17T12:37:53+05:30",
+      "message": "chore: switch binaryen backend to aqua and update yral-mobile",
+      "stats": {
+        "additions": 6,
+        "deletions": 2,
+        "total": 8
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "e470bd98d70863df1646c93a833d4d50e9547a0f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-17T05:52:04Z",
+      "message": "chore: remove yral-legacy baremetal deployment and scope tekton triggers to app directories",
+      "stats": {
+        "additions": 13,
+        "deletions": 207,
+        "total": 220
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "706b8bce6adaefc87b65903a0b837cf7926aaccd",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-17T04:45:57Z",
+      "message": "refactor: remove delete account feature from yral-legacy",
+      "stats": {
+        "additions": 13,
+        "deletions": 198,
+        "total": 211
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "8046e76715a6b5a76bc4e6476a5c84dca27d7094",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-17T04:42:00Z",
+      "message": "refactor: remove all Cents token and pumpdump game from yral-legacy",
+      "stats": {
+        "additions": 11,
+        "deletions": 615,
+        "total": 626
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "cdcab943bb99f72e28624ddfc6f6a56c59379724",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-17T04:01:33Z",
+      "message": "refactor: remove video generation, Mixpanel, and timezone API from off-chain-agent",
+      "stats": {
+        "additions": 110,
+        "deletions": 4392,
+        "total": 4502
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "cbea84b03fe6f452294f91f7ce36201a8d0a5682",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-17T03:45:32Z",
+      "message": "refactor: remove all QStash references from off-chain-agent",
+      "stats": {
+        "additions": 54,
+        "deletions": 425,
+        "total": 479
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "f0c7cdc8095ac6e0eb49ac37ec7a1f1d1a518f8b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-17T03:36:56Z",
+      "message": "fix: remove _.file = '.env' from off-chain-agent mise.toml",
+      "stats": {
+        "additions": 5,
+        "deletions": 1,
+        "total": 6
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "987175f49a0941b200a4c39b8e0bc4c6e7c468bb",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-17T03:06:09Z",
+      "message": "refactor: remove yral-billing submodule",
+      "stats": {
+        "additions": 0,
+        "deletions": 4,
+        "total": 4
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "2acc5563776fb71b7eaafc8b9c74795dbc140ecd",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-17T02:51:14Z",
+      "message": "refactor: remove fly.io vectordb URL from yral-common metrics",
+      "stats": {
+        "additions": 2,
+        "deletions": 62,
+        "total": 64
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "3e1cd377560edb64400ff3c2f7409aaf96cab30d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-17T02:48:11Z",
+      "message": "refactor: remove fly.io URLs from yral-auth OAuth whitelist",
+      "stats": {
+        "additions": 3,
+        "deletions": 7,
+        "total": 10
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "405f3d8cef34092d723df685f28e886ac7a73e03",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-17T02:45:29Z",
+      "message": "refactor: remove fly.io references from yral-legacy",
+      "stats": {
+        "additions": 25,
+        "deletions": 327,
+        "total": 352
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "d323e82629d5e8a1248ae34c014564b0d954a921",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-17T02:35:28Z",
+      "message": "refactor: remove ai_video_detector module (fly.io URL, dead code)",
+      "stats": {
+        "additions": 1,
+        "deletions": 189,
+        "total": 190
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "65e096f31ecd300a1fe2f0aaecb4902083a243a9",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-17T02:26:54Z",
+      "message": "fix: replace Harbor admin credentials with robot$kubernetes-access",
+      "stats": {
+        "additions": 65,
+        "deletions": 65,
+        "total": 130
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "7cfafea339d5a719447958aece2d018f5bee2517",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-17T02:00:25Z",
+      "message": "refactor: remove gRPC/tonic/contracts from off-chain-agent",
+      "stats": {
+        "additions": 14,
+        "deletions": 416,
+        "total": 430
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "c4d458ea9a60559976ded8381e9cd16460553c97",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-17T01:38:12Z",
+      "message": "refactor: remove milvus-sdk-rust and all milvus vector search code",
+      "stats": {
+        "additions": 103,
+        "deletions": 1405,
+        "total": 1508
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "29d1b525bc60cd87ae8ce3be3e90d33ca3de6f2b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-17T01:11:11Z",
+      "message": "refactor: remove all Google Cloud crates from off-chain-agent",
+      "stats": {
+        "additions": 97,
+        "deletions": 3790,
+        "total": 3887
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "4925ed9f8664b24ab88caef70d4e895f80c55298",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-17T00:26:25Z",
+      "message": "fix: build off-chain-agent for glibc (not musl) with Debian runtime image",
+      "stats": {
+        "additions": 5,
+        "deletions": 6,
+        "total": 11
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "3964373d633090ec65cf92bc6acce5bbf9f4831f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-17T00:21:19Z",
+      "message": "refactor: declare musl target in rust-toolchain.toml, remove imperative rustup calls",
+      "stats": {
+        "additions": 3,
+        "deletions": 7,
+        "total": 10
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "571b9e6667a547f6129f36339e45fc6459aa5867",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-17T00:18:42Z",
+      "message": "fix: add musl target after rust-toolchain.toml is copied",
+      "stats": {
+        "additions": 3,
+        "deletions": 1,
+        "total": 4
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "a7a82390ae1c9700e2a951c9bcfe517b6bac8107",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-17T00:06:59Z",
+      "message": "fix: quote boolean/integer env vars in off-chain-agent secrets",
+      "stats": {
+        "additions": 72,
+        "deletions": 72,
+        "total": 144
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "a710fa0a8f927a1916ccf301e36ff80220a21c95",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-16T15:40:03Z",
+      "message": "feat: deploy off-chain-agent to Kubernetes at offchain.yral.com",
+      "stats": {
+        "additions": 541,
+        "deletions": 0,
+        "total": 541
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "b103f334a3a96fbc3eb3a7c8af2aadda9c447b53",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-17T16:36:19Z",
+      "message": "chore: update dependencies, switch git branches to main, and fix Delegation struct",
+      "stats": {
+        "additions": 397,
+        "deletions": 89,
+        "total": 486
+      },
+      "branches": [
+        "saikat/fix-dependencies"
+      ]
+    },
+    {
+      "sha": "d49f86d437984381453b6e7488e45d42d66a67d3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-17T19:54:31+05:30",
+      "message": "chore: update openssl to 0.10.81 and fix formatting (#1210)",
+      "stats": {
+        "additions": 64,
+        "deletions": 96,
+        "total": 160
+      },
+      "branches": [
+        "saikat/fix-dependencies",
+        "main",
+        "chore/crashlytics"
+      ]
+    },
+    {
+      "sha": "4d9c3f28ddf9f90d7db0a7f279ac4e3012bf3345",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-17T13:31:31+05:30",
+      "message": "Cleanup unused config, auth fallback, and migrate to mise.toml (#1209)",
+      "stats": {
+        "additions": 164,
+        "deletions": 161,
+        "total": 325
+      },
+      "branches": [
+        "saikat/fix-dependencies",
+        "main",
+        "chore/crashlytics"
+      ]
+    },
+    {
+      "sha": "8fd9be25139be18e1bc8d5e9193ada5c53a556ae",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-17T21:25:53+05:30",
+      "message": "chore: stop reporting device deregistration failures as non-fatals",
+      "stats": {
+        "additions": 6,
+        "deletions": 6,
+        "total": 12
+      },
+      "branches": [
+        "chore/crashlytics"
+      ]
+    },
+    {
+      "sha": "4db81bef41610f2f39c76a631efd9e6545b062f0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-07-17T13:12:41Z",
+      "message": "chore: remove ic_canister_snapshot crate and consolidate database path in task_runner",
+      "stats": {
+        "additions": 16,
+        "deletions": 939,
+        "total": 955
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c03440d9b9d2d3c84d774e66d186590462b29f90",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-07-17T12:51:20Z",
+      "message": "chore: rename storj-interface-1 to reassign-17",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "732bf24707bee4e1748c1fb9338fd60ae8ac77f1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-07-17T12:34:10Z",
+      "message": "chore: rename milvus-1 and offchain-agent hosts to reassign-14, reassign-15, and reassign-16",
+      "stats": {
+        "additions": 6,
+        "deletions": 6,
+        "total": 12
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9922b5e412b9061a78424ea317c3727b9062228f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-07-17T12:27:55Z",
+      "message": "chore: add reassign-12 and reassign-13 to inventory",
+      "stats": {
+        "additions": 4,
+        "deletions": 0,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "07672508f6934c1ddf264cb02adb88a77028e08e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-07-17T05:54:12Z",
+      "message": "chore: rename ravi-1 and ravi-2 to reassign-10 and reassign-11",
+      "stats": {
+        "additions": 4,
+        "deletions": 4,
+        "total": 8
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d0d848f02c7202b0703b0ba2cfa72e255c74ed07",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-07-17T04:33:17Z",
+      "message": "feat: migrate bare metal provisioning to local init script and update to Ubuntu 26.04",
+      "stats": {
+        "additions": 142,
+        "deletions": 8,
+        "total": 150
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f647ad6d87803d07377ed204fed5b41ee1542777",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-07-17T03:30:16Z",
+      "message": "chore: add mise enter hook for automatic environment setup",
+      "stats": {
+        "additions": 52,
+        "deletions": 31,
+        "total": 83
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "34b3604fe225af1a593b6dd7d488432a8c485c1f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-07-17T02:37:47Z",
+      "message": "chore: add reassign-8 and reassign-9 to inventory",
+      "stats": {
+        "additions": 4,
+        "deletions": 0,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "0c9b01dd490a2138d7ccdb85397b8aea701f6311",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-07-17T10:31:27+05:30",
+      "message": "Update service summary with new app links and status",
+      "stats": {
+        "additions": 3,
+        "deletions": 2,
+        "total": 5
+      },
+      "branches": [
+        "sarvesh-sharma-yral-patch-1"
+      ]
+    },
+    {
+      "sha": "5b70afc87e6b2a36fb76f36e268a9112a514a066",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-07-17T10:40:12+05:30",
+      "message": "update repo url",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "naitik/add_multi_service"
+      ]
+    },
+    {
+      "sha": "1c9cc9468531513bfeee014f0513cd2b09ba8571",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-07-17T10:38:14+05:30",
+      "message": "update urls",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "naitik/add_multi_service"
+      ]
+    },
+    {
+      "sha": "108931a528e15a2006277995a426e76369ea3922",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-07-17T08:38:21+05:30",
+      "message": "added naitik multi service info",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "naitik/add_multi_service"
+      ]
+    },
+    {
+      "sha": "d0467a12893129004feaf66b373e5b90a9d54db5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-07-17T02:53:02Z",
+      "message": "Remove obsolete Fly.io deployment script",
+      "stats": {
+        "additions": 0,
+        "deletions": 43,
+        "total": 43
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 47,
+  "issues": [
+    {
+      "number": 2206,
+      "title": "implement notifications for AI chatbot messages",
+      "closed_at": "2026-07-17T04:23:03Z",
+      "assignee": "rishichadha30",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2206",
+      "labels": []
+    },
+    {
+      "number": 2206,
+      "title": "implement notifications for AI chatbot messages",
+      "closed_at": "2026-07-17T04:23:03Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2206",
+      "labels": []
+    }
+  ],
+  "issue_count": 2
+}
