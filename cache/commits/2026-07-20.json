@@ -1,0 +1,144 @@
+{
+  "date": "2026-07-20",
+  "cached_at": "2026-07-20T20:06:35.711044Z",
+  "commits": [
+    {
+      "sha": "ab6eb190e1a2c6812643c3f9c6258e70db15bb53",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-07-21T01:29:16+05:30",
+      "message": "fiix: error parsing",
+      "stats": {
+        "additions": 4,
+        "deletions": 6,
+        "total": 10
+      },
+      "branches": [
+        "naitik/migrate_notification_endpoint"
+      ]
+    },
+    {
+      "sha": "70b1096cd0bf95757193eba2e6c73b680913d175",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-07-21T00:57:42+05:30",
+      "message": "fix: formatting",
+      "stats": {
+        "additions": 4,
+        "deletions": 10,
+        "total": 14
+      },
+      "branches": [
+        "naitik/migrate_notification_endpoint"
+      ]
+    },
+    {
+      "sha": "b570b408737821df5972e5637d43687b1480aea9",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-20T23:14:25+05:30",
+      "message": "fix: don't run chat access check before session is restored",
+      "stats": {
+        "additions": 11,
+        "deletions": 0,
+        "total": 11
+      },
+      "branches": [
+        "chore/crashlytics"
+      ]
+    },
+    {
+      "sha": "c454798265444c07627e969ed4a886374fd81ecf",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-20T23:08:22+05:30",
+      "message": "chore: tag remote-config fetch failures as NETWORK",
+      "stats": {
+        "additions": 3,
+        "deletions": 1,
+        "total": 4
+      },
+      "branches": [
+        "chore/crashlytics"
+      ]
+    },
+    {
+      "sha": "04c6fad4d0115c2811b91d32f0d8e8f9a2bfd8c2",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-20T23:03:56+05:30",
+      "message": "chore: report network-caused failures once under NETWORK error type",
+      "stats": {
+        "additions": 124,
+        "deletions": 8,
+        "total": 132
+      },
+      "branches": [
+        "chore/crashlytics"
+      ]
+    },
+    {
+      "sha": "f3a19e03278c6b12142764db9da3b80f7bfb91a7",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-07-20T09:21:01+05:30",
+      "message": "Move profile endpoint to prakash servers (#72)",
+      "stats": {
+        "additions": 1658,
+        "deletions": 14,
+        "total": 1672
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c539ad7a3be9757f837ad3e454d319777a61b46c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-20T02:15:12Z",
+      "message": "chore: manage podman via mise and fix bootstrap kubeconfig directory creation",
+      "stats": {
+        "additions": 14,
+        "deletions": 9,
+        "total": 23
+      },
+      "branches": [
+        "renovate/yral-testcontainers-digest",
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/gob-cloudflare-digest",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 7,
+  "issues": [
+    {
+      "number": 2066,
+      "title": "Image hosting is also on Cloudflare. Clean up and migrate this to self hosted buckets. Evaluate this once video hosting is cleaned up and look at costs",
+      "closed_at": "2026-07-20T03:51:02Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2066",
+      "labels": []
+    }
+  ],
+  "issue_count": 1
+}
