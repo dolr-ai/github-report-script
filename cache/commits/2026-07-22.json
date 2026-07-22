@@ -1,0 +1,232 @@
+{
+  "date": "2026-07-22",
+  "cached_at": "2026-07-22T19:52:49.178725Z",
+  "commits": [
+    {
+      "sha": "564292733bda4a2f91e79c464876e1d53952355d",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-07-22T10:52:11+05:30",
+      "message": "Update notification url and token (#83)",
+      "stats": {
+        "additions": 20,
+        "deletions": 15,
+        "total": 35
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "289f73d788e746ee4b6ec989be8b13342b21ae9c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-22T17:17:07Z",
+      "message": "refactor: switch from nightly to stable Rust toolchain",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "1c74e7df97d35349a04cd0c9e6cc1f524672f0a2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-22T11:35:00+05:30",
+      "message": "chore: commit mise changes",
+      "stats": {
+        "additions": 99,
+        "deletions": 2,
+        "total": 101
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "93d0f9e27a8f253d3357552dfbd7d43651f56312",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-22T10:51:09+05:30",
+      "message": "chore: migrate mise tasks to root monorepo config and bump jwt gem",
+      "stats": {
+        "additions": 24,
+        "deletions": 65,
+        "total": 89
+      },
+      "branches": [
+        "saikat/fix-dependencies"
+      ]
+    },
+    {
+      "sha": "329cf27ba27077dbe59d85d56cc8201beb322add",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-22T21:17:19+05:30",
+      "message": "fix: don't run chat access check before session is restored",
+      "stats": {
+        "additions": 11,
+        "deletions": 0,
+        "total": 11
+      },
+      "branches": [
+        "chore/crashlytics"
+      ]
+    },
+    {
+      "sha": "19f9843d3ce36ec9b02381d567bf36fb4be3bc97",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-22T21:17:19+05:30",
+      "message": "chore: tag remote-config fetch failures as NETWORK",
+      "stats": {
+        "additions": 3,
+        "deletions": 1,
+        "total": 4
+      },
+      "branches": [
+        "chore/crashlytics"
+      ]
+    },
+    {
+      "sha": "b7df0f6685ee9e1fdbbdd2fbcf4a3dfdb4c5d85b",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-22T21:17:19+05:30",
+      "message": "chore: report network-caused failures once under NETWORK error type",
+      "stats": {
+        "additions": 124,
+        "deletions": 8,
+        "total": 132
+      },
+      "branches": [
+        "chore/crashlytics"
+      ]
+    },
+    {
+      "sha": "8602014e8e65105b09ca9df183ca7ac80cacf184",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-22T21:17:19+05:30",
+      "message": "chore: stop reporting device deregistration failures as non-fatals",
+      "stats": {
+        "additions": 6,
+        "deletions": 6,
+        "total": 12
+      },
+      "branches": [
+        "chore/crashlytics"
+      ]
+    },
+    {
+      "sha": "2712110b3a023d4cad72933aa488d935f2f3fcf9",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-07-22T09:39:28+05:30",
+      "message": "added naitik multi service info (#2214)",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3d5b31f56e59fde3e413fb09d046fdd3438cb4d6",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-07-22T09:21:55+05:30",
+      "message": "repo restructuring",
+      "stats": {
+        "additions": 196,
+        "deletions": 128,
+        "total": 324
+      },
+      "branches": [
+        "naitik/repo_restructuring"
+      ]
+    }
+  ],
+  "commit_count": 10,
+  "issues": [
+    {
+      "number": 2217,
+      "title": "Update notification url from metadata to naitik's. multi service",
+      "closed_at": "2026-07-22T05:22:12Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2217",
+      "labels": []
+    },
+    {
+      "number": 2117,
+      "title": "Configure this on specific repos. ",
+      "closed_at": "2026-07-22T03:56:57Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2117",
+      "labels": []
+    },
+    {
+      "number": 2213,
+      "title": "Add push notification service to service summary",
+      "closed_at": "2026-07-22T04:09:29Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2213",
+      "labels": []
+    },
+    {
+      "number": 2209,
+      "title": "test chatbot notification for endusers",
+      "closed_at": "2026-07-22T04:05:21Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2209",
+      "labels": []
+    }
+  ],
+  "issue_count": 4
+}
