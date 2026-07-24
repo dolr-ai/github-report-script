@@ -1,0 +1,330 @@
+{
+  "date": "2026-07-24",
+  "cached_at": "2026-07-24T19:54:39.275617Z",
+  "commits": [
+    {
+      "sha": "d7791e634b085658731f3b7743a5d37f3ea2da9c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-24T13:43:00Z",
+      "message": "feat: add Tekton webhook HTTPRoute for my-website build trigger",
+      "stats": {
+        "additions": 67,
+        "deletions": 0,
+        "total": 67
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "c9c0552ba47ba087afb3d72235e167f0c0afc37d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-24T13:22:59Z",
+      "message": "fix: correct ExternalDNS flag name (--rfc2136-tsig-secret-alg)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "628bfd65b5616af9ec7b602361fd5494e511a1b1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-24T13:18:28Z",
+      "message": "fix: use correct PowerDNS image (pdns-auth-52, not pdns-auth-53 which doesn't exist)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "93ded6d467701372ab2142a0927e2701025cd78a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-24T13:16:29Z",
+      "message": "fix: correct ExternalDNS flag name (--rfc2136-tsig-algorithm)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "2adec947509647b68bf464bf2f457fca22a90b87",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-24T13:15:55Z",
+      "message": "fix: use fully qualified docker.io/ image for PowerDNS",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "4a0414dde696b2fb4ada78afbeab5bb3c6a7748b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-24T11:15:03Z",
+      "message": "feat: self-hosted DNS (PowerDNS + ExternalDNS) + my-website on saikat.dev",
+      "stats": {
+        "additions": 2047,
+        "deletions": 497,
+        "total": 2544
+      },
+      "branches": [
+        "renovate/terraform-monorepo",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/maxmindinc-geoipupdate-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-82.x",
+        "renovate/helm-helm-4.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/dbeaver-cloudbeaver-26.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/console-3.x",
+        "renovate/clickhouse-clickhouse-server-26.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "ba33db7844e99549e2b5bcf60bc1ddbb38b6a3fb",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-billing",
+      "timestamp": "2026-07-24T09:49:30+05:30",
+      "message": "Merge pull request #33 from dolr-ai/request-observability",
+      "stats": {
+        "additions": 29,
+        "deletions": 0,
+        "total": 29
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f3041151c457b6f4b95c8e4064dc168e3a414cd5",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/prakash-nsfw-detection-server",
+      "timestamp": "2026-07-24T08:13:26+05:30",
+      "message": "Ci/deploy workflow fixes (#7)",
+      "stats": {
+        "additions": 4,
+        "deletions": 2,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e4a94e1e9fc48c2d5c2551eed6d014de4347859e",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/prakash-nsfw-detection-server",
+      "timestamp": "2026-07-24T08:07:03+05:30",
+      "message": "Ci/deploy workflow fixes (#6)",
+      "stats": {
+        "additions": 3,
+        "deletions": 2,
+        "total": 5
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8e09c3c32a10881c522f299c75fc2b1c769f38e3",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/prakash-nsfw-detection-server",
+      "timestamp": "2026-07-24T07:55:14+05:30",
+      "message": "ci: fix docker build, verify image on PRs, dedupe checks (#5)",
+      "stats": {
+        "additions": 57,
+        "deletions": 24,
+        "total": 81
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a92de9c8564b8ce1309d37bb10aa03c2a238e43d",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/prakash-nsfw-detection-server",
+      "timestamp": "2026-07-24T07:38:42+05:30",
+      "message": "Chore/local smoke tooling (#4)",
+      "stats": {
+        "additions": 354,
+        "deletions": 0,
+        "total": 354
+      },
+      "branches": [
+        "main",
+        "fix/ci-docker-build-and-pr-checks",
+        "ci/deploy-workflow-fixes"
+      ]
+    }
+  ],
+  "commit_count": 11,
+  "issues": [
+    {
+      "number": 2000,
+      "title": "Own the yral-auth service",
+      "closed_at": "2026-07-24T04:10:57Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2000",
+      "labels": []
+    },
+    {
+      "number": 1983,
+      "title": "Move offchain to self hosted servers",
+      "closed_at": "2026-07-24T04:10:49Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1983",
+      "labels": []
+    },
+    {
+      "number": 1982,
+      "title": "Move the auth service to self hosted",
+      "closed_at": "2026-07-24T04:10:38Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1982",
+      "labels": []
+    },
+    {
+      "number": 1981,
+      "title": "Move the yral-metadata service to self hosted servers",
+      "closed_at": "2026-07-24T04:10:30Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1981",
+      "labels": []
+    },
+    {
+      "number": 2159,
+      "title": "Ensure backups are creating new backups instead of overwriting the last backup. Keep the last 7 backups as a rolling window",
+      "closed_at": "2026-07-24T04:06:49Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2159",
+      "labels": []
+    }
+  ],
+  "issue_count": 5
+}
