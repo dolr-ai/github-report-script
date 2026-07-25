@@ -1,0 +1,684 @@
+{
+  "date": "2026-07-25",
+  "cached_at": "2026-07-25T19:43:19.926433Z",
+  "commits": [
+    {
+      "sha": "175cb2e8c1ba6286350b085118ba6592a7cf4899",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T12:36:14Z",
+      "message": "fix(monitoring): replace ${DS_PROMETHEUS} uid refs with 'prometheus' in Ceph dashboards",
+      "stats": {
+        "additions": 53,
+        "deletions": 53,
+        "total": 106
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "90395b512d88bab1aa8d64830324bad98fce6a61",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T12:19:13Z",
+      "message": "fix(monitoring): add ceph_exporter ServiceMonitor + fix dashboard metric names",
+      "stats": {
+        "additions": 50,
+        "deletions": 10,
+        "total": 60
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "42bf8958202fabc4cd5b1f4e00d6d38f72e16117",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T10:31:26Z",
+      "message": "fix(snowplow): use RollingUpdate maxSurge=0 maxUnavailable=1 instead of Recreate",
+      "stats": {
+        "additions": 12,
+        "deletions": 12,
+        "total": 24
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8e5d151c99f8fc1b3fc0e86d95e65a514d6dd3ff",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T10:25:04Z",
+      "message": "fix(snowplow): null out rollingUpdate so Flux SSA prunes it under Recreate",
+      "stats": {
+        "additions": 4,
+        "deletions": 0,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "2bcd60632b70847c19b84e6da71e51c9b51ee8f3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T10:19:32Z",
+      "message": "fix: yral-legacy probes to /healthz + geoip-server strategy to Recreate",
+      "stats": {
+        "additions": 12,
+        "deletions": 2,
+        "total": 14
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e688d8aeb8d843bb88f17066e9700388066a4faf",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T10:00:24Z",
+      "message": "fix(monitoring): Ceph dashboard ConfigMap keys must match [-._a-zA-Z0-9]+",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "544645701c96cff82a056f9cec40a1d7257c44e0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T09:56:50Z",
+      "message": "AGENTS.md: post-push validation is non-negotiable",
+      "stats": {
+        "additions": 2,
+        "deletions": 0,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "dddf08aa070a54b99d5a9fb25d0a53e55473b756",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T09:53:17Z",
+      "message": "Retire ceph.yral.com; add Rook plugin to Headlamp; add Ceph metrics + Grafana dashboards",
+      "stats": {
+        "additions": 8475,
+        "deletions": 146,
+        "total": 8621
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7cb0358c2f22371aa050032002dad8cc73a25ac4",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T14:50:45+05:30",
+      "message": "Merge pull request #45 from dolr-ai/renovate/cert-manager",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "43bfa22512836190ac06b035b8a9e788df105184",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T14:50:14+05:30",
+      "message": "Merge pull request #64 from dolr-ai/renovate/cilium-cilium-1.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "844459896f109c0583df32ce25c1e4b6375649a6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T09:18:23Z",
+      "message": "cleanup: remove video processing, NSFW moderation, Google Chat reporting, and Storj integration",
+      "stats": {
+        "additions": 61,
+        "deletions": 2998,
+        "total": 3059
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7dc4d4bbbbbea4a8d8bd8ed7456cdeab9662c555",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T08:25:21Z",
+      "message": "cleanup: remove video upload feature and all associated components, routes, and analytics",
+      "stats": {
+        "additions": 11,
+        "deletions": 1478,
+        "total": 1489
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a505ecaf247c4ec0659b676784dffacc83ae2c57",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T07:23:55Z",
+      "message": "cleanup: remove profile feature and replace ProfileDetails with UserIdentity",
+      "stats": {
+        "additions": 139,
+        "deletions": 3765,
+        "total": 3904
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "286935c1ed0a68c098e79f9dce125cc98e083e32",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T05:41:22Z",
+      "message": "cleanup: remove ML feed, home page, and Mixpanel analytics; bump syn to v3",
+      "stats": {
+        "additions": 15,
+        "deletions": 1077,
+        "total": 1092
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a43d87094e011f7fe776e9343aafe9952da6732f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T04:31:20Z",
+      "message": "cleanup: remove unused saikat-dev-key.conf from pdns-tsig-key Secret",
+      "stats": {
+        "additions": 26,
+        "deletions": 27,
+        "total": 53
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "cb20f718df9dacf21d6e168e429b5064dd10b529",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T09:55:44+05:30",
+      "message": "Merge pull request #56 from dolr-ai/renovate/snowplow-snowplow-enrich-kafka-6.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e4f4e3a1f5177909cf9b7f1238fce6d8dce0fe87",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T09:55:16+05:30",
+      "message": "Merge pull request #46 from dolr-ai/renovate/metabase-metabase-0.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "86ee0f35a75afd2f49cb105551f18f95c067772c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T09:54:40+05:30",
+      "message": "Merge pull request #51 from dolr-ai/renovate/maxmindinc-geoipupdate-7.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "26cfce3b4decc80d75cdbbefd1f4705440b924ef",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T09:54:05+05:30",
+      "message": "Merge pull request #50 from dolr-ai/renovate/kube-prometheus-stack-82.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9b609d675e0570bdb360cd9647f36bf9bed94dcd",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T09:53:37+05:30",
+      "message": "Merge pull request #54 from dolr-ai/renovate/console-3.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "cbedd61f44484f0b37773c5fa8e84a7813b7e8ac",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T09:52:58+05:30",
+      "message": "Merge pull request #53 from dolr-ai/renovate/alloy-1.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "84f53caa0128025ac30f5f105fd96981a1036f2e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T04:18:37Z",
+      "message": "fix: add Gateway listener for saikat.dev apex domain",
+      "stats": {
+        "additions": 35,
+        "deletions": 2,
+        "total": 37
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3898febfe8cda39e65d3b4644b6dfba1be507e22",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T09:47:13+05:30",
+      "message": "Merge pull request #49 from dolr-ai/renovate/terraform-monorepo",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "03b11738019583e65b256807cea5cfd66a144970",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T09:46:33+05:30",
+      "message": "Merge pull request #65 from dolr-ai/renovate/kubernetes-kubernetes-1.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f47db1437a786e8c3198d57b8b988ce21d3f57f2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T04:15:51Z",
+      "message": "chore: update apps/my-website and apps/yral-mobile submodules",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d6882fa3ad5a3ffd1b7b071ad37927ccbd04f19a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T04:13:20Z",
+      "message": "refactor: generate dnsendpoint-saikat-dev.yaml from hosts.yml via Ansible",
+      "stats": {
+        "additions": 143,
+        "deletions": 114,
+        "total": 257
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "41a5b97a65693b44a0853b5e6ddf64831b7c5aaa",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T09:43:20+05:30",
+      "message": "Merge pull request #58 from dolr-ai/renovate/helm-helm-4.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b6be4076aca6a045354a786011417c37627fb469",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T09:42:48+05:30",
+      "message": "Merge pull request #72 from dolr-ai/renovate/dbeaver-cloudbeaver-26.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "13e9890b4d1fb4dc52c8234326cde311429ae3ae",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T04:08:48Z",
+      "message": "refactor: colocate service-specific details on manifests, slim AGENTS.md",
+      "stats": {
+        "additions": 70,
+        "deletions": 85,
+        "total": 155
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a5244702d62644d4f7ef83fc0b8ee27939f725ce",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T09:35:58+05:30",
+      "message": "Merge pull request #57 from dolr-ai/renovate/fluxcd-flux2-2.x",
+      "stats": {
+        "additions": 1339,
+        "deletions": 2627,
+        "total": 3966
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "23c15a159bdc37d90ad15af8b62215bdbda6b833",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T09:34:51+05:30",
+      "message": "Merge pull request #48 from dolr-ai/renovate/curlimages-curl-8.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "14190bcf2ae0ae06732233253dae96299ed9b140",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T09:33:45+05:30",
+      "message": "Merge pull request #47 from dolr-ai/renovate/clickhouse-clickhouse-server-26.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "47da4c580a4998b71c3810fea860cb7ee9841fc6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T03:57:49Z",
+      "message": "fix: point saikat.dev + wildcard to all worker IPs (mesh routing pattern)",
+      "stats": {
+        "additions": 75,
+        "deletions": 12,
+        "total": 87
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ff2f9138c656fd413701ce10b94f25d101988ab9",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T03:55:44Z",
+      "message": "fix: use CRD-only source for ExternalDNS + add saikat.dev A records",
+      "stats": {
+        "additions": 40,
+        "deletions": 28,
+        "total": 68
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ef5fe8393099e2999f92dab4e79ee0e48895ad04",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T03:46:07Z",
+      "message": "fix: add api-approved.kubernetes.io annotation to DNSEndpoint CRD",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "cc636ca7382bc7ab878a22d40fe486a73b00e796",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T03:44:54Z",
+      "message": "fix: PowerDNS fsGroup for LMDB PVC + ExternalDNS API rate limit increase",
+      "stats": {
+        "additions": 4,
+        "deletions": 0,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e8394d30f2e70409fce077f2bc4a165613d74df3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T03:42:40Z",
+      "message": "fix: switch to LMDB backend with DNSEndpoint CRDs for declarative DNS",
+      "stats": {
+        "additions": 202,
+        "deletions": 20,
+        "total": 222
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "2a56464167209f197276098e4428ffc5a5fd21cf",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T03:38:42Z",
+      "message": "fix: switch PowerDNS from bind to LMDB backend for RFC2136 support",
+      "stats": {
+        "additions": 184,
+        "deletions": 235,
+        "total": 419
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7138ee120cd3d80bfb621a8f2d5a6766f7a2e027",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T03:11:16Z",
+      "message": "fix: add Reloader annotation to PowerDNS for TSIG key secret changes",
+      "stats": {
+        "additions": 3,
+        "deletions": 0,
+        "total": 3
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a09211a2ecafc5e64e7b0ca732c1fea2b302653c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T03:05:47Z",
+      "message": "fix: increase ExternalDNS resources to prevent context deadline exceeded",
+      "stats": {
+        "additions": 4,
+        "deletions": 4,
+        "total": 8
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c6e720391944840f38f38bc7f2dcac771567687e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T03:04:22Z",
+      "message": "fix: rename TSIG key file to .conf (PowerDNS --include-dir only loads .conf files)",
+      "stats": {
+        "additions": 27,
+        "deletions": 27,
+        "total": 54
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ffa915576c0646af7c190c405b73cd0cf6dfb19a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T02:53:53Z",
+      "message": "chore: trigger my-website build (Harbor project created)",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f3d55bd565fae00b2286f8c5656b88c2749d64f5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T02:44:56Z",
+      "message": "chore: trigger my-website build",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "44acc4cf9e995fc87419a22ae9084f00a5a57f2a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T02:41:42Z",
+      "message": "chore: trigger my-website build via Tekton webhook",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "435158b0be52d447b15eacbd47024916b2174773",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-25T02:38:39Z",
+      "message": "docs: add mise trust note and bind9-dnsutils to bootstrap packages",
+      "stats": {
+        "additions": 15,
+        "deletions": 0,
+        "total": 15
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 45,
+  "issues": [],
+  "issue_count": 0
+}
