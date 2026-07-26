@@ -1,0 +1,910 @@
+{
+  "date": "2026-07-26",
+  "cached_at": "2026-07-26T19:43:26.283086Z",
+  "commits": [
+    {
+      "sha": "d97ad689bed448f55e4517424f5fe9891080b11c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-27T00:08:18+05:30",
+      "message": "chore: remove rate limiting and polling infrastructure for video generation (#1216)",
+      "stats": {
+        "additions": 10,
+        "deletions": 1292,
+        "total": 1302
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6da4261c8e99742217ab664076d86b4f596e79f9",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-26T16:25:10Z",
+      "message": "chore(deps): update dependencies in apps/yral-auth/Cargo.lock and fix apps/README.md table alignment",
+      "stats": {
+        "additions": 141,
+        "deletions": 252,
+        "total": 393
+      },
+      "branches": [
+        "renovate/tokio-tracing-monorepo",
+        "renovate/tailwindcss-monorepo",
+        "renovate/serde-monorepo",
+        "renovate/serde_json-1.x-lockfile",
+        "renovate/serde_json-1.x",
+        "renovate/playwright-monorepo",
+        "renovate/once_cell-1.x-lockfile",
+        "renovate/oauth2-proxy",
+        "renovate/log-0.x-lockfile",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/github-actions",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/chrono-0.x-lockfile",
+        "renovate/chrono-0.x",
+        "renovate/busybox-1.x",
+        "renovate/bb8-0.x",
+        "renovate/axum-monorepo",
+        "renovate/anyhow-1.x-lockfile",
+        "main"
+      ]
+    },
+    {
+      "sha": "4f450d126af7b27bf186989e49fca1865d00a3bb",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-26T21:51:06+05:30",
+      "message": "Merge pull request #97 from dolr-ai/renovate/cilium-1.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/tokio-tracing-monorepo",
+        "renovate/tailwindcss-monorepo",
+        "renovate/serde-monorepo",
+        "renovate/serde_json-1.x-lockfile",
+        "renovate/serde_json-1.x",
+        "renovate/playwright-monorepo",
+        "renovate/once_cell-1.x-lockfile",
+        "renovate/oauth2-proxy",
+        "renovate/log-0.x-lockfile",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/github-actions",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/chrono-0.x-lockfile",
+        "renovate/chrono-0.x",
+        "renovate/busybox-1.x",
+        "renovate/bb8-0.x",
+        "renovate/axum-monorepo",
+        "renovate/anyhow-1.x-lockfile",
+        "main"
+      ]
+    },
+    {
+      "sha": "e62bb247e45c7a35a2dcd3673166ffd47c48af2e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-26T21:50:22+05:30",
+      "message": "Merge pull request #96 from dolr-ai/renovate/bytebase-1.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/tokio-tracing-monorepo",
+        "renovate/tailwindcss-monorepo",
+        "renovate/serde-monorepo",
+        "renovate/serde_json-1.x-lockfile",
+        "renovate/serde_json-1.x",
+        "renovate/playwright-monorepo",
+        "renovate/once_cell-1.x-lockfile",
+        "renovate/oauth2-proxy",
+        "renovate/log-0.x-lockfile",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/github-actions",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/chrono-0.x-lockfile",
+        "renovate/chrono-0.x",
+        "renovate/busybox-1.x",
+        "renovate/bb8-0.x",
+        "renovate/axum-monorepo",
+        "renovate/anyhow-1.x-lockfile",
+        "main"
+      ]
+    },
+    {
+      "sha": "061b8bf260a51261b873e8af1fd7491cdb9576a3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-26T21:49:25+05:30",
+      "message": "Merge pull request #95 from dolr-ai/renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/tokio-tracing-monorepo",
+        "renovate/tailwindcss-monorepo",
+        "renovate/serde-monorepo",
+        "renovate/serde_json-1.x-lockfile",
+        "renovate/serde_json-1.x",
+        "renovate/playwright-monorepo",
+        "renovate/once_cell-1.x-lockfile",
+        "renovate/oauth2-proxy",
+        "renovate/log-0.x-lockfile",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/github-actions",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/chrono-0.x-lockfile",
+        "renovate/chrono-0.x",
+        "renovate/busybox-1.x",
+        "renovate/bb8-0.x",
+        "renovate/axum-monorepo",
+        "renovate/anyhow-1.x-lockfile",
+        "main"
+      ]
+    },
+    {
+      "sha": "e325e920fcd598f456f4f01f934b94749aace322",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-26T14:49:37Z",
+      "message": "Remove deprecated bindings and types related to rate limiting and video generation",
+      "stats": {
+        "additions": 115,
+        "deletions": 1554,
+        "total": 1669
+      },
+      "branches": [
+        "renovate/tokio-tracing-monorepo",
+        "renovate/tailwindcss-monorepo",
+        "renovate/serde-monorepo",
+        "renovate/serde_json-1.x-lockfile",
+        "renovate/serde_json-1.x",
+        "renovate/playwright-monorepo",
+        "renovate/once_cell-1.x-lockfile",
+        "renovate/oauth2-proxy",
+        "renovate/log-0.x-lockfile",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/github-actions",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/chrono-0.x-lockfile",
+        "renovate/chrono-0.x",
+        "renovate/busybox-1.x",
+        "renovate/bb8-0.x",
+        "renovate/axum-monorepo",
+        "renovate/anyhow-1.x-lockfile",
+        "main"
+      ]
+    },
+    {
+      "sha": "269052e3fe670aaf1bafad65bf58a2285b7d2a3c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-26T14:48:57Z",
+      "message": "refactor: remove deprecated reducers and tables related to video generation requests",
+      "stats": {
+        "additions": 223,
+        "deletions": 3191,
+        "total": 3414
+      },
+      "branches": [
+        "renovate/tokio-tracing-monorepo",
+        "renovate/tailwindcss-monorepo",
+        "renovate/serde-monorepo",
+        "renovate/serde_json-1.x-lockfile",
+        "renovate/serde_json-1.x",
+        "renovate/playwright-monorepo",
+        "renovate/once_cell-1.x-lockfile",
+        "renovate/oauth2-proxy",
+        "renovate/log-0.x-lockfile",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/github-actions",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/chrono-0.x-lockfile",
+        "renovate/chrono-0.x",
+        "renovate/busybox-1.x",
+        "renovate/bb8-0.x",
+        "renovate/axum-monorepo",
+        "renovate/anyhow-1.x-lockfile",
+        "main"
+      ]
+    },
+    {
+      "sha": "4262f178cbbfa08675b21ede496a56e6120a6c40",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-26T12:14:27Z",
+      "message": "feat: add video generation request handling and rate limiting",
+      "stats": {
+        "additions": 3505,
+        "deletions": 897,
+        "total": 4402
+      },
+      "branches": [
+        "renovate/tokio-tracing-monorepo",
+        "renovate/tailwindcss-monorepo",
+        "renovate/serde-monorepo",
+        "renovate/serde_json-1.x-lockfile",
+        "renovate/serde_json-1.x",
+        "renovate/playwright-monorepo",
+        "renovate/once_cell-1.x-lockfile",
+        "renovate/oauth2-proxy",
+        "renovate/log-0.x-lockfile",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/github-actions",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/chrono-0.x-lockfile",
+        "renovate/chrono-0.x",
+        "renovate/busybox-1.x",
+        "renovate/bb8-0.x",
+        "renovate/axum-monorepo",
+        "renovate/anyhow-1.x-lockfile",
+        "main"
+      ]
+    },
+    {
+      "sha": "bafce3a47abdca98962e891b5068aeaad68faab0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-26T18:04:03+05:30",
+      "message": "Merge pull request #94 from dolr-ai/renovate/ghcr.io-shipwright-io-build-shipwright-build-controller",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/tokio-tracing-monorepo",
+        "renovate/tailwindcss-monorepo",
+        "renovate/serde-monorepo",
+        "renovate/serde_json-1.x-lockfile",
+        "renovate/serde_json-1.x",
+        "renovate/playwright-monorepo",
+        "renovate/once_cell-1.x-lockfile",
+        "renovate/oauth2-proxy",
+        "renovate/log-0.x-lockfile",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/github-actions",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/chrono-0.x-lockfile",
+        "renovate/chrono-0.x",
+        "renovate/busybox-1.x",
+        "renovate/bb8-0.x",
+        "renovate/axum-monorepo",
+        "renovate/anyhow-1.x-lockfile",
+        "main"
+      ]
+    },
+    {
+      "sha": "332fc1d8bd640a67cf4531474adbaaf983d251e2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-26T18:01:19+05:30",
+      "message": "Merge pull request #110 from dolr-ai/renovate/ic-utils-0.x-lockfile",
+      "stats": {
+        "additions": 38,
+        "deletions": 29,
+        "total": 67
+      },
+      "branches": [
+        "renovate/tokio-tracing-monorepo",
+        "renovate/tailwindcss-monorepo",
+        "renovate/serde-monorepo",
+        "renovate/serde_json-1.x-lockfile",
+        "renovate/serde_json-1.x",
+        "renovate/playwright-monorepo",
+        "renovate/once_cell-1.x-lockfile",
+        "renovate/oauth2-proxy",
+        "renovate/log-0.x-lockfile",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/github-actions",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/chrono-0.x-lockfile",
+        "renovate/chrono-0.x",
+        "renovate/busybox-1.x",
+        "renovate/bb8-0.x",
+        "renovate/axum-monorepo",
+        "renovate/anyhow-1.x-lockfile",
+        "main"
+      ]
+    },
+    {
+      "sha": "8114e0a6e95e87a8f87784c0601555e46507541e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-26T17:20:21+05:30",
+      "message": "Merge pull request #93 from dolr-ai/renovate/ic-validator-ingress-message-digest",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/tokio-tracing-monorepo",
+        "renovate/tailwindcss-monorepo",
+        "renovate/serde-monorepo",
+        "renovate/serde_json-1.x-lockfile",
+        "renovate/serde_json-1.x",
+        "renovate/playwright-monorepo",
+        "renovate/once_cell-1.x-lockfile",
+        "renovate/oauth2-proxy",
+        "renovate/log-0.x-lockfile",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/github-actions",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/chrono-0.x-lockfile",
+        "renovate/chrono-0.x",
+        "renovate/busybox-1.x",
+        "renovate/bb8-0.x",
+        "renovate/axum-monorepo",
+        "renovate/anyhow-1.x-lockfile",
+        "main"
+      ]
+    },
+    {
+      "sha": "771cc8ddfcb8698aac8fe2798737652c67b69d7a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-26T17:17:01+05:30",
+      "message": "Merge pull request #92 from dolr-ai/renovate/ic-types-digest",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/tokio-tracing-monorepo",
+        "renovate/tailwindcss-monorepo",
+        "renovate/serde-monorepo",
+        "renovate/serde_json-1.x-lockfile",
+        "renovate/serde_json-1.x",
+        "renovate/playwright-monorepo",
+        "renovate/once_cell-1.x-lockfile",
+        "renovate/oauth2-proxy",
+        "renovate/log-0.x-lockfile",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/github-actions",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/chrono-0.x-lockfile",
+        "renovate/chrono-0.x",
+        "renovate/busybox-1.x",
+        "renovate/bb8-0.x",
+        "renovate/axum-monorepo",
+        "renovate/anyhow-1.x-lockfile",
+        "main"
+      ]
+    },
+    {
+      "sha": "f44eec7d6c87d3bb120363181d697391102c9b06",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-26T03:16:41Z",
+      "message": "docs(ceph): document custom same-region CRUSH rule",
+      "stats": {
+        "additions": 27,
+        "deletions": 14,
+        "total": 41
+      },
+      "branches": [
+        "renovate/tokio-tracing-monorepo",
+        "renovate/tailwindcss-monorepo",
+        "renovate/serde-monorepo",
+        "renovate/serde_json-1.x-lockfile",
+        "renovate/serde_json-1.x",
+        "renovate/playwright-monorepo",
+        "renovate/once_cell-1.x-lockfile",
+        "renovate/oauth2-proxy",
+        "renovate/log-0.x-lockfile",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/github-actions",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/chrono-0.x-lockfile",
+        "renovate/chrono-0.x",
+        "renovate/busybox-1.x",
+        "renovate/bb8-0.x",
+        "renovate/axum-monorepo",
+        "renovate/anyhow-1.x-lockfile",
+        "main"
+      ]
+    },
+    {
+      "sha": "a254329c8d88e9cd8fcd4505ad9e04729a64b9af",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-26T03:10:55Z",
+      "message": "fix(ceph): move replicasPerFailureDomain/subFailureDomain inside replicated section",
+      "stats": {
+        "additions": 14,
+        "deletions": 8,
+        "total": 22
+      },
+      "branches": [
+        "renovate/tokio-tracing-monorepo",
+        "renovate/tailwindcss-monorepo",
+        "renovate/serde-monorepo",
+        "renovate/serde_json-1.x-lockfile",
+        "renovate/serde_json-1.x",
+        "renovate/playwright-monorepo",
+        "renovate/once_cell-1.x-lockfile",
+        "renovate/oauth2-proxy",
+        "renovate/log-0.x-lockfile",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/github-actions",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/chrono-0.x-lockfile",
+        "renovate/chrono-0.x",
+        "renovate/busybox-1.x",
+        "renovate/bb8-0.x",
+        "renovate/axum-monorepo",
+        "renovate/anyhow-1.x-lockfile",
+        "main"
+      ]
+    },
+    {
+      "sha": "1a09476a9dcf7e0272b683db0eb377d21b134119",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-26T03:08:59Z",
+      "message": "feat(ceph): same-region replica placement for ceph-blockpool",
+      "stats": {
+        "additions": 29,
+        "deletions": 5,
+        "total": 34
+      },
+      "branches": [
+        "renovate/tokio-tracing-monorepo",
+        "renovate/tailwindcss-monorepo",
+        "renovate/serde-monorepo",
+        "renovate/serde_json-1.x-lockfile",
+        "renovate/serde_json-1.x",
+        "renovate/playwright-monorepo",
+        "renovate/once_cell-1.x-lockfile",
+        "renovate/oauth2-proxy",
+        "renovate/log-0.x-lockfile",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/github-actions",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/chrono-0.x-lockfile",
+        "renovate/chrono-0.x",
+        "renovate/busybox-1.x",
+        "renovate/bb8-0.x",
+        "renovate/axum-monorepo",
+        "renovate/anyhow-1.x-lockfile",
+        "main"
+      ]
+    },
+    {
+      "sha": "29bf6565fb4c75e9112cbeb4f45bc59f8a0e6b03",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-26T22:57:46+05:30",
+      "message": "Merge pull request #119 from dolr-ai/renovate/velero-velero-plugin-for-aws-1.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/tailwindcss-monorepo",
+        "renovate/serde-monorepo",
+        "renovate/serde_json-1.x",
+        "renovate/playwright-monorepo",
+        "renovate/oauth2-proxy",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/github-actions",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/chrono-0.x",
+        "renovate/busybox-1.x",
+        "renovate/bb8-0.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "17d5fdec0432d4f07f28d79fe6b1e06e1aedd80c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-26T17:27:07Z",
+      "message": "chore(deps): update dependencies in apps/off-chain-agent/Cargo.lock",
+      "stats": {
+        "additions": 107,
+        "deletions": 106,
+        "total": 213
+      },
+      "branches": [
+        "renovate/tailwindcss-monorepo",
+        "renovate/serde-monorepo",
+        "renovate/serde_json-1.x",
+        "renovate/playwright-monorepo",
+        "renovate/oauth2-proxy",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/github-actions",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/chrono-0.x",
+        "renovate/busybox-1.x",
+        "renovate/bb8-0.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "06dee5161de36a4e562e84d608548cc0f58ccc3d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-26T22:55:37+05:30",
+      "message": "Merge pull request #101 from dolr-ai/renovate/quay.io-ceph-ceph-20.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/tailwindcss-monorepo",
+        "renovate/serde-monorepo",
+        "renovate/serde_json-1.x",
+        "renovate/playwright-monorepo",
+        "renovate/oauth2-proxy",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/github-actions",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/chrono-0.x",
+        "renovate/busybox-1.x",
+        "renovate/bb8-0.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "6b5bdb835e9d9c65027f2a339d207a0690d854d2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-26T22:54:50+05:30",
+      "message": "Merge pull request #100 from dolr-ai/renovate/moby-buildkit-0.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/tailwindcss-monorepo",
+        "renovate/serde-monorepo",
+        "renovate/serde_json-1.x",
+        "renovate/playwright-monorepo",
+        "renovate/oauth2-proxy",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/github-actions",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/chrono-0.x",
+        "renovate/busybox-1.x",
+        "renovate/bb8-0.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "a72a24175bfacc7f0350ca9c690f28b78029e3c6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-26T22:54:22+05:30",
+      "message": "Merge pull request #99 from dolr-ai/renovate/reloader-2.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/tailwindcss-monorepo",
+        "renovate/serde-monorepo",
+        "renovate/serde_json-1.x",
+        "renovate/playwright-monorepo",
+        "renovate/oauth2-proxy",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/github-actions",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/chrono-0.x",
+        "renovate/busybox-1.x",
+        "renovate/bb8-0.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "5c1500e1cd46c9ea8c4a011ae785cf09cf45d223",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-26T22:53:45+05:30",
+      "message": "Merge pull request #98 from dolr-ai/renovate/metrics-server-3.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/tailwindcss-monorepo",
+        "renovate/serde-monorepo",
+        "renovate/serde_json-1.x",
+        "renovate/playwright-monorepo",
+        "renovate/oauth2-proxy",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/github-actions",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/chrono-0.x",
+        "renovate/busybox-1.x",
+        "renovate/bb8-0.x",
+        "renovate/anyhow-1.x-lockfile",
+        "main"
+      ]
+    },
+    {
+      "sha": "d1bc34326e552396f2f53e8beb1f891561bd92bd",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-26T17:11:07Z",
+      "message": "chore(deps): update dependencies in apps/yral-metadata/Cargo.lock",
+      "stats": {
+        "additions": 607,
+        "deletions": 648,
+        "total": 1255
+      },
+      "branches": [
+        "renovate/tailwindcss-monorepo",
+        "renovate/serde-monorepo",
+        "renovate/serde_json-1.x",
+        "renovate/playwright-monorepo",
+        "renovate/oauth2-proxy",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/github-actions",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/chrono-0.x",
+        "renovate/busybox-1.x",
+        "renovate/bb8-0.x",
+        "renovate/anyhow-1.x-lockfile",
+        "main"
+      ]
+    },
+    {
+      "sha": "fd30be08199b499e63daa905682a7ad499f969b5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-26T16:55:06Z",
+      "message": "feat: remove rate_limits canister integration + add SpacetimeDB scaffolding + canister mise tasks",
+      "stats": {
+        "additions": 98,
+        "deletions": 51,
+        "total": 149
+      },
+      "branches": [
+        "renovate/tailwindcss-monorepo",
+        "renovate/serde-monorepo",
+        "renovate/serde_json-1.x",
+        "renovate/playwright-monorepo",
+        "renovate/oauth2-proxy",
+        "renovate/log-0.x-lockfile",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/github-actions",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/chrono-0.x-lockfile",
+        "renovate/chrono-0.x",
+        "renovate/busybox-1.x",
+        "renovate/bb8-0.x",
+        "renovate/anyhow-1.x-lockfile",
+        "main"
+      ]
+    },
+    {
+      "sha": "26a1c17357e8c2da64443d225dd778f0c06bb826",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-26T16:35:45Z",
+      "message": "chore(deps): update yral-metadata dependencies and fix ic_git API usage",
+      "stats": {
+        "additions": 290,
+        "deletions": 347,
+        "total": 637
+      },
+      "branches": [
+        "renovate/tailwindcss-monorepo",
+        "renovate/serde-monorepo",
+        "renovate/serde_json-1.x",
+        "renovate/playwright-monorepo",
+        "renovate/oauth2-proxy",
+        "renovate/log-0.x-lockfile",
+        "renovate/kubernetes-sigs-gateway-api-1.x",
+        "renovate/github-actions",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/chrono-0.x-lockfile",
+        "renovate/chrono-0.x",
+        "renovate/busybox-1.x",
+        "renovate/bb8-0.x",
+        "renovate/anyhow-1.x-lockfile",
+        "main"
+      ]
+    },
+    {
+      "sha": "265c60b270c3e57aebbb54d5625c3ddecf3cd8cb",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-26T22:58:43+05:30",
+      "message": "chore(deps): update yral-mobile submodule",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "2a79d7348ee3093bc0cfe7bd7e18132182fe82fb",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-07-26T16:53:36Z",
+      "message": "chore: document mise wrapper for generate-candid.sh",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4608a80f60c7d7bb0ea25332bef897b0f32453ae",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-07-26T16:48:10Z",
+      "message": "chore: remove legacy install and test scripts, migrate to mise tasks",
+      "stats": {
+        "additions": 14,
+        "deletions": 65,
+        "total": 79
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ddc491b79dc9d05a6d7e479e1f3180b0a635e85c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-07-26T03:52:47Z",
+      "message": "chore: remove todo.md file with outdated canister management notes",
+      "stats": {
+        "additions": 0,
+        "deletions": 28,
+        "total": 28
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8ca807ba3383d705c1be8e2d19f5203a6a80ff65",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-07-26T15:04:11Z",
+      "message": "refactor: remove rate limiter canister integration and related code",
+      "stats": {
+        "additions": 37,
+        "deletions": 537,
+        "total": 574
+      },
+      "branches": [
+        "saikat/remove-rate-limit-canister"
+      ]
+    },
+    {
+      "sha": "61aa5244bf0425d1303a82852284e6b72bc7fad6",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-26T16:12:04+05:30",
+      "message": "fix(character-gen): graceful flagged-envelope on Gemini content block (#467)",
+      "stats": {
+        "additions": 3,
+        "deletions": 2,
+        "total": 5
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a4ffb47d229f5eb51e6aa7923efbedcd2c6a9e33",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-26T15:13:31+05:30",
+      "message": "fix(search): drop route-level max_length so search never 422s (#466)",
+      "stats": {
+        "additions": 16,
+        "deletions": 6,
+        "total": 22
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "788b6ea393d773727f1f58960fd3f6d594bfdfa3",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-26T14:58:07+05:30",
+      "message": "ci: pin ruff==0.15.14 so a new release can't fail CI on pre-existing code (#468)",
+      "stats": {
+        "additions": 4,
+        "deletions": 1,
+        "total": 5
+      },
+      "branches": [
+        "main",
+        "agent/trivy-cve-cleanup-2026-07-26"
+      ]
+    },
+    {
+      "sha": "edf38e1141a2e529ddc9a62381932f8ad7500ca3",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-26T16:29:07+05:30",
+      "message": "fix(docker): apply base-image OS security patches to clear Trivy HIGH/CRITICAL",
+      "stats": {
+        "additions": 8,
+        "deletions": 0,
+        "total": 8
+      },
+      "branches": [
+        "agent/trivy-cve-cleanup-2026-07-26"
+      ]
+    }
+  ],
+  "commit_count": 33,
+  "issues": [],
+  "issue_count": 0
+}
