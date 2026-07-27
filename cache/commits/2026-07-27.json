@@ -1,0 +1,653 @@
+{
+  "date": "2026-07-27",
+  "cached_at": "2026-07-27T20:04:10.214844Z",
+  "commits": [
+    {
+      "sha": "9f3d7ba1b4d49d14263a152ba7eb48a0a524f8ac",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-07-28T01:24:24+05:30",
+      "message": "send notification to all environment",
+      "stats": {
+        "additions": 125,
+        "deletions": 7,
+        "total": 132
+      },
+      "branches": [
+        "naitik/impl_staging_notification"
+      ]
+    },
+    {
+      "sha": "d3054f6d964303d3ab42fe3d47cc8b38804b37d4",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-07-28T01:09:17+05:30",
+      "message": "formatting",
+      "stats": {
+        "additions": 13,
+        "deletions": 19,
+        "total": 32
+      },
+      "branches": [
+        "naitik/impl_staging_notification"
+      ]
+    },
+    {
+      "sha": "c7feda2fd796abf59b791e35978c19ef48691ca1",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-07-28T01:08:54+05:30",
+      "message": "fix: update enviroment logic for notification",
+      "stats": {
+        "additions": 87,
+        "deletions": 38,
+        "total": 125
+      },
+      "branches": [
+        "naitik/impl_staging_notification"
+      ]
+    },
+    {
+      "sha": "652b469e2a184aa0616f19852c9c21e6c53d23f5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-27T17:35:58+05:30",
+      "message": "Update Ruby and mise tools, align iOS deployment target (#1218)",
+      "stats": {
+        "additions": 18,
+        "deletions": 9,
+        "total": 27
+      },
+      "branches": [
+        "saikat/migrate-user-posts",
+        "main",
+        "fix/pin-monorepo-rev"
+      ]
+    },
+    {
+      "sha": "861150f38e07c7dc35348a603a700de06d2d4e09",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-27T13:31:16+05:30",
+      "message": "Update candid and remove ic-git feature (#1217)",
+      "stats": {
+        "additions": 59,
+        "deletions": 1193,
+        "total": 1252
+      },
+      "branches": [
+        "saikat/migrate-user-posts",
+        "main",
+        "fix/pin-monorepo-rev"
+      ]
+    },
+    {
+      "sha": "7278483fd28c08c3bc8c26f624c4c71933885dd2",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-28T00:18:31+05:30",
+      "message": "fix: pin yral-* monorepo deps to pre-my-website-submodule rev",
+      "stats": {
+        "additions": 1167,
+        "deletions": 53,
+        "total": 1220
+      },
+      "branches": [
+        "fix/pin-monorepo-rev"
+      ]
+    },
+    {
+      "sha": "f90555259c231f553bfe6728c1f3d644122e23b3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-07-27T12:10:49Z",
+      "message": "chore: update .gitignore to ignore .pem files only in root directory",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "20480533bf25cbf5d101b76be964d2413e7f384a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-07-27T11:03:47Z",
+      "message": "chore: remove sqlite tracking, switch to CSV canister list and timestamp versions",
+      "stats": {
+        "additions": 464,
+        "deletions": 1446,
+        "total": 1910
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "80af02bb770824efa487a458a80f75c01fb9c183",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-07-27T10:21:50Z",
+      "message": "chore: remove rate_limits canister and refactor task_runner harvest to use CSV",
+      "stats": {
+        "additions": 226,
+        "deletions": 5653,
+        "total": 5879
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9b08d892cc14df4b73a6f383b3767aeb4205998c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-07-27T04:56:27Z",
+      "message": "chore: update candid to 0.10.32",
+      "stats": {
+        "additions": 5,
+        "deletions": 5,
+        "total": 10
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "0c782262f2c31be62bac2d76b8d7fe7a137693df",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-27T11:05:16Z",
+      "message": "chore: add canister-harvest task and update build configs",
+      "stats": {
+        "additions": 44,
+        "deletions": 7,
+        "total": 51
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "6b9bc41e41c003f461ed101f2a3ea955339cb841",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-27T15:29:11+05:30",
+      "message": "chore: update yral-mobile submodule",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "28aa0e7a8f1f0232f978f09cbf03110dbe55a2e8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-27T08:52:45Z",
+      "message": "chore: remove off-chain-agent-bootstrap task",
+      "stats": {
+        "additions": 1,
+        "deletions": 6,
+        "total": 7
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "d4d833b2c9161f1ccc8ba640fbe31e1edc4b152d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-27T08:43:27Z",
+      "message": "chore: populate fnox.toml secrets with age-encrypted values",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "aacba709e43a9935d89d3aecffe23f712671c983",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-27T06:35:39Z",
+      "message": "chore: remove telemetry_axum copy from Dockerfile.buildkit",
+      "stats": {
+        "additions": 0,
+        "deletions": 1,
+        "total": 1
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "4427ee18d91fdcba0c4901f296ecbe17f940365a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-27T11:50:07+05:30",
+      "message": "chore: update yral-mobile submodule",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "abb17b9f9a67d201bd9faab95695dcb3d3ddbf3c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-27T06:05:16Z",
+      "message": "chore: remove rate_limits client and update tower dependencies",
+      "stats": {
+        "additions": 56,
+        "deletions": 87,
+        "total": 143
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "d4dcf65158763e917611270310a27fcaeacf4866",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-27T06:05:06Z",
+      "message": "chore: remove obsolete rate_limits.did candid interface",
+      "stats": {
+        "additions": 0,
+        "deletions": 128,
+        "total": 128
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "3b4a3b6c80e56732417b007f3a8df25cebcc5438",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-27T05:22:38Z",
+      "message": "chore: update yral-mobile submodule",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "5c18ef5d52c971d5c8c12870af9400428c006be3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-27T05:22:05Z",
+      "message": "chore: remove apps/yral-common/Cargo.lock",
+      "stats": {
+        "additions": 0,
+        "deletions": 6172,
+        "total": 6172
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "f3cd1d5be857059a3c1ff8656a3ad7d21eb0db19",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-27T05:15:13Z",
+      "message": "ci: remove obsolete CARGO_NET_GIT_FETCH_WITH_CLI workaround and update dependencies",
+      "stats": {
+        "additions": 1820,
+        "deletions": 3119,
+        "total": 4939
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "7809f8acf95e70e72021f261b3021ca744d52795",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-27T04:59:53Z",
+      "message": "refactor: vendor IC ingress verification and update candid to 0.10.32",
+      "stats": {
+        "additions": 351,
+        "deletions": 3120,
+        "total": 3471
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "841b10f8ea6c22cbc56dee925b0db9b9adc9913e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-27T04:28:51Z",
+      "message": "refactor: remove gRPC, GA4 analytics, and telemetry support",
+      "stats": {
+        "additions": 51,
+        "deletions": 2345,
+        "total": 2396
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "412da2825999eac53ca78a20d5819bbde9a8896d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-27T09:02:30+05:30",
+      "message": "Merge pull request #131 from dolr-ai/renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b889",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "2ff49f5c845f96fad61ae3774c7ea52e3ebd5a13",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-27T03:29:01Z",
+      "message": "ci: remove contracts CI workflow",
+      "stats": {
+        "additions": 0,
+        "deletions": 29,
+        "total": 29
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "3ff5e276dd70d6cca742354c9167732b3e5099a1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-27T08:54:23+05:30",
+      "message": "Merge pull request #129 from dolr-ai/renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f336513",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "2663416659e44d6545f4113af1c190a3b5e90c67",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-27T08:52:51+05:30",
+      "message": "Merge pull request #127 from dolr-ai/renovate/kubernetes-sigs-gateway-api-1.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "c4820657f8191ae89f716718c3ee82d9bffe696f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-27T08:41:16+05:30",
+      "message": "Merge pull request #102 from dolr-ai/renovate/oauth2-proxy",
+      "stats": {
+        "additions": 9,
+        "deletions": 9,
+        "total": 18
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "9651ad66b03fa6b0645657b031d6dc4da2db8618",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-27T08:40:50+05:30",
+      "message": "Merge pull request #128 from dolr-ai/renovate/tailwindcss-monorepo",
+      "stats": {
+        "additions": 6,
+        "deletions": 6,
+        "total": 12
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "53d2be26548ada275a1f744cfa2baab59fe338b6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-27T03:10:07Z",
+      "message": "chore(deps): update dependency chrono to v0.4.45",
+      "stats": {
+        "additions": 4,
+        "deletions": 11,
+        "total": 15
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "8760b63f57df7890b8d3477f2ac10bd5c1cf365d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-27T03:08:38Z",
+      "message": "chore: reformat and sort off-chain-agent dependencies",
+      "stats": {
+        "additions": 62,
+        "deletions": 37,
+        "total": 99
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "394b840f28f181d8c94f3b53d1e8a93f061dbb8c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-27T03:05:54Z",
+      "message": "chore: remove apps/yral-common/.envrc",
+      "stats": {
+        "additions": 0,
+        "deletions": 1,
+        "total": 1
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "9bc91d5554a50a76720703ac952404ac644b016c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-27T08:34:53+05:30",
+      "message": "Merge pull request #126 from dolr-ai/renovate/playwright-monorepo",
+      "stats": {
+        "additions": 64,
+        "deletions": 29,
+        "total": 93
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "a592108a069e03541e507f58d480edd20d60dffb",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-27T08:33:22+05:30",
+      "message": "Merge pull request #125 from dolr-ai/renovate/busybox-1.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "e0e07d9675d9a2b360f2a23d65b588b480cae133",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-27T16:13:35+05:30",
+      "message": "fix(docker): apply base-image OS security patches to clear Trivy HIGH/CRITICAL (#469)",
+      "stats": {
+        "additions": 8,
+        "deletions": 0,
+        "total": 8
+      },
+      "branches": [
+        "main",
+        "docs/fix-stale-deploy-faq-2026-07-27",
+        "docs/adopt-cleanup-plan-and-audit-2026-07-27"
+      ]
+    },
+    {
+      "sha": "d4c71f1532b0d4512f2ebd9d789fb1805e9050e9",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-27T16:13:31+05:30",
+      "message": "docs(postmortem): 07-21 patroni cascade + corrected root cause & repair plan (#464)",
+      "stats": {
+        "additions": 255,
+        "deletions": 0,
+        "total": 255
+      },
+      "branches": [
+        "main",
+        "docs/fix-stale-deploy-faq-2026-07-27",
+        "docs/adopt-cleanup-plan-and-audit-2026-07-27"
+      ]
+    },
+    {
+      "sha": "969fcbd00726127c8862b6687fd7c9f2d2e8ffb2",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-27T16:06:19+05:30",
+      "message": "fix(patroni): wire PGPASSWORD_SUPERUSER from the real password (stop defaulting to 'zalando') (#470)",
+      "stats": {
+        "additions": 24,
+        "deletions": 0,
+        "total": 24
+      },
+      "branches": [
+        "main",
+        "docs/fix-stale-deploy-faq-2026-07-27",
+        "docs/adopt-cleanup-plan-and-audit-2026-07-27"
+      ]
+    },
+    {
+      "sha": "88b12c5ce7aa8eeba911731dd1cc1fe248f05d12",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-27T16:37:43+05:30",
+      "message": "docs(deploy): fix stale FAQ that contradicts the auto-on-merge body [cleanup Wave 0 PR1]",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "docs/fix-stale-deploy-faq-2026-07-27"
+      ]
+    },
+    {
+      "sha": "d02107250fc830750c18d8fdd328969b4833470c",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-27T16:30:19+05:30",
+      "message": "docs(cleanup): adopt the v2 cleanup plan + attach the 5-way baseline audit",
+      "stats": {
+        "additions": 782,
+        "deletions": 0,
+        "total": 782
+      },
+      "branches": [
+        "docs/adopt-cleanup-plan-and-audit-2026-07-27"
+      ]
+    },
+    {
+      "sha": "b0b1b0dd358c00cb4bf966e217a83e998812594d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-07-27T15:53:00+05:30",
+      "message": "Remove rate limiter canister integration (#84)",
+      "stats": {
+        "additions": 1461,
+        "deletions": 718,
+        "total": 2179
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 40,
+  "issues": [
+    {
+      "number": 2065,
+      "title": "Confirm that Cloudflare stream in not being uploaded to and delivered from. Once confirmed, remove all of the videos and images here",
+      "closed_at": "2026-07-27T04:14:06Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2065",
+      "labels": []
+    }
+  ],
+  "issue_count": 1
+}
