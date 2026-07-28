@@ -1,0 +1,181 @@
+{
+  "date": "2026-07-28",
+  "cached_at": "2026-07-28T20:01:15.751150Z",
+  "commits": [
+    {
+      "sha": "cecf986fd4e3b7d5fb642c401359943dcbbfdb96",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-28T08:55:56Z",
+      "message": "feat: add IC to SpacetimeDB backfill test and enforce workspace dependency versioning",
+      "stats": {
+        "additions": 317,
+        "deletions": 0,
+        "total": 317
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main",
+        "dependabot/pip/vastai-gte-1.5.1"
+      ]
+    },
+    {
+      "sha": "120ebad84ae0b1c3522c5fe7f4eb78f4de2f6b5e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-28T06:33:32Z",
+      "message": "feat: initialize website project with SvelteKit 2, mdsvex, and PWA support",
+      "stats": {
+        "additions": 11300,
+        "deletions": 5,
+        "total": 11305
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main",
+        "dependabot/pip/vastai-gte-1.5.1"
+      ]
+    },
+    {
+      "sha": "eb50c3d299190b41a2d491c173d8a553b71bccd2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-28T06:25:06Z",
+      "message": "feat: implement posts feature in SpacetimeDB module",
+      "stats": {
+        "additions": 3043,
+        "deletions": 7,
+        "total": 3050
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main",
+        "dependabot/pip/vastai-gte-1.5.1"
+      ]
+    },
+    {
+      "sha": "2a8003e97522601a2efb490d2603cf6c7b5d9cc8",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-28T23:19:26+05:30",
+      "message": "chore: migrate iOS dependencies to SwiftPM",
+      "stats": {
+        "additions": 1202,
+        "deletions": 1188,
+        "total": 2390
+      },
+      "branches": [
+        "sarvesh/spm-migration"
+      ]
+    },
+    {
+      "sha": "7e5ae76ea55abd6275479a5e1da8f71065b83e54",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-28T22:07:45+05:30",
+      "message": "fix: pin yral-* monorepo deps to pre-my-website-submodule rev (#1219)",
+      "stats": {
+        "additions": 1167,
+        "deletions": 53,
+        "total": 1220
+      },
+      "branches": [
+        "sarvesh/spm-migration",
+        "main"
+      ]
+    },
+    {
+      "sha": "5bdb3c7026443ab21565fcf68d3d147f9034b9c0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-28T10:59:44Z",
+      "message": "chore: remove mise.toml",
+      "stats": {
+        "additions": 0,
+        "deletions": 40,
+        "total": 40
+      },
+      "branches": [
+        "saikat/migrate-user-posts"
+      ]
+    },
+    {
+      "sha": "cb9b516c19c93a5c234b9cab0783b760ca79709d",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/prakash-nsfw-detection-server",
+      "timestamp": "2026-07-28T22:17:03+05:30",
+      "message": "Feat/observability and openapi (#8)",
+      "stats": {
+        "additions": 2700,
+        "deletions": 138,
+        "total": 2838
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a843f1ef9792e793b12440ba4a94f6829b5fff58",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-backend-canister",
+      "timestamp": "2026-07-28T09:50:12Z",
+      "message": "chore: format imports in pocket_ic_env.rs",
+      "stats": {
+        "additions": 1,
+        "deletions": 3,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a220ff79a5c157892444f84948571f209cb1d85e",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-28T14:35:16+05:30",
+      "message": "chore(cleanup): delete dead archive/ (Wave 0 PR2) (#473)",
+      "stats": {
+        "additions": 48,
+        "deletions": 88966,
+        "total": 89014
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "33a3a885854a504c5a54e850e1ea525fbc30e918",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-28T13:46:45+05:30",
+      "message": "docs(cleanup): adopt the v2 cleanup plan + attach the 5-way baseline audit (#471)",
+      "stats": {
+        "additions": 782,
+        "deletions": 0,
+        "total": 782
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "375454f76d12c7cf3e9763c186abeb4b21f8816c",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-28T13:46:41+05:30",
+      "message": "docs(deploy): fix stale FAQ that contradicts the auto-on-merge body [cleanup Wave 0 PR1] (#472)",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 11,
+  "issues": [],
+  "issue_count": 0
+}
