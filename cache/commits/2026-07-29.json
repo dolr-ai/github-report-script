@@ -1,0 +1,227 @@
+{
+  "date": "2026-07-29",
+  "cached_at": "2026-07-29T19:52:33.035658Z",
+  "commits": [
+    {
+      "sha": "2c37c2adfccfce315809802521faa9c023cf0907",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-07-30T00:49:06+05:30",
+      "message": "remove redundant client",
+      "stats": {
+        "additions": 1,
+        "deletions": 162,
+        "total": 163
+      },
+      "branches": [
+        "naitik/remove_redundant_client"
+      ]
+    },
+    {
+      "sha": "e3fbd49e9038faf0724bf6c94aeffd3c70ffb646",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-07-29T09:28:50+05:30",
+      "message": "fix: formatting",
+      "stats": {
+        "additions": 16,
+        "deletions": 16,
+        "total": 32
+      },
+      "branches": [
+        "naitik/impl_staging_notification"
+      ]
+    },
+    {
+      "sha": "7305bea0fb5f637756cb81154fec4f7c1481ee3c",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-07-29T09:28:26+05:30",
+      "message": "fix: env based register",
+      "stats": {
+        "additions": 87,
+        "deletions": 25,
+        "total": 112
+      },
+      "branches": [
+        "naitik/impl_staging_notification"
+      ]
+    },
+    {
+      "sha": "81dc15be7321f315f23200645bd4e0aebe40d888",
+      "author": "naitik-makwana-yral",
+      "repository": "dolr-ai/naitik-yral-multiple-services",
+      "timestamp": "2026-07-30T01:09:05+05:30",
+      "message": "remove redundant client (#18)",
+      "stats": {
+        "additions": 1,
+        "deletions": 162,
+        "total": 163
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "48073c4256cc6de39fe953e196d2edc86a0ec34c",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-29T23:33:18+05:30",
+      "message": "chore: wire iOS app to SwiftPM packages",
+      "stats": {
+        "additions": 832,
+        "deletions": 562,
+        "total": 1394
+      },
+      "branches": [
+        "sarvesh/spm-migration"
+      ]
+    },
+    {
+      "sha": "637ecb5e9e7c49397edf273d1f081b6c5102609c",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-29T23:32:28+05:30",
+      "message": "chore: remove CocoaPods from KMM modules",
+      "stats": {
+        "additions": 351,
+        "deletions": 606,
+        "total": 957
+      },
+      "branches": [
+        "sarvesh/spm-migration"
+      ]
+    },
+    {
+      "sha": "4ba9841cd9586a15cfca877c46a51213d8d84d7d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-29T03:19:25Z",
+      "message": "fix: adapt to redis crate API changes for timeouts and error handling",
+      "stats": {
+        "additions": 7,
+        "deletions": 6,
+        "total": 13
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "03fad57b4830d62d9b11fac8152dafe1ccf549a3",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-29T18:14:48+05:30",
+      "message": "test(integration): real-database safety net \u2014 harness + codec proof (Wave 1 PR6) (#478)",
+      "stats": {
+        "additions": 269,
+        "deletions": 8,
+        "total": 277
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3f0f0eeceed91c35ac3daf60a39212978d13080a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-29T17:41:10+05:30",
+      "message": "chore(test): remove 71 hand-rolled sys.path hacks (Wave 1 PR5b) (#477)",
+      "stats": {
+        "additions": 8,
+        "deletions": 309,
+        "total": 317
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "431a44738b27b25602691604afe3da6e5936a849",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-29T17:30:51+05:30",
+      "message": "chore(test): add pytest config + conftest placeholder (Wave 1 PR5a) (#476)",
+      "stats": {
+        "additions": 39,
+        "deletions": 0,
+        "total": 39
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "72d43400e2f7a99f878a6fb3cae05bc0c7577c67",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-29T17:16:02+05:30",
+      "message": "docs(cleanup): Wave 1 plan \u2014 the test safety net (#475)",
+      "stats": {
+        "additions": 247,
+        "deletions": 0,
+        "total": 247
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "1b75072a41db9f776d14228c8430c1dc4f7c4648",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-07-29T16:58:56+05:30",
+      "message": "chore(cleanup): root tidy \u2014 move eval JSON to docs/, document migration gaps (Wave 0 PR3) (#474)",
+      "stats": {
+        "additions": 50,
+        "deletions": 5,
+        "total": 55
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 12,
+  "issues": [
+    {
+      "number": 2178,
+      "title": "Login gate the chat initiate function via UI",
+      "closed_at": "2026-07-29T12:21:10Z",
+      "assignee": "rishichadha30",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2178",
+      "labels": []
+    },
+    {
+      "number": 2177,
+      "title": "Own the influencer feed and adjust according to analytics",
+      "closed_at": "2026-07-29T12:19:48Z",
+      "assignee": "rishichadha30",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2177",
+      "labels": []
+    },
+    {
+      "number": 2148,
+      "title": "Once we are done validating the influencer chat new feature, promote the influencer feed to the \"home\" icon screen and change the video feed to the second icon and change the icon to \"reels\" icon similar to IG",
+      "closed_at": "2026-07-29T12:20:50Z",
+      "assignee": "rishichadha30",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2148",
+      "labels": []
+    },
+    {
+      "number": 2066,
+      "title": "Image hosting is also on Cloudflare. Clean up and migrate this to self hosted buckets. Evaluate this once video hosting is cleaned up and look at costs",
+      "closed_at": "2026-07-29T04:09:22Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2066",
+      "labels": []
+    }
+  ],
+  "issue_count": 4
+}
