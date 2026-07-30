@@ -1,0 +1,288 @@
+{
+  "date": "2026-07-30",
+  "cached_at": "2026-07-30T20:02:15.957028Z",
+  "commits": [
+    {
+      "sha": "df767f642a9c3519dd05900d78d19ab003db76a8",
+      "author": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-07-28T22:07:45+05:30",
+      "message": "fix: pin yral-* monorepo deps to pre-my-website-submodule rev (#1219)",
+      "stats": {
+        "additions": 1167,
+        "deletions": 53,
+        "total": 1220
+      },
+      "branches": [
+        "saikat/migrate-user-posts"
+      ]
+    },
+    {
+      "sha": "72ed4681d51515f46b59e65b588d001d65d1c56f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-30T14:43:14Z",
+      "message": "refactor: remove Redis/Dragonfly from yral-auth, use SpacetimeDB only",
+      "stats": {
+        "additions": 15,
+        "deletions": 916,
+        "total": 931
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "3c83d3e1f5c7db073a08d36bb115b6a374de1789",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-30T14:28:37Z",
+      "message": "chore: document redis key migration scope and notes",
+      "stats": {
+        "additions": 22,
+        "deletions": 1,
+        "total": 23
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "4947409d9609a3fa73140355cb3a8fabbf91ac83",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-30T13:52:03Z",
+      "message": "fix: openssl-sys vendored for musl cross-compilation, fix binary path in Dockerfile",
+      "stats": {
+        "additions": 21,
+        "deletions": 7,
+        "total": 28
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "776cfb9bdc37ff020434902649f4978130c7ed69",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-30T12:34:34Z",
+      "message": "fix: add pkg-config and libssl-dev to Dockerfile for openssl-sys build",
+      "stats": {
+        "additions": 5,
+        "deletions": 2,
+        "total": 7
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "7d2f2145970806b29c1c2924e732103e22f34509",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-30T12:25:35Z",
+      "message": "chore: comment out redis tool in mise.toml (KV migration complete)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "34b5615a14cc0578fda826150cd07e67914a2a33",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-30T12:24:38Z",
+      "message": "fix: restore per-app mise.toml for Docker build, copy full apps/ tree",
+      "stats": {
+        "additions": 22,
+        "deletions": 8,
+        "total": 30
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "df7e583a28c61e7d32c35689511e7007056bbe09",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-30T11:43:16Z",
+      "message": "fix: Dockerfile uses root mise.toml instead of removed per-app mise.toml",
+      "stats": {
+        "additions": 4,
+        "deletions": 3,
+        "total": 7
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "48cb41e1cac9f8236f9aba15694141cc4ab67fb3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-30T11:39:47Z",
+      "message": "fix: SpacetimeKV kv_get deserialization, streaming backfill, mise tasks hard rule",
+      "stats": {
+        "additions": 363,
+        "deletions": 310,
+        "total": 673
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "da145de390e3061f9cc621594f88bed5f101dfa6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-30T02:54:08Z",
+      "message": "feat: add Redis to SpacetimeDB migration test and expose pool for SCAN",
+      "stats": {
+        "additions": 295,
+        "deletions": 29,
+        "total": 324
+      },
+      "branches": [
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "8355f005eacaeb846bc001ddd286dc377821072e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-30T18:57:15Z",
+      "message": "feat: add PostV2 table, V2 backfill reducers, and SpacetimeDB post client",
+      "stats": {
+        "additions": 304,
+        "deletions": 29,
+        "total": 333
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "738feaf04ec45747c6742d73382c8d7620dd2c47",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-30T17:08:30Z",
+      "message": "feat: batch upsert reducer + batch backfill",
+      "stats": {
+        "additions": 46,
+        "deletions": 55,
+        "total": 101
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f34e9bd37252ffc1c2e76542a80860c3a58fe9f0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-07-30T14:58:10Z",
+      "message": "feat: add retry logic to IC\u2192SpacetimeDB post backfill",
+      "stats": {
+        "additions": 55,
+        "deletions": 15,
+        "total": 70
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9407e542b61f3ec941451fac550b91df1c02e7f0",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-07-30T10:15:55+05:30",
+      "message": "feat: add connection pool for posts API and outbox worker",
+      "stats": {
+        "additions": 145,
+        "deletions": 0,
+        "total": 145
+      },
+      "branches": [
+        "prakash/canister-data-migration-impl"
+      ]
+    },
+    {
+      "sha": "0475ab1083f20e6f92f6995348a96ada3b525974",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-07-30T09:54:46+05:30",
+      "message": "feat: add posts schema migration (V2)",
+      "stats": {
+        "additions": 640,
+        "deletions": 3,
+        "total": 643
+      },
+      "branches": [
+        "prakash/canister-data-migration-impl"
+      ]
+    },
+    {
+      "sha": "603f95836eedd54c0636559948b7bfe6013ced57",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-07-30T09:22:29+05:30",
+      "message": "feat: adopt refinery migrations with existing schema as baseline",
+      "stats": {
+        "additions": 644,
+        "deletions": 1,
+        "total": 645
+      },
+      "branches": [
+        "prakash/canister-data-migration-impl"
+      ]
+    },
+    {
+      "sha": "e233c036537232a9117e88f0afb3b8ed439751ad",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-07-30T09:16:29+05:30",
+      "message": "chore: measure like corpus, retract bulk-load path from spec and plan",
+      "stats": {
+        "additions": 206,
+        "deletions": 46,
+        "total": 252
+      },
+      "branches": [
+        "prakash/canister-data-migration-impl"
+      ]
+    },
+    {
+      "sha": "f860bfe79ee75483eb598c1dbeb4529603f6efe4",
+      "author": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral-video-storage-service",
+      "timestamp": "2026-07-30T09:06:12+05:30",
+      "message": "docs: add phase 1 implementation plan, amend get-upload-url decision",
+      "stats": {
+        "additions": 1159,
+        "deletions": 4,
+        "total": 1163
+      },
+      "branches": [
+        "prakash/canister-data-migration-impl"
+      ]
+    }
+  ],
+  "commit_count": 18,
+  "issues": [],
+  "issue_count": 0
+}
