@@ -1,0 +1,114 @@
+{
+  "date": "2026-08-01",
+  "cached_at": "2026-08-01T19:42:46.825219Z",
+  "commits": [
+    {
+      "sha": "b8ba6b845611243b9af80cd9a70a6e54978c83ea",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-01T10:55:11+05:30",
+      "message": "Merge pull request #130 from dolr-ai/renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "cb069e2a44628a48cbed3d919d32b7048bc95246",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-01T10:51:20+05:30",
+      "message": "Merge pull request #132 from dolr-ai/dependabot/pip/vastai-gte-1.5.1",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "89e6aad853d13d7ef214c42f37bc69e27b5b00f7",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-01T05:20:51Z",
+      "message": "chore: update spacetime-validate task to show per-table row counts",
+      "stats": {
+        "additions": 8,
+        "deletions": 2,
+        "total": 10
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6b6e289a075dcac98b4bfc6ed256816eae31c013",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-01T02:01:54Z",
+      "message": "chore: regenerate SpacetimeDB bindings and update mise.lock",
+      "stats": {
+        "additions": 2132,
+        "deletions": 859,
+        "total": 2991
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b8fcad23d472b4fed6189942b2aa52767b8357f3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-01T01:11:10Z",
+      "message": "chore: mobile submodule",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7bee09791fabc76d371915b32ee3ff89a448922c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-01T01:07:54Z",
+      "message": "feat: add user info service to SpacetimeDB",
+      "stats": {
+        "additions": 495,
+        "deletions": 1,
+        "total": 496
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c038d92bd12f0d14b8dd315c5d1d4831516ec1e6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-08-01T01:07:58Z",
+      "message": "feat: add SpacetimeDB REST client and DI configuration",
+      "stats": {
+        "additions": 189,
+        "deletions": 0,
+        "total": 189
+      },
+      "branches": [
+        "saikat/migrate-user-posts"
+      ]
+    }
+  ],
+  "commit_count": 7,
+  "issues": [],
+  "issue_count": 0
+}
