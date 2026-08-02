@@ -1,0 +1,94 @@
+{
+  "date": "2026-08-02",
+  "cached_at": "2026-08-02T19:43:26.041615Z",
+  "commits": [
+    {
+      "sha": "5152c7fa7b3b2529077f4dcef781667650d40847",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-02T07:55:54Z",
+      "message": "fix(kafka): update snowplow-collector ACL to snowplow-collector-bad",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "renovate/velero-12.x",
+        "renovate/rook-ceph-1.x",
+        "renovate/playwright-monorepo",
+        "renovate/moby-buildkit-0.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/headlamp-0.x",
+        "renovate/harbor-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-webhook-d4749e605405422fd87700164e31b2d1-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-headlamp-k8s-headlamp-plugin-flux-0.x",
+        "renovate/console-3.x",
+        "renovate/cloudnative-pg-0.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/bytebase-1.x",
+        "renovate/altinity-clickhouse-operator-0.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "0d7bebe7ede4b29922ae8084e98d3503def93bc4",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-02T07:46:43Z",
+      "message": "fix(snowplow): separate bad topics, add bad_rows sink, fix se_property overflow",
+      "stats": {
+        "additions": 129,
+        "deletions": 22,
+        "total": 151
+      },
+      "branches": [
+        "renovate/velero-12.x",
+        "renovate/rook-ceph-1.x",
+        "renovate/playwright-monorepo",
+        "renovate/moby-buildkit-0.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/headlamp-0.x",
+        "renovate/harbor-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-webhook-d4749e605405422fd87700164e31b2d1-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-headlamp-k8s-headlamp-plugin-flux-0.x",
+        "renovate/console-3.x",
+        "renovate/cloudnative-pg-0.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/bytebase-1.x",
+        "renovate/altinity-clickhouse-operator-0.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "4d3f122e6fcf09af8b25176063026fba798c08bc",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-08-02T07:46:29Z",
+      "message": "fix(analytics): truncate se_property to prevent Snowplow bad rows",
+      "stats": {
+        "additions": 32,
+        "deletions": 2,
+        "total": 34
+      },
+      "branches": [
+        "saikat/migrate-user-posts"
+      ]
+    }
+  ],
+  "commit_count": 3,
+  "issues": [],
+  "issue_count": 0
+}
