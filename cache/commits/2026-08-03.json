@@ -1,0 +1,234 @@
+{
+  "date": "2026-08-03",
+  "cached_at": "2026-08-03T20:10:09.230844Z",
+  "commits": [
+    {
+      "sha": "5bd3dbfc1448bf2d8b8e4a52e3e0f6002f9be5e9",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-03T17:17:03Z",
+      "message": "fix(mobile): update yral-mobile submodule",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/velero-12.x",
+        "renovate/rook-ceph-1.x",
+        "renovate/playwright-monorepo",
+        "renovate/moby-buildkit-0.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/headlamp-0.x",
+        "renovate/harbor-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-webhook-d4749e605405422fd87700164e31b2d1-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-headlamp-k8s-headlamp-plugin-flux-0.x",
+        "renovate/console-3.x",
+        "renovate/cloudnative-pg-0.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/bytebase-1.x",
+        "renovate/altinity-clickhouse-operator-0.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "af4bca2950f2d901db26c7770e7091e311fd5f17",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-03T17:13:35Z",
+      "message": "fix(mobile): update yral-mobile submodule",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/velero-12.x",
+        "renovate/rook-ceph-1.x",
+        "renovate/playwright-monorepo",
+        "renovate/moby-buildkit-0.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/headlamp-0.x",
+        "renovate/harbor-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-webhook-d4749e605405422fd87700164e31b2d1-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-headlamp-k8s-headlamp-plugin-flux-0.x",
+        "renovate/console-3.x",
+        "renovate/cloudnative-pg-0.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/bytebase-1.x",
+        "renovate/altinity-clickhouse-operator-0.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "5eb1e349ef783784bd2825c4407027aa320b1405",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-03T17:10:41Z",
+      "message": "fix(mobile): update submodule and clean up completed snowplow tasks",
+      "stats": {
+        "additions": 4,
+        "deletions": 6,
+        "total": 10
+      },
+      "branches": [
+        "renovate/velero-12.x",
+        "renovate/rook-ceph-1.x",
+        "renovate/playwright-monorepo",
+        "renovate/moby-buildkit-0.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/headlamp-0.x",
+        "renovate/harbor-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-webhook-d4749e605405422fd87700164e31b2d1-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-headlamp-k8s-headlamp-plugin-flux-0.x",
+        "renovate/console-3.x",
+        "renovate/cloudnative-pg-0.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/bytebase-1.x",
+        "renovate/altinity-clickhouse-operator-0.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "b0e21a0b6fc4de721223521d1b0b99ec2f48a130",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-03T21:32:06+05:30",
+      "message": "chore(mise): update rust toolchain and consolidate yral-mobile tasks",
+      "stats": {
+        "additions": 17,
+        "deletions": 41,
+        "total": 58
+      },
+      "branches": [
+        "renovate/velero-12.x",
+        "renovate/rook-ceph-1.x",
+        "renovate/playwright-monorepo",
+        "renovate/moby-buildkit-0.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/headlamp-0.x",
+        "renovate/harbor-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-webhook-d4749e605405422fd87700164e31b2d1-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-headlamp-k8s-headlamp-plugin-flux-0.x",
+        "renovate/console-3.x",
+        "renovate/cloudnative-pg-0.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/bytebase-1.x",
+        "renovate/altinity-clickhouse-operator-0.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "0628d7728c4477b7e907a3c1015282c8b630dc2f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-03T20:17:17+05:30",
+      "message": "chore(deps): update yral-mobile and internal dependencies",
+      "stats": {
+        "additions": 11,
+        "deletions": 11,
+        "total": 22
+      },
+      "branches": [
+        "renovate/velero-12.x",
+        "renovate/rook-ceph-1.x",
+        "renovate/playwright-monorepo",
+        "renovate/moby-buildkit-0.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/headlamp-0.x",
+        "renovate/harbor-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-webhook-d4749e605405422fd87700164e31b2d1-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-headlamp-k8s-headlamp-plugin-flux-0.x",
+        "renovate/console-3.x",
+        "renovate/cloudnative-pg-0.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/bytebase-1.x",
+        "renovate/altinity-clickhouse-operator-0.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "2cdd57db3aa63677a659d15a3c52851436d40aaf",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-03T08:54:07+05:30",
+      "message": "chore: add yral-mobile rust-agent to workspace, pin java 21, update deps",
+      "stats": {
+        "additions": 710,
+        "deletions": 190,
+        "total": 900
+      },
+      "branches": [
+        "renovate/velero-12.x",
+        "renovate/rook-ceph-1.x",
+        "renovate/playwright-monorepo",
+        "renovate/moby-buildkit-0.x",
+        "renovate/metabase-metabase-0.x",
+        "renovate/headlamp-0.x",
+        "renovate/harbor-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-webhook-d4749e605405422fd87700164e31b2d1-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-headlamp-k8s-headlamp-plugin-flux-0.x",
+        "renovate/console-3.x",
+        "renovate/cloudnative-pg-0.x",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cilium-1.x",
+        "renovate/cert-manager",
+        "renovate/bytebase-1.x",
+        "renovate/altinity-clickhouse-operator-0.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "fa50ff209a45ed3bdcfe2e08b711fb4f17517949",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-08-03T22:29:39+05:30",
+      "message": "Add SpacetimeDB REST client, fix Snowplow analytics, and update dependencies (#1220)",
+      "stats": {
+        "additions": 660,
+        "deletions": 312,
+        "total": 972
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 7,
+  "issues": [],
+  "issue_count": 0
+}
