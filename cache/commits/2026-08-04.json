@@ -1,0 +1,489 @@
+{
+  "date": "2026-08-04",
+  "cached_at": "2026-08-04T20:08:49.155088Z",
+  "commits": [
+    {
+      "sha": "2dbb60c09be095dd9c751a5edf8cdcf985fc6260",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-04T14:42:59Z",
+      "message": "fix(clickhouse): drop all stale renamed system log tables",
+      "stats": {
+        "additions": 28,
+        "deletions": 4,
+        "total": 32
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8fde4a57f5ad0593e66ebb44da6b5178294a24b0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-04T14:39:33Z",
+      "message": "fix(clickhouse): add 30-day TTL to system log tables + retention audit",
+      "stats": {
+        "additions": 97,
+        "deletions": 33,
+        "total": 130
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3f26d47b7809218348807db59547eda984e35eaa",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-04T19:22:47+05:30",
+      "message": "Merge pull request #152 from dolr-ai/renovate/moby-buildkit-0.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "30228033ddc75287781ec681578ab866d5357da4",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-04T19:22:29+05:30",
+      "message": "Merge pull request #145 from dolr-ai/renovate/cilium-1.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "da5a21674ee44e1b0cd20ce372c23a253c5ccf98",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-04T19:21:11+05:30",
+      "message": "Merge pull request #143 from dolr-ai/renovate/ghcr.io-tektoncd-pipeline-webhook-d4749e605405422fd877",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "55f620183e4fcccdb5bc66697454466b1d466e81",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-04T19:20:48+05:30",
+      "message": "Merge pull request #142 from dolr-ai/renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b889",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e3eb673198d586bbd89b01e0103305abf5f5edfe",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-04T19:20:19+05:30",
+      "message": "Merge pull request #141 from dolr-ai/renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f336513",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "0c1b19fc6e50a3443242f4aa866d1aeee13f613f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-04T19:19:47+05:30",
+      "message": "Merge pull request #151 from dolr-ai/renovate/velero-12.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "2262d837e3b8ea1d5e8189492a617d290d7cd158",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-04T19:19:24+05:30",
+      "message": "Merge pull request #150 from dolr-ai/renovate/rook-ceph-1.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6a21bb992dbd8f5ca2292a018aac643b866b0f30",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-04T19:19:05+05:30",
+      "message": "Merge pull request #149 from dolr-ai/renovate/headlamp-0.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "01656056572bf65067240731fa196bc98a810237",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-04T19:18:45+05:30",
+      "message": "Merge pull request #147 from dolr-ai/renovate/console-3.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "15ca350c18d57fc74d0a47c6c5cb59825a2da4f2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-04T19:18:23+05:30",
+      "message": "Merge pull request #146 from dolr-ai/renovate/cloudnative-pg-0.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4cf41b2ff0335c32eac0d52a547bee714dc1ffd2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-04T19:17:40+05:30",
+      "message": "Merge pull request #144 from dolr-ai/renovate/altinity-clickhouse-operator-0.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "557617ab18040063df50d8e1011605bbf4ea523b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-04T13:42:15Z",
+      "message": "chore(tekton): strip SHA256 digests from container images",
+      "stats": {
+        "additions": 11,
+        "deletions": 11,
+        "total": 22
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "19c9caf78eeda03064ec14ab46affa043ba53657",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-04T19:00:45+05:30",
+      "message": "Merge pull request #140 from dolr-ai/renovate/ghcr.io-headlamp-k8s-headlamp-plugin-flux-0.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8c57d288721fee54dbba3549d5edb0f29a5b235e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-04T19:00:24+05:30",
+      "message": "Merge pull request #139 from dolr-ai/renovate/cilium-cilium-1.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c87d11cf0b71d4b393b09fc7b26900914fa75cdb",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-04T19:00:01+05:30",
+      "message": "Merge pull request #148 from dolr-ai/renovate/harbor-1.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ea2a08406fe8fcd5d1e2b14a61793cb2c54bf545",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-04T13:27:09Z",
+      "message": "feat: remove Metabase completely \u2014 replaced by dbx",
+      "stats": {
+        "additions": 2,
+        "deletions": 277,
+        "total": 279
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "1465925423a72efd70f8761fa5ece40e5edff450",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-04T13:17:00Z",
+      "message": "feat: remove Bytebase completely \u2014 replaced by dbx",
+      "stats": {
+        "additions": 18,
+        "deletions": 544,
+        "total": 562
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "53d93f77952f4598b8e3a450f230c301cac1bc73",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-04T18:40:57+05:30",
+      "message": "Merge pull request #138 from dolr-ai/renovate/metabase-metabase-0.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a3b8369ea28bfb05f97652cdb9f90b553c058eec",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-04T18:40:30+05:30",
+      "message": "Merge pull request #136 from dolr-ai/renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e86445186dedd39569a85581f59685aac32eb93b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-04T18:39:30+05:30",
+      "message": "Merge pull request #135 from dolr-ai/renovate/ghcr.io-shipwright-io-build-shipwright-build-controlle",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "edf8ee0e31bc8b87fce2b9230ecab2a526704042",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-04T04:11:38Z",
+      "message": "fix(dbx): add external_config for Kafka mq connection in init Job",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c1c4f43263a21b6e8d7dc24be7f2e1f29ccebd74",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-04T04:03:48Z",
+      "message": "fix(dbx): save all connections in single API call with correct db_type values",
+      "stats": {
+        "additions": 6,
+        "deletions": 13,
+        "total": 19
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9e74788944385cdab15dbeea7fa580aa8d0f57e2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-04T03:59:14Z",
+      "message": "fix(dbx): add id field to connection configs in init Job",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ea175d8146dceeb973f54431d70219126ced98d8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-04T03:55:50Z",
+      "message": "fix(dbx): enable force=true on Flux Kustomization for Job recreation",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "5fbd2faf8050af3cc4ed7a51ff836f9d77ec4a2e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-04T03:45:38Z",
+      "message": "fix(dbx): use curl instead of wget for init Job to send Content-Type header",
+      "stats": {
+        "additions": 13,
+        "deletions": 12,
+        "total": 25
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4e761cabbf102bfa12e279a9df76b29e8b3e58ed",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-04T03:34:51Z",
+      "message": "feat(dbx): add self-hosted dbx database workbench to cluster",
+      "stats": {
+        "additions": 366,
+        "deletions": 0,
+        "total": 366
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b38cd138ee431c97e4342fae1442134b9da3d09c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-04T08:46:01+05:30",
+      "message": "Merge pull request #137 from dolr-ai/renovate/bytebase-1.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b92122159de43849547376552315bc5fb9b34821",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-04T03:15:34Z",
+      "message": "chore(shipwright): remove SHA256 digests from container images",
+      "stats": {
+        "additions": 6,
+        "deletions": 6,
+        "total": 12
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b6a867a37de28bad5f98aa50f5824b25782f5794",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-04T08:38:01+05:30",
+      "message": "Merge pull request #134 from dolr-ai/renovate/cert-manager",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "07385c828db1ffce158bd56872300a9babf94651",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-04T08:37:01+05:30",
+      "message": "chore(e2e): remove Playwright end-to-end test setup and configuration",
+      "stats": {
+        "additions": 0,
+        "deletions": 281,
+        "total": 281
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 32,
+  "issues": [],
+  "issue_count": 0
+}
