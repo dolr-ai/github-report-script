@@ -1,0 +1,114 @@
+{
+  "date": "2026-08-05",
+  "cached_at": "2026-08-05T19:02:04.111472Z",
+  "commits": [
+    {
+      "sha": "0009087dfd53e69270e4b9aa750e21ecfdb469f6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-05T04:26:21Z",
+      "message": "fix(ceph-osd-removal): strip trailing whitespace in CRUSH tree awk pattern",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "14f0f00af45783716013f283ad75b06697062cb6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-05T04:20:08Z",
+      "message": "refactor: integrate Ceph OSD removal into node-remove, Longhorn setup into add-worker",
+      "stats": {
+        "additions": 156,
+        "deletions": 278,
+        "total": 434
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e06c9c850d5948cc69c3334a3a469bc53bd0bbbe",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-05T04:17:48Z",
+      "message": "feat: add Ceph\u2192Longhorn node migration roles and playbook",
+      "stats": {
+        "additions": 543,
+        "deletions": 0,
+        "total": 543
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "15f28933fe8049b9c37143dd8a3a04ede3a612e4",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-05T04:10:48Z",
+      "message": "feat(longhorn): add backup config kustomization + clean up orphan SCs",
+      "stats": {
+        "additions": 31,
+        "deletions": 3,
+        "total": 34
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8704f1b824e38bd8877abea2fccd26c28fad808d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-05T04:05:14Z",
+      "message": "fix(longhorn): deploy operator only \u2014 backup CRDs need Helm install first",
+      "stats": {
+        "additions": 5,
+        "deletions": 7,
+        "total": 12
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "00e0be9570e39e9f7fe74966e7cf9715679bf95a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-05T04:04:20Z",
+      "message": "fix(longhorn): split SCs out of operator kustomization",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f0cf085b008a95ee1e87b049aab5ce1840352c62",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-05T04:00:11Z",
+      "message": "feat: restore Longhorn as storage layer with LUKS2 encryption",
+      "stats": {
+        "additions": 823,
+        "deletions": 20,
+        "total": 843
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 7,
+  "issues": [],
+  "issue_count": 0
+}
