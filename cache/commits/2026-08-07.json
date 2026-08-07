@@ -1,0 +1,159 @@
+{
+  "date": "2026-08-07",
+  "cached_at": "2026-08-07T18:48:08.307192Z",
+  "commits": [
+    {
+      "sha": "27c33c1a9bc730639b25b95fb6dc81087f264c12",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-07T13:29:59Z",
+      "message": "trigger: recreate Loki StatefulSet on longhorn",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e00b04aa70cee916ac4c7e333b864b3dc181b3de",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-07T12:46:31Z",
+      "message": "trigger: recreate remaining Ceph PVCs on Longhorn",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "bd2fd87fc4bcb71311cd90cbc10b151b61641b8c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-07T02:54:25Z",
+      "message": "trigger: recreate PowerDNS StatefulSet on longhorn",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9113626c3e384e3b0b824badb22e0633ce4cbb26",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-07T02:49:19Z",
+      "message": "vscode: remove chat.tools.terminal.enableAutoApprove setting",
+      "stats": {
+        "additions": 0,
+        "deletions": 1,
+        "total": 1
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "73a22ff48de6d92e49103f88acfbc07f80bb8cfd",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-07T02:49:03Z",
+      "message": "clickhouse: remove from stack entirely",
+      "stats": {
+        "additions": 3,
+        "deletions": 615,
+        "total": 618
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c4fe6fd47197b17e80cd97c23819e527421ec5a6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-07T02:12:54Z",
+      "message": "harbor: restore chart spec and fix duplicate install/upgrade blocks",
+      "stats": {
+        "additions": 8,
+        "deletions": 0,
+        "total": 8
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "5e3e5a7ec90b49c4a1893797fc5bdf9205287e15",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-07T02:10:48Z",
+      "message": "harbor: fix duplicate install key in HelmRelease",
+      "stats": {
+        "additions": 1,
+        "deletions": 10,
+        "total": 11
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a49f0edbb43dbec23ea428a11bf3d0cda57481d5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-07T02:08:02Z",
+      "message": "harbor: add upgrade remediation retries to unblock stalled HelmRelease",
+      "stats": {
+        "additions": 6,
+        "deletions": 0,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "5b7a4c3486807d66cd9a74b70f1326e5d926faee",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-07T02:05:46Z",
+      "message": "trigger: retry Harbor HelmRelease after PVC cleanup",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "11245401721c96007d467c9abb67931d199751bb",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-analytics",
+      "timestamp": "2026-08-07T12:42:25+05:30",
+      "message": "fix(events): stop orphaning Kafka bridge consumer instances (memory-leak incident) (#16)",
+      "stats": {
+        "additions": 75,
+        "deletions": 15,
+        "total": 90
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 10,
+  "issues": [],
+  "issue_count": 0
+}

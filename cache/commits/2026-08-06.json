@@ -1,0 +1,669 @@
+{
+  "date": "2026-08-06",
+  "cached_at": "2026-08-07T18:48:09.227193Z",
+  "commits": [
+    {
+      "sha": "0895f2568710f0b2688a72489da9ed7d0d85f7b6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T17:47:05Z",
+      "message": "harbor: switch CNPG to fresh initdb on longhorn-1replica",
+      "stats": {
+        "additions": 8,
+        "deletions": 52,
+        "total": 60
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "52873a87bae81782b431f63ddb6831d5e0b3ec67",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T17:28:07Z",
+      "message": "harbor: use 2 CNPG instances on longhorn-1replica",
+      "stats": {
+        "additions": 7,
+        "deletions": 6,
+        "total": 13
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9f55fd07169eee24d18e3fcf2b26e7208be04696",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T17:21:50Z",
+      "message": "harbor: scale CNPG to 3 instances for HA with streaming replication",
+      "stats": {
+        "additions": 6,
+        "deletions": 10,
+        "total": 16
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "15060fbd844db73f6218fab4712267f210ae2b59",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T17:14:10Z",
+      "message": "harbor: cutover to CNPG external database",
+      "stats": {
+        "additions": 8,
+        "deletions": 3,
+        "total": 11
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "78135df5f8f1a8263dc67d08d4b83983cc7a6a63",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T17:08:49Z",
+      "message": "harbor: rename source DB password secret to avoid CNPG naming collision",
+      "stats": {
+        "additions": 25,
+        "deletions": 25,
+        "total": 50
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d61b8f194cbc4a4cdb3b6033939dadbd9adabccd",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T17:02:17Z",
+      "message": "harbor: change superuser secret type to Opaque",
+      "stats": {
+        "additions": 10,
+        "deletions": 10,
+        "total": 20
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9337fc914437ea8bd243ffbd25dae1296721c875",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T16:55:32Z",
+      "message": "harbor: switch CNPG bootstrap from pg_basebackup to logical import",
+      "stats": {
+        "additions": 24,
+        "deletions": 17,
+        "total": 41
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "58192e6a26a16b6ea17a2b632b198bcd79658312",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T16:52:17Z",
+      "message": "harbor: fix SOPS files to use encrypted_regex for Flux compatibility",
+      "stats": {
+        "additions": 29,
+        "deletions": 29,
+        "total": 58
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "db6d60ab31f423c0809f6663038a5dc275192b38",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T16:48:56Z",
+      "message": "harbor: fix SOPS replication secret, add superuser secret for CNPG",
+      "stats": {
+        "additions": 42,
+        "deletions": 13,
+        "total": 55
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3822eed6fb1c56c5e08a0c2f73db303615dff349",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T15:32:33Z",
+      "message": "harbor: add CNPG cluster as replica of internal DB",
+      "stats": {
+        "additions": 75,
+        "deletions": 0,
+        "total": 75
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "182642d32aa6a46b6408a4aed368431ece26e0dc",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T15:16:58Z",
+      "message": "storage: migrate all remaining ceph-block PVCs to longhorn",
+      "stats": {
+        "additions": 13,
+        "deletions": 19,
+        "total": 32
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "461b6f8ebeee3e0496f43e9405ad092a18a0d383",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T15:13:24Z",
+      "message": "ansible: retry Longhorn disk check until reconciled",
+      "stats": {
+        "additions": 13,
+        "deletions": 3,
+        "total": 16
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ca23b6a742a00db5e71f735482a1f97602d3f230",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T14:12:18Z",
+      "message": "ansible: make Cloudflare DNS A record creation idempotent",
+      "stats": {
+        "additions": 6,
+        "deletions": 2,
+        "total": 8
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4942fc49e64fea8278b6c44d4a3755e181f786fd",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T12:18:40Z",
+      "message": "ansible: force-remove Longhorn Node CR finalizer on node removal",
+      "stats": {
+        "additions": 19,
+        "deletions": 1,
+        "total": 20
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "01c7298613e63d01455d11868950bfaea0f50d39",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T11:55:17Z",
+      "message": "ansible: fix ceph-osd-removal.yml to use direct purge approach",
+      "stats": {
+        "additions": 11,
+        "deletions": 24,
+        "total": 35
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3fa0ea719ccde28e84d76bd1083bfc2c04cdea70",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T11:53:18Z",
+      "message": "ansible: fix ceph-osd-removal to use direct purge instead of Rook operator",
+      "stats": {
+        "additions": 57,
+        "deletions": 16,
+        "total": 73
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ecafe4f943d2823858573639ffef54cd8901e0bb",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T11:30:47Z",
+      "message": "kafka-bridge: increase memory limit from 512Mi to 1Gi",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a38db4043f79e3ffc0d31e60d1ebf7082d2f2293",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T11:28:24Z",
+      "message": "dashboard: add dbx entry; monitoring: add emoji to alert summaries",
+      "stats": {
+        "additions": 9,
+        "deletions": 3,
+        "total": 12
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "54cb74b479e9930a7b58fa8e46dfbb77167b37a2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T11:19:20Z",
+      "message": "Remove CloudBeaver from cluster \u2014 replaced by dbx",
+      "stats": {
+        "additions": 3,
+        "deletions": 289,
+        "total": 292
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "2185b5eddaaf7df1335838c324f58464949b014d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T11:01:18Z",
+      "message": "cloudbeaver, geoip: migrate PVCs from ceph-block to longhorn (2-replica)",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "5da7242f13d2cb0059a94da6b98a1ae0941b669b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T10:16:32Z",
+      "message": "kafka: revert to working config, only change storage class to Longhorn",
+      "stats": {
+        "additions": 3,
+        "deletions": 29,
+        "total": 32
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "5213d430d86b86611f076c8d73488bf660fb382c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T09:53:21Z",
+      "message": "longhorn: remove CRYPTO_PBKDF_FORCE_ITERATIONS to use cryptsetup auto-tuning",
+      "stats": {
+        "additions": 22,
+        "deletions": 20,
+        "total": 42
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9fda6b27664076eabb27e6580767641af6fd2269",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T09:32:55Z",
+      "message": "longhorn: fix disableRevisionCounter format in StorageClass parameters",
+      "stats": {
+        "additions": 18,
+        "deletions": 8,
+        "total": 26
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8f488e3ac2869c3f26f2a80cb4ac7304c0b13557",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T09:25:25Z",
+      "message": "ansible: fix Longhorn disk UUID mismatch on node reprovision",
+      "stats": {
+        "additions": 159,
+        "deletions": 0,
+        "total": 159
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "143607bd256e95d28a064d05a15c01b0927acaab",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T07:00:15Z",
+      "message": "rook-ceph: enable removeOSDsIfOutAndSafeToRemove in CephCluster manifest",
+      "stats": {
+        "additions": 8,
+        "deletions": 0,
+        "total": 8
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "343ed901a2a25d701455d20e2d1d41b4253573a2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T06:53:46Z",
+      "message": "feat(kafka): migrate to Longhorn storage with new pool naming",
+      "stats": {
+        "additions": 13,
+        "deletions": 15,
+        "total": 28
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7fcfdb136d09b7986b62caebc623aeb3fadde2f6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T05:03:02Z",
+      "message": "refactor(ceph-osd-removal): use Rook-native removeOSDsIfOutAndSafeToRemove",
+      "stats": {
+        "additions": 48,
+        "deletions": 104,
+        "total": 152
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "584c9ea86b64cb176a73e75ff8c2da459b7f4af8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T05:00:26Z",
+      "message": "fix(ceph-osd-removal): set noup BEFORE marking OSDs down",
+      "stats": {
+        "additions": 7,
+        "deletions": 7,
+        "total": 14
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b72edb33d19052336510dddaa730b2b0076afa9a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T04:56:29Z",
+      "message": "fix(ceph-osd-removal): set noup before down to prevent Rook OSD pod recovery",
+      "stats": {
+        "additions": 18,
+        "deletions": 7,
+        "total": 25
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c437d7735a712ff37f0bdb82c49ada240fc00d4f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T04:54:38Z",
+      "message": "fix(ceph-osd-removal): destroy OSD before purge",
+      "stats": {
+        "additions": 35,
+        "deletions": 0,
+        "total": 35
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "82781740e2ea0aa5fa33220f23dee405d3fb3b44",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T04:52:53Z",
+      "message": "fix(ceph-osd-removal): mark OSDs down before purge",
+      "stats": {
+        "additions": 7,
+        "deletions": 0,
+        "total": 7
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "152eeae7c7fbfb3e6fcefa5577d3bfb8acb45cd9",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T04:51:12Z",
+      "message": "fix(ceph-osd-removal): only check PG state section, ignore capacity/throughput",
+      "stats": {
+        "additions": 12,
+        "deletions": 3,
+        "total": 15
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b344a2c4796ff4c67e974106177e65774c841827",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T04:38:00Z",
+      "message": "fix(ceph-osd-removal): fix CRUSH tree parser field indices",
+      "stats": {
+        "additions": 13,
+        "deletions": 8,
+        "total": 21
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "79599c49237c6b48bd704d8c4c778ffb9a37eac4",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T04:35:35Z",
+      "message": "fix(ceph-osd-removal): fix unterminated string in failed_when",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "1fe13791e0bf91d468b92b5b8196670c9e26378a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T04:13:41Z",
+      "message": "simplify: use full-disk btrfs for all nodes, remove Ceph partition cleanup",
+      "stats": {
+        "additions": 12,
+        "deletions": 71,
+        "total": 83
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "511dc68fb234ebd2c997406d6259ac5251dc6cdf",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T03:52:58Z",
+      "message": "fix(provision): inline init.sh into role, use Ubuntu 26.04, remove GitHub dependency",
+      "stats": {
+        "additions": 145,
+        "deletions": 10,
+        "total": 155
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e215d9cb2434ef86ca4aa644869d2f0cb8104eff",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T03:48:18Z",
+      "message": "fix(provision): use ansible_private_key_file for rescue-mode SSH commands",
+      "stats": {
+        "additions": 5,
+        "deletions": 5,
+        "total": 10
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4aa43ba84a9099e04f129068932781b1b1c9e20d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T03:41:50Z",
+      "message": "fix: replace deprecated apt_repository with deb822_repository",
+      "stats": {
+        "additions": 14,
+        "deletions": 6,
+        "total": 20
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "0d5611d5345d41baeecfa95d23f1fe71c4294297",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T03:39:05Z",
+      "message": "refactor: audit and fix become/sudo usage across all roles",
+      "stats": {
+        "additions": 103,
+        "deletions": 17,
+        "total": 120
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9ae77aff835b36a6c37441cf00e0a628f5cfb266",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T03:34:39Z",
+      "message": "fix(provision): set become: false \u2014 role runs on localhost, no sudo needed",
+      "stats": {
+        "additions": 6,
+        "deletions": 0,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "691f077fa64483d990062eff68737ea4cfb320db",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T03:29:40Z",
+      "message": "fix(longhorn): make longhorn SC non-default during Ceph coexistence",
+      "stats": {
+        "additions": 4,
+        "deletions": 1,
+        "total": 5
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "dd56aa2a8c432aa6f65d499537ed6613ece91abe",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T03:28:18Z",
+      "message": "feat(longhorn): enable encrypted StorageClasses for workload migration",
+      "stats": {
+        "additions": 5,
+        "deletions": 4,
+        "total": 9
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c2092b15d1a8628dc3b3bec1938d16e8630cfae6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-06T02:24:10Z",
+      "message": "fix(node-remove): fail if Ceph OSD removal doesn't find OSDs in CRUSH map",
+      "stats": {
+        "additions": 66,
+        "deletions": 23,
+        "total": 89
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a1ea7878f3cdddff7fc6491b5f5ac861214bc96b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-08-06T11:10:11Z",
+      "message": "chore: increase pause between rolling reboots to 60 seconds",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 44,
+  "issues": [],
+  "issue_count": 0
+}
