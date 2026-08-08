@@ -1,0 +1,328 @@
+{
+  "date": "2026-08-08",
+  "cached_at": "2026-08-08T18:46:14.831616Z",
+  "commits": [
+    {
+      "sha": "2a953ca20edfffbc2412cd171ec721c25aebbe87",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-08T07:48:08Z",
+      "message": "harbor: fix credentials, add SOPS mise tasks, document secret update locations",
+      "stats": {
+        "additions": 149,
+        "deletions": 109,
+        "total": 258
+      },
+      "branches": [
+        "main",
+        "dependabot/npm_and_yarn/apps/my-website/npm_and_yarn-ff3c6ec75b",
+        "dependabot/cargo/cargo-faef625f8c"
+      ]
+    },
+    {
+      "sha": "e07083f4bcb3774d6290a2ff90fa02f9300eda49",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-08T07:23:39Z",
+      "message": "remove devpod, fix yral-legacy cargo-leptos manifest path",
+      "stats": {
+        "additions": 5,
+        "deletions": 136,
+        "total": 141
+      },
+      "branches": [
+        "main",
+        "dependabot/npm_and_yarn/apps/my-website/npm_and_yarn-ff3c6ec75b",
+        "dependabot/cargo/cargo-faef625f8c"
+      ]
+    },
+    {
+      "sha": "6d7dabe3dd9fd7eea1e1ca9fdadd366c793363b9",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-08T07:14:54Z",
+      "message": "purge: remove Rook/Ceph, fix Dockerfile workspace builds, set Longhorn as default",
+      "stats": {
+        "additions": 66,
+        "deletions": 24707,
+        "total": 24773
+      },
+      "branches": [
+        "main",
+        "dependabot/npm_and_yarn/apps/my-website/npm_and_yarn-ff3c6ec75b",
+        "dependabot/cargo/cargo-faef625f8c"
+      ]
+    },
+    {
+      "sha": "363648289ecafaedf0994fa6d87a2c843a18b73c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-08T04:26:16Z",
+      "message": "off-chain-agent: fix Dockerfile to copy entire monorepo workspace",
+      "stats": {
+        "additions": 12,
+        "deletions": 11,
+        "total": 23
+      },
+      "branches": [
+        "main",
+        "dependabot/npm_and_yarn/apps/my-website/npm_and_yarn-ff3c6ec75b",
+        "dependabot/cargo/cargo-faef625f8c"
+      ]
+    },
+    {
+      "sha": "81d1be526e9ee93cf2b5cc2ccfdb10bca3d62233",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-08T04:06:44Z",
+      "message": "monorepo: centralize rust-toolchain.toml and fix Dockerfile builds",
+      "stats": {
+        "additions": 99,
+        "deletions": 726,
+        "total": 825
+      },
+      "branches": [
+        "main",
+        "dependabot/npm_and_yarn/apps/my-website/npm_and_yarn-ff3c6ec75b",
+        "dependabot/cargo/cargo-faef625f8c"
+      ]
+    },
+    {
+      "sha": "b485674ef704b6604e22020e1fc323cd1158d282",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-08T03:22:32Z",
+      "message": "yral-metadata: trigger rebuild after Harbor migration",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "main",
+        "dependabot/npm_and_yarn/apps/my-website/npm_and_yarn-ff3c6ec75b",
+        "dependabot/cargo/cargo-faef625f8c"
+      ]
+    },
+    {
+      "sha": "7147873dc837d2eb4e0516a530dca420671dac81",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-08T03:21:48Z",
+      "message": "revert: remove trigger files that broke builds",
+      "stats": {
+        "additions": 0,
+        "deletions": 5,
+        "total": 5
+      },
+      "branches": [
+        "main",
+        "dependabot/npm_and_yarn/apps/my-website/npm_and_yarn-ff3c6ec75b",
+        "dependabot/cargo/cargo-faef625f8c"
+      ]
+    },
+    {
+      "sha": "1f9d97be3e876c6691b39bed61559efc3d12913b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-08T03:17:03Z",
+      "message": "trigger: rebuild yral-metadata after Harbor registry migration",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "main",
+        "dependabot/npm_and_yarn/apps/my-website/npm_and_yarn-ff3c6ec75b",
+        "dependabot/cargo/cargo-faef625f8c"
+      ]
+    },
+    {
+      "sha": "b69431c1fb8ee678926b153662c0ce9d6211d042",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-08T03:17:03Z",
+      "message": "trigger: rebuild yral-legacy after Harbor registry migration",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "main",
+        "dependabot/npm_and_yarn/apps/my-website/npm_and_yarn-ff3c6ec75b",
+        "dependabot/cargo/cargo-faef625f8c"
+      ]
+    },
+    {
+      "sha": "d50ab1d7a38704f214858849456c781abf7c759b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-08T03:17:03Z",
+      "message": "trigger: rebuild yral-auth after Harbor registry migration",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "main",
+        "dependabot/npm_and_yarn/apps/my-website/npm_and_yarn-ff3c6ec75b",
+        "dependabot/cargo/cargo-faef625f8c"
+      ]
+    },
+    {
+      "sha": "5f3b5ddffeaef9fae00e02d55ea4646e1b540afb",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-08T03:17:03Z",
+      "message": "trigger: rebuild off-chain-agent after Harbor registry migration",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "main",
+        "dependabot/npm_and_yarn/apps/my-website/npm_and_yarn-ff3c6ec75b",
+        "dependabot/cargo/cargo-faef625f8c"
+      ]
+    },
+    {
+      "sha": "5a9ef7978187a1bee28f33f0cbed32c8275a68ff",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-08T03:17:03Z",
+      "message": "trigger: rebuild my-website after Harbor registry migration",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "main",
+        "dependabot/npm_and_yarn/apps/my-website/npm_and_yarn-ff3c6ec75b",
+        "dependabot/cargo/cargo-faef625f8c"
+      ]
+    },
+    {
+      "sha": "fff2b7e3877e3d4c94ab94ebaf0ec689b0e73e51",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-08T03:08:29Z",
+      "message": "trigger: rebuild after Harbor registry migration",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "main",
+        "dependabot/npm_and_yarn/apps/my-website/npm_and_yarn-ff3c6ec75b",
+        "dependabot/cargo/cargo-faef625f8c"
+      ]
+    },
+    {
+      "sha": "521486775f5dab30efd83734bee29b2109ce9be4",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-08T03:08:25Z",
+      "message": "trigger: rebuild after Harbor registry migration",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "main",
+        "dependabot/npm_and_yarn/apps/my-website/npm_and_yarn-ff3c6ec75b",
+        "dependabot/cargo/cargo-faef625f8c"
+      ]
+    },
+    {
+      "sha": "41db519f0fce220462b2535b3d414d3a142b8041",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-08T03:08:22Z",
+      "message": "trigger: rebuild after Harbor registry migration",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "main",
+        "dependabot/npm_and_yarn/apps/my-website/npm_and_yarn-ff3c6ec75b",
+        "dependabot/cargo/cargo-faef625f8c"
+      ]
+    },
+    {
+      "sha": "05746b9e6735f40d07ca9dea7028ca6cf399f3cc",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-08T03:08:18Z",
+      "message": "trigger: rebuild after Harbor registry migration",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "main",
+        "dependabot/npm_and_yarn/apps/my-website/npm_and_yarn-ff3c6ec75b",
+        "dependabot/cargo/cargo-faef625f8c"
+      ]
+    },
+    {
+      "sha": "14f26cbda4d8ceb0ddccba4270109f847189fc49",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-08T03:08:14Z",
+      "message": "trigger: rebuild after Harbor registry migration",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "main",
+        "dependabot/npm_and_yarn/apps/my-website/npm_and_yarn-ff3c6ec75b",
+        "dependabot/cargo/cargo-faef625f8c"
+      ]
+    },
+    {
+      "sha": "4f32cc2662114a033ff3f426992f0e741eff56d3",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-08-08T16:38:32+05:30",
+      "message": "feat(market): US market column + dormant config (US launch PR1) (#480)",
+      "stats": {
+        "additions": 401,
+        "deletions": 3,
+        "total": 404
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8fc349b4864fbc292464620ca875ea9499e760e2",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-08-08T13:19:11+05:30",
+      "message": "fix(watchdog): external dead-man's switch \u2014 the alert path that survives Sentry (#479)",
+      "stats": {
+        "additions": 408,
+        "deletions": 1,
+        "total": 409
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 19,
+  "issues": [],
+  "issue_count": 0
+}
