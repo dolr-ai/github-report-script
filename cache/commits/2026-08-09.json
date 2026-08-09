@@ -1,0 +1,283 @@
+{
+  "date": "2026-08-09",
+  "cached_at": "2026-08-09T18:46:24.083212Z",
+  "commits": [
+    {
+      "sha": "23e409b620c2f9e2ec6e034b7147f9a4fb7c5bb7",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/amorae-web",
+      "timestamp": "2026-08-09T19:14:56+04:00",
+      "message": "docs(amorae): one-backend data-layer contract + mark hardcoded data TEMPORARY (#20)",
+      "stats": {
+        "additions": 146,
+        "deletions": 3,
+        "total": 149
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "0f1fea8408d7646825b5ef697379596f219892c4",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/amorae-web",
+      "timestamp": "2026-08-09T18:43:54+04:00",
+      "message": "fix(swarm): pin amorae to rishi-4/5 (off chat-AI nodes) + prod DB handoff (#19)",
+      "stats": {
+        "additions": 128,
+        "deletions": 3,
+        "total": 131
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "29aa2484a1171e77a703c933cc5bbe9feac2cab5",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/amorae-web",
+      "timestamp": "2026-08-09T18:26:35+04:00",
+      "message": "feat(amorae): anonymous web chat \u2014 make Chat/Login work without the app (#18)",
+      "stats": {
+        "additions": 272,
+        "deletions": 18,
+        "total": 290
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "faad1fb617af168844e331f2fb1dcea1be1620b2",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/amorae-web",
+      "timestamp": "2026-08-09T17:57:26+04:00",
+      "message": "feat(amorae): wire Tara's 6 real videos + real avatar into the feed (#17)",
+      "stats": {
+        "additions": 82,
+        "deletions": 176,
+        "total": 258
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "31bbbd64478306f4c2337350ef8c28088115b081",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/amorae-web",
+      "timestamp": "2026-08-09T19:01:03+05:30",
+      "message": "fix(amorae): wire Tara's principal qi6gd (working assumption, verify later) (#16)",
+      "stats": {
+        "additions": 38,
+        "deletions": 39,
+        "total": 77
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6dbbdecbad9bf26b613e8d0ab28d95ea14760b31",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/amorae-web",
+      "timestamp": "2026-08-09T14:09:48+05:30",
+      "message": "fix(amorae): persist cookie-consent choice in a cookie, not localStorage (#15)",
+      "stats": {
+        "additions": 27,
+        "deletions": 13,
+        "total": 40
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "5e112891c1a5e835eb88d112d8485753bceb2a09",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/amorae-web",
+      "timestamp": "2026-08-09T13:57:49+05:30",
+      "message": "feat(amorae): early-access framing \u2014 /about concept page + pre-launch banner (#14)",
+      "stats": {
+        "additions": 190,
+        "deletions": 3,
+        "total": 193
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "afed6040250febe75cff7702a04141106d55fa76",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/amorae-web",
+      "timestamp": "2026-08-09T13:30:04+05:30",
+      "message": "fix(amorae): correct Tara to the real profile (elitesuperdeer), not qi6gd (#13)",
+      "stats": {
+        "additions": 66,
+        "deletions": 44,
+        "total": 110
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c944f2515d88de0dbfcb0a575c5ab73605024c9c",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/amorae-web",
+      "timestamp": "2026-08-09T12:51:33+05:30",
+      "message": "feat(amorae): CCBill/Segpay merchant-review readiness (#12)",
+      "stats": {
+        "additions": 1468,
+        "deletions": 77,
+        "total": 1545
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9446f31105a4bf7b3630f588cd19591dc637bca6",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/amorae-web",
+      "timestamp": "2026-08-09T12:29:12+05:30",
+      "message": "fix(amorae): derive creator from publisher_user_id, gated on from_ai_influencer (#11)",
+      "stats": {
+        "additions": 75,
+        "deletions": 13,
+        "total": 88
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "833a1554d09ec105d82570e93006fe61c2c35b57",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/amorae-web",
+      "timestamp": "2026-08-09T12:22:37+05:30",
+      "message": "docs(amorae): add DAILY-LOG capturing the 2026-08-09 feed + security work (#10)",
+      "stats": {
+        "additions": 59,
+        "deletions": 0,
+        "total": 59
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "cdbf585bf809a9f73fd38a78ef2340eb674085f0",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/amorae-web",
+      "timestamp": "2026-08-09T12:13:54+05:30",
+      "message": "fix(amorae): mitigate starlette form-DoS CVE + honest vuln baseline (#8)",
+      "stats": {
+        "additions": 226,
+        "deletions": 6,
+        "total": 232
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4b790c4fbd1bc46b0cfd08be39b65fae6e1c6696",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/amorae-web",
+      "timestamp": "2026-08-09T11:50:28+05:30",
+      "message": "feat(amorae): own the CSP in the app instead of at the Caddy edge (#7)",
+      "stats": {
+        "additions": 153,
+        "deletions": 0,
+        "total": 153
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a5673ce582a88c1152d8d75c6e84a6f4bb7002ec",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/amorae-web",
+      "timestamp": "2026-08-09T11:28:22+05:30",
+      "message": "PR2: public TikTok-style video feed + creator/subscribe surface (#6)",
+      "stats": {
+        "additions": 2939,
+        "deletions": 60,
+        "total": 2999
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c69405528624b5e389ed485334cfde7be0c07c95",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-09T04:32:50Z",
+      "message": "chore: downgrade TypeScript, simplify RNG seeding, update mise config, add Tailwind config, update T",
+      "stats": {
+        "additions": 39,
+        "deletions": 385,
+        "total": 424
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/npm-postcss-vulnerability",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 15,
+  "issues": [
+    {
+      "number": 2190,
+      "title": "Video processing pipeline breakdown and image generation plan",
+      "closed_at": "2026-08-09T13:53:56Z",
+      "assignee": "rishichadha30",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2190",
+      "labels": []
+    },
+    {
+      "number": 2180,
+      "title": "Remove/increase the rate limit for individual bots created",
+      "closed_at": "2026-08-09T13:53:12Z",
+      "assignee": "rishichadha30",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2180",
+      "labels": []
+    },
+    {
+      "number": 2176,
+      "title": "Search user/bot profile as a feature",
+      "closed_at": "2026-08-09T13:54:55Z",
+      "assignee": "rishichadha30",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2176",
+      "labels": []
+    }
+  ],
+  "issue_count": 3
+}
