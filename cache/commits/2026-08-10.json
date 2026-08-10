@@ -1,0 +1,264 @@
+{
+  "date": "2026-08-10",
+  "cached_at": "2026-08-10T18:48:32.384317Z",
+  "commits": [
+    {
+      "sha": "a3e8c094cd38c1469eee03f5ef96a5d11d90e2c0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-10T21:12:22+04:00",
+      "message": "chore: add user info backfill test from IC to SpacetimeDB",
+      "stats": {
+        "additions": 255,
+        "deletions": 1,
+        "total": 256
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/npm-postcss-vulnerability",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "7784654702c25169432b7118ec7fc3a0124ee0c5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-10T16:42:54+04:00",
+      "message": "chore: extract spacetime bindings into standalone crate, migrate off-chain-agent, and remove legacy ",
+      "stats": {
+        "additions": 32,
+        "deletions": 29,
+        "total": 61
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/npm-postcss-vulnerability",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "be802b8229f2264ad9f7ae98bc2e76e0907c0a1c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-10T16:18:07+04:00",
+      "message": "chore: update spacetime bindings for new reducers, procedures, and types",
+      "stats": {
+        "additions": 1699,
+        "deletions": 241,
+        "total": 1940
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/npm-postcss-vulnerability",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "766bb7adc37ccccc8ec9bde501d89e89f5056a9b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-10T16:07:16+04:00",
+      "message": "chore: align user_info spacetime module with IC canister, remove deprecated post fetching",
+      "stats": {
+        "additions": 882,
+        "deletions": 644,
+        "total": 1526
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/npm-postcss-vulnerability",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "79633fe3a099f692ee278ee34f3822392a8048c5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-10T14:11:07+04:00",
+      "message": "chore: switch submodule URLs to SSH and add rust-analyzer component",
+      "stats": {
+        "additions": 6,
+        "deletions": 6,
+        "total": 12
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/npm-postcss-vulnerability",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "f2f0f878264b9c42052e91bafe68dbe4aa5cda8e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-10T22:08:18+04:00",
+      "message": "chore: remove token routes, wallet components, and related constants",
+      "stats": {
+        "additions": 1,
+        "deletions": 1770,
+        "total": 1771
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "2d5a3e399dbe5c5a9dd588610cc453d1771f5fd7",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-08-10T22:40:00+05:30",
+      "message": "Merge pull request #2 from rishichadha30/fix/rolling-reboot-settle-time",
+      "stats": {
+        "additions": 31,
+        "deletions": 4,
+        "total": 35
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "0267f58a449b9630bd761e4d33922a3ed1395a67",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-08-10T16:53:13+04:00",
+      "message": "fix(weekly-update): make the rolling reboot actually stagger",
+      "stats": {
+        "additions": 31,
+        "deletions": 4,
+        "total": 35
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "39a631e89acf9e7cb1be829f87c7dfb76c894d3c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-08-10T16:00:29+04:00",
+      "message": "chore: remove PostDetailsWithUserInfo and related FFI functions",
+      "stats": {
+        "additions": 0,
+        "deletions": 149,
+        "total": 149
+      },
+      "branches": [
+        "saikat/spacetime-migration"
+      ]
+    },
+    {
+      "sha": "b458175c8956487cb97407dcb354bb841bc4f7d1",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-08-10T15:46:37+04:00",
+      "message": "feat(surface): surface column + opt-in catalogue filter for amorae-web",
+      "stats": {
+        "additions": 444,
+        "deletions": 5,
+        "total": 449
+      },
+      "branches": [
+        "feat/influencer-surface-column-2026-08-10"
+      ]
+    }
+  ],
+  "commit_count": 10,
+  "issues": [],
+  "issue_count": 0
+}
