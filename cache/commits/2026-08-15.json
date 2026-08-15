@@ -1,0 +1,243 @@
+{
+  "date": "2026-08-15",
+  "cached_at": "2026-08-15T18:43:49.127201Z",
+  "commits": [
+    {
+      "sha": "c20d5ae0829617f62d063d2b749d5a0ead9c26bd",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-15T10:39:48+04:00",
+      "message": "refactor: complete off-chain-agent IC removal \u2014 JWT Bearer auth, SpacetimeDB only",
+      "stats": {
+        "additions": 470,
+        "deletions": 1381,
+        "total": 1851
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/npm-postcss-vulnerability",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/crate-time-vulnerability",
+        "renovate/crate-serde_with-vulnerability",
+        "renovate/crate-jsonwebtoken-vulnerability",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "b14eea4ddabdc84ecd422028c301c4f380bed0f5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-15T09:57:23+04:00",
+      "message": "refactor: remove push_notifications module from off-chain-agent",
+      "stats": {
+        "additions": 0,
+        "deletions": 63,
+        "total": 63
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/npm-postcss-vulnerability",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/crate-time-vulnerability",
+        "renovate/crate-serde_with-vulnerability",
+        "renovate/crate-jsonwebtoken-vulnerability",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "7bfbf5d7e22f9a50477993ad3868e96992ffe5ee",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-15T09:44:33+04:00",
+      "message": "refactor: begin off-chain-agent IC removal",
+      "stats": {
+        "additions": 30,
+        "deletions": 38,
+        "total": 68
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/npm-postcss-vulnerability",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/crate-time-vulnerability",
+        "renovate/crate-serde_with-vulnerability",
+        "renovate/crate-jsonwebtoken-vulnerability",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/cargo/redis-1.4.1",
+        "dependabot/cargo/jsonwebtoken-11.0.0",
+        "dependabot/cargo/cargo-faef625f8c"
+      ]
+    },
+    {
+      "sha": "d7f6c94cbb776b285dbc7b3db8c16fbf3a8c5d20",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-15T09:30:34+04:00",
+      "message": "refactor: strip deprecated IC canister, Redis, rewards, and leaderboard modules",
+      "stats": {
+        "additions": 38,
+        "deletions": 9170,
+        "total": 9208
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/npm-postcss-vulnerability",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/crate-time-vulnerability",
+        "renovate/crate-serde_with-vulnerability",
+        "renovate/crate-jsonwebtoken-vulnerability",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/cargo/redis-1.4.1",
+        "dependabot/cargo/jsonwebtoken-11.0.0",
+        "dependabot/cargo/cargo-faef625f8c"
+      ]
+    },
+    {
+      "sha": "9afb722d93edb69bc5b3e8e0ec53a5c32ed29df9",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-15T08:05:33+04:00",
+      "message": "refactor: migrate yral-metadata from Redis/Dragonfly to SpacetimeDB",
+      "stats": {
+        "additions": 652,
+        "deletions": 460,
+        "total": 1112
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/npm-postcss-vulnerability",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/crate-time-vulnerability",
+        "renovate/crate-serde_with-vulnerability",
+        "renovate/crate-jsonwebtoken-vulnerability",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/cargo/redis-1.4.1",
+        "dependabot/cargo/jsonwebtoken-11.0.0",
+        "dependabot/cargo/cargo-faef625f8c"
+      ]
+    },
+    {
+      "sha": "05121678b14b808ccc758dc8724271cc9f596f42",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-08-15T10:40:50+04:00",
+      "message": "chore: remove init.sh and setup.sh",
+      "stats": {
+        "additions": 0,
+        "deletions": 122,
+        "total": 122
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "2fdf7d36a7d057cc580a2db60ce4f06f84412c40",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-08-15T10:33:44+04:00",
+      "message": "chore: rename coolify-1 to rishi-agent-1",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 7,
+  "issues": [],
+  "issue_count": 0
+}
