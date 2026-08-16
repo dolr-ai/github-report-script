@@ -1,0 +1,63 @@
+{
+  "date": "2026-08-16",
+  "cached_at": "2026-08-16T18:43:17.355614Z",
+  "commits": [
+    {
+      "sha": "183743ff2208180f855cd7665a2ceef207ee4cca",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-16T11:36:35+04:00",
+      "message": "chore: add trunk tool and pin Rust nightly version in mise",
+      "stats": {
+        "additions": 6,
+        "deletions": 1,
+        "total": 7
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/npm-postcss-vulnerability",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-source-controller-1.x",
+        "renovate/ghcr.io-fluxcd-notification-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/crate-time-vulnerability",
+        "renovate/crate-serde_with-vulnerability",
+        "renovate/crate-jsonwebtoken-vulnerability",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "b11999057804c1c1ba3480d1dd60d7b4f53a9664",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-08-16T16:17:16+04:00",
+      "message": "chore: enable rishi-agent-1 in inventory",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 2,
+  "issues": [],
+  "issue_count": 0
+}
