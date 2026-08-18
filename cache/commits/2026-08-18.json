@@ -1,0 +1,207 @@
+{
+  "date": "2026-08-18",
+  "cached_at": "2026-08-18T18:45:57.780362Z",
+  "commits": [
+    {
+      "sha": "74665b21947e36d584fdb6b92cfc2fb38cb7f694",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-18T21:43:25+04:00",
+      "message": "refactor: restructure button and progress component in hello-world app",
+      "stats": {
+        "additions": 16,
+        "deletions": 11,
+        "total": 27
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/crate-time-vulnerability",
+        "renovate/crate-serde_with-vulnerability",
+        "renovate/crate-jsonwebtoken-vulnerability",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/vastai-gte-1.5.4",
+        "dependabot/pip/ansible-lint-gte-26.8.0",
+        "dependabot/pip/ansible-core-gte-2.19.12",
+        "dependabot/cargo/thiserror-2.0.20"
+      ]
+    },
+    {
+      "sha": "53749ce20469601a1c28020647da17464c82e25d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-18T17:49:06+04:00",
+      "message": "refactor: update button behavior and styling in hello-world app",
+      "stats": {
+        "additions": 10,
+        "deletions": 4,
+        "total": 14
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/crate-time-vulnerability",
+        "renovate/crate-serde_with-vulnerability",
+        "renovate/crate-jsonwebtoken-vulnerability",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/vastai-gte-1.5.4",
+        "dependabot/pip/ansible-lint-gte-26.8.0",
+        "dependabot/pip/ansible-core-gte-2.19.12",
+        "dependabot/cargo/thiserror-2.0.20"
+      ]
+    },
+    {
+      "sha": "2792cc095f42a27b5712dc7e60bb2530c9a7beab",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-18T17:32:08+04:00",
+      "message": "Remove dead Redis/Dragonfly code from yral-metadata and yral-web",
+      "stats": {
+        "additions": 56,
+        "deletions": 2595,
+        "total": 2651
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/crate-time-vulnerability",
+        "renovate/crate-serde_with-vulnerability",
+        "renovate/crate-jsonwebtoken-vulnerability",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/vastai-gte-1.5.4",
+        "dependabot/pip/ansible-lint-gte-26.8.0",
+        "dependabot/pip/ansible-core-gte-2.19.12",
+        "dependabot/cargo/thiserror-2.0.20",
+        "dependabot/cargo/redis-1.4.1",
+        "dependabot/cargo/jsonwebtoken-11.0.0",
+        "dependabot/cargo/console_log-1.1.0",
+        "dependabot/cargo/cargo-faef625f8c"
+      ]
+    },
+    {
+      "sha": "be149a7fd62e57fb3ca0ae85187d247108707b26",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-18T08:17:42+04:00",
+      "message": "refactor: complete yral-web IC removal \u2014 remove candid, ic-agent, k256, canisters-client, yral-canis",
+      "stats": {
+        "additions": 188,
+        "deletions": 599,
+        "total": 787
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/crate-time-vulnerability",
+        "renovate/crate-serde_with-vulnerability",
+        "renovate/crate-jsonwebtoken-vulnerability",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/vastai-gte-1.5.4",
+        "dependabot/pip/ansible-lint-gte-26.8.0",
+        "dependabot/pip/ansible-core-gte-2.19.12",
+        "dependabot/cargo/thiserror-2.0.20",
+        "dependabot/cargo/redis-1.4.1",
+        "dependabot/cargo/jsonwebtoken-11.0.0",
+        "dependabot/cargo/console_log-1.1.0",
+        "dependabot/cargo/cargo-faef625f8c"
+      ]
+    },
+    {
+      "sha": "e9a8fa36fffa9a9d90c00e8bac7ceaabb0bea8a9",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-08-18T22:00:18+04:00",
+      "message": "Migrate mobile app from IC canisters to SpacetimeDB REST (Phases 2A-2I)",
+      "stats": {
+        "additions": 867,
+        "deletions": 421,
+        "total": 1288
+      },
+      "branches": [
+        "saikat/spacetime-migration"
+      ]
+    },
+    {
+      "sha": "bc6774b88de118320128283a07e5765e4900d67a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-08-18T13:10:38+04:00",
+      "message": "chore: comment rishi-agent-1",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 6,
+  "issues": [],
+  "issue_count": 0
+}
