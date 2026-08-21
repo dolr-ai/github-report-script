@@ -1,0 +1,999 @@
+{
+  "date": "2026-08-21",
+  "cached_at": "2026-08-21T18:46:02.298774Z",
+  "commits": [
+    {
+      "sha": "b0c084eb7e8a5de1d45435427690075c22a09db1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-21T21:57:22+04:00",
+      "message": "chore: update console_log to 1.1.0",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "be9a64c0345436545be988a453d30bbb0a8c6d2b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-21T21:48:31+04:00",
+      "message": "Remove Redis/Dragonfly/KVRocks references from config and docs",
+      "stats": {
+        "additions": 6,
+        "deletions": 51,
+        "total": 57
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "af3e6378e067cfb3f74250164513822320b25f02",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-21T21:46:14+04:00",
+      "message": "Remove Dragonfly/KVRocks/Redis secrets from yral-auth and off-chain-agent",
+      "stats": {
+        "additions": 59,
+        "deletions": 76,
+        "total": 135
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "a751ad956d03ab06cde0d8fc00a400adb2e39e3b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-21T21:44:23+04:00",
+      "message": "Clean up Redis/Dragonfly references from yral-auth and yral-metadata comments",
+      "stats": {
+        "additions": 5,
+        "deletions": 7,
+        "total": 12
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "8e557309e13afaa2aa9e6acd6266fee14144a4a0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-21T21:40:59+04:00",
+      "message": "Remove Redis/Dragonfly backfill test and references from yral-database-spacetime",
+      "stats": {
+        "additions": 8,
+        "deletions": 558,
+        "total": 566
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "f7f6a72e7d55b8a77cafcc0d438a28dd03a9d497",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-21T21:39:28+04:00",
+      "message": "Remove bb8-redis and redis from workspace dependencies",
+      "stats": {
+        "additions": 0,
+        "deletions": 2,
+        "total": 2
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "fa373ba08ac91d717c13741109894820b24e15b5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-21T21:38:39+04:00",
+      "message": "Remove vestigial redis-kv feature flags from yral-web",
+      "stats": {
+        "additions": 0,
+        "deletions": 17,
+        "total": 17
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "c7383a540052f336e97ac712ff6eb5ca1556808c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-21T21:34:03+04:00",
+      "message": "chore: remove unused Redis dependencies from yral-types",
+      "stats": {
+        "additions": 13,
+        "deletions": 108,
+        "total": 121
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "04ba77070a92b385802b9d3ae5ab4039d4ec4d43",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-21T21:32:05+04:00",
+      "message": "Remove vestigial Redis deps from yral-types",
+      "stats": {
+        "additions": 2,
+        "deletions": 12,
+        "total": 14
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "7bd639eac86485f83a5473078d4f0c2e5e289c58",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-21T21:21:45+04:00",
+      "message": "chore: remove Vast.ai GPU provisioning + add my-website TODO",
+      "stats": {
+        "additions": 492,
+        "deletions": 645,
+        "total": 1137
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/ansible-lint-gte-26.8.0"
+      ]
+    },
+    {
+      "sha": "b5b5bf24677cc90a30c3676b4c60e1519fd20f32",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-21T21:05:27+04:00",
+      "message": "Merge pull request #185 from dolr-ai/dependabot/pip/ansible-core-gte-2.19.12",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/ansible-lint-gte-26.8.0"
+      ]
+    },
+    {
+      "sha": "a3f6d283be0cf194c0e163b244be5d2e803c19c1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-21T20:58:39+04:00",
+      "message": "fix: add NavigationMenu island to app + remove all SvelteKit/JS/TS files",
+      "stats": {
+        "additions": 1,
+        "deletions": 10688,
+        "total": 10689
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/ansible-lint-gte-26.8.0"
+      ]
+    },
+    {
+      "sha": "863474324acb95b7ab8fbbf6e56bf2ffc6b4c1b8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-21T20:40:06+04:00",
+      "message": "chore: mark fnox linux-x64 provenance as verified in mise.lock",
+      "stats": {
+        "additions": 1,
+        "deletions": 0,
+        "total": 1
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/ansible-lint-gte-26.8.0"
+      ]
+    },
+    {
+      "sha": "26b537cb3c4176adfc532ec65a47b8d15194f10a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-21T20:39:13+04:00",
+      "message": "fix: rewrite Dockerfile to match yral-auth pattern (COPY . ., scratch runtime, no Node.js)",
+      "stats": {
+        "additions": 42,
+        "deletions": 40,
+        "total": 82
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/ansible-lint-gte-26.8.0"
+      ]
+    },
+    {
+      "sha": "4e074740725a59ae5745d2608f265a5fc0b6fb41",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-21T20:11:14+04:00",
+      "message": "Merge pull request #190 from rishichadha30/feat/spacetime-creator-owns-post-2026-08-21",
+      "stats": {
+        "additions": 26,
+        "deletions": 10,
+        "total": 36
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/ansible-lint-gte-26.8.0"
+      ]
+    },
+    {
+      "sha": "6abf49311ef5123cf7d20ad8146ff3d8c8211a88",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-21T20:03:21+04:00",
+      "message": "fix: install cargo-binstall before cargo-leptos in Dockerfile",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/ansible-lint-gte-26.8.0"
+      ]
+    },
+    {
+      "sha": "a0b130d0791e069c1b231d46d3fb10bb49170db4",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-21T19:59:21+04:00",
+      "message": "chore: update yral and yral-mobile submodules",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/ansible-lint-gte-26.8.0"
+      ]
+    },
+    {
+      "sha": "d03e7fbca4f1a8ba5f2ba12e84bf5b596faad846",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-21T19:58:54+04:00",
+      "message": "feat: rewrite my-website from SvelteKit to Leptos with islands architecture",
+      "stats": {
+        "additions": 5827,
+        "deletions": 128,
+        "total": 5955
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/ansible-lint-gte-26.8.0"
+      ]
+    },
+    {
+      "sha": "407b55438963296d60b8705ef9925fa2f5050895",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-21T19:44:11+04:00",
+      "message": "feat(spacetime): let a post's creator call add_post and update_post_status",
+      "stats": {
+        "additions": 26,
+        "deletions": 10,
+        "total": 36
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/ansible-lint-gte-26.8.0"
+      ]
+    },
+    {
+      "sha": "2ab6d0e11a763ffb182e1acdb9209829ec2a1905",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-21T12:21:46+04:00",
+      "message": "chore: upgrade jsonwebtoken 9.3.1 \u2192 11.0.0",
+      "stats": {
+        "additions": 68,
+        "deletions": 30,
+        "total": 98
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/ansible-lint-gte-26.8.0"
+      ]
+    },
+    {
+      "sha": "6cf000a7c6e93c1bbfb4c01ab4e2cf012769c69e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-21T11:06:38+04:00",
+      "message": "chore: update Cargo.lock dependencies and remove off-chain-agent env example",
+      "stats": {
+        "additions": 8,
+        "deletions": 11,
+        "total": 19
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/ansible-lint-gte-26.8.0"
+      ]
+    },
+    {
+      "sha": "f85c55bd8c2e247d70e14e3df3f6921a151c452a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-21T11:06:35+04:00",
+      "message": "docs: promote 'No Truncating Terminal Output' to top-level policy",
+      "stats": {
+        "additions": 3,
+        "deletions": 2,
+        "total": 5
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/ansible-lint-gte-26.8.0"
+      ]
+    },
+    {
+      "sha": "28d8cd5b1daed73b74caa540e530a208ff56ce85",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-21T11:05:46+04:00",
+      "message": "chore: remove stale Cargo.lock files from workspace members",
+      "stats": {
+        "additions": 0,
+        "deletions": 11635,
+        "total": 11635
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/ansible-lint-gte-26.8.0"
+      ]
+    },
+    {
+      "sha": "a0284846138193759c43ecd4a16afe92f9ca24d7",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-21T10:53:14+04:00",
+      "message": "Merge pull request #189 from rishichadha30/fix/spacetime-user-profiles-pk-update-2026-08-21",
+      "stats": {
+        "additions": 14,
+        "deletions": 28,
+        "total": 42
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-snowplow-enrich-kafka-6.x",
+        "renovate/reloader-2.x",
+        "renovate/oauth2-proxy",
+        "renovate/moby-buildkit-0.x",
+        "renovate/java-21.x",
+        "renovate/ghcr.io-tektoncd-triggers-webhook-dd1edc925ee1772a9f76e2c1bc291ef6-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-interceptors-3176d6a3f314c3655b30bfd36e421dd5-0.x",
+        "renovate/ghcr.io-tektoncd-triggers-controller-f656ca31de179ab913fa76abc255c315-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+        "renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+        "renovate/getrandom-0.x",
+        "renovate/fluxcd-flux2-2.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/candid_parser-0.x",
+        "renovate/alloy-1.x",
+        "main",
+        "dependabot/pip/ansible-lint-gte-26.8.0"
+      ]
+    },
+    {
+      "sha": "12ae092d1e459dbd6abe796c084029b50891c2fd",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-08-21T15:06:54+04:00",
+      "message": "fix(ai-influencer): make AI-influencer creation work under SpacetimeDB + yral-auth v2 (#1224)",
+      "stats": {
+        "additions": 50,
+        "deletions": 8,
+        "total": 58
+      },
+      "branches": [
+        "main",
+        "fix/mobile-hosts-name-the-right-constant-2026-08-21",
+        "fix/human-profile-image-upload-2026-08-21"
+      ]
+    },
+    {
+      "sha": "f321e5fb415dcfb70974de2f663a14f82d1822b1",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-08-21T20:22:44+04:00",
+      "message": "fix(profile): persist the human profile picture to SpacetimeDB",
+      "stats": {
+        "additions": 14,
+        "deletions": 0,
+        "total": 14
+      },
+      "branches": [
+        "fix/mobile-hosts-name-the-right-constant-2026-08-21"
+      ]
+    },
+    {
+      "sha": "33dc3cf48d49d328da93688318d955f7d40acda8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-08-21T19:59:56+04:00",
+      "message": "fix(config): point profile-image hosts at the agent via the right constants",
+      "stats": {
+        "additions": 7,
+        "deletions": 6,
+        "total": 13
+      },
+      "branches": [
+        "fix/mobile-hosts-name-the-right-constant-2026-08-21"
+      ]
+    },
+    {
+      "sha": "3a428d5219c9fb973911b79d825f9ffdf4402072",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-08-21T15:21:53+04:00",
+      "message": "fix(profile): human profile-pic upload to our agent service + persist to SpacetimeDB",
+      "stats": {
+        "additions": 18,
+        "deletions": 2,
+        "total": 20
+      },
+      "branches": [
+        "fix/human-profile-image-upload-2026-08-21"
+      ]
+    },
+    {
+      "sha": "bf5fb3a807109d80e8ddf3021d4cb8bd837321c3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-08-21T16:08:12+04:00",
+      "message": "Remove outdated team SSH keys",
+      "stats": {
+        "additions": 0,
+        "deletions": 23,
+        "total": 23
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a32753504782af1f8ae22b5798cb37558c1b88ea",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-08-21T13:51:06+04:00",
+      "message": "feat(user): profile-image upload endpoint (Storj bucket + link-share, JWT auth) (#490)",
+      "stats": {
+        "additions": 145,
+        "deletions": 0,
+        "total": 145
+      },
+      "branches": [
+        "main",
+        "feat/videogen-service-2026-08-21"
+      ]
+    },
+    {
+      "sha": "e74961c43d171ecbda5d841e8cded33f181908a7",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-08-21T21:43:29+04:00",
+      "message": "refactor(videogen): default the loop ON, and cut tests that prove nothing",
+      "stats": {
+        "additions": 23,
+        "deletions": 77,
+        "total": 100
+      },
+      "branches": [
+        "feat/videogen-service-2026-08-21"
+      ]
+    },
+    {
+      "sha": "8e6b1c3b674ea858d09e033b6e0052feaffc3eef",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-08-21T20:34:20+04:00",
+      "message": "fix(videogen): ffmpeg in the image, and read the video from a file not a pipe",
+      "stats": {
+        "additions": 101,
+        "deletions": 23,
+        "total": 124
+      },
+      "branches": [
+        "feat/videogen-service-2026-08-21"
+      ]
+    },
+    {
+      "sha": "e047f4bb031a4be0b46af69b8b5f7e8e1c978453",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-08-21T20:19:11+04:00",
+      "message": "feat(videogen): rebuild AI video generation on the agent service",
+      "stats": {
+        "additions": 2372,
+        "deletions": 0,
+        "total": 2372
+      },
+      "branches": [
+        "feat/videogen-service-2026-08-21"
+      ]
+    },
+    {
+      "sha": "2fb7540df6f78e7ed5eddfed516922adc459b5e5",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-08-21T13:49:28+04:00",
+      "message": "style: ruff format profile-image route",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "feat/profile-image-upload-endpoint-2026-08-21"
+      ]
+    },
+    {
+      "sha": "40f576446f9c4dc0cce6843de6808febc078ff48",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-08-21T13:42:38+04:00",
+      "message": "switch profile-image storage from Hetzner to a Storj bucket + link-share",
+      "stats": {
+        "additions": 28,
+        "deletions": 59,
+        "total": 87
+      },
+      "branches": [
+        "feat/profile-image-upload-endpoint-2026-08-21"
+      ]
+    },
+    {
+      "sha": "510acd21816dbd9b152431361afd475e2654684f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-08-21T13:15:31+04:00",
+      "message": "feat(user): profile-image upload endpoint (Hetzner public bucket, JWT auth)",
+      "stats": {
+        "additions": 175,
+        "deletions": 0,
+        "total": 175
+      },
+      "branches": [
+        "feat/profile-image-upload-endpoint-2026-08-21"
+      ]
+    }
+  ],
+  "commit_count": 36,
+  "issues": [],
+  "issue_count": 0
+}
