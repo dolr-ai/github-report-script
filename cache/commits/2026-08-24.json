@@ -1,0 +1,309 @@
+{
+  "date": "2026-08-24",
+  "cached_at": "2026-08-24T18:46:16.799581Z",
+  "commits": [
+    {
+      "sha": "0203edce7910f7e6477d2a9d1a74d848b2a70538",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-24T22:29:54+04:00",
+      "message": "fix(trivy-operator): bump scan job memory limit 500M\u21921Gi",
+      "stats": {
+        "additions": 10,
+        "deletions": 0,
+        "total": 10
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6c21b26fdb2999432fa4d2734552a4e287e78567",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-24T20:04:55+04:00",
+      "message": "chore(yral-mobile): update subproject commit reference",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "61f9491a786be091d6db4a5b70be51c591a369c2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-24T16:30:26+04:00",
+      "message": "fix(mise): update Rust nightly version and adjust auth test execution for iOS compatibility",
+      "stats": {
+        "additions": 10,
+        "deletions": 3,
+        "total": 13
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ebdae309d1b9d2189ef13b56b494f3a58a06b0be",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-24T15:03:09+04:00",
+      "message": "refactor(spacetimedb): restore default case conversion, clarify numeric suffix naming, bump yral-mob",
+      "stats": {
+        "additions": 2,
+        "deletions": 12,
+        "total": 14
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a08521b4823b2ca2a7fd613ec9c0646211a55982",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-24T14:43:47+04:00",
+      "message": "refactor(spacetimedb): remove legacy v-prefixed names and disable case conversion",
+      "stats": {
+        "additions": 263,
+        "deletions": 674,
+        "total": 937
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6db2d2c3509b53b862865a010b5efa859cf10cf7",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-24T12:28:04+04:00",
+      "message": "feat(monitoring): deploy Alertmanager\u2192Google Chat webhook relay",
+      "stats": {
+        "additions": 242,
+        "deletions": 13,
+        "total": 255
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "01b36fbb8da3b56a4b48ae93f583628b64231104",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-24T12:12:48+04:00",
+      "message": "fix(monitoring): add Google Chat payload template to Alertmanager webhook",
+      "stats": {
+        "additions": 13,
+        "deletions": 13,
+        "total": 26
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "745e2d8a8defabd5c86b30df3edbfce4f32462e1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-24T12:08:20+04:00",
+      "message": "fix(monitoring): correct Google Chat webhook API key typo + fix OOM alert PromQL parse error",
+      "stats": {
+        "additions": 38,
+        "deletions": 30,
+        "total": 68
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d4fb16848b73f950d5edff091e08ab0ddfa9bff2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-24T11:01:49+04:00",
+      "message": "chore(deps): update crypto and leptos dependencies, enable default features for ic-agent and k256",
+      "stats": {
+        "additions": 348,
+        "deletions": 99,
+        "total": 447
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "28ec4bb50d806b7c99249dc1e072d6cac4771a8f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-24T10:44:57+04:00",
+      "message": "refactor(web): update icondata and hmac, migrate share and social components to builder syntax",
+      "stats": {
+        "additions": 225,
+        "deletions": 213,
+        "total": 438
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "564a667f7515d25ffc95b28cb52a458d3a3c5bc8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-24T10:14:03+04:00",
+      "message": "chore(deps): update base64 and config, remove unused workspace dependencies",
+      "stats": {
+        "additions": 73,
+        "deletions": 112,
+        "total": 185
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3dceacdab467ea5b23fdd3a81af86c12b0555587",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-24T10:13:49+04:00",
+      "message": "Merge pull request #209 from dolr-ai/renovate/registry.k8s.io-external-dns-external-dns-0.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "90bb54a6275c59a3ed247fb21858a9e91b601c53",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-24T09:57:24+04:00",
+      "message": "Merge pull request #208 from dolr-ai/renovate/quay.io-strimzi-kafka-1.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7ea1c61626781e8f39f8d56fc7d46d2f9f4f2d0a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-24T09:56:11+04:00",
+      "message": "Merge pull request #207 from dolr-ai/renovate/metrics-server-3.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "71e3deacb4598e3b519587277125cb57dd915c55",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-24T09:55:14+04:00",
+      "message": "Merge pull request #206 from dolr-ai/renovate/headlamp-0.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "cd051027261110d87a92a1dec57b3128ff118f5f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-24T09:41:29+04:00",
+      "message": "chore(deps): update rand to v0.10 and enable default reqwest/rustls features",
+      "stats": {
+        "additions": 69,
+        "deletions": 23,
+        "total": 92
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ace1dc957a9bb90402e7cb591ef740deda2979d3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-24T09:13:05+04:00",
+      "message": "Merge pull request #205 from dolr-ai/renovate/docker.io-rust-1.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "be89f7efbf6f387268c0577bc381ed17f83eb1d1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-24T09:12:41+04:00",
+      "message": "Merge pull request #204 from dolr-ai/renovate/t8y2-dbx-0.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b6ff53722a4b691fa2bf27a41c654d0e82822b0b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-24T09:07:16+04:00",
+      "message": "refactor(yral-web): remove unused code and gate SSR-only types",
+      "stats": {
+        "additions": 122,
+        "deletions": 171,
+        "total": 293
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "746a023f4c5a172425195e293063d29e76a85c3c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-08-24T17:24:36+04:00",
+      "message": "Refactor SpacetimeDB handling for improved data models (#1229)",
+      "stats": {
+        "additions": 613,
+        "deletions": 238,
+        "total": 851
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 20,
+  "issues": [],
+  "issue_count": 0
+}
