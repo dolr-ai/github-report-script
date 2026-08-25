@@ -1,0 +1,660 @@
+{
+  "date": "2026-08-25",
+  "cached_at": "2026-08-25T18:46:07.635502Z",
+  "commits": [
+    {
+      "sha": "37eb9b096973feaa9653193f70374562432ff36a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-25T22:31:35+04:00",
+      "message": "Remove stale TODO and fix missing newline in my-website navigation menu",
+      "stats": {
+        "additions": 1,
+        "deletions": 2,
+        "total": 3
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "721424b7bf95131f15642d31e1f76259d339ecfb",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-25T22:12:11+04:00",
+      "message": "Fix my-website: hamburger menu visibility + border colors",
+      "stats": {
+        "additions": 16,
+        "deletions": 13,
+        "total": 29
+      },
+      "branches": [
+        "main",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.2.0-kafka-4.3.1",
+        "dependabot/cargo/uuid-1.25.0",
+        "dependabot/cargo/uts2ts-1.0.0",
+        "dependabot/cargo/tower-http-0.7.0",
+        "dependabot/cargo/strum-0.28.0",
+        "dependabot/cargo/speedate-0.17.0"
+      ]
+    },
+    {
+      "sha": "1e96a218a3753fb05c23cac492cb1db371cd6a91",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-25T22:02:00+04:00",
+      "message": "Remove GobGob NFT profile picture code from yral-web",
+      "stats": {
+        "additions": 7,
+        "deletions": 39,
+        "total": 46
+      },
+      "branches": [
+        "main",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.2.0-kafka-4.3.1",
+        "dependabot/cargo/uuid-1.25.0",
+        "dependabot/cargo/uts2ts-1.0.0",
+        "dependabot/cargo/tower-http-0.7.0",
+        "dependabot/cargo/strum-0.28.0",
+        "dependabot/cargo/speedate-0.17.0"
+      ]
+    },
+    {
+      "sha": "2a44269c003a442047fadb85f1af16b4470d80d2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-25T21:52:22+04:00",
+      "message": "Remove stale TODO entries",
+      "stats": {
+        "additions": 0,
+        "deletions": 5,
+        "total": 5
+      },
+      "branches": [
+        "main",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.2.0-kafka-4.3.1",
+        "dependabot/cargo/uuid-1.25.0",
+        "dependabot/cargo/uts2ts-1.0.0",
+        "dependabot/cargo/tower-http-0.7.0",
+        "dependabot/cargo/strum-0.28.0",
+        "dependabot/cargo/speedate-0.17.0"
+      ]
+    },
+    {
+      "sha": "2c97d828c2470a60db2a90321b5d0356c8828896",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-25T21:51:59+04:00",
+      "message": "Move Beszel to gobazzinga.io section and remove stale dashboard entries",
+      "stats": {
+        "additions": 8,
+        "deletions": 18,
+        "total": 26
+      },
+      "branches": [
+        "main",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.2.0-kafka-4.3.1",
+        "dependabot/cargo/uuid-1.25.0",
+        "dependabot/cargo/uts2ts-1.0.0",
+        "dependabot/cargo/tower-http-0.7.0",
+        "dependabot/cargo/strum-0.28.0",
+        "dependabot/cargo/speedate-0.17.0"
+      ]
+    },
+    {
+      "sha": "c40c5f46d2178d8e21f11b9884f996f54aa5bd01",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-25T21:48:47+04:00",
+      "message": "Enforce workspace dependencies across all Rust crates",
+      "stats": {
+        "additions": 6,
+        "deletions": 11,
+        "total": 17
+      },
+      "branches": [
+        "main",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.2.0-kafka-4.3.1",
+        "dependabot/cargo/uuid-1.25.0",
+        "dependabot/cargo/uts2ts-1.0.0",
+        "dependabot/cargo/tower-http-0.7.0",
+        "dependabot/cargo/strum-0.28.0",
+        "dependabot/cargo/speedate-0.17.0"
+      ]
+    },
+    {
+      "sha": "9f44e0a2c0ac0d9247fbdfeb32c9fbcb94dc0de9",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-25T21:38:10+04:00",
+      "message": "Remove orphaned server-side Mixpanel code from yral-web",
+      "stats": {
+        "additions": 0,
+        "deletions": 689,
+        "total": 689
+      },
+      "branches": [
+        "main",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.2.0-kafka-4.3.1",
+        "dependabot/cargo/uuid-1.25.0",
+        "dependabot/cargo/uts2ts-1.0.0",
+        "dependabot/cargo/tower-http-0.7.0",
+        "dependabot/cargo/strum-0.28.0",
+        "dependabot/cargo/speedate-0.17.0"
+      ]
+    },
+    {
+      "sha": "e9243fd9108705f6f3f153d7fbbe2cf1e541d387",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-25T21:27:52+04:00",
+      "message": "Remove stale task-runner reference from apps/README.md",
+      "stats": {
+        "additions": 0,
+        "deletions": 1,
+        "total": 1
+      },
+      "branches": [
+        "main",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.2.0-kafka-4.3.1",
+        "dependabot/cargo/uuid-1.25.0",
+        "dependabot/cargo/uts2ts-1.0.0",
+        "dependabot/cargo/tower-http-0.7.0",
+        "dependabot/cargo/strum-0.28.0",
+        "dependabot/cargo/speedate-0.17.0"
+      ]
+    },
+    {
+      "sha": "9c5ddb19eee68741b5fe7f831eee9539f906c715",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-25T21:25:14+04:00",
+      "message": "Remove dotenv dependency + dead task-runner crate",
+      "stats": {
+        "additions": 1,
+        "deletions": 1367,
+        "total": 1368
+      },
+      "branches": [
+        "main",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.2.0-kafka-4.3.1",
+        "dependabot/cargo/uuid-1.25.0",
+        "dependabot/cargo/uts2ts-1.0.0",
+        "dependabot/cargo/tower-http-0.7.0",
+        "dependabot/cargo/strum-0.28.0",
+        "dependabot/cargo/speedate-0.17.0"
+      ]
+    },
+    {
+      "sha": "8ef7c41bf8df5213ad019f8338192847d6be96ad",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-25T21:05:46+04:00",
+      "message": "Remove dead goldilocks namespace labels",
+      "stats": {
+        "additions": 1,
+        "deletions": 8,
+        "total": 9
+      },
+      "branches": [
+        "main",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.2.0-kafka-4.3.1",
+        "dependabot/cargo/uuid-1.25.0",
+        "dependabot/cargo/uts2ts-1.0.0",
+        "dependabot/cargo/tower-http-0.7.0",
+        "dependabot/cargo/strum-0.28.0",
+        "dependabot/cargo/speedate-0.17.0"
+      ]
+    },
+    {
+      "sha": "404720d61b4014dd3b865973d4f3436d375ca043",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-25T21:03:32+04:00",
+      "message": "Update yral-mobile and remove stale TODOs and unused Tailwind config",
+      "stats": {
+        "additions": 1,
+        "deletions": 17,
+        "total": 18
+      },
+      "branches": [
+        "main",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.2.0-kafka-4.3.1",
+        "dependabot/cargo/uuid-1.25.0",
+        "dependabot/cargo/uts2ts-1.0.0",
+        "dependabot/cargo/tower-http-0.7.0",
+        "dependabot/cargo/strum-0.28.0",
+        "dependabot/cargo/speedate-0.17.0"
+      ]
+    },
+    {
+      "sha": "294681fad0a10e7113216a533736daf6d13b1f43",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-25T21:02:46+04:00",
+      "message": "Remove ci-e2e-reader Kafka infrastructure \u2014 use Kafka Bridge HTTP API",
+      "stats": {
+        "additions": 36,
+        "deletions": 135,
+        "total": 171
+      },
+      "branches": [
+        "main",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.2.0-kafka-4.3.1",
+        "dependabot/cargo/uuid-1.25.0",
+        "dependabot/cargo/uts2ts-1.0.0",
+        "dependabot/cargo/tower-http-0.7.0",
+        "dependabot/cargo/strum-0.28.0",
+        "dependabot/cargo/speedate-0.17.0"
+      ]
+    },
+    {
+      "sha": "3b8282ec62c99d852d3ec56d2ec88662894767a6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-25T20:29:02+04:00",
+      "message": "Remove event processing from off-chain-agent",
+      "stats": {
+        "additions": 53,
+        "deletions": 1199,
+        "total": 1252
+      },
+      "branches": [
+        "main",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.2.0-kafka-4.3.1",
+        "dependabot/cargo/uuid-1.25.0",
+        "dependabot/cargo/uts2ts-1.0.0",
+        "dependabot/cargo/tower-http-0.7.0",
+        "dependabot/cargo/strum-0.28.0",
+        "dependabot/cargo/speedate-0.17.0"
+      ]
+    },
+    {
+      "sha": "dbfb4ba3f6d49df629e3a34268de81321dc63037",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-25T18:02:46+04:00",
+      "message": "Remove ffmpeg@7 TODO",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.2.0-kafka-4.3.1",
+        "dependabot/cargo/uuid-1.25.0",
+        "dependabot/cargo/uts2ts-1.0.0",
+        "dependabot/cargo/tower-http-0.7.0",
+        "dependabot/cargo/strum-0.28.0",
+        "dependabot/cargo/speedate-0.17.0"
+      ]
+    },
+    {
+      "sha": "c85b138e82efe0ea2a5bacf59ba0d35894727565",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-25T13:06:33+04:00",
+      "message": "Remove prod-bin feature from off-chain-agent",
+      "stats": {
+        "additions": 1,
+        "deletions": 4,
+        "total": 5
+      },
+      "branches": [
+        "main",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.2.0-kafka-4.3.1",
+        "dependabot/cargo/uuid-1.25.0",
+        "dependabot/cargo/uts2ts-1.0.0",
+        "dependabot/cargo/tower-http-0.7.0",
+        "dependabot/cargo/strum-0.28.0",
+        "dependabot/cargo/speedate-0.17.0"
+      ]
+    },
+    {
+      "sha": "33ea86efcb4fa802a1da8afb758b2cf94aab851f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-25T13:03:44+04:00",
+      "message": "Add sqlite as mise tool for querying SQLite databases",
+      "stats": {
+        "additions": 301,
+        "deletions": 1,
+        "total": 302
+      },
+      "branches": [
+        "main",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.2.0-kafka-4.3.1",
+        "dependabot/cargo/uuid-1.25.0",
+        "dependabot/cargo/uts2ts-1.0.0",
+        "dependabot/cargo/tower-http-0.7.0",
+        "dependabot/cargo/strum-0.28.0",
+        "dependabot/cargo/speedate-0.17.0"
+      ]
+    },
+    {
+      "sha": "7d8bb8b99669216914bd85c4eae756dff1c73c9e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-25T12:10:09+04:00",
+      "message": "Add Uptime Kuma to k8s cluster",
+      "stats": {
+        "additions": 191,
+        "deletions": 1,
+        "total": 192
+      },
+      "branches": [
+        "main",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.2.0-kafka-4.3.1",
+        "dependabot/cargo/uuid-1.25.0",
+        "dependabot/cargo/uts2ts-1.0.0",
+        "dependabot/cargo/tower-http-0.7.0",
+        "dependabot/cargo/strum-0.28.0",
+        "dependabot/cargo/speedate-0.17.0"
+      ]
+    },
+    {
+      "sha": "81f7bb7c9d199e0d371d55d2a44e5ff13f74e981",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-25T11:50:01+04:00",
+      "message": "Update hetzner-bare-metal-fleet submodule \u2014 unified vault password",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.2.0-kafka-4.3.1",
+        "dependabot/cargo/uuid-1.25.0",
+        "dependabot/cargo/uts2ts-1.0.0",
+        "dependabot/cargo/tower-http-0.7.0",
+        "dependabot/cargo/strum-0.28.0",
+        "dependabot/cargo/speedate-0.17.0"
+      ]
+    },
+    {
+      "sha": "048ecb330c8199ca9fbe02a9b56ff5768f143cd7",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-25T11:46:09+04:00",
+      "message": "Update hetzner-bare-metal-fleet submodule \u2014 new beszel agent token + SSH key",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.2.0-kafka-4.3.1",
+        "dependabot/cargo/uuid-1.25.0",
+        "dependabot/cargo/uts2ts-1.0.0",
+        "dependabot/cargo/tower-http-0.7.0",
+        "dependabot/cargo/strum-0.28.0",
+        "dependabot/cargo/speedate-0.17.0"
+      ]
+    },
+    {
+      "sha": "ce450876cb477287d6ccff90e659b5af874d671c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-25T11:35:39+04:00",
+      "message": "Fix Beszel oauth2-proxy: allow all @gobazzinga.io + bypass auth for agent API",
+      "stats": {
+        "additions": 7,
+        "deletions": 2,
+        "total": 9
+      },
+      "branches": [
+        "main",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.2.0-kafka-4.3.1",
+        "dependabot/cargo/uuid-1.25.0",
+        "dependabot/cargo/uts2ts-1.0.0",
+        "dependabot/cargo/tower-http-0.7.0",
+        "dependabot/cargo/strum-0.28.0",
+        "dependabot/cargo/speedate-0.17.0"
+      ]
+    },
+    {
+      "sha": "310ae956820a665cd53126f848899f4fce9f5044",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-25T11:02:58+04:00",
+      "message": "Remove USER_EMAIL from beszel ConfigMap \u2014 admin created manually",
+      "stats": {
+        "additions": 3,
+        "deletions": 4,
+        "total": 7
+      },
+      "branches": [
+        "main",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.2.0-kafka-4.3.1",
+        "dependabot/cargo/uuid-1.25.0",
+        "dependabot/cargo/uts2ts-1.0.0",
+        "dependabot/cargo/tower-http-0.7.0",
+        "dependabot/cargo/strum-0.28.0",
+        "dependabot/cargo/speedate-0.17.0"
+      ]
+    },
+    {
+      "sha": "26999807bc5ae00a18f5eb0d007c189f596278b5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-25T10:57:15+04:00",
+      "message": "Trigger Beszel pod restart to pick up ConfigMap + fix comment",
+      "stats": {
+        "additions": 7,
+        "deletions": 2,
+        "total": 9
+      },
+      "branches": [
+        "main",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.2.0-kafka-4.3.1",
+        "dependabot/cargo/uuid-1.25.0",
+        "dependabot/cargo/uts2ts-1.0.0",
+        "dependabot/cargo/tower-http-0.7.0",
+        "dependabot/cargo/strum-0.28.0",
+        "dependabot/cargo/speedate-0.17.0"
+      ]
+    },
+    {
+      "sha": "41c82ce197eab55caa644a018a2c1ff048241435",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-25T10:52:55+04:00",
+      "message": "Add Reloader annotation to Beszel deployment",
+      "stats": {
+        "additions": 4,
+        "deletions": 0,
+        "total": 4
+      },
+      "branches": [
+        "main",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.2.0-kafka-4.3.1",
+        "dependabot/cargo/uuid-1.25.0",
+        "dependabot/cargo/uts2ts-1.0.0",
+        "dependabot/cargo/tower-http-0.7.0",
+        "dependabot/cargo/strum-0.28.0",
+        "dependabot/cargo/speedate-0.17.0"
+      ]
+    },
+    {
+      "sha": "115d88f53bbac09ecdbd2b05b8e2a7841da8f1ed",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-25T10:48:55+04:00",
+      "message": "Gate Beszel behind oauth2-proxy (@gobazzinga.io SSO)",
+      "stats": {
+        "additions": 118,
+        "deletions": 26,
+        "total": 144
+      },
+      "branches": [
+        "main",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.2.0-kafka-4.3.1",
+        "dependabot/cargo/uuid-1.25.0",
+        "dependabot/cargo/uts2ts-1.0.0",
+        "dependabot/cargo/tower-http-0.7.0",
+        "dependabot/cargo/strum-0.28.0",
+        "dependabot/cargo/speedate-0.17.0"
+      ]
+    },
+    {
+      "sha": "61d54eb0dd192b81f95b5acdff2a182198f588fc",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-25T10:31:54+04:00",
+      "message": "Add Beszel hub to k8s cluster + update fleet submodule",
+      "stats": {
+        "additions": 201,
+        "deletions": 4,
+        "total": 205
+      },
+      "branches": [
+        "main",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.2.0-kafka-4.3.1",
+        "dependabot/cargo/uuid-1.25.0",
+        "dependabot/cargo/uts2ts-1.0.0",
+        "dependabot/cargo/tower-http-0.7.0",
+        "dependabot/cargo/strum-0.28.0",
+        "dependabot/cargo/speedate-0.17.0"
+      ]
+    },
+    {
+      "sha": "e186ca1a2e2fc145c12233d3ec28d8bb21fd884a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-25T10:14:48+04:00",
+      "message": "chore: reorder submodule entries in .gitmodules",
+      "stats": {
+        "additions": 6,
+        "deletions": 6,
+        "total": 12
+      },
+      "branches": [
+        "main",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.2.0-kafka-4.3.1",
+        "dependabot/cargo/uuid-1.25.0",
+        "dependabot/cargo/uts2ts-1.0.0",
+        "dependabot/cargo/tower-http-0.7.0",
+        "dependabot/cargo/strum-0.28.0",
+        "dependabot/cargo/speedate-0.17.0"
+      ]
+    },
+    {
+      "sha": "0708aba7cbe104f258dc74097ef226d4ef789316",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-25T10:14:19+04:00",
+      "message": "chore: add hetzner-bare-metal-fleet submodule and remove yral-backend-canister",
+      "stats": {
+        "additions": 4,
+        "deletions": 1,
+        "total": 5
+      },
+      "branches": [
+        "main",
+        "dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.2.0-kafka-4.3.1",
+        "dependabot/cargo/uuid-1.25.0",
+        "dependabot/cargo/uts2ts-1.0.0",
+        "dependabot/cargo/tower-http-0.7.0",
+        "dependabot/cargo/strum-0.28.0",
+        "dependabot/cargo/speedate-0.17.0"
+      ]
+    },
+    {
+      "sha": "514e3970991c648b2cce33b040fc4b51983f785b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-08-25T21:57:32+04:00",
+      "message": "Replace native Kafka consumer with Kafka Bridge HTTP API for e2e tests (#1230)",
+      "stats": {
+        "additions": 133,
+        "deletions": 99,
+        "total": 232
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6399f8a47f28f03346bc9dde8c9170419e100e65",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-08-25T13:06:08+04:00",
+      "message": "chore: rename uptime-monitor-1 to reassign-18",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3ed372cf5752ba11d2c88ae3633a51c87be61a9f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-08-25T11:49:48+04:00",
+      "message": "Use parent repo's vault password \u2014 unify Ansible vault across repos",
+      "stats": {
+        "additions": 58,
+        "deletions": 56,
+        "total": 114
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ea3bbc8e97fcbbcd0bab4747af39b1a253285e65",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-08-25T11:45:57+04:00",
+      "message": "Update beszel agent token + SSH key for k8s hub",
+      "stats": {
+        "additions": 48,
+        "deletions": 48,
+        "total": 96
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "0e98f477ab3331117f0b2132afa1e203166a41d1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/hetzner-bare-metal-fleet",
+      "timestamp": "2026-08-25T10:31:04+04:00",
+      "message": "Remove beszel_hub role \u2014 hub now runs on k8s cluster",
+      "stats": {
+        "additions": 12,
+        "deletions": 69,
+        "total": 81
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "07fafa59793c068d531a5229392d9c197bb4d277",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-08-25T20:45:59+04:00",
+      "message": "fix(videogen): claim rows atomically \u2014 eight loop copies were racing (#496)",
+      "stats": {
+        "additions": 148,
+        "deletions": 7,
+        "total": 155
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 33,
+  "issues": [],
+  "issue_count": 0
+}
