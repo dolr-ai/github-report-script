@@ -1,0 +1,430 @@
+{
+  "date": "2026-08-26",
+  "cached_at": "2026-08-26T19:15:12.471534Z",
+  "commits": [
+    {
+      "sha": "0042c23ff751bc71847d67545d79d451e25e84a7",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-26T23:13:38+04:00",
+      "message": "Phase 2: rename control-plane-4 \u2192 node-5 (stacked CP)",
+      "stats": {
+        "additions": 13,
+        "deletions": 12,
+        "total": 25
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "71be7b0185b6691a73e4987aaf5e1ebd04076f8d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-26T23:11:50+04:00",
+      "message": "Fix YAML parse: use double quotes instead of single quotes in shell blocks",
+      "stats": {
+        "additions": 6,
+        "deletions": 8,
+        "total": 14
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4eab57137aefca15b1f87f5352a3c745a004b758",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-26T23:10:15+04:00",
+      "message": "Fix YAML parse: replace awk with cut to avoid Jinja2 curly brace conflict",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "78ad10d6f845e72786a5f32f0f87305899de5d14",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-26T23:07:45+04:00",
+      "message": "Fix YAML parse: remove 698399 from ctr exec-id (Jinja2 conflict)",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8c3197c8bc8096d6b722ebaa54a11c2de44ae333",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-26T23:06:08+04:00",
+      "message": "Fix etcd operations: use ctr (containerd CLI) instead of kubectl exec",
+      "stats": {
+        "additions": 11,
+        "deletions": 33,
+        "total": 44
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a2a4eb3466021fc87668a68cb1a8b14c11265673",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-26T22:58:30+04:00",
+      "message": "Fix etcd exec: use local API server (127.0.0.1:6443)",
+      "stats": {
+        "additions": 15,
+        "deletions": 14,
+        "total": 29
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e7611963aab2ac68f83ad59eb2266c65cb148da2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-26T22:34:23+04:00",
+      "message": "Phase 2: rename control-plane-3 \u2192 node-4 (stacked CP)",
+      "stats": {
+        "additions": 13,
+        "deletions": 12,
+        "total": 25
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "323d9b3c602ef4dfd0ef3d08424e8e8b35a28fdd",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-26T22:32:42+04:00",
+      "message": "Fix etcd exec: delegate to v1.36.x node via SSH",
+      "stats": {
+        "additions": 11,
+        "deletions": 2,
+        "total": 13
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b2d6c066fc956c8e18284796b363ce462154943b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-26T22:12:26+04:00",
+      "message": "Fix duplicate node-1 in inventory; restore worker-12 entry",
+      "stats": {
+        "additions": 14,
+        "deletions": 13,
+        "total": 27
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3650bf0528b7f66ace463af08262cc0c8a86d085",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-26T22:08:14+04:00",
+      "message": "Fix etcd exec: run from localhost instead of v1.35.x delegate",
+      "stats": {
+        "additions": 9,
+        "deletions": 12,
+        "total": 21
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3fb6a64e125da5f545edbbbce80dfd76c44b016a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-26T22:02:19+04:00",
+      "message": "Fix node-remove: etcd pod selection + Longhorn webhook bypass",
+      "stats": {
+        "additions": 57,
+        "deletions": 45,
+        "total": 102
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "431c627c8e0485233d2b54de85de0f868e886011",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-26T13:31:11+04:00",
+      "message": "Fix etcd member removal: prefer v1.36.x etcd pods for kubectl exec",
+      "stats": {
+        "additions": 41,
+        "deletions": 2,
+        "total": 43
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8575378aa0f1efb3056c35253583dfc3864405ad",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-26T13:23:59+04:00",
+      "message": "feat(spacetime): add post_as_ai_account_id to add_post_2 bindings",
+      "stats": {
+        "additions": 19,
+        "deletions": 1,
+        "total": 20
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4212fd22681931619f576c39a93d063f99fff578",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-26T13:21:44+04:00",
+      "message": "Merge pull request #232 from rishichadha30/feat/spacetime-act-as-owned-bot-2026-08-26",
+      "stats": {
+        "additions": 155,
+        "deletions": 10,
+        "total": 165
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "1b802b680b49b5fbcad47b930a20ee2d325549a0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-26T13:13:59+04:00",
+      "message": "Fix stale etcd member removal in node-remove role",
+      "stats": {
+        "additions": 6,
+        "deletions": 2,
+        "total": 8
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ca13de075e4465e2388a788c26bff9b125893cbd",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-26T12:17:42+04:00",
+      "message": "Fix etcd panic on CP join: reset stale state before join",
+      "stats": {
+        "additions": 6,
+        "deletions": 0,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f2680eed8b905a3e8806950b96af13574445023e",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-26T12:00:29+04:00",
+      "message": "refactor(spacetime): plainer names and more comments, per review",
+      "stats": {
+        "additions": 154,
+        "deletions": 111,
+        "total": 265
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "db40e805fd96fcb62fbba9be1e11ac9022b33a2f",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-26T11:42:50+04:00",
+      "message": "feat(spacetime): let an owner act as an AI account they own, on one session",
+      "stats": {
+        "additions": 112,
+        "deletions": 10,
+        "total": 122
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f1859c07859c44605c6e399546c1419488afb609",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-26T11:35:49+04:00",
+      "message": "Revert ConfigMap patch \u2014 join at cluster version, upgrade later",
+      "stats": {
+        "additions": 0,
+        "deletions": 27,
+        "total": 27
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "65d44a49e7213d27aa082dcb2f01b54071f1bb40",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-26T11:16:19+04:00",
+      "message": "Fix kubeadm join pulling wrong image version from cluster ConfigMap",
+      "stats": {
+        "additions": 27,
+        "deletions": 0,
+        "total": 27
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6d8fab21faa6ec61eff9dd349a0d51dbe670cbf7",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-26T10:16:59+04:00",
+      "message": "Phase 2: rename control-plane-1 \u2192 node-3 (stacked CP #3)",
+      "stats": {
+        "additions": 16,
+        "deletions": 15,
+        "total": 31
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "961023ecd1ebe91c207d279eaf635c53be9734cc",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-26T10:01:32+04:00",
+      "message": "Fix Longhorn disk check false positive in node-labels role",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "25ffa14dfa2845ff4e0c82003d6163f9c0660728",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-26T09:44:57+04:00",
+      "message": "Rename stacked CP nodes: worker-12 \u2192 node-1, worker-13 \u2192 node-2",
+      "stats": {
+        "additions": 14,
+        "deletions": 11,
+        "total": 25
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f43a7636ef7a60033342b6f2deaba0c4c03c0f96",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-26T09:41:57+04:00",
+      "message": "Stacked CP #1: worker-12 added as stacked control plane + worker",
+      "stats": {
+        "additions": 13,
+        "deletions": 9,
+        "total": 22
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "657bcf5ec646a6f6ca66a08fa53fcde59ae41a64",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-08-26T15:35:24+04:00",
+      "message": "fix(videogen): survive one unreachable tunnel task (#499)",
+      "stats": {
+        "additions": 250,
+        "deletions": 22,
+        "total": 272
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "762521e9f3b030450a9e61e4d8f92af8f754f1ce",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-08-26T13:42:35+04:00",
+      "message": "feat(videogen): register the draft as the bot, now that add_post_2 allows it (#498)",
+      "stats": {
+        "additions": 92,
+        "deletions": 8,
+        "total": 100
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7cdfb3fc88b6c05fde8ed7168a8aa8cbdcef7627",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-08-26T11:50:04+04:00",
+      "message": "fix(videogen): the video belongs to the bot \u2014 name the field bot_id and check ownership (#497)",
+      "stats": {
+        "additions": 89,
+        "deletions": 40,
+        "total": 129
+      },
+      "branches": [
+        "main",
+        "feat/videogen-cdn-worker-2026-08-26"
+      ]
+    },
+    {
+      "sha": "2bdbcb54aa6f27b455d186a766f7f99693b13d47",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-08-26T12:35:33+04:00",
+      "message": "feat(cdn): worker serving generated videos from Storj, falling back to Hetzner",
+      "stats": {
+        "additions": 197,
+        "deletions": 0,
+        "total": 197
+      },
+      "branches": [
+        "feat/videogen-cdn-worker-2026-08-26"
+      ]
+    }
+  ],
+  "commit_count": 28,
+  "issues": [],
+  "issue_count": 0
+}
