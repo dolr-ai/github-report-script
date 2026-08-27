@@ -1,0 +1,441 @@
+{
+  "date": "2026-08-27",
+  "cached_at": "2026-08-27T21:47:27.332319Z",
+  "commits": [
+    {
+      "sha": "c51668953a34fc62392a1073ec065cf7480cdf45",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-08-27T17:31:36+04:00",
+      "message": "chore: remove rust (#1231)",
+      "stats": {
+        "additions": 3,
+        "deletions": 33,
+        "total": 36
+      },
+      "branches": [
+        "main",
+        "dependabot/gradle/org.jetbrains.kotlinx-kotlinx-datetime-0.8.0",
+        "dependabot/gradle/com.facebook.android-facebook-core-18.3.0",
+        "dependabot/github_actions/actions/setup-java-6",
+        "dependabot/github_actions/actions/checkout-7",
+        "dependabot/github_actions/actions/cache-6"
+      ]
+    },
+    {
+      "sha": "11e0fc05bba6265394c822c4d78d2e34305a22fb",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-27T16:47:53+04:00",
+      "message": "chore: update spacetime bindings",
+      "stats": {
+        "additions": 16,
+        "deletions": 1,
+        "total": 17
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ec13b661e42bfa10869dcd3b967e07b89a8f23c8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-27T16:27:35+04:00",
+      "message": "Merge pull request #234 from rishichadha30/fix/update-profile-details-act-as-owned-bot-2026-08-27",
+      "stats": {
+        "additions": 24,
+        "deletions": 9,
+        "total": 33
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "93a76d5f92814451d3573e227193d4d1ec1505b3",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-27T16:19:52+04:00",
+      "message": "fix(profiles): let a creator edit a bot they own",
+      "stats": {
+        "additions": 24,
+        "deletions": 9,
+        "total": 33
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "abbb2e8c6e52e17f817269c3bdfb0e3b928ae9ac",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-27T15:46:55+04:00",
+      "message": "Merge pull request #233 from rishichadha30/fix/bot-ownership-from-the-database-2026-08-27",
+      "stats": {
+        "additions": 82,
+        "deletions": 52,
+        "total": 134
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "0e062e9c9b47e92760f849aa6150597211d460f8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-27T15:36:49+04:00",
+      "message": "fix(ai-accounts): decide bot ownership from the database, not the token",
+      "stats": {
+        "additions": 82,
+        "deletions": 52,
+        "total": 134
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "352170d875f9761583a83baa3c86d9d8f0f87a58",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-27T13:07:38+04:00",
+      "message": "harbor: restart core and jobservice pods to pick up rotated DB password",
+      "stats": {
+        "additions": 3,
+        "deletions": 1,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "27af113c9374f9cb06ee4fa7bcbe074a42e5ee7e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-27T13:01:54+04:00",
+      "message": "fix: re-encrypt harbor-db-superuser with correct encrypted_regex",
+      "stats": {
+        "additions": 16,
+        "deletions": 16,
+        "total": 32
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "200be936502524f5d8c370806b1708a4e573f814",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-27T12:48:25+04:00",
+      "message": "harbor: rotate CNPG superuser password to fix DB auth mismatch",
+      "stats": {
+        "additions": 16,
+        "deletions": 16,
+        "total": 32
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "950062d7fe0480cb6c4f72e1ca397314ed0bd4f0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-27T12:44:00+04:00",
+      "message": "cluster-init: use kubeadm CLI flags instead of Jinja config template",
+      "stats": {
+        "additions": 7,
+        "deletions": 26,
+        "total": 33
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f9105279d8aa08076b7e08f696a05aff7e8209d3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-27T11:21:33+04:00",
+      "message": "fix: update rust toolchain version to nightly-2026-08-18",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "5e37f4337a5b27c302a6b0612145c6bca87aa259",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-27T11:10:12+04:00",
+      "message": "Complete 7-node stacked CP migration + AGENTS.md update",
+      "stats": {
+        "additions": 6,
+        "deletions": 2,
+        "total": 8
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "bc58858a5ebf20fe40f1a3a00d598853f9a58733",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-27T10:53:11+04:00",
+      "message": "Bump workspace dependencies: spacetimedb, speedate, strum, tower-http, uts2ts, uuid",
+      "stats": {
+        "additions": 114,
+        "deletions": 276,
+        "total": 390
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "2e67f16e70da51458d531170efe309cfddb2b673",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-27T10:39:50+04:00",
+      "message": "Merge pull request #226 from dolr-ai/dependabot/docker/docker/kafka-connect-plugins/strimzi/kafka-1.",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a4e3f173c4577d3f5f57b23af1beb698af0fc4fa",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-27T10:14:34+04:00",
+      "message": "Make Cloudflare DNS tasks idempotent: delete existing record then add",
+      "stats": {
+        "additions": 48,
+        "deletions": 2,
+        "total": 50
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "256ba1e666cc9f8fadbd908cf20b5d128d616979",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-27T09:57:45+04:00",
+      "message": "Fix YAML parse: assign Jinja var to shell var before use",
+      "stats": {
+        "additions": 4,
+        "deletions": 4,
+        "total": 8
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "57c87ac0a624de727739f4a2f6ea78814bff100e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-27T09:56:17+04:00",
+      "message": "Auto-remove stale etcd member before CP join",
+      "stats": {
+        "additions": 40,
+        "deletions": 0,
+        "total": 40
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "28359234fc0f5674b5e54e730aeb235b3a21295a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-27T08:46:18+04:00",
+      "message": "Fix hosts.yml: remove duplicate keys in node-7 entry",
+      "stats": {
+        "additions": 0,
+        "deletions": 8,
+        "total": 8
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3b32d46fa3cd8f1a6234494d8c300f057ae1d2e5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-27T08:42:52+04:00",
+      "message": "Reorder control_plane hosts: node-1 through node-7 in numerical order",
+      "stats": {
+        "additions": 33,
+        "deletions": 19,
+        "total": 52
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "efd7866a1516dceced65818fce49270d6d9ffc2e",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-08-27T15:15:53+04:00",
+      "message": "fix(videogen): send post_as_ai_account_id as a tagged variant (#500)",
+      "stats": {
+        "additions": 132,
+        "deletions": 31,
+        "total": 163
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 20,
+  "issues": [
+    {
+      "number": 2189,
+      "title": "update metadata url at consumer services",
+      "closed_at": "2026-08-27T12:15:03Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2189",
+      "labels": []
+    },
+    {
+      "number": 2185,
+      "title": "update dags remove bigquery dependency",
+      "closed_at": "2026-08-27T12:15:13Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2185",
+      "labels": []
+    },
+    {
+      "number": 2166,
+      "title": "Add a healthy GPU instance and remove the flaky instance for the chat completions endpoint",
+      "closed_at": "2026-08-27T12:17:30Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2166",
+      "labels": []
+    },
+    {
+      "number": 2165,
+      "title": "User post info and rate limits still broken. Fix them",
+      "closed_at": "2026-08-27T12:17:22Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2165",
+      "labels": []
+    },
+    {
+      "number": 2120,
+      "title": "Solve this: https://sentry.prakash.yral.com/organizations/sentry/issues/50/?query=is%3Aunresolved%20issue.priority%3A%5Bhigh%2C%20medium%5D&referrer=issue-stream&stream_index=0",
+      "closed_at": "2026-08-27T12:17:42Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2120",
+      "labels": []
+    },
+    {
+      "number": 2114,
+      "title": "Look at all the different URL endpoints on offchain that are pushing to QStash and then migrate them to a self hosted queue service one by one",
+      "closed_at": "2026-08-27T12:29:53Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2114",
+      "labels": []
+    },
+    {
+      "number": 2046,
+      "title": "Investigate and shut down qstash usage for the queue \"ai-video-detection-backfill\"",
+      "closed_at": "2026-08-27T12:17:14Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2046",
+      "labels": []
+    },
+    {
+      "number": 2024,
+      "title": "Update vault to the latest. Do it carefully so that we don't lose any secrets. This is to fix the UI issue of the scroller disappearing on list of secrets",
+      "closed_at": "2026-08-27T12:30:01Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2024",
+      "labels": []
+    },
+    {
+      "number": 1935,
+      "title": "\ud83d\udd34 AI Feed Recommendation went down mutiple times",
+      "closed_at": "2026-08-27T12:30:13Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1935",
+      "labels": []
+    },
+    {
+      "number": 1916,
+      "title": "Validate that event_name: \"referral_received\" is being received via snowplow and it contains the gclid field",
+      "closed_at": "2026-08-27T12:43:58Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1916",
+      "labels": []
+    },
+    {
+      "number": 1912,
+      "title": "Verify why we were not alerted for downtime of video generation API and influencer create and draft flow",
+      "closed_at": "2026-08-27T12:43:49Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1912",
+      "labels": []
+    },
+    {
+      "number": 1846,
+      "title": "Confirm that the dragonfly instance is being written to by yral-auth and only then remove the Upstash redis for auth",
+      "closed_at": "2026-08-27T12:34:34Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1846",
+      "labels": []
+    },
+    {
+      "number": 1737,
+      "title": "cleanup remaining service from fly",
+      "closed_at": "2026-08-27T12:34:24Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1737",
+      "labels": []
+    },
+    {
+      "number": 1369,
+      "title": "Reduce Upstash Cost to 0",
+      "closed_at": "2026-08-27T12:30:20Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1369",
+      "labels": []
+    }
+  ],
+  "issue_count": 14
+}
