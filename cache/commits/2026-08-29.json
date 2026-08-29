@@ -1,0 +1,114 @@
+{
+  "date": "2026-08-29",
+  "cached_at": "2026-08-29T18:36:24.238777Z",
+  "commits": [
+    {
+      "sha": "b61a2395c205d683bb81e646784793a35c0f759b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-29T16:39:48+04:00",
+      "message": "fix(monitoring): make control-plane metrics scrapable; disable kube-proxy monitoring",
+      "stats": {
+        "additions": 14,
+        "deletions": 3,
+        "total": 17
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "2e9ef3a293a3631d945aa1a4482a6841e012010a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-29T16:27:14+04:00",
+      "message": "fix: make control-plane metrics scrapeable via declarative kubeadm ClusterConfiguration",
+      "stats": {
+        "additions": 385,
+        "deletions": 6,
+        "total": 391
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "5ff969f362a81dd8a3e6169e59712e0ae50b36e8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-29T12:57:32+04:00",
+      "message": "chore: lock swift to macOS and drop redundant rustup steps from bootstrap",
+      "stats": {
+        "additions": 13,
+        "deletions": 9,
+        "total": 22
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ea6a16a92fed05de13c3d0d48aad8bf196b5b289",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-29T12:45:46+04:00",
+      "message": "chore: restrict swift tool installation to macOS",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "cf6691f9eccd9e91bcf68195ba3c9c3ede1850ea",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-29T12:19:34+04:00",
+      "message": "chore: remove leptos-tutorial-builder-syntax app",
+      "stats": {
+        "additions": 0,
+        "deletions": 104,
+        "total": 104
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "aacf8557cc4cf3da7f6e6b414bad77bffa13ea7b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-29T12:09:10+04:00",
+      "message": "chore: update mise tool versions",
+      "stats": {
+        "additions": 249,
+        "deletions": 250,
+        "total": 499
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "390ee20a7f29d78d71fb39db18377c3e4990be5f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-08-29T12:06:54+04:00",
+      "message": "chore: add Swift toolchain and update yral-mobile submodule",
+      "stats": {
+        "additions": 19,
+        "deletions": 3,
+        "total": 22
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 7,
+  "issues": [],
+  "issue_count": 0
+}
