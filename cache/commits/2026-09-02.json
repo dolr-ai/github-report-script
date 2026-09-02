@@ -1,0 +1,96 @@
+{
+  "date": "2026-09-02",
+  "cached_at": "2026-09-02T18:39:12.948375Z",
+  "commits": [
+    {
+      "sha": "7f72099e03339360bc33b89b04838e55e6ed0c2b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-02T17:16:44+04:00",
+      "message": "Merge pull request #248 from dolr-ai/dependabot/github_actions/actions/upload-artifact-7",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/trivy-operator-0.x",
+        "renovate/t8y2-dbx-0.x",
+        "renovate/strimzi-kafka-operator-1.x",
+        "renovate/simple_logger-5.x",
+        "renovate/python-3.x",
+        "renovate/noyalib-0.x",
+        "renovate/maxmindinc-geoipupdate-8.x",
+        "renovate/loki-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-88.x",
+        "renovate/java-25.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "1d2b85058d96698214b9a0873f75137260fd1daf",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-02T10:57:16+04:00",
+      "message": "feat: inline apps/hetzner-bare-metal-fleet as a regular in-repo directory",
+      "stats": {
+        "additions": 2072,
+        "deletions": 4,
+        "total": 2076
+      },
+      "branches": [
+        "renovate/trivy-operator-0.x",
+        "renovate/t8y2-dbx-0.x",
+        "renovate/strimzi-kafka-operator-1.x",
+        "renovate/simple_logger-5.x",
+        "renovate/python-3.x",
+        "renovate/noyalib-0.x",
+        "renovate/maxmindinc-geoipupdate-8.x",
+        "renovate/loki-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-88.x",
+        "renovate/java-25.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "c1267e708461de89ef8e4b71e78009b599ecb834",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-02T09:47:39+04:00",
+      "message": "ci(dependabot): cover all docker dirs via wildcard; add swift ecosystem for yral-ios",
+      "stats": {
+        "additions": 14,
+        "deletions": 4,
+        "total": 18
+      },
+      "branches": [
+        "renovate/trivy-operator-0.x",
+        "renovate/t8y2-dbx-0.x",
+        "renovate/strimzi-kafka-operator-1.x",
+        "renovate/simple_logger-5.x",
+        "renovate/python-3.x",
+        "renovate/noyalib-0.x",
+        "renovate/maxmindinc-geoipupdate-8.x",
+        "renovate/loki-7.x",
+        "renovate/kubernetes-kubernetes-1.x",
+        "renovate/kube-prometheus-stack-88.x",
+        "renovate/java-25.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/alloy-1.x",
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 3,
+  "issues": [],
+  "issue_count": 0
+}
