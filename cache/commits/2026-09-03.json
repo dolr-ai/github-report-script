@@ -1,0 +1,309 @@
+{
+  "date": "2026-09-03",
+  "cached_at": "2026-09-03T18:39:49.676721Z",
+  "commits": [
+    {
+      "sha": "ebb934bd8135bfb1849047c71a5915093b6ddabd",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-03T22:07:35+05:30",
+      "message": "fix(yral-ios): TestFlight deploy deletes the build keychain first (idempotent)",
+      "stats": {
+        "additions": 4,
+        "deletions": 0,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6c2ce9e4d4482964c012415b3f4a5fbad1f4f0c7",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-03T21:39:56+05:30",
+      "message": "Merge pull request #246 from dolr-ai/renovate/maxmindinc-geoipupdate-8.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b8130e4ad0b004a8685b5d62f73ba709ec6d47e2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-03T21:39:30+05:30",
+      "message": "Merge pull request #245 from dolr-ai/renovate/strimzi-kafka-operator-1.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "2a86044a7ed32367d54276c98adb56d0828cdbfc",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-03T21:39:03+05:30",
+      "message": "Merge pull request #243 from dolr-ai/renovate/kube-prometheus-stack-88.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "795284ea3f0e4c12d6e69dd2a6091a4b2fd1cfac",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-03T21:38:19+05:30",
+      "message": "Merge pull request #244 from dolr-ai/renovate/loki-7.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f2372537860998d04627e7602eb31e04ff2b23a1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-03T21:37:55+05:30",
+      "message": "Merge pull request #237 from dolr-ai/renovate/t8y2-dbx-0.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7eb977811d44916249a5046a6c1056902c9c2cc4",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-03T21:37:33+05:30",
+      "message": "Merge pull request #241 from dolr-ai/renovate/python-3.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "66e73973093948f45fa51603aed85240ab5c4cff",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-03T21:37:08+05:30",
+      "message": "Merge pull request #240 from dolr-ai/renovate/trivy-operator-0.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "13b5b518324fd046b84942a2b38fd3f1092e5f5c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-03T16:06:38Z",
+      "message": "refactor(mise.toml): remove macOS-specific mobile tooling and clean up Rust toolchain comments",
+      "stats": {
+        "additions": 0,
+        "deletions": 16,
+        "total": 16
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8dd6b5bf25c817ea5c24db838d9a67628c3015b4",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-03T21:35:28+05:30",
+      "message": "Merge pull request #239 from dolr-ai/renovate/alloy-1.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "b7f7759f1a4c38e53605af7e25ec65d6d77916f3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-03T21:34:59+05:30",
+      "message": "Merge pull request #238 from dolr-ai/renovate/kubernetes-kubernetes-1.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4dc2513183787021b6d2ac3b800bd0c382e0de68",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-03T21:34:28+05:30",
+      "message": "Merge pull request #236 from dolr-ai/renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "2d52cadf1389a6285acd20a039ad61dfd5fd8c53",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-03T21:33:39+05:30",
+      "message": "Merge pull request #235 from dolr-ai/renovate/ghcr.io-shipwright-io-build-shipwright-build-controlle",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "10d6a0c1dd3234133e5689323b7acd2d5d6fbdc6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-03T15:59:22Z",
+      "message": "fix(dependencies): update indexmap, log, noyalib, and simple_logger versions",
+      "stats": {
+        "additions": 20,
+        "deletions": 97,
+        "total": 117
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "679751c6579a713a963ac8eba1c71407b3f4d8d1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-03T15:54:25Z",
+      "message": "chore(Cargo.lock): update dependencies to latest versions",
+      "stats": {
+        "additions": 106,
+        "deletions": 106,
+        "total": 212
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "44c6ec4fa60f7fae72789e3e3c01c7eed4a53795",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-03T21:23:23+05:30",
+      "message": "Merge pull request #250 from dolr-ai/dependabot/github_actions/actions/checkout-7",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d25942359af133face8c836dba89cd0129b7a8d0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-03T11:38:49Z",
+      "message": "fix(mise.lock): update Rust nightly version and add Swift platform checksum",
+      "stats": {
+        "additions": 5,
+        "deletions": 1,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "e55fc074659b423d45f275509d8217047c8bfb86",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-03T17:02:56+05:30",
+      "message": "Merge pull request #249 from dolr-ai/dependabot/github_actions/jdx/mise-action-4",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c5db8411f511fcffa27d6ea5a91ca3735791eeaa",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-03T14:26:59+04:00",
+      "message": "fix(ansible): clear the full ansible-lint backlog; make bootstrap vault-resilient",
+      "stats": {
+        "additions": 594,
+        "deletions": 412,
+        "total": 1006
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "90a72e7575cd0ffcf8c64117c408fdc577f29722",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "timestamp": "2026-09-03T14:24:37+04:00",
+      "message": "docs: fleet automation moved to the infrastructure monorepo",
+      "stats": {
+        "additions": 12,
+        "deletions": 8,
+        "total": 20
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 20,
+  "issues": [],
+  "issue_count": 0
+}
