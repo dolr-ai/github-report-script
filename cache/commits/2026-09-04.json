@@ -1,0 +1,39 @@
+{
+  "date": "2026-09-04",
+  "cached_at": "2026-09-04T18:37:32.838703Z",
+  "commits": [
+    {
+      "sha": "f121e54e17eed42ce13045a369ad09ad8b129ec2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-04T10:37:34+05:30",
+      "message": "feat(yral-ios): generate the Rishi API client from the live OpenAPI spec",
+      "stats": {
+        "additions": 587,
+        "deletions": 168,
+        "total": 755
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6140dde3ce205c3156fe6f48b2c3b1190a54b090",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-04T09:09:22+05:30",
+      "message": "fix(submodules): remove accidental yral-backend-canister gitlink breaking CI",
+      "stats": {
+        "additions": 4,
+        "deletions": 1,
+        "total": 5
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 2,
+  "issues": [],
+  "issue_count": 0
+}
