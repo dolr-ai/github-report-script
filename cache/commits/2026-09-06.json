@@ -1,0 +1,279 @@
+{
+  "date": "2026-09-06",
+  "cached_at": "2026-09-06T18:36:08.207301Z",
+  "commits": [
+    {
+      "sha": "7740cd917257aa95239cdafb800fdedd897758b2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-06T20:48:45+05:30",
+      "message": "Merge pull request #278 from dolr-ai/renovate/kube-prometheus-stack-89.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/ruff-0.x",
+        "renovate/noyalib-0.x",
+        "renovate/moby-buildkit-0.x",
+        "renovate/major-github-actions",
+        "renovate/kube-prometheus-stack-89.x",
+        "renovate/henrygd-beszel-0.x",
+        "renovate/ghcr.io-tektoncd-pipeline-webhook-d4749e605405422fd87700164e31b2d1-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/comrak-0.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "e2437d1da535715fa0ea109348ffe0473ff990a3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-06T16:26:37+05:30",
+      "message": "fix(yral-ios): create flow sends the durable avatar URL \u2014 adapted to the merged create-flow contract",
+      "stats": {
+        "additions": 198,
+        "deletions": 85,
+        "total": 283
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/ruff-0.x",
+        "renovate/noyalib-0.x",
+        "renovate/moby-buildkit-0.x",
+        "renovate/major-github-actions",
+        "renovate/kube-prometheus-stack-89.x",
+        "renovate/henrygd-beszel-0.x",
+        "renovate/ghcr.io-tektoncd-pipeline-webhook-d4749e605405422fd87700164e31b2d1-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/comrak-0.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "f72c29eb97027c2d3e350a3950bbcf12519c8aa5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-06T14:29:59+05:30",
+      "message": "Merge pull request #261 from dolr-ai/renovate/ghcr.io-fluxcd-image-reflector-controller-1.x",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/ruff-0.x",
+        "renovate/noyalib-0.x",
+        "renovate/moby-buildkit-0.x",
+        "renovate/major-github-actions",
+        "renovate/kube-prometheus-stack-89.x",
+        "renovate/henrygd-beszel-0.x",
+        "renovate/ghcr.io-tektoncd-pipeline-webhook-d4749e605405422fd87700164e31b2d1-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/comrak-0.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "70975c35a45a0a7b62b91eb94773f6b8e0d99033",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-06T14:22:57+05:30",
+      "message": "Merge pull request #260 from dolr-ai/renovate/ghcr.io-fluxcd-image-automation-controller-1.x",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/ruff-0.x",
+        "renovate/noyalib-0.x",
+        "renovate/moby-buildkit-0.x",
+        "renovate/major-github-actions",
+        "renovate/kube-prometheus-stack-89.x",
+        "renovate/henrygd-beszel-0.x",
+        "renovate/ghcr.io-tektoncd-pipeline-webhook-d4749e605405422fd87700164e31b2d1-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/comrak-0.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "7ec0963661ecebf688a582ca65edb7d80f027dd8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-06T14:22:35+05:30",
+      "message": "Merge pull request #259 from dolr-ai/renovate/ghcr.io-fluxcd-helm-controller-1.x",
+      "stats": {
+        "additions": 0,
+        "deletions": 0,
+        "total": 0
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/ruff-0.x",
+        "renovate/noyalib-0.x",
+        "renovate/moby-buildkit-0.x",
+        "renovate/major-github-actions",
+        "renovate/kube-prometheus-stack-89.x",
+        "renovate/henrygd-beszel-0.x",
+        "renovate/ghcr.io-tektoncd-pipeline-webhook-d4749e605405422fd87700164e31b2d1-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/comrak-0.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "54f2c72294f793c881674141ff932df744d6e907",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-06T14:21:44+05:30",
+      "message": "Merge pull request #258 from dolr-ai/renovate/kubernetes-sigs-gateway-api-1.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/ruff-0.x",
+        "renovate/noyalib-0.x",
+        "renovate/moby-buildkit-0.x",
+        "renovate/major-github-actions",
+        "renovate/kube-prometheus-stack-89.x",
+        "renovate/henrygd-beszel-0.x",
+        "renovate/ghcr.io-tektoncd-pipeline-webhook-d4749e605405422fd87700164e31b2d1-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/comrak-0.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "e23a75d0f4a9f3881e023cf90b4eb78148ba5740",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-06T14:21:23+05:30",
+      "message": "Merge pull request #257 from dolr-ai/renovate/fluxcd-flux2-2.x",
+      "stats": {
+        "additions": 52,
+        "deletions": 52,
+        "total": 104
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/ruff-0.x",
+        "renovate/noyalib-0.x",
+        "renovate/moby-buildkit-0.x",
+        "renovate/major-github-actions",
+        "renovate/kube-prometheus-stack-89.x",
+        "renovate/henrygd-beszel-0.x",
+        "renovate/ghcr.io-tektoncd-pipeline-webhook-d4749e605405422fd87700164e31b2d1-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/comrak-0.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "57caae36305d08da0c7c5344c39f09bf2ed50ba8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-06T14:20:49+05:30",
+      "message": "Merge pull request #256 from dolr-ai/renovate/flux2-2.x",
+      "stats": {
+        "additions": 30,
+        "deletions": 30,
+        "total": 60
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/ruff-0.x",
+        "renovate/noyalib-0.x",
+        "renovate/moby-buildkit-0.x",
+        "renovate/major-github-actions",
+        "renovate/kube-prometheus-stack-89.x",
+        "renovate/henrygd-beszel-0.x",
+        "renovate/ghcr.io-tektoncd-pipeline-webhook-d4749e605405422fd87700164e31b2d1-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/comrak-0.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "d56f73ab8a017ede4868ca6d5cc66a849de84e58",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-06T13:32:29+05:30",
+      "message": "test(create-contract): fix copy-pasted docstring + trailing newline (#502)",
+      "stats": {
+        "additions": 7,
+        "deletions": 4,
+        "total": 11
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a2d40fdd184bb1356c7bca3e27afb79d3937f100",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-06T13:14:58+05:30",
+      "message": "OpenAPI create-flow contract: anyOf-null-free create request, typed wizard responses, declared 409 (",
+      "stats": {
+        "additions": 156,
+        "deletions": 23,
+        "total": 179
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 10,
+  "issues": [],
+  "issue_count": 0
+}
