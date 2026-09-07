@@ -1,0 +1,144 @@
+{
+  "date": "2026-09-07",
+  "cached_at": "2026-09-07T18:39:08.821873Z",
+  "commits": [
+    {
+      "sha": "2f35e6d0fe601901b4c319861dae5a858296a2bb",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-07T11:02:21+05:30",
+      "message": "fix(monitoring): raise etcdMemberCommunicationSlow threshold to 400ms for the two-DC topology",
+      "stats": {
+        "additions": 38,
+        "deletions": 1,
+        "total": 39
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/ruff-0.x",
+        "renovate/noyalib-0.x",
+        "renovate/moby-buildkit-0.x",
+        "renovate/major-github-actions",
+        "renovate/kube-prometheus-stack-89.x",
+        "renovate/henrygd-beszel-0.x",
+        "renovate/ghcr.io-tektoncd-pipeline-webhook-d4749e605405422fd87700164e31b2d1-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/comrak-0.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "b948127fcd6a4407bcac859aa678d3203226e775",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-07T10:41:46+05:30",
+      "message": "fix(nginx-kafka-bridge): pod-template annotation triggers the config rollout",
+      "stats": {
+        "additions": 92,
+        "deletions": 83,
+        "total": 175
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/ruff-0.x",
+        "renovate/noyalib-0.x",
+        "renovate/moby-buildkit-0.x",
+        "renovate/major-github-actions",
+        "renovate/kube-prometheus-stack-89.x",
+        "renovate/henrygd-beszel-0.x",
+        "renovate/ghcr.io-tektoncd-pipeline-webhook-d4749e605405422fd87700164e31b2d1-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/comrak-0.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "d96274d01a9296fec9657eb92ddb63af39f2b239",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-07T10:38:56+05:30",
+      "message": "fix(monitoring): stop the 3.5-day KubePodNotReady alert storm on nginx-kafka-bridge",
+      "stats": {
+        "additions": 86,
+        "deletions": 80,
+        "total": 166
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/ruff-0.x",
+        "renovate/noyalib-0.x",
+        "renovate/moby-buildkit-0.x",
+        "renovate/major-github-actions",
+        "renovate/kube-prometheus-stack-89.x",
+        "renovate/henrygd-beszel-0.x",
+        "renovate/ghcr.io-tektoncd-pipeline-webhook-d4749e605405422fd87700164e31b2d1-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/comrak-0.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "86074e28e24c75deaba860d75ce71ca709b77504",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-07T10:24:20+05:30",
+      "message": "fix(yral-ios): TestFlight upload skips package plugin validation; drop spurious try",
+      "stats": {
+        "additions": 2,
+        "deletions": 1,
+        "total": 3
+      },
+      "branches": [
+        "renovate/t8y2-dbx-0.x",
+        "renovate/ruff-0.x",
+        "renovate/noyalib-0.x",
+        "renovate/moby-buildkit-0.x",
+        "renovate/major-github-actions",
+        "renovate/kube-prometheus-stack-89.x",
+        "renovate/henrygd-beszel-0.x",
+        "renovate/ghcr.io-tektoncd-pipeline-webhook-d4749e605405422fd87700164e31b2d1-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f33651396d02b6855a6e36-1.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/curlimages-curl-8.x",
+        "renovate/comrak-0.x",
+        "main"
+      ]
+    },
+    {
+      "sha": "979cad1d50d245de2ea4491182a61cc5bda2d433",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-07T18:42:29+05:30",
+      "message": "docs(AGENTS): zero-warnings hard rule \u2014 upstream toolchain warnings are fixed by upstream PR, never ",
+      "stats": {
+        "additions": 3,
+        "deletions": 0,
+        "total": 3
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 5,
+  "issues": [],
+  "issue_count": 0
+}
