@@ -1,0 +1,193 @@
+{
+  "date": "2026-09-08",
+  "cached_at": "2026-09-08T18:39:51.295652Z",
+  "commits": [
+    {
+      "sha": "4d49e220e80a8837bc7e3f3d21b21b5d12ab4f2d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-08T11:29:28+05:30",
+      "message": "chore(deps): update comrak to 0.55.0",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "renovate/moby-buildkit-0.x",
+        "renovate/henrygd-beszel-0.x",
+        "renovate/ghcr.io-tektoncd-pipeline-webhook-d4749e605405422fd87700164e31b2d1-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "main",
+        "dependabot/cargo/indexmap-2.14.2"
+      ]
+    },
+    {
+      "sha": "e4fb8532f8996eed219f36fec1e915d09349bd03",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-08T11:29:34+05:30",
+      "message": "Merge pull request #277 from dolr-ai/renovate/major-github-actions",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "renovate/moby-buildkit-0.x",
+        "renovate/henrygd-beszel-0.x",
+        "renovate/ghcr.io-tektoncd-pipeline-webhook-d4749e605405422fd87700164e31b2d1-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "main",
+        "dependabot/cargo/indexmap-2.14.2"
+      ]
+    },
+    {
+      "sha": "47c6b06e1f301874b160ccb5febc498ac81c9d51",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-08T11:28:18+05:30",
+      "message": "Merge pull request #271 from dolr-ai/renovate/ghcr.io-tektoncd-pipeline-controller-10a3e32792f336513",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/moby-buildkit-0.x",
+        "renovate/henrygd-beszel-0.x",
+        "renovate/ghcr.io-tektoncd-pipeline-webhook-d4749e605405422fd87700164e31b2d1-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "main",
+        "dependabot/cargo/indexmap-2.14.2"
+      ]
+    },
+    {
+      "sha": "7e2da366b1a3fa6ac0890c9dff2817b5ff98309d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-08T11:27:33+05:30",
+      "message": "Merge pull request #267 from dolr-ai/renovate/curlimages-curl-8.x",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "renovate/moby-buildkit-0.x",
+        "renovate/henrygd-beszel-0.x",
+        "renovate/ghcr.io-tektoncd-pipeline-webhook-d4749e605405422fd87700164e31b2d1-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "main",
+        "dependabot/cargo/indexmap-2.14.2"
+      ]
+    },
+    {
+      "sha": "6ab86cd6ca5793f2c05a20798e1a730d8f511bd6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-08T11:26:59+05:30",
+      "message": "Merge pull request #266 from dolr-ai/renovate/t8y2-dbx-0.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/moby-buildkit-0.x",
+        "renovate/henrygd-beszel-0.x",
+        "renovate/ghcr.io-tektoncd-pipeline-webhook-d4749e605405422fd87700164e31b2d1-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "main",
+        "dependabot/cargo/indexmap-2.14.2"
+      ]
+    },
+    {
+      "sha": "c0d8a103b292476443975578bff6388a5d49722e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-08T11:26:06+05:30",
+      "message": "chore(deps): bump ruff pin to 0.15.14 \u2192 0.16.6 and regenerate mise.lock",
+      "stats": {
+        "additions": 185,
+        "deletions": 186,
+        "total": 371
+      },
+      "branches": [
+        "renovate/moby-buildkit-0.x",
+        "renovate/henrygd-beszel-0.x",
+        "renovate/ghcr.io-tektoncd-pipeline-webhook-d4749e605405422fd87700164e31b2d1-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "main",
+        "dependabot/cargo/indexmap-2.14.2"
+      ]
+    },
+    {
+      "sha": "531f112cfa3761ec664489629c82f6657f55cbd1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-08T11:18:17+05:30",
+      "message": "fix(ansible): pipefail shell tasks need executable /bin/bash \u2014 dash rejects it",
+      "stats": {
+        "additions": 41,
+        "deletions": 7,
+        "total": 48
+      },
+      "branches": [
+        "renovate/moby-buildkit-0.x",
+        "renovate/henrygd-beszel-0.x",
+        "renovate/ghcr.io-tektoncd-pipeline-webhook-d4749e605405422fd87700164e31b2d1-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "main",
+        "dependabot/cargo/indexmap-2.14.2"
+      ]
+    },
+    {
+      "sha": "3a62e50aceac9d0320ed5cc7f67e0a6eb4a5534d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-08T11:14:11+05:30",
+      "message": "Merge pull request #279 from dolr-ai/renovate/kube-prometheus-stack-89.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "renovate/moby-buildkit-0.x",
+        "renovate/henrygd-beszel-0.x",
+        "renovate/ghcr.io-tektoncd-pipeline-webhook-d4749e605405422fd87700164e31b2d1-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b88983d3c13993056d-1.x",
+        "renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868a1ee5ddd52c-1.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "main",
+        "dependabot/cargo/indexmap-2.14.2"
+      ]
+    }
+  ],
+  "commit_count": 8,
+  "issues": [],
+  "issue_count": 0
+}
