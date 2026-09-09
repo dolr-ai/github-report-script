@@ -1,0 +1,249 @@
+{
+  "date": "2026-09-09",
+  "cached_at": "2026-09-09T18:38:58.015549Z",
+  "commits": [
+    {
+      "sha": "da74994214d5547da52dcf669f52fadddc5ad251",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-09T22:01:11+05:30",
+      "message": "fix(yral-ios): switcher reads bot avatars from the profile table \u2014 the simple design",
+      "stats": {
+        "additions": 425,
+        "deletions": 109,
+        "total": 534
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "1402921e14431b789ba8462299c70af0ab4473ff",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-09T21:32:44+05:30",
+      "message": "fix(yral-ios): AI avatars vanish on restart/switch + switcher not scrollable",
+      "stats": {
+        "additions": 165,
+        "deletions": 35,
+        "total": 200
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "875d002b574660370f6e1d9dc7bc2249f1cdccad",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-09T19:05:35+05:30",
+      "message": "chore(deps): update crc32fast to v1.5.1",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f8bdb265a838b7fc1ab7bd4dd685bf6071b592ab",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-09T19:02:28+05:30",
+      "message": "chore(deps): update noyalib to v0.0.43",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "fe4a1bd905fcc34d49f77afa270d72421d9dba12",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-09T18:58:38+05:30",
+      "message": "Merge pull request #276 from dolr-ai/renovate/moby-buildkit-0.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "877e23efccbb8f595ee5aae9de077d36fca27440",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-09T18:58:06+05:30",
+      "message": "Merge pull request #275 from dolr-ai/renovate/henrygd-beszel-0.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "26cf0c4c05d531d7ff58c309ce39a5267eda5ef2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-09T18:57:20+05:30",
+      "message": "Merge pull request #274 from dolr-ai/renovate/ghcr.io-tektoncd-pipeline-webhook-d4749e605405422fd877",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c7eee7d6d7c034a42bf50d215d23b9b0c3c2c66f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-09T18:56:55+05:30",
+      "message": "Merge pull request #273 from dolr-ai/renovate/ghcr.io-tektoncd-pipeline-resolvers-ff86b24f130c42b889",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "0ab4df933b328fd58dee21f5112b97a2bac56a48",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-09T18:56:30+05:30",
+      "message": "Merge pull request #272 from dolr-ai/renovate/ghcr.io-tektoncd-pipeline-events-a9042f7efb0cbade2a868",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ccb06aea707ad4ecce37f572ab31537b7306ace4",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-09T18:56:05+05:30",
+      "message": "Merge pull request #270 from dolr-ai/renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "10dbd76750214f40dee9ebe38a72d8e9e8b98eca",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-09T18:55:35+05:30",
+      "message": "Merge pull request #269 from dolr-ai/renovate/ghcr.io-shipwright-io-build-shipwright-build-controlle",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9d31acf1fc6acf4663e71a9d8c4cf0760cadbf87",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-09T18:54:31+05:30",
+      "message": "chore(deps): refresh Cargo.lock \u2014 spacetimedb 2.10, reqwest 0.13.5, syn 3.0.5, wasm-bindgen 0.2.128",
+      "stats": {
+        "additions": 184,
+        "deletions": 144,
+        "total": 328
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "1b5f6a17301b074894a7203be1ec1e8de7f87552",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-09T17:49:38+05:30",
+      "message": "chore(openapi): regenerate YralApp spec \u2014 optional fields no longer anyOf-null",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "bfac931d49a102f34082113c6afb1774f36afa19",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-09T17:32:40+05:30",
+      "message": "chore(submodule): yral-rishi-agent \u2192 upstream main (PR #504 merged + deployed)",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "30bced9fed6ba57517eb65fac5302a65ec2537f7",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-09T17:31:48+05:30",
+      "message": "chore(mise): yral-rishi-agent lint parity comes from Rishi's CI bump, not our pin",
+      "stats": {
+        "additions": 8,
+        "deletions": 6,
+        "total": 14
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "2a77c9569af228e4e4a0d795d779f7ce21e11659",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-09T12:07:47+05:30",
+      "message": "OpenAPI: collapse anyOf:[T, null] at publication \u2014 Python types stay honest (#504)",
+      "stats": {
+        "additions": 190,
+        "deletions": 0,
+        "total": 190
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 16,
+  "issues": [],
+  "issue_count": 0
+}
