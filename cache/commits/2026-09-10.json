@@ -1,0 +1,457 @@
+{
+  "date": "2026-09-10",
+  "cached_at": "2026-09-10T18:38:50.566916Z",
+  "commits": [
+    {
+      "sha": "dbe304364fca6f0d9b368ad2c5340061b483865f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-10T22:48:42+05:30",
+      "message": "chore(yral-ios): regenerate openapi.json \u2014 sync spec snapshot with backend schema output",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "eb9fde63b67c19b763580b66c62dfeb8b00b5f5d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-10T22:42:43+05:30",
+      "message": "feat(delete-account): delete_user procedure \u2014 one server-side call replaces the reducer",
+      "stats": {
+        "additions": 545,
+        "deletions": 237,
+        "total": 782
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "159cfbd920b0e36d1da3753ff674c4131c98e5b5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-10T21:08:26+05:30",
+      "message": "refactor(yral-ios): remove ICP canister legacy \u2014 Session carries the subject only",
+      "stats": {
+        "additions": 42,
+        "deletions": 109,
+        "total": 151
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "781f1cbce73b9696487adfe9d991365fcd3fc4d4",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-10T20:41:54+05:30",
+      "message": "docs(AGENTS.md): Sentry-first runbook for investigating yral-rishi-agent API errors",
+      "stats": {
+        "additions": 8,
+        "deletions": 0,
+        "total": 8
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f9fba69ec687d87a204afd48e2583bb9da517f69",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-10T19:00:38+05:30",
+      "message": "feat(yral-ios): report every handled error to Crashlytics; upstream API errors surfaced verbatim",
+      "stats": {
+        "additions": 268,
+        "deletions": 112,
+        "total": 380
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "edb903ee01dd73662e528d2d880f4c04082f574f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-10T18:32:02+05:30",
+      "message": "fix(yral-ios): declare swift-http-types as a direct dependency",
+      "stats": {
+        "additions": 18,
+        "deletions": 0,
+        "total": 18
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "5b40f97f066cf57d1dab5705216c529fb26c0dff",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-10T18:07:40+05:30",
+      "message": "chore(yral-ios): build 27 \u2014 TestFlight upload of the delete-account bot-targeting fix",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "79fdc37bec5e5ecc89e027aeb00e2b26d770b47c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-10T18:01:28+05:30",
+      "message": "refactor(yral-ios): purge ICP principal jargon \u2014 call it a subject; fix delete-account bot targeting",
+      "stats": {
+        "additions": 861,
+        "deletions": 657,
+        "total": 1518
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "cb2e9009ccdcab92013e70ea9863415adc8b3289",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-10T16:52:00+05:30",
+      "message": "docs(spacetime): TODO(drop-*) markers on the legacy versioned tables",
+      "stats": {
+        "additions": 32,
+        "deletions": 1,
+        "total": 33
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6df6f31458a96da7286bd79a7f40ae33ba04eddb",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-10T16:47:13+05:30",
+      "message": "fix(mise): iOS tasks self-inject fnox secrets \u2014 no fnox exec prefix; atomic plist materialization",
+      "stats": {
+        "additions": 40,
+        "deletions": 23,
+        "total": 63
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c6090cd04507eeb274a09efb7b85819e98d97fd7",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-10T16:25:54+05:30",
+      "message": "chore(toolchain): rust latest-stable repo-wide (nightly only where hot-reload needs it); pin binarye",
+      "stats": {
+        "additions": 824,
+        "deletions": 37,
+        "total": 861
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8051bea180297aa0101cb28d7dd75a612db1d04b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-10T13:45:55+05:30",
+      "message": "feat(delete-account): move account deletion entirely to SpacetimeDB; OS-correct dev builds",
+      "stats": {
+        "additions": 432,
+        "deletions": 251,
+        "total": 683
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "3582e238868f8e0032a67f3e7e56cd54f82591b1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-10T12:10:30+05:30",
+      "message": "fix(yral-ios): tapped row's real name flows into the session + USERNAME cache",
+      "stats": {
+        "additions": 80,
+        "deletions": 9,
+        "total": 89
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "5564f9916bfe8a46f105dda1c5631c69f3c4d6e8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-10T12:03:22+05:30",
+      "message": "fix(yral-ios): delete-account confirmation uses the native centered alert",
+      "stats": {
+        "additions": 7,
+        "deletions": 3,
+        "total": 10
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6ce8026e819d8702d287676dc9c6d95b4d273bf0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-10T11:36:12+05:30",
+      "message": "feat(yral-ios): real bot names + main-row avatar fix in the account switcher",
+      "stats": {
+        "additions": 830,
+        "deletions": 389,
+        "total": 1219
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "bdfd9be5716b6a3c308033b60832db2c37b621b7",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-10T09:24:21+05:30",
+      "message": "fix(yral-ios): SpacetimeDB live wire uses inlined single-field variant payloads \u2014 the actual GobGob-",
+      "stats": {
+        "additions": 228,
+        "deletions": 24,
+        "total": 252
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "81add7950a841503ebdae0328e6e162f003f0306",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-10T21:41:54+07:00",
+      "message": "docs: record the service evaluation + long-range plan, parked (#509)",
+      "stats": {
+        "additions": 105,
+        "deletions": 2,
+        "total": 107
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ae4731f50162eca0f130660d7b2dafa7723deb68",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-10T21:29:45+07:00",
+      "message": "fix(deps): bump fastapi 0.115.12 -> 0.141.1 for the starlette CVEs (#508)",
+      "stats": {
+        "additions": 84,
+        "deletions": 29,
+        "total": 113
+      },
+      "branches": [
+        "main",
+        "docs/service-evaluation-roadmap-2026-09-10"
+      ]
+    },
+    {
+      "sha": "5cf6a80165a31becc39b71b8e15bdb7f0a388056",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-10T21:07:57+07:00",
+      "message": "fix(influencers): valid concepts 500'd \u2014 `reason` is null on the happy path (#510)",
+      "stats": {
+        "additions": 161,
+        "deletions": 1,
+        "total": 162
+      },
+      "branches": [
+        "main",
+        "fix/bump-fastapi-starlette-cves-2026-09-10",
+        "docs/service-evaluation-roadmap-2026-09-10"
+      ]
+    },
+    {
+      "sha": "46b27b23a6eb52eae7b5dc85be733ead83adb57a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-10T15:21:03+07:00",
+      "message": "chore(lint): pin the ruff rule set, not just the version (#506)",
+      "stats": {
+        "additions": 127,
+        "deletions": 2,
+        "total": 129
+      },
+      "branches": [
+        "main",
+        "fix/validate-generate-null-reason-500-2026-09-10",
+        "fix/bump-fastapi-starlette-cves-2026-09-10",
+        "docs/service-evaluation-roadmap-2026-09-10"
+      ]
+    },
+    {
+      "sha": "ae0dc9e71e89ef614c02b745d8b069d4296ba9eb",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-10T15:20:42+07:00",
+      "message": "fix(ci): run Codex review when a draft PR is marked ready (#507)",
+      "stats": {
+        "additions": 17,
+        "deletions": 2,
+        "total": 19
+      },
+      "branches": [
+        "main",
+        "fix/validate-generate-null-reason-500-2026-09-10",
+        "fix/bump-fastapi-starlette-cves-2026-09-10",
+        "docs/service-evaluation-roadmap-2026-09-10"
+      ]
+    },
+    {
+      "sha": "a1cac03e0cdbd8ab9cc9c6c0ccd7f0c05d727a60",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-10T21:06:44+07:00",
+      "message": "fix(influencers): valid concepts 500'd \u2014 `reason` is null on the happy path",
+      "stats": {
+        "additions": 161,
+        "deletions": 1,
+        "total": 162
+      },
+      "branches": [
+        "fix/validate-generate-null-reason-500-2026-09-10"
+      ]
+    },
+    {
+      "sha": "2e80a079e581daab520b321f9148d5d266820a75",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-10T15:12:06+07:00",
+      "message": "fix(ci): run Codex review when a draft PR is marked ready",
+      "stats": {
+        "additions": 17,
+        "deletions": 2,
+        "total": 19
+      },
+      "branches": [
+        "fix/codex-review-ready-for-review-2026-09-10"
+      ]
+    },
+    {
+      "sha": "836b1f2e94f2849c44d5c931a9d8b5208ce1de37",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-10T21:27:31+07:00",
+      "message": "Merge remote-tracking branch 'origin/main' into fix/bump-fastapi-starlette-cves-2026-09-10",
+      "stats": {
+        "additions": 161,
+        "deletions": 1,
+        "total": 162
+      },
+      "branches": [
+        "fix/bump-fastapi-starlette-cves-2026-09-10"
+      ]
+    },
+    {
+      "sha": "70d3f30cd5faed88c05991a61fc11db54f589425",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-10T16:52:38+07:00",
+      "message": "fix(deps): bump fastapi 0.115.12 -> 0.141.1 for the starlette CVEs",
+      "stats": {
+        "additions": 84,
+        "deletions": 29,
+        "total": 113
+      },
+      "branches": [
+        "fix/bump-fastapi-starlette-cves-2026-09-10"
+      ]
+    },
+    {
+      "sha": "3be628365faca330ca88b6f6c8fb12ab7ed80ab9",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-10T21:30:28+07:00",
+      "message": "Merge remote-tracking branch 'origin/main' into docs/service-evaluation-roadmap-2026-09-10",
+      "stats": {
+        "additions": 245,
+        "deletions": 30,
+        "total": 275
+      },
+      "branches": [
+        "docs/service-evaluation-roadmap-2026-09-10"
+      ]
+    },
+    {
+      "sha": "c9492fdfe7355bf20797bfaa84e20bb87dab0e36",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-10T17:26:15+07:00",
+      "message": "docs: record the service evaluation + long-range plan, parked",
+      "stats": {
+        "additions": 105,
+        "deletions": 2,
+        "total": 107
+      },
+      "branches": [
+        "docs/service-evaluation-roadmap-2026-09-10"
+      ]
+    },
+    {
+      "sha": "3be154f4f4b56dd946ea965f77521d5c65bc3041",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-10T15:05:01+07:00",
+      "message": "chore(lint): pin the ruff rule set, not just the version",
+      "stats": {
+        "additions": 127,
+        "deletions": 2,
+        "total": 129
+      },
+      "branches": [
+        "chore/pin-ruff-rules-and-bump-2026-09-10"
+      ]
+    }
+  ],
+  "commit_count": 28,
+  "issues": [
+    {
+      "number": 511,
+      "title": "validate-and-generate-metadata 500s when the LLM emits \"reason\": null on the accepted path (ResponseValidationError: reason must be str)",
+      "closed_at": "2026-09-10T14:50:20Z",
+      "assignee": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "url": "https://github.com/dolr-ai/yral-rishi-agent/issues/511",
+      "labels": []
+    },
+    {
+      "number": 505,
+      "title": "Bump ruff CI pin to latest (0.15.14 \u2192 0.16.x) \u2014 423 new-rule findings to triage, format already clean",
+      "closed_at": "2026-09-10T08:21:05Z",
+      "assignee": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "url": "https://github.com/dolr-ai/yral-rishi-agent/issues/505",
+      "labels": []
+    }
+  ],
+  "issue_count": 2
+}
