@@ -1,0 +1,723 @@
+{
+  "date": "2026-09-11",
+  "cached_at": "2026-09-11T18:38:48.808733Z",
+  "commits": [
+    {
+      "sha": "bb115805efddf02792f295af7288fda9f28b38c6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-11T22:56:22+05:30",
+      "message": "refactor(hosts.yml): clean up inventory by removing obsolete hosts and adding new ones",
+      "stats": {
+        "additions": 13,
+        "deletions": 13,
+        "total": 26
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8bbca5f4addd545cec3cf2bf755dd8a32c9aacc1",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T17:11:23+07:00",
+      "message": "test(guard): walk the published spec, not app.routes",
+      "stats": {
+        "additions": 29,
+        "deletions": 7,
+        "total": 36
+      },
+      "branches": [
+        "test/pass4-http-harness-2026-09-11"
+      ]
+    },
+    {
+      "sha": "c61c129fee158e47e96d5a79bf1e450385ad2a2a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T17:07:43+07:00",
+      "message": "Merge remote-tracking branch 'origin/main' into test/pass4-http-harness-2026-09-11",
+      "stats": {
+        "additions": 119,
+        "deletions": 28906,
+        "total": 29025
+      },
+      "branches": [
+        "test/pass4-http-harness-2026-09-11"
+      ]
+    },
+    {
+      "sha": "cacfe71310dedf9d938bcb050ddba6aa14f7140c",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T17:06:40+07:00",
+      "message": "Pass 3/4: group 48 flat service modules into 7 domain packages (#525)",
+      "stats": {
+        "additions": 752,
+        "deletions": 755,
+        "total": 1507
+      },
+      "branches": [
+        "test/pass4-http-harness-2026-09-11",
+        "main"
+      ]
+    },
+    {
+      "sha": "e61aa51fa5aa51d58355d9df2da6159865136031",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T17:03:06+07:00",
+      "message": "chore: retire the chat-ai ETL \u2014 5,445 lines of machinery with no source (#524)",
+      "stats": {
+        "additions": 9,
+        "deletions": 5446,
+        "total": 5455
+      },
+      "branches": [
+        "test/pass4-http-harness-2026-09-11",
+        "main",
+        "chore/pass3-structure-2026-09-11"
+      ]
+    },
+    {
+      "sha": "8b6ef6bd53619979f5e05c5a4266cd7ca9092ad2",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T17:02:51+07:00",
+      "message": "Pass 1/4: docs 30,716 lines \u2192 ~5,000, and one PARKED.md instead of two trackers (#523)",
+      "stats": {
+        "additions": 64,
+        "deletions": 28880,
+        "total": 28944
+      },
+      "branches": [
+        "test/pass4-http-harness-2026-09-11",
+        "main",
+        "chore/pass3-structure-2026-09-11"
+      ]
+    },
+    {
+      "sha": "842ae8a7e62cc7d0a79ee3471f0cfe3f70d2871a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T17:01:35+07:00",
+      "message": "Merge branch 'chore/pass3-structure-2026-09-11' into test/pass4-http-harness-2026-09-11",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "test/pass4-http-harness-2026-09-11"
+      ]
+    },
+    {
+      "sha": "6fcf3e80bee100b7e6fe746a41c47e6acf1f2d82",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T17:01:24+07:00",
+      "message": "chore(structure): fix two comment pointers left flat by the rename",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "test/pass4-http-harness-2026-09-11",
+        "chore/pass3-structure-2026-09-11"
+      ]
+    },
+    {
+      "sha": "e192e258c2c5160332748e4de8f697b2542e2c21",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T16:58:01+07:00",
+      "message": "test: an HTTP harness, and 60 behavioural tests for the routes layer",
+      "stats": {
+        "additions": 724,
+        "deletions": 2,
+        "total": 726
+      },
+      "branches": [
+        "test/pass4-http-harness-2026-09-11"
+      ]
+    },
+    {
+      "sha": "60440cde09b75fd6f84f804c0fb0c6cbd7875f92",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T16:47:50+07:00",
+      "message": "chore(structure): group 48 flat service modules into 7 domain packages",
+      "stats": {
+        "additions": 750,
+        "deletions": 753,
+        "total": 1503
+      },
+      "branches": [
+        "test/pass4-http-harness-2026-09-11",
+        "chore/pass3-structure-2026-09-11"
+      ]
+    },
+    {
+      "sha": "52ca1b3ac6a4933ac66b126c116a251218df8974",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T16:41:41+07:00",
+      "message": "chore: retire the chat-ai ETL \u2014 5,445 lines of machinery with no source",
+      "stats": {
+        "additions": 9,
+        "deletions": 5446,
+        "total": 5455
+      },
+      "branches": [
+        "test/pass4-http-harness-2026-09-11",
+        "chore/pass3-structure-2026-09-11",
+        "chore/pass2-retire-etl-2026-09-11"
+      ]
+    },
+    {
+      "sha": "ef231cb1b69f815caddaaafabd195fcb99b1c6a2",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T16:41:37+07:00",
+      "message": "fix(influencers): settle the name in the client's username alphabet (#522)",
+      "stats": {
+        "additions": 55,
+        "deletions": 26,
+        "total": 81
+      },
+      "branches": [
+        "test/pass4-http-harness-2026-09-11",
+        "main",
+        "chore/pass3-structure-2026-09-11"
+      ]
+    },
+    {
+      "sha": "7679066f16b78c5aba9811d3034f55ec2df24669",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T16:10:13+07:00",
+      "message": "fix(influencers): settle a free slug in validate, before the app commits to it (#521)",
+      "stats": {
+        "additions": 146,
+        "deletions": 2,
+        "total": 148
+      },
+      "branches": [
+        "test/pass4-http-harness-2026-09-11",
+        "main",
+        "fix/settle-slug-in-the-clients-username-alphabet-2026-09-11",
+        "chore/pass3-structure-2026-09-11",
+        "chore/pass2-retire-etl-2026-09-11",
+        "chore/pass1-docs-cull-2026-09-11"
+      ]
+    },
+    {
+      "sha": "24fcce80b0da79c13b5fba52c99cbfafa651e097",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T15:35:14+07:00",
+      "message": "Move the Codex reviewer to gpt-6-astra and the Responses API (#520)",
+      "stats": {
+        "additions": 86,
+        "deletions": 10,
+        "total": 96
+      },
+      "branches": [
+        "test/pass4-http-harness-2026-09-11",
+        "main",
+        "fix/settle-slug-in-the-clients-username-alphabet-2026-09-11",
+        "fix/settle-influencer-slug-before-create-2026-09-11",
+        "chore/pass3-structure-2026-09-11",
+        "chore/pass2-retire-etl-2026-09-11",
+        "chore/pass1-docs-cull-2026-09-11"
+      ]
+    },
+    {
+      "sha": "365a732f55eb30f51d5397bc364332b996aef98a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T15:16:49+07:00",
+      "message": "chore: delete 8 unreferenced helpers \u2014 and record that there is little to delete (#518)",
+      "stats": {
+        "additions": 40,
+        "deletions": 116,
+        "total": 156
+      },
+      "branches": [
+        "test/pass4-http-harness-2026-09-11",
+        "main",
+        "fix/settle-slug-in-the-clients-username-alphabet-2026-09-11",
+        "fix/settle-influencer-slug-before-create-2026-09-11",
+        "ci/codex-reviewer-current-model-2026-09-11",
+        "chore/pass3-structure-2026-09-11",
+        "chore/pass2-retire-etl-2026-09-11",
+        "chore/pass1-docs-cull-2026-09-11"
+      ]
+    },
+    {
+      "sha": "04bbfdec81622290813ad5f0e711ffc5673c7cfb",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T15:14:36+07:00",
+      "message": "chore(harness): delete the dead May-era governance layer; commit the real deny-list (#519)",
+      "stats": {
+        "additions": 86,
+        "deletions": 1985,
+        "total": 2071
+      },
+      "branches": [
+        "test/pass4-http-harness-2026-09-11",
+        "main",
+        "fix/settle-slug-in-the-clients-username-alphabet-2026-09-11",
+        "fix/settle-influencer-slug-before-create-2026-09-11",
+        "ci/codex-reviewer-current-model-2026-09-11",
+        "chore/remove-unreferenced-helpers-split-2026-09-11",
+        "chore/pass3-structure-2026-09-11",
+        "chore/pass2-retire-etl-2026-09-11",
+        "chore/pass1-docs-cull-2026-09-11"
+      ]
+    },
+    {
+      "sha": "d4c7d9da8de114713880d24bec566f25f3a46bd1",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T15:00:41+07:00",
+      "message": "Ratchet the two test-quality numbers so they can only improve (#515)",
+      "stats": {
+        "additions": 280,
+        "deletions": 1,
+        "total": 281
+      },
+      "branches": [
+        "test/pass4-http-harness-2026-09-11",
+        "main",
+        "fix/settle-slug-in-the-clients-username-alphabet-2026-09-11",
+        "fix/settle-influencer-slug-before-create-2026-09-11",
+        "ci/codex-reviewer-current-model-2026-09-11",
+        "chore/retire-dead-harness-governance-2026-09-11",
+        "chore/remove-unreferenced-helpers-split-2026-09-11",
+        "chore/remove-unreferenced-helpers-2026-09-11",
+        "chore/pass3-structure-2026-09-11",
+        "chore/pass2-retire-etl-2026-09-11",
+        "chore/pass1-docs-cull-2026-09-11"
+      ]
+    },
+    {
+      "sha": "f3fad47fbc0cec1c629ddbf49cd9f6a277dc8a82",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T13:04:38+07:00",
+      "message": "Free a deleted persona's name, keep a banned one locked (#513) (#514)",
+      "stats": {
+        "additions": 356,
+        "deletions": 6,
+        "total": 362
+      },
+      "branches": [
+        "test/pass4-http-harness-2026-09-11",
+        "main",
+        "fix/settle-slug-in-the-clients-username-alphabet-2026-09-11",
+        "fix/settle-influencer-slug-before-create-2026-09-11",
+        "ci/test-quality-ratchets-2026-09-11",
+        "ci/codex-reviewer-current-model-2026-09-11",
+        "chore/retire-dead-harness-governance-2026-09-11",
+        "chore/remove-unreferenced-helpers-split-2026-09-11",
+        "chore/remove-unreferenced-helpers-2026-09-11",
+        "chore/remove-dead-harness-2026-09-11",
+        "chore/pass3-structure-2026-09-11",
+        "chore/pass2-retire-etl-2026-09-11",
+        "chore/pass1-docs-cull-2026-09-11"
+      ]
+    },
+    {
+      "sha": "15e2eddf158f09a2514c21de4b43817c0f42a64e",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T17:12:53+07:00",
+      "message": "Pass 4/4: an HTTP harness, and 60 behavioural tests for the routes layer (#526)",
+      "stats": {
+        "additions": 746,
+        "deletions": 2,
+        "total": 748
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c5062343e6fa1fee2016fed8e0eeed8b757b2902",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T16:39:57+07:00",
+      "message": "chore: drop the DAILY-LOG entry \u2014 #523 deletes the file; the PR body carries the record",
+      "stats": {
+        "additions": 0,
+        "deletions": 18,
+        "total": 18
+      },
+      "branches": [
+        "fix/settle-slug-in-the-clients-username-alphabet-2026-09-11"
+      ]
+    },
+    {
+      "sha": "18ac29f6ca2732549b6b4fb251ee355ee6fb250a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T16:36:31+07:00",
+      "message": "fix(influencers): floor the settled name at 3 chars so the client never pads it",
+      "stats": {
+        "additions": 23,
+        "deletions": 2,
+        "total": 25
+      },
+      "branches": [
+        "fix/settle-slug-in-the-clients-username-alphabet-2026-09-11"
+      ]
+    },
+    {
+      "sha": "8219b24df3579a8045a611f0b2d118bc303e582a",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T16:26:36+07:00",
+      "message": "fix(influencers): settle the name in the client's username alphabet",
+      "stats": {
+        "additions": 52,
+        "deletions": 26,
+        "total": 78
+      },
+      "branches": [
+        "fix/settle-slug-in-the-clients-username-alphabet-2026-09-11"
+      ]
+    },
+    {
+      "sha": "7ed7426bbb76429392fc2a252ea12f0dbe724a21",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T16:04:32+07:00",
+      "message": "fix(influencers): compare the slug the way /create will \u2014 lowercased",
+      "stats": {
+        "additions": 19,
+        "deletions": 1,
+        "total": 20
+      },
+      "branches": [
+        "fix/settle-influencer-slug-before-create-2026-09-11"
+      ]
+    },
+    {
+      "sha": "d67544531cec870dbce9e060b0b9784140622f2d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T16:03:28+07:00",
+      "message": "fix(influencers): size the slug base to the suffix so it never exceeds the 50-char cap",
+      "stats": {
+        "additions": 24,
+        "deletions": 5,
+        "total": 29
+      },
+      "branches": [
+        "fix/settle-influencer-slug-before-create-2026-09-11"
+      ]
+    },
+    {
+      "sha": "e7e3c449c463acce3b2e5b6d3b9edcd99d9ce63c",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T15:57:01+07:00",
+      "message": "docs: record the creator-side takeover pass and the remaining mobile findings",
+      "stats": {
+        "additions": 12,
+        "deletions": 0,
+        "total": 12
+      },
+      "branches": [
+        "fix/settle-influencer-slug-before-create-2026-09-11"
+      ]
+    },
+    {
+      "sha": "464537819b3f611a7116fbb82aa29e41c5be4cf4",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T15:47:11+07:00",
+      "message": "fix(influencers): settle a free slug in validate, before the app commits to it",
+      "stats": {
+        "additions": 96,
+        "deletions": 1,
+        "total": 97
+      },
+      "branches": [
+        "fix/settle-influencer-slug-before-create-2026-09-11"
+      ]
+    },
+    {
+      "sha": "678d8fffc41ea6e17f5a8b05591e000e16ba9eb9",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T13:01:14+07:00",
+      "message": "fix(influencers): unban must clear deleted_at, and name lookup must prefer live",
+      "stats": {
+        "additions": 85,
+        "deletions": 2,
+        "total": 87
+      },
+      "branches": [
+        "fix/free-deleted-persona-names-2026-09-11"
+      ]
+    },
+    {
+      "sha": "a0fdb2a3ff0370d499d0dd4b42e5cc2cfe766591",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T12:51:08+07:00",
+      "message": "fix(migration): timestamptz for deleted_at, per squawk",
+      "stats": {
+        "additions": 6,
+        "deletions": 2,
+        "total": 8
+      },
+      "branches": [
+        "fix/free-deleted-persona-names-2026-09-11"
+      ]
+    },
+    {
+      "sha": "2869635ef843d3db7aa04f1232741b763f67a196",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T12:49:10+07:00",
+      "message": "fix(influencers): free a deleted persona's name, keep a banned one locked",
+      "stats": {
+        "additions": 267,
+        "deletions": 4,
+        "total": 271
+      },
+      "branches": [
+        "fix/free-deleted-persona-names-2026-09-11"
+      ]
+    },
+    {
+      "sha": "c2842e9468469d729df82aae8b468edee707f74c",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T13:34:11+07:00",
+      "message": "ci: calibrate the coverage floor to CI's real number (40%)",
+      "stats": {
+        "additions": 8,
+        "deletions": 4,
+        "total": 12
+      },
+      "branches": [
+        "ci/test-quality-ratchets-2026-09-11"
+      ]
+    },
+    {
+      "sha": "79ca1c01e54d764eea65b06938e565916ada4b8c",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T13:32:25+07:00",
+      "message": "ci: ratchet the two test-quality numbers so they can only improve",
+      "stats": {
+        "additions": 276,
+        "deletions": 1,
+        "total": 277
+      },
+      "branches": [
+        "ci/test-quality-ratchets-2026-09-11"
+      ]
+    },
+    {
+      "sha": "1b4c679214454011cf0257de6d70185117f4d4b8",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T15:33:18+07:00",
+      "message": "ci(codex): use gpt-5.6-sol rather than astra for now",
+      "stats": {
+        "additions": 11,
+        "deletions": 10,
+        "total": 21
+      },
+      "branches": [
+        "ci/codex-reviewer-current-model-2026-09-11"
+      ]
+    },
+    {
+      "sha": "92eddae1c78055fec16980278b36712e2a3e6ee4",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T15:28:52+07:00",
+      "message": "ci(codex): move the reviewer to gpt-6-astra and the Responses API",
+      "stats": {
+        "additions": 85,
+        "deletions": 10,
+        "total": 95
+      },
+      "branches": [
+        "ci/codex-reviewer-current-model-2026-09-11"
+      ]
+    },
+    {
+      "sha": "b71e5b9534f79d58d30e167af859a6f22f1d2948",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T13:55:15+07:00",
+      "message": "chore(harness): delete the dead May-era governance layer; commit the real deny-list",
+      "stats": {
+        "additions": 86,
+        "deletions": 1985,
+        "total": 2071
+      },
+      "branches": [
+        "chore/retire-dead-harness-governance-2026-09-11"
+      ]
+    },
+    {
+      "sha": "0fdb500b588400d67f2327cb0e2ee063da62ecf1",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T15:15:22+07:00",
+      "message": "Merge remote-tracking branch 'origin/main' into chore/remove-unreferenced-helpers-split-2026-09-11",
+      "stats": {
+        "additions": 86,
+        "deletions": 1985,
+        "total": 2071
+      },
+      "branches": [
+        "chore/remove-unreferenced-helpers-split-2026-09-11"
+      ]
+    },
+    {
+      "sha": "e40a9e77194e784d48e6c026b98c491bf1441a95",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T13:54:02+07:00",
+      "message": "chore: delete 8 unreferenced helpers \u2014 and record that there is little to delete",
+      "stats": {
+        "additions": 40,
+        "deletions": 116,
+        "total": 156
+      },
+      "branches": [
+        "chore/remove-unreferenced-helpers-split-2026-09-11"
+      ]
+    },
+    {
+      "sha": "04c830a429ab4ca6052a698f093fb6c36452c820",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T15:01:06+07:00",
+      "message": "Merge remote-tracking branch 'origin/main' into chore/remove-unreferenced-helpers-2026-09-11",
+      "stats": {
+        "additions": 280,
+        "deletions": 1,
+        "total": 281
+      },
+      "branches": [
+        "chore/remove-unreferenced-helpers-2026-09-11"
+      ]
+    },
+    {
+      "sha": "09287637bbf09a4b82da15978b17ca2efb8f278d",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T13:55:15+07:00",
+      "message": "chore(harness): delete the dead May-era governance layer; commit the real deny-list",
+      "stats": {
+        "additions": 86,
+        "deletions": 1985,
+        "total": 2071
+      },
+      "branches": [
+        "chore/remove-unreferenced-helpers-2026-09-11"
+      ]
+    },
+    {
+      "sha": "3ad9153efdfc4d141ec0640a40faae50a39ca500",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T13:54:02+07:00",
+      "message": "chore: delete 8 unreferenced helpers \u2014 and record that there is little to delete",
+      "stats": {
+        "additions": 39,
+        "deletions": 115,
+        "total": 154
+      },
+      "branches": [
+        "chore/remove-unreferenced-helpers-2026-09-11"
+      ]
+    },
+    {
+      "sha": "981769b01109a2d29cdfea3224f53744699a6e3e",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T13:55:15+07:00",
+      "message": "chore(harness): delete the dead May-era governance layer; commit the real deny-list",
+      "stats": {
+        "additions": 86,
+        "deletions": 1985,
+        "total": 2071
+      },
+      "branches": [
+        "chore/remove-dead-harness-2026-09-11"
+      ]
+    },
+    {
+      "sha": "a2207360d1d028358b5fece82852539593215df2",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T17:04:36+07:00",
+      "message": "Merge remote-tracking branch 'origin/main' into chore/pass3-structure-2026-09-11",
+      "stats": {
+        "additions": 119,
+        "deletions": 28906,
+        "total": 29025
+      },
+      "branches": [
+        "chore/pass3-structure-2026-09-11"
+      ]
+    },
+    {
+      "sha": "ca582d08f7f89848ab72f63d82c2e724b38264db",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T16:34:46+07:00",
+      "message": "chore(docs): land the deletions, and un-commit files that were not mine",
+      "stats": {
+        "additions": 0,
+        "deletions": 26993,
+        "total": 26993
+      },
+      "branches": [
+        "chore/pass1-docs-cull-2026-09-11"
+      ]
+    },
+    {
+      "sha": "998fbc74672b51f9418fd867c8adf49b7c5bd756",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-11T16:33:33+07:00",
+      "message": "chore(docs): 30,716 lines -> ~5,000; one PARKED.md instead of two trackers",
+      "stats": {
+        "additions": 3164,
+        "deletions": 4987,
+        "total": 8151
+      },
+      "branches": [
+        "chore/pass1-docs-cull-2026-09-11"
+      ]
+    }
+  ],
+  "commit_count": 43,
+  "issues": [
+    {
+      "number": 513,
+      "title": "get_by_name ignores is_active \u2014 soft-deleted personas' names stay \"already taken\" for re-creation (follow-up to #512)",
+      "closed_at": "2026-09-11T06:04:40Z",
+      "assignee": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "url": "https://github.com/dolr-ai/yral-rishi-agent/issues/513",
+      "labels": []
+    }
+  ],
+  "issue_count": 1
+}
