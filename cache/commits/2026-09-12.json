@@ -1,0 +1,39 @@
+{
+  "date": "2026-09-12",
+  "cached_at": "2026-09-12T18:36:36.628100Z",
+  "commits": [
+    {
+      "sha": "274ac86fa20558bc164f468cfb6898101686c6c7",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-12T15:44:33+07:00",
+      "message": "fix(videogen): public URL base is our own hostname, cdn.rishi.yral.com",
+      "stats": {
+        "additions": 17,
+        "deletions": 14,
+        "total": 31
+      },
+      "branches": [
+        "fix/videogen-public-url-cdn-rishi-2026-09-12"
+      ]
+    },
+    {
+      "sha": "c9cdd1d775633e143b66ec102f064effb93011ba",
+      "author": "rishichadha30",
+      "repository": "dolr-ai/yral-rishi-agent",
+      "timestamp": "2026-09-12T15:49:01+07:00",
+      "message": "chore: delete the last two ETL shell scripts",
+      "stats": {
+        "additions": 0,
+        "deletions": 173,
+        "total": 173
+      },
+      "branches": [
+        "chore/retire-etl-shell-scripts-2026-09-12"
+      ]
+    }
+  ],
+  "commit_count": 2,
+  "issues": [],
+  "issue_count": 0
+}
