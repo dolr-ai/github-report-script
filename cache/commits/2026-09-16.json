@@ -1,0 +1,279 @@
+{
+  "date": "2026-09-16",
+  "cached_at": "2026-09-16T18:39:52.609308Z",
+  "commits": [
+    {
+      "sha": "d1d3230c6332261222b166cf23e0aa12e2831fd1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-16T22:23:54+05:30",
+      "message": "refactor(ios): drop the speculative context and failure flag from the switcher FSM",
+      "stats": {
+        "additions": 124,
+        "deletions": 155,
+        "total": 279
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "37ad749d80c3117ad10deceed1716f000a91d81e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-16T22:18:45+05:30",
+      "message": "feat(ios): model the account switcher as a finite state machine",
+      "stats": {
+        "additions": 689,
+        "deletions": 46,
+        "total": 735
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "ae1c5acff5196562be815d4e1ffc3f59b796c168",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-16T21:02:24+05:30",
+      "message": "chore(gitignore): ignore the repo-root tailwind.config.js cargo-leptos regenerates",
+      "stats": {
+        "additions": 6,
+        "deletions": 0,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "282fd79a286a91fc06b1ba4fc1afb6834e5de901",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-16T20:59:44+05:30",
+      "message": "fix(yral-web): repair code deleted by incomplete refactors, restore the build",
+      "stats": {
+        "additions": 153,
+        "deletions": 29,
+        "total": 182
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "1c47e774e0de755c4b07d1b0edb922b291ccead1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-16T20:23:02+05:30",
+      "message": "style: apply rustfmt across the workspace",
+      "stats": {
+        "additions": 995,
+        "deletions": 802,
+        "total": 1797
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "204f1cb9c41617303a2e86020a7c8a2eb3db7e64",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-16T20:13:51+05:30",
+      "message": "fix(yral-auth): unbreak the build against ecdsa 0.17 / rand 0.10, and fix the dev-server mktemp temp",
+      "stats": {
+        "additions": 76,
+        "deletions": 22,
+        "total": 98
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "260be3e9ae34d04e958141b1a79f01658bcc3f6d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-16T19:29:33+05:30",
+      "message": "refactor(spacetime): drop the ai-accounts repair machinery, keep the cascade fix",
+      "stats": {
+        "additions": 0,
+        "deletions": 303,
+        "total": 303
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "5a376bf772e9be88e90f52430ec79420aa4ff765",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-16T18:56:40+05:30",
+      "message": "fix(spacetime): make the ai-accounts KV repair race-safe with a grace window",
+      "stats": {
+        "additions": 262,
+        "deletions": 72,
+        "total": 334
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "aa4ffd9c4fdeedf0fb323adb1315371c0e18dbb8",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-16T18:36:03+05:30",
+      "message": "fix(spacetime): stop deleted bots resurrecting from yral-auth's ai-accounts KV",
+      "stats": {
+        "additions": 269,
+        "deletions": 1,
+        "total": 270
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "6e89c5512113be521071e220c2093e7a36ab6d18",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-16T11:33:20+05:30",
+      "message": "fix(spacetime): canonical `spacetime` CLI, correct wasm-opt pin, drop orphan canister gitlink",
+      "stats": {
+        "additions": 225,
+        "deletions": 170,
+        "total": 395
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "d84e69c927a9376b7003c3605206bbacd0d1c0b6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-16T09:57:34+05:30",
+      "message": "Merge pull request #290 from dolr-ai/renovate/kube-prometheus-stack-91.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7e94ed200b78a4393431a79518b922acaf76a55b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-16T09:57:05+05:30",
+      "message": "Merge pull request #288 from dolr-ai/renovate/helm-helm-4.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "be10fbdaa42e04617cbccebb15b738cd8da87cd2",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-16T09:56:47+05:30",
+      "message": "Merge pull request #287 from dolr-ai/renovate/t8y2-dbx-0.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7e7163c7f3c98b3e977465e7222af4162973d9f0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-16T09:53:01+05:30",
+      "message": "Merge pull request #284 from dolr-ai/renovate/louislam-uptime-kuma-2.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "1ea81615d4dbfe11925438f9e3f4e3d16313172d",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-16T09:47:50+05:30",
+      "message": "Merge pull request #283 from dolr-ai/renovate/reloader-2.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9561630769c8d5acd9e906f905a7c41b4f23c196",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-16T08:02:49+05:30",
+      "message": "Merge pull request #291 from dolr-ai/dependabot/pip/ansible-core-gte-2.19.13",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a974d0bd2c752ce59f4fddb92c6421bb280295fc",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-16T08:00:26+05:30",
+      "message": "chore(deps): update `Cargo.lock` dependencies",
+      "stats": {
+        "additions": 109,
+        "deletions": 109,
+        "total": 218
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4ab2f6ba7f0a20d6e053069034a4799527149863",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-16T07:57:09+05:30",
+      "message": "Merge pull request #282 from dolr-ai/renovate/cert-manager",
+      "stats": {
+        "additions": 2,
+        "deletions": 2,
+        "total": 4
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 18,
+  "issues": [],
+  "issue_count": 0
+}
