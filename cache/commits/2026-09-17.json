@@ -1,0 +1,84 @@
+{
+  "date": "2026-09-17",
+  "cached_at": "2026-09-17T18:40:44.090461Z",
+  "commits": [
+    {
+      "sha": "52b01628470d4e6f12b8c1fabfbdf23503e75b65",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-17T21:55:29+05:30",
+      "message": "chore(ansible): delete the orphaned monitoring role and its duplicate values",
+      "stats": {
+        "additions": 0,
+        "deletions": 475,
+        "total": 475
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4cea7f729bc45b52ed9ebdfc55c37e6f3fac90bc",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-17T21:32:53+05:30",
+      "message": "fix(monitoring): keySecret is a bare SecretKeySelector, not wrapped in secret",
+      "stats": {
+        "additions": 12,
+        "deletions": 6,
+        "total": 18
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "81473edcf77f41bdf708d6311d05f2ab72392ed6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-17T21:14:12+05:30",
+      "message": "fix(monitoring): put the etcd scrape TLS material under tlsConfig",
+      "stats": {
+        "additions": 57,
+        "deletions": 24,
+        "total": 81
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "fc3654475bdba412f979cd156e829c7743ca8844",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-17T20:16:24+05:30",
+      "message": "style(ios): reformat the whole package with swift-format defaults",
+      "stats": {
+        "additions": 8755,
+        "deletions": 8665,
+        "total": 17420
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "4364acfd0f2ac4148312c67477929157f50110db",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-17T20:04:31+05:30",
+      "message": "build(ios): replace SwiftLint with swift-format, the first-party toolchain",
+      "stats": {
+        "additions": 364,
+        "deletions": 358,
+        "total": 722
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 5,
+  "issues": [],
+  "issue_count": 0
+}
