@@ -1,0 +1,385 @@
+{
+  "date": "2026-09-19",
+  "cached_at": "2026-09-19T18:37:18.959957Z",
+  "commits": [
+    {
+      "sha": "3acceb50ccc9dbd4695e236a29f0bc050c5a4dbe",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-19T21:50:16+05:30",
+      "message": "chore(ci): switch dependabot update schedule to daily",
+      "stats": {
+        "additions": 5,
+        "deletions": 5,
+        "total": 10
+      },
+      "branches": [
+        "main",
+        "dependabot/cargo/jsonwebtoken-11.1.0"
+      ]
+    },
+    {
+      "sha": "6ecc71c4d68eed7788738eb4039587eb8d4590c6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-19T18:19:20+05:30",
+      "message": "chore(tooling): add s5cmd for bulk object operations",
+      "stats": {
+        "additions": 53,
+        "deletions": 0,
+        "total": 53
+      },
+      "branches": [
+        "main",
+        "dependabot/cargo/jsonwebtoken-11.1.0"
+      ]
+    },
+    {
+      "sha": "6c582869e0c9bca02c624e54d006c32e80e136e5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-19T16:54:35+05:30",
+      "message": "chore(tooling): add aws-cli as the Hetzner Object Storage client",
+      "stats": {
+        "additions": 41,
+        "deletions": 0,
+        "total": 41
+      },
+      "branches": [
+        "main",
+        "dependabot/cargo/jsonwebtoken-11.1.0"
+      ]
+    },
+    {
+      "sha": "7e1d0a2da5170e09d5731a31a6c0e1195bcff0c1",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-19T16:23:26+05:30",
+      "message": "chore: remove the yral-mobile submodule",
+      "stats": {
+        "additions": 13,
+        "deletions": 32,
+        "total": 45
+      },
+      "branches": [
+        "main",
+        "dependabot/cargo/jsonwebtoken-11.1.0"
+      ]
+    },
+    {
+      "sha": "3368290d3ff30667339d7faafa056c4fe7b3619c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-19T15:56:09+05:30",
+      "message": "chore: bump the yral-mobile submodule to the merged dead-code removal",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main",
+        "dependabot/cargo/jsonwebtoken-11.1.0"
+      ]
+    },
+    {
+      "sha": "ae892810834f1df6fec87859db68adeb03389f24",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-19T15:35:30+05:30",
+      "message": "docs(ios): record the analytics verification path and its two gotchas",
+      "stats": {
+        "additions": 16,
+        "deletions": 0,
+        "total": 16
+      },
+      "branches": [
+        "main",
+        "dependabot/cargo/jsonwebtoken-11.1.0"
+      ]
+    },
+    {
+      "sha": "e3c28396cae884eaf3e990dfe8429f8c2822f6d0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-19T15:28:25+05:30",
+      "message": "docs(ios): TODO to move the shell to Apple's JSON project format",
+      "stats": {
+        "additions": 25,
+        "deletions": 0,
+        "total": 25
+      },
+      "branches": [
+        "main",
+        "dependabot/cargo/jsonwebtoken-11.1.0"
+      ]
+    },
+    {
+      "sha": "672bcf8c94d7245a1988913a732ccfe0b663d74b",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-19T15:06:19+05:30",
+      "message": "chore: remove dead analytics.yral.com config",
+      "stats": {
+        "additions": 53,
+        "deletions": 62,
+        "total": 115
+      },
+      "branches": [
+        "main",
+        "dependabot/cargo/jsonwebtoken-11.1.0"
+      ]
+    },
+    {
+      "sha": "7f764ab47caf8ce173b6a2ced7557669eb27265f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-19T15:06:12+05:30",
+      "message": "feat(ios): push analytics events to the Snowplow collector",
+      "stats": {
+        "additions": 948,
+        "deletions": 15,
+        "total": 963
+      },
+      "branches": [
+        "main",
+        "dependabot/cargo/jsonwebtoken-11.1.0"
+      ]
+    },
+    {
+      "sha": "079573100532178b79fccd3ca96bedb5bdb6cc97",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-mobile",
+      "timestamp": "2026-09-19T15:54:46+05:30",
+      "message": "chore(analytics): remove the dead bulk-events client (#1239)",
+      "stats": {
+        "additions": 23,
+        "deletions": 207,
+        "total": 230
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 10,
+  "issues": [
+    {
+      "number": 2030,
+      "title": "Move to Swift package manager",
+      "closed_at": "2026-09-19T06:42:34Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2030",
+      "labels": []
+    },
+    {
+      "number": 1990,
+      "title": "Cleanup leftover thumbnails from the first frame thumbnail implementation",
+      "closed_at": "2026-09-19T11:00:00Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1990",
+      "labels": []
+    },
+    {
+      "number": 1977,
+      "title": "Remove Prakash from nofeebooking cloudflare once he's done configuring DNS",
+      "closed_at": "2026-09-19T10:59:49Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1977",
+      "labels": []
+    },
+    {
+      "number": 2084,
+      "title": "Doables for bot creation flow investigation",
+      "closed_at": "2026-09-19T06:42:57Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2084",
+      "labels": []
+    },
+    {
+      "number": 1836,
+      "title": "Support yral-alpha app notification keys on yral-metadata service",
+      "closed_at": "2026-09-19T06:44:03Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1836",
+      "labels": []
+    },
+    {
+      "number": 960,
+      "title": "Feed to cross button behaviour",
+      "closed_at": "2026-09-19T06:44:18Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/960",
+      "labels": [
+        "yral2.0-phase1"
+      ]
+    },
+    {
+      "number": 959,
+      "title": "Feed to chat navigation",
+      "closed_at": "2026-09-19T06:44:28Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/959",
+      "labels": [
+        "yral2.0-phase1"
+      ]
+    },
+    {
+      "number": 953,
+      "title": "Onboarding UI",
+      "closed_at": "2026-09-19T06:43:14Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/953",
+      "labels": []
+    },
+    {
+      "number": 952,
+      "title": "Yral 2.0",
+      "closed_at": "2026-09-19T06:43:41Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral-mobile",
+      "url": "https://github.com/dolr-ai/yral-mobile/issues/952",
+      "labels": [
+        "mobile"
+      ]
+    },
+    {
+      "number": 1351,
+      "title": "Susbcription - Backend dependencies",
+      "closed_at": "2026-09-19T06:42:02Z",
+      "assignee": "sarvesh-sharma-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1351",
+      "labels": [
+        "Backend Dependencies",
+        "Feature"
+      ]
+    },
+    {
+      "number": 2218,
+      "title": "Moderation service data layer",
+      "closed_at": "2026-09-19T06:33:56Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2218",
+      "labels": []
+    },
+    {
+      "number": 2215,
+      "title": "Take ownership of entire moderation service end to end",
+      "closed_at": "2026-09-19T06:29:06Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2215",
+      "labels": []
+    },
+    {
+      "number": 2191,
+      "title": "Comfy ui returning cached videos which subverts API expectations. Handle accordingly",
+      "closed_at": "2026-09-19T06:33:42Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2191",
+      "labels": []
+    },
+    {
+      "number": 2134,
+      "title": "Premium account vs free account video generation",
+      "closed_at": "2026-09-19T06:40:59Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2134",
+      "labels": []
+    },
+    {
+      "number": 1940,
+      "title": "Show a pseudo urgency counter like \"only 2 rooms left\" or such so that you set expectation with the user in case the API responds that the room is not available anymore",
+      "closed_at": "2026-09-19T06:40:09Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1940",
+      "labels": []
+    },
+    {
+      "number": 1939,
+      "title": "Loading state feedback to be shown to user when auto refreshing the page in the background so that the user understands that the data might change",
+      "closed_at": "2026-09-19T06:40:25Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1939",
+      "labels": []
+    },
+    {
+      "number": 1924,
+      "title": "Remove disabled `Show More` button on hotel-list page",
+      "closed_at": "2026-09-19T06:40:36Z",
+      "assignee": "prakash-bhatt-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1924",
+      "labels": []
+    },
+    {
+      "number": 2210,
+      "title": "Consume kafka events instead of having offchain push events to you",
+      "closed_at": "2026-09-19T06:28:02Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2210",
+      "labels": []
+    },
+    {
+      "number": 2203,
+      "title": "planning and implementation of chat notification",
+      "closed_at": "2026-09-19T06:28:47Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2203",
+      "labels": []
+    },
+    {
+      "number": 2171,
+      "title": "Expose an endpoint for other services to push notifications to individual users' client devices",
+      "closed_at": "2026-09-19T06:28:36Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2171",
+      "labels": []
+    },
+    {
+      "number": 1973,
+      "title": "Debug : prod is able to send notification but staging is not able to send notification after update in metadata",
+      "closed_at": "2026-09-19T06:28:24Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1973",
+      "labels": []
+    },
+    {
+      "number": 1949,
+      "title": "handle yral-stating notification key on redis",
+      "closed_at": "2026-09-19T06:27:47Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1949",
+      "labels": []
+    },
+    {
+      "number": 1932,
+      "title": "com.yral.shared.uniffi.generated.FfiException$AgentException: v1=Api Error: Api(FirebaseApiError(\"{\"error\":\"no valid registration ids\"}\"))  Getting this error on enabling alerts for staging",
+      "closed_at": "2026-09-19T06:28:15Z",
+      "assignee": "naitik-makwana-yral",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1932",
+      "labels": []
+    }
+  ],
+  "issue_count": 23
+}
