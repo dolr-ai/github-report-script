@@ -1,0 +1,111 @@
+{
+  "date": "2026-09-20",
+  "cached_at": "2026-09-20T18:38:14.424294Z",
+  "commits": [
+    {
+      "sha": "fb2a4d380d297824f2df4104f2ad82c629882182",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-20T18:10:35+05:30",
+      "message": "chore(ci): switch dependabot update schedule to weekly",
+      "stats": {
+        "additions": 5,
+        "deletions": 5,
+        "total": 10
+      },
+      "branches": [
+        "renovate/velero-12.x",
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-scala-stream-collector-kafka-3.x",
+        "renovate/ruff-0.x-lockfile",
+        "renovate/registry.k8s.io-external-dns-external-dns-0.x",
+        "renovate/rand-0.x-lockfile",
+        "renovate/podman-6.x-lockfile",
+        "renovate/pitchfork-2.x-lockfile",
+        "renovate/noyalib-0.x",
+        "renovate/node-26.x-lockfile",
+        "renovate/louislam-uptime-kuma-2.x",
+        "renovate/henrygd-beszel-0.x",
+        "renovate/github-clockworklabs-spacetimedb-2.x-lockfile",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/gh-2.x-lockfile",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cilium-1.x",
+        "main",
+        "dependabot/cargo/noyalib-0.0.44"
+      ]
+    },
+    {
+      "sha": "d2afef13eed21642f22e485dd7f41c6d6326ba09",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-20T18:07:01+05:30",
+      "message": "chore(tooling): add rclone for S3 backend commands",
+      "stats": {
+        "additions": 60,
+        "deletions": 0,
+        "total": 60
+      },
+      "branches": [
+        "renovate/velero-12.x",
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-scala-stream-collector-kafka-3.x",
+        "renovate/ruff-0.x-lockfile",
+        "renovate/registry.k8s.io-external-dns-external-dns-0.x",
+        "renovate/rand-0.x-lockfile",
+        "renovate/podman-6.x-lockfile",
+        "renovate/pitchfork-2.x-lockfile",
+        "renovate/noyalib-0.x",
+        "renovate/node-26.x-lockfile",
+        "renovate/louislam-uptime-kuma-2.x",
+        "renovate/henrygd-beszel-0.x",
+        "renovate/github-clockworklabs-spacetimedb-2.x-lockfile",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/gh-2.x-lockfile",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cilium-1.x",
+        "main",
+        "dependabot/cargo/noyalib-0.0.44"
+      ]
+    },
+    {
+      "sha": "7654d556cfd74c827d145623c7fd264d5ad15b42",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-20T08:28:06+05:30",
+      "message": "chore(deps): bump transitive Rust dependencies in Cargo.lock",
+      "stats": {
+        "additions": 37,
+        "deletions": 37,
+        "total": 74
+      },
+      "branches": [
+        "renovate/velero-12.x",
+        "renovate/t8y2-dbx-0.x",
+        "renovate/snowplow-scala-stream-collector-kafka-3.x",
+        "renovate/ruff-0.x-lockfile",
+        "renovate/registry.k8s.io-external-dns-external-dns-0.x",
+        "renovate/rand-0.x-lockfile",
+        "renovate/podman-6.x-lockfile",
+        "renovate/pitchfork-2.x-lockfile",
+        "renovate/noyalib-0.x",
+        "renovate/node-26.x-lockfile",
+        "renovate/louislam-uptime-kuma-2.x",
+        "renovate/henrygd-beszel-0.x",
+        "renovate/github-clockworklabs-spacetimedb-2.x-lockfile",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0.x",
+        "renovate/ghcr.io-shipwright-io-build-shipwright-build-controller-0.x",
+        "renovate/gh-2.x-lockfile",
+        "renovate/cilium-cilium-1.x",
+        "renovate/cilium-1.x",
+        "main",
+        "dependabot/cargo/noyalib-0.0.44"
+      ]
+    }
+  ],
+  "commit_count": 3,
+  "issues": [],
+  "issue_count": 0
+}
