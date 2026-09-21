@@ -1,0 +1,448 @@
+{
+  "date": "2026-09-21",
+  "cached_at": "2026-09-21T18:40:43.570005Z",
+  "commits": [
+    {
+      "sha": "c60771935488b374f6c4780530b9e39e38c8fb0c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-21T21:42:36+05:30",
+      "message": "feat(ci): weekly audit that declared apiVersions are still served",
+      "stats": {
+        "additions": 207,
+        "deletions": 1,
+        "total": 208
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "43c60d273e1f13f463a8eccd924d473b8e482a9a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-21T21:37:45+05:30",
+      "message": "refactor(python): make root pyproject.toml the single source of Python deps",
+      "stats": {
+        "additions": 37,
+        "deletions": 2,
+        "total": 39
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8a17bbe262651a57820665ff619e510ca1d1c96c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-21T21:12:12+05:30",
+      "message": "chore(kafka): remove dead external-access path (TLSRoutes + Gateway listener)",
+      "stats": {
+        "additions": 0,
+        "deletions": 94,
+        "total": 94
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a560251bc58b586fd29c7f6ca2e468f200fa9910",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-21T21:01:52+05:30",
+      "message": "docs(gateway-api): correct stale Cilium/Renovate comments and record findings",
+      "stats": {
+        "additions": 32,
+        "deletions": 5,
+        "total": 37
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "08812c366585db36cd4a07e921415fe542ca38d6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-21T20:56:45+05:30",
+      "message": "fix(kafka): migrate TLSRoutes from v1alpha2 to v1",
+      "stats": {
+        "additions": 4,
+        "deletions": 4,
+        "total": 8
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "1cf8ce5bd0e0f49cf0e1288fefb89be9b513733f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-21T20:44:37+05:30",
+      "message": "fix(gateway-api): install CRDs via Flux from raw URLs on the standard channel",
+      "stats": {
+        "additions": 70,
+        "deletions": 14,
+        "total": 84
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "59fcea119feaa96207e35445193a74d0ff516be5",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-21T20:16:24+05:30",
+      "message": "feat(beszel): disable password auth and share all systems",
+      "stats": {
+        "additions": 29,
+        "deletions": 1,
+        "total": 30
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "047f6cb3162d2a087bc7ad37598be64053e51d15",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-21T20:13:25+05:30",
+      "message": "Merge pull request #307 from dolr-ai/renovate/henrygd-beszel-0.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "1765683884bfacb0d31d1e411dcf4f9288613c9f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-21T20:13:10+05:30",
+      "message": "Merge pull request #306 from dolr-ai/renovate/velero-12.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9c56b13caeb9700934df0a5326c6d9021ae7e5cb",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-21T20:12:55+05:30",
+      "message": "chore(deps): update rand to v0.10.3",
+      "stats": {
+        "additions": 12,
+        "deletions": 12,
+        "total": 24
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "7147353220c39bb81ccec87a54333384a049ec26",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-21T20:12:02+05:30",
+      "message": "Merge pull request #301 from dolr-ai/renovate/louislam-uptime-kuma-2.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "f9d84de4cdd321c59eaf433ed4468d7966fa111a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-21T20:11:46+05:30",
+      "message": "Merge pull request #299 from dolr-ai/renovate/ghcr.io-shipwright-io-build-shipwright-build-webhook-0",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "eca732f7830e4bfdc6b1d74f9a26124e540140e3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-21T20:11:28+05:30",
+      "message": "Merge pull request #298 from dolr-ai/renovate/ghcr.io-shipwright-io-build-shipwright-build-controlle",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "0da543b1091966122c178545b900827c259d4f15",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-21T20:01:28+05:30",
+      "message": "Merge pull request #309 from dolr-ai/renovate/registry.k8s.io-external-dns-external-dns-0.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a89b6ad07cad332b64e44f01a9b42e20555667a3",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-21T20:00:56+05:30",
+      "message": "Merge pull request #310 from dolr-ai/renovate/snowplow-scala-stream-collector-kafka-3.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "8e7bee99becbdc689b033e0ee2e6c7978021dafe",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-21T20:00:35+05:30",
+      "message": "Merge pull request #303 from dolr-ai/renovate/t8y2-dbx-0.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "c27a6ed5f8031b7c7f06c47874beb0f66a0bc3d6",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-21T19:59:59+05:30",
+      "message": "chore(deps): bump gh, SpacetimeDB, node, pitchfork, podman, and ruff in mise.lock",
+      "stats": {
+        "additions": 113,
+        "deletions": 117,
+        "total": 230
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "0b754629865b65d55a4fd5a0a82e584346b2384c",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-21T19:58:18+05:30",
+      "message": "Merge pull request #300 from dolr-ai/renovate/cilium-1.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "bf1100862df155e4a906a587f41ebd6b228e6d39",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-21T19:57:56+05:30",
+      "message": "Merge pull request #294 from dolr-ai/renovate/cilium-cilium-1.x",
+      "stats": {
+        "additions": 1,
+        "deletions": 1,
+        "total": 2
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a1a1d012d37a5f5c19256e5a778c2cf16ec42d4e",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-21T19:57:33+05:30",
+      "message": "chore(deps): bump noyalib from 0.0.43 to 0.0.45",
+      "stats": {
+        "additions": 3,
+        "deletions": 3,
+        "total": 6
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "88da7fe424c2d8fc795f514bb4930c08f7561a32",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-21T19:56:22+05:30",
+      "message": "refactor(dev): migrate daemons from pitchfork.toml to mise [daemons]",
+      "stats": {
+        "additions": 383,
+        "deletions": 436,
+        "total": 819
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "82bc71688d21157a710f1da4c7ec2d8b12b3d330",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-21T19:31:07+05:30",
+      "message": "fix(tooling): retry s3-retire-bucket's rb on BucketNotEmpty",
+      "stats": {
+        "additions": 25,
+        "deletions": 1,
+        "total": 26
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "764d052c0db65c3c281d053590b3cdb99f4a3f28",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-21T16:52:45+05:30",
+      "message": "docs(tooling): correct the s3-retire-bucket streaming claim",
+      "stats": {
+        "additions": 11,
+        "deletions": 6,
+        "total": 17
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a8bddaf52940b23b0f020509caefa8cb8f3e9ec0",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-21T16:44:17+05:30",
+      "message": "fix(tooling): stream s3-retire-bucket output instead of suppressing or buffering",
+      "stats": {
+        "additions": 25,
+        "deletions": 15,
+        "total": 40
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "cf569a77bac2f9d832b613d8b59de8731d0e6e8f",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-21T16:35:13+05:30",
+      "message": "feat(tooling): add s3-retire-bucket to retire a bucket in one command",
+      "stats": {
+        "additions": 124,
+        "deletions": 0,
+        "total": 124
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a457952b6f28df7b8eea670c81b43741f0b5af3a",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-21T16:01:17+05:30",
+      "message": "fix(tooling): make s3-abort-multipart-uploads exit on real state",
+      "stats": {
+        "additions": 48,
+        "deletions": 1,
+        "total": 49
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "9445e9161cdb4e878a3d78fb1d0370814b5aac83",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-21T12:11:19+05:30",
+      "message": "chore(tooling): add s3-abort-multipart-uploads mise task",
+      "stats": {
+        "additions": 103,
+        "deletions": 2,
+        "total": 105
+      },
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "sha": "a502ff6c0cbbbf35dbb485349b15f63a75b11960",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-21T12:05:21+05:30",
+      "message": "chore(tooling): add rush for parallel shell jobs on macOS",
+      "stats": {
+        "additions": 51,
+        "deletions": 0,
+        "total": 51
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 28,
+  "issues": [
+    {
+      "number": 2026,
+      "title": "Storj buckets cleanup",
+      "closed_at": "2026-09-21T14:53:18Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2026",
+      "labels": []
+    },
+    {
+      "number": 1995,
+      "title": "Cleanup unused sentry buckets on hetzner",
+      "closed_at": "2026-09-21T14:47:06Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/1995",
+      "labels": []
+    }
+  ],
+  "issue_count": 2
+}
