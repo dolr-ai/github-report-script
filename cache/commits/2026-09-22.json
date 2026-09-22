@@ -1,0 +1,43 @@
+{
+  "date": "2026-09-22",
+  "cached_at": "2026-09-22T18:40:19.664046Z",
+  "commits": [
+    {
+      "sha": "4ff9e79f71cc96669c14e96758a10bf927aa42c4",
+      "author": "saikatdas0790",
+      "repository": "dolr-ai/yral-bare-metal-kubernetes-cluster",
+      "timestamp": "2026-09-22T11:31:49+05:30",
+      "message": "chore: remove apps/yral and apps/website submodules, drop cocoapods",
+      "stats": {
+        "additions": 13,
+        "deletions": 24,
+        "total": 37
+      },
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "commit_count": 1,
+  "issues": [
+    {
+      "number": 2123,
+      "title": "Clean up gcloud projects",
+      "closed_at": "2026-09-22T08:27:35Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2123",
+      "labels": []
+    },
+    {
+      "number": 2078,
+      "title": "Remove buckets from gcloud here: https://console.cloud.google.com/storage/browser?project=hot-or-not-feed-intelligence&prefix=&forceOnBucketsSortingFiltering=true&bucketType=live",
+      "closed_at": "2026-09-22T05:35:16Z",
+      "assignee": "saikatdas0790",
+      "repository": "dolr-ai/yral",
+      "url": "https://github.com/dolr-ai/yral/issues/2078",
+      "labels": []
+    }
+  ],
+  "issue_count": 2
+}
